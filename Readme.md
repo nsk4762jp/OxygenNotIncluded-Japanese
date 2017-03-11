@@ -12,7 +12,7 @@ Klei Entertainment 制作のスペースコロニー経営ゲーム「[Oxygen No
 
 ## インストール
 
-string.po を下記フォルダにコピーしてください。  
+[strings.po](https://github.com/nsk4762jp/OxygenNotIncluded-Japanese/blob/master/strings.po) を下記フォルダにコピーしてください。  
 
     (Steamフォルダ)/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/StreamingAssets/Mods  
 
