@@ -31,13 +31,13 @@ msgstr "アクセス制御停止状態"
 #. STRINGS.BUILDING.STATUSITEMS.ACCESS_CONTROL.OFFLINE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ACCESS_CONTROL.OFFLINE.TOOLTIP"
 msgid ""
-"This door has gone into Emergency Unlock Mode\n"
+"This door has granted Emergency Access Permissions\n"
 "----------\n"
 "All Duplicants are permitted to pass through it until power is restored"
 msgstr ""
-"このドアは緊急解錠モードになりました\n"
+"このドアは緊急アクセス制御を行っています\n"
 "----------\n"
-"全ての複製人間は、電源が復旧するまでの間通過することができます"
+"電源が復旧するまでの間、全ての複製人間が通過することができます"
 
 #. STRINGS.BUILDING.STATUSITEMS.ASSIGNEDTO.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ASSIGNEDTO.NAME"
@@ -76,8 +76,8 @@ msgstr "配達待ち"
 
 #. STRINGS.BUILDING.STATUSITEMS.AWAITINGSEEDDELIVERY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.AWAITINGSEEDDELIVERY.TOOLTIP"
-msgid "Awaiting delivery of selected <style=\"seed\">Seed</style>"
-msgstr "指定した<style=\"seed\">種子</style>の配達待ち"
+msgid "Awaiting delivery of selected seed"
+msgstr "指定した種子の配達待ち"
 
 #. STRINGS.BUILDING.STATUSITEMS.AWAITINGWASTE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.AWAITINGWASTE.NAME"
@@ -345,8 +345,8 @@ msgstr "光源"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGLIGHT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGLIGHT.TOOLTIP"
-msgid "Open the Light Overlay [{LightGridOverlay}] to view this <style=\"light\">Light</style>'s visibility radius"
-msgstr "光源レイヤー[{LightGridOverlay}] を表示し、 この<style=\"light\">光源</style>が届く範囲を確認します"
+msgid "Open the Light Overlay [{LightGridOverlay}] to view this light's visibility radius"
+msgstr "光源レイヤー[{LightGridOverlay}] を表示し、 この光源が届く範囲を確認します"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.NAME"
@@ -441,12 +441,12 @@ msgstr "この設備は周囲に熱を放射しています"
 #. STRINGS.BUILDING.STATUSITEMS.EXPIRED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EXPIRED.NAME"
 msgid "Depleted"
-msgstr "資源枯渇"
+msgstr "使用済み"
 
 #. STRINGS.BUILDING.STATUSITEMS.EXPIRED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EXPIRED.TOOLTIP"
-msgid "This building's just garbage now"
-msgstr "この設備は無用の長物になりました"
+msgid "This building has no more use"
+msgstr "この設備はもう使えません"
 
 #. STRINGS.BUILDING.STATUSITEMS.FABRICATOREMPTY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATOREMPTY.NAME"
@@ -505,8 +505,8 @@ msgstr "パイプが空"
 
 #. STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.TOOLTIP"
-msgid "There is no <style=\"Gas\">Gas</style> in the pipe"
-msgstr "パイプ中に<style=\"Gas\">気体</style>がありません"
+msgid "There is no gas in this pipe"
+msgstr "パイプ中に気体がありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.GASPIPEOBSTRUCTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEOBSTRUCTED.NAME"
@@ -530,7 +530,7 @@ msgstr "パイプが詰まっているため、通風口から気体を排出で
 
 #. STRINGS.BUILDING.STATUSITEMS.GASVENTOVERPRESSURE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASVENTOVERPRESSURE.NAME"
-msgid "Gas Vent Overpressurized"
+msgid "Gas Vent Overpressure"
 msgstr "通風口気圧超過"
 
 #. STRINGS.BUILDING.STATUSITEMS.GASVENTOVERPRESSURE.TOOLTIP
@@ -584,7 +584,7 @@ msgstr "この設備は周囲を {0} 以下に加熱することはできませ�
 
 #. STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_GAS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_GAS.NAME"
-msgid "Atmospheric Pressure Too Low"
+msgid "Low Atmospheric Pressure"
 msgstr "気圧不足"
 
 #. STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_GAS.TOOLTIP
@@ -629,8 +629,8 @@ msgstr "パイプが空"
 
 #. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEEMPTY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEEMPTY.TOOLTIP"
-msgid "There is no <style=\"liquid\">Liquid</style> in the pipe"
-msgstr "パイプ中に<style=\"liquid\">液体</style>がありません"
+msgid "There is no liquid in this pipe"
+msgstr "パイプ中に液体がありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEOBSTRUCTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEOBSTRUCTED.NAME"
@@ -654,7 +654,7 @@ msgstr "パイプが詰まっているため、排水口から液体を排出で
 
 #. STRINGS.BUILDING.STATUSITEMS.LIQUIDVENTOVERPRESSURE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDVENTOVERPRESSURE.NAME"
-msgid "Liquid Vent Overpressurized"
+msgid "Liquid Vent Overpressure"
 msgstr "排水口水圧超過"
 
 #. STRINGS.BUILDING.STATUSITEMS.LIQUIDVENTOVERPRESSURE.TOOLTIP
@@ -673,8 +673,8 @@ msgstr "傑作"
 
 #. STRINGS.BUILDING.STATUSITEMS.LOOKINGGREAT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LOOKINGGREAT.TOOLTIP"
-msgid "This poignant piece stirs something deep within Duplicants' souls"
-msgstr "この作品は複製人間の魂をかきたてる何かを持っています"
+msgid "This poignant piece stirs something deep within each Duplicant's soul"
+msgstr "この作品はあらゆる複製人間の魂をかきたてる何かを持っています"
 
 #. STRINGS.BUILDING.STATUSITEMS.LOOKINGOKAY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LOOKINGOKAY.NAME"
@@ -683,8 +683,8 @@ msgstr "趣のある造形"
 
 #. STRINGS.BUILDING.STATUSITEMS.LOOKINGOKAY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LOOKINGOKAY.TOOLTIP"
-msgid "Duplicants find this piece quite charming"
-msgstr "この絵はとてもかわいらしいです"
+msgid "Duplicants find this artpiece quite charming"
+msgstr "複製人間はこの作品をとてもかわいらしいと思っています"
 
 #. STRINGS.BUILDING.STATUSITEMS.LOOKINGUGLY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LOOKINGUGLY.NAME"
@@ -823,12 +823,12 @@ msgstr "マルチツールが必要です"
 #. STRINGS.BUILDING.STATUSITEMS.NEEDBORINGMACHINE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDBORINGMACHINE.TOOLTIP"
 msgid ""
-"A <style=\"equipment\">Multitool</style> is required to mine this material\n"
+"A multitool is required to mine this material\n"
 "------------------\n"
 "Multitools can be made at Crafting Stations in the <color=#833A5FFF>Stations Tab</color> <color=#F44A47>[9]</color> of the "
 "Build Menu"
 msgstr ""
-"この素材を採掘するには<style=\"equipment\">マルチツール</style>が必要です\n"
+"この素材を採掘するにはマルチツールが必要です\n"
 "------------------\n"
 "マルチツールは建設メニューの<color=#833A5FFF>研究タブ</color><color=#F44A47>[9]</color> にある作業台で作成できます"
 
@@ -839,8 +839,8 @@ msgstr "気体の入力元がありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDGASIN.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDGASIN.TOOLTIP"
-msgid "This building has nowhere to receive <style=\"gas\">Gas</style> from"
-msgstr "この設備は他から<style=\"gas\">気体</style>を受け取ります"
+msgid "This building has nowhere to receive gas from"
+msgstr "この設備は他から気体を受け取ります"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDGASOUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDGASOUT.NAME"
@@ -849,8 +849,8 @@ msgstr "気体の出力先がありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDGASOUT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDGASOUT.TOOLTIP"
-msgid "This building has nowhere to send <style=\"gas\">Gas</style>"
-msgstr "この設備は他へ<style=\"gas\">気体</style>を送り出します"
+msgid "This building has nowhere to send gas"
+msgstr "この設備は他へ気体を送り出します"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDIN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDIN.NAME"
@@ -859,8 +859,8 @@ msgstr "液体の入力元がありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDIN.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDIN.TOOLTIP"
-msgid "This building has nowhere to receive <style=\"liquid\">Liquid</style> from"
-msgstr "この設備は他から<style=\"liquid\">液体</style>を受け取ります"
+msgid "This building has nowhere to receive liquid from"
+msgstr "この設備は他から液体を受け取ります"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.NAME"
@@ -869,8 +869,8 @@ msgstr "液体の出力先がありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.TOOLTIP"
-msgid "This building has nowhere to send <style=\"liquid\">Liquid</style>"
-msgstr "この設備は他へ<style=\"liquid\">液体</style>を送り出します"
+msgid "This building has nowhere to send liquid"
+msgstr "この設備は他へ液体を送り出します"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDPLANT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDPLANT.NAME"
@@ -879,8 +879,8 @@ msgstr "種子がありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDPLANT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDPLANT.TOOLTIP"
-msgid "Dig up wild <style=\"plant\">Plants</style> to obtain <style=\"seed\">Seeds</style>"
-msgstr "<style=\"seed\">種子</style>を得るには、野生<style=\"plant\">植物</style>を掘り起こしてください"
+msgid "Uproot wild plants to obtain seeds"
+msgstr "種子を得るには、野生の植物を掘り起こしてください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDPOWER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDPOWER.NAME"
@@ -889,8 +889,8 @@ msgstr "電力不足"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDPOWER.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDPOWER.TOOLTIP"
-msgid "All connected <style=\"power\">Power</style> sources have lost charge"
-msgstr "接続された全ての<style=\"power\">電源</style>は空です"
+msgid "All connected power sources have lost charge"
+msgstr "接続された全ての電源は空です"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDRESOURCE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDRESOURCE.NAME"
@@ -909,8 +909,8 @@ msgstr "種子未選択"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDSEED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDSEED.TOOLTIP"
-msgid "Dig up wild plants to obtain <style=\"seed\">Seeds</style>"
-msgstr "<style=\"seed\">種子</style>を得るには、野生の植物を掘り起こしてください"
+msgid "Uproot wild plants to obtain seeds"
+msgstr "種子を得るには、野生の植物を掘り起こしてください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDSREGION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDSREGION.NAME"
@@ -986,21 +986,18 @@ msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.TOOLTIP"
-msgid ""
-"This building cannot produce the correct <style=\"research\">Research Type</style> for the selected <style=\"research"
-"\">Research Task</style>"
-msgstr ""
-"この設備は選択した<style=\"research\">研究作業</style> を行うための<style=\"research\">研究タイプ</style>を生産できません"
+msgid "This building cannot produce the correct research type for the selected research task"
+msgstr "この設備は選択した研究課題を進めることができる研究タイプを生産できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAVAILABLESEED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAVAILABLESEED.NAME"
 msgid "No Seed Available"
-msgstr "種子なし"
+msgstr "種子切れ"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAVAILABLESEED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAVAILABLESEED.TOOLTIP"
-msgid "The selected <style=\"seed\">Seed</style> is not available"
-msgstr "選択した <style=\"seed\">種子</style> はありません"
+msgid "The selected seed is not available"
+msgstr "選択した種子はもうありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOFILTERELEMENTSELECTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOFILTERELEMENTSELECTED.NAME"
@@ -1014,7 +1011,7 @@ msgstr "フィルターする資源を選んでください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOFISHABLEWATERBELOW.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOFISHABLEWATERBELOW.NAME"
-msgid "No Fishable Water Below"
+msgid "No Fishable Water"
 msgstr "釣りポイントなし"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOFISHABLEWATERBELOW.TOOLTIP
@@ -1049,8 +1046,8 @@ msgstr "電力供給先なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOPOWERCONSUMERS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOPOWERCONSUMERS.TOOLTIP"
-msgid "No buildings are connected to this <style=\"power\">Power</style> source"
-msgstr "<style=\"power\">電源</style>に接続された設備がありません"
+msgid "No buildings are connected to this power source"
+msgstr "この電源を消費できる設備と接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOPOWERSOURCE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOPOWERSOURCE.NAME"
@@ -1059,8 +1056,8 @@ msgstr "電源なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOPOWERSOURCE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOPOWERSOURCE.TOOLTIP"
-msgid "This building must be connected to a <style=\"power\">Power</style> source"
-msgstr "この設備は<style=\"power\">電源</style>に接続されていなければなりません"
+msgid "This building must be connected to a power source"
+msgstr "この設備は電源に接続されていなければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NAME"
@@ -1070,7 +1067,7 @@ msgstr "研究未選択"
 #. STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NOTIFICATION_NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NOTIFICATION_NAME"
 msgid "No <style=\"research\">Research Task</style> selected"
-msgstr "<style=\"research\">研究作業</style>未選択"
+msgstr "<style=\"research\">研究課題</style>未選択"
 
 #. STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NOTIFICATION_TOOLTIP"
@@ -1109,8 +1106,8 @@ msgstr "電線未接続"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOWIRECONNECTED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOWIRECONNECTED.TOOLTIP"
-msgid "This building has not been connected to a <style=\"power\">Power</style> grid"
-msgstr "この設備には<style=\"power\">配電</style>されていません"
+msgid "This building has not been connected to a power grid"
+msgstr "この設備には配電されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.EXHAUSTING
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.EXHAUSTING"
@@ -1159,12 +1156,8 @@ msgstr "オーバーヒート"
 
 #. STRINGS.BUILDING.STATUSITEMS.OVERHEATED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OVERHEATED.TOOLTIP"
-msgid ""
-"This building is taking damage\n"
-"It will break if it is not cooled down"
-msgstr ""
-"この設備はダメージを受けています\n"
-"冷却しなければ破損する恐れがあります"
+msgid "This building is taking damage and will meltdown if not cooled"
+msgstr "この設備はダメージを受けており、冷却しなければメルトダウンしてしまうでしょう"
 
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME"
@@ -1199,7 +1192,7 @@ msgstr "複製人間による収穫作業待ち"
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGREPAIR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGREPAIR.NAME"
 msgid "Repair Pending"
-msgstr "修理一時中断"
+msgstr "修理作業待ち"
 
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGREPAIR.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGREPAIR.TOOLTIP"
@@ -1218,12 +1211,12 @@ msgstr "複製人間による切り替え作業待ち"
 
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGUPROOT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGUPROOT.NAME"
-msgid "Dig Up Pending"
+msgid "Uproot Pending"
 msgstr "掘り起こし作業待ち"
 
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGUPROOT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGUPROOT.TOOLTIP"
-msgid "Waiting for a Duplicant to dig up"
+msgid "Waiting for a Duplicant to uproot"
 msgstr "複製人間による掘り起こし作業待ち"
 
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGWORK.NAME
@@ -1370,6 +1363,16 @@ msgstr "建設作業待ち"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.UNDERCONSTRUCTIONNOWORKER.TOOLTIP"
 msgid "Waiting for a Duplicant to build"
 msgstr "複製人間による建設作業待ち"
+
+#. STRINGS.BUILDING.STATUSITEMS.UNDERPRESSURE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.UNDERPRESSURE.NAME"
+msgid "Under Pressure"
+msgstr "圧力不足"
+
+#. STRINGS.BUILDING.STATUSITEMS.UNDERPRESSURE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.UNDERPRESSURE.TOOLTIP"
+msgid "Too little air pressure to operate"
+msgstr "操作するために必要な気圧が足りません"
 
 #. STRINGS.BUILDING.STATUSITEMS.UNUSABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.UNUSABLE.NAME"
@@ -1636,8 +1639,12 @@ msgstr "正直なところ、出てきた緑藻はまだドロドロのように
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.EFFECT"
-msgid "Converts <style=\"misc\">Slime</style> into <style=\"misc\">Algae</style>."
-msgstr "<style=\"misc\">ヘドロ</style>を<style=\"misc\">緑藻</style>に変換します。"
+msgid ""
+"Converts <style=\"misc\">Slime</style> into <style=\"misc\">Algae</style>.\n"
+"Drops algae every 10kg."
+msgstr ""
+"<style=\"misc\">ヘドロ</style>を<style=\"misc\">緑藻</style>に変換します。\n"
+"緑藻は10kgずつ排出されます。"
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.NAME"
@@ -2092,8 +2099,12 @@ msgstr "深呼吸しないでください。"
 
 #. STRINGS.BUILDINGS.PREFABS.FERTILIZERMAKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.FERTILIZERMAKER.EFFECT"
-msgid "Uses <style=\"liquid\">Polluted Water</style> to produce <style=\"solid\">Fertilizer</style>."
-msgstr "<style=\"liquid\">汚染水</style>を使って<style=\"solid\">肥料</style>を生産します。"
+msgid ""
+"Uses <style=\"liquid\">Polluted Water</style> to produce <style=\"solid\">Fertilizer</style>.\n"
+"Drops fertilizer every 10kg."
+msgstr ""
+"<style=\"liquid\">汚染水</style>を使って<style=\"solid\">肥料</style>を生産します。\n"
+"肥料は10kgずつ排出されます。"
 
 #. STRINGS.BUILDINGS.PREFABS.FERTILIZERMAKER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.FERTILIZERMAKER.NAME"
@@ -3209,7 +3220,7 @@ msgstr "電線ブリッジ"
 #. STRINGS.CREATURES.SPECIES.BASICFABRICMATERIALPLANT.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.BASICFABRICMATERIALPLANT.DESC"
 msgid ""
-"An aquatic <style=\"plant\">Plant</style>, well-suited for domestication in Aquatic Farm Tiles.\n"
+"An aquatic <style=\"plant\">Plant</style> that can be grown domestically in Aquatic Farm Tiles.\n"
 "\n"
 "Thimble Reeds produce raw cellulose fiber that can be used in the production of <style=\"equipment\">Clothing</style> and "
 "textiles."
@@ -3220,12 +3231,15 @@ msgctxt "STRINGS.CREATURES.SPECIES.BASICFABRICMATERIALPLANT.DOMESTICATEDDESC"
 msgid "An aquatic <style=\"plant\">Plant</style> that produces raw fiber for clothing and textiles."
 msgstr ""
 
+# Thimbleは「指ぬき」のこと。
 #. STRINGS.CREATURES.SPECIES.BASICFABRICMATERIALPLANT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.BASICFABRICMATERIALPLANT.NAME"
 msgid "Thimble Reed"
-msgstr ""
+msgstr "シンブルリード"
 
 #. STRINGS.CREATURES.SPECIES.BASICFORAGEPLANTPLANTED.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.BASICFORAGEPLANTPLANTED.DESC"
 msgid ""
 "An edible parthenocarpic fruit that cannot reproduce in the wild.\n"
@@ -3237,14 +3251,21 @@ msgstr ""
 "一度だけ利用可能な<style=\"food\">食料</style>として収穫できます。"
 
 #. STRINGS.CREATURES.SPECIES.BASICFORAGEPLANTPLANTED.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.BASICFORAGEPLANTPLANTED.NAME"
 msgid "Buried Muckroot"
 msgstr "埋もれたムックルート"
 
 #. STRINGS.CREATURES.SPECIES.BASICSINGLEHARVESTPLANT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.BASICSINGLEHARVESTPLANT.DESC"
+#| msgid ""
+#| "A nutritious, hardy <style=\"plant\">Plant</style>, well-suited for domestication in Planter Boxes.\n"
+#| "\n"
+#| "It produces an edible grain that is suspiciously capable of movement."
 msgctxt "STRINGS.CREATURES.SPECIES.BASICSINGLEHARVESTPLANT.DESC"
 msgid ""
-"A nutritious, hardy <style=\"plant\">Plant</style>, well-suited for domestication in Planter Boxes.\n"
+"A nutritious, hardy <style=\"plant\">Plant</style> that can be grown domestically in Planter Boxes.\n"
 "\n"
 "It produces an edible grain that is suspiciously capable of movement."
 msgstr ""
@@ -3253,16 +3274,19 @@ msgstr ""
 "奇妙な動き回る食用可能な粒々を生産します。"
 
 #. STRINGS.CREATURES.SPECIES.BASICSINGLEHARVESTPLANT.DOMESTICATEDDESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.BASICSINGLEHARVESTPLANT.DOMESTICATEDDESC"
 msgid "A nutritious, fast-growing <style=\"plant\">Plant</style> that produces a strangely ambulatory edible grain."
 msgstr "栄養満点で成長速度の速い <style=\"plant\">植物</style> です。妙に動き回る食用可能な粒々を生産します。"
 
 #. STRINGS.CREATURES.SPECIES.BASICSINGLEHARVESTPLANT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.BASICSINGLEHARVESTPLANT.NAME"
 msgid "Mealwood"
 msgstr "ミールウッド"
 
 #. STRINGS.CREATURES.SPECIES.COLDBREATHER.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.COLDBREATHER.DESC"
 msgid ""
 "A fleshy, <style=\"heat\">Cold</style>-dwelling plant.\n"
@@ -3274,6 +3298,7 @@ msgstr ""
 "多孔質外膜を通して周囲の <style=\"heat\">熱</style> を吸収します。"
 
 #. STRINGS.CREATURES.SPECIES.COLDBREATHER.DOMESTICATEDDESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.COLDBREATHER.DOMESTICATEDDESC"
 msgid ""
 "A fleshy plant that thrives in <style=\"heat\">Cold</style> environments.\n"
@@ -3285,11 +3310,13 @@ msgstr ""
 "多孔質外膜を通して周囲の <style=\"heat\">熱</style> を吸収します。"
 
 #. STRINGS.CREATURES.SPECIES.COLDBREATHER.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.COLDBREATHER.NAME"
 msgid "Wheezewort"
 msgstr "ウィーズウォート"
 
 #. STRINGS.CREATURES.SPECIES.FLUT.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.FLUT.DESC"
 msgid ""
 "A naturally friendly and easily outsmarted aquatic prey species.\n"
@@ -3301,11 +3328,13 @@ msgstr ""
 "宇宙の全生物はパクが極めて美味であることを知っています。"
 
 #. STRINGS.CREATURES.SPECIES.FLUT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.FLUT.NAME"
 msgid "Pacu"
 msgstr "パクー"
 
 #. STRINGS.CREATURES.SPECIES.FLUTEGG.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.FLUTEGG.DESC"
 msgid ""
 "A tiny Pacu is nestled inside.\n"
@@ -3317,21 +3346,25 @@ msgstr ""
 "まだ孵化する準備ができていません。"
 
 #. STRINGS.CREATURES.SPECIES.FLUTEGG.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.FLUTEGG.NAME"
 msgid "Pacu Egg"
 msgstr "パクーの卵"
 
 #. STRINGS.CREATURES.SPECIES.GEYSER.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GEYSER.DESC"
 msgid "A highly pressurized geyser that periodically erupts, spraying boiling hot <style=\"liquid\">Water</style>."
 msgstr "定期的に熱い <style=\"liquid\">水</style> を噴き上げる、高圧の間欠泉です。"
 
 #. STRINGS.CREATURES.SPECIES.GEYSER.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GEYSER.NAME"
 msgid "Geyser"
 msgstr "間欠泉"
 
 #. STRINGS.CREATURES.SPECIES.GLOM.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GLOM.DESC"
 msgid ""
 "An agile, <style=\"disease\">Disease</style>-ridden invertebrate.\n"
@@ -3344,21 +3377,25 @@ msgstr ""
 "死体の腐敗した組織に引き寄せられ、<style=\"gas\">汚染酸素</style> を頻繁に排出します。"
 
 #. STRINGS.CREATURES.SPECIES.GLOM.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GLOM.NAME"
 msgid "Morb"
 msgstr "モーブ"
 
 #. STRINGS.CREATURES.SPECIES.GREEDYGREEN.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GREEDYGREEN.DESC"
 msgid "A rapidly growing, subterranean <style=\"plant\">Plant</style>."
 msgstr "急速に成長する、地下 <style=\"plant\">植物</style> です。"
 
 #. STRINGS.CREATURES.SPECIES.GREEDYGREEN.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GREEDYGREEN.NAME"
 msgid "Avari Vine"
 msgstr "アヴァリの蔦"
 
 #. STRINGS.CREATURES.SPECIES.GRONEHOG.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GRONEHOG.DESC"
 msgid ""
 "A skittish mammalian creature.\n"
@@ -3370,71 +3407,95 @@ msgstr ""
 "安全のため群れで行動します。"
 
 #. STRINGS.CREATURES.SPECIES.GRONEHOG.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GRONEHOG.NAME"
 msgid "Volgus"
 msgstr "ボルガス"
 
 #. STRINGS.CREATURES.SPECIES.GRONEHOGMOUND.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GRONEHOGMOUND.DESC"
 msgid "The communal nesting ground of a Volgus herd."
 msgstr "ボルガスの群れの住処です。"
 
 #. STRINGS.CREATURES.SPECIES.GRONEHOGMOUND.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.GRONEHOGMOUND.NAME"
 msgid "Volgus Den"
 msgstr "ボルガスの巣窟"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
+#| msgid ""
+#| "A nocturnal scavenging creature.\n"
+#| "\n"
+#| "It will consume any minerals within reach that fit into its wide mouth."
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
 msgid ""
 "A nocturnal scavenging creature.\n"
 "\n"
-"It will consume any minerals within reach that fit into its wide mouth."
+"It will consume any minerals within reach that fit into its wide mouth.\n"
+"\n"
+"Digging up Buried Objects may release a Hatch."
 msgstr ""
 "悪夢のような掃除屋です。\n"
 "\n"
 "その口に納まるものなら何でも食べてしまいます。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
 msgid "Hatch"
 msgstr "ハッチ"
 
 #. STRINGS.CREATURES.SPECIES.HAUNT.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.HAUNT.DESC"
 msgid ""
 "An uncanny being that sprinkles dark thoughts on Duplicants at night. Fears <style=\"light\">Light</style>, craves shadow."
 msgstr "夜になると複製人間に暗い考えを想起させる、捕らえどころのない存在です。<style=\"light\">光</style> を嫌い、影を好みます。"
 
 #. STRINGS.CREATURES.SPECIES.HAUNT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.HAUNT.NAME"
 msgid "Haunt"
 msgstr "ホーント"
 
 #. STRINGS.CREATURES.SPECIES.HEATBULB.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.HEATBULB.DESC"
 msgid "A temperature reactive, subterranean <style=\"plant\">Plant</style>."
 msgstr "温度に反応する、地下 <style=\"plant\">植物</style> です。"
 
 #. STRINGS.CREATURES.SPECIES.HEATBULB.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.HEATBULB.NAME"
 msgid "Fervine"
 msgstr "ファーヴァイン"
 
 #. STRINGS.CREATURES.SPECIES.HEATBULBSEED.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.HEATBULBSEED.DESC"
 msgid "A temperature reactive, subterranean <style=\"plant\">Plant</style>."
 msgstr "温度に反応する、地下 <style=\"plant\">植物</style> です。"
 
 #. STRINGS.CREATURES.SPECIES.HEATBULBSEED.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.HEATBULBSEED.NAME"
 msgid "Fervine Bulb"
 msgstr "ファーヴァインの球根"
 
 #. STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.DESC"
+#| msgid ""
+#| "A large, chlorine-dwelling <style=\"plant\">Plant</style> that can be dug up and domesticated using Planter Boxes.\n"
+#| "\n"
+#| "It grows inedible buds that emit toxic hydrogen gas."
 msgctxt "STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.DESC"
 msgid ""
-"A large, chlorine-dwelling <style=\"plant\">Plant</style> that can be dug up and domesticated using Planter Boxes.\n"
+"A large, chlorine-dwelling <style=\"plant\">Plant</style> that can be grown domestically in Planter Boxes.\n"
 "\n"
 "It grows inedible buds that emit toxic hydrogen gas."
 msgstr ""
@@ -3443,42 +3504,57 @@ msgstr ""
 "毒性のある塩素ガスを産出する球根を生み出します。"
 
 #. STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.DOMESTICATEDDESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.DOMESTICATEDDESC"
 msgid "A large, chlorine-dwelling <style=\"plant\">Plant</style> that grows inedible buds which emit toxic hydrogen gas."
 msgstr "巨大な、塩素下に生息する <style=\"plant\">植物</style> で、毒性のある塩素ガスを産出する球根を生み出します。"
 
 #. STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.NAME"
 msgid "Palmera Tree"
 msgstr "パルメラの木"
 
 #. STRINGS.CREATURES.SPECIES.MYSTERYEGG.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.MYSTERYEGG.DESC"
 msgid "What's growing inside? Something nice? Something mean?"
 msgstr "何の卵？素敵なもの？大事なもの？"
 
 #. STRINGS.CREATURES.SPECIES.MYSTERYEGG.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.MYSTERYEGG.NAME"
 msgid "Mysterious Egg"
 msgstr "奇妙な卵"
 
 #. STRINGS.CREATURES.SPECIES.OILSPOUT.DESC
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.OILSPOUT.DESC"
 msgid "A rocky vent that spouts crude oil."
 msgstr "原油を吹き出す、ごつごつした噴出口です"
 
 #. STRINGS.CREATURES.SPECIES.OILSPOUT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.OILSPOUT.NAME"
 msgid "Oil Spout"
 msgstr "油田噴出口"
 
 #. STRINGS.CREATURES.SPECIES.PRICKLEFLOWER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.DESC"
+#| msgid ""
+#| "A large, chlorine-dwelling <style=\"plant\">Plant</style> that can be dug up and domesticated using Planter Boxes.\n"
+#| "\n"
+#| "It grows inedible buds that emit toxic hydrogen gas."
 msgctxt "STRINGS.CREATURES.SPECIES.PRICKLEFLOWER.DESC"
 msgid ""
-"A barbed, fruiting <style=\"plant\">Plant</style> that can be dug up and domesticated using Planter Boxes.\n"
+"A barbed, fruiting <style=\"plant\">Plant</style> that can be grown domestically in Planter Boxes.\n"
 "\n"
 "It produces an edible bud, the growth of which coincides with the cycles of the colony."
 msgstr ""
+"巨大な、塩素下に生息する <style=\"plant\">植物</style> で、掘り出してプランターで栽培することができます。\n"
+"\n"
+"毒性のある塩素ガスを産出する球根を生み出します。"
 
 #. STRINGS.CREATURES.SPECIES.PRICKLEFLOWER.DOMESTICATEDDESC
 msgctxt "STRINGS.CREATURES.SPECIES.PRICKLEFLOWER.DOMESTICATEDDESC"
@@ -3486,6 +3562,7 @@ msgid "A barbed, fruiting <style=\"plant\">Plant</style> that produces an edible
 msgstr ""
 
 #. STRINGS.CREATURES.SPECIES.PRICKLEFLOWER.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.PRICKLEFLOWER.NAME"
 msgid "Bristle Blossom"
 msgstr "ブリッスルブロッサム"
@@ -3493,7 +3570,7 @@ msgstr "ブリッスルブロッサム"
 #. STRINGS.CREATURES.SPECIES.PRICKLEGRASS.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.PRICKLEGRASS.DESC"
 msgid ""
-"A prickly, invasive weed that can be dug up and domesticated using Flower Vases.\n"
+"A prickly, invasive weed that can be grown domestically in Flower Vases.\n"
 "\n"
 "Some find it quite pleasing to the eye."
 msgstr ""
@@ -3504,6 +3581,7 @@ msgid "A prickly, invasive weed with an oddly aesthetic allure."
 msgstr ""
 
 #. STRINGS.CREATURES.SPECIES.PRICKLEGRASS.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.PRICKLEGRASS.NAME"
 msgid "Bristle Briar"
 msgstr "ブリッスルの茨"
@@ -3514,6 +3592,7 @@ msgid "A rocky vent that spouts <style=\"gas\">Propane</style>."
 msgstr ""
 
 #. STRINGS.CREATURES.SPECIES.PROPANESPOUT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.PROPANESPOUT.NAME"
 msgid "Propane Spout"
 msgstr "プロパン噴出口"
@@ -3527,6 +3606,7 @@ msgid ""
 msgstr ""
 
 #. STRINGS.CREATURES.SPECIES.PUFT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
 msgid "Puft"
 msgstr "パフ"
@@ -3534,7 +3614,10 @@ msgstr "パフ"
 #. STRINGS.CREATURES.SPECIES.SEEDS.BASICFABRICMATERIALPLANT.DESC
 #, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.BASICFABRICMATERIALPLANT.DESC"
-msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Thimble Reed</style>."
+msgid ""
+"The <style=\"seed\">Seed</style> of a <style=\"plant\">Thimble Reed</style>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Thimble Reed Seed."
 msgstr "この <style=\"plant\">植物</style> を <style=\"seed\">種子</style> に変換します"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.BASICFABRICMATERIALPLANT.NAME
@@ -3546,20 +3629,31 @@ msgstr "ミールウッドの種"
 #. STRINGS.CREATURES.SPECIES.SEEDS.BASICSINGLEHARVESTPLANT.DESC
 #, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.BASICSINGLEHARVESTPLANT.DESC"
-msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Mealwood</style>."
+msgid ""
+"The <style=\"seed\">Seed</style> of a <style=\"plant\">Mealwood</style>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Mealwood Seed."
 msgstr "この <style=\"plant\">植物</style> を <style=\"seed\">種子</style> に変換します"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.BASICSINGLEHARVESTPLANT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.BASICSINGLEHARVESTPLANT.NAME"
 msgid "Mealwood Seed"
 msgstr "ミールウッドの種子"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.COLDBREATHER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.COLDBREATHER.DESC"
+#| msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Wheezewort</style>."
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.COLDBREATHER.DESC"
-msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Wheezewort</style>."
+msgid ""
+"The <style=\"seed\">Seed</style> of a <style=\"plant\">Wheezewort</style>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Wheezewort Seed."
 msgstr "<style=\"plant\">ウィーズウォート</style> の <style=\"seed\">種子</style> です。"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.COLDBREATHER.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.COLDBREATHER.NAME"
 msgid "Wheezewort Seed"
 msgstr "ウィーズウォートの種子"
@@ -3567,30 +3661,48 @@ msgstr "ウィーズウォートの種子"
 #. STRINGS.CREATURES.SPECIES.SEEDS.JUNGLEGASPLANT.DESC
 #, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.JUNGLEGASPLANT.DESC"
-msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Palmera Tree</style>."
+msgid ""
+"The <style=\"seed\">Seed</style> of a <style=\"plant\">Palmera Tree</style>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Palmera Seed."
 msgstr "この <style=\"plant\">植物</style> を <style=\"seed\">種子</style> に変換します"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.JUNGLEGASPLANT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.JUNGLEGASPLANT.NAME"
 msgid "Palmera Seed"
 msgstr "パルメラの実"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEFLOWER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEFLOWER.DESC"
+#| msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Bristle Blossom</style>."
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEFLOWER.DESC"
-msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Bristle Blossom</style>."
+msgid ""
+"The <style=\"seed\">Seed</style> of a <style=\"plant\">Bristle Blossom</style>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Blossom Seed."
 msgstr "<style=\"plant\">ブリッスルブロッサム</style> の <style=\"seed\">種子</style> です。"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEFLOWER.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEFLOWER.NAME"
 msgid "Blossom Seed"
 msgstr "ブロッサムの種子"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEGRASS.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEGRASS.DESC"
+#| msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Bristle Briar</style>."
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEGRASS.DESC"
-msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Bristle Briar</style>."
+msgid ""
+"The <style=\"seed\">Seed</style> of a <style=\"plant\">Bristle Briar</style>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Briar Seed."
 msgstr "<style=\"plant\">ブリッスルの茨</style> の <style=\"seed\">種子</style> です。"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEGRASS.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEGRASS.NAME"
 msgid "Briar Seed"
 msgstr "いばらの種子"
@@ -3598,10 +3710,14 @@ msgstr "いばらの種子"
 #. STRINGS.CREATURES.SPECIES.SEEDS.SWAMPLILY.DESC
 #, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SWAMPLILY.DESC"
-msgid "The <style=\"seed\">Seed</style> of a <style=\"plant\">Swamp Lily</style>."
+msgid ""
+"The <style=\"seed\">Seed</style> of a <style=\"plant\">Swamp Lily</style>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Swamp Lily Seed."
 msgstr "この <style=\"plant\">植物</style> を <style=\"seed\">種子</style> に変換します"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.SWAMPLILY.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SWAMPLILY.NAME"
 msgid "Swamp Lily Seed"
 msgstr "クリナムの種子"
@@ -3615,6 +3731,7 @@ msgid ""
 msgstr ""
 
 #. STRINGS.CREATURES.SPECIES.SHOCKWORM.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SHOCKWORM.NAME"
 msgid "Shockworm"
 msgstr "ショックワーム"
@@ -3625,17 +3742,27 @@ msgid "A rocky vent that spouts <style=\"gas\">Steam</style>."
 msgstr ""
 
 #. STRINGS.CREATURES.SPECIES.STEAMSPOUT.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.STEAMSPOUT.NAME"
 msgid "Steam Spout"
 msgstr "蒸気噴出口"
 
 #. STRINGS.CREATURES.SPECIES.SWAMPLILY.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.DESC"
+#| msgid ""
+#| "A large, chlorine-dwelling <style=\"plant\">Plant</style> that can be dug up and domesticated using Planter Boxes.\n"
+#| "\n"
+#| "It grows inedible buds that emit toxic hydrogen gas."
 msgctxt "STRINGS.CREATURES.SPECIES.SWAMPLILY.DESC"
 msgid ""
-"An elegant, warm climate <style=\"plant\">Plant</style> that can be dug up and domesticated using Planter Boxes.\n"
+"An elegant, warm climate <style=\"plant\">Plant</style> that can be grown domestically in Planter Boxes.\n"
 "\n"
 "It produces long, fragrant leaves with natural medicinal properties."
 msgstr ""
+"巨大な、塩素下に生息する <style=\"plant\">植物</style> で、掘り出してプランターで栽培することができます。\n"
+"\n"
+"毒性のある塩素ガスを産出する球根を生み出します。"
 
 #. STRINGS.CREATURES.SPECIES.SWAMPLILY.DOMESTICATEDDESC
 msgctxt "STRINGS.CREATURES.SPECIES.SWAMPLILY.DOMESTICATEDDESC"
@@ -3644,6 +3771,7 @@ msgid ""
 msgstr ""
 
 #. STRINGS.CREATURES.SPECIES.SWAMPLILY.NAME
+#, fuzzy
 msgctxt "STRINGS.CREATURES.SPECIES.SWAMPLILY.NAME"
 msgid "Swamp Lily"
 msgstr "クリナム"
@@ -3732,16 +3860,14 @@ msgid "The rate at which  <style=\"heat\">Heat</style> passes through this objec
 msgstr ""
 
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.NAME
-#, fuzzy
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.NAME"
-msgid "Atmospheric Pressure Too Low"
-msgstr "気圧低下"
+msgid "Low Atmospheric Pressure"
+msgstr "気圧不足"
 
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP"
-msgid "A minimum pressure of {TargetPressure} is required to thrive"
-msgstr "最低でも {TargetPressure} 必要です"
+msgid "This plant requires a minimum pressure of {TargetPressure}"
+msgstr "この植物は最低でも {TargetPressure} 気圧が必要です"
 
 #. STRINGS.CREATURES.STATUSITEMS.BARREN.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BARREN.NAME"
@@ -3749,10 +3875,9 @@ msgid "Barren"
 msgstr "不毛"
 
 #. STRINGS.CREATURES.STATUSITEMS.BARREN.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BARREN.TOOLTIP"
-msgid "This <style=\"plant\">Plant</style> cannot produce any more <style=\"seed\">Seeds</style>"
-msgstr "この <style=\"plant\">植物</style> はこれ以上 <style=\"seed\">種子</style> を生産できません"
+msgid "This plant cannot produce any more seeds"
+msgstr "この植物はもう種を生産できません"
 
 #. STRINGS.CREATURES.STATUSITEMS.BREATH.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BREATH.NAME"
@@ -3786,19 +3911,19 @@ msgstr "この生物は隠れようとしています"
 
 #. STRINGS.CREATURES.STATUSITEMS.COLD.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.NAME"
-msgid "Chilly environment"
-msgstr "環境が寒すぎる"
+msgid "Chilly surroundings"
+msgstr "周囲が寒すぎる"
 
 #. STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP"
 msgid ""
 "This creature cannot retain enough heat in this environment to regulate its internal temperature.\n"
 "\n"
-"It will survive best in an environment between {0} and {1}."
+"It prefers environments between {0} and {1}."
 msgstr ""
 "この生物は、この環境で内部温度を維持するのに十分な熱を保てません。\n"
 "\n"
-"{0} と {1} の間にある環境で生存することができます。"
+"最適な環境は {0} と {1} の間です。"
 
 #. STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.NAME"
@@ -3857,8 +3982,8 @@ msgstr "溺れている"
 
 #. STRINGS.CREATURES.STATUSITEMS.DROWNING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DROWNING.TOOLTIP"
-msgid "Insufficient <style=\"oxygen\">Oxygen</style>"
-msgstr "<style=\"oxygen\">酸素</style>不足です"
+msgid "Insufficient oxygen"
+msgstr "酸素が不足しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.NAME"
@@ -3867,8 +3992,8 @@ msgstr "干上がっている"
 
 #. STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.TOOLTIP"
-msgid "This <style=\"plant\">Plant</style> must be submerged in <style=\"liquid\">Liquid</style> to grow"
-msgstr "この<style=\"plant\">植物</style>は成長のために<style=\"liquid\">液体</style>下に水没させる必要があります。"
+msgid "This plant must be submerged in liquid to grow"
+msgstr "この植物を育てるには液体の中に沈めないといけません"
 
 #. STRINGS.CREATURES.STATUSITEMS.EATING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EATING.NAME"
@@ -3903,12 +4028,12 @@ msgstr "この生物は嵌まっているため、掘り出してやらないと
 #. STRINGS.CREATURES.STATUSITEMS.EXHALING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EXHALING.NAME"
 msgid "Exhaling"
-msgstr ""
+msgstr "はき出している"
 
 #. STRINGS.CREATURES.STATUSITEMS.EXHALING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EXHALING.TOOLTIP"
 msgid "Expelling gas from lungsac"
-msgstr ""
+msgstr "肺の袋から気体をはき出しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.FALLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FALLING.NAME"
@@ -3937,7 +4062,7 @@ msgstr ""
 #. STRINGS.CREATURES.STATUSITEMS.FRESH.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FRESH.NAME"
 msgid "Fresh {RotPercentage}"
-msgstr "鮮度 {RotPercentage}"
+msgstr "新鮮 {RotPercentage}"
 
 #. STRINGS.CREATURES.STATUSITEMS.FRESH.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FRESH.TOOLTIP"
@@ -3951,13 +4076,13 @@ msgstr "生育中 ({PercentGrow}%)"
 
 #. STRINGS.CREATURES.STATUSITEMS.GROWING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.GROWING.TOOLTIP"
-msgid "This <style=\"plant\">Plant</style> is thriving in its current conditions"
-msgstr "この <style=\"plant\">植物</style> は現在の状況下で繁茂しています。"
+msgid "This plant is thriving in its current conditions"
+msgstr "この植物は現在の状況下で繁茂しています。"
 
 #. STRINGS.CREATURES.STATUSITEMS.HARVESTSREMAINING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HARVESTSREMAINING.NAME"
 msgid "Harvests Remaining: {HarvestsRemaining}"
-msgstr "収穫回数残り: {HarvestsRemaining}"
+msgstr "収穫回数残り: {HarvestsRemaining} 回"
 
 #. STRINGS.CREATURES.STATUSITEMS.HARVESTSREMAINING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HARVESTSREMAINING.TOOLTIP"
@@ -3986,24 +4111,24 @@ msgstr "現在の負傷度合い: {healthStateTooltip}"
 
 #. STRINGS.CREATURES.STATUSITEMS.HOT.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT.NAME"
-msgid "Toasty environment"
-msgstr "環境が暑すぎる"
+msgid "Toasty surroundings"
+msgstr "周囲が暑すぎる"
 
 #. STRINGS.CREATURES.STATUSITEMS.HOT.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT.TOOLTIP"
 msgid ""
 "This creature cannot let off enough heat in this environment to regulate its internal temperature.\n"
 "\n"
-"It will survive best in an environment between {0} and {1}."
+"It prefers environments between {0} and {1}."
 msgstr ""
 "この生物は、この環境で内部温度を維持するのに十分な熱を放てません。\n"
 "\n"
-"{0} と {1} の間にある環境で生存することができます。"
+"最適な環境は {0} と {1} の間です。"
 
 #. STRINGS.CREATURES.STATUSITEMS.HYPERTHERMIA.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HYPERTHERMIA.NAME"
 msgid "Overheating"
-msgstr "強烈に暑い"
+msgstr "致命的に暑い"
 
 #. STRINGS.CREATURES.STATUSITEMS.HYPERTHERMIA.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HYPERTHERMIA.TOOLTIP"
@@ -4013,7 +4138,7 @@ msgstr "体温が危険なほどまで増加しています ({InternalTemperatur
 #. STRINGS.CREATURES.STATUSITEMS.HYPOTHERMIA.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HYPOTHERMIA.NAME"
 msgid "Freezing"
-msgstr "強烈に寒い"
+msgstr "致命的に寒い"
 
 #. STRINGS.CREATURES.STATUSITEMS.HYPOTHERMIA.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HYPOTHERMIA.TOOLTIP"
@@ -4033,88 +4158,82 @@ msgstr "人生を満喫中さ、わかるだろ？"
 #. STRINGS.CREATURES.STATUSITEMS.INCUBATING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.INCUBATING.NAME"
 msgid "Incubating"
-msgstr ""
+msgstr "卵をあたためている"
 
 #. STRINGS.CREATURES.STATUSITEMS.INCUBATING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.INCUBATING.TOOLTIP"
 msgid "The creature inside is gestating comfortably"
-msgstr ""
+msgstr "中の生物が妊娠を楽しんでいます"
 
 #. STRINGS.CREATURES.STATUSITEMS.LAYINGANEGG.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LAYINGANEGG.NAME"
 msgid "Laying an egg"
-msgstr "産卵"
+msgstr "産卵中"
 
 #. STRINGS.CREATURES.STATUSITEMS.LAYINGANEGG.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LAYINGANEGG.TOOLTIP"
 msgid "This creature is participating in the miracle of life"
-msgstr ""
+msgstr "この生物は今まさに生命の奇跡を感じています"
 
 #. STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.NAME"
 msgid "Foraging"
-msgstr ""
+msgstr "食い漁っている"
 
 #. STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.TOOLTIP"
 msgid "This creature is looking for food"
-msgstr "見回り中"
+msgstr "この生物は食べ物を探しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.NAME
-#, fuzzy
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.NAME"
 msgid "Requires Fertilizer"
-msgstr "肥料"
+msgstr "肥料が必要"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP"
-msgid "This <style=\"plant\">Plant</style> needs additional nutrients to grow"
-msgstr ""
+msgid "This plant needs additional nutrients to grow"
+msgstr "この植物が育つにはもっと栄養が必要です"
 
 #. STRINGS.CREATURES.STATUSITEMS.READYFORHARVEST.NAME
-#, fuzzy
 msgctxt "STRINGS.CREATURES.STATUSITEMS.READYFORHARVEST.NAME"
 msgid "Ready for harvest"
-msgstr "収穫"
+msgstr "収穫可能"
 
 #. STRINGS.CREATURES.STATUSITEMS.READYFORHARVEST.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.READYFORHARVEST.TOOLTIP"
-msgid "This <style=\"plant\">Plant</style> can be harvested for materials"
-msgstr ""
+msgid "This plant can be harvested for materials"
+msgstr "この植物は収穫して素材にすることが可能です"
 
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.NAME"
 msgid "Refrigerated"
-msgstr ""
+msgstr "冷蔵状態"
 
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.TOOLTIP"
 msgid "Proper storage is slowing the decay of this food"
-msgstr ""
+msgstr "適切な貯蔵をしているため食糧が腐りにくくなっています"
 
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.NAME
-#, fuzzy
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.NAME"
 msgid "Scalding"
-msgstr "<style=\"gas\">気体</style>になるまで熱せられた、水 (H2O) です。"
+msgstr "火傷を負っている"
 
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_NAME
-#, fuzzy
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_NAME"
 msgid "Scalding"
-msgstr "<style=\"gas\">気体</style>になるまで熱せられた、水 (H2O) です。"
+msgstr "ヤケド！"
 
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_TOOLTIP"
 msgid "Scalding temperatures are hurting these Duplicants:"
-msgstr ""
+msgstr "これらの複製人間が高温によって火傷を負っています"
 
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.TOOLTIP"
 msgid "Current external temperature is perilously high ({ExternalTemperature} / {TargetTemperature})"
-msgstr "外部温度上限超過 ({ExternalTemperature} / {TargetTemperature})"
+msgstr "外部温度が危険なほどまで高温です ({ExternalTemperature} / {TargetTemperature})"
 
 #. STRINGS.CREATURES.STATUSITEMS.SLEEPING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SLEEPING.NAME"
@@ -4159,7 +4278,7 @@ msgstr "周囲環境が<style=\"food\">食料</style>の腐敗を防いでいま
 #. STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME"
 msgid "Struggling"
-msgstr "じたばた"
+msgstr "もがいている"
 
 #. STRINGS.CREATURES.STATUSITEMS.STRUGGLING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STRUGGLING.TOOLTIP"
@@ -4199,20 +4318,22 @@ msgstr "<style=\"heat\">{RotTemperature}</style> より高い温度では、食�
 #. STRINGS.CREATURES.STATUSITEMS.WILTING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WILTING.NAME"
 msgid "Stifled"
-msgstr "成長抑制"
+msgstr "成長停止"
 
 #. STRINGS.CREATURES.STATUSITEMS.WILTING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WILTING.TOOLTIP"
-msgid "Current conditions prevent this <style=\"plant\">Plant</style> from growing further"
-msgstr "現在の状況はこの<style=\"plant\">植物</style>の成長を妨げています。"
+msgid "Current conditions prevent this plant from growing further"
+msgstr "現在の状況はこの植物の成長を妨げています。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.DESC"
 msgid ""
 "The Air Consumption attribute determines how much <style=\"oxygen\">Oxygen</style> per minute a Duplicant requires to live."
 msgstr "空気消費量は複製人間の生存に必要な<style=\"oxygen\">酸素</style>の量を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.NAME"
 msgid "Air Consumption Rate"
 msgstr "空気消費量"
@@ -4223,41 +4344,49 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.ART.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ART.DESC"
 msgid "Creativity affects the speed and quality of a Duplicant's artistic creations."
 msgstr "創造は複製人間が作る芸術作品の質と制作期間に影響します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.ART.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ART.NAME"
 msgid "Creativity"
 msgstr "創造"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.ART.PROFESSION_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ART.PROFESSION_NAME"
 msgid "Artist"
 msgstr "芸術家"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.ART.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ART.SPEEDMODIFIER"
 msgid "$value% Decorating Speed"
 msgstr "制作速度 $value%"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.ATHLETICS.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ATHLETICS.DESC"
 msgid "The Athletics attribute determines a Duplicant's movement speed."
 msgstr "運動属性は複製人間の移動速度を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.ATHLETICS.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ATHLETICS.NAME"
 msgid "Athletics"
 msgstr "運動"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.ATHLETICS.PROFESSION_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ATHLETICS.PROFESSION_NAME"
 msgid "Runner"
 msgstr "ランナー"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.ATHLETICS.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ATHLETICS.SPEEDMODIFIER"
 msgid "$value% Movement Speed"
 msgstr "移動速度 $value%"
@@ -4268,6 +4397,7 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.BLADDERDELTA.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BLADDERDELTA.NAME"
 msgid "Bladder Change"
 msgstr "膀胱変動量"
@@ -4278,116 +4408,139 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.CALORIESDELTA.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.CALORIESDELTA.NAME"
 msgid "Calories Burn Rate"
 msgstr "カロリー燃焼率"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.CONSTRUCTION.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.CONSTRUCTION.DESC"
 msgid "The Construction attribute determines a Duplicant's building speed."
 msgstr "建設属性は複製人間の建設速度を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.CONSTRUCTION.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.CONSTRUCTION.NAME"
 msgid "Construction"
 msgstr "建設"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.CONSTRUCTION.PROFESSION_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.CONSTRUCTION.PROFESSION_NAME"
 msgid "Architect"
 msgstr "建設家"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.CONSTRUCTION.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.CONSTRUCTION.SPEEDMODIFIER"
 msgid "$value% Construction Speed"
 msgstr "建設速度 $value%"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.COOKING.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.COOKING.DESC"
 msgid "The Cooking attribute determines a Duplicant's <style=\"food\">Food</style> production speed."
 msgstr "料理属性は複製人間の<style=\"food\">食料</style>生産速度を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.COOKING.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.COOKING.NAME"
 msgid "Cooking"
 msgstr "料理"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.COOKING.PROFESSION_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.COOKING.PROFESSION_NAME"
 msgid "Chef"
 msgstr "シェフ"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.COOKING.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.COOKING.SPEEDMODIFIER"
 msgid "$value% Cooking Speed"
 msgstr "料理速度 $value%"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECOR.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOR.DESC"
 msgid "<style=\"decor\">Decor</style> affects a Duplicant's Room Opinion."
 msgstr "<style=\"decor\">装飾</style> は複製人間の部屋の好みに影響します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECOR.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOR.NAME"
 msgid "Decor"
 msgstr "装飾"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.DESC"
 msgid "Not meeting a Duplicant's expectations increases their <style=\"stress\">Stress</style>."
 msgstr "複製人間の期待に満たない場合、<style=\"stress\">ストレス</style>上昇の原因となります。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.NAME"
 msgid "Decor Expectation"
 msgstr "装飾期待値"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECORRADIUS.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECORRADIUS.DESC"
 msgid "Distance of the <style=\"decor\">Decor</style> effect."
 msgstr "<style=\"decor\">装飾</style> 効果の影響範囲です。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECORRADIUS.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECORRADIUS.NAME"
 msgid "Decor Radius"
 msgstr "装飾範囲"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DIGGING.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DIGGING.DESC"
 msgid "The Digging attribute determines a Duplicant's mining speed."
 msgstr "採掘属性は複製人間の採掘速度を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DIGGING.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DIGGING.NAME"
 msgid "Digging"
 msgstr "採掘"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DIGGING.PROFESSION_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DIGGING.PROFESSION_NAME"
 msgid "Miner"
 msgstr "坑夫"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DIGGING.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DIGGING.SPEEDMODIFIER"
 msgid "$value% Digging Speed"
 msgstr "採掘速度 $value%"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.FATALTEMPERATURE.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FATALTEMPERATURE.DESC"
 msgid "A building at Meltdown <style=\"heat\">Temperature</style> will lose functionality and require repairs"
 msgstr "メルトダウンする <style=\"heat\">温度</style> に達した設備は機能しなくなり、修理が必要となります。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.FATALTEMPERATURE.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FATALTEMPERATURE.NAME"
 msgid "Meltdown Temperature"
 msgstr "メルトダウン温度"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.HYGIENE.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HYGIENE.DESC"
 msgid "<style=\"hygiene\">Hygiene</style> affects a Duplicant's sense of cleanliness."
 msgstr "<style=\"hygiene\">衛生</style> は複製人間のきれい好きに影響します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.HYGIENE.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HYGIENE.NAME"
 msgid "Hygiene"
 msgstr "衛生"
@@ -4398,11 +4551,13 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.DESC"
 msgid "The Insulation attribute determines how much a Duplicant's temperature fluctuates with their environment's."
 msgstr "断熱属性は複製人間が周囲の気温変動にどれだけ耐えられるかを決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.NAME"
 msgid "Insulation"
 msgstr "断熱"
@@ -4413,51 +4568,61 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.SPEEDMODIFIER"
 msgid "$value% Temperature Retention"
 msgstr "断熱効率 $value%"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.DESC"
 msgid "The Learning attribute determines a Duplicant's skill training and <style=\"research\">Research</style> effectiveness."
 msgstr "学習属性は複製人間のスキル育成や <style=\"research\">研究</style 効率を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.NAME"
 msgid "Learning"
 msgstr "学習"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.PROFESSION_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.PROFESSION_NAME"
 msgid "Scientist"
 msgstr "科学者"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.RESEARCHPOINTS
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.RESEARCHPOINTS"
 msgid "$value Research Points Per Day"
 msgstr "研究進捗/日 $value"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.SPEEDMODIFIER"
 msgid "$value% Skill Leveling"
 msgstr "スキルレベル $value%"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.DESC"
 msgid "The Tinkering attribute determines a Duplicant's efficiency when operating machines."
 msgstr "機械操作属性は複製人間が機械をどれだけ上手く操作できるかを決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.NAME"
 msgid "Tinkering"
 msgstr "機械操作"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.PROFESSION_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.PROFESSION_NAME"
 msgid "Technician"
 msgstr "技術者"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.SPEEDMODIFIER"
 msgid "$value% Tinkering Speed"
 msgstr "機械操作効率 $value%"
@@ -4468,6 +4633,7 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MAXUNDERWATERTRAVELCOST.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MAXUNDERWATERTRAVELCOST.NAME"
 msgid "Underwater Movement"
 msgstr "水中移動速度"
@@ -4478,40 +4644,59 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MEDICAL.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MEDICAL.DESC"
 msgid ""
 "The Medicine attribute determines a Duplicant's <style=\"disease\">Disease</style> resistance and ability to heal after injury."
 msgstr "医療属性は複製人間の <style=\"disease\">病原体</style> 耐性および回復力を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MEDICAL.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MEDICAL.NAME"
 msgid "Medicine"
 msgstr "医療"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MEDICAL.PROFESSION_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MEDICAL.PROFESSION_NAME"
 msgid "Physician"
 msgstr "医者"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MEDICAL.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MEDICAL.SPEEDMODIFIER"
 msgid "$value% Disease Resistance"
 msgstr "病原体耐性 $value%"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.OVERHEATTEMPERATURE.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.OVERHEATTEMPERATURE.DESC"
-msgid "A building at Overheat <style=\"heat\">Temperature</style> will begin taking damage and will meltdown if not cooled"
-msgstr "オーバーヒートする <style=\"heat\">温度</style> に達した設備はダメージを受けはじめ、放置するとメルトダウンを起こします"
+msgid "A building at Overheat <style=\"heat\">Temperature</style> begins taking damage and will meltdown if not cooled"
+msgstr "オーバーヒートする <style=\"heat\">温度</style> に達した設備はダメージを受けはじめ、冷却しないとメルトダウンを起こします"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.OVERHEATTEMPERATURE.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.OVERHEATTEMPERATURE.NAME"
 msgid "Overheat Temperature"
 msgstr "オーバーヒート温度"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.PROFESSION_DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.PROFESSION_DESC"
 msgid "This Duplicant is most proficient at {0}"
 msgstr "この複製人間が最も得意とするところは {0} です"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.SNEEZYNESS.DESC
+#, fuzzy
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SNEEZYNESS.DESC"
+msgid "The Sneeziness attribute determines how frequently a Duplicant sneezes."
+msgstr "くしゃみ特性は複製人間のくしゃみ頻度を決定します。"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.SNEEZYNESS.NAME
+#, fuzzy
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SNEEZYNESS.NAME"
+msgid "Sneeziness"
+msgstr "くしゃみ"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.STAMINADELTA.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STAMINADELTA.DESC"
@@ -4519,36 +4704,43 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.STAMINADELTA.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STAMINADELTA.NAME"
 msgid "Stamina Change"
 msgstr "スタミナ変動量"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.DESC"
 msgid "The Strength attribute determines a Duplicant's carrying capacity and combat effectiveness."
 msgstr "腕力属性は複製人間の運搬能力や戦闘力を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.NAME"
 msgid "Strength"
 msgstr "腕力"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.PROFESSION_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.PROFESSION_NAME"
 msgid "Body Builder"
 msgstr "ボディビルダー"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.SPEEDMODIFIER
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.SPEEDMODIFIER"
 msgid "$value% Carrying Weight"
 msgstr "運搬重量 $value%"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.STRESSDELTA.DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STRESSDELTA.DESC"
 msgid "Modifies the rate at which a Duplicant's <style=\"stress\">Stress</style> changes."
 msgstr "複製人間が受ける <style=\"stress\">ストレス</style> の変動量です。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.STRESSDELTA.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STRESSDELTA.NAME"
 msgid "Stress Change"
 msgstr "ストレス変動量"
@@ -4565,11 +4757,15 @@ msgid "Barrier thickness dampens the rate of <style=\"heat\">Heat</style> conduc
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.TOILETEFFICIENCY.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.TOILETEFFICIENCY.DESC"
+#| msgid "Modifies the speed with which a Duplicant completes their \"personal business\"."
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.TOILETEFFICIENCY.DESC"
-msgid "Modifies the speed with which a Duplicant completes their \"personal business\"."
+msgid "Modifies the speed at which a Duplicant finishes up their \"business\"."
 msgstr "複製人間が用を足す速度です。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.TOILETEFFICIENCY.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.TOILETEFFICIENCY.NAME"
 msgid "Bladder Efficiency"
 msgstr "膀胱効率"
@@ -4585,25 +4781,27 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.TOXICITYDELTA.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.TOXICITYDELTA.NAME"
 msgid "Toxicity Change"
 msgstr "毒性変動量"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.UNPROFESSIONAL_DESC
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.UNPROFESSIONAL_DESC"
 msgid "This Duplicant has no discernible skills to speak of"
 msgstr "この複製人間は特にこれが得意というものはありません"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.UNPROFESSIONAL_NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.UNPROFESSIONAL_NAME"
 msgid "Lump"
 msgstr "間抜け"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.ART.DESC
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.ART.DESC"
 msgid "Sculpt or paint art pieces to improve colony decor."
-msgstr "彫刻や絵画はコロニーの <style=\"decor\">装飾</style> を改善します。"
+msgstr "彫刻や絵画でコロニーの装飾を改善します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.ART.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.ART.NAME"
@@ -4621,10 +4819,9 @@ msgid "Build"
 msgstr "建設"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.COMBAT.DESC
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.COMBAT.DESC"
 msgid "Attack wild creatures."
-msgstr "攻撃"
+msgstr "野生生物に攻撃します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.COMBAT.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.COMBAT.NAME"
@@ -4634,7 +4831,7 @@ msgstr "戦闘"
 #. STRINGS.DUPLICANTS.CHOREGROUPS.COMPOST.DESC
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.COMPOST.DESC"
 msgid "Work composts to produce fertilizer."
-msgstr ""
+msgstr "肥溜めで肥料を生産する作業をします。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.COMPOST.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.COMPOST.NAME"
@@ -4644,7 +4841,7 @@ msgstr "堆肥作成"
 #. STRINGS.DUPLICANTS.CHOREGROUPS.COOK.DESC
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.COOK.DESC"
 msgid "Produce food for Duplicants with food preparation buildings."
-msgstr ""
+msgstr "複製人間たちのために食糧加工設備で食糧を生産します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.COOK.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.COOK.NAME"
@@ -4654,7 +4851,7 @@ msgstr "料理"
 #. STRINGS.DUPLICANTS.CHOREGROUPS.DELIVER.DESC
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.DELIVER.DESC"
 msgid "Transport materials to critical utility buildings and high priority storage."
-msgstr ""
+msgstr "素材を重要な便利設備、または優先度の高い格納庫に配達します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.DELIVER.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.DELIVER.NAME"
@@ -4662,10 +4859,9 @@ msgid "Deliver"
 msgstr "配達"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.DIG.DESC
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.DIG.DESC"
 msgid "Dig out raw resources."
-msgstr "これを掘り起こします"
+msgstr "原石素材を掘り起こします。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.DIG.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.DIG.NAME"
@@ -4675,53 +4871,57 @@ msgstr "採掘"
 #. STRINGS.DUPLICANTS.CHOREGROUPS.GENERATEPOWER.DESC
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.GENERATEPOWER.DESC"
 msgid "Run on manual generators to produce power."
-msgstr ""
+msgstr "人力発電機で走って発電します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.GENERATEPOWER.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.GENERATEPOWER.NAME"
 msgid "Power"
-msgstr "電力"
+msgstr "発電"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.HARVEST.DESC
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.HARVEST.DESC"
 msgid "Pick the food from plants."
-msgstr ""
+msgstr "植物から食糧を入手します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.HARVEST.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.HARVEST.NAME"
 msgid "Harvest"
 msgstr "収穫"
 
+#. STRINGS.DUPLICANTS.CHOREGROUPS.LIQUIDCOOLEDFAN.DESC
+msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.LIQUIDCOOLEDFAN.DESC"
+msgid "Operate the hydrofan to cool areas."
+msgstr "水冷扇風機を使って周囲を涼しくします。"
+
+#. STRINGS.DUPLICANTS.CHOREGROUPS.LIQUIDCOOLEDFAN.NAME
+msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.LIQUIDCOOLEDFAN.NAME"
+msgid "Hydrofan"
+msgstr "水冷扇風機"
+
 #. STRINGS.DUPLICANTS.CHOREGROUPS.MOP.DESC
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.MOP.DESC"
 msgid "Clean up liquid spills."
-msgstr "清掃費"
+msgstr "液体だまりを掃除します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.MOP.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.MOP.NAME"
 msgid "Mop"
 msgstr "モップ掛け"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.REPAIR.DESC
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.REPAIR.DESC"
 msgid "Repair damaged buildings."
-msgstr ""
-"警戒\n"
-"壊れた心拍数モニター"
+msgstr "損傷した設備を修理します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.REPAIR.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.REPAIR.NAME"
 msgid "Repair"
-msgstr ""
+msgstr "修理"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.RESEARCH.DESC
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.RESEARCH.DESC"
 msgid "Work research stations to unlock new technologies."
-msgstr ""
+msgstr "研究施設で作業し、新しい技術を発明します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.RESEARCH.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.RESEARCH.NAME"
@@ -4731,7 +4931,7 @@ msgstr "研究"
 #. STRINGS.DUPLICANTS.CHOREGROUPS.SWEEP.DESC
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.SWEEP.DESC"
 msgid "Move materials to noncritical buildings and normal priority storage."
-msgstr ""
+msgstr "素材を重要性の低い施設や通常優先度の格納庫に移動します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.SWEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.SWEEP.NAME"
@@ -4741,7 +4941,7 @@ msgstr "掃除"
 #. STRINGS.DUPLICANTS.CHOREGROUPS.TOGGLE.DESC
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.TOGGLE.DESC"
 msgid "Manually enable, disable or adjust building switches and filters."
-msgstr ""
+msgstr "手動で切り替えが必要なスイッチやろ過器を操作します。"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.TOGGLE.NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.TOGGLE.NAME"
@@ -5481,13 +5681,13 @@ msgstr "アップグレード中"
 
 #. STRINGS.DUPLICANTS.CHORES.UPROOT.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.UPROOT.NAME"
-msgid "Dig Up"
-msgstr "掘り起こす"
+msgid "Uproot"
+msgstr "掘り起こし"
 
 #. STRINGS.DUPLICANTS.CHORES.UPROOT.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.UPROOT.STATUS"
-msgid "Going to dig up"
-msgstr "掘り起こし中"
+msgid "Going to uproot"
+msgstr "掘り起こしている"
 
 #. STRINGS.DUPLICANTS.CHORES.USETOILET.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.USETOILET.NAME"
@@ -5513,13 +5713,13 @@ msgstr "嘔吐中"
 #, fuzzy
 msgctxt "STRINGS.DUPLICANTS.CHORES.WARMUP.NAME"
 msgid "Warm up"
-msgstr "温かい"
+msgstr "準備運動"
 
 #. STRINGS.DUPLICANTS.CHORES.WARMUP.STATUS
 #, fuzzy
 msgctxt "STRINGS.DUPLICANTS.CHORES.WARMUP.STATUS"
 msgid "Going to warm up"
-msgstr "温かい"
+msgstr "準備運動をしている"
 
 #. STRINGS.DUPLICANTS.CHORES.WASHHANDS.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.WASHHANDS.NAME"
@@ -5529,7 +5729,7 @@ msgstr "手洗い"
 #. STRINGS.DUPLICANTS.CHORES.WASHHANDS.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.WASHHANDS.STATUS"
 msgid "Washing hands"
-msgstr "手を洗浄中"
+msgstr "手を洗っている"
 
 #. STRINGS.DUPLICANTS.DISEASES.ALLDISEASES.NAME
 msgctxt "STRINGS.DUPLICANTS.DISEASES.ALLDISEASES.NAME"
@@ -5760,7 +5960,7 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BURNED_BY_SCALDING_WATER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BURNED_BY_SCALDING_WATER.TOOLTIP"
-msgid "Ouch! This Duplicant took a shower or was doused in water that was much too hot"
+msgid "Ouch! This Duplicant showered or was doused in water that was much too hot"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BURNINGCALORIES.NAME
@@ -5803,15 +6003,14 @@ msgid "This Duplicant is trying to cool back down"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.DARKNESS.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DARKNESS.NAME"
 msgid "Darkness"
-msgstr "闇の眷属"
+msgstr "暗闇の中"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.DARKNESS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DARKNESS.TOOLTIP"
-msgid "This Duplicant doesn't like being in the dark!"
-msgstr ""
+msgid "Eep! This Duplicant doesn't like being in the dark!"
+msgstr "うわっ！この複製人間は暗い所が嫌いです！"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.DEAD.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DEAD.NAME"
@@ -5824,15 +6023,14 @@ msgid "Obtained through prolonged digging or construction"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.DIRTYHANDS.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DIRTYHANDS.NAME"
 msgid "Dirty Hands"
-msgstr "モグラの手"
+msgstr "汚れた手"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.DIRTYHANDS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DIRTYHANDS.TOOLTIP"
-msgid "This Duplicant needs to <style=\"hygiene\">Wash</style> their hands"
-msgstr ""
+msgid "This Duplicant needs to wash their hands"
+msgstr "この複製人間は手洗いが必要です"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.DISTURBEDSLEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DISTURBEDSLEEP.NAME"
@@ -5857,24 +6055,23 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ENTITLEMENT.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ENTITLEMENT.TOOLTIP"
-msgid "Duplicants will demand better <style=\"decor\">Decor</style> and accommodations with each skill level they gain"
+msgid "Duplicants will demand better decor and accommodations with each Profession level they gain"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FRESH_AND_CLEAN.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FRESH_AND_CLEAN.CAUSE"
 msgid "Obtained by taking a comfortably heated shower"
-msgstr ""
+msgstr "よく温まったシャワーを浴びたことによって付与された"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FRESH_AND_CLEAN.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FRESH_AND_CLEAN.NAME"
 msgid "Refreshingly Clean"
-msgstr "掃除"
+msgstr "とってもキレイ"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FRESH_AND_CLEAN.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FRESH_AND_CLEAN.TOOLTIP"
-msgid "This Duplicant took a shower that was just the right temperature - it was great!"
-msgstr ""
+msgid "This Duplicant took a warm shower and it was great!"
+msgstr "この複製人間は暖かいシャワーを浴びて気分が良いです！"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FULLBLADDER.NAME
 #, fuzzy
@@ -5955,8 +6152,8 @@ msgstr "軽い怪我"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.LIGHTWOUNDS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LIGHTWOUNDS.TOOLTIP"
-msgid "This Duplicant's injuries are a bit uncomfortable"
-msgstr "この複製人間は少々傷付いています"
+msgid "This Duplicant sustained injuries that are a bit uncomfortable"
+msgstr "この複製人間は怪我を負って少し不快に感じています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MENTALBREAK.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MENTALBREAK.NAME"
@@ -5965,8 +6162,8 @@ msgstr "ノイローゼ"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MENTALBREAK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MENTALBREAK.TOOLTIP"
-msgid "<style=\"stress\">Stress</style> has completely eroded this Duplicant's ability to function"
-msgstr "この複製人間は <style=\"stress\">ストレス</style> に押し潰されました"
+msgid "Stress has completely eroded this Duplicant's ability to function"
+msgstr "この複製人間はストレスによって完全に押し潰されました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.NAME"
@@ -5975,8 +6172,8 @@ msgstr "中程度の怪我"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.TOOLTIP"
-msgid "This Duplicants' injuries are affecting their ability to work"
-msgstr "この複製人間は仕事に影響を及ぼすほどの傷を負っています"
+msgid "This Duplicant sustained injuries that are affecting their ability to work"
+msgstr "この複製人間は仕事に影響を及ぼすほどの怪我を負っています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MOURNING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MOURNING.NAME"
@@ -6005,8 +6202,8 @@ msgstr "新人歓迎"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.NEWCREWARRIVAL.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NEWCREWARRIVAL.TOOLTIP"
-msgid "This Duplicant is happy to see a new face in the colony!"
-msgstr "この複製人間は新人が来て喜んでいます！"
+msgid "This Duplicant is happy to see a new face in the colony"
+msgstr "この複製人間は新人が来て喜んでいます"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.NIGHTMARES.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NIGHTMARES.NAME"
@@ -6035,18 +6232,18 @@ msgstr "非常事態！"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.REDALERT.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.REDALERT.TOOLTIP"
-msgid "This Duplicant is <style=\"stress\">Stressed</style> out by the current Red Alert"
-msgstr ""
+msgid "The Red Alert is stressing this Duplicant out"
+msgstr "非常事態によって複製人間は緊迫しています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.RESTFULSLEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.RESTFULSLEEP.NAME"
 msgid "Sleeping Peacefully"
-msgstr ""
+msgstr "平穏な睡眠"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.RESTFULSLEEP.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.RESTFULSLEEP.TOOLTIP"
 msgid "This Duplicant is getting a good night's rest"
-msgstr ""
+msgstr "この複製人間は良い眠りに浸かっています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.RESTING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.RESTING.NAME"
@@ -6075,8 +6272,8 @@ msgstr "ひどい怪我"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SEVEREWOUNDS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SEVEREWOUNDS.TOOLTIP"
-msgid "This Duplicant's injuries are severely affecting their work and well-being"
-msgstr "この複製人間の傷は仕事と福利に致命的な影響を与えています"
+msgid "This Duplicant sustained serious injuries that are impacting their work and well-being"
+msgstr "この複製人間の怪我は仕事と福利に致命的な影響を与えています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SKILLLEVEL.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SKILLLEVEL.NAME"
@@ -6106,12 +6303,12 @@ msgstr "この複製人間は疲弊しています"
 #. STRINGS.DUPLICANTS.MODIFIERS.SMELLEDPUTRIDODOUR.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SMELLEDPUTRIDODOUR.NAME"
 msgid "Smelled a putrid odor"
-msgstr ""
+msgstr "臭いがする"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SMELLEDPUTRIDODOUR.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SMELLEDPUTRIDODOUR.TOOLTIP"
-msgid "This Duplicant smelled something unspeakably foul"
-msgstr ""
+msgid "This Duplicant got a whiff of something unspeakably foul"
+msgstr "この複製人間は言い切れないほど汚い何かの臭いがします"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SOREBACK.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOREBACK.CAUSE"
@@ -6125,18 +6322,18 @@ msgstr "背中の痛み"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SOREBACK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOREBACK.TOOLTIP"
-msgid "This Duplicant had to sleep on the floor and would like a bed"
-msgstr "この複製人間は床をベッド代わりにして寝てしまいました"
+msgid "This Duplicant slept on the floor last night and wants a bed"
+msgstr "この複製人間は昨晩床で寝ていたので、ベッドを欲しがっています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STALEFOOD.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STALEFOOD.NAME"
-msgid "Consumed stale food"
-msgstr "傷んだ食料を摂取"
+msgid "Bad leftovers"
+msgstr "悪い食べ残し"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STALEFOOD.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STALEFOOD.TOOLTIP"
-msgid "This Duplicant is in a bad mood from having to eat stale <style=\"food\">Food</style>"
-msgstr "この複製人間は傷んだ <style=\"food\">食料</style> のせいで気分が悪くなっています"
+msgid "This Duplicant is in a bad mood from having to eat stale food"
+msgstr "この複製人間は傷んだ食料のせいで気分が悪くなっています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STARVING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STARVING.NAME"
@@ -6155,23 +6352,23 @@ msgstr "汚染水に接触"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STEPPEDINCONTAMINATEDWATER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STEPPEDINCONTAMINATEDWATER.TOOLTIP"
-msgid "This Duplicant stepped in something yucky and was super grossed out"
-msgstr ""
+msgid "Gross! This Duplicant stepped in something yucky"
+msgstr "オエッ！この複製人間は気味悪い何かを踏んでしまいました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSED_BY_COLD_WATER.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSED_BY_COLD_WATER.CAUSE"
 msgid "Obtained by exposure to icy water"
-msgstr ""
+msgstr "氷のような水にふれたため付与"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSED_BY_COLD_WATER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSED_BY_COLD_WATER.NAME"
 msgid "Numb"
-msgstr ""
+msgstr "感覚がない"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSED_BY_COLD_WATER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSED_BY_COLD_WATER.TOOLTIP"
-msgid "Brr! This Duplicant took a shower or was doused in water that was much too cold"
-msgstr ""
+msgid "Brr! This Duplicant showered or was doused in water that was much too cold"
+msgstr "ブルルッ！この複製人間はとても冷たいシャワーか水を浴びてしまったようです"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSFULYEMPTYINGBLADDER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSFULYEMPTYINGBLADDER.NAME"
@@ -6181,12 +6378,12 @@ msgstr "おもらし"
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSFULYEMPTYINGBLADDER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSFULYEMPTYINGBLADDER.TOOLTIP"
 msgid "This Duplicant had no choice but to to empty their bladder"
-msgstr ""
+msgstr "この複製人間の膀胱を空にするにはもうこれしかないのです"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSREDUCTION.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSREDUCTION.TOOLTIP"
-msgid "This Duplicant's <style=\"stress\">Stress</style> is just melting away"
-msgstr ""
+msgid "This Duplicant's stress is just melting away"
+msgstr "この複製人間はストレスを発散しています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.TEMPEXCHANGE.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TEMPEXCHANGE.NAME"
@@ -6194,25 +6391,24 @@ msgid "Environmental Exchange"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.TOXICENVIRONMENT.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TOXICENVIRONMENT.NAME"
 msgid "Toxic environment"
-msgstr "毒"
+msgstr "猛毒環境"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.UNCLEAN.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.UNCLEAN.CAUSE"
-msgid "Obtained by coming into contact with polluted material"
-msgstr ""
+msgid "Obtained by coming into contact with polluted substances"
+msgstr "汚染物質に触れたため付与"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.UNCLEAN.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.UNCLEAN.NAME"
 msgid "Grimy"
-msgstr ""
+msgstr "不潔"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.UNCLEAN.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.UNCLEAN.TOOLTIP"
-msgid "This Duplicant could use a <style=\"hygiene\">Shower</style>"
-msgstr ""
+msgid "This Duplicant could use a shower"
+msgstr "この複製人間はシャワーを浴びるでしょう"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.UNCOMFORTABLESLEEP.NAME
 #, fuzzy
@@ -6226,65 +6422,59 @@ msgid "This Duplicant collapsed from sheer exhaustion"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.UNDERWATER.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.UNDERWATER.NAME"
 msgid "Underwater"
-msgstr "水中移動速度"
+msgstr "潜水中"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.UNDERWATER.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.UNDERWATER.TOOLTIP"
 msgid "This Duplicant's movement is slowed"
-msgstr "ヒント: 複製人間の移動"
+msgstr "複製人間の移動が遅くなっています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.VOMITING.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.VOMITING.NAME"
 msgid "Vomiting"
-msgstr "ストレスによる嘔吐"
+msgstr "嘔吐している"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.VOMITING.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.VOMITING.TOOLTIP"
 msgid "Better out than in, as they say"
-msgstr "正直、モーブのほうがこれよりもっと上手く描けるでしょう"
+msgstr "彼が言うように、出しちゃったほうがいいのです"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WARMAIR.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WARMAIR.NAME"
 msgid "Warm Air"
-msgstr "温かい"
+msgstr "温かい空気"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WARMINGUP.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WARMINGUP.NAME"
 msgid "Warming Up"
-msgstr "充電完了"
+msgstr "準備運動"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WARMINGUP.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WARMINGUP.TOOLTIP"
 msgid "This Duplicant is trying to warm back up"
-msgstr ""
+msgstr "この複製人間は準備運動をしようとしています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WASATTACKED.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WASATTACKED.NAME"
 msgid "Recently assailed"
-msgstr ""
+msgstr "さっき攻撃された"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WASATTACKED.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WASATTACKED.TOOLTIP"
-msgid "This Duplicant was recently attacked by something and it <style=\"stress\">Stressed</style> them out"
-msgstr ""
+msgid "This Duplicant is stressed out after having been attacked"
+msgstr "この複製人間は攻撃を受けてイライラしています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WELLFED.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WELLFED.NAME"
-msgid "Well-fed"
+msgid "Well fed"
 msgstr "満腹"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WELLFED.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WELLFED.TOOLTIP"
 msgid "This Duplicant feels satisfied after having a big meal"
-msgstr ""
+msgstr "この複製人間は大きな食事をして満足しています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WORKING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WORKING.NAME"
@@ -6387,8 +6577,8 @@ msgstr "010011100100111101010100010011010100010101001110010011110101010001001101
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.A.NAME
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.A.NAME"
-msgid "Yates"
-msgstr "イェーツ"
+msgid "Gravitas"
+msgstr "グラヴィタス"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.ABE.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.ABE.DESC"
@@ -6418,7 +6608,7 @@ msgstr ""
 #. STRINGS.DUPLICANTS.PERSONALITIES.BANHI.NAME
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.BANHI.NAME"
 msgid "Banhi"
-msgstr ""
+msgstr "バンヒ"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.BUBBLES.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.BUBBLES.DESC"
@@ -6512,13 +6702,14 @@ msgstr "ハッサン"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.HOWARD.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.HOWARD.DESC"
-msgid "A {0}'s monotonous voice and lack of facial expression make it impossible for others to tell when he's messing with them."
+msgid ""
+"A {0}'s monotonous voice and lack of facial expression makes it impossible for others to tell when he's messing with them."
 msgstr ""
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.HOWARD.NAME
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.HOWARD.NAME"
-msgid "Howard"
-msgstr "ハワード"
+msgid "Trav"
+msgstr "トラヴ"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.J.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.J.DESC"
@@ -6548,7 +6739,7 @@ msgstr ""
 #. STRINGS.DUPLICANTS.PERSONALITIES.LINDSAY.NAME
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.LINDSAY.NAME"
 msgid "Lindsay"
-msgstr ""
+msgstr "リンゼイ"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.MAE.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.MAE.DESC"
@@ -6582,7 +6773,7 @@ msgstr "マックス"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.MEEP.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.MEEP.DESC"
-msgid "{0}s have a face only a twelve tonne DNA Replicator could love."
+msgid "{0}s have a face only a twelve tonne Printing Pod could love."
 msgstr ""
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.MEEP.NAME
@@ -6602,13 +6793,13 @@ msgstr "ミーマ"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.NADIA.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.NADIA.DESC"
-msgid "The burden of living is just too much for some people. Like this {0}, for instance."
-msgstr ""
+msgid "{0}s just want everyone to be happy."
+msgstr "{0} は皆を幸せにしたいと思っています。"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.NADIA.NAME
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.NADIA.NAME"
-msgid "Nadia"
-msgstr "ナディア"
+msgid "Leira"
+msgstr "レイラ"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.NAILS.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.NAILS.DESC"
@@ -6652,7 +6843,7 @@ msgstr "オットー"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.REN.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.REN.DESC"
-msgid "Every {0} has this unshakable feeling that his life's already happened and he's just watching it unfold like a movie."
+msgid "Every {0} has this unshakable feeling that his life's already happened and he's just watching it unfold from a memory."
 msgstr "{0} は自身の人生がすでに終わっていて、今は走馬灯のように振り返っているんだという揺るぎない感情を持っています。"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.REN.NAME
@@ -6730,8 +6921,11 @@ msgctxt "STRINGS.DUPLICANTS.STATS.BLADDER.TOOLTIP"
 msgid ""
 "Bladder\n"
 "----------\n"
-"A Duplicant will make a mess if no toilets are available at one hundred percent"
+"Duplicants make \"messes\" if no toilets are available at one hundred percent bladder fullness"
 msgstr ""
+"膀胱\n"
+"----------\n"
+"トイレが利用不可の場合、膀胱が100%に達すると複製人間は「おもらし」します"
 
 #. STRINGS.DUPLICANTS.STATS.BREATH.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.BREATH.NAME"
@@ -6759,11 +6953,11 @@ msgctxt "STRINGS.DUPLICANTS.STATS.CALORIES.TOOLTIP"
 msgid ""
 "Calories\n"
 "----------\n"
-"This Duplicant can burn {0} of energy before starving"
+"This Duplicant can burn {0} before starving"
 msgstr ""
 "カロリー\n"
 "----------\n"
-"複製人間ははらぺこになる前に {0} 補充します"
+"複製人間は飢え死ぬまで {0} 燃やせます"
 
 #. STRINGS.DUPLICANTS.STATS.DECOR.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.NAME"
@@ -6775,8 +6969,11 @@ msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP"
 msgid ""
 "Decor\n"
 "----------\n"
-"A Duplicant will become stressed in areas where decor doesn't meet their expectations"
+"Duplicants become stressed in areas where decor doesn't meet their expectations"
 msgstr ""
+"装飾\n"
+"----------\n"
+"複製人間は期待値より高い装飾を見られないとストレスを蓄積します"
 
 #. STRINGS.DUPLICANTS.STATS.EXTERNALTEMPERATURE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.EXTERNALTEMPERATURE.NAME"
@@ -6788,11 +6985,11 @@ msgctxt "STRINGS.DUPLICANTS.STATS.EXTERNALTEMPERATURE.TOOLTIP"
 msgid ""
 "External Temperature\n"
 "----------\n"
-"This Duplicant's immediate environment is {0}"
+"This Duplicant's environment is {0}"
 msgstr ""
 "外部温度\n"
 "----------\n"
-"複製人間に隣接する温度は {0} です"
+"複製人間が居る環境は {0} です"
 
 #. STRINGS.DUPLICANTS.STATS.HITPOINTS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.HITPOINTS.NAME"
@@ -6804,11 +7001,11 @@ msgctxt "STRINGS.DUPLICANTS.STATS.HITPOINTS.TOOLTIP"
 msgid ""
 "Health\n"
 "----------\n"
-"A combatant will become incapacitated at zero health"
+"Combatants become incapacitated at zero health"
 msgstr ""
 "生命力\n"
 "----------\n"
-"<style=\"Health\">生命力</style>がゼロになると瀕死状態に陥ります"
+"戦闘中に生命力がゼロになると瀕死状態に陥ります"
 
 #. STRINGS.DUPLICANTS.STATS.MORALE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.MORALE.NAME"
@@ -6830,11 +7027,11 @@ msgctxt "STRINGS.DUPLICANTS.STATS.STAMINA.TOOLTIP"
 msgid ""
 "Stamina\n"
 "----------\n"
-"A Duplicant with zero remaining stamina will pass out from fatigue"
+"Duplicants will pass out from fatigue when stamina reaches zero"
 msgstr ""
 "スタミナ\n"
 "----------\n"
-"スタミナがゼロになると複製人間は気絶します"
+"スタミナが 0% になると複製人間は疲労から逃れようとします"
 
 #. STRINGS.DUPLICANTS.STATS.STRESS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.STRESS.NAME"
@@ -6846,8 +7043,11 @@ msgctxt "STRINGS.DUPLICANTS.STATS.STRESS.TOOLTIP"
 msgid ""
 "Stress\n"
 "----------\n"
-"A Duplicant will exhibit a Stress Response if stress reaches one hundred percent"
+"Duplicants exhibit Stress Responses at one hundred percent stress"
 msgstr ""
+"ストレス\n"
+"----------\n"
+"100% になると複製人間はストレス拒絶反応を引き起こします"
 
 #. STRINGS.DUPLICANTS.STATS.TEMPERATURE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.TEMPERATURE.NAME"
@@ -6914,8 +7114,8 @@ msgstr "内部の温度が危険なほど低下しています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BODYREGULATINGCOOLING.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BODYREGULATINGCOOLING.TOOLTIP"
-msgid "This Duplicant is regulating their <style=\"heat\">Temperature</style>"
-msgstr ""
+msgid "This Duplicant is regulating their internal temperature"
+msgstr "この複製人間は体温を調節しています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BODYREGULATINGHEATING.NAME
 #, fuzzy
@@ -6925,8 +7125,8 @@ msgstr "内部の温度が危険なほど低下しています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BODYREGULATINGHEATING.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BODYREGULATINGHEATING.TOOLTIP"
-msgid "This Duplicant is regulating their <style=\"heat\">Temperature</style>"
-msgstr ""
+msgid "This Duplicant is regulating their internal temperature"
+msgstr "この複製人間は体温を調節しています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BREAKDELIVERSTATUS.NAME
 #, fuzzy
@@ -6953,12 +7153,12 @@ msgstr ""
 #. STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2.NAME"
 msgid "Inhaling {ConsumptionRate} O2"
-msgstr ""
+msgstr "O2を {ConsumptionRate} 吸い込んでいる"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2.TOOLTIP"
-msgid "Duplicants require <style=\"oxygen\">Oxygen</style> to live"
-msgstr ""
+msgid "Duplicants require oxygen to live"
+msgstr "複製人間は生きるために酸素が必要です"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BUILDDELIVERSTATUS.NAME
 #, fuzzy
@@ -7002,9 +7202,10 @@ msgid "Cleaning {Target}"
 msgstr "清掃指示を取り消します"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.CLEANING.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.CLEANING.TOOLTIP"
-msgid "This Duplicant is <style=\"hygiene\">Cleaning Up</style> {Target}"
-msgstr ""
+msgid "This Duplicant is cleaning the {Target}"
+msgstr "屋上に 敵影なし。 ターゲットに 進行中。"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.CLEARDELIVERSTATUS.NAME
 #, fuzzy
@@ -7030,8 +7231,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.COLD.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COLD.NAME"
-msgid "Chilly environment"
-msgstr ""
+msgid "Chilly surroundings"
+msgstr "周囲が寒すぎる"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.COLD.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COLD.TOOLTIP"
@@ -7042,10 +7243,9 @@ msgid ""
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.COMPOSTFLIPSTATUS.NAME
-#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COMPOSTFLIPSTATUS.NAME"
 msgid "Going to flip compost"
-msgstr "肥溜め"
+msgstr "肥溜めを耕している"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.COMPOSTFLIPSTATUS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COMPOSTFLIPSTATUS.TOOLTIP"
@@ -7090,9 +7290,12 @@ msgid "These Duplicants have consumed their allotted <style=\"food\">Rations</st
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.DAILYRATIONLIMITREACHED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.UNCULTURED.DESC"
+#| msgid "This Duplicant has no appreciation for the finer things"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DAILYRATIONLIMITREACHED.TOOLTIP"
-msgid "This Duplicant has consumed their allotted <style=\"food\">Rations</style> for the day"
-msgstr ""
+msgid "This Duplicant has consumed their allotted rations for the day"
+msgstr "この複製人間は細かいことは気にしない性質です"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.DEAD.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DEAD.NAME"
@@ -7154,7 +7357,7 @@ msgstr "キャンペーン開始"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.EARLYMORNING.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EARLYMORNING.TOOLTIP"
-msgid "This Duplicant is an Early Bird and gets a burst of energy in the morning"
+msgid "This Duplicant gets a burst of energy in the morning from their Early Bird trait"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.EATDELIVERSTATUS.NAME
@@ -7175,9 +7378,10 @@ msgid "Eating {Target}"
 msgstr "食事中"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.EATING.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EATING.TOOLTIP"
-msgid "This Duplicant is replenishing their <style=\"food\">Calorie</style> stores"
-msgstr ""
+msgid "This Duplicant is replenishing their calorie stores"
+msgstr "屋上に 敵影なし。 ターゲットに 進行中。"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.EMITTINGCO2.NAME
 #, fuzzy
@@ -7186,9 +7390,10 @@ msgid "Exhaling {EmittingRate} CO2"
 msgstr "CO2 を {FlowRate} 産出します"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.EMITTINGCO2.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EMITTINGCO2.TOOLTIP"
-msgid "Duplicants breathe out <style=\"gas\">Carbon Dioxide</style>"
-msgstr ""
+msgid "Duplicants breathe out carbon dioxide"
+msgstr "複製人間が設備を破損しました"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.EMPTYING.NAME
 #, fuzzy
@@ -7250,9 +7455,10 @@ msgid "Equipping <style=\"equipment\">{Item}</style>"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.EQUIPPING.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EQUIPPING.TOOLTIP"
-msgid "This Duplicant is equipping a <style=\"equipment\">{Item}</style>"
-msgstr ""
+msgid "This Duplicant is equipping a {Item}"
+msgstr "失禁"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.FABRICATEDELIVERSTATUS.NAME
 #, fuzzy
@@ -7342,9 +7548,10 @@ msgid "Generating power"
 msgstr "ワールド生成中"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.GENERATINGPOWER.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.GENERATINGPOWER.TOOLTIP"
-msgid "This Duplicant is using the {Target} to produce electrical <style=\"power\">Power</style>"
-msgstr ""
+msgid "This Duplicant is using the {Target} to produce electrical power"
+msgstr "屋上に 敵影なし。 ターゲットに 進行中。"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.GENERIC_DELIVER.NAME
 #, fuzzy
@@ -7395,9 +7602,10 @@ msgid "These Duplicants have contracted a <style=\"disease\">Disease</style>:"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.HASDISEASE.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.HASDISEASE.TOOLTIP"
-msgid "This Duplicant has contracted a <style=\"disease\">Disease</style>"
-msgstr ""
+msgid "This Duplicant has contracted a Disease"
+msgstr "屋上に 敵影なし。 ターゲットに 進行中。"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.HOLDINGBREATH.NAME
 #, fuzzy
@@ -7464,9 +7672,12 @@ msgid "This Duplicant cannot breathe in their current location"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.HOT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.DECOR.OBSERVED_DECOR"
+#| msgid "Surroundings"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.HOT.NAME"
-msgid "Toasty environment"
-msgstr ""
+msgid "Toasty surroundings"
+msgstr "周囲"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.HOT.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.HOT.TOOLTIP"
@@ -7552,22 +7763,34 @@ msgid "Incapacitated"
 msgstr "瀕死状態"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.INCAPACITATED.NOTIFICATION_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.INCAPACITATED.NOTIFICATION_TOOLTIP"
+#| msgid ""
+#| "These Duplicants need to be rescued before they kick the bucket\n"
+#| "----------\n"
+#| "Duplicants must have an assigned Cot to be rescued"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.INCAPACITATED.NOTIFICATION_TOOLTIP"
 msgid ""
 "These Duplicants need to be rescued before they kick the bucket\n"
 "----------\n"
-"Duplicants must have an assigned Cot to be rescued"
+"Duplicants must have an assigned Medical Cot or Rejuvenator to be rescued"
 msgstr ""
 "これらの複製人間はバケツを蹴る前に救助しなければなりません\n"
 "----------\n"
 "救助のために複製人間に簡易ベットを割り当ててください"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.INCAPACITATED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.INCAPACITATED.TOOLTIP"
+#| msgid ""
+#| "This Duplicant is near death! They need to be rescued quickly\n"
+#| "----------\n"
+#| "Duplicants must have an assigned Cot to be rescued"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.INCAPACITATED.TOOLTIP"
 msgid ""
 "This Duplicant is near death! They need to be rescued quickly\n"
 "----------\n"
-"Duplicants must have an assigned Cot to be rescued"
+"Duplicants must have an assigned Medical Cot or Rejuvenator to be rescued"
 msgstr ""
 "この複製人間はもうすぐ死んでしまいます！今すぐ救助してください\n"
 "----------\n"
@@ -7591,9 +7814,12 @@ msgid "These Duplicants broke buildings to relieve <style=\"stress\">Stress</sty
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.LASHINGOUT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WORKING.TOOLTIP"
+#| msgid "This Duplicant is working up a sweat"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.LASHINGOUT.TOOLTIP"
-msgid "This Duplicant is breaking stuff to relieve <style=\"stress\">Stress</style>"
-msgstr ""
+msgid "This Duplicant is breaking stuff to relieve stress"
+msgstr "この複製人間は汗水たらして働いています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.LOWOXYGEN.NAME
 #, fuzzy
@@ -7612,9 +7838,12 @@ msgid "These Duplicants are working in areas with low <style=\"oxygen\">Oxygen</
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.LOWOXYGEN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WORKING.TOOLTIP"
+#| msgid "This Duplicant is working up a sweat"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.LOWOXYGEN.TOOLTIP"
-msgid "This Duplicant is working in a dangerously low <style=\"oxygen\">Oxygen</style> area"
-msgstr ""
+msgid "This Duplicant is working in a low breathability area"
+msgstr "この複製人間は汗水たらして働いています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.MANUALCONTROLCHORE.NAME
 #, fuzzy
@@ -7691,9 +7920,12 @@ msgid "Mopping"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.MOPPING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WORKING.TOOLTIP"
+#| msgid "This Duplicant is working up a sweat"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.MOPPING.TOOLTIP"
-msgid "This Duplicant is <style=\"hygiene\">Cleaning</style> up a nasty spill"
-msgstr ""
+msgid "This Duplicant is cleaning up a nasty spill"
+msgstr "この複製人間は汗水たらして働いています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.MOVETOSUITNOTREQUIRED.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.MOVETOSUITNOTREQUIRED.NAME"
@@ -7701,9 +7933,12 @@ msgid "Exiting <style=\"equipment\">Exosuit</style> area"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.MOVETOSUITNOTREQUIRED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.TWINKLETOES.DESC"
+#| msgid "This Duplicant is light as a feather on their feet"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.MOVETOSUITNOTREQUIRED.TOOLTIP"
-msgid "This Duplicant is leaving an area where an <style=\"equipment\">Exosuit</style> was required"
-msgstr ""
+msgid "This Duplicant is leaving an area where an exosuit was required"
+msgstr "この複製人間の足取りは軽やかです"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.MOVINGTOSAFEAREA.NAME
 #, fuzzy
@@ -7761,9 +7996,12 @@ msgid "These Duplicants have cracked under the <style=\"stress\">Stress</style> 
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NERVOUSBREAKDOWN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MENTALBREAK.TOOLTIP"
+#| msgid "<style=\"stress\">Stress</style> has completely eroded this Duplicant's ability to function"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NERVOUSBREAKDOWN.TOOLTIP"
-msgid "<style=\"stress\">Stress</style> has completely eroded this Duplicant's ability to function"
-msgstr ""
+msgid "Stress has completely eroded this Duplicant's ability to function"
+msgstr "この複製人間は <style=\"stress\">ストレス</style> に押し潰されました"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NIGHTTIME.NAME
 #, fuzzy
@@ -7884,9 +8122,12 @@ msgid "Drab decor"
 msgstr "装飾"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.POORDECOR.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DEAD.TOOLTIP"
+#| msgid "This Duplicant definitely isn't sleeping"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.POORDECOR.TOOLTIP"
-msgid "This Duplicant finds this room's lack of <style=\"decor\">Decor</style> depressing"
-msgstr ""
+msgid "This Duplicant finds the lack of Decor in this area depressing"
+msgstr "この複製人間は間違いなく睡眠ではありません"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNASSIGNED.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNASSIGNED.NAME"
@@ -7959,9 +8200,10 @@ msgid "These Duplicants cannot access the colony's <style=\"food\">Food</style>:
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.TOOLTIP"
-msgid "There is <style=\"food\">Food</style> in the colony that this Duplicant cannot reach"
-msgstr ""
+msgid "There is food in the colony that this Duplicant cannot reach"
+msgstr "この複製人間が満足するものは未だかつてありません"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RECOVERINGBREATH.NAME
 #, fuzzy
@@ -8048,9 +8290,10 @@ msgid "Researching <style=\"research\">{Tech}</style>"
 msgstr "<style=\"research\">研究所</style> は中断しています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RESEARCHING.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RESEARCHING.TOOLTIP"
-msgid "This Duplicant is intently researching <style=\"research\">{Tech}</style> technology"
-msgstr ""
+msgid "This Duplicant is intently researching {Tech} technology"
+msgstr "屋上に 敵影なし。 ターゲットに 進行中。"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.ROTTEN.NAME
 #, fuzzy
@@ -8092,9 +8335,12 @@ msgid "Showering"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.SHOWERING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SLEEPY.TOOLTIP"
+#| msgid "This Duplicant is getting tired"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.SHOWERING.TOOLTIP"
-msgid "This Duplicant is getting squeaky <style=\"hygiene\">Clean</style>"
-msgstr ""
+msgid "This Duplicant is getting squeaky clean"
+msgstr "この複製人間は疲弊しています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.SLEEPDELIVERSTATUS.NAME
 #, fuzzy
@@ -8135,9 +8381,10 @@ msgid "These Duplicants are starving and need <style=\"food\">Food</style>:"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STARVING.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STARVING.TOOLTIP"
-msgid "This Duplicant needs <style=\"food\">Food</style>!"
-msgstr ""
+msgid "This Duplicant needs food!"
+msgstr "ヒント: 複製人間の移動"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STORECRITICALDELIVERSTATUS.NAME
 #, fuzzy
@@ -8227,8 +8474,8 @@ msgstr ""
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.TOOLTIP
 #, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.TOOLTIP"
-msgid "This Duplicant is feeling the <style=\"stress\">Stress</style>"
-msgstr "複製人間の期待に満たない場合、 <style=\"stress\">ストレス</style> 上昇の原因となります。"
+msgid "This Duplicant is feeling the pressure"
+msgstr "屋上に 敵影なし。 ターゲットに 進行中。"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGBLADDER.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGBLADDER.NAME"
@@ -8268,9 +8515,12 @@ msgid "These Duplicants became too <style=\"stress\">Stressed</style> and it cau
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSVOMITING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MOURNING.TOOLTIP"
+#| msgid "This Duplicant is grieving the loss of a friend"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSVOMITING.TOOLTIP"
-msgid "This Duplicant is releasing their <style=\"stress\">Stress</style> all over the floor"
-msgstr ""
+msgid "This Duplicant is relieving their stress all over the floor"
+msgstr "この複製人間は友の喪失に嘆いています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.SUFFOCATING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.SUFFOCATING.NAME"
@@ -8387,9 +8637,12 @@ msgid "A <style=\"disease\">Disease</style> has caused these Duplicants to throw
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.VOMITING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NARCOLEPTICSLEEP.TOOLTIP"
+#| msgid "This Duplicant just needs to rest their eyes for a second"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.VOMITING.TOOLTIP"
-msgid "This Duplicant has unceremoniously hurled as a result of a <style=\"disease\">Disease</style>"
-msgstr ""
+msgid "This Duplicant has unceremoniously hurled as the result of a disease"
+msgstr "この複製人間は今すぐ目を休める必要があります"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.WARMINGUP.NAME
 #, fuzzy
@@ -8398,9 +8651,10 @@ msgid "Warming up"
 msgstr "充電完了"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.WARMINGUP.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.WARMINGUP.TOOLTIP"
-msgid "This Duplicant got too <style=\"heat\">Cold</style> and is trying to warm up"
-msgstr ""
+msgid "This Duplicant got too cold and is trying to warm up"
+msgstr "この生物は戦闘から離脱しようとしています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.WARMUPDELIVERSTATUS.NAME
 #, fuzzy
@@ -8419,9 +8673,12 @@ msgid "Washing hands"
 msgstr "手洗い中"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.WASHINGHANDS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SLEEPY.TOOLTIP"
+#| msgid "This Duplicant is getting tired"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.WASHINGHANDS.TOOLTIP"
-msgid "This Duplicant is <style=\"hygiene\">Cleaning</style> their hands"
-msgstr "この複製人間は手を <style=\"hygiene\">洗浄</style> 中です"
+msgid "This Duplicant is washing their hands"
+msgstr "この複製人間は疲弊しています"
 
 #. STRINGS.DUPLICANTS.THOUGHTS.ANGRY.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.THOUGHTS.ANGRY.TOOLTIP"
@@ -8574,8 +8831,11 @@ msgid "Can't Dig It"
 msgstr "採掘不可"
 
 #. STRINGS.DUPLICANTS.TRAITS.CANTRESEARCH.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.CANTRESEARCH.DESC"
+#| msgid "This Duplicant isn't the brightest star in the sky"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.CANTRESEARCH.DESC"
-msgid "This Duplicant isn't the brightest star in the sky"
+msgid "This Duplicant isn't the brightest star in the solar system"
 msgstr "この複製人間は夜空に輝く星ではありません"
 
 #. STRINGS.DUPLICANTS.TRAITS.CANTRESEARCH.NAME
@@ -8814,11 +9074,17 @@ msgid "Biohazard"
 msgstr "バイオハザード"
 
 #. STRINGS.ELEMENTS.ALGAE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.ALGAE.DESC"
+#| msgid ""
+#| "A cluster of non-motile, single-celled lifeforms.\n"
+#| "\n"
+#| "Algae can be used as a renewable source of <style=\"oxygen\">Oxygen</style> when domesticated with Algae Terrariums."
 msgctxt "STRINGS.ELEMENTS.ALGAE.DESC"
 msgid ""
 "A cluster of non-motile, single-celled lifeforms.\n"
 "\n"
-"Algae can be used as a renewable source of <style=\"oxygen\">Oxygen</style> when domesticated with Algae Terrariums."
+"Algae can be used as a renewable source of <style=\"oxygen\">Oxygen</style> when grown domestically in Algae Terrariums."
 msgstr ""
 "非運動性単細胞生物の塊です。\n"
 "\n"
@@ -9162,11 +9428,17 @@ msgid "Properties: {0}"
 msgstr "特性: {0}"
 
 #. STRINGS.ELEMENTS.FERTILIZER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.FERTILIZER.DESC"
+#| msgid ""
+#| "A processed mixture of biological nutrients.\n"
+#| "\n"
+#| "Fertilizer aids in the growth of some <style=\"plant\">Plants</style>."
 msgctxt "STRINGS.ELEMENTS.FERTILIZER.DESC"
 msgid ""
 "A processed mixture of biological nutrients.\n"
 "\n"
-"Fertilizer aids in the growth of some <style=\"plant\">Plants</style>."
+"Fertilizer aids in the growth of certain <style=\"plant\">Plants</style>."
 msgstr ""
 "生物由来の養分の混合物です。\n"
 "\n"
@@ -9656,11 +9928,18 @@ msgid "Phosphorus"
 msgstr "リン"
 
 #. STRINGS.ELEMENTS.PONDSCUM.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.PONDSCUM.DESC"
+#| msgid ""
+#| "A soft, naturally occurring composite of biological nutrients.\n"
+#| "\n"
+#| "Pondscum may be processed into <style=\"solid\">Fertilizer</style> and aids in the growth of some <style=\"plant\">Plants</"
+#| "style>."
 msgctxt "STRINGS.ELEMENTS.PONDSCUM.DESC"
 msgid ""
 "A soft, naturally occurring composite of biological nutrients.\n"
 "\n"
-"Pondscum may be processed into <style=\"solid\">Fertilizer</style> and aids in the growth of some <style=\"plant\">Plants</"
+"Pondscum may be processed into <style=\"solid\">Fertilizer</style> and aids in the growth of certain <style=\"plant\">Plants</"
 "style>."
 msgstr ""
 "自然界に生息する、柔らかい栄養体の塊です。\n"
@@ -9715,11 +9994,17 @@ msgid "Rock Gas"
 msgstr "岩石ガス"
 
 #. STRINGS.ELEMENTS.SAND.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.SAND.DESC"
+#| msgid ""
+#| "A composite of granular rock.\n"
+#| "\n"
+#| "Sand is useful as a <style=\"misc\">filtration medium</style>."
 msgctxt "STRINGS.ELEMENTS.SAND.DESC"
 msgid ""
 "A composite of granular rock.\n"
 "\n"
-"Sand is useful as a <style=\"misc\">filtration medium</style>."
+"Sand is useful as a <style=\"misc\">Filtration Medium</style>."
 msgstr ""
 "粒状の石の混合物です。\n"
 "\n"
@@ -10021,9 +10306,21 @@ msgstr "水"
 
 #. STRINGS.ELEMENTS.WOLFRAMITE.DESC
 #, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.IRONORE.DESC"
+#| msgid ""
+#| "(Fe) A soft <style=\"RawMetal\">Metal</style> that can be strengthened for industrial purposes via smelting.\n"
+#| "\n"
+#| "Iron Ore is suitable for building <style=\"power\">Power</style> systems."
 msgctxt "STRINGS.ELEMENTS.WOLFRAMITE.DESC"
-msgid "(H20) Clean <style=\"liquid\">Water</style>, suitable for consumption."
-msgstr "消費に適した、きれいな <style=\"liquid\">水</style> (H2O) です。"
+msgid ""
+"((Fe,Mn)WO4) A dense <style=\"RawMetal\">Metallic</style> element in a <style=\"solid\">Solid</style> state.\n"
+"\n"
+"Wolframite is a source of <style=\"RawMetal\">Tungsten</style> and is suitable for building <style=\"power\">Power</style> "
+"systems."
+msgstr ""
+"(Fe) 精錬することで工業用途に使える、柔らかい<style=\"RawMetal\">金属</style>です。\n"
+"\n"
+"鉄鉱石は<style=\"power\">電力</style>設備の材料に適しています。"
 
 #. STRINGS.ELEMENTS.WOLFRAMITE.NAME
 msgctxt "STRINGS.ELEMENTS.WOLFRAMITE.NAME"
@@ -10290,7 +10587,9 @@ msgctxt "STRINGS.ITEMS.FOOD.BASICFORAGEPLANT.DESC"
 msgid ""
 "A seedless fruit with an upsettingly bland aftertaste.\n"
 "\n"
-"It cannot be replanted."
+"It cannot be replanted.\n"
+"\n"
+"Digging up Buried Objects may uncover a Muckroot."
 msgstr ""
 
 #. STRINGS.ITEMS.FOOD.BASICFORAGEPLANT.NAME
@@ -10418,7 +10717,7 @@ msgstr ""
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.BASIC_FABRIC.NAME
 #, fuzzy
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.BASIC_FABRIC.NAME"
-msgid "Thimble Fiber"
+msgid "Reed Fiber"
 msgstr "炭素繊維"
 
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.FUEL_BRICK.DESC
@@ -11743,9 +12042,10 @@ msgid "In Use"
 msgstr "消費電力"
 
 #. STRINGS.MISC.STATUSITEMS.OPERATING.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.OPERATING.TOOLTIP"
-msgid "This building is currently being used"
-msgstr ""
+msgid "This object is currently being used"
+msgstr "{Temp}"
 
 #. STRINGS.MISC.STATUSITEMS.OREMASS.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.OREMASS.NAME"
@@ -11857,14 +12157,14 @@ msgstr "収穫をやめる"
 #. STRINGS.MISC.STATUSITEMS.PENDINGUPROOT.NAME
 #, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.PENDINGUPROOT.NAME"
-msgid "Dig Up Pending"
-msgstr "掘り起こしをやめる"
+msgid "Uproot Pending"
+msgstr "モップ掛け"
 
 #. STRINGS.MISC.STATUSITEMS.PENDINGUPROOT.TOOLTIP
 #, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.PENDINGUPROOT.TOOLTIP"
-msgid "Awaiting a Duplicant to dig up"
-msgstr "掘起し待ち: {0}"
+msgid "Awaiting a Duplicant to uproot"
+msgstr "モップ掛けツール"
 
 #. STRINGS.MISC.STATUSITEMS.PICKUPABLEUNREACHABLE.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.PICKUPABLEUNREACHABLE.NAME"
@@ -11897,7 +12197,7 @@ msgstr "種類未設定"
 #, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.REGIONINVALID.TOOLTIP"
 msgid ""
-"This region currently needs:\n"
+"This region requires:\n"
 "{0}"
 msgstr "この設備は {0} の中でなければなりません"
 
@@ -13006,7 +13306,7 @@ msgstr ""
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESSEED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESSEED"
-msgid "Must receive a seed from a dug out plant"
+msgid "Must receive a plant seed"
 msgstr ""
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.STORAGECAPACITY
@@ -13541,8 +13841,11 @@ msgid "This Duplicant has been equipped with a <style=\"equipment\">{0}</style>"
 msgstr ""
 
 #. STRINGS.UI.DETAILTABS.POSSESSIONS.GROUPNAME_EQUIPMENT
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.POSSESSIONS.GROUPNAME_EQUIPMENT"
+#| msgid "CARRIED ITEMS"
 msgctxt "STRINGS.UI.DETAILTABS.POSSESSIONS.GROUPNAME_EQUIPMENT"
-msgid "CARRIED ITEMS"
+msgid "HELD ITEMS"
 msgstr "運搬中のアイテム"
 
 #. STRINGS.UI.DETAILTABS.POSSESSIONS.GROUPNAME_OWNABLE
@@ -13713,6 +14016,11 @@ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.FULL_PATCH_NOTES"
 msgid "Full Patch Notes"
 msgstr "重要な更新"
 
+#. STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_VERSION
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_VERSION"
+msgid "Previous Version"
+msgstr ""
+
 #. STRINGS.UI.DUPLICANTPRINTING
 msgctxt "STRINGS.UI.DUPLICANTPRINTING"
 msgid "Duplicant Printing"
@@ -13736,7 +14044,7 @@ msgstr ""
 #. STRINGS.UI.ELEMENTAL.DEWPOINT.TOOLTIP
 #, fuzzy
 msgctxt "STRINGS.UI.ELEMENTAL.DEWPOINT.TOOLTIP"
-msgid "Dew point describes the temperature at which this object will condense into liquid"
+msgid "Dew point describes the temperature at which this substance will condense into a liquid"
 msgstr "溶融点はこの物体が液体に変化する温度を指します"
 
 #. STRINGS.UI.ELEMENTAL.FREEZEPOINT.NAME
@@ -13745,9 +14053,10 @@ msgid "Freeze Point: {0}"
 msgstr ""
 
 #. STRINGS.UI.ELEMENTAL.FREEZEPOINT.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.UI.ELEMENTAL.FREEZEPOINT.TOOLTIP"
-msgid "Freeze point describes the temperature at which this object will cool into solid"
-msgstr ""
+msgid "Freeze point describes the temperature at which this substance will cool into a solid"
+msgstr "溶融点はこの物体が液体に変化する温度を指します"
 
 #. STRINGS.UI.ELEMENTAL.MASS.NAME
 #, fuzzy
@@ -13770,7 +14079,7 @@ msgstr "溶融点"
 #. STRINGS.UI.ELEMENTAL.MELTINGPOINT.TOOLTIP
 #, fuzzy
 msgctxt "STRINGS.UI.ELEMENTAL.MELTINGPOINT.TOOLTIP"
-msgid "Melting point describes the temperature at which this substance will melt into liquid"
+msgid "Melting point describes the temperature at which this substance will melt into a liquid"
 msgstr "溶融点はこの物体が液体に変化する温度を指します"
 
 #. STRINGS.UI.ELEMENTAL.OVERHEATPOINT.NAME
@@ -13827,9 +14136,12 @@ msgid "Thermal Conductivity: {0}"
 msgstr "熱伝導率"
 
 #. STRINGS.UI.ELEMENTAL.THERMALCONDUCTIVITY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.ELEMENTAL.THERMALCONDUCTIVITY.TOOLTIP"
+#| msgid "Thermal conductivity indicates how well this object conducts <style=\"heat\">Heat</style>"
 msgctxt "STRINGS.UI.ELEMENTAL.THERMALCONDUCTIVITY.TOOLTIP"
-msgid "Thermal conductivity indicates the maximum rate this substance can conduct <style=\"heat\">Heat</style>"
-msgstr ""
+msgid "Thermal conductivity indicates the maximum rate at which this substance can conduct <style=\"heat\">Heat</style>"
+msgstr "熱伝導率はこの物体の <style=\"heat\">熱</style> の伝わりやすさを指します"
 
 #. STRINGS.UI.ELEMENTAL.UNITS.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.UNITS.NAME"
@@ -13847,9 +14159,10 @@ msgid "Vaporization Point: {0}"
 msgstr ""
 
 #. STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.TOOLTIP"
-msgid "Vaporization point describes the temperature at which this substance will evaporate into gas"
-msgstr ""
+msgid "Vaporization point describes the temperature at which this substance will evaporate into a gas"
+msgstr "溶融点はこの物体が液体に変化する温度を指します"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ADDED
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ADDED"
@@ -14197,6 +14510,14 @@ msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.DELETEBUTTON"
 msgid "Delete Slot"
 msgstr "セーブファイル削除"
 
+#. STRINGS.UI.FRONTEND.LOADSCREEN.MORE_INFO
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.DETAILS.TOOLTIP"
+#| msgid "More information"
+msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MORE_INFO"
+msgid "More Info"
+msgstr "追加情報"
+
 #. STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_TOO_NEW
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_TOO_NEW"
 msgid "<b><color=#ff0000>Could not load file {0}. File is using build {1}. This build is {2}.</color></b>"
@@ -14228,10 +14549,9 @@ msgstr "つづきから"
 #. STRINGS.UI.FRONTEND.LOADSCREEN.UNSUPPORTED_SAVE_VERSION
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.UNSUPPORTED_SAVE_VERSION"
 msgid ""
-"Unsupported Save File:\n"
-"{0}\n"
+"<b><color=#ff0000>This save file is from a previous version of the game and is no longer supported.</color></b>\n"
 "\n"
-"Save file version is v{1}.{2} but this build requires v{3}.{4} or higher"
+"You may revert to the previous build to play your old save. Please follow the link below for details."
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.MAINMENU.LOADGAME
@@ -14370,9 +14690,15 @@ msgid "Temperature Units"
 msgstr "温度"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
+#| msgid ""
+#| "<b>Welcome to the Thermal Upgrade Preview!</b>\n"
+#| "\n"
+#| "{0}"
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
 msgid ""
-"<b>Welcome to the Thermal Upgrade Preview!</b>\n"
+"<b>Welcome to the Thermal Upgrade!</b>\n"
 "\n"
 "{0}"
 msgstr ""
@@ -14386,9 +14712,23 @@ msgid "OK"
 msgstr "OK"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
+#| msgid ""
+#| "This update will focus on implementing systems to make managing temperature a more integral part of gameplay.\n"
+#| "\n"
+#| "Update Highlights:\n"
+#| "*New ice biome\n"
+#| "*New Space Heater, Liquid Tepidizer and Textile Factory buildings\n"
+#| "*New plants\n"
+#| "*New Duplicant temperature sensitivity and diseases\n"
+#| "*Buildings can now overheat\n"
+#| "*Pipes can burst and circuits can overload"
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
 msgid ""
-"This update will focus on implementing systems to make managing temperature a more integral part of gameplay.\n"
+"This update will focus on implementing systems to make managing temperature a more integral part of gameplay. Due to the "
+"significant amount of changes to the temperature simulation, previous save files are not compatible with this version of the "
+"game. Click on the previous version button for details on how to get access to the previous version of the game.\n"
 "\n"
 "Update Highlights:\n"
 "*New ice biome\n"
@@ -14579,6 +14919,52 @@ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.COLDBREATHER"
 msgid "<style=\"heat\">Cooling Effect</style>"
 msgstr "<style=\"decor\">装飾</style> 効果の影響範囲です。"
 
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CIRCUIT_OVERLOADED
+#, fuzzy
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CIRCUIT_OVERLOADED"
+msgid "Circuit Overload Damage"
+msgstr "<b>回路の電力</b>"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CONDUIT_CONTENTS_BOILED
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.BUILDINGDISABLED.NAME"
+#| msgid "Building Disabled"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CONDUIT_CONTENTS_BOILED"
+msgid "Boiling Damage"
+msgstr "設備停止中"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CONDUIT_CONTENTS_FROZE
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.HYPOTHERMIA.NAME"
+#| msgid "Freezing"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CONDUIT_CONTENTS_FROZE"
+msgid "Freezing Damage"
+msgstr "強烈に寒い"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LIQUID_PRESSURE
+#, fuzzy
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LIQUID_PRESSURE"
+msgid "Liquid Pressure Damage"
+msgstr "ヒント: ストレス管理"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MINION_DESTRUCTION
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MINION_DESTRUCTION"
+msgid "Anger Damage"
+msgstr ""
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.OVERHEAT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.OVERHEATED.NAME"
+#| msgid "Overheating"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.OVERHEAT"
+msgid "Overheat Damage"
+msgstr "オーバーヒート"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.WRONG_ELEMENT
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.WRONG_ELEMENT"
+msgid "Wrong Element Damage"
+msgstr ""
+
 #. STRINGS.UI.GAMEOBJECTEFFECTS.EQUIPMENT_MODS
 #, fuzzy
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.EQUIPMENT_MODS"
@@ -14615,15 +15001,20 @@ msgid "Regrowth: {0}"
 msgstr "     {0}\n"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.PRESSUREOK.NAME"
+#| msgid "Max Gas Pressure"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE"
-msgid "Pressure: {0} of any gas"
-msgstr ""
+msgid "Gas Pressure: {0}"
+msgstr "最大気圧"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_SUBMERSION
 #, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.NAME"
+#| msgid "Liquid Pump"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_SUBMERSION"
-msgid "Submerged in liquid"
-msgstr "このポンプが動作するには <style=\"liquid\">液体</style> の中に沈めないといけません"
+msgid "Liquid Submersion"
+msgstr "給水ポンプ"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_TEMPERATURE
 #, fuzzy
@@ -14648,20 +15039,20 @@ msgstr "{0} は散々甘やかされていますが、髪の毛は丈夫です�
 #. STRINGS.UI.GAMEOBJECTEFFECTS.SEED_PRODUCTION_DIG_ONLY
 #, fuzzy
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.SEED_PRODUCTION_DIG_ONLY"
-msgid "Produces no seeds on harvest"
-msgstr "収穫"
+msgid "Consumes <style=\"seed\">Seed</style>"
+msgstr "指定した <style=\"seed\">種子</style> が配達されるまで待ちます"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.SEED_PRODUCTION_FRUIT
 #, fuzzy
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.SEED_PRODUCTION_FRUIT"
-msgid "Seeds contained in fruit"
-msgstr "種子がありません"
+msgid "Fruit produces <style=\"seed\">Seeds</style>"
+msgstr "指定した <style=\"seed\">種子</style> が配達されるまで待ちます"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.SEED_PRODUCTION_HARVEST
 #, fuzzy
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.SEED_PRODUCTION_HARVEST"
-msgid "Produces seeds on harvest"
-msgstr "収穫"
+msgid "Harvest produces <style=\"seed\">Seeds</style>"
+msgstr "指定した <style=\"seed\">種子</style> が配達されるまで待ちます"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.CALORIES
 #, fuzzy
@@ -14703,14 +15094,20 @@ msgid "This plant takes {0} to grow once harvested"
 msgstr ""
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.NAME"
+#| msgid "Atmospheric pressure too low"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE"
-msgid "This plant must be in an atmosphere of at least {0} of any gas"
-msgstr ""
+msgid "Atmospheric gas pressure must be at least {0} to grow"
+msgstr "気圧低下"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_SUBMERSION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NOLIQUIDELEMENTTOPUMP.TOOLTIP"
+#| msgid "This pump must be submerged in <style=\"liquid\">Liquid</style> to work"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_SUBMERSION"
-msgid "This plant must be fully submerged to grow"
-msgstr ""
+msgid "This plant must be fully submerged in liquid to grow"
+msgstr "このポンプが動作するには<style=\"liquid\">液体</style>の中に沈めないといけません"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_TEMPERATURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_TEMPERATURE"
@@ -14723,19 +15120,26 @@ msgid "This plant requires {1} <style=\"solid\">{0}</style> in order to grow"
 msgstr ""
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.SEED_PRODUCTION_DIG_ONLY
+#, fuzzy
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.SEED_PRODUCTION_DIG_ONLY"
-msgid "This plant may be transplanted, but has no further reproductive features"
-msgstr ""
+msgid "This plant can be transplanted but will produce no further <style=\"seed\">Seeds<style>"
+msgstr "この <style=\"plant\">植物</style> はこれ以上 <style=\"seed\">種子</style> を生産できません"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.SEED_PRODUCTION_FRUIT
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.UPROOT.TOOLTIP"
+#| msgid "Convert this <style=\"plant\">Plant</style> into a <style=\"seed\">Seed</style>"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.SEED_PRODUCTION_FRUIT"
-msgid "This plant stores its seeds in its fruit. The fruit must be consumed to release the seeds"
-msgstr ""
+msgid "Consuming this <style=\"plant\">Plant</style>'s fruit will yield additional <style=\"seed\">Seeds</style>"
+msgstr "この <style=\"plant\">植物</style> を <style=\"seed\">種子</style> に変換します"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.SEED_PRODUCTION_HARVEST
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.UPROOT.TOOLTIP"
+#| msgid "Convert this <style=\"plant\">Plant</style> into a <style=\"seed\">Seed</style>"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.SEED_PRODUCTION_HARVEST"
-msgid "This plant produces seeds as part of the harvesting process"
-msgstr ""
+msgid "Harvesting this <style=\"plant\">Plant</style> will yield additional <style=\"seed\">Seeds</style>"
+msgstr "この <style=\"plant\">植物</style> を <style=\"seed\">種子</style> に変換します"
 
 #. STRINGS.UI.IMMIGRANTSCREEN.BACK
 msgctxt "STRINGS.UI.IMMIGRANTSCREEN.BACK"
@@ -14748,8 +15152,11 @@ msgid "Cancel"
 msgstr "キャンセル"
 
 #. STRINGS.UI.IMMIGRANTSCREEN.CONFIRMATIONBODY
+#, fuzzy
+#| msgctxt "STRINGS.UI.IMMIGRANTSCREEN.CONFIRMATIONBODY"
+#| msgid "The Printing Pod will need some time to recharge if you Ooze these Duplicants."
 msgctxt "STRINGS.UI.IMMIGRANTSCREEN.CONFIRMATIONBODY"
-msgid "The Printing Pod will need some time to recharge if you Ooze these Duplicants."
+msgid "The Printing Pod will need time to recharge if you Ooze these Duplicants."
 msgstr "複製人間をすべてヘドロに戻すと、複製ポッドが再び使用可能になるまで時間がかかります。"
 
 #. STRINGS.UI.IMMIGRANTSCREEN.CONFIRMATIONTITLE
@@ -15719,8 +16126,8 @@ msgstr "非常事態"
 
 #. STRINGS.UI.REMOVEFROMRECEPTACLE
 msgctxt "STRINGS.UI.REMOVEFROMRECEPTACLE"
-msgid "Dig Up"
-msgstr "掘り起こす"
+msgid "Uproot"
+msgstr ""
 
 #. STRINGS.UI.REPORT
 #, fuzzy
@@ -16509,7 +16916,7 @@ msgstr "設備埋没"
 
 #. STRINGS.UI.TOOLTIPS.RESOURCECATEGORY.DESC
 msgctxt "STRINGS.UI.TOOLTIPS.RESOURCECATEGORY.DESC"
-msgid "Only counts resources within reach of a Duplicant that are not allocated to construction"
+msgid "Counts resources within Duplicant reach that are not allocated to construction"
 msgstr ""
 
 #. STRINGS.UI.TOOLTIPS.RESOURCECATEGORY.EXPAND
@@ -16729,19 +17136,28 @@ msgstr ""
 "{1}"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_OFFLINE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NOPOWERCONSUMERS.TOOLTIP"
+#| msgid "No buildings are connected to this <style=\"power\">Power</style> source"
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_OFFLINE"
-msgid "No power: Access control is offline and anyone may pass through the door."
-msgstr "電源なし: アクセス制御を使用できないため、誰もがこのドアを通過できます。"
+msgid ""
+"Emergency Access Permissions:\n"
+"All Duplicants are permitted to use this door until <style=\"power\">Power</style> is restored."
+msgstr "<style=\"power\">電源</style>に接続された設備がありません"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.OPEN"
+#| msgid "Door is Open."
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO"
-msgid "Door will open automatically."
-msgstr "ドアは自動で開閉します。"
+msgid "Door is automated."
+msgstr "ドアは開いてます。"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO_PENDING
+#, fuzzy
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO_PENDING"
-msgid "Waiting for a duplicant to switch the door to auto."
-msgstr "複製人間がドアを自動開閉に設定するのを待っています。"
+msgid "Awaiting Duplicant to automate door."
+msgstr "モップ掛けツール"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE"
@@ -16749,19 +17165,26 @@ msgid "Door is locked shut."
 msgstr "ドアは固く閉じています。"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE_PENDING
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE_PENDING"
+#| msgid "Waiting for a duplicant to lock the door."
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE_PENDING"
-msgid "Waiting for a duplicant to lock the door."
+msgid "Awaiting Duplicant to lock door."
 msgstr "複製人間がドアをロックするのを待っています。"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.OPEN
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.OPEN"
+#| msgid "Door is Open."
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.OPEN"
-msgid "Door is Open."
+msgid "Door is open."
 msgstr "ドアは開いてます。"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.OPEN_PENDING
+#, fuzzy
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.OPEN_PENDING"
-msgid "Waiting for a duplicant to open the door."
-msgstr "複製人間がドアを開けるのを待っています。"
+msgid "Awaiting Duplicant to open door."
+msgstr "モップ掛けツール"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.PENDING_FORMAT
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.PENDING_FORMAT"
@@ -16964,8 +17387,11 @@ msgid "Battery Recharge Threshold"
 msgstr "バッテリー充填閾値"
 
 #. STRINGS.UI.UISIDESCREENS.MANUALGENERATORSIDESCREEN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.MANUALGENERATORSIDESCREEN.TOOLTIP"
+#| msgid "Duplicants will only operate this generator once battery charge falls below the threshold percentage"
 msgctxt "STRINGS.UI.UISIDESCREENS.MANUALGENERATORSIDESCREEN.TOOLTIP"
-msgid "Duplicants will only operate this generator once battery charge falls below the threshold percentage"
+msgid "Duplicants will operate this generator when battery charge falls below the selected percentage"
 msgstr "複製人間は指定した閾値よりバッテリー容量が低下した場合のみ手動発電機を操作します"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.NUMBEROFHARVESTS
@@ -16984,8 +17410,11 @@ msgid "<b>Requirements</b>:"
 msgstr "<b>要求</b>:"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.SELECTSEED_DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.SELECTSEED_DESC"
+#| msgid "Select a seed to plant"
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.SELECTSEED_DESC"
-msgid "Select a seed to plant"
+msgid "Select a seed to plant."
 msgstr "植える種子を選んでください"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.SELECTSEED_TITLE
@@ -17188,8 +17617,11 @@ msgid "Sweep Only"
 msgstr "格納のみ"
 
 #. STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ONLYALLOWTRANSPORTITEMSBUTTONTOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ONLYALLOWTRANSPORTITEMSBUTTONTOOLTIP"
+#| msgid "If enabled, only objects marked for sweeping will be stored here"
 msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ONLYALLOWTRANSPORTITEMSBUTTONTOOLTIP"
-msgid "If enabled, only objects marked for sweep tasks will be stored here"
+msgid "If enabled, only objects marked for Sweep <color=#F44A47>[K]</color> will be stored here"
 msgstr "チェックした種類の物体がここに格納されます"
 
 #. STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.TITLE
@@ -17363,14 +17795,18 @@ msgid "Cancel this mop order"
 msgstr "モップ掛け指示を取り消します"
 
 #. STRINGS.UI.USERMENUACTIONS.CANCELUPROOT.NAME
+#, fuzzy
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELUPROOT.NAME"
-msgid "Cancel Dig Up"
-msgstr "掘り起こしをやめる"
+msgid "Cancel Uproot"
+msgstr "解体ツール"
 
 #. STRINGS.UI.USERMENUACTIONS.CANCELUPROOT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.TOOLTIP_OFF"
+#| msgid "Cancel this empty order"
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELUPROOT.TOOLTIP"
-msgid "Cancel this dig up order"
-msgstr "発掘指示を取り消します"
+msgid "Cancel this uproot order"
+msgstr "搬出指示を取り消します"
 
 #. STRINGS.UI.USERMENUACTIONS.CLEANTOILET.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLEANTOILET.NAME"
@@ -17655,8 +18091,8 @@ msgstr "素材を格納庫に割り当てます"
 
 #. STRINGS.UI.USERMENUACTIONS.UPROOT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.UPROOT.NAME"
-msgid "Dig Up"
-msgstr "掘り起こす"
+msgid "Uproot"
+msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.UPROOT.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.UPROOT.TOOLTIP"
@@ -18230,6 +18666,160 @@ msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
 
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.EXPIRED.TOOLTIP"
+#~ msgid "This building's just garbage now"
+#~ msgstr "この設備は無用の長物になりました"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDPLANT.TOOLTIP"
+#~ msgid "Dig up wild <style=\"plant\">Plants</style> to obtain <style=\"seed\">Seeds</style>"
+#~ msgstr "<style=\"seed\">種子</style>を得るには、野生<style=\"plant\">植物</style>を掘り起こしてください"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGUPROOT.NAME"
+#~ msgid "Dig Up Pending"
+#~ msgstr "掘り起こし作業待ち"
+
+#, fuzzy
+#~ msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP"
+#~ msgid "A minimum pressure of {TargetPressure} is required to thrive"
+#~ msgstr "最低でも {TargetPressure} 必要です"
+
+#~ msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.NAME"
+#~ msgid "Chilly environment"
+#~ msgstr "環境が寒すぎる"
+
+#~ msgctxt "STRINGS.CREATURES.STATUSITEMS.DROWNING.TOOLTIP"
+#~ msgid "Insufficient <style=\"oxygen\">Oxygen</style>"
+#~ msgstr "<style=\"oxygen\">酸素</style>不足です"
+
+#~ msgctxt "STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.TOOLTIP"
+#~ msgid "This <style=\"plant\">Plant</style> must be submerged in <style=\"liquid\">Liquid</style> to grow"
+#~ msgstr "この<style=\"plant\">植物</style>は成長のために<style=\"liquid\">液体</style>下に水没させる必要があります。"
+
+#~ msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT.NAME"
+#~ msgid "Toasty environment"
+#~ msgstr "環境が暑すぎる"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.UPROOT.NAME"
+#~ msgid "Dig Up"
+#~ msgstr "掘り起こす"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.UPROOT.STATUS"
+#~ msgid "Going to dig up"
+#~ msgstr "掘り起こし中"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STALEFOOD.NAME"
+#~ msgid "Consumed stale food"
+#~ msgstr "傷んだ食料を摂取"
+
+#~ msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.A.NAME"
+#~ msgid "Yates"
+#~ msgstr "イェーツ"
+
+#~ msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.HOWARD.NAME"
+#~ msgid "Howard"
+#~ msgstr "ハワード"
+
+#~ msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.NADIA.NAME"
+#~ msgid "Nadia"
+#~ msgstr "ナディア"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATS.STAMINA.TOOLTIP"
+#~ msgid ""
+#~ "Stamina\n"
+#~ "----------\n"
+#~ "A Duplicant with zero remaining stamina will pass out from fatigue"
+#~ msgstr ""
+#~ "スタミナ\n"
+#~ "----------\n"
+#~ "スタミナがゼロになると複製人間は気絶します"
+
+#, fuzzy
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.TOOLTIP"
+#~ msgid "This Duplicant is feeling the <style=\"stress\">Stress</style>"
+#~ msgstr "複製人間の期待に満たない場合、 <style=\"stress\">ストレス</style> 上昇の原因となります。"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.WASHINGHANDS.TOOLTIP"
+#~ msgid "This Duplicant is <style=\"hygiene\">Cleaning</style> their hands"
+#~ msgstr "この複製人間は手を <style=\"hygiene\">洗浄</style> 中です"
+
+#, fuzzy
+#~ msgctxt "STRINGS.ELEMENTS.WOLFRAMITE.DESC"
+#~ msgid "(H20) Clean <style=\"liquid\">Water</style>, suitable for consumption."
+#~ msgstr "消費に適した、きれいな <style=\"liquid\">水</style> (H2O) です。"
+
+#, fuzzy
+#~ msgctxt "STRINGS.MISC.STATUSITEMS.PENDINGUPROOT.NAME"
+#~ msgid "Dig Up Pending"
+#~ msgstr "掘り起こしをやめる"
+
+#, fuzzy
+#~ msgctxt "STRINGS.MISC.STATUSITEMS.PENDINGUPROOT.TOOLTIP"
+#~ msgid "Awaiting a Duplicant to dig up"
+#~ msgstr "掘起し待ち: {0}"
+
+#, fuzzy
+#~ msgctxt "STRINGS.MISC.STATUSITEMS.REGIONINVALID.TOOLTIP"
+#~ msgid ""
+#~ "This region currently needs:\n"
+#~ "{0}"
+#~ msgstr "この設備は {0} の中でなければなりません"
+
+#, fuzzy
+#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_SUBMERSION"
+#~ msgid "Submerged in liquid"
+#~ msgstr "このポンプが動作するには <style=\"liquid\">液体</style> の中に沈めないといけません"
+
+#, fuzzy
+#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.SEED_PRODUCTION_DIG_ONLY"
+#~ msgid "Produces no seeds on harvest"
+#~ msgstr "収穫"
+
+#, fuzzy
+#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.SEED_PRODUCTION_FRUIT"
+#~ msgid "Seeds contained in fruit"
+#~ msgstr "種子がありません"
+
+#, fuzzy
+#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.SEED_PRODUCTION_HARVEST"
+#~ msgid "Produces seeds on harvest"
+#~ msgstr "収穫"
+
+#~ msgctxt "STRINGS.UI.REMOVEFROMRECEPTACLE"
+#~ msgid "Dig Up"
+#~ msgstr "掘り起こす"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_OFFLINE"
+#~ msgid "No power: Access control is offline and anyone may pass through the door."
+#~ msgstr "電源なし: アクセス制御を使用できないため、誰もがこのドアを通過できます。"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO"
+#~ msgid "Door will open automatically."
+#~ msgstr "ドアは自動で開閉します。"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO_PENDING"
+#~ msgid "Waiting for a duplicant to switch the door to auto."
+#~ msgstr "複製人間がドアを自動開閉に設定するのを待っています。"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.OPEN_PENDING"
+#~ msgid "Waiting for a duplicant to open the door."
+#~ msgstr "複製人間がドアを開けるのを待っています。"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ONLYALLOWTRANSPORTITEMSBUTTONTOOLTIP"
+#~ msgid "If enabled, only objects marked for sweep tasks will be stored here"
+#~ msgstr "チェックした種類の物体がここに格納されます"
+
+#~ msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELUPROOT.NAME"
+#~ msgid "Cancel Dig Up"
+#~ msgstr "掘り起こしをやめる"
+
+#~ msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELUPROOT.TOOLTIP"
+#~ msgid "Cancel this dig up order"
+#~ msgstr "発掘指示を取り消します"
+
+#~ msgctxt "STRINGS.UI.USERMENUACTIONS.UPROOT.NAME"
+#~ msgid "Dig Up"
+#~ msgstr "掘り起こす"
+
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.AWAITINGARTING.NAME"
 #~ msgid "Awaiting decoration"
 #~ msgstr "装飾待ち"
@@ -18433,14 +19023,6 @@ msgstr "砂散布中..."
 #~ "極めて軽い、大人しい種族です。\n"
 #~ "\n"
 #~ "パフは呼吸の都度スライムを排泄することで、取りすぎた養分を除去しています。"
-
-#~ msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.NAME"
-#~ msgid "Atmospheric pressure too low"
-#~ msgstr "気圧低下"
-
-#~ msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP"
-#~ msgid "A minimum pressure of {TargetPressure} is required"
-#~ msgstr "最低でも {TargetPressure} 必要です"
 
 #~ msgctxt "STRINGS.CREATURES.STATUSITEMS.BARREN.TOOLTIP"
 #~ msgid "This <style=\"plant\">Plant</style> cannot produce any more <style=\"seed\">Seed</style>"
@@ -18771,10 +19353,6 @@ msgstr "砂散布中..."
 #~ msgid "Grungy"
 #~ msgstr "グランギー"
 
-#~ msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.GUS.DESC"
-#~ msgid "This {0} just wants everyone to be happy."
-#~ msgstr "{0} は皆を幸せにしたいと思っています。"
-
 #~ msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.GUS.NAME"
 #~ msgid "Gus"
 #~ msgstr "ガス"
@@ -19019,16 +19597,6 @@ msgstr "砂散布中..."
 #~ msgid "Reduces <style=\"stress\">Stress</style> by {0}/day"
 #~ msgstr "<style=\"stress\">ストレス</style> を1日あたり {0} 軽減します"
 
-#~ msgctxt "STRINGS.DUPLICANTS.STATS.BLADDER.TOOLTIP"
-#~ msgid ""
-#~ "Bladder\n"
-#~ "----------\n"
-#~ "A Duplicant will make a mess at 100% if no bathrooms are available"
-#~ msgstr ""
-#~ "膀胱\n"
-#~ "----------\n"
-#~ "トイレが利用不可の場合、100%に達すると複製人間は失禁します"
-
 #~ msgctxt "STRINGS.DUPLICANTS.STATS.BREATH.TOOLTIP"
 #~ msgid ""
 #~ "Breath\n"
@@ -19049,17 +19617,6 @@ msgstr "砂散布中..."
 #~ "----------\n"
 #~ "複製人間ははらぺこになる前に {0} 補充します"
 
-#~ msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP"
-#~ msgid ""
-#~ "Decor\n"
-#~ "----------\n"
-#~ "A Duplicant will gain <style=\"stress\">Stress</style> while in rooms with lower <style=\"decor\">Decor</style> values than "
-#~ "their expectations"
-#~ msgstr ""
-#~ "装飾\n"
-#~ "----------\n"
-#~ "複製人間は期待値より低い <style=\"decor\">装飾</style> 状態になると <style=\"stress\">ストレス</style> を蓄積します"
-
 #~ msgctxt "STRINGS.DUPLICANTS.STATS.HITPOINTS.TOOLTIP"
 #~ msgid ""
 #~ "Health\n"
@@ -19069,16 +19626,6 @@ msgstr "砂散布中..."
 #~ "生命力\n"
 #~ "----------\n"
 #~ "<style=\"Health\">生命力</style> がゼロになると瀕死状態に陥ります"
-
-#~ msgctxt "STRINGS.DUPLICANTS.STATS.STAMINA.TOOLTIP"
-#~ msgid ""
-#~ "Stamina\n"
-#~ "----------\n"
-#~ "A Duplicant will pass out from fatigue at 0%"
-#~ msgstr ""
-#~ "スタミナ\n"
-#~ "----------\n"
-#~ "スタミナが 0% になると複製人間は気絶します"
 
 #~ msgctxt "STRINGS.DUPLICANTS.STATS.STRESS.TOOLTIP"
 #~ msgid ""
@@ -19303,10 +19850,6 @@ msgstr "砂散布中..."
 #~ msgid "Thermal Conductivity"
 #~ msgstr "熱伝導率"
 
-#~ msgctxt "STRINGS.UI.ELEMENTAL.THERMALCONDUCTIVITY.TOOLTIP"
-#~ msgid "Thermal conductivity indicates how well this object conducts <style=\"heat\">Heat</style>"
-#~ msgstr "熱伝導率はこの物体の <style=\"heat\">熱</style> の伝わりやすさを指します"
-
 #~ msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.ENABLE_BUTTON"
 #~ msgid "Enable"
 #~ msgstr "有効"
@@ -19430,10 +19973,6 @@ msgstr "砂散布中..."
 #~ msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ALLBUTTONTOOLTIP"
 #~ msgid "Store all materials in this storage"
 #~ msgstr "全ての種類の素材をここに格納します"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ONLYALLOWTRANSPORTITEMSBUTTONTOOLTIP"
-#~ msgid "If enabled, only objects marked for sweeping will be stored here"
-#~ msgstr "チェックした種類の物体がここに格納されます"
 
 #~ msgctxt "STRINGS.UI.USERMENUACTIONS.CLEAR.TOOLTIP"
 #~ msgid "Move this object into storage"
