@@ -4,10 +4,14 @@ Oxygen Not Included 日本語化
 Klei Entertainment 制作のスペースコロニー経営ゲーム「[Oxygen Not Included](http://store.steampowered.com/app/457140/)」の日本語化作業を行っています。  
 
 
+## 翻訳サンプル
+<image src="https://raw.githubusercontent.com/wiki/nsk4762jp/OxygenNotIncluded-Japanese/sample.jpg" width="75%">
+
+
 ## 使用方法
 
 インストール手順にしたがってファイルをコピーしてください。  
-※2017/05/19 のアップデートにより、日本語テキストは正しく表示されるようになっています。
+※2017/05/19 の Agricultural Upgrade で日本語表示に対応しました。
 
 
 ## インストール
@@ -25,4 +29,9 @@ MIT License
 ## 翻訳者
 
 [nsk4762jp](https://github.com/nsk4762jp)
+
+
+## 貢献者
+
+[seameteo(LefTonbo)](https://github.com/seameteo)
 
