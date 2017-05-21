@@ -560,7 +560,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.GENERATOROFFLINE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GENERATOROFFLINE.NAME"
 msgid "Generator Idle"
-msgstr "ジェネレータ停止中"
+msgstr "発電機停止中"
 
 #. STRINGS.BUILDING.STATUSITEMS.GENERATOROFFLINE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GENERATOROFFLINE.TOOLTIP"
@@ -3105,7 +3105,7 @@ msgstr "周囲の<style=\"gas\">気圧</style>に反応し、<style=\"power\">�
 #. STRINGS.BUILDINGS.PREFABS.PRESSURESWITCHGAS.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSURESWITCHGAS.NAME"
 msgid "Atmo Switch"
-msgstr "アトモ スイッチ"
+msgstr "気圧反応スイッチ"
 
 #. STRINGS.BUILDINGS.PREFABS.PRESSURESWITCHLIQUID.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSURESWITCHLIQUID.DESC"
@@ -3127,7 +3127,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.PRESSURESWITCHLIQUID.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSURESWITCHLIQUID.NAME"
 msgid "Hydro Switch"
-msgstr "ハイドロ スイッチ"
+msgstr "水圧反応スイッチ"
 
 #. STRINGS.BUILDINGS.PREFABS.RATIONBOX.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.RATIONBOX.DESC"
@@ -4334,44 +4334,40 @@ msgid ""
 "Plants will gain Harvest Rating Points while kept in ideal conditions\n"
 "A high Harvest Rating will improve the crop yield of a mature plant"
 msgstr ""
+"理想的条件下の植物は収穫レートが上昇します。\n"
+"収穫レートが高いほど熟した植物からの収穫量が改善されます。"
 
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.UNDERPRESSURE.NAME"
-#| msgid "Under Pressure"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.NAME"
 msgid "High Air Pressure"
-msgstr "圧力不足"
+msgstr "気圧過多"
 
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP"
-#| msgid "This plant requires a minimum pressure of {TargetPressure}"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.TOOLTIP"
 msgid ""
 "This plant can only withstand a maximum pressure of {TargetPressure}\n"
 "\n"
 "Current Pressure: {CurrentPressure}"
-msgstr "この植物は最低でも {TargetPressure} 気圧が必要です"
+msgstr ""
+"この植物は {TargetPressure} までの気圧に耐えることができます\n"
+"\n"
+"現在の気圧: {CurrentPressure}"
 
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.NAME"
-#| msgid "Low Atmospheric Pressure"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.NAME"
 msgid "Low Air Pressure"
 msgstr "気圧不足"
 
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP"
-#| msgid "This plant requires a minimum pressure of {TargetPressure}"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP"
 msgid ""
 "This plant requires a minimum atmospheric pressure of {TargetPressure}\n"
 "\n"
 "Current Pressure: {CurrentPressure}"
-msgstr "この植物は最低でも {TargetPressure} 気圧が必要です"
+msgstr ""
+"この植物は最低でも {TargetPressure} 気圧が必要です\n"
+"\n"
+"現在の気圧: {CurrentPressure}"
 
 #. STRINGS.CREATURES.STATUSITEMS.BARREN.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BARREN.NAME"
@@ -4379,12 +4375,9 @@ msgid "Barren"
 msgstr "不毛"
 
 #. STRINGS.CREATURES.STATUSITEMS.BARREN.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.BARREN.TOOLTIP"
-#| msgid "This plant cannot produce any more seeds"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BARREN.TOOLTIP"
 msgid "This plant will produce no more seeds"
-msgstr "この植物はもう種を生産できません"
+msgstr "この植物はもう種子を生産できません"
 
 #. STRINGS.CREATURES.STATUSITEMS.BREATH.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BREATH.NAME"
@@ -4428,6 +4421,9 @@ msgid ""
 "\n"
 "Move the selected plant to a fertilizable plot for optimal growth"
 msgstr ""
+"この農場は肥料を受け付けません。\n"
+"\n"
+"成長を速成させるためには、この植物を施肥可能な農場へ植え替えてください。"
 
 #. STRINGS.CREATURES.STATUSITEMS.CANTACCEPTIRRIGATION.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CANTACCEPTIRRIGATION.NAME"
@@ -4441,6 +4437,9 @@ msgid ""
 "\n"
 "Move the selected plant to an irrigatable plot for optimal growth"
 msgstr ""
+"この農場は灌漑を受け付けません。\n"
+"\n"
+"成長を速成させるためには、この植物を灌漑可能な農場へ植え替えてください。"
 
 #. STRINGS.CREATURES.STATUSITEMS.COLD.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.NAME"
@@ -4448,12 +4447,6 @@ msgid "Chilly surroundings"
 msgstr "周囲が寒すぎる"
 
 #. STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP"
-#| msgid ""
-#| "This creature cannot retain enough heat in this environment to regulate its internal temperature.\n"
-#| "\n"
-#| "It prefers environments between {0} and {1}."
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP"
 msgid ""
 "This creature cannot retain enough heat to stay warm in this area\n"
@@ -4467,7 +4460,7 @@ msgstr ""
 #. STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.NAME"
 msgid "Piqued"
-msgstr ""
+msgstr "誘導"
 
 #. STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.TOOLTIP"
@@ -4477,12 +4470,12 @@ msgstr "この生物は囮に引き寄せられています"
 #. STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.NAME"
 msgid "Pollution Exposure"
-msgstr ""
+msgstr "汚染曝露"
 
 #. STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.TOOLTIP"
 msgid "Exposure to contaminants is accelerating this food's decay rate"
-msgstr ""
+msgstr "汚染物質にさらすことは、食糧の腐敗を早めることになります"
 
 #. STRINGS.CREATURES.STATUSITEMS.COOLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COOLING.NAME"
@@ -4490,9 +4483,6 @@ msgid "Chilly Breath"
 msgstr "凍える呼吸"
 
 #. STRINGS.CREATURES.STATUSITEMS.COOLING.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.COOLING.TOOLTIP"
-#| msgid "This creature's breathing is cooling the surrounding area"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COOLING.TOOLTIP"
 msgid "This creature's respiration has a cooling effect on the surrounding area"
 msgstr "この生物は周囲を寒くする呼吸をしています"
@@ -4523,12 +4513,9 @@ msgid "Drowning"
 msgstr "溺れている"
 
 #. STRINGS.CREATURES.STATUSITEMS.DROWNING.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.BURROWING.TOOLTIP"
-#| msgid "This creature is trying to hide"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DROWNING.TOOLTIP"
 msgid "This creature cannot survive in liquid"
-msgstr "この生物は隠れようとしています"
+msgstr "この生物は水の中では生存できません"
 
 #. STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.NAME"
@@ -4566,9 +4553,6 @@ msgid "Entombed"
 msgstr "埋没"
 
 #. STRINGS.CREATURES.STATUSITEMS.ENTOMBED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.ENTOMBED.TOOLTIP"
-#| msgid "This creature is trapped and must be dug out"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ENTOMBED.TOOLTIP"
 msgid "This creature is trapped and needs help digging out"
 msgstr "この生物は嵌まっているため、掘り出してやらないといけません"
@@ -4579,12 +4563,9 @@ msgid "Exhaling"
 msgstr "はき出している"
 
 #. STRINGS.CREATURES.STATUSITEMS.EXHALING.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.EXHALING.TOOLTIP"
-#| msgid "Expelling gas from lungsac"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EXHALING.TOOLTIP"
 msgid "This creature is expelling gas from its lungsacs"
-msgstr "肺の袋から気体をはき出しています"
+msgstr "肺腑から気体をはき出しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.FALLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FALLING.NAME"
@@ -4592,12 +4573,9 @@ msgid "Falling"
 msgstr "落下中"
 
 #. STRINGS.CREATURES.STATUSITEMS.FALLING.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.FALLING.TOOLTIP"
-#| msgid "This creature is in freefall"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FALLING.TOOLTIP"
 msgid "This creature is in freefall!"
-msgstr "この生物は落下中です"
+msgstr "この生物は自由落下中です"
 
 #. STRINGS.CREATURES.STATUSITEMS.FLEEING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FLEEING.NAME"
@@ -4605,11 +4583,6 @@ msgid "Fleeing"
 msgstr "逃走中"
 
 #. STRINGS.CREATURES.STATUSITEMS.FLEEING.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.FLEEING.TOOLTIP"
-#| msgid ""
-#| "This creature is trying to escape combat\n"
-#| "Get'em!"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FLEEING.TOOLTIP"
 msgid ""
 "This creature is trying to escape\n"
@@ -4626,7 +4599,7 @@ msgstr "新鮮 {RotPercentage}"
 #. STRINGS.CREATURES.STATUSITEMS.FRESH.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FRESH.TOOLTIP"
 msgid "Get'em while they're hot!"
-msgstr ""
+msgstr "出来立てをどうぞ！"
 
 #. STRINGS.CREATURES.STATUSITEMS.GROWING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.GROWING.NAME"
@@ -4636,7 +4609,7 @@ msgstr "生育中 ({PercentGrow}%)"
 #. STRINGS.CREATURES.STATUSITEMS.GROWING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.GROWING.TOOLTIP"
 msgid "This plant is growing because all of it basic requirements are being met"
-msgstr ""
+msgstr "この植物は必要な条件を満たしているので成長しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.HARVESTSREMAINING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HARVESTSREMAINING.NAME"
@@ -4676,7 +4649,7 @@ msgstr "    • {0}\n"
 #. STRINGS.CREATURES.STATUSITEMS.HIGH_YIELD.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HIGH_YIELD.NAME"
 msgid "Excellent Yield"
-msgstr ""
+msgstr "大豊作"
 
 #. STRINGS.CREATURES.STATUSITEMS.HIGH_YIELD.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HIGH_YIELD.TOOLTIP"
@@ -4684,6 +4657,8 @@ msgid ""
 "Consistently ideal conditions allowed this plant to bear a large yield\n"
 "{Effects}"
 msgstr ""
+"理想条件を一貫して満たしているため、この植物は大量に産出します\n"
+"{Effects}"
 
 #. STRINGS.CREATURES.STATUSITEMS.HOT.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT.NAME"
@@ -4757,97 +4732,69 @@ msgid "Foraging"
 msgstr "食い漁っている"
 
 #. STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.TOOLTIP"
-#| msgid "This creature is looking for food"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.TOOLTIP"
 msgid "This creature is hungry and looking for food"
-msgstr "この生物は食べ物を探しています"
+msgstr "この生物は腹ペコなので食べ物を探しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.LOW_YIELD.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.WORLDGENSCREEN.SIZES.STANDARD"
-#| msgid "Standard"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LOW_YIELD.NAME"
 msgid "Standard Yield"
 msgstr "ふつう"
 
 #. STRINGS.CREATURES.STATUSITEMS.LOW_YIELD.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.BARREN.TOOLTIP"
-#| msgid "This plant cannot produce any more seeds"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LOW_YIELD.TOOLTIP"
 msgid "This plant produced an average yield"
-msgstr "この植物はもう種を生産できません"
+msgstr "この植物の生産量は平均的です"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.LINE_ITEM
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.LINEITEM"
-#| msgid "    • {0}: {1}\n"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.LINE_ITEM"
 msgid "    • {0}: {1}\n"
-msgstr ""
-"    • {0}: {1}\n"
-"\n"
+msgstr "    • {0}: {1}\n"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.AWAITINGSEEDDELIVERY.NAME"
-#| msgid "Awaiting Delivery"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.NAME"
 msgid "Awaiting Fertilizer"
-msgstr "配達待ち"
+msgstr "施肥待ち"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP"
-#| msgid "This plant needs additional nutrients to grow"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP"
 msgid ""
 "This plant requires additional nutrients to improve growth:\n"
 "{Required}"
-msgstr "この植物が育つにはもっと栄養が必要です"
+msgstr ""
+"この植物は成長を促成させるための追加栄養素が必要です:\n"
+"{Required}"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.LINE_ITEM
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.LINEITEM"
-#| msgid "    • {0}: {1}\n"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.LINE_ITEM"
 msgid "    • {0}: {1}\n"
-msgstr ""
-"    • {0}: {1}\n"
-"\n"
+msgstr "    • {0}: {1}\n"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.AWAITINGARTING.NAME"
-#| msgid "Awaiting Decoration"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.NAME"
 msgid "Awaiting Irrigation"
-msgstr "装飾待ち"
+msgstr "灌漑待ち"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP"
-#| msgid "This plant needs additional nutrients to grow"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.TOOLTIP"
 msgid ""
 "This plant requires additional liquid to improve growth:\n"
 "{Required}"
-msgstr "この植物が育つにはもっと栄養が必要です"
+msgstr ""
+"この植物は成長を促成させるための追加水分が必要です:\n"
+"{Required}"
 
 #. STRINGS.CREATURES.STATUSITEMS.NORMAL_YIELD.LINE_ITEM
-#, fuzzy
-#| msgctxt "STRINGS.UI.LISTENTRYSTRING"
-#| msgid "     {0}\n"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NORMAL_YIELD.LINE_ITEM"
 msgid "    • {0}\n"
-msgstr "     {0}\n"
+msgstr ""
+"    • {0}\n"
+"\n"
 
 #. STRINGS.CREATURES.STATUSITEMS.NORMAL_YIELD.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NORMAL_YIELD.NAME"
 msgid "Good Yield"
-msgstr ""
+msgstr "豊作"
 
 #. STRINGS.CREATURES.STATUSITEMS.NORMAL_YIELD.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NORMAL_YIELD.TOOLTIP"
@@ -4855,6 +4802,8 @@ msgid ""
 "Comfortable conditions allowed this plant to produce a better yield\n"
 "{Effects}"
 msgstr ""
+"理想条件をおおむね満たしているため、この植物はより多く産出します\n"
+"{Effects}"
 
 #. STRINGS.CREATURES.STATUSITEMS.PERFECTATMOSPHERICPRESSURE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTATMOSPHERICPRESSURE.NAME"
@@ -4868,6 +4817,9 @@ msgid ""
 "\n"
 "Ideal Range: {0} - {1}"
 msgstr ""
+"この生物は現在の気圧に満足しています\n"
+"\n"
+"理想範囲: {0} - {1}"
 
 #. STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.NAME"
@@ -4881,6 +4833,9 @@ msgid ""
 "\n"
 "Ideal Range: {0} - {1}"
 msgstr ""
+"この生物は現在の気温に満足しています\n"
+"\n"
+"理想範囲: {0} - {1}"
 
 #. STRINGS.CREATURES.STATUSITEMS.READYFORHARVEST.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.READYFORHARVEST.NAME"
@@ -4940,7 +4895,7 @@ msgstr "腐敗"
 #. STRINGS.CREATURES.STATUSITEMS.SPOILED.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SPOILED.TOOLTIP"
 msgid "This food has putrified and should not be consumed"
-msgstr ""
+msgstr "この食糧は腐っており、食べるべきではありません"
 
 #. STRINGS.CREATURES.STATUSITEMS.STALE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STALE.NAME"
@@ -4950,7 +4905,7 @@ msgstr "傷んでいる {RotPercentage}"
 #. STRINGS.CREATURES.STATUSITEMS.STALE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STALE.TOOLTIP"
 msgid "This food is still edible but will soon expire"
-msgstr ""
+msgstr "この食糧はまだ食べられますが、すぐに消費期限がくるでしょう"
 
 #. STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.NAME"
@@ -4958,12 +4913,9 @@ msgid "Sterile Atmosphere"
 msgstr "滅菌環境"
 
 #. STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.TOOLTIP"
-#| msgid "Ambient conditions are preventing this <style=\"food\">Food</style>'s from decaying"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.TOOLTIP"
 msgid "Microbe destroying conditions are preventing this food from decaying"
-msgstr "大気の状態が<style=\"food\">食糧</style>の腐敗を防いでいます"
+msgstr "菌の繁殖が抑えられていることにより、食糧の腐敗を防いでいます"
 
 #. STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME"
@@ -4981,12 +4933,9 @@ msgid "Suffocating"
 msgstr "窒息"
 
 #. STRINGS.CREATURES.STATUSITEMS.SUFFOCATING.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.SUFFOCATING.TOOLTIP"
-#| msgid "This Duplicant cannot breathe!"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SUFFOCATING.TOOLTIP"
 msgid "This creature cannot breathe"
-msgstr "この複製人間は呼吸ができません！"
+msgstr "この生物は呼吸ができません"
 
 #. STRINGS.CREATURES.STATUSITEMS.TIRED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TIRED.NAME"
@@ -5004,12 +4953,9 @@ msgid "Unrefrigerated"
 msgstr "冷蔵されていない"
 
 #. STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.TOOLTIP"
-#| msgid "Temperatures above <style=\"heat\">{RotTemperature}</style> will spoil food more quickly"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.TOOLTIP"
 msgid "Temperatures above {RotTemperature} spoil food more quickly"
-msgstr "<style=\"heat\">{RotTemperature}</style>より高い温度では、食糧がより腐りやすくなります"
+msgstr "{RotTemperature} より高い温度では、食糧がより腐りやすくなります"
 
 #. STRINGS.CREATURES.STATUSITEMS.WILTING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WILTING.NAME"
@@ -5023,15 +4969,14 @@ msgid ""
 "\n"
 "Unmet Condition: {0}"
 msgstr ""
+"この植物は基本条件を満たしていないため成長を止めています\n"
+"\n"
+"満たしていない条件: {0}"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.DESC"
-#| msgid ""
-#| "The Air Consumption attribute determines how much <style=\"oxygen\">Oxygen</style> per minute a Duplicant requires to live."
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.DESC"
 msgid "Air Consumption determines how much <style=\"oxygen\">Oxygen</style> a Duplicant requires per minute to live."
-msgstr "空気消費量は複製人間の生存に必要な<style=\"oxygen\">酸素</style>の量を決定します。"
+msgstr "空気消費量は複製人間が1分間の生存に必要な<style=\"oxygen\">酸素</style>の量を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.NAME
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.NAME"
@@ -7747,7 +7692,7 @@ msgstr "普通"
 #. STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.BAD_FOOD_MOD
 msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.BAD_FOOD_MOD"
 msgid "Food Quality"
-msgstr "食糧品質"
+msgstr "食糧品質期待値"
 
 #. STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.EXPECTATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.EXPECTATION_TOOLTIP"
@@ -12558,29 +12503,29 @@ msgid ""
 "\n"
 "Each bite leaves a mild cooling sensation in one's mouth, even when the bun itself is warm."
 msgstr ""
+"<style=\"plant\">スリートウィート</style>の穀粒で作ったシンプルなパンです。\n"
+"\n"
+"温かい状態であっても、一口食べるごとに冷涼感が口中を満たします。"
 
 #. STRINGS.ITEMS.FOOD.COLDWHEATBREAD.NAME
 msgctxt "STRINGS.ITEMS.FOOD.COLDWHEATBREAD.NAME"
 msgid "Frost Bun"
-msgstr ""
+msgstr "フロストバンズ"
 
 #. STRINGS.ITEMS.FOOD.COLDWHEATBREAD.RECIPEDESC
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.ROCKGAS.DESC"
-#| msgid "A superheated rock <style=\"gas\">Gas</style>."
 msgctxt "STRINGS.ITEMS.FOOD.COLDWHEATBREAD.RECIPEDESC"
 msgid "A simple bun baked from <style=\"plant\">Sleet Wheat</style> grain."
-msgstr "超高温の岩石<style=\"gas\">ガス</style>です。"
+msgstr "<style=\"plant\">スリートウィート</style>の穀粒で作ったシンプルなパンです。"
 
 #. STRINGS.ITEMS.FOOD.COLDWHEATSEED.DESC
 msgctxt "STRINGS.ITEMS.FOOD.COLDWHEATSEED.DESC"
 msgid "Sleet Wheat Grain"
-msgstr ""
+msgstr "スリートウィートの穀粒"
 
 #. STRINGS.ITEMS.FOOD.COLDWHEATSEED.NAME
 msgctxt "STRINGS.ITEMS.FOOD.COLDWHEATSEED.NAME"
 msgid "Sleet Wheat Grain"
-msgstr ""
+msgstr "スリートウィートの穀粒"
 
 #. STRINGS.ITEMS.FOOD.COOKEDMEAT.DESC
 msgctxt "STRINGS.ITEMS.FOOD.COOKEDMEAT.DESC"
@@ -12589,30 +12534,30 @@ msgid ""
 "\n"
 "It has a delightful smokey aftertaste."
 msgstr ""
+"倒した生物の肉を調理したものです。\n"
+"\n"
+"後味がとてもスモーキーです。"
 
 #. STRINGS.ITEMS.FOOD.COOKEDMEAT.NAME
 msgctxt "STRINGS.ITEMS.FOOD.COOKEDMEAT.NAME"
 msgid "BBQ"
-msgstr ""
+msgstr "BBQ"
 
 #. STRINGS.ITEMS.FOOD.COOKEDMEAT.RECIPEDESC
-#, fuzzy
-#| msgctxt "STRINGS.ITEMS.FOOD.MEAT.DESC"
-#| msgid "Fresh meat from a very dead creature. Yum!"
 msgctxt "STRINGS.ITEMS.FOOD.COOKEDMEAT.RECIPEDESC"
 msgid "The cooked meat of a defeated creature."
-msgstr "取れたての新鮮な肉です。美味い！"
+msgstr "倒した生物の肉を調理したものです。"
 
 #. STRINGS.ITEMS.FOOD.FIELDRATION.DESC
-#, fuzzy
-#| msgctxt "STRINGS.ITEMS.FOOD.FIELDRATION.DESC"
-#| msgid "Provides the most essential nutrients and nothing more. Tastes like chalk."
 msgctxt "STRINGS.ITEMS.FOOD.FIELDRATION.DESC"
 msgid ""
 "Provides the most essential nutrients and nothing more.\n"
 "\n"
 "Tastes like chalk."
-msgstr "主要な栄養素を供給し、チョークのような味がします。"
+msgstr ""
+"主要な栄養素を供給します。\n"
+"\n"
+"チョークのような味がします。"
 
 #. STRINGS.ITEMS.FOOD.FIELDRATION.NAME
 msgctxt "STRINGS.ITEMS.FOOD.FIELDRATION.NAME"
@@ -12657,9 +12602,6 @@ msgid "The grilled bud of a <style=\"plant\">Bristle Blossom</style>."
 msgstr ""
 
 #. STRINGS.ITEMS.FOOD.MEAT.DESC
-#, fuzzy
-#| msgctxt "STRINGS.ITEMS.FOOD.MEAT.DESC"
-#| msgid "Fresh meat from a very dead creature. Yum!"
 msgctxt "STRINGS.ITEMS.FOOD.MEAT.DESC"
 msgid "Uncooked meat from a very dead creature. Yum!"
 msgstr "取れたての新鮮な肉です。美味い！"
@@ -14962,7 +14904,7 @@ msgstr "星で結ばれた"
 #. STRINGS.NAMEGEN.COLONY.ADJECTIVE.STARVING
 msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.STARVING"
 msgid "Starving"
-msgstr "飢えのはこびる"
+msgstr "飢えのはびこる"
 
 #. STRINGS.NAMEGEN.COLONY.ADJECTIVE.SUAVE
 msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.SUAVE"
@@ -16279,12 +16221,9 @@ msgid "Cutting-edge technologies to get the most out of your recycled materials.
 msgstr "再利用した素材を最大限に利用する先端技術です。"
 
 #. STRINGS.RESEARCH.ADVANCEDFILTRATION.NAME
-#, fuzzy
-#| msgctxt "STRINGS.MISC.TAGS.FILTER"
-#| msgid "Filtration Medium"
 msgctxt "STRINGS.RESEARCH.ADVANCEDFILTRATION.NAME"
 msgid "Filtration"
-msgstr "ろ過媒体"
+msgstr "ろ過"
 
 #. STRINGS.RESEARCH.ADVANCEDPOWERREGULATION.DESC
 #, fuzzy
@@ -16295,12 +16234,9 @@ msgid "Circuit components required for large scale <style=\"power\">Power</style
 msgstr "コロニーに<style=\"power\">電力</style>源が必要"
 
 #. STRINGS.RESEARCH.ADVANCEDPOWERREGULATION.NAME
-#, fuzzy
-#| msgctxt "STRINGS.RESEARCH.POWERREGULATION.NAME"
-#| msgid "Power Regulation"
 msgctxt "STRINGS.RESEARCH.ADVANCEDPOWERREGULATION.NAME"
 msgid "Advanced Power Regulation"
-msgstr "電力制御"
+msgstr "高度な電力制御"
 
 #. STRINGS.RESEARCH.COMBUSTION.DESC
 msgctxt "STRINGS.RESEARCH.COMBUSTION.DESC"
@@ -16310,7 +16246,7 @@ msgstr "自動的に<style=\"power\">電力</style>を生成する粗製燃料�
 #. STRINGS.RESEARCH.COMBUSTION.NAME
 msgctxt "STRINGS.RESEARCH.COMBUSTION.NAME"
 msgid "Combustion"
-msgstr "火力発電機"
+msgstr "燃焼"
 
 #. STRINGS.RESEARCH.FARMINGTECH.DESC
 msgctxt "STRINGS.RESEARCH.FARMINGTECH.DESC"
@@ -16330,7 +16266,7 @@ msgstr "より良い栄養価の<style=\"food\">食糧</style>を作ったり、
 #. STRINGS.RESEARCH.FINEDINING.NAME
 msgctxt "STRINGS.RESEARCH.FINEDINING.NAME"
 msgid "Fine Dining"
-msgstr "高級料理"
+msgstr "食事改善"
 
 #. STRINGS.RESEARCH.GASPIPING.DESC
 msgctxt "STRINGS.RESEARCH.GASPIPING.DESC"
@@ -16351,12 +16287,9 @@ msgid "Unlock more advanced fuel-powered generators for <style=\"power\">Power</
 msgstr "自動的に<style=\"power\">電力</style>を生成する粗製燃料発電機です。"
 
 #. STRINGS.RESEARCH.IMPROVEDCOMBUSTION.NAME
-#, fuzzy
-#| msgctxt "STRINGS.RESEARCH.COMBUSTION.NAME"
-#| msgid "Combustion"
 msgctxt "STRINGS.RESEARCH.IMPROVEDCOMBUSTION.NAME"
 msgid "Performance Combustion"
-msgstr "火力発電機"
+msgstr "燃焼効率化"
 
 #. STRINGS.RESEARCH.INSULATION.DESC
 msgctxt "STRINGS.RESEARCH.INSULATION.DESC"
@@ -18736,12 +18669,12 @@ msgstr "グラフィック"
 #. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.LANGUAGE
 msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.LANGUAGE"
 msgid "Choose a different Language"
-msgstr ""
+msgstr "別言語を選択"
 
 #. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.METRICS
 msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.METRICS"
 msgid "Send Metrics Data"
-msgstr "統計データを送信する"
+msgstr "統計データの送信"
 
 #. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TITLE"
@@ -18873,7 +18806,7 @@ msgstr "セーブスロット"
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.DOWNLOAD
 msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.DOWNLOAD"
 msgid "Start Download"
-msgstr ""
+msgstr "ダウンロード開始"
 
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.INSTALL
 msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.INSTALL"
@@ -18888,17 +18821,17 @@ msgstr "インストール済"
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.NO_PACKS
 msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.NO_PACKS"
 msgid "Steam Workshop"
-msgstr ""
+msgstr "Steam Workshop"
 
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.NO_STEAM
 msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.NO_STEAM"
 msgid "Unable to get language list from Steam"
-msgstr ""
+msgstr "Steamから言語一覧を取得できません"
 
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PLEASE_RESTART
 msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PLEASE_RESTART"
 msgid "This requires a restart, press ok to continue"
-msgstr ""
+msgstr "再起動が必要です。継続するにはOKを押してください。"
 
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.TITLE"
@@ -19174,12 +19107,9 @@ msgid "Regrowth: {0}"
 msgstr "再成長: {0}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE
-#, fuzzy
-#| msgctxt "STRINGS.UI.DETAILTABS.ENERGYGENERATOR.AVAILABLE_JOULES"
-#| msgid "<style=\"power\">Power</style> stored: {0}"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE"
 msgid "<style=\"gas\">Gas</style> Pressure: {0} minimum"
-msgstr "<style=\"power\">電力</style>保持: {0}"
+msgstr "<style=\"power\">気圧</style>: 最低 {0}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_SUBMERSION
 #, fuzzy
@@ -19453,7 +19383,7 @@ msgstr "DNA設計図選択"
 #. STRINGS.UI.IMMIGRANTSCREEN.NAME_YOUR_COLONY
 msgctxt "STRINGS.UI.IMMIGRANTSCREEN.NAME_YOUR_COLONY"
 msgid "NAME YOUR COLONY"
-msgstr ""
+msgstr "コロニーの名前"
 
 #. STRINGS.UI.IMMIGRANTSCREEN.PROCEEDBUTTON
 msgctxt "STRINGS.UI.IMMIGRANTSCREEN.PROCEEDBUTTON"
