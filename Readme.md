@@ -33,6 +33,7 @@ MIT License
 
 ## 貢献者
 
-[seameteo(LefTonbo)](https://github.com/seameteo)
+[seameteo(LefTonbo)](https://github.com/seameteo)  
+
 [piyo-gh](https://github.com/piyo-gh)
 
