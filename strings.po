@@ -272,13 +272,13 @@ msgstr "開放"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CURRENTDOORCONTROLSTATE.TOOLTIP"
 msgid ""
 "Current State: {ControlState}\n"
-"\n"
+"------------------\n"
 "Auto: Duplicants open and close this door as needed\n"
 "Locked: Nothing may pass through\n"
 "Open: This door will remain open"
 msgstr ""
 "現在の状態: {ControlState}\n"
-"\n"
+"------------------\n"
 "自動: 複製人間は必要に応じて開閉します\n"
 "施錠: 誰も通れません\n"
 "開放: ドアを開けっぱなしにします"
@@ -470,7 +470,7 @@ msgstr "製作物がセットされていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.FABRICATOREMPTY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATOREMPTY.TOOLTIP"
-msgid "Queue a recipe to begin fabrication"
+msgid "Select a recipe to begin fabrication"
 msgstr "製作するレシピをセットしてください"
 
 #. STRINGS.BUILDING.STATUSITEMS.FLOODED.NAME
@@ -551,10 +551,10 @@ msgstr "通風口気圧超過"
 #. STRINGS.BUILDING.STATUSITEMS.GASVENTOVERPRESSURE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASVENTOVERPRESSURE.TOOLTIP"
 msgid ""
-"Area's ambient pressure is too high to emit additional gas\n"
+"High air or liquid pressure in this area is preventing further liquid emission\n"
 "Reduce pressure by pumping gas away or clearing more space"
 msgstr ""
-"周辺地帯の気圧が高すぎるため、気体を排出できません\n"
+"周辺の気圧または水圧が高すぎるため、気体を排出できません\n"
 "気体ポンプで吸い出すか、空間を広げて気圧を下げてください"
 
 #. STRINGS.BUILDING.STATUSITEMS.GENERATOROFFLINE.NAME
@@ -675,10 +675,10 @@ msgstr "排水口水圧超過"
 #. STRINGS.BUILDING.STATUSITEMS.LIQUIDVENTOVERPRESSURE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDVENTOVERPRESSURE.TOOLTIP"
 msgid ""
-"Area's ambient pressure is too high to emit additional liquid\n"
+"High air or liquid pressure in this area is preventing further liquid emission\n"
 "Reduce pressure by pumping liquid away or clearing more space"
 msgstr ""
-"周辺地帯の水圧が高すぎるため、液体を排出できません\n"
+"周辺の気圧または水圧が高すぎるため、液体を排出できません\n"
 "液体ポンプで吸い出すか、空間を広げて水圧を下げてください"
 
 #. STRINGS.BUILDING.STATUSITEMS.LOOKINGGREAT.NAME
@@ -2021,20 +2021,35 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.BELOW"
 msgid "below"
 msgstr "下"
 
-#. STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.AUTO
-msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.AUTO"
+#. STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.AUTO.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.AUTO.NAME"
 msgid "Auto"
 msgstr "自動"
 
-#. STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.CLOSE
-msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.CLOSE"
+#. STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.AUTO.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.AUTO.TOOLTIP"
+msgid "Duplicants open and close this door as needed"
+msgstr "複製人間は必要に応じて開閉します"
+
+#. STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.CLOSE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.CLOSE.NAME"
 msgid "Lock"
 msgstr "施錠"
 
-#. STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.OPEN
-msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.OPEN"
+#. STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.CLOSE.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.CLOSE.TOOLTIP"
+msgid "Nothing may pass through"
+msgstr "誰も通れません"
+
+#. STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.OPEN.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.OPEN.NAME"
 msgid "Open"
 msgstr "開放"
+
+#. STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.OPEN.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.CONTROL_STATE.OPEN.TOOLTIP"
+msgid "This door will remain open"
+msgstr "ドアを開けっぱなしにします"
 
 #. STRINGS.BUILDINGS.PREFABS.DOOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.DESC"
@@ -2083,17 +2098,21 @@ msgstr "右側"
 
 #. STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.DESC"
-msgid "Water goes in, life-sustaining oxygen comes out."
-msgstr "水が入って、生命維持に必要な酸素が出てきます。"
+msgid ""
+"Water goes in, oxygen comes out.\n"
+"And hydrogen. Deadly, deadly hydrogen."
+msgstr ""
+"水が入って、酸素が出てきます。\n"
+"ついでにとっても猛毒な水素も出てきます。"
 
 #. STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.EFFECT"
 msgid ""
-"Produces a steady supply of <style=\"oxygen\">Oxygen</style> using piped in <style=\"liquid\">Water</style>.\n"
+"Produces <style=\"oxygen\">Oxygen</style> and <style=\"gas\">Hydrogen</style> using piped in <style=\"liquid\">Water</style>.\n"
 "\n"
 "Becomes idle when the room enters maximum air pressure range."
 msgstr ""
-"搬入された<style=\"liquid\">水</style>から<style=\"oxygen\">酸素</style>を安定供給します。\n"
+"搬入された<style=\"liquid\">水</style>から<style=\"oxygen\">酸素</style>と<style=\"gas\">水素</style>を生産します。\n"
 "\n"
 "部屋の気圧が上限に達すると待機状態になります。"
 
@@ -2477,8 +2496,8 @@ msgstr "水素発電機"
 # irritationとirrigationは似た単語同士
 #. STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.DESC"
-msgid "Reduce irritation with this automatic irrigation."
-msgstr "この自動灌漑で憤慨が減少します。"
+msgid "Reduce farming irritation with this automatic irrigation."
+msgstr "この自動灌漑で農業に対する憤慨が減少します。"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.EFFECT"
@@ -2507,11 +2526,11 @@ msgstr "水耕栽培農地"
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.DESC"
 msgid ""
-"Ensure your gases stay piping hot.\n"
+"Keep your gases piping hot.\n"
 "Or cold.\n"
 "Or what have you."
 msgstr ""
-"気体の温度を温かいまま移送する。\n"
+"移送する気体の温度を温かいままにする。\n"
 "あるいは冷たいまま。\n"
 "あるいは思いのままに。"
 
@@ -2534,11 +2553,11 @@ msgstr "断熱気体用パイプ"
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.DESC"
 msgid ""
-"Ensure your liquids stay piping hot.\n"
+"Keep your liquids piping hot.\n"
 "Or cold.\n"
 "Or what have you."
 msgstr ""
-"液体の温度を温かいまま移送する。\n"
+"移送する液体の温度を温かいままにする。\n"
 "あるいは冷たいまま。\n"
 "あるいは思いのままに。"
 
@@ -2929,8 +2948,8 @@ msgstr "網状タイル"
 
 #. STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.DESC"
-msgid ""
-msgstr ""
+msgid "It smells about how you'd expect."
+msgstr "想像通りの臭いがする。"
 
 #. STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.EFFECT"
@@ -4116,6 +4135,16 @@ msgctxt "STRINGS.CREATURES.SPECIES.SWAMPLILY.NAME"
 msgid "Swamp Lily"
 msgstr "クリナム"
 
+#. STRINGS.CREATURES.STATS.AIRPRESSURE.NAME
+msgctxt "STRINGS.CREATURES.STATS.AIRPRESSURE.NAME"
+msgid "Air Pressure"
+msgstr "気圧"
+
+#. STRINGS.CREATURES.STATS.AIRPRESSURE.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATS.AIRPRESSURE.TOOLTIP"
+msgid "The average gas density of the air surrounding this plant"
+msgstr "この植物の周囲にある気体の平均密度です"
+
 #. STRINGS.CREATURES.STATS.FERTILIZATION.ABSORBING_MODIFIER
 msgctxt "STRINGS.CREATURES.STATS.FERTILIZATION.ABSORBING_MODIFIER"
 msgid "Absorbing"
@@ -4133,8 +4162,8 @@ msgstr "施肥"
 
 #. STRINGS.CREATURES.STATS.FERTILIZATION.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.FERTILIZATION.TOOLTIP"
-msgid "Plants absorb solid nutrients over time when fertilized"
-msgstr "肥料が与えられると、植物は時間をかけて養分を吸収します"
+msgid "Plants gain Harvest Rating Points over time when fertilized"
+msgstr "肥料が与えられると、植物の収穫レート点数が増加します"
 
 #. STRINGS.CREATURES.STATS.HEALTH.NAME
 msgctxt "STRINGS.CREATURES.STATS.HEALTH.NAME"
@@ -4158,8 +4187,8 @@ msgstr "灌漑"
 
 #. STRINGS.CREATURES.STATS.IRRIGATION.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.IRRIGATION.TOOLTIP"
-msgid "Plants absorb liquid nutrients over time when irrigated"
-msgstr "灌漑されると、植物は時間をかけて養分を吸収します"
+msgid "Plants gain Harvest Rating Points over time when irrigated"
+msgstr "灌漑されると、植物の収穫レート点数が増加します"
 
 #. STRINGS.CREATURES.STATS.MATURITY.AMOUNT_DESC_FMT
 msgctxt "STRINGS.CREATURES.STATS.MATURITY.AMOUNT_DESC_FMT"
@@ -4208,10 +4237,15 @@ msgstr ""
 "成熟までの時間: {0}\n"
 "次の収穫までおよそ {1} です。"
 
+#. STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_GROWN
+msgctxt "STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_GROWN"
+msgid "This plant is awaiting harvest and is not currently growing"
+msgstr "この植物は収穫されるのを待っているため、成長が停止しています"
+
 #. STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_STALLED
 msgctxt "STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_STALLED"
-msgid "This plant's growth has halted"
-msgstr "この植物の成長は停滞しています"
+msgid "This plant's growth has halted due to poor conditions"
+msgstr "この植物の成長は悪条件下のため停滞しています"
 
 #. STRINGS.CREATURES.STATS.ROT.NAME
 msgctxt "STRINGS.CREATURES.STATS.ROT.NAME"
@@ -4449,7 +4483,7 @@ msgstr "周囲が寒すぎる"
 #. STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP"
 msgid ""
-"This creature cannot retain enough heat to stay warm in this area\n"
+"This creature cannot retain enough heat to stay warm in this environment\n"
 "\n"
 "It prefers temperatures between {0} and {1}"
 msgstr ""
@@ -4567,6 +4601,22 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.EXHALING.TOOLTIP"
 msgid "This creature is expelling gas from its lungsacs"
 msgstr "肺腑から気体をはき出しています"
 
+#. STRINGS.CREATURES.STATUSITEMS.EXTERNALTEMPERATURE.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.EXTERNALTEMPERATURE.NAME"
+msgid "External Temperature"
+msgstr "外部温度"
+
+#. STRINGS.CREATURES.STATUSITEMS.EXTERNALTEMPERATURE.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.EXTERNALTEMPERATURE.TOOLTIP"
+msgid ""
+"External Temperature\n"
+"----------\n"
+"This creature's environment is {0}"
+msgstr ""
+"外部温度\n"
+"----------\n"
+"この生物が居る環境は {0} です"
+
 #. STRINGS.CREATURES.STATUSITEMS.FALLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FALLING.NAME"
 msgid "Falling"
@@ -4608,7 +4658,7 @@ msgstr "生育中 ({PercentGrow}%)"
 
 #. STRINGS.CREATURES.STATUSITEMS.GROWING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.GROWING.TOOLTIP"
-msgid "This plant is growing because all of it basic requirements are being met"
+msgid "This plant is growing because all of its basic requirements are being met"
 msgstr "この植物は必要な条件を満たしているので成長しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.HARVESTSREMAINING.NAME
@@ -4668,7 +4718,7 @@ msgstr "周囲が暑すぎる"
 #. STRINGS.CREATURES.STATUSITEMS.HOT.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT.TOOLTIP"
 msgid ""
-"This creature cannot let off enough heat to keep cool in this area\n"
+"This creature cannot let off enough heat to keep cool in this environment\n"
 "\n"
 "It prefers temperatures between {0} and {1}"
 msgstr ""
@@ -4964,14 +5014,92 @@ msgstr "成長停止"
 
 #. STRINGS.CREATURES.STATUSITEMS.WILTING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WILTING.TOOLTIP"
+msgid "This plant has stopped growing because one of its basic requirements has not been met"
+msgstr "この植物は基本条件を満たしていないため成長を止めています"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.LINE_ITEM
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.LINE_ITEM"
+msgid "    • {0}: {1}\n"
+msgstr "    • {0}: {1}\n"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.NAME"
+msgid "Wrong Fertilizer"
+msgstr "異なる肥料"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.TOOLTIP"
 msgid ""
-"This plant has stopped growing because one of its basic requirements has not been met\n"
-"\n"
-"Unmet Condition: {0}"
+"This plant is being fed the wrong nutrients. It requires:\n"
+"{Required}\n"
+"A dupe should be sent to empty the storage."
 msgstr ""
-"この植物は基本条件を満たしていないため成長を止めています\n"
-"\n"
-"満たしていない条件: {0}"
+"この植物は間違った栄養素を与えられています。必要なのは:\n"
+"{Required}\n"
+"人間による収納物の撤去が必要です。"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.LINE_ITEM
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.LINE_ITEM"
+msgid "    • {0}: {1}\n"
+msgstr "    • {0}: {1}\n"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.NAME"
+msgid "Wrong Fertilizer"
+msgstr "異なる肥料"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.TOOLTIP"
+msgid ""
+"This plant is being fed the wrong nutrients. It requires:\n"
+"{Required}\n"
+"A dupe should be sent to empty the storage."
+msgstr ""
+"この植物は間違った栄養素を与えられています。必要なのは:\n"
+"{Required}\n"
+"人間による収納物の撤去が必要です。"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.LINE_ITEM
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.LINE_ITEM"
+msgid "    • {0}: {1}\n"
+msgstr "    • {0}: {1}\n"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.NAME"
+msgid "Wrong Irrigation"
+msgstr "異なる灌漑"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.TOOLTIP"
+msgid ""
+"This plant is being fed the wrong nutrients. It requires:\n"
+"{Required}\n"
+"A dupe should be sent to empty the storage."
+msgstr ""
+"この植物は間違った栄養素を与えられています。必要なのは:\n"
+"{Required}\n"
+"人間による収納物の撤去が必要です。"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.LINE_ITEM
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.LINE_ITEM"
+msgid "    • {0}: {1}\n"
+msgstr "    • {0}: {1}\n"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.NAME"
+msgid "Wrong Irrigation"
+msgstr "異なる灌漑"
+
+#. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.TOOLTIP"
+msgid ""
+"This plant is being fed the wrong nutrients. It requires:\n"
+"{Required}\n"
+"A dupe should be sent to empty the storage."
+msgstr ""
+"この植物は間違った栄養素を与えられています。必要なのは:\n"
+"{Required}\n"
+"人間による収納物の撤去が必要です。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.DESC"
@@ -6418,17 +6546,15 @@ msgctxt "STRINGS.DUPLICANTS.DEATHS.GENERIC.NAME"
 msgid "Generic"
 msgstr "安楽死"
 
-# 原文が誤ってる可能性あり
 #. STRINGS.DUPLICANTS.DEATHS.OVERHEATING.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.DEATHS.OVERHEATING.DESCRIPTION"
-msgid "{Target} has starved to death."
-msgstr "{Target}は飢えに苦しみ死亡しました。"
+msgid "{Target} has overheated to death."
+msgstr "{Target}は熱射により死亡しました。"
 
-# 原文が誤ってる可能性あり
 #. STRINGS.DUPLICANTS.DEATHS.OVERHEATING.NAME
 msgctxt "STRINGS.DUPLICANTS.DEATHS.OVERHEATING.NAME"
-msgid "Starvation"
-msgstr "餓死"
+msgid "Overheated"
+msgstr "熱死"
 
 #. STRINGS.DUPLICANTS.DEATHS.STARVATION.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.DEATHS.STARVATION.DESCRIPTION"
@@ -6665,12 +6791,12 @@ msgstr "無茶食い"
 # throw up は口語で「吐く」
 #. STRINGS.DUPLICANTS.MODIFIERS.BINGE_EATING.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BINGE_EATING.NOTIFICATION_TOOLTIP"
-msgid "These Duplicants became too <style=\"stress\">Stressed</style> and started eating everything in sight:"
+msgid "These Duplicants became too <style=\"stress\">Stressed</style> and began eating everything in sight:"
 msgstr "これらの複製人間は極度の<style=\"stress\">ストレス</style>で目に付くものすべてを食べはじめました:"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BINGE_EATING.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BINGE_EATING.TOOLTIP"
-msgid "This Duplicant is stuffing their face a result of stress"
+msgid "This Duplicant is stuffing their face as a result of stress"
 msgstr "この複製人間はストレスに伴い食べ物をほおばっています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BREATHING.NAME
@@ -6705,8 +6831,8 @@ msgstr "注目の的"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.CENTEROFATTENTION.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CENTEROFATTENTION.TOOLTIP"
-msgid "This Duplicant feels like someone is watching them..."
-msgstr "この複製人間は誰かの視線を感じています..."
+msgid "This Duplicant feels like someone's watching over them..."
+msgstr "この複製人間は誰かからの視線を感じています..."
 
 #. STRINGS.DUPLICANTS.MODIFIERS.CLAUSTROPHOBIC.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CLAUSTROPHOBIC.CAUSE"
@@ -6946,8 +7072,8 @@ msgstr "酸素低下"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP"
-msgid "The air in this area is unpleasantly thin"
-msgstr "このエリアの空気は不快なほど希薄です"
+msgid "The air quite thin in this area"
+msgstr "このエリアは空気がかなり薄いです"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.NAME"
@@ -7327,7 +7453,7 @@ msgstr "この複製人間はファッションを侮辱する衣類を着なけ
 
 #. STRINGS.DUPLICANTS.MODIFIERS.VERTIGO.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.VERTIGO.CAUSE"
-msgid "This Duplicant got so good at their job that they became bad at ladders"
+msgid "This Duplicant got so good at their job they became bad at ladders"
 msgstr "この複製人間はハシゴの上で気分が悪くなるような仕事環境に慣れてしまった"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.VERTIGO.NAME
@@ -7493,8 +7619,8 @@ msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.EXPECTATION_TOOLTIP"
 msgid ""
 "Food Quality Expectation is the minimum quality of <style=\"food\">Food</style> a Duplicant can tolerate eating.\n"
 "\n"
-"This Duplicant requires {0} or higher food, and will become <style=\"stress\">Stressed</style> if to forced to eat lower "
-"quality foods."
+"This Duplicant requires {0} or higher food, and will become <style=\"stress\">Stressed</style> if forced to eat lower quality "
+"foods."
 msgstr ""
 "食糧品質期待値は複製人間が食べたいと感じる<style=\"food\">食糧</style>品質の最低ラインです。\n"
 "\n"
@@ -8873,7 +8999,7 @@ msgstr "これらの複製人間は食べ物がありません:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NORATIONSAVAILABLE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NORATIONSAVAILABLE.TOOLTIP"
-msgid "There is nothing in the colony for this Duplicant to eat"
+msgid "There's nothing in the colony for this Duplicant to eat"
 msgstr "この複製人間が食べられそうなものはコロニーにありません"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.NAME
@@ -9336,10 +9462,10 @@ msgstr "失禁しました"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGBLADDER.NOTIFICATION_TOOLTIP"
 msgid ""
 "These Duplicants could not find a toilet in time.\n"
-"Use the <color=#833A5FFF>MOP TOOL</color> [K] to clean up their mess:\n"
+"Use the <color=#833A5FFF>MOP TOOL</color> [M] to clean up their mess:\n"
 msgstr ""
 "これらの複製人間はトイレに間に合いませんでした。\n"
-"<color=#833A5FFF>モップツール</color>[K]を使って彼らのおもらしを掃除してください:\n"
+"<color=#833A5FFF>モップツール</color>[M]を使って彼らのおもらしを掃除してください:\n"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGBLADDER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGBLADDER.TOOLTIP"
@@ -11036,7 +11162,7 @@ msgstr "堆積岩"
 #. STRINGS.ELEMENTS.SLIMEMOLD.DESC
 msgctxt "STRINGS.ELEMENTS.SLIMEMOLD.DESC"
 msgid ""
-"Slime is a thick biomixture of algae, fungi, and mucopolysaccarides.\n"
+"Slime is a thick biomixture of algae, fungi, and mucopolysaccharides.\n"
 "\n"
 "It can be distilled into <style=\"solid\">Algae</style> and is useful in some <style=\"oxygen\">Oxygen</style> production "
 "processes."
@@ -11611,6 +11737,11 @@ msgstr "Backspace"
 msgctxt "STRINGS.INPUT.ENTER"
 msgid "Enter"
 msgstr "Enter"
+
+#. STRINGS.INPUT.ESCAPE
+msgctxt "STRINGS.INPUT.ESCAPE"
+msgid "Escape"
+msgstr "Escape"
 
 #. STRINGS.INPUT.LEFT_ALT
 msgctxt "STRINGS.INPUT.LEFT_ALT"
@@ -12766,7 +12897,7 @@ msgstr "これらの複製人間は超<style=\"heat\">低温</style>により死
 
 #. STRINGS.MISC.NOTIFICATIONS.DEATH_OVERHEATING.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_OVERHEATING.NAME"
-msgid "A Duplicant have overheated"
+msgid "Duplicants have overheated"
 msgstr "複製人間が熱死しました"
 
 #. STRINGS.MISC.NOTIFICATIONS.DEATH_OVERHEATING.TOOLTIP
@@ -18008,6 +18139,23 @@ msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.TITLE"
 msgid "AUDIO OPTIONS"
 msgstr "オーディオ設定"
 
+#. STRINGS.UI.FRONTEND.AUDIODRIVERSCREEN.WARNING
+msgctxt "STRINGS.UI.FRONTEND.AUDIODRIVERSCREEN.WARNING"
+msgid ""
+"A problem occurred initializing your audio device.\n"
+"Sorry about that!\n"
+"\n"
+"This is usually caused by outdated audio drivers.\n"
+"\n"
+"Please visit your audio device manufacturer's website to download the latest drivers."
+msgstr ""
+"オーディオデバイスの初期化中に問題が発生しました。\n"
+"ごめんなさい！\n"
+"\n"
+"これはオーディオドライバが古い場合に起こりやすいです。\n"
+"\n"
+"最新のオーディオドライバをダウンロードするには、デバイスメーカーのWebサイトを参照してください。"
+
 #. STRINGS.UI.FRONTEND.GAME_VERSION
 msgctxt "STRINGS.UI.FRONTEND.GAME_VERSION"
 msgid "Game Version: "
@@ -18058,6 +18206,16 @@ msgctxt "STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.APPLY"
 msgid "Apply"
 msgstr "適用"
 
+#. STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.DUPLICATE
+msgctxt "STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.DUPLICATE"
+msgid "{0} was already bound to {1} and is now unbound."
+msgstr "{0} は {1} に割り当てられていたため、解除されました。"
+
+#. STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.MULTIPLE_UNBOUND_ACTIONS
+msgctxt "STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.MULTIPLE_UNBOUND_ACTIONS"
+msgid "You have multiple unbound actions, this may result in difficulty playing the game. Are you sure you want to continue?"
+msgstr "割り当てられていないアクションがあり、このことはゲームプレイを難しくするかもしれません。このままでもよろしいですか？"
+
 #. STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.RESET
 msgctxt "STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.RESET"
 msgid "Reset"
@@ -18068,20 +18226,15 @@ msgctxt "STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.TITLE"
 msgid "CUSTOMIZE KEYS"
 msgstr "キーをカスタマイズ"
 
-#. STRINGS.UI.FRONTEND.INPUTBINDINGSCREEN.DUPLICATE
-msgctxt "STRINGS.UI.FRONTEND.INPUTBINDINGSCREEN.DUPLICATE"
-msgid "{0} was already bound to {1} and is now unbound."
-msgstr "{0} は {1} に割り当てられたため、解除されました。"
-
-#. STRINGS.UI.FRONTEND.INPUTBINDINGSCREEN.MULTIPLE_UNBOUND_ACTIONS
-msgctxt "STRINGS.UI.FRONTEND.INPUTBINDINGSCREEN.MULTIPLE_UNBOUND_ACTIONS"
-msgid "You have multiple unbound actions, this may result in difficulty playing the game. Are you sure you want to continue?"
-msgstr "割り当てられていないアクションがあり、このことはゲームプレイを難しくするかもしれません。よろしいですか？"
-
-#. STRINGS.UI.FRONTEND.INPUTBINDINGSCREEN.UNBOUND_ACTION
-msgctxt "STRINGS.UI.FRONTEND.INPUTBINDINGSCREEN.UNBOUND_ACTION"
+#. STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.UNBOUND_ACTION
+msgctxt "STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.UNBOUND_ACTION"
 msgid "{0} is unbound. Are you sure you want to continue?"
-msgstr "{0} は割り当てられていません。よろしいですか？"
+msgstr "{0} は割り当てられていません。このままでもよろしいですか？"
+
+#. STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.WAITING_FOR_INPUT
+msgctxt "STRINGS.UI.FRONTEND.INPUT_BINDINGS_SCREEN.WAITING_FOR_INPUT"
+msgid "???"
+msgstr "???"
 
 # 現在翻訳すると文字化けを起こすのでそのまま
 #. STRINGS.UI.FRONTEND.LOADING
@@ -18686,7 +18839,7 @@ msgstr "<style=\"solid\">{0}</style>: <style=\"consumed\">{1}</style>"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.IDEAL_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.IDEAL_PRESSURE"
-msgid "<style=\"gas\">Gas</style> Pressure: {0}"
+msgid "<style=\"gas\">Air</style> Pressure: {0}"
 msgstr "<style=\"power\">気圧</style>: {0}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.IDEAL_TEMPERATURE
@@ -18721,7 +18874,7 @@ msgstr "再成長: {0}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE"
-msgid "<style=\"gas\">Gas</style> Pressure: {0} minimum"
+msgid "<style=\"gas\">Air</style> Pressure: {0} minimum"
 msgstr "<style=\"power\">気圧</style>: 最低 {0}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_SUBMERSION
@@ -18812,8 +18965,8 @@ msgstr "この植物は成長に {0} かかります"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.GROWTHTIME_REGROWTH
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.GROWTHTIME_REGROWTH"
-msgid "This plant takes {0} to grow, and {1} to mature again after first harvest"
-msgstr "この植物は成長に {0} かかり、収穫後の再成熟に {1} かかります"
+msgid "This plant initially takes {0} to grow, but only {1} to mature again after first harvest"
+msgstr "この植物は最初の成長に {0} かかりますが、収穫後の再成熟は {1} かかります"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.GROWTHTIME_SIMPLE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.GROWTHTIME_SIMPLE"
@@ -18822,17 +18975,17 @@ msgstr "この植物は成長に {0} かかります"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_FERTILIZER
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_FERTILIZER"
-msgid "This plant will gain Harvest Rating Points if provided with {1} of {0}"
+msgid "This plant will generate Harvest Rating Points if provided with {1} of {0}"
 msgstr "この植物は {0} の {1} を与えることで収穫レート点数が増加します"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_PRESSURE"
-msgid "This plant will gain Harvest Rating Points if atmospheric pressure is kept above {0}"
+msgid "This plant will generate Harvest Rating Points in atmospheric pressures above {0}"
 msgstr "この植物は気圧を {0} 以上に保つことで収穫レート点数が増加します"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_TEMPERATURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_TEMPERATURE"
-msgid "This plant will gain Harvest Rating Points if atmospheric temperature is kept between {0} and {1}"
+msgid "This plant will generate Harvest Rating Points in temperatures between {0} and {1}"
 msgstr "この植物は気温を {0} から {1} の間に保つことで収穫レート点数が増加します"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.INITIALGROWTHTIME
@@ -18847,23 +19000,23 @@ msgstr "この植物は収穫されると成熟に {0} かかります"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE"
-msgid "Atmospheric gas pressure must be at least {0} for basic growth"
-msgstr "成長するために気圧が最低でも {0} 必要です"
+msgid "Gas pressure around this plant must be at least {0} for basic growth"
+msgstr "この植物が成長するためには周囲の気圧が最低でも {0} 必要です"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_SUBMERSION
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_SUBMERSION"
 msgid "This plant must be fully submerged in liquid for basic growth"
-msgstr "この植物は成長するために水没している必要があります"
+msgstr "この植物が成長するためには水没している必要があります"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_TEMPERATURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_TEMPERATURE"
 msgid "Atmospheric temperature must be kept between {0} and {1} for basic growth"
-msgstr "この植物は成長するために気温を {0} から {1} の間に保つ必要があります"
+msgstr "この植物が成長するためには気温を {0} から {1} の間に保つ必要があります"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRESFERTILIZER
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRESFERTILIZER"
 msgid "This plant requires {1} {0} for basic growth"
-msgstr "この植物は成長するために {0} が {1} 必要です"
+msgstr "この植物が成長するためには {0} が {1} 必要です"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.SEED_PRODUCTION_DIG_ONLY
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.SEED_PRODUCTION_DIG_ONLY"
@@ -21084,7 +21237,7 @@ msgstr ""
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO"
-msgid "Door is automated."
+msgid "Door is on auto."
 msgstr "ドアは自動開閉です。"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO_PENDING
@@ -21094,8 +21247,8 @@ msgstr "複製人間がドアを自動開閉にするのを待っています。
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE"
-msgid "Door is locked shut."
-msgstr "ドアは固く閉じています。"
+msgid "Door is locked."
+msgstr "ドアは施錠されています。"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE_PENDING
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE_PENDING"
@@ -21354,17 +21507,17 @@ msgstr "<b>収穫レートレベル</b>:"
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.HIGH_YIELD
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.HIGH_YIELD"
 msgid "Excellent (80+ Points):"
-msgstr "最高 (80点以上):"
+msgstr "大豊作 (80点以上):"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.LOW_YIELD
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.LOW_YIELD"
 msgid "Standard (0+ Points):"
-msgstr "ふつう (0点以上):"
+msgstr "凡作 (0点以上):"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.NORMAL_YIELD
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.NORMAL_YIELD"
 msgid "Good (40+ Points):"
-msgstr "良好 (40点以上):"
+msgstr "豊作 (40点以上):"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.NUMBEROFHARVESTS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.NUMBEROFHARVESTS"
@@ -21413,46 +21566,68 @@ msgstr "種子選択"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.HARVESTDETAILS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.HARVESTDETAILS"
-msgid "Yield bonuses for Harvest Ratings"
-msgstr "収穫レートによる産出ボーナス"
+msgid "Complete yield bonuses for each Harvest Rating Tier"
+msgstr "収穫レート段階による産出ボーナス一覧"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.HIGH_YIELD
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.HIGH_YIELD"
-msgid "If a plant reaches maturity with more than {0} Harvest Rating Points it will produce an Excellent yield"
-msgstr "{0} 点以上の収穫レート点数がある状態で成熟した場合、最高の産出をするでしょう"
+msgid ""
+"Excellent Harvest Tier\n"
+"------------------\n"
+"Plants produce Excellent yields if they mature with {0} or more Harvest Rating Points.\n"
+"Achieving this tier will yield the maximum number of materials this plant can produce."
+msgstr ""
+"大豊作レベル\n"
+"------------------\n"
+"{0} 点以上の収穫レート点数がある状態で成熟すると大豊作になります。\n"
+"このレベルの植物からは最大限の素材を生産することができます。"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.LOW_YIELD
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.LOW_YIELD"
-msgid "If a plant reaches maturity with fewer than 40 Harvest Rating Points it will produce a Standard yield"
-msgstr "40 点未満の収穫レート点数しかない状態で成熟した場合、ふつうの産出をするでしょう"
+msgid ""
+"Standard Harvest Tier\n"
+"------------------\n"
+"Plants produce Standard yields if they mature with 40 Harvest Rating Points or less."
+msgstr ""
+"凡作レベル\n"
+"------------------\n"
+"40 点以下の収穫レート点数がある状態で成熟すると凡作になります。"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.NORMAL_YIELD
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.NORMAL_YIELD"
-msgid "If a plant reaches maturity with more than {0} Harvest Rating Points it will produce a Good yield"
-msgstr "{0} 点以上の収穫レート点数がある状態で成熟した場合、良好の産出をするでしょう"
+msgid ""
+"Good Harvest Tier\n"
+"------------------\n"
+"Plants produce Good yields if they mature with {0} or more Harvest Rating Points.\n"
+"Achieving this tier will yield more materials."
+msgstr ""
+"豊作レベル\n"
+"------------------\n"
+"{0} 点以上の収穫レート点数がある状態で成熟すると豊作になります。\n"
+"このレベルの植物からは多めの素材を生産することができます。"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.NUMBEROFHARVESTS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.NUMBEROFHARVESTS"
-msgid "This plant will yield {0} harvests in its lifecycle"
-msgstr "この植物は枯れるまでにあと {0} 回収穫できます"
+msgid "This plant can mature {0} times before the end of its lifecycle."
+msgstr "この植物は一生のうちに {0} 回成熟します。"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.OPTIMUMCONDITIONS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.OPTIMUMCONDITIONS"
 msgid ""
-"A plant will continuously generate Harvest Rating Points when kept within ideal conditions, generating up to {1} points per "
-"condition in a day.\n"
-"\n"
-"This plant's maximum Harvest Rating Point generation is +{0} per cycle. It will generate additional points the longer it stays "
-"within ideal conditions."
+"Plants continuously generate Harvest Rating Points while in ideal conditions.\n"
+"------------------\n"
+"This plant can generate up to {1} points per cycle for each satisfied condition.\n"
+"It can earn a maximum of {0} points per cycle."
 msgstr ""
-"植物は理想状態で収穫レート点数が増加し、条件を1つ満たすごとに1日あたり最大 {1} 点増加します。\n"
-"\n"
-"この植物の最大収穫レート増加点数はサイクルあたり +{0} です。理想状態を維持すると追加で点数が増加します。"
+"植物は理想状態を満たすことで収穫レート点数が増加します。\n"
+"------------------\n"
+"この植物は条件を1つ満たすごとに、最大でサイクルあたり {1} 点増加します。\n"
+"最大収穫レート増加点数はサイクルあたり +{0} です。"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.PLANTEFFECTS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.PLANTEFFECTS"
-msgid "Harvest Rating Point generation and additional effects"
-msgstr "収穫レート点数の増加と追加効果"
+msgid "Conditions for Harvest Rating Point generation and additional effects"
+msgstr "条件による収穫レート点数の増加と追加効果"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.PLANTREQUIREMENTS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.PLANTREQUIREMENTS"
@@ -21461,8 +21636,8 @@ msgstr "生命維持と成長の必要要件"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD"
-msgid "<style=\"produced\">{2}</style> produced in this tier (<style=\"produced\">{1}</style> per unit)"
-msgstr "この段階であれば<style=\"produced\">{2}</style>を生産します (1個あたり<style=\"produced\">{1}</style>)"
+msgid "<style=\"produced\">{2}</style> produced in this harvest tier (<style=\"produced\">{1}</style> per unit)"
+msgstr "この収穫レベルであれば<style=\"produced\">{2}</style>を生産します (1個あたり<style=\"produced\">{1}</style>)"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_SEED
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_SEED"
@@ -21474,7 +21649,7 @@ msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_SEED_FINAL_HA
 msgid ""
 "{0}\n"
 "\n"
-"These seeds will be produced in the final harvest of a plant's lifecycle"
+"These seeds will be produced in the final harvest of the plant's lifecycle"
 msgstr ""
 "{0}\n"
 "\n"
@@ -21972,7 +22147,7 @@ msgstr "トイレ清掃"
 
 #. STRINGS.UI.USERMENUACTIONS.CLEANTOILET.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLEANTOILET.TOOLTIP"
-msgid "Remove waste from this toilet"
+msgid "Empty waste from this toilet"
 msgstr "トイレから汚物を除去します"
 
 #. STRINGS.UI.USERMENUACTIONS.CLEAR.NAME
