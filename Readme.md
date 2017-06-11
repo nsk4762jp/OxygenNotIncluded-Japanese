@@ -16,7 +16,11 @@ Klei Entertainment 制作のスペースコロニー経営ゲーム「[Oxygen No
 
 ## インストール
 
-[Release](https://github.com/nsk4762jp/OxygenNotIncluded-Japanese/releases) から Source code(zip) をダウンロードし、解凍して出てきた `strings.po` を下記フォルダにコピーしてください。  
+Steam Workshop で[日本語化MOD](http://steamcommunity.com/sharedfiles/filedetails/?id=928606476)をサブスクライブし、ゲームメニューから以下の操作をします。
+
+    Options > Choose different Language > [WIP]Japanese Language Pack
+
+サブスクライブが上手くいかない場合は、[Release](https://github.com/nsk4762jp/OxygenNotIncluded-Japanese/releases) から Source code(zip) をダウンロードし、解凍して出てきた `strings.po` を下記フォルダにコピーしてください。  
 
     (Steamフォルダ)/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/StreamingAssets/Mods  
 
