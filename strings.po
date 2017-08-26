@@ -462,7 +462,7 @@ msgstr "空"
 #. STRINGS.BUILDING.STATUSITEMS.EMPTYPUMPINGSTATION.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMPTYPUMPINGSTATION.TOOLTIP"
 msgid "This pumping station cannot access any liquid"
-msgstr "このポンプ場は液体に届きません"
+msgstr "この水汲み場は液体に届きません"
 
 #. STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NAME"
@@ -1441,7 +1441,7 @@ msgstr "利用可能な液体: {Liquids}"
 #. STRINGS.BUILDING.STATUSITEMS.PUMPINGSTATION.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PUMPINGSTATION.TOOLTIP"
 msgid "This pumping station has access to: {Liquids}"
-msgstr "このポンプ場で汲み上げる液体: {Liquids}"
+msgstr "この水汲み場で汲み上げる液体: {Liquids}"
 
 #. STRINGS.BUILDING.STATUSITEMS.RATIONBOXCONTENTS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RATIONBOXCONTENTS.NAME"
@@ -1775,75 +1775,54 @@ msgid "frozen pipe contents"
 msgstr "パイプ内容物凍結"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE"
-#| msgid "from neighboring liquid pressure"
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE"
 msgid "neighboring liquid pressure"
-msgstr "隣接する液体の圧力の影響のため"
+msgstr "隣接する液体の圧力"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.MINION_DESTRUCTION
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CONSUMABLES"
-#| msgid "Manage Duplicant diets"
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.MINION_DESTRUCTION"
 msgid "an angry Duplicant. Rude!"
-msgstr "複製人間の健康状態を見ます"
+msgstr "怒れる複製人間です。なんて野蛮な！"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.NOTIFICATION_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.NOTIFICATION_TOOLTIP"
-#| msgid "{0} received damage {1}"
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.NOTIFICATION_TOOLTIP"
 msgid "A {0} sustained damage from {1}"
-msgstr "{0}は {1} ダメージを負っています"
+msgstr "{0}は{1}から継続的にダメージを受けています"
 
 #. STRINGS.BUILDINGS.DISINFECTABLE.DISABLE_DISINFECT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELDIG.NAME"
-#| msgid "Cancel Dig"
 msgctxt "STRINGS.BUILDINGS.DISINFECTABLE.DISABLE_DISINFECT.NAME"
 msgid "Cancel Disinfect"
-msgstr "採掘をやめる"
+msgstr "消毒をやめる"
 
 #. STRINGS.BUILDINGS.DISINFECTABLE.DISABLE_DISINFECT.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELDIG.TOOLTIP"
-#| msgid "Cancel this dig order"
 msgctxt "STRINGS.BUILDINGS.DISINFECTABLE.DISABLE_DISINFECT.TOOLTIP"
 msgid "Cancel this disinfect order"
-msgstr "採掘指示を取り消します"
+msgstr "消毒指示を取り消します"
 
 #. STRINGS.BUILDINGS.DISINFECTABLE.ENABLE_DISINFECT.NAME
 msgctxt "STRINGS.BUILDINGS.DISINFECTABLE.ENABLE_DISINFECT.NAME"
 msgid "Disinfect"
-msgstr ""
+msgstr "消毒"
 
 #. STRINGS.BUILDINGS.DISINFECTABLE.ENABLE_DISINFECT.TOOLTIP
 msgctxt "STRINGS.BUILDINGS.DISINFECTABLE.ENABLE_DISINFECT.TOOLTIP"
 msgid "Mark this building for disinfection"
-msgstr ""
+msgstr "消毒用にこの設備をマークします"
 
 #. STRINGS.BUILDINGS.DISINFECTABLE.NO_DISEASE.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.MISC.STATUSITEMS.CLEANING.TOOLTIP"
-#| msgid "This building is currently being cleaned"
 msgctxt "STRINGS.BUILDINGS.DISINFECTABLE.NO_DISEASE.TOOLTIP"
 msgid "This building is already clean"
-msgstr "この設備は現在清掃中です"
+msgstr "この設備は消毒済みです"
 
 #. STRINGS.BUILDINGS.PREFABS.ADVANCEDRESEARCHCENTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDRESEARCHCENTER.DESC"
 msgid "Super computers unlock higher technology tiers than research stations alone."
-msgstr ""
+msgstr "スーパー コンピューターは研究台で得られるものより高度な技術を発明します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ADVANCEDRESEARCHCENTER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDRESEARCHCENTER.EFFECT"
-#| msgid "Conducts <style=\"research\">Intermediate Research</style> and unlocks new technologies when worked on by Duplicants."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDRESEARCHCENTER.EFFECT"
 msgid "Conducts <style=\"research\">Intermediate Research</style> to unlock new technologies."
-msgstr "複製人間が<style=\"research\">中級研究</style>を行い、新技術を発明します。"
+msgstr "<style=\"research\">中級研究</style>を行い、新技術を発明します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ADVANCEDRESEARCHCENTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDRESEARCHCENTER.NAME"
@@ -1853,7 +1832,7 @@ msgstr "スーパー コンピューター"
 #. STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.DESC"
 msgid "A thermo regulator doesn't remove heat, but relocates it to a new area."
-msgstr ""
+msgstr "空調設備は熱を除去する訳ではなく、別の場所に移し替えます。"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.EFFECT"
@@ -1868,15 +1847,12 @@ msgstr "空調設備"
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.DESC"
 msgid "Airborne germs travel easily through polluted oxygen, spreading contamination if unfiltered."
-msgstr ""
+msgstr "ろ過しないと、空気中を漂う病原菌は汚染酸素を通して容易に増殖します。"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REFILLOXYGENTANK"
-#| msgid "Refills <style=\"equipment\">Exosuit Oxygen Tank</style>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.EFFECT"
 msgid "Nullifies <style=\"gas\">Polluted Oxygen</style>."
-msgstr "<style=\"equipment\">EXOスーツの酸素タンク</style>を再充填"
+msgstr "<style=\"gas\">汚染酸素</style>を無効化します。"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.NAME"
@@ -1886,7 +1862,7 @@ msgstr "脱臭機"
 #. STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.DESC"
 msgid "Algae distillers convert disease-causing slime into algae for oxygen production."
-msgstr ""
+msgstr "バイオ蒸留器は病気を引き起こすヘドロを酸素生成に必要な緑藻へと変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.EFFECT"
@@ -1894,9 +1870,6 @@ msgid "Converts <style=\"misc\">Slime</style> into <style=\"misc\">Algae</style>
 msgstr "<style=\"misc\">ヘドロ</style>を<style=\"misc\">緑藻</style>に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.NAME"
-#| msgid "Bio Distiller"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.NAME"
 msgid "Algae Distiller"
 msgstr "バイオ蒸留器"
@@ -1904,15 +1877,9 @@ msgstr "バイオ蒸留器"
 #. STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.DESC"
 msgid "Placing algae terrariums in well lit areas will produce more oxygen."
-msgstr ""
+msgstr "光が良く当たる場所にテラリウムを設置すると、より多くの酸素を生成します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.EFFECT"
-#| msgid ""
-#| "Recycles <style=\"gas\">Carbon Dioxide</style> into a small amount of <style=\"oxygen\">Oxygen</style>.\n"
-#| "\n"
-#| "Gains a minor efficiency boost in direct <style=\"light\">Light</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.EFFECT"
 msgid ""
 "Recycles <style=\"gas\">Carbon Dioxide</style> into a bit of <style=\"oxygen\">Oxygen</style>.\n"
@@ -1931,7 +1898,7 @@ msgstr "緑藻のテラリウム"
 #. STRINGS.BUILDINGS.PREFABS.BATTERY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERY.DESC"
 msgid "Batteries allow extra power from generators to be stored for later, rather than lost."
-msgstr ""
+msgstr "バッテリーは発電機から得られた電力を失わずに溜めておくことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERY.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERY.EFFECT"
@@ -1946,12 +1913,9 @@ msgstr "小さなバッテリー"
 #. STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.DESC"
 msgid "Larger batteries hold more power and keep systems running longer before recharging."
-msgstr ""
+msgstr "大容量のバッテリーはより多くの電力を蓄えることができ、以前よりも長時間稼働させることができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT"
-#| msgid "Stores most of the runoff <style=\"power\">Power</style> from generators, but loses charge over time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT"
 msgid "Stores most runoff <style=\"power\">Power</style> from generators, but loses charge over time."
 msgstr "発電余剰の<style=\"power\">電力</style>を沢山蓄えますが、充電は時間とともに失います。"
@@ -5116,15 +5080,15 @@ msgid "Fresh {RotPercentage}"
 msgstr "新鮮 {RotPercentage}"
 
 #. STRINGS.CREATURES.STATUSITEMS.FRESH.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.FRESH.TOOLTIP"
-#| msgid "Get'em while they're hot!"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FRESH.TOOLTIP"
 msgid ""
 "Get'em while they're hot!\n"
 "\n"
 "{RotTooltip}"
-msgstr "出来立てをどうぞ！"
+msgstr ""
+"出来立てをどうぞ！\n"
+"\n"
+"{RotTooltip}"
 
 #. STRINGS.CREATURES.STATUSITEMS.GROWING.NAME
 #, fuzzy
@@ -6065,7 +6029,7 @@ msgstr ""
 #. STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.NAME
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.NAME"
 msgid "Immunity"
-msgstr ""
+msgstr "免疫"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.DESC"
@@ -10000,29 +9964,20 @@ msgstr ""
 "戦闘中に生命力がゼロになると瀕死状態に陥ります"
 
 #. STRINGS.DUPLICANTS.STATS.IMMUNELEVEL.NAME
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.SYSTEM"
-#| msgid "System"
 msgctxt "STRINGS.DUPLICANTS.STATS.IMMUNELEVEL.NAME"
 msgid "Immune System"
-msgstr "システム"
+msgstr "免疫力"
 
 #. STRINGS.DUPLICANTS.STATS.IMMUNELEVEL.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATS.STAMINA.TOOLTIP"
-#| msgid ""
-#| "Stamina\n"
-#| "----------\n"
-#| "Duplicants will pass out from fatigue when stamina reaches zero"
 msgctxt "STRINGS.DUPLICANTS.STATS.IMMUNELEVEL.TOOLTIP"
 msgid ""
 "Immune System\n"
 "------------------\n"
 "Duplicants contract diseases when immune system reaches zero"
 msgstr ""
-"スタミナ\n"
+"免疫力\n"
 "----------\n"
-"スタミナが 0% になると複製人間は疲労から逃れようとします"
+"免疫力が0になると複製人間は病気に罹患します"
 
 #. STRINGS.DUPLICANTS.STATS.MORALE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.MORALE.NAME"
@@ -11876,14 +11831,13 @@ msgid "Anxious"
 msgstr "心配性"
 
 #. STRINGS.DUPLICANTS.TRAITS.ATTRIBUTE_MODIFIERS
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MATERIALSUNAVAILABLE.LINE_ITEM_MASS"
-#| msgid "• {0}: {1}"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ATTRIBUTE_MODIFIERS"
 msgid ""
 "\n"
 "• {0}: {1}"
-msgstr "• {0}: {1}"
+msgstr ""
+"\n"
+"• {0}: {1}"
 
 #. STRINGS.DUPLICANTS.TRAITS.BEDSIDEMANNER.DESC
 #, fuzzy
@@ -11990,28 +11944,19 @@ msgid "Yokel"
 msgstr "田舎者"
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.DIVERSLUNG.DESC"
-#| msgid "This Duplicant may have been a talented opera singer in another life"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC"
 msgid "This duplicant was a talented opera singer and a snorkeling instructor."
-msgstr "この複製人間は来世ではオペラ歌手になるかもしれませんね"
+msgstr "この複製人間はかつては優れたオペラ歌手かつシュノーケリングのインストラクターでした。"
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.DIVERSLUNG.NAME"
-#| msgid "Diver's Lungs"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.NAME"
 msgid "Deeper Diver's Lungs"
-msgstr "ダイバーの肺"
+msgstr "ディープダイバーの肺"
 
 #. STRINGS.DUPLICANTS.TRAITS.DIVERSLUNG.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.DIVERSLUNG.DESC"
-#| msgid "This Duplicant may have been a talented opera singer in another life"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DIVERSLUNG.DESC"
 msgid "This Duplicant could have been a talented opera singer in another life"
-msgstr "この複製人間は来世ではオペラ歌手になるかもしれませんね"
+msgstr "この複製人間は来世では優れたオペラ歌手になるかもしれませんね"
 
 #. STRINGS.DUPLICANTS.TRAITS.DIVERSLUNG.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DIVERSLUNG.NAME"
@@ -12019,22 +11964,18 @@ msgid "Diver's Lungs"
 msgstr "ダイバーの肺"
 
 #. STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.DESC"
-#| msgid "This Duplicant wakes up feeling fresh and efficient!"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.DESC"
 msgid "This Duplicant always wakes up feeling fresh and efficient!"
 msgstr "この複製人間は目覚めがスッキリしています！"
 
 #. STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.EXTENDED_DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.EXTENDED_DESC"
-#| msgid "Adds <style=\"produced\">{0}</style> to all skills at morning, removes them at night"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.EXTENDED_DESC"
 msgid ""
 "• Morning: <style=\"produced\">{0}</style> bonus to all skills\n"
 "• Evening: Bonuses removed"
-msgstr "朝になるとすべてのスキルに<style=\"produced\">{0}</style>され、夜になるまで続きます"
+msgstr ""
+"• 朝: 全てのスキルに<style=\"produced\">{0}</style>のボーナス\n"
+"• 夜: ボーナス無効"
 
 #. STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.NAME"
@@ -12042,9 +11983,6 @@ msgid "Early Bird"
 msgstr "早起き"
 
 #. STRINGS.DUPLICANTS.TRAITS.FASTLEARNER.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.FASTLEARNER.DESC"
-#| msgid "This Duplicant's sharp as a tack and picks up new skills with amazing speed"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.FASTLEARNER.DESC"
 msgid "This Duplicant's sharp as a tack and learns new skills with amazing speed"
 msgstr "この複製人間は物覚えが良く、驚異的な速さで新しいスキルを習得します"
@@ -12061,9 +11999,6 @@ msgid "Some Duplicants are just full of it"
 msgstr "複製人間の中にはそびえ立つクソの山もいます"
 
 #. STRINGS.DUPLICANTS.TRAITS.FLATULENCE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.FLATULENCE.NAME"
-#| msgid "Flatulence"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.FLATULENCE.NAME"
 msgid "Flatulent"
 msgstr "屁こき虫"
@@ -12089,17 +12024,14 @@ msgid "Grease Monkey"
 msgstr "修理工"
 
 #. STRINGS.DUPLICANTS.TRAITS.HEMOPHOBIA.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.ANEMIC.DESC"
-#| msgid "This Duplicant is the exact opposite of athletic"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.HEMOPHOBIA.DESC"
 msgid "This Duplicant is of delicate disposition and cannot tend to the sick"
-msgstr "この複製人間は運動とは全く無縁です"
+msgstr "この複製人間は極めてデリケートで、病人の世話ができません"
 
 #. STRINGS.DUPLICANTS.TRAITS.HEMOPHOBIA.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.HEMOPHOBIA.NAME"
 msgid "Squeamish"
-msgstr ""
+msgstr "潔癖症"
 
 #. STRINGS.DUPLICANTS.TRAITS.IGNORED_EFFECTS
 msgctxt "STRINGS.DUPLICANTS.TRAITS.IGNORED_EFFECTS"
@@ -12107,14 +12039,13 @@ msgid ""
 "\n"
 "• Ignores the effects of: {0}"
 msgstr ""
+"\n"
+"• この効果を無視: {0}"
 
 #. STRINGS.DUPLICANTS.TRAITS.INTERIORDECORATOR.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.INTERIORDECORATOR.DESC"
-#| msgid "Just a little more to the left..."
 msgctxt "STRINGS.DUPLICANTS.TRAITS.INTERIORDECORATOR.DESC"
 msgid "\"Move it a little to the left...\""
-msgstr "そこ、もう少し左に..."
+msgstr "「そこ、もう少し左に...」"
 
 #. STRINGS.DUPLICANTS.TRAITS.INTERIORDECORATOR.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.INTERIORDECORATOR.NAME"
@@ -12122,9 +12053,6 @@ msgid "Interior Decorator"
 msgstr "インテリア コーディネーター"
 
 #. STRINGS.DUPLICANTS.TRAITS.IRONGUT.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.IRONGUT.DESC"
-#| msgid "This Duplicant can eat just about anything without getting sick!"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.IRONGUT.DESC"
 msgid "This Duplicant can eat just about anything without getting sick"
 msgstr "この複製人間は食べ物で体を壊すことはありません"
@@ -12135,9 +12063,6 @@ msgid "Iron Gut"
 msgstr "鉄の胃袋"
 
 #. STRINGS.DUPLICANTS.TRAITS.IRRITABLEBOWEL.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.IRRITABLEBOWEL.DESC"
-#| msgid "This Duplicant takes a little longer than usual to \"do their business\""
 msgctxt "STRINGS.DUPLICANTS.TRAITS.IRRITABLEBOWEL.DESC"
 msgid "This Duplicant needs a little extra time to \"do their business\""
 msgstr "この複製人間は用を足す時間が他の人より長めです"
@@ -12148,9 +12073,6 @@ msgid "Irritable Bowel"
 msgstr "腸過敏"
 
 #. STRINGS.DUPLICANTS.TRAITS.MOLEHANDS.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.MOLEHANDS.DESC"
-#| msgid "These hands are great for tunneling, but finding gloves is a nightmare"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.MOLEHANDS.DESC"
 msgid "They're great for tunneling, but finding good gloves is a nightmare"
 msgstr "この手はトンネルを掘るのに適していますが、手袋を見つけるのは至難の業でしょう"
@@ -12186,9 +12108,6 @@ msgid "This Duplicant feels suffocated in spaces less than four tiles high or th
 msgstr "この複製人間は4タイル以下の高さや3タイル以下の幅の広さにいると窒息していると感じます"
 
 #. STRINGS.DUPLICANTS.TRAITS.NEEDS.CLAUSTROPHOBIC.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CLAUSTROPHOBIC.NAME"
-#| msgid "Claustrophobic"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NEEDS.CLAUSTROPHOBIC.NAME"
 msgid "Claustrophobic"
 msgstr "閉所恐怖症"
@@ -15557,80 +15476,24 @@ msgid "LOG FRAGMENT RECOVERED"
 msgstr ""
 
 #. STRINGS.LORE.BUILDINGS.SET_DESK2.ENTRY
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.LORE.BUILDINGS.SET_DESK2.ENTRY"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.LORE.BUILDINGS.SET_DESK2.HEADER
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.LORE.BUILDINGS.SET_DESK2.HEADER"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.LORE.BUILDINGS.SET_DESK3.ENTRY
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.LORE.BUILDINGS.SET_DESK3.ENTRY"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.LORE.BUILDINGS.SET_DESK3.HEADER
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.LORE.BUILDINGS.SET_DESK3.HEADER"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.LORE.BUILDINGS.SET_LOCKER1.ENTRY
 msgctxt "STRINGS.LORE.BUILDINGS.SET_LOCKER1.ENTRY"
@@ -15648,49 +15511,32 @@ msgid ""
 "ZEROTH LAW\n"
 "If two thermodynamic systems are in thermal equilibrium with a third, then they are in thermal equilibrium with each other."
 msgstr ""
+"第一原則\n"
+"エネルギーは生成されたり破壊されたりしない。ただその形態を変えるのみである。\n"
+"\n"
+"第二原則\n"
+"平衡状態にない孤立した系におけるエントロピーは、平衡状態で最大値に近づくにつれて増加する傾向がある。\n"
+"\n"
+"第三原則\n"
+"系内のエントロピーは、温度が絶対零度に近づくにつれてある一定の最小値に近づく。\n"
+"\n"
+"第零原則\n"
+"二つの熱力学系が三つ目と熱平衡状態にある場合、それらは互いに熱平衡状態にある。"
 
 #. STRINGS.LORE.BUILDINGS.SET_LOCKER1.HEADER
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.LORE.BUILDINGS.SET_LOCKER1.HEADER"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.LORE.BUILDINGS.SET_LOCKER2.ENTRY
 msgctxt "STRINGS.LORE.BUILDINGS.SET_LOCKER2.ENTRY"
 msgid "A powerful stench emanates from this locker."
-msgstr ""
+msgstr "このロッカーからはきわめて強力な悪臭がする。"
 
 #. STRINGS.LORE.BUILDINGS.SET_LOCKER2.HEADER
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.LORE.BUILDINGS.SET_LOCKER2.HEADER"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.LORE.BUILDINGS.SET_OBJECT.ENTRY
 msgctxt "STRINGS.LORE.BUILDINGS.SET_OBJECT.ENTRY"
@@ -15707,11 +15553,21 @@ msgid ""
 "We thank you for your understanding.\n"
 "-The Gravitas Facility"
 msgstr ""
+"TO: ALL\n"
+"FROM: ADMIN@GRAVITASFACILITY.NOVA\n"
+"SUBJECT: 重要なお知らせ\n"
+"\n"
+"全従業員への覚書\n"
+"グラビタスファシリティは公式に「こども職場見学」イベントを行っていません。我々は特にお子さんを極秘研究部門へ入室させたり、超高速粒"
+"子加速装置で遊ばせないようにお願いするものです。\n"
+"\n"
+"皆さんのご理解、ご協力に感謝します。\n"
+"- グラビタスファシリティ"
 
 #. STRINGS.LORE.BUILDINGS.SET_OBJECT.HEADER
 msgctxt "STRINGS.LORE.BUILDINGS.SET_OBJECT.HEADER"
 msgid "REMINDER TO STAFF"
-msgstr ""
+msgstr "従業員への覚書"
 
 #. STRINGS.LORE.BUILDINGS.SetLocker.ENTRY
 msgctxt "STRINGS.LORE.BUILDINGS.SetLocker.ENTRY"
@@ -15729,7 +15585,7 @@ msgstr ""
 #. STRINGS.LORE.BUILDINGS.SetLocker.HEADER
 msgctxt "STRINGS.LORE.BUILDINGS.SetLocker.HEADER"
 msgid "Casual Friday!"
-msgstr ""
+msgstr "カジュアルフライデー！"
 
 #. STRINGS.LORE.BUILDINGS.VendingMachine.ENTRY
 msgctxt "STRINGS.LORE.BUILDINGS.VendingMachine.ENTRY"
@@ -15745,11 +15601,21 @@ msgid ""
 "We thank you for your consideration.\n"
 "-The Gravitas Facility"
 msgstr ""
+"TO: ALL\n"
+"FROM: ADMIN@GRAVITASFACILITY.NOVA\n"
+"SUBJECT: 放置された培養シャーレについて\n"
+"\n"
+"設備で働く従業員の安全と健康のために、ラベルの貼り付けられていない培養シャーレをカフェテリアの冷蔵庫に保存するのはやめてくださ"
+"い。\n"
+"同様に、カフェテリアの皿洗い機でペトリ皿を洗ってはいけないことも忠告しておきます。\n"
+"\n"
+"皆さんのご理解、ご協力に感謝します。\n"
+"- グラビタスファシリティ"
 
 #. STRINGS.LORE.BUILDINGS.VendingMachine.HEADER
 msgctxt "STRINGS.LORE.BUILDINGS.VendingMachine.HEADER"
 msgid "NOTICE TO STAFF"
-msgstr ""
+msgstr "従業員へのお知らせ"
 
 #. STRINGS.MISC.NOTIFICATIONS.ALLOCATED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.ALLOCATED.NAME"
@@ -15772,16 +15638,6 @@ msgid "These resources have become available:"
 msgstr "これらの資源は利用可能になりました:"
 
 #. STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.MESSAGEBODY
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.MESSAGEBODY"
-#| msgid ""
-#| "- Use the <color=#F44A47>WASD</color> keys to pan your camera and the <color=#F44A47>MOUSE WHEEL</color> to zoom in or out. "
-#| "<color=#F44A47>[H]</color> will return your screen to the Printing Pod.\n"
-#| "\n"
-#| "- Your simulation can be sped up or slowed down by using the speed buttons in the top left, or by pressing "
-#| "<color=#F44A47>[TAB]</color>.\n"
-#| "\n"
-#| "- <color=#F44A47>[SPACE]</color> will pause or resume your game."
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.MESSAGEBODY"
 msgid ""
 "• Use the <style=\"misc\">WASD</style> keys to pan your camera and the <style=\"misc\">MOUSE WHEEL</style> to zoom in or out. "
@@ -15816,22 +15672,19 @@ msgid ""
 "harder it is for their immune system to fight off the germs. If their immune system reaches 0%, infection occurs, and medical "
 "intervention will be necessary. Use the <style=\"misc\">Vitals Screen</style> to keep an eye on Duplicant immune levels."
 msgstr ""
+"ある複製人間が病原菌を吸い込むと、彼らの生命力に影響を及ぼします。病原菌を多く取り込むほど、彼らの免疫力は病原菌を撃退しようとしま"
+"す。もし免疫力が0%になってしまうと病気に罹患してしまい、医療処置が必要になるでしょう。<style=\"misc\">健康状態</style>を確認し、複"
+"製人間の免疫力に注意を払いましょう。"
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.NAME
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.NAME"
-#| msgid "TIP: Duplicant Movement"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.NAME"
 msgid "TIP: Duplicant Immune Systems"
-msgstr "ヒント: 複製人間の移動"
+msgstr "ヒント: 複製人間の免疫力"
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.TASKPRIORITIESMESSAGE.TOOLTIP"
-#| msgid "Learn how to manage Duplicants' priorities"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP"
 msgid "Learn how Duplicants get sick"
-msgstr "複製人間の優先度管理について学ぶ"
+msgstr "複製人間の病気について学ぶ"
 
 #. STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME"
@@ -22958,7 +22811,7 @@ msgstr ""
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.ATTRIBUTE_MODIFIER_NAME"
 msgid "Strong Immune System"
-msgstr ""
+msgstr "高免疫力"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.NAME
 #, fuzzy
@@ -22976,7 +22829,7 @@ msgstr ""
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME"
 msgid "Weak Immune System"
-msgstr ""
+msgstr "低免疫力"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.NAME"
@@ -22989,12 +22842,9 @@ msgid "Reduces Duplicant immunity recovery"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.SYSTEM"
-#| msgid "System"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME"
 msgid "Immune System"
-msgstr "システム"
+msgstr "免疫力"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP"
@@ -24707,7 +24557,7 @@ msgstr ""
 #. STRINGS.UI.OVERLAYS.DISEASE.IMMUNITY
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.IMMUNITY"
 msgid "Immune System: {0}"
-msgstr ""
+msgstr "免疫力: {0}"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INFECTION_SOURCE
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INFECTION_SOURCE"
@@ -26765,7 +26615,7 @@ msgstr "ストレス最高値: {0}"
 #. STRINGS.UI.TOOLTIPS.METERSCREEN_IMMUNITY_LEVELS
 msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_IMMUNITY_LEVELS"
 msgid "Immune Systems: {0}"
-msgstr ""
+msgstr "免疫力: {0}"
 
 #. STRINGS.UI.TOOLTIPS.METERSCREEN_MEALHISTORY
 msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_MEALHISTORY"
@@ -28381,17 +28231,11 @@ msgid "Hide areas within this Duplicant's reach"
 msgstr "この複製人間が移動可能なエリアを非表示にします"
 
 #. STRINGS.UI.USERMENUACTIONS.DUMP.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.GRAVEEMPTY.NAME"
-#| msgid "Empty"
 msgctxt "STRINGS.UI.USERMENUACTIONS.DUMP.NAME"
 msgid "Empty"
 msgstr "空"
 
 #. STRINGS.UI.USERMENUACTIONS.DUMP.NAME_OFF
-#, fuzzy
-#| msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.NAME_OFF"
-#| msgid "Cancel Empty"
 msgctxt "STRINGS.UI.USERMENUACTIONS.DUMP.NAME_OFF"
 msgid "Cancel Empty"
 msgstr "空けるのをやめる"
@@ -28399,12 +28243,9 @@ msgstr "空けるのをやめる"
 #. STRINGS.UI.USERMENUACTIONS.DUMP.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.DUMP.TOOLTIP"
 msgid "Dump bottle contents onto the floor"
-msgstr ""
+msgstr "瓶の中身を床にぶちまける"
 
 #. STRINGS.UI.USERMENUACTIONS.DUMP.TOOLTIP_OFF
-#, fuzzy
-#| msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.TOOLTIP_OFF"
-#| msgid "Cancel this empty order"
 msgctxt "STRINGS.UI.USERMENUACTIONS.DUMP.TOOLTIP_OFF"
 msgid "Cancel this empty order"
 msgstr "搬出指示を取り消します"
@@ -28421,9 +28262,6 @@ msgid "Cancel Empty"
 msgstr "空けるのをやめる"
 
 #. STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.TOOLTIP"
-#| msgid "Eject all resources from this storage region"
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.TOOLTIP"
 msgid "Eject all resources from this container"
 msgstr "貯蔵されている、すべての資源を取り出します"
@@ -28811,9 +28649,6 @@ msgid "This plant will take {0} to grow in the wild"
 msgstr "この植物は成長に {0} かかります"
 
 #. STRINGS.UI.VITALSSCREEN.EATEN_TODAY
-#, fuzzy
-#| msgctxt "STRINGS.UI.VITALSSCREEN_EATENTODAY"
-#| msgid "Eaten Today"
 msgctxt "STRINGS.UI.VITALSSCREEN.EATEN_TODAY"
 msgid "Eaten Today"
 msgstr "今日の食事"
@@ -28827,25 +28662,16 @@ msgid ""
 msgstr ""
 
 #. STRINGS.UI.VITALSSCREEN.HEALTH
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATS.HEALTH.NAME"
-#| msgid "Health"
 msgctxt "STRINGS.UI.VITALSSCREEN.HEALTH"
 msgid "Health"
 msgstr "生命力"
 
 #. STRINGS.UI.VITALSSCREEN.IMMUNITY
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.SYSTEM"
-#| msgid "System"
 msgctxt "STRINGS.UI.VITALSSCREEN.IMMUNITY"
 msgid "Immune System"
-msgstr "システム"
+msgstr "免疫力"
 
 #. STRINGS.UI.VITALSSCREEN.IMMUNITY_DISEASE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.UNITS_AND_CALS"
-#| msgid "{0} ({1})"
 msgctxt "STRINGS.UI.VITALSSCREEN.IMMUNITY_DISEASE"
 msgid "{0} ({1})"
 msgstr "{0} ({1})"
@@ -28864,9 +28690,6 @@ msgid "Liquid Level"
 msgstr "液体バルブ"
 
 #. STRINGS.UI.VITALSSCREEN.STRESS
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATS.STRESS.NAME"
-#| msgid "Stress"
 msgctxt "STRINGS.UI.VITALSSCREEN.STRESS"
 msgid "Stress"
 msgstr "ストレス"
@@ -28890,9 +28713,6 @@ msgid "Eaten Today"
 msgstr "今日の食事"
 
 #. STRINGS.UI.VITALSSCREEN_EATENTODAY_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.VITALSSCREEN_EATENTODAY_TOOLTIP"
-#| msgid "The amount of food your Duplicant has eaten this cycle"
 msgctxt "STRINGS.UI.VITALSSCREEN_EATENTODAY_TOOLTIP"
 msgid "The amount of food this Duplicant has eaten this cycle"
 msgstr "複製人間が本サイクル中に食べた食事の量です"
@@ -28903,12 +28723,9 @@ msgid "Health"
 msgstr "生命力"
 
 #. STRINGS.UI.VITALSSCREEN_IMMUNITY
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.SYSTEM"
-#| msgid "System"
 msgctxt "STRINGS.UI.VITALSSCREEN_IMMUNITY"
 msgid "Immune System"
-msgstr "システム"
+msgstr "免疫力"
 
 #. STRINGS.UI.VITALSSCREEN_NAME
 msgctxt "STRINGS.UI.VITALSSCREEN_NAME"
@@ -28941,18 +28758,17 @@ msgid "BEGIN"
 msgstr "開始"
 
 #. STRINGS.UI.WELCOMEMESSAGEBODY
-#, fuzzy
-#| msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY"
-#| msgid ""
-#| "Your crew has awoken miles beneath the surface of an unfamiliar asteroid. Oddly, they have no recollection of how they got "
-#| "here."
 msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY"
 msgid ""
 "Your crew has awoken stranded inside a distant asteroid.\n"
 "Oddly, they can't recall how they got here.\n"
 "\n"
 "They'll need to survive to find answers."
-msgstr "あなたの乗組員たちは見知らぬアステロイドの地下深くで目覚めました。奇妙なことに、どうやってここまで来たのか思い出せません。"
+msgstr ""
+"あなたの乗組員たちは見知らぬアステロイドの地下深くで目覚めました。\n"
+"奇妙なことに、どうやってここまで来たのか思い出せません。\n"
+"\n"
+"彼らは答えを見つけるために生き延びる必要があるでしょう。"
 
 #. STRINGS.UI.WELCOMEMESSAGETITLE
 msgctxt "STRINGS.UI.WELCOMEMESSAGETITLE"
