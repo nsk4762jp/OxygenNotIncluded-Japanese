@@ -6946,7 +6946,7 @@ msgstr "病原菌は現状維持"
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.PRESSURE_RANGE
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.PRESSURE_RANGE"
 msgid "Pressure range: {0} to {1}\n"
-msgstr "圧力: {0} から {1}\n"
+msgstr "生存可能圧力: {0} から {1}\n"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.PRESSURE_RANGE_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.PRESSURE_RANGE_TOOLTIP"
@@ -6971,15 +6971,12 @@ msgstr ""
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.SKINBORNE_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.SKINBORNE_TOOLTIP"
 msgid "Duplicants contract this disease by coming into physical contact with germs"
-msgstr ""
+msgstr "複製人間は病原菌に物理的接触をしたために罹患しました"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.TEMPERATURE_RANGE
-#, fuzzy
-#| msgctxt "STRINGS.UI.OVERLAYS.TEMPERATURE.TOOLTIPS.TEMPERATURE"
-#| msgid "Temperatures reaching {0}"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.TEMPERATURE_RANGE"
 msgid "Temperature range: {0} to {1}"
-msgstr "温度が {0} に達しました"
+msgstr "生存可能温度: {0} から {1}"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.TEMPERATURE_RANGE_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.TEMPERATURE_RANGE_TOOLTIP"
@@ -6988,21 +6985,23 @@ msgid ""
 "------------------\n"
 "They thrive in temperatures between {2} and {3}"
 msgstr ""
+"これらの病原菌は気温が{0}から{1}の間のみ生存できます\n"
+"------------------\n"
+"病原菌は気温が{2}から{3}の間は増殖します"
 
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.POOR_FOOD_QUALITY.TOOLTIP"
-#| msgid "This Duplicant's last meal didn't meet their expectations"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.DESCRIPTION"
 msgid ""
 "\n"
 "This Duplicant's last meal wasn't exactly sanitary"
-msgstr "この複製人間が最近食べたものは期待外れだったようです"
+msgstr ""
+"\n"
+"この複製人間が最近食べたものは不衛生だったようです"
 
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.DESCRIPTIVE_SYMPTOMS
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.DESCRIPTIVE_SYMPTOMS"
 msgid "Nonlethal. A Duplicant's body \"purges\" from both ends, causing extreme fatigue."
-msgstr ""
+msgstr "非致死性。複製人間は多大な労力を使って両方の口から異物を排除しました。"
 
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.DISEASE_SOURCE_DESCRIPTOR
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.DISEASE_SOURCE_DESCRIPTOR"
@@ -7011,6 +7010,9 @@ msgid ""
 "\n"
 "This Duplicant will produce {1} when vomiting."
 msgstr ""
+"{2}に感染しています。\n"
+"\n"
+"この複製人間は嘔吐時に{1}を生産します。"
 
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.DISEASE_SOURCE_DESCRIPTOR_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.DISEASE_SOURCE_DESCRIPTOR_TOOLTIP"
@@ -7019,14 +7021,14 @@ msgid ""
 "------------------\n"
 "Each time they vomit, they will release {1} and lose calories"
 msgstr ""
+"この複製人間はおよそ{0}ごとに嘔吐します\n"
+"------------------\n"
+"嘔吐するたびに{1}を放出し、カロリーを失います"
 
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.LEGEND_HOVERTEXT
-#, fuzzy
-#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.COLDBREATHER"
-#| msgid "<style=\"heat\">Cooling Effect</style>"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.LEGEND_HOVERTEXT"
 msgid "<style=\"header\">Food Poisoning Germs Present</style>\n"
-msgstr "<style=\"heat\">冷却効果</style>"
+msgstr "<style=\"header\">食中毒の原因となる病原菌を表示</style>\n"
 
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.NAME
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.NAME"
@@ -7034,9 +7036,6 @@ msgid "Food Poisoning"
 msgstr "食中毒"
 
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.VOMIT_SYMPTOM
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.VOMIT.STATUS"
-#| msgid "Vomiting"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.VOMIT_SYMPTOM"
 msgid "Vomiting"
 msgstr "嘔吐中"
@@ -7044,7 +7043,7 @@ msgstr "嘔吐中"
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.VOMIT_SYMPTOM_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.VOMIT_SYMPTOM_TOOLTIP"
 msgid "Duplicants periodically vomit throughout the day, producing additional germs and losing calories"
-msgstr ""
+msgstr "複製人間は一日中定期的に嘔吐し、病原菌を生産しカロリーを失います"
 
 #. STRINGS.DUPLICANTS.DISEASES.GERMS
 msgctxt "STRINGS.DUPLICANTS.DISEASES.GERMS"
@@ -7054,22 +7053,21 @@ msgstr "病原菌"
 #. STRINGS.DUPLICANTS.DISEASES.GERMS_CONSUMED_DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.DISEASES.GERMS_CONSUMED_DESCRIPTION"
 msgid "A count of the number of germs this Duplicant is host to"
-msgstr ""
+msgstr "この複製人間が保菌している病原菌の数です"
 
 #. STRINGS.DUPLICANTS.DISEASES.HEATRASH.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.HEATRASH.DESCRIPTION"
-#| msgid "This Duplicant's thought processes have short circuited as a result of extreme heat exposure"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.HEATRASH.DESCRIPTION"
 msgid ""
 "\n"
 "This Duplicant's thought processes have short circuited from extreme heat exposure"
-msgstr "この複製人間は極端な高熱に晒された結果、生理機能がショートしてしまったと考えられます"
+msgstr ""
+"\n"
+"この複製人間は極端な高熱に晒された結果、生理機能がショートしてしまったと考えられます"
 
 #. STRINGS.DUPLICANTS.DISEASES.HEATRASH.LEGEND_HOVERTEXT
 msgctxt "STRINGS.DUPLICANTS.DISEASES.HEATRASH.LEGEND_HOVERTEXT"
 msgid "<style=\"header\">Area Causes Heat Stroke</style>\n"
-msgstr ""
+msgstr "<style=\"header\">熱射病を引き起こすエリア</style>\n"
 
 #. STRINGS.DUPLICANTS.DISEASES.HEATRASH.NAME
 msgctxt "STRINGS.DUPLICANTS.DISEASES.HEATRASH.NAME"
@@ -7079,50 +7077,35 @@ msgstr "熱射病"
 #. STRINGS.DUPLICANTS.DISEASES.INFECTED_MODIFIER
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTED_MODIFIER"
 msgid "Suppressed immune system"
-msgstr ""
+msgstr "免疫力低下中"
 
 #. STRINGS.DUPLICANTS.DISEASES.INFECTED_POPUP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTED_POPUP"
 msgid "Became infected by {0}"
-msgstr "{0}ことで具合が悪くなりました"
+msgstr "{0}に感染しました"
 
 #. STRINGS.DUPLICANTS.DISEASES.INFECTION_MODIFIER
-#, fuzzy
-#| msgctxt "STRINGS.UI.DETAILTABS.ENERGYGENERATOR.POTENTIAL_WATTAGE_CONSUMED"
-#| msgid "Potential power consumed: {0}"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTION_MODIFIER"
 msgid "Recently consumed {0} ({1})"
-msgstr "潜在電力消費: {0}"
+msgstr "直近に消費 {0} ({1})"
 
 #. STRINGS.DUPLICANTS.DISEASES.INFECTION_MODIFIER_SOURCE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.QUEUED_MISSING_INGREDIENTS_TOOLTIP"
-#| msgid "Missing {0} of {1}\n"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTION_MODIFIER_SOURCE"
 msgid "Fighting off {0} from {1}"
-msgstr "{1} の {0} が不足\n"
+msgstr "{1}から{0}を撃退"
 
 #. STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.AIR
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.FOOD"
-#| msgid "eating a {0}"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.AIR"
 msgid "by breathing {0}"
-msgstr "{0}を食べた"
+msgstr "{0}を吸い込んだ"
 
 #. STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.FOOD
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.FOOD"
-#| msgid "eating a {0}"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.FOOD"
 msgid "by eating {0}"
 msgstr "{0}を食べた"
 
 # 低体温症でもこのメッセージが表示されたので、体温が高くなっただけではない模様
 #. STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.INTERNAL_TEMPERATURE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.INTERNAL_TEMPERATURE"
-#| msgid "extreme internal temperature"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.INTERNAL_TEMPERATURE"
 msgid "from extreme internal temperatures"
 msgstr "極端に体温が変化した"
@@ -7130,32 +7113,29 @@ msgstr "極端に体温が変化した"
 #. STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.SKIN
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.SKIN"
 msgid "through skin contamination"
-msgstr ""
+msgstr "皮膚が汚染された"
 
 #. STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.TOXIC_AREA
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.TOXIC_AREA"
 msgid "through exposure to toxic areas"
-msgstr ""
+msgstr "有毒地帯に曝露された"
 
 #. STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.UNKNOWN
 msgctxt "STRINGS.DUPLICANTS.DISEASES.INFECTIONSOURCES.UNKNOWN"
 msgid "from unknown source"
-msgstr ""
+msgstr "未知の感染源に触れた"
 
 #. STRINGS.DUPLICANTS.DISEASES.LEGEND_POSTAMBLE
 msgctxt "STRINGS.DUPLICANTS.DISEASES.LEGEND_POSTAMBLE"
 msgid "* Select an infected object for more details"
-msgstr ""
+msgstr "* 詳細は感染した物体を選んでください"
 
 #. STRINGS.DUPLICANTS.DISEASES.NODISEASES.NAME
 msgctxt "STRINGS.DUPLICANTS.DISEASES.NODISEASES.NAME"
 msgid "NO"
-msgstr ""
+msgstr "いいえ"
 
 #. STRINGS.DUPLICANTS.DISEASES.NOTIFICATION_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.NOTIFICATION_TOOLTIP"
-#| msgid "{0} contracted <style=\"disease\">{1}</style> by {2}"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.NOTIFICATION_TOOLTIP"
 msgid "{0} contracted <style=\"disease\">{1}</style> {2}"
 msgstr "{0} は {2} ことが原因で<style=\"disease\">{1}</style>に罹りました"
@@ -7166,19 +7146,18 @@ msgid "Smelled a putrid odor"
 msgstr "腐敗臭がします"
 
 #. STRINGS.DUPLICANTS.DISEASES.PUTRIDODOUR.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.PUTRIDODOUR.DESCRIPTION"
-#| msgid "The pungent odor wafting off this Duplicant is nauseating to their peers"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.PUTRIDODOUR.DESCRIPTION"
 msgid ""
 "\n"
 "The pungent odor wafting off this Duplicant is nauseating to their peers"
-msgstr "この複製人間が放つ刺激臭は仲間に吐き気を催させます"
+msgstr ""
+"\n"
+"この複製人間が放つ刺激臭は仲間に吐き気を催させます"
 
 #. STRINGS.DUPLICANTS.DISEASES.PUTRIDODOUR.LEGEND_HOVERTEXT
 msgctxt "STRINGS.DUPLICANTS.DISEASES.PUTRIDODOUR.LEGEND_HOVERTEXT"
 msgid "<style=\"header\">Trench Stench Germs Present</style>\n"
-msgstr ""
+msgstr "<style=\"header\">悪臭の原因となる細菌を表示</style>\n"
 
 #. STRINGS.DUPLICANTS.DISEASES.PUTRIDODOUR.NAME
 msgctxt "STRINGS.DUPLICANTS.DISEASES.PUTRIDODOUR.NAME"
@@ -7186,12 +7165,9 @@ msgid "Trench Stench"
 msgstr "下水のような悪臭"
 
 #. STRINGS.DUPLICANTS.DISEASES.RECUPERATING
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.ARTING.NAME"
-#| msgid "Decorating"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.RECUPERATING"
 msgid "Recuperating"
-msgstr "装飾中"
+msgstr "回復中"
 
 #. STRINGS.DUPLICANTS.DISEASES.REDUCECURESPEED
 msgctxt "STRINGS.DUPLICANTS.DISEASES.REDUCECURESPEED"
@@ -7201,25 +7177,19 @@ msgstr "回復速度 (<style=\"disease\">{0}</style>): <style=\"consumed\">{1}</
 #. STRINGS.DUPLICANTS.DISEASES.SEVERITY.BENIGN
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SEVERITY.BENIGN"
 msgid "Benign"
-msgstr ""
+msgstr "良性"
 
 #. STRINGS.DUPLICANTS.DISEASES.SEVERITY.CRITICAL
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.NEEDS.DECOR.PROFESSION_NAME"
-#| msgid "Critic"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SEVERITY.CRITICAL"
 msgid "Critical"
-msgstr "批評家"
+msgstr "致命的"
 
 #. STRINGS.DUPLICANTS.DISEASES.SEVERITY.MAJOR
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SEVERITY.MAJOR"
 msgid "Major"
-msgstr ""
+msgstr "生命にかかわる"
 
 #. STRINGS.DUPLICANTS.DISEASES.SEVERITY.MINOR
-#, fuzzy
-#| msgctxt "STRINGS.MISC.STATUSITEMS.HEALTHSTATUS.SCUFFED.NAME"
-#| msgid "Minor"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SEVERITY.MINOR"
 msgid "Minor"
 msgstr "大したことない"
@@ -7227,27 +7197,26 @@ msgstr "大したことない"
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.COUGH_SYMPTOM
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.COUGH_SYMPTOM"
 msgid "Productive Coughing"
-msgstr ""
+msgstr "痰を伴う咳"
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.COUGH_SYMPTOM_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.COUGH_SYMPTOM_TOOLTIP"
 msgid "Duplicants periodically cough up a lump of infectious slime from their lungs, producing additional germs"
-msgstr ""
+msgstr "複製人間は定期的に追加の病原菌を含んだ一塊の痰を伴う咳をします"
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RELAXING.TOOLTIP"
-#| msgid "This Duplicant's just taking it easy"
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DESCRIPTION"
 msgid ""
 "\n"
 "This Duplicant's chest congestion is making it difficult to breathe"
-msgstr "この複製人間はリラックスしています"
+msgstr ""
+"\n"
+"この複製人間は胸部うっ血により呼吸が困難になっています"
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DESCRIPTIVE_SYMPTOMS
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DESCRIPTIVE_SYMPTOMS"
 msgid "Lethal if untreated. Duplicants experience shortness of breath and productive coughing."
-msgstr ""
+msgstr "処置しない場合死に至ります。複製人間は息切れや痰を伴う咳をします。"
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DISEASE_SOURCE_DESCRIPTOR
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DISEASE_SOURCE_DESCRIPTOR"
@@ -7256,6 +7225,9 @@ msgid ""
 "\n"
 "This Duplicant will produce {1} when coughing."
 msgstr ""
+"{2}に感染しています。\n"
+"\n"
+"この複製人間は咳をすると{1}を生産します。"
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DISEASE_SOURCE_DESCRIPTOR_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DISEASE_SOURCE_DESCRIPTOR_TOOLTIP"
@@ -7264,6 +7236,9 @@ msgid ""
 "------------------\n"
 "Each time they cough, they will release {1}"
 msgstr ""
+"この複製人間はおよそ{0}ごとに咳をします\n"
+"------------------\n"
+"咳するたびに{1}を放出します"
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.LEGEND_HOVERTEXT
 #, fuzzy
@@ -23396,12 +23371,9 @@ msgid "Gas Network {0}"
 msgstr "気体ネットワーク {0}"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.PRODUCER
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME"
-#| msgid "Building broken"
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.PRODUCER"
 msgid "Building Intake"
-msgstr "設備が大破しました"
+msgstr "設備の入力"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONNECTED"
@@ -23631,12 +23603,9 @@ msgid "Liquid Network {0}"
 msgstr "液体ネットワーク {0}"
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.PRODUCER
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME"
-#| msgid "Building broken"
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.PRODUCER"
 msgid "Building Intake"
-msgstr "設備が大破しました"
+msgstr "設備の入力"
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONNECTED"
