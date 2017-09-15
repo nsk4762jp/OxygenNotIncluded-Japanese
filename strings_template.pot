@@ -115,22 +115,22 @@ msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.NAME"
-msgid "Bottler Delivery: On"
+msgid "Autobottling: On"
 msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.TOOLTIP"
-msgid "Duplicants may fetch bottled liquid from bottling stations to bring to this location"
+msgid "Duplicants may specifically fetch liquid from Liquid Bottlers to bring to this location"
 msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.NAME"
-msgid "Bottler Delivery: Off"
+msgid "Autobottling: Off"
 msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.TOOLTIP"
-msgid "Duplicants may not fetch bottled liquid from bottling stations to bring to this location"
+msgid "Duplicants may not specifically fetch liquid from Liquid Bottlers to bring to this location"
 msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.BROKEN.NAME
@@ -1603,6 +1603,31 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKING.TOOLTIP"
 msgid "This building is working as intended"
 msgstr ""
 
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.NAME
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.NAME"
+msgid "Disable Autodisinfect"
+msgstr ""
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.TOOLTIP"
+msgid "Do not automatically disinfect this building"
+msgstr ""
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.NAME
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.NAME"
+msgid "Enable Autodisinfect"
+msgstr ""
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.TOOLTIP"
+msgid "Automatically disinfect this building when it becomes contaminated"
+msgstr ""
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.NO_DISEASE.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.NO_DISEASE.TOOLTIP"
+msgid "This building is clean"
+msgstr ""
+
 #. STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT"
 msgid "receiving an incorrect substance"
@@ -2720,7 +2745,7 @@ msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.EFFECT"
-msgid "Kills all <style=\"disease\">Germs</style> present on raw <style=\"RawMineral\">ore</style>."
+msgid "Kills a significant amount of <style=\"disease\">Germs</style> present on raw <style=\"RawMineral\">ore</style>."
 msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.NAME
@@ -3055,7 +3080,7 @@ msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.WASHBASIN.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.WASHBASIN.EFFECT"
-msgid "Removes some <style=\"disease\">Germs</style> from Duplicants.\n\nDuplicants use Wash Basins when passing by in the selected direction."
+msgid "Removes some <style=\"disease\">Germs</style> from Duplicants.\n\nDuplicants use Wash Basins when passing by in the selected direction only if they have germs on them."
 msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.WASHBASIN.NAME
@@ -3070,7 +3095,7 @@ msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.EFFECT"
-msgid "Uses <style=\"misc\">Sand</style> to purify <style=\"liquid\">Polluted Water</style>."
+msgid "Uses <style=\"misc\">Sand</style> to filter <style=\"liquid\">Polluted Water</style>.\n\nTransfers a portion of disease to the Polluted Dirt."
 msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.NAME
@@ -4690,7 +4715,7 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_MODIFIER
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_MODIFIER"
-msgid "{0} Immune System Regen"
+msgid "{0} Immunity Regen"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_STAT
@@ -6975,7 +7000,7 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP"
-msgid "The air quite thin in this area"
+msgid "The air is thin in this area"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MEDICALCOT.NAME
@@ -8443,6 +8468,16 @@ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DIGGING.TOOLTIP"
 msgid "This Duplicant is excavating raw resources"
 msgstr ""
 
+#. STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.NAME"
+msgid "Disinfecting {Target}"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.TOOLTIP"
+msgid "This Duplicant is disinfecting {Target}"
+msgstr ""
+
 #. STRINGS.DUPLICANTS.STATUSITEMS.DOCTOR.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DOCTOR.NAME"
 msgid "Aiding Duplicant"
@@ -9465,7 +9500,7 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_NAME"
-msgid "Stressed"
+msgid "High stress"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_TOOLTIP
@@ -9860,7 +9895,7 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC"
-msgid "This duplicant was a talented opera singer and a snorkeling instructor."
+msgid "This Duplicant was a talented opera singer and a snorkeling instructor."
 msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.NAME
@@ -10115,17 +10150,17 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.REGENERATION.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.REGENERATION.DESC"
-msgid "This duplicant constantly regenerated health."
+msgid "This Duplicant is constantly regenerating health."
 msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.REGENERATION.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.REGENERATION.NAME"
-msgid "Regeneration"
+msgid "Regenerative"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.DESC"
-msgid "This duplicant is incredibly strong."
+msgid "This Duplicant is incredibly strong."
 msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.NAME
@@ -10205,7 +10240,7 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.DESC"
-msgid "This duplicant has a positive outlook on life."
+msgid "This Duplicant has an unwaveringly positive outlook on life."
 msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.NAME
@@ -12640,7 +12675,7 @@ msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.MESSAGEBODY"
-msgid "One of your duplicants has consumed enough germs that it is beginning to impact their health. The more disease they consume, the harder it is for their immune system to fight off the germs. If their immune system reaches 0%, infection occurs, and medical intervention will be necessary. Use the <style=\"misc\">Vitals Screen</style> to keep an eye on Duplicant immune levels."
+msgid "Duplicants must spend points of immunity to fight the various <style=\"disease\">Germs</style> they're exposed to. If their immunity reaches 0%, they'll be unable to fight off any more germs and contract the next disease they encounter.\n\nDoors with Access Permissions can be built from the <style=\"misc\">BASE TAB</style> of the <style=\"misc\">BUILD MENU</style> to block Duplicants from entering biohazardous areas while they recover their spent immunity points."
 msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.NAME
@@ -12650,7 +12685,7 @@ msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP"
-msgid "Learn how Duplicants get sick"
+msgid "Keep your Duplicants in peak health"
 msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME
@@ -12853,6 +12888,21 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_SUFFOCATION.TOOLTIP"
 msgid "These Duplicants died from a lack of <style=\"oxygen\">Oxygen</style>:"
 msgstr ""
 
+#. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.MESSAGEBODY
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.MESSAGEBODY"
+msgid "The <style=\"food\">food</style> your Duplicants make is only as clean as the <style=\"solid\">ingredients</style> used to make it. Storing food in sterile or <style=\"heat\">Refrigerated</style> environments will keep the produced food clean, while carefully placed hygene systems will prevent your cooks from infecting the food while they handle it.\n\nDangerously contaminated food can be recycled by clicking the <style=\"misc\">COMPOST</style> button on the selected item."
+msgstr ""
+
+#. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.NAME"
+msgid "TIP: Food Safety"
+msgstr ""
+
+#. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.TOOLTIP"
+msgid "Learn how to manage food contamination"
+msgstr ""
+
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY"
 msgid "New Duplicants are no longer available for printing.\nCountdown to the next production was rebooted."
@@ -13023,6 +13073,16 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.HEALINGTRAITGAIN.TOOLTIP"
 msgid "These Duplicants' injuries weren't set and healed improperly. They developed traits as a result:"
 msgstr ""
 
+#. STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.NAME"
+msgid "Colony requires wash basins"
+msgstr ""
+
+#. STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.TOOLTIP"
+msgid "<style=\"disease\">Germs</style> are spreading in your colony because your Duplicants have no where to clean up"
+msgstr ""
+
 #. STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.NAME"
 msgid "New Duplicants have been reabsorbed"
@@ -13041,21 +13101,6 @@ msgstr ""
 #. STRINGS.MISC.NOTIFICATIONS.INCREASEDEXPECTATIONS.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.INCREASEDEXPECTATIONS.TOOLTIP"
 msgid "Duplicants require better amenities over time.\nThese Duplicants have increased their expectations:"
-msgstr ""
-
-#. STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.MESSAGEBODY
-msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.MESSAGEBODY"
-msgid "A germ has found its way on to one of your rations. Small numbers of germs are not a threat to your colony as Duplicant immune systems can fight off substantial infection. However some diseases like Food Poisoning will grow quickly on food, creating a hazardous situation. Badly contaminated food can be Marked For Compost, and further contamination can be slowed or halted by storing your food in a refrigerated or other germ-hostile environment."
-msgstr ""
-
-#. STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.NAME
-msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.NAME"
-msgid "TIP: Infected Food"
-msgstr ""
-
-#. STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.TOOLTIP
-msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.TOOLTIP"
-msgid "Deal with the spread of filth"
 msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.INVALIDCONSTRUCTIONLOCATION.NAME
@@ -13105,17 +13150,17 @@ msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY"
-msgid "There are many sources of germs in the world. If your duplicants consume these germs, it can make thems sick. Maintaining good base hygene and cleaning the various substances in your base is essential for controlling the spread of germs. Each disease has different materials it prefers to grow on, and different tools for reducing its spread in your base. The <style=\"misc\">GERM OVERLAY</style> <color=#F44A47><b>[F9]</b></color> will allow you to see germ concentrations and spot new sources of germs."
+msgid "<style=\"disease\">Germs</style> are an invisible peril that cause <style=\"disease\">Disease</style> in your Duplicants. The <style=\"misc\">GERM OVERLAY</style> <color=#F44A47><b>[F9]</b></color> will allow you to view all germ concentrations in your colony and the sources spawning them.\n\nWash Basins can be built in dirty areas from the <style=\"misc\">MEDICINE TAB</style> <color=#F44A47><b>[9]</b></color> to tell your Duplicants to where to wash up. If you keep your base clean and your Duplicants hygienic, your colony's Immunity will handle the rest."
 msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.NAME"
-msgid "TIP: Germs and Infections"
+msgid "TIP: Germs and Disease"
 msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.TOOLTIP"
-msgid "Learn about disease risks"
+msgid "Learn about the risks of Duplicant disease"
 msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.MISSINGMATERIALS.NAME
@@ -14051,6 +14096,11 @@ msgstr ""
 #. STRINGS.MISC.TAGS.COMPOSTABLE
 msgctxt "STRINGS.MISC.TAGS.COMPOSTABLE"
 msgid "Compostable"
+msgstr ""
+
+#. STRINGS.MISC.TAGS.COMPOSTMEAT
+msgctxt "STRINGS.MISC.TAGS.COMPOSTMEAT"
+msgid "Compost Meat"
 msgstr ""
 
 #. STRINGS.MISC.TAGS.CONSUMABLEORE
@@ -18168,6 +18218,11 @@ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.TITLE"
 msgid "<b>Welcome to Oxygen Not Included!</b>"
 msgstr ""
 
+#. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.ANIMATION_HEADER
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.ANIMATION_HEADER"
+msgid "WATCH THE ANIMATED SHORT!"
+msgstr ""
+
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.BODY
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.BODY"
 msgid "Stay up to date by joining our mailing list, or head on over to the forums and join the discussion."
@@ -18201,6 +18256,31 @@ msgstr ""
 #. STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_VERSION
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_VERSION"
 msgid "Previous Version"
+msgstr ""
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.BIGGER_TIMES
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.BIGGER_TIMES"
+msgid "{1} weeks {0} days"
+msgstr ""
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.FINAL_WEEK
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.FINAL_WEEK"
+msgid "{0} days"
+msgstr ""
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.NOW
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.NOW"
+msgid "Less than a day"
+msgstr ""
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.TWENTY_FOUR_HOURS
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.TWENTY_FOUR_HOURS"
+msgid "Less than a day"
+msgstr ""
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.UPDATES_HEADER
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.UPDATES_HEADER"
+msgid "NEXT UPGRADE LIVE IN"
 msgstr ""
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.WATERMARK
@@ -18705,7 +18785,7 @@ msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.DEFAULT.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.DEFAULT.TOOLTIP"
-msgid "Default immunity recovery"
+msgid "Duplicants regain immunity normally"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.ATTRIBUTE_MODIFIER_NAME
@@ -18720,7 +18800,7 @@ msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.TOOLTIP"
-msgid "Increases immunity recovery"
+msgid "Duplicant immune recovery is increased"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME
@@ -18735,17 +18815,17 @@ msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.TOOLTIP"
-msgid "Reduces Duplicant immunity recovery"
+msgid "Duplicant immune recovery is reduced"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME"
-msgid "Immune System"
+msgid "Immune Systems"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP"
-msgid "Affects how resilient your Dupes are to disease"
+msgid "Affects how resistant your Duplicants are to disease"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.NAME
@@ -18755,7 +18835,7 @@ msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.TOOLTIP"
-msgid "The regular rate of stress"
+msgid "Duplicants gain and lose stress normally"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.ATTRIBUTE_MODIFIER_NAME
@@ -18770,7 +18850,7 @@ msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.TOOLTIP"
-msgid "Reduces duplicant stress levels"
+msgid "Duplicants are harder to stress out"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.ATTRIBUTE_MODIFIER_NAME
@@ -18785,17 +18865,17 @@ msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.TOOLTIP"
-msgid "Increases Duplicant stress levels"
+msgid "Duplicants stress out easily"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.NAME"
-msgid "Disposition"
+msgid "Duplicant Mood"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP"
-msgid "Affects Duplicant stress levels"
+msgid "Affects how well your Duplicants deal with stress"
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.DEMO_OVER_SCREEN.BODY
@@ -19130,7 +19210,7 @@ msgstr ""
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
-msgid "Update Features:\n\n• New disease simulation, complete with new illnesses, attributes, overlays and more.\n• New Farming Overlay, plants, food recipes and plant requirements\n• Explore deep enough into your surroundings and you may chance upon the remnants of, well... something.\n• Explore deep enough into your surroundings and you may chance upon the remnants of, well... something.\n• Bug fixes, performance improvements, new buildings and more."
+msgid "<b>Important Notes:</b>\n\n• <u>Duplicants will now automatically disinfect buildings. You can tune the minimum germ threshold at the top right of the germ overlay.</u>\n\n <b>Update Features:</b>\n\n• New disease simulation, complete with new illnesses, attributes, overlays and more.\n• New plants, food recipes, growth requirements and Farming Overlay.\n• Explore deep enough into your surroundings and you may chance upon the remnants of, well... something.\n• New Duplicants; say hello to Ari, Jean, Camille and Ashkan.\n• Bug fixes, performance improvements, new buildings, creatures and more."
 msgstr ""
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE
@@ -19950,7 +20030,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.CROP.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CROP.BUTTON"
-msgid "Crop Overlay"
+msgid "Farming Overlay"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.CROP.FULLY_GROWN
@@ -19975,17 +20055,17 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.FULLY_GROWN
 msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.FULLY_GROWN"
-msgid "This plant is ready for harvest"
+msgid "<b>Fully Grown</b>\nThese plants have reached maturation\n------------------\nSelect the <style=\"misc\">HARVEST TOOL</style> <color=#F44A47><b>[Y]</b></color> to batch harvest"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWING
 msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWING"
-msgid "This plant is thriving in satisfactory conditions"
+msgid "<b>Growing</b>\nThese plants are thriving in their current conditions"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWTH_HALTED
 msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWTH_HALTED"
-msgid "Substandard conditions are preventing this plant from growing"
+msgid "<b>Halted Growth</b>\nSubstandard conditions prevent these plants from growing"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.CROPS.BUTTON
@@ -20040,12 +20120,12 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.HIGHDECOR
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.HIGHDECOR"
-msgid "Sufficient decor values\n* Lighting and aesthetically pleasing buildings increase decor"
+msgid "<b>High Decor</b>\nArea with sufficient decor values\n* Lighting and aesthetically pleasing buildings increase decor"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR"
-msgid "Insufficient decor values\n* Resources on the floor are considered \"debris\" and will decrease decor"
+msgid "<b>Low Decor</b>\nArea with insufficient decor values\n* Resources on the floor are considered \"debris\" and will decrease decor"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOTAL
@@ -20073,6 +20153,26 @@ msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISEASE_FORMAT_NO_COLOR"
 msgid "{1} [{0}]"
 msgstr ""
 
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.THRESHOLD_PREFIX
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.THRESHOLD_PREFIX"
+msgid "Disinfect At:"
+msgstr ""
+
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP"
+msgid "Automatically disinfect any building with more than {NumberOfGerms} germs."
+msgstr ""
+
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP_DISABLED
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP_DISABLED"
+msgid "Automatic building disinfection disabled."
+msgstr ""
+
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.UNITS
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.UNITS"
+msgid "Germs"
+msgstr ""
+
 #. STRINGS.UI.OVERLAYS.DISEASE.HOVERTITLE
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.HOVERTITLE"
 msgid "Germ"
@@ -20090,7 +20190,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INFECTION_SOURCE_TOOLTIP
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INFECTION_SOURCE_TOOLTIP"
-msgid "Areas where germs are produced"
+msgid "<b>Germ Source</b>\nAreas where germs are produced\n* Placing Wash Basins or Hand Sanitizers near these areas may prevent disease spread"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS
@@ -20100,7 +20200,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS_TOOLTIP
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS_TOOLTIP"
-msgid "Duplicants become a germ host when germs enter their body through inhalation or ingestion\n------------------\nGerm hosts may not show symptoms of disease\n------------------\nInternal germs cannot be washed off"
+msgid "<b>Germ Host</b>\nGerm hosts may be asymptomatic and show no signs of disease\n------------------\nDuplicants become hosts when germs enter their body through inhalation or ingestion\n* Unlike surface germs, internal germs cannot be washed off"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.DISEASE.NAME
@@ -20115,7 +20215,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.BUTTON"
-msgid "Power Grid Overlay"
+msgid "Power Overlay"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.DIAGRAM_HEADER
@@ -20170,12 +20270,12 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.NAME
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.NAME"
-msgid "POWER GRID OVERLAY"
+msgid "POWER OVERLAY"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND_SWITCH
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND_SWITCH"
-msgid "Building activates or deactivates a circuit"
+msgid "<b>Switch</b>\nActivates or deactivates connected circuits"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND1
@@ -20185,27 +20285,27 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND2
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND2"
-msgid "Building draws power from a circuit"
+msgid "<b>Consumer</b>\nThese buildings draw power from a circuit"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND3
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND3"
-msgid "Building generates power for a circuit"
+msgid "<b>Producer</b>\nThese buildings generate power for a circuit"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND4"
-msgid "Displays the power loads on wire systems"
+msgid "Displays the power load on wire systems"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND5
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND5"
-msgid "Circuit produces more power than it can consume"
+msgid "<b>Energy Surplus</b>\nThese circuits produce more power than they can consume"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6"
-msgid "Circuit consumes nearly all power it produces"
+msgid "<b>Strained</b>\nThese circuits consume nearly all power they produce"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7
@@ -20215,7 +20315,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8"
-msgid "Circuit consumes more power than it can produce"
+msgid "<b>Underpowered</b>\nThese circuits consume more power than they can produce"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.EXOSUIT.BUTTON
@@ -20305,7 +20405,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONSUMER
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONSUMER"
-msgid "Outputs send gas into pipes\n* Must be on the same network as at least one <style=\"GasDestination\">Intake</style>"
+msgid "<b>Output Pipe</b>\nOutputs send gas into pipes\n------------------\nMust be on the same network as at least one <style=\"GasDestination\">Intake</style>"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.DISCONNECTED
@@ -20315,7 +20415,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.FILTERED
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.FILTERED"
-msgid "Filtered Outputs send filtered gas into pipes\n* Must be on the same network as at least one <style=\"GasDestination\">Intake</style>"
+msgid "<b>Filtered Output Pipe</b>\nFiltered Outputs send filtered gas into pipes\n------------------\nMust be on the same network as at least one <style=\"GasDestination\">Intake</style>"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.NETWORK
@@ -20325,7 +20425,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.PRODUCER
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.PRODUCER"
-msgid "Intakes send gas into buildings\n* Must be on the same network as at least one <style=\"GasSource\">Output</style>"
+msgid "<b>Building Intake</b>\nIntakes send gas into buildings\n------------------\nMust be on the same network as at least one <style=\"GasSource\">Output</style>"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.BUTTON
@@ -20360,17 +20460,17 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING"
-msgid "Uncomfortably cold area\n* Duplicants lose more heat than they can absorb"
+msgid "<b>Body Heat Loss</b>\nUncomfortably cold\n------------------\nDuplicants lose more heat in these areas than they can absorb\n* Warm Sweaters help Duplicants retain body heat"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING"
-msgid "Uncomfortably warm area\n* Duplicants absorb more heat than they can release"
+msgid "<b>Body Heat Retention</b>\nUncomfortably warm\n------------------\nDuplicants absorb more heat in these areas than they can release\n* Cool Vests help Duplicants shed excess body heat"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.NEUTRAL
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.NEUTRAL"
-msgid "Comfortable area\n* Duplicants can regulate their internal temperatures in this environment"
+msgid "<b>Comfort Zone</b>\nComfortable area\n------------------\nDuplicants can regulate their internal temperatures in these areas"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.BUTTON
@@ -20395,12 +20495,12 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.DARK
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.DARK"
-msgid "Duplicants cannot see in these areas"
+msgid "<b>Unlit Area</b>\nDuplicants cannot see in these areas"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA"
-msgid "Duplicants have adequate lighting in these areas"
+msgid "<b>Lit Area</b>\nDuplicants have adequate lighting in these areas"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.NAME
@@ -20465,7 +20565,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONSUMER
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONSUMER"
-msgid "Outputs send liquid into pipes\n* Must be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
+msgid "<b>Output Pipe</b>\nOutputs send liquid into pipes\n------------------\nMust be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.DISCONNECTED
@@ -20475,7 +20575,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.FILTERED
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.FILTERED"
-msgid "Filtered Outputs send filtered liquid into pipes\n* Must be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
+msgid "<b>Filtered Output Pipe</b>\nFiltered Outputs send filtered liquid into pipes\n------------------\nMust be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.NETWORK
@@ -20485,7 +20585,7 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.PRODUCER
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.PRODUCER"
-msgid "Intakes send liquid into buildings\n* Must be on the same network as at least one <style=\"LiquidSource\">Output</style>"
+msgid "<b>Building Intake</b>\nIntakes send liquid into buildings\n------------------\nMust be on the same network as at least one <style=\"LiquidSource\">Output</style>"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.NOISE_POLLUTION.BUTTON
@@ -20655,32 +20755,32 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND1
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND1"
-msgid "High oxygen concentrations"
+msgid "<b>Very Breathable</b>\nHigh oxygen concentrations"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND2
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND2"
-msgid "Sufficient oxygen concentrations"
+msgid "<b>Breathable</b>\nSufficient oxygen concentrations"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND3
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND3"
-msgid "Low oxygen concentrations"
+msgid "<b>Barely Breathable</b>\nLow oxygen concentrations"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND4"
-msgid "Extremely low or absent oxygen concentrations"
+msgid "<b>Unbreathable</b>\nExtremely low or absent oxygen concentrations\n------------------\nDuplicants will suffocate if trapped in these areas"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND5
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND5"
-msgid "Harmful gas concentration"
+msgid "<b>Slightly Toxic</b>\nHarmful gas concentration"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND6
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND6"
-msgid "Lethal gas concentration"
+msgid "<b>Very Toxic</b>\nLethal gas concentration"
 msgstr ""
 
 #. STRINGS.UI.OVERLAYS.POWER.WATTS_CONSUMED
@@ -23265,7 +23365,7 @@ msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME"
-msgid "Allow Auto-Bottling"
+msgid "Enable Autobottling"
 msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP
@@ -23275,7 +23375,7 @@ msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME"
-msgid "Stop Auto-Bottling"
+msgid "Disable Autobottling"
 msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.TOOLTIP
@@ -23420,32 +23520,32 @@ msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.NAME"
-msgid "Direction: Both"
+msgid " Set Direction: Both"
 msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.TOOLTIP"
-msgid "Duplicants will wash up when passing this building in either direction"
+msgid "Select to make Duplicants wash when passing by in either direction"
 msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.NAME"
-msgid "Direction: Left"
+msgid "Set Direction: Left"
 msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.TOOLTIP"
-msgid "Duplicants will wash up when passing this building from right to left"
+msgid "Select to make Duplicants wash when passing by from right to left"
 msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.NAME"
-msgid "Direction: Right"
+msgid "Set Direction: Right"
 msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.TOOLTIP"
-msgid "Duplicants will wash up when passing this building from left to right"
+msgid "Select to make Duplicants wash when passing by from left to right"
 msgstr ""
 
 #. STRINGS.UI.VIEWDUPLICANTS
