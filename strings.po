@@ -136,23 +136,23 @@ msgstr "全てのバッテリーは充電最大量に達しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.NAME"
-msgid "Bottler Delivery: On"
-msgstr "ボトルの供給: オン"
+msgid "Autobottling: On"
+msgstr "自動ボトル化: オン"
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.TOOLTIP"
-msgid "Duplicants may fetch bottled liquid from bottling stations to bring to this location"
-msgstr "複製人間はボトル詰場からこの場所へボトル入りの液体を取ってくることができます"
+msgid "Duplicants may specifically fetch liquid from Liquid Bottlers to bring to this location"
+msgstr "複製人間は液体ボトラーからこの場所へ液体を取ってくることができます"
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.NAME"
-msgid "Bottler Delivery: Off"
-msgstr "ボトルの供給: オフ"
+msgid "Autobottling: Off"
+msgstr "自動ボトル化: オフ"
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.TOOLTIP"
-msgid "Duplicants may not fetch bottled liquid from bottling stations to bring to this location"
-msgstr "複製人間はボトル詰場からこの場所へボトル入りの液体を取ってくることができません"
+msgid "Duplicants may not specifically fetch liquid from Liquid Bottlers to bring to this location"
+msgstr "複製人間は液体ボトラーからこの場所へ液体を取ってくることができません"
 
 #. STRINGS.BUILDING.STATUSITEMS.BROKEN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BROKEN.NAME"
@@ -945,7 +945,7 @@ msgid ""
 msgstr ""
 "この設備の下にタイルを設置してください\n"
 "------------------\n"
-"タイルは建設メニューの<color=#833A5FFF>基地タブ</color><color=#F44A47>[1]</color>にあります"
+"タイルは建築メニューの<color=#833A5FFF>基地タブ</color><color=#F44A47>[1]</color>にあります"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDBORINGMACHINE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDBORINGMACHINE.NAME"
@@ -962,7 +962,7 @@ msgid ""
 msgstr ""
 "この素材を採掘するにはマルチツールが必要です\n"
 "------------------\n"
-"マルチツールは建設メニューの<color=#833A5FFF>研究タブ</color><color=#F44A47>[9]</color> にある作業台で作成できます"
+"マルチツールは建築メニューの<color=#833A5FFF>研究タブ</color><color=#F44A47>[9]</color> にある作業台で作成できます"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDGASIN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDGASIN.NAME"
@@ -1748,6 +1748,31 @@ msgstr "定格"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKING.TOOLTIP"
 msgid "This building is working as intended"
 msgstr "この設備は想定通りに稼働中です"
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.NAME
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.NAME"
+msgid "Disable Autodisinfect"
+msgstr "自動消毒を無効化"
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.TOOLTIP"
+msgid "Do not automatically disinfect this building"
+msgstr "この設備を自動で消毒しません"
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.NAME
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.NAME"
+msgid "Enable Autodisinfect"
+msgstr "自動消毒を有効化"
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.TOOLTIP"
+msgid "Automatically disinfect this building when it becomes contaminated"
+msgstr "設備が汚染されると自動的に消毒します"
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.NO_DISEASE.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.NO_DISEASE.TOOLTIP"
+msgid "This building is clean"
+msgstr "この設備は清潔です"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT"
@@ -3089,8 +3114,8 @@ msgstr "鉱石洗浄機はコロニー内に持ち込む前に鉱石を消毒し
 
 #. STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.EFFECT"
-msgid "Kills all <style=\"disease\">Germs</style> present on raw <style=\"RawMineral\">ore</style>."
-msgstr "<style=\"food\">鉱石</style>から<style=\"disease\">病原体</style>を取り除きます。"
+msgid "Kills a significant amount of <style=\"disease\">Germs</style> present on raw <style=\"RawMineral\">ore</style>."
+msgstr "<style=\"food\">鉱石</style>から<style=\"disease\">病原体</style>を大量に除去します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.NAME"
@@ -3493,11 +3518,11 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.WASHBASIN.EFFECT"
 msgid ""
 "Removes some <style=\"disease\">Germs</style> from Duplicants.\n"
 "\n"
-"Duplicants use Wash Basins when passing by in the selected direction."
+"Duplicants use Wash Basins when passing by in the selected direction only if they have germs on them."
 msgstr ""
 "複製人間から<style=\"disease\">病原菌</style>をある程度除去します。\n"
 "\n"
-"複製人間は指定された方向に通りがかった時に洗面台を使用します。"
+"病原菌を保持している複製人間は指定された方向に通りがかった時に洗面台を使用します。"
 
 #. STRINGS.BUILDINGS.PREFABS.WASHBASIN.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.WASHBASIN.NAME"
@@ -3511,8 +3536,14 @@ msgstr "きれいな水は生命維持に必要な資源です。"
 
 #. STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.EFFECT"
-msgid "Uses <style=\"misc\">Sand</style> to purify <style=\"liquid\">Polluted Water</style>."
-msgstr "<style=\"liquid\">汚染水</style>を、<style=\"misc\">砂</style>を使って浄化します。"
+msgid ""
+"Uses <style=\"misc\">Sand</style> to filter <style=\"liquid\">Polluted Water</style>.\n"
+"\n"
+"Transfers a portion of disease to the Polluted Dirt."
+msgstr ""
+"<style=\"liquid\">汚染水</style>を、<style=\"misc\">砂</style>を使って浄化します。\n"
+"\n"
+"病原菌の一部を汚染泥に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.NAME"
@@ -5359,7 +5390,7 @@ msgstr "免疫力"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_MODIFIER
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_MODIFIER"
-msgid "{0} Immune System Regen"
+msgid "{0} Immunity Regen"
 msgstr "免疫回復 {0}"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_STAT
@@ -7782,8 +7813,8 @@ msgstr "酸素低下"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP"
-msgid "The air quite thin in this area"
-msgstr "このエリアは空気がかなり薄いです"
+msgid "The air is thin in this area"
+msgstr "このエリアは空気が希薄です"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MEDICALCOT.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MEDICALCOT.NAME"
@@ -9369,6 +9400,16 @@ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DIGGING.TOOLTIP"
 msgid "This Duplicant is excavating raw resources"
 msgstr "この複製人間は資源を掘削しています"
 
+#. STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.NAME"
+msgid "Disinfecting {Target}"
+msgstr "{Target} 消毒中"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.TOOLTIP"
+msgid "This Duplicant is disinfecting {Target}"
+msgstr "この複製人間は {Target} を消毒しています"
+
 #. STRINGS.DUPLICANTS.STATUSITEMS.DOCTOR.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DOCTOR.NAME"
 msgid "Aiding Duplicant"
@@ -10452,8 +10493,8 @@ msgstr "ストレス"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_NAME"
-msgid "Stressed"
-msgstr "ストレス"
+msgid "High stress"
+msgstr "高ストレス"
 
 # throw up は口語で「吐く」
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_TOOLTIP
@@ -10861,8 +10902,8 @@ msgstr "田舎者"
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC"
-msgid "This duplicant was a talented opera singer and a snorkeling instructor."
-msgstr "この複製人間はかつては優れたオペラ歌手かつシュノーケリングのインストラクターでした。"
+msgid "This Duplicant was a talented opera singer and a snorkeling instructor."
+msgstr "この複製人間は優れたオペラ歌手かつシュノーケリングのインストラクターでした。"
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.NAME"
@@ -11129,17 +11170,17 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.REGENERATION.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.REGENERATION.DESC"
-msgid "This duplicant constantly regenerated health."
+msgid "This Duplicant is constantly regenerating health."
 msgstr "この複製人間は継続的に生命力を回復します。"
 
 #. STRINGS.DUPLICANTS.TRAITS.REGENERATION.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.REGENERATION.NAME"
-msgid "Regeneration"
+msgid "Regenerative"
 msgstr "再生"
 
 #. STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.DESC"
-msgid "This duplicant is incredibly strong."
+msgid "This Duplicant is incredibly strong."
 msgstr "この複製人間は信じられないほど怪力です。"
 
 #. STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.NAME
@@ -11220,8 +11261,8 @@ msgstr "抗菌"
 
 #. STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.DESC"
-msgid "This duplicant has a positive outlook on life."
-msgstr "この複製人間は人生に前向きです。"
+msgid "This Duplicant has an unwaveringly positive outlook on life."
+msgstr "この複製人間は人生に断固として前向きです。"
 
 #. STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.NAME"
@@ -14210,13 +14251,17 @@ msgstr "始める際に役に立つヒント集"
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.MESSAGEBODY"
 msgid ""
-"One of your duplicants has consumed enough germs that it is beginning to impact their health. The more disease they consume, the "
-"harder it is for their immune system to fight off the germs. If their immune system reaches 0%, infection occurs, and medical "
-"intervention will be necessary. Use the <style=\"misc\">Vitals Screen</style> to keep an eye on Duplicant immune levels."
+"Duplicants must spend points of immunity to fight the various <style=\"disease\">Germs</style> they're exposed to. If their "
+"immunity reaches 0%, they'll be unable to fight off any more germs and contract the next disease they encounter.\n"
+"\n"
+"Doors with Access Permissions can be built from the <style=\"misc\">BASE TAB</style> of the <style=\"misc\">BUILD MENU</style> to "
+"block Duplicants from entering biohazardous areas while they recover their spent immunity points."
 msgstr ""
-"ある複製人間が病原菌を吸い込むと、彼らの生命力に影響を及ぼします。病原菌を多く取り込むほど、彼らの免疫力は病原菌を撃退しようとしま"
-"す。もし免疫力が0%になってしまうと罹患してしまい、医療処置が必要になるでしょう。<style=\"misc\">健康状態</style>を確認し、複製人間"
-"の免疫力に注意を払いましょう。"
+"複製人間は曝露した様々な<style=\"disease\">病原菌</style>に対抗するために免疫力を消費します。免疫力が 0% になると彼らは病原菌と戦"
+"うことができなくなり、病気を発症します。\n"
+"\n"
+"免疫力を回復するまで、複製人間が危険地帯に立ち入らないよう、<style=\"misc\">建築メニュー</style>の<style=\"misc\">基地タブ</style>"
+"からアクセス制限付きのドアを建設することができます。"
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.NAME"
@@ -14225,8 +14270,8 @@ msgstr "ヒント: 複製人間の免疫力"
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP"
-msgid "Learn how Duplicants get sick"
-msgstr "複製人間の病気について学ぶ"
+msgid "Keep your Duplicants in peak health"
+msgstr "複製人間の生命力を高く保ちましょう"
 
 #. STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME"
@@ -14432,6 +14477,30 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_SUFFOCATION.TOOLTIP"
 msgid "These Duplicants died from a lack of <style=\"oxygen\">Oxygen</style>:"
 msgstr "これらの複製人間は<style=\"oxygen\">酸素</style>欠乏により死亡しました:"
 
+#. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.MESSAGEBODY
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.MESSAGEBODY"
+msgid ""
+"The <style=\"food\">food</style> your Duplicants make is only as clean as the <style=\"solid\">ingredients</style> used to make "
+"it. Storing food in sterile or <style=\"heat\">Refrigerated</style> environments will keep the produced food clean, while "
+"carefully placed hygene systems will prevent your cooks from infecting the food while they handle it.\n"
+"\n"
+"Dangerously contaminated food can be recycled by clicking the <style=\"misc\">COMPOST</style> button on the selected item."
+msgstr ""
+"複製人間が作る<style=\"food\">食糧</style>は使った<style=\"solid\">材料</style>と同じ清潔度を持ちます。滅菌環境または<style=\"heat"
+"\">冷蔵</style>環境下では生成された食糧は清潔に保たれます。よく考えて設置された衛生システムは食糧が汚染されるのを妨げます。\n"
+"\n"
+"危険なほど汚染が進んだ食糧はアイテム選択画面の <style=\"misc\">堆肥化</style> をクリックすることでリサイクルできます。"
+
+#. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.NAME"
+msgid "TIP: Food Safety"
+msgstr "ヒント: 食の安全"
+
+#. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.TOOLTIP"
+msgid "Learn how to manage food contamination"
+msgstr "食糧汚染管理方法について学ぶ"
+
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY"
 msgid ""
@@ -14625,6 +14694,16 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.HEALINGTRAITGAIN.TOOLTIP"
 msgid "These Duplicants' injuries weren't set and healed improperly. They developed traits as a result:"
 msgstr "これらの複製人間の傷は適切に処理されませんでした。その結果新しい特性を習得しています:"
 
+#. STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.NAME"
+msgid "Colony requires wash basins"
+msgstr "コロニーに洗面台が必要です"
+
+#. STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.TOOLTIP"
+msgid "<style=\"disease\">Germs</style> are spreading in your colony because your Duplicants have no where to clean up"
+msgstr "複製人間を清潔にする場所がないため、<style=\"disease\">病原菌</style> がコロニー内に拡大しています"
+
 #. STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.NAME"
 msgid "New Duplicants have been reabsorbed"
@@ -14648,28 +14727,6 @@ msgid ""
 msgstr ""
 "複製人間は時間経過とともにより良いアメニティを求めます。\n"
 "これらの複製人間は期待値が上昇しました:"
-
-#. STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.MESSAGEBODY
-msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.MESSAGEBODY"
-msgid ""
-"A germ has found its way on to one of your rations. Small numbers of germs are not a threat to your colony as Duplicant immune "
-"systems can fight off substantial infection. However some diseases like Food Poisoning will grow quickly on food, creating a "
-"hazardous situation. Badly contaminated food can be Marked For Compost, and further contamination can be slowed or halted by "
-"storing your food in a refrigerated or other germ-hostile environment."
-msgstr ""
-"病原菌が食糧に紛れ込んでいます。少量ならば複製人間の免疫力によって退けられ、コロニーに悪影響を及ぼしません。しかし、食中毒のような"
-"病気は食糧上で急速に繁殖し、危機的な状況を引き起こします。酷く汚染された食料は堆肥化することができ、また、病原菌に不適な環境か冷蔵"
-"庫に格納することで汚染の進行を防ぐことができます。"
-
-#. STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.NAME
-msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.NAME"
-msgid "TIP: Infected Food"
-msgstr "ヒント: 汚染された食糧"
-
-#. STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.TOOLTIP
-msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.TOOLTIP"
-msgid "Deal with the spread of filth"
-msgstr "汚染拡大に対処する"
 
 #. STRINGS.MISC.NOTIFICATIONS.INVALIDCONSTRUCTIONLOCATION.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.INVALIDCONSTRUCTIONLOCATION.NAME"
@@ -14735,24 +14792,29 @@ msgstr "複製人間の移動方法を理解する"
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY"
 msgid ""
-"There are many sources of germs in the world. If your duplicants consume these germs, it can make thems sick. Maintaining good "
-"base hygene and cleaning the various substances in your base is essential for controlling the spread of germs. Each disease has "
-"different materials it prefers to grow on, and different tools for reducing its spread in your base. The <style=\"misc\">GERM "
-"OVERLAY</style> <color=#F44A47><b>[F9]</b></color> will allow you to see germ concentrations and spot new sources of germs."
+"<style=\"disease\">Germs</style> are an invisible peril that cause <style=\"disease\">Disease</style> in your Duplicants. The "
+"<style=\"misc\">GERM OVERLAY</style> <color=#F44A47><b>[F9]</b></color> will allow you to view all germ concentrations in your "
+"colony and the sources spawning them.\n"
+"\n"
+"Wash Basins can be built in dirty areas from the <style=\"misc\">MEDICINE TAB</style> <color=#F44A47><b>[9]</b></color> to tell "
+"your Duplicants to where to wash up. If you keep your base clean and your Duplicants hygienic, your colony's Immunity will handle "
+"the rest."
 msgstr ""
-"ゲーム中にはたくさんの病原菌源があります。複製人間が病原菌を吸い込むと、病気の原因となるでしょう。基地の衛生を維持し、清潔に保って"
-"おくことは病原菌の拡大防止に不可欠です。病原菌はそれぞれ繁殖に適した素材があり、拡大を防ぐための道具も様々です。<style=\"misc\">病"
-"原菌オーバーレイ</style> <color=#F44A47><b>[F9]</b></color>は病原菌の濃度を確認したり、新たな感染源を発見することができます。"
+"<style=\"disease\">病原菌</style>は複製人間に<style=\"disease\">病気</style>をもたらす、目に見えない危険です。 <style=\"misc\">病"
+"原菌レイヤー</style> <color=#F44A47><b>[F9]</b></color>はコロニー内の病原菌濃度および発生源を表示します。\n"
+"\n"
+"<style=\"misc\">医療タブ</style> <color=#F44A47><b>[9]</b></color>から洗面台を汚れたエリアに建築することで、複製人間に洗い場を提供"
+"します。基地と複製人間の衛生状態を清潔に保てれば、コロニーの免疫力は病原菌に対処できます。"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.NAME"
-msgid "TIP: Germs and Infections"
-msgstr "ヒント: 病原菌と汚染"
+msgid "TIP: Germs and Disease"
+msgstr "ヒント: 病原菌と病気"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.TOOLTIP"
-msgid "Learn about disease risks"
-msgstr "病気の危険性を学ぶ"
+msgid "Learn about the risks of Duplicant disease"
+msgstr "複製人間の病気リスクを学ぶ"
 
 #. STRINGS.MISC.NOTIFICATIONS.MISSINGMATERIALS.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.MISSINGMATERIALS.NAME"
@@ -15808,6 +15870,11 @@ msgstr "石炭"
 msgctxt "STRINGS.MISC.TAGS.COMPOSTABLE"
 msgid "Compostable"
 msgstr "堆肥原料"
+
+#. STRINGS.MISC.TAGS.COMPOSTMEAT
+msgctxt "STRINGS.MISC.TAGS.COMPOSTMEAT"
+msgid "Compost Meat"
+msgstr "堆肥肉"
 
 #. STRINGS.MISC.TAGS.CONSUMABLEORE
 msgctxt "STRINGS.MISC.TAGS.CONSUMABLEORE"
@@ -20112,6 +20179,11 @@ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.TITLE"
 msgid "<b>Welcome to Oxygen Not Included!</b>"
 msgstr "<b>Oxygen Not Included にようこそ！</b>"
 
+#. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.ANIMATION_HEADER
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.ANIMATION_HEADER"
+msgid "WATCH THE ANIMATED SHORT!"
+msgstr "短編アニメを見る"
+
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.BODY
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.BODY"
 msgid "Stay up to date by joining our mailing list, or head on over to the forums and join the discussion."
@@ -20146,6 +20218,31 @@ msgstr "全ての更新履歴"
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_VERSION"
 msgid "Previous Version"
 msgstr "過去のバージョン"
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.BIGGER_TIMES
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.BIGGER_TIMES"
+msgid "{1} weeks {0} days"
+msgstr "{1}週間 {0}日"
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.FINAL_WEEK
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.FINAL_WEEK"
+msgid "{0} days"
+msgstr "{0}日"
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.NOW
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.NOW"
+msgid "Less than a day"
+msgstr "1日以内"
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.TWENTY_FOUR_HOURS
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.TWENTY_FOUR_HOURS"
+msgid "Less than a day"
+msgstr "1日以内"
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.UPDATES_HEADER
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.UPDATES.UPDATES_HEADER"
+msgid "NEXT UPGRADE LIVE IN"
+msgstr "次のアップグレードまで"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.WATERMARK
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.WATERMARK"
@@ -20655,8 +20752,8 @@ msgstr "通常"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.DEFAULT.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.DEFAULT.TOOLTIP"
-msgid "Default immunity recovery"
-msgstr "デフォルトの免疫回復力です"
+msgid "Duplicants regain immunity normally"
+msgstr "複製人間は免疫力を通常通り回復します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.ATTRIBUTE_MODIFIER_NAME"
@@ -20670,8 +20767,8 @@ msgstr "強力"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.TOOLTIP"
-msgid "Increases immunity recovery"
-msgstr "免疫回復力を強化します"
+msgid "Duplicant immune recovery is increased"
+msgstr "複製人間の免疫回復力が上昇します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME"
@@ -20685,17 +20782,17 @@ msgstr "弱体"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.TOOLTIP"
-msgid "Reduces Duplicant immunity recovery"
-msgstr "複製人間の免疫力を低下させます"
+msgid "Duplicant immune recovery is reduced"
+msgstr "複製人間の免疫回復力を低下させます"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME"
-msgid "Immune System"
+msgid "Immune Systems"
 msgstr "免疫力"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP"
-msgid "Affects how resilient your Dupes are to disease"
+msgid "Affects how resistant your Duplicants are to disease"
 msgstr "複製人間の病気への抵抗力です"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.NAME
@@ -20705,8 +20802,8 @@ msgstr "通常"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.TOOLTIP"
-msgid "The regular rate of stress"
-msgstr "通常のストレス変動量です"
+msgid "Duplicants gain and lose stress normally"
+msgstr "複製人間は通常通りストレスを受けたり減らしたりします"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.ATTRIBUTE_MODIFIER_NAME"
@@ -20720,8 +20817,8 @@ msgstr "楽観的"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.TOOLTIP"
-msgid "Reduces duplicant stress levels"
-msgstr "複製人間のストレスレベルを低下させます"
+msgid "Duplicants are harder to stress out"
+msgstr "複製人間はストレスを受けづらくなります"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.ATTRIBUTE_MODIFIER_NAME"
@@ -20735,18 +20832,18 @@ msgstr "悲観的"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.TOOLTIP"
-msgid "Increases Duplicant stress levels"
-msgstr "複製人間のストレスレベルを上昇させます"
+msgid "Duplicants stress out easily"
+msgstr "複製人間が容易にストレスを受けます"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.NAME"
-msgid "Disposition"
-msgstr "気質"
+msgid "Duplicant Mood"
+msgstr "複製人間の雰囲気"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP"
-msgid "Affects Duplicant stress levels"
-msgstr "複製人間のストレスレベルです"
+msgid "Affects how well your Duplicants deal with stress"
+msgstr "複製人間が受けるストレスの影響度です"
 
 #. STRINGS.UI.FRONTEND.DEMO_OVER_SCREEN.BODY
 msgctxt "STRINGS.UI.FRONTEND.DEMO_OVER_SCREEN.BODY"
@@ -21143,14 +21240,23 @@ msgstr "OK"
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
 msgid ""
-"Update Features:\n"
+"<b>Important Notes:</b>\n"
+"\n"
+"• <u>Duplicants will now automatically disinfect buildings. You can tune the minimum germ threshold at the top right of the germ "
+"overlay.</u>\n"
+"\n"
+" <b>Update Features:</b>\n"
 "\n"
 "• New disease simulation, complete with new illnesses, attributes, overlays and more.\n"
-"• New Farming Overlay, plants, food recipes and plant requirements\n"
+"• New plants, food recipes, growth requirements and Farming Overlay.\n"
 "• Explore deep enough into your surroundings and you may chance upon the remnants of, well... something.\n"
-"• Explore deep enough into your surroundings and you may chance upon the remnants of, well... something.\n"
-"• Bug fixes, performance improvements, new buildings and more."
+"• New Duplicants; say hello to Ari, Jean, Camille and Ashkan.\n"
+"• Bug fixes, performance improvements, new buildings, creatures and more."
 msgstr ""
+"<b>重要なお知らせ:</b>\n"
+"\n"
+"• <u>複製人間は自動的に設備を消毒するようになります。消毒を開始する最小しきい値を病原菌レイヤーから設定することができます。</u>\n"
+"\n"
 "新機能:\n"
 "\n"
 "• 健康被害、属性、オーバーレイを盛り込んだ新しい病気シミュレーション\n"
@@ -22068,8 +22174,8 @@ msgstr "計測不能"
 
 #. STRINGS.UI.OVERLAYS.CROP.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CROP.BUTTON"
-msgid "Crop Overlay"
-msgstr "作物レイヤー"
+msgid "Farming Overlay"
+msgstr "農業レイヤー"
 
 #. STRINGS.UI.OVERLAYS.CROP.FULLY_GROWN
 msgctxt "STRINGS.UI.OVERLAYS.CROP.FULLY_GROWN"
@@ -22093,18 +22199,34 @@ msgstr "農業レイヤー"
 
 #. STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.FULLY_GROWN
 msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.FULLY_GROWN"
-msgid "This plant is ready for harvest"
-msgstr "この植物は収穫できます"
+msgid ""
+"<b>Fully Grown</b>\n"
+"These plants have reached maturation\n"
+"------------------\n"
+"Select the <style=\"misc\">HARVEST TOOL</style> <color=#F44A47><b>[Y]</b></color> to batch harvest"
+msgstr ""
+"<b>成熟</b>\n"
+"これらの植物は成熟期に達しました\n"
+"------------------\n"
+"収穫するには<style=\"misc\">収穫ツール</style> <color=#F44A47><b>[Y]</b></color>を選択してください"
 
 #. STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWING
 msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWING"
-msgid "This plant is thriving in satisfactory conditions"
-msgstr "この植物は条件を満たしているので繁茂しています"
+msgid ""
+"<b>Growing</b>\n"
+"These plants are thriving in their current conditions"
+msgstr ""
+"<b>生育</b>\n"
+"この植物は条件を満たしているので繁茂しています"
 
 #. STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWTH_HALTED
 msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWTH_HALTED"
-msgid "Substandard conditions are preventing this plant from growing"
-msgstr "条件を満たしていないため、この植物の成長は妨げられています"
+msgid ""
+"<b>Halted Growth</b>\n"
+"Substandard conditions prevent these plants from growing"
+msgstr ""
+"<b>生育中断</b>\n"
+"条件を満たしていないため、この植物の成長は妨げられています"
 
 #. STRINGS.UI.OVERLAYS.CROPS.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CROPS.BUTTON"
@@ -22159,18 +22281,22 @@ msgstr "装飾レイヤー"
 #. STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.HIGHDECOR
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.HIGHDECOR"
 msgid ""
-"Sufficient decor values\n"
+"<b>High Decor</b>\n"
+"Area with sufficient decor values\n"
 "* Lighting and aesthetically pleasing buildings increase decor"
 msgstr ""
+"<b>豪華</b>\n"
 "十分な装飾期待値\n"
 "* 照明や、美的に素晴らしい設備は装飾期待値を上げます"
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR"
 msgid ""
-"Insufficient decor values\n"
+"<b>Low Decor</b>\n"
+"Area with insufficient decor values\n"
 "* Resources on the floor are considered \"debris\" and will decrease decor"
 msgstr ""
+"<b>貧相</b>\n"
 "装飾期待値が低い\n"
 "* 床に転がっている素材は「がれき」とみなされ、装飾期待値が下がります"
 
@@ -22203,6 +22329,26 @@ msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISEASE_FORMAT_NO_COLOR"
 msgid "{1} [{0}]"
 msgstr "{1} [{0}]"
 
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.THRESHOLD_PREFIX
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.THRESHOLD_PREFIX"
+msgid "Disinfect At:"
+msgstr "消毒:"
+
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP"
+msgid "Automatically disinfect any building with more than {NumberOfGerms} germs."
+msgstr "病原菌が {NumberOfGerms} 以上となった場合、自動的に消毒します。"
+
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP_DISABLED
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP_DISABLED"
+msgid "Automatic building disinfection disabled."
+msgstr "設備自動消毒は無効化されています。"
+
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.UNITS
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.UNITS"
+msgid "Germs"
+msgstr "病原菌"
+
 #. STRINGS.UI.OVERLAYS.DISEASE.HOVERTITLE
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.HOVERTITLE"
 msgid "Germ"
@@ -22220,8 +22366,14 @@ msgstr "病原菌源"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INFECTION_SOURCE_TOOLTIP
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INFECTION_SOURCE_TOOLTIP"
-msgid "Areas where germs are produced"
-msgstr "病原菌が産出されるエリア"
+msgid ""
+"<b>Germ Source</b>\n"
+"Areas where germs are produced\n"
+"* Placing Wash Basins or Hand Sanitizers near these areas may prevent disease spread"
+msgstr ""
+"<b>病原菌源</b>\n"
+"病原菌が生産されるエリア\n"
+"* 洗面台または消毒剤を設置することで病原菌の拡散を防ぎます"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS"
@@ -22231,17 +22383,17 @@ msgstr "保菌者"
 #. STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS_TOOLTIP
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS_TOOLTIP"
 msgid ""
-"Duplicants become a germ host when germs enter their body through inhalation or ingestion\n"
+"<b>Germ Host</b>\n"
+"Germ hosts may be asymptomatic and show no signs of disease\n"
 "------------------\n"
-"Germ hosts may not show symptoms of disease\n"
-"------------------\n"
-"Internal germs cannot be washed off"
+"Duplicants become hosts when germs enter their body through inhalation or ingestion\n"
+"* Unlike surface germs, internal germs cannot be washed off"
 msgstr ""
-"病原菌を吸入または摂取した複製人間は保菌者になります\n"
+"<b>保菌者</b>\n"
+"保菌者は病気の症状を感じることができず、外見上何の兆候も見られません\n"
 "------------------\n"
-"保菌者は病気の症状を表さないかもしれません\n"
-"------------------\n"
-"体内の病原菌は洗い落とすことができません"
+"病原菌に接触または吸引した複製人間は保菌者となります\n"
+"* 表面上の病原菌とは違って、体内に存在する病原菌は洗い流すことができません"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.NAME
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.NAME"
@@ -22255,7 +22407,7 @@ msgstr "無菌"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.BUTTON"
-msgid "Power Grid Overlay"
+msgid "Power Overlay"
 msgstr "配電レイヤー"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.DIAGRAM_HEADER
@@ -22310,13 +22462,17 @@ msgstr "電力不足"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.NAME
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.NAME"
-msgid "POWER GRID OVERLAY"
+msgid "POWER OVERLAY"
 msgstr "配電レイヤー"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND_SWITCH
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND_SWITCH"
-msgid "Building activates or deactivates a circuit"
-msgstr "回路をオンにしたりオフにしたりします"
+msgid ""
+"<b>Switch</b>\n"
+"Activates or deactivates connected circuits"
+msgstr ""
+"<b>スイッチ</b>\n"
+"回路をオンにしたりオフにしたりします"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND1
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND1"
@@ -22325,28 +22481,44 @@ msgstr "どの建物が<style=\"power\">電力</style>を供給・消費して�
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND2
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND2"
-msgid "Building draws power from a circuit"
-msgstr "回路から設備が引き出す電力です"
+msgid ""
+"<b>Consumer</b>\n"
+"These buildings draw power from a circuit"
+msgstr ""
+"<b>消費側</b>\n"
+"回路から設備が引き出す電力です"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND3
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND3"
-msgid "Building generates power for a circuit"
-msgstr "回路に設備が流す電力です"
+msgid ""
+"<b>Producer</b>\n"
+"These buildings generate power for a circuit"
+msgstr ""
+"<b>供給側</b>\n"
+"回路に設備が流す電力です"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND4"
-msgid "Displays the power loads on wire systems"
-msgstr "コロニーの配電状況を表示します"
+msgid "Displays the power load on wire systems"
+msgstr "回路にかかる負荷電力を表示します"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND5
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND5"
-msgid "Circuit produces more power than it can consume"
-msgstr "この回路は消費できる電力より多くの電力を供給しています"
+msgid ""
+"<b>Energy Surplus</b>\n"
+"These circuits produce more power than they can consume"
+msgstr ""
+"<b>エネルギー余剰</b>\n"
+"この回路は消費できる電力より多くの電力を供給しています"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6"
-msgid "Circuit consumes nearly all power it produces"
-msgstr "この回路は供給できる電力に近い電力を消費しています"
+msgid ""
+"<b>Strained</b>\n"
+"These circuits consume nearly all power they produce"
+msgstr ""
+"<b>逼迫</b>\n"
+"この回路は供給できる電力に近い電力を消費しています"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7"
@@ -22355,8 +22527,12 @@ msgstr "回路に流れる電力が定格を越えています"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8"
-msgid "Circuit consumes more power than it can produce"
-msgstr "この回路は供給できる電力より多くの電力を消費しています"
+msgid ""
+"<b>Underpowered</b>\n"
+"These circuits consume more power than they can produce"
+msgstr ""
+"<b>電力不足</b>\n"
+"この回路は供給できる電力より多くの電力を消費しています"
 
 #. STRINGS.UI.OVERLAYS.EXOSUIT.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.EXOSUIT.BUTTON"
@@ -22446,10 +22622,14 @@ msgstr "<style=\"GasPiping\">気体パイプ</style>に接続されている"
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONSUMER
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONSUMER"
 msgid ""
+"<b>Output Pipe</b>\n"
 "Outputs send gas into pipes\n"
-"* Must be on the same network as at least one <style=\"GasDestination\">Intake</style>"
+"------------------\n"
+"Must be on the same network as at least one <style=\"GasDestination\">Intake</style>"
 msgstr ""
+"<b>出力パイプ</b>\n"
 "出力はパイプに気体を排気する\n"
+"------------------\n"
 "* 同じ経路にある最低一つの<style=\"GasDestination\">入力</style>と繋がっている必要があります"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.DISCONNECTED
@@ -22460,10 +22640,14 @@ msgstr "<style=\"GasPiping\">気体パイプ</style>の接続がない"
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.FILTERED
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.FILTERED"
 msgid ""
+"<b>Filtered Output Pipe</b>\n"
 "Filtered Outputs send filtered gas into pipes\n"
-"* Must be on the same network as at least one <style=\"GasDestination\">Intake</style>"
+"------------------\n"
+"Must be on the same network as at least one <style=\"GasDestination\">Intake</style>"
 msgstr ""
+"<b>ろ過出力パイプ</b>\n"
 "ろ過された気体をろ過パイプに排気する\n"
+"------------------\n"
 "* 同じ経路にある最低一つの<style=\"GasDestination\">入力</style>と繋がっている必要があります"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.NETWORK
@@ -22474,10 +22658,14 @@ msgstr "気体経路 {0}"
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.PRODUCER
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.PRODUCER"
 msgid ""
+"<b>Building Intake</b>\n"
 "Intakes send gas into buildings\n"
-"* Must be on the same network as at least one <style=\"GasSource\">Output</style>"
+"------------------\n"
+"Must be on the same network as at least one <style=\"GasSource\">Output</style>"
 msgstr ""
+"<b>設備側入力</b>\n"
 "入力はパイプから気体を吸気する\n"
+"------------------\n"
 "* 同じ経路にある最低一つの<style=\"GasDestination\">出力</style>と繋がっている必要があります"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.BUTTON
@@ -22513,28 +22701,44 @@ msgstr "適温エリア"
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING"
 msgid ""
-"Uncomfortably cold area\n"
-"* Duplicants lose more heat than they can absorb"
+"<b>Body Heat Loss</b>\n"
+"Uncomfortably cold\n"
+"------------------\n"
+"Duplicants lose more heat in these areas than they can absorb\n"
+"* Warm Sweaters help Duplicants retain body heat"
 msgstr ""
-"極寒のエリア\n"
-"* 複製人間は吸収できる以上の熱を失います"
+"<b>低体温の危険性</b>\n"
+"適応不可エリア\n"
+"------------------\n"
+"複製人間はこの環境下では熱を受け取るより多くの熱放出をする\n"
+"* あったかセーターは複製人間の体温を保つのに役立ちます"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING"
 msgid ""
-"Uncomfortably warm area\n"
-"* Duplicants absorb more heat than they can release"
+"<b>Body Heat Retention</b>\n"
+"Uncomfortably warm\n"
+"------------------\n"
+"Duplicants absorb more heat in these areas than they can release\n"
+"* Cool Vests help Duplicants shed excess body heat"
 msgstr ""
-"灼熱のエリア\n"
-"* 複製人間は放熱できる以上の熱を吸収します"
+"<b>過剰体温の危険性</b>\n"
+"不快なほど温かい\n"
+"------------------\n"
+"複製人間はこの環境下では熱を放出するより多くの熱を吸収する\n"
+"* クールベストは複製人間の体温を放熱させるのに役立ちます"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.NEUTRAL
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.NEUTRAL"
 msgid ""
+"<b>Comfort Zone</b>\n"
 "Comfortable area\n"
-"* Duplicants can regulate their internal temperatures in this environment"
+"------------------\n"
+"Duplicants can regulate their internal temperatures in these areas"
 msgstr ""
+"<b>適温帯</b>\n"
 "快適なエリア\n"
+"------------------\n"
 "* 複製人間はこの環境下で体温を一定に保つことができます"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.BUTTON
@@ -22559,13 +22763,21 @@ msgstr "光源レイヤー"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.DARK
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.DARK"
-msgid "Duplicants cannot see in these areas"
-msgstr "複製人間が何も見ることができない範囲"
+msgid ""
+"<b>Unlit Area</b>\n"
+"Duplicants cannot see in these areas"
+msgstr ""
+"<b>照明外範囲</b>\n"
+"複製人間が何も見ることができない範囲"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA"
-msgid "Duplicants have adequate lighting in these areas"
-msgstr "複製人間に十分な明かりがある"
+msgid ""
+"<b>Lit Area</b>\n"
+"Duplicants have adequate lighting in these areas"
+msgstr ""
+"<b>照明範囲</b>\n"
+"複製人間に十分な明かりがある"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.NAME
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.NAME"
@@ -22630,11 +22842,15 @@ msgstr "<style=\"LiquidPiping\">液体パイプ</style>に接続されている"
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONSUMER
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONSUMER"
 msgid ""
+"<b>Output Pipe</b>\n"
 "Outputs send liquid into pipes\n"
-"* Must be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
+"------------------\n"
+"Must be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
 msgstr ""
+"<b>出力パイプ</b>\n"
 "出力はパイプに液体を流す\n"
-"* 同じ経路にある最低一つの<style=\"LiquidDestination\">入力</style>と繋がっている必要があります"
+"------------------\n"
+"同じ経路にある最低一つの<style=\"LiquidDestination\">入力</style>と繋がっている必要があります"
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.DISCONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.DISCONNECTED"
@@ -22644,11 +22860,15 @@ msgstr "<style=\"LiquidPiping\">液体パイプ</style>の接続がない"
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.FILTERED
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.FILTERED"
 msgid ""
+"<b>Filtered Output Pipe</b>\n"
 "Filtered Outputs send filtered liquid into pipes\n"
-"* Must be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
+"------------------\n"
+"Must be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
 msgstr ""
+"<b>ろ過出力パイプ</b>\n"
 "ろ過された液体をろ過パイプに流す\n"
-"* 同じ経路にある最低一つの<style=\"LiquidDestination\">入力</style>と繋がっている必要があります"
+"------------------\n"
+"同じ経路にある最低一つの<style=\"LiquidDestination\">入力</style>と繋がっている必要があります"
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.NETWORK
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.NETWORK"
@@ -22658,11 +22878,15 @@ msgstr "液体経路 {0}"
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.PRODUCER
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.PRODUCER"
 msgid ""
+"<b>Building Intake</b>\n"
 "Intakes send liquid into buildings\n"
-"* Must be on the same network as at least one <style=\"LiquidSource\">Output</style>"
+"------------------\n"
+"Must be on the same network as at least one <style=\"LiquidSource\">Output</style>"
 msgstr ""
+"<b>設備側入力</b>\n"
 "入力はパイプから液体を吸入する\n"
-"* 同じ経路にある最低一つの<style=\"LiquidSource\">出力</style>と繋がっている必要があります"
+"------------------\n"
+"同じ経路にある最低一つの<style=\"LiquidSource\">出力</style>と繋がっている必要があります"
 
 #. STRINGS.UI.OVERLAYS.NOISE_POLLUTION.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.NOISE_POLLUTION.BUTTON"
@@ -22919,33 +23143,61 @@ msgstr "酸素レイヤー"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND1
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND1"
-msgid "High oxygen concentrations"
-msgstr "高濃度"
+msgid ""
+"<b>Very Breathable</b>\n"
+"High oxygen concentrations"
+msgstr ""
+"<b>快適</b>\n"
+"高い酸素濃度"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND2
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND2"
-msgid "Sufficient oxygen concentrations"
-msgstr "十分な濃度"
+msgid ""
+"<b>Breathable</b>\n"
+"Sufficient oxygen concentrations"
+msgstr ""
+"<b>呼吸可能</b>\n"
+"十分な酸素濃度"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND3
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND3"
-msgid "Low oxygen concentrations"
-msgstr "低濃度"
+msgid ""
+"<b>Barely Breathable</b>\n"
+"Low oxygen concentrations"
+msgstr ""
+"<b>低濃度</b>\n"
+"酸素濃度が薄い"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND4"
-msgid "Extremely low or absent oxygen concentrations"
-msgstr "希薄または皆無"
+msgid ""
+"<b>Unbreathable</b>\n"
+"Extremely low or absent oxygen concentrations\n"
+"------------------\n"
+"Duplicants will suffocate if trapped in these areas"
+msgstr ""
+"<b>呼吸不可</b>\n"
+"酸素が希薄であるか、皆無です\n"
+"------------------\n"
+"複製人間がこのエリアにとどまると窒息します"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND5
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND5"
-msgid "Harmful gas concentration"
-msgstr "毒性の強い気体濃度"
+msgid ""
+"<b>Slightly Toxic</b>\n"
+"Harmful gas concentration"
+msgstr ""
+"<b>やや有毒</b>\n"
+"有害な気体濃度"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND6
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND6"
-msgid "Lethal gas concentration"
-msgstr "致死性がある気体濃度"
+msgid ""
+"<b>Very Toxic</b>\n"
+"Lethal gas concentration"
+msgstr ""
+"<b>極めて有毒</b>\n"
+"致命的な気体濃度"
 
 #. STRINGS.UI.OVERLAYS.POWER.WATTS_CONSUMED
 msgctxt "STRINGS.UI.OVERLAYS.POWER.WATTS_CONSUMED"
@@ -24043,7 +24295,7 @@ msgid ""
 msgstr ""
 "発明するには研究台を建設してください\n"
 "------------------\n"
-"研究設備は建設メニューの研究タブ<color=#F44A47>[9]</color>にあります"
+"研究設備は建築メニューの研究タブ<color=#F44A47>[9]</color>にあります"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_RESEARCH
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_RESEARCH"
@@ -25685,8 +25937,8 @@ msgstr "この設備に資源を配達します"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME"
-msgid "Allow Auto-Bottling"
-msgstr "自動ボトル化"
+msgid "Enable Autobottling"
+msgstr "自動ボトル化有効"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP"
@@ -25695,8 +25947,8 @@ msgstr "有効にした場合、複製人間は液体ボトラーから直接こ
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME"
-msgid "Stop Auto-Bottling"
-msgstr "自動ボトル化中止"
+msgid "Disable Autobottling"
+msgstr "自動ボトル化無効"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.TOOLTIP"
@@ -25850,33 +26102,33 @@ msgstr "この植物を種子に変換します"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.NAME"
-msgid "Direction: Both"
-msgstr "方向: 左右"
+msgid " Set Direction: Both"
+msgstr "方向指定: 左右"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.TOOLTIP"
-msgid "Duplicants will wash up when passing this building in either direction"
-msgstr "複製人間はこの設備を左右両方から通り過ぎる時に洗浄します"
+msgid "Select to make Duplicants wash when passing by in either direction"
+msgstr "複製人間がこの設備を左右両方から通り過ぎる時に洗浄させます"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.NAME"
-msgid "Direction: Left"
-msgstr "方向: 左"
+msgid "Set Direction: Left"
+msgstr "方向指定: 左"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.TOOLTIP"
-msgid "Duplicants will wash up when passing this building from right to left"
-msgstr "複製人間はこの設備を右から左に通り過ぎる時に洗浄します"
+msgid "Select to make Duplicants wash when passing by from right to left"
+msgstr "複製人間がこの設備を右から左に通り過ぎる時に洗浄させます"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.NAME"
-msgid "Direction: Right"
-msgstr "方向: 右"
+msgid "Set Direction: Right"
+msgstr "方向指定: 右"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.TOOLTIP"
-msgid "Duplicants will wash up when passing this building from left to right"
-msgstr "複製人間はこの設備を左から右に通り過ぎるときに洗浄します"
+msgid "Select to make Duplicants wash when passing by from left to right"
+msgstr "複製人間がこの設備を左から右に通り過ぎるときに洗浄させます"
 
 #. STRINGS.UI.VIEWDUPLICANTS
 msgctxt "STRINGS.UI.VIEWDUPLICANTS"
@@ -26563,6 +26815,147 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.NAME"
+#~ msgid "Bottler Delivery: On"
+#~ msgstr "ボトルの供給: オン"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.NAME"
+#~ msgid "Bottler Delivery: Off"
+#~ msgstr "ボトルの供給: オフ"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_NAME"
+#~ msgid "Stressed"
+#~ msgstr "ストレス"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.MESSAGEBODY"
+#~ msgid ""
+#~ "One of your duplicants has consumed enough germs that it is beginning to impact their health. The more disease they consume, "
+#~ "the harder it is for their immune system to fight off the germs. If their immune system reaches 0%, infection occurs, and "
+#~ "medical intervention will be necessary. Use the <style=\"misc\">Vitals Screen</style> to keep an eye on Duplicant immune "
+#~ "levels."
+#~ msgstr ""
+#~ "ある複製人間が病原菌を吸い込むと、彼らの生命力に影響を及ぼします。病原菌を多く取り込むほど、彼らの免疫力は病原菌を撃退しようと"
+#~ "します。もし免疫力が0%になってしまうと罹患してしまい、医療処置が必要になるでしょう。<style=\"misc\">健康状態</style>を確認し、"
+#~ "複製人間の免疫力に注意を払いましょう。"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP"
+#~ msgid "Learn how Duplicants get sick"
+#~ msgstr "複製人間の病気について学ぶ"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.MESSAGEBODY"
+#~ msgid ""
+#~ "A germ has found its way on to one of your rations. Small numbers of germs are not a threat to your colony as Duplicant immune "
+#~ "systems can fight off substantial infection. However some diseases like Food Poisoning will grow quickly on food, creating a "
+#~ "hazardous situation. Badly contaminated food can be Marked For Compost, and further contamination can be slowed or halted by "
+#~ "storing your food in a refrigerated or other germ-hostile environment."
+#~ msgstr ""
+#~ "病原菌が食糧に紛れ込んでいます。少量ならば複製人間の免疫力によって退けられ、コロニーに悪影響を及ぼしません。しかし、食中毒のよ"
+#~ "うな病気は食糧上で急速に繁殖し、危機的な状況を引き起こします。酷く汚染された食料は堆肥化することができ、また、病原菌に不適な環"
+#~ "境か冷蔵庫に格納することで汚染の進行を防ぐことができます。"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.NAME"
+#~ msgid "TIP: Infected Food"
+#~ msgstr "ヒント: 汚染された食糧"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.TOOLTIP"
+#~ msgid "Deal with the spread of filth"
+#~ msgstr "汚染拡大に対処する"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY"
+#~ msgid ""
+#~ "There are many sources of germs in the world. If your duplicants consume these germs, it can make thems sick. Maintaining good "
+#~ "base hygene and cleaning the various substances in your base is essential for controlling the spread of germs. Each disease "
+#~ "has different materials it prefers to grow on, and different tools for reducing its spread in your base. The <style=\"misc"
+#~ "\">GERM OVERLAY</style> <color=#F44A47><b>[F9]</b></color> will allow you to see germ concentrations and spot new sources of "
+#~ "germs."
+#~ msgstr ""
+#~ "ゲーム中にはたくさんの病原菌源があります。複製人間が病原菌を吸い込むと、病気の原因となるでしょう。基地の衛生を維持し、清潔に"
+#~ "保っておくことは病原菌の拡大防止に不可欠です。病原菌はそれぞれ繁殖に適した素材があり、拡大を防ぐための道具も様々です。<style="
+#~ "\"misc\">病原菌オーバーレイ</style> <color=#F44A47><b>[F9]</b></color>は病原菌の濃度を確認したり、新たな感染源を発見することが"
+#~ "できます。"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.TOOLTIP"
+#~ msgid "Learn about disease risks"
+#~ msgstr "病気の危険性を学ぶ"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.DEFAULT.TOOLTIP"
+#~ msgid "Default immunity recovery"
+#~ msgstr "デフォルトの免疫回復力です"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.TOOLTIP"
+#~ msgid "Increases immunity recovery"
+#~ msgstr "免疫回復力を強化します"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.TOOLTIP"
+#~ msgid "The regular rate of stress"
+#~ msgstr "通常のストレス変動量です"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.TOOLTIP"
+#~ msgid "Reduces duplicant stress levels"
+#~ msgstr "複製人間のストレスレベルを低下させます"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.TOOLTIP"
+#~ msgid "Increases Duplicant stress levels"
+#~ msgstr "複製人間のストレスレベルを上昇させます"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.NAME"
+#~ msgid "Disposition"
+#~ msgstr "気質"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP"
+#~ msgid "Affects Duplicant stress levels"
+#~ msgstr "複製人間のストレスレベルです"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.CROP.BUTTON"
+#~ msgid "Crop Overlay"
+#~ msgstr "作物レイヤー"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.FULLY_GROWN"
+#~ msgid "This plant is ready for harvest"
+#~ msgstr "この植物は収穫できます"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INFECTION_SOURCE_TOOLTIP"
+#~ msgid "Areas where germs are produced"
+#~ msgstr "病原菌が産出されるエリア"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS_TOOLTIP"
+#~ msgid ""
+#~ "Duplicants become a germ host when germs enter their body through inhalation or ingestion\n"
+#~ "------------------\n"
+#~ "Germ hosts may not show symptoms of disease\n"
+#~ "------------------\n"
+#~ "Internal germs cannot be washed off"
+#~ msgstr ""
+#~ "病原菌を吸入または摂取した複製人間は保菌者になります\n"
+#~ "------------------\n"
+#~ "保菌者は病気の症状を表さないかもしれません\n"
+#~ "------------------\n"
+#~ "体内の病原菌は洗い落とすことができません"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING"
+#~ msgid ""
+#~ "Uncomfortably cold area\n"
+#~ "* Duplicants lose more heat than they can absorb"
+#~ msgstr ""
+#~ "極寒のエリア\n"
+#~ "* 複製人間は吸収できる以上の熱を失います"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING"
+#~ msgid ""
+#~ "Uncomfortably warm area\n"
+#~ "* Duplicants absorb more heat than they can release"
+#~ msgstr ""
+#~ "灼熱のエリア\n"
+#~ "* 複製人間は放熱できる以上の熱を吸収します"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND4"
+#~ msgid "Extremely low or absent oxygen concentrations"
+#~ msgstr "希薄または皆無"
+
+#~ msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME"
+#~ msgid "Allow Auto-Bottling"
+#~ msgstr "自動ボトル化"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGFISH.NAME"
 #~ msgid "Fishing Pending"
@@ -28179,16 +28572,6 @@ msgstr "砂散布中..."
 #~ msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.PRODUCER"
 #~ msgid "Intake"
 #~ msgstr "入力"
-
-#~ msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING"
-#~ msgid ""
-#~ "Uncomfortable Area\n"
-#~ "------------------\n"
-#~ "Duplicants give off more heat than they can absorb from this environment, making them too cold"
-#~ msgstr ""
-#~ "適応不可エリア\n"
-#~ "------------------\n"
-#~ "複製人間はこの環境下では熱を受け取るより多くの熱放出をするため、とても寒いと感じる"
 
 #~ msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.BUTTON"
 #~ msgid "Liquid Plumbing Overlay"
