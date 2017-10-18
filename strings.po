@@ -16,7 +16,7 @@ msgstr ""
 #. STRINGS.BUILDING.DETAILS.USE_COUNT
 msgctxt "STRINGS.BUILDING.DETAILS.USE_COUNT"
 msgid "Uses: {0}"
-msgstr "使用回数: {0}"
+msgstr "回数: {0}"
 
 #. STRINGS.BUILDING.DETAILS.USE_COUNT_TOOLTIP
 msgctxt "STRINGS.BUILDING.DETAILS.USE_COUNT_TOOLTIP"
@@ -20520,6 +20520,14 @@ msgid ""
 "    • insulation thickness\n"
 "    • thermal conductivity"
 msgstr ""
+"放熱 {0}/秒\n"
+"\n"
+"温度変化合計は冷やされた物質が持つ素材特性の影響を受けます:\n"
+"    • 質量\n"
+"    • 比熱容量\n"
+"    • 表面積\n"
+"    • 断熱の厚さ\n"
+"    • 熱伝導率"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED"
@@ -20533,6 +20541,14 @@ msgid ""
 "    • insulation thickness\n"
 "    • thermal conductivity"
 msgstr ""
+"発熱{0}/秒\n"
+"\n"
+"温度変化合計は温められた物質が持つ素材特性の影響を受けます:\n"
+"    • 質量\n"
+"    • 比熱容量\n"
+"    • 表面積\n"
+"    • 断熱の厚さ\n"
+"    • 熱伝導率"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_AIRCONDITIONER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_AIRCONDITIONER"
@@ -20574,7 +20590,7 @@ msgstr "最大許容量より多い電流を流すと、回路を傷める原因
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MOVEMENT_BONUS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MOVEMENT_BONUS"
 msgid "Increases the run speed of Duplicants"
-msgstr ""
+msgstr "複製人間の移動速度を増加させます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.NOISE_POLLUTION_DECREASE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.NOISE_POLLUTION_DECREASE"
@@ -20599,7 +20615,7 @@ msgstr "この設備が稼働するには、必要条件を全て満たす必要
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.OVER_PRESSURE_MASS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.OVER_PRESSURE_MASS"
 msgid "Ceases to function when the surrounding mass is above {0}"
-msgstr ""
+msgstr "周辺の質量が {0} を超えると機能しなくなります"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.OVERHEAT_TEMP
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.OVERHEAT_TEMP"
@@ -21227,36 +21243,27 @@ msgstr "選択箇所を保存"
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.AVERAGE_MASS
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.AVERAGE_MASS"
 msgid "Average cell mass: {0}"
-msgstr ""
+msgstr "平均セル質量: {0}"
 
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.AVERAGE_TEMPERATURE
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.OVERHEAT_TEMP"
-#| msgid "Overheat Temperature: {0}"
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.AVERAGE_TEMPERATURE"
 msgid "Average temperature: {0}"
-msgstr "オーバーヒート温度: {0}"
+msgstr "平均温度: {0}"
 
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.JOULES_PER_KILOGRAM
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.JOULES_PER_KILOGRAM"
 msgid "Joules per kilogram: {0}"
-msgstr ""
+msgstr "ジュール熱/Kg: {0}"
 
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_JOULES
-#, fuzzy
-#| msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.HALF_LIFE_NEG"
-#| msgid "Half life: {0}"
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_JOULES"
 msgid "Total joules: {0}"
-msgstr "半減期: {0}"
+msgstr "合計ジュール熱: {0}"
 
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_MASS
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.MASS.NAME"
-#| msgid "Mass: {0}"
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_MASS"
 msgid "Total mass: {0}"
-msgstr "質量: {0}"
+msgstr "合計質量: {0}"
 
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.TITLE
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.TITLE"
@@ -21744,12 +21751,9 @@ msgid "These symptoms must run their course and cannot be alleviated by medical 
 msgstr "これらの症状は自然治癒を待つ必要があり、医療ベッドによる軽減はできません"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.INFECTION_INFO
-#, fuzzy
-#| msgctxt "STRINGS.UI.DETAILTABS.DISEASE.INFECTION_INFO"
-#| msgid "INFECTION: {0}"
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.INFECTION_INFO"
 msgid "INFECTION DETAILS"
-msgstr "感染: {0}"
+msgstr "感染情報詳細"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.NAME
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.NAME"
@@ -21972,20 +21976,14 @@ msgid "This Duplicant has not been equipped with a tool"
 msgstr "この複製人間はツールを装備していません"
 
 #. STRINGS.UI.DETAILTABS.POSSESSIONS.NOTHING
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNASSIGNED.NAME"
-#| msgid "No quarantine zone assigned"
 msgctxt "STRINGS.UI.DETAILTABS.POSSESSIONS.NOTHING"
 msgid "No amenities assigned"
-msgstr "割り当て場所なし"
+msgstr "アメニティ割り当てなし"
 
 #. STRINGS.UI.DETAILTABS.POSSESSIONS.NOTHING_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NOPOWERCONSUMERS.TOOLTIP"
-#| msgid "No buildings are connected to this power source"
 msgctxt "STRINGS.UI.DETAILTABS.POSSESSIONS.NOTHING_TOOLTIP"
 msgid "No personal buildings are assigned to this Duplicant"
-msgstr "この電源を消費できる設備と接続されていません"
+msgstr "この複製人間には個人用設備が割り当てられていません"
 
 #. STRINGS.UI.DETAILTABS.POSSESSIONS.TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.POSSESSIONS.TOOLTIP"
@@ -22140,7 +22138,7 @@ msgstr "開発版ビルド"
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.MAILINGLIST
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.MAILINGLIST"
 msgid "NOTIFY ME!"
-msgstr ""
+msgstr "通知を受ける！"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.PATCHNOTES
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.PATCHNOTES"
@@ -22198,28 +22196,19 @@ msgid "Insulation Thickness: {0}"
 msgstr "断熱の厚さ: {0}"
 
 #. STRINGS.UI.ELEMENTAL.CONDUCTIVITYBARRIER.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.CONDUCTIVITYBARRIER.TOOLTIP"
-#| msgid "Thicker insulation reduces an item's Thermal Conductivity"
 msgctxt "STRINGS.UI.ELEMENTAL.CONDUCTIVITYBARRIER.TOOLTIP"
 msgid "Thick insulation reduces an object's Thermal Conductivity"
-msgstr "断熱が厚いほどアイテムの熱伝導が小さくなります"
+msgstr "断熱が厚いほど物体の熱伝導が小さくなります"
 
 #. STRINGS.UI.ELEMENTAL.DEWPOINT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.NAME"
-#| msgid "Vaporization Point: {0}"
 msgctxt "STRINGS.UI.ELEMENTAL.DEWPOINT.NAME"
 msgid "Condensation Point: {0}"
-msgstr "蒸発点: {0}"
+msgstr "凝縮点: {0}"
 
 #. STRINGS.UI.ELEMENTAL.DEWPOINT.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.DEWPOINT.TOOLTIP"
-#| msgid "The selected item will condense into a liquid at {0}"
 msgctxt "STRINGS.UI.ELEMENTAL.DEWPOINT.TOOLTIP"
 msgid "The selected object will condense into a liquid at {0}"
-msgstr "選択したアイテムは {0} で液体に凝縮します"
+msgstr "選択した物体は {0} で液体に凝縮します"
 
 #. STRINGS.UI.ELEMENTAL.DISEASE.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.DISEASE.NAME"
@@ -22237,12 +22226,9 @@ msgid "Freeze Point: {0}"
 msgstr "凝固点: {0}"
 
 #. STRINGS.UI.ELEMENTAL.FREEZEPOINT.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.FREEZEPOINT.TOOLTIP"
-#| msgid "The selected item will cool into a solid at {0}"
 msgctxt "STRINGS.UI.ELEMENTAL.FREEZEPOINT.TOOLTIP"
 msgid "The selected object will cool into a solid at {0}"
-msgstr "選択したアイテムは {0} で固体に凍結します"
+msgstr "選択した物体は {0} で固体に凍結します"
 
 #. STRINGS.UI.ELEMENTAL.MASS.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.MASS.NAME"
@@ -22250,12 +22236,9 @@ msgid "Mass: {0}"
 msgstr "質量: {0}"
 
 #. STRINGS.UI.ELEMENTAL.MASS.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.MASS.TOOLTIP"
-#| msgid "The selected item has a mass of {0}"
 msgctxt "STRINGS.UI.ELEMENTAL.MASS.TOOLTIP"
 msgid "The selected object has a mass of {0}"
-msgstr "選択したアイテムの質量は {0} です"
+msgstr "選択した物体の質量は {0} です"
 
 #. STRINGS.UI.ELEMENTAL.MELTINGPOINT.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.MELTINGPOINT.NAME"
@@ -22263,12 +22246,9 @@ msgid "Melting Point: {0}"
 msgstr "融点: {0}"
 
 #. STRINGS.UI.ELEMENTAL.MELTINGPOINT.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.MELTINGPOINT.TOOLTIP"
-#| msgid "The selected item will melt into a liquid at {0}"
 msgctxt "STRINGS.UI.ELEMENTAL.MELTINGPOINT.TOOLTIP"
 msgid "The selected object will melt into a liquid at {0}"
-msgstr "選択したアイテムは {0} で液体に融解します"
+msgstr "選択した物体は {0} で液体に融解します"
 
 #. STRINGS.UI.ELEMENTAL.OVERHEATPOINT.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.OVERHEATPOINT.NAME"
@@ -22292,12 +22272,9 @@ msgid "Primary Element: {0}"
 msgstr "主成分: {0}"
 
 #. STRINGS.UI.ELEMENTAL.PRIMARYELEMENT.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.PRIMARYELEMENT.TOOLTIP"
-#| msgid "The selected item is primarily composed of {0}"
 msgctxt "STRINGS.UI.ELEMENTAL.PRIMARYELEMENT.TOOLTIP"
 msgid "The selected object is primarily composed of {0}"
-msgstr "選択したアイテムは主に {0} で構成されています"
+msgstr "選択した物体は主に {0} で構成されています"
 
 #. STRINGS.UI.ELEMENTAL.SHC.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.SHC.NAME"
@@ -22315,12 +22292,9 @@ msgid "Temperature: {0}"
 msgstr "温度: {0}"
 
 #. STRINGS.UI.ELEMENTAL.TEMPERATURE.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.TEMPERATURE.TOOLTIP"
-#| msgid "The selected item's current temperature is {0}"
 msgctxt "STRINGS.UI.ELEMENTAL.TEMPERATURE.TOOLTIP"
 msgid "The selected object's current temperature is {0}"
-msgstr "選択したアイテムの温度は {0} です"
+msgstr "選択した物体の温度は {0} です"
 
 #. STRINGS.UI.ELEMENTAL.THERMALCONDUCTIVITY.ADJECTIVES.HIGH_CONDUCTIVITY
 msgctxt "STRINGS.UI.ELEMENTAL.THERMALCONDUCTIVITY.ADJECTIVES.HIGH_CONDUCTIVITY"
@@ -22364,6 +22338,9 @@ msgid ""
 "\n"
 "Between two objects, the rate of heat transfer will be determined by the object with the lowest Thermal Conductivity"
 msgstr ""
+"この物体は他の素材に 1K あたり {0} W の熱を伝えます\n"
+"\n"
+"2つの物体間において、伝熱率は熱伝導率が最も低い物体によって決定されます"
 
 #. STRINGS.UI.ELEMENTAL.UNITS.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.UNITS.NAME"
@@ -22381,12 +22358,9 @@ msgid "Vaporization Point: {0}"
 msgstr "蒸発点: {0}"
 
 #. STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.TOOLTIP"
-#| msgid "The selected item will evaporate into a gas at {0}"
 msgctxt "STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.TOOLTIP"
 msgid "The selected object will evaporate into a gas at {0}"
-msgstr "選択したアイテムは {0} で気体に蒸発します"
+msgstr "選択した物体は {0} で気体に蒸発します"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ADDED
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ADDED"
@@ -22489,12 +22463,9 @@ msgid "Disease Status:"
 msgstr "病気状態:"
 
 #. STRINGS.UI.ENDOFDAYREPORT.DISEASE_STATUS.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.DISEASE_STATUS.TOOLTIP"
-#| msgid "Your inhabitants are covered in {0} germs"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.DISEASE_STATUS.TOOLTIP"
 msgid "Your Duplicants are covered in {0}"
-msgstr "住民は {0} 病原菌に囲まれています"
+msgstr "複製人間は {0} に覆われています"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.NAME
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.NAME"
@@ -22552,9 +22523,6 @@ msgid "Next"
 msgstr "次へ"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.BUTCHERED
-#, fuzzy
-#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.BUTCHERED"
-#| msgid "Butchered to make a {0}"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.BUTCHERED"
 msgid "Butchered for {0}"
 msgstr "屠殺して {0} を得た"
@@ -22562,7 +22530,7 @@ msgstr "屠殺して {0} を得た"
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.BUTCHERED_CONTEXT
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.BUTCHERED_CONTEXT"
 msgid "Butchered"
-msgstr ""
+msgstr "屠殺"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.CRAFTED
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.CRAFTED"
@@ -22570,65 +22538,43 @@ msgid "Crafted a {0}"
 msgstr "{0} を製作した"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.CRAFTED_CONTEXT
-#, fuzzy
-#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.CRAFTED"
-#| msgid "Crafted a {0}"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.CRAFTED_CONTEXT"
 msgid "Crafted"
-msgstr "{0} を製作した"
+msgstr "製作"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.CRAFTED_USED
-#, fuzzy
-#| msgctxt "STRINGS.MISC.TAGS.INDUSTRIALINGREDIENT"
-#| msgid "Industrial Ingredient"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.CRAFTED_USED"
 msgid "{0} used as ingredient"
-msgstr "工業素材"
+msgstr "材料の {0}"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.EATEN
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.SINGLEENTITYRECEPTACLE.TITLE"
-#| msgid "{0} Seeds"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.EATEN"
 msgid "{0} eaten"
-msgstr "{0} の種子"
+msgstr "食べた {0}"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.GERMS
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.GERMS"
 msgid "On {0}"
-msgstr "{0} の上"
+msgstr "{0} の表面上"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.HARVESTED
-#, fuzzy
-#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.HARVESTED"
-#| msgid "Harvested a {0}"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.HARVESTED"
 msgid "Harvested {0}"
-msgstr "{0} を収穫した"
+msgstr "収穫した {0}"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.HARVESTED_CONTEXT
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.HARVEST.NAME"
-#| msgid "Harvest"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.HARVESTED_CONTEXT"
 msgid "Harvested"
 msgstr "収穫"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.NOTE_ENTRY_LINE_ITEM
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT"
-#| msgid ""
-#| "{0}\n"
-#| "\n"
-#| "{1}"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.NOTE_ENTRY_LINE_ITEM"
 msgid ""
 "{0}\n"
 "{1}: {2}"
 msgstr ""
 "{0}\n"
-"\n"
-"{1}"
+"{1}: {2}"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.ROTTED
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.ROTTED"
@@ -22636,9 +22582,6 @@ msgid "Rotten {0}"
 msgstr "腐敗した {0}"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.ROTTED_CONTEXT
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.SPOILED.NAME"
-#| msgid "Rotten"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.ROTTED_CONTEXT"
 msgid "Rotted"
 msgstr "腐敗"
@@ -22796,7 +22739,7 @@ msgstr "完了"
 #. STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUSIC_EVERY_CYCLE
 msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUSIC_EVERY_CYCLE"
 msgid "Play background music each morning: "
-msgstr "BGMを毎朝流す:"
+msgstr "BGMを毎朝流す: "
 
 #. STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUSIC_EVERY_CYCLE_TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUSIC_EVERY_CYCLE_TOOLTIP"
@@ -22809,25 +22752,19 @@ msgid "AUDIO OPTIONS"
 msgstr "オーディオ設定"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.COMPROMISED.ATTRIBUTE_MODIFIER_NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME"
-#| msgid "Weak Immune System"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.COMPROMISED.ATTRIBUTE_MODIFIER_NAME"
 msgid "Vulnerable Immune System"
-msgstr "低免疫力"
+msgstr "脆弱な免疫力"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.COMPROMISED.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.NAME"
-#| msgid "Massage Table"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.COMPROMISED.NAME"
 msgid "Miserable"
-msgstr "マッサージ台"
+msgstr "悲惨"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.COMPROMISED.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.COMPROMISED.TOOLTIP"
 msgid "Duplicants are exceptionally vulnerable to infection"
-msgstr ""
+msgstr "複製人間は感染に対し極めて脆弱です"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.DEFAULT.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.DEFAULT.NAME"
@@ -22840,22 +22777,19 @@ msgid "Duplicants regain immunity normally"
 msgstr "複製人間は免疫力を通常通り回復します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.INVINCIBLE.ATTRIBUTE_MODIFIER_NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.ATTRIBUTE_MODIFIER_NAME"
-#| msgid "Strong Immune System"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.INVINCIBLE.ATTRIBUTE_MODIFIER_NAME"
 msgid "Impervious Immune System"
-msgstr "高免疫力"
+msgstr "不浸透性免疫力"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.INVINCIBLE.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.INVINCIBLE.NAME"
 msgid "Impervious"
-msgstr ""
+msgstr "不浸透性"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.INVINCIBLE.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.INVINCIBLE.TOOLTIP"
 msgid "Duplicants will never catch a germ-based disease"
-msgstr ""
+msgstr "複製人間は病原菌由来の病気に罹りません"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.ATTRIBUTE_MODIFIER_NAME"
@@ -22868,12 +22802,9 @@ msgid "Strong"
 msgstr "強力"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_ENTOUMBED.NAME"
-#| msgid "Duplicants have been entombed"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.TOOLTIP"
 msgid "Duplicants have increased immune recovery"
-msgstr "複製人間が埋没死しました"
+msgstr "複製人間の免疫力回復が強化されます"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME"
@@ -22886,12 +22817,9 @@ msgid "Weak"
 msgstr "弱体"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_ENTOUMBED.NAME"
-#| msgid "Duplicants have been entombed"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.TOOLTIP"
 msgid "Duplicants have reduced immune recovery"
-msgstr "複製人間が埋没死しました"
+msgstr "複製人間の免疫力回復が低減します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME"
@@ -22916,44 +22844,32 @@ msgstr "複製人間は通常通りストレスを受けたり減らしたりし
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DOOMED.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DOOMED.ATTRIBUTE_MODIFIER_NAME"
 msgid "Fatalistic"
-msgstr ""
+msgstr "宿命"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DOOMED.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DOOMED.NAME"
 msgid "Fatalistic"
-msgstr ""
+msgstr "宿命"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DOOMED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WASATTACKED.TOOLTIP"
-#| msgid "This Duplicant is stressed out after having been attacked"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DOOMED.TOOLTIP"
 msgid "Duplicants stress out at an extremely accelerated rate"
-msgstr "この複製人間は攻撃を受けてイライラしています"
+msgstr "複製人間は極めて急速にストレスを受けます"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.INDOMITABLE.ATTRIBUTE_MODIFIER_NAME
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.UNSTOPPABLE"
-#| msgid "Unstoppable"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.INDOMITABLE.ATTRIBUTE_MODIFIER_NAME"
 msgid "Unflappable"
-msgstr "止められない"
+msgstr "動じない"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.INDOMITABLE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.UNSTOPPABLE"
-#| msgid "Unstoppable"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.INDOMITABLE.NAME"
 msgid "Unflappable"
-msgstr "止められない"
+msgstr "動じない"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.INDOMITABLE.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.BINGEEATER.DESC"
-#| msgid "This Duplicant will dangerously overeat when stressed"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.INDOMITABLE.TOOLTIP"
 msgid "Duplicants will never get stressed"
-msgstr "この複製人間は高ストレス下において恐ろしい量の暴食をするでしょう"
+msgstr "複製人間はストレスを受けません"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.ATTRIBUTE_MODIFIER_NAME"
@@ -22996,9 +22912,6 @@ msgid "Affects how well your Duplicants deal with stress"
 msgstr "複製人間が受けるストレスの影響度です"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DEFAULT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NORMAL.NAME"
-#| msgid "Normal"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DEFAULT.NAME"
 msgid "Normal"
 msgstr "通常"
@@ -23006,56 +22919,47 @@ msgstr "通常"
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DEFAULT.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DEFAULT.TOOLTIP"
 msgid "Duplicants will act out when they reach 100% stress"
-msgstr ""
+msgstr "ストレスが100%に達すると複製人間は行動を起こします"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DISABLED.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.USERMENUACTIONS.ENABLEBUILDING.NAME"
-#| msgid "Disable Building"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DISABLED.NAME"
 msgid "Disabled"
-msgstr "設備無効化"
+msgstr "無効化"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DISABLED.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DISABLED.TOOLTIP"
 msgid "Duplicants will not act out at maximum stress"
-msgstr ""
+msgstr "複製人間がストレス最大値になっても何も起きません"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.CHARACTERCONTAINER_STRESSTRAIT"
-#| msgid "Stress Response: {0}"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.NAME"
 msgid "Stress Responses"
-msgstr "ストレス反応: {0}"
+msgstr "ストレス反応"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.TOOLTIP"
 msgid "Whether or not your Duplicants act out when they reach maximum stress"
-msgstr ""
+msgstr "複製人間がいつストレス最大値に達するかを決定します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLD_CHOICE.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLD_CHOICE.NAME"
 msgid "World(DEBUG)"
-msgstr ""
+msgstr "ワールド(デバッグ)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLD_CHOICE.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLD_CHOICE.TOOLTIP"
 msgid "(DEBUG FEATURE) Select your starting world."
-msgstr ""
+msgstr "(デバッグ用) ワールド選択"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLDGEN_SEED.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.WORLD_GEN_OPTIONS_SCREEN.USE_SEED"
-#| msgid "Set World Gen Seed"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLDGEN_SEED.NAME"
 msgid "Worldgen Seed"
-msgstr "ワールド生成シードを設定"
+msgstr "ワールド生成シード"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLDGEN_SEED.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLDGEN_SEED.TOOLTIP"
 msgid "This chooses the random parameters of your new world"
-msgstr ""
+msgstr "新しいワールド生成のためのランダムなパラメータを指定します"
 
 #. STRINGS.UI.FRONTEND.DEMO_OVER_SCREEN.BODY
 msgctxt "STRINGS.UI.FRONTEND.DEMO_OVER_SCREEN.BODY"
@@ -23461,6 +23365,14 @@ msgid ""
 "• Revamped research tree and dozens of new buildings to unlock\n"
 "• Bug fixes, performance improvements, new plants, creatures and more."
 msgstr ""
+"<b>アップデート内容:</b>\n"
+"\n"
+"• 新しいオイルバイオームとオイル間欠泉\n"
+"• 原油、石油、ナフサ、プラスチック、ダイヤモンドなどの新しい資源\n"
+"• 複製人間が装備できる、充填可能なEXOスーツ\n"
+"• 新しい部屋システムとレイヤー\n"
+"• 見直された研究ツリーとアンロック可能なたくさんの新設備\n"
+"• 不具合の修正、動作の改善、新しい植物や生物など"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
@@ -23583,6 +23495,10 @@ msgid ""
 "Please visit the controls screen to ensure your key bindings are set how you like them.</b>\n"
 "{0}"
 msgstr ""
+"<b>キー割り当ての重複が見つかりました。\n"
+"新機能のデフォルトキーとカスタムキー割り当てが競合しています。\n"
+"コントロール設定でキー割り当てを見直してください。</b>\n"
+"{0}"
 
 #. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.SAVE_DIRECTORY_INSUFFICIENT_SPACE
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.SAVE_DIRECTORY_INSUFFICIENT_SPACE"
@@ -23655,12 +23571,12 @@ msgstr "インストール済の言語パック"
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PREINSTALLED_LANGUAGES.EN
 msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PREINSTALLED_LANGUAGES.EN"
 msgid "English (Klei)"
-msgstr "英語 (Klei公式)"
+msgstr "English (Klei)"
 
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PREINSTALLED_LANGUAGES.ZH_KLEI
 msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PREINSTALLED_LANGUAGES.ZH_KLEI"
 msgid "Chinese (Klei)"
-msgstr "中国語 (Klei公式)"
+msgstr "Chinese (Klei)"
 
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.TITLE"
