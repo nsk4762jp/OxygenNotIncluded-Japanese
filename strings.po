@@ -308,7 +308,7 @@ msgstr "{Roles}不足のコロニー"
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDROLEPERK.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDROLEPERK.TOOLTIP"
 msgid "Open the Jobs Panel <color=#F44A47><b>(J)</b></color> and assign a Duplicant to the {Roles} position to use this building"
-msgstr "この設備を使うには、仕事パネル<color=#F44A47><b>(J)</b></color>から {Roles} に複製人間を割り当ててください"
+msgstr "この設備を使うには、職業パネル<color=#F44A47><b>(J)</b></color>から {Roles} に複製人間を割り当ててください"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.NAME"
@@ -533,7 +533,7 @@ msgid ""
 "Only a Duplicant employed in one of the following jobs can complete this errand:\n"
 "{Roles}"
 msgstr ""
-"次の仕事に割り当てられた複製人間のみがこの作業を達成できます:\n"
+"次の職業に割り当てられた複製人間のみがこの作業を達成できます:\n"
 "{Roles}"
 
 #. STRINGS.BUILDING.STATUSITEMS.DIGUNREACHABLE.NAME
@@ -1820,7 +1820,7 @@ msgid ""
 "Only a Duplicant employed in one of the following jobs can complete this errand:\n"
 "{Roles}"
 msgstr ""
-"次の仕事に割り当てられた複製人間のみがこの作業を達成できます:\n"
+"次の職業に割り当てられた複製人間のみがこの作業を達成できます:\n"
 "{Roles}"
 
 #. STRINGS.BUILDING.STATUSITEMS.RESEARCHING.NAME
@@ -2076,7 +2076,7 @@ msgstr "この設備およびその周囲が冷えすぎており、稼働でき
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.NAME"
 msgid "Active"
-msgstr "スイッチオン"
+msgstr "アクティブ"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.TOOLTIP"
@@ -2660,23 +2660,20 @@ msgid "Smart batteries can automatically turn systems off when there is no charg
 msgstr "スマートバッテリーは稼働に必要な電力が無くなると自動的にスイッチが切れます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT"
-#| msgid "Stores most runoff <style=\"power\">Power</style> from generators, but loses charge over time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT"
 msgid ""
 "Stores most runoff <style=\"power\">Power</style> from generators, but loses charge over time.\n"
 "\n"
 "Logic input becomes <style=\"logic\">Active</style> when charged above the set threshold."
-msgstr "発電余剰の<style=\"power\">電力</style>を沢山蓄えますが、充電は時間とともに失います。"
+msgstr ""
+"発電余剰の<style=\"power\">電力</style>を沢山蓄えますが、充電は時間とともに失います。\n"
+"\n"
+"論理入力は設定値以上になると<style=\"logic\">アクティブ</style>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_DESC"
-#| msgid "<style=\"logic\">Active</style> if power level exceeds a threshold"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_DESC"
 msgid "<style=\"logic\">Active</style> if charge exceeds threshold"
-msgstr "電力レベルがしきい値を越えると<style=\"logic\">アクティブ</style>になります"
+msgstr "設定値を越えると<style=\"logic\">アクティブ</style>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.NAME"
@@ -2684,28 +2681,19 @@ msgid "Smart Battery"
 msgstr "スマートバッテリー"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_ACTIVATE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SWITCHSTATUSACTIVE.NAME"
-#| msgid "Active"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_ACTIVATE"
 msgid "Active:"
-msgstr "スイッチオン"
+msgstr "アクティブ:"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_DEACTIVATE
-#, fuzzy
-#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.ZERO"
-#| msgid "Standby"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_DEACTIVATE"
 msgid "Standby:"
-msgstr "スタンバイ"
+msgstr "スタンバイ:"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.ON"
-#| msgid "Activation Time"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_TITLE"
 msgid "Logic Activation Parameters"
-msgstr "稼働時刻"
+msgstr "論理起動パラメータ"
 
 #. STRINGS.BUILDINGS.PREFABS.BED.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BED.DESC"
@@ -2841,12 +2829,6 @@ msgid "A textile loom can be used to spin Reed Fiber into wearable Duplicant clo
 msgstr "紡績機はリード繊維を紡いで複製人間の衣類にすることができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.CLOTHINGFABRICATOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.CLOTHINGFABRICATOR.EFFECT"
-#| msgid ""
-#| "Tailors Duplicant <style=\"equipment\">Clothing</style> items.\n"
-#| "\n"
-#| "Duplicants will not fabricate unless recipes are queued."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CLOTHINGFABRICATOR.EFFECT"
 msgid ""
 "Tailors Duplicant <style=\"equipment\">Clothing</style> items.\n"
@@ -2863,20 +2845,14 @@ msgid "Textile Loom"
 msgstr "紡績機"
 
 #. STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.DESC"
-#| msgid "Carbon Skimmers remove large amounts of carbon dioxide, but produce no breathable air."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.DESC"
 msgid "Carbon skimmers remove large amounts of carbon dioxide, but produce no breathable air."
 msgstr "炭素スキマーは二酸化炭素を大量に除去しますが、呼吸可能な気体は生産しません。"
 
 #. STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.EFFECT"
-#| msgid "Filters <style=\"gas\">Carbon Dioxide</style> from the air."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.EFFECT"
 msgid "Uses <style=\"liquid\">Water</style> to filter <style=\"gas\">Carbon Dioxide</style> from the air."
-msgstr "空気中の<style=\"gas\">二酸化炭素</style>をろ過します。"
+msgstr "<style=\"liquid\">水</style>を使って空気中の<style=\"gas\">二酸化炭素</style>をろ過します。"
 
 #. STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.NAME"
@@ -2899,27 +2875,18 @@ msgid "Compost"
 msgstr "堆肥置き場"
 
 #. STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.DESC"
-#| msgid "Cooking eliminates foodborne disease and produces tasty, stress-relieving meals."
 msgctxt "STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.DESC"
 msgid "Proper cooking eliminates foodborne disease and produces tasty, stress-relieving meals."
 msgstr "料理することで食品由来の病気を排除し、温かく美味しい食事を生産します。"
 
 #. STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.EFFECT"
-#| msgid ""
-#| "Cooks improved <style=\"food\">Food</style> using many ingredients.\n"
-#| "\n"
-#| "Duplicants will not fabricate unless recipes are queued."
 msgctxt "STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.EFFECT"
 msgid ""
 "Cooks a wide variety of improved <style=\"food\">Foods</style>.\n"
 "\n"
 "Duplicants will not fabricate items unless recipes are queued."
 msgstr ""
-"複数の材料を使うレシピで、改善された<style=\"food\">食糧</style>を料理します。\n"
+"改善された様々な<style=\"food\">料理</style>を生産します。\n"
 "\n"
 "レシピがセットされていないと複製人間は製作作業をしません。"
 
@@ -2952,7 +2919,7 @@ msgstr "生物リロケーター"
 #. STRINGS.BUILDINGS.PREFABS.CREATURETRAP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.CREATURETRAP.DESC"
 msgid "Creature traps cannot catch flying creatures."
-msgstr ""
+msgstr "生物トラップは浮遊生物を捕獲できません。"
 
 #. STRINGS.BUILDINGS.PREFABS.CREATURETRAP.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.CREATURETRAP.EFFECT"
@@ -3141,19 +3108,13 @@ msgid "Electrolyzers output a high volume of oxygen and are a reliable source of
 msgstr "電解装置は呼吸可能な空気として大量の酸素を生産します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.EFFECT"
-#| msgid ""
-#| "Converts <style=\"misc\">Algae</style> into <style=\"oxygen\">Oxygen</style>.\n"
-#| "\n"
-#| "Becomes idle when the area reaches maximum pressure capacity."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.EFFECT"
 msgid ""
 "Converts <style=\"liquid\">Water</style> into <style=\"oxygen\">Oxygen</style> and <style=\"gas\">Hydrogen Gas</style>.\n"
 "\n"
 "Becomes idle when the area reaches maximum pressure capacity."
 msgstr ""
-"<style=\"misc\">緑藻</style>を<style=\"oxygen\">酸素</style>に変換します。\n"
+"<style=\"liquid\">水</style>を<style=\"oxygen\">酸素</style>と<style=\"gas\">水素</style>に変換します。\n"
 "\n"
 "部屋の気圧が上限に達すると待機状態になります。"
 
@@ -3165,7 +3126,7 @@ msgstr "電解装置"
 #. STRINGS.BUILDINGS.PREFABS.FARMSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FARMSTATION.DESC"
 msgid "This station only has an effect on crops grown within the same room."
-msgstr ""
+msgstr "この設備は同室にある植物の成長に効果があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.FARMSTATION.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.FARMSTATION.EFFECT"
@@ -3176,14 +3137,16 @@ msgid ""
 "\n"
 "This building is a necessary component of the Greenhouse room."
 msgstr ""
+"<style=\"plant\">植物</style>の成長率を上昇させる<style=\"solid\">微量栄養素</style>を生産します。\n"
+"\n"
+"<style=\"misc\">作物の番人style>特性を持った複製人間を割り当ててください。\n"
+"\n"
+"この設備は温室に必須の構成要素です。"
 
 #. STRINGS.BUILDINGS.PREFABS.FARMSTATION.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCENTER.NAME"
-#| msgid "Research Station"
 msgctxt "STRINGS.BUILDINGS.PREFABS.FARMSTATION.NAME"
 msgid "Farm Station"
-msgstr "研究台"
+msgstr "農業ステーション"
 
 #. STRINGS.BUILDINGS.PREFABS.FARMTILE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FARMTILE.DESC"
@@ -3191,12 +3154,6 @@ msgid "Duplicants can deliver fertilizer and liquids to farm tiles, accelerating
 msgstr "複製人間は植物の成長を促成させるために、肥料や水を栽培タイルに届けることができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.FARMTILE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.FARMTILE.EFFECT"
-#| msgid ""
-#| "Grows a single <style=\"plant\">Plant</style> when sown with a <style=\"seed\">Seed</style>.\n"
-#| "\n"
-#| "Can be used as floor tile and rotated before construction."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FARMTILE.EFFECT"
 msgid ""
 "Grows one <style=\"plant\">Plant</style> from a <style=\"seed\">Seed</style>.\n"
@@ -3381,7 +3338,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.ELEMENT_NOT_SPECIFIED
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.ELEMENT_NOT_SPECIFIED"
 msgid "Not Specified"
-msgstr ""
+msgstr "指定なし"
 
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.NAME"
@@ -3389,12 +3346,9 @@ msgid "Gas Filter"
 msgstr "気体ろ過機"
 
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.STATUS_ITEM
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.BURNER.HAS_FUEL.NAME"
-#| msgid "Fueled: {0}"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.STATUS_ITEM"
 msgid "Filters: {0}"
-msgstr "燃料: {0}"
+msgstr "フィルター: {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.DESC"
@@ -3402,9 +3356,6 @@ msgid "Automated piping saves time and resources by removing the need for Duplic
 msgstr "自動化された配管は複製人間による管理の必要性を無くし、時間と資源を節約します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.EFFECT"
-#| msgid "Automatically turns <style=\"gas\">Gas</style> flow on or off using <style=\"misc\">Automation</style> technology."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.EFFECT"
 msgid "Automatically turns <style=\"gas\">Gas</style> flow on or off using <style=\"logic\">Automation</style> technology."
 msgstr "<style=\"misc\">自動化</style>技術により<style=\"gas\">気体</style>の流入を自動的に制御します。"
@@ -3528,15 +3479,15 @@ msgid "Coal generators produce more energy than manual generators, but emit heat
 msgstr "石炭発電機は人力発電機より多くのエネルギーを生産しますが、排熱および排気をします。"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERATOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.EFFECT"
-#| msgid "Converts <style=\"RawMineral\">Coal</style> into electrical <style=\"power\">Power</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.EFFECT"
 msgid ""
 "Converts <style=\"RawMineral\">Coal</style> into electrical <style=\"power\">Power</style>.\n"
 "\n"
 "Produces <style=\"gas\">Carbon Dioxide</style>."
-msgstr "<style=\"RawMineral\">石炭</style>を<style=\"power\">電力</style>に変換します。"
+msgstr ""
+"<style=\"RawMineral\">石炭</style>を<style=\"power\">電力</style>に変換します。\n"
+"\n"
+"<style=\"gas\">二酸化炭素</style>を産出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.NAME"
@@ -3663,14 +3614,6 @@ msgid "Hydroponic farms reduce Duplicant traffic by automating liquid delivery w
 msgstr "水耕栽培農地は灌漑用パイプからの自動散水により、複製人間の手間を省きます。"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.EFFECT"
-#| msgid ""
-#| "Grows a single <style=\"plant\">Plant</style> when sown with a <style=\"seed\">Seed</style>.\n"
-#| "\n"
-#| "Can be used as floor tile and rotated before construction.\n"
-#| "\n"
-#| "Must be irrigated through liquid piping."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.EFFECT"
 msgid ""
 "Grows one <style=\"plant\">Plant</style> from a <style=\"seed\">Seed</style>.\n"
@@ -3691,12 +3634,9 @@ msgid "Hydroponic Farm"
 msgstr "水耕栽培農地"
 
 #. STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.AVERAGEQUALITYNAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.AVERAGEQUALITYNAME"
-#| msgid "Mediocre Ice Sculpture"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.AVERAGEQUALITYNAME"
 msgid "Genius Ice Sculpture"
-msgstr "佳作"
+msgstr "素晴らしい氷像"
 
 #. STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.DESC"
@@ -3928,9 +3868,6 @@ msgid "Hydrofan"
 msgstr "水冷扇風機"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC"
-#| msgid "Liquid filters send the selected filter gas into a special pipe, expelling everything else through a second output."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC"
 msgid "Liquid filters send the selected liquid into a special pipe, expelling everything else through a second output."
 msgstr "液体ろ過機は指定した液体を別のパイプに流し、それ以外をもう一つの出力側に送ります。"
@@ -3973,9 +3910,6 @@ msgid "Automated piping saves time and resources by removing the need for Duplic
 msgstr "自動化された配管は複製人間による管理の必要性を無くし、時間と資源を節約します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.EFFECT"
-#| msgid "Automatically turns <style=\"liquid\">Liquid</style> flow on or off using <style=\"misc\">Automation</style> technology."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.EFFECT"
 msgid "Automatically turns <style=\"liquid\">Liquid</style> flow on or off using <style=\"logic\">Automation</style> technology."
 msgstr "<style=\"misc\">自動化</style>技術により<style=\"liquid\">液体</style>の流入を自動的に制御します。"
@@ -4081,29 +4015,21 @@ msgstr "排水口"
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC"
 msgid "Detects the presence and quantity of nearby germs"
-msgstr ""
+msgstr "周辺に存在する病原菌の濃度を検出します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.EFFECT"
-#| msgid ""
-#| "Becomes <style=\"logic\">Active</style> or on <style=\"logic\">Standby</style> when ambient <style=\"heat\">Temperature</"
-#| "style> enters the chosen range."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
 msgid ""
 "<style=\"logic\">Active</style>/<style=\"logic\">Standby</style> depending on quantity of surrounding <style=\"disease\">Germs</"
 "style>."
 msgstr ""
-"周囲の<style=\"heat\">温度</style>が指定した範囲内にある時、<style=\"logic\">アクティブ</style>または<style=\"logic\">スタンバイ</"
-"style>になります。"
+"周囲の<style=\"disease\">病原菌</style>濃度が指定した範囲内にある時、<style=\"logic\">アクティブ</style>または<style=\"logic\">ス"
+"タンバイ</style>になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.NAME"
-#| msgid "Thermo Sensor"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
 msgid "Germ Sensor"
-msgstr "温度センサー"
+msgstr "病原菌センサー"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC"
@@ -4233,73 +4159,43 @@ msgid "XOR Gate"
 msgstr "XORゲート"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.EFFECT"
-#| msgid ""
-#| "Becomes <style=\"logic\">Active</style> if the system connected to its Input is <style=\"logic\">Active</style>.\n"
-#| "\n"
-#| "Stays <style=\"logic\">Active</style> for a short time after its Input enters <style=\"logic\">Standby</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT"
 msgid ""
 "When the <style=\"logic\">Write</style> port is <style=\"logic\">Active</style> the <style=\"logic\">Value</style> port is read "
 "and stored. Reading from the <style=\"logic\">Read</style> port will then return the new value."
 msgstr ""
-"入力が<style=\"logic\">アクティブ</style>の時、<style=\"logic\">アクティブ</style>になります。\n"
-"\n"
-"入力が<style=\"logic\">スタンバイ</style>になっても、少しの間<style=\"logic\">アクティブ</style>を保ちます。"
+"<style=\"logic\">書き込み</style>ポートが<style=\"logic\">アクティブ</style>になると、<style=\"logic\">値</style>ポートが読み込ま"
+"れます。<style=\"logic\">読み込み</style>ポートは新しい値を返します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME"
 msgid "Memory"
-msgstr ""
+msgstr "メモリ"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.BASE_VALUE"
-#| msgid "Base Value"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_DESC"
 msgid "Stored Value"
-msgstr "基本値"
+msgstr "保持した値"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.STATUS_ITEM_VALUE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.STOREDCHARGE.NAME"
-#| msgid "Stored Charge: {0}/{1}"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.STATUS_ITEM_VALUE"
 msgid "Stored Value: {0}"
-msgstr "チャージ: {0}/{1}"
+msgstr "保持した値: {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.VALUE_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.MISC.TAGS.SPECIAL"
-#| msgid "Special"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.VALUE_PORT_DESC"
 msgid "Specify Value"
-msgstr "特殊"
+msgstr "特殊値"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.WRITE_PORT_DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.WRITE_PORT_DESC"
 msgid "Trigger Write"
-msgstr ""
+msgstr "書き込みトリガー"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC"
@@ -4307,12 +4203,6 @@ msgid "Automated systems save power and time by removing the need for Duplicant 
 msgstr "自動化されたシステムは複製人間による管理の必要性を無くし、時間と資源を節約します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.EFFECT"
-#| msgid ""
-#| "Automatically turns <style=\"power\">Power</style> on or off using <style=\"misc\">Automation</style> technology.\n"
-#| "\n"
-#| "Does not affect circuitry preceding the switch."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.EFFECT"
 msgid ""
 "Automatically turns <style=\"power\">Power</style> on or off using <style=\"logic\">Automation</style> technology.\n"
@@ -4516,7 +4406,7 @@ msgstr "快適ベッド"
 #. STRINGS.BUILDINGS.PREFABS.MACHINESHOP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MACHINESHOP.DESC"
 msgid "Duplicants will only improve the efficiency of buildings in the same room as this station."
-msgstr ""
+msgstr "複製人間は同室にある設備の効果を改善します。"
 
 #. STRINGS.BUILDINGS.PREFABS.MACHINESHOP.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.MACHINESHOP.EFFECT"
@@ -4525,19 +4415,16 @@ msgid ""
 "\n"
 "This building is a necessary component of the Machine Shop room."
 msgstr ""
+"設備の生産効率を上げるために、エンジニアを割り当てられます。\n"
+"\n"
+"この設備は機械室に必須の構成要素です。"
 
 #. STRINGS.BUILDINGS.PREFABS.MACHINESHOP.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCENTER.NAME"
-#| msgid "Research Station"
 msgctxt "STRINGS.BUILDINGS.PREFABS.MACHINESHOP.NAME"
 msgid "Mechanics Station"
-msgstr "研究台"
+msgstr "機械ステーション"
 
 #. STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.DESC"
-#| msgid "Manual generators power buildings when connected by wire and require no fuel."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.DESC"
 msgid "Manual generators require no fuel and power buildings when connected to them by wire."
 msgstr "人力発電機は配線されていれば設備に電力を供給します。燃料を必要としません。"
@@ -4739,15 +4626,15 @@ msgid "Natural gas generators leak polluted water and are best built above a was
 msgstr "天然ガス発電機は汚染水を漏水するので、廃液池の上に建てるのが最適です。"
 
 #. STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.EFFECT"
-#| msgid "Converts <style=\"gas\">Natural Gas</style> into electrical <style=\"power\">Power</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.EFFECT"
 msgid ""
 "Converts <style=\"gas\">Natural Gas</style> into electrical <style=\"power\">Power</style>.\n"
 "\n"
 "Produces <style=\"gas\">Carbon Dioxide</style> and <style=\"liquid\">Polluted Water</style>."
-msgstr "<style=\"gas\">天然ガス</style>を<style=\"power\">電力</style>に変換します。"
+msgstr ""
+"<style=\"gas\">天然ガス</style>を<style=\"power\">電力</style>に変換します。\n"
+"\n"
+"<style=\"gas\">二酸化炭素</style>と<style=\"liquid\">汚染水</style>を産出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.NAME"
@@ -4757,22 +4644,16 @@ msgstr "天然ガス発電機"
 #. STRINGS.BUILDINGS.PREFABS.MICROBEMUSHER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MICROBEMUSHER.DESC"
 msgid "Food from a musher will keep Duplicants alive, but may cause stress and disease over time."
-msgstr ""
+msgstr "粉砕機で作られた食糧は複製人間の糧になりますが、時間経過とともにストレスや病気の原因になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.MICROBEMUSHER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.MICROBEMUSHER.EFFECT"
-#| msgid ""
-#| "Produces low quality <style=\"food\">Food</style> using common ingredients.\n"
-#| "\n"
-#| "Duplicants will not fabricate unless recipes are queued."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MICROBEMUSHER.EFFECT"
 msgid ""
 "Produces low quality <style=\"food\">Food</style> using common ingredients.\n"
 "\n"
 "Duplicants will not fabricate items unless recipes are queued."
 msgstr ""
-"複製人間が必要な栄養素を含んだ、低品質の<style=\"food\">食糧</style>を生産します。\n"
+"ありふれた素材を使って、低品質の<style=\"food\">食糧</style>を生産します。\n"
 "\n"
 "レシピがセットされていないと複製人間は製作作業をしません。"
 
@@ -4782,27 +4663,18 @@ msgid "Microbe Musher"
 msgstr "微生物粉砕機"
 
 #. STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.DESC"
-#| msgid "Algae deoxydizers output enough oxygen to keep a colony breathing, but are inefficient."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.DESC"
 msgid "Algae deoxydizers are inefficient, but can output enough oxygen to keep a colony breathing."
 msgstr "緑藻脱酸素装置は非効率ですがコロニー内で呼吸可能な量の酸素を出力します。"
 
 #. STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.EFFECT"
-#| msgid ""
-#| "Converts <style=\"misc\">Algae</style> into <style=\"oxygen\">Oxygen</style>.\n"
-#| "\n"
-#| "Becomes idle when the area reaches maximum pressure capacity."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.EFFECT"
 msgid ""
 "Converts large amounts of <style=\"solid\">Algae</style> into <style=\"oxygen\">Oxygen</style>.\n"
 "\n"
 "Becomes idle when the area reaches maximum pressure capacity."
 msgstr ""
-"<style=\"misc\">緑藻</style>を<style=\"oxygen\">酸素</style>に変換します。\n"
+"<style=\"misc\">緑藻</style>を十分な量の<style=\"oxygen\">酸素</style>に変換します。\n"
 "\n"
 "部屋の気圧が上限に達すると待機状態になります。"
 
@@ -4894,15 +4766,15 @@ msgid "Petroleum generators have a high energy output but produce a great deal o
 msgstr "石油発電機は高出力ですが、その分大量の廃棄物を生産します。"
 
 #. STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.EFFECT"
-#| msgid "Converts <style=\"liquid\">Petroleum</style> into electrical <style=\"power\">Power</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.EFFECT"
 msgid ""
 "Converts <style=\"liquid\">Petroleum</style> into electrical <style=\"power\">Power</style>.\n"
 "\n"
 "Produces <style=\"gas\">Carbon Dioxide</style> and <style=\"liquid\">Polluted Water</style>."
-msgstr "<style=\"liquid\">石油</style>を<style=\"power\">電力</style>に変換します。"
+msgstr ""
+"<style=\"liquid\">石油</style>を<style=\"power\">電力</style>に変換します。\n"
+"\n"
+"<style=\"gas\">二酸化炭素</style>と<style=\"liquid\">汚染水</style>を産出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.NAME"
@@ -4910,17 +4782,11 @@ msgid "Petroleum Generator"
 msgstr "石油発電機"
 
 #. STRINGS.BUILDINGS.PREFABS.PLANTERBOX.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.PLANTERBOX.DESC"
-#| msgid "Seeds that are grown domestically mature more quickly than wild plants."
 msgctxt "STRINGS.BUILDINGS.PREFABS.PLANTERBOX.DESC"
 msgid "Domestically grown seeds mature more quickly than wild plants."
 msgstr "植えられた種子は野生種よりも早く成長します。"
 
 #. STRINGS.BUILDINGS.PREFABS.PLANTERBOX.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.PLANTERBOX.EFFECT"
-#| msgid "Grows a single <style=\"plant\">Plant</style> when sown with a <style=\"seed\">Seed</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.PLANTERBOX.EFFECT"
 msgid "Grows one <style=\"plant\">Plant</style> from a <style=\"seed\">Seed</style>."
 msgstr "<style=\"seed\">種子</style>をまくと１つの<style=\"plant\">植物</style>を育てることができます。"
@@ -4997,12 +4863,9 @@ msgid "Polymer Press"
 msgstr "ポリマープレス機"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ASSIGNEDTOROOM.TOOLTIP"
-#| msgid "Any Duplicant assigned to this room can use this amenity"
 msgctxt "STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.DESC"
 msgid "Only one Duplicant may be assigned to a Station at a time."
-msgstr "部屋にいる割り当てられた複製人間がこのアメニティを使えます"
+msgstr "ステーションには一度に一人の複製人間を割り当てることがでいます。"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.EFFECT"
@@ -5013,14 +4876,16 @@ msgid ""
 "\n"
 "This building is a necessary component of the Power Plant room."
 msgstr ""
+"発電機の<style=\"power\">出力</style>を上昇させる<style=\"solid\">マイクロチップ</style>を産出します。\n"
+"\n"
+"<style=\"misc\">チューンアップ</style>特性を持った複製人間を割り当ててください。\n"
+"\n"
+"この設備は電力プラントに必須の構成要素です。"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.NAME
-#, fuzzy
-#| msgctxt "STRINGS.RESEARCH.TECHS.POWERREGULATION.NAME"
-#| msgid "Power Regulation"
 msgctxt "STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.NAME"
 msgid "Power Control Station"
-msgstr "電力制御"
+msgstr "電力制御ステーション"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMER.DESC"
@@ -5132,12 +4997,9 @@ msgstr "食糧箱"
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.DESC"
 msgid "Food spoilage can be slowed by certain ambient conditions as well as by refrigerators."
-msgstr ""
+msgstr "特定の大気条件下では、冷蔵庫と同じように食糧の腐敗を遅らせることができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.EFFECT"
-#| msgid "Stores <style=\"food\">Food</style> at an ideal <style=\"heat\">Temperature</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.EFFECT"
 msgid "Stores <style=\"food\">Food</style> at an ideal <style=\"heat\">Temperature</style> to prevent spoilage."
 msgstr "理想的な<style=\"heat\">温度</style>下で<style=\"food\">食糧</style>を保管します。"
@@ -5145,7 +5007,7 @@ msgstr "理想的な<style=\"heat\">温度</style>下で<style=\"food\">食糧</
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_DESC"
 msgid "Full/Not Full"
-msgstr ""
+msgstr "満タン/空き有り"
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.NAME"
@@ -5225,7 +5087,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.ROLESTATION.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROLESTATION.NAME"
 msgid "Jobs Board"
-msgstr ""
+msgstr "職業ボード"
 
 #. STRINGS.BUILDINGS.PREFABS.SCULPTURE.AVERAGEQUALITYNAME
 #, fuzzy
@@ -9256,12 +9118,9 @@ msgid "EdibleIsNotNull"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_ROLE_PERK
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.REQUIRESMINER.NAME"
-#| msgid "Requires Miner"
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_ROLE_PERK"
 msgid "Requires job perk"
-msgstr "坑夫が必要"
+msgstr "職業特性が必要"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_SUIT_MARKER
 #, fuzzy
@@ -9446,7 +9305,7 @@ msgstr ""
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_ROLE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_ROLE"
 msgid "Incorrect job assignment"
-msgstr ""
+msgstr "不正な職業割り当て"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_SCHEDULED_TIME
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_SCHEDULED_TIME"
@@ -9519,23 +9378,9 @@ msgid "Recovering breath"
 msgstr "息を整えている"
 
 #. STRINGS.DUPLICANTS.CHORES.RECOVERBREATH.TOOLTIP
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.DUPLICANTS.CHORES.RECOVERBREATH.TOOLTIP"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.DUPLICANTS.CHORES.RELAX.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.RELAX.NAME"
@@ -9796,20 +9641,14 @@ msgid "Some people deal with stress better than others"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.CHORES.SWITCHROLE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.PLAYBUTTON"
-#| msgid "Start"
 msgctxt "STRINGS.DUPLICANTS.CHORES.SWITCHROLE.NAME"
 msgid "Start Job"
-msgstr "開始"
+msgstr "開始時の職業"
 
 #. STRINGS.DUPLICANTS.CHORES.SWITCHROLE.STATUS
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.ASSIGNEDDUPLICANT"
-#| msgid "Duplicant assignment"
 msgctxt "STRINGS.DUPLICANTS.CHORES.SWITCHROLE.STATUS"
 msgid "Starting job assignment"
-msgstr "複製人間割り当て"
+msgstr "開始時の職業割り当て"
 
 #. STRINGS.DUPLICANTS.CHORES.SWITCHROLE.TOOLTIP
 #, fuzzy
@@ -10027,42 +9866,14 @@ msgid "Good hygiene removes germs and prevents the spread of disease"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.CONGENITALTRAITS.BANHI.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.DUPLICANTS.CONGENITALTRAITS.BANHI.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.DUPLICANTS.CONGENITALTRAITS.BANHI.NAME
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.DUPLICANTS.CONGENITALTRAITS.BANHI.NAME"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.DUPLICANTS.CONGENITALTRAITS.ELLIE.DESC
 msgctxt "STRINGS.DUPLICANTS.CONGENITALTRAITS.ELLIE.DESC"
@@ -15635,23 +15446,9 @@ msgid "Ceramic"
 msgstr "セラミック"
 
 #. STRINGS.ELEMENTS.CARBON.BUILD_DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.ELEMENTS.CARBON.BUILD_DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.ELEMENTS.CARBON.DESC
 msgctxt "STRINGS.ELEMENTS.CARBON.DESC"
@@ -15711,23 +15508,9 @@ msgid "Carbon"
 msgstr "炭素"
 
 #. STRINGS.ELEMENTS.CEMENT.BUILD_DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.ELEMENTS.CEMENT.BUILD_DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.ELEMENTS.CEMENT.DESC
 msgctxt "STRINGS.ELEMENTS.CEMENT.DESC"
@@ -15744,23 +15527,9 @@ msgid "Cement"
 msgstr "要素"
 
 #. STRINGS.ELEMENTS.CEMENTMIX.BUILD_DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.ELEMENTS.CEMENTMIX.BUILD_DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.ELEMENTS.CEMENTMIX.DESC
 msgctxt "STRINGS.ELEMENTS.CEMENTMIX.DESC"
@@ -16995,23 +16764,9 @@ msgid "Sedimentary Rock"
 msgstr "堆積岩"
 
 #. STRINGS.ELEMENTS.SLABS.BUILD_DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.ELEMENTS.SLABS.BUILD_DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.ELEMENTS.SLABS.DESC
 msgctxt "STRINGS.ELEMENTS.SLABS.DESC"
@@ -17160,23 +16915,9 @@ msgid "Petroleum"
 msgstr "石油"
 
 #. STRINGS.ELEMENTS.SOLIDPROPANE.BUILD_DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.ELEMENTS.SOLIDPROPANE.BUILD_DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.ELEMENTS.SOLIDPROPANE.DESC
 msgctxt "STRINGS.ELEMENTS.SOLIDPROPANE.DESC"
@@ -30531,61 +30272,19 @@ msgstr ""
 "優先度 9: 最高"
 
 #. STRINGS.UI.PRIORITYSCREEN.EMERGENCY
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.UI.PRIORITYSCREEN.EMERGENCY"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.UI.PRIORITYSCREEN.HIGH
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.UI.PRIORITYSCREEN.HIGH"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.UI.PRIORITYSCREEN.HIGH_TOGGLE
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.UI.PRIORITYSCREEN.HIGH_TOGGLE"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.UI.PRODUCTINFO_APPLICABLERESOURCES
 msgctxt "STRINGS.UI.PRODUCTINFO_APPLICABLERESOURCES"
@@ -31074,9 +30773,6 @@ msgid "<b>Highest Expectations</b>"
 msgstr "<b>期待</b>:"
 
 #. STRINGS.UI.ROLES_SCREEN.MANAGEMENT_BUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.JOBS"
-#| msgid "JOBS"
 msgctxt "STRINGS.UI.ROLES_SCREEN.MANAGEMENT_BUTTON"
 msgid "JOBS"
 msgstr "作業"
@@ -31087,36 +30783,24 @@ msgid "Build a Jobs Desk to unlock Job Assignments"
 msgstr ""
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.NOTIFICATION_NAME"
-#| msgid "<style=\"research\">Research Center</style> idle"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION"
 msgid "Trait: <style=\"research\">Super Computer</style> Researching"
-msgstr "<style=\"research\">研究所</style>は待機中です"
+msgstr "特性: <style=\"research\">スーパーコンピュータ</style>を使った研究"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_NEARLY_IMPENETRABLE.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.ALLOWS_FERTILIZER"
-#| msgid "Plant <style=\"solid\">Fertilization</style>"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_NEARLY_IMPENETRABLE.DESCRIPTION"
 msgid "Trait: <style=\"solid\">Abyssalite</style> Mining"
-msgstr "<style=\"solid\">施肥</style>する"
+msgstr "特性: <style=\"solid\">アビサライト</style>採掘"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_VERY_FIRM.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HITPOINTSDELTA.NAME"
-#| msgid "<style=\"misc\">Health</style>"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_VERY_FIRM.DESCRIPTION"
 msgid "Trait: <style=\"misc\">Very Firm Material</style> Mining"
-msgstr "<style=\"misc\">生命力</style>"
+msgstr "特性: <style=\"misc\">超硬質素材</style>採掘"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.SETITEMS.VENDINGMACHINE.DESC"
-#| msgid "A pristine <style=\"food\">Nutrient Bar</style> dispenser."
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION"
 msgid "Trait: <style=\"food\">Electric Grill</style> Cooking"
-msgstr "素朴な<style=\"food\">栄養バー</style>の販売機です。"
+msgstr "特性: <style=\"food\">電気グリル</style>を使った料理"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_TINKER.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_TINKER.DESCRIPTION"
@@ -31124,162 +30808,112 @@ msgid ""
 "Trait: <style=\"plant\">Crop</style> Tending\n"
 "    • Trait: <style=\"misc\">Micronutrient Fertilizer</style> Crafting"
 msgstr ""
+"特性: <style=\"plant\">作物</style>の番人\n"
+"    • 特性: <style=\"misc\">微量栄養素</style>作成"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_PAINT.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.MATERIAL_MODIFIERS.DECOR"
-#| msgid "<style=\"decor\">Decor</style>: {0}"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_PAINT.DESCRIPTION"
 msgid "Trait: <style=\"decor\">Canvas</style> Painting"
-msgstr "<style=\"decor\">装飾</style>: {0}"
+msgstr "特性: <style=\"decor\">キャンバス</style>の描画"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.EFFECT"
-#| msgid "Refines <style=\"misc\">Slime</style> into <style=\"misc\">Algae</style>."
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION"
 msgid ""
 "Trait: <style=\"misc\">Generator</style> Tuning\n"
 "    • Trait: <style=\"misc\">Microchip</style> Crafting"
-msgstr "<style=\"misc\">ヘドロ</style>を<style=\"misc\">緑藻</style>に精製します。"
+msgstr ""
+"特性: <style=\"misc\">発電機</style>チューニング\n"
+"    • 特性: <style=\"misc\">マイクロチップ</style>作成"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SCULPT.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.MATERIAL_MODIFIERS.DECOR"
-#| msgid "<style=\"decor\">Decor</style>: {0}"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SCULPT.DESCRIPTION"
 msgid "Trait: <style=\"decor\">Block</style> Sculpting"
-msgstr "<style=\"decor\">装飾</style>: {0}"
+msgstr "特性: <style=\"decor\">ブロック</style>の彫刻"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CONVEYOR_BUILD.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.ITEMS.PILLS.VITAMINSUPPLEMENT.RECIPEDESC"
-#| msgid "Improves <style=\"disease\">Immune System</style> strength."
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CONVEYOR_BUILD.DESCRIPTION"
 msgid "Trait: <style=\"misc\">Conveyor Rail System</style> Construction"
-msgstr "<style=\"disease\">免疫力</style>を強化します。"
+msgstr "特性: <style=\"misc\">コンベア輸送システム</style>構築"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_EXPERTISE.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.MOVETOSUITNOTREQUIRED.NAME"
-#| msgid "Exiting <style=\"equipment\">Exosuit</style> area"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_EXPERTISE.DESCRIPTION"
 msgid "Trait: <style=\"equipment\">Exosuit</style> Sprinting"
-msgstr "<style=\"equipment\">EXOスーツ</style>必須エリアから脱出している"
+msgstr "特性: <style=\"equipment\">EXOスーツ</style>を着たまま疾走"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASE_BOTANIST.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BOTANIST.NAME"
-#| msgid "Farming"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASE_BOTANIST.DESCRIPTION"
 msgid "+{0} to Farming"
-msgstr "農業"
+msgstr "農業 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_ART.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ART.NAME"
-#| msgid "Creativity"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_ART.DESCRIPTION"
 msgid "+{0} to Creativity"
-msgstr "創造"
+msgstr "創造 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_ATHLETICS.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.ATHLETICS.NAME"
-#| msgid "Athletics"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_ATHLETICS.DESCRIPTION"
 msgid "+{0} to Athletics"
-msgstr "運動"
+msgstr "運動 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CARING.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.SPEEDMODIFIER"
-#| msgid "{0} Carrying Weight"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CARING.DESCRIPTION"
 msgid "+{0} to Caring"
-msgstr "運搬重量 {0}"
+msgstr "看護 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CARRY_AMOUNT.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.SPEEDMODIFIER"
-#| msgid "{0} Carrying Weight"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CARRY_AMOUNT.DESCRIPTION"
 msgid "+{0}kg to Carrying Capacity"
-msgstr "運搬重量 {0}"
+msgstr "運搬重量 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CONSTRUCTION.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.CONSTRUCTION.SPEEDMODIFIER"
-#| msgid "{0} Construction Speed"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CONSTRUCTION.DESCRIPTION"
 msgid "+{0} to Construction"
-msgstr "建設速度 {0}"
+msgstr "建設 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_COOKING.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.COOKING.SPEEDMODIFIER"
-#| msgid "{0} Cooking Speed"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_COOKING.DESCRIPTION"
 msgid "+{0} to Cooking"
-msgstr "料理速度 {0}"
+msgstr "料理 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_DIG_SPEED.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DIGGING.SPEEDMODIFIER"
-#| msgid "{0} Digging Speed"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_DIG_SPEED.DESCRIPTION"
 msgid "+{0} to Digging"
-msgstr "採掘速度 {0}"
+msgstr "採掘 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_LEARNING.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.NAME"
-#| msgid "Learning"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_LEARNING.DESCRIPTION"
 msgid "+{0} to Learning"
-msgstr "学習"
+msgstr "学習 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_MACHINERY.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.SPEEDMODIFIER"
-#| msgid "{0} Tinkering Speed"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_MACHINERY.DESCRIPTION"
 msgid "+{0} to Tinkering"
-msgstr "機械操作効率 {0}"
+msgstr "機械操作 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_STRENGTH.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STRENGTH.NAME"
-#| msgid "Strength"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_STRENGTH.DESCRIPTION"
 msgid "+{0} to Strength"
-msgstr "腕力"
+msgstr "腕力 +{0}"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.MANAGED_COLONY.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.MANAGED_COLONY.DESCRIPTION"
 msgid "Colony Stress Alleviater"
-msgstr ""
+msgstr "コロニーのストレス軽減"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.MANAGERIAL_DUTIES.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.FORTRESS"
-#| msgid "Fortress"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.MANAGERIAL_DUTIES.DESCRIPTION"
 msgid "Workload stress"
-msgstr "要塞"
+msgstr "作業負荷ストレス"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.NO_PERKS
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.NO_PERKS"
 msgid "This job comes with no training"
-msgstr ""
+msgstr "この作業は訓練になりません"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.TAKEMEDICINE.STATUS"
-#| msgid "Taking medicine"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.TITLE"
 msgid "Training Received"
-msgstr "医療処置中"
+msgstr "訓練結果"
 
 #. STRINGS.UI.ROLES_SCREEN.PRIORITY.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PRIORITY.DESCRIPTION"
@@ -33426,20 +33060,14 @@ msgid "Select Research"
 msgstr "研究を選択する"
 
 #. STRINGS.UI.UISIDESCREENS.ROLESTATION.OPENROLESBUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.JOBS"
-#| msgid "JOBS"
 msgctxt "STRINGS.UI.UISIDESCREENS.ROLESTATION.OPENROLESBUTTON"
 msgid "JOBS"
-msgstr "作業"
+msgstr "職業"
 
 #. STRINGS.UI.UISIDESCREENS.ROLESTATION.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.SORT_BY_ASSIGNMENT"
-#| msgid "Assignment"
 msgctxt "STRINGS.UI.UISIDESCREENS.ROLESTATION.TITLE"
 msgid "Job Assignments"
-msgstr "割り当て"
+msgstr "職業割り当て"
 
 #. STRINGS.UI.UISIDESCREENS.SEALEDDOORSIDESCREEN.AWAITINGBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.SEALEDDOORSIDESCREEN.AWAITINGBUTTON"
