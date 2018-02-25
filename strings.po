@@ -27133,6 +27133,9 @@ msgid ""
 "<b><color=#B87194FF>All Duplicants</color></b> may perform this errand\n"
 "------------------"
 msgstr ""
+"コロニー全体の<b>{0}作業</b>を切り替えます\n"
+"<b><color=#B87194FF>全ての複製人間</color></b>がこの作業をします\n"
+"------------------"
 
 #. STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_COLUMN_NONE
 msgctxt "STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_COLUMN_NONE"
@@ -27141,6 +27144,9 @@ msgid ""
 "<b><color=#B87194FF>No Duplicants</color></b> may perform this errand\n"
 "------------------"
 msgstr ""
+"コロニー全体の<b>{0}作業</b>を切り替えます\n"
+"<b><color=#B87194FF>どの複製人間</color></b>もこの作業をしません\n"
+"------------------"
 
 #. STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_COLUMN_PARTIAL
 msgctxt "STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_COLUMN_PARTIAL"
@@ -27149,6 +27155,9 @@ msgid ""
 "<b><color=#B87194FF>Some Duplicants</color></b> may perform this errand\n"
 "------------------"
 msgstr ""
+"コロニー全体の<b>{0}作業</b>を切り替えます\n"
+"<b><color=#B87194FF>複製人間のうち何人か</color></b>がこの作業をします\n"
+"------------------"
 
 #. STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_COLUMN_ROLE_ONLY
 msgctxt "STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_COLUMN_ROLE_ONLY"
@@ -27157,11 +27166,11 @@ msgid ""
 "<b><color=#B87194FF>Only Duplicants in a related job</color></b> may perform this errand\n"
 "------------------"
 msgstr ""
+"コロニー全体の<b>{0}作業</b>を切り替えます\n"
+"<b><color=#B87194FF>関連する職業に就いた複製人間のみ</color></b>がこの作業をします\n"
+"------------------"
 
 #. STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_ROW
-#, fuzzy
-#| msgctxt "STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_ROW"
-#| msgid "Toggle all tasks for <b>{0}</b>"
 msgctxt "STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_ROW"
 msgid "Toggle all errands for <b>{0}</b>"
 msgstr "<b>{0}</b>の全ての作業を切り替えます"
@@ -27267,6 +27276,8 @@ msgid ""
 "<b>Receptacle</b>\n"
 "Receives material from a Conveyor Rail and stores it for Duplicant use"
 msgstr ""
+"<b>レセプタ</b>\n"
+"コンベアから素材を受け取り、複製人間が使うときまで保管します"
 
 #. STRINGS.UI.OVERLAYS.CONVEYOR.TOOLTIPS.OUTPUT
 msgctxt "STRINGS.UI.OVERLAYS.CONVEYOR.TOOLTIPS.OUTPUT"
@@ -27274,6 +27285,8 @@ msgid ""
 "<b>Loader</b>\n"
 "Loads material onto a Conveyor Rail for transport to Receptacles"
 msgstr ""
+"<b>ローダー</b>\n"
+"コンベアに素材を積載し、レセプタまで輸送します"
 
 #. STRINGS.UI.OVERLAYS.CROP.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CROP.BUTTON"
@@ -27402,38 +27415,26 @@ msgid "DECOR OVERLAY"
 msgstr "装飾レイヤー"
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.HIGHDECOR
-#, fuzzy
-#| msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.HIGHDECOR"
-#| msgid ""
-#| "<b>High Decor</b>\n"
-#| "Area with sufficient decor values\n"
-#| "* Lighting and aesthetically pleasing buildings increase decor"
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.HIGHDECOR"
 msgid ""
 "<b>Positive Decor</b>\n"
 "Area with sufficient decor values\n"
 "* Lighting and aesthetically pleasing buildings increase decor"
 msgstr ""
-"<b>豪華</b>\n"
-"十分な装飾期待値\n"
-"* 照明や、美的に素晴らしい設備は装飾期待値を上げます"
+"<b>良質な装飾</b>\n"
+"十分な装飾値を持つエリア\n"
+"* 照明や、美的に素晴らしい設備は装飾値を上げます"
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR
-#, fuzzy
-#| msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR"
-#| msgid ""
-#| "<b>Low Decor</b>\n"
-#| "Area with insufficient decor values\n"
-#| "* Resources on the floor are considered \"debris\" and will decrease decor"
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR"
 msgid ""
 "<b>Negative Decor</b>\n"
 "Area with insufficient decor values\n"
 "* Resources on the floor are considered \"debris\" and will decrease decor"
 msgstr ""
-"<b>貧相</b>\n"
-"装飾期待値が低い\n"
-"* 床に転がっている素材は「がれき」とみなされ、装飾期待値が下がります"
+"<b>貧相な装飾</b>\n"
+"装飾値が低いエリア\n"
+"* 床に転がっている素材は「がれき」とみなされ、装飾値が下がります"
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOTAL
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOTAL"
@@ -27668,18 +27669,13 @@ msgstr ""
 "この回路は消費できる電力より多くの電力を供給しています"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6
-#, fuzzy
-#| msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6"
-#| msgid ""
-#| "<b>Strained</b>\n"
-#| "These circuits consume nearly all power they produce"
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6"
 msgid ""
 "<b>Strained</b>\n"
 "These circuits consume nearly all power they produce, but can still function as intended"
 msgstr ""
 "<b>逼迫</b>\n"
-"この回路は供給できる電力に近い電力を消費しています"
+"この回路は供給された電力のほぼすべてを消費していますが、まだ機能しています"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7"
@@ -27687,11 +27683,6 @@ msgid "Too much power being drawn from system"
 msgstr "回路に流れる電力が定格を越えています"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8
-#, fuzzy
-#| msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8"
-#| msgid ""
-#| "<b>Underpowered</b>\n"
-#| "These circuits consume more power than they can produce"
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8"
 msgid ""
 "<b>Underpowered</b>\n"
@@ -27700,7 +27691,9 @@ msgid ""
 "Buildings may be frequently shut off when connected to underpowered circuits"
 msgstr ""
 "<b>電力不足</b>\n"
-"この回路は供給できる電力より多くの電力を消費しています"
+"この回路は供給された電力より多くの電力を消費しています\n"
+"------------------\n"
+"設備は電力不足になると頻繁に停止状態になります"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.BUTTON"
@@ -28079,7 +28072,7 @@ msgstr "出力ポート"
 #. STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE"
 msgid "Refresh Port"
-msgstr ""
+msgstr "リフレッシュポート"
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.DISCONNECTED
 #, fuzzy
@@ -29128,12 +29121,9 @@ msgid "Duplicants employed in this Tier expect only the best cuisine"
 msgstr ""
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.EXCEPTIONAL.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.ADJECTIVES.PLUS_4"
-#| msgid "Ambrosial"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.EXCEPTIONAL.NAME"
 msgid "Ambrosial Food"
-msgstr "最高に美味い"
+msgstr "最高に美味しい"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.HIGH.DESCRIPTION
 #, fuzzy
@@ -29144,12 +29134,9 @@ msgid "Duplicants employed in this Tier desire better than average food"
 msgstr "ごつごつした岩場より、こっちのタイルのほうが複製人間の足にやさしいでしょう。"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.HIGH.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.ADJECTIVES.PLUS_2"
-#| msgid "Great"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.HIGH.NAME"
 msgid "Great Food"
-msgstr "美味い"
+msgstr "かなり美味しい"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.MEDIUM.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.MEDIUM.DESCRIPTION"
@@ -29157,12 +29144,9 @@ msgid "Duplicants employed in this Tier desire decent food for their efforts"
 msgstr ""
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.MEDIUM.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.GOODEATS.NAME"
-#| msgid "Soul Food"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.MEDIUM.NAME"
 msgid "Good Food"
-msgstr "魂のこもった食事"
+msgstr "美味しい"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.MINOR.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.MINOR.DESCRIPTION"
@@ -29170,46 +29154,31 @@ msgid "Duplicants employed in this Tier desire food that meets basic living stan
 msgstr ""
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.MINOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.ADJECTIVES.ZERO"
-#| msgid "Standard"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.MINOR.NAME"
 msgid "Standard Food"
-msgstr "普通"
+msgstr "まあまあ"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.VERY_HIGH.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.FOODBORNE_TOOLTIP"
-#| msgid "Duplicants contract this disease by ingesting contaminated food"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.VERY_HIGH.DESCRIPTION"
 msgid "Duplicants employed in this Tier have a refined taste for food"
-msgstr "複製人間は汚染された食料を摂取したことにより罹患しました"
+msgstr "このTierの複製人間は手の込んだ食事をします"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.VERY_HIGH.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.ADJECTIVES.PLUS_3"
-#| msgid "Superb"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.FOOD_QUALITY.VERY_HIGH.NAME"
 msgid "Superb Food"
-msgstr "とても美味い"
+msgstr "とても美味しい"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.NO_EXPECTATIONS
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.NO_EXPECTATIONS"
 msgid "No additional provisions are required to perform this job"
-msgstr ""
+msgstr "この職業には特別な追加要項がありません"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.PRIVATE_ROOM.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.NEEDSLEEP.TOOLTIP"
-#| msgid "Your Duplicants would appreciate a place to sleep"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.PRIVATE_ROOM.DESCRIPTION"
 msgid "Duplicants in this job would appreciate their own place to unwind"
-msgstr "複製人間は寝る場所があることに感謝します"
+msgstr "この職業に就いている複製人間は自身専用の寝場所があることに感謝します"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.PRIVATE_ROOM.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BEDROOMSTAMINA.NAME"
-#| msgid "Private Bedroom"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.PRIVATE_ROOM.NAME"
 msgid "Private Bedroom"
 msgstr "専用寝室"
@@ -29217,15 +29186,12 @@ msgstr "専用寝室"
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.TITLE
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.TITLE"
 msgid "Special Provisions Request"
-msgstr ""
+msgstr "特例要求"
 
 #. STRINGS.UI.ROLES_SCREEN.HIGHEST_EXPECTATIONS_TIER
-#, fuzzy
-#| msgctxt "STRINGS.UI.DETAILTABS.STATS.GROUPNAME_ATTRIBUTES_EXPECTATIONS"
-#| msgid "<b>Expectations</b>"
 msgctxt "STRINGS.UI.ROLES_SCREEN.HIGHEST_EXPECTATIONS_TIER"
 msgid "<b>Highest Expectations</b>"
-msgstr "<b>期待</b>:"
+msgstr "<b>最高期待値</b>"
 
 #. STRINGS.UI.ROLES_SCREEN.MANAGEMENT_BUTTON
 msgctxt "STRINGS.UI.ROLES_SCREEN.MANAGEMENT_BUTTON"
@@ -29235,7 +29201,7 @@ msgstr "作業"
 #. STRINGS.UI.ROLES_SCREEN.NO_JOB_STATION_WARNING
 msgctxt "STRINGS.UI.ROLES_SCREEN.NO_JOB_STATION_WARNING"
 msgid "Build a Jobs Desk to unlock Job Assignments"
-msgstr ""
+msgstr "職業デスクを建設して、職業割り当てを開放しましょう"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION"
@@ -29373,46 +29339,34 @@ msgstr "訓練結果"
 #. STRINGS.UI.ROLES_SCREEN.PRIORITY.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PRIORITY.DESCRIPTION"
 msgid "{0}s prioritize these work errands: "
-msgstr ""
+msgstr "{0}の作業優先度: "
 
 #. STRINGS.UI.ROLES_SCREEN.PRIORITY.NO_EFFECT
 msgctxt "STRINGS.UI.ROLES_SCREEN.PRIORITY.NO_EFFECT"
 msgid "This job does not affect errand prioritization"
-msgstr ""
+msgstr "この職業は作業の優先度に影響を及ぼしません"
 
 #. STRINGS.UI.ROLES_SCREEN.PRIORITY.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.PRIORITIESMESSAGE.NAME"
-#| msgid "TIP: Priorities"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PRIORITY.TITLE"
 msgid "Job Priorities"
-msgstr "ヒント: 優先度"
+msgstr "職業優先度"
 
 #. STRINGS.UI.ROLES_SCREEN.RESUME.NO_SELECTION
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.NOELEMENTSELECTED"
-#| msgid "No element selected"
 msgctxt "STRINGS.UI.ROLES_SCREEN.RESUME.NO_SELECTION"
 msgid "No Duplicant selected"
-msgstr "要素未選択"
+msgstr "複製人間未選択"
 
 #. STRINGS.UI.ROLES_SCREEN.RESUME.PREVIOUS_ROLES
 msgctxt "STRINGS.UI.ROLES_SCREEN.RESUME.PREVIOUS_ROLES"
 msgid "PREVIOUS DUTIES"
-msgstr ""
+msgstr "前職"
 
 #. STRINGS.UI.ROLES_SCREEN.RESUME.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNOTIFICATION"
-#| msgid "DebugNotification"
 msgctxt "STRINGS.UI.ROLES_SCREEN.RESUME.TITLE"
 msgid "Qualifications"
-msgstr "デバッグ:通知"
+msgstr "資格"
 
 #. STRINGS.UI.ROLES_SCREEN.RESUME.UNASSIGNED
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.UNASSIGNED.NAME"
-#| msgid "Unassigned"
 msgctxt "STRINGS.UI.ROLES_SCREEN.RESUME.UNASSIGNED"
 msgid "Unassigned"
 msgstr "割り当てなし"
@@ -29423,59 +29377,40 @@ msgid ""
 "<b>Job Experience: {0}/{1}</b>\n"
 "Duplicants can become eligible for specialized jobs by maxing their current job experience"
 msgstr ""
+"<b>職業経験値: {0}/{1}</b>\n"
+"職務を最大限まで経験させると、複製人間は専門職に就けるようになります"
 
 #. STRINGS.UI.ROLES_SCREEN.SIDEBAR.ASSIGNED_DUPLICANTS
-#, fuzzy
-#| msgctxt "STRINGS.UI.ASSIGNDUPLICANT"
-#| msgid "Assign Duplicant"
 msgctxt "STRINGS.UI.ROLES_SCREEN.SIDEBAR.ASSIGNED_DUPLICANTS"
 msgid "Assigned Duplicants"
-msgstr "複製人間割り当て"
+msgstr "割り当て済みの複製人間"
 
 #. STRINGS.UI.ROLES_SCREEN.SIDEBAR.UNASSIGN
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.UNASSIGNED.NAME"
-#| msgid "Unassigned"
 msgctxt "STRINGS.UI.ROLES_SCREEN.SIDEBAR.UNASSIGN"
 msgid "Unassign job"
-msgstr "割り当てなし"
+msgstr "割り当てなしの職業"
 
 #. STRINGS.UI.ROLES_SCREEN.SIDEBAR.UNASSIGNED_DUPLICANTS
-#, fuzzy
-#| msgctxt "STRINGS.UI.ASSIGNDUPLICANT"
-#| msgid "Assign Duplicant"
 msgctxt "STRINGS.UI.ROLES_SCREEN.SIDEBAR.UNASSIGNED_DUPLICANTS"
 msgid "Unassigned Duplicants"
-msgstr "複製人間割り当て"
+msgstr "複製人間未割り当て"
 
 #. STRINGS.UI.ROLES_SCREEN.SLOTS.ASSIGNMENT_PENDING
-#, fuzzy
-#| msgctxt "STRINGS.MISC.STATUSITEMS.WAITINGFORDIG.NAME"
-#| msgid "Dig Pending"
 msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.ASSIGNMENT_PENDING"
 msgid "(Pending)"
-msgstr "採掘作業待ち"
+msgstr "(保留)"
 
 #. STRINGS.UI.ROLES_SCREEN.SLOTS.NO_ELIGIBLE_DUPLICANTS
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESMANUALOPERATION"
-#| msgid "A Duplicant must be present to run this building"
 msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.NO_ELIGIBLE_DUPLICANTS"
 msgid "No Duplicants meet the requirements for this job"
-msgstr "この設備は複製人間が操作する必要があります"
+msgstr "この職業に適合する複製人間がいません"
 
 #. STRINGS.UI.ROLES_SCREEN.SLOTS.NOSLOTS
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.SUIT_DROPPED.NAME"
-#| msgid "No Docks available"
 msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.NOSLOTS"
 msgid "No slots available"
-msgstr "ドックがありません"
+msgstr "空きスロットがありません"
 
 #. STRINGS.UI.ROLES_SCREEN.SLOTS.PICK_DUPLICANT
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CONGENITALTRAITS.NONE.NAME"
-#| msgid "None"
 msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.PICK_DUPLICANT"
 msgid "None"
 msgstr "なし"
@@ -29483,73 +29418,67 @@ msgstr "なし"
 #. STRINGS.UI.ROLES_SCREEN.SLOTS.PICK_JOB
 msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.PICK_JOB"
 msgid "No Job"
-msgstr ""
+msgstr "無職"
 
 #. STRINGS.UI.ROLES_SCREEN.SLOTS.UNASSIGNED
 msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.UNASSIGNED"
 msgid "Vacant Posiition"
-msgstr ""
+msgstr "空きポジション"
 
 #. STRINGS.UI.ROLES_SCREEN.SLOTS.UNASSIGNED_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.UNASSIGNED.TOOLTIP"
-#| msgid "Assign a Duplicant to use this amenity"
 msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.UNASSIGNED_TOOLTIP"
 msgid "Click to assign a Duplicant to this job opening"
-msgstr "複製人間を割り当ててください"
+msgstr "クリックして複製人間を職業に割り当てます"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.FIVE
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.FIVE"
 msgid "Tier 5"
-msgstr ""
+msgstr "Tier 5"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.FOUR
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.FOUR"
 msgid "Tier 4"
-msgstr ""
+msgstr "Tier 4"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.ONE
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.ONE"
 msgid "Tier 1"
-msgstr ""
+msgstr "Tier 1"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.SEVEN
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.SEVEN"
 msgid "Tier 7"
-msgstr ""
+msgstr "Tier 7"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.SIX
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.SIX"
 msgid "Tier 6"
-msgstr ""
+msgstr "Tier 6"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.THREE
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.THREE"
 msgid "Tier 3"
-msgstr ""
+msgstr "Tier 3"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.TWO
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.TWO"
 msgid "Tier 2"
-msgstr ""
+msgstr "Tier 2"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.ZERO
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.ZERO"
 msgid "Tier 0"
-msgstr ""
+msgstr "Tier 0"
 
 #. STRINGS.UI.ROLES_SCREEN.WIDGET.NO_MASTERS_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_STARVATION.NAME"
-#| msgid "Duplicants have starved"
 msgctxt "STRINGS.UI.ROLES_SCREEN.WIDGET.NO_MASTERS_TOOLTIP"
 msgid "<b>No Duplicants have mastered this job</b>"
-msgstr "複製人間が餓死しました"
+msgstr "<b>この職業を習得した複製人間はいません</b>"
 
 #. STRINGS.UI.ROLES_SCREEN.WIDGET.NUMBER_OF_MASTERS_TOOLTIP
 msgctxt "STRINGS.UI.ROLES_SCREEN.WIDGET.NUMBER_OF_MASTERS_TOOLTIP"
 msgid "<b>Duplicants who have mastered this job:</b>{0}"
-msgstr ""
+msgstr "<b>この職業を習得した複製人間:</b>{0}"
 
 #. STRINGS.UI.SCHEDULE
 msgctxt "STRINGS.UI.SCHEDULE"
@@ -29616,11 +29545,6 @@ msgid "Sleep"
 msgstr "睡眠"
 
 #. STRINGS.UI.SCHEDULEBLOCKTYPES.WORK.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.UI.SCHEDULEBLOCKTYPES.WORK.DESCRIPTION"
-#| msgid ""
-#| "WORK:\n"
-#| "During Work hours Duplicants will perform any pending job tasks in the colony."
 msgctxt "STRINGS.UI.SCHEDULEBLOCKTYPES.WORK.DESCRIPTION"
 msgid ""
 "WORK:\n"
@@ -29875,9 +29799,6 @@ msgid "Attack"
 msgstr "攻撃"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.BACKWALL
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.BACKWALL"
-#| msgid "Backwall Buildings"
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.BACKWALL"
 msgid "Background Buildings"
 msgstr "壁裏設備"
@@ -29923,12 +29844,9 @@ msgid "Automation"
 msgstr "自動化"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.SOLIDCONDUITS
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECORRADIUS.NAME"
-#| msgid "Decor Radius"
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.SOLIDCONDUITS"
 msgid "Conveyor Rails"
-msgstr "装飾範囲"
+msgstr "コンベアレール"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.TILES
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.TILES"
@@ -30071,9 +29989,6 @@ msgid "Base Value"
 msgstr "基本値"
 
 #. STRINGS.UI.TOOLTIPS.CANCELBUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.CANCELBUTTON"
-#| msgid "Drag to cancel job tasks"
 msgctxt "STRINGS.UI.TOOLTIPS.CANCELBUTTON"
 msgid "Drag to cancel errands"
 msgstr "ドラッグして仕掛中の作業をキャンセルします"
@@ -30089,12 +30004,9 @@ msgid "Mop and sweep messy floors"
 msgstr "汚れた床を掃除&モップ掛けします"
 
 #. STRINGS.UI.TOOLTIPS.CLEARBUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.CLEARBUTTON"
-#| msgid "Drag to move debris into storage"
 msgctxt "STRINGS.UI.TOOLTIPS.CLEARBUTTON"
 msgid "Drag to move ore debris into storage"
-msgstr "ドラッグして床のガラクタを格納庫に移動します"
+msgstr "ドラッグしてがれきを格納庫に移動します"
 
 #. STRINGS.UI.TOOLTIPS.CLOSETOOLTIP
 msgctxt "STRINGS.UI.TOOLTIPS.CLOSETOOLTIP"
@@ -30102,12 +30014,9 @@ msgid "Close"
 msgstr "閉じる"
 
 #. STRINGS.UI.TOOLTIPS.CONVEYOR_OVERLAY_STRING
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.POWEROVERLAYSTRING"
-#| msgid "Displays power grid components"
 msgctxt "STRINGS.UI.TOOLTIPS.CONVEYOR_OVERLAY_STRING"
 msgid "Displays conveyor transport components"
-msgstr "コロニーの配電状況を表示します"
+msgstr "コンベアの配送状況を表示します"
 
 #. STRINGS.UI.TOOLTIPS.CROPS_OVERLAY_STRING
 msgctxt "STRINGS.UI.TOOLTIPS.CROPS_OVERLAY_STRING"
@@ -30125,9 +30034,6 @@ msgid "Displays decor values"
 msgstr "装飾値を表示します"
 
 #. STRINGS.UI.TOOLTIPS.DIGBUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.DIGBUTTON"
-#| msgid "Drag to set dig tasks"
 msgctxt "STRINGS.UI.TOOLTIPS.DIGBUTTON"
 msgid "Drag to set dig errands"
 msgstr "ドラッグして採掘指示を出します"
@@ -30138,12 +30044,9 @@ msgid "Displays disease risk areas"
 msgstr "病気リスクのあるエリアを表示します"
 
 #. STRINGS.UI.TOOLTIPS.DISINFECTBUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.DISINFECTBUTTON"
-#| msgid "Drag to disinfect buildings"
 msgctxt "STRINGS.UI.TOOLTIPS.DISINFECTBUTTON"
 msgid "Drag to disinfect germy buildings"
-msgstr "ドラッグして設備を消毒"
+msgstr "ドラッグして設備を消毒します"
 
 #. STRINGS.UI.TOOLTIPS.DISMISSMESSAGE
 msgctxt "STRINGS.UI.TOOLTIPS.DISMISSMESSAGE"
@@ -30181,9 +30084,6 @@ msgid "Displays areas with comfortable temperatures for Duplicants"
 msgstr "複製人間が快適に感じる温度帯のエリアを表示します"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_ATTACHPOINT
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_ATTACHPOINT"
-#| msgid "Must be built overlapping a {0}"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_ATTACHPOINT"
 msgid "Must be built overlapping an {0}"
 msgstr "{0}に重ねて建設する必要があります"
@@ -30199,9 +30099,6 @@ msgid "Must be built on solid ground"
 msgstr "安定した土台に建設する必要があります"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_GASPORTS_OBSTRUCTED
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.GASVENTOBSTRUCTED.NAME"
-#| msgid "Gas Vent Obstructed"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_GASPORTS_OBSTRUCTED"
 msgid "Gas ports are obstructed"
 msgstr "通風口閉塞"
@@ -30212,17 +30109,11 @@ msgid "Must be built in the ground"
 msgstr "地面に建設する必要があります"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_INVALID_CELL
-#, fuzzy
-#| msgctxt "STRINGS.MISC.STATUSITEMS.REGIONINVALID.NAME"
-#| msgid "Invalid Region"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_INVALID_CELL"
 msgid "Invalid Cell"
 msgstr "不正な区域"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_LIQUIDPORTS_OBSTRUCTED
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDVENTOBSTRUCTED.NAME"
-#| msgid "Liquid Vent Obstructed"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_LIQUIDPORTS_OBSTRUCTED"
 msgid "Liquid ports are obstructed"
 msgstr "排水口閉塞"
@@ -30230,7 +30121,7 @@ msgstr "排水口閉塞"
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_NOT_IN_TILES
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_NOT_IN_TILES"
 msgid "Cannot be built inside tile"
-msgstr ""
+msgstr "タイル内に敷設できません"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_OCCUPIED
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_OCCUPIED"
@@ -30240,15 +30131,12 @@ msgstr "空いている空間に建設する必要があります"
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_WIRE_OBSTRUCTION
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_WIRE_OBSTRUCTION"
 msgid "Obstructed by wire"
-msgstr ""
+msgstr "電線による妨げ"
 
 #. STRINGS.UI.TOOLTIPS.HELP_REQUIRES_ROOM
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_INSIDEGROUND"
-#| msgid "Must be built in the ground"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_REQUIRES_ROOM"
 msgid "Must be in a room"
-msgstr "地面に建設する必要があります"
+msgstr "部屋に建設する必要があります"
 
 #. STRINGS.UI.TOOLTIPS.HELP_ROTATE_KEY
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_ROTATE_KEY"
@@ -30256,17 +30144,11 @@ msgid "Press <color=#F44A47>[O]</color> to Rotate"
 msgstr "<color=#833A5FFF>[O]</color>キーで回転します"
 
 #. STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_NO_UTURNS
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_STRAIGHT_BRIDGES"
-#| msgid "Can't Turn Here!"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_NO_UTURNS"
 msgid "Can't U-Turn"
 msgstr "ここでは引き返せません！"
 
 #. STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_STRAIGHT_BRIDGES
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_STRAIGHT_BRIDGES"
-#| msgid "Can't Turn Here!"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_STRAIGHT_BRIDGES"
 msgid "Can't Turn Here"
 msgstr "ここでは引き返せません！"
@@ -30282,27 +30164,16 @@ msgid "The Items Panel displays everything your Duplicant is in possession of"
 msgstr "アイテムパネルは複製人間の持ち物の情報を表示します"
 
 #. STRINGS.UI.TOOLTIPS.JOBSSCREEN_ATTRIBUTES
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.JOBSSCREEN_ATTRIBUTES"
-#| msgid "The following attributes affect a Duplicant's efficiency at this job:"
 msgctxt "STRINGS.UI.TOOLTIPS.JOBSSCREEN_ATTRIBUTES"
 msgid "The following attributes affect a Duplicant's efficiency at this errand:"
-msgstr "これらの特性は複製人間の作業に影響を及ぼします:"
+msgstr "これらの属性は複製人間の作業効率に影響を及ぼします:"
 
 #. STRINGS.UI.TOOLTIPS.JOBSSCREEN_CANNOTPERFORMTASK
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.JOBSSCREEN_CANNOTPERFORMTASK"
-#| msgid "{0} cannot perform this task."
 msgctxt "STRINGS.UI.TOOLTIPS.JOBSSCREEN_CANNOTPERFORMTASK"
 msgid "{0} cannot perform this errand."
 msgstr "{0} はこの作業ができません。"
 
 #. STRINGS.UI.TOOLTIPS.JOBSSCREEN_PRIORITY
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.JOBSSCREEN_PRIORITY"
-#| msgid ""
-#| "High priority jobs are performed before low priority jobs. A Duplicant will always continue work on their current job until it "
-#| "is complete, even if a higher priority job becomes available."
 msgctxt "STRINGS.UI.TOOLTIPS.JOBSSCREEN_PRIORITY"
 msgid ""
 "High priority errands are always performed before low priority errands.\n"
@@ -30310,8 +30181,9 @@ msgid ""
 "However, a busy Duplicant will contine to work on their current errand until it's complete, even if a higher priority errand "
 "becomes available."
 msgstr ""
-"優先度が高い作業は低い作業よりも前に行われます。優先度が高い作業ができた場合でも、複製人間は作業が完了するまでは現在の仕事をこなし"
-"ます。"
+"優先度が高い作業は低い作業よりも前に行われます。\n"
+"\n"
+"優先度が高い作業ができた場合でも、複製人間は作業が完了するまでは現在の仕事をこなします。"
 
 #. STRINGS.UI.TOOLTIPS.JOBSSCREEN_RELEVANT_ATTRIBUTES
 msgctxt "STRINGS.UI.TOOLTIPS.JOBSSCREEN_RELEVANT_ATTRIBUTES"
@@ -30349,12 +30221,9 @@ msgid "View daily Colony Reports"
 msgstr "デイリーレポートを見ます"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CONSUMABLES"
-#| msgid "Manage Duplicants' diets"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS"
 msgid "Manage Duplicants' permitted errands"
-msgstr "複製人間の健康状態を管理します"
+msgstr "複製人間の作業を管理します"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_RESEARCH
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_RESEARCH"
@@ -30368,21 +30237,15 @@ msgstr ""
 "研究設備は建築メニューの研究タブ<color=#F44A47>[0]</color>にあります"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_ROLES_STATION
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_RESEARCH"
-#| msgid ""
-#| "Build a Research Station to unlock\n"
-#| "------------------\n"
-#| "Research buildings can be found in the Stations Tab <color=#F44A47>[0]</color> of the Build Menu"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_ROLES_STATION"
 msgid ""
 "Build a Jobs Board to unlock\n"
 "------------------\n"
 "The Jobs Board can be found in the Stations Tab <color=#F44A47>[0]</color> of the Build Menu"
 msgstr ""
-"発明するには研究台を建設してください\n"
+"仕事ボードを建設してください\n"
 "------------------\n"
-"研究設備は建築メニューの研究タブ<color=#F44A47>[0]</color>にあります"
+"仕事ボードは建築メニューの研究タブ<color=#F44A47>[0]</color>にあります"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_RESEARCH
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_RESEARCH"
@@ -30390,12 +30253,9 @@ msgid "View the Research Tree"
 msgstr "研究ツリーを見ます"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_ROLES
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CONSUMABLES"
-#| msgid "Manage Duplicants' diets"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_ROLES"
 msgid "Manage Duplicants' job assignments"
-msgstr "複製人間の健康状態を管理します"
+msgstr "複製人間の職業割り当てを管理します"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_SCHEDULE
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_SCHEDULE"
@@ -30438,9 +30298,6 @@ msgid "Population: {0}"
 msgstr "人口: {0}"
 
 #. STRINGS.UI.TOOLTIPS.MOPBUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.MOPBUTTON"
-#| msgid "Drag to swab unwanted liquids"
 msgctxt "STRINGS.UI.TOOLTIPS.MOPBUTTON"
 msgid "Drag to swab up unwanted liquids"
 msgstr "ドラッグして零れた液体をふき取ります"
@@ -30486,20 +30343,14 @@ msgid "Displays power grid components"
 msgstr "コロニーの配電状況を表示します"
 
 #. STRINGS.UI.TOOLTIPS.PRIORITIESOVERLAYSTRING
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.PRIORITIESOVERLAYSTRING"
-#| msgid "Displays task priority values"
 msgctxt "STRINGS.UI.TOOLTIPS.PRIORITIESOVERLAYSTRING"
 msgid "Displays errand priority values"
 msgstr "作業の優先度を表示します"
 
 #. STRINGS.UI.TOOLTIPS.PRIORITIZEBUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.PRIORITIZEBUTTON"
-#| msgid "Drag to reprioritize job tasks"
 msgctxt "STRINGS.UI.TOOLTIPS.PRIORITIZEBUTTON"
 msgid "Drag to reprioritize errands"
-msgstr "ドラッグして優先度を再設定します"
+msgstr "ドラッグして作業の優先度を再設定します"
 
 #. STRINGS.UI.TOOLTIPS.PRIORITIZEMAINBUTTON
 msgctxt "STRINGS.UI.TOOLTIPS.PRIORITIZEMAINBUTTON"
@@ -30837,17 +30688,14 @@ msgid "Assigned"
 msgstr "割り当て"
 
 #. STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.DISABLED
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.INVISIBLE"
-#| msgid "Invisible"
 msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.DISABLED"
 msgid "Ineligible"
-msgstr "透明の"
+msgstr "不適格"
 
 #. STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.DISABLED_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.DISABLED_TOOLTIP"
 msgid "{0} is ineligible for this job assignment"
-msgstr ""
+msgstr "{0}はこの職業割り当てに不適格です"
 
 #. STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.PUBLIC
 msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.PUBLIC"
@@ -30877,17 +30725,17 @@ msgstr "割り当て済み: {0}"
 #. STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.UNASSIGNED
 msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.UNASSIGNED"
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.ALLOWMANUALBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.ALLOWMANUALBUTTON"
 msgid "Allow Manual Use"
-msgstr ""
+msgstr "手動操作許可"
 
 #. STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.ALLOWMANUALBUTTONTOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.ALLOWMANUALBUTTONTOOLTIP"
 msgid "Allow Duplicants to manually manage these storage materials"
-msgstr ""
+msgstr "この格納庫にある素材を複製人間に管理させます"
 
 # 格納庫以外にも、農地タイルでこのアクションが使用できた
 #. STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.TITLE
