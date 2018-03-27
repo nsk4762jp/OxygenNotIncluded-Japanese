@@ -904,7 +904,7 @@ msgid ""
 "Reduce pressure by pumping gas away or clearing more space"
 msgstr ""
 "周辺の気圧または水圧が高すぎるため、気体を排出できません\n"
-"気体ポンプで吸い出すか、空間を広げて気圧を下げてください"
+"吸気ポンプで吸い出すか、空間を広げて気圧を下げてください"
 
 #. STRINGS.BUILDING.STATUSITEMS.GENERATOROFFLINE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GENERATOROFFLINE.NAME"
@@ -1891,7 +1891,7 @@ msgid ""
 msgstr ""
 "周辺の気圧が高すぎるため、気体を排出できません\n"
 "------------------\n"
-"気体ポンプで吸い出すか、空間を広げて気圧を下げてください"
+"吸気ポンプで吸い出すか、空間を広げて気圧を下げてください"
 
 #. STRINGS.BUILDING.STATUSITEMS.PUMPINGLIQUIDORGAS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PUMPINGLIQUIDORGAS.NAME"
@@ -3719,23 +3719,18 @@ msgstr ""
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.EFFECT"
-#| msgid ""
-#| "Automatically turns <style=\"gas\">Gas</style> flow on or off using "
-#| "<style=\"logic\">Automation</style> technology."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.EFFECT"
 msgid ""
 "Automatically turns <link=\"ELEMENTSGAS\">Gas</link> flow on or off using "
 "<link=\"LOGIC\">Automation</link> technology."
 msgstr ""
-"<style=\"misc\">自動化</style>技術により<style=\"gas\">気体</style>の流入を自"
-"動的に制御します。"
+"<link=\"LOGIC\">自動化</link>技術により<link=\"ELEMENTSGAS\">気体</link>の流"
+"入を自動的に制御します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.NAME"
 msgid "<link=\"GASLOGICVALVE\">Gas Shutoff</link>"
-msgstr ""
+msgstr "<link=\"GASLOGICVALVE\">気体遮断器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.DESC"
@@ -3745,13 +3740,6 @@ msgid ""
 msgstr "ミニポンプは少量のエネルギーで少量の気体を移動させるのに適しています。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.EFFECT"
-#| msgid ""
-#| "Draws in a small amount of <style=\"gas\">Gas</style> runs it through "
-#| "<style=\"GasPiping\">Pipes</style>.\n"
-#| "\n"
-#| "Must be immersed in gas."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.EFFECT"
 msgid ""
 "Draws in a small amount of <link=\"ELEMENTSGAS\">Gas</link> runs it through "
@@ -3759,15 +3747,15 @@ msgid ""
 "\n"
 "Must be immersed in gas."
 msgstr ""
-"<style=\"gas\">気体</style>を少量吸い上げ、<style=\"GasPiping\">気体用パイプ"
-"</style>に移送します。\n"
+"<link=\"ELEMENTSGAS\">気体</link>を少量吸い上げ、<link=\"GASPIPING\">気体用パ"
+"イプ</link>に移送します。\n"
 "\n"
 "周囲に気体が必要です。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.NAME"
 msgid "<link=\"GASPUMP\">Mini Gas Pump</link>"
-msgstr ""
+msgstr "<link=\"GASPUMP\">ミニ吸気ポンプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASPERMEABLEMEMBRANE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPERMEABLEMEMBRANE.DESC"
@@ -3777,13 +3765,6 @@ msgid ""
 msgstr "気流浸透性タイルは、コロニー内の気体循環を促進します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASPERMEABLEMEMBRANE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASPERMEABLEMEMBRANE.EFFECT"
-#| msgid ""
-#| "Used as floor and wall tile to build rooms.\n"
-#| "\n"
-#| "Blocks <style=\"liquid\">Liquid</style> flow without obstructing <style="
-#| "\"gas\">Gas</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPERMEABLEMEMBRANE.EFFECT"
 msgid ""
 "Used as floor and wall tile to build rooms.\n"
@@ -3793,13 +3774,13 @@ msgid ""
 msgstr ""
 "部屋用の壁や床として使えるタイルです。\n"
 "\n"
-"<style=\"gas\">気体</style>の移動を妨げず、<style=\"liquid\">液体</style>の流"
-"れをブロックします。"
+"<link=\"ELEMENTSGAS\">気体</link>の移動を妨げず、<link=\"ELEMENTSLIQUID\">液"
+"体</link>の流れをブロックします。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASPERMEABLEMEMBRANE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPERMEABLEMEMBRANE.NAME"
 msgid "<link=\"GASPERMEABLEMEMBRANE\">Airflow Tile</link>"
-msgstr ""
+msgstr "<link=\"GASPERMEABLEMEMBRANE\">気流タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASPUMP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.DESC"
@@ -3809,13 +3790,6 @@ msgid ""
 msgstr "設置された場所の空気を吸気口から吸い込み、他の設備の出力に移送します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASPUMP.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.EFFECT"
-#| msgid ""
-#| "Draws in <style=\"gas\">Gas</style> runs it through <style=\"GasPiping"
-#| "\">Pipes</style>.\n"
-#| "\n"
-#| "Must be immersed in gas."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.EFFECT"
 msgid ""
 "Draws in <link=\"ELEMENTSGAS\">Gas</link> runs it through <link=\"GASPIPING"
@@ -3823,15 +3797,15 @@ msgid ""
 "\n"
 "Must be immersed in gas."
 msgstr ""
-"<style=\"gas\">気体</style>を吸い上げ、<style=\"GasPiping\">気体用パイプ</"
-"style>に移送します。\n"
+"<link=\"ELEMENTSGAS\">気体</link>を吸い上げ、<link=\"GASPIPING\">気体用パイプ"
+"</link>に移送します。\n"
 "\n"
 "周囲に気体が必要です。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASPUMP.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.NAME"
 msgid "<link=\"GASPUMP\">Gas Pump</link>"
-msgstr ""
+msgstr "<link=\"GASPUMP\">吸気ポンプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVALVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.DESC"
@@ -3840,23 +3814,18 @@ msgid ""
 msgstr "バルブは無損失でパイプを流れる気体の量を調整します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVALVE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.EFFECT"
-#| msgid ""
-#| "Controls the <style=\"gas\">Gas</style> volume permitted through <style="
-#| "\"GasPiping\">Pipes</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.EFFECT"
 msgid ""
 "Controls the <link=\"ELEMENTSGAS\">Gas</link> volume permitted through <link="
 "\"GASPIPING\">Pipes</link>."
 msgstr ""
-"<style=\"GasPiping\">気体用パイプ</style>に流れる<style=\"gas\">気体</style>"
-"の量を調整します。"
+"<link=\"GASPIPING\">気体用パイプ</link>に流れる<link=\"ELEMENTSGAS\">気体</"
+"link>の量を調整します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVALVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.NAME"
 msgid "<link=\"GASVALVE\">Gas Valve</link>"
-msgstr ""
+msgstr "<link=\"GASVALVE\">気体バルブ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENT.DESC"
@@ -3864,49 +3833,39 @@ msgid "Vents are an exit point for gases from ventilation systems."
 msgstr "通風孔は気体換気系の出口にあたります。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENT.EFFECT"
-#| msgid ""
-#| "Releases <style=\"gas\">Gas</style> from <style=\"GasPiping\">Gas Pipes</"
-#| "style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENT.EFFECT"
 msgid ""
 "Releases <link=\"ELEMENTSGAS\">Gas</link> from <link=\"GASPIPING\">Gas "
 "Pipes</link>."
 msgstr ""
-"<style=\"GasPiping\">気体用パイプ</style>を通して<style=\"gas\">気体</style>"
-"を放出します。"
+"<link=\"GASPIPING\">気体用パイプ</link>を通して<link=\"ELEMENTSGAS\">気体</"
+"link>を放出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENT.NAME"
 msgid "<link=\"GASVENT\">Gas Vent</link>"
-msgstr ""
+msgstr "<link=\"GASVENT\">通風孔</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.DESC"
 msgid ""
 "High pressure Vents can exhaust gas into more highly pressurized "
 "environments."
-msgstr "高圧通風口は高圧環境下でも気体を排出できます。"
+msgstr "高圧通風孔は高圧環境下でも気体を排出できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.EFFECT"
-#| msgid ""
-#| "Releases <style=\"gas\">Gas</style> from <style=\"GasPiping\">Gas Pipes</"
-#| "style> into high pressure locations."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.EFFECT"
 msgid ""
 "Releases <link=\"ELEMENTSGAS\">Gas</link> from <link=\"GASPIPING\">Gas "
 "Pipes</link> into high pressure locations."
 msgstr ""
-"<style=\"GasPiping\">気体用パイプ</style>を通して<style=\"gas\">気体</style>"
-"を高圧環境下に放出します。"
+"<link=\"ELEMENTSGAS\">気体用パイプ</link>を通して<link=\"GASPIPING\">気体</"
+"link>を高圧環境下に放出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.NAME"
 msgid "<link=\"GASVENTHIGHPRESSURE\">High Pressure Gas Vent</link>"
-msgstr ""
+msgstr "<link=\"GASVENTHIGHPRESSURE\">高圧通風孔</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.DESC"
@@ -3918,13 +3877,6 @@ msgstr ""
 "ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERATOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.EFFECT"
-#| msgid ""
-#| "Converts <style=\"RawMineral\">Coal</style> into electrical <style=\"power"
-#| "\">Power</style>.\n"
-#| "\n"
-#| "Produces <style=\"gas\">Carbon Dioxide</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.EFFECT"
 msgid ""
 "Converts <link=\"CARBON\">Coal</link> into electrical <link=\"POWER\">Power</"
@@ -3932,20 +3884,19 @@ msgid ""
 "\n"
 "Produces <link=\"CARBONDIOXIDE\">Carbon Dioxide</link>."
 msgstr ""
-"<style=\"RawMineral\">石炭</style>を<style=\"power\">電力</style>に変換しま"
-"す。\n"
+"<link=\"CARBON\">石炭</link>を<link=\"POWER\">電力</link>に変換します。\n"
 "\n"
-"<style=\"gas\">二酸化炭素</style>を産出します。"
+"<link=\"CARBONDIOXIDE\">二酸化炭素</link>を産出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.NAME"
 msgid "<link=\"GENERATOR\">Coal Generator</link>"
-msgstr ""
+msgstr "<link=\"GENERATOR\">石炭発電機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERATOR.OVERPRODUCTION
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.OVERPRODUCTION"
 msgid "{Generator} overproduction"
-msgstr ""
+msgstr "{Generator} 生産過剰"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERICFABRICATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERICFABRICATOR.DESC"
@@ -3953,22 +3904,16 @@ msgid "Omniprinters are incapable of printing organic matter."
 msgstr "万能プリンターは有機物質を出力できません。"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERICFABRICATOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GENERICFABRICATOR.EFFECT"
-#| msgid ""
-#| "Converts <style=\"RawMineral\">Raw Minerals</style> into unique materials "
-#| "and objects."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERICFABRICATOR.EFFECT"
 msgid ""
 "Converts <link=\"RAWMINERAL\">Raw Mineral</link> into unique materials and "
 "objects."
-msgstr ""
-"<style=\"RawMineral\">無機物原石</style>を様々な素材や物体に加工します。"
+msgstr "<link=\"RAWMINERAL\">無機物原石</link>を様々な素材や物体に加工します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERICFABRICATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERICFABRICATOR.NAME"
 msgid "<link=\"GENERICFABRICATOR\">Omniprinter</link>"
-msgstr ""
+msgstr "<link=\"GENERICFABRICATOR\">万能プリンター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GRAVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVE.DESC"
@@ -3989,12 +3934,9 @@ msgstr ""
 "生存中の複製人間は埋葬されていない死体を自動的にこの場所へ格納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GRAVE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVE.NAME"
-#| msgid "Tasteful Memorial"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVE.NAME"
 msgid "<link=\"GRAVE\">Tasteful Memorial</link>"
-msgstr "粋な墓標"
+msgstr "<link=\"GRAVE\">シックな墓標</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HANDSANITIZER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HANDSANITIZER.DESC"
@@ -4002,13 +3944,6 @@ msgid "Hand sanitizers kill germs more effectively than wash basins."
 msgstr "消毒剤は洗面台よりも効率的に殺菌します。"
 
 #. STRINGS.BUILDINGS.PREFABS.HANDSANITIZER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.HANDSANITIZER.EFFECT"
-#| msgid ""
-#| "Removes most <style=\"disease\">Germs</style> from Duplicants.\n"
-#| "\n"
-#| "Germ-covered Duplicants use Hand Sanitizers when passing by in the "
-#| "selected direction."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HANDSANITIZER.EFFECT"
 msgid ""
 "Removes most <link=\"DISEASE\">Germs</link> from Duplicants.\n"
@@ -4016,7 +3951,7 @@ msgid ""
 "Germ-covered Duplicants use Hand Sanitizers when passing by in the selected "
 "direction."
 msgstr ""
-"複製人間から<style=\"disease\">病原菌</style>を除去します。\n"
+"複製人間から<link=\"DISEASE\">病原菌</link>を除去します。\n"
 "\n"
 "病原菌に覆われた複製人間は指定された方向に通りがかった時に消毒剤を使用しま"
 "す。"
@@ -4024,7 +3959,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.HANDSANITIZER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HANDSANITIZER.NAME"
 msgid "<link=\"HANDSANITIZER\">Hand Sanitizer</link>"
-msgstr ""
+msgstr "<link=\"HANDSANITIZER\">消毒剤</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HEADQUARTERS.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEADQUARTERS.DESC"
@@ -4044,12 +3979,12 @@ msgid ""
 msgstr ""
 "出所不明の極めて高度なバイオプリンターです。\n"
 "\n"
-"定期的に新しい複製人間を作製します。"
+"定期的に新しい複製人間を製造します。"
 
 #. STRINGS.BUILDINGS.PREFABS.HEADQUARTERS.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEADQUARTERS.NAME"
 msgid "<link=\"HEADQUARTERS\">Printing Pod</link>"
-msgstr ""
+msgstr "<link=\"HEADQUARTERS\">製造ポッド</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.DESC"
@@ -4061,13 +3996,6 @@ msgstr ""
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.EFFECT"
-#| msgid ""
-#| "Carries more <style=\"power\">Wattage</style> than regular Wire without "
-#| "overloading.\n"
-#| "\n"
-#| "Cannot be run through tiles."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.EFFECT"
 msgid ""
 "Carries more <link=\"POWER\">Wattage</link> than regular Wire without "
@@ -4075,15 +4003,15 @@ msgid ""
 "\n"
 "Cannot be run through tiles."
 msgstr ""
-"通常の電線より大きな<style=\"power\">ワット数</style>を過負荷を起こさずに扱え"
-"ます。\n"
+"通常の電線より大きな<link=\"POWER\">ワット数</link>を過負荷を起こさずに扱えま"
+"す。\n"
 "\n"
 "タイルの中に敷設することができません。"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.NAME"
 msgid "<link=\"HIGHWATTAGEWIRE\">Heavi-Watt Wire</link>"
-msgstr ""
+msgstr "<link=\"HIGHWATTAGEWIRE\">大容量電線</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.DESC"
@@ -4093,22 +4021,17 @@ msgid ""
 msgstr "水素発電機は極めて効率的な電力源で、排気がほとんどありません。"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.EFFECT"
-#| msgid ""
-#| "Converts <style=\"gas\">Hydrogen Gas</style> into electrical <style="
-#| "\"power\">Power</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.EFFECT"
 msgid ""
 "Converts <link=\"HYDROGEN\">Hydrogen</link> into electrical <link=\"POWER"
 "\">Power</link>."
 msgstr ""
-"<style=\"gas\">水素ガス</style>を<style=\"power\">電力</style>に変換します。"
+"<link=\"HYDROGEN\">水素</link>を<link=\"POWER\">電力</link>に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.NAME"
 msgid "<link=\"HYDROGENGENERATOR\">Hydrogen Generator</link>"
-msgstr ""
+msgstr "<link=\"HYDROGENGENERATOR\">水素発電機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.DESC"
@@ -4116,18 +4039,9 @@ msgid ""
 "Hydroponic farms reduce Duplicant traffic by automating liquid delivery with "
 "irrigation pipes."
 msgstr ""
-"水耕栽培農地は灌漑用パイプからの自動散水により、複製人間の手間を省きます。"
+"水耕タイルは灌漑用パイプからの自動取水により、複製人間の手間を省きます。"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.EFFECT"
-#| msgid ""
-#| "Grows one <style=\"plant\">Plant</style> from a <style=\"seed\">Seed</"
-#| "style>.\n"
-#| "\n"
-#| "Can be used as floor tile and rotated before construction.\n"
-#| "\n"
-#| "Must be irrigated through liquid piping."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.EFFECT"
 msgid ""
 "Grows one <link=\"PLANTS\">Plant</link> from a <link=\"PLANTS\">Seed</"
@@ -4137,17 +4051,18 @@ msgid ""
 "\n"
 "Must be irrigated through liquid piping."
 msgstr ""
-"<style=\"seed\">種子</style>をまくと１つの<style=\"plant\">植物</style>を育て"
+"<link=\"PLANTS\">種子</link>をまくと１つの<link=\"PLANTS\">植物</link>を育て"
 "ることができます。\n"
 "\n"
 "床材としても使用でき、建設する前に回転することができます。\n"
 "\n"
 "液体用パイプによる灌漑が必要です。"
 
+# 農耕タイルの対になるように訳語を変更
 #. STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.NAME"
 msgid "<link=\"HYDROPONICFARM\">Hydroponic Farm</link>"
-msgstr ""
+msgstr "<link=\"HYDROPONICFARM\">水耕タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.AVERAGEQUALITYNAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.AVERAGEQUALITYNAME"
@@ -4157,16 +4072,9 @@ msgstr "素晴らしい氷像"
 #. STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.DESC"
 msgid "Ice sculptures will melt over time if not kept sufficiently chilled."
-msgstr "冷凍状態を保持し続けていないと、氷像は溶けてしまいます。"
+msgstr "適切に冷凍していないと、氷像は溶けてしまいます。"
 
 #. STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.EFFECT"
-#| msgid ""
-#| "Increases <style=\"decor\">Decor</style> and reduces <style=\"stress"
-#| "\">Stress</style>.\n"
-#| "\n"
-#| "Must be sculpted by a Duplicant."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.EFFECT"
 msgid ""
 "Increases <link=\"DECOR\">Decor</link> and reduces <link=\"STRESS\">Stress</"
@@ -4174,15 +4082,15 @@ msgid ""
 "\n"
 "Must be sculpted by a Duplicant."
 msgstr ""
-"<style=\"decor\">装飾値</style>を増加させ、複製人間の<style=\"stress\">ストレ"
-"ス</style>を減らします。\n"
+"<link=\"DECOR\">装飾値</link>を増加させ、複製人間の<link=\"STRESS\">ストレス"
+"</link>を減らします。\n"
 "\n"
 "複製人間に彫刻してもらう必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.NAME"
 msgid "<link=\"ICESCULPTURE\">Ice Block</link>"
-msgstr ""
+msgstr "<link=\"ICESCULPTURE\">氷の塊</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.POORQUALITYNAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.POORQUALITYNAME"
@@ -4197,13 +4105,6 @@ msgid ""
 msgstr "パイプ断熱は移送中の気体の温度が変化するのを抑制します。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.EFFECT"
-#| msgid ""
-#| "Carries <style=\"gas\">Gas</style> with minimal change in <style=\"heat"
-#| "\">Temperature</style>.\n"
-#| "\n"
-#| "Can be run through tiles."
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.EFFECT"
 msgid ""
 "Carries <link=\"ELEMENTSGAS\">Gas</link> with minimal change in <link=\"HEAT"
@@ -4211,15 +4112,15 @@ msgid ""
 "\n"
 "Can be run through tiles."
 msgstr ""
-"<style=\"gas\">気体</style>の<style=\"heat\">熱</style>損失を最小にしたまま移"
-"送します。\n"
+"<link=\"ELEMENTSGAS\">気体</link>の<link=\"HEAT\">温度</link>変化を最小にした"
+"まま移送します。\n"
 "\n"
 "タイルを貫通して敷設できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.NAME"
 msgid "<link=\"INSULATEDGASCONDUIT\">Insulated Gas Pipe</link>"
-msgstr ""
+msgstr "<link=\"INSULATEDGASCONDUIT\">断熱型気体用パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.DESC"
@@ -4229,13 +4130,6 @@ msgid ""
 msgstr "パイプ断熱は移送中の液体の温度が変化するのを抑制します。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.EFFECT"
-#| msgid ""
-#| "Carries <style=\"liquid\">Liquid</style> with minimal change in <style="
-#| "\"heat\">Temperature</style>.\n"
-#| "\n"
-#| "Can be run through tiles."
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.EFFECT"
 msgid ""
 "Carries <link=\"ELEMENTSLIQUID\">Liquid</link> with minimal change in <link="
@@ -4243,15 +4137,15 @@ msgid ""
 "\n"
 "Can be run through tiles."
 msgstr ""
-"<style=\"liquid\">液体</style>の<style=\"heat\">熱</style>損失を最小にしたま"
-"ま移送します。\n"
+"<link=\"ELEMENTSLIQUID\">液体</link>の<link=\"HEAT\">温度</link>変化を最小に"
+"したまま移送します。\n"
 "\n"
 "タイルを貫通して敷設できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.NAME"
 msgid "<link=\"INSULATEDLIQUIDCONDUIT\">Insulated Liquid Pipe</link>"
-msgstr ""
+msgstr "<link=\"INSULATEDLIQUIDCONDUIT\">断熱型液体用パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.DESC"
@@ -4259,13 +4153,6 @@ msgid "This stuff won't go melting if things get heated."
 msgstr "高熱になっても溶融しない素材です。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.EFFECT"
-#| msgid ""
-#| "Connects buildings to <style=\"power\">Power</style> sources in extreme "
-#| "<style=\"heat\">Heat</style>.\n"
-#| "\n"
-#| "Can be run through tiles."
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.EFFECT"
 msgid ""
 "Connects buildings to <link=\"POWER\">Power</link> sources in extreme <link="
@@ -4273,15 +4160,15 @@ msgid ""
 "\n"
 "Can be run through tiles."
 msgstr ""
-"超<style=\"heat\">高熱</style>下の<style=\"power\">電力</style>源どうしを接続"
-"します。\n"
+"超<link=\"HEAT\">高熱</link>下の<link=\"POWER\">電力</link>源どうしを接続しま"
+"す。\n"
 "\n"
 "タイルを貫通して敷設できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.NAME"
 msgid "<link=\"INSULATEDWIRE\">Insulated Wire</link>"
-msgstr ""
+msgstr "<link=\"INSULATEDWIRE\">断熱型電線</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.DESC"
@@ -4291,13 +4178,6 @@ msgid ""
 msgstr "断熱タイルの低伝熱性が、タイルを通して伝わる熱を低減します。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.EFFECT"
-#| msgid ""
-#| "Used as floor and wall tile to build rooms.\n"
-#| "\n"
-#| "Reduces <style=\"heat\">Heat</style> transfer between walls, retaining "
-#| "ambient heat in an area."
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.EFFECT"
 msgid ""
 "Used as floor and wall tile to build rooms.\n"
@@ -4307,12 +4187,12 @@ msgid ""
 msgstr ""
 "部屋用の壁や床として使えるタイルです。\n"
 "\n"
-"周辺環境の温度差や、壁を通して伝わる<style=\"heat\">熱</style>を軽減します。"
+"周辺環境の温度差や、壁を通して伝わる<link=\"HEAT\">熱</link>を軽減します。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.NAME"
 msgid "<link=\"INSULATIONTILE\">Insulated Tile</link>"
-msgstr ""
+msgstr "<link=\"INSULATIONTILE\">断熱型タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.DESC"
@@ -4321,17 +4201,14 @@ msgstr ""
 "この温かい壁紙を作るために、どれだけ研究を重ねたかを知ったら驚くでしょう。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.EFFECT"
-#| msgid "Reduces <style=\"heat\">Heat</style> loss through colony walls."
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.EFFECT"
 msgid "Reduces <link=\"HEAT\">Heat</link> loss through colony walls."
-msgstr "コロニーの壁を通して伝わる<style=\"heat\">熱</style>を軽減します。"
+msgstr "コロニーの壁を通して伝わる<link=\"HEAT\">熱</link>損失を軽減します。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.NAME"
 msgid "<link=\"INSULATIONWALL\">Insulation</link>"
-msgstr ""
+msgstr "<link=\"INSULATIONWALL\">断熱材</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LADDER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LADDER.DESC"
@@ -4346,7 +4223,7 @@ msgstr "垂直方向へ複製人間を移動可能にします。"
 #. STRINGS.BUILDINGS.PREFABS.LADDER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LADDER.NAME"
 msgid "<link=\"LADDER\">Ladder</link>"
-msgstr ""
+msgstr "<link=\"LADDER\">梯子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LADDERFAST.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LADDERFAST.DESC"
@@ -4365,31 +4242,26 @@ msgstr "複製人間の昇降速度を上昇させます。"
 #. STRINGS.BUILDINGS.PREFABS.LADDERFAST.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LADDERFAST.NAME"
 msgid "<link=\"LADDERFAST\">Plastic Ladder</link>"
-msgstr ""
+msgstr "<link=\"LADDERFAST\">プラスチック製梯子r</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.DESC"
 msgid "A thermo aquatuner cools liquid and outputs the heat elsewhere."
-msgstr "液体冷却器は液体を冷却し、その熱を外部に出力します。"
+msgstr "液体クーラーは液体を冷却し、その熱を外部に出力します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.EFFECT"
-#| msgid ""
-#| "Cools the <style=\"liquid\">Liquid</style> piped through it, but outputs "
-#| "<style=\"heat\">Heat</style> in its immediate vicinity."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.EFFECT"
 msgid ""
 "Cools the <link=\"ELEMENTSLIQUID\">Liquid</link> piped through it, but "
 "outputs <link=\"HEAT\">Heat</link> in its immediate vicinity."
 msgstr ""
-"パイプから送られた<style=\"gas\">液体</style>を冷却しますが、設備自体から周辺"
-"に<style=\"heat\">熱</style>を放出します。"
+"パイプから送られた<link=\"ELEMENTSLIQUID\">液体</link>を冷却しますが、設備自"
+"体から周辺に<link=\"HEAT\">熱</link>を放出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.NAME"
 msgid "<link=\"LIQUIDCONDITIONER\">Thermo Aquatuner</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDCONDITIONER\">液体クーラー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.DESC"
@@ -4398,13 +4270,6 @@ msgid ""
 msgstr "液体用パイプは配管設備の入力または出力として使われます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.EFFECT"
-#| msgid ""
-#| "Carries <style=\"liquid\">Liquid</style> between <style=\"LiquidPiping"
-#| "\">Outputs</style> and <style=\"LiquidPiping\">Intakes</style>.\n"
-#| "\n"
-#| "Can be run through tiles."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.EFFECT"
 msgid ""
 "Carries <link=\"ELEMENTSLIQUID\">Liquid</link> between <link=\"LIQUIDPIPING"
@@ -4412,15 +4277,15 @@ msgid ""
 "\n"
 "Can be run through tiles."
 msgstr ""
-"<style=\"LiquidPiping\">取水口</style>から<style=\"LiquidPiping\">排水口</"
-"style>へ<style=\"liquid\">液体</style>を移送します。\n"
+"<link=\"LIQUIDPIPING\">取水口</link>から<link=\"LIQUIDPIPING\">排水口</link>"
+"へ<link=\"ELEMENTSLIQUID\">液体</link>を移送します。\n"
 "\n"
 "タイルを貫通して敷設できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME"
 msgid "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDCONDUIT\">液体用パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.DESC"
@@ -4430,13 +4295,6 @@ msgstr ""
 "パイプの配管を分離することで、設備損傷の原因となる内容物の混入を避けます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.EFFECT"
-#| msgid ""
-#| "Runs one <style=\"LiquidPiping\">Liquid Pipe</style> section over another "
-#| "without joining them.\n"
-#| "\n"
-#| "Can be run through tiles."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.EFFECT"
 msgid ""
 "Runs one <link=\"LIQUIDPIPING\">Liquid Pipe</link> section over another "
@@ -4444,35 +4302,32 @@ msgid ""
 "\n"
 "Can be run through tiles."
 msgstr ""
-"他の<style=\"LiquidPiping\">液体用パイプ</style>に干渉せずに配管できます。\n"
+"他の<link=\"LIQUIDPIPING\">液体用パイプ</link>に干渉せずに配管できます。\n"
 "\n"
 "タイルを貫通して敷設できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.NAME"
 msgid "<link=\"LIQUIDCONDUITBRIDGE\">Liquid Bridge</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDCONDUITBRIDGE\">液体ブリッジ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.DESC"
 msgid ""
 "A Duplicant can work a hydrofan to temporarily cool small areas as needed."
 msgstr ""
-"複製人間が必要に応じて扇風機を使うことで、狭いエリアを一時的に冷やすことがで"
+"複製人間が必要に応じて水冷扇風機を使うと、狭いエリアを一時的に冷やすことがで"
 "きます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.EFFECT"
-#| msgid "Dissipates a small amount of the <style=\"heat\">Heat</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.EFFECT"
 msgid "Dissipates a small amount of the <link=\"HEAT\">Heat</link>."
-msgstr "少量の<style=\"heat\">熱</style>を散らします。"
+msgstr "<link=\"HEAT\">熱</link>を少量放散させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.NAME"
 msgid "<link=\"LIQUIDCOOLEDFAN\">Hydrofan</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDCOOLEDFAN\">水冷扇風機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC"
@@ -4484,23 +4339,18 @@ msgstr ""
 "送ります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.EFFECT"
-#| msgid ""
-#| "Sieves one <style=\"liquid\">Liquid</style> out of a mix, sending it into "
-#| "a dedicated <style=\"LiquidPiping\">Pipe</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.EFFECT"
 msgid ""
 "Sieves one <link=\"ELEMENTSLIQUID\">Liquid</link> out of a mix, sending it "
 "into a dedicated <link=\"LIQUIDPIPING\">Pipe</link>."
 msgstr ""
-"混合液体から、指定した<style=\"liquid\">液体</style>をろ過し、別の口に繋がっ"
-"た<style=\"LiquidPiping\">パイプ</style>へ移送します。"
+"混合液体から、指定した<link=\"ELEMENTSLIQUID\">液体</link>をろ過し、別の口に"
+"繋がった<link=\"LIQUIDPIPING\">パイプ</link>へ移送します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.NAME"
 msgid "<link=\"LIQUIDFILTER\">Liquid Filter</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDFILTER\">液体フィルター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.DESC"
@@ -4510,26 +4360,21 @@ msgid ""
 msgstr "液体ヒーターは水中の病原菌を殺菌し、シャワーに適した温度に温めます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.EFFECT"
-#| msgid ""
-#| "Warms large bodies of <style=\"liquid\">Liquid</style>.\n"
-#| "\n"
-#| "Must be fully submerged."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.EFFECT"
 msgid ""
 "Warms large bodies of <link=\"ELEMENTSLIQUID\">Liquid</link>.\n"
 "\n"
 "Must be fully submerged."
 msgstr ""
-"大量の<style=\"liquid\">液体</style>を温めます。\n"
+"大量の<link=\"ELEMENTSLIQUID\">液体</link>を温めます。\n"
 "\n"
 "完全に水没している必要があります。"
 
+# Thermo Aquatuner "液体クーラー" と対になるように訳語を変更
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.NAME"
 msgid "<link=\"LIQUIDHEATER\">Liquid Tepidizer</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDHEATER\">液体ヒーター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.DESC"
@@ -4541,23 +4386,18 @@ msgstr ""
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.EFFECT"
-#| msgid ""
-#| "Automatically turns <style=\"liquid\">Liquid</style> flow on or off using "
-#| "<style=\"logic\">Automation</style> technology."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.EFFECT"
 msgid ""
 "Automatically turns <link=\"ELEMENTSLIQUID\">Liquid</link> flow on or off "
 "using <link=\"LOGIC\">Automation</link> technology."
 msgstr ""
-"<style=\"misc\">自動化</style>技術により<style=\"liquid\">液体</style>の流入"
-"を自動的に制御します。"
+"<link=\"LOGIC\">自動化</link>技術により<link=\"ELEMENTSLIQUID\">液体</link>の"
+"流入を自動的に制御します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.NAME"
 msgid "<link=\"LIQUIDLOGICVALVE\">Liquid Shutoff</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDLOGICVALVE\">液体遮断器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.DESC"
@@ -4567,13 +4407,6 @@ msgid ""
 msgstr "ミニポンプは少量のエネルギーで少量の液体を移動させるのに適しています。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.EFFECT"
-#| msgid ""
-#| "Draws in a small amount of <style=\"liquid\">Liquid</style> and runs it "
-#| "through <style=\"LiquidPiping\">Pipes</style>.\n"
-#| "\n"
-#| "Must be submerged in liquid."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.EFFECT"
 msgid ""
 "Draws in a small amount of <link=\"ELEMENTSLIQUID\">Liquid</link> and runs "
@@ -4581,15 +4414,15 @@ msgid ""
 "\n"
 "Must be submerged in liquid."
 msgstr ""
-"<style=\"liquid\">液体</style>を少量吸い上げ、<style=\"LiquidPiping\">液体用"
-"パイプ</style>に移送します。\n"
+"<link=\"ELEMENTSLIQUID\">液体</link>を少量吸い上げ、<link=\"LIQUIDPIPING\">液"
+"体用パイプ</link>に移送します。\n"
 "\n"
 "液体の中に沈めないといけません。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.NAME"
 msgid "<link=\"LIQUIDMINIPUMP\">Mini Liquid Pump</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDMINIPUMP\">ミニ吸水ポンプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.DESC"
@@ -4599,13 +4432,6 @@ msgid ""
 msgstr "設置された場所の液体を給水口から吸い込み、他の設備の出力に移送します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.EFFECT"
-#| msgid ""
-#| "Draws in <style=\"liquid\">Liquid</style> and runs it through <style="
-#| "\"LiquidPiping\">Pipes</style>.\n"
-#| "\n"
-#| "Must be submerged in liquid."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.EFFECT"
 msgid ""
 "Draws in <link=\"ELEMENTSLIQUID\">Liquid</link> and runs it through <link="
@@ -4613,31 +4439,24 @@ msgid ""
 "\n"
 "Must be submerged in liquid."
 msgstr ""
-"<style=\"liquid\">液体</style>を吸い上げ、<style=\"LiquidPiping\">液体用パイ"
-"プ</style>に移送します。\n"
+"<link=\"ELEMENTSLIQUID\">液体</link>を吸い上げ、<link=\"LIQUIDPIPING\">パイプ"
+"</link>に移送します。\n"
 "\n"
 "液体の中に沈めないといけません。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.NAME"
 msgid "<link=\"LIQUIDPUMP\">Liquid Pump</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDPUMP\">吸水ポンプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.DESC"
 msgid ""
 "Pitcher pumps are used to fetch water and other liquids for delivery to "
 "buildings."
-msgstr "ピッチャーポンプは設備に運搬する水や他の液体をくみ上げるのに使います"
+msgstr "手押しポンプは設備に運搬する水や他の液体をくみ上げるのに使います"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.EFFECT"
-#| msgid ""
-#| "Manually pumps <style=\"liquid\">Liquid</style> into bottles for "
-#| "transport.\n"
-#| "\n"
-#| "Duplicants can only carry bottled liquids."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.EFFECT"
 msgid ""
 "Manually pumps <link=\"ELEMENTSLIQUID\">Liquid</link> into bottles for "
@@ -4645,14 +4464,14 @@ msgid ""
 "\n"
 "Duplicants can only carry bottled liquids."
 msgstr ""
-"持ち運びのために、<style=\"liquid\">液体</style>をボトルに詰めます。\n"
+"持ち運びのために、<link=\"ELEMENTSLIQUID\">液体</link>をボトルに詰めます。\n"
 "\n"
 "複製人間が液体を運搬するにはボトル詰めされている必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.NAME"
 msgid "<link=\"LIQUIDPUMPINGSTATION\">Pitcher Pump</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDPUMPINGSTATION\">手押しポンプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.DESC"
@@ -4662,23 +4481,18 @@ msgid ""
 msgstr "バルブは無損失でパイプを流れる液体の量を調整します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.EFFECT"
-#| msgid ""
-#| "Controls the <style=\"liquid\">Liquid</style> volume permitted through "
-#| "<style=\"LiquidPiping\">Pipes</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.EFFECT"
 msgid ""
 "Controls the <link=\"ELEMENTSLIQUID\">Liquid</link> volume permitted through "
 "<link=\"LIQUIDPIPING\">Pipes</link>."
 msgstr ""
-"<style=\"liquid\">液体</style>の流量を調整し、接続された<style=\"LiquidPiping"
-"\">パイプ</style>に移します。"
+"<link=\"ELEMENTSLIQUID\">液体</link>の流量を調整し、接続された<link="
+"\"LIQUIDPIPING\">パイプ</link>に移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.NAME"
 msgid "<link=\"LIQUIDVALVE\">Liquid Valve</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDVALVE\">液体バルブ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.DESC"
@@ -4686,23 +4500,18 @@ msgid "Vents are an exit point for liquids from plumbing systems."
 msgstr "排水口は液体循環系の出口にあたります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.EFFECT"
-#| msgid ""
-#| "Releases <style=\"liquid\">Liquid</style> from <style=\"LiquidPiping"
-#| "\">Liquid Pipes</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.EFFECT"
 msgid ""
 "Releases <link=\"ELEMENTSLIQUID\">Liquid</link> from <link=\"LIQUIDPIPING"
 "\">Liquid Pipes</link>."
 msgstr ""
-"<style=\"LiquidPiping\">液体用パイプ</style>を通して<style=\"liquid\">液体</"
-"style>を放出します。"
+"<link=\"LIQUIDPIPING\">液体用パイプ</link>を通して<link=\"ELEMENTSLIQUID\">液"
+"体</style>を放出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.NAME"
 msgid "<link=\"LIQUIDVENT\">Liquid Vent</link>"
-msgstr ""
+msgstr "<link=\"LIQUIDVENT\">排水口</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC"
@@ -4710,24 +4519,19 @@ msgid "Detects the presence and quantity of nearby germs"
 msgstr "周辺に存在する病原菌の濃度を検出します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
-#| msgid ""
-#| "<style=\"logic\">Active</style>/<style=\"logic\">Standby</style> "
-#| "depending on quantity of surrounding <style=\"disease\">Germs</style>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
 msgid ""
 "<link=\"LOGIC\">Active</link>/<link=\"LOGIC\">Standby</link> depending on "
 "quantity of surrounding <link=\"DISEASE\">Germs</link>."
 msgstr ""
-"周囲の<style=\"disease\">病原菌</style>濃度が指定した範囲内にある時、<style="
-"\"logic\">アクティブ</style>または<style=\"logic\">スタンバイ</style>になりま"
+"周囲の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
+"\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
 msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
-msgstr ""
+msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC"
