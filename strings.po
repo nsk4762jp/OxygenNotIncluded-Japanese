@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.0.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -954,12 +954,20 @@ msgid "Requires Emptying"
 msgstr "排出が必要"
 
 #. STRINGS.BUILDING.STATUSITEMS.HABITATNEEDSEMPTYING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.HABITATNEEDSEMPTYING.TOOLTIP"
+#| msgid ""
+#| "This <link=\"ALGAEHABITAT\">Algae Terrarium</link> needs to be emptied of "
+#| "<link=\"DIRTYWATER\">Polluted Water</link>. Consider using a <link="
+#| "\"BOTTLEEMPTIER\">Bottle Emptier</link> to dispose of the <link="
+#| "\"DIRTYWATER\">Polluted Water</link>."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.HABITATNEEDSEMPTYING.TOOLTIP"
 msgid ""
 "This <link=\"ALGAEHABITAT\">Algae Terrarium</link> needs to be emptied of "
-"<link=\"DIRTYWATER\">Polluted Water</link>. Consider using a <link="
-"\"BOTTLEEMPTIER\">Bottle Emptier</link> to dispose of the <link=\"DIRTYWATER"
-"\">Polluted Water</link>."
+"<link=\"DIRTYWATER\">Polluted Water</link>\n"
+"------------------\n"
+"<link=\"BOTTLEEMPTIER\">Bottle Emptier</link>s can be used to transport and "
+"dispose of <link=\"DIRTYWATER\">Polluted Water</link> in designated areas"
 msgstr ""
 "この<link=\"ALGAEHABITAT\">テラリウム</link>は<link=\"DIRTYWATER\">汚染水</"
 "link>を空にする必要があります。 <link=\"DIRTYWATER\">汚染水</link>の廃棄には"
@@ -998,6 +1006,22 @@ msgstr "水面下への設置が必要"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_LIQUID.TOOLTIP"
 msgid "This building must be submerged in liquid to function"
 msgstr "この設備が動作するには液体の中に沈めないといけません"
+
+#. STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.INCUBATING.NAME"
+#| msgid "Incubating"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME"
+msgid "Incubating: {Percent}"
+msgstr "孵化中"
+
+#. STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.TOOLTIP"
+msgid ""
+"This egg incubating cozily\n"
+"------------------\n"
+"It will hatch when Incubation reaches 100%"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.INSUFFICIENT_CONVERSION_MASS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INSUFFICIENT_CONVERSION_MASS.NAME"
@@ -2771,6 +2795,14 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.NAME"
 msgid "<link=\"ALGAEHABITAT\">Algae Terrarium</link>"
 msgstr "<link=\"ALGAEHABITAT\">テラリウム</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.SIDESCREEN_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.DIRTYWATER.NAME"
+#| msgid "<link=\"DIRTYWATER\">Polluted Water</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.SIDESCREEN_TITLE"
+msgid "Empty <link=\"DIRTYWATER\">Polluted Water</link> Threshold"
+msgstr "<link=\"DIRTYWATER\">汚染水</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.APOTHECARY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.APOTHECARY.DESC"
 msgid "All-natural remedies to cure what ails you."
@@ -3123,6 +3155,19 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMPOST.NAME"
 msgid "<link=\"COMPOST\">Compost</link>"
 msgstr "<link=\"COMPOST\">堆肥置き場</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.CONDUIT.STATUS_ITEM.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.MARKEDFORCOMPOST.NAME"
+#| msgid "Marked For Compost"
+msgctxt "STRINGS.BUILDINGS.PREFABS.CONDUIT.STATUS_ITEM.NAME"
+msgid "Marked for Emptying"
+msgstr "堆肥用にマーク済"
+
+#. STRINGS.BUILDINGS.PREFABS.CONDUIT.STATUS_ITEM.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.CONDUIT.STATUS_ITEM.TOOLTIP"
+msgid "Awaiting a Plumber to clear this pipe"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.DESC"
@@ -3530,6 +3575,82 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.FIREPOLE.NAME"
 msgid "<link=\"FIREPOLE\">Fire Pole</link>"
 msgstr "<link=\"FIREPOLE\">滑り棒</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_LIQUID.TOOLTIP"
+#| msgid "This building must be submerged in liquid to function"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.DESC"
+msgid ""
+"This building must be built above liquid to prevent fish from suffocating."
+msgstr "この設備が動作するには液体の中に沈めないといけません"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREDELIVERYPOINT.EFFECT"
+#| msgid ""
+#| "Releases trapped critters back into the world.\n"
+#| "\n"
+#| "Can be used multiple times."
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.EFFECT"
+msgid ""
+"Releases trapped fish back into the world.\n"
+"\n"
+"Can be used multiple times."
+msgstr ""
+"罠にかかった動物を自然に帰します。\n"
+"\n"
+"複数回使うことができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.TILEPOI.NAME"
+#| msgid "<link=\"TILEPOI\">Tile</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.NAME"
+msgid "<link=\"FISHDELIVERYPOINT\">Fish Release</link>"
+msgstr "<link=\"TILEPOI\">タイル</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHFEEDER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHFEEDER.DESC"
+msgid "Build this feeder above a body of water to feed the fish within."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.FISHFEEDER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHFEEDER.EFFECT"
+msgid ""
+"Automatically dispenses stored food into the area below.\n"
+"\n"
+"Dispenses once per day."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.FISHFEEDER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.NAME"
+#| msgid "<link=\"CREATUREFEEDER\">Critter Feeder</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHFEEDER.NAME"
+msgid "<link=\"FISHFEEDER\">Fish Feeder</link>"
+msgstr "<link=\"CREATUREFEEDER\">給餌機</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHTRAP.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHTRAP.DESC"
+msgid "Trapped fish will automatically be bagged for transport."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.FISHTRAP.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHTRAP.EFFECT"
+msgid ""
+"Attracts and traps swimming fish.\n"
+"\n"
+"Single use."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.FISHTRAP.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.FOOD.FRIEDMUSHBAR.NAME"
+#| msgid "<link=\"FRIEDMUSHBAR\">Mush Fry</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHTRAP.NAME"
+msgid "<link=\"FISHTRAP\">Fish Trap</link>"
+msgstr "<link=\"FRIEDMUSHBAR\">マッシュフライ</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.FLOORLAMP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLOORLAMP.DESC"
 msgid ""
@@ -3673,6 +3794,231 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITBRIDGE.NAME"
 msgid "<link=\"GASCONDUITBRIDGE\">Gas Bridge</link>"
 msgstr "<link=\"GASCONDUITBRIDGE\">気体ブリッジ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.DESC"
+msgid ""
+"Gas Pipe Germ Sensors are used to control automation behaviour in the "
+"presence of disease."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
+#| msgid ""
+#| "<link=\"LOGIC\">Active</link>/<link=\"LOGIC\">Standby</link> depending on "
+#| "quantity of surrounding <link=\"DISEASE\">Germs</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.EFFECT"
+msgid ""
+"Becomes<link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
+"depending on quantity of the contained <link=\"DISEASE\">Germs</link>."
+msgstr ""
+"周囲の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
+"\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
+"す。"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
+#| msgid "Active/Standby based on ambient Gas Pressure"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_DESC"
+msgid "Active/Standby based on the contained Germs"
+msgstr "周囲の気圧によるアクティブ/スタンバイ"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
+#| msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.NAME"
+msgid "<link=\"GASCONDUITDISEASESENSOR\">Gas Pipe Germ Sensor</link>"
+msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.DESC"
+msgid ""
+"Gas Pipe Element Sensors can be used to detect the presence of a specific "
+"gas in a pipe"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
+#| msgid ""
+#| "Logic input will become <link=\"LOGIC\">Active</link> when battery is "
+#| "less than {0}% charged"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.EFFECT"
+msgid ""
+"Becomes <link=\"LOGIC\">Active</link> when the configured Gas Element is "
+"detected."
+msgstr ""
+"論理入力はバッテリーが{0}%未満になると<link=\"LOGIC\">アクティブ</link>になり"
+"ます"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
+#| msgid "Active/Standby based on ambient Gas Pressure"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_DESC"
+msgid "Active/Standby based on the contained Gas"
+msgstr "周囲の気圧によるアクティブ/スタンバイ"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
+#| msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.NAME"
+msgid "<link=\"LOGICELEMENTSENSORGAS\">Gas Pipe Element Sensor</link>"
+msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.EFFECT"
+msgid ""
+"Has a secondary output which is only used when the primary output is blocked."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUIT.NAME"
+#| msgid "<link=\"GASCONDUIT\">Gas Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.NAME"
+msgid "<link=\"GASCONDUITOVERFLOW\">Gas Overflow Valve</link>"
+msgstr "<link=\"GASCONDUIT\">気体用パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.EFFECT"
+msgid ""
+"Has a secondary input which is only drawn from when the primary input is "
+"empty."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUIT.NAME"
+#| msgid "<link=\"GASCONDUIT\">Gas Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.NAME"
+msgid "<link=\"GASCONDUITPREFERENTIALFLOW\">Priority Gas Flow</link>"
+msgstr "<link=\"GASCONDUIT\">気体用パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.DESC"
+msgid ""
+"Radiant pipes significantly improve the rate of temperature exchange with "
+"the surrounding environment."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.EFFECT"
+#| msgid ""
+#| "Carries <link=\"ELEMENTSGAS\">Gas</link> with minimal change in <link="
+#| "\"HEAT\">Temperature</link>.\n"
+#| "\n"
+#| "Can be run through tiles."
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.EFFECT"
+msgid ""
+"Carries <link=\"ELEMENTSGAS\">Gas</link> and encourages significant change "
+"in <link=\"HEAT\">Temperature</link>.\n"
+"\n"
+"Can be run through tiles."
+msgstr ""
+"<link=\"ELEMENTSGAS\">気体</link>の<link=\"HEAT\">温度</link>変化を最小にした"
+"まま移送します。\n"
+"\n"
+"タイルを貫通して敷設できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUIT.NAME"
+#| msgid "<link=\"GASCONDUIT\">Gas Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.NAME"
+msgid "<link=\"GASCONDUITRADIANT\">Radiant Gas Pipe</link>"
+msgstr "<link=\"GASCONDUIT\">気体用パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC"
+#| msgid ""
+#| "Thermo Sensors can autodisable buildings when they approach inoperable "
+#| "temperatures."
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC"
+msgid ""
+"Gas Pipe Thermo Sensors can disable buildings when contents reach a certain "
+"temperature."
+msgstr ""
+"温度センサーは設備が稼働不可能な温度に達した時に自動停止させることができま"
+"す。"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</"
+#| "link> when ambient <link=\"HEAT\">Temperature</link> enters the chosen "
+#| "range."
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.EFFECT"
+msgid ""
+"Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
+"when the pipe contents <link=\"HEAT\">Temperature</link> enters the chosen "
+"range."
+msgstr ""
+"周囲の<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link=\"LOGIC\">ア"
+"クティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_DESC"
+#| msgid "Active/Standby based on Ambient <link=\"HEAT\">Temperature</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_DESC"
+msgid ""
+"Active/Standby based on the <link=\"HEAT\">Temperature</link> of the "
+"contained Gas"
+msgstr "周囲の<style=\"temperature\">温度</style>によるアクティブ/スタンバイ"
+
+#. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.NAME"
+#| msgid "<link=\"LOGICTEMPERATURESENSOR\">Thermo Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.NAME"
+msgid "<link=\"GASCONDUITTEMPERATURESENSOR\">Gas Pipe Thermo Sensor</link>"
+msgstr "<link=\"LOGICTEMPERATURESENSOR\">温度センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.DESC"
@@ -4309,6 +4655,239 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.NAME"
 msgid "<link=\"LIQUIDCONDUITBRIDGE\">Liquid Bridge</link>"
 msgstr "<link=\"LIQUIDCONDUITBRIDGE\">液体ブリッジ</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.DESC"
+msgid ""
+"Liquid Pipe Germ Sensors are used to control automation behaviour in the "
+"presence of disease."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
+#| msgid ""
+#| "<link=\"LOGIC\">Active</link>/<link=\"LOGIC\">Standby</link> depending on "
+#| "quantity of surrounding <link=\"DISEASE\">Germs</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.EFFECT"
+msgid ""
+"Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
+"depending on quantity of the contained <link=\"DISEASE\">Germs</link>."
+msgstr ""
+"周囲の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
+"\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
+"す。"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.LOGIC_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
+#| msgid "Active/Standby based on ambient Gas Pressure"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.LOGIC_PORT_DESC"
+msgid "Active/Standby based on the contained Germs"
+msgstr "周囲の気圧によるアクティブ/スタンバイ"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
+#| msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.NAME"
+msgid "<link=\"LIQUIDCONDUITDISEASESENSOR\">Liquid Pipe Germ Sensor</link>"
+msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BOTTLEEMPTIER.DESC"
+#| msgid ""
+#| "A bottle emptier's Element Filter can be used to designate areas for "
+#| "specific liquid storage."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.DESC"
+msgid ""
+"Liquid Pipe Element Sensors can be used to detect the presence of a specific "
+"liquid in a pipe"
+msgstr "ボトル空けの要素フィルターは特定の液体容器を指定することができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
+#| msgid ""
+#| "Logic input will become <link=\"LOGIC\">Active</link> when battery is "
+#| "less than {0}% charged"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.EFFECT"
+msgid ""
+"Becomes <link=\"LOGIC\">Active</link> when the configured Liquid Element is "
+"detected."
+msgstr ""
+"論理入力はバッテリーが{0}%未満になると<link=\"LOGIC\">アクティブ</link>になり"
+"ます"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_DESC
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_DESC"
+#| msgid "Active/Standby based on Ambient Liquid Pressure"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_DESC"
+msgid "Active/Standby based on the contained Liquid"
+msgstr "周囲の水圧によるアクティブ/スタンバイ"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.NAME"
+#| msgid "<link=\"LOGICPRESSURESENSORLIQUID\">Hydro Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.NAME"
+msgid "<link=\"LOGICELEMENTSENSORLIQUID\">Liquid Pipe Element Sensor</link>"
+msgstr "<link=\"LOGICPRESSURESENSORLIQUID\">水圧センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.EFFECT"
+msgid ""
+"Has a secondary output which is only used when the primary output is blocked."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME"
+#| msgid "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.NAME"
+msgid "<link=\"LIQUIDCONDUITOVERFLOW\">Liquid Overflow Valve</link>"
+msgstr "<link=\"LIQUIDCONDUIT\">液体用パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.EFFECT"
+msgid ""
+"Has a secondary input which is only drawn from when the primary input is "
+"empty."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME"
+#| msgid "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.NAME"
+msgid "<link=\"LIQUIDCONDUITPREFERENTIALFLOW\">Priority Liquid Flow</link>"
+msgstr "<link=\"LIQUIDCONDUIT\">液体用パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.DESC"
+msgid ""
+"Radiant pipes significantly improve the rate of temperature exchange with "
+"the surrounding environment."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.EFFECT"
+#| msgid ""
+#| "Carries <link=\"ELEMENTSLIQUID\">Liquid</link> with minimal change in "
+#| "<link=\"HEAT\">Temperature</link>.\n"
+#| "\n"
+#| "Can be run through tiles."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.EFFECT"
+msgid ""
+"Carries <link=\"ELEMENTSLIQUID\">Liquid</link> and encourages significant "
+"change in <link=\"HEAT\">Temperature</link>.\n"
+"\n"
+"Can be run through tiles."
+msgstr ""
+"<link=\"ELEMENTSLIQUID\">液体</link>の<link=\"HEAT\">温度</link>変化を最小に"
+"したまま移送します。\n"
+"\n"
+"タイルを貫通して敷設できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME"
+#| msgid "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.NAME"
+msgid "<link=\"LIQUIDCONDUITRADIANT\">Radiant Liquid Pipe</link>"
+msgstr "<link=\"LIQUIDCONDUIT\">液体用パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC"
+#| msgid ""
+#| "Thermo Sensors can autodisable buildings when they approach inoperable "
+#| "temperatures."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC"
+msgid ""
+"Liquid Pipe Thermo Sensors can disable buildings when their contents reach a "
+"certain temperature."
+msgstr ""
+"温度センサーは設備が稼働不可能な温度に達した時に自動停止させることができま"
+"す。"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</"
+#| "link> when ambient <link=\"HEAT\">Temperature</link> enters the chosen "
+#| "range."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.EFFECT"
+msgid ""
+"Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
+"when the pipe contents <link=\"HEAT\">Temperature</link> enters the chosen "
+"range."
+msgstr ""
+"周囲の<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link=\"LOGIC\">ア"
+"クティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_DESC"
+#| msgid "Active/Standby based on Ambient <link=\"HEAT\">Temperature</link>"
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_DESC"
+msgid ""
+"Active/Standby based on the <link=\"HEAT\">Temperature</link> of the "
+"contained Liquid"
+msgstr "周囲の<style=\"temperature\">温度</style>によるアクティブ/スタンバイ"
+
+#. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.NAME"
+#| msgid "<link=\"LOGICTEMPERATURESENSOR\">Thermo Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.NAME"
+msgid ""
+"<link=\"LIQUIDCONDUITTEMPERATURESENSOR\">Liquid Pipe Thermo Sensor</link>"
+msgstr "<link=\"LOGICTEMPERATURESENSOR\">温度センサー</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.DESC"
 msgid ""
@@ -4517,19 +5096,123 @@ msgid "Detects the presence and quantity of nearby germs"
 msgstr "周辺に存在する病原菌の濃度を検出します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
+#| msgid ""
+#| "<link=\"LOGIC\">Active</link>/<link=\"LOGIC\">Standby</link> depending on "
+#| "quantity of surrounding <link=\"DISEASE\">Germs</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
 msgid ""
-"<link=\"LOGIC\">Active</link>/<link=\"LOGIC\">Standby</link> depending on "
-"quantity of surrounding <link=\"DISEASE\">Germs</link>."
+"Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
+"depending on quantity of surrounding <link=\"DISEASE\">Germs</link>."
 msgstr ""
 "周囲の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
 "\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
 "す。"
 
+#. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
+#| msgid "Active/Standby based on ambient Gas Pressure"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_DESC"
+msgid "Active/Standby based on ambient Germs"
+msgstr "周囲の気圧によるアクティブ/スタンバイ"
+
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
 msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
 msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.DESC"
+msgid ""
+"These sensors can detect the presence of a specific gas and alter systems "
+"accordingly."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> if the system connected to its "
+#| "Input is on <link=\"LOGIC\">Standby</link>.\n"
+#| "\n"
+#| "Goes into <link=\"LOGIC\">Standby</link> when its Input is <link=\"LOGIC"
+#| "\">Active</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.EFFECT"
+msgid ""
+"Becomes <link=\"LOGIC\">Active</link> when the selected Gaseous Element is "
+"detected.\n"
+"\n"
+"Remains on <link=\"LOGIC\">Standby</link> when the Element is not present."
+msgstr ""
+"入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">アクティブ</"
+"link>になります。\n"
+"\n"
+"入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">スタンバイ</"
+"link>に遷移します。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
+#| msgid "Active/Standby based on ambient Gas Pressure"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_DESC"
+msgid "Active/Standby based on the ambient Gas"
+msgstr "周囲の気圧によるアクティブ/スタンバイ"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
+#| msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.NAME"
+msgid "<link=\"LOGICELEMENTSENSORGAS\">Gaseous Element Sensor</link>"
+msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.DESC"
+msgid ""
+"These sensors can detect the presence of a specific liquid and alter systems "
+"accordingly."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> if the system connected to its "
+#| "Input is on <link=\"LOGIC\">Standby</link>.\n"
+#| "\n"
+#| "Goes into <link=\"LOGIC\">Standby</link> when its Input is <link=\"LOGIC"
+#| "\">Active</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.EFFECT"
+msgid ""
+"Becomes <link=\"LOGIC\">Active</link> when the selected Liquid Element is "
+"detected.\n"
+"\n"
+"Remains on <link=\"LOGIC\">Standby</link> when the Element is not present."
+msgstr ""
+"入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">アクティブ</"
+"link>になります。\n"
+"\n"
+"入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">スタンバイ</"
+"link>に遷移します。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_DESC
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_DESC"
+#| msgid "Active/Standby based on Ambient Liquid Pressure"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_DESC"
+msgid "Active/Standby based on the ambient Liquid"
+msgstr "周囲の水圧によるアクティブ/スタンバイ"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTSLIQUID"
+#| msgid "<link=\"ELEMENTSLIQUID\">Liquids</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.NAME"
+msgid "<link=\"LOGICELEMENTSENSORLIQUID\">Liquid Element Sensor</link>"
+msgstr "<link=\"ELEMENTSLIQUID\">液体</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC"
@@ -4709,40 +5392,65 @@ msgid ""
 msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> if the system connected to its "
+#| "Input is on <link=\"LOGIC\">Standby</link>.\n"
+#| "\n"
+#| "Goes into <link=\"LOGIC\">Standby</link> when its Input is <link=\"LOGIC"
+#| "\">Active</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT"
 msgid ""
-"When the <link=\"WRITE\">logic</link> port is <link=\"LOGIC\">Active</link> "
-"the <link=\"VALUE\">logic</link> port is read and stored. Reading from the "
-"<link=\"LOGIC\">Read</link> port will then return the new value."
+"Becomes <link=\"LOGIC\">Active</link> when the <link=\"SET\">logic</link> "
+"port is <link=\"LOGIC\">Active</link>. Goes to <link=\"LOGIC\">Standby</"
+"link> when the reset port is <link=\"LOGIC\">Active</link>."
 msgstr ""
-"<link=\"WRITE\">論理</link>ポートが<link=\"LOGIC\">アクティブ</link>になる"
-"と、<link=\"VALUE\">論理</link>ポートが読み込まれます。<link=\"LOGIC\">読み込"
-"み</link>ポートは新しい値を返します。"
+"入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">アクティブ</"
+"link>になります。\n"
+"\n"
+"入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">スタンバイ</"
+"link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME"
+#| msgid "<link=\"LOGICMEMORY\">Memory</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME"
-msgid "<link=\"LOGICMEMORY\">Memory</link>"
+msgid "<link=\"LOGICMEMORY\">Memory Toggle</link>"
 msgstr "<link=\"LOGICMEMORY\">メモリ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIMEDSWITCHSIDESCREEN.CURRENTSTATE"
+#| msgid "Current State:"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_DESC"
-msgid "Stored Value"
-msgstr "保持した値"
+msgid "Current Value"
+msgstr "現在の状態:"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SWITCHSTATUSINACTIVE.NAME"
+#| msgid "Inactive"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_DESC"
+msgid "Make Inactive"
+msgstr "スイッチオフ"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT_DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SWITCHSTATUSACTIVE.NAME"
+#| msgid "Active"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT_DESC"
+msgid "Make Active"
+msgstr "スイッチオン"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.STATUS_ITEM_VALUE
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.NEEDS.CURRENT_NEED_LEVEL"
+#| msgid "Current Level: {0}"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.STATUS_ITEM_VALUE"
-msgid "Stored Value: {0}"
-msgstr "保持した値: {0}"
-
-#. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.VALUE_PORT_DESC
-msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.VALUE_PORT_DESC"
-msgid "Specify Value"
-msgstr "特殊値"
-
-#. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.WRITE_PORT_DESC
-msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.WRITE_PORT_DESC"
-msgid "Trigger Write"
-msgstr "書き込みトリガー"
+msgid "Current Value: {0}"
+msgstr "現在の Level: {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC"
@@ -5522,10 +6230,15 @@ msgid "Plastic can be used to craft unique buildings and goods."
 msgstr "プラスチックは特殊な設備や備品を作成するのに使われます。"
 
 #. STRINGS.BUILDINGS.PREFABS.POLYMERIZER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.POLYMERIZER.EFFECT"
+#| msgid ""
+#| "Converts <link=\"CRUDEOIL\">Crude Oil</link> into raw <link=\"PETROLEUM"
+#| "\">Petroleum</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.POLYMERIZER.EFFECT"
 msgid ""
-"Converts <link=\"CRUDEOIL\">Crude Oil</link> into raw <link=\"PETROLEUM"
-"\">Petroleum</link>."
+"Converts <link=\"PETROLEUM\">Petroleum</link> into raw <link=\"POLYPROPYLENE"
+"\">Plastic</link>."
 msgstr ""
 "<link=\"CRUDEOIL\">原油</link>を<link=\"PETROLEUM\">石油</link>に変換します。"
 
@@ -5859,6 +6572,24 @@ msgstr "<link=\"SCULPTURE\">彫像用ブロック</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCULPTURE.POORQUALITYNAME"
 msgid "\"Abstract\" Sculpture"
 msgstr "彫像的な「何か」"
+
+#. STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.DESC"
+msgid "Shearing stations are used to shear Dreckos."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.EFFECT"
+msgid "Shears dreckos."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FARMSTATION.NAME"
+#| msgid "<link=\"FARMSTATION\">Farm Station</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.NAME"
+msgid "<link=\"SHEARINGSTATION\">Shearing Station</link>"
+msgstr "<link=\"FARMSTATION\">農業端末</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SHOWER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SHOWER.DESC"
@@ -6725,6 +7456,90 @@ msgctxt "STRINGS.CODEX.BRISTLEBLOSSOM.TITLE"
 msgid "Bristle Blossom"
 msgstr "ブリッスルブロッサム"
 
+#. STRINGS.CODEX.CLEANER.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.CLEANER.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.CLEANER.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.CLEANER.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.CLEANER.TITLE
+msgctxt "STRINGS.CODEX.CLEANER.TITLE"
+msgid "Gulp Fish"
+msgstr ""
+
+#. STRINGS.CODEX.CREATURE_DESCRIPTORS.TEMPERATURE.COMFORT_RANGE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.NEUTRAL"
+#| msgid "Comfort Zone"
+msgctxt "STRINGS.CODEX.CREATURE_DESCRIPTORS.TEMPERATURE.COMFORT_RANGE"
+msgid "Comfort range: {0}"
+msgstr "適温エリア"
+
+#. STRINGS.CODEX.CREATURE_DESCRIPTORS.TEMPERATURE.NON_LETHAL_RANGE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE"
+#| msgid "Change rate: {0}"
+msgctxt "STRINGS.CODEX.CREATURE_DESCRIPTORS.TEMPERATURE.NON_LETHAL_RANGE"
+msgid "Liveable range: {0}"
+msgstr "変動量: {0}"
+
+#. STRINGS.CODEX.CRYSTAL.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.CRYSTAL.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.CRYSTAL.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.CRYSTAL.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.CRYSTAL.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
+#| msgid "Shine Bug"
+msgctxt "STRINGS.CODEX.CRYSTAL.TITLE"
+msgid "Crystal Shine Bug"
+msgstr "シャインバグ"
+
 #. STRINGS.CODEX.DECOR.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.DECOR.BODY.CONTAINER1"
 msgid "Description of decor, stress, expectations"
@@ -6739,6 +7554,63 @@ msgstr "感覚の質"
 msgctxt "STRINGS.CODEX.DECOR.TITLE"
 msgid "<link=\"DECOR\">Decor</link>"
 msgstr "<link=\"DECOR\">装飾</link>"
+
+#. STRINGS.CODEX.DENSE.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.DENSE.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.DENSE.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.DENSE.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.DENSE.TITLE
+msgctxt "STRINGS.CODEX.DENSE.TITLE"
+msgid "Dense Puft"
+msgstr ""
+
+#. STRINGS.CODEX.DRECKO.BODY.CONTAINER1
+msgctxt "STRINGS.CODEX.DRECKO.BODY.CONTAINER1"
+msgid ""
+"Dreckos are a reptilian species boasting billions of microscopic hairs on "
+"their feet, allowing them to stick to and climb most surfaces.\n"
+"\n"
+"The tail of the Drecko, called the \"train\", is purely for decoration and "
+"can be lost or shorn without harm to the animal.\n"
+"\n"
+"As a result, Drecko fibers are often farmed for use in textile production."
+msgstr ""
+
+#. STRINGS.CODEX.DRECKO.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
+#| msgid "Domesticability"
+msgctxt "STRINGS.CODEX.DRECKO.SUBTITLE"
+msgid "Domesticable Critter"
+msgstr "動物好き"
+
+#. STRINGS.CODEX.DRECKO.TITLE
+msgctxt "STRINGS.CODEX.DRECKO.TITLE"
+msgid "Drecko"
+msgstr ""
 
 #. STRINGS.CODEX.DUSKCAP.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.DUSKCAP.BODY.CONTAINER1"
@@ -6787,6 +7659,38 @@ msgctxt "STRINGS.CODEX.EXAMPLECATEGORY.TITLE"
 msgid "Example Title"
 msgstr "タイトルのサンプル"
 
+#. STRINGS.CODEX.GLOSSY.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.GLOSSY.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.GLOSSY.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.GLOSSY.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.GLOSSY.TITLE
+msgctxt "STRINGS.CODEX.GLOSSY.TITLE"
+msgid "Glossy Drecko"
+msgstr ""
+
 #. STRINGS.CODEX.HATCH.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.HATCH.BODY.CONTAINER1"
 msgid ""
@@ -6804,9 +7708,12 @@ msgstr ""
 "検知することができ、暗い洞窟やトンネルを好みます。"
 
 #. STRINGS.CODEX.HATCH.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
+#| msgid "Domesticability"
 msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-msgid "Critter"
-msgstr "動物"
+msgid "Domesticable Critter"
+msgstr "動物好き"
 
 #. STRINGS.CODEX.HATCH.TITLE
 msgctxt "STRINGS.CODEX.HATCH.TITLE"
@@ -6823,15 +7730,36 @@ msgctxt "STRINGS.CODEX.HEADERS.BUILDINGREQUIREMENTS"
 msgid "Requirements"
 msgstr "必要条件"
 
+#. STRINGS.CODEX.HEADERS.COMFORTRANGE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE"
+#| msgid "Temperature"
+msgctxt "STRINGS.CODEX.HEADERS.COMFORTRANGE"
+msgid "Temperature Range"
+msgstr "温度"
+
 #. STRINGS.CODEX.HEADERS.DIET
 msgctxt "STRINGS.CODEX.HEADERS.DIET"
 msgid "Diet"
 msgstr "食物"
 
+#. STRINGS.CODEX.HEADERS.ELEMENTTRANSITIONS
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.TRANSDIMENSIONAL"
+#| msgid "Transdimensional"
+msgctxt "STRINGS.CODEX.HEADERS.ELEMENTTRANSITIONS"
+msgid "Transitions"
+msgstr "次元を超えた"
+
 #. STRINGS.CODEX.HEADERS.FABRICATIONS
 msgctxt "STRINGS.CODEX.HEADERS.FABRICATIONS"
 msgid "Recipes"
 msgstr "レシピ"
+
+#. STRINGS.CODEX.HEADERS.HATCHESFROMEGG
+msgctxt "STRINGS.CODEX.HEADERS.HATCHESFROMEGG"
+msgid "Comes from"
+msgstr ""
 
 #. STRINGS.CODEX.HEADERS.PREREQUISITE_ROLES
 msgctxt "STRINGS.CODEX.HEADERS.PREREQUISITE_ROLES"
@@ -6853,10 +7781,26 @@ msgctxt "STRINGS.CODEX.HEADERS.RECEPTACLE"
 msgid "Plants"
 msgstr "植物"
 
+#. STRINGS.CODEX.HEADERS.RECIPE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEADERS.FABRICATIONS"
+#| msgid "Recipes"
+msgctxt "STRINGS.CODEX.HEADERS.RECIPE"
+msgid "Recipe"
+msgstr "レシピ"
+
 #. STRINGS.CODEX.HEADERS.ROLE_PERKS
 msgctxt "STRINGS.CODEX.HEADERS.ROLE_PERKS"
 msgid "Role Perks"
 msgstr "職業特性"
+
+#. STRINGS.CODEX.HEADERS.SUBENTRIES
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.CONTROLS"
+#| msgid "Controls"
+msgctxt "STRINGS.CODEX.HEADERS.SUBENTRIES"
+msgid "Contents"
+msgstr "コントロール"
 
 #. STRINGS.CODEX.HEADERS.TECH_UNLOCKS
 msgctxt "STRINGS.CODEX.HEADERS.TECH_UNLOCKS"
@@ -6946,6 +7890,42 @@ msgctxt "STRINGS.CODEX.MEALWOOD.TITLE"
 msgid "Mealwood"
 msgstr "ミールウッド"
 
+#. STRINGS.CODEX.MOLTEN.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.MOLTEN.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.MOLTEN.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.MOLTEN.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+# 訳語が見つからない...
+#. STRINGS.CODEX.MOLTEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.SLICKSTER.TITLE"
+#| msgid "Slickster"
+msgctxt "STRINGS.CODEX.MOLTEN.TITLE"
+msgid "Molten Slickster"
+msgstr "スリックスター"
+
 #. STRINGS.CODEX.MORB.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.MORB.BODY.CONTAINER1"
 msgid ""
@@ -6999,6 +7979,66 @@ msgctxt "STRINGS.CODEX.MUCKROOT.TITLE"
 msgid "Muckroot"
 msgstr "ムックルート"
 
+#. STRINGS.CODEX.NEGA.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.NEGA.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.NEGA.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.NEGA.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.NEGA.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
+#| msgid "Shine Bug"
+msgctxt "STRINGS.CODEX.NEGA.TITLE"
+msgid "Nega Shine Bug"
+msgstr "シャインバグ"
+
+#. STRINGS.CODEX.PACU.BODY.CONTAINER1
+msgctxt "STRINGS.CODEX.PACU.BODY.CONTAINER1"
+msgid ""
+"The Pacu fish is often interpreted as possessing a vacant stare due to its "
+"large and unblinking eyes, yet they are remarkably bright and friendly "
+"creatures.\n"
+"\n"
+"It is said that the average Pacu intelligence is comparable to that of a "
+"dog, and that they are capable of learning and distinguishing from over "
+"twenty human faces."
+msgstr ""
+
+#. STRINGS.CODEX.PACU.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.FETCHCREATURE.STATUS"
+#| msgid "Relocating Critter"
+msgctxt "STRINGS.CODEX.PACU.SUBTITLE"
+msgid "Aquatic Critter"
+msgstr "動物移送中"
+
+#. STRINGS.CODEX.PACU.TITLE
+msgctxt "STRINGS.CODEX.PACU.TITLE"
+msgid "Pacu"
+msgstr ""
+
 #. STRINGS.CODEX.PAGENOTFOUND.BODY
 msgctxt "STRINGS.CODEX.PAGENOTFOUND.BODY"
 msgid ""
@@ -7041,6 +8081,41 @@ msgctxt "STRINGS.CODEX.PINCHAPEPPERPLANT.TITLE"
 msgid "Pincha Pepperplant"
 msgstr "ピンチャペッパー"
 
+#. STRINGS.CODEX.PLACID.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.PLACID.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.PLACID.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.PLACID.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.PLACID.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
+#| msgid "Shine Bug"
+msgctxt "STRINGS.CODEX.PLACID.TITLE"
+msgid "Placid Shine Bug"
+msgstr "シャインバグ"
+
 #. STRINGS.CODEX.POWER.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.POWER.BODY.CONTAINER1"
 msgid "Description of power, energy, watts, generators, consumers, etc."
@@ -7056,15 +8131,59 @@ msgctxt "STRINGS.CODEX.POWER.TITLE"
 msgid "Power"
 msgstr "電力"
 
+#. STRINGS.CODEX.PRINCE.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.PRINCE.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.PRINCE.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.PRINCE.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.PRINCE.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.PREFIX.MALE.PRINCE"
+#| msgid "Prince"
+msgctxt "STRINGS.CODEX.PRINCE.TITLE"
+msgid "Puft Prince"
+msgstr "プリンス"
+
 #. STRINGS.CODEX.PUFT.BODY.CONTAINER1
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.PUFT.BODY.CONTAINER1"
+#| msgid ""
+#| "The Puft is a friendly creature whose limited brainpower is largely "
+#| "dedicated to sustaining its basic life processes.\n"
+#| "\n"
+#| "A specialized air bladder in the Puft's chest cavity stores varying "
+#| "concentrations of gas, allowing it to control its buoyancy and equalize "
+#| "its internal pressure with that of its environment."
 msgctxt "STRINGS.CODEX.PUFT.BODY.CONTAINER1"
 msgid ""
 "The Puft is a friendly creature whose limited brainpower is largely "
 "dedicated to sustaining its basic life processes.\n"
 "\n"
 "A specialized air bladder in the Puft's chest cavity stores varying "
-"concentrations of gas, allowing it to control its buoyancy and equalize its "
-"internal pressure with that of its environment."
+"concentrations of gas, allowing it to control its buoyancy and float "
+"effortlessly through the air."
 msgstr ""
 "パフは基本的な生命維持に特化した知力を持つ、人懐っこい生物です。\n"
 "\n"
@@ -7072,9 +8191,12 @@ msgstr ""
 "境に対する内圧を調整したりします。"
 
 #. STRINGS.CODEX.PUFT.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
+#| msgid "Domesticability"
 msgctxt "STRINGS.CODEX.PUFT.SUBTITLE"
-msgid "Critter"
-msgstr "動物"
+msgid "Domesticable Critter"
+msgstr "動物好き"
 
 # 「ふわふわ」の意味
 #. STRINGS.CODEX.PUFT.TITLE
@@ -7082,17 +8204,98 @@ msgctxt "STRINGS.CODEX.PUFT.TITLE"
 msgid "Puft"
 msgstr "パフ"
 
+#. STRINGS.CODEX.ROYAL.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.ROYAL.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.ROYAL.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.ROYAL.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.ROYAL.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
+#| msgid "Shine Bug"
+msgctxt "STRINGS.CODEX.ROYAL.TITLE"
+msgid "Royal Shine Bug"
+msgstr "シャインバグ"
+
+#. STRINGS.CODEX.SAGE.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.SAGE.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.SAGE.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.SAGE.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.SAGE.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.TITLE"
+#| msgid "Hatch"
+msgctxt "STRINGS.CODEX.SAGE.TITLE"
+msgid "Sage Hatch"
+msgstr "ハッチ"
+
 #. STRINGS.CODEX.SHINEBUG.BODY.CONTAINER1
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.SHINEBUG.BODY.CONTAINER1"
+#| msgid ""
+#| "The Shine Bug is a bioluminiscent insect with bladed wing membranes it "
+#| "rotates at high speeds to maintain flight.\n"
+#| "\n"
+#| "The bioluminescence of its body serves the social purpose of finding and "
+#| "communicating with others of its kind.\n"
+#| "\n"
+#| "As such, it is not uncommon for Shine Bugs to mistakenly approach "
+#| "inanimate sources of light in search of a friend."
 msgctxt "STRINGS.CODEX.SHINEBUG.BODY.CONTAINER1"
 msgid ""
-"The Shine Bug is a bioluminiscent insect with bladed wing membranes it "
-"rotates at high speeds to maintain flight.\n"
+"The Shine Bug is a flying insect with bladed membranes atop its head which "
+"it rotates to maintain flight.\n"
 "\n"
 "The bioluminescence of its body serves the social purpose of finding and "
 "communicating with others of its kind.\n"
 "\n"
-"As such, it is not uncommon for Shine Bugs to mistakenly approach inanimate "
-"sources of light in search of a friend."
+"It is not uncommon for Shine Bugs to mistakenly approach inanimate sources "
+"of light in search of a friend."
 msgstr ""
 "シャインバグは生体発光する昆虫で、刃状の翼膜を高速回転させて浮力を得ていま"
 "す。\n"
@@ -7104,9 +8307,12 @@ msgstr ""
 "のはよくあることです。"
 
 #. STRINGS.CODEX.SHINEBUG.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
+#| msgid "Domesticability"
 msgctxt "STRINGS.CODEX.SHINEBUG.SUBTITLE"
-msgid "Critter"
-msgstr "動物"
+msgid "Domesticable Critter"
+msgstr "動物好き"
 
 #. STRINGS.CODEX.SHINEBUG.TITLE
 msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
@@ -7129,13 +8335,21 @@ msgid "Sleet Wheat"
 msgstr "スリートウィート"
 
 #. STRINGS.CODEX.SLICKSTER.BODY.CONTAINER1
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.SLICKSTER.BODY.CONTAINER1"
+#| msgid ""
+#| "Slicksters are a unique creature most renown for their ability to exude "
+#| "hydrocarbon waste that is nearly identical in makeup to crude oil.\n"
+#| "\n"
+#| "The two large rhinophores that protrude from the Slickster's head are "
+#| "chemical receptors that help guide it toward breathable carbon dioxide."
 msgctxt "STRINGS.CODEX.SLICKSTER.BODY.CONTAINER1"
 msgid ""
 "Slicksters are a unique creature most renown for their ability to exude "
 "hydrocarbon waste that is nearly identical in makeup to crude oil.\n"
 "\n"
-"The two large rhinophores that protrude from the Slickster's head are "
-"chemical receptors that help guide it toward breathable carbon dioxide."
+"The two tufts on its head are called \"rhinophores\" and help guide the "
+"Slickster toward breathable carbon dioxide."
 msgstr ""
 "スリックスターは理想的な原油に近い構成の炭化水素廃棄物を排出する能力で有名"
 "な、唯一の生物です。\n"
@@ -7144,9 +8358,12 @@ msgstr ""
 "なっています。"
 
 #. STRINGS.CODEX.SLICKSTER.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
+#| msgid "Domesticability"
 msgctxt "STRINGS.CODEX.SLICKSTER.SUBTITLE"
-msgid "Critter"
-msgstr "動物"
+msgid "Domesticable Critter"
+msgstr "動物好き"
 
 # 訳語が見つからない...
 #. STRINGS.CODEX.SLICKSTER.TITLE
@@ -7154,11 +8371,153 @@ msgctxt "STRINGS.CODEX.SLICKSTER.TITLE"
 msgid "Slickster"
 msgstr "スリックスター"
 
+#. STRINGS.CODEX.SMOOTH.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.SMOOTH.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.SMOOTH.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.SMOOTH.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.SMOOTH.TITLE
+msgctxt "STRINGS.CODEX.SMOOTH.TITLE"
+msgid "Smooth Hatch"
+msgstr ""
+
+#. STRINGS.CODEX.SQUEAKY.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.SQUEAKY.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.SQUEAKY.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.SQUEAKY.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.SQUEAKY.TITLE
+msgctxt "STRINGS.CODEX.SQUEAKY.TITLE"
+msgid "Squeaky Puft"
+msgstr ""
+
+#. STRINGS.CODEX.STONE.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.STONE.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.STONE.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.STONE.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.STONE.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.TITLE"
+#| msgid "Hatch"
+msgctxt "STRINGS.CODEX.STONE.TITLE"
+msgid "Stone Hatch"
+msgstr "ハッチ"
+
+#. STRINGS.CODEX.SUNNY.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.SUNNY.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.SUNNY.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.SUNNY.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.SUNNY.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
+#| msgid "Shine Bug"
+msgctxt "STRINGS.CODEX.SUNNY.TITLE"
+msgid "Sunny Shine Bug"
+msgstr "シャインバグ"
+
 #. STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1"
+#| msgid ""
+#| "The Thimble Reed is a wetlands plant used in the production of high "
+#| "quality fabrics that are prized for their softness and breathability.\n"
+#| "\n"
+#| "Cloth made from the Thimble Reed owes its exceptional softness to the "
+#| "fineness of its fibers and the unusual length to which they grow."
 msgctxt "STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1"
 msgid ""
 "The Thimble Reed is a wetlands plant used in the production of high quality "
-"fabrics that are prized for their softness and breathability.\n"
+"fabrics prized for their softness and breathability.\n"
 "\n"
 "Cloth made from the Thimble Reed owes its exceptional softness to the "
 "fineness of its fibers and the unusual length to which they grow."
@@ -7179,6 +8538,73 @@ msgstr "繊維植物"
 msgctxt "STRINGS.CODEX.THIMBLEREED.TITLE"
 msgid "Thimble Reed"
 msgstr "シンブルリード"
+
+#. STRINGS.CODEX.TROPICAL.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.TROPICAL.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.TROPICAL.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.TROPICAL.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.TROPICAL.TITLE
+msgctxt "STRINGS.CODEX.TROPICAL.TITLE"
+msgid "Tropical Pacu"
+msgstr ""
+
+#. STRINGS.CODEX.VITAL.BODY.CONTAINER1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.CODEX.VITAL.BODY.CONTAINER1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.CODEX.VITAL.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
+#| msgid "Critter"
+msgctxt "STRINGS.CODEX.VITAL.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物"
+
+#. STRINGS.CODEX.VITAL.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
+#| msgid "Shine Bug"
+msgctxt "STRINGS.CODEX.VITAL.TITLE"
+msgid "Vital Shine Bug"
+msgstr "シャインバグ"
 
 #. STRINGS.CODEX.WHEEZEWORT.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.WHEEZEWORT.BODY.CONTAINER1"
@@ -7410,6 +8836,208 @@ msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.UNHAPPY.TOOLTIP"
 msgid "This critter is fending for itself and does not trust Duplicants"
 msgstr "この動物は自活しており、複製人間を信頼していません"
 
+#. STRINGS.CREATURES.FAMILY.DRECKO
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
+#| msgid "<link=\"DECOR\">Decor</link>"
+msgctxt "STRINGS.CREATURES.FAMILY.DRECKO"
+msgid "<link=\"DRECKOSPECIES\">Drecko</link>"
+msgstr "<link=\"DECOR\">装飾</link>"
+
+#. STRINGS.CREATURES.FAMILY.GLOM
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.GLOM.NAME"
+#| msgid "<link=\"GLOM\">Morb</link>"
+msgctxt "STRINGS.CREATURES.FAMILY.GLOM"
+msgid "<link=\"GLOMSPECIES\">Morb</link>"
+msgstr "<link=\"GLOM\">モーブ</link>"
+
+#. STRINGS.CREATURES.FAMILY.HATCH
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
+#| msgid "<link=\"HATCH\">Hatch</link>"
+msgctxt "STRINGS.CREATURES.FAMILY.HATCH"
+msgid "<link=\"HATCHSPECIES\">Hatch</link>"
+msgstr "<link=\"HATCH\">ハッチ</link>"
+
+#. STRINGS.CREATURES.FAMILY.LIGHTBUG
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgctxt "STRINGS.CREATURES.FAMILY.LIGHTBUG"
+msgid "<link=\"LIGHTBUGSPECIES\">Shine Bug</link>"
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+
+#. STRINGS.CREATURES.FAMILY.OILFLOATER
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.NAME"
+#| msgid "<link=\"OILFLOATER\">Slickster</link>"
+msgctxt "STRINGS.CREATURES.FAMILY.OILFLOATER"
+msgid "<link=\"OILFLOATERSPECIES\">Slickster</link>"
+msgstr "<link=\"OILFLOATER\">スリックスター</link>"
+
+#. STRINGS.CREATURES.FAMILY.PACU
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUT.NAME"
+#| msgid "<link=\"FLUT\">Pacu</link>"
+msgctxt "STRINGS.CREATURES.FAMILY.PACU"
+msgid "<link=\"PACUSPECIES\">Pacu</link>"
+msgstr "<link=\"FLUT\">パクー</link>"
+
+#. STRINGS.CREATURES.FAMILY.PUFT
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
+#| msgid "<link=\"PUFT\">Puft</link>"
+msgctxt "STRINGS.CREATURES.FAMILY.PUFT"
+msgid "<link=\"PUFTSPECIES\">Puft</link>"
+msgstr "<link=\"PUFT\">パフ</link>"
+
+#. STRINGS.CREATURES.FAMILY_PLURAL.DRECKOSPECIES
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
+#| msgid "<link=\"DECOR\">Decor</link>"
+msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.DRECKOSPECIES"
+msgid "<link=\"DRECKOSPECIES\">Dreckos</link>"
+msgstr "<link=\"DECOR\">装飾</link>"
+
+#. STRINGS.CREATURES.FAMILY_PLURAL.GLOMSPECIES
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.GLOM.NAME"
+#| msgid "<link=\"GLOM\">Morb</link>"
+msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.GLOMSPECIES"
+msgid "<link=\"GLOMSPECIES\">Morbs</link>"
+msgstr "<link=\"GLOM\">モーブ</link>"
+
+#. STRINGS.CREATURES.FAMILY_PLURAL.HATCHSPECIES
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
+#| msgid "<link=\"HATCH\">Hatch</link>"
+msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.HATCHSPECIES"
+msgid "<link=\"HATCHSPECIES\">Hatches</link>"
+msgstr "<link=\"HATCH\">ハッチ</link>"
+
+#. STRINGS.CREATURES.FAMILY_PLURAL.LIGHTBUGSPECIES
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.LIGHTBUGSPECIES"
+msgid "<link=\"LIGHTBUGSPECIES\">Shine Bugs</link>"
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+
+#. STRINGS.CREATURES.FAMILY_PLURAL.OILFLOATERSPECIES
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.NAME"
+#| msgid "<link=\"OILFLOATER\">Slickster</link>"
+msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.OILFLOATERSPECIES"
+msgid "<link=\"OILFLOATERSPECIES\">Slicksters</link>"
+msgstr "<link=\"OILFLOATER\">スリックスター</link>"
+
+#. STRINGS.CREATURES.FAMILY_PLURAL.PACUSPECIES
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUT.NAME"
+#| msgid "<link=\"FLUT\">Pacu</link>"
+msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.PACUSPECIES"
+msgid "<link=\"PACUSPECIES\">Pacus</link>"
+msgstr "<link=\"FLUT\">パクー</link>"
+
+#. STRINGS.CREATURES.FAMILY_PLURAL.PUFTSPECIES
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
+#| msgid "<link=\"PUFT\">Puft</link>"
+msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.PUFTSPECIES"
+msgid "<link=\"PUFTSPECIES\">Pufts</link>"
+msgstr "<link=\"PUFT\">パフ</link>"
+
+#. STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.GEYSER_YEAR_NEXT_DORMANT"
+#| msgid "Next Dormancy: {0}"
+msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.DESC"
+msgid "Eats any: {0}"
+msgstr "次の休眠まで: {0}"
+
+#. STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEADERS.DIET"
+#| msgid "Diet"
+msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.NAME"
+msgid "Diet"
+msgstr "食物"
+
+#. STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.CHARACTERCONTAINER_CONGENITALTRAIT"
+#| msgid "Genetic Trait: {0}"
+msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE.DESC"
+msgid "Penned with: {0}"
+msgstr "遺伝特性: {0}"
+
+#. STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE.NAME
+msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE.NAME"
+msgid "Nearby Creature"
+msgstr ""
+
+#. STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE_NEG.DESC
+msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE_NEG.DESC"
+msgid "Not penned with: {0}"
+msgstr ""
+
+#. STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE_NEG.NAME
+msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE_NEG.NAME"
+msgid "No Nearby Creature"
+msgstr ""
+
+#. STRINGS.CREATURES.FERTILITY_MODIFIERS.TEMPERATURE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.TEMPERATURE_RANGE"
+#| msgid "Temperature range: {0} to {1}"
+msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.TEMPERATURE.DESC"
+msgid "Body temperature between: {0} and {1}"
+msgstr "生存可能温度: {0} から {1}"
+
+#. STRINGS.CREATURES.FERTILITY_MODIFIERS.TEMPERATURE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE"
+#| msgid "Temperature"
+msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.TEMPERATURE.NAME"
+msgid "Temperature"
+msgstr "温度"
+
+#. STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.CREATURE_FEEDER.NAME"
+#| msgid "Critter Feeder"
+msgctxt "STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.NAME"
+msgid "Ate From Feeder"
+msgstr "給餌機"
+
+#. STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.FLEEING.TOOLTIP"
+#| msgid ""
+#| "This critter is trying to escape\n"
+#| "Get'em!"
+msgctxt "STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.TOOLTIP"
+msgid "This critter is getting tamer because it ate from a feeder."
+msgstr ""
+"この動物は離脱しようとしています\n"
+"逃すな！"
+
+#. STRINGS.CREATURES.MODIFIERS.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.PREFIX.NB.TINY"
+#| msgid "Tiny"
+msgctxt "STRINGS.CREATURES.MODIFIERS.BABY.NAME"
+msgid "Tiny Baby"
+msgstr "幼い"
+
+#. STRINGS.CREATURES.MODIFIERS.BABY.TOOLTIP
+msgctxt "STRINGS.CREATURES.MODIFIERS.BABY.TOOLTIP"
+msgid ""
+"This critter will become an adult as it ages and grows wise to the ways of "
+"the world"
+msgstr ""
+
 #. STRINGS.CREATURES.MODIFIERS.BASE_FERTILITY.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.BASE_FERTILITY.NAME"
 msgid "Base Reproduction"
@@ -7419,6 +9047,30 @@ msgstr "基本繁殖力"
 msgctxt "STRINGS.CREATURES.MODIFIERS.BASE_FERTILITY.TOOLTIP"
 msgid "This is the base speed with which critters produce new eggs"
 msgstr "動物が新しく卵を産む基本速度です"
+
+#. STRINGS.CREATURES.MODIFIERS.BASE_INCUBATION_RATE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_INCUBATION_RATE.NAME"
+#| msgid "Incubation Rate"
+msgctxt "STRINGS.CREATURES.MODIFIERS.BASE_INCUBATION_RATE.NAME"
+msgid "Base Incubation Rate"
+msgstr "孵化レート"
+
+#. STRINGS.CREATURES.MODIFIERS.CONFINED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.SAVESCREEN.CONFIRMNAME"
+#| msgid "Confirm"
+msgctxt "STRINGS.CREATURES.MODIFIERS.CONFINED.NAME"
+msgid "Confined"
+msgstr "確認"
+
+#. STRINGS.CREATURES.MODIFIERS.CONFINED.TOOLTIP
+msgctxt "STRINGS.CREATURES.MODIFIERS.CONFINED.TOOLTIP"
+msgid ""
+"This critter is trapped inside a door, tile, or confined space\n"
+"\n"
+"Sounds uncomfortable!"
+msgstr ""
 
 #. STRINGS.CREATURES.MODIFIERS.DOMESTICATION_DECREASING.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.DOMESTICATION_DECREASING.NAME"
@@ -7440,30 +9092,60 @@ msgctxt "STRINGS.CREATURES.MODIFIERS.DOMESTICATION_INCREASING.TOOLTIP"
 msgid "This critter is very happy its needs are being met"
 msgstr "この動物は欲求が満たされておりとても幸せです"
 
+#. STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_EXPECTATIONS"
+#| msgid "Expectations"
+msgctxt "STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.NAME"
+msgid "Expecting"
+msgstr "期待値"
+
+#. STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.TOOLTIP
+msgctxt "STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.TOOLTIP"
+msgid ""
+"This critter has slowed its reproduction while it waits for the new member "
+"of the family to arrive\n"
+"\n"
+"If there were more room, it might consider laying eggs again"
+msgstr ""
+
 #. STRINGS.CREATURES.MODIFIERS.HAPPY.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.NAME"
 msgid "Happy"
 msgstr "幸福"
 
 #. STRINGS.CREATURES.MODIFIERS.HAPPY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.TOOLTIP"
+#| msgid ""
+#| "All of this critter's needs have been met and it's feeling quite "
+#| "contented\n"
+#| "------------------\n"
+#| "It will produce more as a result"
 msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.TOOLTIP"
 msgid ""
-"All of this critter's needs have been met and it's feeling quite contented\n"
+"This critter's in high spirits because all of its needs are being met\n"
 "------------------\n"
-"It will produce more as a result"
+"It will produce more materials as a result"
 msgstr ""
 "この動物たちは欲求が満たされており、とても満足しています\n"
 "------------------\n"
 "結果として、繁殖力が高まっています"
 
-#. STRINGS.CREATURES.MODIFIERS.INCUBATOR_INCUBATION_RATE.NAME
-msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_INCUBATION_RATE.NAME"
-msgid "Incubation Rate"
-msgstr "孵化レート"
+#. STRINGS.CREATURES.MODIFIERS.INCUBATOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.INCUBATION.NAME"
+#| msgid "Incubation"
+msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR.NAME"
+msgid "Incubator"
+msgstr "孵化"
 
-#. STRINGS.CREATURES.MODIFIERS.INCUBATOR_INCUBATION_RATE.TOOLTIP
-msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_INCUBATION_RATE.TOOLTIP"
-msgid "Determines an egg's gestation period when placed in an Incubator"
+#. STRINGS.CREATURES.MODIFIERS.INCUBATOR.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_INCUBATION_RATE.TOOLTIP"
+#| msgid "Determines an egg's gestation period when placed in an Incubator"
+msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR.TOOLTIP"
+msgid "Increased incubation rate when placed inside an Incubator"
 msgstr "孵卵器に設置された時に、孵化までにかかる時間を決定します"
 
 #. STRINGS.CREATURES.MODIFIERS.OUT_OF_CALORIES.NAME
@@ -7499,6 +9181,14 @@ msgctxt "STRINGS.CREATURES.MODIFIERS.RANCHED.TOOLTIP"
 msgid "This critter has recently been attended to by a Rancher"
 msgstr "この動物は牧夫の手入れを受けたばかりです"
 
+#. STRINGS.CREATURES.MODIFIERS.SCALE_GROWTH_RATE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.MATURITY.GROWINGWILD"
+#| msgid "Wild growth rate"
+msgctxt "STRINGS.CREATURES.MODIFIERS.SCALE_GROWTH_RATE.NAME"
+msgid "Scale Regrowth Rate"
+msgstr "野生成長率"
+
 #. STRINGS.CREATURES.MODIFIERS.TAME.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.TAME.NAME"
 msgid "Tame"
@@ -7508,6 +9198,29 @@ msgstr "従順"
 msgctxt "STRINGS.CREATURES.MODIFIERS.TAME.TOOLTIP"
 msgid "This critter is tame"
 msgstr "この動物は飼い慣らされています"
+
+#. STRINGS.CREATURES.MODIFIERS.UNHAPPY.NAME
+msgctxt "STRINGS.CREATURES.MODIFIERS.UNHAPPY.NAME"
+msgid "Glum"
+msgstr ""
+
+#. STRINGS.CREATURES.MODIFIERS.UNHAPPY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.TOOLTIP"
+#| msgid ""
+#| "All of this critter's needs have been met and it's feeling quite "
+#| "contented\n"
+#| "------------------\n"
+#| "It will produce more as a result"
+msgctxt "STRINGS.CREATURES.MODIFIERS.UNHAPPY.TOOLTIP"
+msgid ""
+"This critter's feeling down because its needs aren't being met\n"
+"------------------\n"
+"It will produce less materials as a result"
+msgstr ""
+"この動物たちは欲求が満たされており、とても満足しています\n"
+"------------------\n"
+"結果として、繁殖力が高まっています"
 
 #. STRINGS.CREATURES.MODIFIERS.WILD.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.WILD.NAME"
@@ -7625,32 +9338,89 @@ msgctxt "STRINGS.CREATURES.SPECIES.COLDWHEAT.NAME"
 msgid "<link=\"COLDWHEAT\">Sleet Wheat</link>"
 msgstr "<link=\"COLDWHEAT\">スリートウィート</link>"
 
-#. STRINGS.CREATURES.SPECIES.FLUT.DESC
-msgctxt "STRINGS.CREATURES.SPECIES.FLUT.DESC"
+#. STRINGS.CREATURES.SPECIES.DRECKO.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.BABY.DESC"
 msgid ""
-"Every organism in the known universe finds the Pacu extremely delicious."
-msgstr "観測可能な宇宙の全生物はパクーが極めて美味であることを知っています。"
-
-#. STRINGS.CREATURES.SPECIES.FLUT.NAME
-msgctxt "STRINGS.CREATURES.SPECIES.FLUT.NAME"
-msgid "<link=\"FLUT\">Pacu</link>"
-msgstr "<link=\"FLUT\">パクー</link>"
-
-#. STRINGS.CREATURES.SPECIES.FLUTEGG.DESC
-msgctxt "STRINGS.CREATURES.SPECIES.FLUTEGG.DESC"
-msgid ""
-"A tiny Pacu is nestled inside.\n"
+"A little bug-eyed <link=\"DRECKO\">Drecklet</link>.\n"
 "\n"
-"It is not yet ready for the world."
+"In time it will mature into a fully grown <link=\"DRECKO\">Drecko</link>."
 msgstr ""
-"小さなパクーが中に納まっています。\n"
-"\n"
-"まだ孵化する準備ができていません。"
 
-#. STRINGS.CREATURES.SPECIES.FLUTEGG.NAME
-msgctxt "STRINGS.CREATURES.SPECIES.FLUTEGG.NAME"
-msgid "<link=\"FLUTEGG\">Pacu Egg</link>"
-msgstr "<link=\"FLUTEGG\">パクーの卵</link>"
+#. STRINGS.CREATURES.SPECIES.DRECKO.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
+#| msgid "<link=\"DECOR\">Decor</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.BABY.NAME"
+msgid "<link=\"DRECKO\">Drecklet</link>"
+msgstr "<link=\"DECOR\">装飾</link>"
+
+#. STRINGS.CREATURES.SPECIES.DRECKO.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.DESC"
+msgid ""
+"Dreckos are slinking creatures that can clamber up walls with unexpected "
+"speed.\n"
+"\n"
+"Their backsides are covered in thick woolly fibers that only grow in <link="
+"\"HYDROGEN\">Hydrogen</link> climates."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.DRECKO.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
+#| msgid "<link=\"DECOR\">Decor</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.EGG_NAME"
+msgid "<link=\"DRECKO\">Drecklet Egg</link>"
+msgstr "<link=\"DECOR\">装飾</link>"
+
+#. STRINGS.CREATURES.SPECIES.DRECKO.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
+#| msgid "<link=\"DECOR\">Decor</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.NAME"
+msgid "<link=\"DRECKO\">Drecko</link>"
+msgstr "<link=\"DECOR\">装飾</link>"
+
+#. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.BABY.DESC"
+msgid ""
+"A little bug-eyed <link=\"DRECKO\">Drecklet</link>.\n"
+"\n"
+"This one is a Glossy morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.PLASTICTILE.NAME"
+#| msgid "<link=\"PLASTICTILE\">Plastic Tile</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.BABY.NAME"
+msgid "<link=\"DRECKOPLASTIC\">Glossy Drecklet</link>"
+msgstr "<link=\"PLASTICTILE\">プラスチック製タイル</link>"
+
+#. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.DESC"
+msgid ""
+"Glossy Dreckos are slinking creatures that can clamber up walls with "
+"unexpected speed.\n"
+"\n"
+"Their backsides are covered in bioplastic scales that only grow in <link="
+"\"HYDROGEN\">Hydrogen</link> climates."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.PLASTICTILE.NAME"
+#| msgid "<link=\"PLASTICTILE\">Plastic Tile</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.EGG_NAME"
+msgid "<link=\"DRECKOPLASTIC\">Glossy Drecklet Egg</link>"
+msgstr "<link=\"PLASTICTILE\">プラスチック製タイル</link>"
+
+#. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
+#| msgid "<link=\"DECOR\">Decor</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.NAME"
+msgid "<link=\"DRECKOPLASTIC\">Glossy Drecko</link>"
+msgstr "<link=\"DECOR\">装飾</link>"
 
 #. STRINGS.CREATURES.SPECIES.GEYSER.BIG_VOLCANO.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.GEYSER.BIG_VOLCANO.DESC"
@@ -7933,6 +9703,22 @@ msgctxt "STRINGS.CREATURES.SPECIES.GREEDYGREEN.NAME"
 msgid "<link=\"GREEDYGREEN\">Avari Vine</link>"
 msgstr "<link=\"GREEDYGREEN\">アヴァリの蔦</link>"
 
+#. STRINGS.CREATURES.SPECIES.HATCH.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.BABY.DESC"
+msgid ""
+"An innocent little <link=\"HATCHLING\">Hatchling</link>.\n"
+"\n"
+"In time, it will mature into an adult <link=\"HATCH\">Hatch</link>."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.HATCH.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
+#| msgid "<link=\"HATCH\">Hatch</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.BABY.NAME"
+msgid "<link=\"HATCH\">Hatchling</link>"
+msgstr "<link=\"HATCH\">ハッチ</link>"
+
 #. STRINGS.CREATURES.SPECIES.HATCH.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
 msgid ""
@@ -7943,13 +9729,154 @@ msgstr ""
 "こすことで現れることがあります。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
+#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
-msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
+msgid "<link=\"HATCH\">Hatchling Egg</link>"
 msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.NAME
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
 msgid "<link=\"HATCH\">Hatch</link>"
+msgstr "<link=\"HATCH\">ハッチ</link>"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.BABY.DESC"
+msgid ""
+"An innocent baby <link=\"HATCH\">Hatch</link>.\n"
+"\n"
+"This one is a Stone morph, and loves nibbling on rocks and metals."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
+#| msgid "<link=\"HATCH\">Hatch</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.BABY.NAME"
+msgid "<link=\"HATCHHARD\">Stone Hatchling</link>"
+msgstr "<link=\"HATCH\">ハッチ</link>"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
+#| msgid ""
+#| "Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and may be "
+#| "uncovered by digging up Buried Objects."
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.DESC"
+msgid ""
+"Stone Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and enjoy "
+"burrowing into the ground."
+msgstr ""
+"ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。埋もれた物体を掘り起"
+"こすことで現れることがあります。"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
+#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.EGG_NAME"
+msgid "<link=\"HATCHHARD\">Stone Hatchling Egg</link>"
+msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
+#| msgid "<link=\"HATCH\">Hatch</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.NAME"
+msgid "<link=\"HATCHHARD\">Stone Hatch</link>"
+msgstr "<link=\"HATCH\">ハッチ</link>"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.BABY.DESC"
+msgid ""
+"An innocent baby <link=\"HATCHMETAL\">Hatch</link>.\n"
+"\n"
+"This one is a Smooth morph, and loves nibbling on different types of metals."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
+#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.BABY.NAME"
+msgid "<link=\"HATCHMETAL\">Smooth Hatchling</link>"
+msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
+#| msgid ""
+#| "Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and may be "
+#| "uncovered by digging up Buried Objects."
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.DESC"
+msgid ""
+"Smooth Hatches excrete solid <link=\"COPPER\">Copper</link> as waste and "
+"enjoy burrowing into the ground."
+msgstr ""
+"ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。埋もれた物体を掘り起"
+"こすことで現れることがあります。"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
+#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.EGG_NAME"
+msgid "<link=\"HATCHMETAL\">Smooth Hatchling Egg</link>"
+msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
+#| msgid "<link=\"HATCH\">Hatch</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.NAME"
+msgid "<link=\"HATCHMETAL\">Smooth Hatch</link>"
+msgstr "<link=\"HATCH\">ハッチ</link>"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.BABY.DESC"
+msgid ""
+"An innocent baby <link=\"HATCH\">Hatch</link>.\n"
+"\n"
+"This one is a Sage morph, and loves nibbling on most organic materials."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
+#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.BABY.NAME"
+msgid "<link=\"HATCHVEGGIE\">Sage Hatchling</link>"
+msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
+#| msgid ""
+#| "Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and may be "
+#| "uncovered by digging up Buried Objects."
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.DESC"
+msgid ""
+"Sage Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and enjoy "
+"burrowing into the ground."
+msgstr ""
+"ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。埋もれた物体を掘り起"
+"こすことで現れることがあります。"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
+#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.EGG_NAME"
+msgid "<link=\"HATCHVEGGIE\">Sage Hatchling Egg</link>"
+msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
+#| msgid "<link=\"HATCH\">Hatch</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.NAME"
+msgid "<link=\"HATCHVEGGIE\">Sage Hatch</link>"
 msgstr "<link=\"HATCH\">ハッチ</link>"
 
 #. STRINGS.CREATURES.SPECIES.HEATBULB.DESC
@@ -7999,6 +9926,22 @@ msgctxt "STRINGS.CREATURES.SPECIES.JUNGLEGASPLANT.NAME"
 msgid "<link=\"JUNGLEGASPLANT\">Palmera Tree</link>"
 msgstr "<link=\"JUNGLEGASPLANT\">パルメラの樹</link>"
 
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.BABY.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.BABY.DESC"
+msgid "A chubby baby <link=\"LIGHTBUG\">Shine Bug</link>."
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.BABY.NAME"
+msgid "<link=\"LIGHTBUG\">Shine Nymph</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
 #. STRINGS.CREATURES.SPECIES.LIGHTBUG.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.DESC"
 msgid ""
@@ -8009,13 +9952,305 @@ msgstr ""
 "ます。"
 
 #. STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
-msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgid "<link=\"LIGHTBUG\">Shine Nymph Egg</link>"
 msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME
 msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
 msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.BABY.DESC"
+msgid ""
+"A chubby baby <link=\"LIGHTBUGBLACK\">Shine Bug</link>.\n"
+"\n"
+"This one is a black Nega morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.BABY.NAME"
+msgid "<link=\"LIGHTBUGBLACK\">Nega Shine Nymph</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.DESC"
+#| msgid ""
+#| "Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of "
+#| "attracting more of their kind for company."
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.DESC"
+msgid ""
+"This Shine Bug emits no <link=\"LIGHT\">Light</link>, but it makes up for it "
+"by having an excellent personality."
+msgstr ""
+"シャイン バグは仲間を引き寄せるために柔らかい<link=\"LIGHT\">光</link>を放ち"
+"ます。"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.EGG_NAME"
+msgid "<link=\"LIGHTBUGBLACK\">Nega Shine Nymph Egg</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLACK.NAME"
+msgid "<link=\"LIGHTBUGBLACK\">Nega Shine Bug</link>"
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.BABY.DESC"
+msgid ""
+"A chubby baby <link=\"LIGHTBUGBLUE\">Shine Bug</link>.\n"
+"\n"
+"This one is a blue Placid morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.BABY.NAME"
+msgid "<link=\"LIGHTBUGBLUE\">Placid Shine Nymph</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.DESC"
+#| msgid ""
+#| "Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of "
+#| "attracting more of their kind for company."
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.DESC"
+msgid ""
+"Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of attracting "
+"more of their kind for company.\n"
+"\n"
+"The light of the Placid morph has been turned blue through selective "
+"breeding."
+msgstr ""
+"シャイン バグは仲間を引き寄せるために柔らかい<link=\"LIGHT\">光</link>を放ち"
+"ます。"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.EGG_NAME"
+msgid "<link=\"LIGHTBUGBLUE\">Placid Shine Nymph Egg</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_BLUE.NAME"
+msgid "<link=\"LIGHTBUGBLUE\">Placid Shine Bug</link>"
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.BABY.DESC"
+msgid ""
+"A chubby baby <link=\"LIGHTBUGCRYSTAL\">Shine Bug</link>.\n"
+"\n"
+"This one is a bright Crystal morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.BABY.NAME"
+msgid "<link=\"LIGHTBUGCRYSTAL\">Crystal Shine Nymph</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.DESC"
+#| msgid ""
+#| "Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of "
+#| "attracting more of their kind for company."
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.DESC"
+msgid ""
+"Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of attracting "
+"more of their kind for company.\n"
+"\n"
+"The light of the Crystal morph has been amplified through selective breeding."
+msgstr ""
+"シャイン バグは仲間を引き寄せるために柔らかい<link=\"LIGHT\">光</link>を放ち"
+"ます。"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.EGG_NAME"
+msgid "<link=\"LIGHTBUGCRYSTAL\">Crystal Shine Nymph Egg</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_CRYSTAL.NAME"
+msgid "<link=\"LIGHTBUGCRYSTAL\">Crystal Shine Bug</link>"
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.BABY.DESC"
+msgid ""
+"A chubby baby <link=\"LIGHTBUGORANGE\">Shine Bug</link>.\n"
+"\n"
+"This one is an orange Sunny morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.BABY.NAME"
+msgid "<link=\"LIGHTBUGORANGE\">Sunny Shine Nymph</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.DESC"
+#| msgid ""
+#| "Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of "
+#| "attracting more of their kind for company."
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.DESC"
+msgid ""
+"Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of attracting "
+"more of their kind for company.\n"
+"\n"
+"The light of the Sunny morph has been turned orange through selective "
+"breeding."
+msgstr ""
+"シャイン バグは仲間を引き寄せるために柔らかい<link=\"LIGHT\">光</link>を放ち"
+"ます。"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.EGG_NAME"
+msgid "<link=\"LIGHTBUGORANGE\">Sunny Shine Nymph Egg</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_ORANGE.NAME"
+msgid "<link=\"LIGHTBUGORANGE\">Sunny Shine Bug</link>"
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.BABY.DESC"
+msgid ""
+"A chubby baby <link=\"LIGHTBUGPINK\">Shine Bug</link>.\n"
+"\n"
+"This one is a pink Vital morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.BABY.NAME"
+msgid "<link=\"LIGHTBUGPINK\">Vital Shine Nymph</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.DESC"
+#| msgid ""
+#| "Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of "
+#| "attracting more of their kind for company."
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.DESC"
+msgid ""
+"Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of attracting "
+"more of their kind for company.\n"
+"\n"
+"The light of the Vital morph has been turned pink through selective breeding."
+msgstr ""
+"シャイン バグは仲間を引き寄せるために柔らかい<link=\"LIGHT\">光</link>を放ち"
+"ます。"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.EGG_NAME"
+msgid "<link=\"LIGHTBUGPINK\">Vital Shine Nymph Egg</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PINK.NAME"
+msgid "<link=\"LIGHTBUGPINK\">Vital Shine Bug</link>"
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.BABY.DESC"
+msgid ""
+"A chubby baby <link=\"LIGHTBUGPURPLE\">Shine Bug</link>.\n"
+"\n"
+"This one is a purple Royal morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.BABY.NAME"
+msgid "<link=\"LIGHTBUGPURPLE\">Royal Shine Nymph</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.DESC"
+#| msgid ""
+#| "Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of "
+#| "attracting more of their kind for company."
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.DESC"
+msgid ""
+"Shine Bugs emit a soft <link=\"LIGHT\">Light</link> in hopes of attracting "
+"more of their kind for company.\n"
+"\n"
+"The light of the Royal morph has been turned purple through selective "
+"breeding."
+msgstr ""
+"シャイン バグは仲間を引き寄せるために柔らかい<link=\"LIGHT\">光</link>を放ち"
+"ます。"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.EGG_NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.EGG_NAME"
+msgid "<link=\"LIGHTBUGPURPLE\">Royal Shine Nymph Egg</link>"
+msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.VARIANT_PURPLE.NAME"
+msgid "<link=\"LIGHTBUGPURPLE\">Royal Shine Bug</link>"
 msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
 
 #. STRINGS.CREATURES.SPECIES.METHANEGEYSER.DESC
@@ -8077,6 +10312,22 @@ msgctxt "STRINGS.CREATURES.SPECIES.OIL_WELL.NAME"
 msgid "<link=\"OILWELL\">Oil Reservoir</link>"
 msgstr "<link=\"OILWELL\">原油溜まり</link>"
 
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.BABY.DESC"
+msgid ""
+"A goopy little <link=\"OILFLOATER\">Slickster Larva</link>.\n"
+"\n"
+"One day it will grow into an adult<link=\"OILFLOATER\">Slickster</link>."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.EGG_NAME"
+#| msgid "<link=\"OILFLOATEREGG\">Slickster Larva Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.BABY.NAME"
+msgid "<link=\"OILFLOATER\">Slickster Larva</link>"
+msgstr "<link=\"OILFLOATEREGG\">スリックスターの卵</link>"
+
 #. STRINGS.CREATURES.SPECIES.OILFLOATER.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.DESC"
 msgid ""
@@ -8087,13 +10338,108 @@ msgstr ""
 "\"CRUDEOIL\">原油</link>を排泄するねばねばした生物です。"
 
 #. STRINGS.CREATURES.SPECIES.OILFLOATER.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.EGG_NAME"
+#| msgid "<link=\"OILFLOATEREGG\">Slickster Larva Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.EGG_NAME"
-msgid "<link=\"OILFLOATEREGG\">Slickster Larva Egg</link>"
+msgid "<link=\"OILFLOATER\">Slickster Larva Egg</link>"
 msgstr "<link=\"OILFLOATEREGG\">スリックスターの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.OILFLOATER.NAME
 msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.NAME"
 msgid "<link=\"OILFLOATER\">Slickster</link>"
+msgstr "<link=\"OILFLOATER\">スリックスター</link>"
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.BABY.DESC"
+msgid ""
+"A goopy baby <link=\"OILFLOATERDECOR\">Slickster</link>.\n"
+"\n"
+"This one is a Longhair morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.EGG_NAME"
+#| msgid "<link=\"OILFLOATEREGG\">Slickster Larva Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.BABY.NAME"
+msgid "<link=\"OILFLOATERDECOR\">Longhair Slickster Larva</link>"
+msgstr "<link=\"OILFLOATEREGG\">スリックスターの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.DESC"
+#| msgid ""
+#| "Slicksters are slimy critters that consume <link=\"CARBONDIOXIDE\">Carbon "
+#| "Dioxide</link> and exude <link=\"CRUDEOIL\">Crude Oil</link>."
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.DESC"
+msgid ""
+"Longhair Slicksters are slimy critters that consume <link=\"OXYGEN\">Oxygen</"
+"link> and thrive in close contact with Duplicant companions."
+msgstr ""
+"スリックスターは<link=\"CARBONDIOXIDE\">二酸化炭素</link>を消費し<link="
+"\"CRUDEOIL\">原油</link>を排泄するねばねばした生物です。"
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.EGG_NAME"
+#| msgid "<link=\"OILFLOATEREGG\">Slickster Larva Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.EGG_NAME"
+msgid "<link=\"OILFLOATERDECOR\">Longhair Slickster Larva Egg</link>"
+msgstr "<link=\"OILFLOATEREGG\">スリックスターの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.NAME"
+#| msgid "<link=\"OILFLOATER\">Slickster</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_DECOR.NAME"
+msgid "<link=\"OILFLOATERDECOR\">Longhair Slickster</link>"
+msgstr "<link=\"OILFLOATER\">スリックスター</link>"
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.BABY.DESC"
+msgid ""
+"A goopy baby <link=\"OILFLOATERHIGHTEMP\">Slickster</link>.\n"
+"\n"
+"This one is a Molten morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.EGG_NAME"
+#| msgid "<link=\"OILFLOATEREGG\">Slickster Larva Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.BABY.NAME"
+msgid "<link=\"OILFLOATERHIGHTEMP\">Molten Slickster Larva</link>"
+msgstr "<link=\"OILFLOATEREGG\">スリックスターの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.DESC"
+#| msgid ""
+#| "Slicksters are slimy critters that consume <link=\"CARBONDIOXIDE\">Carbon "
+#| "Dioxide</link> and exude <link=\"CRUDEOIL\">Crude Oil</link>."
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.DESC"
+msgid ""
+"Molten Slicksters are slimy critters that consume <link=\"CARBONDIOXIDE"
+"\">Carbon Dioxide</link> and exude <link=\"PETROLEUM\">Petroleum</link>."
+msgstr ""
+"スリックスターは<link=\"CARBONDIOXIDE\">二酸化炭素</link>を消費し<link="
+"\"CRUDEOIL\">原油</link>を排泄するねばねばした生物です。"
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.EGG_NAME"
+#| msgid "<link=\"OILFLOATEREGG\">Slickster Larva Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.EGG_NAME"
+msgid "<link=\"OILFLOATERHIGHTEMP\">Molten Slickster Larva Egg</link>"
+msgstr "<link=\"OILFLOATEREGG\">スリックスターの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.NAME"
+#| msgid "<link=\"OILFLOATER\">Slickster</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.VARIANT_HIGHTEMP.NAME"
+msgid "<link=\"OILFLOATERHIGHTEMP\">Molten Slickster</link>"
 msgstr "<link=\"OILFLOATER\">スリックスター</link>"
 
 #. STRINGS.CREATURES.SPECIES.OILSPOUT.DESC
@@ -8105,6 +10451,108 @@ msgstr "原油を吹き出す、ごつごつした噴出口です。"
 msgctxt "STRINGS.CREATURES.SPECIES.OILSPOUT.NAME"
 msgid "<link=\"OILSPOUT\">Oil Spout</link>"
 msgstr "<link=\"OILSPOUT\">原油噴出口</link>"
+
+#. STRINGS.CREATURES.SPECIES.PACU.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.DESC"
+msgid ""
+"Pacus are aquatic creatures that cannot live outside of <link=\"WATER"
+"\">Water</link> or <link=\"DIRTYWATER\">Polluted Water</link>.\n"
+"\n"
+"Every organism in the known universe finds the Pacu extremely delicious."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.PACU.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUTEGG.NAME"
+#| msgid "<link=\"FLUTEGG\">Pacu Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.EGG_NAME"
+msgid "<link=\"PACUEGG\">Pacu Egg</link>"
+msgstr "<link=\"FLUTEGG\">パクーの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.PACU.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUT.NAME"
+#| msgid "<link=\"FLUT\">Pacu</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.NAME"
+msgid "<link=\"PACU\">Pacu</link>"
+msgstr "<link=\"FLUT\">パクー</link>"
+
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUT.DESC"
+#| msgid ""
+#| "Every organism in the known universe finds the Pacu extremely delicious."
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.DESC"
+msgid ""
+"Every organism in the known universe finds the Pacu extremely delicious."
+msgstr "観測可能な宇宙の全生物はパクーが極めて美味であることを知っています。"
+
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUTEGG.NAME"
+#| msgid "<link=\"FLUTEGG\">Pacu Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.EGG_NAME"
+msgid "<link=\"CLEANERPACUEGG\">Gulp Fish Egg</link>"
+msgstr "<link=\"FLUTEGG\">パクーの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.GLASS.NAME"
+#| msgid "<link=\"GLASS\">Glass</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.NAME"
+msgid "<link=\"GULPFISH\">Gulp Fish</link>"
+msgstr "<link=\"GLASS\">ガラス</link>"
+
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUT.DESC"
+#| msgid ""
+#| "Every organism in the known universe finds the Pacu extremely delicious."
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.DESC"
+msgid ""
+"Every organism in the known universe finds the Pacu extremely delicious."
+msgstr "観測可能な宇宙の全生物はパクーが極めて美味であることを知っています。"
+
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUTEGG.NAME"
+#| msgid "<link=\"FLUTEGG\">Pacu Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.EGG_NAME"
+msgid "<link=\"TROPICALPACUEGG\">Tropical Pacu Egg</link>"
+msgstr "<link=\"FLUTEGG\">パクーの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUT.NAME"
+#| msgid "<link=\"FLUT\">Pacu</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.NAME"
+msgid "<link=\"TROPICALPACU\">Tropical Pacu</link>"
+msgstr "<link=\"FLUT\">パクー</link>"
+
+#. STRINGS.CREATURES.SPECIES.PACUEGG.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUTEGG.DESC"
+#| msgid ""
+#| "A tiny Pacu is nestled inside.\n"
+#| "\n"
+#| "It is not yet ready for the world."
+msgctxt "STRINGS.CREATURES.SPECIES.PACUEGG.DESC"
+msgid ""
+"A tiny Pacu is nestled inside.\n"
+"\n"
+"It is not yet ready for the world."
+msgstr ""
+"小さなパクーが中に納まっています。\n"
+"\n"
+"まだ孵化する準備ができていません。"
+
+#. STRINGS.CREATURES.SPECIES.PACUEGG.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FLUTEGG.NAME"
+#| msgid "<link=\"FLUTEGG\">Pacu Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PACUEGG.NAME"
+msgid "<link=\"PACUEGG\">Pacu Egg</link>"
+msgstr "<link=\"FLUTEGG\">パクーの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.PRICKLEFLOWER.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.PRICKLEFLOWER.DESC"
@@ -8156,6 +10604,22 @@ msgctxt "STRINGS.CREATURES.SPECIES.PROPANESPOUT.NAME"
 msgid "<link=\"GEYSERS\">Propane Spout</link>"
 msgstr "<link=\"GEYSERS\">プロパン噴出口</link>"
 
+#. STRINGS.CREATURES.SPECIES.PUFT.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.BABY.DESC"
+msgid ""
+"A gassy little <link=\"PUFT\">Puftlet</link>.\n"
+"\n"
+"In time it will grow into an adult <link=\"PUFT\">Puft</link>."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.PUFT.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
+#| msgid "<link=\"PUFT\">Puft</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.BABY.NAME"
+msgid "<link=\"PUFT\">Puftlet</link>"
+msgstr "<link=\"PUFT\">パフ</link>"
+
 #. STRINGS.CREATURES.SPECIES.PUFT.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.PUFT.DESC"
 msgid ""
@@ -8166,13 +10630,154 @@ msgstr ""
 "ます。"
 
 #. STRINGS.CREATURES.SPECIES.PUFT.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.EGG_NAME"
+#| msgid "<link=\"PUFTEGG\">Puftlet Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.PUFT.EGG_NAME"
-msgid "<link=\"PUFTEGG\">Puftlet Egg</link>"
+msgid "<link=\"PUFT\">Puftlet Egg</link>"
 msgstr "<link=\"PUFTEGG\">パフの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.PUFT.NAME
 msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
 msgid "<link=\"PUFT\">Puft</link>"
+msgstr "<link=\"PUFT\">パフ</link>"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.BABY.DESC"
+msgid ""
+"A gassy baby <link=\"PUFTALPHA\">Puft</link>.\n"
+"\n"
+"This one seems a bit snobby..."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.EGG_NAME"
+#| msgid "<link=\"PUFTEGG\">Puftlet Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.BABY.NAME"
+msgid "<link=\"PUFTALPHA\">Puftlet Prince</link>"
+msgstr "<link=\"PUFTEGG\">パフの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.DESC"
+#| msgid ""
+#| "Pufts are non-aggressive critters that excrete lumps of <link=\"SLIMEMOLD"
+#| "\">Slime</link> with each breath."
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.DESC"
+msgid ""
+"The Puft Prince is a lazy critter that excretes little lumps of <link="
+"\"SLIMEMOLD\">Slime</link> with each breath."
+msgstr ""
+"パフはおとなしい種族で、呼吸の度に<link=\"SLIMEMOLD\">ヘドロ</link>塊を排泄し"
+"ます。"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.EGG_NAME"
+#| msgid "<link=\"PUFTEGG\">Puftlet Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.EGG_NAME"
+msgid "<link=\"PUFTALPHA\">Puftlet Prince Egg</link>"
+msgstr "<link=\"PUFTEGG\">パフの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
+#| msgid "<link=\"PUFT\">Puft</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_ALPHA.NAME"
+msgid "<link=\"PUFTALPHA\">Puft Prince</link>"
+msgstr "<link=\"PUFT\">パフ</link>"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.BABY.DESC"
+msgid ""
+"A gassy baby <link=\"PUFTBLEACHSTONE\">Puft</link>.\n"
+"\n"
+"This one is a Squeaky morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.BLEACHSTONE.NAME"
+#| msgid "<link=\"BLEACHSTONE\">Bleach Stone</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.BABY.NAME"
+msgid "<link=\"PUFTBLEACHSTONE\">Squeaky Puftlet</link>"
+msgstr "<link=\"BLEACHSTONE\">漂白石</link>"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.DESC"
+#| msgid ""
+#| "Pufts are non-aggressive critters that excrete lumps of <link=\"SLIMEMOLD"
+#| "\">Slime</link> with each breath."
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.DESC"
+msgid ""
+"Squeaky Pufts are non-aggressive critters that excrete lumps of <link="
+"\"BLEACHSTONE\">Bleach Stone</link> with each breath."
+msgstr ""
+"パフはおとなしい種族で、呼吸の度に<link=\"SLIMEMOLD\">ヘドロ</link>塊を排泄し"
+"ます。"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.EGG_NAME"
+#| msgid "<link=\"PUFTEGG\">Puftlet Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.EGG_NAME"
+msgid "<link=\"PUFTBLEACHSTONE\">Squeaky Puftlet Egg</link>"
+msgstr "<link=\"PUFTEGG\">パフの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.BLEACHSTONE.NAME"
+#| msgid "<link=\"BLEACHSTONE\">Bleach Stone</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_BLEACHSTONE.NAME"
+msgid "<link=\"PUFTBLEACHSTONE\">Squeaky Puft</link>"
+msgstr "<link=\"BLEACHSTONE\">漂白石</link>"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.BABY.DESC"
+msgid ""
+"A gassy baby <link=\"PUFTOXYLITE\">Puft</link>.\n"
+"\n"
+"This one is a Dense morph."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.BABY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.EGG_NAME"
+#| msgid "<link=\"PUFTEGG\">Puftlet Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.BABY.NAME"
+msgid "<link=\"PUFTOXYLITE\">Dense Puftlet</link>"
+msgstr "<link=\"PUFTEGG\">パフの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.DESC"
+#| msgid ""
+#| "Pufts are non-aggressive critters that excrete lumps of <link=\"SLIMEMOLD"
+#| "\">Slime</link> with each breath."
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.DESC"
+msgid ""
+"Dense Pufts are non-aggressive critters that excrete condensed <link="
+"\"OXYROCK\">Oxylite</link> with each breath."
+msgstr ""
+"パフはおとなしい種族で、呼吸の度に<link=\"SLIMEMOLD\">ヘドロ</link>塊を排泄し"
+"ます。"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.EGG_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.EGG_NAME"
+#| msgid "<link=\"PUFTEGG\">Puftlet Egg</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.EGG_NAME"
+msgid "<link=\"PUFTOXYLITE\">Dense Puftlet Egg</link>"
+msgstr "<link=\"PUFTEGG\">パフの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
+#| msgid "<link=\"PUFT\">Puft</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.NAME"
+msgid "<link=\"PUFTOXYLITE\">Dense Puft</link>"
 msgstr "<link=\"PUFT\">パフ</link>"
 
 #. STRINGS.CREATURES.SPECIES.SEEDS.BASICFABRICMATERIALPLANT.DESC
@@ -8411,6 +11016,22 @@ msgctxt "STRINGS.CREATURES.SPECIES.SWAMPLILY.NAME"
 msgid "<link=\"SWAMPLILY\">Balm Lily</link>"
 msgstr "<link=\"SWAMPLILY\">バームリリー</link>"
 
+#. STRINGS.CREATURES.STATS.AGE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ARRIVALTIME"
+#| msgid "Age: "
+msgctxt "STRINGS.CREATURES.STATS.AGE.NAME"
+msgid "Age"
+msgstr "年齢: "
+
+#. STRINGS.CREATURES.STATS.AGE.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATS.AGE.TOOLTIP"
+msgid ""
+"Age\n"
+"------------------\n"
+"This critter will die when its Age reaches its species' maximum lifespan"
+msgstr ""
+
 #. STRINGS.CREATURES.STATS.AIRPRESSURE.NAME
 msgctxt "STRINGS.CREATURES.STATS.AIRPRESSURE.NAME"
 msgid "Air Pressure"
@@ -8615,6 +11236,22 @@ msgstr ""
 "----------\n"
 "食糧品は鮮度50%以下になると痛み始め、0%の時点で腐ります"
 
+#. STRINGS.CREATURES.STATS.SCALEGROWTH.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.CROP.GROWTH_HALTED"
+#| msgid "Halted Growth"
+msgctxt "STRINGS.CREATURES.STATS.SCALEGROWTH.NAME"
+msgid "Scale Growth"
+msgstr "生育中断"
+
+#. STRINGS.CREATURES.STATS.SCALEGROWTH.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATS.SCALEGROWTH.TOOLTIP"
+msgid ""
+"Scale Growth\n"
+"------------------\n"
+"How long until this creatures scales will grow back."
+msgstr ""
+
 #. STRINGS.CREATURES.STATS.THERMALCONDUCTIVITY.NAME
 msgctxt "STRINGS.CREATURES.STATS.THERMALCONDUCTIVITY.NAME"
 msgid "Thermal Conductivity"
@@ -8736,6 +11373,19 @@ msgstr "潜っている"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BURROWING.TOOLTIP"
 msgid "This critter is trying to hide"
 msgstr "この動物は隠れようとしています"
+
+#. STRINGS.CREATURES.STATUSITEMS.CALL_ADULT.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.CALL_ADULT.NAME"
+msgid "Calling Adult"
+msgstr ""
+
+#. STRINGS.CREATURES.STATUSITEMS.CALL_ADULT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.FABRICATE.TOOLTIP"
+#| msgid "This Duplicant is crafting something"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.CALL_ADULT.TOOLTIP"
+msgid "This baby is craving attention."
+msgstr "この複製人間は製造中です"
 
 #. STRINGS.CREATURES.STATUSITEMS.CANTACCEPTFERTILIZER.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CANTACCEPTFERTILIZER.NAME"
@@ -9050,6 +11700,19 @@ msgstr ""
 "この動物は離脱しようとしています\n"
 "逃すな！"
 
+#. STRINGS.CREATURES.STATUSITEMS.FLOPPING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.MOPPING.NAME"
+#| msgid "Mopping"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.FLOPPING.NAME"
+msgid "Flopping"
+msgstr "モップがけしている"
+
+#. STRINGS.CREATURES.STATUSITEMS.FLOPPING.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.FLOPPING.TOOLTIP"
+msgid "Fish out of water!"
+msgstr ""
+
 #. STRINGS.CREATURES.STATUSITEMS.FRESH.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FRESH.NAME"
 msgid "Fresh {RotPercentage}"
@@ -9095,6 +11758,19 @@ msgstr "生育中 [{PercentGrow}%]"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.GROWING.TOOLTIP"
 msgid "Next harvest: {TimeUntilNextHarvest}"
 msgstr "次の収穫まで: {TimeUntilNextHarvest}"
+
+#. STRINGS.CREATURES.STATUSITEMS.GROWINGUP.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.GROWINGUP.NAME"
+msgid "Maturing"
+msgstr ""
+
+#. STRINGS.CREATURES.STATUSITEMS.GROWINGUP.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.BREATH.TOOLTIP"
+#| msgid "This critter is about to suffocate"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.GROWINGUP.TOOLTIP"
+msgid "This baby critter is about to reach adulthood"
+msgstr "この動物は窒息しそうです"
 
 #. STRINGS.CREATURES.STATUSITEMS.HATCHING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HATCHING.NAME"
@@ -9516,6 +12192,17 @@ msgstr "もがいている"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STRUGGLING.TOOLTIP"
 msgid "This critter is trying to get away"
 msgstr "この動物は逃げようとしています"
+
+#. STRINGS.CREATURES.STATUSITEMS.STUNTED_SCALE_GROWTH.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.STUNTED_SCALE_GROWTH.NAME"
+msgid "Stunted Scales"
+msgstr ""
+
+#. STRINGS.CREATURES.STATUSITEMS.STUNTED_SCALE_GROWTH.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.STUNTED_SCALE_GROWTH.TOOLTIP"
+msgid ""
+"This critter's scale growth is being stunted by an unfavorable environment"
+msgstr ""
 
 #. STRINGS.CREATURES.STATUSITEMS.SUFFOCATING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SUFFOCATING.NAME"
@@ -9957,16 +12644,6 @@ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOCTOREDLEVEL.NAME"
 msgid "<link=\"MEDICINE\">Care Received</link> Effect"
 msgstr "<link=\"MEDICINE\">看護</link>効果"
 
-#. STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.DESC
-msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.DESC"
-msgid "Determines how easily a critter gains or loses Domestication."
-msgstr "複製人間が動物を手懐ける手際の良さを決定します。"
-
-#. STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME
-msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
-msgid "Domesticability"
-msgstr "動物好き"
-
 #. STRINGS.DUPLICANTS.ATTRIBUTES.FATALTEMPERATURE.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FATALTEMPERATURE.DESC"
 msgid ""
@@ -10009,6 +12686,33 @@ msgstr "食糧品質期待値"
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.GENERATOROUTPUT.NAME"
 msgid "Power Output"
 msgstr "出力"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESS.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESS.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.HAPPINESS.NAME"
+#| msgid "Happiness"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESS.NAME"
+msgid "Happiness"
+msgstr "幸福度"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESSDELTA.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESSDELTA.DESC"
@@ -10072,6 +12776,33 @@ msgstr "複製人間の病気への罹りやすさ、回復までの時間を決
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.NAME"
 msgid "Immunity"
 msgstr "免疫"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.INCUBATIONDELTA.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INCUBATIONDELTA.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.INCUBATIONDELTA.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_INCUBATION_RATE.NAME"
+#| msgid "Incubation Rate"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INCUBATIONDELTA.NAME"
+msgid "Incubation Rate"
+msgstr "孵化レート"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.DESC"
@@ -10171,6 +12902,16 @@ msgstr "複製人間の水中における移動速度を決定します。"
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MAXUNDERWATERTRAVELCOST.NAME"
 msgid "Underwater Movement"
 msgstr "水中移動速度"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.METABOLISM.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.METABOLISM.DESC"
+msgid "Affects the rate at which a critter burns calories."
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.METABOLISM.NAME
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.METABOLISM.NAME"
+msgid "Metabolism"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MODIFIER_ENTRY
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MODIFIER_ENTRY"
@@ -13398,6 +16139,11 @@ msgid ""
 "link> strength."
 msgstr "<link=\"IMMUNE SYSTEM\">免疫力</link>を強化する健康サプリメントです。"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.METABOLISM_CALORIE_MODIFIER.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.METABOLISM_CALORIE_MODIFIER.NAME"
+msgid "Metabolism"
+msgstr ""
+
 #. STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.NAME"
 msgid "Moderate Wounds"
@@ -14975,6 +17721,21 @@ msgctxt "STRINGS.DUPLICANTS.ROLES.OIL_TECHNICIAN.NAME"
 msgid "<link=\"OILTECHNICIAN\">Oil Technician</link>"
 msgstr "<link=\"OILTECHNICIAN\">油工</link>"
 
+#. STRINGS.DUPLICANTS.ROLES.PLUMBER.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.PLUMBER.DESCRIPTION"
+msgid ""
+"Becoming a plumber allows you to empty pipes without leaking water "
+"everywhere."
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ROLES.PLUMBER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.NAME"
+#| msgid "<link=\"BURNER\">Burner</link>"
+msgctxt "STRINGS.DUPLICANTS.ROLES.PLUMBER.NAME"
+msgid "<link=\"PLUMBER\">Plumber</link>"
+msgstr "<link=\"BURNER\">バーナー</link>"
+
 #. STRINGS.DUPLICANTS.ROLES.POWER_TECHNICIAN.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.POWER_TECHNICIAN.DESCRIPTION"
 msgid ""
@@ -16292,6 +19053,41 @@ msgstr "隔離"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINED.TOOLTIP"
 msgid "This Duplicant has been isolated from the colony"
 msgstr "この複製人間はコロニー内で隔離されています"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_PERMITTED"
+#| msgid "Not permitted"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NAME"
+msgid "Food Not Permitted"
+msgstr "許可されていない"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.UNREFRIGERATEDFOOD.NAME"
+#| msgid "Unrefrigerated Food"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_NAME"
+msgid "Unpermitted food"
+msgstr "冷蔵されていない食糧"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_STARVATION.TOOLTIP"
+#| msgid "These Duplicants died from a lack of <link=\"FOOD\">Food</link>:"
+msgctxt ""
+"STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_TOOLTIP"
+msgid ""
+"These Duplicants are not allowed to eat any of the <link=\"FOOD\">Food</"
+"link> within their reach:"
+msgstr "これらの複製人間は<link=\"FOOD\">食糧</link>不足により死亡しました:"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.LIQUIDCOOLEDFAN.TOOLTIP"
+#| msgid "This Duplicant is attempting to cool down the area"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.TOOLTIP"
+msgid "This Duplicant is not allowed to eat any of the food they can reach."
+msgstr "この複製人間は周囲を冷やそうとしています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.NAME"
@@ -19473,6 +22269,14 @@ msgctxt "STRINGS.ELEMENTS.STEELGAS.NAME"
 msgid "<link=\"STEELGAS\">Steel</link>"
 msgstr "<link=\"STEELGAS\">鋼鉄</link>"
 
+#. STRINGS.ELEMENTS.THERMALPROPERTIES
+msgctxt "STRINGS.ELEMENTS.THERMALPROPERTIES"
+msgid ""
+"\n"
+"Specific Heat Capacity: {0} (J/g)/K\n"
+"Thermal Conductivity: {1} (W/m)/K"
+msgstr ""
+
 #. STRINGS.ELEMENTS.TOXICSAND.BUILD_DESC
 msgctxt "STRINGS.ELEMENTS.TOXICSAND.BUILD_DESC"
 msgid ""
@@ -20325,6 +23129,447 @@ msgctxt "STRINGS.INPUT_BINDINGS.MANAGEMENT.NAME"
 msgid "Management"
 msgstr "管理"
 
+#. STRINGS.INPUT_BINDINGS.ROOT.ALTERNATEVIEW
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.ALTERNATEVIEW"
+msgid "AlternateView"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.ROOT.ATTACK
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.ATTACK.NAME"
+#| msgid "Attack"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.ATTACK"
+msgid "Attack"
+msgstr "攻撃"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.BUILDINGCANCEL
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.BUILDING.NAME"
+#| msgid "Building"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.BUILDINGCANCEL"
+msgid "BuildingCancel"
+msgstr "設備"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.BUILDINGDECONSTRUCT
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_MARKED_FOR_DECONSTRUCTION"
+#| msgid "Being deconstructed"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.BUILDINGDECONSTRUCT"
+msgid "BuildingDeconstruct"
+msgstr "解体中"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.CAMERAHOME
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.CAMERAHOME"
+msgid "CameraHome"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.ROOT.CAPTURE
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.FUTURE"
+#| msgid "Future"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.CAPTURE"
+msgid "Capture"
+msgstr "未来の"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.CLEAR
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.CLEANTOILET.NAME"
+#| msgid "Clean"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.CLEAR"
+msgid "Clear"
+msgstr "清掃"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.CYCLESPEED
+#, fuzzy
+#| msgctxt "STRINGS.UI.ASTEROIDCLOCK.CYCLE"
+#| msgid "Cycle"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.CYCLESPEED"
+msgid "CycleSpeed"
+msgstr "サイクル"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.DIG
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.DIG.NAME"
+#| msgid "Dig"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.DIG"
+msgid "Dig"
+msgstr "採掘"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.DISINFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.DISINFECTABLE.ENABLE_DISINFECT.NAME"
+#| msgid "Disinfect"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.DISINFECT"
+msgid "Disinfect"
+msgstr "消毒"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.EMPTYPIPE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME"
+#| msgid "Empty Pipe"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.EMPTYPIPE"
+msgid "EmptyPipe"
+msgstr "パイプが空"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.HARVEST
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.HARVEST.NAME"
+#| msgid "Harvest"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.HARVEST"
+msgid "Harvest"
+msgstr "収穫"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.MOP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.MOP.NAME"
+#| msgid "Mop"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.MOP"
+msgid "Mop"
+msgstr "モップ掛け"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.NAME
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.NAME"
+msgid "Root"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY1
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY1"
+msgid "Overlay1"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY10
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY10"
+msgid "Overlay10"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY11
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY11"
+msgid "Overlay11"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY12
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY12"
+msgid "Overlay12"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY13
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY13"
+msgid "Overlay13"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY14
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY14"
+msgid "Overlay14"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY2
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY2"
+msgid "Overlay2"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY3
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY3"
+msgid "Overlay3"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY4
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY4"
+msgid "Overlay4"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY5
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY5"
+msgid "Overlay5"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY6
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY6"
+msgid "Overlay6"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY7
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY7"
+msgid "Overlay7"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY8
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY8"
+msgid "Overlay8"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.OVERLAY9
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.BUTTON"
+#| msgid "Germ Overlay"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.OVERLAY9"
+msgid "Overlay9"
+msgstr "病原菌レイヤー"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PANDOWN
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PANDOWN"
+msgid "PanDown"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PANLEFT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.DIRECTION_CONTROL.DIRECTIONS.LEFT"
+#| msgid "Left"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PANLEFT"
+msgid "PanLeft"
+msgstr "左通行"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PANRIGHT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.DIRECTION_CONTROL.DIRECTIONS.RIGHT"
+#| msgid "Right"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PANRIGHT"
+msgid "PanRight"
+msgstr "右通行"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PANUP
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PANUP"
+msgid "PanUp"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN1
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN1"
+msgid "Plan1"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN10
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN10"
+msgid "Plan10"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN11
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN11"
+msgid "Plan11"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN12
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN12"
+msgid "Plan12"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN2
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN2"
+msgid "Plan2"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN3
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN3"
+msgid "Plan3"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN4
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN4"
+msgid "Plan4"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN5
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN5"
+msgid "Plan5"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN6
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN6"
+msgid "Plan6"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN7
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN7"
+msgid "Plan7"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN8
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN8"
+msgid "Plan8"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PLAN9
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.WHEEZEWORT.SUBTITLE"
+#| msgid "Plant"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PLAN9"
+msgid "Plan9"
+msgstr "植物"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.PRIORITIZE
+#, fuzzy
+#| msgctxt "STRINGS.UI.JOBSCREEN_PRIORITY"
+#| msgid "Priority"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.PRIORITIZE"
+msgid "Prioritize"
+msgstr "優先度"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.SLOWDOWN
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.SLOWDOWN"
+msgid "SlowDown"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.ROOT.SPEEDUP
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.SPEEDUP"
+msgid "SpeedUp"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.ROOT.TOGGLEPAUSE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.TOGGLE.NAME"
+#| msgid "Toggle"
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.TOGGLEPAUSE"
+msgid "TogglePause"
+msgstr "切り換え"
+
+#. STRINGS.INPUT_BINDINGS.ROOT.TOGGLESCREENSHOTMODE
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.TOGGLESCREENSHOTMODE"
+msgid "ToggleScreenshotMode"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.ROOT.ZOOMIN
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.ZOOMIN"
+msgid "ZoomIn"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.ROOT.ZOOMOUT
+msgctxt "STRINGS.INPUT_BINDINGS.ROOT.ZOOMOUT"
+msgid "ZoomOut"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.ZERO"
+#| msgid "Standby"
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.NAME"
+msgid "Sandbox"
+msgstr "スタンバイ"
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXBRUSH
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXBRUSH"
+msgid "SandboxBrush"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXCLEARFLOOR
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.CLEAR_BUTTON"
+#| msgid "Clear Floor"
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXCLEARFLOOR"
+msgid "SandboxClearFloor"
+msgstr "床掃除"
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXDESTROY
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.DESTROY_BUTTON"
+#| msgid "Destroy"
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXDESTROY"
+msgid "SandboxDestroy"
+msgstr "破壊"
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXFLOOD
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXFLOOD"
+msgid "SandboxFlood"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXHEATGUN
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXHEATGUN"
+msgid "SandboxHeatGun"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXSAMPLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.SAMPLE"
+#| msgid "Sample"
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXSAMPLE"
+msgid "SandboxSample"
+msgstr "サンプル"
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXSPAWNENTITY
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXSPAWNENTITY"
+msgid "SandboxSpawnEntity"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXSPRINKLE
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXSPRINKLE"
+msgid "SandboxSprinkle"
+msgstr ""
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.TOGGLESANDBOXTOOLS
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.TOGGLESANDBOXTOOLS"
+msgid "ToggleSandboxTools"
+msgstr ""
+
 #. STRINGS.INPUT_BINDINGS.TOOL.DRAGSTRAIGHT
 msgctxt "STRINGS.INPUT_BINDINGS.TOOL.DRAGSTRAIGHT"
 msgid "DragStraight"
@@ -20474,6 +23719,37 @@ msgctxt "STRINGS.ITEMS.FOOD.COOKEDMEAT.RECIPEDESC"
 msgid "The cooked meat of a defeated critter."
 msgstr "倒した動物の肉を調理したものです。"
 
+#. STRINGS.ITEMS.FOOD.DRECKOEGG.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.DESC"
+#| msgid ""
+#| "Not meeting a Duplicant's <link=\"DECOR\">Decor</link> expectations will "
+#| "increase their <link=\"STRESS\">Stress</link>."
+msgctxt "STRINGS.ITEMS.FOOD.DRECKOEGG.DESC"
+msgid ""
+"An egg laid by a <link=\"DRECKO\">Drecko</link>\n"
+"\n"
+"If incubated, it will hatch into a new <link=\"DRECKO\">Drecko</link>"
+msgstr ""
+"<link=\"DECOR\">装飾</link>が複製人間の期待に満たない場合、<link=\"STRESS\">"
+"ストレス</link>上昇の原因となります。"
+
+#. STRINGS.ITEMS.FOOD.DRECKOEGG.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
+#| msgid "<link=\"DECOR\">Decor</link>"
+msgctxt "STRINGS.ITEMS.FOOD.DRECKOEGG.NAME"
+msgid "<link=\"DRECKO\">Drecklet Egg</link>"
+msgstr "<link=\"DECOR\">装飾</link>"
+
+#. STRINGS.ITEMS.FOOD.DRECKOEGG.RECIPEDESC
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
+#| msgid "<link=\"DECOR\">Decor</link>"
+msgctxt "STRINGS.ITEMS.FOOD.DRECKOEGG.RECIPEDESC"
+msgid "An egg laid by a <link=\"DRECKO\">Drecko</link>"
+msgstr "<link=\"DECOR\">装飾</link>"
+
 #. STRINGS.ITEMS.FOOD.FIELDRATION.DESC
 msgctxt "STRINGS.ITEMS.FOOD.FIELDRATION.DESC"
 msgid "A nourishing nutrient paste, sandwiched between thin wafer layers."
@@ -20579,32 +23855,50 @@ msgstr "<link=\"PRICKLEFRUIT\">ブリッスルベリー</link>の実を焼いた
 #. STRINGS.ITEMS.FOOD.HATCHEGG.DESC
 msgctxt "STRINGS.ITEMS.FOOD.HATCHEGG.DESC"
 msgid ""
+"An egg laid by a <link=\"HATCH\">Hatch</link>\n"
+"\n"
+"If incubated, it will hatch into a <link=\"HATCH\">Hatchling</link>"
 msgstr ""
 
 #. STRINGS.ITEMS.FOOD.HATCHEGG.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.FOOD.HATCHEGG.NAME"
+#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
 msgctxt "STRINGS.ITEMS.FOOD.HATCHEGG.NAME"
-msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
+msgid "<link=\"HATCH\">Hatchling Egg</link>"
 msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
 
 #. STRINGS.ITEMS.FOOD.HATCHEGG.RECIPEDESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
+#| msgid "<link=\"HATCH\">Hatch</link>"
 msgctxt "STRINGS.ITEMS.FOOD.HATCHEGG.RECIPEDESC"
-msgid ""
-msgstr ""
+msgid "An egg laid by a <link=\"HATCH\">Hatch</link>"
+msgstr "<link=\"HATCH\">ハッチ</link>"
 
 #. STRINGS.ITEMS.FOOD.LIGHTBUGEGG.DESC
 msgctxt "STRINGS.ITEMS.FOOD.LIGHTBUGEGG.DESC"
 msgid ""
+"An egg laid by a <link=\"LIGHTBUG\">Shine Bug</link>\n"
+"\n"
+"If incubated, it will hatch into a <link=\"LIGHTBUG\">Shine Nymph</link>"
 msgstr ""
 
 #. STRINGS.ITEMS.FOOD.LIGHTBUGEGG.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.FOOD.LIGHTBUGEGG.NAME"
+#| msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
 msgctxt "STRINGS.ITEMS.FOOD.LIGHTBUGEGG.NAME"
-msgid "<link=\"LIGHTBUGEGG\">Shine Nymph Egg</link>"
+msgid "<link=\"LIGHTBUG\">Shine Nymph Egg</link>"
 msgstr "<link=\"LIGHTBUGEGG\">シャインバグの卵</link>"
 
 #. STRINGS.ITEMS.FOOD.LIGHTBUGEGG.RECIPEDESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
+#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
 msgctxt "STRINGS.ITEMS.FOOD.LIGHTBUGEGG.RECIPEDESC"
-msgid ""
-msgstr ""
+msgid "An egg laid by a <link=\"LIGHTBUG\">Shine Bug</link>"
+msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
 
 #. STRINGS.ITEMS.FOOD.MEAT.DESC
 msgctxt "STRINGS.ITEMS.FOOD.MEAT.DESC"
@@ -20656,17 +23950,27 @@ msgstr "<link=\"MUSHROOM\">キノコ</link>"
 #. STRINGS.ITEMS.FOOD.OILFLOATEREGG.DESC
 msgctxt "STRINGS.ITEMS.FOOD.OILFLOATEREGG.DESC"
 msgid ""
+"An egg laid by a <link=\"OILFLOATER\">Slickster</link>\n"
+"\n"
+"If incubated, it will hatch into a <link=\"OILFLOATER\">Slickster Larva</"
+"link>"
 msgstr ""
 
 #. STRINGS.ITEMS.FOOD.OILFLOATEREGG.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.FOOD.OILFLOATEREGG.NAME"
+#| msgid "<link=\"OILFLOATEREGG\">Slickster Larva Egg</link>"
 msgctxt "STRINGS.ITEMS.FOOD.OILFLOATEREGG.NAME"
-msgid "<link=\"OILFLOATEREGG\">Slickster Larva Egg</link>"
+msgid "<link=\"OILFLOATER\">Slickster Larva Egg</link>"
 msgstr "<link=\"OILFLOATEREGG\">スリックスターの卵</link>"
 
 #. STRINGS.ITEMS.FOOD.OILFLOATEREGG.RECIPEDESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.NAME"
+#| msgid "<link=\"OILFLOATER\">Slickster</link>"
 msgctxt "STRINGS.ITEMS.FOOD.OILFLOATEREGG.RECIPEDESC"
-msgid ""
-msgstr ""
+msgid "An egg laid by a <link=\"OILFLOATER\">Slickster</link>"
+msgstr "<link=\"OILFLOATER\">スリックスター</link>"
 
 #. STRINGS.ITEMS.FOOD.PICKLEDMEAL.DESC
 msgctxt "STRINGS.ITEMS.FOOD.PICKLEDMEAL.DESC"
@@ -20702,17 +24006,26 @@ msgstr "<link=\"PRICKLEFRUIT\">ブリッスルベリー</link>"
 #. STRINGS.ITEMS.FOOD.PUFTEGG.DESC
 msgctxt "STRINGS.ITEMS.FOOD.PUFTEGG.DESC"
 msgid ""
+"An egg laid by a <link=\"PUFT\">Puft</link>\n"
+"\n"
+"If incubated, it will hatch into a <link=\"PUFT\">Puftlet</link>"
 msgstr ""
 
 #. STRINGS.ITEMS.FOOD.PUFTEGG.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.FOOD.PUFTEGG.NAME"
+#| msgid "<link=\"PUFTEGG\">Puftlet Egg</link>"
 msgctxt "STRINGS.ITEMS.FOOD.PUFTEGG.NAME"
-msgid "<link=\"PUFTEGG\">Puftlet Egg</link>"
+msgid "<link=\"PUFT\">Puftlet Egg</link>"
 msgstr "<link=\"PUFTEGG\">パフの卵</link>"
 
 #. STRINGS.ITEMS.FOOD.PUFTEGG.RECIPEDESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
+#| msgid "<link=\"PUFT\">Puft</link>"
 msgctxt "STRINGS.ITEMS.FOOD.PUFTEGG.RECIPEDESC"
-msgid ""
-msgstr ""
+msgid "An egg laid by a <link=\"PUFT\">Puft</link>"
+msgstr "<link=\"PUFT\">パフ</link>"
 
 #. STRINGS.ITEMS.FOOD.ROTPILE.DESC
 msgctxt "STRINGS.ITEMS.FOOD.ROTPILE.DESC"
@@ -22165,9 +25478,12 @@ msgid "Research Complete"
 msgstr "研究完了"
 
 #. STRINGS.MISC.NOTIFICATIONS.RESEARCHCOMPLETE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.RESEARCHCOMPLETE.NAME"
+#| msgid "Research Complete"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.RESEARCHCOMPLETE.TOOLTIP"
-msgid "<link=\"{0}\">research</link> research complete!"
-msgstr "研究が完了しました！"
+msgid "{0} research complete!"
+msgstr "研究完了"
 
 #. STRINGS.MISC.NOTIFICATIONS.RESOURCEMELTED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.RESOURCEMELTED.NAME"
@@ -26736,6 +30052,38 @@ msgid "<link=\"DECOR\">Decor</link>: {1} (Radius: {2} tiles)"
 msgstr ""
 "<link=\"DECOR\">装飾</link>: <style=\"{0}\">{1}</style>(半径 {2} タイル)"
 
+#. STRINGS.UI.BUILDINGEFFECTS.DIET_CONSUMED
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_CONSUMED"
+msgid "    • Diet: {Foodlist}"
+msgstr ""
+
+#. STRINGS.UI.BUILDINGEFFECTS.DIET_CONSUMED_ITEM
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_CONSUMED_ITEM"
+msgid "{Food}: {Amount}"
+msgstr ""
+
+#. STRINGS.UI.BUILDINGEFFECTS.DIET_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.DIGESTING.NAME"
+#| msgid "Digesting"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_HEADER"
+msgid "Digestion:"
+msgstr "消化中"
+
+#. STRINGS.UI.BUILDINGEFFECTS.DIET_PRODUCED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE.GROW"
+#| msgid "    • Growing on {0}: {1}"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_PRODUCED"
+msgid "    • Excretion: {Items}"
+msgstr "    • 増殖中 {0}: {1}"
+
+#. STRINGS.UI.BUILDINGEFFECTS.DIET_PRODUCED_ITEM
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_PRODUCED_ITEM"
+msgid "{Item}: {Percent} of consumed mass"
+msgstr ""
+
 #. STRINGS.UI.BUILDINGEFFECTS.DISEASECONSUMEDPERUSE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.DISEASECONSUMEDPERUSE"
 msgid "All Diseases: -{0} per use"
@@ -27046,6 +30394,16 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.RESEARCH_MATERIALS"
 msgid "{0}: {1} per <link=\"RESEARCH\">Research</link> point"
 msgstr "{0}: <link=\"RESEARCH\">研究</link>ポイントごとに{1}"
 
+#. STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH"
+msgid "Shearable {Item}: {Amount} per {Time}"
+msgstr ""
+
+#. STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_ATMO
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_ATMO"
+msgid "Shearable {Item}: {Amount} per {Time} ({Atmosphere})"
+msgstr ""
+
 #. STRINGS.UI.BUILDINGEFFECTS.STORAGECAPACITY
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.STORAGECAPACITY"
 msgid "Storage capacity: {0}"
@@ -27143,6 +30501,30 @@ msgstr "半径 {1} タイルの装飾値を {0} 減少させます"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DECORPROVIDED"
 msgid "Improves Decor values by {0} in a {1} tile radius"
 msgstr "半径 {1} タイルの装飾値を {0} 増加させます"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_CONSUMED
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_CONSUMED"
+msgid ""
+"This critter can typically consume these materials at the following rates:\n"
+"\n"
+"{Foodlist}"
+msgstr ""
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_HEADER
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_HEADER"
+msgid "Creatures will eat and digest only specific materials."
+msgstr ""
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_PRODUCED
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.GAIN_FERTILITY.TOOLTIP"
+#| msgid "This critter will produce an egg soon if conditions remain favorable"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_PRODUCED"
+msgid ""
+"This critter will \"produce\" the following materials:\n"
+"\n"
+"{Items}"
+msgstr "この動物は好適な条件が満たされていれば卵を産みやすくなります"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DISEASECONSUMEDPERUSE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DISEASECONSUMEDPERUSE"
@@ -27536,6 +30918,19 @@ msgid ""
 "This research station consumes {1} of {0} for each research point produced"
 msgstr "この研究端末は研究ポイントあたり{0}を{1}消費します"
 
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH"
+msgid "This critter can be sheared every {Time} to produce {Amount} {Item}"
+msgstr ""
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_ATMO
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_ATMO"
+msgid ""
+"This critter can be sheared every {Time} to produce {Amount} {Item}\n"
+"\n"
+"An atmosphere of {Atmosphere} is required to stimulate growth"
+msgstr ""
+
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.STORAGECAPACITY
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.STORAGECAPACITY"
 msgid "Holds up to {0} of material"
@@ -27656,6 +31051,14 @@ msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTSSOLID"
 msgid "<link=\"ELEMENTSSOLID\">Solids</link>"
 msgstr "<link=\"ELEMENTSSOLID\">固体</link>"
 
+#. STRINGS.UI.CODEX.CATEGORYNAMES.EMAILS
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.TILE.NAME"
+#| msgid "<link=\"TILE\">Tile</link>"
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.EMAILS"
+msgid "<link=\"EMAILS\">E-mail</link>"
+msgstr "<link=\"TILE\">タイル</link>"
+
 #. STRINGS.UI.CODEX.CATEGORYNAMES.FOOD
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.FOOD"
 msgid "<link=\"FOOD\">Food</link>"
@@ -27665,6 +31068,14 @@ msgstr "<link=\"FOOD\">食糧</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.GEYSERS"
 msgid "<link=\"GEYSERS\">Geysers</link>"
 msgstr "<link=\"GEYSERS\">間欠泉</link>"
+
+#. STRINGS.UI.CODEX.CATEGORYNAMES.JOURNALS
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.IRONGAS.NAME"
+#| msgid "<link=\"IRONGAS\">Iron</link>"
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.JOURNALS"
+msgid "<link=\"JOURNALS\">Journals</link>"
+msgstr "<link=\"IRONGAS\">鉄</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.PLANTS
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.PLANTS"
@@ -27677,8 +31088,11 @@ msgid "<link=\"ROLES\">Duplicant Jobs</link>"
 msgstr "<link=\"ROLES\">複製人間の職業</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.ROOT
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ROOT"
+#| msgid "<link=\"HOME\">Home</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ROOT"
-msgid "<link=\"HOME\">Home</link>"
+msgid "<link=\"HOME\">Index</link>"
 msgstr "<link=\"HOME\">ホーム</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.SYSTEMS
@@ -27695,6 +31109,25 @@ msgstr "<link=\"TECH\">研究</link>"
 msgctxt "STRINGS.UI.CODEX.DETAILS"
 msgid "Details"
 msgstr "詳細"
+
+#. STRINGS.UI.CODEX.FOOD.QUALITY
+#, fuzzy
+#| msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY"
+#| msgid "Quality: {0}"
+msgctxt "STRINGS.UI.CODEX.FOOD.QUALITY"
+msgid "Quality: {0}"
+msgstr "品質: {0}"
+
+#. STRINGS.UI.CODEX.FOOD.SPOILPROPERTIES
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.TEMPERATURE.TITLE"
+#| msgid "    • Current temperature {0}: {1}"
+msgctxt "STRINGS.UI.CODEX.FOOD.SPOILPROPERTIES"
+msgid ""
+"Preserve temperature: {0}\n"
+"Spoil time: {1}"
+msgstr "    •現在の温度 {0}: {1}"
 
 #. STRINGS.UI.CODEX.GEYSERS.DESC
 msgctxt "STRINGS.UI.CODEX.GEYSERS.DESC"
@@ -27727,6 +31160,27 @@ msgstr ""
 msgctxt "STRINGS.UI.CODEX.MANAGEMENT_BUTTON"
 msgid "DATABASE"
 msgstr "データベース"
+
+#. STRINGS.UI.CODEX.RECIPE_FABRICATOR
+msgctxt "STRINGS.UI.CODEX.RECIPE_FABRICATOR"
+msgid "{1} ({0} seconds)"
+msgstr ""
+
+#. STRINGS.UI.CODEX.RECIPE_FABRICATOR_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEADERS.PRODUCES"
+#| msgid "Produces"
+msgctxt "STRINGS.UI.CODEX.RECIPE_FABRICATOR_HEADER"
+msgid "Produced by"
+msgstr "生産"
+
+#. STRINGS.UI.CODEX.RECIPE_ITEM
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DECOR.ENTRY"
+#| msgid "{0} {1} {2}"
+msgctxt "STRINGS.UI.CODEX.RECIPE_ITEM"
+msgid "{0} x {1}{2}"
+msgstr "{0} {1} {2}"
 
 #. STRINGS.UI.CODEX.SEARCH_HEADER
 msgctxt "STRINGS.UI.CODEX.SEARCH_HEADER"
@@ -28721,6 +32175,36 @@ msgctxt "STRINGS.UI.DETAILTABS.DISEASE.TOOLTIP"
 msgid "View the disease risk presented by the selected object"
 msgstr "選択した物体上に存在する病気リスクを見ます"
 
+#. STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.VALUE"
+#| msgid "{0}: {1}"
+msgctxt "STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT"
+msgid "{0}: {1}"
+msgstr "{0}: {1}"
+
+#. STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT_TOOLTIP
+msgctxt "STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT_TOOLTIP"
+msgid ""
+"This critter has a {1} chance of laying a {0}.\n"
+"\n"
+"Probability is increased if the creature:\n"
+"{2}"
+msgstr ""
+
+#. STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT_TOOLTIP_NOMOD
+msgctxt "STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT_TOOLTIP_NOMOD"
+msgid "This critter has a {1} chance of laying a {0}."
+msgstr ""
+
+#. STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_MOD_FORMAT
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.HIGH_YIELD.LINE_ITEM"
+#| msgid "    • {0}\n"
+msgctxt "STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_MOD_FORMAT"
+msgid "    • {0}\n"
+msgstr "    • {0}\n"
+
 #. STRINGS.UI.DETAILTABS.ENERGYCONSUMER.NAME
 msgctxt "STRINGS.UI.DETAILTABS.ENERGYCONSUMER.NAME"
 msgid "Energy"
@@ -29036,6 +32520,11 @@ msgstr "様態"
 msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_DESCRIPTION"
 msgid "INFORMATION"
 msgstr "情報"
+
+#. STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_FERTILITY
+msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_FERTILITY"
+msgid "EGG CHANCES"
+msgstr ""
 
 #. STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_LORE
 msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_LORE"
@@ -29963,6 +33452,56 @@ msgctxt ""
 msgid "Affects how resistant your Duplicants are to disease"
 msgstr "複製人間の病気への抵抗力です"
 
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.DISABLED.NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS."
+#| "LEVELS.DISABLED.NAME"
+#| msgid "Disabled"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS."
+"DISABLED.NAME"
+msgid "Disabled"
+msgstr "無効化"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.DISABLED.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS."
+"DISABLED.TOOLTIP"
+msgid "Click to enable Sandbox mode"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.ENABLED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.BUILDING.TOGGLEENABLED"
+#| msgid "ToggleEnabled"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS."
+"ENABLED.NAME"
+msgid "Enabled"
+msgstr "有効に切り替え"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.ENABLED.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS."
+"ENABLED.TOOLTIP"
+msgid "Click to disable Sandbox mode"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.NAME"
+msgid "Sandbox mode"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.TOOLTIP"
+msgid ""
+"Allows the simulation to be manipulated with tools that ignore the regular "
+"constraints of the game"
+msgstr ""
+
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.NAME
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT."
@@ -30402,6 +33941,17 @@ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.TRANSLATIONS"
 msgid "TRANSLATIONS"
 msgstr "翻訳"
 
+#. STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.DESCRIPTION
+msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.DESCRIPTION"
+msgid ""
+"We require the collection of user data to assist in improving game "
+"operations. Players who opt out of data collection will no longer send crash "
+"reports and user data to the game team.\n"
+"\n"
+"For more details on our privacy policy and how we use the data we collect, "
+"please visit our <color=blue><u><b>privacy policy</u></b></color>."
+msgstr ""
+
 #. STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.DONE_BUTTON
 msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.DONE_BUTTON"
 msgid "Done"
@@ -30409,19 +33959,24 @@ msgstr "完了"
 
 #. STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.ENABLE_BUTTON
 msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.ENABLE_BUTTON"
-msgid "Send Metrics Data: "
-msgstr "統計データの送信: "
+msgid "Opt-In to Data Collection: "
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.WORLD_GEN_OPTIONS_SCREEN.TITLE"
+#| msgid "WORLD GENERATION OPTIONS"
 msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.TITLE"
-msgid "METRICS OPTIONS"
-msgstr "情報収集"
+msgid "DATA COLLECTION OPTIONS"
+msgstr "ワールド生成オプション"
 
 #. STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.RED_ALERT_TITLE"
+#| msgid "Toggle Red Alert"
 msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.TOOLTIP"
-msgid ""
-"If enabled, metrics data will be sent for the purpose of improving the game."
-msgstr "有効にすると、ゲーム改善のために統計データを送信します。"
+msgid "Toggle data collection."
+msgstr "非常警報を切り替える"
 
 #. STRINGS.UI.FRONTEND.MINSPECSCREEN.BODY
 msgctxt "STRINGS.UI.FRONTEND.MINSPECSCREEN.BODY"
@@ -30522,9 +34077,12 @@ msgid "Change Language"
 msgstr "別言語を選択"
 
 #. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.METRICS
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SAVE_TITLE"
+#| msgid "Save Selection"
 msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.METRICS"
-msgid "Send Metrics Data"
-msgstr "統計データの送信"
+msgid "Data Collection"
+msgstr "選択箇所を保存"
 
 #. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.RESET_TUTORIAL
 msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.RESET_TUTORIAL"
@@ -30545,10 +34103,51 @@ msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TITLE"
 msgid "OPTIONS"
 msgstr "設定"
 
+#. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN.BACKUP_SAVE_GAME_APPEND
+#, fuzzy
+#| msgctxt "STRINGS.UI.IMMIGRANTSCREEN.BACK"
+#| msgid "BACK"
+msgctxt ""
+"STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN."
+"BACKUP_SAVE_GAME_APPEND"
+msgid " (BACKUP)"
+msgstr "戻る"
+
+#. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN.CANCEL
+#, fuzzy
+#| msgctxt "STRINGS.UI.CANCELPLACEINRECEPTACLE"
+#| msgid "Cancel"
+msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN.CANCEL"
+msgid "Cancel"
+msgstr "キャンセル"
+
+#. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN.CONFIRM
+msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN.CONFIRM"
+msgid "Enable sandbox mode"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN.CONFIRM_SAVE_BACKUP
+msgctxt ""
+"STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN.CONFIRM_SAVE_BACKUP"
+msgid "Enable sandbox mode, but save a backup first"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN.UNLOCK_SANDBOX_WARNING
+msgctxt ""
+"STRINGS.UI.FRONTEND.OPTIONS_SCREEN.TOGGLE_SANDBOX_SCREEN."
+"UNLOCK_SANDBOX_WARNING"
+msgid "Sandbox mode will be enabled for this save file"
+msgstr ""
+
 #. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.UNITS
 msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.UNITS"
 msgid "Temperature Units"
 msgstr "温度単位"
+
+#. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.UNLOCK_SANDBOX
+msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.UNLOCK_SANDBOX"
+msgid "Unlock Sandbox Mode"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.OPTIONS_SCREEN.WORLD_GEN
 msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.WORLD_GEN"
@@ -30556,9 +34155,15 @@ msgid "World Generation Key"
 msgstr "ワールド生成キー"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
+#| msgid ""
+#| "<b>Welcome to the Ranching Upgrade Mark I!</b>\n"
+#| "\n"
+#| "{0}"
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
 msgid ""
-"<b>Welcome to the Ranching Upgrade Mark I!</b>\n"
+"<b>Welcome to the Ranching Upgrade Mark II!</b>\n"
 "\n"
 "{0}"
 msgstr ""
@@ -30576,27 +34181,20 @@ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
 msgid ""
 "<b>Update Features:</b>\n"
 "\n"
-"• Creatures now have lifecycles and can be raised from eggs\n"
-"• Rancher job and buildings to take care of all your new creatures\n"
-"• New Duplicant Priority system for broad control of Dupe errands\n"
-"• Learn about buildings, creatures and more with the Database screen\n"
-"• Tons of bug fixes, performance enhancements, QOL additions, and more!\n"
+"• New \"Critter Morphs\" can be hatched through careful breeding\n"
+"• Two new creatures, Drecko and Pacu, can be found in new worlds\n"
+"• Sandbox Mode lets you become master of the asteroid\n"
+"• New automation controls, pipes and buildings\n"
 "\n"
 "Please view the full patch notes for further details!"
 msgstr ""
-"<b>新機能:</b>\n"
-"\n"
-"• 生き物はライフサイクルを持つようになり、卵から孵化するようになりました\n"
-"• 生き物の世話ができる職業、牧夫\n"
-"• 作業ボードから操作できる、複製人間の新しい優先度システム\n"
-"• 設備や生き物などの詳細が学べるデータベース画面\n"
-"• たくさんのバグ修正、パフォーマンス改善、QoL向上などなど\n"
-"\n"
-"より詳しい内容についてはパッチノートを参照してください！"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
+#| msgid "RANCHING UPGRADE MARK I"
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
-msgid "RANCHING UPGRADE MARK I"
+msgid "RANCHING UPGRADE MARK II"
 msgstr "家畜アップデート第一弾"
 
 #. STRINGS.UI.FRONTEND.PAUSE_SCREEN.DESKTOPQUIT
@@ -30744,12 +34342,45 @@ msgstr ""
 "{0}"
 
 #. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.SAVE_DIRECTORY_READ_ONLY
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.SAVE_DIRECTORY_READ_ONLY"
+#| msgid ""
+#| "A problem occurred while accessing your save directory.\n"
+#| "This may be because your directory is set to read-only.\n"
+#| "\n"
+#| "Please ensure your save directory is writable and re-launch the game.\n"
+#| "{0}"
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.SAVE_DIRECTORY_READ_ONLY"
 msgid ""
 "A problem occurred while accessing your save directory.\n"
 "This may be because your directory is set to read-only.\n"
 "\n"
-"Please ensure your save directory is writable and re-launch the game.\n"
+"Please ensure your save directory is readable as well as writable and re-"
+"launch the game.\n"
+"{0}"
+msgstr ""
+"セーブフォルダアクセス中に問題が発生しました。\n"
+"セーブフォルダが読み取り専用になっているのかもしれません。\n"
+"\n"
+"セーブフォルダを読み書き可にしてからゲームを再起動してください。\n"
+"{0}"
+
+#. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FILES
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.SAVE_DIRECTORY_READ_ONLY"
+#| msgid ""
+#| "A problem occurred while accessing your save directory.\n"
+#| "This may be because your directory is set to read-only.\n"
+#| "\n"
+#| "Please ensure your save directory is writable and re-launch the game.\n"
+#| "{0}"
+msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FILES"
+msgid ""
+"A problem occurred while accessing certain game files that will prevent "
+"starting new games.\n"
+"\n"
+"Please ensure you can modify these files and re-launch the game:\n"
+"\n"
 "{0}"
 msgstr ""
 "セーブフォルダアクセス中に問題が発生しました。\n"
@@ -30807,6 +34438,16 @@ msgstr "English (Klei)"
 msgctxt ""
 "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PREINSTALLED_LANGUAGES.KO_KLEI"
 msgid "Korean (Klei)"
+msgstr "Korean (Klei)"
+
+#. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PREINSTALLED_LANGUAGES.RU_KLEI
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PREINSTALLED_LANGUAGES.KO_KLEI"
+#| msgid "Korean (Klei)"
+msgctxt ""
+"STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PREINSTALLED_LANGUAGES.RU_KLEI"
+msgid "Russian (Klei)"
 msgstr "Korean (Klei)"
 
 #. STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.PREINSTALLED_LANGUAGES.ZH_KLEI
@@ -31670,8 +35311,11 @@ msgid "Set all errand priorities colonywide"
 msgstr "コロニー全体の全ての作業を切り替えます"
 
 #. STRINGS.UI.JOBSSCREEN.TRAIT_DISABLED
+#, fuzzy
+#| msgctxt "STRINGS.UI.JOBSSCREEN.TRAIT_DISABLED"
+#| msgid "{Name} is unable to do {Job} errands because of the {Trait} trait"
 msgctxt "STRINGS.UI.JOBSSCREEN.TRAIT_DISABLED"
-msgid "{Name} is unable to do {Job} errands because of the {Trait} trait"
+msgid "{Name} cannot do {Job} errands because they possess the {Trait} trait"
 msgstr "{Name}は{Trait}特性の影響で{Job}作業ができません"
 
 #. STRINGS.UI.LISTENTRYSTRING
@@ -33760,6 +37404,11 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_VERY_FIRM.DESCRIPTION"
 msgid "Trait: <link=\"HARDNESS\">Very Firm Material</link> Mining"
 msgstr "特性: <link=\"HARDNESS\">超硬質素材</link>採掘"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DO_PLUMBING.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DO_PLUMBING.DESCRIPTION"
+msgid "Trait: Plumbing"
+msgstr ""
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION"
 msgid "Trait: <link=\"ELECTRIC GRILL\">Electric Grill</link> Cooking"
@@ -34047,6 +37696,317 @@ msgstr "<b>この職業を習得した複製人間はいません</b>"
 msgctxt "STRINGS.UI.ROLES_SCREEN.WIDGET.NUMBER_OF_MASTERS_TOOLTIP"
 msgid "<b>Duplicants who have mastered this job:</b>{0}"
 msgstr "<b>この職業を習得した複製人間:</b>{0}"
+
+#. STRINGS.UI.SANDBOX_TOGGLE.TOOLTIP_LOCKED
+msgctxt "STRINGS.UI.SANDBOX_TOGGLE.TOOLTIP_LOCKED"
+msgid ""
+"Sandbox mode must be unlocked in the options menu before it can be used."
+msgstr ""
+
+#. STRINGS.UI.SANDBOX_TOGGLE.TOOLTIP_UNLOCKED
+msgctxt "STRINGS.UI.SANDBOX_TOGGLE.TOOLTIP_UNLOCKED"
+msgid "Toggle Sandbox mode"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.CLEARFLOOR.DELETED
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.EXPIRED.NAME"
+#| msgid "Depleted"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.CLEARFLOOR.DELETED"
+msgid "Deleted"
+msgstr "使用済み"
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.BACK
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.GENERIC.BACK"
+#| msgid "Back"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.BACK"
+msgid "Back"
+msgstr "戻る"
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.COMMON
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.COMMON"
+msgid "Common substances"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.CREATURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REMOVESEFFECTSUBTITLE"
+#| msgid "Cures"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.CREATURE"
+msgid "Creatures"
+msgstr "治療"
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.CREATURE_EGG
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.CREATURE_EGG"
+msgid "Eggs"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.EQUIPMENT
+#, fuzzy
+#| msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_TANK.GENERICNAME"
+#| msgid "Equipment"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.EQUIPMENT"
+msgid "Equipment"
+msgstr "装備"
+
+# 直訳だと微妙かもしれない
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.EXPERIMENTS
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.ELEMENT"
+#| msgid "Element"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.EXPERIMENTS"
+msgid "Experimental"
+msgstr "要素"
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.FOOD
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.FOOD"
+msgid "Foods"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.GEYSERS
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.GEYSERS"
+msgid "Geysers"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.PLANTS
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEADERS.RECEPTACLE"
+#| msgid "Plants"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.PLANTS"
+msgid "Plants"
+msgstr "植物"
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.SEEDS
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.SEED"
+#| msgid "Seed"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.SEEDS"
+msgid "Seeds"
+msgstr "種子"
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.SPECIAL
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.SPECIAL"
+#| msgid "Special"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.SPECIAL"
+msgid "Special"
+msgstr "特殊"
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.GAS
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.GAS"
+msgid "Gasses"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.LIQUID
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.STATE.LIQUID"
+#| msgid "Liquid"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.LIQUID"
+msgid "Liquids"
+msgstr "液体"
+
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.SOLID
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.STATE.SOLID"
+#| msgid "Solid"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.SOLID"
+msgid "Solids"
+msgstr "固体"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH.NAME
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH.NAME"
+msgid "Brush"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH.TOOLTIP"
+msgid "Paint the world simulation with the brush tool"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.NOISE_POLLUTION.NAMES.WAKEUP"
+#| msgid "Noisy"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME"
+msgid "Noise"
+msgstr "ざわつき"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP"
+msgid "Adjust brush noisiness"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.NAME
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.NAME"
+msgid "Brush size"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.TOOLTIP"
+msgid "Adjust brush size"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.CLEAR_BUTTON"
+#| msgid "Clear Floor"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.NAME"
+msgid "Clear Floor"
+msgstr "床掃除"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.TOOLTIP"
+msgid "Delete clutter"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.DESTROY_BUTTON"
+#| msgid "Destroy"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.NAME"
+msgid "Destroy"
+msgstr "破壊"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.TOOLTIP"
+msgid "Destroy everything on a cell"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS"
+#| msgid "Germ Host"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME"
+msgid "Germ count"
+msgstr "保菌者"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP"
+msgid "Adjust germ count"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.FLOODED.NOTIFICATION_NAME"
+#| msgid "Flooding"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.NAME"
+msgid "Flood"
+msgstr "水没"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.TOOLTIP"
+msgid "Paint the world simulation with a the flood area tool"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.HEATGUN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEAT.TITLE"
+#| msgid "Heat"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.HEATGUN.NAME"
+msgid "Heat Gun"
+msgstr "熱源"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.HEATGUN.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.HEATGUN.TOOLTIP"
+msgid "Inject thermal energy into the world simulation"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.INSTANT_BUILD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGINSTANTBUILDMODE"
+#| msgid "DebugInstantBuildMode"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.INSTANT_BUILD.NAME"
+msgid "Instant build mode"
+msgstr "デバッグ:即席建築モード"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.INSTANT_BUILD.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.INSTANT_BUILD.TOOLTIP"
+msgid "Toggle between placing construction plans and fully built buildings"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.TEMPERATURE.EXTREMECOLD"
+#| msgid "Absolute Zero"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.NAME"
+msgid "Absolute mass"
+msgstr "絶対零度"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.TOOLTIP"
+msgid "Adjust mass"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SAMPLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.SAMPLE"
+#| msgid "Sample"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SAMPLE.NAME"
+msgid "Sample"
+msgstr "サンプル"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SAMPLE.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SAMPLE.TOOLTIP"
+msgid "Sample a tile's state for use with the brush tools"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWN_ENTITY.NAME
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWN_ENTITY.NAME"
+msgid "Spawn"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWNER.NAME
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWNER.NAME"
+msgid "Spawner"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWNER.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWNER.TOOLTIP"
+msgid "Spawn food, creatures, equipment, and other entities"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.NAME
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.NAME"
+msgid "Sprinkle"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.TOOLTIP"
+msgid "Paint the world simulation with a noisey brush tool"
+msgstr ""
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATS.TEMPERATURE.NAME"
+#| msgid "Body Temperature"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME"
+msgid "Absolute temperature"
+msgstr "体温"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.TEMPERATURE_OK.NAME"
+#| msgid "Comfortable Temperature"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.TOOLTIP"
+msgid "Adjust absolute temperature"
+msgstr "快適な温度"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.NAME"
+#| msgid "Ideal Temperature"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME"
+msgid "Additive temperature"
+msgstr "理想温度"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.COLDBREATHER"
+#| msgid "Lowers ambient air temperature"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.TOOLTIP"
+msgid "Adjust additive temperature"
+msgstr "大気の温度を冷やす"
 
 #. STRINGS.UI.SCHEDULE
 msgctxt "STRINGS.UI.SCHEDULE"
@@ -34386,6 +38346,32 @@ msgctxt "STRINGS.UI.TOOLS.DISINFECT.TOOLNAME"
 msgid "Disinfect tool"
 msgstr "消毒ツール"
 
+#. STRINGS.UI.TOOLS.EMPTY_PIPE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME"
+#| msgid "Empty Pipe"
+msgctxt "STRINGS.UI.TOOLS.EMPTY_PIPE.NAME"
+msgid "Empty Pipe"
+msgstr "パイプが空"
+
+#. STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLACTION
+msgctxt "STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLACTION"
+msgid "DRAG TO MARK PIPES TO EMPTY"
+msgstr ""
+
+#. STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLNAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME"
+#| msgid "Empty Pipe"
+msgctxt "STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLNAME"
+msgid "Empty Pipe Tool"
+msgstr "パイプが空"
+
+#. STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLTIP
+msgctxt "STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLTIP"
+msgid "Drag to mark pipes for emptying"
+msgstr ""
+
 #. STRINGS.UI.TOOLS.FILTERLAYERS.ALL
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.ALL"
 msgid "All"
@@ -34571,6 +38557,76 @@ msgctxt "STRINGS.UI.TOOLS.PRIORITIZE.TOOLNAME"
 msgid "Sub-Priority tool"
 msgstr "準優先度ツール"
 
+#. STRINGS.UI.TOOLS.SANDBOX.BRUSH.NAME
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.BRUSH.NAME"
+msgid "Brush"
+msgstr ""
+
+#. STRINGS.UI.TOOLS.SANDBOX.CLEAR_FLOOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.CLEAR_BUTTON"
+#| msgid "Clear Floor"
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.CLEAR_FLOOR.NAME"
+msgid "Clear Floor"
+msgstr "床掃除"
+
+#. STRINGS.UI.TOOLS.SANDBOX.DESTROY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.DESTROY_BUTTON"
+#| msgid "Destroy"
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.DESTROY.NAME"
+msgid "Destroy"
+msgstr "破壊"
+
+#. STRINGS.UI.TOOLS.SANDBOX.FLOOD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.FLOODED.NOTIFICATION_NAME"
+#| msgid "Flooding"
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.FLOOD.NAME"
+msgid "Flood"
+msgstr "水没"
+
+#. STRINGS.UI.TOOLS.SANDBOX.HEATGUN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEAT.TITLE"
+#| msgid "Heat"
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.HEATGUN.NAME"
+msgid "Heat Gun"
+msgstr "熱源"
+
+#. STRINGS.UI.TOOLS.SANDBOX.MARQUEE.NAME
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.MARQUEE.NAME"
+msgid "Marquee"
+msgstr ""
+
+#. STRINGS.UI.TOOLS.SANDBOX.SAMPLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.SAMPLE"
+#| msgid "Sample"
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.SAMPLE.NAME"
+msgid "Sample"
+msgstr "サンプル"
+
+#. STRINGS.UI.TOOLS.SANDBOX.SANDBOX_TOGGLE.NAME
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.SANDBOX_TOGGLE.NAME"
+msgid "SANDBOX"
+msgstr ""
+
+#. STRINGS.UI.TOOLS.SANDBOX.SPAWN_ENTITY.NAME
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWN_ENTITY.NAME"
+msgid "Spawn"
+msgstr ""
+
+#. STRINGS.UI.TOOLS.SANDBOX.SPAWNER.NAME
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWNER.NAME"
+msgid "Spawner"
+msgstr ""
+
+#. STRINGS.UI.TOOLS.SANDBOX.SPRINKLE.NAME
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPRINKLE.NAME"
+msgid "Sprinkle"
+msgstr ""
+
 #. STRINGS.UI.TOOLTIPS.ALERTSTOOLTIP
 msgctxt "STRINGS.UI.TOOLTIPS.ALERTSTOOLTIP"
 msgid ""
@@ -34728,6 +38784,14 @@ msgstr "不正な区域"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_LIQUIDPORTS_OBSTRUCTED"
 msgid "Liquid ports are obstructed"
 msgstr "排水口閉塞"
+
+#. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_LOGIC_PORTS_OBSTRUCTED
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_GASPORTS_OBSTRUCTED"
+#| msgid "Gas ports are obstructed"
+msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_LOGIC_PORTS_OBSTRUCTED"
+msgid "Automation ports are obstructed"
+msgstr "通風口閉塞"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_NOT_IN_TILES
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_NOT_IN_TILES"
@@ -36584,6 +40648,16 @@ msgctxt "STRINGS.UI.UNITSUFFIXES.ELECTRICAL.WATT"
 msgid " W"
 msgstr " W"
 
+#. STRINGS.UI.UNITSUFFIXES.HEAT.SPECIFICHEATCAPACITY
+msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.SPECIFICHEATCAPACITY"
+msgid "(J/g)/K"
+msgstr ""
+
+#. STRINGS.UI.UNITSUFFIXES.HEAT.THERMALCONDUCTIVITY
+msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.THERMALCONDUCTIVITY"
+msgid "(W/m)/K"
+msgstr ""
+
 #. STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA
 msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA"
 msgid " dr"
@@ -37996,3 +42070,89 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT"
+#~ msgid ""
+#~ "When the <link=\"WRITE\">logic</link> port is <link=\"LOGIC\">Active</"
+#~ "link> the <link=\"VALUE\">logic</link> port is read and stored. Reading "
+#~ "from the <link=\"LOGIC\">Read</link> port will then return the new value."
+#~ msgstr ""
+#~ "<link=\"WRITE\">論理</link>ポートが<link=\"LOGIC\">アクティブ</link>になる"
+#~ "と、<link=\"VALUE\">論理</link>ポートが読み込まれます。<link=\"LOGIC\">読"
+#~ "み込み</link>ポートは新しい値を返します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_DESC"
+#~ msgid "Stored Value"
+#~ msgstr "保持した値"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.STATUS_ITEM_VALUE"
+#~ msgid "Stored Value: {0}"
+#~ msgstr "保持した値: {0}"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.VALUE_PORT_DESC"
+#~ msgid "Specify Value"
+#~ msgstr "特殊値"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.WRITE_PORT_DESC"
+#~ msgid "Trigger Write"
+#~ msgstr "書き込みトリガー"
+
+#~ msgctxt "STRINGS.CODEX.PUFT.SUBTITLE"
+#~ msgid "Critter"
+#~ msgstr "動物"
+
+#~ msgctxt "STRINGS.CODEX.SHINEBUG.SUBTITLE"
+#~ msgid "Critter"
+#~ msgstr "動物"
+
+#~ msgctxt "STRINGS.CODEX.SLICKSTER.SUBTITLE"
+#~ msgid "Critter"
+#~ msgstr "動物"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.DESC"
+#~ msgid "Determines how easily a critter gains or loses Domestication."
+#~ msgstr "複製人間が動物を手懐ける手際の良さを決定します。"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.RESEARCHCOMPLETE.TOOLTIP"
+#~ msgid "<link=\"{0}\">research</link> research complete!"
+#~ msgstr "研究が完了しました！"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.ENABLE_BUTTON"
+#~ msgid "Send Metrics Data: "
+#~ msgstr "統計データの送信: "
+
+#~ msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.TITLE"
+#~ msgid "METRICS OPTIONS"
+#~ msgstr "情報収集"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.TOOLTIP"
+#~ msgid ""
+#~ "If enabled, metrics data will be sent for the purpose of improving the "
+#~ "game."
+#~ msgstr "有効にすると、ゲーム改善のために統計データを送信します。"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.METRICS"
+#~ msgid "Send Metrics Data"
+#~ msgstr "統計データの送信"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
+#~ msgid ""
+#~ "<b>Update Features:</b>\n"
+#~ "\n"
+#~ "• Creatures now have lifecycles and can be raised from eggs\n"
+#~ "• Rancher job and buildings to take care of all your new creatures\n"
+#~ "• New Duplicant Priority system for broad control of Dupe errands\n"
+#~ "• Learn about buildings, creatures and more with the Database screen\n"
+#~ "• Tons of bug fixes, performance enhancements, QOL additions, and more!\n"
+#~ "\n"
+#~ "Please view the full patch notes for further details!"
+#~ msgstr ""
+#~ "<b>新機能:</b>\n"
+#~ "\n"
+#~ "• 生き物はライフサイクルを持つようになり、卵から孵化するようになりました\n"
+#~ "• 生き物の世話ができる職業、牧夫\n"
+#~ "• 作業ボードから操作できる、複製人間の新しい優先度システム\n"
+#~ "• 設備や生き物などの詳細が学べるデータベース画面\n"
+#~ "• たくさんのバグ修正、パフォーマンス改善、QoL向上などなど\n"
+#~ "\n"
+#~ "より詳しい内容についてはパッチノートを参照してください！"
