@@ -954,13 +954,6 @@ msgid "Requires Emptying"
 msgstr "排出が必要"
 
 #. STRINGS.BUILDING.STATUSITEMS.HABITATNEEDSEMPTYING.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.HABITATNEEDSEMPTYING.TOOLTIP"
-#| msgid ""
-#| "This <link=\"ALGAEHABITAT\">Algae Terrarium</link> needs to be emptied of "
-#| "<link=\"DIRTYWATER\">Polluted Water</link>. Consider using a <link="
-#| "\"BOTTLEEMPTIER\">Bottle Emptier</link> to dispose of the <link="
-#| "\"DIRTYWATER\">Polluted Water</link>."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.HABITATNEEDSEMPTYING.TOOLTIP"
 msgid ""
 "This <link=\"ALGAEHABITAT\">Algae Terrarium</link> needs to be emptied of "
@@ -970,8 +963,10 @@ msgid ""
 "dispose of <link=\"DIRTYWATER\">Polluted Water</link> in designated areas"
 msgstr ""
 "この<link=\"ALGAEHABITAT\">テラリウム</link>は<link=\"DIRTYWATER\">汚染水</"
-"link>を空にする必要があります。 <link=\"DIRTYWATER\">汚染水</link>の廃棄には"
-"<link=\"BOTTLEEMPTIER\">ボトル空け</link>の使用を検討してください。"
+"link>を空にする必要があります。 \n"
+"------------------\n"
+"<link=\"DIRTYWATER\">汚染水</link>の廃棄には<link=\"BOTTLEEMPTIER\">ボトル空"
+"け</link>の使用を検討してください。"
 
 #. STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDHOTENV.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDHOTENV.NAME"
@@ -1008,12 +1003,9 @@ msgid "This building must be submerged in liquid to function"
 msgstr "この設備が動作するには液体の中に沈めないといけません"
 
 #. STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.INCUBATING.NAME"
-#| msgid "Incubating"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME"
 msgid "Incubating: {Percent}"
-msgstr "孵化中"
+msgstr "孵化率: {Percent}"
 
 #. STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.TOOLTIP"
@@ -1022,6 +1014,9 @@ msgid ""
 "------------------\n"
 "It will hatch when Incubation reaches 100%"
 msgstr ""
+"この卵は順調に育っています\n"
+"------------------\n"
+"孵化率が100%になると孵化します"
 
 #. STRINGS.BUILDING.STATUSITEMS.INSUFFICIENT_CONVERSION_MASS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INSUFFICIENT_CONVERSION_MASS.NAME"
@@ -2796,12 +2791,9 @@ msgid "<link=\"ALGAEHABITAT\">Algae Terrarium</link>"
 msgstr "<link=\"ALGAEHABITAT\">テラリウム</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.SIDESCREEN_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.DIRTYWATER.NAME"
-#| msgid "<link=\"DIRTYWATER\">Polluted Water</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.SIDESCREEN_TITLE"
 msgid "Empty <link=\"DIRTYWATER\">Polluted Water</link> Threshold"
-msgstr "<link=\"DIRTYWATER\">汚染水</link>"
+msgstr "<link=\"DIRTYWATER\">汚染水</link>のしきい値"
 
 #. STRINGS.BUILDINGS.PREFABS.APOTHECARY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.APOTHECARY.DESC"
@@ -3157,17 +3149,14 @@ msgid "<link=\"COMPOST\">Compost</link>"
 msgstr "<link=\"COMPOST\">堆肥置き場</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.CONDUIT.STATUS_ITEM.NAME
-#, fuzzy
-#| msgctxt "STRINGS.MISC.STATUSITEMS.MARKEDFORCOMPOST.NAME"
-#| msgid "Marked For Compost"
 msgctxt "STRINGS.BUILDINGS.PREFABS.CONDUIT.STATUS_ITEM.NAME"
 msgid "Marked for Emptying"
-msgstr "堆肥用にマーク済"
+msgstr "掃除用にマーク済"
 
 #. STRINGS.BUILDINGS.PREFABS.CONDUIT.STATUS_ITEM.TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.CONDUIT.STATUS_ITEM.TOOLTIP"
 msgid "Awaiting a Plumber to clear this pipe"
-msgstr ""
+msgstr "パイプ掃除のために配管工を待っています"
 
 #. STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.DESC"
@@ -3576,43 +3565,32 @@ msgid "<link=\"FIREPOLE\">Fire Pole</link>"
 msgstr "<link=\"FIREPOLE\">滑り棒</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_LIQUID.TOOLTIP"
-#| msgid "This building must be submerged in liquid to function"
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.DESC"
 msgid ""
 "This building must be built above liquid to prevent fish from suffocating."
-msgstr "この設備が動作するには液体の中に沈めないといけません"
+msgstr ""
+"魚が窒息しないためにも、この設備は液体より上に設置しなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREDELIVERYPOINT.EFFECT"
-#| msgid ""
-#| "Releases trapped critters back into the world.\n"
-#| "\n"
-#| "Can be used multiple times."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.EFFECT"
 msgid ""
 "Releases trapped fish back into the world.\n"
 "\n"
 "Can be used multiple times."
 msgstr ""
-"罠にかかった動物を自然に帰します。\n"
+"罠にかかった魚を自然に帰します。\n"
 "\n"
 "複数回使うことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.TILEPOI.NAME"
-#| msgid "<link=\"TILEPOI\">Tile</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.NAME"
 msgid "<link=\"FISHDELIVERYPOINT\">Fish Release</link>"
-msgstr "<link=\"TILEPOI\">タイル</link>"
+msgstr "<link=\"FISHDELIVERYPOINT\">魚開放地点</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHFEEDER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHFEEDER.DESC"
 msgid "Build this feeder above a body of water to feed the fish within."
-msgstr ""
+msgstr "水中にいる魚に餌を与えるには、この給餌機を水面より上に建設します。"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHFEEDER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHFEEDER.EFFECT"
@@ -3621,19 +3599,19 @@ msgid ""
 "\n"
 "Dispenses once per day."
 msgstr ""
+"下側に餌を自動投下します。\n"
+"\n"
+"給餌は1日1回です。"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHFEEDER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.NAME"
-#| msgid "<link=\"CREATUREFEEDER\">Critter Feeder</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHFEEDER.NAME"
 msgid "<link=\"FISHFEEDER\">Fish Feeder</link>"
-msgstr "<link=\"CREATUREFEEDER\">給餌機</link>"
+msgstr "<link=\"FISHFEEDER\">魚用給餌機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHTRAP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHTRAP.DESC"
 msgid "Trapped fish will automatically be bagged for transport."
-msgstr ""
+msgstr "捕獲した魚は自動的に梱包されます。"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHTRAP.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHTRAP.EFFECT"
@@ -3642,14 +3620,14 @@ msgid ""
 "\n"
 "Single use."
 msgstr ""
+"泳ぐ魚をおびき寄せ捕獲します。\n"
+"\n"
+"使い切りです。"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHTRAP.NAME
-#, fuzzy
-#| msgctxt "STRINGS.ITEMS.FOOD.FRIEDMUSHBAR.NAME"
-#| msgid "<link=\"FRIEDMUSHBAR\">Mush Fry</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHTRAP.NAME"
 msgid "<link=\"FISHTRAP\">Fish Trap</link>"
-msgstr "<link=\"FRIEDMUSHBAR\">マッシュフライ</link>"
+msgstr "<link=\"FISHTRAP\">フィッシュトラップ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FLOORLAMP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLOORLAMP.DESC"
@@ -3801,157 +3779,95 @@ msgid ""
 "Gas Pipe Germ Sensors are used to control automation behaviour in the "
 "presence of disease."
 msgstr ""
+"気体用パイプ病原菌センサーは、病原菌の有無によって動きを変える自動化制御に使"
+"います。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
-#| msgid ""
-#| "<link=\"LOGIC\">Active</link>/<link=\"LOGIC\">Standby</link> depending on "
-#| "quantity of surrounding <link=\"DISEASE\">Germs</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.EFFECT"
 msgid ""
 "Becomes<link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
 "depending on quantity of the contained <link=\"DISEASE\">Germs</link>."
 msgstr ""
-"周囲の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
+"内部の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
 "\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
-#| msgid "Active/Standby based on ambient Gas Pressure"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_DESC"
 msgid "Active/Standby based on the contained Germs"
-msgstr "周囲の気圧によるアクティブ/スタンバイ"
+msgstr "内部の病原菌によるアクティブ/スタンバイ"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
-#| msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.NAME"
 msgid "<link=\"GASCONDUITDISEASESENSOR\">Gas Pipe Germ Sensor</link>"
-msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+msgstr "<link=\"GASCONDUITDISEASESENSOR\">気体用パイプ 病原菌センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.DESC"
 msgid ""
 "Gas Pipe Element Sensors can be used to detect the presence of a specific "
 "gas in a pipe"
-msgstr ""
+msgstr "気体用パイプ元素センサーはパイプ内の特定の気体を検知します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
-#| msgid ""
-#| "Logic input will become <link=\"LOGIC\">Active</link> when battery is "
-#| "less than {0}% charged"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.EFFECT"
 msgid ""
 "Becomes <link=\"LOGIC\">Active</link> when the configured Gas Element is "
 "detected."
 msgstr ""
-"論理入力はバッテリーが{0}%未満になると<link=\"LOGIC\">アクティブ</link>になり"
-"ます"
+"設定した気体元素を検知すると<link=\"LOGIC\">アクティブ</link>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
-#| msgid "Active/Standby based on ambient Gas Pressure"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_DESC"
 msgid "Active/Standby based on the contained Gas"
-msgstr "周囲の気圧によるアクティブ/スタンバイ"
+msgstr "内部の気体によるアクティブ/スタンバイ"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
-#| msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.NAME"
 msgid "<link=\"LOGICELEMENTSENSORGAS\">Gas Pipe Element Sensor</link>"
-msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+msgstr "<link=\"LOGICELEMENTSENSORGAS\">気体用パイプ 元素センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.EFFECT"
 msgid ""
 "Has a secondary output which is only used when the primary output is blocked."
-msgstr ""
+msgstr "メインとなる出力先が閉塞していると、セカンダリの出力に気体が流れます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUIT.NAME"
-#| msgid "<link=\"GASCONDUIT\">Gas Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.NAME"
 msgid "<link=\"GASCONDUITOVERFLOW\">Gas Overflow Valve</link>"
-msgstr "<link=\"GASCONDUIT\">気体用パイプ</link>"
+msgstr "<link=\"GASCONDUITOVERFLOW\">余剰気体用バルブ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.EFFECT"
 msgid ""
 "Has a secondary input which is only drawn from when the primary input is "
 "empty."
-msgstr ""
+msgstr "メインとなる入力が空の場合、セカンダリの入力から吸い込みます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUIT.NAME"
-#| msgid "<link=\"GASCONDUIT\">Gas Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.NAME"
 msgid "<link=\"GASCONDUITPREFERENTIALFLOW\">Priority Gas Flow</link>"
-msgstr "<link=\"GASCONDUIT\">気体用パイプ</link>"
+msgstr "<link=\"GASCONDUITPREFERENTIALFLOW\">優先付け気体用フロー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.DESC"
 msgid ""
 "Radiant pipes significantly improve the rate of temperature exchange with "
 "the surrounding environment."
-msgstr ""
+msgstr "輻射パイプは周辺環境との熱交換を著しく改善します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.EFFECT"
-#| msgid ""
-#| "Carries <link=\"ELEMENTSGAS\">Gas</link> with minimal change in <link="
-#| "\"HEAT\">Temperature</link>.\n"
-#| "\n"
-#| "Can be run through tiles."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.EFFECT"
 msgid ""
 "Carries <link=\"ELEMENTSGAS\">Gas</link> and encourages significant change "
@@ -3959,66 +3875,47 @@ msgid ""
 "\n"
 "Can be run through tiles."
 msgstr ""
-"<link=\"ELEMENTSGAS\">気体</link>の<link=\"HEAT\">温度</link>変化を最小にした"
-"まま移送します。\n"
+"<link=\"ELEMENTSGAS\">気体</link>の<link=\"HEAT\">温度</link>変化を積極的に行"
+"います。\n"
 "\n"
 "タイルを貫通して敷設できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUIT.NAME"
-#| msgid "<link=\"GASCONDUIT\">Gas Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.NAME"
 msgid "<link=\"GASCONDUITRADIANT\">Radiant Gas Pipe</link>"
-msgstr "<link=\"GASCONDUIT\">気体用パイプ</link>"
+msgstr "<link=\"GASCONDUITRADIANT\">気体用 輻射パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC"
-#| msgid ""
-#| "Thermo Sensors can autodisable buildings when they approach inoperable "
-#| "temperatures."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC"
 msgid ""
 "Gas Pipe Thermo Sensors can disable buildings when contents reach a certain "
 "temperature."
 msgstr ""
-"温度センサーは設備が稼働不可能な温度に達した時に自動停止させることができま"
-"す。"
+"気体用パイプ温度センサーは内容物が特定の温度に達した時に設備を自動停止させる"
+"ことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.EFFECT"
-#| msgid ""
-#| "Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</"
-#| "link> when ambient <link=\"HEAT\">Temperature</link> enters the chosen "
-#| "range."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.EFFECT"
 msgid ""
 "Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
 "when the pipe contents <link=\"HEAT\">Temperature</link> enters the chosen "
 "range."
 msgstr ""
-"周囲の<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link=\"LOGIC\">ア"
-"クティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
+"パイプ内容物の<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link="
+"\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
+"す。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_DESC"
-#| msgid "Active/Standby based on Ambient <link=\"HEAT\">Temperature</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_DESC"
 msgid ""
 "Active/Standby based on the <link=\"HEAT\">Temperature</link> of the "
 "contained Gas"
-msgstr "周囲の<style=\"temperature\">温度</style>によるアクティブ/スタンバイ"
+msgstr "内容物の<style=\"temperature\">温度</style>によるアクティブ/スタンバイ"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.NAME"
-#| msgid "<link=\"LOGICTEMPERATURESENSOR\">Thermo Sensor</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.NAME"
 msgid "<link=\"GASCONDUITTEMPERATURESENSOR\">Gas Pipe Thermo Sensor</link>"
-msgstr "<link=\"LOGICTEMPERATURESENSOR\">温度センサー</link>"
+msgstr "<link=\"GASCONDUITTEMPERATURESENSOR\">気体用パイプ 温度センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.DESC"
@@ -4464,7 +4361,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.NAME"
 msgid "<link=\"INSULATEDGASCONDUIT\">Insulated Gas Pipe</link>"
-msgstr "<link=\"INSULATEDGASCONDUIT\">断熱型気体用パイプ</link>"
+msgstr "<link=\"INSULATEDGASCONDUIT\">断熱型 気体用パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.DESC"
@@ -4489,7 +4386,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.NAME"
 msgid "<link=\"INSULATEDLIQUIDCONDUIT\">Insulated Liquid Pipe</link>"
-msgstr "<link=\"INSULATEDLIQUIDCONDUIT\">断熱型液体用パイプ</link>"
+msgstr "<link=\"INSULATEDLIQUIDCONDUIT\">断熱型 液体用パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.DESC"
@@ -4661,163 +4558,95 @@ msgid ""
 "Liquid Pipe Germ Sensors are used to control automation behaviour in the "
 "presence of disease."
 msgstr ""
+"病原菌センサーは、病原菌の有無によって動きを変える自動化制御に使います。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
-#| msgid ""
-#| "<link=\"LOGIC\">Active</link>/<link=\"LOGIC\">Standby</link> depending on "
-#| "quantity of surrounding <link=\"DISEASE\">Germs</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.EFFECT"
 msgid ""
 "Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
 "depending on quantity of the contained <link=\"DISEASE\">Germs</link>."
 msgstr ""
-"周囲の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
+"内部の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
 "\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
-#| msgid "Active/Standby based on ambient Gas Pressure"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.LOGIC_PORT_DESC"
 msgid "Active/Standby based on the contained Germs"
-msgstr "周囲の気圧によるアクティブ/スタンバイ"
+msgstr "内部の病原菌によるアクティブ/スタンバイ"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
-#| msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.NAME"
 msgid "<link=\"LIQUIDCONDUITDISEASESENSOR\">Liquid Pipe Germ Sensor</link>"
-msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+msgstr ""
+"<link=\"LIQUIDCONDUITDISEASESENSOR\">液体用パイプ 病原菌センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BOTTLEEMPTIER.DESC"
-#| msgid ""
-#| "A bottle emptier's Element Filter can be used to designate areas for "
-#| "specific liquid storage."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.DESC"
 msgid ""
 "Liquid Pipe Element Sensors can be used to detect the presence of a specific "
 "liquid in a pipe"
-msgstr "ボトル空けの要素フィルターは特定の液体容器を指定することができます。"
+msgstr "液体用パイプ元素センサーはパイプ内の特定の液体を検知します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
-#| msgid ""
-#| "Logic input will become <link=\"LOGIC\">Active</link> when battery is "
-#| "less than {0}% charged"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.EFFECT"
 msgid ""
 "Becomes <link=\"LOGIC\">Active</link> when the configured Liquid Element is "
 "detected."
 msgstr ""
-"論理入力はバッテリーが{0}%未満になると<link=\"LOGIC\">アクティブ</link>になり"
-"ます"
+"設定した液体元素を検知すると<link=\"LOGIC\">アクティブ</link>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_DESC"
-#| msgid "Active/Standby based on Ambient Liquid Pressure"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_DESC"
 msgid "Active/Standby based on the contained Liquid"
-msgstr "周囲の水圧によるアクティブ/スタンバイ"
+msgstr "内部の液体によるアクティブ/スタンバイ"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.NAME"
-#| msgid "<link=\"LOGICPRESSURESENSORLIQUID\">Hydro Sensor</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.NAME"
 msgid "<link=\"LOGICELEMENTSENSORLIQUID\">Liquid Pipe Element Sensor</link>"
-msgstr "<link=\"LOGICPRESSURESENSORLIQUID\">水圧センサー</link>"
+msgstr "<link=\"LOGICELEMENTSENSORLIQUID\">液体用パイプ 元素センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.EFFECT"
 msgid ""
 "Has a secondary output which is only used when the primary output is blocked."
-msgstr ""
+msgstr "メインとなる出力先が閉塞していると、セカンダリの出力に気体が流れます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME"
-#| msgid "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.NAME"
 msgid "<link=\"LIQUIDCONDUITOVERFLOW\">Liquid Overflow Valve</link>"
-msgstr "<link=\"LIQUIDCONDUIT\">液体用パイプ</link>"
+msgstr "<link=\"LIQUIDCONDUITOVERFLOW\">余剰液体用バルブ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.EFFECT"
 msgid ""
 "Has a secondary input which is only drawn from when the primary input is "
 "empty."
-msgstr ""
+msgstr "メインとなる入力が空の場合、セカンダリの入力から吸い込みます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME"
-#| msgid "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.NAME"
 msgid "<link=\"LIQUIDCONDUITPREFERENTIALFLOW\">Priority Liquid Flow</link>"
-msgstr "<link=\"LIQUIDCONDUIT\">液体用パイプ</link>"
+msgstr "<link=\"LIQUIDCONDUITPREFERENTIALFLOW\">優先付け液体用フロー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.DESC"
 msgid ""
 "Radiant pipes significantly improve the rate of temperature exchange with "
 "the surrounding environment."
-msgstr ""
+msgstr "輻射パイプは周辺環境との熱交換を著しく改善します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.EFFECT"
-#| msgid ""
-#| "Carries <link=\"ELEMENTSLIQUID\">Liquid</link> with minimal change in "
-#| "<link=\"HEAT\">Temperature</link>.\n"
-#| "\n"
-#| "Can be run through tiles."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.EFFECT"
 msgid ""
 "Carries <link=\"ELEMENTSLIQUID\">Liquid</link> and encourages significant "
@@ -4825,68 +4654,50 @@ msgid ""
 "\n"
 "Can be run through tiles."
 msgstr ""
-"<link=\"ELEMENTSLIQUID\">液体</link>の<link=\"HEAT\">温度</link>変化を最小に"
-"したまま移送します。\n"
+"<link=\"ELEMENTSLIQUID\">液体</link>の<link=\"HEAT\">温度</link>変化を積極的"
+"に行います。\n"
 "\n"
 "タイルを貫通して敷設できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME"
-#| msgid "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.NAME"
 msgid "<link=\"LIQUIDCONDUITRADIANT\">Radiant Liquid Pipe</link>"
-msgstr "<link=\"LIQUIDCONDUIT\">液体用パイプ</link>"
+msgstr "<link=\"LIQUIDCONDUITRADIANT\">液体用 輻射パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC"
-#| msgid ""
-#| "Thermo Sensors can autodisable buildings when they approach inoperable "
-#| "temperatures."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC"
 msgid ""
 "Liquid Pipe Thermo Sensors can disable buildings when their contents reach a "
 "certain temperature."
 msgstr ""
-"温度センサーは設備が稼働不可能な温度に達した時に自動停止させることができま"
-"す。"
+"液体用パイプ温度センサーは内容物が特定の温度に達した時に設備を自動停止させる"
+"ことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.EFFECT"
-#| msgid ""
-#| "Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</"
-#| "link> when ambient <link=\"HEAT\">Temperature</link> enters the chosen "
-#| "range."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.EFFECT"
 msgid ""
 "Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
 "when the pipe contents <link=\"HEAT\">Temperature</link> enters the chosen "
 "range."
 msgstr ""
-"周囲の<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link=\"LOGIC\">ア"
-"クティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
+"パイプ内容物の<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link="
+"\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
+"す。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_DESC"
-#| msgid "Active/Standby based on Ambient <link=\"HEAT\">Temperature</link>"
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_DESC"
 msgid ""
 "Active/Standby based on the <link=\"HEAT\">Temperature</link> of the "
 "contained Liquid"
-msgstr "周囲の<style=\"temperature\">温度</style>によるアクティブ/スタンバイ"
+msgstr "内容物の<style=\"temperature\">温度</style>によるアクティブ/スタンバイ"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.NAME"
-#| msgid "<link=\"LOGICTEMPERATURESENSOR\">Thermo Sensor</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.NAME"
 msgid ""
 "<link=\"LIQUIDCONDUITTEMPERATURESENSOR\">Liquid Pipe Thermo Sensor</link>"
-msgstr "<link=\"LOGICTEMPERATURESENSOR\">温度センサー</link>"
+msgstr ""
+"<link=\"LIQUIDCONDUITTEMPERATURESENSOR\">液体用パイプ 温度センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.DESC"
@@ -5096,27 +4907,18 @@ msgid "Detects the presence and quantity of nearby germs"
 msgstr "周辺に存在する病原菌の濃度を検出します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
-#| msgid ""
-#| "<link=\"LOGIC\">Active</link>/<link=\"LOGIC\">Standby</link> depending on "
-#| "quantity of surrounding <link=\"DISEASE\">Germs</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
 msgid ""
 "Becomes <link=\"LOGIC\">Active</link> or on <link=\"LOGIC\">Standby</link> "
 "depending on quantity of surrounding <link=\"DISEASE\">Germs</link>."
 msgstr ""
-"周囲の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
-"\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
-"す。"
+"周囲の<link=\"DISEASE\">病原菌</link>が指定した濃度にある時、<link=\"LOGIC\">"
+"アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
-#| msgid "Active/Standby based on ambient Gas Pressure"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_DESC"
 msgid "Active/Standby based on ambient Germs"
-msgstr "周囲の気圧によるアクティブ/スタンバイ"
+msgstr "周囲の病原菌によるアクティブ/スタンバイ"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
@@ -5128,17 +4930,9 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.DESC"
 msgid ""
 "These sensors can detect the presence of a specific gas and alter systems "
 "accordingly."
-msgstr ""
+msgstr "これらのセンサーは特定の気体を検出し、それに応じて経路を変更できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.EFFECT"
-#| msgid ""
-#| "Becomes <link=\"LOGIC\">Active</link> if the system connected to its "
-#| "Input is on <link=\"LOGIC\">Standby</link>.\n"
-#| "\n"
-#| "Goes into <link=\"LOGIC\">Standby</link> when its Input is <link=\"LOGIC"
-#| "\">Active</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.EFFECT"
 msgid ""
 "Becomes <link=\"LOGIC\">Active</link> when the selected Gaseous Element is "
@@ -5146,27 +4940,19 @@ msgid ""
 "\n"
 "Remains on <link=\"LOGIC\">Standby</link> when the Element is not present."
 msgstr ""
-"入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">アクティブ</"
-"link>になります。\n"
+"指定した気体元素を検出すると、<link=\"LOGIC\">アクティブ</link>になります。\n"
 "\n"
-"入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">スタンバイ</"
-"link>に遷移します。"
+"検出できなかった場合、<link=\"LOGIC\">スタンバイ</link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_DESC"
-#| msgid "Active/Standby based on ambient Gas Pressure"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_DESC"
 msgid "Active/Standby based on the ambient Gas"
-msgstr "周囲の気圧によるアクティブ/スタンバイ"
+msgstr "周囲の気体によるアクティブ/スタンバイ"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
-#| msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.NAME"
 msgid "<link=\"LOGICELEMENTSENSORGAS\">Gaseous Element Sensor</link>"
-msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+msgstr "<link=\"LOGICELEMENTSENSORGAS\">気体元素センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.DESC"
@@ -5174,16 +4960,9 @@ msgid ""
 "These sensors can detect the presence of a specific liquid and alter systems "
 "accordingly."
 msgstr ""
+"これらのセンサーは、特定の液体を検出し、それに応じて経路を変更できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.EFFECT"
-#| msgid ""
-#| "Becomes <link=\"LOGIC\">Active</link> if the system connected to its "
-#| "Input is on <link=\"LOGIC\">Standby</link>.\n"
-#| "\n"
-#| "Goes into <link=\"LOGIC\">Standby</link> when its Input is <link=\"LOGIC"
-#| "\">Active</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.EFFECT"
 msgid ""
 "Becomes <link=\"LOGIC\">Active</link> when the selected Liquid Element is "
@@ -5191,28 +4970,19 @@ msgid ""
 "\n"
 "Remains on <link=\"LOGIC\">Standby</link> when the Element is not present."
 msgstr ""
-"入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">アクティブ</"
-"link>になります。\n"
+"指定した液体元素を検出すると、<link=\"LOGIC\">アクティブ</link>になります。\n"
 "\n"
-"入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">スタンバイ</"
-"link>に遷移します。"
+"検出できなかった場合、<link=\"LOGIC\">スタンバイ</link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_DESC
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_DESC"
-#| msgid "Active/Standby based on Ambient Liquid Pressure"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_DESC"
 msgid "Active/Standby based on the ambient Liquid"
-msgstr "周囲の水圧によるアクティブ/スタンバイ"
+msgstr "周囲の液体によるアクティブ/スタンバイ"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTSLIQUID"
-#| msgid "<link=\"ELEMENTSLIQUID\">Liquids</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.NAME"
 msgid "<link=\"LOGICELEMENTSENSORLIQUID\">Liquid Element Sensor</link>"
-msgstr "<link=\"ELEMENTSLIQUID\">液体</link>"
+msgstr "<link=\"LOGICELEMENTSENSORLIQUID\">液体元素センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC"
@@ -5392,65 +5162,42 @@ msgid ""
 msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.EFFECT"
-#| msgid ""
-#| "Becomes <link=\"LOGIC\">Active</link> if the system connected to its "
-#| "Input is on <link=\"LOGIC\">Standby</link>.\n"
-#| "\n"
-#| "Goes into <link=\"LOGIC\">Standby</link> when its Input is <link=\"LOGIC"
-#| "\">Active</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT"
 msgid ""
 "Becomes <link=\"LOGIC\">Active</link> when the <link=\"SET\">logic</link> "
 "port is <link=\"LOGIC\">Active</link>. Goes to <link=\"LOGIC\">Standby</"
 "link> when the reset port is <link=\"LOGIC\">Active</link>."
 msgstr ""
-"入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">アクティブ</"
-"link>になります。\n"
+"<link=\"SET\">論理ポート</link>が<link=\"LOGIC\">アクティブ</link>の時、"
+"<link=\"LOGIC\">アクティブ</link>になります。\n"
 "\n"
-"入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">スタンバイ</"
-"link>に遷移します。"
+"リセットポートが<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">ス"
+"タンバイ</link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME"
-#| msgid "<link=\"LOGICMEMORY\">Memory</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME"
 msgid "<link=\"LOGICMEMORY\">Memory Toggle</link>"
-msgstr "<link=\"LOGICMEMORY\">メモリ</link>"
+msgstr "<link=\"LOGICMEMORY\">メモリスイッチ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.TIMEDSWITCHSIDESCREEN.CURRENTSTATE"
-#| msgid "Current State:"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_DESC"
 msgid "Current Value"
-msgstr "現在の状態:"
+msgstr "現在の値"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SWITCHSTATUSINACTIVE.NAME"
-#| msgid "Inactive"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_DESC"
 msgid "Make Inactive"
-msgstr "スイッチオフ"
+msgstr "スタンバイにする"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT_DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SWITCHSTATUSACTIVE.NAME"
-#| msgid "Active"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT_DESC"
 msgid "Make Active"
-msgstr "スイッチオン"
+msgstr "アクティブにする"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.STATUS_ITEM_VALUE
-#, fuzzy
-#| msgctxt "STRINGS.UI.DETAILTABS.NEEDS.CURRENT_NEED_LEVEL"
-#| msgid "Current Level: {0}"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.STATUS_ITEM_VALUE"
 msgid "Current Value: {0}"
-msgstr "現在の Level: {0}"
+msgstr "現在の値: {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC"
@@ -6230,17 +5977,13 @@ msgid "Plastic can be used to craft unique buildings and goods."
 msgstr "プラスチックは特殊な設備や備品を作成するのに使われます。"
 
 #. STRINGS.BUILDINGS.PREFABS.POLYMERIZER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.POLYMERIZER.EFFECT"
-#| msgid ""
-#| "Converts <link=\"CRUDEOIL\">Crude Oil</link> into raw <link=\"PETROLEUM"
-#| "\">Petroleum</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.POLYMERIZER.EFFECT"
 msgid ""
 "Converts <link=\"PETROLEUM\">Petroleum</link> into raw <link=\"POLYPROPYLENE"
 "\">Plastic</link>."
 msgstr ""
-"<link=\"CRUDEOIL\">原油</link>を<link=\"PETROLEUM\">石油</link>に変換します。"
+"<link=\"PETROLEUM\">石油</link>を<link=\"POLYPROPYLENE\">プラスチック</link>"
+"素材に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.POLYMERIZER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.POLYMERIZER.NAME"
@@ -6576,20 +6319,17 @@ msgstr "彫像的な「何か」"
 #. STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.DESC"
 msgid "Shearing stations are used to shear Dreckos."
-msgstr ""
+msgstr "毛刈り端末はドレッコの毛を刈るのに使います。"
 
 #. STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.EFFECT"
 msgid "Shears dreckos."
-msgstr ""
+msgstr "ドレッコの毛を刈ります。"
 
 #. STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.FARMSTATION.NAME"
-#| msgid "<link=\"FARMSTATION\">Farm Station</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.NAME"
 msgid "<link=\"SHEARINGSTATION\">Shearing Station</link>"
-msgstr "<link=\"FARMSTATION\">農業端末</link>"
+msgstr "<link=\"SHEARINGSTATION\">毛刈り端末</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SHOWER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SHOWER.DESC"
@@ -7457,88 +7197,44 @@ msgid "Bristle Blossom"
 msgstr "ブリッスルブロッサム"
 
 #. STRINGS.CODEX.CLEANER.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.CLEANER.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.CLEANER.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.CLEANER.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.CLEANER.TITLE
 msgctxt "STRINGS.CODEX.CLEANER.TITLE"
 msgid "Gulp Fish"
-msgstr ""
+msgstr "ガルプ フィッシュ"
 
 #. STRINGS.CODEX.CREATURE_DESCRIPTORS.TEMPERATURE.COMFORT_RANGE
-#, fuzzy
-#| msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.NEUTRAL"
-#| msgid "Comfort Zone"
 msgctxt "STRINGS.CODEX.CREATURE_DESCRIPTORS.TEMPERATURE.COMFORT_RANGE"
 msgid "Comfort range: {0}"
-msgstr "適温エリア"
+msgstr "適温範囲: {0}"
 
 #. STRINGS.CODEX.CREATURE_DESCRIPTORS.TEMPERATURE.NON_LETHAL_RANGE
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE"
-#| msgid "Change rate: {0}"
 msgctxt "STRINGS.CODEX.CREATURE_DESCRIPTORS.TEMPERATURE.NON_LETHAL_RANGE"
 msgid "Liveable range: {0}"
-msgstr "変動量: {0}"
+msgstr "生存可能範囲: {0}"
 
 #. STRINGS.CODEX.CRYSTAL.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.CRYSTAL.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.CRYSTAL.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.CRYSTAL.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.CRYSTAL.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
-#| msgid "Shine Bug"
 msgctxt "STRINGS.CODEX.CRYSTAL.TITLE"
 msgid "Crystal Shine Bug"
-msgstr "シャインバグ"
+msgstr "クリスタル シャインバグ"
 
 #. STRINGS.CODEX.DECOR.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.DECOR.BODY.CONTAINER1"
@@ -7556,36 +7252,19 @@ msgid "<link=\"DECOR\">Decor</link>"
 msgstr "<link=\"DECOR\">装飾</link>"
 
 #. STRINGS.CODEX.DENSE.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.DENSE.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.DENSE.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.DENSE.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.DENSE.TITLE
 msgctxt "STRINGS.CODEX.DENSE.TITLE"
 msgid "Dense Puft"
-msgstr ""
+msgstr "ごつごつ パフ"
 
 #. STRINGS.CODEX.DRECKO.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.DRECKO.BODY.CONTAINER1"
@@ -7598,19 +7277,23 @@ msgid ""
 "\n"
 "As a result, Drecko fibers are often farmed for use in textile production."
 msgstr ""
+"ドレッコは足の裏に微細な毛を大量に生やした爬虫類で、あらゆる面にくっつくこと"
+"ができます。\n"
+"\n"
+"「すそ」と呼ばれるドレッコの尾は純粋に自身を魅力的に見せるためのものであり、"
+"彼らを傷つけることなく刈り取ることができます。\n"
+"\n"
+"それゆえ、ドレッコの繊維は服飾用途で量産されることがあります。"
 
 #. STRINGS.CODEX.DRECKO.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
-#| msgid "Domesticability"
 msgctxt "STRINGS.CODEX.DRECKO.SUBTITLE"
 msgid "Domesticable Critter"
-msgstr "動物好き"
+msgstr "家畜可能な動物"
 
 #. STRINGS.CODEX.DRECKO.TITLE
 msgctxt "STRINGS.CODEX.DRECKO.TITLE"
 msgid "Drecko"
-msgstr ""
+msgstr "ドレッコ"
 
 #. STRINGS.CODEX.DUSKCAP.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.DUSKCAP.BODY.CONTAINER1"
@@ -7660,36 +7343,19 @@ msgid "Example Title"
 msgstr "タイトルのサンプル"
 
 #. STRINGS.CODEX.GLOSSY.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.GLOSSY.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.GLOSSY.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.GLOSSY.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.GLOSSY.TITLE
 msgctxt "STRINGS.CODEX.GLOSSY.TITLE"
 msgid "Glossy Drecko"
-msgstr ""
+msgstr "つやつや ドレッコ"
 
 #. STRINGS.CODEX.HATCH.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.HATCH.BODY.CONTAINER1"
@@ -7708,12 +7374,9 @@ msgstr ""
 "検知することができ、暗い洞窟やトンネルを好みます。"
 
 #. STRINGS.CODEX.HATCH.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
-#| msgid "Domesticability"
 msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
 msgid "Domesticable Critter"
-msgstr "動物好き"
+msgstr "家畜可能な動物"
 
 #. STRINGS.CODEX.HATCH.TITLE
 msgctxt "STRINGS.CODEX.HATCH.TITLE"
@@ -7731,12 +7394,9 @@ msgid "Requirements"
 msgstr "必要条件"
 
 #. STRINGS.CODEX.HEADERS.COMFORTRANGE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE"
-#| msgid "Temperature"
 msgctxt "STRINGS.CODEX.HEADERS.COMFORTRANGE"
 msgid "Temperature Range"
-msgstr "温度"
+msgstr "温度範囲"
 
 #. STRINGS.CODEX.HEADERS.DIET
 msgctxt "STRINGS.CODEX.HEADERS.DIET"
@@ -7744,12 +7404,9 @@ msgid "Diet"
 msgstr "食物"
 
 #. STRINGS.CODEX.HEADERS.ELEMENTTRANSITIONS
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.TRANSDIMENSIONAL"
-#| msgid "Transdimensional"
 msgctxt "STRINGS.CODEX.HEADERS.ELEMENTTRANSITIONS"
 msgid "Transitions"
-msgstr "次元を超えた"
+msgstr "切替効果"
 
 #. STRINGS.CODEX.HEADERS.FABRICATIONS
 msgctxt "STRINGS.CODEX.HEADERS.FABRICATIONS"
@@ -7759,7 +7416,7 @@ msgstr "レシピ"
 #. STRINGS.CODEX.HEADERS.HATCHESFROMEGG
 msgctxt "STRINGS.CODEX.HEADERS.HATCHESFROMEGG"
 msgid "Comes from"
-msgstr ""
+msgstr "出生"
 
 #. STRINGS.CODEX.HEADERS.PREREQUISITE_ROLES
 msgctxt "STRINGS.CODEX.HEADERS.PREREQUISITE_ROLES"
@@ -7782,9 +7439,6 @@ msgid "Plants"
 msgstr "植物"
 
 #. STRINGS.CODEX.HEADERS.RECIPE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HEADERS.FABRICATIONS"
-#| msgid "Recipes"
 msgctxt "STRINGS.CODEX.HEADERS.RECIPE"
 msgid "Recipe"
 msgstr "レシピ"
@@ -7795,12 +7449,9 @@ msgid "Role Perks"
 msgstr "職業特性"
 
 #. STRINGS.CODEX.HEADERS.SUBENTRIES
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.CONTROLS"
-#| msgid "Controls"
 msgctxt "STRINGS.CODEX.HEADERS.SUBENTRIES"
 msgid "Contents"
-msgstr "コントロール"
+msgstr "コンテンツ"
 
 #. STRINGS.CODEX.HEADERS.TECH_UNLOCKS
 msgctxt "STRINGS.CODEX.HEADERS.TECH_UNLOCKS"
@@ -7891,40 +7542,20 @@ msgid "Mealwood"
 msgstr "ミールウッド"
 
 #. STRINGS.CODEX.MOLTEN.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.MOLTEN.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.MOLTEN.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.MOLTEN.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 # 訳語が見つからない...
 #. STRINGS.CODEX.MOLTEN.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SLICKSTER.TITLE"
-#| msgid "Slickster"
 msgctxt "STRINGS.CODEX.MOLTEN.TITLE"
 msgid "Molten Slickster"
-msgstr "スリックスター"
+msgstr "熱血 スリックスター"
 
 #. STRINGS.CODEX.MORB.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.MORB.BODY.CONTAINER1"
@@ -7980,39 +7611,19 @@ msgid "Muckroot"
 msgstr "ムックルート"
 
 #. STRINGS.CODEX.NEGA.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.NEGA.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.NEGA.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.NEGA.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.NEGA.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
-#| msgid "Shine Bug"
 msgctxt "STRINGS.CODEX.NEGA.TITLE"
 msgid "Nega Shine Bug"
-msgstr "シャインバグ"
+msgstr "ネガティブ シャインバグ"
 
 #. STRINGS.CODEX.PACU.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.PACU.BODY.CONTAINER1"
@@ -8025,19 +7636,21 @@ msgid ""
 "dog, and that they are capable of learning and distinguishing from over "
 "twenty human faces."
 msgstr ""
+"パクーはまばたきをしない大きな目のせいで虚ろな表情をしていると誤解されがちで"
+"すが、実はとても快活でフレンドリーな生き物です。\n"
+"\n"
+"パクーの平均的知能は犬並みで、20人以上の顔を見分けることができると言われてい"
+"ます。"
 
 #. STRINGS.CODEX.PACU.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.FETCHCREATURE.STATUS"
-#| msgid "Relocating Critter"
 msgctxt "STRINGS.CODEX.PACU.SUBTITLE"
 msgid "Aquatic Critter"
-msgstr "動物移送中"
+msgstr "水中動物"
 
 #. STRINGS.CODEX.PACU.TITLE
 msgctxt "STRINGS.CODEX.PACU.TITLE"
 msgid "Pacu"
-msgstr ""
+msgstr "パクー"
 
 #. STRINGS.CODEX.PAGENOTFOUND.BODY
 msgctxt "STRINGS.CODEX.PAGENOTFOUND.BODY"
@@ -8082,39 +7695,19 @@ msgid "Pincha Pepperplant"
 msgstr "ピンチャペッパー"
 
 #. STRINGS.CODEX.PLACID.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.PLACID.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.PLACID.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.PLACID.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.PLACID.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
-#| msgid "Shine Bug"
 msgctxt "STRINGS.CODEX.PLACID.TITLE"
 msgid "Placid Shine Bug"
-msgstr "シャインバグ"
+msgstr "おっとり シャインバグ"
 
 #. STRINGS.CODEX.POWER.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.POWER.BODY.CONTAINER1"
@@ -8132,50 +7725,21 @@ msgid "Power"
 msgstr "電力"
 
 #. STRINGS.CODEX.PRINCE.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.PRINCE.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.PRINCE.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.PRINCE.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.PRINCE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.PREFIX.MALE.PRINCE"
-#| msgid "Prince"
 msgctxt "STRINGS.CODEX.PRINCE.TITLE"
 msgid "Puft Prince"
-msgstr "プリンス"
+msgstr "パフ プリンス"
 
 #. STRINGS.CODEX.PUFT.BODY.CONTAINER1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.PUFT.BODY.CONTAINER1"
-#| msgid ""
-#| "The Puft is a friendly creature whose limited brainpower is largely "
-#| "dedicated to sustaining its basic life processes.\n"
-#| "\n"
-#| "A specialized air bladder in the Puft's chest cavity stores varying "
-#| "concentrations of gas, allowing it to control its buoyancy and equalize "
-#| "its internal pressure with that of its environment."
 msgctxt "STRINGS.CODEX.PUFT.BODY.CONTAINER1"
 msgid ""
 "The Puft is a friendly creature whose limited brainpower is largely "
@@ -8191,12 +7755,9 @@ msgstr ""
 "境に対する内圧を調整したりします。"
 
 #. STRINGS.CODEX.PUFT.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
-#| msgid "Domesticability"
 msgctxt "STRINGS.CODEX.PUFT.SUBTITLE"
 msgid "Domesticable Critter"
-msgstr "動物好き"
+msgstr "家畜可能な動物"
 
 # 「ふわふわ」の意味
 #. STRINGS.CODEX.PUFT.TITLE
@@ -8205,87 +7766,36 @@ msgid "Puft"
 msgstr "パフ"
 
 #. STRINGS.CODEX.ROYAL.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.ROYAL.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.ROYAL.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.ROYAL.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.ROYAL.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
-#| msgid "Shine Bug"
 msgctxt "STRINGS.CODEX.ROYAL.TITLE"
 msgid "Royal Shine Bug"
-msgstr "シャインバグ"
+msgstr "気高い シャインバグ"
 
 #. STRINGS.CODEX.SAGE.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.SAGE.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.SAGE.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.SAGE.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.SAGE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.TITLE"
-#| msgid "Hatch"
 msgctxt "STRINGS.CODEX.SAGE.TITLE"
 msgid "Sage Hatch"
-msgstr "ハッチ"
+msgstr "もさもさ ハッチ"
 
 #. STRINGS.CODEX.SHINEBUG.BODY.CONTAINER1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SHINEBUG.BODY.CONTAINER1"
-#| msgid ""
-#| "The Shine Bug is a bioluminiscent insect with bladed wing membranes it "
-#| "rotates at high speeds to maintain flight.\n"
-#| "\n"
-#| "The bioluminescence of its body serves the social purpose of finding and "
-#| "communicating with others of its kind.\n"
-#| "\n"
-#| "As such, it is not uncommon for Shine Bugs to mistakenly approach "
-#| "inanimate sources of light in search of a friend."
 msgctxt "STRINGS.CODEX.SHINEBUG.BODY.CONTAINER1"
 msgid ""
 "The Shine Bug is a flying insect with bladed membranes atop its head which "
@@ -8307,12 +7817,9 @@ msgstr ""
 "のはよくあることです。"
 
 #. STRINGS.CODEX.SHINEBUG.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
-#| msgid "Domesticability"
 msgctxt "STRINGS.CODEX.SHINEBUG.SUBTITLE"
 msgid "Domesticable Critter"
-msgstr "動物好き"
+msgstr "家畜可能な動物"
 
 #. STRINGS.CODEX.SHINEBUG.TITLE
 msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
@@ -8335,14 +7842,6 @@ msgid "Sleet Wheat"
 msgstr "スリートウィート"
 
 #. STRINGS.CODEX.SLICKSTER.BODY.CONTAINER1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SLICKSTER.BODY.CONTAINER1"
-#| msgid ""
-#| "Slicksters are a unique creature most renown for their ability to exude "
-#| "hydrocarbon waste that is nearly identical in makeup to crude oil.\n"
-#| "\n"
-#| "The two large rhinophores that protrude from the Slickster's head are "
-#| "chemical receptors that help guide it toward breathable carbon dioxide."
 msgctxt "STRINGS.CODEX.SLICKSTER.BODY.CONTAINER1"
 msgid ""
 "Slicksters are a unique creature most renown for their ability to exude "
@@ -8358,12 +7857,9 @@ msgstr ""
 "なっています。"
 
 #. STRINGS.CODEX.SLICKSTER.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DOMESTICATIONDELTA.NAME"
-#| msgid "Domesticability"
 msgctxt "STRINGS.CODEX.SLICKSTER.SUBTITLE"
 msgid "Domesticable Critter"
-msgstr "動物好き"
+msgstr "家畜可能な動物"
 
 # 訳語が見つからない...
 #. STRINGS.CODEX.SLICKSTER.TITLE
@@ -8372,148 +7868,66 @@ msgid "Slickster"
 msgstr "スリックスター"
 
 #. STRINGS.CODEX.SMOOTH.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.SMOOTH.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.SMOOTH.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.SMOOTH.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.SMOOTH.TITLE
 msgctxt "STRINGS.CODEX.SMOOTH.TITLE"
 msgid "Smooth Hatch"
-msgstr ""
+msgstr "つるつる ハッチ"
 
 #. STRINGS.CODEX.SQUEAKY.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.SQUEAKY.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.SQUEAKY.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.SQUEAKY.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.SQUEAKY.TITLE
 msgctxt "STRINGS.CODEX.SQUEAKY.TITLE"
 msgid "Squeaky Puft"
-msgstr ""
+msgstr "やかまし パフ"
 
 #. STRINGS.CODEX.STONE.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.STONE.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.STONE.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.STONE.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.STONE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.TITLE"
-#| msgid "Hatch"
 msgctxt "STRINGS.CODEX.STONE.TITLE"
 msgid "Stone Hatch"
-msgstr "ハッチ"
+msgstr "いしころ ハッチ"
 
 #. STRINGS.CODEX.SUNNY.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.SUNNY.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.SUNNY.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.SUNNY.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.SUNNY.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
-#| msgid "Shine Bug"
 msgctxt "STRINGS.CODEX.SUNNY.TITLE"
 msgid "Sunny Shine Bug"
-msgstr "シャインバグ"
+msgstr "陽気な シャインバグ"
 
 #. STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1"
-#| msgid ""
-#| "The Thimble Reed is a wetlands plant used in the production of high "
-#| "quality fabrics that are prized for their softness and breathability.\n"
-#| "\n"
-#| "Cloth made from the Thimble Reed owes its exceptional softness to the "
-#| "fineness of its fibers and the unusual length to which they grow."
 msgctxt "STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1"
 msgid ""
 "The Thimble Reed is a wetlands plant used in the production of high quality "
@@ -8526,7 +7940,7 @@ msgstr ""
 "生地に使われます。\n"
 "\n"
 "シンブルリードで作った布はとても柔らかくきめ細やかで、並外れた柔軟性を持ちま"
-"す。"
+"す。生育すると並外れた高さになります。"
 
 #. STRINGS.CODEX.THIMBLEREED.SUBTITLE
 msgctxt "STRINGS.CODEX.THIMBLEREED.SUBTITLE"
@@ -8540,71 +7954,34 @@ msgid "Thimble Reed"
 msgstr "シンブルリード"
 
 #. STRINGS.CODEX.TROPICAL.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.TROPICAL.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.TROPICAL.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.TROPICAL.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.TROPICAL.TITLE
 msgctxt "STRINGS.CODEX.TROPICAL.TITLE"
 msgid "Tropical Pacu"
-msgstr ""
+msgstr "熱帯 パクー"
 
 #. STRINGS.CODEX.VITAL.BODY.CONTAINER1
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.VITAL.BODY.CONTAINER1"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.VITAL.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HATCH.SUBTITLE"
-#| msgid "Critter"
 msgctxt "STRINGS.CODEX.VITAL.SUBTITLE"
 msgid "Critter Morph"
-msgstr "動物"
+msgstr "動物(変種)"
 
 #. STRINGS.CODEX.VITAL.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SHINEBUG.TITLE"
-#| msgid "Shine Bug"
 msgctxt "STRINGS.CODEX.VITAL.TITLE"
 msgid "Vital Shine Bug"
-msgstr "シャインバグ"
+msgstr "力強い シャインバグ"
 
 #. STRINGS.CODEX.WHEEZEWORT.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.WHEEZEWORT.BODY.CONTAINER1"
@@ -8837,206 +8214,136 @@ msgid "This critter is fending for itself and does not trust Duplicants"
 msgstr "この動物は自活しており、複製人間を信頼していません"
 
 #. STRINGS.CREATURES.FAMILY.DRECKO
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
-#| msgid "<link=\"DECOR\">Decor</link>"
 msgctxt "STRINGS.CREATURES.FAMILY.DRECKO"
 msgid "<link=\"DRECKOSPECIES\">Drecko</link>"
-msgstr "<link=\"DECOR\">装飾</link>"
+msgstr "<link=\"DRECKOSPECIES\">ドレッコ</link>"
 
 #. STRINGS.CREATURES.FAMILY.GLOM
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.GLOM.NAME"
-#| msgid "<link=\"GLOM\">Morb</link>"
 msgctxt "STRINGS.CREATURES.FAMILY.GLOM"
 msgid "<link=\"GLOMSPECIES\">Morb</link>"
-msgstr "<link=\"GLOM\">モーブ</link>"
+msgstr "<link=\"GLOMSPECIES\">モーブ</link>"
 
 #. STRINGS.CREATURES.FAMILY.HATCH
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
-#| msgid "<link=\"HATCH\">Hatch</link>"
 msgctxt "STRINGS.CREATURES.FAMILY.HATCH"
 msgid "<link=\"HATCHSPECIES\">Hatch</link>"
-msgstr "<link=\"HATCH\">ハッチ</link>"
+msgstr "<link=\"HATCHSPECIES\">ハッチ</link>"
 
 #. STRINGS.CREATURES.FAMILY.LIGHTBUG
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
-#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
 msgctxt "STRINGS.CREATURES.FAMILY.LIGHTBUG"
 msgid "<link=\"LIGHTBUGSPECIES\">Shine Bug</link>"
-msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+msgstr "<link=\"LIGHTBUGSPECIES\">シャインバグ</link>"
 
 #. STRINGS.CREATURES.FAMILY.OILFLOATER
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.NAME"
-#| msgid "<link=\"OILFLOATER\">Slickster</link>"
 msgctxt "STRINGS.CREATURES.FAMILY.OILFLOATER"
 msgid "<link=\"OILFLOATERSPECIES\">Slickster</link>"
-msgstr "<link=\"OILFLOATER\">スリックスター</link>"
+msgstr "<link=\"OILFLOATERSPECIES\">スリックスター</link>"
 
 #. STRINGS.CREATURES.FAMILY.PACU
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.FLUT.NAME"
-#| msgid "<link=\"FLUT\">Pacu</link>"
 msgctxt "STRINGS.CREATURES.FAMILY.PACU"
 msgid "<link=\"PACUSPECIES\">Pacu</link>"
-msgstr "<link=\"FLUT\">パクー</link>"
+msgstr "<link=\"PACUSPECIES\">パクー</link>"
 
 #. STRINGS.CREATURES.FAMILY.PUFT
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
-#| msgid "<link=\"PUFT\">Puft</link>"
 msgctxt "STRINGS.CREATURES.FAMILY.PUFT"
 msgid "<link=\"PUFTSPECIES\">Puft</link>"
-msgstr "<link=\"PUFT\">パフ</link>"
+msgstr "<link=\"PUFTSPECIES\">パフ</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.DRECKOSPECIES
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
-#| msgid "<link=\"DECOR\">Decor</link>"
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.DRECKOSPECIES"
 msgid "<link=\"DRECKOSPECIES\">Dreckos</link>"
-msgstr "<link=\"DECOR\">装飾</link>"
+msgstr "<link=\"DRECKOSPECIES\">ドレッコ種</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.GLOMSPECIES
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.GLOM.NAME"
-#| msgid "<link=\"GLOM\">Morb</link>"
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.GLOMSPECIES"
 msgid "<link=\"GLOMSPECIES\">Morbs</link>"
-msgstr "<link=\"GLOM\">モーブ</link>"
+msgstr "<link=\"GLOMSPECIES\">モーブ種</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.HATCHSPECIES
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
-#| msgid "<link=\"HATCH\">Hatch</link>"
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.HATCHSPECIES"
 msgid "<link=\"HATCHSPECIES\">Hatches</link>"
-msgstr "<link=\"HATCH\">ハッチ</link>"
+msgstr "<link=\"HATCHSPECIES\">ハッチ種</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.LIGHTBUGSPECIES
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.LIGHTBUG.NAME"
-#| msgid "<link=\"LIGHTBUG\">Shine Bug</link>"
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.LIGHTBUGSPECIES"
 msgid "<link=\"LIGHTBUGSPECIES\">Shine Bugs</link>"
-msgstr "<link=\"LIGHTBUG\">シャインバグ</link>"
+msgstr "<link=\"LIGHTBUGSPECIES\">シャインバグ種</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.OILFLOATERSPECIES
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.OILFLOATER.NAME"
-#| msgid "<link=\"OILFLOATER\">Slickster</link>"
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.OILFLOATERSPECIES"
 msgid "<link=\"OILFLOATERSPECIES\">Slicksters</link>"
-msgstr "<link=\"OILFLOATER\">スリックスター</link>"
+msgstr "<link=\"OILFLOATERSPECIES\">スリックスター種</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.PACUSPECIES
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.FLUT.NAME"
-#| msgid "<link=\"FLUT\">Pacu</link>"
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.PACUSPECIES"
 msgid "<link=\"PACUSPECIES\">Pacus</link>"
-msgstr "<link=\"FLUT\">パクー</link>"
+msgstr "<link=\"PACUSPECIES\">パクー種</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.PUFTSPECIES
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.PUFT.NAME"
-#| msgid "<link=\"PUFT\">Puft</link>"
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.PUFTSPECIES"
 msgid "<link=\"PUFTSPECIES\">Pufts</link>"
-msgstr "<link=\"PUFT\">パフ</link>"
+msgstr "<link=\"PUFTSPECIES\">パフ種</link>"
 
 #. STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.DESC
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.GEYSER_YEAR_NEXT_DORMANT"
-#| msgid "Next Dormancy: {0}"
 msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.DESC"
 msgid "Eats any: {0}"
-msgstr "次の休眠まで: {0}"
+msgstr "食物: {0}"
 
 #. STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HEADERS.DIET"
-#| msgid "Diet"
 msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.NAME"
 msgid "Diet"
 msgstr "食物"
 
 #. STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE.DESC
-#, fuzzy
-#| msgctxt "STRINGS.UI.CHARACTERCONTAINER_CONGENITALTRAIT"
-#| msgid "Genetic Trait: {0}"
 msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE.DESC"
 msgid "Penned with: {0}"
-msgstr "遺伝特性: {0}"
+msgstr "囲われている: {0}"
 
 #. STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE.NAME
 msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE.NAME"
 msgid "Nearby Creature"
-msgstr ""
+msgstr "周辺の生物"
 
 #. STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE_NEG.DESC
 msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE_NEG.DESC"
 msgid "Not penned with: {0}"
-msgstr ""
+msgstr "囲われていない: {0}"
 
 #. STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE_NEG.NAME
 msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.NEARBY_CREATURE_NEG.NAME"
 msgid "No Nearby Creature"
-msgstr ""
+msgstr "周辺の生物なし"
 
 #. STRINGS.CREATURES.FERTILITY_MODIFIERS.TEMPERATURE.DESC
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.TEMPERATURE_RANGE"
-#| msgid "Temperature range: {0} to {1}"
 msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.TEMPERATURE.DESC"
 msgid "Body temperature between: {0} and {1}"
-msgstr "生存可能温度: {0} から {1}"
+msgstr "体温範囲: {0} から {1}"
 
 #. STRINGS.CREATURES.FERTILITY_MODIFIERS.TEMPERATURE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE"
-#| msgid "Temperature"
 msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.TEMPERATURE.NAME"
 msgid "Temperature"
 msgstr "温度"
 
 #. STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.ROOMS.CRITERIA.CREATURE_FEEDER.NAME"
-#| msgid "Critter Feeder"
 msgctxt "STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.NAME"
 msgid "Ate From Feeder"
-msgstr "給餌機"
+msgstr "給餌機から摂取済み"
 
 #. STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.FLEEING.TOOLTIP"
-#| msgid ""
-#| "This critter is trying to escape\n"
-#| "Get'em!"
 msgctxt "STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.TOOLTIP"
 msgid "This critter is getting tamer because it ate from a feeder."
-msgstr ""
-"この動物は離脱しようとしています\n"
-"逃すな！"
+msgstr "この動物は給餌機から餌を食べたため、飼い慣らされてきています。"
 
 #. STRINGS.CREATURES.MODIFIERS.BABY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.PREFIX.NB.TINY"
-#| msgid "Tiny"
 msgctxt "STRINGS.CREATURES.MODIFIERS.BABY.NAME"
 msgid "Tiny Baby"
-msgstr "幼い"
+msgstr "幼体"
 
 #. STRINGS.CREATURES.MODIFIERS.BABY.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.BABY.TOOLTIP"
 msgid ""
 "This critter will become an adult as it ages and grows wise to the ways of "
 "the world"
-msgstr ""
+msgstr "この動物はやがて成獣となり、世界を知るでしょう。"
 
 #. STRINGS.CREATURES.MODIFIERS.BASE_FERTILITY.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.BASE_FERTILITY.NAME"
@@ -9049,20 +8356,14 @@ msgid "This is the base speed with which critters produce new eggs"
 msgstr "動物が新しく卵を産む基本速度です"
 
 #. STRINGS.CREATURES.MODIFIERS.BASE_INCUBATION_RATE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_INCUBATION_RATE.NAME"
-#| msgid "Incubation Rate"
 msgctxt "STRINGS.CREATURES.MODIFIERS.BASE_INCUBATION_RATE.NAME"
 msgid "Base Incubation Rate"
-msgstr "孵化レート"
+msgstr "基本孵化レート"
 
 #. STRINGS.CREATURES.MODIFIERS.CONFINED.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.SAVESCREEN.CONFIRMNAME"
-#| msgid "Confirm"
 msgctxt "STRINGS.CREATURES.MODIFIERS.CONFINED.NAME"
 msgid "Confined"
-msgstr "確認"
+msgstr "閉じ込められた"
 
 #. STRINGS.CREATURES.MODIFIERS.CONFINED.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.CONFINED.TOOLTIP"
@@ -9071,6 +8372,9 @@ msgid ""
 "\n"
 "Sounds uncomfortable!"
 msgstr ""
+"この動物はドアやタイル、または狭い領域に押し込められています。\n"
+"\n"
+"とっても居心地悪そう！"
 
 #. STRINGS.CREATURES.MODIFIERS.DOMESTICATION_DECREASING.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.DOMESTICATION_DECREASING.NAME"
@@ -9093,12 +8397,9 @@ msgid "This critter is very happy its needs are being met"
 msgstr "この動物は欲求が満たされておりとても幸せです"
 
 #. STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_EXPECTATIONS"
-#| msgid "Expectations"
 msgctxt "STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.NAME"
 msgid "Expecting"
-msgstr "期待値"
+msgstr "待機中"
 
 #. STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.TOOLTIP"
@@ -9108,6 +8409,9 @@ msgid ""
 "\n"
 "If there were more room, it might consider laying eggs again"
 msgstr ""
+"この動物は仲間が増えるまでは繁殖を遅らせます\n"
+"\n"
+"頭数が増えると、卵を再び産むようになるでしょう"
 
 #. STRINGS.CREATURES.MODIFIERS.HAPPY.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.NAME"
@@ -9115,13 +8419,6 @@ msgid "Happy"
 msgstr "幸福"
 
 #. STRINGS.CREATURES.MODIFIERS.HAPPY.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.TOOLTIP"
-#| msgid ""
-#| "All of this critter's needs have been met and it's feeling quite "
-#| "contented\n"
-#| "------------------\n"
-#| "It will produce more as a result"
 msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.TOOLTIP"
 msgid ""
 "This critter's in high spirits because all of its needs are being met\n"
@@ -9133,17 +8430,11 @@ msgstr ""
 "結果として、繁殖力が高まっています"
 
 #. STRINGS.CREATURES.MODIFIERS.INCUBATOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATS.INCUBATION.NAME"
-#| msgid "Incubation"
 msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR.NAME"
 msgid "Incubator"
-msgstr "孵化"
+msgstr "孵卵器"
 
 #. STRINGS.CREATURES.MODIFIERS.INCUBATOR.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_INCUBATION_RATE.TOOLTIP"
-#| msgid "Determines an egg's gestation period when placed in an Incubator"
 msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR.TOOLTIP"
 msgid "Increased incubation rate when placed inside an Incubator"
 msgstr "孵卵器に設置された時に、孵化までにかかる時間を決定します"
@@ -9182,12 +8473,9 @@ msgid "This critter has recently been attended to by a Rancher"
 msgstr "この動物は牧夫の手入れを受けたばかりです"
 
 #. STRINGS.CREATURES.MODIFIERS.SCALE_GROWTH_RATE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATS.MATURITY.GROWINGWILD"
-#| msgid "Wild growth rate"
 msgctxt "STRINGS.CREATURES.MODIFIERS.SCALE_GROWTH_RATE.NAME"
 msgid "Scale Regrowth Rate"
-msgstr "野生成長率"
+msgstr "再成長率"
 
 #. STRINGS.CREATURES.MODIFIERS.TAME.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.TAME.NAME"
@@ -9202,25 +8490,18 @@ msgstr "この動物は飼い慣らされています"
 #. STRINGS.CREATURES.MODIFIERS.UNHAPPY.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.UNHAPPY.NAME"
 msgid "Glum"
-msgstr ""
+msgstr "不機嫌"
 
 #. STRINGS.CREATURES.MODIFIERS.UNHAPPY.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.TOOLTIP"
-#| msgid ""
-#| "All of this critter's needs have been met and it's feeling quite "
-#| "contented\n"
-#| "------------------\n"
-#| "It will produce more as a result"
 msgctxt "STRINGS.CREATURES.MODIFIERS.UNHAPPY.TOOLTIP"
 msgid ""
 "This critter's feeling down because its needs aren't being met\n"
 "------------------\n"
 "It will produce less materials as a result"
 msgstr ""
-"この動物たちは欲求が満たされており、とても満足しています\n"
+"この動物たちは欲求が満たされておらず、気落ちしています\n"
 "------------------\n"
-"結果として、繁殖力が高まっています"
+"結果として、繁殖力が低下しています"
 
 #. STRINGS.CREATURES.MODIFIERS.WILD.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.WILD.NAME"
@@ -9345,14 +8626,14 @@ msgid ""
 "\n"
 "In time it will mature into a fully grown <link=\"DRECKO\">Drecko</link>."
 msgstr ""
+"まん丸お目目の小さな<link=\"DRECKO\">ドレッコ幼体</link>です。\n"
+"\n"
+"時間経過とともに成長し、<link=\"DRECKO\">ドレッコ</link>になります。"
 
 #. STRINGS.CREATURES.SPECIES.DRECKO.BABY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
-#| msgid "<link=\"DECOR\">Decor</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.BABY.NAME"
 msgid "<link=\"DRECKO\">Drecklet</link>"
-msgstr "<link=\"DECOR\">装飾</link>"
+msgstr "<link=\"DRECKO\">ドレッコ幼体</link>"
 
 #. STRINGS.CREATURES.SPECIES.DRECKO.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.DESC"
@@ -9363,22 +8644,21 @@ msgid ""
 "Their backsides are covered in thick woolly fibers that only grow in <link="
 "\"HYDROGEN\">Hydrogen</link> climates."
 msgstr ""
+"ドレッコは予期せぬスピードで壁を登ることができる、こそこそとした生き物で"
+"す。\n"
+"\n"
+"彼らの側面は<link=\"HYDROGEN\">水素</link>下でのみ伸びる厚いウール繊維で覆わ"
+"れています。"
 
 #. STRINGS.CREATURES.SPECIES.DRECKO.EGG_NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
-#| msgid "<link=\"DECOR\">Decor</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.EGG_NAME"
 msgid "<link=\"DRECKO\">Drecklet Egg</link>"
-msgstr "<link=\"DECOR\">装飾</link>"
+msgstr "<link=\"DRECKO\">ドレッコの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.DRECKO.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
-#| msgid "<link=\"DECOR\">Decor</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.NAME"
 msgid "<link=\"DRECKO\">Drecko</link>"
-msgstr "<link=\"DECOR\">装飾</link>"
+msgstr "<link=\"DRECKO\">ドレッコ</link>"
 
 #. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.BABY.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.BABY.DESC"
@@ -9387,14 +8667,14 @@ msgid ""
 "\n"
 "This one is a Glossy morph."
 msgstr ""
+"まん丸お目目の小さな<link=\"DRECKO\">ドレッコ幼体</link>です。\n"
+"\n"
+"この個体はつやつやドレッコです。"
 
 #. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.BABY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.PLASTICTILE.NAME"
-#| msgid "<link=\"PLASTICTILE\">Plastic Tile</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.BABY.NAME"
 msgid "<link=\"DRECKOPLASTIC\">Glossy Drecklet</link>"
-msgstr "<link=\"PLASTICTILE\">プラスチック製タイル</link>"
+msgstr "<link=\"DRECKOPLASTIC\">つやつや ドレッコ幼体</link>"
 
 #. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.DESC"
@@ -9405,22 +8685,21 @@ msgid ""
 "Their backsides are covered in bioplastic scales that only grow in <link="
 "\"HYDROGEN\">Hydrogen</link> climates."
 msgstr ""
+"つやつやドレッコは予期せぬスピードで壁を登ることができる、こそこそとした生き"
+"物です。\n"
+"\n"
+"彼らの側面は<link=\"HYDROGEN\">水素</link>下でのみ成長する生体プラスチックの"
+"鱗で覆われています。"
 
 #. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.EGG_NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.PLASTICTILE.NAME"
-#| msgid "<link=\"PLASTICTILE\">Plastic Tile</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.EGG_NAME"
 msgid "<link=\"DRECKOPLASTIC\">Glossy Drecklet Egg</link>"
-msgstr "<link=\"PLASTICTILE\">プラスチック製タイル</link>"
+msgstr "<link=\"DRECKOPLASTIC\">つやつや ドレッコの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DECOR.TITLE"
-#| msgid "<link=\"DECOR\">Decor</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.VARIANT_PLASTIC.NAME"
 msgid "<link=\"DRECKOPLASTIC\">Glossy Drecko</link>"
-msgstr "<link=\"DECOR\">装飾</link>"
+msgstr "<link=\"DRECKOPLASTIC\">つやつや ドレッコ</link>"
 
 #. STRINGS.CREATURES.SPECIES.GEYSER.BIG_VOLCANO.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.GEYSER.BIG_VOLCANO.DESC"
@@ -9710,14 +8989,14 @@ msgid ""
 "\n"
 "In time, it will mature into an adult <link=\"HATCH\">Hatch</link>."
 msgstr ""
+"無邪気で小さな<link=\"HATCHLING\">ハッチ幼体</link>です。\n"
+"\n"
+"時間経過とともに成長し、<link=\"HATCH\">ハッチ</link>になります。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.BABY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
-#| msgid "<link=\"HATCH\">Hatch</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.BABY.NAME"
 msgid "<link=\"HATCH\">Hatchling</link>"
-msgstr "<link=\"HATCH\">ハッチ</link>"
+msgstr "<link=\"HATCH\">ハッチ幼体</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
@@ -9729,12 +9008,9 @@ msgstr ""
 "こすことで現れることがあります。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
-#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
 msgid "<link=\"HATCH\">Hatchling Egg</link>"
-msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+msgstr "<link=\"HATCH\">ハッチの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.NAME
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
@@ -9748,44 +9024,33 @@ msgid ""
 "\n"
 "This one is a Stone morph, and loves nibbling on rocks and metals."
 msgstr ""
+"無邪気で小さな<link=\"HATCHLING\">ハッチ幼体</link>です。\n"
+"\n"
+"この個体はいしころ ハッチで、岩石や金属をかじるのが大好きです。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.BABY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
-#| msgid "<link=\"HATCH\">Hatch</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.BABY.NAME"
 msgid "<link=\"HATCHHARD\">Stone Hatchling</link>"
-msgstr "<link=\"HATCH\">ハッチ</link>"
+msgstr "<link=\"HATCHHARD\">いしころ ハッチの幼体</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.DESC
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
-#| msgid ""
-#| "Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and may be "
-#| "uncovered by digging up Buried Objects."
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.DESC"
 msgid ""
 "Stone Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and enjoy "
 "burrowing into the ground."
 msgstr ""
-"ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。埋もれた物体を掘り起"
-"こすことで現れることがあります。"
+"いしころ ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。地面を掘り進"
+"むことを好みます。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.EGG_NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
-#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.EGG_NAME"
 msgid "<link=\"HATCHHARD\">Stone Hatchling Egg</link>"
-msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+msgstr "<link=\"HATCHHARD\">いしころ ハッチの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
-#| msgid "<link=\"HATCH\">Hatch</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_HARD.NAME"
 msgid "<link=\"HATCHHARD\">Stone Hatch</link>"
-msgstr "<link=\"HATCH\">ハッチ</link>"
+msgstr "<link=\"HATCHHARD\">いしころ ハッチ</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.BABY.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.BABY.DESC"
@@ -9794,44 +9059,33 @@ msgid ""
 "\n"
 "This one is a Smooth morph, and loves nibbling on different types of metals."
 msgstr ""
+"無邪気な<link=\"HATCHMETAL\">ハッチ</link>の赤ちゃんです。\n"
+"\n"
+"この個体はつるつる ハッチで、違った種類の金属をかじるのが大好きです。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.BABY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
-#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.BABY.NAME"
 msgid "<link=\"HATCHMETAL\">Smooth Hatchling</link>"
-msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+msgstr "<link=\"HATCHMETAL\">つるつる ハッチの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.DESC
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
-#| msgid ""
-#| "Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and may be "
-#| "uncovered by digging up Buried Objects."
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.DESC"
 msgid ""
 "Smooth Hatches excrete solid <link=\"COPPER\">Copper</link> as waste and "
 "enjoy burrowing into the ground."
 msgstr ""
-"ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。埋もれた物体を掘り起"
-"こすことで現れることがあります。"
+"つるつる ハッチは固形の<link=\"CARBON\">銅</link>を排泄します。地面を掘り進む"
+"ことを好みます。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.EGG_NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
-#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.EGG_NAME"
 msgid "<link=\"HATCHMETAL\">Smooth Hatchling Egg</link>"
-msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+msgstr "<link=\"HATCHMETAL\">つるつる ハッチの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
-#| msgid "<link=\"HATCH\">Hatch</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_METAL.NAME"
 msgid "<link=\"HATCHMETAL\">Smooth Hatch</link>"
-msgstr "<link=\"HATCH\">ハッチ</link>"
+msgstr "<link=\"HATCHMETAL\">つるつる ハッチ</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.BABY.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.BABY.DESC"
@@ -9840,44 +9094,33 @@ msgid ""
 "\n"
 "This one is a Sage morph, and loves nibbling on most organic materials."
 msgstr ""
+"無邪気な<link=\"HATCH\">ハッチ</link>の赤ちゃんです。\n"
+"\n"
+"この個体はもさもさ ハッチで、有機素材をかじるのが大好きです。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.BABY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
-#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.BABY.NAME"
 msgid "<link=\"HATCHVEGGIE\">Sage Hatchling</link>"
-msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+msgstr "<link=\"HATCHVEGGIE\">もさもさ ハッチの幼体</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.DESC
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.DESC"
-#| msgid ""
-#| "Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and may be "
-#| "uncovered by digging up Buried Objects."
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.DESC"
 msgid ""
 "Sage Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and enjoy "
 "burrowing into the ground."
 msgstr ""
-"ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。埋もれた物体を掘り起"
-"こすことで現れることがあります。"
+"もさもさ ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。地面を掘り進"
+"むことを好みます。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.EGG_NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.EGG_NAME"
-#| msgid "<link=\"HATCHEGG\">Hatchling Egg</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.EGG_NAME"
 msgid "<link=\"HATCHVEGGIE\">Sage Hatchling Egg</link>"
-msgstr "<link=\"HATCHEGG\">ハッチの卵</link>"
+msgstr "<link=\"HATCHVEGGIE\">もさもさ ハッチの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.HATCH.NAME"
-#| msgid "<link=\"HATCH\">Hatch</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.NAME"
 msgid "<link=\"HATCHVEGGIE\">Sage Hatch</link>"
-msgstr "<link=\"HATCH\">ハッチ</link>"
+msgstr "<link=\"HATCHVEGGIE\">もさもさ ハッチ</link>"
 
 #. STRINGS.CREATURES.SPECIES.HEATBULB.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.HEATBULB.DESC"
@@ -11017,12 +10260,9 @@ msgid "<link=\"SWAMPLILY\">Balm Lily</link>"
 msgstr "<link=\"SWAMPLILY\">バームリリー</link>"
 
 #. STRINGS.CREATURES.STATS.AGE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ARRIVALTIME"
-#| msgid "Age: "
 msgctxt "STRINGS.CREATURES.STATS.AGE.NAME"
 msgid "Age"
-msgstr "年齢: "
+msgstr "年齢"
 
 #. STRINGS.CREATURES.STATS.AGE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.AGE.TOOLTIP"
@@ -11031,6 +10271,9 @@ msgid ""
 "------------------\n"
 "This critter will die when its Age reaches its species' maximum lifespan"
 msgstr ""
+"年齢\n"
+"------------------\n"
+"この動物は種族ごとの最大寿命に達すると死を迎えます"
 
 #. STRINGS.CREATURES.STATS.AIRPRESSURE.NAME
 msgctxt "STRINGS.CREATURES.STATS.AIRPRESSURE.NAME"
@@ -12064,7 +11307,7 @@ msgstr "この植物は収穫して素材にすることが可能です"
 #. STRINGS.CREATURES.STATUSITEMS.RECEPTACLEINOPERATIONAL.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.RECEPTACLEINOPERATIONAL.NAME"
 msgid "    • Farm plot inoperable"
-msgstr "    • 農地栽培不可"
+msgstr "    • 農地栽培機能不全"
 
 #. STRINGS.CREATURES.STATUSITEMS.RECEPTACLEINOPERATIONAL.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.RECEPTACLEINOPERATIONAL.TOOLTIP"
@@ -12074,7 +11317,7 @@ msgstr "この農地は現在の状態では植物を育成できません"
 #. STRINGS.CREATURES.STATUSITEMS.RECEPTACLEOPERATIONAL.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.RECEPTACLEOPERATIONAL.NAME"
 msgid "Farm plot operational"
-msgstr "農地栽培可"
+msgstr "農地栽培機能中"
 
 #. STRINGS.CREATURES.STATUSITEMS.RECEPTACLEOPERATIONAL.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.RECEPTACLEOPERATIONAL.TOOLTIP"
@@ -12688,23 +11931,9 @@ msgid "Power Output"
 msgstr "出力"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESS.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESS.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESS.NAME
 #, fuzzy
@@ -12778,23 +12007,9 @@ msgid "Immunity"
 msgstr "免疫"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.INCUBATIONDELTA.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INCUBATIONDELTA.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.INCUBATIONDELTA.NAME
 #, fuzzy
@@ -30854,32 +30069,32 @@ msgstr "機能するためには{0}の配達が必要です"
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESGASINPUT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESGASINPUT"
 msgid "Must receive gas from a gas pipe system"
-msgstr "気体パイプ経由で気体の供給元が必要です"
+msgstr "気体用パイプ経由で気体の供給元が必要です"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESGASOUTPUT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESGASOUTPUT"
 msgid "Must expel gas through a gas pipe system"
-msgstr "気体パイプ経由で気体の排出先が必要です"
+msgstr "気体用パイプ経由で気体の排出先が必要です"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESGASOUTPUTS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESGASOUTPUTS"
 msgid "Must expel gas through a gas pipe system"
-msgstr "気体パイプ経由で気体の排出先が必要です"
+msgstr "気体用パイプ経由で気体の排出先が必要です"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESLIQUIDINPUT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESLIQUIDINPUT"
 msgid "Must receive liquid from a liquid pipe system"
-msgstr "液体パイプ経由で液体の供給元が必要です"
+msgstr "液体用パイプ経由で液体の供給元が必要です"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESLIQUIDOUTPUT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESLIQUIDOUTPUT"
 msgid "Must expel liquid through a liquid pipe system"
-msgstr "液体パイプ経由で液体の排出先が必要です"
+msgstr "液体用パイプ経由で液体の排出先が必要です"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESLIQUIDOUTPUTS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESLIQUIDOUTPUTS"
 msgid "Must expel liquid through a liquid pipe system"
-msgstr "液体パイプ経由で液体の排出先が必要です"
+msgstr "液体用パイプ経由で液体の排出先が必要です"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESMANUALOPERATION
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESMANUALOPERATION"
@@ -35910,7 +35125,7 @@ msgstr "設備の入力"
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONNECTED"
 msgid "Connected to a <link=\"GASPIPING\">Gas Pipe</link>"
-msgstr "<link=\"GASPIPING\">気体パイプ</link>に接続されている"
+msgstr "<link=\"GASPIPING\">気体用パイプ</link>に接続されている"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONSUMER
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONSUMER"
@@ -35929,7 +35144,7 @@ msgstr ""
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.DISCONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.DISCONNECTED"
 msgid "Not connected to a <link=\"GASPIPING\">Gas Pipe</link>"
-msgstr "<link=\"GASPIPING\">気体パイプ</link>の接続がない"
+msgstr "<link=\"GASPIPING\">気体用パイプ</link>の接続がない"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.FILTERED
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.FILTERED"
@@ -36151,8 +35366,8 @@ msgid ""
 "Connected to a <link=\"<LINK=\"LIQUIDCONDUIT\">LIQUID PIPE</LINK>\">Liquid "
 "Pipe</link>"
 msgstr ""
-"<link=\"<LINK=\"LIQUIDCONDUIT\">液体パイプ</LINK>\">液体パイプ</link>に接続さ"
-"れました"
+"<link=\"<LINK=\"LIQUIDCONDUIT\">液体用パイプ</LINK>\">液体用パイプ</link>に接"
+"続されました"
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONSUMER
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONSUMER"
@@ -36175,8 +35390,8 @@ msgid ""
 "Not connected to a <link=\"<LINK=\"LIQUIDCONDUIT\">LIQUID PIPE</LINK>"
 "\">Liquid Pipe</link>"
 msgstr ""
-"<link=\"<LINK=\"LIQUIDCONDUIT\">液体パイプ</LINK>\">液体パイプ</link>に接続さ"
-"れていません"
+"<link=\"<LINK=\"LIQUIDCONDUIT\">液体用パイプ</LINK>\">液体用パイプ</link>に接"
+"続されていません"
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.FILTERED
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.FILTERED"
@@ -38410,7 +37625,7 @@ msgstr "収穫を無効化"
 #. STRINGS.UI.TOOLS.FILTERLAYERS.GASPIPES
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.GASPIPES"
 msgid "Gas Pipes"
-msgstr "気体パイプ"
+msgstr "気体用パイプ"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.HARVEST_WHEN_READY
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.HARVEST_WHEN_READY"
@@ -38420,7 +37635,7 @@ msgstr "収穫を有効化"
 #. STRINGS.UI.TOOLS.FILTERLAYERS.LIQUIDPIPES
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.LIQUIDPIPES"
 msgid "Liquid Pipes"
-msgstr "液体パイプ"
+msgstr "液体用パイプ"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.LOGIC
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.LOGIC"
@@ -38560,49 +37775,34 @@ msgstr "準優先度ツール"
 #. STRINGS.UI.TOOLS.SANDBOX.BRUSH.NAME
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.BRUSH.NAME"
 msgid "Brush"
-msgstr ""
+msgstr "ブラシ"
 
 #. STRINGS.UI.TOOLS.SANDBOX.CLEAR_FLOOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.CLEAR_BUTTON"
-#| msgid "Clear Floor"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.CLEAR_FLOOR.NAME"
 msgid "Clear Floor"
 msgstr "床掃除"
 
 #. STRINGS.UI.TOOLS.SANDBOX.DESTROY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.DESTROY_BUTTON"
-#| msgid "Destroy"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.DESTROY.NAME"
 msgid "Destroy"
 msgstr "破壊"
 
 #. STRINGS.UI.TOOLS.SANDBOX.FLOOD.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.FLOODED.NOTIFICATION_NAME"
-#| msgid "Flooding"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.FLOOD.NAME"
 msgid "Flood"
 msgstr "水没"
 
 #. STRINGS.UI.TOOLS.SANDBOX.HEATGUN.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HEAT.TITLE"
-#| msgid "Heat"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.HEATGUN.NAME"
 msgid "Heat Gun"
-msgstr "熱源"
+msgstr "ヒートガン"
 
 #. STRINGS.UI.TOOLS.SANDBOX.MARQUEE.NAME
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.MARQUEE.NAME"
 msgid "Marquee"
-msgstr ""
+msgstr "マーキー"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SAMPLE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.SAMPLE"
-#| msgid "Sample"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SAMPLE.NAME"
 msgid "Sample"
 msgstr "サンプル"
@@ -38610,22 +37810,22 @@ msgstr "サンプル"
 #. STRINGS.UI.TOOLS.SANDBOX.SANDBOX_TOGGLE.NAME
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SANDBOX_TOGGLE.NAME"
 msgid "SANDBOX"
-msgstr ""
+msgstr "サンドボックス"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SPAWN_ENTITY.NAME
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWN_ENTITY.NAME"
 msgid "Spawn"
-msgstr ""
+msgstr "生成"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SPAWNER.NAME
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWNER.NAME"
 msgid "Spawner"
-msgstr ""
+msgstr "生成機"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SPRINKLE.NAME
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPRINKLE.NAME"
 msgid "Sprinkle"
-msgstr ""
+msgstr "ばら撒き"
 
 #. STRINGS.UI.TOOLTIPS.ALERTSTOOLTIP
 msgctxt "STRINGS.UI.TOOLTIPS.ALERTSTOOLTIP"
@@ -38738,7 +37938,7 @@ msgstr "<link=\"POWER\">電力</link>要求"
 #. STRINGS.UI.TOOLTIPS.GASVENTOVERLAYSTRING
 msgctxt "STRINGS.UI.TOOLTIPS.GASVENTOVERLAYSTRING"
 msgid "Displays gas pipe system components"
-msgstr "気体パイプの配管を表示します"
+msgstr "気体用パイプの配管を表示します"
 
 #. STRINGS.UI.TOOLTIPS.HARVESTBUTTON
 msgctxt "STRINGS.UI.TOOLTIPS.HARVESTBUTTON"
@@ -38786,12 +37986,9 @@ msgid "Liquid ports are obstructed"
 msgstr "排水口閉塞"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_LOGIC_PORTS_OBSTRUCTED
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_GASPORTS_OBSTRUCTED"
-#| msgid "Gas ports are obstructed"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_LOGIC_PORTS_OBSTRUCTED"
 msgid "Automation ports are obstructed"
-msgstr "通風口閉塞"
+msgstr "自動化ポート閉塞"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_NOT_IN_TILES
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_NOT_IN_TILES"
@@ -38821,12 +38018,12 @@ msgstr "<color=#833A5FFF>[{Key}]</color>キーで回転します"
 #. STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_NO_UTURNS
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_NO_UTURNS"
 msgid "Can't U-Turn"
-msgstr "ここでは引き返せません！"
+msgstr "Uターンできません"
 
 #. STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_STRAIGHT_BRIDGES
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_TUBELOCATION_STRAIGHT_BRIDGES"
 msgid "Can't Turn Here"
-msgstr "ここでは引き返せません！"
+msgstr "ここでは引き返せません"
 
 #. STRINGS.UI.TOOLTIPS.INFOPANEL
 msgctxt "STRINGS.UI.TOOLTIPS.INFOPANEL"
@@ -38882,7 +38079,7 @@ msgstr "光源の範囲を表示します"
 #. STRINGS.UI.TOOLTIPS.LIQUIDVENTOVERLAYSTRING
 msgctxt "STRINGS.UI.TOOLTIPS.LIQUIDVENTOVERLAYSTRING"
 msgid "Displays liquid pipe system components"
-msgstr "液体パイプの配管を表示します"
+msgstr "液体用パイプの配管を表示します"
 
 #. STRINGS.UI.TOOLTIPS.LOGICOVERLAYSTRING
 msgctxt "STRINGS.UI.TOOLTIPS.LOGICOVERLAYSTRING"
@@ -40651,12 +39848,12 @@ msgstr " W"
 #. STRINGS.UI.UNITSUFFIXES.HEAT.SPECIFICHEATCAPACITY
 msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.SPECIFICHEATCAPACITY"
 msgid "(J/g)/K"
-msgstr ""
+msgstr "(J/g)/K"
 
 #. STRINGS.UI.UNITSUFFIXES.HEAT.THERMALCONDUCTIVITY
 msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.THERMALCONDUCTIVITY"
 msgid "(W/m)/K"
-msgstr ""
+msgstr "(W/m)/K"
 
 #. STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA
 msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA"
