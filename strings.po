@@ -554,12 +554,9 @@ msgstr ""
 "開放: ドアを開けっぱなしにします"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.FOOD.QUALITY"
-#| msgid "Quality: {0}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME"
 msgid "Dish Quality: {Quality}"
-msgstr "品質: {0}"
+msgstr "アンテナ精度: {0}"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP"
@@ -570,20 +567,22 @@ msgid ""
 "    • Interference from nearby heavy machinery\n"
 "    • Rock or tiles obstructing a wide view of the sky"
 msgstr ""
+"このアンテナは現在精度 {Quality} で動作中です。\n"
+"\n"
+"精度低下の原因は以下の通りです:\n"
+"    • 重機がそばにある\n"
+"    • 岩やタイルによって検出範囲が阻害されている"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_SPINNING_UP.NAME"
-#| msgid "Spinning Up"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.NAME"
 msgid "Scanning"
-msgstr "回転中"
+msgstr "検出中"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.TOOLTIP"
 msgid ""
 "This detector is currently peering in to the sky to find objects of interest."
-msgstr ""
+msgstr "このアンテナは特定の物体を検知するために宇宙を凝視しています。"
 
 #. STRINGS.BUILDING.STATUSITEMS.DIGREQUIRESROLEPERK.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DIGREQUIRESROLEPERK.NAME"
@@ -1037,12 +1036,12 @@ msgstr "この設備が動作するには液体の中に沈めないといけま
 #. STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.NAME"
 msgid "Incoming Meteors"
-msgstr ""
+msgstr "隕石襲来"
 
 #. STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.TOOLTIP"
 msgid "There are high speed objects approaching!"
-msgstr ""
+msgstr "高速の物体が接近中です！"
 
 #. STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME"
@@ -1225,9 +1224,6 @@ msgid "Manually Controlled"
 msgstr "手動制御"
 
 #. STRINGS.BUILDING.STATUSITEMS.MANUALLYCONTROLLED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MANUALLYCONTROLLED.TOOLTIP"
-#| msgid "This Duplicant is under your control"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MANUALLYCONTROLLED.TOOLTIP"
 msgid "This Duplicant is under my control"
 msgstr "この複製人間はあなたが操作しています"
@@ -1482,7 +1478,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.NAME"
 msgid "Detector Network Quality: {TotalQuality}"
-msgstr ""
+msgstr "アンテナネットワーク品質: {TotalQuality}"
 
 #. STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP"
@@ -1493,6 +1489,10 @@ msgid ""
 "Add more detectors and ensure they are each scanning effectively for best "
 "results."
 msgstr ""
+"アンテナネットワークは{TotalQuality}の精度で稼働中です。流星群の着弾する"
+"{WorstTime}前から{BestTime}前の範囲で検知できます。\n"
+"\n"
+"アンテナを増強し、お互いの検出範囲を被せると、最大限の効果を発揮します。"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEUTRONIUMUNMINABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEUTRONIUMUNMINABLE.NAME"
@@ -1515,13 +1515,6 @@ msgid "New Duplicants are available"
 msgstr "新しい複製人間を複製できます"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NOTIFICATION_TOOLTIP
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NOTIFICATION_TOOLTIP"
-#| msgid ""
-#| "The Printing Pod <color=#F44A47>[H]</color> is ready to print a new "
-#| "Duplicant.\n"
-#| "Please select a DNA blueprint:"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NOTIFICATION_TOOLTIP"
 msgid ""
@@ -1536,7 +1529,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP"
 msgid "I am ready to print a new colony member"
-msgstr ""
+msgstr "新しい人員の製造準備ができました"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.NAME"
@@ -2043,20 +2036,14 @@ msgid "Research produced at this station will be invested in {Tech}"
 msgstr "この設備による研究は {Tech} を発明しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.WATTAGE.NAME"
-#| msgid "Wattage: {Wattage}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.NAME"
 msgid "Current Wattage: {Wattage}"
-msgstr "ワット数: {Wattage}"
+msgstr "現在のワット数: {Wattage}"
 
 #. STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.WATTAGE.TOOLTIP"
-#| msgid "This building is generating {Wattage} of power"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.TOOLTIP"
 msgid "This panel is generating {Wattage} of power"
-msgstr "この設備は {Wattage} の電力を生成しています"
+msgstr "このパネルは {Wattage} の電力を生成しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.SOLIDPIPEOBSTRUCTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLIDPIPEOBSTRUCTED.NAME"
@@ -2077,29 +2064,24 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.NAME"
 msgid "Space Not Visible"
-msgstr ""
+msgstr "宇宙が見えません"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.TOOLTIP"
 msgid "This detector must be able to see the sky in order to detect anything."
-msgstr ""
+msgstr "このアンテナが検知するためには、宇宙が見える状態でなければなりません。"
 
 #. STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.NAME"
-#| msgid "Storing: {Stored} / {Capacity} kg"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.NAME"
 msgid "Storing: {Stored} / {Capacity} {Units}"
-msgstr "内容量: {Stored} / {Capacity} Kg"
+msgstr "内容量: {Stored} / {Capacity} {Units}"
 
 #. STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.TOOLTIP"
-#| msgid "This container is storing {Stored} kg of material"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.TOOLTIP"
 msgid ""
 "This container is storing {Stored} {Units} of a maximum {Capacity} {Units}."
-msgstr "この格納庫は素材を {Stored} kg 格納しています"
+msgstr ""
+"この格納庫は最大 {Capacity} {Units} 中 {Stored} {Unit} 格納しています。"
 
 #. STRINGS.BUILDING.STATUSITEMS.STOREDCHARGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STOREDCHARGE.NAME"
@@ -2272,12 +2254,9 @@ msgid "Tinkering: {0}"
 msgstr "製造中: {0}"
 
 #. STRINGS.BUILDING.STATUSITEMS.TINKERING.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.FABRICATE.TOOLTIP"
-#| msgid "This Duplicant is crafting something"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TINKERING.TOOLTIP"
 msgid "This Duplicant is creating {0} to use somewhere else"
-msgstr "この複製人間は製造中です"
+msgstr "この複製人間は{0}を製造中です"
 
 #. STRINGS.BUILDING.STATUSITEMS.TOILET.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TOILET.NAME"
@@ -2720,7 +2699,7 @@ msgstr "過負荷"
 #. STRINGS.BUILDINGS.DAMAGESOURCES.COMET
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.COMET"
 msgid "falling space rocks"
-msgstr ""
+msgstr "彗星落下中"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.CONDUIT_CONTENTS_BOILED
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.CONDUIT_CONTENTS_BOILED"
@@ -2740,7 +2719,7 @@ msgstr "隣接する液体の圧力"
 #. STRINGS.BUILDINGS.DAMAGESOURCES.MICROMETEORITE
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.MICROMETEORITE"
 msgid "micrometeorite"
-msgstr ""
+msgstr "微小隕石"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.MINION_DESTRUCTION
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.MINION_DESTRUCTION"
@@ -2842,14 +2821,9 @@ msgstr "<link=\"AIRCONDITIONER\">空調設備</link>"
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.DESC"
 msgid "Oh! Citrus scented!"
-msgstr ""
+msgstr "まあ！シトラスの香り！"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.EFFECT"
-#| msgid ""
-#| "Uses <link=\"SAND\">Sand</link> to filter <link=\"CONTAMINATEDOXYGEN"
-#| "\">Polluted Oxygen</link> from the air."
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.EFFECT"
 msgid ""
 "Uses <link=\"SAND\">Sand</link> to filter <link=\"CONTAMINATEDOXYGEN"
@@ -2857,7 +2831,7 @@ msgid ""
 "link> spread."
 msgstr ""
 "<link=\"SAND\">砂</link>を使って<link=\"CONTAMINATEDOXYGEN\">汚染酸素</link>"
-"をろ過します。"
+"をろ過し、<link=\"DISEASE\">病原菌</link>の蔓延を防ぎます。"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.NAME"
@@ -2887,7 +2861,7 @@ msgstr "<link=\"ALGAEDISTILLERY\">蒸留機</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.DESC"
 msgid ""
 "Algae colony, Duplicant colony... we're more alike than we are different."
-msgstr ""
+msgstr "緑藻のコロニー、複製人間のコロニー、見た目は違えど似た者同士。"
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.EFFECT"
@@ -3093,18 +3067,9 @@ msgstr "<link=\"BOTTLEEMPTIER\">ボトル空け</link>"
 #. STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.DESC"
 msgid "A massive, slow-moving door which is nearly indestructible."
-msgstr ""
+msgstr "重厚で開閉に時間がかかりますが、ほぼ破壊不可能なドアです。"
 
 #. STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALPRESSUREDOOR.EFFECT"
-#| msgid ""
-#| "Blocks <link=\"ELEMENTSLIQUID\">Liquid</link> and <link=\"ELEMENTSGAS"
-#| "\">Gas</link> flow, maintaining pressure between areas.\n"
-#| "\n"
-#| "Sets Duplicant Access Permissions for area restriction.\n"
-#| "\n"
-#| "Wild critters cannot pass through doors."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.EFFECT"
 msgid ""
 "Blocks <link=\"ELEMENTSLIQUID\">Liquid</link> and <link=\"ELEMENTSGAS\">Gas</"
@@ -3119,28 +3084,19 @@ msgstr ""
 "\n"
 "エリアに制限を設ける場合は複製人間のアクセス制限を設定してください。\n"
 "\n"
-"野生動物がドアを通り抜けることはできません。"
+"強い衝撃や高圧に耐えます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.NAME"
-#| msgid "<link=\"BURNER\">Burner</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.NAME"
 msgid "<link=\"BUNKERDOOR\">Bunker Door</link>"
-msgstr "<link=\"BURNER\">バーナー</link>"
+msgstr "<link=\"BUNKERDOOR\">シェルター ドア</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BUNKERTILE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.DESC"
 msgid "Extremely resilient to pressure and impact."
-msgstr ""
+msgstr "圧力と衝撃に対して非常に耐性があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.BUNKERTILE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.METALTILE.EFFECT"
-#| msgid ""
-#| "Used as floor and wall tile to build rooms.\n"
-#| "\n"
-#| "Significantly increases Duplicant runspeed."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.EFFECT"
 msgid ""
 "Used as floor and wall tile to build rooms.\n"
@@ -3149,15 +3105,12 @@ msgid ""
 msgstr ""
 "部屋用の壁や床として使えます。\n"
 "\n"
-"複製人間の移動速度を大幅に上昇させます。"
+"高圧や強い衝撃に耐えることができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BUNKERTILE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.NAME"
-#| msgid "<link=\"BURNER\">Burner</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.NAME"
 msgid "<link=\"BUNKERTILE\">Bunker Tile</link>"
-msgstr "<link=\"BURNER\">バーナー</link>"
+msgstr "<link=\"BUNKERTILE\">シェルター タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BURNER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.DESC"
@@ -3316,20 +3269,17 @@ msgstr "<link=\"CO2SCRUBBER\">炭素スキマー</link>"
 #. STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.DESC"
 msgid "Scans the sky to predict incoming meteor showers."
-msgstr ""
+msgstr "宇宙からの流星群を検知します。"
 
 #. STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.EFFECT"
 msgid "Produces a logic signal before a meteor shower begins."
-msgstr ""
+msgstr "流星群が始まる前に論理信号を発信します。"
 
 #. STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.COLDBREATHER.NAME"
-#| msgid "<link=\"COLDBREATHER\">Wort Seed</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.NAME"
 msgid "<link=\"COMETDETECTOR\">Meteor Scanner</link>"
-msgstr "<link=\"COLDBREATHER\">ウォートの種子</link>"
+msgstr "<link=\"COMETDETECTOR\">隕石スキャナー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.COMPOST.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMPOST.DESC"
@@ -3339,18 +3289,12 @@ msgid ""
 msgstr "堆肥置き場は生物学的廃棄物を安全に処理し、農作物の肥料を生産します。"
 
 #. STRINGS.BUILDINGS.PREFABS.COMPOST.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMPOST.EFFECT"
-#| msgid ""
-#| "<link=\"TOXICSAND\">Polluted Dirt</link> down into <link=\"FERTILIZER"
-#| "\">Fertilizer</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMPOST.EFFECT"
 msgid ""
 "Reduces <link=\"TOXICSAND\">Polluted Dirt</link> and other compostables down "
 "into <link=\"DIRT\">Dirt</link>."
 msgstr ""
-"<link=\"TOXICSAND\">汚染土</link>を崩して<link=\"FERTILIZER\">肥料</link>にし"
-"ます。"
+"<link=\"TOXICSAND\">汚染土</link>を崩して<link=\"DIRT\">土</link>にします。"
 
 #. STRINGS.BUILDINGS.PREFABS.COMPOST.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMPOST.NAME"
@@ -3629,40 +3573,27 @@ msgstr "右側"
 #. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.DESC"
 msgid "It's little-endian."
-msgstr ""
+msgstr "リトルエンディアンです。"
 
 #. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.EFFECT"
 msgid "Cracks open a critter egg for use as a cooking ingredient."
-msgstr ""
+msgstr "調理用素材にするために、動物の卵を割ります。"
 
 #. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ROLES.RANCHER.NAME"
-#| msgid "<link=\"RANCHER\">Rancher</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.NAME"
 msgid "<link=\"EGGCRACKER\">Egg Cracker</link>"
-msgstr "<link=\"RANCHER\">牧夫</link>"
+msgstr "<link=\"EGGCRACKER\">卵割り機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RECIPE_DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.RECIPE_DESCRIPTION"
-#| msgid "Crushes {0} into {1}."
 msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RECIPE_DESCRIPTION"
 msgid "Turns {0} into {1}."
-msgstr "{0}を粉砕し{1}にします。"
+msgstr "{0}を{1}にします。"
 
 #. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RESULT_DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.STATUS_ITEM_TOOLTIP.INFECTION_SOURCE"
-#| msgid ""
-#| "\n"
-#| "Contracted {0}"
 msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RESULT_DESCRIPTION"
 msgid "Cracked {0}"
-msgstr ""
-"\n"
-"{0}ことによる"
+msgstr "割れた {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.EGGINCUBATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.EGGINCUBATOR.DESC"
@@ -3691,7 +3622,7 @@ msgstr "<link=\"EGGINCUBATOR\">孵卵器</link>"
 #. STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.DESC"
 msgid "Water goes in one end, life sustaining oxygen comes out the other."
-msgstr ""
+msgstr "一方に水を投入すると、もう一方から生命維持に必要な酸素が出てきます。"
 
 #. STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.EFFECT"
@@ -3712,59 +3643,34 @@ msgid "<link=\"ELECTROLYZER\">Electrolyzer</link>"
 msgstr "<link=\"ELECTROLYZER\">電解装置</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.DESC"
-#| msgid ""
-#| "You'd be surprised how much research went into making warm wallpaper."
 msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.DESC"
 msgid "You'd be surprised how much research went into making this wall."
-msgstr ""
-"この温かい壁紙を作るために、どれだけ研究を重ねたかを知ったら驚くでしょう。"
+msgstr "この壁を作るために、どれだけ研究を重ねたかを知ったら驚くでしょう。"
 
 #. STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.EFFECT"
 msgid "Back wall included."
-msgstr ""
+msgstr "壁もセットで付いてきます。"
 
 #. STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.NAME
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.WATER.NAME"
-#| msgid "<link=\"WATER\">Water</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.NAME"
 msgid "<link=\"EXTERIORWALL\">Wallpaper</link>"
-msgstr "<link=\"WATER\">水</link>"
+msgstr "<link=\"EXTERIORWALL\">壁紙</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.DESC"
 msgid "Window"
-msgstr ""
+msgstr "窓"
 
 #. STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.EFFECT
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.EFFECT"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.NAME
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.SNOW.NAME"
-#| msgid "<link=\"SNOW\">Snow</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.NAME"
 msgid "<link=\"\">Window</link>"
-msgstr "<link=\"SNOW\">雪</link>"
+msgstr "<link=\"\">窓</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FARMSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FARMSTATION.DESC"
@@ -4457,25 +4363,12 @@ msgid "<link=\"GENERICFABRICATOR\">Omniprinter</link>"
 msgstr "<link=\"GENERICFABRICATOR\">万能プリンター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GLASSFORGE.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.METALREFINERY.DESC"
-#| msgid ""
-#| "Refined metals are necessary to build advanced electronics and "
-#| "technologies."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.DESC"
 msgid ""
 "Refined metals are necessary to build advanced electronics and technologies."
 msgstr "精錬された金属は高度な電子機器の建築や技術に必要です。"
 
 #. STRINGS.BUILDINGS.PREFABS.GLASSFORGE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.METALREFINERY.EFFECT"
-#| msgid ""
-#| "Produces <link=\"REFINEDMETAL\">Refined Metals</link> from raw <link="
-#| "\"RAWMETAL\">Metal Ore</link>.\n"
-#| "\n"
-#| "Outputs significantly <link=\"HEAT\">Heated</link> <link=\"ELEMENTSLIQUID"
-#| "\">Liquid</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.EFFECT"
 msgid ""
 "Produces <link=\"GLASS\">Molten Glass</link> from raw <link=\"SAND\">Sand</"
@@ -4484,24 +4377,17 @@ msgid ""
 "Outputs significantly <link=\"HEAT\">Heated</link> <link=\"ELEMENTSLIQUID"
 "\">Liquid</link>."
 msgstr ""
-"<link=\"RAWMETAL\">鉱石</link>から<link=\"REFINEDMETAL\">精錬金属</link>を生"
-"産します。\n"
+"<link=\"SAND\">砂</link>から<link=\"GLASS\">融解ガラス</link>を生産します。\n"
 "\n"
-"大量の<link=\"HEAT\">熱</link><link=\"ELEMENTSLIQUID\">水</link>を排出しま"
-"す。"
+"大量の<link=\"HEAT\">熱せられた</link><link=\"ELEMENTSLIQUID\">液体</link>を"
+"排出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GLASSFORGE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.GLASS.NAME"
-#| msgid "<link=\"GLASS\">Glass</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.NAME"
 msgid "<link=\"GLASSFORGE\">Glass Forge</link>"
-msgstr "<link=\"GLASS\">ガラス</link>"
+msgstr "<link=\"GLASSFORGE\">ガラス工房</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GLASSFORGE.RECIPE_DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.METALREFINERY.RECIPE_DESCRIPTION"
-#| msgid "Extracts pure {0} from {1}."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.RECIPE_DESCRIPTION"
 msgid "Extracts pure {0} from {1}."
 msgstr "{1}から精錬された{0}を抽出します。"
@@ -4512,14 +4398,10 @@ msgid ""
 "Window tiles allow the passage of light and decor, while blocking liquids "
 "and gasses. Plate construction makes windows susceptible to impact damage."
 msgstr ""
+"窓タイルは光と装飾効果を透過し、液体や気体を遮断します。窓を板状に配置する"
+"と、衝撃のダメージを受けやすくなります。"
 
 #. STRINGS.BUILDINGS.PREFABS.GLASSTILE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.TILE.EFFECT"
-#| msgid ""
-#| "Used as floor and wall tile to build rooms.\n"
-#| "\n"
-#| "Increases Duplicant runspeed."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSTILE.EFFECT"
 msgid ""
 "Used as floor and wall tile to build rooms.\n"
@@ -4528,15 +4410,12 @@ msgid ""
 msgstr ""
 "部屋用の壁や床として使えます。\n"
 "\n"
-"複製人間の移動速度を上昇させます。"
+"光と装飾効果を透過させます"
 
 #. STRINGS.BUILDINGS.PREFABS.GLASSTILE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.TILE.NAME"
-#| msgid "<link=\"TILE\">Tile</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSTILE.NAME"
 msgid "<link=\"GLASSTILE\">Window Tile</link>"
-msgstr "<link=\"TILE\">タイル</link>"
+msgstr "<link=\"GLASSTILE\">窓タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GRAVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVE.DESC"
@@ -4818,34 +4697,21 @@ msgid "<link=\"INSULATIONTILE\">Insulated Tile</link>"
 msgstr "<link=\"INSULATIONTILE\">断熱型タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.KILN.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.EFFECT"
-#| msgid ""
-#| "Converts <link=\"HYDROGEN\">Hydrogen</link> into electrical <link=\"POWER"
-#| "\">Power</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.KILN.DESC"
 msgid "Converts <link=\"CLAY\">Clay</link> to <link=\"CERAMIC\">Ceramic</link>"
 msgstr ""
-"<link=\"HYDROGEN\">水素</link>を<link=\"POWER\">電力</link>に変換します。"
+"<link=\"CLAY\">粘土</link>を<link=\"CERAMIC\">セラミック</link>に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.KILN.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.EFFECT"
-#| msgid ""
-#| "Converts <link=\"HYDROGEN\">Hydrogen</link> into electrical <link=\"POWER"
-#| "\">Power</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.KILN.EFFECT"
 msgid "Converts <link=\"CLAY\">Clay</link> to <link=\"CERAMIC\">Ceramic</link>"
 msgstr ""
-"<link=\"HYDROGEN\">水素</link>を<link=\"POWER\">電力</link>に変換します。"
+"<link=\"CLAY\">粘土</link>を<link=\"CERAMIC\">セラミック</link>に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.KILN.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.TILE.NAME"
-#| msgid "<link=\"TILE\">Tile</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.KILN.NAME"
 msgid "<link=\"KILN\">Kiln</link>"
-msgstr "<link=\"TILE\">タイル</link>"
+msgstr "<link=\"KILN\">焼成窯</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LADDER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LADDER.DESC"
@@ -5870,6 +5736,7 @@ msgid ""
 "Watching Duplicants run on it is adorable... the electrical power is just an "
 "added bonus."
 msgstr ""
+"走る複製人間を眺めるのはとても楽しく、電力なんておまけみたいなものです。"
 
 #. STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.EFFECT"
@@ -6241,7 +6108,7 @@ msgstr "<link=\"ORESCRUBBER\">鉱石洗浄機</link>"
 #. STRINGS.BUILDINGS.PREFABS.OUTHOUSE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.OUTHOUSE.DESC"
 msgid "They colony that eats together, excretes together."
-msgstr ""
+msgstr "コロニーでは共に食べて、共に排泄します。"
 
 #. STRINGS.BUILDINGS.PREFABS.OUTHOUSE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.OUTHOUSE.EFFECT"
@@ -6363,36 +6230,19 @@ msgid "<link=\"POIDOORINTERNAL\">Security Door</link>"
 msgstr "<link=\"POIDOORINTERNAL\">機密ドア</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.EFFECT"
 msgid "A fancy door to a big facility."
-msgstr ""
+msgstr "施設用の特別なドアです。"
 
 #. STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.NAME"
-#| msgid "<link=\"DOOR\">Pneumatic Door</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.NAME"
 msgid "<link=\"FACILITYDOOR\">Facility Door</link>"
-msgstr "<link=\"DOOR\">空気式ドア</link>"
+msgstr "<link=\"FACILITYDOOR\">施設ドア</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.POLYMERIZER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.POLYMERIZER.DESC"
@@ -6665,12 +6515,9 @@ msgstr ""
 "産するにはあまり効率的ではありません。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.LIME_RECIPE_DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.RECIPE_DESCRIPTION"
-#| msgid "Crushes {0} into {1}."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.LIME_RECIPE_DESCRIPTION"
 msgid "Crushes {1} into {0}"
-msgstr "{0}を粉砕し{1}にします。"
+msgstr "{1}を粉砕し{0}にします。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.METAL_RECIPE_DESCRIPTION
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.METAL_RECIPE_DESCRIPTION"
@@ -6786,23 +6633,17 @@ msgstr "<link=\"SHOWER\">シャワー</link>"
 #. STRINGS.BUILDINGS.PREFABS.SOLARPANEL.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANEL.DESC"
 msgid "Solar panels convert high intensity Sunlight into usable power."
-msgstr ""
+msgstr "ソーラーパネルは強烈な太陽光を利用可能な電力に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLARPANEL.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.EFFECT"
-#| msgid "Converts manual labor into electrical <link=\"POWER\">Power</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANEL.EFFECT"
 msgid "Converts Sunlight into electrical <link=\"POWER\">Power</link>."
-msgstr "労働力を<link=\"POWER\">電力</link>に変換します。"
+msgstr "太陽光を<link=\"POWER\">電力</link>に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLARPANEL.NAME
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.SOLIDPROPANE.NAME"
-#| msgid "<link=\"SOLIDPROPANE\">Propane</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANEL.NAME"
 msgid "<link=\"SOLARPANEL\">Solar Panel</link>"
-msgstr "<link=\"SOLIDPROPANE\">プロパン</link>"
+msgstr "<link=\"SOLARPANEL\">ソーラーパネル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUIT.DESC"
@@ -6949,26 +6790,19 @@ msgstr "<link=\"SPACEHEATER\">空間ヒーター</link>"
 #. STRINGS.BUILDINGS.PREFABS.SPACEWALL.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SPACEWALL.DESC"
 msgid "Keeps the space out and the atmosphere in"
-msgstr ""
+msgstr "宇宙空間に大気が逃げ出さないようにします"
 
 #. STRINGS.BUILDINGS.PREFABS.SPACEWALL.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SPACEWALL.EFFECT"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #. STRINGS.BUILDINGS.PREFABS.SPACEWALL.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.SPACEHEATER.NAME"
-#| msgid "<link=\"SPACEHEATER\">Space Heater</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SPACEWALL.NAME"
 msgid "<link=\"SPACEWALL\">Space Wall</link>"
-msgstr "<link=\"SPACEHEATER\">空間ヒーター</link>"
+msgstr "<link=\"SPACEWALL\">宇宙隔壁</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.STEAMTURBINE.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.STEAMTURBINE.DESC"
-#| msgid ""
-#| "Useful for translating the geothermal energy of magma into usable power."
 msgctxt "STRINGS.BUILDINGS.PREFABS.STEAMTURBINE.DESC"
 msgid "Useful for converting the geothermal energy of magma into usable power."
 msgstr "マグマの地熱エネルギーを利用可能な電力に変換するのに役立ちます。"
@@ -12720,23 +12554,9 @@ msgid "{0}: {1}"
 msgstr "{0}: {1}"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.VIABILITYDELTA.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.VIABILITYDELTA.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.VIABILITYDELTA.NAME
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.VIABILITYDELTA.NAME"
@@ -20367,23 +20187,9 @@ msgid "<link=\"CEMENTMIX\">Cement Mix</link>"
 msgstr "<link=\"CEMENTMIX\">セメントミックス</link>"
 
 #. STRINGS.ELEMENTS.CERAMIC.BUILD_DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.ELEMENTS.CERAMIC.BUILD_DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.ELEMENTS.CERAMIC.DESC
 #, fuzzy
@@ -21199,23 +21005,9 @@ msgid "<link=\"LIQUIDPROPANE\">Propane</link>"
 msgstr "<link=\"LIQUIDPROPANE\">プロパン</link>"
 
 #. STRINGS.ELEMENTS.MAFICROCK.BUILD_DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.ELEMENTS.MAFICROCK.BUILD_DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.ELEMENTS.MAFICROCK.DESC
 #, fuzzy
@@ -21778,23 +21570,9 @@ msgid "<link=\"RADIUM\">Radium</link>"
 msgstr "<link=\"RADIUM\">ラジウム</link>"
 
 #. STRINGS.ELEMENTS.REFINEDCARBON.BUILD_DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.ELEMENTS.REFINEDCARBON.BUILD_DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.ELEMENTS.REFINEDCARBON.DESC
 msgctxt "STRINGS.ELEMENTS.REFINEDCARBON.DESC"
