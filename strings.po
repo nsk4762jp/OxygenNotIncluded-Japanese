@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -553,6 +553,37 @@ msgstr ""
 "施錠: 誰も通れません\n"
 "開放: ドアを開けっぱなしにします"
 
+#. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME"
+msgid "Dish Quality: {Quality}"
+msgstr "アンテナ精度: {0}"
+
+#. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP"
+msgid ""
+"This detector dish is currently scanning at {Quality} effectiveness.\n"
+"\n"
+"Low quality may be due to:\n"
+"    • Interference from nearby heavy machinery\n"
+"    • Rock or tiles obstructing a wide view of the sky"
+msgstr ""
+"このアンテナは現在精度 {Quality} で動作中です。\n"
+"\n"
+"精度低下の原因は以下の通りです:\n"
+"    • 重機がそばにある\n"
+"    • 岩やタイルによって検出範囲が阻害されている"
+
+#. STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.NAME"
+msgid "Scanning"
+msgstr "検出中"
+
+#. STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.TOOLTIP"
+msgid ""
+"This detector is currently peering in to the sky to find objects of interest."
+msgstr "このアンテナは特定の物体を検知するために宇宙を凝視しています。"
+
 #. STRINGS.BUILDING.STATUSITEMS.DIGREQUIRESROLEPERK.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DIGREQUIRESROLEPERK.NAME"
 msgid "Miner-Only Dig"
@@ -1002,6 +1033,16 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_LIQUID.TOOLTIP"
 msgid "This building must be submerged in liquid to function"
 msgstr "この設備が動作するには液体の中に沈めないといけません"
 
+#. STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.NAME"
+msgid "Incoming Meteors"
+msgstr "隕石襲来"
+
+#. STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.TOOLTIP"
+msgid "There are high speed objects approaching!"
+msgstr "高速の物体が接近中です！"
+
 #. STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME"
 msgid "Incubating: {Percent}"
@@ -1184,7 +1225,7 @@ msgstr "手動制御"
 
 #. STRINGS.BUILDING.STATUSITEMS.MANUALLYCONTROLLED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MANUALLYCONTROLLED.TOOLTIP"
-msgid "This Duplicant is under your control"
+msgid "This Duplicant is under my control"
 msgstr "この複製人間はあなたが操作しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.MATERIALSUNAVAILABLE.LINE_ITEM_MASS
@@ -1434,6 +1475,25 @@ msgstr ""
 "建築メニューの輸送タブ<color=#F44A47>[7]</color>からコンベアレセプタを接続し"
 "てください"
 
+#. STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.NAME"
+msgid "Detector Network Quality: {TotalQuality}"
+msgstr "アンテナネットワーク品質: {TotalQuality}"
+
+#. STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP"
+msgid ""
+"Your detector network is scanning at {TotalQuality} effectiveness, and will "
+"detect meteor showers {WorstTime} to {BestTime} before they strike.\n"
+"\n"
+"Add more detectors and ensure they are each scanning effectively for best "
+"results."
+msgstr ""
+"アンテナネットワークは{TotalQuality}の精度で稼働中です。流星群の着弾する"
+"{WorstTime}前から{BestTime}前の範囲で検知できます。\n"
+"\n"
+"アンテナを増強し、お互いの検出範囲を被せると、最大限の効果を発揮します。"
+
 #. STRINGS.BUILDING.STATUSITEMS.NEUTRONIUMUNMINABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEUTRONIUMUNMINABLE.NAME"
 msgid "Cannot Mine"
@@ -1460,7 +1520,7 @@ msgctxt ""
 msgid ""
 "The Printing Pod <color=#F44A47>[H]</color> is ready to print a new "
 "Duplicant.\n"
-"Please select a DNA blueprint:"
+"I'll need to select a DNA blueprint:"
 msgstr ""
 "複製ポッド<color=#F44A47>[H]</color> は新しい複製人間の複製準備が整いまし"
 "た。\n"
@@ -1468,8 +1528,8 @@ msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP"
-msgid "A new colony member is ready to be printed"
-msgstr "新しいメンバーの複製準備が整いました"
+msgid "I am ready to print a new colony member"
+msgstr "新しい人員の製造準備ができたようだ"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.NAME"
@@ -1975,6 +2035,16 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.RESEARCHING.TOOLTIP"
 msgid "Research produced at this station will be invested in {Tech}"
 msgstr "この設備による研究は {Tech} を発明しています"
 
+#. STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.NAME"
+msgid "Current Wattage: {Wattage}"
+msgstr "現在のワット数: {Wattage}"
+
+#. STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.TOOLTIP"
+msgid "This panel is generating {Wattage} of power"
+msgstr "このパネルは {Wattage} の電力を生成しています"
+
 #. STRINGS.BUILDING.STATUSITEMS.SOLIDPIPEOBSTRUCTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLIDPIPEOBSTRUCTED.NAME"
 msgid "Conveyor Rail Backup"
@@ -1991,15 +2061,27 @@ msgstr ""
 "------------------\n"
 "コンベアレセプタから素材を取り除き、空き容量を確保してください"
 
+#. STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.NAME"
+msgid "Space Not Visible"
+msgstr "宇宙が見えません"
+
+#. STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.TOOLTIP"
+msgid "This detector must be able to see the sky in order to detect anything."
+msgstr "このアンテナが検知するためには、宇宙が見える状態でなければなりません。"
+
 #. STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.NAME"
-msgid "Storing: {Stored} / {Capacity} kg"
-msgstr "内容量: {Stored} / {Capacity} Kg"
+msgid "Storing: {Stored} / {Capacity} {Units}"
+msgstr "内容量: {Stored} / {Capacity} {Units}"
 
 #. STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.TOOLTIP"
-msgid "This container is storing {Stored} kg of material"
-msgstr "この格納庫は素材を {Stored} kg 格納しています"
+msgid ""
+"This container is storing {Stored} {Units} of a maximum {Capacity} {Units}."
+msgstr ""
+"この格納庫は最大 {Capacity} {Units} 中 {Stored} {Unit} 格納しています。"
 
 #. STRINGS.BUILDING.STATUSITEMS.STOREDCHARGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STOREDCHARGE.NAME"
@@ -2173,8 +2255,8 @@ msgstr "製造中: {0}"
 
 #. STRINGS.BUILDING.STATUSITEMS.TINKERING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TINKERING.TOOLTIP"
-msgid "The duplicant working this station is creating {0} for use elsewhere."
-msgstr "ここで作業中の複製人間は他で利用可能な {0} を製造しています。"
+msgid "This Duplicant is creating {0} to use somewhere else"
+msgstr "この複製人間は{0}を製造中です"
 
 #. STRINGS.BUILDING.STATUSITEMS.TOILET.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TOILET.NAME"
@@ -2614,6 +2696,11 @@ msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.CIRCUIT_OVERLOADED"
 msgid "an overloaded circuit"
 msgstr "過負荷"
 
+#. STRINGS.BUILDINGS.DAMAGESOURCES.COMET
+msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.COMET"
+msgid "falling space rocks"
+msgstr "彗星落下中"
+
 #. STRINGS.BUILDINGS.DAMAGESOURCES.CONDUIT_CONTENTS_BOILED
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.CONDUIT_CONTENTS_BOILED"
 msgid "pipe contents becoming too hot"
@@ -2628,6 +2715,11 @@ msgstr "パイプ内容物が凍結しそうです"
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE"
 msgid "neighboring liquid pressure"
 msgstr "隣接する液体の圧力"
+
+#. STRINGS.BUILDINGS.DAMAGESOURCES.MICROMETEORITE
+msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.MICROMETEORITE"
+msgid "micrometeorite"
+msgstr "微小隕石"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.MINION_DESTRUCTION
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.MINION_DESTRUCTION"
@@ -2728,19 +2820,18 @@ msgstr "<link=\"AIRCONDITIONER\">空調設備</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.DESC"
-msgid ""
-"Airborne germs travel easily through polluted oxygen, spreading disease if "
-"unfiltered."
-msgstr "空気中を漂う病原菌は汚染酸素を通して容易に増殖し、感染を拡大させます。"
+msgid "Oh! Citrus scented!"
+msgstr "まあ！シトラスの香り！"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.EFFECT"
 msgid ""
 "Uses <link=\"SAND\">Sand</link> to filter <link=\"CONTAMINATEDOXYGEN"
-"\">Polluted Oxygen</link> from the air."
+"\">Polluted Oxygen</link> from the air, reducing <link=\"DISEASE\">Disease</"
+"link> spread."
 msgstr ""
 "<link=\"SAND\">砂</link>を使って<link=\"CONTAMINATEDOXYGEN\">汚染酸素</link>"
-"をろ過します。"
+"をろ過し、<link=\"DISEASE\">病原菌</link>の蔓延を防ぎます。"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.NAME"
@@ -2768,9 +2859,9 @@ msgstr "<link=\"ALGAEDISTILLERY\">蒸留機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.DESC"
-msgid "Placing algae terrariums in well lit areas will produce more oxygen."
-msgstr ""
-"光が良く当たる場所にテラリウムを設置すると、より多くの酸素を生成します。"
+msgid ""
+"Algae colony, Duplicant colony... we're more alike than we are different."
+msgstr "緑藻のコロニー、複製人間のコロニー、見た目は違えど似た者同士。"
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.EFFECT"
@@ -2973,6 +3064,54 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.BOTTLEEMPTIER.NAME"
 msgid "<link=\"BOTTLEEMPTIER\">Bottle Emptier</link>"
 msgstr "<link=\"BOTTLEEMPTIER\">ボトル空け</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.DESC"
+msgid "A massive, slow-moving door which is nearly indestructible."
+msgstr "重厚で開閉に時間がかかりますが、ほぼ破壊不可能なドアです。"
+
+#. STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.EFFECT"
+msgid ""
+"Blocks <link=\"ELEMENTSLIQUID\">Liquid</link> and <link=\"ELEMENTSGAS\">Gas</"
+"link> flow, maintaining pressure between areas.\n"
+"\n"
+"Sets Duplicant Access Permissions for area restriction.\n"
+"\n"
+"Has very high impact and pressure resistance."
+msgstr ""
+"<link=\"ELEMENTSLIQUID\">液体</link>と<link=\"ELEMENTSGAS\">気体</link>の流入"
+"を防ぎ、分断されたエリアの圧力を維持します。\n"
+"\n"
+"エリアに制限を設ける場合は複製人間のアクセス制限を設定してください。\n"
+"\n"
+"強い衝撃や高圧に耐えます。"
+
+#. STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERDOOR.NAME"
+msgid "<link=\"BUNKERDOOR\">Bunker Door</link>"
+msgstr "<link=\"BUNKERDOOR\">シェルター ドア</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.BUNKERTILE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.DESC"
+msgid "Extremely resilient to pressure and impact."
+msgstr "圧力と衝撃に対して非常に耐性があります。"
+
+#. STRINGS.BUILDINGS.PREFABS.BUNKERTILE.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.EFFECT"
+msgid ""
+"Used as floor and wall tile to build rooms.\n"
+"\n"
+"Can withstand extreme pressures and impacts."
+msgstr ""
+"部屋用の壁や床として使えます。\n"
+"\n"
+"高圧や強い衝撃に耐えることができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.BUNKERTILE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.NAME"
+msgid "<link=\"BUNKERTILE\">Bunker Tile</link>"
+msgstr "<link=\"BUNKERTILE\">シェルター タイル</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.BURNER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.DESC"
 msgid "Burners reach incredible temperatures and can quickly melt large areas."
@@ -3127,6 +3266,21 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.NAME"
 msgid "<link=\"CO2SCRUBBER\">Carbon Skimmer</link>"
 msgstr "<link=\"CO2SCRUBBER\">炭素スキマー</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.DESC"
+msgid "Scans the sky to predict incoming meteor showers."
+msgstr "宇宙からの流星群を検知します。"
+
+#. STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.EFFECT"
+msgid "Produces a logic signal before a meteor shower begins."
+msgstr "流星群が始まる前に論理信号を発信します。"
+
+#. STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.NAME"
+msgid "<link=\"COMETDETECTOR\">Meteor Scanner</link>"
+msgstr "<link=\"COMETDETECTOR\">隕石スキャナー</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.COMPOST.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMPOST.DESC"
 msgid ""
@@ -3137,11 +3291,10 @@ msgstr "堆肥置き場は生物学的廃棄物を安全に処理し、農作物
 #. STRINGS.BUILDINGS.PREFABS.COMPOST.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMPOST.EFFECT"
 msgid ""
-"<link=\"TOXICSAND\">Polluted Dirt</link> down into <link=\"FERTILIZER"
-"\">Fertilizer</link>."
+"Reduces <link=\"TOXICSAND\">Polluted Dirt</link> and other compostables down "
+"into <link=\"DIRT\">Dirt</link>."
 msgstr ""
-"<link=\"TOXICSAND\">汚染土</link>を崩して<link=\"FERTILIZER\">肥料</link>にし"
-"ます。"
+"<link=\"TOXICSAND\">汚染土</link>を崩して<link=\"DIRT\">土</link>にします。"
 
 #. STRINGS.BUILDINGS.PREFABS.COMPOST.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMPOST.NAME"
@@ -3417,6 +3570,31 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.RIGHT"
 msgid "on right"
 msgstr "右側"
 
+#. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.DESC"
+msgid "It's little-endian."
+msgstr "リトルエンディアンです。"
+
+#. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.EFFECT"
+msgid "Cracks open a critter egg for use as a cooking ingredient."
+msgstr "調理用素材にするために、動物の卵を割ります。"
+
+#. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.NAME"
+msgid "<link=\"EGGCRACKER\">Egg Cracker</link>"
+msgstr "<link=\"EGGCRACKER\">卵割り機</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RECIPE_DESCRIPTION
+msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RECIPE_DESCRIPTION"
+msgid "Turns {0} into {1}."
+msgstr "{0}を{1}にします。"
+
+#. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RESULT_DESCRIPTION
+msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RESULT_DESCRIPTION"
+msgid "Cracked {0}"
+msgstr "割れた {0}"
+
 #. STRINGS.BUILDINGS.PREFABS.EGGINCUBATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.EGGINCUBATOR.DESC"
 msgid ""
@@ -3443,10 +3621,8 @@ msgstr "<link=\"EGGINCUBATOR\">孵卵器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.DESC"
-msgid ""
-"Electrolyzers output a high volume of oxygen and are a reliable source of "
-"breathable air."
-msgstr "電解装置は呼吸可能な空気として大量の酸素を生産します。"
+msgid "Water goes in one end, life sustaining oxygen comes out the other."
+msgstr "一方に水を投入すると、もう一方から生命維持に必要な酸素が出てきます。"
 
 #. STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.EFFECT"
@@ -3465,6 +3641,36 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.NAME"
 msgid "<link=\"ELECTROLYZER\">Electrolyzer</link>"
 msgstr "<link=\"ELECTROLYZER\">電解装置</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.DESC"
+msgid "You'd be surprised how much research went into making this wall."
+msgstr "この壁を作るために、どれだけ研究を重ねたかを知ったら驚くでしょう。"
+
+#. STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.EFFECT"
+msgid "Back wall included."
+msgstr "壁もセットで付いてきます。"
+
+#. STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.NAME"
+msgid "<link=\"EXTERIORWALL\">Wallpaper</link>"
+msgstr "<link=\"EXTERIORWALL\">壁紙</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.DESC"
+msgid "Window"
+msgstr "窓"
+
+#. STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.EFFECT"
+msgid ""
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.FACILITYBACKWALLWINDOW.NAME"
+msgid "<link=\"\">Window</link>"
+msgstr "<link=\"\">窓</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FARMSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FARMSTATION.DESC"
@@ -4156,6 +4362,61 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.GENERICFABRICATOR.NAME"
 msgid "<link=\"GENERICFABRICATOR\">Omniprinter</link>"
 msgstr "<link=\"GENERICFABRICATOR\">万能プリンター</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.GLASSFORGE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.DESC"
+msgid ""
+"Refined metals are necessary to build advanced electronics and technologies."
+msgstr "精錬された金属は高度な電子機器の建築や技術に必要です。"
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSFORGE.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.EFFECT"
+msgid ""
+"Produces <link=\"GLASS\">Molten Glass</link> from raw <link=\"SAND\">Sand</"
+"link>.\n"
+"\n"
+"Outputs significantly <link=\"HEAT\">Heated</link> <link=\"ELEMENTSLIQUID"
+"\">Liquid</link>."
+msgstr ""
+"<link=\"SAND\">砂</link>から<link=\"GLASS\">融解ガラス</link>を生産します。\n"
+"\n"
+"大量の<link=\"HEAT\">熱せられた</link><link=\"ELEMENTSLIQUID\">液体</link>を"
+"排出します。"
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSFORGE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.NAME"
+msgid "<link=\"GLASSFORGE\">Glass Forge</link>"
+msgstr "<link=\"GLASSFORGE\">ガラス工房</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSFORGE.RECIPE_DESCRIPTION
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.RECIPE_DESCRIPTION"
+msgid "Extracts pure {0} from {1}."
+msgstr "{1}から精錬された{0}を抽出します。"
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSTILE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSTILE.DESC"
+msgid ""
+"Window tiles allow the passage of light and decor, while blocking liquids "
+"and gasses. Plate construction makes windows susceptible to impact damage."
+msgstr ""
+"窓タイルは光と装飾効果を透過し、液体や気体を遮断します。窓を板状に配置する"
+"と、衝撃のダメージを受けやすくなります。"
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSTILE.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSTILE.EFFECT"
+msgid ""
+"Used as floor and wall tile to build rooms.\n"
+"\n"
+"Allows light and decor to pass through"
+msgstr ""
+"部屋用の壁や床として使えます。\n"
+"\n"
+"光と装飾効果を透過させます"
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSTILE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSTILE.NAME"
+msgid "<link=\"GLASSTILE\">Window Tile</link>"
+msgstr "<link=\"GLASSTILE\">窓タイル</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.GRAVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVE.DESC"
 msgid ""
@@ -4435,21 +4696,22 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.NAME"
 msgid "<link=\"INSULATIONTILE\">Insulated Tile</link>"
 msgstr "<link=\"INSULATIONTILE\">断熱型タイル</link>"
 
-#. STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.DESC
-msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.DESC"
-msgid "You'd be surprised how much research went into making warm wallpaper."
+#. STRINGS.BUILDINGS.PREFABS.KILN.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.KILN.DESC"
+msgid "Converts <link=\"CLAY\">Clay</link> to <link=\"CERAMIC\">Ceramic</link>"
 msgstr ""
-"この温かい壁紙を作るために、どれだけ研究を重ねたかを知ったら驚くでしょう。"
+"<link=\"CLAY\">粘土</link>を<link=\"CERAMIC\">セラミック</link>に変換します。"
 
-#. STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.EFFECT
-msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.EFFECT"
-msgid "Reduces <link=\"HEAT\">Heat</link> loss through colony walls."
-msgstr "コロニーの壁を通して伝わる<link=\"HEAT\">熱</link>損失を軽減します。"
+#. STRINGS.BUILDINGS.PREFABS.KILN.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.KILN.EFFECT"
+msgid "Converts <link=\"CLAY\">Clay</link> to <link=\"CERAMIC\">Ceramic</link>"
+msgstr ""
+"<link=\"CLAY\">粘土</link>を<link=\"CERAMIC\">セラミック</link>に変換します。"
 
-#. STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.NAME
-msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.NAME"
-msgid "<link=\"INSULATIONWALL\">Insulation</link>"
-msgstr "<link=\"INSULATIONWALL\">断熱材</link>"
+#. STRINGS.BUILDINGS.PREFABS.KILN.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.KILN.NAME"
+msgid "<link=\"KILN\">Kiln</link>"
+msgstr "<link=\"KILN\">焼成窯</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LADDER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LADDER.DESC"
@@ -5471,10 +5733,10 @@ msgstr "<link=\"MACHINESHOP\">機械端末</link>"
 #. STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.DESC"
 msgid ""
-"Manual generators require no fuel and power buildings when connected to them "
-"by wire."
+"Watching Duplicants run on it is adorable... the electrical power is just an "
+"added bonus."
 msgstr ""
-"人力発電機は配線されていれば設備に電力を供給します。燃料を必要としません。"
+"走る複製人間を眺めるのはとても楽しく、電力なんておまけみたいなものです。"
 
 #. STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.EFFECT"
@@ -5845,12 +6107,8 @@ msgstr "<link=\"ORESCRUBBER\">鉱石洗浄機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.OUTHOUSE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.OUTHOUSE.DESC"
-msgid ""
-"Duplicants with no bathroom access will make \"messes\", causing stress and "
-"spreading germs."
-msgstr ""
-"トイレに行けない複製人間は「お漏らし」し、ストレスや病原菌拡大の原因となりま"
-"す。"
+msgid "They colony that eats together, excretes together."
+msgstr "コロニーでは共に食べて、共に排泄します。"
 
 #. STRINGS.BUILDINGS.PREFABS.OUTHOUSE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.OUTHOUSE.EFFECT"
@@ -5970,6 +6228,21 @@ msgstr "洗練された遺伝子ロックを持つ強力なドアです。"
 msgctxt "STRINGS.BUILDINGS.PREFABS.POIDOORINTERNAL.NAME"
 msgid "<link=\"POIDOORINTERNAL\">Security Door</link>"
 msgstr "<link=\"POIDOORINTERNAL\">機密ドア</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.DESC"
+msgid ""
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.EFFECT"
+msgid "A fancy door to a big facility."
+msgstr "施設用の特別なドアです。"
+
+#. STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.POIFACILITYDOOR.NAME"
+msgid "<link=\"FACILITYDOOR\">Facility Door</link>"
+msgstr "<link=\"FACILITYDOOR\">施設ドア</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.POLYMERIZER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.POLYMERIZER.DESC"
@@ -6241,6 +6514,11 @@ msgstr ""
 "<link=\"RAWMETAL\">鉱石</link>から<link=\"REFINEDMETAL\">精錬金属</link>を生"
 "産するにはあまり効率的ではありません。"
 
+#. STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.LIME_RECIPE_DESCRIPTION
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.LIME_RECIPE_DESCRIPTION"
+msgid "Crushes {1} into {0}"
+msgstr "{1}を粉砕し{0}にします。"
+
 #. STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.METAL_RECIPE_DESCRIPTION
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.METAL_RECIPE_DESCRIPTION"
 msgid "Crushes {1} into <link=\"SAND\">Sand</link> and pure {0}."
@@ -6351,6 +6629,21 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.SHOWER.NAME"
 msgid "<link=\"SHOWER\">Shower</link>"
 msgstr "<link=\"SHOWER\">シャワー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLARPANEL.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANEL.DESC"
+msgid "Solar panels convert high intensity Sunlight into usable power."
+msgstr "ソーラーパネルは強烈な太陽光を利用可能な電力に変換します。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLARPANEL.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANEL.EFFECT"
+msgid "Converts Sunlight into electrical <link=\"POWER\">Power</link>."
+msgstr "太陽光を<link=\"POWER\">電力</link>に変換します。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLARPANEL.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANEL.NAME"
+msgid "<link=\"SOLARPANEL\">Solar Panel</link>"
+msgstr "<link=\"SOLARPANEL\">ソーラーパネル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUIT.DESC"
@@ -6494,10 +6787,24 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SPACEHEATER.NAME"
 msgid "<link=\"SPACEHEATER\">Space Heater</link>"
 msgstr "<link=\"SPACEHEATER\">空間ヒーター</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.SPACEWALL.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SPACEWALL.DESC"
+msgid "Keeps the space out and the atmosphere in"
+msgstr "宇宙空間に大気が逃げ出さないようにします"
+
+#. STRINGS.BUILDINGS.PREFABS.SPACEWALL.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SPACEWALL.EFFECT"
+msgid "..."
+msgstr "..."
+
+#. STRINGS.BUILDINGS.PREFABS.SPACEWALL.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SPACEWALL.NAME"
+msgid "<link=\"SPACEWALL\">Space Wall</link>"
+msgstr "<link=\"SPACEWALL\">宇宙隔壁</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.STEAMTURBINE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.STEAMTURBINE.DESC"
-msgid ""
-"Useful for translating the geothermal energy of magma into usable power."
+msgid "Useful for converting the geothermal energy of magma into usable power."
 msgstr "マグマの地熱エネルギーを利用可能な電力に変換するのに役立ちます。"
 
 #. STRINGS.BUILDINGS.PREFABS.STEAMTURBINE.EFFECT
@@ -6985,7 +7292,9 @@ msgstr "<link=\"WIREBRIDGEHIGHWATTAGE\">大容量継ぎ板</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREREFINED.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINED.DESC"
-msgid "Duplicants prefer the appearance of conductive wire to regular wire."
+msgid ""
+"My Duplicants prefer the look of conductive wire to the regular raggedy "
+"stuff."
 msgstr "複製人間は見た目について言えば通常の電線より導電線のほうが好みです。"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREREFINED.EFFECT
@@ -7107,6 +7416,21 @@ msgstr "自動修理有効化"
 msgctxt "STRINGS.BUILDINGS.REPAIRABLE.ENABLE_AUTOREPAIR.TOOLTIP"
 msgid "Automatically repair this building when damaged"
 msgstr "設備に損傷があると自動的に修理します"
+
+#. STRINGS.CODEX.ANALYSIS.BODY.CONTAINER1
+msgctxt "STRINGS.CODEX.ANALYSIS.BODY.CONTAINER1"
+msgid "Description of analysis/study mechanic"
+msgstr "分析/研究メカニズムの記述"
+
+#. STRINGS.CODEX.ANALYSIS.SUBTITLE
+msgctxt "STRINGS.CODEX.ANALYSIS.SUBTITLE"
+msgid "Study of world features"
+msgstr "ワールドの特徴についての研究"
+
+#. STRINGS.CODEX.ANALYSIS.TITLE
+msgctxt "STRINGS.CODEX.ANALYSIS.TITLE"
+msgid "<link=\"ANALYSIS\">Geographical Feature Analysis</link>"
+msgstr "<link=\"ANALYSIS\">地勢分析</link>"
 
 #. STRINGS.CODEX.ATMOSPHERE.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.ATMOSPHERE.BODY.CONTAINER1"
@@ -7310,6 +7634,21 @@ msgctxt "STRINGS.CODEX.DUSKCAP.TITLE"
 msgid "Dusk Cap"
 msgstr "ダスク キャップ"
 
+#. STRINGS.CODEX.ELEMENTHARDNESS.BODY.CONTAINER1
+msgctxt "STRINGS.CODEX.ELEMENTHARDNESS.BODY.CONTAINER1"
+msgid "Description of dig speed and miner role dig restrictions"
+msgstr "採掘スピードと採掘職制限についての記述"
+
+#. STRINGS.CODEX.ELEMENTHARDNESS.SUBTITLE
+msgctxt "STRINGS.CODEX.ELEMENTHARDNESS.SUBTITLE"
+msgid "Ease of digging"
+msgstr "採掘のし易さ"
+
+#. STRINGS.CODEX.ELEMENTHARDNESS.TITLE
+msgctxt "STRINGS.CODEX.ELEMENTHARDNESS.TITLE"
+msgid "<link=\"HARDNESS\">Hardness</link>"
+msgstr "<link=\"HARDNESS\">硬度</link>"
+
 #. STRINGS.CODEX.EXAMPLE_ENTRY.BODY
 msgctxt "STRINGS.CODEX.EXAMPLE_ENTRY.BODY"
 msgid ""
@@ -7398,6 +7737,16 @@ msgctxt "STRINGS.CODEX.HEADERS.COMFORTRANGE"
 msgid "Temperature Range"
 msgstr "温度範囲"
 
+#. STRINGS.CODEX.HEADERS.CONTENTLOCKED
+msgctxt "STRINGS.CODEX.HEADERS.CONTENTLOCKED"
+msgid "Additional content locked"
+msgstr "追加情報はロックされています"
+
+#. STRINGS.CODEX.HEADERS.CONTENTLOCKED_SUBTITLE
+msgctxt "STRINGS.CODEX.HEADERS.CONTENTLOCKED_SUBTITLE"
+msgid "More exploration and research is necessary"
+msgstr "探索及び研究が必要です"
+
 #. STRINGS.CODEX.HEADERS.DIET
 msgctxt "STRINGS.CODEX.HEADERS.DIET"
 msgid "Diet"
@@ -7447,6 +7796,11 @@ msgstr "レシピ"
 msgctxt "STRINGS.CODEX.HEADERS.ROLE_PERKS"
 msgid "Role Perks"
 msgstr "職業特性"
+
+#. STRINGS.CODEX.HEADERS.SECTION_UNLOCKABLES
+msgctxt "STRINGS.CODEX.HEADERS.SECTION_UNLOCKABLES"
+msgid "Unlockable Data"
+msgstr "アンロック可能なデータ"
 
 #. STRINGS.CODEX.HEADERS.SUBENTRIES
 msgctxt "STRINGS.CODEX.HEADERS.SUBENTRIES"
@@ -8023,196 +8377,6 @@ msgctxt "STRINGS.CREATURES.BAGGED_NAME_FMT"
 msgid "Bagged {0}"
 msgstr "袋詰めされた {0}"
 
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.ATMOSPHERE_OK.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.ATMOSPHERE_OK.NAME"
-msgid "Acceptable Atmosphere"
-msgstr "許容範囲"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.ATMOSPHERE_OK.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.ATMOSPHERE_OK.TOOLTIP"
-msgid "It's breathable."
-msgstr "呼吸できます。"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.HAS_FOOD_SOURCE.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.HAS_FOOD_SOURCE.NAME"
-msgid "Fed"
-msgstr "食後"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.HAS_FOOD_SOURCE.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.HAS_FOOD_SOURCE.TOOLTIP"
-msgid "Has enough food to eat."
-msgstr "すでに十分食べています。"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.IN_PEN.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.IN_PEN.NAME"
-msgid "Critter Pen"
-msgstr "動物用囲い"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.IN_PEN.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.IN_PEN.TOOLTIP"
-msgid "Has a pen to live in."
-msgstr "居住用の囲いです。"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.TEMPERATURE_OK.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.TEMPERATURE_OK.NAME"
-msgid "Comfortable Temperature"
-msgstr "快適な温度"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.TEMPERATURE_OK.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.TEMPERATURE_OK.TOOLTIP"
-msgid "Not too hot, not too cold."
-msgstr "暑すぎず、寒すぎず。"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_FED.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_FED.NAME"
-msgid "Well Fed"
-msgstr "満腹"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_FED.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_FED.TOOLTIP"
-msgid "This critter has recently dined on its favorite food."
-msgstr "この動物は好物を食べたばかりです。"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_GROOMED.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_GROOMED.NAME"
-msgid "Well Groomed"
-msgstr "十分な手入れ"
-
-#. STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_GROOMED.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_GROOMED.TOOLTIP"
-msgid "Getting plenty of personal attention from a Rancher."
-msgstr "牧夫から十分な手入れを受けています。"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.DESTRUCTIVE.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.DESTRUCTIVE.NAME"
-msgid "Destructive"
-msgstr "破壊"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.DESTRUCTIVE.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.DESTRUCTIVE.TOOLTIP"
-msgid "Likely to mess up the place"
-msgstr "めちゃくちゃにされそうです。"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.GAIN_FERTILITY.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.GAIN_FERTILITY.NAME"
-msgid "Increased Reproduction"
-msgstr "繁殖力向上"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.GAIN_FERTILITY.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.GAIN_FERTILITY.TOOLTIP"
-msgid "This critter will produce an egg soon if conditions remain favorable"
-msgstr "この動物は好適な条件が満たされていれば卵を産みやすくなります"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.GOOD_PRODUCTIVITY.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.GOOD_PRODUCTIVITY.NAME"
-msgid "Good Productivity"
-msgstr "多産"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.GOOD_PRODUCTIVITY.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.GOOD_PRODUCTIVITY.TOOLTIP"
-msgid "Producing at a normal level"
-msgstr "通常レベルの繁殖力です"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.INCREASED_CRITERIA_PENALTY.NAME
-msgctxt ""
-"STRINGS.CREATURES.DOMESTICATION.EFFECTS.INCREASED_CRITERIA_PENALTY.NAME"
-msgid "Sensitive"
-msgstr "神経質"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.INCREASED_CRITERIA_PENALTY.TOOLTIP
-msgctxt ""
-"STRINGS.CREATURES.DOMESTICATION.EFFECTS.INCREASED_CRITERIA_PENALTY.TOOLTIP"
-msgid "Loses happiness faster than normal under poor conditions"
-msgstr "貧弱な条件下では通常時より幸福度の下がり方が速くなります"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_FERTILITY.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_FERTILITY.NAME"
-msgid "Decreased Reproduction"
-msgstr "繁殖力低下"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_FERTILITY.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_FERTILITY.TOOLTIP"
-msgid "This creature is holding off on laying eggs due to bad conditions"
-msgstr "この生物は悪条件により産卵を控えています"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_HAPPINESS.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_HAPPINESS.NAME"
-msgid "Downward Spiral"
-msgstr "負のスパイラル"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_HAPPINESS.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_HAPPINESS.TOOLTIP"
-msgid "Losing happiness until conditions improve"
-msgstr "条件が改善されるまで幸福度が下がります"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOW_PRODUCTIVITY.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOW_PRODUCTIVITY.NAME"
-msgid "Low Productivity"
-msgstr "低繁殖力"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOW_PRODUCTIVITY.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOW_PRODUCTIVITY.TOOLTIP"
-msgid "Producing at a reduced level"
-msgstr "繁殖力は低下しています"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.UNPRODUCTIVE.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.UNPRODUCTIVE.NAME"
-msgid "Unproductive"
-msgstr "繁殖拒否"
-
-#. STRINGS.CREATURES.DOMESTICATION.EFFECTS.UNPRODUCTIVE.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.UNPRODUCTIVE.TOOLTIP"
-msgid ""
-"Without improved conditions, this critter will not provide any useful "
-"products"
-msgstr "条件が改善されない限り、この動物は便利な生産物を供給しません"
-
-#. STRINGS.CREATURES.DOMESTICATION.LEVELS.HAPPY.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.HAPPY.NAME"
-msgid "Tame"
-msgstr "従順"
-
-#. STRINGS.CREATURES.DOMESTICATION.LEVELS.HAPPY.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.HAPPY.TOOLTIP"
-msgid ""
-"This critter is well taken care of and fully trusts its Duplicant caregivers"
-msgstr ""
-"この動物は行き届いた世話を受けており、世話してくれる複製人間を完全に信頼して"
-"います"
-
-#. STRINGS.CREATURES.DOMESTICATION.LEVELS.NEUTRAL.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.NEUTRAL.NAME"
-msgid "Skittish"
-msgstr "じゃじゃ馬"
-
-#. STRINGS.CREATURES.DOMESTICATION.LEVELS.NEUTRAL.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.NEUTRAL.TOOLTIP"
-msgid ""
-"This critter's most basic needs are being met, but it's still wary of "
-"Duplicants"
-msgstr "この動物の基本的欲求は満たされていますが、複製人間をまだ警戒しています"
-
-#. STRINGS.CREATURES.DOMESTICATION.LEVELS.SPOILED.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.SPOILED.NAME"
-msgid "Affectionate"
-msgstr "愛情たっぷり"
-
-#. STRINGS.CREATURES.DOMESTICATION.LEVELS.SPOILED.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.SPOILED.TOOLTIP"
-msgid ""
-"This critter loves its Duplicant caregivers and is spoiled absolutely rotten"
-msgstr "この動物は世話してくれる複製人間が好きでたまらなく、とても幸せです"
-
-#. STRINGS.CREATURES.DOMESTICATION.LEVELS.UNHAPPY.NAME
-msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.UNHAPPY.NAME"
-msgid "Wild"
-msgstr "野生"
-
-#. STRINGS.CREATURES.DOMESTICATION.LEVELS.UNHAPPY.TOOLTIP
-msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.UNHAPPY.TOOLTIP"
-msgid "This critter is fending for itself and does not trust Duplicants"
-msgstr "この動物は自活しており、複製人間を信頼していません"
-
 #. STRINGS.CREATURES.FAMILY.DRECKO
 msgctxt "STRINGS.CREATURES.FAMILY.DRECKO"
 msgid "<link=\"DRECKOSPECIES\">Drecko</link>"
@@ -8323,6 +8487,11 @@ msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.TEMPERATURE.NAME"
 msgid "Temperature"
 msgstr "温度"
 
+#. STRINGS.CREATURES.MODIFIERS.AGE.NAME
+msgctxt "STRINGS.CREATURES.MODIFIERS.AGE.NAME"
+msgid "Aging"
+msgstr "老化"
+
 #. STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.NAME"
 msgid "Ate From Feeder"
@@ -8358,7 +8527,7 @@ msgstr "動物が新しく卵を産む基本速度です"
 #. STRINGS.CREATURES.MODIFIERS.BASE_INCUBATION_RATE.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.BASE_INCUBATION_RATE.NAME"
 msgid "Base Incubation Rate"
-msgstr "基本孵化レート"
+msgstr "基本孵化率"
 
 #. STRINGS.CREATURES.MODIFIERS.CONFINED.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.CONFINED.NAME"
@@ -8429,15 +8598,41 @@ msgstr ""
 "------------------\n"
 "結果として、繁殖力が高まっています"
 
-#. STRINGS.CREATURES.MODIFIERS.INCUBATOR.NAME
-msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR.NAME"
-msgid "Incubator"
-msgstr "孵卵器"
+#. STRINGS.CREATURES.MODIFIERS.INCUBATING.NAME
+msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATING.NAME"
+msgid "Incubating"
+msgstr "孵化中"
 
-#. STRINGS.CREATURES.MODIFIERS.INCUBATOR.TOOLTIP
-msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR.TOOLTIP"
-msgid "Increased incubation rate when placed inside an Incubator"
-msgstr "孵卵器に設置された時に、孵化までにかかる時間を決定します"
+#. STRINGS.CREATURES.MODIFIERS.INCUBATING.TOOLTIP
+msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATING.TOOLTIP"
+msgid "This egg is incubating"
+msgstr "この卵は孵化中です"
+
+#. STRINGS.CREATURES.MODIFIERS.INCUBATING_SUPPRESSED.NAME
+msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATING_SUPPRESSED.NAME"
+msgid "Incubation Suppressed"
+msgstr "孵化抑制中"
+
+#. STRINGS.CREATURES.MODIFIERS.INCUBATING_SUPPRESSED.TOOLTIP
+msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATING_SUPPRESSED.TOOLTIP"
+msgid "Environmental conditions are keeping this egg from incubating"
+msgstr "環境条件が孵化を抑制しています"
+
+#. STRINGS.CREATURES.MODIFIERS.INCUBATOR_SONG.NAME
+msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_SONG.NAME"
+msgid "Serenaded"
+msgstr "小夜曲"
+
+#. STRINGS.CREATURES.MODIFIERS.INCUBATOR_SONG.TOOLTIP
+msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_SONG.TOOLTIP"
+msgid ""
+"This egg has recently been sung to by a Rancher\n"
+"------------------\n"
+"Increased incubation rate"
+msgstr ""
+"この卵は牧夫の歌を聴きました。\n"
+"------------------\n"
+"孵化率上昇中"
 
 #. STRINGS.CREATURES.MODIFIERS.OUT_OF_CALORIES.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.OUT_OF_CALORIES.NAME"
@@ -9605,6 +9800,22 @@ msgctxt "STRINGS.CREATURES.SPECIES.OILSPOUT.NAME"
 msgid "<link=\"OILSPOUT\">Oil Spout</link>"
 msgstr "<link=\"OILSPOUT\">原油噴出口</link>"
 
+#. STRINGS.CREATURES.SPECIES.PACU.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.BABY.DESC"
+msgid ""
+"An innocent little <link=\"PACU\">Pacu Fry</link>.\n"
+"\n"
+"In time, it will mature into an adult <link=\"PACU\">Pacu</link>."
+msgstr ""
+"無邪気で小さな<link=\"PACU\">パクー幼体</link>です。\n"
+"\n"
+"時間経過とともに成長し、<link=\"PACU\">パクー</link>になります。"
+
+#. STRINGS.CREATURES.SPECIES.PACU.BABY.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.BABY.NAME"
+msgid "<link=\"PACU\">Pacu Fry</link>"
+msgstr "<link=\"PACU\">パクー幼体</link>"
+
 #. STRINGS.CREATURES.SPECIES.PACU.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.PACU.DESC"
 msgid ""
@@ -9628,6 +9839,23 @@ msgctxt "STRINGS.CREATURES.SPECIES.PACU.NAME"
 msgid "<link=\"PACU\">Pacu</link>"
 msgstr "<link=\"PACU\">パクー</link>"
 
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.BABY.DESC"
+msgid ""
+"An innocent little <link=\"GULPFISH\">Gulp Fish Fry</link>.\n"
+"\n"
+"In time, it will mature into an adult <link=\"GULPFISH\">Gulp Fish</link>."
+msgstr ""
+"無邪気で小さな<link=\"GULPFISH\">ガルプフィッシュ</link>です。\n"
+"\n"
+"時間経過とともに成長し、<link=\"GULPFISH\">ガルプフィッシュ</link>になりま"
+"す。"
+
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.BABY.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.BABY.NAME"
+msgid "<link=\"PACUCLEANER\">Gulp Fish Fry</link>"
+msgstr "<link=\"PACUCLEANER\">ガルプフィッシュ幼体</link>"
+
 #. STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.DESC"
 msgid ""
@@ -9641,8 +9869,25 @@ msgstr "<link=\"CLEANERPACUEGG\">ガルプ フィッシュの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.NAME
 msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.NAME"
-msgid "<link=\"GULPFISH\">Gulp Fish</link>"
-msgstr "<link=\"GULPFISH\">ガルプ フィッシュ</link>"
+msgid "<link=\"PACUCLEANER\">Gulp Fish</link>"
+msgstr "<link=\"PACUCLEANER\">ガルプフィッシュ</link>"
+
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.BABY.DESC"
+msgid ""
+"An innocent little <link=\"PACUTROPICAL\">Tropical Pacu Fry</link>.\n"
+"\n"
+"In time, it will mature into an adult <link=\"PACUTROPICAL\">Tropical Pacu</"
+"link>."
+msgstr ""
+"無邪気で小さな<link=\"PACUTROPICAL\">熱帯パクー幼体</link>です。\n"
+"\n"
+"時間経過とともに成長し、<link=\"PACUTROPICAL\">熱帯パクー</link>になります。"
+
+#. STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.BABY.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.BABY.NAME"
+msgid "<link=\"PACUTROPICAL\">Tropical Pacu Fry</link>"
+msgstr "<link=\"PACUTROPICAL\">熱帯パクー幼体</link>"
 
 #. STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.DESC"
@@ -9652,13 +9897,13 @@ msgstr "パクーが極めて美味であることは、全宇宙の生物が認
 
 #. STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.EGG_NAME
 msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.EGG_NAME"
-msgid "<link=\"TROPICALPACUEGG\">Tropical Pacu Egg</link>"
-msgstr "<link=\"TROPICALPACUEGG\">熱帯 パクーの卵</link>"
+msgid "<link=\"PACUTROPICALEGG\">Tropical Pacu Egg</link>"
+msgstr "<link=\"PACUTROPICALEGG\">熱帯パクーの卵</link>"
 
 #. STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.NAME
 msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_TROPICAL.NAME"
-msgid "<link=\"TROPICALPACU\">Tropical Pacu</link>"
-msgstr "<link=\"TROPICALPACU\">熱帯 パクー</link>"
+msgid "<link=\"PACUTROPICAL\">Tropical Pacu</link>"
+msgstr "<link=\"PACUTROPICAL\">熱帯パクー</link>"
 
 #. STRINGS.CREATURES.SPECIES.PACUEGG.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.PACUEGG.DESC"
@@ -10138,15 +10383,15 @@ msgctxt "STRINGS.CREATURES.STATS.DOMESTICATION.TOOLTIP"
 msgid ""
 "Domestication\n"
 "------------------\n"
-"Fully domesticated critters will produce more materials than wild ones, and "
-"may even provide psychological benefits to your colony\n"
+"Fully domesticated critters produce more materials than wild ones, and may "
+"even provide psychological benefits to my colony\n"
 "\n"
 "This critter is {0} domesticated"
 msgstr ""
 "家畜化\n"
 "------------------\n"
-"完全に飼い慣らされた動物は野生種よりも繁殖力が向上し、心理学的な利益をコロ"
-"ニーにもたらします。\n"
+"完全に飼い慣らされた動物は野生種よりも素材の生産性が向上し、心理学的な利益も"
+"コロニーにもたらします。\n"
 "\n"
 "この動物は {0} 家畜化されています"
 
@@ -10199,7 +10444,7 @@ msgid ""
 "High Happiness increases a critter's productivity and indirectly improves "
 "their egg laying rates\n"
 "\n"
-"It also provides satisfaction in knowing they're living a good little "
+"It also provides the satisfaction in knowing they're living a good little "
 "critter life"
 msgstr ""
 "幸福度\n"
@@ -10332,21 +10577,11 @@ msgctxt "STRINGS.CREATURES.STATS.SCALEGROWTH.TOOLTIP"
 msgid ""
 "Scale Growth\n"
 "------------------\n"
-"How long until this creatures scales will grow back."
+"The amount of time required for this critter to regrow its scales"
 msgstr ""
 "鱗の成長\n"
 "------------------\n"
-"この生き物の鱗が再び生え揃うまでの時間です。"
-
-#. STRINGS.CREATURES.STATS.THERMALCONDUCTIVITY.NAME
-msgctxt "STRINGS.CREATURES.STATS.THERMALCONDUCTIVITY.NAME"
-msgid "Thermal Conductivity"
-msgstr "熱伝導率"
-
-#. STRINGS.CREATURES.STATS.THERMALCONDUCTIVITY.TOOLTIP
-msgctxt "STRINGS.CREATURES.STATS.THERMALCONDUCTIVITY.TOOLTIP"
-msgid "Heat can pass through the selected object at a rate of (W/m)/K"
-msgstr "熱は選択された物体を (W/m)/K の割合で移動することができます"
+"この動物の鱗が再び生え揃うまでの時間です。"
 
 #. STRINGS.CREATURES.STATS.THERMALCONDUCTIVITYBARRIER.NAME
 msgctxt "STRINGS.CREATURES.STATS.THERMALCONDUCTIVITYBARRIER.NAME"
@@ -10360,6 +10595,26 @@ msgid ""
 "or cool down"
 msgstr "バリアの層が物体の加熱/冷却に要する時間を増加させます"
 
+#. STRINGS.CREATURES.STATS.VIABILITY.NAME
+msgctxt "STRINGS.CREATURES.STATS.VIABILITY.NAME"
+msgid "Viability"
+msgstr "生存力"
+
+#. STRINGS.CREATURES.STATS.VIABILITY.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATS.VIABILITY.TOOLTIP"
+msgid ""
+"Viability\n"
+"------------------\n"
+"Eggs will lose viability in poor environmental conditions\n"
+"\n"
+"If Viability reaches zero the egg will become a Cracked Egg"
+msgstr ""
+"生存力\n"
+"------------------\n"
+"卵は貧弱な環境条件かでは生存能力を失います。\n"
+"\n"
+"生存力が0になると、割れた卵になります"
+
 #. STRINGS.CREATURES.STATS.WILDNESS.NAME
 msgctxt "STRINGS.CREATURES.STATS.WILDNESS.NAME"
 msgid "Wildness"
@@ -10370,13 +10625,13 @@ msgctxt "STRINGS.CREATURES.STATS.WILDNESS.TOOLTIP"
 msgid ""
 "Wildness\n"
 "------------------\n"
-"At zero Wildness a critter can start gaining Happiness, but they will also "
-"require more calories to survive"
+"At zero Wildness a critter becomes Tame, increasing its metabolism and "
+"requiring care from a Rancher."
 msgstr ""
 "野性\n"
 "------------------\n"
-"野性が0になると動物は幸福を感じるようになりますが、生存に必要なカロリーが増加"
-"します"
+"野性が0になると動物は飼い慣らされた状態になります。必要になる食事の量が増え、"
+"牧夫による世話が必要になります。"
 
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.NAME"
@@ -10419,6 +10674,16 @@ msgstr "標的を追跡中"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATTACK_APPROACH.TOOLTIP"
 msgid "This critter is hostile and readying to pounce!"
 msgstr "この動物は敵対しており、今にも飛び掛かってきそうです！"
+
+#. STRINGS.CREATURES.STATUSITEMS.BAGGED.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.BAGGED.NAME"
+msgid "Trussed"
+msgstr "ぐるぐる巻き"
+
+#. STRINGS.CREATURES.STATUSITEMS.BAGGED.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.BAGGED.TOOLTIP"
+msgid "Tied up, ready for delivery"
+msgstr "縛られており、運搬可能です"
 
 #. STRINGS.CREATURES.STATUSITEMS.BARREN.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BARREN.NAME"
@@ -10962,6 +11227,16 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.IDLE.TOOLTIP"
 msgid "Just enjoying life, y'know?"
 msgstr "人生を満喫中さ、わかるだろ？"
 
+#. STRINGS.CREATURES.STATUSITEMS.IN_INCUBATOR.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.IN_INCUBATOR.NAME"
+msgid "Incubation Complete"
+msgstr "孵化完了"
+
+#. STRINGS.CREATURES.STATUSITEMS.IN_INCUBATOR.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.IN_INCUBATOR.TOOLTIP"
+msgid "This critter has hatched in its incubator and is waiting for pickup"
+msgstr "この動物は孵卵器の中で誕生し、拾われるのを待っています"
+
 #. STRINGS.CREATURES.STATUSITEMS.INCUBATING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.INCUBATING.NAME"
 msgid "Incubating"
@@ -11075,6 +11350,17 @@ msgid ""
 msgstr ""
 "理想条件をおおむね満たしているため、この植物はより多く産出します\n"
 "{Effects}"
+
+#. STRINGS.CREATURES.STATUSITEMS.OLD.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.OLD.NAME"
+msgid "Old"
+msgstr "高齢"
+
+#. STRINGS.CREATURES.STATUSITEMS.OLD.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.OLD.TOOLTIP"
+msgid "This critter is getting old and only has {TimeUntilDeath} left to live."
+msgstr ""
+"この動物は高齢化しており、残された時間は {TimeUntilDeath} しかありません。"
 
 #. STRINGS.CREATURES.STATUSITEMS.PERFECTATMOSPHERICPRESSURE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTATMOSPHERICPRESSURE.NAME"
@@ -11743,7 +12029,7 @@ msgstr "産卵までに必要な総時間を決定します。"
 #. STRINGS.DUPLICANTS.ATTRIBUTES.FERTILITYDELTA.NAME
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FERTILITYDELTA.NAME"
 msgid "Reproduction Rate"
-msgstr "繁殖効率"
+msgstr "繁殖率"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.DESC"
@@ -11845,7 +12131,7 @@ msgstr ""
 #. STRINGS.DUPLICANTS.ATTRIBUTES.INCUBATIONDELTA.NAME
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INCUBATIONDELTA.NAME"
 msgid "Incubation Rate"
-msgstr "孵化レート"
+msgstr "孵化率"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.INSULATION.DESC"
@@ -11914,7 +12200,7 @@ msgstr "機械操作"
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.SPEEDMODIFIER
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERY.SPEEDMODIFIER"
 msgid "{0} Tinkering Speed"
-msgstr "機械操作効率 {0}"
+msgstr "機械操作速度 {0}"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERYSPEED.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERYSPEED.DESC"
@@ -12019,6 +12305,22 @@ msgstr "複製人間が火傷を負う温度を決定します。"
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SCALDINGTHRESHOLD.NAME"
 msgid "Scalding Threshold"
 msgstr "火傷しきい値"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.SCALEGROWTHDELTA.NAME
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SCALEGROWTHDELTA.NAME"
+msgid "Scale Growth"
+msgstr "鱗の成長"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.SCALEGROWTHDELTA.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SCALEGROWTHDELTA.TOOLTIP"
+msgid ""
+"Scale Growth\n"
+"------------------\n"
+"How long until this creatures scales will grow back."
+msgstr ""
+"鱗の成長\n"
+"------------------\n"
+"この生き物の鱗が再び生え揃うまでの時間です。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.SNEEZYNESS.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SNEEZYNESS.DESC"
@@ -12139,6 +12441,16 @@ msgstr "間抜け"
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.VALUE"
 msgid "{0}: {1}"
 msgstr "{0}: {1}"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.VIABILITYDELTA.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.VIABILITYDELTA.DESC"
+msgid ""
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.VIABILITYDELTA.NAME
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.VIABILITYDELTA.NAME"
+msgid "Viability Loss Rate"
+msgstr "生存力低下率"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.WILDNESSDELTA.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.WILDNESSDELTA.DESC"
@@ -12856,8 +13168,8 @@ msgstr "堆肥置き場を切り返しに向かっている"
 
 #. STRINGS.DUPLICANTS.CHORES.FLIPCOMPOST.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.FLIPCOMPOST.TOOLTIP"
-msgid "Composts need to be flipped to produce Fertilizer"
-msgstr "肥料を作るために、堆肥置き場を切り返してください"
+msgid "Composts need to be flipped in order for their contents to compost"
+msgstr "堆肥化を進めるために、堆肥置き場を切り返してください"
 
 #. STRINGS.DUPLICANTS.CHORES.GENERATEPOWER.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.GENERATEPOWER.NAME"
@@ -12903,21 +13215,6 @@ msgstr "収穫に向かっている"
 msgctxt "STRINGS.DUPLICANTS.CHORES.HARVEST.TOOLTIP"
 msgid "This Duplicant is harvesting usable materials from a mature plant"
 msgstr "この複製人間は熟した植物から役立つ素材を収穫しています"
-
-#. STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.NAME
-msgctxt "STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.NAME"
-msgid "Assist Newborn Critter"
-msgstr "新生動物の補助"
-
-#. STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.STATUS
-msgctxt "STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.STATUS"
-msgid "Assisting Newborn Critter"
-msgstr "生まれたての動物を補助しています"
-
-#. STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.TOOLTIP"
-msgid "This Rancher Duplicant is welcoming a newborn critter into the colony"
-msgstr "この複製人間はコロニー内で生まれた動物を歓迎しています"
 
 #. STRINGS.DUPLICANTS.CHORES.HEAL.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.HEAL.NAME"
@@ -13177,6 +13474,13 @@ msgstr "{Selected}は就寝中です"
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CONSUMPTION_PERMITTED"
 msgid "Disallowed by consumable permissions"
 msgstr "食べることが許されていません"
+
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_FIXED_CAPTURE
+msgctxt ""
+"STRINGS.DUPLICANTS.CHORES.PRECONDITIONS."
+"IS_CREATURE_AVAILABLE_FOR_FIXED_CAPTURE"
+msgid "Pen Status OK"
+msgstr "厩舎ステータスOK"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_RANCHING
 msgctxt ""
@@ -13523,6 +13827,25 @@ msgstr "溜息中"
 msgctxt "STRINGS.DUPLICANTS.CHORES.SIGH.TOOLTIP"
 msgid "Ho-hum."
 msgstr "はぁ～"
+
+#. STRINGS.DUPLICANTS.CHORES.SINGTOEGG.NAME
+msgctxt "STRINGS.DUPLICANTS.CHORES.SINGTOEGG.NAME"
+msgid "Sing To Egg"
+msgstr "卵へ歌っている"
+
+#. STRINGS.DUPLICANTS.CHORES.SINGTOEGG.STATUS
+msgctxt "STRINGS.DUPLICANTS.CHORES.SINGTOEGG.STATUS"
+msgid "Singing To Egg"
+msgstr "卵に歌を聴かせています"
+
+#. STRINGS.DUPLICANTS.CHORES.SINGTOEGG.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.CHORES.SINGTOEGG.TOOLTIP"
+msgid ""
+"Singing to critter eggs improves their incubation rate, and really who "
+"doesn't love singing?"
+msgstr ""
+"動物の卵に歌を聴かせてやると孵化率が上昇します。歌が嫌いな人なんていないで"
+"しょう？"
 
 #. STRINGS.DUPLICANTS.CHORES.SLEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.SLEEP.NAME"
@@ -14141,6 +14464,22 @@ msgid ""
 "Duplicants contract this disease by coming into physical contact with germs"
 msgstr "複製人間は病原菌に物理的接触をしたために罹患しました"
 
+#. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.SUNBORNE
+msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.SUNBORNE"
+msgid ""
+"Contracted via environmental exposure\n"
+"------------------"
+msgstr ""
+"環境曝露による感染\n"
+"------------------"
+
+#. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.SUNBORNE_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.SUNBORNE_TOOLTIP"
+msgid ""
+"Duplicants contract this disease through exposure to harmful environmental "
+"factors"
+msgstr "複製人間は有害な環境要因によって罹患しました"
+
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.TEMPERATURE_RANGE
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.TEMPERATURE_RANGE"
 msgid "Temperature range: {0} to {1}"
@@ -14578,6 +14917,32 @@ msgstr ""
 "{Descriptor}{Symptoms}\n"
 "{InfectionSource}{Doctor}{Duration}{Fatality}{Cures}{Bedrest}"
 
+#. STRINGS.DUPLICANTS.DISEASES.SUNBURN.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.DISEASES.SUNBURN.DESCRIPTION"
+msgid ""
+"\n"
+"Extreme sun exposure has given this Duplicant a nasty burn"
+msgstr ""
+"\n"
+"太陽光の過度な浴びすぎは、この複製人間を火傷させます"
+
+#. STRINGS.DUPLICANTS.DISEASES.SUNBURN.DESCRIPTIVE_SYMPTOMS
+msgctxt "STRINGS.DUPLICANTS.DISEASES.SUNBURN.DESCRIPTIVE_SYMPTOMS"
+msgid ""
+"Nonlethal. Duplicants experience temporary discomfort due to dermatological "
+"damage."
+msgstr "非致命的。複製人間は皮膚へのダメージによって一時的に不快感を得ます。"
+
+#. STRINGS.DUPLICANTS.DISEASES.SUNBURN.LEGEND_HOVERTEXT
+msgctxt "STRINGS.DUPLICANTS.DISEASES.SUNBURN.LEGEND_HOVERTEXT"
+msgid "Area Causes Sunburn\n"
+msgstr "日焼けを引き起こすエリア\n"
+
+#. STRINGS.DUPLICANTS.DISEASES.SUNBURN.NAME
+msgctxt "STRINGS.DUPLICANTS.DISEASES.SUNBURN.NAME"
+msgid "<link=\"SUNBURN\">Sunburn</link>"
+msgstr "<link=\"SUNBURN\">日焼け</link>"
+
 #. STRINGS.DUPLICANTS.DISEASES.TRIGGERS.EATCOMPLETEEDIBLE
 msgctxt "STRINGS.DUPLICANTS.DISEASES.TRIGGERS.EATCOMPLETEEDIBLE"
 msgid "May cause {Diseases}"
@@ -14837,7 +15202,7 @@ msgstr "この複製人間は涼しくしようとしています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.CRYFACE.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CRYFACE.CAUSE"
-msgid "Obtained through the Ugly Crier stress response"
+msgid "Obtained from the Ugly Crier stress reaction"
 msgstr "ストレス反応:大泣きによって付与"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.CRYFACE.NAME
@@ -15164,11 +15529,11 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MEDICINE_GENERICPILL.TOOLTIP"
 msgid ""
 "A general, all-purpose <link=\"MEDICINE\">Medicine</link>.\n"
 "\n"
-"The less you know about it, the better it works."
+"The less one knows about it, the better it works."
 msgstr ""
 "一般的な、何にでも効く<link=\"MEDICINE\">薬</link>です。\n"
 "\n"
-"この薬について知識がないほど、効果があります。"
+"この薬について知識がない人ほど、効果があります。"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MEDICINE_VITAMINSUPPLEMENT.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MEDICINE_VITAMINSUPPLEMENT.NAME"
@@ -15626,6 +15991,31 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSREDUCTION.TOOLTIP"
 msgid "This Duplicant's stress is just melting away"
 msgstr "この複製人間はストレスを発散しています"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_BURNING.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_BURNING.NAME"
+msgid "Intensely Bright"
+msgstr "激しい輝き"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_BURNING.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_BURNING.TOOLTIP"
+msgid ""
+"The extremely bright light here is making this Duplicant happy, but "
+"prolonged exposure will result in burning."
+msgstr ""
+"とても強烈な光がこの複製人間を幸福にしていますが、長期の曝露は日焼けの原因に"
+"なります。"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_PLEASANT.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_PLEASANT.NAME"
+msgid "Bright and Cheerful"
+msgstr "明るく陽気"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_PLEASANT.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_PLEASANT.TOOLTIP"
+msgid ""
+"The strong natural light is making this Duplicant feel light on their feet"
+msgstr "強い自然光はこの複製人間の足取りを軽くします"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.TEMPEXCHANGE.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TEMPEXCHANGE.NAME"
 msgid "Environmental Exchange"
@@ -16015,12 +16405,12 @@ msgstr ""
 msgctxt "STRINGS.DUPLICANTS.OPINIONS.LIGHTOPINION"
 msgid ""
 "Duplicants are drawn to lit places, and dislike being in the dark.\n"
-"Make sure your Duplicants have plenty of <link=\"LIGHT\">Light</link> to "
-"keep their eyes unstrained and their <link=\"STRESS\">Stress</link> low."
+"I should make sure my Duplicants have plenty of <link=\"LIGHT\">Light</link> "
+"to keep their eyes unstrained and their <link=\"STRESS\">Stress</link> low."
 msgstr ""
-"複製人間は明かりに引き寄せられ、暗いところを嫌います。\n"
-"彼らが目を凝らさないように、また<link=\"STRESS\">ストレス</link>を溜めないよ"
-"うに、十分な<link=\"LIGHT\">光源</link>を設置しましょう。"
+"複製人間は明かりに引き寄せられ、暗いところを嫌う。\n"
+"私は彼らが目を凝らさないように、また<link=\"STRESS\">ストレス</link>を溜めな"
+"いように、十分な<link=\"LIGHT\">光源</link>を設置してやろう。"
 
 #. STRINGS.DUPLICANTS.OPINIONS.MESSHALLWALLSOPINION
 msgctxt "STRINGS.DUPLICANTS.OPINIONS.MESSHALLWALLSOPINION"
@@ -16767,8 +17157,8 @@ msgstr "<link=\"OILTECHNICIAN\">油工</link>"
 #. STRINGS.DUPLICANTS.ROLES.PLUMBER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.PLUMBER.DESCRIPTION"
 msgid ""
-"Becoming a plumber allows you to empty pipes without leaking water "
-"everywhere."
+"Becoming a Plumber allows a Duplicant to empty plumbing pipes without making "
+"a mess."
 msgstr "配管工になると水漏れをおこさずにパイプ内を空にできます。"
 
 #. STRINGS.DUPLICANTS.ROLES.PLUMBER.NAME
@@ -17063,7 +17453,7 @@ msgctxt "STRINGS.DUPLICANTS.STATS.STRESS.TOOLTIP"
 msgid ""
 "Stress\n"
 "------------------\n"
-"Duplicants exhibit their Stress Responses at one hundred percent stress"
+"Duplicants exhibit their Stress Reactions at one hundred percent stress"
 msgstr ""
 "ストレス\n"
 "----------\n"
@@ -17974,8 +18364,16 @@ msgstr "トイレがありません"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.NOTIFICATION_TOOLTIP"
-msgid "These Duplicants are distressed by the lack of toilets:"
-msgstr "これらの複製人間はコロニーにトイレがないことにより苦しんでいます:"
+msgid ""
+"Duplicants with no bathroom access will make \"messes\", causing stress and "
+"spreading germs\n"
+"\n"
+"These Duplicants are in need of an outhouse:"
+msgstr ""
+"トイレに行けない複製人間は「お漏らし」し、ストレスや病原菌拡大の原因となりま"
+"す。\n"
+"\n"
+"これらの複製人間はトイレが必要です:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.TOOLTIP"
@@ -18509,7 +18907,7 @@ msgstr "涙目"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESS_SIGNAL_UGLY_CRIER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESS_SIGNAL_UGLY_CRIER.TOOLTIP"
-msgid "This Duplicant is trying to swallow their emotions and failing"
+msgid "This Duplicant is trying and failing to swallow their emotions"
 msgstr ""
 "この複製人間は自分の感情を抑えようと努力していますがうまくいっていません"
 
@@ -18520,8 +18918,9 @@ msgstr "ストレスゲップ"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESS_SIGNAL_VOMITER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESS_SIGNAL_VOMITER.TOOLTIP"
-msgid "Kind of like having butterflies in your stomach, except they're burps"
-msgstr "何となく気分が悪いようで、ゲップをしています"
+msgid ""
+"It's kind of like having butterflies in your stomach, except they're burps"
+msgstr "ゲップが出ることを除けば、胃の中に蝶々を飼っている感じがします。"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NAME"
@@ -19489,20 +19888,19 @@ msgstr ""
 #. STRINGS.ELEMENTS.BRICK.DESC
 msgctxt "STRINGS.ELEMENTS.BRICK.DESC"
 msgid ""
-"Ceramic is a hard, brittle material formed from heated <link=\"CLAY\">Clay</"
+"Brick is a hard, brittle material formed from heated <link=\"CLAY\">Clay</"
 "link>.\n"
 "\n"
 "It is a reliable Construction Material."
 msgstr ""
-"セラミックは<link=\"CLAY\">粘土</link>を焼成したもので、固く砕けやすい素材で"
-"す。\n"
+"煉瓦は<link=\"CLAY\">粘土</link>を焼成したもので、固く砕けやすい素材です。\n"
 "\n"
 "建設素材として頼りになります。"
 
 #. STRINGS.ELEMENTS.BRICK.NAME
 msgctxt "STRINGS.ELEMENTS.BRICK.NAME"
-msgid "<link=\"BRICK\">Ceramic</link>"
-msgstr "<link=\"BRICK\">セラミック</link>"
+msgid "<link=\"BRICK\">Brick</link>"
+msgstr "<link=\"BRICK\">煉瓦</link>"
 
 #. STRINGS.ELEMENTS.CARBON.BUILD_DESC
 msgctxt "STRINGS.ELEMENTS.CARBON.BUILD_DESC"
@@ -19610,6 +20008,29 @@ msgstr ""
 msgctxt "STRINGS.ELEMENTS.CEMENTMIX.NAME"
 msgid "<link=\"CEMENTMIX\">Cement Mix</link>"
 msgstr "<link=\"CEMENTMIX\">セメントミックス</link>"
+
+#. STRINGS.ELEMENTS.CERAMIC.BUILD_DESC
+msgctxt "STRINGS.ELEMENTS.CERAMIC.BUILD_DESC"
+msgid ""
+msgstr ""
+
+#. STRINGS.ELEMENTS.CERAMIC.DESC
+msgctxt "STRINGS.ELEMENTS.CERAMIC.DESC"
+msgid ""
+"Ceramic is a hard, brittle material formed from heated <link=\"CLAY\">Clay</"
+"link>.\n"
+"\n"
+"It is a reliable Construction Material."
+msgstr ""
+"セラミックは<link=\"CLAY\">粘土</link>を焼成したもので、固く砕けやすい素材で"
+"す。\n"
+"\n"
+"建設素材として頼りになります。"
+
+#. STRINGS.ELEMENTS.CERAMIC.NAME
+msgctxt "STRINGS.ELEMENTS.CERAMIC.NAME"
+msgid "<link=\"CERAMIC\">Ceramic</link>"
+msgstr "<link=\"CERAMIC\">Ceramic</link>"
 
 #. STRINGS.ELEMENTS.CHLORINE.BUILD_DESC
 msgctxt "STRINGS.ELEMENTS.CHLORINE.BUILD_DESC"
@@ -20260,6 +20681,23 @@ msgctxt "STRINGS.ELEMENTS.KATAIRITE.NAME"
 msgid "<link=\"KATAIRITE\">Abyssalite</link>"
 msgstr "<link=\"KATAIRITE\">アビサライト</link>"
 
+#. STRINGS.ELEMENTS.LIME.DESC
+msgctxt "STRINGS.ELEMENTS.LIME.DESC"
+msgid ""
+"Lime is a mineral. It has various uses including soil fertilization and "
+"steel making.\n"
+"\n"
+"It is useful as a Construction Material."
+msgstr ""
+"石灰は無機物です。土壌の肥料や鋼鉄の製造など、幅広い用途に使えます。\n"
+"\n"
+"建設素材として役に立ちます。"
+
+#. STRINGS.ELEMENTS.LIME.NAME
+msgctxt "STRINGS.ELEMENTS.LIME.NAME"
+msgid "<link=\"LIME\">Lime</link>"
+msgstr "<link=\"LIME\">石灰</link>"
+
 #. STRINGS.ELEMENTS.LIQUIDCARBONDIOXIDE.DESC
 msgctxt "STRINGS.ELEMENTS.LIQUIDCARBONDIOXIDE.DESC"
 msgid ""
@@ -20369,6 +20807,29 @@ msgstr ""
 msgctxt "STRINGS.ELEMENTS.LIQUIDPROPANE.NAME"
 msgid "<link=\"LIQUIDPROPANE\">Propane</link>"
 msgstr "<link=\"LIQUIDPROPANE\">プロパン</link>"
+
+#. STRINGS.ELEMENTS.MAFICROCK.BUILD_DESC
+msgctxt "STRINGS.ELEMENTS.MAFICROCK.BUILD_DESC"
+msgid ""
+msgstr ""
+
+#. STRINGS.ELEMENTS.MAFICROCK.DESC
+msgctxt "STRINGS.ELEMENTS.MAFICROCK.DESC"
+msgid ""
+"Mafic Rock an <link=\"IRON\">Iron</link>-rich variation of <link="
+"\"IGNEOUSROCK\">Igneous Rock</link>.\n"
+"\n"
+"It is useful as a Construction Material."
+msgstr ""
+"苦鉄岩は<link=\"IRON\">鉄</link>分を豊富に含んだ<link=\"IGNEOUSROCK\">火成岩"
+"</link>の一種です。\n"
+"\n"
+"建設素材に適しています。"
+
+#. STRINGS.ELEMENTS.MAFICROCK.NAME
+msgctxt "STRINGS.ELEMENTS.MAFICROCK.NAME"
+msgid "<link=\"MAFICROCK\">Mafic Rock</link>"
+msgstr "<link=\"MAFICROCK\">苦鉄岩</link>"
 
 #. STRINGS.ELEMENTS.MAGMA.DESC
 msgctxt "STRINGS.ELEMENTS.MAGMA.DESC"
@@ -20903,6 +21364,38 @@ msgctxt "STRINGS.ELEMENTS.RADIUM.NAME"
 msgid "<link=\"RADIUM\">Radium</link>"
 msgstr "<link=\"RADIUM\">ラジウム</link>"
 
+#. STRINGS.ELEMENTS.REFINEDCARBON.BUILD_DESC
+msgctxt "STRINGS.ELEMENTS.REFINEDCARBON.BUILD_DESC"
+msgid ""
+msgstr ""
+
+#. STRINGS.ELEMENTS.REFINEDCARBON.DESC
+msgctxt "STRINGS.ELEMENTS.REFINEDCARBON.DESC"
+msgid "Refined carbon is..."
+msgstr "精錬炭素とは..."
+
+#. STRINGS.ELEMENTS.REFINEDCARBON.NAME
+msgctxt "STRINGS.ELEMENTS.REFINEDCARBON.NAME"
+msgid "<link=\"REFINEDCARBON\">Refined Carbon</link>"
+msgstr "<link=\"REFINEDCARBON\">精錬炭素</link>"
+
+#. STRINGS.ELEMENTS.REGOLITH.DESC
+msgctxt "STRINGS.ELEMENTS.REGOLITH.DESC"
+msgid ""
+"Regolith is a sandy substance composed of the various particles that collect "
+"atop terrestrial objects.\n"
+"\n"
+"It is useful as a Filtration Medium."
+msgstr ""
+"表土は地球型惑星の表面で採取できる砂状の混合物です。\n"
+"\n"
+"ろ過媒体として役に立ちます。"
+
+#. STRINGS.ELEMENTS.REGOLITH.NAME
+msgctxt "STRINGS.ELEMENTS.REGOLITH.NAME"
+msgid "<link=\"REGOLITH\">Regolith</link>"
+msgstr "<link=\"REGOLITH\">表土</link>"
+
 #. STRINGS.ELEMENTS.ROCKGAS.DESC
 msgctxt "STRINGS.ELEMENTS.ROCKGAS.DESC"
 msgid ""
@@ -21304,12 +21797,12 @@ msgstr "<link=\"STEELGAS\">鋼鉄</link>"
 msgctxt "STRINGS.ELEMENTS.THERMALPROPERTIES"
 msgid ""
 "\n"
-"Specific Heat Capacity: {0} (J/g)/K\n"
-"Thermal Conductivity: {1} (W/m)/K"
+"Specific Heat Capacity: {SPECIFIC_HEAT_CAPACITY}\n"
+"Thermal Conductivity: {THERMAL_CONDUCTIVITY}"
 msgstr ""
 "\n"
-"比熱容量: {0} (J/g)/K\n"
-"熱伝導率: {1} (W/m)/K"
+"比熱容量: {SPECIFIC_HEAT_CAPACITY}\n"
+"熱伝導率: {THERMAL_CONDUCTIVITY}"
 
 #. STRINGS.ELEMENTS.TOXICSAND.BUILD_DESC
 msgctxt "STRINGS.ELEMENTS.TOXICSAND.BUILD_DESC"
@@ -21967,6 +22460,11 @@ msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGINVINCIBLE"
 msgid "DebugInvincible"
 msgstr "デバッグ:無敵"
 
+#. STRINGS.INPUT_BINDINGS.DEBUG.DEBUGLOCKCURSOR
+msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGLOCKCURSOR"
+msgid "DebugLockCursor"
+msgstr "デバッグ:カーソル固定"
+
 #. STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNEXTCALL
 msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNEXTCALL"
 msgid "DebugNextCall"
@@ -22192,6 +22690,11 @@ msgstr "サンドボックス:洪水"
 msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXHEATGUN"
 msgid "SandboxHeatGun"
 msgstr "サンドボックス:ヒートガン"
+
+#. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXREVEAL
+msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXREVEAL"
+msgid "SandboxReveal"
+msgstr "サンドボックス:マップ開拓"
 
 #. STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXSAMPLE
 msgctxt "STRINGS.INPUT_BINDINGS.SANDBOX.SANDBOXSAMPLE"
@@ -22648,6 +23151,30 @@ msgctxt "STRINGS.ITEMS.FOOD.PUFTEGG.RECIPEDESC"
 msgid "An egg laid by a <link=\"PUFT\">Puft</link>"
 msgstr "<link=\"PUFT\">パフ</link>の卵"
 
+#. STRINGS.ITEMS.FOOD.RAWEGG.DESC
+msgctxt "STRINGS.ITEMS.FOOD.RAWEGG.DESC"
+msgid ""
+"A raw egg that has been cracked open for use in <link=\"FOOD\">Food</link> "
+"preparation.\n"
+"\n"
+"It will never hatch."
+msgstr ""
+"<link=\"FOOD\">食糧</link>の下準備用に割られた生卵です。\n"
+"\n"
+"孵化することはありません。"
+
+#. STRINGS.ITEMS.FOOD.RAWEGG.NAME
+msgctxt "STRINGS.ITEMS.FOOD.RAWEGG.NAME"
+msgid "<link=\"RAWEGG\">Raw Egg</link>"
+msgstr "<link=\"RAWEGG\">生卵</link>"
+
+#. STRINGS.ITEMS.FOOD.RAWEGG.RECIPEDESC
+msgctxt "STRINGS.ITEMS.FOOD.RAWEGG.RECIPEDESC"
+msgid ""
+"A raw egg that has been cracked open for use in <link=\"FOOD\">Food</link> "
+"preparation."
+msgstr "<link=\"FOOD\">食糧</link>の下準備用に割られた生卵です。"
+
 #. STRINGS.ITEMS.FOOD.ROTPILE.DESC
 msgctxt "STRINGS.ITEMS.FOOD.ROTPILE.DESC"
 msgid ""
@@ -22741,6 +23268,16 @@ msgstr "<link=\"EQUIPMENT\">衣類</link>の原料となるセルロース繊維
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.BASIC_FABRIC.NAME"
 msgid "Reed Fiber"
 msgstr "リード繊維"
+
+#. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.EGG_SHELL.DESC
+msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.EGG_SHELL.DESC"
+msgid "Can be crushed to produce <link=\"LIME\">Lime</link>"
+msgstr "粉砕すると<link=\"LIME\">石灰</link>が得られます"
+
+#. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.EGG_SHELL.NAME
+msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.EGG_SHELL.NAME"
+msgid "Egg Shell"
+msgstr "卵の殻"
 
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.FARM_STATION_TOOLS.DESC
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.FARM_STATION_TOOLS.DESC"
@@ -22934,11 +23471,11 @@ msgctxt "STRINGS.ITEMS.PILLS.PLACEBO.DESC"
 msgid ""
 "A general, all-purpose <link=\"MEDICINE\">Medicine</link>.\n"
 "\n"
-"The less you know about it, the better it works."
+"The less one knows about it, the better it works."
 msgstr ""
 "一般的な、何にでも効く<link=\"MEDICINE\">薬</link>です。\n"
 "\n"
-"この薬について知識がないほど、効果があります。"
+"この薬について知識がない人ほど、効果があります。"
 
 #. STRINGS.ITEMS.PILLS.PLACEBO.NAME
 msgctxt "STRINGS.ITEMS.PILLS.PLACEBO.NAME"
@@ -23235,24 +23772,23 @@ msgstr "これらの資源は利用可能になりました:"
 #. STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.MESSAGEBODY"
 msgid ""
-"• Use the <link=\"CONTROLS\">WASD</link> keys to pan your camera and the "
-"<link=\"CONTROLS\">MOUSE WHEEL</link> to zoom in or out. "
-"<color=#F44A47><b>[H]</b></color> will return your screen to the Printing "
-"Pod.\n"
+"• The <link=\"CONTROLS\">WASD</link> keys pan my view, while the <link="
+"\"CONTROLS\">MOUSE WHEEL</link> zooms in or out. <color=#F44A47><b>[H]</b></"
+"color> returns me to the Printing Pod at the center of the asteroid.\n"
 "\n"
-"• Your simulation can be sped up or slowed down by using the speed buttons "
-"in the top left, or by pressing <color=#F44A47><b>[TAB]</b></color>.\n"
+"• I can speed or slow time using the speed buttons in the top left corner, "
+"or by pressing <color=#F44A47><b>[TAB]</b></color>.\n"
 "\n"
-"• <color=#F44A47><b>[SPACE]</b></color> will pause or resume your game."
+"• <color=#F44A47><b>[SPACE]</b></color> will pause or resume the game."
 msgstr ""
 "- <link=\"CONTROLS\">WASD</link>キーでカメラ移動、<link=\"CONTROLS\">マウスホ"
-"イール</link>でズームイン・アウトします。<color=#F44A47>[H]</color>を押すと複"
-"製ポッドが中央になるように画面が移動します。\n"
+"イール</link>でズームイン・アウトする。<color=#F44A47>[H]</color>を押すと複製"
+"ポッドが中央になるように画面が移動する。\n"
 "\n"
-"- 画面左上にあるスピードボタン、もしくは<color=#F44A47>[TAB]</color>でシミュ"
-"レーションを加速・減速することができます。\n"
+"- 私は画面左上にあるスピードボタン、もしくは<color=#F44A47>[TAB]</color>で"
+"ゲームスピードを加速・減速することができる。\n"
 "\n"
-"- <color=#F44A47>[SPACE]</color>でゲームを一時中断・再開します。"
+"- <color=#F44A47>[SPACE]</color>でゲームを一時中断・再開する。"
 
 #. STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.NAME"
@@ -23261,7 +23797,7 @@ msgstr "ヒント: 基本操作"
 
 #. STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.TOOLTIP"
-msgid "Helpful tips to get you started"
+msgid "Helpful tips to get started"
 msgstr "始める際に役に立つヒント集"
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.MESSAGEBODY
@@ -23293,8 +23829,8 @@ msgstr "ヒント: 複製人間の免疫力"
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP"
-msgid "Keep your Duplicants in peak health"
-msgstr "複製人間の生命力を高く保ちましょう"
+msgid "Notes on keeping Duplicants in peak health"
+msgstr "複製人間の生命力を高く保つための覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME"
@@ -23508,15 +24044,34 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_SUFFOCATION.TOOLTIP"
 msgid "These Duplicants died from a lack of <link=\"OXYGEN\">Oxygen</link>:"
 msgstr "これらの複製人間は<link=\"OXYGEN\">酸素</link>欠乏により死亡しました:"
 
+#. STRINGS.MISC.NOTIFICATIONS.DISCOVERED_SPACE.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISCOVERED_SPACE.NAME"
+msgid "ALERT - Surface Breach"
+msgstr "警告 - 表層到達"
+
+#. STRINGS.MISC.NOTIFICATIONS.DISCOVERED_SPACE.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISCOVERED_SPACE.TOOLTIP"
+msgid ""
+"Amazingly, my Duplicants have broken through to the surface of the "
+"asteroid.\n"
+"\n"
+"I should be careful; the region is extremely inhospitable and I could easily "
+"lose resources to the vaccuum of space."
+msgstr ""
+"驚くべきことに、複製人間は小惑星の表層に到達した。\n"
+"\n"
+"注意しなければ。この地帯は極めて住みにくい場所で、資源は宇宙空間に吸い込まれ"
+"てしまうだろう。"
+
 #. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.MESSAGEBODY"
 msgid ""
-"The <link=\"FOOD\">Food</link> your Duplicants cook will only ever be as "
-"clean as the ingredients used to make it. Storing food in sterile or <link="
+"The <link=\"FOOD\">Food</link> my Duplicants cook will only ever be as clean "
+"as the ingredients used to make it. Storing food in sterile or <link="
 "\"REFRIGERATOR\">Refrigerated</link> environments will keep food free of "
 "<link=\"DISEASE\">Germs</link>, while carefully placed hygiene stations like "
 "<link=\"WASHBASIN\">Wash Basin</link> or <link=\"SHOWER\">Shower</link> will "
-"prevent your cooks from infecting the food by handling it.\n"
+"prevent the cooks from infecting the food by handling it.\n"
 "\n"
 "Dangerously contaminated food can be sent to compost by clicking the <link="
 "\"MISC\">Compost</link> button on the selected item."
@@ -23537,8 +24092,8 @@ msgstr "ヒント: 食の安全"
 
 #. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.TOOLTIP"
-msgid "Learn how to manage food contamination"
-msgstr "食糧汚染管理方法について学ぶ"
+msgid "Notes on managing food contamination"
+msgstr "食糧汚染の管理覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY"
@@ -23582,20 +24137,19 @@ msgstr "これらの製造機はレシピがセットされていません:"
 #. STRINGS.MISC.NOTIFICATIONS.FETCHINGWATERMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.FETCHINGWATERMESSAGE.MESSAGEBODY"
 msgid ""
-"In order to carry <link=\"LIQUIDS\">liquid</link> from place to place, "
-"Duplicants must first bottle them for transport.\n"
+"In order to carry <link=\"LIQUIDS\">Liquids</link> from place to place, my "
+"Duplicants will need to be able to bottle them for transport.\n"
 "\n"
-"Build Pitcher Pumps over pools of liquid from the <link=\"MISC\">Plumbing "
-"tab</link> of the <link=\"MISC\">Build menu</link> to pump those liquids "
-"into bottles. Duplicants will then automatically deliver the bottled liquids "
-"where they need to go."
+"If I built Pitcher Pumps from the <link=\"MISC\">PLUMBING TAB</link> over "
+"pools of liquid, my Duplicants will be able to bottle them. Then they'll "
+"automatically deliver the bottles whereever they need to go."
 msgstr ""
 "<link=\"LIQUIDS\">液体</link>を別の場所へ移し替えるには、複製人間にボトル詰め"
-"させる必要があります。\n"
+"させる必要がある。\n"
 "\n"
-"液体をボトル詰めするためには<link=\"MISC\">建築メニュー</link>の<link=\"MISC"
-"\">配管タブ</link>から手押しポンプを溜め池の上に建設してください。複製人間は"
-"必要時にボトル詰めされた液体を運ぶようになります。"
+"<link=\"MISC\">配管タブ</link>から手押しポンプを溜め池の上に建設すれば、複製"
+"人間はボトル詰めされた液体を運べるようになる。その後、必要に応じてボトルを配"
+"達するだろう。"
 
 #. STRINGS.MISC.NOTIFICATIONS.FETCHINGWATERMESSAGE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.FETCHINGWATERMESSAGE.NAME"
@@ -23604,8 +24158,8 @@ msgstr "ヒント: 水の汲み方"
 
 #. STRINGS.MISC.NOTIFICATIONS.FETCHINGWATERMESSAGE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.FETCHINGWATERMESSAGE.TOOLTIP"
-msgid "How to fetch a pail of water"
-msgstr "バケツ一杯の水を汲むには"
+msgid "Notes on fetching a pail of water"
+msgstr "バケツ一杯の水を汲むための覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.FOODLOW.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.FOODLOW.NAME"
@@ -23615,11 +24169,11 @@ msgstr "食糧不足"
 #. STRINGS.MISC.NOTIFICATIONS.FOODLOW.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.FOODLOW.TOOLTIP"
 msgid ""
-"Your colony's <link=\"FOOD\">Food</link> reserves are low:\n"
-"    • You have {0} available\n"
-"    • Your Duplicants are consuming {1} per cycle"
+"The colony's <link=\"FOOD\">Food</link> reserves are low:\n"
+"    • {0} are currently available\n"
+"    • My Duplicants are consuming {1} per cycle"
 msgstr ""
-"コロニーで保管されている <link=\"FOOD\">食糧</link>が残り僅かです:\n"
+"コロニーの<link=\"FOOD\">食糧</link>が残り僅かです:\n"
 "   • 現在利用可能な食糧は {0} です\n"
 "   • 複製人間たちが1サイクルに消費する量は {1} です"
 
@@ -23754,7 +24308,7 @@ msgstr "コロニーに洗面台が必要です"
 #. STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.TOOLTIP"
 msgid ""
-"<link=\"DISEASE\">Germs</link> are spreading in your colony because your "
+"<link=\"DISEASE\">Germs</link> are spreading in the colony because my "
 "Duplicants have nowhere to clean up"
 msgstr ""
 "複製人間を清潔にする場所がないため、<link=\"DISEASE\">病原菌</link> がコロ"
@@ -23823,19 +24377,22 @@ msgstr ""
 #. STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.MESSAGEBODY"
 msgid ""
-"Duplicants must be able to reach their errands in order to work. When "
-"placing errands, keep in mind that Duplicants can only climb obstacles two "
-"tiles high, and are themselves two tiles tall.\n"
+"Duplicants must be able to reach the errands I set in order to do their "
+"work.\n"
 "\n"
-"If you are unsure if a errand you've placed is accessible, select a "
+"When placing errands, I should keep in mind that they can only climb "
+"obstacles up to two spaces high, and are themselves two spaces tall.\n"
+"\n"
+"If I need to check that an errand I've placed is accessible, I can select a "
 "Duplicant and click SHOW NAVIGATION to view all areas within their reach."
 msgstr ""
-"複製人間が作業をこなすためには、その場所まで移動可能な経路が必要です。作業を"
-"割り当てる場合、複製人間は最大2タイル分の高さまで登れること、彼ら自身の身長は"
-"2タイル分であることを覚えておいてください。\n"
+"複製人間が作業をこなすためには、その場所まで移動可能な経路が必要だ。\n"
+"\n"
+"作業を割り当てる場合、複製人間は最大2タイル分の高さまで登れること、彼ら自身の"
+"身長は2タイル分であることは覚えておこう。\n"
 "\n"
 "割り当てた作業が可能かどうか分からない時は、複製人間を選んでから\"経路を表示"
-"\"をクリックしてください。到達可能な領域が表示されます。"
+"\"をクリックすること。到達可能な領域が表示される。"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.NAME"
@@ -23844,31 +24401,31 @@ msgstr "ヒント: 複製人間の移動"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.TOOLTIP"
-msgid "Understanding your Duplicants' maneuverability"
-msgstr "複製人間の移動方法を理解する"
+msgid "Notes on my Duplicants' maneuverability"
+msgstr "複製人間の移動方法覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY"
 msgid ""
 "<link=\"DISEASE\">Germs</link> are an invisible peril that cause <link="
-"\"DISEASE\">Disease</link> in your Duplicants. The <link=\"MISC\">Germ "
-"overlay</link> <color=#F44A47><b>[F9]</b></color> will allow you to view all "
-"germ concentrations in your colony and the sources spawning them.\n"
+"\"DISEASE\">Disease</link> in my Duplicants. The <link=\"MISC\">GERM "
+"OVERLAY</link> <color=#F44A47><b>[F9]</b></color> allows me to view all germ "
+"concentrations in the colony and the sources that are spawning them.\n"
 "\n"
-"Wash Basins can be built in dirty areas from the <link=\"MISC\">Medicine "
-"tab</link> <color=#F44A47><b>[8]</b></color> to tell your Duplicants to "
-"where to wash up. If you keep your base clean and your Duplicants hygienic, "
-"their <link=\"IMMUNE SYSTEM\">Immunity</link> will handle the rest."
+"I can build Wash Basins in dirty areas from the <link=\"MISC\">MEDICINE TAB</"
+"link> <color=#F44A47><b>[8]</b></color> to tell Duplicants to where to wash "
+"up. If I keep the base clean and the Duplicants hygienic, their <link="
+"\"IMMUNE SYSTEM\">Immunity</link> should handle the rest."
 msgstr ""
 "<link=\"DISEASE\">病原菌</link>は複製人間に<link=\"DISEASE\">病気</link>をも"
-"たらす、目に見えない危険です。 <link=\"MISC\">病原菌レイヤー</link> "
+"たらす、目に見えない危険だ。 <link=\"MISC\">病原菌レイヤー</link> "
 "<color=#F44A47><b>[F9]</b></color>はコロニー内の病原菌濃度および発生源を表示"
-"します。\n"
+"できる。\n"
 "\n"
 "<link=\"MISC\">医療タブ</link> <color=#F44A47><b>[8]</b></color>から洗面台を"
-"汚れたエリアに建築することで、複製人間に洗い場を提供します。基地と複製人間の"
+"汚れたエリアに建築することで、複製人間に洗い場を提供できる。基地と複製人間の"
 "衛生状態を清潔に保てれば、彼らの<link=\"IMMUNE SYSTEM\">免疫力</link>は病原菌"
-"に対処できます。"
+"に対処できるはずだ。"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.NAME"
@@ -23877,8 +24434,8 @@ msgstr "ヒント: 病原菌と病気"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.TOOLTIP"
-msgid "Learn about the risks of Duplicant disease"
-msgstr "複製人間の病気リスクを学ぶ"
+msgid "Notes on the risks of Duplicant disease"
+msgstr "複製人間の病気リスク覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.MISSINGMATERIALS.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.MISSINGMATERIALS.NAME"
@@ -23894,23 +24451,25 @@ msgstr "これらの資源が不足しています:"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.MOPPINGMESSAGE.MESSAGEBODY"
 msgid ""
 "<link=\"DIRTYWATER\">Polluted Water</link> emits <link=\"CONTAMINATEDOXYGEN"
-"\">Polluted Oxygen</link> and can accelerate the spread of <link=\"DISEASE"
-"\">Disease</link> through your base.\n"
+"\">Polluted Oxygen</link> over time and accelerates the spread of <link="
+"\"DISEASE\">Disease</link> in my colony.\n"
 "\n"
-"Small accidents can be cleaned up by clicking and dragging with the <link="
-"\"MISC\">Mop tool</link> <color=#F44A47><b>[M]</b></color>, while larger "
-"bodies may be worth filtering. Polluted water also <link=\"STRESS\">stress</"
-"link> out Duplicants that come into contact with it, so it is best removed "
-"quickly for your colony's safety."
+"I can have the Duplicants clean up small spills by clicking and dragging the "
+"<link=\"MISC\">MOP TOOL</link> <color=#F44A47><b>[M]</b></color>, while "
+"larger bodies may be worth filtering with machinery.\n"
+"\n"
+"Duplicants will also be <link=\"STRESS\">Stressed</link> by walking through "
+"Polluted Water, so it is best removed quickly for my colony's safety."
 msgstr ""
 "<link=\"DIRTYWATER\">汚染水</link>は<link=\"CONTAMINATEDOXYGEN\">汚染酸素</"
-"link>を排出し、基地へ<link=\"DISEASE\">病気</link>の蔓延を加速させます。\n"
+"link>を排出し、コロニーへ<link=\"DISEASE\">病気</link>の蔓延を加速させる。\n"
 "\n"
 "多少こぼれた程度ならば<link=\"MISC\">モップ掛けツール</link> "
 "<color=#F44A47><b>[M]</b></color>をクリックしてからドラッグすることできれいに"
-"できますが、量が多い場合はろ過する必要があるでしょう。汚染水に触れた複製人間"
-"は<link=\"STRESS\">ストレス</link>を感じるため、コロニーの安全のために素早く"
-"ふき取ってしまうのが得策です。"
+"できるが、量が多い場合はろ過する必要がある。\n"
+"\n"
+"汚染水に触れた複製人間は<link=\"STRESS\">ストレス</link>を感じるため、コロ"
+"ニーの安全のために素早くふき取ってしまうのが得策だ。"
 
 #. STRINGS.MISC.NOTIFICATIONS.MOPPINGMESSAGE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.MOPPINGMESSAGE.NAME"
@@ -23919,8 +24478,8 @@ msgstr "ヒント: 汚染水"
 
 #. STRINGS.MISC.NOTIFICATIONS.MOPPINGMESSAGE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.MOPPINGMESSAGE.TOOLTIP"
-msgid "Learn how to handle polluted materials"
-msgstr "汚染素材の取り扱い方法について学ぶ"
+msgid "Notes on handling polluted materials"
+msgstr "汚染素材の取り扱い覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.NEARLYDRY.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NEARLYDRY.NAME"
@@ -23951,7 +24510,7 @@ msgstr "コロニーは食糧が必要です"
 #. STRINGS.MISC.NOTIFICATIONS.NEEDFOOD.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NEEDFOOD.TOOLTIP"
 msgid ""
-"Your colony will soon exhaust their supplies without a new <link=\"FOOD"
+"The colony will soon exhaust their supplies without a new <link=\"FOOD"
 "\">Food</link> source"
 msgstr ""
 "コロニーに新たな<link=\"FOOD\">食糧</link>源がないため、じきに飢餓が発生しま"
@@ -23965,9 +24524,9 @@ msgstr "酸素供給不足"
 #. STRINGS.MISC.NOTIFICATIONS.NEEDOXYGENSOURCE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NEEDOXYGENSOURCE.TOOLTIP"
 msgid ""
-"• Your colony has produced {EmittingRate} of <link=\"OXYGEN\">Oxygen</link> "
+"• The colony has produced {EmittingRate} of <link=\"OXYGEN\">Oxygen</link> "
 "this cycle\n"
-"• Your Duplicants have consumed {ConsumptionRate}"
+"• My Duplicants have consumed {ConsumptionRate}"
 msgstr ""
 "• コロニーは本日 {EmittingRate} の<link=\"OXYGEN\">酸素</link>を産出しまし"
 "た\n"
@@ -23980,7 +24539,7 @@ msgstr "コロニーはベッドが必要です"
 
 #. STRINGS.MISC.NOTIFICATIONS.NEEDSLEEP.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NEEDSLEEP.TOOLTIP"
-msgid "Your Duplicants would appreciate a place to sleep"
+msgid "My Duplicants would appreciate a place to sleep"
 msgstr "複製人間は寝る場所があることに感謝します"
 
 #. STRINGS.MISC.NOTIFICATIONS.NEEDTOILET.NAME
@@ -23990,7 +24549,7 @@ msgstr "コロニーはトイレが必要です"
 
 #. STRINGS.MISC.NOTIFICATIONS.NEEDTOILET.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NEEDTOILET.TOOLTIP"
-msgid "Your Duplicants have nowhere to relieve themselves"
+msgid "Duplicants currently have nowhere to relieve themselves"
 msgstr "複製人間が用を足すための場所がありません"
 
 #. STRINGS.MISC.NOTIFICATIONS.NEWTRAIT.NAME
@@ -24014,7 +24573,7 @@ msgstr "コロニーは医療ベッドが必要です"
 
 #. STRINGS.MISC.NOTIFICATIONS.NO_MEDICAL_COTS.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NO_MEDICAL_COTS.TOOLTIP"
-msgid "Your sick Duplicants have nowhere to rest or receive medical care"
+msgid "Sick Duplicants currently have nowhere to rest or receive medical care"
 msgstr "病気の複製人間が養生または看護を受けるための場所がありません"
 
 #. STRINGS.MISC.NOTIFICATIONS.NOALERTS.NAME
@@ -24050,15 +24609,18 @@ msgstr "パイプ詰まりのためにこれらの設備は機能しなくなり
 #. STRINGS.MISC.NOTIFICATIONS.PRIORITIESMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.PRIORITIESMESSAGE.MESSAGEBODY"
 msgid ""
-"Duplicants will choose what work they do based on the priorities you set. To "
-"set priorities, open the Priorities menu to control master priorities, and "
-"then use the Sub-Priorities buttons under the tool menu. Many buildings also "
-"let you change their Sub-Priority level on selection."
+"Duplicants will choose what work they do based on the priorities that I give "
+"them. I can open the <link=\"PRIORITIES\">PRIORITIES TAB</link> "
+"<color=#F44A47><b>[J]</b></color> to set their general priorities, and the "
+"<link=\"PRIORITIES\">SUB-PRIORITIES TOOL</link> <color=#F44A47><b>[P]</b></"
+"color> to fine tune them. Many buildings will also let me change their Sub-"
+"Priority level when I select them."
 msgstr ""
-"複製人間は設定された優先度をもとに着手する作業を決めます。優先度を設定するに"
-"は、優先度メニューを開き、メインの優先度を設定します。そしてツールメニューか"
-"ら準優先度ボタンを使います。大抵の設備はそれ自身の準優先度を設定することがで"
-"きます。"
+"複製人間は設定された優先度をもとに着手する作業を決める。優先度を設定するに"
+"は、<link=\"PRIORITIES\">優先度タブ</link> <color=#F44A47><b>[J]</b></color>"
+"を開き、メインの優先度を設定する。そして<link=\"PRIORITIES\">準優先度ツール</"
+"link> <color=#F44A47><b>[P]</b></color>から細かい調整ができる。大抵の設備はそ"
+"れ自身の準優先度を設定することができる。"
 
 #. STRINGS.MISC.NOTIFICATIONS.PRIORITIESMESSAGE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.PRIORITIESMESSAGE.NAME"
@@ -24067,8 +24629,8 @@ msgstr "ヒント: 優先度"
 
 #. STRINGS.MISC.NOTIFICATIONS.PRIORITIESMESSAGE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.PRIORITIESMESSAGE.TOOLTIP"
-msgid "Understanding your Duplicants' priorities"
-msgstr "複製人間の優先度を理解する"
+msgid "Notes on my Duplicants' priorities"
+msgstr "複製人間の優先度覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.REDALERT.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.REDALERT.NAME"
@@ -24085,7 +24647,7 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.RESEARCHCOMPLETE.MESSAGEBODY"
 msgid ""
 "Eureka! {0} Technology has been unlocked.\n"
 "\n"
-"New buildings have become available:\n"
+"New buildings have become available to me:\n"
 "  • {1}"
 msgstr ""
 "やりました！{0}技術を発明しました。\n"
@@ -24145,18 +24707,18 @@ msgstr "習得した職業"
 #. STRINGS.MISC.NOTIFICATIONS.SCHEDULEMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.SCHEDULEMESSAGE.MESSAGEBODY"
 msgid ""
-"Duplicants crave structure and will only eat, sleep, work, or bathe during "
-"the times you allot for these activities.\n"
+"My Duplicants crave structure and will only eat, sleep, work, or bathe "
+"during the times I allot for such activities.\n"
 "\n"
-"To make the best use of your time, open the SCHEDULE TAB "
-"<color=#F44A47><b>[U]</b></color> to adjust your colony's agenda and plan "
-"how your Duplicants should utilize their day."
+"To make the best use of their time, I can open the SCHEDULE TAB "
+"<color=#F44A47><b>[U]</b></color> to adjust the colony's agenda and plan how "
+"they should utilize their day."
 msgstr ""
-"複製人間は設備を欲しがり、あなたが割り当てた時間内で食べたり、寝たり、働いた"
-"り、沐浴します。\n"
+"複製人間は設備を欲しがり、私が割り当てた時間内で食べたり、寝たり、働いたり、"
+"沐浴する。\n"
 "\n"
 "時間を最も有効に活用するには、スケジュールタブ<color=#F44A47>[U]</color>を開"
-"いてコロニーの時間割を調整し、複製人間が一日をどう活動するか計画しましょう。"
+"いてコロニーの時間割を調整し、複製人間が一日をどう活動するか計画してやろう。"
 
 #. STRINGS.MISC.NOTIFICATIONS.SCHEDULEMESSAGE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.SCHEDULEMESSAGE.NAME"
@@ -24165,28 +24727,29 @@ msgstr "ヒント: スケジューリング"
 
 #. STRINGS.MISC.NOTIFICATIONS.SCHEDULEMESSAGE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.SCHEDULEMESSAGE.TOOLTIP"
-msgid "Learn how to schedule your Duplicants' time"
-msgstr "複製人間の時間管理を学ぶ"
+msgid "Notes on scheduling my Duplicants' time"
+msgstr "複製人間の時間管理覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.STRESSMANAGEMENTMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.STRESSMANAGEMENTMESSAGE.MESSAGEBODY"
 msgid ""
 "Duplicants are fragile creatures and must be kept mentally healthy in order "
-"to function. Subpar conditions will increase Duplicants' <link=\"STRESS"
-"\">Stress</link>, while improved conditions will decrease it. Too much <link="
-"\"STRESS\">Stress</link> will cause Duplicants to have a nervous breakdown.\n"
+"to function. Bad living conditions increase their psychological <link="
+"\"STRESS\">Stress</link>, while good conditions decrease it. Too much <link="
+"\"STRESS\">Stress</link> causes Duplicants to have nervous breakdowns.\n"
 "\n"
-"Select a Duplicant and mouse over <link=\"STRESS\">Stress</link> in their "
-"INFORMATION TAB to view their individual <link=\"STRESS\">Stress</link> "
-"factors."
+"I can select a Duplicant and mouse over <link=\"STRESS\">Stress</link> in "
+"their INFORMATION TAB to view individual <link=\"STRESS\">Stress</link> "
+"factors and, hopefully, reduce them."
 msgstr ""
-"複製人間はか弱い生物で、機能するためには精神的健康を保つ必要があります。劣悪"
-"な環境下では<link=\"STRESS\">ストレス</link>を貯め、環境が改善されると減りま"
-"す。<link=\"STRESS\">ストレス</link>に耐えきれなくなると、複製人間はノイロー"
-"ゼになってしまいます。\n"
+"複製人間はか弱い生物で、機能するためには精神的健康を保つ必要がある。劣悪な環"
+"境下では<link=\"STRESS\">ストレス</link>が溜まり、環境が改善されると減る。"
+"<link=\"STRESS\">ストレス</link>に耐えきれなくなると、複製人間はノイローゼに"
+"なってしまう。\n"
 "\n"
 "複製人間を選択し、情報タブから<link=\"STRESS\">ストレス</link>をマウスオー"
-"バーすることで、現在の<link=\"STRESS\">ストレス</link>原因を確認できます。"
+"バーすることで、現在の<link=\"STRESS\">ストレス</link>原因または改善原因を確"
+"認できる。"
 
 #. STRINGS.MISC.NOTIFICATIONS.STRESSMANAGEMENTMESSAGE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.STRESSMANAGEMENTMESSAGE.NAME"
@@ -24195,8 +24758,8 @@ msgstr "ヒント: ストレス管理"
 
 #. STRINGS.MISC.NOTIFICATIONS.STRESSMANAGEMENTMESSAGE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.STRESSMANAGEMENTMESSAGE.TOOLTIP"
-msgid "Learn how to keep Duplicants happy and productive"
-msgstr "複製人間が快適でいるための方法を学ぶ"
+msgid "Notes on keeping Duplicants happy and productive"
+msgstr "複製人間が快適でいるための覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.STRUCTURALCOLLAPSE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.STRUCTURALCOLLAPSE.NAME"
@@ -24232,11 +24795,11 @@ msgstr "EXOスーツドックの空きがないため、EXOスーツは放置さ
 #. STRINGS.MISC.NOTIFICATIONS.SUITS.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.SUITS.MESSAGEBODY"
 msgid ""
-"<link=\"EXOSUIT\">Exosuits</link> can be equipped to protect your Duplicants "
+"<link=\"EXOSUIT\">Exosuits</link> can be equipped to protect my Duplicants "
 "from environmental hazards like extreme <link=\"HEAT\">Heat</link>, airborne "
 "<link=\"DISEASE\">Germs</link>, or unbreathable <link=\"ELEMENTSGAS\">Gas</"
-"link>. In order to utilize these suits, you'll need to hook up an Exosuit "
-"Dock to a Suit Checkpoint, then store one of your suits inside.\n"
+"link>. In order to utilize these suits, I'll need to hook up an Exosuit Dock "
+"to a Suit Checkpoint, then store one of the suits inside.\n"
 "\n"
 "Duplicants will equip an exosuit when they walk past the Checkpoint in the "
 "chosen direction, and will unequip their suit when walking back the opposite "
@@ -24258,26 +24821,27 @@ msgstr "ヒント: EXOスーツ"
 
 #. STRINGS.MISC.NOTIFICATIONS.SUITS.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.SUITS.TOOLTIP"
-msgid "Learn how to use exosuits"
-msgstr "EXOスーツについて学ぶ"
+msgid "Notes on using exosuits"
+msgstr "EXOスーツ取り扱い覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.TASKPRIORITIESMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.TASKPRIORITIESMESSAGE.MESSAGEBODY"
 msgid ""
-"Duplicants will perform pending errands in order of most to least urgent. "
-"For example, Duplicants will always harvest <link=\"FOOD\">Food</link> "
-"before they build, and always build new structures before they dig.\n"
+"Duplicants always perform my errands in order of most to least urgent. They "
+"will harvest <link=\"FOOD\">Food</link> before they build, for example, or "
+"always build new structures before they mine materials.\n"
 "\n"
-"Open the ERRANDS TAB <color=#F44A47><b>[J]</b></color> to set which errands "
-"Duplicants may perform, or specialize skilled Duplicants for specific types "
-"of work."
+"I can open the <link=\"PRIORITIES\">PRIORITIES TAB</link> "
+"<color=#F44A47><b>[J]</b></color> to set which errands Duplicants may or may "
+"not perform, or to specialize skilled Duplicants for particular types of "
+"errands."
 msgstr ""
-"複製人間は優先度の高いものから低いものへと課された作業をこなします。例えば、"
-"複製人間は建設作業よりも<link=\"FOOD\">食糧</link>収穫を優先しますし、採掘作"
-"業よりも建設作業を優先します。\n"
+"複製人間は優先度の高いものから低いものへと課された作業をこなす。例えば、複製"
+"人間は建設作業よりも<link=\"FOOD\">食糧</link>収穫を優先するし、採掘作業より"
+"も建設作業を優先するだろう。\n"
 "\n"
 "作業タブ<color=#F44A47>[J]</color>を開いて、どの作業を複製人間がこなすか決め"
-"たり、ある仕事に複製人間を特化させたりしましょう。"
+"たり、ある仕事に複製人間を特化させたりできる。"
 
 #. STRINGS.MISC.NOTIFICATIONS.TASKPRIORITIESMESSAGE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.TASKPRIORITIESMESSAGE.NAME"
@@ -24286,19 +24850,19 @@ msgstr "ヒント: 作業優先度"
 
 #. STRINGS.MISC.NOTIFICATIONS.TASKPRIORITIESMESSAGE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.TASKPRIORITIESMESSAGE.TOOLTIP"
-msgid "Learn how to manage Duplicants' priorities"
-msgstr "複製人間の優先度管理について学ぶ"
+msgid "Notes on managing Duplicants' priorities"
+msgstr "複製人間の優先度管理覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.THERMALCOMFORT.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.THERMALCOMFORT.MESSAGEBODY"
 msgid ""
 "Environments that are extremely <link=\"HEAT\">Hot</link> or <link=\"HEAT"
-"\">Cold</link> will affect your Duplicants' internal body temperature and "
-"cause <link=\"STRESS\">Stress</link>.\n"
+"\">Cold</link> affect my Duplicants' internal body temperature and cause "
+"undue <link=\"STRESS\">Stress</link>.\n"
 "\n"
-"The THERMAL COMFORT OVERLAY <color=#F44A47><b>[F4]</b></color> will allow "
-"you to view all areas where Duplicants cannot regulate their temperature and "
-"will become uncomfortable."
+"The THERMAL COMFORT OVERLAY <color=#F44A47><b>[F4]</b></color> allows me to "
+"view all areas where my Duplicants will feel discomfort and be unable to "
+"regulate their internal body temperature."
 msgstr ""
 "極めて<link=\"HEAT\">高温</link>または<link=\"HEAT\">低温</link>の環境下で"
 "は、複製人間の体温および<link=\"STRESS\">ストレス</link>に影響を及ぼしま"
@@ -24314,26 +24878,27 @@ msgstr "ヒント: 複製人間の体温"
 
 #. STRINGS.MISC.NOTIFICATIONS.THERMALCOMFORT.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.THERMALCOMFORT.TOOLTIP"
-msgid "Help your Duplicants keep their cool"
-msgstr "複製人間を適温に保ちましょう"
+msgid "Notes on helping Duplicants keep their cool"
+msgstr "複製人間を適温に保つための覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.TUTORIAL_OVERHEATING.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.TUTORIAL_OVERHEATING.MESSAGEBODY"
 msgid ""
-"When constructing buildings, take note of their <link=\"HEAT\">Overheat "
-"Temperature</link> and plan their locations accordingly. Maintaining low "
-"ambient temperatures and good ventilation will help keep building "
-"temperatures down.\n"
+"When constructing buildings, I should always take note of their <link=\"HEAT"
+"\">Overheat Temperature</link> and plan their locations accordingly. "
+"Maintaining low ambient temperatures and good ventilation in the colony will "
+"also help keep building temperatures down.\n"
 "\n"
-"Buildings that exceed their Overheat Temperature will begin to take damage "
-"and if left untended, will meltdown and stop functioning until repaired."
+"If I allow buildings to exceed their Overheat Temperature they will begin to "
+"take damage, and if left untended, they will meltdown be unusable until "
+"repaired."
 msgstr ""
 "設備を建設するときは、<link=\"HEAT\">オーバーヒート温度</link>に気を付け、そ"
-"れに応じた配置を計画します。大気温度を低く保ち、効率的に排熱すると、設備の温"
-"度を一定に保つことができます。\n"
+"れに応じた配置を計画すること。大気温度を低く保ち、効率的に排熱すると、設備の"
+"温度を一定に保つことができる。\n"
 "\n"
-"耐熱温度を超過した設備はダメージを受けます。そのまま放置するとメルトダウンを"
-"起こし、修理するまで機能しなくなります。"
+"耐熱温度を超過した設備はダメージを受ける。そのまま放置するとメルトダウンを起"
+"こし、修理するまで機能しなくなる。"
 
 #. STRINGS.MISC.NOTIFICATIONS.TUTORIAL_OVERHEATING.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.TUTORIAL_OVERHEATING.NAME"
@@ -24342,8 +24907,8 @@ msgstr "ヒント: 設備の温度"
 
 #. STRINGS.MISC.NOTIFICATIONS.TUTORIAL_OVERHEATING.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.TUTORIAL_OVERHEATING.TOOLTIP"
-msgid "Learn how to prevent meltdowns"
-msgstr "メルトダウンを予防する方法について学ぶ"
+msgid "Notes on preventing meltdowns"
+msgstr "メルトダウン予防の覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.UNREACHABLEITEM.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.UNREACHABLEITEM.NAME"
@@ -24392,20 +24957,20 @@ msgstr "これらの設備は理想圧力帯を逸脱しています:"
 #. STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.MESSAGEBODY"
 msgid ""
-"Duplicants are self-motivated and require no individual management in order "
-"to perform errands in the colony.\n"
+"Duplicants are self-motivated and will get work done around the colony "
+"without me managing them individually.\n"
 "\n"
-"You can use the <link=\"TOOLS\">DIG TOOL</link> <color=#F44A47><b>[G]</b></"
-"color> and the <link=\"MISC\">Build menu</link> in the lower left of the "
-"screen to begin planning errands. Once you've placed a few errands, your "
-"Duplicants will automatically get to work for you."
+"I can use the <link=\"TOOLS\">DIG TOOL</link> <color=#F44A47><b>[G]</b></"
+"color> and the <link=\"MISC\">Build Menu</link> in the lower left of the "
+"screen to begin planning construction. Once I've placed a few errands, the "
+"Duplicants should automatically get to work."
 msgstr ""
 "複製人間は自発的に行動するため、コロニー内の作業をするために個別に指示を出す"
-"必要はありません。\n"
+"必要はない。\n"
 "\n"
 "<link=\"TOOLS\">採掘ツール</link><color=#F44A47>[G]</color>と画面左下の<link="
-"\"MISC\">建築メニュー</link>を使って指示を出しましょう。ひとたび作業が割り当"
-"てられれば、複製人間達は自動的に作業を始めます。"
+"\"MISC\">建築メニュー</link>を使って指示を出すことができる。ひとたび作業が割"
+"り当てられれば、複製人間達は自動的に作業を始めるだろう。"
 
 #. STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.NAME"
@@ -24414,8 +24979,8 @@ msgstr "ヒント: コロニー管理"
 
 #. STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.TOOLTIP"
-msgid "Learn how to get Duplicants to do your bidding"
-msgstr "複製人間へ指示を出す方法について学ぶ"
+msgid "Notes on getting Duplicants to do my bidding"
+msgstr "複製人間へ指示を出すときの覚書"
 
 #. STRINGS.MISC.PLACERS.DIGPLACER.NAME
 msgctxt "STRINGS.MISC.PLACERS.DIGPLACER.NAME"
@@ -24880,6 +25445,19 @@ msgctxt "STRINGS.MISC.STATUSITEMS.REGIONISBLOCKED.TOOLTIP"
 msgid "Undug material is blocking off an essential tile"
 msgstr "採掘していない素材がタイルを妨害しています"
 
+#. STRINGS.MISC.STATUSITEMS.SPACE.NAME
+msgctxt "STRINGS.MISC.STATUSITEMS.SPACE.NAME"
+msgid "Exposed to Space"
+msgstr "宇宙空間"
+
+#. STRINGS.MISC.STATUSITEMS.SPACE.TOOLTIP
+msgctxt "STRINGS.MISC.STATUSITEMS.SPACE.TOOLTIP"
+msgid ""
+"This region is exposed to the vacuum of space and will result in the loss of "
+"gas and liquid resources."
+msgstr ""
+"この地域は宇宙空間に接しており、気体や液体は全て吸い出されてしまいます。"
+
 #. STRINGS.MISC.STATUSITEMS.SPOUTDORMANT.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.SPOUTDORMANT.NAME"
 msgid "Dormant"
@@ -25091,6 +25669,11 @@ msgctxt "STRINGS.MISC.TAGS.COAL"
 msgid "Coal"
 msgstr "石炭"
 
+#. STRINGS.MISC.TAGS.COMPOST_FORMAT
+msgctxt "STRINGS.MISC.TAGS.COMPOST_FORMAT"
+msgid "{Item}"
+msgstr "{Item}"
+
 #. STRINGS.MISC.TAGS.COMPOSTABLE
 msgctxt "STRINGS.MISC.TAGS.COMPOSTABLE"
 msgid "Compostable"
@@ -25176,6 +25759,11 @@ msgctxt "STRINGS.MISC.TAGS.FARMING"
 msgid "Farm Build-Delivery"
 msgstr "農業設備関連の配送"
 
+#. STRINGS.MISC.TAGS.FARMINGMATERIAL
+msgctxt "STRINGS.MISC.TAGS.FARMINGMATERIAL"
+msgid "Fertilizers"
+msgstr "肥料"
+
 #. STRINGS.MISC.TAGS.FARMSTATION
 msgctxt "STRINGS.MISC.TAGS.FARMSTATION"
 msgid "Farm Station"
@@ -25231,10 +25819,15 @@ msgctxt "STRINGS.MISC.TAGS.MACHINE_SHOP"
 msgid "Machine Shop"
 msgstr "機械工場"
 
+#. STRINGS.MISC.TAGS.MANUFACTUREDMATERIAL
+msgctxt "STRINGS.MISC.TAGS.MANUFACTUREDMATERIAL"
+msgid "Manufactured Material"
+msgstr "既製材料"
+
 #. STRINGS.MISC.TAGS.MARKEDFORCOMPOST
 msgctxt "STRINGS.MISC.TAGS.MARKEDFORCOMPOST"
-msgid "Compost Edibles"
-msgstr "堆肥原料"
+msgid "Marked For Compost"
+msgstr "堆肥用にマーク済"
 
 #. STRINGS.MISC.TAGS.MASSAGE_TABLE
 msgctxt "STRINGS.MISC.TAGS.MASSAGE_TABLE"
@@ -25361,6 +25954,11 @@ msgctxt "STRINGS.MISC.TAGS.SPECIAL"
 msgid "Special"
 msgstr "特殊"
 
+#. STRINGS.MISC.TAGS.STEEL
+msgctxt "STRINGS.MISC.TAGS.STEEL"
+msgid "Steel"
+msgstr "鋼鉄"
+
 #. STRINGS.MISC.TAGS.SUIT
 msgctxt "STRINGS.MISC.TAGS.SUIT"
 msgid "Suit"
@@ -25376,6 +25974,11 @@ msgctxt "STRINGS.MISC.TAGS.TOXIC"
 msgid "Toxic"
 msgstr "毒"
 
+#. STRINGS.MISC.TAGS.TRANSPARENT
+msgctxt "STRINGS.MISC.TAGS.TRANSPARENT"
+msgid "Transparent"
+msgstr "輸送"
+
 #. STRINGS.MISC.TAGS.UNBREATHABLE
 msgctxt "STRINGS.MISC.TAGS.UNBREATHABLE"
 msgid "Unbreathable"
@@ -25390,6 +25993,11 @@ msgstr "不安定"
 msgctxt "STRINGS.MISC.TAGS.WIRING"
 msgid "Wire Build-Delivery"
 msgstr "配線関連の配送"
+
+#. STRINGS.MISC.TUTORIAL.DONT_SHOW_AGAIN
+msgctxt "STRINGS.MISC.TUTORIAL.DONT_SHOW_AGAIN"
+msgid "Don't Show Again"
+msgstr "今後表示しない"
 
 #. STRINGS.NAMEGEN.COLONY.ADJECTIVE.ACIDIC
 msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.ACIDIC"
@@ -26671,6 +27279,11 @@ msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.NB.BROOK"
 msgid "Brook"
 msgstr "ブルック"
 
+#. STRINGS.NAMEGEN.DUPLICANT.NAME.NB.BRUMPO
+msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.NB.BRUMPO"
+msgid "Brumpo"
+msgstr "ブランポ"
+
 #. STRINGS.NAMEGEN.DUPLICANT.NAME.NB.BUDDY
 msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.NB.BUDDY"
 msgid "Buddy"
@@ -26815,6 +27428,11 @@ msgstr "サドサック"
 msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.NB.SCOUT"
 msgid "Scout"
 msgstr "スカウト"
+
+#. STRINGS.NAMEGEN.DUPLICANT.NAME.NB.SCRUNGO
+msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.NB.SCRUNGO"
+msgid "Scrungo"
+msgstr "スクランゴ"
 
 #. STRINGS.NAMEGEN.DUPLICANT.NAME.NB.SELDEMER
 msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.NB.SELDEMER"
@@ -27239,7 +27857,7 @@ msgstr "<link=\"ADVANCEDPOWERREGULATION\">高度な電力制御</link>"
 #. STRINGS.RESEARCH.TECHS.ADVANCEDRESEARCH.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.ADVANCEDRESEARCH.DESC"
 msgid ""
-"The tools your colony needs to conduct more advanced and in depth research."
+"The tools my colony needs to conduct more advanced and in-depth research."
 msgstr "より専門的、徹底的な研究をするためにコロニーが必要とする道具類です。"
 
 #. STRINGS.RESEARCH.TECHS.ADVANCEDRESEARCH.NAME
@@ -27259,8 +27877,8 @@ msgstr "<link=\"AGRICULTURE\">農業</link>"
 
 #. STRINGS.RESEARCH.TECHS.ANIMALCONTROL.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.ANIMALCONTROL.DESC"
-msgid "Useful techniques to manage critter populations in your base."
-msgstr "基地の動物たちを管理するために役立つ技術です。"
+msgid "Useful techniques to manage critter populations in the colony."
+msgstr "コロニーの動物たちを管理するために役立つ技術です。"
 
 #. STRINGS.RESEARCH.TECHS.ANIMALCONTROL.NAME
 msgctxt "STRINGS.RESEARCH.TECHS.ANIMALCONTROL.NAME"
@@ -27317,8 +27935,7 @@ msgstr "<link=\"COMBUSTION\">内燃機関</link>"
 #. STRINGS.RESEARCH.TECHS.DIRECTEDAIRSTREAMS.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.DIRECTEDAIRSTREAMS.DESC"
 msgid ""
-"Instruments to help you reduce <link=\"DISEASE\">Germ</link> spread in your "
-"base."
+"Instruments to help reduce <link=\"DISEASE\">Germ</link> spread in my base."
 msgstr "基地に<link=\"DISEASE\">病原菌</link>が蔓延するのを防ぐ手段です。"
 
 #. STRINGS.RESEARCH.TECHS.DIRECTEDAIRSTREAMS.NAME
@@ -27338,7 +27955,7 @@ msgstr "<link=\"DISTILLATION\">蒸留</link>"
 
 #. STRINGS.RESEARCH.TECHS.DUPETRAFFICCONTROL.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.DUPETRAFFICCONTROL.DESC"
-msgid "Prevent your Duplicants from getting into dangerous situations."
+msgid "Prevent my Duplicants from getting into dangerous situations."
 msgstr "複製人間が危険な状況に陥るのを防ぎます。"
 
 #. STRINGS.RESEARCH.TECHS.DUPETRAFFICCONTROL.NAME
@@ -27395,10 +28012,20 @@ msgctxt "STRINGS.RESEARCH.TECHS.GENERICSENSORS.NAME"
 msgid "<link=\"GENERICSENSORS\">Generic Sensors</link>"
 msgstr "<link=\"GENERICSENSORS\">汎用センサー</link>"
 
+#. STRINGS.RESEARCH.TECHS.HIGHTEMPFORGING.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.HIGHTEMPFORGING.DESC"
+msgid "Heat allows the creation of entirely new materials."
+msgstr "熱によって全く新しい素材を作れるようになります。"
+
+#. STRINGS.RESEARCH.TECHS.HIGHTEMPFORGING.NAME
+msgctxt "STRINGS.RESEARCH.TECHS.HIGHTEMPFORGING.NAME"
+msgid "<link=\"HIGHTEMPFORGING\">High-Temperature Forging</link>"
+msgstr "<link=\"HIGHTEMPFORGING\">高温鍛造</link>"
+
 #. STRINGS.RESEARCH.TECHS.HVAC.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.HVAC.DESC"
 msgid ""
-"Regulate <link=\"HEAT\">Temperature</link> in your colony for <link=\"PLANTS"
+"Regulate <link=\"HEAT\">Temperature</link> in the colony for <link=\"PLANTS"
 "\">Plant</link> cultivation and Duplicant comfort."
 msgstr ""
 "複製人間の生活や<link=\"PLANTS\">植物</link>の栽培のために、コロニーの<link="
@@ -27451,7 +28078,7 @@ msgstr "<link=\"IMPROVEDLIQUIDPIPING\">配管改善</link>"
 
 #. STRINGS.RESEARCH.TECHS.IMPROVEDOXYGEN.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.IMPROVEDOXYGEN.DESC"
-msgid "Make the air in your colony clean and breathable."
+msgid "Make the air in the colony clean and breathable."
 msgstr "コロニー内の空気を清潔で呼吸可能にします。"
 
 #. STRINGS.RESEARCH.TECHS.IMPROVEDOXYGEN.NAME
@@ -27462,7 +28089,7 @@ msgstr "<link=\"IMPROVEDOXYGEN\">空気系</link>"
 #. STRINGS.RESEARCH.TECHS.INSULATION.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.INSULATION.DESC"
 msgid ""
-"Improve <link=\"HEAT\">Heat</link> distribution in your base and guard "
+"Improve <link=\"HEAT\">Heat</link> distribution in my base and guard "
 "buildings from extreme temperatures."
 msgstr ""
 "極限温度から設備や基地を守るために、<link=\"HEAT\">熱</link>伝導を改善しま"
@@ -27517,7 +28144,7 @@ msgstr "<link=\"LIQUIDTEMPERATURE\">液体調整</link>"
 
 #. STRINGS.RESEARCH.TECHS.LOGICCIRCUITS.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.LOGICCIRCUITS.DESC"
-msgid "Logic gates and wiring to allow you to program your base."
+msgid "Logic gates and wiring to allow me to program my base."
 msgstr "基地をプログラム制御可能にする論理ゲートや配線です。"
 
 #. STRINGS.RESEARCH.TECHS.LOGICCIRCUITS.NAME
@@ -27527,7 +28154,7 @@ msgstr "<link=\"LOGICCIRCUITS\">自動化改善</link>"
 
 #. STRINGS.RESEARCH.TECHS.LOGICCONTROL.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.LOGICCONTROL.DESC"
-msgid "Use switches to control your buildings."
+msgid "Switches for controlling colony buildings."
 msgstr "設備を制御するためのスイッチ類です。"
 
 #. STRINGS.RESEARCH.TECHS.LOGICCONTROL.NAME
@@ -27549,7 +28176,7 @@ msgstr "<link=\"LUXURY\">贅沢品</link>"
 msgctxt "STRINGS.RESEARCH.TECHS.MEDBAY.DESC"
 msgid ""
 "Prevent injury and <link=\"DISEASE\">Disease</link> from running rampant in "
-"your colony."
+"the colony."
 msgstr ""
 "コロニーをあちこち走り回ることで発生する怪我や<link=\"DISEASE\">病気</link>を"
 "防ぎます。"
@@ -27647,6 +28274,16 @@ msgctxt "STRINGS.RESEARCH.TECHS.REFINEDOBJECTS.NAME"
 msgid "<link=\"REFINEDOBJECTS\">Refined Objects</link>"
 msgstr "<link=\"REFINEDOBJECTS\">改善</link>"
 
+#. STRINGS.RESEARCH.TECHS.REFRACTIVEDECOR.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.REFRACTIVEDECOR.DESC"
+msgid "The ultimate solution to ugly things? Make them transparent."
+msgstr "醜いものへの究極の対処法、それは見えなくしてしまうことです。"
+
+#. STRINGS.RESEARCH.TECHS.REFRACTIVEDECOR.NAME
+msgctxt "STRINGS.RESEARCH.TECHS.REFRACTIVEDECOR.NAME"
+msgid "<link=\"REFRACTIVEDECOR\">Refractive Decor</link>"
+msgstr "<link=\"REFRACTIVEDECOR\">屈折型装飾</link>"
+
 #. STRINGS.RESEARCH.TECHS.RENEWABLEENERGY.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.RENEWABLEENERGY.DESC"
 msgid "Clean <link=\"POWER\">Power</link> production"
@@ -27667,9 +28304,19 @@ msgctxt "STRINGS.RESEARCH.TECHS.SANITATIONSCIENCES.NAME"
 msgid "<link=\"SANITATIONSCIENCES\">Sanitation</link>"
 msgstr "<link=\"SANITATIONSCIENCES\">衛生</link>"
 
+#. STRINGS.RESEARCH.TECHS.SKYDETECTORS.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.SKYDETECTORS.DESC"
+msgid "Space: It's not quite as empty as you might think."
+msgstr "宇宙。それはあなたが思っているほど空虚でも静かでもありません。"
+
+#. STRINGS.RESEARCH.TECHS.SKYDETECTORS.NAME
+msgctxt "STRINGS.RESEARCH.TECHS.SKYDETECTORS.NAME"
+msgid "<link=\"SKYDETECTORS\">Celestial Detection</link>"
+msgstr "<link=\"SKYDETECTORS\">天体検出</link>"
+
 #. STRINGS.RESEARCH.TECHS.SMARTSTORAGE.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.SMARTSTORAGE.DESC"
-msgid "Automate the storage of your solids."
+msgid "Automate the storage of solids."
 msgstr "固体の格納を自動化します"
 
 #. STRINGS.RESEARCH.TECHS.SMARTSTORAGE.NAME
@@ -27712,7 +28359,7 @@ msgstr "<link=\"SUITS\">環境からの保護</link>"
 #. STRINGS.RESEARCH.TECHS.TEMPERATUREMODULATION.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.TEMPERATUREMODULATION.DESC"
 msgid ""
-"Unlock <link=\"HEAT\">Temperature</link> changing technologies to keep your "
+"Perfect <link=\"HEAT\">Temperature</link> changing technologies to keep my "
 "colony at the perfect Kelvin."
 msgstr ""
 "コロニーを完全な温度に保つための<link=\"HEAT\">温度</link>調整技術を発明しま"
@@ -27725,7 +28372,7 @@ msgstr "<link=\"TEMPERATUREMODULATION\">温度調整</link>"
 
 #. STRINGS.RESEARCH.TECHS.TRAVELTUBES.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.TRAVELTUBES.DESC"
-msgid "Get around your base quickly, safely, and in style!"
+msgid "Get Duplicants around the base quickly, safely, and in style!"
 msgstr "基地内を素早く、安全に、カッコ良く動き回ろう！"
 
 #. STRINGS.RESEARCH.TECHS.TRAVELTUBES.NAME
@@ -28316,6 +28963,16 @@ msgctxt "STRINGS.SETITEMS.BREAKROOM_TABLE.NAME"
 msgid "Table"
 msgstr "長机"
 
+#. STRINGS.SETITEMS.CHAIR.DESC
+msgctxt "STRINGS.SETITEMS.CHAIR.DESC"
+msgid "A chair"
+msgstr "椅子です"
+
+#. STRINGS.SETITEMS.CHAIR.NAME
+msgctxt "STRINGS.SETITEMS.CHAIR.NAME"
+msgid "Chair"
+msgstr "椅子"
+
 #. STRINGS.SETITEMS.DESK.DESC
 msgctxt "STRINGS.SETITEMS.DESK.DESC"
 msgid ""
@@ -28328,6 +28985,96 @@ msgstr ""
 msgctxt "STRINGS.SETITEMS.DESK.NAME"
 msgid "Desk"
 msgstr "机"
+
+#. STRINGS.SETITEMS.ELEVATOR.DESC
+msgctxt "STRINGS.SETITEMS.ELEVATOR.DESC"
+msgid "An elevator"
+msgstr "エレベーターです"
+
+#. STRINGS.SETITEMS.ELEVATOR.NAME
+msgctxt "STRINGS.SETITEMS.ELEVATOR.NAME"
+msgid "Elevator"
+msgstr "エレベーター"
+
+#. STRINGS.SETITEMS.FACILITY_CENTERPEICE.DESC
+msgctxt "STRINGS.SETITEMS.FACILITY_CENTERPEICE.DESC"
+msgid "A big statue"
+msgstr "巨大な像です"
+
+#. STRINGS.SETITEMS.FACILITY_CENTERPEICE.NAME
+msgctxt "STRINGS.SETITEMS.FACILITY_CENTERPEICE.NAME"
+msgid "Statue"
+msgstr "巨像"
+
+#. STRINGS.SETITEMS.FACILITY_CHANDELIER.DESC
+msgctxt "STRINGS.SETITEMS.FACILITY_CHANDELIER.DESC"
+msgid "A light that is too big"
+msgstr "とても大きな光源です"
+
+#. STRINGS.SETITEMS.FACILITY_CHANDELIER.NAME
+msgctxt "STRINGS.SETITEMS.FACILITY_CHANDELIER.NAME"
+msgid "Chandelier"
+msgstr "シャンデリア"
+
+#. STRINGS.SETITEMS.FACILITY_COUCH.DESC
+msgctxt "STRINGS.SETITEMS.FACILITY_COUCH.DESC"
+msgid "A couch"
+msgstr "ソファーです"
+
+#. STRINGS.SETITEMS.FACILITY_COUCH.NAME
+msgctxt "STRINGS.SETITEMS.FACILITY_COUCH.NAME"
+msgid "Couch"
+msgstr "ソファー"
+
+#. STRINGS.SETITEMS.FACILITY_DESK.DESC
+msgctxt "STRINGS.SETITEMS.FACILITY_DESK.DESC"
+msgid "A desk"
+msgstr "机です"
+
+#. STRINGS.SETITEMS.FACILITY_DESK.NAME
+msgctxt "STRINGS.SETITEMS.FACILITY_DESK.NAME"
+msgid "Director's Desk"
+msgstr "デスク"
+
+#. STRINGS.SETITEMS.FACILITY_DISPLAY.DESC
+msgctxt "STRINGS.SETITEMS.FACILITY_DISPLAY.DESC"
+msgid "An electronic display"
+msgstr "ディスプレイです"
+
+#. STRINGS.SETITEMS.FACILITY_DISPLAY.NAME
+msgctxt "STRINGS.SETITEMS.FACILITY_DISPLAY.NAME"
+msgid "Electronic Display"
+msgstr "ディスプレイ"
+
+#. STRINGS.SETITEMS.FACILITY_GLOBE_DROORS.DESC
+msgctxt "STRINGS.SETITEMS.FACILITY_GLOBE_DROORS.DESC"
+msgid "A filing cabinet"
+msgstr "書庫です"
+
+#. STRINGS.SETITEMS.FACILITY_GLOBE_DROORS.NAME
+msgctxt "STRINGS.SETITEMS.FACILITY_GLOBE_DROORS.NAME"
+msgid "Filing Cabinet"
+msgstr "書庫"
+
+#. STRINGS.SETITEMS.FACILITY_LAMP.DESC
+msgctxt "STRINGS.SETITEMS.FACILITY_LAMP.DESC"
+msgid "A lamp"
+msgstr "ランプです"
+
+#. STRINGS.SETITEMS.FACILITY_LAMP.NAME
+msgctxt "STRINGS.SETITEMS.FACILITY_LAMP.NAME"
+msgid "Lamp"
+msgstr "ランプ"
+
+#. STRINGS.SETITEMS.FACILITY_TALLPLANT.DESC
+msgctxt "STRINGS.SETITEMS.FACILITY_TALLPLANT.DESC"
+msgid "A plant"
+msgstr "植物です"
+
+#. STRINGS.SETITEMS.FACILITY_TALLPLANT.NAME
+msgctxt "STRINGS.SETITEMS.FACILITY_TALLPLANT.NAME"
+msgid "Plant"
+msgstr "植物"
 
 #. STRINGS.SETITEMS.GENESHUFFLER.DESC
 msgctxt "STRINGS.SETITEMS.GENESHUFFLER.DESC"
@@ -28381,6 +29128,30 @@ msgctxt "STRINGS.SETITEMS.LOCKER.NAME"
 msgid "Locker"
 msgstr "ロッカー"
 
+#. STRINGS.SETITEMS.RECEPTION_DESK.DESC
+msgctxt "STRINGS.SETITEMS.RECEPTION_DESK.DESC"
+msgid ""
+"An intact office desk, decorated with several personal belongings and a "
+"barely functioning computer."
+msgstr ""
+"個人の持ち物やかろうじて動くコンピューターが置いてある、手つかずのオフィス用"
+"デスクです。"
+
+#. STRINGS.SETITEMS.RECEPTION_DESK.NAME
+msgctxt "STRINGS.SETITEMS.RECEPTION_DESK.NAME"
+msgid "Reception Desk"
+msgstr "受付"
+
+#. STRINGS.SETITEMS.SATELLITE.DESC
+msgctxt "STRINGS.SETITEMS.SATELLITE.DESC"
+msgid "Wreck of a satellite"
+msgstr "人工衛星のがれきです"
+
+#. STRINGS.SETITEMS.SATELLITE.NAME
+msgctxt "STRINGS.SETITEMS.SATELLITE.NAME"
+msgid "Crashed Satellite"
+msgstr "壊れた人工衛星"
+
 #. STRINGS.SETITEMS.SKELETON.DESC
 msgctxt "STRINGS.SETITEMS.SKELETON.DESC"
 msgid ""
@@ -28422,6 +29193,26 @@ msgstr ""
 msgctxt "STRINGS.SETITEMS.WALL_CLOCK.NAME"
 msgid "Clock"
 msgstr "時計"
+
+#. STRINGS.SETITEMS.WALL_DEGREE.DESC
+msgctxt "STRINGS.SETITEMS.WALL_DEGREE.DESC"
+msgid "Someone is proud of this"
+msgstr "これを誇りに思う人がいたのでしょう"
+
+#. STRINGS.SETITEMS.WALL_DEGREE.NAME
+msgctxt "STRINGS.SETITEMS.WALL_DEGREE.NAME"
+msgid "Fancy Degree"
+msgstr "学位証明書"
+
+#. STRINGS.SETITEMS.WALL_PAINTING.DESC
+msgctxt "STRINGS.SETITEMS.WALL_PAINTING.DESC"
+msgid "A painting of an expensive thing which belongs to an expensive person"
+msgstr "お金持ちが飾るような高価な絵です"
+
+#. STRINGS.SETITEMS.WALL_PAINTING.NAME
+msgctxt "STRINGS.SETITEMS.WALL_PAINTING.NAME"
+msgid "Painting"
+msgstr "絵画"
 
 #. STRINGS.UI.ACTIONS
 msgctxt "STRINGS.UI.ACTIONS"
@@ -28475,7 +29266,7 @@ msgstr "<link=\"BUILDCATEGORYAUTOMATION\">自動化</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.AUTOMATION.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.AUTOMATION.TOOLTIP"
-msgid "Automate your base with logic circuits and sensors."
+msgid "Automate my base with logic circuits and sensors."
 msgstr "論理回路やセンサーで、基地を自動化しましょう。"
 
 #. STRINGS.UI.BUILDCATEGORIES.BASE.NAME
@@ -28485,7 +29276,7 @@ msgstr "<link=\"BUILDCATEGORYBASE\">基地</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.BASE.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.BASE.TOOLTIP"
-msgid "Maintain your colony's infrastructure with these homebase basics."
+msgid "Maintain the colony's infrastructure with these homebase basics."
 msgstr "これらの基本的な土台でコロニーのインフラを支えましょう。"
 
 #. STRINGS.UI.BUILDCATEGORIES.CONVEYANCE.NAME
@@ -28495,8 +29286,8 @@ msgstr "<link=\"BUILDCATEGORYCONVEYANCE\">輸送</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.CONVEYANCE.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.CONVEYANCE.TOOLTIP"
-msgid "Effortlessly transport ore and solid materials around your base."
-msgstr "楽々と鉱石や固体素材を基地に輸送します。"
+msgid "Effortlessly transport ore and solid materials around my base."
+msgstr "鉱石や固体素材を楽々と基地に輸送しましょう。"
 
 #. STRINGS.UI.BUILDCATEGORIES.EQUIPMENT.NAME
 msgctxt "STRINGS.UI.BUILDCATEGORIES.EQUIPMENT.NAME"
@@ -28515,7 +29306,7 @@ msgstr "<link=\"BUILDCATEGORYFOOD\">食糧</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.FOOD.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.FOOD.TOOLTIP"
-msgid "Keep your Duplicants' spirits high and their bellies full."
+msgid "Keep my Duplicants' spirits high and their bellies full."
 msgstr "複製人間の心と胃袋を満たしましょう。"
 
 #. STRINGS.UI.BUILDCATEGORIES.FURNITURE.NAME
@@ -28525,7 +29316,7 @@ msgstr "<link=\"BUILDCATEGORYFURNITURE\">家具</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.FURNITURE.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.FURNITURE.TOOLTIP"
-msgid "Amenities to keep your Duplicants happy, comfy and efficient."
+msgid "Amenities to keep my Duplicants happy, comfy and efficient."
 msgstr "複製人間が幸せで快適に効率よく生活するためのアメニティです。"
 
 #. STRINGS.UI.BUILDCATEGORIES.HVAC.NAME
@@ -28535,7 +29326,7 @@ msgstr "<link=\"BUILDCATEGORYHVAC\">換気</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.HVAC.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.HVAC.TOOLTIP"
-msgid "Control the flow of gas in your base."
+msgid "Control the flow of gas in the base."
 msgstr "基地における気体の流れを制御します。"
 
 #. STRINGS.UI.BUILDCATEGORIES.MEDICAL.NAME
@@ -28555,7 +29346,7 @@ msgstr "<link=\"BUILDCATEGORYMISC\">装飾</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.MISC.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.MISC.TOOLTIP"
-msgid "Spruce up your colony with some lovely interior decorating."
+msgid "Spruce up my colony with some lovely interior decorating."
 msgstr "素敵なインテリアでコロニーを飾りましょう。"
 
 #. STRINGS.UI.BUILDCATEGORIES.OXYGEN.NAME
@@ -28565,7 +29356,7 @@ msgstr "<link=\"BUILDCATEGORYOXYGEN\">酸素</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.OXYGEN.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.OXYGEN.TOOLTIP"
-msgid "Everything you need to keep your colony breathing."
+msgid "Everything I need to keep the colony breathing."
 msgstr "コロニー内で呼吸するために必要なものが揃っています。"
 
 #. STRINGS.UI.BUILDCATEGORIES.PLUMBING.NAME
@@ -28575,7 +29366,7 @@ msgstr "<link=\"BUILDCATEGORYPLUMBING\">配管</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.PLUMBING.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.PLUMBING.TOOLTIP"
-msgid "Get your water running and the sewage flowing."
+msgid "Get the colony's water running and its sewage flowing."
 msgstr "上水下水の制御をします。"
 
 #. STRINGS.UI.BUILDCATEGORIES.POWER.NAME
@@ -28585,7 +29376,7 @@ msgstr "<link=\"BUILDCATEGORYPOWER\">電力</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.POWER.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.POWER.TOOLTIP"
-msgid "Need to power your colony? Here's how you do it!"
+msgid "Need to power the colony? Here's how to do it!"
 msgstr "コロニーに電力が必要ですか？これをどうぞ！"
 
 #. STRINGS.UI.BUILDCATEGORIES.REFINING.NAME
@@ -28595,7 +29386,7 @@ msgstr "<link=\"BUILDCATEGORYREFINING\">精製</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.REFINING.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.REFINING.TOOLTIP"
-msgid "Use the resources you want, filter the ones you don't."
+msgid "Use the resources I want, filter the ones I don't."
 msgstr "いらないものはろ過して、欲しいものだけ使いましょう。"
 
 #. STRINGS.UI.BUILDCATEGORIES.UTILITIES.NAME
@@ -29534,19 +30325,19 @@ msgstr "この研究端末は研究ポイントあたり{0}を{1}消費します
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH"
-msgid "This critter can be sheared every {Time} to produce {Amount} {Item}"
-msgstr "この動物は{Time}ごとに{Amount} {Item}を得るための毛刈りができます。"
+msgid "This critter can be sheared every {Time} to produce {Amount} of {Item}"
+msgstr "この動物は{Time}ごとに毛刈りで{Item}を{Amount}得られます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_ATMO
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_ATMO"
 msgid ""
-"This critter can be sheared every {Time} to produce {Amount} {Item}\n"
-"\n"
-"An atmosphere of {Atmosphere} is required to stimulate growth"
+"This critter can be sheared every {Time} to produce {Amount} of {Item}\n"
+"------------------\n"
+"It must be kept in {Atmosphere}-rich environments to regrow sheared {Item}"
 msgstr ""
-"この動物は{Time}ごとに{Amount} {Item}を得るための毛刈りができます。\n"
-"\n"
-"再生には{Atmosphere}の環境が必要です"
+"この動物は{Time}ごとに毛刈りで{Item}を{Amount}得られます\n"
+"------------------\n"
+"{Item}の再生には{Atmosphere}豊富な環境が必要です"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.STORAGECAPACITY
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.STORAGECAPACITY"
@@ -29615,7 +30406,7 @@ msgstr "属性"
 
 #. STRINGS.UI.CHARACTERCONTAINER_STRESSTRAIT
 msgctxt "STRINGS.UI.CHARACTERCONTAINER_STRESSTRAIT"
-msgid "Stress Response: {0}"
+msgid "Stress Reaction: {0}"
 msgstr "ストレス反応: {0}"
 
 #. STRINGS.UI.CHARACTERCONTAINER_TRAITS_TITLE
@@ -29717,6 +30508,16 @@ msgstr "<link=\"TECH\">研究</link>"
 msgctxt "STRINGS.UI.CODEX.DETAILS"
 msgid "Details"
 msgstr "詳細"
+
+#. STRINGS.UI.CODEX.FOOD.CALORIES
+msgctxt "STRINGS.UI.CODEX.FOOD.CALORIES"
+msgid "Calories: {0}"
+msgstr "カロリー: {0}"
+
+#. STRINGS.UI.CODEX.FOOD.NON_PERISHABLE
+msgctxt "STRINGS.UI.CODEX.FOOD.NON_PERISHABLE"
+msgid "Spoil time: Never"
+msgstr "腐るまでの時間: なし"
 
 #. STRINGS.UI.CODEX.FOOD.QUALITY
 msgctxt "STRINGS.UI.CODEX.FOOD.QUALITY"
@@ -30092,6 +30893,11 @@ msgstr "クレジット"
 msgctxt "STRINGS.UI.DEBUG_TOOLS.ENTER_TEXT"
 msgid ""
 msgstr ""
+
+#. STRINGS.UI.DEBUG_TOOLS.INVALID_LOCATION
+msgctxt "STRINGS.UI.DEBUG_TOOLS.INVALID_LOCATION"
+msgid "Invalid Locaton"
+msgstr "無効な建設地点"
 
 #. STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.ADD_FOW_MASK
 msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.ADD_FOW_MASK"
@@ -30780,9 +31586,9 @@ msgstr "{0}: {1}"
 #. STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT_TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT_TOOLTIP"
 msgid ""
-"This critter has a {1} chance of laying a {0}.\n"
+"This critter has a {1} chance of laying {0}s.\n"
 "\n"
-"Probability is increased if the creature:\n"
+"This probability increases when the creature:\n"
 "{2}"
 msgstr ""
 "この動物が{0}を産む確率は{1}です。\n"
@@ -30792,7 +31598,7 @@ msgstr ""
 
 #. STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT_TOOLTIP_NOMOD
 msgctxt "STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_FORMAT_TOOLTIP_NOMOD"
-msgid "This critter has a {1} chance of laying a {0}."
+msgid "This critter has a {1} chance of laying {0}s."
 msgstr "この動物が{0}を産む確率は{1}です。"
 
 #. STRINGS.UI.DETAILTABS.EGG_CHANCES.CHANCE_MOD_FORMAT
@@ -31306,6 +32112,11 @@ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.WATERMARK"
 msgid "DEVELOPMENT BUILD: {0}"
 msgstr "開発版ビルド: {0}"
 
+#. STRINGS.UI.DROPDOWN.NONE
+msgctxt "STRINGS.UI.DROPDOWN.NONE"
+msgid "Unassigned"
+msgstr "割り当てなし"
+
 #. STRINGS.UI.DUPLICANTPRINTING
 msgctxt "STRINGS.UI.DUPLICANTPRINTING"
 msgid "Duplicant Printing"
@@ -31404,8 +32215,12 @@ msgstr "熱容量: {0}"
 
 #. STRINGS.UI.ELEMENTAL.SHC.TOOLTIP
 msgctxt "STRINGS.UI.ELEMENTAL.SHC.TOOLTIP"
-msgid "{0} J is required to heat 1 g of the selected object by 1 K"
-msgstr "選択した物体 1g を 1K 温めるのに {0}J 必要です"
+msgid ""
+"{SPECIFIC_HEAT_CAPACITY} J is required to heat 1 g of the selected object by "
+"1 {TEMPERATURE_UNIT}"
+msgstr ""
+"選択した物体 1g を 1{TEMPERATURE_UNIT} 温めるのに {SPECIFIC_HEAT_CAPACITY}J "
+"必要です"
 
 #. STRINGS.UI.ELEMENTAL.TEMPERATURE.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.TEMPERATURE.NAME"
@@ -31459,13 +32274,14 @@ msgstr "熱伝導率: {0}"
 #. STRINGS.UI.ELEMENTAL.THERMALCONDUCTIVITY.TOOLTIP
 msgctxt "STRINGS.UI.ELEMENTAL.THERMALCONDUCTIVITY.TOOLTIP"
 msgid ""
-"This object can conduct heat to other materials at a rate of {0} W for each "
-"K degree difference\n"
+"This object can conduct heat to other materials at a rate of "
+"{THERMAL_CONDUCTIVITY} W for each degree {TEMPERATURE_UNIT} difference\n"
 "\n"
 "Between two objects, the rate of heat transfer will be determined by the "
 "object with the lowest Thermal Conductivity"
 msgstr ""
-"この物体は他の素材に 1K あたり {0} W の熱を伝えます\n"
+"この物体は他の素材に 1{TEMPERATURE_UNIT} あたり {THERMAL_CONDUCTIVITY}W の熱"
+"を伝えます\n"
 "\n"
 "2つの物体間において、伝熱率は熱伝導率が最も低い物体によって決定されます"
 
@@ -31502,15 +32318,15 @@ msgstr "カロリー生成:"
 #. STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.NEGATIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.NEGATIVE_TOOLTIP"
 msgid ""
-"Your colony consumed {0} of <link=\"FOOD\">Food</link> over the course of "
-"the day"
+"My colony consumed {0} of <link=\"FOOD\">Food</link> over the course of the "
+"day"
 msgstr "コロニーは一日を通して<link=\"FOOD\">食糧</link>を{0}消費しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.POSITIVE_TOOLTIP"
 msgid ""
-"Your colony produced {0} of <link=\"FOOD\">Food</link> over the course of "
-"the day"
+"My colony produced {0} of <link=\"FOOD\">Food</link> over the course of the "
+"day"
 msgstr "コロニーは一日を通して<link=\"FOOD\">食糧</link>を{0}生産しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_FLATULENCE.NAME
@@ -31521,13 +32337,13 @@ msgstr "<link=\"POLLUTEDOXYGEN\">排気</link>生成:"
 #. STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_FLATULENCE.NEGATIVE_TOOLTIP
 msgctxt ""
 "STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_FLATULENCE.NEGATIVE_TOOLTIP"
-msgid "Your colony consumed {0} of Polluted Oxygen over the course of the day"
+msgid "My colony consumed {0} of Polluted Oxygen over the course of the day"
 msgstr "コロニーは一日を通して汚染酸素を{0}消費しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_FLATULENCE.POSITIVE_TOOLTIP
 msgctxt ""
 "STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_FLATULENCE.POSITIVE_TOOLTIP"
-msgid "Your colony generated {0} of Polluted Oxygen over the course of the day"
+msgid "My colony generated {0} of Polluted Oxygen over the course of the day"
 msgstr "コロニーは一日を通して汚染酸素を{0}生成しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_SUBLIMATION.NAME
@@ -31539,7 +32355,7 @@ msgstr "<link=\"POLLUTED OXYGEN\">昇華</link>:"
 msgctxt ""
 "STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_SUBLIMATION.NEGATIVE_TOOLTIP"
 msgid ""
-"Your colony consumed {0} of <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</"
+"My colony consumed {0} of <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</"
 "link> over the course of the day"
 msgstr ""
 "コロニーは一日を通して<link=\"CONTAMINATEDOXYGEN\">汚染酸素</link>を{0}消費し"
@@ -31549,7 +32365,7 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_SUBLIMATION.POSITIVE_TOOLTIP"
 msgid ""
-"Your colony generated {0} of <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</"
+"My colony generated {0} of <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</"
 "link> over the course of the day"
 msgstr ""
 "コロニーは一日を通して<link=\"CONTAMINATEDOXYGEN\">汚染酸素</link>を{0}生成し"
@@ -31563,7 +32379,7 @@ msgstr "<link=\"POLLUTED OXYGEN\">トイレ排出量: </link>"
 #. STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_TOILET.NEGATIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_TOILET.NEGATIVE_TOOLTIP"
 msgid ""
-"Your colony consumed {0} of <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</"
+"My colony consumed {0} of <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</"
 "link> over the course of the day"
 msgstr ""
 "コロニーは一日を通して <link=\"CONTAMINATEDOXYGEN\">汚染酸素</link>を{0}消費"
@@ -31572,7 +32388,7 @@ msgstr ""
 #. STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_TOILET.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.CONTAMINATED_OXYGEN_TOILET.POSITIVE_TOOLTIP"
 msgid ""
-"Your colony generated {0} of <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</"
+"My colony generated {0} of <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</"
 "link> over the course of the day"
 msgstr ""
 "コロニーは一日を通して<link=\"CONTAMINATEDOXYGEN\">汚染酸素</link>を {0} 生成"
@@ -31615,7 +32431,7 @@ msgstr "病気状態:"
 
 #. STRINGS.UI.ENDOFDAYREPORT.DISEASE_STATUS.TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.DISEASE_STATUS.TOOLTIP"
-msgid "Your Duplicants are covered in {0}"
+msgid "My Duplicants are covered in {0}"
 msgstr "複製人間は {0} に覆われています"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.NAME
@@ -31626,15 +32442,15 @@ msgstr "<link=\"POWER\">電力</link>使用状況:"
 #. STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.NEGATIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.NEGATIVE_TOOLTIP"
 msgid ""
-"Your colony consumed {0} of <link=\"POWER\">Power</link> over the course of "
+"My colony consumed {0} of <link=\"POWER\">Power</link> over the course of "
 "the day"
 msgstr "コロニーは一日を通して<link=\"POWER\">電力</link>を{0}消費しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.POSITIVE_TOOLTIP"
 msgid ""
-"Your colony created {0} of <link=\"POWER\">Power</link> over the course of "
-"the day"
+"My colony created {0} of <link=\"POWER\">Power</link> over the course of the "
+"day"
 msgstr "コロニーは一日を通して<link=\"POWER\">電力</link>を{0}生成しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ENERGY_WASTED.NAME
@@ -31645,8 +32461,8 @@ msgstr "<link=\"POWER\">電力</link>浪費:"
 #. STRINGS.UI.ENDOFDAYREPORT.ENERGY_WASTED.NEGATIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ENERGY_WASTED.NEGATIVE_TOOLTIP"
 msgid ""
-"Your colony lost {0} of <link=\"POWER\">Power</link> today due to "
-"overproduction and battery loss"
+"My colony lost {0} of <link=\"POWER\">Power</link> today due to "
+"overproduction and battery runoff"
 msgstr ""
 "コロニーは本日、過剰生成されたりバッテリー消費により<link=\"POWER\">電力</"
 "link>を{0}消費しました"
@@ -31663,7 +32479,7 @@ msgstr "待機時間:"
 
 #. STRINGS.UI.ENDOFDAYREPORT.IDLE_TIME.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.IDLE_TIME.POSITIVE_TOOLTIP"
-msgid "Your Duplicants spent a total of {0} idling over the course of the day"
+msgid "My Duplicants spent a total of {0} idling over the course of the day"
 msgstr "複製人間は一日を通して合計{0}待機していました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.LEVEL_UP.NAME
@@ -31673,7 +32489,7 @@ msgstr "スキル上昇:"
 
 #. STRINGS.UI.ENDOFDAYREPORT.LEVEL_UP.TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.LEVEL_UP.TOOLTIP"
-msgid "Your Duplicants gained a total of {0} skill levels today"
+msgid "My Duplicants gained a total of {0} skill levels today"
 msgstr "複製人間は本日合計{0}スキルレベルを獲得しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NET
@@ -31762,7 +32578,7 @@ msgstr "サイクル{0}経過報告"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTIFICATION_TOOLTIP"
-msgid "View the end of day report for Cycle {0}"
+msgid "The daily report for Cycle {0} is ready to view"
 msgstr "サイクル{0}経過レポートを見ます"
 
 #. STRINGS.UI.ENDOFDAYREPORT.OXYGEN_CREATED.NAME
@@ -31773,15 +32589,15 @@ msgstr "<link=\"OXYGEN\">酸素</link>生成:"
 #. STRINGS.UI.ENDOFDAYREPORT.OXYGEN_CREATED.NEGATIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.OXYGEN_CREATED.NEGATIVE_TOOLTIP"
 msgid ""
-"Your colony consumed {0} of <link=\"OXYGEN\">Oxygen</link> over the course "
-"of the day"
+"My colony consumed {0} of <link=\"OXYGEN\">Oxygen</link> over the course of "
+"the day"
 msgstr "コロニーは一日を通して<link=\"OXYGEN\">酸素</link>を{0}消費しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.OXYGEN_CREATED.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.OXYGEN_CREATED.POSITIVE_TOOLTIP"
 msgid ""
-"Your colony generated {0} of <link=\"OXYGEN\">Oxygen</link> over the course "
-"of the day"
+"My colony generated {0} of <link=\"OXYGEN\">Oxygen</link> over the course of "
+"the day"
 msgstr "コロニーは一日を通して<link=\"OXYGEN\">酸素</link>を{0}生成しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.PREV
@@ -31806,13 +32622,13 @@ msgstr "<link=\"STRESS\">ストレス</link>変動量:"
 
 #. STRINGS.UI.ENDOFDAYREPORT.STRESS_DELTA.NEGATIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.STRESS_DELTA.NEGATIVE_TOOLTIP"
-msgid "Your colony's total <link=\"STRESS\">Stress</link> has decreased by {0}"
+msgid "My colony's total <link=\"STRESS\">Stress</link> has decreased by {0}"
 msgstr ""
 "コロニーは一日を通して<link=\"STRESS\">ストレス</link>を合計{0}減少させました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.STRESS_DELTA.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.STRESS_DELTA.POSITIVE_TOOLTIP"
-msgid "Your colony's total <link=\"STRESS\">Stress</link> has increased by {0}"
+msgid "My colony's total <link=\"STRESS\">Stress</link> has increased by {0}"
 msgstr ""
 "コロニーは一日を通して<link=\"STRESS\">ストレス</link>を合計{0}上昇させました"
 
@@ -31824,7 +32640,7 @@ msgstr "時間明細:"
 #. STRINGS.UI.ENDOFDAYREPORT.TIME_SPENT.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.TIME_SPENT.POSITIVE_TOOLTIP"
 msgid ""
-"Your Duplicants spent a total of {0} doing errands over the course of the day"
+"My Duplicants spent a total of {0} doing errands over the course of the day"
 msgstr "複製人間は一日を通して合計{0}作業していました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.TOILET_INCIDENT.NAME
@@ -31834,7 +32650,7 @@ msgstr "トイレ事故:"
 
 #. STRINGS.UI.ENDOFDAYREPORT.TOILET_INCIDENT.TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.TOILET_INCIDENT.TOOLTIP"
-msgid "{0} Duplicants didn't quite reach the toilet in time today"
+msgid "{0} Duplicants couldn't quite reach the toilet in time today"
 msgstr "{0}人の複製人間が本日トイレに間に合いませんでした"
 
 #. STRINGS.UI.ENDOFDAYREPORT.TRAVEL_TIME.NAME
@@ -31845,7 +32661,8 @@ msgstr "移動時間:"
 #. STRINGS.UI.ENDOFDAYREPORT.TRAVEL_TIME.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.TRAVEL_TIME.POSITIVE_TOOLTIP"
 msgid ""
-"Your Duplicants spent a total of {0} traveling over the course of the day"
+"My Duplicants spent a total of {0} traveling between errands throughout of "
+"the day"
 msgstr "複製人間は一日を通して合計{0}移動に費やしました"
 
 #. STRINGS.UI.EQUIPMENTTAB_HELD
@@ -32046,7 +32863,7 @@ msgstr "免疫力"
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP"
-msgid "Affects how resistant your Duplicants are to disease"
+msgid "Affects how resistant Duplicants are to disease"
 msgstr "複製人間の病気への抵抗力です"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.DISABLED.NAME
@@ -32080,15 +32897,15 @@ msgstr "サンドボックスを無効にする"
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.NAME
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.NAME"
-msgid "Sandbox mode"
+msgid "Sandbox Mode"
 msgstr "サンドボックス モード"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.TOOLTIP
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.TOOLTIP"
 msgid ""
-"Allows the simulation to be manipulated with tools that ignore the regular "
-"constraints of the game"
+"Manipulate and customize the simulation with tools that ignore regular game "
+"constraints"
 msgstr "ゲームの制限を無視できるツールを使ってシミュレーションします"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.NAME
@@ -32196,7 +33013,7 @@ msgstr "複製人間の雰囲気"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP"
-msgid "Affects how well your Duplicants deal with stress"
+msgid "Affects how well Duplicants handle stress"
 msgstr "複製人間が受けるストレスの影響度です"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DEFAULT.NAME
@@ -32230,14 +33047,14 @@ msgstr "複製人間がストレス最大値になっても何も起きません
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.NAME
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.NAME"
-msgid "Stress Responses"
+msgid "Stress Reactions"
 msgstr "ストレス反応"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.TOOLTIP
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.TOOLTIP"
-msgid "Whether or not your Duplicants act out when they reach maximum stress"
-msgstr "複製人間がいつストレス最大値に達するかを決定します"
+msgid "Determines whether Duplicants act out when they reach maximum stress"
+msgstr "複製人間がストレス最大値に達した時の行動を決定します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLD_CHOICE.NAME
 msgctxt ""
@@ -32380,11 +33197,11 @@ msgstr "ロード中..."
 #. STRINGS.UI.FRONTEND.LOADSCREEN.AUTOSAVEWARNING
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.AUTOSAVEWARNING"
 msgid ""
-" <b><color=#ff0000>(Autosave: This file will get deleted as new autosaves "
-"are created)</color></b>"
+" <b><color=#ff0000>Autosave: This file will get deleted as new autosaves are "
+"created</color></b>"
 msgstr ""
-" <b><color=#ff0000>(オートセーブ: 新しいセーブファイルが作成されると、この"
-"ファイルは削除されます)</color></b>"
+" <b><color=#ff0000>オートセーブ: 新しいセーブファイルが作成されると、このファ"
+"イルは削除されます</color></b>"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONFIRMDELETE
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONFIRMDELETE"
@@ -32554,8 +33371,8 @@ msgstr "完了"
 
 #. STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.ENABLE_BUTTON
 msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.ENABLE_BUTTON"
-msgid "Opt-In to Data Collection: "
-msgstr "データ収集に協力する: "
+msgid "Enable Data Collection: "
+msgstr "データ収集有効化: "
 
 #. STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.TITLE"
@@ -32737,11 +33554,11 @@ msgstr "ワールド生成キー"
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
 msgid ""
-"<b>Welcome to the Ranching Upgrade Mark II!</b>\n"
+"<b>Welcome to the Cosmic Upgrade!!</b>\n"
 "\n"
 "{0}"
 msgstr ""
-"<b>家畜アップグレード第二弾にようこそ！</b>\n"
+"<b>宇宙アップグレードにようこそ！</b>\n"
 "\n"
 "{0}"
 
@@ -32755,26 +33572,26 @@ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
 msgid ""
 "<b>Update Features:</b>\n"
 "\n"
-"• New \"Critter Morphs\" can be hatched through careful breeding\n"
-"• Two new creatures, Drecko and Pacu, can be found in new worlds\n"
-"• Sandbox Mode lets you become master of the asteroid\n"
-"• New automation controls, pipes and buildings\n"
+"• The Surface biome has been added to the top of the asteroid\n"
+"• Solar power and metallic meteors can be harnessed\n"
+"• New glass and steel resources allow constructing advanced buildings\n"
+"• Further fixes and polish to Critter Ranching and eggs\n"
 "\n"
 "Please view the full patch notes for further details!"
 msgstr ""
 "<b>新機能:</b>\n"
 "\n"
-"• 特定の条件下では動物の変種が誕生するようになりました\n"
-"• 新しい生き物、ドレッコとパクーを追加しました\n"
-"• サンドボックスモードで練習できるようになりました\n"
-"• 新しい自動化制御部品、パイプ、設備\n"
+"• 小惑星上部に表層バイオームが追加されました\n"
+"• 太陽電力と鉄製隕石が利用可能になりました\n"
+"• 新しい資源、ガラスおよび鋼鉄でより優れた設備を建設できます\n"
+"• 動物の放牧や卵の改善\n"
 "\n"
-"より詳しい内容についてはパッチノートを参照してください！"
+"詳細はパッチノート全文を参照してください！"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
-msgid "RANCHING UPGRADE MARK II"
-msgstr "家畜アップデート第二弾"
+msgid "COSMIC UPGRADE"
+msgstr "宇宙アップグレード"
 
 #. STRINGS.UI.FRONTEND.PAUSE_SCREEN.DESKTOPQUIT
 msgctxt "STRINGS.UI.FRONTEND.PAUSE_SCREEN.DESKTOPQUIT"
@@ -33160,6 +33977,11 @@ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CIRCUIT_OVERLOADED"
 msgid "Overload Damage"
 msgstr "過剰電圧ダメージ"
 
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.COMET
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.COMET"
+msgid "Meteor Damage"
+msgstr "隕石ダメージ"
+
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CONDUIT_CONTENTS_BOILED
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CONDUIT_CONTENTS_BOILED"
 msgid "Heat Damage"
@@ -33175,9 +33997,14 @@ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LIQUID_PRESSURE"
 msgid "Pressure Damage"
 msgstr "水圧ダメージ"
 
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MICROMETEORITE
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MICROMETEORITE"
+msgid "Micrometeorite Damage"
+msgstr "微小隕石ダメージ"
+
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MINION_DESTRUCTION
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MINION_DESTRUCTION"
-msgid "Anger Damage"
+msgid "Tantrum Damage"
 msgstr "八つ当たりダメージ"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.OVERHEAT
@@ -33255,6 +34082,17 @@ msgstr "<link=\"HEAT\">温度</link>: {0} から {1}"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.INITIALGROWTHTIME"
 msgid "Initial Growth: {0}"
 msgstr "最初の成長: {0}"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.INSULATED.NAME
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.INSULATED.NAME"
+msgid "Insulated"
+msgstr "断熱"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.INSULATED.TOOLTIP
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.INSULATED.TOOLTIP"
+msgid ""
+"The composition of this structure drastically reduces thermal conductivity"
+msgstr "この構造物の組成は熱伝導性を劇的に低減させます"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.LIFECYCLETITLE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.LIFECYCLETITLE"
@@ -33573,10 +34411,11 @@ msgstr "キャンセル"
 #. STRINGS.UI.IMMIGRANTSCREEN.CONFIRMATIONBODY
 msgctxt "STRINGS.UI.IMMIGRANTSCREEN.CONFIRMATIONBODY"
 msgid ""
-"The Printing Pod will need time to recharge if you Ooze these Duplicants."
+"The Printing Pod will need time to recharge if I return these Duplicants to "
+"ooze."
 msgstr ""
-"これらの複製人間を全て土に還すと、複製ポッドが再び使用可能になるまで時間がか"
-"かります。"
+"これらの複製人間を全て土に還すと、複製ポッドが再び使用可能になるまで待たねば"
+"ならない。"
 
 #. STRINGS.UI.IMMIGRANTSCREEN.CONFIRMATIONTITLE
 msgctxt "STRINGS.UI.IMMIGRANTSCREEN.CONFIRMATIONTITLE"
@@ -33595,7 +34434,7 @@ msgstr "DNA設計図選択"
 
 #. STRINGS.UI.IMMIGRANTSCREEN.NAME_YOUR_COLONY
 msgctxt "STRINGS.UI.IMMIGRANTSCREEN.NAME_YOUR_COLONY"
-msgid "NAME YOUR COLONY"
+msgid "NAME THE COLONY"
 msgstr "コロニーの名前"
 
 #. STRINGS.UI.IMMIGRANTSCREEN.PROCEEDBUTTON
@@ -33798,10 +34637,9 @@ msgctxt "STRINGS.UI.JOBSSCREEN.RESET_SETTINGS_TOOLTIP"
 msgid ""
 "Resets all priorities to the default values for this mode.\n"
 "\n"
-"Normal Mode: All priorities will be reset to neutral.\n"
+"Default: All priorities will be reset to neutral.\n"
 "\n"
-"Advanced Mode: Priorities will be adjusted high-to-low for normal base "
-"operation."
+"Advanced: Priorities will be adjusted high-to-low for normal base operation."
 msgstr ""
 "全ての優先度をデフォルト値に戻します。\n"
 "\n"
@@ -33821,45 +34659,34 @@ msgstr "作業優先度管理"
 
 #. STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE
 msgctxt "STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE"
-msgid "Advanced Mode"
+msgid "Advanced"
 msgstr "アドバンスド"
 
 #. STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE_TOOLTIP
 msgctxt "STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE_TOOLTIP"
 msgid ""
-"<b>Normal Mode</b> (unchecked):\n"
+"<b>Advanced Priority Settings</b>\n"
+"------------------\n"
+"This option disables a hidden priority hierarchy used to choose errands in "
+"the event of a priority tie.\n"
 "\n"
-"Duplicants will first pick an errand based on their Priorities, and then by "
-"Sub-Priorities. If more than one available errand has the same priority, "
-"then they will pick based on a hidden priority which helps new bases run "
-"more smoothly.\n"
+"When disabled, Duplicants will still choose errands based on their "
+"Priorities first and their Sub-Priorities second, but ties will be settled "
+"by simply choosing the nearest high priority errand. This helps them to stay "
+"near the same area of the colony so long as all the nearby work is their "
+"highest priority.\n"
 "\n"
-"This mode is ideal for new players and for smaller bases.\n"
-"\n"
-"<b>Advanced Mode</b> (checked):\n"
-"\n"
-"Duplicants will still pick an errand based on their Priorities, and then by "
-"Sub-Priorities. The hidden priority gets disabled, so in case of a tie the "
-"Duplicant will pick the closest errand. This helps them to stay near the "
-"same area of the colony so long as all the work there is their highest "
-"priority.\n"
-"\n"
-"This mode is ideal for large bases and for players who have heavily "
-"customized Duplicant Priorities."
+"This mode is ideal for large bases and experienced players with heavily "
+"customized priority settings."
 msgstr ""
-"<b>ノーマル</b> (未チェック時):\n"
+"<b>アドバンスド</b>\n"
+"------------------\n"
+"このオプションは選んだ作業に関連付けられた隠し優先度を無効化します。\n"
 "\n"
-"複製人間は自身に設定された優先度、そして準優先度に従って作業に着手します。同"
-"じ優先度で複数の作業が可能な場合、隠し優先度によってより適切なものが選ばれま"
-"す。\n"
-"\n"
-"このモードは初心者向け、または小規模な基地向けです。\n"
-"\n"
-"<b>アドバンスド</b> (チェック時):\n"
-"\n"
-"複製人間は自身に設定された優先度、そして準優先度に従って作業に着手します。隠"
-"し優先度は無効化され、最も着手しやすい作業に取り掛かります。彼らの最優先とな"
-"る作業がそこにある限り、できるだけ同じ場所に留まるようになります。\n"
+"無効化した場合、複製人間たちは彼ら自身に設定された優先度、準優先度の順に従っ"
+"て作業を選びますが、他に優先度が高い作業があればそちらに取り掛かります。これ"
+"は作業優先度の高い作業がある限り、できるだけ同じ場所で作業を続けるために役立"
+"ちます。\n"
 "\n"
 "このモードは大規模な基地向け、または複製人間の優先度をとことん管理したい人向"
 "けです。"
@@ -33896,8 +34723,8 @@ msgstr "<link=\"LOGIC\">自動入力</link>: {0}"
 
 #. STRINGS.UI.LOGIC_PORTS.OUTPUT_PORTS
 msgctxt "STRINGS.UI.LOGIC_PORTS.OUTPUT_PORTS"
-msgid "<link=\"LOGIC\">Auto Inputs</link>: {0}"
-msgstr "<link=\"LOGIC\">自動入力</link>: {0}"
+msgid "<link=\"LOGIC\">Auto Outputs</link>: {0}"
+msgstr "<link=\"LOGIC\">自動出力</link>: {0}"
 
 #. STRINGS.UI.MESSAGES
 msgctxt "STRINGS.UI.MESSAGES"
@@ -34618,6 +35445,16 @@ msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.DARK"
 msgid "Unlit Area"
 msgstr "照明外範囲"
 
+#. STRINGS.UI.OVERLAYS.LIGHTING.DESC
+msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.DESC"
+msgid "{0} Lux"
+msgstr "{0} ルクス"
+
+#. STRINGS.UI.OVERLAYS.LIGHTING.HOVERTITLE
+msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.HOVERTITLE"
+msgid "LIGHT"
+msgstr "光源"
+
 #. STRINGS.UI.OVERLAYS.LIGHTING.LITAREA
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.LITAREA"
 msgid "Lit Area"
@@ -34627,6 +35464,41 @@ msgstr "照明範囲"
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.NAME"
 msgid "LIGHT OVERLAY"
 msgstr "光源レイヤー"
+
+#. STRINGS.UI.OVERLAYS.LIGHTING.RANGES.HIGH_LIGHT
+msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.RANGES.HIGH_LIGHT"
+msgid "Bright"
+msgstr "明るい"
+
+#. STRINGS.UI.OVERLAYS.LIGHTING.RANGES.LOW_LIGHT
+msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.RANGES.LOW_LIGHT"
+msgid "Dim"
+msgstr "薄明り"
+
+#. STRINGS.UI.OVERLAYS.LIGHTING.RANGES.MAX_LIGHT
+msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.RANGES.MAX_LIGHT"
+msgid "Blinding"
+msgstr "眩しい"
+
+#. STRINGS.UI.OVERLAYS.LIGHTING.RANGES.MEDIUM_LIGHT
+msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.RANGES.MEDIUM_LIGHT"
+msgid "Well Lit"
+msgstr "十分な照明"
+
+#. STRINGS.UI.OVERLAYS.LIGHTING.RANGES.NO_LIGHT
+msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.RANGES.NO_LIGHT"
+msgid "Pitch Black"
+msgstr "真っ暗闇"
+
+#. STRINGS.UI.OVERLAYS.LIGHTING.RANGES.VERY_HIGH_LIGHT
+msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.RANGES.VERY_HIGH_LIGHT"
+msgid "Brilliant"
+msgstr "輝き"
+
+#. STRINGS.UI.OVERLAYS.LIGHTING.RANGES.VERY_LOW_LIGHT
+msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.RANGES.VERY_LOW_LIGHT"
+msgid "Dark"
+msgstr "暗い"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.DARK
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.DARK"
@@ -35449,7 +36321,7 @@ msgctxt "STRINGS.UI.PRIORITYSCREEN.BASIC"
 msgid ""
 "Set the order in which with which pending errands should be done\n"
 "\n"
-"Sub-Priority will always be overridden by Duplicant Priorities "
+"Sub-Priorities will always be overridden by Duplicant Priorities "
 "<color=#F44A47>[J]</color>\n"
 "------------------\n"
 "1: Least Urgent\n"
@@ -35465,8 +36337,8 @@ msgstr ""
 #. STRINGS.UI.PRIORITYSCREEN.DIAGRAM
 msgctxt "STRINGS.UI.PRIORITYSCREEN.DIAGRAM"
 msgid ""
-"Duplicants will pick errands according to their Priorities first, and then "
-"based on Sub-Priority."
+"Duplicants will pick errands according to their Priorities first, and their "
+"Sub-Priorities second"
 msgstr ""
 "複製人間は自身に設定された優先度、次に準優先度に従って作業を開始します。"
 
@@ -35493,12 +36365,12 @@ msgstr ""
 #. STRINGS.UI.PRIORITYSCREEN.OPEN_JOBS_SCREEN
 msgctxt "STRINGS.UI.PRIORITYSCREEN.OPEN_JOBS_SCREEN"
 msgid ""
-"Click to open the Duplicant Priorities screen.\n"
+"Click to open the Duplicant Priorities screen\n"
 "\n"
-"Duplicants will pick errands according to their Priorities first, and then "
-"based on Sub-Priority."
+"Duplicants will pick errands according to their Priorities first, and their "
+"Sub-Priorities second"
 msgstr ""
-"クリックして複製人間の優先度を設定します。\n"
+"クリックして複製人間の優先度を設定します\n"
 "\n"
 "複製人間は自身に設定された優先度、次に準優先度に従って作業を開始します。"
 
@@ -35947,13 +36819,25 @@ msgstr "職業ボードを建設して、職業割り当てを開放しましょ
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION"
-msgid "Trait: <link=\"SUPER COMPUTER\">Researching</link>"
-msgstr "特性: <link=\"SUPER COMPUTER\">研究</link>"
+msgid ""
+"Trait: <link=\"ADVANCEDRESEARCHCENTER\">Super Computer</link> Researching"
+msgstr ""
+"特性: <link=\"ADVANCEDRESEARCHCENTER\">スーパーコンピューター</link>を使った"
+"研究"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART.DESCRIPTION"
+msgid ""
+"Trait: Can work <link=\"CANVAS\">Blank Canvas</link> and <link=\"SCULPTURE"
+"\">Sculpting Block</link>"
+msgstr ""
+"特性: <link=\"CANVAS\">無地のカンバス</link>、<link=\"SCULPTURE\">彫像用ブ"
+"ロック</link>の作業"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_NEARLY_IMPENETRABLE.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_NEARLY_IMPENETRABLE.DESCRIPTION"
-msgid "Trait: <link=\"HARDNESS\">Abyssalite</link> Mining"
-msgstr "特性: <link=\"HARDNESS\">アビサライト</link>採掘"
+msgid "Trait: <link=\"KATAIRITE\">Abyssalite</link> Mining"
+msgstr "特性: <link=\"KATAIRITE\">アビサライト</link>採掘"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_VERY_FIRM.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_VERY_FIRM.DESCRIPTION"
@@ -35967,41 +36851,29 @@ msgstr "特性: 配管"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION"
-msgid "Trait: <link=\"ELECTRIC GRILL\">Electric Grill</link> Cooking"
-msgstr "特性: <link=\"ELECTRIC GRILL\">電気グリル</link>を使った料理"
+msgid "Trait: <link=\"COOKINGSTATION\">Electric Grill</link> Cooking"
+msgstr "特性: <link=\"COOKINGSTATION\">電気グリル</link>を使った調理"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_TINKER.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_TINKER.DESCRIPTION"
 msgid ""
-"Trait: <link=\"PLANTS\">Crop Tending</link>\n"
-"    • Trait: <link=\"MISC\">Micronutrient fertilizer</link> Crafting"
+"Trait: <link=\"PLANTS\">Crop Tending</link> and Micronutrient Fertilizer "
+"Crafting"
 msgstr ""
-"特性: <link=\"PLANTS\">作物栽培</link>\n"
-"    • 特性: <link=\"MISC\">微量栄養素</link>作成"
-
-#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_PAINT.DESCRIPTION
-msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_PAINT.DESCRIPTION"
-msgid "Trait: <link=\"DECOR\">Canvas Painting</link>"
-msgstr "特性: <link=\"DECOR\">キャンバスの描画</link>"
+"特性: <link=\"PLANTS\">作物栽培</link>および<link=\"MISC\">微量栄養素</link>"
+"作成"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION"
-msgid ""
-"Trait: <link=\"POWER\">Generator Tuning</link> \n"
-"    • Trait: <link=\"MICROCHIP\">Microchip</link> Crafting"
+msgid "Trait: <link=\"POWER\">Generator Tuning</link> and Microchip Crafting"
 msgstr ""
-"特性: <link=\"POWER\">発電機のチューニング</link>\n"
-"    • 特性: <link=\"MICROCHIP\">マイクロチップ</link>作成"
-
-#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SCULPT.DESCRIPTION
-msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SCULPT.DESCRIPTION"
-msgid "Trait: <link=\"DECOR\">Block Sculpting</link>"
-msgstr "特性: <link=\"DECOR\">ブロックの彫刻</link>"
+"特性: <link=\"POWER\">発電機のチューニング</link>および<link=\"MICROCHIP\">マ"
+"イクロチップ</link>作成"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION"
-msgid "Trait: Geographical Feature <link=\"ANALYSIS\">Analysis</link>"
-msgstr "特性: 地勢<link=\"ANALYSIS\">分析</link>"
+msgid "Trait: <link=\"ANALYSIS\">Geographical Feature Analysis</link>"
+msgstr "特性: <link=\"ANALYSIS\">地勢分析</link>"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_RANCH_STATION.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_RANCH_STATION.DESCRIPTION"
@@ -36015,8 +36887,8 @@ msgstr "特性: 動物懐柔"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CONVEYOR_BUILD.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CONVEYOR_BUILD.DESCRIPTION"
-msgid "Trait: <link=\"CONVEYOR RAIL\">Conveyor Rail System</link> Construction"
-msgstr "特性: <link=\"CONVEYOR RAIL\">コンベア輸送システム</link>構築"
+msgid "Trait: <link=\"SOLIDCONDUIT\">Conveyor Rail</link> Construction"
+msgstr "特性: <link=\"SOLIDCONDUIT\">コンベア輸送システム</link>構築"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_EXPERTISE.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_EXPERTISE.DESCRIPTION"
@@ -36051,7 +36923,7 @@ msgstr "看護 +{0}"
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CARRY_AMOUNT.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CARRY_AMOUNT.DESCRIPTION"
 msgid "+{0}kg to Carrying Capacity"
-msgstr "運搬重量 +{0}"
+msgstr "運搬重量 +{0}kg"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CONSTRUCTION.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASED_CONSTRUCTION.DESCRIPTION"
@@ -36349,8 +37221,8 @@ msgstr "ブラシ"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH.TOOLTIP"
-msgid "Paint the world simulation with the brush tool"
-msgstr "ブラシツールで塗りたくります"
+msgid "Paint elements into the world simulation"
+msgstr "シミュレーションへ元素を塗りたくります"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME"
@@ -36374,13 +37246,13 @@ msgstr "ブラシの大きさを調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.NAME"
-msgid "Clear Floor"
-msgstr "床掃除"
+msgid "Clear Debris"
+msgstr "がれき掃除"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.TOOLTIP"
-msgid "Delete clutter"
-msgstr "がれきを削除します"
+msgid "Delete loose items cluttering the floor"
+msgstr "床に散らばったアイテムを削除します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.NAME"
@@ -36389,8 +37261,8 @@ msgstr "破壊"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.TOOLTIP"
-msgid "Destroy everything on a cell"
-msgstr "セル内の全てを破壊します"
+msgid "Delete everything in the selected cell(s)"
+msgstr "選択したセル内の全てを破壊します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME"
@@ -36404,13 +37276,23 @@ msgstr "病原菌の量を調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.NAME"
-msgid "Flood"
-msgstr "洪水"
+msgid "Fill"
+msgstr "塗りつぶし"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.TOOLTIP"
-msgid "Paint the world simulation with a the flood area tool"
-msgstr "洪水エリアツールで塗りたくります"
+msgid "Fill a section of the simulation with the chosen element"
+msgstr "選択した元素で矩形を塗りつぶします"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.FOW.NAME
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.FOW.NAME"
+msgid "Reveal"
+msgstr "マップ開示"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.FOW.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.FOW.TOOLTIP"
+msgid "Dispel the Fog of War shrouding the map"
+msgstr "マップ上の暗闇を消去します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.HEATGUN.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.HEATGUN.NAME"
@@ -36419,7 +37301,7 @@ msgstr "ヒートガン"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.HEATGUN.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.HEATGUN.TOOLTIP"
-msgid "Inject thermal energy into the world simulation"
+msgid "Inject thermal energy into the simulation"
 msgstr "熱エネルギーを注入します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.INSTANT_BUILD.NAME
@@ -36449,8 +37331,8 @@ msgstr "サンプル"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SAMPLE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SAMPLE.TOOLTIP"
-msgid "Sample a tile's state for use with the brush tools"
-msgstr "ブラシツールでタイルの状態を試します"
+msgid "Copy the settings from a cell to use with brush tools"
+msgstr "ブラシツールで使うために、セルの設定をコピーします"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWN_ENTITY.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWN_ENTITY.NAME"
@@ -36474,8 +37356,8 @@ msgstr "ばら撒き"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.TOOLTIP"
-msgid "Paint the world simulation with a noisey brush tool"
-msgstr "にぎやかなブラシツールで世界を塗りたくります"
+msgid "Paint elements into the simulation using noise"
+msgstr "元素をスプレーします"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME"
@@ -36538,7 +37420,7 @@ msgctxt "STRINGS.UI.SCHEDULEBLOCKTYPES.RECREATION.DESCRIPTION"
 msgid ""
 "HAMMER TIME:\n"
 "During Hammer Time, Duplicants will relieve their <link=\"STRESS\">Stress</"
-"link> through dance. Please be aware that no matter how hard your Duplicants "
+"link> through dance. Please be aware that no matter how hard my Duplicants "
 "try, they will absolutely not be able to touch this."
 msgstr ""
 "ハンマータイム:\n"
@@ -36935,6 +37817,11 @@ msgctxt "STRINGS.UI.TOOLS.GENERIC.BACK"
 msgid "Back"
 msgstr "戻る"
 
+#. STRINGS.UI.TOOLS.GENERIC.BUILDING_HOVER_NAME_FMT
+msgctxt "STRINGS.UI.TOOLS.GENERIC.BUILDING_HOVER_NAME_FMT"
+msgid "{Name}    <style=\"hovercard_element\">({Element})</style>"
+msgstr "{Name}    <style=\"hovercard_element\">({Element})</style>"
+
 #. STRINGS.UI.TOOLS.GENERIC.UNKNOWN
 msgctxt "STRINGS.UI.TOOLS.GENERIC.UNKNOWN"
 msgid "UNKNOWN"
@@ -37057,8 +37944,13 @@ msgstr "破壊"
 
 #. STRINGS.UI.TOOLS.SANDBOX.FLOOD.NAME
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.FLOOD.NAME"
-msgid "Flood"
-msgstr "水没"
+msgid "Fill"
+msgstr "塗りつぶし"
+
+#. STRINGS.UI.TOOLS.SANDBOX.FOW.NAME
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.FOW.NAME"
+msgid "Reveal"
+msgstr "マップ開示"
 
 #. STRINGS.UI.TOOLS.SANDBOX.HEATGUN.NAME
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.HEATGUN.NAME"
@@ -37098,7 +37990,7 @@ msgstr "ばら撒き"
 #. STRINGS.UI.TOOLTIPS.ALERTSTOOLTIP
 msgctxt "STRINGS.UI.TOOLTIPS.ALERTSTOOLTIP"
 msgid ""
-"Alerts provide important information about what's happening to your colony "
+"Alerts provide important information about what's happening in the colony "
 "right now"
 msgstr ""
 "警報はコロニーで現在起こっていることについて重要な情報を知らせてくれます"
@@ -37268,6 +38160,16 @@ msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_OCCUPIED"
 msgid "Must be built in unoccupied space"
 msgstr "空いている空間に建設する必要があります"
 
+#. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_SOLIDPORTS_OBSTRUCTED
+msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_SOLIDPORTS_OBSTRUCTED"
+msgid "Solid ports are obstructed"
+msgstr "物理ポート閉塞"
+
+#. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_SPACE
+msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_SPACE"
+msgid "Must be built on the asteroid surface"
+msgstr "表層に建設する必要があります"
+
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_WIRE_OBSTRUCTION
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_WIRE_OBSTRUCTION"
 msgid "Obstructed by wire"
@@ -37296,13 +38198,13 @@ msgstr "ここでは引き返せません"
 #. STRINGS.UI.TOOLTIPS.INFOPANEL
 msgctxt "STRINGS.UI.TOOLTIPS.INFOPANEL"
 msgid ""
-"The Info Panel contains an overview of the basic information about your "
+"The Info Panel contains an overview of the basic information about my "
 "Duplicant"
 msgstr "情報パネルは複製人間の基本情報を表示します"
 
 #. STRINGS.UI.TOOLTIPS.ITEMSPANEL
 msgctxt "STRINGS.UI.TOOLTIPS.ITEMSPANEL"
-msgid "The Items Panel displays everything your Duplicant is in possession of"
+msgid "The Items Panel displays everything this Duplicant is in possession of"
 msgstr "アイテムパネルは複製人間の持ち物の情報を表示します"
 
 #. STRINGS.UI.TOOLTIPS.JOBSSCREEN_ATTRIBUTES
@@ -37426,8 +38328,7 @@ msgstr "{0} でできています"
 #. STRINGS.UI.TOOLTIPS.MESSAGESTOOLTIP
 msgctxt "STRINGS.UI.TOOLTIPS.MESSAGESTOOLTIP"
 msgid ""
-"Messages are events that have happened and tips to help you manage your "
-"colony"
+"Messages are events that have happened and tips to help me manage my colony"
 msgstr "メッセージはコロニー管理に役立つ情報や出来事を表しています"
 
 #. STRINGS.UI.TOOLTIPS.METERSCREEN_AVGSTRESS
@@ -37601,13 +38502,13 @@ msgstr "低速 {0}"
 
 #. STRINGS.UI.TOOLTIPS.STATSPANEL
 msgctxt "STRINGS.UI.TOOLTIPS.STATSPANEL"
-msgid "The Stats Panel gives an overview of your Duplicant's individual stats"
+msgid "The Stats Panel gives me an overview of my Duplicant's individual stats"
 msgstr "ステータスパネルは複製人間の個人ステータスを表示します"
 
 #. STRINGS.UI.TOOLTIPS.STRESSDESCRIPTION
 msgctxt "STRINGS.UI.TOOLTIPS.STRESSDESCRIPTION"
 msgid ""
-"Accommodate your Duplicant's needs to manage their <link=\"STRESS\">Stress</"
+"Accommodate my Duplicant's needs to manage their <link=\"STRESS\">Stress</"
 "link>.\n"
 "\n"
 "Low <link=\"STRESS\">Stress</link> can provide a productivity boost, while "
@@ -37622,7 +38523,7 @@ msgstr ""
 #. STRINGS.UI.TOOLTIPS.STRESSPANEL
 msgctxt "STRINGS.UI.TOOLTIPS.STRESSPANEL"
 msgid ""
-"The Stress Panel offers an in detail look at what is affecting your "
+"The Stress Panel offers a detailed look at what is psychology affecting "
 "Duplicant psychologically"
 msgstr "ストレスパネルは複製人間の心理状態に影響を及ぼすものを詳細に表示します"
 
@@ -37708,7 +38609,7 @@ msgstr "この植物の体温は {temperature} です"
 
 #. STRINGS.UI.TOOLTIPS.VITALSPANEL
 msgctxt "STRINGS.UI.TOOLTIPS.VITALSPANEL"
-msgid "The Vitals Panel monitors the status and well being of your Duplicant"
+msgid "The Vitals Panel monitors the status and well being of my Duplicant"
 msgstr "バイタルパネルは複製人間の健康状態を表示します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.DOOR_DEFAULT
@@ -37930,6 +38831,35 @@ msgstr "自動格納庫容積"
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPACITY_SIDE_SCREEN.TOOLTIP"
 msgid "Adjust the maximum amount that can be stored here"
 msgstr "ここに格納する最大容量を調整します"
+
+#. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE
+msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE"
+msgid "Auto-Wrangle Surplus"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE_TOOLTIP
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE_TOOLTIP"
+msgid ""
+"A Rancher will automatically wrangle any critters that exceed the population "
+"limit or that do not belong in this stable"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.LIMIT_TOOLTIP
+msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.LIMIT_TOOLTIP"
+msgid ""
+"Critters exceeding this population limit will automatically be wrangled:"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.TITLE
+msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.TITLE"
+msgid "Stable Management"
+msgstr "厩舎の管理"
+
+#. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.UNITS_SUFFIX
+msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.UNITS_SUFFIX"
+msgid " Critters"
+msgstr " 動物"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT"
@@ -38619,6 +39549,11 @@ msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELDPERHARVEST"
 msgid "{0} {1} per harvest"
 msgstr "収穫ごとに{0} {1}"
 
+#. STRINGS.UI.UISIDESCREENS.REFINERYSIDESCREEN.RECIPE_FROM_TO
+msgctxt "STRINGS.UI.UISIDESCREENS.REFINERYSIDESCREEN.RECIPE_FROM_TO"
+msgid "{0} to {1}"
+msgstr "{0}から{1}"
+
 #. STRINGS.UI.UISIDESCREENS.RESEARCHSIDESCREEN.CURRENTLYRESEARCHING
 msgctxt "STRINGS.UI.UISIDESCREENS.RESEARCHSIDESCREEN.CURRENTLYRESEARCHING"
 msgid "Currently Researching"
@@ -38757,6 +39692,11 @@ msgctxt "STRINGS.UI.UISIDESCREENS.SUIT_SIDE_SCREEN.CONFIG_REQUEST_SUIT_TOOLTIP"
 msgid ""
 "Duplicants will immediately deliver and dock the nearest unequipped suit"
 msgstr "複製人間は付近にあるEXOスーツを直ちに配達します"
+
+#. STRINGS.UI.UISIDESCREENS.SUIT_SIDE_SCREEN.CONFIGURATION_REQUIRED
+msgctxt "STRINGS.UI.UISIDESCREENS.SUIT_SIDE_SCREEN.CONFIGURATION_REQUIRED"
+msgid "Configuration Required:"
+msgstr "設定が必要です:"
 
 #. STRINGS.UI.UISIDESCREENS.SUIT_SIDE_SCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.SUIT_SIDE_SCREEN.TITLE"
@@ -39113,16 +40053,6 @@ msgctxt "STRINGS.UI.UNITSUFFIXES.ELECTRICAL.WATT"
 msgid " W"
 msgstr " W"
 
-#. STRINGS.UI.UNITSUFFIXES.HEAT.SPECIFICHEATCAPACITY
-msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.SPECIFICHEATCAPACITY"
-msgid "(J/g)/K"
-msgstr "(J/g)/K"
-
-#. STRINGS.UI.UNITSUFFIXES.HEAT.THERMALCONDUCTIVITY
-msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.THERMALCONDUCTIVITY"
-msgid "(W/m)/K"
-msgstr "(W/m)/K"
-
 #. STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA
 msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA"
 msgid " dr"
@@ -39200,8 +40130,8 @@ msgstr " ºF"
 
 #. STRINGS.UI.UNITSUFFIXES.TEMPERATURE.KELVIN
 msgctxt "STRINGS.UI.UNITSUFFIXES.TEMPERATURE.KELVIN"
-msgid " K"
-msgstr " K"
+msgid " ºK"
+msgstr " ºK"
 
 #. STRINGS.UI.UNITSUFFIXES.UNITS
 msgctxt "STRINGS.UI.UNITSUFFIXES.UNITS"
@@ -40021,15 +40951,17 @@ msgstr "開始"
 #. STRINGS.UI.WELCOMEMESSAGEBODY
 msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY"
 msgid ""
-"Your crew has awoken stranded inside a distant asteroid.\n"
-"Oddly, they can't recall how they got here.\n"
+"I've awakened trapped inside an asteroid with a crew of three Duplicants.\n"
 "\n"
-"They'll need to survive to find answers."
+"Resources are scarce. I can't remember how we got here.\n"
+"\n"
+"I'll need to help the Duplicants survive if we're going to find answers."
 msgstr ""
-"乗組員たちは見知らぬアステロイドの地下深くで目覚めました。\n"
-"どういう訳か、どうやってここまで来たのか思い出せません。\n"
+"私は3人の複製人間とともに小惑星内部で目覚めた。\n"
 "\n"
-"答えを見つけるために、生き延びなければなりません。"
+"資源は乏しく、何故ここにいるのかも分からない。\n"
+"\n"
+"答えを見つけるために、彼らが生き残れるよう手助けしてやらねばならない。"
 
 #. STRINGS.UI.WELCOMEMESSAGETITLE
 msgctxt "STRINGS.UI.WELCOMEMESSAGETITLE"
@@ -40535,6 +41467,347 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP"
+#~ msgid "A new colony member is ready to be printed"
+#~ msgstr "新しいメンバーの複製準備が整いました"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.TINKERING.TOOLTIP"
+#~ msgid ""
+#~ "The duplicant working this station is creating {0} for use elsewhere."
+#~ msgstr "ここで作業中の複製人間は他で利用可能な {0} を製造しています。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.DESC"
+#~ msgid ""
+#~ "Airborne germs travel easily through polluted oxygen, spreading disease "
+#~ "if unfiltered."
+#~ msgstr ""
+#~ "空気中を漂う病原菌は汚染酸素を通して容易に増殖し、感染を拡大させます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEHABITAT.DESC"
+#~ msgid "Placing algae terrariums in well lit areas will produce more oxygen."
+#~ msgstr ""
+#~ "光が良く当たる場所にテラリウムを設置すると、より多くの酸素を生成します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.DESC"
+#~ msgid ""
+#~ "Electrolyzers output a high volume of oxygen and are a reliable source of "
+#~ "breathable air."
+#~ msgstr "電解装置は呼吸可能な空気として大量の酸素を生産します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.EFFECT"
+#~ msgid "Reduces <link=\"HEAT\">Heat</link> loss through colony walls."
+#~ msgstr ""
+#~ "コロニーの壁を通して伝わる<link=\"HEAT\">熱</link>損失を軽減します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONWALL.NAME"
+#~ msgid "<link=\"INSULATIONWALL\">Insulation</link>"
+#~ msgstr "<link=\"INSULATIONWALL\">断熱材</link>"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.DESC"
+#~ msgid ""
+#~ "Manual generators require no fuel and power buildings when connected to "
+#~ "them by wire."
+#~ msgstr ""
+#~ "人力発電機は配線されていれば設備に電力を供給します。燃料を必要としません。"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.ATMOSPHERE_OK.NAME"
+#~ msgid "Acceptable Atmosphere"
+#~ msgstr "許容範囲"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.ATMOSPHERE_OK.TOOLTIP"
+#~ msgid "It's breathable."
+#~ msgstr "呼吸できます。"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.HAS_FOOD_SOURCE.NAME"
+#~ msgid "Fed"
+#~ msgstr "食後"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.HAS_FOOD_SOURCE.TOOLTIP"
+#~ msgid "Has enough food to eat."
+#~ msgstr "すでに十分食べています。"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.IN_PEN.NAME"
+#~ msgid "Critter Pen"
+#~ msgstr "動物用囲い"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.IN_PEN.TOOLTIP"
+#~ msgid "Has a pen to live in."
+#~ msgstr "居住用の囲いです。"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.TEMPERATURE_OK.NAME"
+#~ msgid "Comfortable Temperature"
+#~ msgstr "快適な温度"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.TEMPERATURE_OK.TOOLTIP"
+#~ msgid "Not too hot, not too cold."
+#~ msgstr "暑すぎず、寒すぎず。"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_FED.NAME"
+#~ msgid "Well Fed"
+#~ msgstr "満腹"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_FED.TOOLTIP"
+#~ msgid "This critter has recently dined on its favorite food."
+#~ msgstr "この動物は好物を食べたばかりです。"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_GROOMED.NAME"
+#~ msgid "Well Groomed"
+#~ msgstr "十分な手入れ"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.WELL_GROOMED.TOOLTIP"
+#~ msgid "Getting plenty of personal attention from a Rancher."
+#~ msgstr "牧夫から十分な手入れを受けています。"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.DESTRUCTIVE.NAME"
+#~ msgid "Destructive"
+#~ msgstr "破壊"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.DESTRUCTIVE.TOOLTIP"
+#~ msgid "Likely to mess up the place"
+#~ msgstr "めちゃくちゃにされそうです。"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.GAIN_FERTILITY.NAME"
+#~ msgid "Increased Reproduction"
+#~ msgstr "繁殖力向上"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.GAIN_FERTILITY.TOOLTIP"
+#~ msgid "This critter will produce an egg soon if conditions remain favorable"
+#~ msgstr "この動物は好適な条件が満たされていれば卵を産みやすくなります"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.GOOD_PRODUCTIVITY.NAME"
+#~ msgid "Good Productivity"
+#~ msgstr "多産"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.GOOD_PRODUCTIVITY.TOOLTIP"
+#~ msgid "Producing at a normal level"
+#~ msgstr "通常レベルの繁殖力です"
+
+#~ msgctxt ""
+#~ "STRINGS.CREATURES.DOMESTICATION.EFFECTS.INCREASED_CRITERIA_PENALTY.NAME"
+#~ msgid "Sensitive"
+#~ msgstr "神経質"
+
+#~ msgctxt ""
+#~ "STRINGS.CREATURES.DOMESTICATION.EFFECTS.INCREASED_CRITERIA_PENALTY.TOOLTIP"
+#~ msgid "Loses happiness faster than normal under poor conditions"
+#~ msgstr "貧弱な条件下では通常時より幸福度の下がり方が速くなります"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_FERTILITY.NAME"
+#~ msgid "Decreased Reproduction"
+#~ msgstr "繁殖力低下"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_FERTILITY.TOOLTIP"
+#~ msgid "This creature is holding off on laying eggs due to bad conditions"
+#~ msgstr "この生物は悪条件により産卵を控えています"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_HAPPINESS.NAME"
+#~ msgid "Downward Spiral"
+#~ msgstr "負のスパイラル"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOSE_HAPPINESS.TOOLTIP"
+#~ msgid "Losing happiness until conditions improve"
+#~ msgstr "条件が改善されるまで幸福度が下がります"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOW_PRODUCTIVITY.NAME"
+#~ msgid "Low Productivity"
+#~ msgstr "低繁殖力"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.LOW_PRODUCTIVITY.TOOLTIP"
+#~ msgid "Producing at a reduced level"
+#~ msgstr "繁殖力は低下しています"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.UNPRODUCTIVE.NAME"
+#~ msgid "Unproductive"
+#~ msgstr "繁殖拒否"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.EFFECTS.UNPRODUCTIVE.TOOLTIP"
+#~ msgid ""
+#~ "Without improved conditions, this critter will not provide any useful "
+#~ "products"
+#~ msgstr "条件が改善されない限り、この動物は便利な生産物を供給しません"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.HAPPY.NAME"
+#~ msgid "Tame"
+#~ msgstr "従順"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.HAPPY.TOOLTIP"
+#~ msgid ""
+#~ "This critter is well taken care of and fully trusts its Duplicant "
+#~ "caregivers"
+#~ msgstr ""
+#~ "この動物は行き届いた世話を受けており、世話してくれる複製人間を完全に信頼し"
+#~ "ています"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.NEUTRAL.NAME"
+#~ msgid "Skittish"
+#~ msgstr "じゃじゃ馬"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.NEUTRAL.TOOLTIP"
+#~ msgid ""
+#~ "This critter's most basic needs are being met, but it's still wary of "
+#~ "Duplicants"
+#~ msgstr ""
+#~ "この動物の基本的欲求は満たされていますが、複製人間をまだ警戒しています"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.SPOILED.NAME"
+#~ msgid "Affectionate"
+#~ msgstr "愛情たっぷり"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.SPOILED.TOOLTIP"
+#~ msgid ""
+#~ "This critter loves its Duplicant caregivers and is spoiled absolutely "
+#~ "rotten"
+#~ msgstr "この動物は世話してくれる複製人間が好きでたまらなく、とても幸せです"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.UNHAPPY.NAME"
+#~ msgid "Wild"
+#~ msgstr "野生"
+
+#~ msgctxt "STRINGS.CREATURES.DOMESTICATION.LEVELS.UNHAPPY.TOOLTIP"
+#~ msgid "This critter is fending for itself and does not trust Duplicants"
+#~ msgstr "この動物は自活しており、複製人間を信頼していません"
+
+#~ msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR.NAME"
+#~ msgid "Incubator"
+#~ msgstr "孵卵器"
+
+#~ msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR.TOOLTIP"
+#~ msgid "Increased incubation rate when placed inside an Incubator"
+#~ msgstr "孵卵器に設置された時に、孵化までにかかる時間を決定します"
+
+#~ msgctxt "STRINGS.CREATURES.SPECIES.PACU.VARIANT_CLEANER.NAME"
+#~ msgid "<link=\"GULPFISH\">Gulp Fish</link>"
+#~ msgstr "<link=\"GULPFISH\">ガルプ フィッシュ</link>"
+
+#~ msgctxt "STRINGS.CREATURES.STATS.THERMALCONDUCTIVITY.NAME"
+#~ msgid "Thermal Conductivity"
+#~ msgstr "熱伝導率"
+
+#~ msgctxt "STRINGS.CREATURES.STATS.THERMALCONDUCTIVITY.TOOLTIP"
+#~ msgid "Heat can pass through the selected object at a rate of (W/m)/K"
+#~ msgstr "熱は選択された物体を (W/m)/K の割合で移動することができます"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.NAME"
+#~ msgid "Assist Newborn Critter"
+#~ msgstr "新生動物の補助"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.STATUS"
+#~ msgid "Assisting Newborn Critter"
+#~ msgstr "生まれたての動物を補助しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.TOOLTIP"
+#~ msgid ""
+#~ "This Rancher Duplicant is welcoming a newborn critter into the colony"
+#~ msgstr "この複製人間はコロニー内で生まれた動物を歓迎しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.NOTIFICATION_TOOLTIP"
+#~ msgid "These Duplicants are distressed by the lack of toilets:"
+#~ msgstr "これらの複製人間はコロニーにトイレがないことにより苦しんでいます:"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.SUITS.TOOLTIP"
+#~ msgid "Learn how to use exosuits"
+#~ msgstr "EXOスーツについて学ぶ"
+
+#~ msgctxt "STRINGS.MISC.TAGS.MARKEDFORCOMPOST"
+#~ msgid "Compost Edibles"
+#~ msgstr "堆肥原料"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.ENABLE_BUTTON"
+#~ msgid "Opt-In to Data Collection: "
+#~ msgstr "データ収集に協力する: "
+
+#~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
+#~ msgid ""
+#~ "<b>Update Features:</b>\n"
+#~ "\n"
+#~ "• New \"Critter Morphs\" can be hatched through careful breeding\n"
+#~ "• Two new creatures, Drecko and Pacu, can be found in new worlds\n"
+#~ "• Sandbox Mode lets you become master of the asteroid\n"
+#~ "• New automation controls, pipes and buildings\n"
+#~ "\n"
+#~ "Please view the full patch notes for further details!"
+#~ msgstr ""
+#~ "<b>新機能:</b>\n"
+#~ "\n"
+#~ "• 特定の条件下では動物の変種が誕生するようになりました\n"
+#~ "• 新しい生き物、ドレッコとパクーを追加しました\n"
+#~ "• サンドボックスモードで練習できるようになりました\n"
+#~ "• 新しい自動化制御部品、パイプ、設備\n"
+#~ "\n"
+#~ "より詳しい内容についてはパッチノートを参照してください！"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
+#~ msgid "RANCHING UPGRADE MARK II"
+#~ msgstr "家畜アップデート第二弾"
+
+#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MINION_DESTRUCTION"
+#~ msgid "Anger Damage"
+#~ msgstr "八つ当たりダメージ"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION"
+#~ msgid "Trait: <link=\"SUPER COMPUTER\">Researching</link>"
+#~ msgstr "特性: <link=\"SUPER COMPUTER\">研究</link>"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION"
+#~ msgid "Trait: <link=\"ELECTRIC GRILL\">Electric Grill</link> Cooking"
+#~ msgstr "特性: <link=\"ELECTRIC GRILL\">電気グリル</link>を使った料理"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_PAINT.DESCRIPTION"
+#~ msgid "Trait: <link=\"DECOR\">Canvas Painting</link>"
+#~ msgstr "特性: <link=\"DECOR\">キャンバスの描画</link>"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SCULPT.DESCRIPTION"
+#~ msgid "Trait: <link=\"DECOR\">Block Sculpting</link>"
+#~ msgstr "特性: <link=\"DECOR\">ブロックの彫刻</link>"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.NAME"
+#~ msgid "Clear Floor"
+#~ msgstr "床掃除"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.TOOLTIP"
+#~ msgid "Delete clutter"
+#~ msgstr "がれきを削除します"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.NAME"
+#~ msgid "Flood"
+#~ msgstr "洪水"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.TOOLTIP"
+#~ msgid "Paint the world simulation with a the flood area tool"
+#~ msgstr "洪水エリアツールで塗りたくります"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.TOOLTIP"
+#~ msgid "Paint the world simulation with a noisey brush tool"
+#~ msgstr "にぎやかなブラシツールで世界を塗りたくります"
+
+#~ msgctxt "STRINGS.UI.TOOLS.SANDBOX.FLOOD.NAME"
+#~ msgid "Flood"
+#~ msgstr "水没"
+
+#~ msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.SPECIFICHEATCAPACITY"
+#~ msgid "(J/g)/K"
+#~ msgstr "(J/g)/K"
+
+#~ msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.THERMALCONDUCTIVITY"
+#~ msgid "(W/m)/K"
+#~ msgstr "(W/m)/K"
+
+#~ msgctxt "STRINGS.UI.UNITSUFFIXES.TEMPERATURE.KELVIN"
+#~ msgid " K"
+#~ msgstr " K"
+
+#~ msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY"
+#~ msgid ""
+#~ "Your crew has awoken stranded inside a distant asteroid.\n"
+#~ "Oddly, they can't recall how they got here.\n"
+#~ "\n"
+#~ "They'll need to survive to find answers."
+#~ msgstr ""
+#~ "乗組員たちは見知らぬアステロイドの地下深くで目覚めました。\n"
+#~ "どういう訳か、どうやってここまで来たのか思い出せません。\n"
+#~ "\n"
+#~ "答えを見つけるために、生き延びなければなりません。"
 
 #~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT"
 #~ msgid ""
