@@ -41,3 +41,23 @@ MIT License
 
 [piyo-gh](https://github.com/piyo-gh)
 
+[seisuke](https://github.com/seisuke)
+
+
+## 翻訳の手伝いをしてくれる人を募集しています
+
+### for Github User
+1. 翻訳ブランチ(大抵は xxx-upgarde という名前がついています)をforkします。  
+1. 自分用の翻訳ブランチを作成します。  
+1. poフォルダ内のカテゴリ分けされた翻訳ファイルから任意のファイルを翻訳します。  
+poファイルの編集には [POEdit](https://poedit.net/) がお勧めです。  
+1. コミットします。  
+1. プルリクエストを出す前に、翻訳ブランチの最新状況を自分のブランチに取り込みます。  
+1. プルリクエストを出します。
+
+
+### for Non-Github User  
+「Gitとかよく分からないし...」と思った方。翻訳に参加するためにGithubユーザーである必要はありません。  
+翻訳案はWorkshopの[翻訳スレッド](https://steamcommunity.com/workshop/filedetails/discussion/928606476/1290690669224436955/)でも受け付けていますので、「ここが変だ」とか「ここはこういう訳にしたほうが良いんじゃないか」と言ったコメントは大歓迎です。
+
+
