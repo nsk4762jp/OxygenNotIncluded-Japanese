@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -213,15 +213,16 @@ msgstr "装飾"
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.DESC"
 msgid ""
-"Not meeting a Duplicant's <link=\"DECOR\">Decor</link> expectations will "
-"increase their <link=\"STRESS\">Stress</link>."
+"Duplicants with a high Decor Perception don't require as much <link=\"DECOR"
+"\">Decor</link> to keep up their <link=\"QUALITYOFLIFE\">Morale</link>."
 msgstr ""
-"<link=\"DECOR\">装飾</link>が複製人間の期待に満たない場合、<link=\"STRESS\">"
-"ストレス</link>上昇の原因となります。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.NAME"
+#| msgid "Decor Expectation"
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.NAME"
-msgid "Decor Expectation"
+msgid "Decor Perception"
 msgstr "装飾期待値"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECORRADIUS.DESC
@@ -311,15 +312,16 @@ msgstr "繁殖率"
 #. STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.DESC"
 msgid ""
-"Not meeting a Duplicant's <link=\"FOOD\">Food</link> expectations will "
-"increase their <link=\"STRESS\">Stress</link>."
+"Duplicants with a high Food Perception are satisfied with lower quaity <link="
+"\"FOOD\">Food</link> to keep up their <link=\"QUALITYOFLIFE\">Morale</link>."
 msgstr ""
-"<link=\"FOOD\">食事</link>が複製人間の口に合わないと、<link=\"STRESS\">ストレ"
-"ス</link>上昇の原因となります。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.NAME"
+#| msgid "Food Quality Expectation"
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.NAME"
-msgid "Food Quality Expectation"
+msgid "Food Quality Perception"
 msgstr "食糧品質期待値"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.GENERATOROUTPUT.NAME
@@ -552,6 +554,44 @@ msgstr ""
 "職業は複製人間の最高属性値で決定されます。\n"
 "----------\n"
 "複製人間は職業レベルが上がるほど要求する期待も上昇していきます"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MEDICALCOT.TOOLTIP"
+#| msgid ""
+#| "This Duplicant's injury and disease recovery times are being improved"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFE.DESC"
+msgid "How well this Duplicant's expectations and aspirations are being met."
+msgstr "この複製人間の損傷、病気からの快復時間は早まっています"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFE.DESC_FORMAT
+#, fuzzy
+#| msgctxt "STRINGS.UI.NAME_WITH_UNITS"
+#| msgid "{0} x {1}"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFE.DESC_FORMAT"
+msgid "{0} / {1}"
+msgstr "{0} x {1}"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFE.NAME
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFE.NAME"
+msgid "Morale"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.NOISE.NAME"
+#| msgid "Noise Expectation"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+msgid "Morale Expectation"
+msgstr "騒音期待値"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.NOISE.NAME"
+#| msgid "Noise Expectation"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.NAME"
+msgid "Morale Expectation"
+msgstr "騒音期待値"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.RANCHING.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.RANCHING.DESC"
@@ -973,6 +1013,31 @@ msgstr "暴食中"
 msgctxt "STRINGS.DUPLICANTS.CHORES.BINGE_EAT.TOOLTIP"
 msgid "This Duplicant is attempting to eat their emotions due to stress"
 msgstr "この複製人間はストレスでヤケ食いをしています"
+
+#. STRINGS.DUPLICANTS.CHORES.BREAK_PEE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.USETOILET.NAME"
+#| msgid "Use Toilet"
+msgctxt "STRINGS.DUPLICANTS.CHORES.BREAK_PEE.NAME"
+msgid "Downtime: Use Toilet"
+msgstr "トイレ使用"
+
+#. STRINGS.DUPLICANTS.CHORES.BREAK_PEE.STATUS
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.USETOILET.STATUS"
+#| msgid "Going to use toilet"
+msgctxt "STRINGS.DUPLICANTS.CHORES.BREAK_PEE.STATUS"
+msgid "Downtime: Going to use toilet"
+msgstr "トイレに向かっている"
+
+#. STRINGS.DUPLICANTS.CHORES.BREAK_PEE.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.CHORES.BREAK_PEE.TOOLTIP"
+msgid ""
+"This Duplicant has scheduled Downtime and is using their break to go to the "
+"toilet\n"
+"\n"
+"Duplicants have to use the toilet at least once per day"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.CHORES.BUILD.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.BUILD.NAME"
@@ -1448,6 +1513,30 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.FLIPCOMPOST.TOOLTIP"
 msgid "Composts need to be flipped in order for their contents to compost"
 msgstr "堆肥化を進めるために、堆肥置き場を切り返してください"
 
+#. STRINGS.DUPLICANTS.CHORES.FLOORSLEEP.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.CLEAR_BUTTON"
+#| msgid "Clear Floor"
+msgctxt "STRINGS.DUPLICANTS.CHORES.FLOORSLEEP.NAME"
+msgid "Sleep on Floor"
+msgstr "床掃除"
+
+#. STRINGS.DUPLICANTS.CHORES.FLOORSLEEP.STATUS
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.UNCOMFORTABLESLEEP.NAME"
+#| msgid "Sleeping Uncomfortably"
+msgctxt "STRINGS.DUPLICANTS.CHORES.FLOORSLEEP.STATUS"
+msgid "Sleeping on Floor"
+msgstr "意図しない睡眠"
+
+#. STRINGS.DUPLICANTS.CHORES.FLOORSLEEP.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.CHORES.FLOORSLEEP.TOOLTIP"
+msgid ""
+"Zzzzzz...\n"
+"\n"
+"Sleeping on the floor will give Duplicants a Sore Back"
+msgstr ""
+
 #. STRINGS.DUPLICANTS.CHORES.GENERATEPOWER.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.GENERATEPOWER.NAME"
 msgid "Generate Power"
@@ -1552,6 +1641,30 @@ msgstr "モップ掛けに向かっている"
 msgctxt "STRINGS.DUPLICANTS.CHORES.MOP.TOOLTIP"
 msgid "Mopping removes liquids from the floor and bottles them for transport"
 msgstr "床をモップ掛けすることで液体をボトル詰めし、持ち運びます"
+
+#. STRINGS.DUPLICANTS.CHORES.MOURN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MOURNING.NAME"
+#| msgid "Mourning"
+msgctxt "STRINGS.DUPLICANTS.CHORES.MOURN.NAME"
+msgid "Mourn"
+msgstr "死に嘆いている"
+
+#. STRINGS.DUPLICANTS.CHORES.MOURN.STATUS
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MOURNING.NAME"
+#| msgid "Mourning"
+msgctxt "STRINGS.DUPLICANTS.CHORES.MOURN.STATUS"
+msgid "Mourning"
+msgstr "死に嘆いている"
+
+#. STRINGS.DUPLICANTS.CHORES.MOURN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MOURNING.TOOLTIP"
+#| msgid "This Duplicant is grieving the loss of a friend"
+msgctxt "STRINGS.DUPLICANTS.CHORES.MOURN.TOOLTIP"
+msgid "Mourning the loss of a friend"
+msgstr "この複製人間は友の喪失に嘆いています"
 
 #. STRINGS.DUPLICANTS.CHORES.MOVETO.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.MOVETO.NAME"
@@ -1665,6 +1778,19 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.ALLOWED_TO_DEPRESSURIZE"
 msgid "Not currently overpressure"
 msgstr "気圧超過でない"
 
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.BLADDER_FULL
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.BLADDER_FULL"
+msgid "Bladder isn't full"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.BLADDER_NOT_FULL
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.BUILD.TOOLNAME"
+#| msgid "Build tool"
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.BLADDER_NOT_FULL"
+msgid "Bladder too full"
+msgstr "建設ツール"
+
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_CHAT
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_CHAT"
 msgid "Unreachable"
@@ -1674,6 +1800,14 @@ msgstr "到達不可"
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_CURE"
 msgid "No applicable diseases"
 msgstr "適用可能な病気なし"
+
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_DO_RECREATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.ASSIGNMENT_REQUIREMENTS.APTITUDES"
+#| msgid "Interests"
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_DO_RECREATION"
+msgid "Not Interested"
+msgstr "興味"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_MOVE_TO
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_MOVE_TO"
@@ -1704,8 +1838,26 @@ msgstr "スーツは充電中です"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.EDIBLE_IS_NOT_NULL
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.EDIBLE_IS_NOT_NULL"
-msgid "EdibleIsNotNull"
-msgstr "腹八分目"
+msgid "Consumable Permission not allowed"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.EXCLUSIVELY_AVAILABLE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.FLOODED.NAME"
+#| msgid "Building Flooded"
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.EXCLUSIVELY_AVAILABLE"
+msgid "Building Already Busy"
+msgstr "設備水没"
+
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_MINGLE_CELL
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_MINGLE_CELL"
+msgid "Nowhere to Mingle"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_PLACE_TO_STAND
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_PLACE_TO_STAND"
+msgid "Nowhere to stand"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_ROLE_PERK
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_ROLE_PERK"
@@ -1893,6 +2045,14 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_VALID"
 msgid "Invalid"
 msgstr "無効"
 
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NO_DEAD_BODIES
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.SIDEBAR.UNASSIGNED_DUPLICANTS"
+#| msgid "Unassigned Duplicants"
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NO_DEAD_BODIES"
+msgid "Unburied Duplicant"
+msgstr "複製人間未割り当て"
+
 # 用途不明
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_CHORE_CREATOR
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_CHORE_CREATOR"
@@ -1903,6 +2063,11 @@ msgstr "デバッグ:雑役生成しない"
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_IN_TUBE"
 msgid "{Selected} is busy in transit"
 msgstr "{Selected}は移動中です"
+
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.VALID_MOURNING_SITE
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.VALID_MOURNING_SITE"
+msgid "Nowhere to mourn"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.CHORES.RANCH.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.RANCH.NAME"
@@ -2118,11 +2283,10 @@ msgstr "卵に歌を聴かせています"
 #. STRINGS.DUPLICANTS.CHORES.SINGTOEGG.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.SINGTOEGG.TOOLTIP"
 msgid ""
-"Singing to critter eggs improves their incubation rate, and really who "
-"doesn't love singing?"
+"A gentle lullaby from a supportive Rancher encourages developing eggs\n"
+"\n"
+"Increases Incubation Rate"
 msgstr ""
-"動物の卵に歌を聴かせてやると孵化率が上昇します。歌が嫌いな人なんていないで"
-"しょう？"
 
 #. STRINGS.DUPLICANTS.CHORES.SLEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.SLEEP.NAME"
@@ -2153,6 +2317,30 @@ msgstr "八つ当たり中"
 msgctxt "STRINGS.DUPLICANTS.CHORES.STRESSACTINGOUT.TOOLTIP"
 msgid "This Duplicant is having a stress-induced tantrum"
 msgstr "この複製人間はストレス性の癇癪を起こしています"
+
+#. STRINGS.DUPLICANTS.CHORES.STRESSHEAL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATS.STRESS.NAME"
+#| msgid "Stress"
+msgctxt "STRINGS.DUPLICANTS.CHORES.STRESSHEAL.NAME"
+msgid "De-Stress"
+msgstr "ストレス"
+
+#. STRINGS.DUPLICANTS.CHORES.STRESSHEAL.STATUS
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.STRESSVOMIT.STATUS"
+#| msgid "Stress vomiting"
+msgctxt "STRINGS.DUPLICANTS.CHORES.STRESSHEAL.STATUS"
+msgid "De-Stressing"
+msgstr "ストレスによる嘔吐中"
+
+#. STRINGS.DUPLICANTS.CHORES.STRESSHEAL.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WETFEET.TOOLTIP"
+#| msgid "This Duplicant recently stepped in liquid"
+msgctxt "STRINGS.DUPLICANTS.CHORES.STRESSHEAL.TOOLTIP"
+msgid "This Duplicant really needs to unwind"
+msgstr "この複製人間はどうやら液体の中に踏み込んでしまったようです"
 
 #. STRINGS.DUPLICANTS.CHORES.STRESSIDLE.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.STRESSIDLE.NAME"
@@ -2551,6 +2739,18 @@ msgstr ""
 "\n"
 "この複製人間の思考回路は、ひどい寒さに晒されたせいで遅くなっています"
 
+#. STRINGS.DUPLICANTS.DISEASES.COLDBRAIN.DESCRIPTIVE_SYMPTOMS
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.DISEASES.SUNBURN.DESCRIPTIVE_SYMPTOMS"
+#| msgid ""
+#| "Nonlethal. Duplicants experience temporary discomfort due to "
+#| "dermatological damage."
+msgctxt "STRINGS.DUPLICANTS.DISEASES.COLDBRAIN.DESCRIPTIVE_SYMPTOMS"
+msgid ""
+"Nonlethal. Duplicants experience extreme body heat loss causing chills and "
+"discomfort."
+msgstr "非致命的。複製人間は皮膚へのダメージによって一時的に不快感を得ます。"
+
 #. STRINGS.DUPLICANTS.DISEASES.COLDBRAIN.LEGEND_HOVERTEXT
 msgctxt "STRINGS.DUPLICANTS.DISEASES.COLDBRAIN.LEGEND_HOVERTEXT"
 msgid "Area Causes Hypothermia\n"
@@ -2855,6 +3055,16 @@ msgstr ""
 "\n"
 "この複製人間は極端な高熱に晒された結果、生理機能がショートしてしまったと考え"
 "られます"
+
+#. STRINGS.DUPLICANTS.DISEASES.HEATRASH.DESCRIPTIVE_SYMPTOMS
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.DISEASES.SUNBURN.DESCRIPTIVE_SYMPTOMS"
+#| msgid ""
+#| "Nonlethal. Duplicants experience temporary discomfort due to "
+#| "dermatological damage."
+msgctxt "STRINGS.DUPLICANTS.DISEASES.HEATRASH.DESCRIPTIVE_SYMPTOMS"
+msgid "Nonlethal. Duplicants experience high fever and discomfort."
+msgstr "非致命的。複製人間は皮膚へのダメージによって一時的に不快感を得ます。"
 
 #. STRINGS.DUPLICANTS.DISEASES.HEATRASH.LEGEND_HOVERTEXT
 msgctxt "STRINGS.DUPLICANTS.DISEASES.HEATRASH.LEGEND_HOVERTEXT"
@@ -3349,8 +3559,11 @@ msgid "This lucky Duplicant has their own private bedroom"
 msgstr "この幸運な複製人間は自身の寝室を持っています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BEDSTAMINA.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BEDSTAMINA.NAME"
+#| msgid "Slept in a cot"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BEDSTAMINA.NAME"
-msgid "Slept in a cot"
+msgid "Sleeping in a cot"
 msgstr "簡易ベッドで寝た"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BEDSTAMINA.TOOLTIP
@@ -3492,6 +3705,22 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CRYFACE.TOOLTIP"
 msgid "This Duplicant recently had a crying fit and it shows"
 msgstr "この複製人間は最近号泣してみせました"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.DANCED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WASATTACKED.NAME"
+#| msgid "Recently assailed"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DANCED.NAME"
+msgid "Recently Danced"
+msgstr "さっき攻撃された"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DANCED.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DANCED.TOOLTIP"
+msgid ""
+"This Duplicant had a chance to cut loose!\n"
+"\n"
+"Leisure activities increase Duplicants' Morale"
+msgstr ""
+
 #. STRINGS.DUPLICANTS.MODIFIERS.DARKNESS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DARKNESS.NAME"
 msgid "Darkness"
@@ -3506,6 +3735,115 @@ msgstr "うわっ！この複製人間は暗い所が嫌いです！"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DEAD.NAME"
 msgid "Dead"
 msgstr "死亡"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR0.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.THOUGHTS.POORDECOR.TOOLTIP"
+#| msgid "Poor Decor"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR0.NAME"
+msgid "Poor Decor"
+msgstr "ダサい装飾"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR0.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.HASDISEASE.TOOLTIP"
+#| msgid "This Duplicant has contracted a Disease"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR0.TOOLTIP"
+msgid "This Duplicant thinks the colony is decorated in poor taste"
+msgstr "この複製人間は罹患しています"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR1.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.DECOR.MINOR.NAME"
+#| msgid "Minor Decor"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR1.NAME"
+msgid "Mediocre Decor"
+msgstr "ダサい装飾"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR1.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINED.TOOLTIP"
+#| msgid "This Duplicant has been isolated from the colony"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR1.TOOLTIP"
+msgid "This Duplicant has no strong opinions about the look of the colony"
+msgstr "この複製人間はコロニー内で隔離されています"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR2.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR2.NAME"
+msgid "Above Average Decor"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR2.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.BINGE_EAT.TOOLTIP"
+#| msgid "This Duplicant is attempting to eat their emotions due to stress"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR2.TOOLTIP"
+msgid "This Duplicant appreciates that the colony's been spruced up"
+msgstr "この複製人間はストレスでヤケ食いをしています"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR3.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DECOR.LOWDECOR"
+#| msgid "Negative Decor"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR3.NAME"
+msgid "Nice Decor"
+msgstr "悪質な装飾"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR3.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.MOVETOSAFETY.TOOLTIP"
+#| msgid "This Duplicant's getting out of here!"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR3.TOOLTIP"
+msgid "This Duplicant thinks it looks pretty good in here!"
+msgstr "この複製人間はここから逃げ出しています！"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR4.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.DECOR.HIGH.NAME"
+#| msgid "High Decor"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR4.NAME"
+msgid "Charming Decor"
+msgstr "奇麗な装飾"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR4.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.WARMUP.TOOLTIP"
+#| msgid "This Duplicant got too cold and is going to warm up"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR4.TOOLTIP"
+msgid "This Duplicant thinks the colony's decor is downright charming!"
+msgstr "この複製人間はとても寒いため体を暖めようとしています"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR5.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.THOUGHTS.POORDECOR.TOOLTIP"
+#| msgid "Poor Decor"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR5.NAME"
+msgid "Gorgeous Decor"
+msgstr "ダサい装飾"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECOR5.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FUSSY.TOOLTIP"
+#| msgid "This Duplicant is hard to please"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECOR5.TOOLTIP"
+msgid "This Duplicant loves what I've done with the place!"
+msgstr "この複製人間はなかなか満足しません"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECORMINUS1.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.DECOR.HIGH.NAME"
+#| msgid "High Decor"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECORMINUS1.NAME"
+msgid "Ugly Decor"
+msgstr "奇麗な装飾"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.DECORMINUS1.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.POORDECOR.TOOLTIP"
+#| msgid "This Duplicant is depressed by the lack of decor in this area"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DECORMINUS1.TOOLTIP"
+msgid "This Duplicant finds the lack of decor in here downright depressing"
+msgstr "この複製人間は周囲のつまらない装飾にがっかりしています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.DIARRHEA.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.DIARRHEA.CAUSE"
@@ -3560,15 +3898,134 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EATINGCALORIES.NAME"
 msgid "Eating"
 msgstr "食事中"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.EATINMESSHALL.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EATINMESSHALL.NAME"
-msgid "Mess Hall"
-msgstr "食堂"
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE0.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.LOW_YIELD.NAME"
+#| msgid "Standard Yield"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE0.NAME"
+msgid "Standard Meal"
+msgstr "凡作"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.EATINMESSHALL.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EATINMESSHALL.TOOLTIP"
-msgid "This Duplicant ate their last meal in a nice mess hall"
-msgstr "この複製人間は素晴らしい食堂で食事をとりました"
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE0.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE0.TOOLTIP"
+msgid ""
+"The food this Duplicant last ate was Average\n"
+"\n"
+"They thought it was sort of okay"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE1.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.NORMAL_YIELD.NAME"
+#| msgid "Good Yield"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE1.NAME"
+msgid "Good Meal"
+msgstr "豊作"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE1.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE1.TOOLTIP"
+msgid ""
+"The food this Duplicant last ate was Good\n"
+"\n"
+"They thought it was pretty good!"
+msgstr ""
+
+# もう少し良い訳がいいかも
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE2.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.GOOD_FOOD_QUALITY.NAME"
+#| msgid "Decadent Meal"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE2.NAME"
+msgid "Great Meal"
+msgstr "退廃的な食事"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE2.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE2.TOOLTIP"
+msgid ""
+"The food this Duplicant last ate was Great\n"
+"\n"
+"They thought it was pretty good!"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE3.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.ADJECTIVES.PLUS_5"
+#| msgid "Superb"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE3.NAME"
+msgid "Superb Meal"
+msgstr "とても美味い"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE3.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE3.TOOLTIP"
+msgid ""
+"The food this Duplicant last ate was Superb\n"
+"\n"
+"They thought it was really good!"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE4.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.ADJECTIVES.PLUS_6"
+#| msgid "Ambrosial"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE4.NAME"
+msgid "Ambrosial Meal"
+msgstr "最高に美味い"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLE4.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLE4.TOOLTIP"
+msgid ""
+"The food this Duplicant last ate was Ambrosial\n"
+"\n"
+"They thought it was super tasty!"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS1.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.POOR_FOOD_QUALITY.NAME"
+#| msgid "Lousy Meal"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS1.NAME"
+msgid "Poor Meal"
+msgstr "悪い食事"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS1.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS1.TOOLTIP"
+msgid ""
+"The food this Duplicant last ate was Poor\n"
+"\n"
+"They hope their next meal will be a little better"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS2.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.ADJECTIVES.ZERO"
+#| msgid "Terrible"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS2.NAME"
+msgid "Terrible Meal"
+msgstr "ひどい"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS2.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS2.TOOLTIP"
+msgid ""
+"The food this Duplicant last ate was Terrible\n"
+"\n"
+"They hope their next meal will be better"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS3.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.ADJECTIVES.MINUS_1"
+#| msgid "Grisly"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS3.NAME"
+msgid "Grisly Meal"
+msgstr "想像したくない"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS3.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EDIBLEMINUS3.TOOLTIP"
+msgid ""
+"The food this Duplicant last ate was Grisly\n"
+"\n"
+"They hope their next meal will be better"
+msgstr ""
 
 # 直訳だと微妙かもしれない
 #. STRINGS.DUPLICANTS.MODIFIERS.ENTITLEMENT.NAME
@@ -3582,6 +4039,19 @@ msgid ""
 "Duplicants will demand better decor and accommodations with each Expertise "
 "level they gain"
 msgstr "複製人間は職業レベルが上がるほど、より良い景観と寝床を要求します"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ESPRESSO.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ESPRESSO.NAME"
+msgid "Had An Espresso"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ESPRESSO.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ESPRESSO.TOOLTIP"
+msgid ""
+"This Duplicant had delicious drink!\n"
+"\n"
+"Leisure activities increase Duplicants' Morale"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FARMTINKER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FARMTINKER.NAME"
@@ -3598,6 +4068,22 @@ msgstr ""
 "熟練の農家はこの植物の成長を促進します\n"
 "------------------\n"
 "この効果を適用すると微量栄養素を1回分消費します。"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.FLOORSLEEP.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.UNCOMFORTABLESLEEP.NAME"
+#| msgid "Sleeping Uncomfortably"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FLOORSLEEP.NAME"
+msgid "Sleeping On Floor"
+msgstr "意図しない睡眠"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.FLOORSLEEP.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SLEEP.TOOLTIP"
+#| msgid "This Duplicant is recovering stamina"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FLOORSLEEP.TOOLTIP"
+msgid "This Duplicant is uncomfortably recovering stamina"
+msgstr "この複製人間はスタミナを回復しています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FRESH_AND_CLEAN.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FRESH_AND_CLEAN.CAUSE"
@@ -3634,6 +4120,19 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FUSSY.TOOLTIP"
 msgid "This Duplicant is hard to please"
 msgstr "この複製人間はなかなか満足しません"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.GOODCONVERSATION.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.GOODCONVERSATION.NAME"
+msgid "Pleasant Chitchat"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.GOODCONVERSATION.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CRYFACE.TOOLTIP"
+#| msgid "This Duplicant recently had a crying fit and it shows"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.GOODCONVERSATION.TOOLTIP"
+msgid "This Duplicant recently had a chance to chat with a friend"
+msgstr "この複製人間は最近号泣してみせました"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.GOODEATS.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.GOODEATS.CAUSE"
 msgid "Obtained by eating a hearty home cooked meal"
@@ -3653,6 +4152,25 @@ msgstr "魂のこもった食事"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.GOODEATS.TOOLTIP"
 msgid "This Duplicant had a yummy home cooked meal and is totally stuffed"
 msgstr "この複製人間はおふくろの味をお腹いっぱい食べました"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.GREETING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NEWCREWARRIVAL.NAME"
+#| msgid "New Friend"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.GREETING.NAME"
+msgid "Saw a Friend"
+msgstr "新人歓迎"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.GREETING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CRYFACE.TOOLTIP"
+#| msgid "This Duplicant recently had a crying fit and it shows"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.GREETING.TOOLTIP"
+msgid ""
+"This Duplicant recently saw a friend in the halls and got to say \"hi\"\n"
+"\n"
+"It wasn't even awkward!"
+msgstr "この複製人間は最近号泣してみせました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.HOLDINGBREATH.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.HOLDINGBREATH.NAME"
@@ -3732,8 +4250,11 @@ msgid "The air is thin in this area"
 msgstr "このエリアは空気が希薄です"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.LUXURYBEDSTAMINA.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LUXURYBEDSTAMINA.NAME"
+#| msgid "Slept in a comfy bed"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LUXURYBEDSTAMINA.NAME"
-msgid "Slept in a comfy bed"
+msgid "Sleeping in a comfy bed"
 msgstr "快適ベッドで寝た"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.LUXURYBEDSTAMINA.TOOLTIP
@@ -3828,6 +4349,14 @@ msgstr "<link=\"IMMUNE SYSTEM\">免疫力</link>を強化する健康サプリ�
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.METABOLISM_CALORIE_MODIFIER.NAME"
 msgid "Metabolism"
 msgstr "代謝"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.METABOLISM_CALORIE_MODIFIER.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.METABOLISM.DESC"
+#| msgid "Affects the rate at which a critter burns calories."
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.METABOLISM_CALORIE_MODIFIER.TOOLTIP"
+msgid "Metabolism determines how quickly a critter burns calories"
+msgstr "動物がカロリーを燃焼させる効率に影響します。"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MODERATEWOUNDS.NAME"
@@ -3925,6 +4454,19 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOOXYGEN.TOOLTIP"
 msgid "There is no breathable air in this area"
 msgstr "このエリアには呼吸可能な気体がありません"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.PASSEDOUTSLEEP.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PASSEDOUTSLEEP.NAME"
+msgid "Exhausted"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.PASSEDOUTSLEEP.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PASSEDOUTSLEEP.TOOLTIP"
+msgid ""
+"Lack of rest depleted this Duplicant's stamina\n"
+"\n"
+"They passed out from the fatigue"
+msgstr ""
+
 #. STRINGS.DUPLICANTS.MODIFIERS.PEACEFULSLEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PEACEFULSLEEP.NAME"
 msgid "Well Rested"
@@ -3955,6 +4497,19 @@ msgid ""
 msgstr ""
 "この複製人間は他人とぎゅうぎゅう詰めで寝るはめになり、かれらとぎくしゃくして"
 "います"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.PLAYEDARCADE.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PLAYEDARCADE.NAME"
+msgid "Played Video Games"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.PLAYEDARCADE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WETFEET.TOOLTIP"
+#| msgid "This Duplicant recently stepped in liquid"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PLAYEDARCADE.TOOLTIP"
+msgid "This Duplicant recently got to play some fun video games!"
+msgstr "この複製人間はどうやら液体の中に踏み込んでしまったようです"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.POPPEDEARDRUMS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.POPPEDEARDRUMS.NAME"
@@ -4004,16 +4559,6 @@ msgstr ""
 "熟練の電気エンジニアがこの発電機の出力を改善します\n"
 "------------------\n"
 "この効果を適用するとマイクロチップを1回分消費します。"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.PROPERBATHROOM.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PROPERBATHROOM.NAME"
-msgid "Nice Bathroom"
-msgstr "素敵な個室トイレ"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.PROPERBATHROOM.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PROPERBATHROOM.TOOLTIP"
-msgid "This Duplicant used a toilet in a nice bathroom"
-msgstr "この複製人間は素敵な個室備え付けのトイレを使いました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.RECOVERINGBREATH.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.RECOVERINGBREATH.NAME"
@@ -4087,15 +4632,102 @@ msgid ""
 "awash with guilt"
 msgstr "この複製人間は数分間何もしなかったのため、罪悪感でいっぱいです"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.ROOM_RELAXATION_EFFECT.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOM_RELAXATION_EFFECT.NAME"
-msgid "Unwinding"
-msgstr "くつろぎ"
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMBARRACKS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.TEMPERATURE_OK.NAME"
+#| msgid "Comfortable Temperature"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBARRACKS.NAME"
+msgid "Comfortable Barracks"
+msgstr "快適な温度"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.ROOM_RELAXATION_EFFECT.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOM_RELAXATION_EFFECT.TOOLTIP"
-msgid "This Duplicant is taking some relaxing leisure time in the Rec Room"
-msgstr "この複製人間は娯楽室でくつろいでいます"
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMBARRACKS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RECOVERINGBREATH.TOOLTIP"
+#| msgid "This Duplicant held their breath too long and needs a breather"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBARRACKS.TOOLTIP"
+msgid "This Duplicant slept in proper barracks last night and feels refreshed"
+msgstr "この複製人間は息を長い間止めていたため呼吸が必要です"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMBATHROOM.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PROPERBATHROOM.NAME"
+#| msgid "Nice Bathroom"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBATHROOM.NAME"
+msgid "Plumbed Bathroom"
+msgstr "素敵な個室トイレ"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMBATHROOM.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PROPERBATHROOM.TOOLTIP"
+#| msgid "This Duplicant used a toilet in a nice bathroom"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBATHROOM.TOOLTIP"
+msgid "This Duplicant used a toilet in a well plumbed bathroom"
+msgstr "この複製人間は素敵な個室備え付けのトイレを使いました"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMBEDROOM.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.DOMESTICATION.CRITERIA.TEMPERATURE_OK.NAME"
+#| msgid "Comfortable Temperature"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBEDROOM.NAME"
+msgid "Comfortable Bedroom"
+msgstr "快適な温度"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMBEDROOM.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RECOVERINGBREATH.TOOLTIP"
+#| msgid "This Duplicant held their breath too long and needs a breather"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBEDROOM.TOOLTIP"
+msgid ""
+"This Duplicant slept in a real bedroom last night and feels extra refreshed"
+msgstr "この複製人間は息を長い間止めていたため呼吸が必要です"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMGREATHALL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.ADJECTIVES.PLUS_4"
+#| msgid "Great"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMGREATHALL.NAME"
+msgid "Great Hall"
+msgstr "美味い"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMGREATHALL.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EATINMESSHALL.TOOLTIP"
+#| msgid "This Duplicant ate their last meal in a nice mess hall"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMGREATHALL.TOOLTIP"
+msgid "This Duplicant's most recent meal was eaten in a fancy great hall"
+msgstr "この複製人間は素晴らしい食堂で食事をとりました"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMLATRINE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PROPERBATHROOM.NAME"
+#| msgid "Nice Bathroom"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMLATRINE.NAME"
+msgid "Nice Bathroom"
+msgstr "素敵な個室トイレ"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMLATRINE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PROPERBATHROOM.TOOLTIP"
+#| msgid "This Duplicant used a toilet in a nice bathroom"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMLATRINE.TOOLTIP"
+msgid "This Duplicant used a toilet in a nice bathroom"
+msgstr "この複製人間は素敵な個室備え付けのトイレを使いました"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMMESSHALL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EATINMESSHALL.NAME"
+#| msgid "Mess Hall"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMMESSHALL.NAME"
+msgid "Mess Hall"
+msgstr "食堂"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMMESSHALL.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.EATINMESSHALL.TOOLTIP"
+#| msgid "This Duplicant ate their last meal in a nice mess hall"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMMESSHALL.TOOLTIP"
+msgid "This Duplicant's most recent meal was eaten in a suitable mess hall"
+msgstr "この複製人間は素晴らしい食堂で食事をとりました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ROTATMOSPHERE.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROTATMOSPHERE.NAME"
@@ -4184,6 +4816,19 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOAKINGWET.TOOLTIP"
 msgid "This Duplicant was recently submerged in liquid"
 msgstr "この複製人間は水中に潜ったようです"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.SOCIALIZED.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOCIALIZED.NAME"
+msgid "Socialized"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.SOCIALIZED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSFULYEMPTYINGBLADDER.TOOLTIP"
+#| msgid "This Duplicant had no choice but to to empty their bladder"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOCIALIZED.TOOLTIP"
+msgid "This Duplicant had some free time to hang out with buddies"
+msgstr "この複製人間の膀胱を空にするにはもうこれしかないのです"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.SOREBACK.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOREBACK.CAUSE"
 msgid "Obtained by sleeping on the ground"
@@ -4268,6 +4913,19 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSREDUCTION.TOOLTIP"
 msgid "This Duplicant's stress is just melting away"
 msgstr "この複製人間はストレスを発散しています"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.STRESSREDUCTION_CLINIC.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSREDUCTION.NAME"
+#| msgid "Receiving Massage"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSREDUCTION_CLINIC.NAME"
+msgid "Recieving Clinic Massage"
+msgstr "マッサージ中"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.STRESSREDUCTION_CLINIC.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSREDUCTION_CLINIC.TOOLTIP"
+msgid "Proper facilities futher improve this massage's effectiveness"
+msgstr ""
+
 #. STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_BURNING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SUNLIGHT_BURNING.NAME"
 msgid "Intensely Bright"
@@ -4325,6 +4983,17 @@ msgid ""
 msgstr ""
 "\n"
 "継続期間:"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.TOOKABREAK.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TOOKABREAK.NAME"
+msgid "Downtime"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.TOOKABREAK.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TOOKABREAK.TOOLTIP"
+msgid ""
+"This Duplicant has a bit of time off from work to attend to personal matters"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.TOXICENVIRONMENT.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TOXICENVIRONMENT.NAME"
@@ -4501,6 +5170,19 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WETFEET.TOOLTIP"
 msgid "This Duplicant recently stepped in liquid"
 msgstr "この複製人間はどうやら液体の中に踏み込んでしまったようです"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.WORKENCOURAGED.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WORKENCOURAGED.NAME"
+msgid "Appreciated"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.WORKENCOURAGED.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WORKENCOURAGED.TOOLTIP"
+msgid ""
+"Someone saw how hard this Duplicant was working and gave them a compliment\n"
+"\n"
+"This Duplicant feels great about themselves now!"
+msgstr ""
+
 #. STRINGS.DUPLICANTS.MODIFIERS.WORKING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WORKING.NAME"
 msgid "Working"
@@ -4663,6 +5345,43 @@ msgstr "グルメ"
 #. STRINGS.DUPLICANTS.NEEDS.NOISE.NAME
 msgctxt "STRINGS.DUPLICANTS.NEEDS.NOISE.NAME"
 msgid "Noise Expectation"
+msgstr "騒音期待値"
+
+#. STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.BAD_MODIFIER
+msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.BAD_MODIFIER"
+msgid "Low Morale"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.EXPECTATION_MOD_NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.DECOR.EXPECTATION_MOD_NAME"
+#| msgid "Job Tier Request"
+msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.EXPECTATION_MOD_NAME"
+msgid "Job Tier Request"
+msgstr "要求仕事ランク"
+
+#. STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.EXPECTATION_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.EXPECTATION_TOOLTIP"
+msgid ""
+"Duplicants love digging in the dirt as much as anyone, but sometimes they "
+"need a little more in their lives to inspire them to greater things. Failing "
+"to keep a Duplicant's Morale up will cause <link=\"STRESS\">Stressed</link>."
+msgstr ""
+
+#. STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.GOOD_MODIFIER
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.DECOR.HIGH.NAME"
+#| msgid "High Decor"
+msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.GOOD_MODIFIER"
+msgid "High Morale"
+msgstr "奇麗な装飾"
+
+#. STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.NOISE.NAME"
+#| msgid "Noise Expectation"
+msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.NAME"
+msgid "Morale Expectation"
 msgstr "騒音期待値"
 
 #. STRINGS.DUPLICANTS.OPINIONS.DARKNESS
@@ -5631,6 +6350,37 @@ msgstr ""
 "複製人間は期待値より高い装飾を見られないとストレスを蓄積します\n"
 "装飾レイヤー<color=#F44A47>[F8]</color> を開くと現在の装飾値を確認できます"
 
+#. STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP_AVERAGE_TODAY
+#, fuzzy
+#| msgctxt "STRINGS.UI.CHANGEPERCYCLE"
+#| msgid "Change per cycle: {0}"
+msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP_AVERAGE_TODAY"
+msgid ""
+"\n"
+"Average Decor This Cycle: {0}"
+msgstr "サイクルごとの変動量: {0}"
+
+#. STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP_AVERAGE_YESTERDAY
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.DETAILS.AVERAGE_TEMPERATURE.NAME"
+#| msgid "Average temperature: {0}"
+msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP_AVERAGE_YESTERDAY"
+msgid ""
+"\n"
+"Average Decor Last Cycle: {0}"
+msgstr "平均温度: {0}"
+
+#. STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP_CURRENT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.STATUS_ITEM_VALUE"
+#| msgid "Current Value: {0}"
+msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP_CURRENT"
+msgid ""
+"\n"
+"\n"
+"Current Environmental Decor: {0}"
+msgstr "現在の値: {0}"
+
 #. STRINGS.DUPLICANTS.STATS.DISEASERECOVERYTIME.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.DISEASERECOVERYTIME.NAME"
 msgid "Disease Recovery"
@@ -5684,14 +6434,21 @@ msgstr ""
 "----------\n"
 "免疫力が0になると複製人間は罹患します"
 
-#. STRINGS.DUPLICANTS.STATS.MORALE.NAME
-msgctxt "STRINGS.DUPLICANTS.STATS.MORALE.NAME"
+#. STRINGS.DUPLICANTS.STATS.QUALITYOFLIFE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATS.MORALE.NAME"
+#| msgid "<DO NOT TRANSLATE>"
+msgctxt "STRINGS.DUPLICANTS.STATS.QUALITYOFLIFE.NAME"
 msgid "<DO NOT TRANSLATE>"
 msgstr "<DO NOT TRANSLATE>"
 
-#. STRINGS.DUPLICANTS.STATS.MORALE.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.STATS.MORALE.TOOLTIP"
+#. STRINGS.DUPLICANTS.STATS.QUALITYOFLIFE.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.STATS.QUALITYOFLIFE.TOOLTIP"
 msgid ""
+"Morale\n"
+"------------------\n"
+"Duplicants' effectiveness improves in higher Morale ratings and decreases in "
+"low ratings"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.STATS.SKIN_DURABILITY.NAME
@@ -5983,6 +6740,19 @@ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DAILYRATIONLIMITREACHED.TOOLTIP"
 msgid "This Duplicant has consumed their allotted rations for the day"
 msgstr "この複製人間は1日に割り当てられた食料を消費済みです"
 
+#. STRINGS.DUPLICANTS.STATUSITEMS.DANCING.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DANCING.NAME"
+msgid "Dancing!"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.DANCING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SLEEPY.TOOLTIP"
+#| msgid "This Duplicant is getting tired"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DANCING.TOOLTIP"
+msgid "This Duplicant is getting down with their bad self"
+msgstr "この複製人間は疲弊しています"
+
 #. STRINGS.DUPLICANTS.STATUSITEMS.DEAD.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DEAD.NAME"
 msgid "Dead: {Death}"
@@ -6227,6 +6997,22 @@ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.FULLBLADDER.TOOLTIP"
 msgid "This Duplicant would really appreciate a toilet"
 msgstr "この複製人間はトイレに心から感謝しています"
 
+#. STRINGS.DUPLICANTS.STATUSITEMS.GAMING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.EXPELLING_GAS.NAME"
+#| msgid "Passing Gas"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.GAMING.NAME"
+msgid "Playing Game"
+msgstr "おなら"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.GAMING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.RELAX.TOOLTIP"
+#| msgid "This Duplicant is taking it easy"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.GAMING.TOOLTIP"
+msgid "This Duplicant is playing a video game"
+msgstr "この複製人間はリラックスしています"
+
 #. STRINGS.DUPLICANTS.STATUSITEMS.GENERATINGPOWER.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.GENERATINGPOWER.NAME"
 msgid "Generating power"
@@ -6254,8 +7040,11 @@ msgid "Decadent Meal"
 msgstr "退廃的な食事"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.GOOD_FOOD_QUALITY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.GOOD_FOOD_QUALITY.TOOLTIP"
+#| msgid "This Duplicant's last meal exceeded their expectations"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.GOOD_FOOD_QUALITY.TOOLTIP"
-msgid "This Duplicant's last meal exceeded their expectations"
+msgid "The last meal this Duplicant ate exceeded their expectations!"
 msgstr "この複製人間が最近食べたものはとても美味しかったようです"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.HARVESTDELIVERSTATUS.NAME
@@ -6463,6 +7252,22 @@ msgstr ""
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.LOWOXYGEN.TOOLTIP"
 msgid "This Duplicant is working in a low breathability area"
 msgstr "この複製人間は呼吸しにくいエリアで作業しています"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.MINGLING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.CAPTURE.STATUS"
+#| msgid "Wrangling"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.MINGLING.NAME"
+msgid "Mingling"
+msgstr "懐柔"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.MINGLING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COMPOSTFLIPSTATUS.TOOLTIP"
+#| msgid "This Duplicant is going to flip the compost"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.MINGLING.TOOLTIP"
+msgid "This Duplicant is mingling with other Duplicants in the room"
+msgstr "この複製人間は堆肥置き場を切り返しに向かっています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.MOPDELIVERSTATUS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.MOPDELIVERSTATUS.NAME"
@@ -6713,8 +7518,11 @@ msgid "Lousy Meal"
 msgstr "悪い食事"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.POOR_FOOD_QUALITY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.POOR_FOOD_QUALITY.TOOLTIP"
+#| msgid "This Duplicant's last meal didn't meet their expectations"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.POOR_FOOD_QUALITY.TOOLTIP"
-msgid "This Duplicant's last meal didn't meet their expectations"
+msgid "The last meal this Duplicant ate didn't quite meet their expectations"
 msgstr "この複製人間が最近食べたものは期待外れだったようです"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.POORDECOR.NAME
@@ -6726,6 +7534,18 @@ msgstr "つまらない装飾"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.POORDECOR.TOOLTIP"
 msgid "This Duplicant is depressed by the lack of decor in this area"
 msgstr "この複製人間は周囲のつまらない装飾にがっかりしています"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.POORQUALITYOFLIFE.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.POORQUALITYOFLIFE.NAME"
+msgid "Low Morale"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.POORQUALITYOFLIFE.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.POORQUALITYOFLIFE.TOOLTIP"
+msgid ""
+"This Duplicant is getting stressed by their responsibilities, but improved "
+"amenities would cheer them up"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.PROCESSING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.PROCESSING.NAME"
@@ -6770,8 +7590,11 @@ msgid "This Duplicant has been isolated from the colony"
 msgstr "この複製人間はコロニー内で隔離されています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NAME"
+#| msgid "Food Not Permitted"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NAME"
-msgid "Food Not Permitted"
+msgid "Food Type Not Permitted"
 msgstr "許可されていない食糧"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_NAME
@@ -6780,18 +7603,27 @@ msgid "Unpermitted food"
 msgstr "食べられる食糧なし"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_TOOLTIP"
+#| msgid ""
+#| "These Duplicants are not allowed to eat any of the <link=\"FOOD\">Food</"
+#| "link> within their reach:"
 msgctxt ""
 "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_TOOLTIP"
 msgid ""
-"These Duplicants are not allowed to eat any of the <link=\"FOOD\">Food</"
-"link> within their reach:"
+"These Duplicants' Consumable permissions prevent them from eating any of the "
+"<link=\"FOOD\">Food</link> within their reach:"
 msgstr ""
 "これらの複製人間は手の届く範囲にある如何なる<link=\"FOOD\">食糧</link>も食べ"
 "ることを許されていません:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.TOOLTIP"
+#| msgid "This Duplicant is not allowed to eat any of the food they can reach."
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.TOOLTIP"
-msgid "This Duplicant is not allowed to eat any of the food they can reach."
+msgid "This Duplicant is not allowed to eat any of the food in their reach"
 msgstr ""
 "この複製人間は手の届く範囲にある如何なる食料も食べることを許されていません。"
 
@@ -7070,6 +7902,19 @@ msgstr ""
 "せん\n"
 "\n"
 "彼らは明日の朝に<link=\"SLEEP\">疲労困憊</link>を感じるでしょう"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.SOCIALIZING.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.SOCIALIZING.NAME"
+msgid "Socializing"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.SOCIALIZING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.CLEANTOILET.TOOLTIP"
+#| msgid "This Duplicant is cleaning out the Outhouse"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.SOCIALIZING.TOOLTIP"
+msgid "This Duplicant is hanging out to chat with other Duplicants"
+msgstr "この複製人間はトイレ掃除中です"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STARVING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STARVING.NAME"
@@ -7440,10 +8285,39 @@ msgctxt "STRINGS.DUPLICANTS.THOUGHTS.ANGRY.TOOLTIP"
 msgid "Angry"
 msgstr "怒り"
 
+#. STRINGS.DUPLICANTS.THOUGHTS.BREAKBLADDER.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.THOUGHTS.BREAKBLADDER.TOOLTIP"
+msgid "Bio Break"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.THOUGHTS.CHATTY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.RESTDUETODISEASE.STATUS"
+#| msgid "Resting"
+msgctxt "STRINGS.DUPLICANTS.THOUGHTS.CHATTY.TOOLTIP"
+msgid "Greeting"
+msgstr "休憩中"
+
 #. STRINGS.DUPLICANTS.THOUGHTS.COLD.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.THOUGHTS.COLD.TOOLTIP"
 msgid "Cold"
 msgstr "凍結"
+
+#. STRINGS.DUPLICANTS.THOUGHTS.CONVERSATION.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.TOGGLE.NAME"
+#| msgid "Change Setting"
+msgctxt "STRINGS.DUPLICANTS.THOUGHTS.CONVERSATION.TOOLTIP"
+msgid "Chatting"
+msgstr "設定変更"
+
+#. STRINGS.DUPLICANTS.THOUGHTS.ENCOURAGE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.NAME"
+#| msgid "Foraging"
+msgctxt "STRINGS.DUPLICANTS.THOUGHTS.ENCOURAGE.TOOLTIP"
+msgid "Encouraging"
+msgstr "食い漁っている"
 
 #. STRINGS.DUPLICANTS.THOUGHTS.FULLBLADDER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.THOUGHTS.FULLBLADDER.TOOLTIP"
@@ -7708,6 +8582,23 @@ msgctxt "STRINGS.DUPLICANTS.TRAITS.FLATULENCE.NAME"
 msgid "Flatulent"
 msgstr "屁こき虫"
 
+#. STRINGS.DUPLICANTS.TRAITS.FOODIE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.SMALLBLADDER.DESC"
+#| msgid "This Duplicant has a tiny, pea-sized bladder. Adorable!"
+msgctxt "STRINGS.DUPLICANTS.TRAITS.FOODIE.DESC"
+msgid "This Duplicant has a highly refined palate."
+msgstr "この複製人間の膀胱は豆サイズです。可愛らしい！"
+
+# Don't Starve のキャラ
+#. STRINGS.DUPLICANTS.TRAITS.FOODIE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.MALE.WOODIE"
+#| msgid "Woodie"
+msgctxt "STRINGS.DUPLICANTS.TRAITS.FOODIE.NAME"
+msgid "Foodie"
+msgstr "ウッディー"
+
 #. STRINGS.DUPLICANTS.TRAITS.FUSSY.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.FUSSY.DESC"
 msgid "Nothing's ever quite good enough for this Duplicant"
@@ -7966,6 +8857,22 @@ msgctxt "STRINGS.DUPLICANTS.TRAITS.SCAREDYCAT.NAME"
 msgid "Pacifist"
 msgstr "平和主義者"
 
+#. STRINGS.DUPLICANTS.TRAITS.SIMPLETASTES.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.WASHINGHANDS.TOOLTIP"
+#| msgid "This Duplicant is washing their hands"
+msgctxt "STRINGS.DUPLICANTS.TRAITS.SIMPLETASTES.DESC"
+msgid "This Duplicant is satisfied by even the blandest food."
+msgstr "この複製人間は手を洗っています"
+
+#. STRINGS.DUPLICANTS.TRAITS.SIMPLETASTES.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.EXAMPLECATEGORY.TITLE"
+#| msgid "Example Title"
+msgctxt "STRINGS.DUPLICANTS.TRAITS.SIMPLETASTES.NAME"
+msgid "Simple Tastes"
+msgstr "タイトルのサンプル"
+
 #. STRINGS.DUPLICANTS.TRAITS.SLOWLEARNER.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.SLOWLEARNER.DESC"
 msgid "This Duplicant's a little slow on the uptake, but gosh do they try"
@@ -8078,6 +8985,42 @@ msgstr ""
 msgctxt "STRINGS.DUPLICANTS.TRAITS.WEAKIMMUNESYSTEM.NAME"
 msgid "Biohazardous"
 msgstr "バイオハザード"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.DESC"
+#~ msgid ""
+#~ "Not meeting a Duplicant's <link=\"DECOR\">Decor</link> expectations will "
+#~ "increase their <link=\"STRESS\">Stress</link>."
+#~ msgstr ""
+#~ "<link=\"DECOR\">装飾</link>が複製人間の期待に満たない場合、<link=\"STRESS"
+#~ "\">ストレス</link>上昇の原因となります。"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.DESC"
+#~ msgid ""
+#~ "Not meeting a Duplicant's <link=\"FOOD\">Food</link> expectations will "
+#~ "increase their <link=\"STRESS\">Stress</link>."
+#~ msgstr ""
+#~ "<link=\"FOOD\">食事</link>が複製人間の口に合わないと、<link=\"STRESS\">ス"
+#~ "トレス</link>上昇の原因となります。"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.EDIBLE_IS_NOT_NULL"
+#~ msgid "EdibleIsNotNull"
+#~ msgstr "腹八分目"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.SINGTOEGG.TOOLTIP"
+#~ msgid ""
+#~ "Singing to critter eggs improves their incubation rate, and really who "
+#~ "doesn't love singing?"
+#~ msgstr ""
+#~ "動物の卵に歌を聴かせてやると孵化率が上昇します。歌が嫌いな人なんていないで"
+#~ "しょう？"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOM_RELAXATION_EFFECT.NAME"
+#~ msgid "Unwinding"
+#~ msgstr "くつろぎ"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOM_RELAXATION_EFFECT.TOOLTIP"
+#~ msgid "This Duplicant is taking some relaxing leisure time in the Rec Room"
+#~ msgstr "この複製人間は娯楽室でくつろいでいます"
 
 #~ msgctxt "STRINGS.DUPLICANTS.CHORES.HATCHCREATURE.NAME"
 #~ msgid "Assist Newborn Critter"

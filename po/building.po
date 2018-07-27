@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -217,11 +217,19 @@ msgid "Broken"
 msgstr "破損"
 
 #. STRINGS.BUILDING.STATUSITEMS.BROKEN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.BROKEN.TOOLTIP"
+#| msgid ""
+#| "\n"
+#| "------------------\n"
+#| "This building received damage from {DamageInfo}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BROKEN.TOOLTIP"
 msgid ""
-"\n"
+"Broken\n"
 "------------------\n"
-"This building received damage from {DamageInfo}"
+"This building received damage from {DamageInfo}\n"
+"\n"
+"It will not function until it receives repairs"
 msgstr ""
 "\n"
 "------------------\n"
@@ -554,18 +562,29 @@ msgstr ""
 "開放: ドアを開けっぱなしにします"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME"
+#| msgid "Dish Quality: {Quality}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME"
-msgid "Dish Quality: {Quality}"
+msgid "Scan Quality: {Quality}"
 msgstr "アンテナ精度: {0}"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP"
+#| msgid ""
+#| "This detector dish is currently scanning at {Quality} effectiveness.\n"
+#| "\n"
+#| "Low quality may be due to:\n"
+#| "    • Interference from nearby heavy machinery\n"
+#| "    • Rock or tiles obstructing a wide view of the sky"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP"
 msgid ""
-"This detector dish is currently scanning at {Quality} effectiveness.\n"
+"This scanner dish is currently scanning at {Quality} effectiveness\n"
 "\n"
-"Low quality may be due to:\n"
+"Decreased scan quality may be due to:\n"
 "    • Interference from nearby heavy machinery\n"
-"    • Rock or tiles obstructing a wide view of the sky"
+"    • Rock or tile obstructing the dish's view of the sky"
 msgstr ""
 "このアンテナは現在精度 {Quality} で動作中です。\n"
 "\n"
@@ -579,9 +598,13 @@ msgid "Scanning"
 msgstr "検出中"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.TOOLTIP"
+#| msgid ""
+#| "This detector is currently peering in to the sky to find objects of "
+#| "interest."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.TOOLTIP"
-msgid ""
-"This detector is currently peering in to the sky to find objects of interest."
+msgid "This scanner is currently scouring space for anything of interest"
 msgstr "このアンテナは特定の物体を検知するために宇宙を凝視しています。"
 
 #. STRINGS.BUILDING.STATUSITEMS.DIGREQUIRESROLEPERK.NAME
@@ -1040,8 +1063,11 @@ msgstr "隕石襲来"
 
 #. STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.TOOLTIP"
-msgid "There are high speed objects approaching!"
-msgstr "高速の物体が接近中です！"
+msgid ""
+"Warning!\n"
+"\n"
+"High velocity objects on approach!"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCUBATORPROGRESS.NAME"
@@ -1476,18 +1502,29 @@ msgstr ""
 "てください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.NAME"
+#| msgid "Detector Network Quality: {TotalQuality}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.NAME"
-msgid "Detector Network Quality: {TotalQuality}"
+msgid "Scan Network Quality: {TotalQuality}"
 msgstr "アンテナネットワーク品質: {TotalQuality}"
 
 #. STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP"
+#| msgid ""
+#| "Your detector network is scanning at {TotalQuality} effectiveness, and "
+#| "will detect meteor showers {WorstTime} to {BestTime} before they strike.\n"
+#| "\n"
+#| "Add more detectors and ensure they are each scanning effectively for best "
+#| "results."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP"
 msgid ""
-"Your detector network is scanning at {TotalQuality} effectiveness, and will "
-"detect meteor showers {WorstTime} to {BestTime} before they strike.\n"
+"Your scanner network is scanning at {TotalQuality} effectiveness, and will "
+"detect meteor showers {WorstTime} to {BestTime} before they strike\n"
 "\n"
-"Add more detectors and ensure they are each scanning effectively for best "
-"results."
+"Build multiple detectors and ensure they're each scanning effectively for "
+"the best results"
 msgstr ""
 "アンテナネットワークは{TotalQuality}の精度で稼働中です。流星群の着弾する"
 "{WorstTime}前から{BestTime}前の範囲で検知できます。\n"
@@ -1940,6 +1977,19 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.PIPECONTENTS.EMPTY"
 msgid "Empty"
 msgstr "空"
 
+#. STRINGS.BUILDING.STATUSITEMS.PIPEMAYMELT.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PIPEMAYMELT.NAME"
+msgid "High Melt Risk"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.PIPEMAYMELT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BODYREGULATINGCOOLING.TOOLTIP"
+#| msgid "This Duplicant is regulating their internal temperature"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PIPEMAYMELT.TOOLTIP"
+msgid "This pipe is in danger of melting at the current temperature"
+msgstr "この複製人間は体温を調節しています"
+
 #. STRINGS.BUILDING.STATUSITEMS.POWERBUTTONOFF.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.POWERBUTTONOFF.NAME"
 msgid "Function Suspended"
@@ -2062,14 +2112,20 @@ msgstr ""
 "コンベアレセプタから素材を取り除き、空き容量を確保してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NOTENOUGHPOWER.NAME"
+#| msgid "Insufficient Power"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.NAME"
-msgid "Space Not Visible"
-msgstr "宇宙が見えません"
+msgid "Insufficient Visibility"
+msgstr "電力不足"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.TOOLTIP"
-msgid "This detector must be able to see the sky in order to detect anything."
-msgstr "このアンテナが検知するためには、宇宙が見える状態でなければなりません。"
+msgid ""
+"An obscured view of the sky is preventing this scanner from collecting data\n"
+"\n"
+"Make sure the area about the dish is clear"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.NAME"
@@ -2626,6 +2682,20 @@ msgstr "定格"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKING.TOOLTIP"
 msgid "This building is working as intended"
 msgstr "この設備は想定通りに稼働中です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.TOOLTIP"
+#~ msgid "There are high speed objects approaching!"
+#~ msgstr "高速の物体が接近中です！"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.NAME"
+#~ msgid "Space Not Visible"
+#~ msgstr "宇宙が見えません"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACENOTVISIBLE.TOOLTIP"
+#~ msgid ""
+#~ "This detector must be able to see the sky in order to detect anything."
+#~ msgstr ""
+#~ "このアンテナが検知するためには、宇宙が見える状態でなければなりません。"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP"
 #~ msgid "A new colony member is ready to be printed"
