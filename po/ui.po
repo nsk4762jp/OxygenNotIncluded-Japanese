@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -37,6 +37,17 @@ msgstr "サイクル"
 msgctxt "STRINGS.UI.ASTEROIDCLOCK.CYCLES_OLD"
 msgid "This Colony is {0} Cycle(s) Old"
 msgstr "このコロニーは {0} サイクル運営されています"
+
+#. STRINGS.UI.ASTEROIDCLOCK.SCHEDULE_BUTTON_TOOLTIP
+msgctxt "STRINGS.UI.ASTEROIDCLOCK.SCHEDULE_BUTTON_TOOLTIP"
+msgid ""
+"Manage Schedule\n"
+"\n"
+"NOT IMPLEMENTED"
+msgstr ""
+"スケジュールの管理\n"
+"\n"
+"[未実装]"
 
 #. STRINGS.UI.ASTEROIDCLOCK.TIME_PLAYED
 msgctxt "STRINGS.UI.ASTEROIDCLOCK.TIME_PLAYED"
@@ -1278,10 +1289,20 @@ msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.JOURNALS"
 msgid "<link=\"JOURNALS\">Journals</link>"
 msgstr "<link=\"JOURNALS\">日誌</link>"
 
+#. STRINGS.UI.CODEX.CATEGORYNAMES.NOTICES
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.NOTICES"
+msgid "<link=\"NOTICES\">Notices</link>"
+msgstr "<link=\"NOTICES\">通知</link>"
+
 #. STRINGS.UI.CODEX.CATEGORYNAMES.PLANTS
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.PLANTS"
 msgid "<link=\"PLANTS\">Plants</link>"
 msgstr "<link=\"PLANTS\">植物</link>"
+
+#. STRINGS.UI.CODEX.CATEGORYNAMES.RESEARCHNOTES
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.RESEARCHNOTES"
+msgid "<link=\"RESEARCHNOTES\">Research Notes</link>"
+msgstr "<link=\"RESEARCHNOTES\">研究の通知</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.ROLES
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ROLES"
@@ -1438,16 +1459,6 @@ msgctxt "STRINGS.UI.CONSUMABLES"
 msgid "CONSUMABLES"
 msgstr "食糧"
 
-#. STRINGS.UI.CONSUMABLESSCREEN.EXPECTATIONS_ABOVE
-msgctxt "STRINGS.UI.CONSUMABLESSCREEN.EXPECTATIONS_ABOVE"
-msgid "<b><color=#B87194FF>fulfills</color></b>"
-msgstr "<b><color=#B87194FF>満足</color></b>"
-
-#. STRINGS.UI.CONSUMABLESSCREEN.EXPECTATIONS_BELOW
-msgctxt "STRINGS.UI.CONSUMABLESSCREEN.EXPECTATIONS_BELOW"
-msgid "is <b><color=#B87194FF>below</color></b>"
-msgstr "は<b><color=#B87194FF>期待値未満</color></b>"
-
 #. STRINGS.UI.CONSUMABLESSCREEN.FOOD_AVAILABLE
 msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_AVAILABLE"
 msgid "Available: {0}"
@@ -1461,22 +1472,6 @@ msgid ""
 msgstr ""
 "<b>{0}</b>は以下のものを食べられ<color=#B87194FF>ません</color>\n"
 "<b>{1}</b>"
-
-#. STRINGS.UI.CONSUMABLESSCREEN.FOOD_EXPECTATIONS
-msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_EXPECTATIONS"
-msgid "Expectations"
-msgstr "期待値"
-
-#. STRINGS.UI.CONSUMABLESSCREEN.FOOD_EXPECTATIONS_TOOLTIP
-msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_EXPECTATIONS_TOOLTIP"
-msgid ""
-"Expectations\n"
-"------------------\n"
-"Desires food that is {0} quality or better"
-msgstr ""
-"期待値\n"
-"------------------\n"
-"食糧の品質が {0} 以上であること"
 
 #. STRINGS.UI.CONSUMABLESSCREEN.FOOD_PERMISSION_OFF
 msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_PERMISSION_OFF"
@@ -1496,17 +1491,16 @@ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY"
 msgid "Quality: {0}"
 msgstr "品質: {0}"
 
-# 上の行はどう訳す？
 #. STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY_VS_EXPECTATION
 msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY_VS_EXPECTATION"
 msgid ""
 "------------------\n"
-"This food type {0} {1}'s quality expectations\n"
-"[{2} Quality / {3} Expectation]"
+"This food has a quality of {0}\n"
+"It will give these bonuses if {1} eats it:"
 msgstr ""
 "------------------\n"
-"This food type {0} {1}'s quality expectations\n"
-"[{2} 品質 / {3} 期待値]"
+"この食糧の品質は{0}です\n"
+"{1}がこれを食べると以下のボーナスを得ます:"
 
 #. STRINGS.UI.CONSUMABLESSCREEN.FOOD_REFUSE
 msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_REFUSE"
@@ -1539,22 +1533,6 @@ msgstr ""
 msgctxt "STRINGS.UI.CONSUMABLESSCREEN.NEW_MINIONS_TOOLTIP_TOGGLE_ROW"
 msgid "Toggle all food permissions for <b>New Duplicants</b>"
 msgstr "<b>新しい複製人間</b>の全ての食事許可を切り替えます"
-
-#. STRINGS.UI.CONSUMABLESSCREEN.STRESS
-msgctxt "STRINGS.UI.CONSUMABLESSCREEN.STRESS"
-msgid "Stress"
-msgstr "ストレス"
-
-#. STRINGS.UI.CONSUMABLESSCREEN.STRESS_TOOLTIP
-msgctxt "STRINGS.UI.CONSUMABLESSCREEN.STRESS_TOOLTIP"
-msgid ""
-"Stress\n"
-"------------------\n"
-"{0} of a possible 100%"
-msgstr ""
-"ストレス\n"
-"------------------\n"
-"100%中 {0}"
 
 #. STRINGS.UI.CONSUMABLESSCREEN.TITLE
 msgctxt "STRINGS.UI.CONSUMABLESSCREEN.TITLE"
@@ -1695,8 +1673,8 @@ msgstr ""
 
 #. STRINGS.UI.DEBUG_TOOLS.INVALID_LOCATION
 msgctxt "STRINGS.UI.DEBUG_TOOLS.INVALID_LOCATION"
-msgid "Invalid Locaton"
-msgstr "無効な建設地点"
+msgid "Invalid Location"
+msgstr "無効な場所"
 
 #. STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.ADD_FOW_MASK
 msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.ADD_FOW_MASK"
@@ -4353,11 +4331,11 @@ msgstr "ワールド生成キー"
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
 msgid ""
-"<b>Welcome to the Cosmic Upgrade!!</b>\n"
+"<b>Welcome to the Expressive Upgrade!!</b>\n"
 "\n"
 "{0}"
 msgstr ""
-"<b>宇宙アップグレードにようこそ！</b>\n"
+"<b>表現アップグレードにようこそ！</b>\n"
 "\n"
 "{0}"
 
@@ -4371,26 +4349,26 @@ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
 msgid ""
 "<b>Update Features:</b>\n"
 "\n"
-"• The Surface biome has been added to the top of the asteroid\n"
-"• Solar power and metallic meteors can be harnessed\n"
-"• New glass and steel resources allow constructing advanced buildings\n"
-"• Further fixes and polish to Critter Ranching and eggs\n"
+"• New Duplicant interactions and reactions\n"
+"• Colony Schedule management\n"
+"• Downtime and new leisure buildings\n"
+"• New lore, animations, and sounds\n"
 "\n"
 "Please view the full patch notes for further details!"
 msgstr ""
 "<b>新機能:</b>\n"
 "\n"
-"• 小惑星上部に表層バイオームが追加されました\n"
-"• 太陽電力と鉄製隕石が利用可能になりました\n"
-"• 新しい資源、ガラスおよび鋼鉄でより優れた設備を建設できます\n"
-"• 動物の放牧や卵の改善\n"
+"• 複製人間同士の交流および反応\n"
+"• コロニーのスケジュール管理\n"
+"• 休憩時間および新しい娯楽設備\n"
+"• 新しいバックグラウンドストーリー、アニメーション、サウンド\n"
 "\n"
-"詳細はパッチノート全文を参照してください！"
+"より詳しい内容についてはパッチノートを参照してください！"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
-msgid "COSMIC UPGRADE"
-msgstr "宇宙アップグレード"
+msgid "EXPRESSIVE UPGRADE"
+msgstr "表現アップグレード"
 
 #. STRINGS.UI.FRONTEND.PAUSE_SCREEN.DESKTOPQUIT
 msgctxt "STRINGS.UI.FRONTEND.PAUSE_SCREEN.DESKTOPQUIT"
@@ -4507,6 +4485,11 @@ msgstr ""
 "\n"
 "最新のオーディオドライバをダウンロードするには、デバイスメーカーのWebサイトを"
 "参照してください。"
+
+#. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.AUDIO_DRIVERS_MORE_INFO
+msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.AUDIO_DRIVERS_MORE_INFO"
+msgid "More Info"
+msgstr "詳細情報"
 
 #. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.DUPLICATE_KEY_BINDINGS
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.DUPLICATE_KEY_BINDINGS"
@@ -5213,7 +5196,7 @@ msgid ""
 "The Printing Pod will need time to recharge if I return these Duplicants to "
 "ooze."
 msgstr ""
-"これらの複製人間を全て土に還すと、複製ポッドが再び使用可能になるまで待たねば"
+"これらの複製人間を全て土に還すと、製造ポッドが再び使用可能になるまで待たねば"
 "ならない。"
 
 #. STRINGS.UI.IMMIGRANTSCREEN.CONFIRMATIONTITLE
@@ -5434,17 +5417,21 @@ msgstr "初期化"
 #. STRINGS.UI.JOBSSCREEN.RESET_SETTINGS_TOOLTIP
 msgctxt "STRINGS.UI.JOBSSCREEN.RESET_SETTINGS_TOOLTIP"
 msgid ""
-"Resets all priorities to the default values for this mode.\n"
+"<b>Reset Priorities</b>\n"
+"------------------\n"
+"Returns all priorities to their default values.\n"
 "\n"
-"Default: All priorities will be reset to neutral.\n"
+"Proximity Enabled: Priorities will be adjusted high-to-low.\n"
 "\n"
-"Advanced: Priorities will be adjusted high-to-low for normal base operation."
+"Proximity Disabled: All priorities will be reset to neutral."
 msgstr ""
-"全ての優先度をデフォルト値に戻します。\n"
+"<b>優先度初期化</b>\n"
+"------------------\n"
+"全ての優先度を初期化します。\n"
 "\n"
-"ノーマル: 全ての優先度を真ん中に設定します。\n"
+"近接 有効: 優先度は自動的に調整されます。\n"
 "\n"
-"アドバンスド: 優先度は自動的に調整されます。"
+"近接 無効: 全ての優先度は優先度中になります。"
 
 #. STRINGS.UI.JOBSSCREEN.SORT_TOOLTIP
 msgctxt "STRINGS.UI.JOBSSCREEN.SORT_TOOLTIP"
@@ -5458,37 +5445,33 @@ msgstr "作業優先度管理"
 
 #. STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE
 msgctxt "STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE"
-msgid "Advanced"
-msgstr "アドバンスド"
+msgid "Enable Proximity"
+msgstr "近接 有効"
 
 #. STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE_TOOLTIP
 msgctxt "STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE_TOOLTIP"
 msgid ""
-"<b>Advanced Priority Settings</b>\n"
+"<b>Proximity Errand Settings</b>\n"
 "------------------\n"
-"This option disables a hidden priority hierarchy used to choose errands in "
-"the event of a priority tie.\n"
+"Enabling Proximity settings tells my Duplicants to always choose the closest "
+"high priority errand to perform.\n"
 "\n"
-"When disabled, Duplicants will still choose errands based on their "
-"Priorities first and their Sub-Priorities second, but ties will be settled "
-"by simply choosing the nearest high priority errand. This helps them to stay "
-"near the same area of the colony so long as all the nearby work is their "
-"highest priority.\n"
+"When disabled, Duplicants will choose between two high priority errands "
+"based on a hidden priority hierarchy instead.\n"
 "\n"
-"This mode is ideal for large bases and experienced players with heavily "
-"customized priority settings."
+"Enabling Proximity helps cut down on travel time in areas with lots of high-"
+"priority errands, and is useful for large colonies."
 msgstr ""
-"<b>アドバンスド</b>\n"
+"<b>近接作業設定</b>\n"
 "------------------\n"
-"このオプションは選んだ作業に関連付けられた隠し優先度を無効化します。\n"
+"近接設定を有効にすると、複製人間は常に最も優先度が高い作業を選ぶようになりま"
+"す。\n"
 "\n"
-"無効化した場合、複製人間たちは彼ら自身に設定された優先度、準優先度の順に従っ"
-"て作業を選びますが、他に優先度が高い作業があればそちらに取り掛かります。これ"
-"は作業優先度の高い作業がある限り、できるだけ同じ場所で作業を続けるために役立"
-"ちます。\n"
+"無効にすると、複製人間は隠し優先度に従って選ばれた2つの優先度の高い作業を選び"
+"ます。\n"
 "\n"
-"このモードは大規模な基地向け、または複製人間の優先度をとことん管理したい人向"
-"けです。"
+"近接設定は優先度の高い作業がたくさんある地帯において移動時間を短縮することが"
+"でき、特に大きなコロニーで効果があります。"
 
 #. STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_ALL
 msgctxt "STRINGS.UI.JOBSSCREEN.TOOLTIP_TOGGLE_ALL"
@@ -5574,6 +5557,532 @@ msgstr "-{0}"
 msgctxt "STRINGS.UI.NEUTRONIUMMASS"
 msgid "Immeasurable"
 msgstr "計測不能"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.BASE.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.BASE.NAME"
+msgid "<link=\"BUILDCATEGORYBASE\">Base</link>"
+msgstr "<link=\"BUILDCATEGORYBASE\">基地</link>"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.BASE.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.BASE.TOOLTIP"
+msgid "Maintain your colony's infrastructure with these homebase basics."
+msgstr "これらの基本的な土台でコロニーのインフラを支えましょう。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.CONDUITSENSORS.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.CONDUITSENSORS.BUILDMENUTITLE"
+msgid "Pipe Sensors"
+msgstr "パイプセンサー"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.CONDUITSENSORS.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.CONDUITSENSORS.NAME"
+msgid "Pipe Sensors"
+msgstr "パイプセンサー"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.CONDUITSENSORS.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.CONDUITSENSORS.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.CONVEYANCE.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.CONVEYANCE.BUILDMENUTITLE"
+msgid "Ore Transport"
+msgstr "鉱石輸送"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.CONVEYANCE.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.CONVEYANCE.NAME"
+msgid ""
+"Ore\n"
+"Transport"
+msgstr ""
+"鉱石\n"
+"輸送"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.CONVEYANCE.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.CONVEYANCE.TOOLTIP"
+msgid "Move solids objects around."
+msgstr "周辺の固体を移動します。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.COOKING.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.COOKING.BUILDMENUTITLE"
+msgid "Cooking"
+msgstr "料理"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.COOKING.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.COOKING.NAME"
+msgid "Cooking"
+msgstr "料理"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.COOKING.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.COOKING.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.DECOR.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DECOR.BUILDMENUTITLE"
+msgid "Decor"
+msgstr "装飾"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.DECOR.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DECOR.NAME"
+msgid "Decor"
+msgstr "装飾"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.DECOR.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DECOR.TOOLTIP"
+msgid "Spruce up your colony with some lovely interior decorating."
+msgstr "素敵なインテリアでコロニーを飾りましょう。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.DOORS.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DOORS.BUILDMENUTITLE"
+msgid "Doors"
+msgstr "ドア"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.DOORS.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DOORS.NAME"
+msgid "Doors"
+msgstr "ドア"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.DOORS.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DOORS.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.EQUIPMENT.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.EQUIPMENT.BUILDMENUTITLE"
+msgid "Stations"
+msgstr "研究"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.EQUIPMENT.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.EQUIPMENT.NAME"
+msgid "Stations"
+msgstr "研究"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.EQUIPMENT.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.EQUIPMENT.TOOLTIP"
+msgid "Unlock new technologies through the power of science!"
+msgstr "科学の力で新しい技術を手に入れましょう！"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.FARMING.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FARMING.BUILDMENUTITLE"
+msgid "Farming"
+msgstr "農業"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.FARMING.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FARMING.NAME"
+msgid "Farming"
+msgstr "農業"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.FARMING.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FARMING.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.FOODANDAGRICULTURE.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FOODANDAGRICULTURE.NAME"
+msgid "<link=\"BUILDCATEGORYFOODANDAGRICULTURE\">Food</link>"
+msgstr "<link=\"BUILDCATEGORYFOODANDAGRICULTURE\">食糧</link>"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.FOODANDAGRICULTURE.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FOODANDAGRICULTURE.TOOLTIP"
+msgid "Keep your Duplicants' spirits high and their bellies full."
+msgstr "複製人間の心と胃袋を満たしましょう。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.FURNITURE.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FURNITURE.BUILDMENUTITLE"
+msgid "Furniture"
+msgstr "家具"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.FURNITURE.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FURNITURE.NAME"
+msgid "Furniture"
+msgstr "家具"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.FURNITURE.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FURNITURE.TOOLTIP"
+msgid "Amenities to keep your Duplicants happy, comfy and efficient."
+msgstr "複製人間が幸せで快適に効率よく生活するためのアメニティです。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.GENERATORS.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.GENERATORS.BUILDMENUTITLE"
+msgid "Generators"
+msgstr "発電機"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.GENERATORS.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.GENERATORS.NAME"
+msgid "Generators"
+msgstr "発電機"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.GENERATORS.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.GENERATORS.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.HEALTHANDHAPPINESS.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.HEALTHANDHAPPINESS.NAME"
+msgid "<link=\"BUILDCATEGORYHEALTHANDHAPPINESS\">Accommodation</link>"
+msgstr "<link=\"BUILDCATEGORYHEALTHANDHAPPINESS\">宿泊</link>"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.HEALTHANDHAPPINESS.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.HEALTHANDHAPPINESS.TOOLTIP"
+msgid "Everything a Duplicant needs to stay happy, healthy, and fulfilled."
+msgstr "複製人間が幸せで健康的な満たされた生活に必要なものが揃っています。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.HYGIENE.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.HYGIENE.BUILDMENUTITLE"
+msgid "Hygiene"
+msgstr "衛生"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.HYGIENE.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.HYGIENE.NAME"
+msgid "Hygiene"
+msgstr "衛生"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.HYGIENE.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.HYGIENE.TOOLTIP"
+msgid "Keep your Duplicants clean."
+msgstr "複製人間を清潔に保ちます。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.INDUSTRIAL.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.INDUSTRIAL.NAME"
+msgid "<link=\"BUILDCATEGORYINDUSTRIAL\">Industrials</link>"
+msgstr "<link=\"BUILDCATEGORYINDUSTRIAL\">工業</link>"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.INDUSTRIAL.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.INDUSTRIAL.TOOLTIP"
+msgid ""
+"Machinery for oxygen production, heat management, and material refinement."
+msgstr "酸素生産、温度管理、素材精製のための機械です。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.INFRASTRUCTURE.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.INFRASTRUCTURE.NAME"
+msgid "<link=\"BUILDCATEGORYINFRASTRUCTURE\">Utilities</link>"
+msgstr "<link=\"BUILDCATEGORYINFRASTRUCTURE\">その他</link>"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.INFRASTRUCTURE.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.INFRASTRUCTURE.TOOLTIP"
+msgid "Power, plumbing, and ventilation can all be found here."
+msgstr "電力、配管、換気類はここにあります。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LADDERS.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LADDERS.BUILDMENUTITLE"
+msgid "Ladders"
+msgstr "梯子"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LADDERS.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LADDERS.NAME"
+msgid "Ladders"
+msgstr "梯子"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LADDERS.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LADDERS.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGICGATES.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGICGATES.BUILDMENUTITLE"
+msgid "Logic Gates"
+msgstr "論理ゲート"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGICGATES.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGICGATES.NAME"
+msgid ""
+"Logic\n"
+"Gates"
+msgstr ""
+"論理\n"
+"ゲート"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGICGATES.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGICGATES.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGICSWITCHES.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGICSWITCHES.BUILDMENUTITLE"
+msgid "Logic Switches"
+msgstr "論理スイッチ"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGICSWITCHES.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGICSWITCHES.NAME"
+msgid ""
+"Logic\n"
+"Switches"
+msgstr ""
+"論理\n"
+"スイッチ"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGICSWITCHES.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGICSWITCHES.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGICWIRING.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGICWIRING.BUILDMENUTITLE"
+msgid "Logic Wiring"
+msgstr "論理導線"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGICWIRING.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGICWIRING.NAME"
+msgid ""
+"Logic\n"
+"Wiring"
+msgstr ""
+"論理\n"
+"導線"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGICWIRING.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGICWIRING.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGISTICS.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGISTICS.NAME"
+msgid "<link=\"BUILDCATEGORYLOGISTICS\">Logistics</link>"
+msgstr "<link=\"BUILDCATEGORYLOGISTICS\">物流</link>"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.LOGISTICS.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.LOGISTICS.TOOLTIP"
+msgid "Devices for base automation and material transport."
+msgstr "基地の自動化および素材の輸送のための装置です。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.MEDICAL.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.MEDICAL.BUILDMENUTITLE"
+msgid "Medical"
+msgstr "医療"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.MEDICAL.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.MEDICAL.NAME"
+msgid "Medical"
+msgstr "医療"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.MEDICAL.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.MEDICAL.TOOLTIP"
+msgid "A cure for everything but the common cold."
+msgstr "風邪以外なら何でも治します。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.OXYGEN.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.OXYGEN.BUILDMENUTITLE"
+msgid "Oxygen"
+msgstr "酸素"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.OXYGEN.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.OXYGEN.NAME"
+msgid "Oxygen"
+msgstr "酸素"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.OXYGEN.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.OXYGEN.TOOLTIP"
+msgid "Everything you need to keep your colony breathing."
+msgstr "コロニー内で呼吸するために必要なものが揃っています。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.PIPES.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.PIPES.BUILDMENUTITLE"
+msgid "Pipes"
+msgstr "パイプ"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.PIPES.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.PIPES.NAME"
+msgid "Pipes"
+msgstr "パイプ"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.PIPES.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.PIPES.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.PLUMBINGSTRUCTURES.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.PLUMBINGSTRUCTURES.BUILDMENUTITLE"
+msgid "Plumbing"
+msgstr "配管"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.PLUMBINGSTRUCTURES.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.PLUMBINGSTRUCTURES.NAME"
+msgid "Plumbing"
+msgstr "配管"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.PLUMBINGSTRUCTURES.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.PLUMBINGSTRUCTURES.TOOLTIP"
+msgid "Get your water running and the sewage flowing."
+msgstr "上水下水の制御をします。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.POWERCONTROL.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.POWERCONTROL.BUILDMENUTITLE"
+msgid "Power Regulation"
+msgstr "電力制御"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.POWERCONTROL.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.POWERCONTROL.NAME"
+msgid ""
+"Power\n"
+"Regulation"
+msgstr ""
+"電力\n"
+"制御"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.POWERCONTROL.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.POWERCONTROL.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.RANCHING.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RANCHING.BUILDMENUTITLE"
+msgid "Ranching"
+msgstr "牧畜"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.RANCHING.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RANCHING.NAME"
+msgid "Ranching"
+msgstr "牧畜"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.RANCHING.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RANCHING.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.RECREATION.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RECREATION.BUILDMENUTITLE"
+msgid "Recreation"
+msgstr "気晴らし"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.RECREATION.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RECREATION.NAME"
+msgid "Recreation"
+msgstr "気晴らし"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.RECREATION.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RECREATION.TOOLTIP"
+msgid "Everything needed to reduce stress and increase fun."
+msgstr "ストレスを軽減し、楽しくするために必要なものが揃っています。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.REFINING.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.REFINING.BUILDMENUTITLE"
+msgid "Refinement"
+msgstr "精製"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.REFINING.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.REFINING.NAME"
+msgid "Refinement"
+msgstr "精製"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.REFINING.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.REFINING.TOOLTIP"
+msgid "Use the resources you want, filter the ones you don't."
+msgstr "いらないものはろ過して、欲しいものだけ使いましょう。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.RESEARCH.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RESEARCH.BUILDMENUTITLE"
+msgid "Research"
+msgstr "研究"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.RESEARCH.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RESEARCH.NAME"
+msgid "Research"
+msgstr "研究"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.RESEARCH.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RESEARCH.TOOLTIP"
+msgid ""
+msgstr ""
+
+# 格納庫以外にも、農地タイルでこのアクションが使用できた
+#. STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.BUILDMENUTITLE"
+msgid "Storage"
+msgstr "格納"
+
+# 格納庫以外にも、農地タイルでこのアクションが使用できた
+#. STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.NAME"
+msgid "Storage"
+msgstr "格納"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.TILES.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.TILES.BUILDMENUTITLE"
+msgid "Tiles"
+msgstr "タイル"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.TILES.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.TILES.NAME"
+msgid "Tiles"
+msgstr "タイル"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.TILES.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.TILES.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.TRAVELTUBES.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.TRAVELTUBES.BUILDMENUTITLE"
+msgid "Transit Tubes"
+msgstr "移動チューブ"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.TRAVELTUBES.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.TRAVELTUBES.NAME"
+msgid ""
+"Transit\n"
+"Tubes"
+msgstr ""
+"移動\n"
+"チューブ"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.TRAVELTUBES.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.TRAVELTUBES.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.UTILITIES.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.UTILITIES.BUILDMENUTITLE"
+msgid "Temperature Control"
+msgstr "温度設定"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.UTILITIES.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.UTILITIES.NAME"
+msgid ""
+"Temperature\n"
+"Control"
+msgstr ""
+"温度\n"
+"設定"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.UTILITIES.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.UTILITIES.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.VENTILATIONSTRUCTURES.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.VENTILATIONSTRUCTURES.BUILDMENUTITLE"
+msgid "Ventilation"
+msgstr "換気"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.VENTILATIONSTRUCTURES.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.VENTILATIONSTRUCTURES.NAME"
+msgid "Ventilation"
+msgstr "換気"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.VENTILATIONSTRUCTURES.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.VENTILATIONSTRUCTURES.TOOLTIP"
+msgid "Control the flow of gas in your base."
+msgstr "基地における気体の流れを制御します。"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.WIRES.BUILDMENUTITLE
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.WIRES.BUILDMENUTITLE"
+msgid "Wires"
+msgstr "電線"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.WIRES.NAME
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.WIRES.NAME"
+msgid "Wires"
+msgstr "電線"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.WIRES.TOOLTIP
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.WIRES.TOOLTIP"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.OVERLAYS.CONVEYOR.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CONVEYOR.BUTTON"
@@ -7596,6 +8105,96 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.PRIVATE_ROOM.NAME"
 msgid "Private Bedroom"
 msgstr "専用寝室"
 
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER0.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER0.DESCRIPTION"
+msgid "Tier 0"
+msgstr "Tier 0"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER0.NAME
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER0.NAME"
+msgid "Morale expectation"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER1.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER1.DESCRIPTION"
+msgid "Tier 1"
+msgstr "Tier 1"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER1.NAME
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER1.NAME"
+msgid "Morale expectation"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER2.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER2.DESCRIPTION"
+msgid "Tier 2"
+msgstr "Tier 2"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER2.NAME
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER2.NAME"
+msgid "Morale expectation"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER3.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER3.DESCRIPTION"
+msgid "Tier 3"
+msgstr "Tier 3"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER3.NAME
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER3.NAME"
+msgid "Morale expectation"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER4.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER4.DESCRIPTION"
+msgid "Tier 4"
+msgstr "Tier 4"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER4.NAME
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER4.NAME"
+msgid "Morale expectation"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER5.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER5.DESCRIPTION"
+msgid "Tier 5"
+msgstr "Tier 5"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER5.NAME
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER5.NAME"
+msgid "Morale expectation"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER6.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER6.DESCRIPTION"
+msgid "Tier 6"
+msgstr "Tier 6"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER6.NAME
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER6.NAME"
+msgid "Morale expectation"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER7.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER7.DESCRIPTION"
+msgid "Tier 7"
+msgstr "Tier 7"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER7.NAME
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER7.NAME"
+msgid "Morale expectation"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER8.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER8.DESCRIPTION"
+msgid "Tier 8"
+msgstr "Tier 8"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER8.NAME
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER8.NAME"
+msgid "Morale expectation"
+msgstr "士気期待値"
+
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.TITLE
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.TITLE"
 msgid "Special Provisions Request"
@@ -7671,8 +8270,8 @@ msgstr ""
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION"
-msgid "Trait: <link=\"ANALYSIS\">Geographical Feature Analysis</link>"
-msgstr "特性: <link=\"ANALYSIS\">地勢分析</link>"
+msgid "Trait: Geographical Analysis"
+msgstr "特性: 地勢分析"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_RANCH_STATION.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_RANCH_STATION.DESCRIPTION"
@@ -8230,7 +8829,7 @@ msgstr ""
 #. STRINGS.UI.SCHEDULEBLOCKTYPES.RECREATION.NAME
 msgctxt "STRINGS.UI.SCHEDULEBLOCKTYPES.RECREATION.NAME"
 msgid "Recreation"
-msgstr "気晴らし"
+msgstr "気分転換"
 
 #. STRINGS.UI.SCHEDULEBLOCKTYPES.SLEEP.DESCRIPTION
 msgctxt "STRINGS.UI.SCHEDULEBLOCKTYPES.SLEEP.DESCRIPTION"
@@ -8261,55 +8860,127 @@ msgctxt "STRINGS.UI.SCHEDULEBLOCKTYPES.WORK.NAME"
 msgid "Work"
 msgstr "労働"
 
-#. STRINGS.UI.SCHEDULESCREEN.ALLOWED
-msgctxt "STRINGS.UI.SCHEDULESCREEN.ALLOWED"
-msgid "Allowed"
-msgstr "許可"
-
-#. STRINGS.UI.SCHEDULESCREEN.BLOCKS
-msgctxt "STRINGS.UI.SCHEDULESCREEN.BLOCKS"
-msgid "BLOCKS:"
-msgstr "ブロック:"
-
-#. STRINGS.UI.SCHEDULESCREEN.CLICKTOCHANGE
-msgctxt "STRINGS.UI.SCHEDULESCREEN.CLICKTOCHANGE"
-msgid "Click to change block type."
-msgstr "クリックでブロックの種類を変更します。"
-
-#. STRINGS.UI.SCHEDULESCREEN.CLICKTOSELECT
-msgctxt "STRINGS.UI.SCHEDULESCREEN.CLICKTOSELECT"
-msgid "Click to select."
-msgstr "クリックで選択します。"
-
-#. STRINGS.UI.SCHEDULESCREEN.DENIED
-msgctxt "STRINGS.UI.SCHEDULESCREEN.DENIED"
-msgid "Denied"
-msgstr "拒否"
-
-#. STRINGS.UI.SCHEDULESCREEN.SCHEDULE
-msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE"
-msgid "SCHEDULE:"
-msgstr "スケジュール:"
-
-#. STRINGS.UI.SCHEDULESCREEN.SELECTBLOCKTYPETOOLTIP
-msgctxt "STRINGS.UI.SCHEDULESCREEN.SELECTBLOCKTYPETOOLTIP"
-msgid "Select a block type to adjust the colony's schedule"
-msgstr ""
-"コロニーのスケジュールを調整するために、ブロックの種類を選択してください"
-
-#. STRINGS.UI.SCHEDULESCREEN.SELECTHELP
-msgctxt "STRINGS.UI.SCHEDULESCREEN.SELECTHELP"
+#. STRINGS.UI.SCHEDULEGROUPS.HYGENE.DESCRIPTION
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.HYGENE.DESCRIPTION"
 msgid ""
-"Select an option and then click or drag on the timetable to adjust the "
-"Duplicant's schedule."
+"During bathtime blocks my Duplicants will take care of their hygienic needs, "
+"such as going to the bathroom, using the shower or washing their hands."
 msgstr ""
-"複製人間のスケジュールを調整するために、オプションを選択し、タイムテーブルを"
-"クリックまたはドラッグしてください。"
+"入浴時間になると、複製人間はトイレに行ったりシャワーを浴びたり手を洗ったりし"
+"ます。"
 
-#. STRINGS.UI.SCHEDULESCREEN.TIMESLOT
-msgctxt "STRINGS.UI.SCHEDULESCREEN.TIMESLOT"
-msgid "Time Slot"
-msgstr "時間枠"
+#. STRINGS.UI.SCHEDULEGROUPS.HYGENE.NAME
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.HYGENE.NAME"
+msgid "Bathtime"
+msgstr "入浴"
+
+#. STRINGS.UI.SCHEDULEGROUPS.RECREATION.DESCRIPTION
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.RECREATION.DESCRIPTION"
+msgid ""
+"During downtime my Duplicants they may do as they please.\n"
+"\n"
+"This may include personal matters like bathroom visits or snacking, or they "
+"may choose to engage in leisure activities like socializing with friends.\n"
+"\n"
+"Downtime increases Duplicant Morale."
+msgstr ""
+"休憩時間になると複製人間は自由行動を取ります。\n"
+"\n"
+"これはトイレに行ったり食事をしたり、友人と娯楽設備に行くことを含みます。\n"
+"\n"
+"休憩は複製人間の士気を上昇させます。"
+
+#. STRINGS.UI.SCHEDULEGROUPS.RECREATION.NAME
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.RECREATION.NAME"
+msgid "Downtime"
+msgstr "休憩"
+
+#. STRINGS.UI.SCHEDULEGROUPS.SLEEP.DESCRIPTION
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.SLEEP.DESCRIPTION"
+msgid ""
+"My Duplicants use bedtime blocks to rest up after a hard day's work.\n"
+"\n"
+"Scheduling too few bedtime blocks may prevent my Duplicants from regaining "
+"enough Stamina to make it through the following day."
+msgstr ""
+"複製人間は一日の労働の後就寝時間を取ります。\n"
+"\n"
+"就寝時間帯が短すぎると、翌日活動するために十分なスタミナが回復できません。"
+
+#. STRINGS.UI.SCHEDULEGROUPS.SLEEP.NAME
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.SLEEP.NAME"
+msgid "Bedtime"
+msgstr "就寝"
+
+#. STRINGS.UI.SCHEDULEGROUPS.WORKTIME.DESCRIPTION
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.WORKTIME.DESCRIPTION"
+msgid ""
+"During Work shifts my Duplicants must perform the work tasks I have placed "
+"for them throughout the colony.\n"
+"\n"
+"It's important when scheduling to maintain a good work-life balance for my "
+"Duplicants to maintain their health and prevent Morale loss."
+msgstr ""
+"労働時間になると複製人間は各自割り当てられたタスクをこなします。\n"
+"\n"
+"複製人間の健康と士気を維持するために、彼らのワークライフバランスを丁度良い状"
+"態に保つことは重要です。"
+
+#. STRINGS.UI.SCHEDULEGROUPS.WORKTIME.NAME
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.WORKTIME.NAME"
+msgid "Work"
+msgstr "労働"
+
+#. STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_OFF_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_OFF_TOOLTIP"
+msgid ""
+"Toggle Sounds and Notifications\n"
+"\n"
+"Disabled. No sounds or notifications will play for this schedule.\n"
+"\n"
+"Click to enable."
+msgstr ""
+"音と通知の切替\n"
+"\n"
+"無効です。音または通知はこのスケジュールでは使われません。\n"
+"\n"
+"クリックで有効化します。"
+
+#. STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_ON_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_ON_TOOLTIP"
+msgid ""
+"Toggle Sounds and Notifications\n"
+"\n"
+"Enabled. Sounds and notifications will play when schedule blocks change for "
+"this schedule.\n"
+"\n"
+"Click to disable."
+msgstr ""
+"音と通知の切替\n"
+"\n"
+"有効です。音と通知はスケジュール帯が切り替わった時に使われます。\n"
+"\n"
+"クリックで無効化します。"
+
+#. STRINGS.UI.SCHEDULESCREEN.DELETE_BUTTON_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULESCREEN.DELETE_BUTTON_TOOLTIP"
+msgid "Delete Schedule"
+msgstr "スケジュール削除"
+
+#. STRINGS.UI.SCHEDULESCREEN.RENAME_BUTTON_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULESCREEN.RENAME_BUTTON_TOOLTIP"
+msgid "Rename Schedule"
+msgstr "スケジュール名前変更"
+
+#. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT
+msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT"
+msgid "Default Schedule"
+msgstr "デフォルト"
+
+#. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_FORMAT
+msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_FORMAT"
+msgid "Schedule {0}"
+msgstr "スケジュール {0}"
 
 #. STRINGS.UI.SPEED_FAST
 msgctxt "STRINGS.UI.SPEED_FAST"
@@ -9111,8 +9782,8 @@ msgstr "複製人間の優先度および職業割り当てを管理します"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_SCHEDULE
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_SCHEDULE"
-msgid "Adjust colony timetable"
-msgstr "コロニーのタイムテーブルを調整します"
+msgid "Adjust colony scheduling"
+msgstr "コロニーのスケジュールを調整します"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_VITALS
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_VITALS"
@@ -9634,7 +10305,7 @@ msgstr "ここに格納する最大容量を調整します"
 #. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE"
 msgid "Auto-Wrangle Surplus"
-msgstr ""
+msgstr "自動間引き"
 
 #. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE_TOOLTIP
 msgctxt ""
@@ -9643,12 +10314,14 @@ msgid ""
 "A Rancher will automatically wrangle any critters that exceed the population "
 "limit or that do not belong in this stable"
 msgstr ""
+"牧夫は動物が過密状態になったり厩舎に属していない動物を自動的に懐柔するように"
+"なります"
 
 #. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.LIMIT_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.LIMIT_TOOLTIP"
 msgid ""
 "Critters exceeding this population limit will automatically be wrangled:"
-msgstr ""
+msgstr "過密状態になった動物は自動的に懐柔されます:"
 
 #. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.TITLE"
@@ -10410,7 +11083,7 @@ msgstr "分析中断"
 
 #. STRINGS.UI.UISIDESCREENS.STUDYABLE_SIDE_SCREEN.PENDING_STATUS
 msgctxt "STRINGS.UI.UISIDESCREENS.STUDYABLE_SIDE_SCREEN.PENDING_STATUS"
-msgid "A researcher is in the process of studying this formation."
+msgid "A researcher is in the process of studying this feature."
 msgstr "研究者はこの地勢の分析調査中です"
 
 #. STRINGS.UI.UISIDESCREENS.STUDYABLE_SIDE_SCREEN.SEND_BUTTON
@@ -10421,11 +11094,13 @@ msgstr "分析"
 #. STRINGS.UI.UISIDESCREENS.STUDYABLE_SIDE_SCREEN.SEND_STATUS
 msgctxt "STRINGS.UI.UISIDESCREENS.STUDYABLE_SIDE_SCREEN.SEND_STATUS"
 msgid ""
-"Send a researcher to study this formation. A full analysis will take time, "
-"but should yield useful results."
+"Send a researcher to gather data here.\n"
+"\n"
+"Analyzing a natural feature takes time, but yields useful results."
 msgstr ""
-"この地形に研究者を派遣します。完全な分析には時間がかかりますが、役立つ結果が"
-"得られるはずです。"
+"この地形に研究者を派遣します。\n"
+"\n"
+"完全な分析には時間がかかりますが、役立つ結果が得られるはずです。"
 
 #. STRINGS.UI.UISIDESCREENS.STUDYABLE_SIDE_SCREEN.STUDIED_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.STUDYABLE_SIDE_SCREEN.STUDIED_BUTTON"
@@ -11403,10 +12078,305 @@ msgctxt "STRINGS.UI.USERMENUACTIONS.QUARANTINE.TOOLTIP_OFF"
 msgid "Cancel this quarantine order"
 msgstr "隔離指示を取り消します"
 
+#. STRINGS.UI.USERMENUACTIONS.READLORE.ALREADY_SEARCHED
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.ALREADY_SEARCHED"
+msgid ""
+"I already took everything of interest from this. I can check the Codex to re-"
+"read what I found."
+msgstr ""
+"これについては既に調査済みです。データベースで再確認することができます。"
+
 #. STRINGS.UI.USERMENUACTIONS.READLORE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.NAME"
 msgid "Inspect"
 msgstr "調査"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH1
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH1"
+msgid "Unfortunately, the computer's hard drive is irreparably corrupted."
+msgstr ""
+"残念ながら、コンピューターのハードディスクは回復不能なほど破損しています。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH2
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH2"
+msgid ""
+"The computer was wiped clean before I got here. There is nothing to recover."
+msgstr ""
+"コンピューターはきれいさっぱり初期化されています。回復できそうなものはありま"
+"せん。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH3
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH3"
+msgid ""
+"Some intact files are available on the computer, but nothing I haven't "
+"already discovered elsewhere. I find nothing else."
+msgstr ""
+"コンピューター上にはいくつかのファイルが手つかずで残っていますが、それ以上の"
+"ものは何も見つかりませんでした。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH4
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH4"
+msgid "The computer has nothing of import."
+msgstr "コンピューターには引き出せる情報がない。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH5
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH5"
+msgid ""
+"Someone's left a solitaire game up. There's nothing else of interest on the "
+"computer.\n"
+"\n"
+"Also, it looks as though they were about to lose."
+msgstr ""
+"誰かがソリティアをやっていたようです。コンピューターには他に興味を引くような"
+"ものはありません。\n"
+"\n"
+"このソリティアはどうやら負けっぽいです。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH6
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH6"
+msgid ""
+"The background on this computer depicts two kittens hugging in a field of "
+"daisies. There is nothing else of import to be found."
+msgstr ""
+"このコンピューターの壁紙はお花畑でじゃれあう2匹の子猫です。それ以外に引き出せ"
+"る情報は何もありません。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH7
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH7"
+msgid ""
+"The user alphabetized the shortcuts on their desktop. There is nothing else "
+"of import to be found."
+msgstr ""
+"デスクトップのショートカットはアルファベット順に並べ替えてあります。それ以外"
+"に引き出せる情報はありません。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH8
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH8"
+msgid ""
+"The background is a picture of a golden retriever in a science lab. It looks "
+"very confused. There is nothing else of import to be found."
+msgstr ""
+"壁紙は研究室に居るゴールデンレトリーバーの写真です。とても困った顔をしていま"
+"す。それ以外に引き出せる情報はありません。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH9
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_FAIL.SEARCH9"
+msgid ""
+"This user never changed their default background. There is nothing else of "
+"import to be found. How dull."
+msgstr ""
+"デフォルトの壁紙のまま変更していないようです。それ以外に引き出せる情報はあり"
+"ません。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH1
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH1"
+msgid ""
+"After searching through the computer's database, I managed to piece together "
+"some files that piqued my interest.\n"
+"\n"
+"New Codex Entry unlocked."
+msgstr ""
+"コンピューターのデータベースを検索したところ、データの断片から興味深い内容の"
+"ファイルを組み立てることができました。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH2
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH2"
+msgid ""
+"Searching through the computer, I find some recoverable files that are still "
+"readable.\n"
+"\n"
+"New Codex Entry unlocked."
+msgstr ""
+"コンピューターを検索すると、判読可能なファイルをいくつか見つけました。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH3
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH3"
+msgid ""
+"The computer looks pristine on the outside, but is corrupted internally. "
+"Still, I managed to find one uncorrupted file, and have added it to my "
+"database.\n"
+"\n"
+"New Codex Entry unlocked."
+msgstr ""
+"コンピューターの見た目は新品ですが、中身は壊れてしまっています。どうにか破損"
+"していないファイルを見つけ出し、データベースに追加しました。\n"
+"\n"
+"辞書に新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH4
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH4"
+msgid ""
+"The computer was wiped almost completely clean, except for one file hidden "
+"in the recycle bin.\n"
+"\n"
+"New Codex Entry unlocked."
+msgstr ""
+"コンピューターはきれいさっぱり初期化されていますが、ゴミ箱から隠しファイルが"
+"見つかりました。\n"
+"\n"
+"辞書に新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH5
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH5"
+msgid ""
+"I search the computer, storing what useful data I can find in my own "
+"memory.\n"
+"\n"
+"New Codex Entry unlocked."
+msgstr ""
+"コンピューターを検索し、発見したデータをメモリに格納しました。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH6
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH6"
+msgid ""
+"This computer is broken and requires some finessing to get working. Still, I "
+"recover a handful of interesting files.\n"
+"\n"
+"New Codex Entry unlocked."
+msgstr ""
+"このコンピューターは壊れており、稼働させるには替えの部品が必要です。その中か"
+"らいくつか役に立ちそうなファイルを発見しました。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_DISPLAY
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_DISPLAY"
+msgid ""
+"The display is still functional. I copy its message into my database.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"ディスプレイはまだ機能するようです。表示されているメッセージをメモリにコピー"
+"しました。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_FAIL.SEARCH1
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_FAIL.SEARCH1"
+msgid "I look around but find nothing of interest."
+msgstr "辺りを見回しましたが、特に有用なものは見つかりませんでした。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH1
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH1"
+msgid ""
+"I look around and recover an old file.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"辺りを見回すと、古いファイルを発見しました。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH2
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH2"
+msgid ""
+"There's a three-ringed binder inside. I scan the surviving documents.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"3穴バインダーを見つけたため、残っていた書類をスキャンします。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH3
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH3"
+msgid ""
+"A discarded journal inside remains mostly intact. I scan the pages of use.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"ほぼ手つかずの破棄された研究日誌を見つけたため、ページをスキャンします。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH4
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH4"
+msgid ""
+"A single page of a long printout remains legible. I scan it and add it to my "
+"database.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"判読可能な状態の長い1ページの印刷物を見つけたため、ページをスキャンします。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH5
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH5"
+msgid ""
+"A few loose papers can be found inside. I scan the ones that look "
+"interesting.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"数枚のノートを見つけたため、ページをスキャンします。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH6
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH6"
+msgid ""
+"I find a memory stick inside and copy its data into my database.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"メモリースティックを見つけたため、中のデータをコピーします。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_POD
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_POD"
+msgid ""
+"I search my incoming message history and find a single entry. I move the odd "
+"message into my database.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"メッセージ履歴を検索し、項目を発見しました。データベースに登録します。\n"
+"\n"
+"新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH1
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH1"
+msgid ""
+"I scour the internal systems and find something of interest.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"内部システムを磨くと、興味深いものを見つけました。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH2
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH2"
+msgid ""
+"I see if I can salvage anything from the electronics. I add what I find to "
+"the codex.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"電子機器から何か復元できそうなものがあったため、データベースに追加しまし"
+"た。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH3
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH3"
+msgid ""
+"I look for anything of interest within the abandoned machinery and add what "
+"I find to my database.\n"
+"\n"
+"New Codex Entry discovered."
+msgstr ""
+"廃棄された機械から何か興味を惹くものを探し、データベースに登録しました。\n"
+"\n"
+"データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.TOOLTIP"
@@ -11681,6 +12651,22 @@ msgstr "複数の病気 ({0})"
 msgctxt "STRINGS.UI.VITALSSCREEN.NOT_DROWNING"
 msgid "Liquid Level"
 msgstr "液体レベル"
+
+#. STRINGS.UI.VITALSSCREEN.QUALITYOFLIFE_EXPECTATIONS
+msgctxt "STRINGS.UI.VITALSSCREEN.QUALITYOFLIFE_EXPECTATIONS"
+msgid "Morale"
+msgstr "士気"
+
+#. STRINGS.UI.VITALSSCREEN.QUALITYOFLIFE_EXPECTATIONS_TOOLTIP
+msgctxt "STRINGS.UI.VITALSSCREEN.QUALITYOFLIFE_EXPECTATIONS_TOOLTIP"
+msgid ""
+"This Duplicant needs a Morale rating of {0}.\n"
+"\n"
+"Current Morale:"
+msgstr ""
+"この複製人間は士気が {0} 必要です。\n"
+"\n"
+"現在の士気:"
 
 #. STRINGS.UI.VITALSSCREEN.STRESS
 msgctxt "STRINGS.UI.VITALSSCREEN.STRESS"
@@ -12267,29 +13253,164 @@ msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
 
-#~ msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.ENABLE_BUTTON"
-#~ msgid "Opt-In to Data Collection: "
-#~ msgstr "データ収集に協力する: "
+#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.EXPECTATIONS_ABOVE"
+#~ msgid "<b><color=#B87194FF>fulfills</color></b>"
+#~ msgstr "<b><color=#B87194FF>満足</color></b>"
+
+#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.EXPECTATIONS_BELOW"
+#~ msgid "is <b><color=#B87194FF>below</color></b>"
+#~ msgstr "は<b><color=#B87194FF>期待値未満</color></b>"
+
+#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_EXPECTATIONS"
+#~ msgid "Expectations"
+#~ msgstr "期待値"
+
+#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_EXPECTATIONS_TOOLTIP"
+#~ msgid ""
+#~ "Expectations\n"
+#~ "------------------\n"
+#~ "Desires food that is {0} quality or better"
+#~ msgstr ""
+#~ "期待値\n"
+#~ "------------------\n"
+#~ "食糧の品質が {0} 以上であること"
+
+# 上の行はどう訳す？
+#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY_VS_EXPECTATION"
+#~ msgid ""
+#~ "------------------\n"
+#~ "This food type {0} {1}'s quality expectations\n"
+#~ "[{2} Quality / {3} Expectation]"
+#~ msgstr ""
+#~ "------------------\n"
+#~ "This food type {0} {1}'s quality expectations\n"
+#~ "[{2} 品質 / {3} 期待値]"
+
+#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.STRESS"
+#~ msgid "Stress"
+#~ msgstr "ストレス"
+
+#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.STRESS_TOOLTIP"
+#~ msgid ""
+#~ "Stress\n"
+#~ "------------------\n"
+#~ "{0} of a possible 100%"
+#~ msgstr ""
+#~ "ストレス\n"
+#~ "------------------\n"
+#~ "100%中 {0}"
 
 #~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
 #~ msgid ""
 #~ "<b>Update Features:</b>\n"
 #~ "\n"
-#~ "• New \"Critter Morphs\" can be hatched through careful breeding\n"
-#~ "• Two new creatures, Drecko and Pacu, can be found in new worlds\n"
-#~ "• Sandbox Mode lets you become master of the asteroid\n"
-#~ "• New automation controls, pipes and buildings\n"
+#~ "• The Surface biome has been added to the top of the asteroid\n"
+#~ "• Solar power and metallic meteors can be harnessed\n"
+#~ "• New glass and steel resources allow constructing advanced buildings\n"
+#~ "• Further fixes and polish to Critter Ranching and eggs\n"
 #~ "\n"
 #~ "Please view the full patch notes for further details!"
 #~ msgstr ""
 #~ "<b>新機能:</b>\n"
 #~ "\n"
-#~ "• 特定の条件下では動物の変種が誕生するようになりました\n"
-#~ "• 新しい生き物、ドレッコとパクーを追加しました\n"
-#~ "• サンドボックスモードで練習できるようになりました\n"
-#~ "• 新しい自動化制御部品、パイプ、設備\n"
+#~ "• 小惑星上部に表層バイオームが追加されました\n"
+#~ "• 太陽電力と鉄製隕石が利用可能になりました\n"
+#~ "• 新しい資源、ガラスおよび鋼鉄でより優れた設備を建設できます\n"
+#~ "• 動物の放牧や卵の改善\n"
 #~ "\n"
-#~ "より詳しい内容についてはパッチノートを参照してください！"
+#~ "詳細はパッチノート全文を参照してください！"
+
+#~ msgctxt "STRINGS.UI.JOBSSCREEN.RESET_SETTINGS_TOOLTIP"
+#~ msgid ""
+#~ "Resets all priorities to the default values for this mode.\n"
+#~ "\n"
+#~ "Default: All priorities will be reset to neutral.\n"
+#~ "\n"
+#~ "Advanced: Priorities will be adjusted high-to-low for normal base "
+#~ "operation."
+#~ msgstr ""
+#~ "全ての優先度をデフォルト値に戻します。\n"
+#~ "\n"
+#~ "ノーマル: 全ての優先度を真ん中に設定します。\n"
+#~ "\n"
+#~ "アドバンスド: 優先度は自動的に調整されます。"
+
+#~ msgctxt "STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE"
+#~ msgid "Advanced"
+#~ msgstr "アドバンスド"
+
+#~ msgctxt "STRINGS.UI.JOBSSCREEN.TOGGLE_ADVANCED_MODE_TOOLTIP"
+#~ msgid ""
+#~ "<b>Advanced Priority Settings</b>\n"
+#~ "------------------\n"
+#~ "This option disables a hidden priority hierarchy used to choose errands "
+#~ "in the event of a priority tie.\n"
+#~ "\n"
+#~ "When disabled, Duplicants will still choose errands based on their "
+#~ "Priorities first and their Sub-Priorities second, but ties will be "
+#~ "settled by simply choosing the nearest high priority errand. This helps "
+#~ "them to stay near the same area of the colony so long as all the nearby "
+#~ "work is their highest priority.\n"
+#~ "\n"
+#~ "This mode is ideal for large bases and experienced players with heavily "
+#~ "customized priority settings."
+#~ msgstr ""
+#~ "<b>アドバンスド</b>\n"
+#~ "------------------\n"
+#~ "このオプションは選んだ作業に関連付けられた隠し優先度を無効化します。\n"
+#~ "\n"
+#~ "無効化した場合、複製人間たちは彼ら自身に設定された優先度、準優先度の順に"
+#~ "従って作業を選びますが、他に優先度が高い作業があればそちらに取り掛かりま"
+#~ "す。これは作業優先度の高い作業がある限り、できるだけ同じ場所で作業を続ける"
+#~ "ために役立ちます。\n"
+#~ "\n"
+#~ "このモードは大規模な基地向け、または複製人間の優先度をとことん管理したい人"
+#~ "向けです。"
+
+#~ msgctxt "STRINGS.UI.SCHEDULESCREEN.ALLOWED"
+#~ msgid "Allowed"
+#~ msgstr "許可"
+
+#~ msgctxt "STRINGS.UI.SCHEDULESCREEN.BLOCKS"
+#~ msgid "BLOCKS:"
+#~ msgstr "ブロック:"
+
+#~ msgctxt "STRINGS.UI.SCHEDULESCREEN.CLICKTOCHANGE"
+#~ msgid "Click to change block type."
+#~ msgstr "クリックでブロックの種類を変更します。"
+
+#~ msgctxt "STRINGS.UI.SCHEDULESCREEN.CLICKTOSELECT"
+#~ msgid "Click to select."
+#~ msgstr "クリックで選択します。"
+
+#~ msgctxt "STRINGS.UI.SCHEDULESCREEN.DENIED"
+#~ msgid "Denied"
+#~ msgstr "拒否"
+
+#~ msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE"
+#~ msgid "SCHEDULE:"
+#~ msgstr "スケジュール:"
+
+#~ msgctxt "STRINGS.UI.SCHEDULESCREEN.SELECTBLOCKTYPETOOLTIP"
+#~ msgid "Select a block type to adjust the colony's schedule"
+#~ msgstr ""
+#~ "コロニーのスケジュールを調整するために、ブロックの種類を選択してください"
+
+#~ msgctxt "STRINGS.UI.SCHEDULESCREEN.SELECTHELP"
+#~ msgid ""
+#~ "Select an option and then click or drag on the timetable to adjust the "
+#~ "Duplicant's schedule."
+#~ msgstr ""
+#~ "複製人間のスケジュールを調整するために、オプションを選択し、タイムテーブル"
+#~ "をクリックまたはドラッグしてください。"
+
+#~ msgctxt "STRINGS.UI.SCHEDULESCREEN.TIMESLOT"
+#~ msgid "Time Slot"
+#~ msgstr "時間枠"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.METRICS_OPTIONS_SCREEN.ENABLE_BUTTON"
+#~ msgid "Opt-In to Data Collection: "
+#~ msgstr "データ収集に協力する: "
 
 #~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
 #~ msgid "RANCHING UPGRADE MARK II"
