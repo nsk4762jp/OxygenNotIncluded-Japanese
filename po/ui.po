@@ -39,15 +39,12 @@ msgid "This Colony is {0} Cycle(s) Old"
 msgstr "このコロニーは {0} サイクル運営されています"
 
 #. STRINGS.UI.ASTEROIDCLOCK.SCHEDULE_BUTTON_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.MANAGEMENT.MANAGESCHEDULE"
+#| msgid "ManageSchedule"
 msgctxt "STRINGS.UI.ASTEROIDCLOCK.SCHEDULE_BUTTON_TOOLTIP"
-msgid ""
-"Manage Schedule\n"
-"\n"
-"NOT IMPLEMENTED"
-msgstr ""
-"スケジュールの管理\n"
-"\n"
-"[未実装]"
+msgid "Manage Schedule"
+msgstr "スケジュールの管理"
 
 #. STRINGS.UI.ASTEROIDCLOCK.TIME_PLAYED
 msgctxt "STRINGS.UI.ASTEROIDCLOCK.TIME_PLAYED"
@@ -68,6 +65,19 @@ msgstr "Level {0} {1}"
 msgctxt "STRINGS.UI.BASECOUNT"
 msgid "Base {0}"
 msgstr "基地 {0}"
+
+#. STRINGS.UI.BUILD_REQUIRES_ROLE
+msgctxt "STRINGS.UI.BUILD_REQUIRES_ROLE"
+msgid "{ROLE}"
+msgstr ""
+
+#. STRINGS.UI.BUILD_REQUIRES_ROLE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESMANUALOPERATION"
+#| msgid "A Duplicant must be present to run this building"
+msgctxt "STRINGS.UI.BUILD_REQUIRES_ROLE_TOOLTIP"
+msgid "Duplicants must be trained in the {ROLE} job to construct this building"
+msgstr "この設備は複製人間が操作する必要があります"
 
 #. STRINGS.UI.BUILDCATEGORIES.AUTOMATION.NAME
 msgctxt "STRINGS.UI.BUILDCATEGORIES.AUTOMATION.NAME"
@@ -198,6 +208,22 @@ msgstr "<link=\"BUILDCATEGORYREFINING\">精製</link>"
 msgctxt "STRINGS.UI.BUILDCATEGORIES.REFINING.TOOLTIP"
 msgid "Use the resources I want, filter the ones I don't."
 msgstr "いらないものはろ過して、欲しいものだけ使いましょう。"
+
+#. STRINGS.UI.BUILDCATEGORIES.ROCKETRY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDCATEGORIES.POWER.NAME"
+#| msgid "<link=\"BUILDCATEGORYPOWER\">Power</link>"
+msgctxt "STRINGS.UI.BUILDCATEGORIES.ROCKETRY.NAME"
+msgid "<link=\"BUILDCATEGORYROCKETRY\">Rocketry</link>"
+msgstr "<link=\"BUILDCATEGORYPOWER\">電力</link>"
+
+#. STRINGS.UI.BUILDCATEGORIES.ROCKETRY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.ROCKY"
+#| msgid "Rocky"
+msgctxt "STRINGS.UI.BUILDCATEGORIES.ROCKETRY.TOOLTIP"
+msgid "Rocketry"
+msgstr "ごつごつした"
 
 #. STRINGS.UI.BUILDCATEGORIES.UTILITIES.NAME
 msgctxt "STRINGS.UI.BUILDCATEGORIES.UTILITIES.NAME"
@@ -402,13 +428,19 @@ msgid "Active Period: (Requires Analysis)"
 msgstr "活動間隔: (分析が必要)"
 
 #. STRINGS.UI.BUILDINGEFFECTS.HEATCONSUMED
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.HEATCONSUMED"
+#| msgid "<link=\"HEAT\">Heat</link>: -{0}"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.HEATCONSUMED"
-msgid "<link=\"HEAT\">Heat</link>: -{0}"
+msgid "<link=\"HEAT\">Heat</link>: -{0}/s"
 msgstr "<link=\"HEAT\">熱</link>: -{0}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.HEATGENERATED
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.HEATGENERATED"
+#| msgid "<link=\"HEAT\">Heat</link>: +{0}"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.HEATGENERATED"
-msgid "<link=\"HEAT\">Heat</link>: +{0}"
+msgid "<link=\"HEAT\">Heat</link>: +{0}/s"
 msgstr "<link=\"HEAT\">熱</link>: +{0}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.HEATGENERATED_AIRCONDITIONER
@@ -511,9 +543,20 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.PRODUCES_RESEARCH_POINTS"
 msgid "{0}"
 msgstr "{0}"
 
+#. STRINGS.UI.BUILDINGEFFECTS.RECREATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RECREATION.BUILDMENUTITLE"
+#| msgid "Recreation"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.RECREATION"
+msgid "Recreation"
+msgstr "気晴らし"
+
 #. STRINGS.UI.BUILDINGEFFECTS.REFILLOXYGENTANK
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REFILLOXYGENTANK"
+#| msgid "Refills ExosuitOxygen Tank"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.REFILLOXYGENTANK"
-msgid "Refills ExosuitOxygen Tank"
+msgid "Refills Exosuit Oxygen Tank"
 msgstr "EXOスーツの酸素タンクを再充填する"
 
 #. STRINGS.UI.BUILDINGEFFECTS.REFINEMENT_ENERGY
@@ -1012,6 +1055,11 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PRODUCES_RESEARCH_POINTS"
 msgid "Produces {0} research"
 msgstr "{0} 研究を生産"
 
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.RECREATION
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.RECREATION"
+msgid "Improves Duplicant Morale during scheduled Downtime"
+msgstr ""
+
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REFILLOXYGENTANK
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REFILLOXYGENTANK"
 msgid "Refills Exosuit Oxygen Tanks with oxygen for reuse"
@@ -1289,6 +1337,14 @@ msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.JOURNALS"
 msgid "<link=\"JOURNALS\">Journals</link>"
 msgstr "<link=\"JOURNALS\">日誌</link>"
 
+#. STRINGS.UI.CODEX.CATEGORYNAMES.MYLOG
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.GLOM.NAME"
+#| msgid "<link=\"GLOM\">Morb</link>"
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MYLOG"
+msgid "<link=\"MYLOG\">My Log</link>"
+msgstr "<link=\"GLOM\">モーブ</link>"
+
 #. STRINGS.UI.CODEX.CATEGORYNAMES.NOTICES
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.NOTICES"
 msgid "<link=\"NOTICES\">Notices</link>"
@@ -1323,6 +1379,14 @@ msgstr "<link=\"SYSTEMS\">システム</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.TECH"
 msgid "<link=\"TECH\">Research</link>"
 msgstr "<link=\"TECH\">研究</link>"
+
+#. STRINGS.UI.CODEX.CATEGORYNAMES.TIPS
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.TILE.NAME"
+#| msgid "<link=\"TILE\">Tile</link>"
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.TIPS"
+msgid "<link=\"TIPS\">Tips</link>"
+msgstr "<link=\"TILE\">タイル</link>"
 
 #. STRINGS.UI.CODEX.DETAILS
 msgctxt "STRINGS.UI.CODEX.DETAILS"
@@ -1404,6 +1468,11 @@ msgstr "{0} x {1}{2}"
 msgctxt "STRINGS.UI.CODEX.SEARCH_HEADER"
 msgid "Search Database"
 msgstr "データベースを検索"
+
+#. STRINGS.UI.CODEX.TIPS
+msgctxt "STRINGS.UI.CODEX.TIPS"
+msgid "Tips"
+msgstr ""
 
 #. STRINGS.UI.CODEX.TITLE
 msgctxt "STRINGS.UI.CODEX.TITLE"
@@ -1487,16 +1556,24 @@ msgstr ""
 "<b>{0}</b>は<b>{1}</b>を食べることを<color=#B87194FF>許可されています</color>"
 
 #. STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFE.NAME"
+#| msgid "Morale"
 msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY"
-msgid "Quality: {0}"
-msgstr "品質: {0}"
+msgid "Morale: {0}"
+msgstr "士気"
 
 #. STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY_VS_EXPECTATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY_VS_EXPECTATION"
+#| msgid ""
+#| "------------------\n"
+#| "This food has a quality of {0}\n"
+#| "It will give these bonuses if {1} eats it:"
 msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY_VS_EXPECTATION"
 msgid ""
 "------------------\n"
-"This food has a quality of {0}\n"
-"It will give these bonuses if {1} eats it:"
+"This food will give {0} Morale if {1} eats it:"
 msgstr ""
 "------------------\n"
 "この食糧の品質は{0}です\n"
@@ -2991,10 +3068,15 @@ msgid "Specific Heat Capacity: {0}"
 msgstr "熱容量: {0}"
 
 #. STRINGS.UI.ELEMENTAL.SHC.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.ELEMENTAL.SHC.TOOLTIP"
+#| msgid ""
+#| "{SPECIFIC_HEAT_CAPACITY} J is required to heat 1 g of the selected object "
+#| "by 1 {TEMPERATURE_UNIT}"
 msgctxt "STRINGS.UI.ELEMENTAL.SHC.TOOLTIP"
 msgid ""
-"{SPECIFIC_HEAT_CAPACITY} J is required to heat 1 g of the selected object by "
-"1 {TEMPERATURE_UNIT}"
+"{SPECIFIC_HEAT_CAPACITY} is required to heat 1 g of the selected object by 1 "
+"{TEMPERATURE_UNIT}"
 msgstr ""
 "選択した物体 1g を 1{TEMPERATURE_UNIT} 温めるのに {SPECIFIC_HEAT_CAPACITY}J "
 "必要です"
@@ -3533,6 +3615,155 @@ msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.TITLE"
 msgid "AUDIO OPTIONS"
 msgstr "オーディオ設定"
 
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.DEFAULT.NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
+#| "DEFAULT.NAME"
+#| msgid "Regular"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"DEFAULT.NAME"
+msgid "Regular"
+msgstr "通常"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.DEFAULT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTDIED.NAME"
+#| msgid "Duplicants have died"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"DEFAULT.TOOLTIP"
+msgid "Duplicants have typical hunger"
+msgstr "複製人間が死亡しました"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.DISABLED.ATTRIBUTE_MODIFIER_NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"DISABLED.ATTRIBUTE_MODIFIER_NAME"
+msgid "Oxygenarian (No Hunger)"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.DISABLED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_TANK.NAME"
+#| msgid "Oxygen Tank"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"DISABLED.NAME"
+msgid "Oxygenarian"
+msgstr "酸素タンク"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.DISABLED.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"DISABLED.TOOLTIP"
+msgid "Duplicants somehow manage to sustain themselves on nothing at all"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.EASY.ATTRIBUTE_MODIFIER_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.EXPELLING_GAS.NAME"
+#| msgid "Passing Gas"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"EASY.ATTRIBUTE_MODIFIER_NAME"
+msgid "Fasting (Easy)"
+msgstr "おなら"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.EASY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.EATING.NAME"
+#| msgid "Eating"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"EASY.NAME"
+msgid "Fasting"
+msgstr "食事中"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.EASY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.EAT.TOOLTIP"
+#| msgid "Duplicants eat to replenish their calorie stores"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"EASY.TOOLTIP"
+msgid "Duplicants get by with fewer calories than usual"
+msgstr "複製人間はカロリー補充のために食事をします"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.HARD.ATTRIBUTE_MODIFIER_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.HUNGRY.NAME"
+#| msgid "Hungry"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"HARD.ATTRIBUTE_MODIFIER_NAME"
+msgid "Hungry (Hard)"
+msgstr "空腹"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.HARD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.HUNGRY.NAME"
+#| msgid "Hungry"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"HARD.NAME"
+msgid "Hungry"
+msgstr "空腹"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.HARD.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2.TOOLTIP"
+#| msgid "Duplicants require oxygen to live"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"HARD.TOOLTIP"
+msgid "Duplicants require more calories than usual"
+msgstr "どんな複製人間も生きるために酸素が必要です"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.VERYHARD.ATTRIBUTE_MODIFIER_NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"VERYHARD.ATTRIBUTE_MODIFIER_NAME"
+msgid "Ravaging Hunger (Very Hard)"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.VERYHARD.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"VERYHARD.NAME"
+msgid "Ravaging Hunger"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.VERYHARD.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2.TOOLTIP"
+#| msgid "Duplicants require oxygen to live"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+"VERYHARD.TOOLTIP"
+msgid "Duplicants require near-constant feeding"
+msgstr "どんな複製人間も生きるために酸素が必要です"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MINION_DESTRUCTION"
+#| msgid "Anger Damage"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.NAME"
+msgid "Hunger Rate"
+msgstr "八つ当たりダメージ"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP"
+#| msgid "Affects how well Duplicants handle stress"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.TOOLTIP"
+msgid "Affects how quickly Duplicants burn calories"
+msgstr "複製人間が受けるストレスの影響度です"
+
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.COMPROMISED.ATTRIBUTE_MODIFIER_NAME
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
@@ -3641,6 +3872,152 @@ msgstr "免疫力"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP"
 msgid "Affects how resistant Duplicants are to disease"
+msgstr "複製人間の病気への抵抗力です"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.DEFAULT.NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
+#| "DEFAULT.NAME"
+#| msgid "Regular"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.DEFAULT."
+"NAME"
+msgid "Regular"
+msgstr "通常"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.DEFAULT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_OVERHEATING.NAME"
+#| msgid "Duplicants have overheated"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.DEFAULT."
+"TOOLTIP"
+msgid "Duplicants have average expectations."
+msgstr "複製人間が熱死しました"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.DISABLED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CONGENITALTRAITS.NONE.NAME"
+#| msgid "None"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.DISABLED."
+"NAME"
+msgid "None"
+msgstr "なし"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.DISABLED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.NOTIFICATION_TOOLTIP"
+#| msgid "These Duplicants are distressed by the lack of toilets:"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.DISABLED."
+"TOOLTIP"
+msgid "Duplicants aren't stressed by their expectations at all"
+msgstr "これらの複製人間はコロニーにトイレがないことにより苦しんでいます:"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY.ATTRIBUTE_MODIFIER_NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.BAD_MODIFIER"
+#| msgid "Low Morale"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY."
+"ATTRIBUTE_MODIFIER_NAME"
+msgid "Low Morale (Easy)"
+msgstr "士気低下"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY.NAME"
+msgid "Easy"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_OVERHEATING.NAME"
+#| msgid "Duplicants have overheated"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY."
+"TOOLTIP"
+msgid "Duplicants have low expectations"
+msgstr "複製人間が熱死しました"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD.ATTRIBUTE_MODIFIER_NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.BAD_MODIFIER"
+#| msgid "Low Morale"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD."
+"ATTRIBUTE_MODIFIER_NAME"
+msgid "Low Morale (Hard)"
+msgstr "士気低下"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.HARDY"
+#| msgid "Hardy"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD.NAME"
+msgid "Hard"
+msgstr "我慢強い"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD.TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
+#| "STRONG.TOOLTIP"
+#| msgid "Duplicants have increased immune recovery"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD."
+"TOOLTIP"
+msgid "Duplicants have increased expectations."
+msgstr "複製人間の免疫力回復が強化されます"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.VERYHARD.ATTRIBUTE_MODIFIER_NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.BAD_MODIFIER"
+#| msgid "Low Morale"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.VERYHARD."
+"ATTRIBUTE_MODIFIER_NAME"
+msgid "Low Morale (Very Hard)"
+msgstr "士気低下"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.VERYHARD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.JOBSSCREEN.PRIORITY.VERYHIGH"
+#| msgid "Very High"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.VERYHARD."
+"NAME"
+msgid "Very Hard"
+msgstr "最高"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.VERYHARD.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_OVERHEATING.NAME"
+#| msgid "Duplicants have overheated"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.VERYHARD."
+"TOOLTIP"
+msgid "Duplicants have very high expectations"
+msgstr "複製人間が熱死しました"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.FORTRESS"
+#| msgid "Fortress"
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.NAME"
+msgid "Morale Stress"
+msgstr "要塞"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP"
+#| msgid "Affects how resistant Duplicants are to disease"
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.TOOLTIP"
+msgid "Affects how stressed Duplicants get from Low Morale"
 msgstr "複製人間の病気への抵抗力です"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.DISABLED.NAME
@@ -4114,6 +4491,11 @@ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.RESUMEGAME"
 msgid "RESUME GAME"
 msgstr "つづきから"
 
+#. STRINGS.UI.FRONTEND.MAINMENU.SCENARIOS
+msgctxt "STRINGS.UI.FRONTEND.MAINMENU.SCENARIOS"
+msgid "SCENARIOS"
+msgstr ""
+
 #. STRINGS.UI.FRONTEND.MAINMENU.STARTDEMO
 msgctxt "STRINGS.UI.FRONTEND.MAINMENU.STARTDEMO"
 msgid "START DEMO"
@@ -4203,6 +4585,43 @@ msgstr ""
 msgctxt "STRINGS.UI.FRONTEND.MINSPECSCREEN.TITLE"
 msgid "WARNING!"
 msgstr "警告！"
+
+#. STRINGS.UI.FRONTEND.MODESELECTSCREEN.BLANK_DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.SELECT_DESC"
+#| msgid "Select a seed to plant."
+msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.BLANK_DESC"
+msgid "Select a playstyle..."
+msgstr "植える種子を選んでください。"
+
+#. STRINGS.UI.FRONTEND.MODESELECTSCREEN.HEADER
+msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.HEADER"
+msgid "GAME MODE"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.MODESELECTSCREEN.NOSWEAT_DESC
+msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.NOSWEAT_DESC"
+msgid ""
+"The cosmos is a glorious place where you can lead your colony into adventure "
+"with ease."
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.MODESELECTSCREEN.NOSWEAT_TITLE
+msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.NOSWEAT_TITLE"
+msgid "NO SWEAT"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.MODESELECTSCREEN.SURVIVAL_DESC
+msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.SURVIVAL_DESC"
+msgid ""
+"Only you can protect your fragile colony from this harsh and unforgiving "
+"universe."
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.MODESELECTSCREEN.SURVIVAL_TITLE
+msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.SURVIVAL_TITLE"
+msgid "SURVIVAL"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.NEWGAMESETTINGS.BUTTONS.CANCEL
 msgctxt "STRINGS.UI.FRONTEND.NEWGAMESETTINGS.BUTTONS.CANCEL"
@@ -4329,9 +4748,15 @@ msgid "World Generation Key"
 msgstr "ワールド生成キー"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
+#| msgid ""
+#| "<b>Welcome to the Expressive Upgrade!!</b>\n"
+#| "\n"
+#| "{0}"
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
 msgid ""
-"<b>Welcome to the Expressive Upgrade!!</b>\n"
+"<b>Welcome to the Rocketry Mark I Upgrade!!</b>\n"
 "\n"
 "{0}"
 msgstr ""
@@ -4345,14 +4770,26 @@ msgid "OK"
 msgstr "OK"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
+#| msgid ""
+#| "<b>Update Features:</b>\n"
+#| "\n"
+#| "• New Duplicant interactions and reactions\n"
+#| "• Colony Schedule management\n"
+#| "• Downtime and new leisure buildings\n"
+#| "• New lore, animations, and sounds\n"
+#| "\n"
+#| "Please view the full patch notes for further details!"
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
 msgid ""
 "<b>Update Features:</b>\n"
 "\n"
-"• New Duplicant interactions and reactions\n"
-"• Colony Schedule management\n"
-"• Downtime and new leisure buildings\n"
-"• New lore, animations, and sounds\n"
+"• Rockets \n"
+"• New buildings to support rockets \n"
+"• New plumbing buildings \n"
+"• New custom game settings \n"
+"• New critter, plant, lore, animations, and sounds\n"
 "\n"
 "Please view the full patch notes for further details!"
 msgstr ""
@@ -4367,8 +4804,8 @@ msgstr ""
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
-msgid "EXPRESSIVE UPGRADE"
-msgstr "表現アップグレード"
+msgid "ROCKETRY MARK I UPGRADE"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.PAUSE_SCREEN.DESKTOPQUIT
 msgctxt "STRINGS.UI.FRONTEND.PAUSE_SCREEN.DESKTOPQUIT"
@@ -4466,6 +4903,127 @@ msgstr "セーブ名"
 msgctxt "STRINGS.UI.FRONTEND.SAVESCREEN.TITLE"
 msgid "SAVE SLOTS"
 msgstr "セーブスロット"
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER"
+msgid ""
+"Welcome to the Expressive Upgrade! This update introduces a new Morale "
+"system that replaces Food and Decor Expectations that were found in previous "
+"versions of the game.\n"
+"\n"
+"The game you are trying to load was created before this system was "
+"introduced, and will need to be updated. You may either:\n"
+"\n"
+"\n"
+"1) Enable the new Morale system in this save, removing Food and Decor "
+"Expectations. It's possible that when you load your save your old colony "
+"won't meet your Duplicants' new Morale needs, so they'll receive a 5 cycle "
+"Morale boost to give you time to adjust.\n"
+"\n"
+"2) Disable Morale in this save. The new Morale mechanics will still be "
+"visible, but won't affect your Duplicants' stress. Food and Decor "
+"expectations will no longer exist in this save."
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER_BUFF
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER_BUFF"
+msgid "1) Bring on Morale!"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER_DISABLE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.AUTOMATABLE.ENABLE_AUTOMATIONONLY.NAME"
+#| msgid "Disable Manual"
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER_DISABLE"
+msgid "2) Disable Morale"
+msgstr "自動化"
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_FERTILITY"
+#| msgid "EGG CHANCES"
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER_TITLE"
+msgid "MORALE CHANGES"
+msgstr "産卵率"
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.BUTTON_DONE
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.DONE_BUTTON"
+#| msgid "Done"
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.BUTTON_DONE"
+msgid "Done"
+msgstr "完了"
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.BUTTON_LOAD
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.PAUSE_SCREEN.LOAD"
+#| msgid "Load"
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.BUTTON_LOAD"
+msgid "Load"
+msgstr "ロード"
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.BUTTON_WORKSHOP
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.NO_PACKS"
+#| msgid "Steam Workshop"
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.BUTTON_WORKSHOP"
+msgid "Steam Workshop"
+msgstr "Steam Workshop"
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.LOAD_CONFIRM_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.TITLE"
+#| msgid "LOAD GAME"
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.LOAD_CONFIRM_TITLE"
+msgid "LOAD"
+msgstr "ゲームをロード"
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.LOAD_SCENARIO_CONFIRM
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.LOAD_SCENARIO_CONFIRM"
+msgid "Load the \"{SCENARIO_NAME}\" scenario?"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.NO_SCENARIOS_AVAILABLE
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.NO_SCENARIOS_AVAILABLE"
+msgid ""
+"No scenarios available.\n"
+"\n"
+"Subscribe to some in the Steam Workshop."
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.SCENARIO_DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.SCENARIO_DESCRIPTION"
+msgid "Description"
+msgstr "装飾"
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.SCENARIO_NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NAMETITLE"
+#| msgid "Name: "
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.SCENARIO_NAME"
+msgid "Name:"
+msgstr "名前: "
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.TITLE
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.TITLE"
+msgid "Scenarios"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.UNSUBSCRIBE
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.UNSUBSCRIBE"
+msgid "Unsubscribe"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SCENARIOS_MENU.UNSUBSCRIBE_CONFIRM
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.ARE_YOU_SURE"
+#| msgid "Are you sure you want to uninstall this language pack?"
+msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.UNSUBSCRIBE_CONFIRM"
+msgid "Are you sure you want to unsubscribe from this scenario?"
+msgstr "この言語パックをアンインストールしますか？"
 
 #. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.AUDIO_DRIVERS
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.AUDIO_DRIVERS"
@@ -4793,6 +5351,14 @@ msgstr "八つ当たりダメージ"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.OVERHEAT"
 msgid "Overheat Damage"
 msgstr "オーバーヒートダメージ"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.ROCKET
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.COMET"
+#| msgid "Meteor Damage"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.ROCKET"
+msgid "Rocket Thruster Damage"
+msgstr "隕石ダメージ"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.WRONG_ELEMENT
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.WRONG_ELEMENT"
@@ -5543,6 +6109,14 @@ msgctxt "STRINGS.UI.MINION_IDENTITY_SORT.TITLE"
 msgid "Sort By"
 msgstr "並べ替え"
 
+#. STRINGS.UI.MODIFIER_ITEM_TEMPLATE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.LINEITEM"
+#| msgid "    • {0}: {1}\n"
+msgctxt "STRINGS.UI.MODIFIER_ITEM_TEMPLATE"
+msgid "    • {0} : {1}"
+msgstr "    • {0}: {1}\n"
+
 #. STRINGS.UI.NAME_WITH_UNITS
 msgctxt "STRINGS.UI.NAME_WITH_UNITS"
 msgid "{0} x {1}"
@@ -5983,6 +6557,41 @@ msgstr "研究"
 msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.RESEARCH.TOOLTIP"
 msgid ""
 msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.ROCKETRY.BUILDMENUTITLE
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.ROCKY"
+#| msgid "Rocky"
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.ROCKETRY.BUILDMENUTITLE"
+msgid "Rocketry"
+msgstr "ごつごつした"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.ROCKETRY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.ROCKY"
+#| msgid "Rocky"
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.ROCKETRY.NAME"
+msgid "Rocketry"
+msgstr "ごつごつした"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.ROCKETRY.TOOLTIP
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.ROCKETRY.TOOLTIP"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 # 格納庫以外にも、農地タイルでこのアクションが使用できた
 #. STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.BUILDMENUTITLE
@@ -6656,8 +7265,11 @@ msgstr ""
 "あります"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.BUTTON"
+#| msgid "Thermal Comfort Overlay"
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.BUTTON"
-msgid "Thermal Comfort Overlay"
+msgid "Thermal Tolerance Overlay"
 msgstr "適温レイヤー"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.COOLING
@@ -6671,13 +7283,19 @@ msgid "Body Heat Retention"
 msgstr "過剰体温の危険性"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.HOVERTITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.NAME"
+#| msgid "THERMAL COMFORT OVERLAY"
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.HOVERTITLE"
-msgid "THERMAL COMFORT"
-msgstr "適温"
+msgid "THERMAL TOLERANCE"
+msgstr "適温レイヤー"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.NAME"
+#| msgid "THERMAL COMFORT OVERLAY"
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.NAME"
-msgid "THERMAL COMFORT OVERLAY"
+msgid "THERMAL TOLERANCE OVERLAY"
 msgstr "適温レイヤー"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.NEUTRAL
@@ -7909,6 +8527,14 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.ASSIGNMENT_REQUIREMENTS.HAS_EXPERIENCE.NAME"
 msgid "{0} Experience"
 msgstr "{0}の経験"
 
+#. STRINGS.UI.ROLES_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERED
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.PERSONALITY.RESUME.NO_MASTERED_ROLES.TOOLTIP"
+#| msgid "{0} has not mastered any jobs yet"
+msgctxt "STRINGS.UI.ROLES_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERED"
+msgid "{0} has mastered the job {1}"
+msgstr "{0}はまだこの職業を習得していません"
+
 #. STRINGS.UI.ROLES_SCREEN.ASSIGNMENT_REQUIREMENTS.NO_APTITUDE
 msgctxt "STRINGS.UI.ROLES_SCREEN.ASSIGNMENT_REQUIREMENTS.NO_APTITUDE"
 msgid "None"
@@ -7980,6 +8606,47 @@ msgstr "(現在 {0})"
 msgctxt "STRINGS.UI.ROLES_SCREEN.DROPDOWN.NAME_AND_ROLE"
 msgid "{0} <color=#F44A47FF>({1})</color>"
 msgstr "{0} <color=#F44A47FF>({1})</color>"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_DESC_EXPECTATION
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_DESC_EXPECTATION"
+msgid ""
+"Duplicant Morale is too low for their current expectations, so they will "
+"suffer Stress."
+msgstr ""
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_DESC_JOB
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_DESC_JOB"
+msgid ""
+"Duplicant Morale is too low for the assigned Job, so they will suffer Stress."
+msgstr ""
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_DESC_TARGET_JOB
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_DESC_TARGET_JOB"
+msgid ""
+"Duplicant Morale is too low for the expectations of this job, so they will "
+"suffer Stress."
+msgstr ""
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_EXPECTATION
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+#| msgid "Morale Expectation"
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_EXPECTATION"
+msgid "Morale: {0}, Current Expectation: {1}"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_JOB
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER0.NAME"
+#| msgid "Morale expectation"
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_JOB"
+msgid "Morale: {0}, {2} job expecations: {1}"
+msgstr "士気期待値"
+
+#. STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_TARGET_JOB
+msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_TARGET_JOB"
+msgid "{2}'s Morale: {0}, {3} job expecations: {1}"
+msgstr ""
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.DECOR.HIGH.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.DECOR.HIGH.DESCRIPTION"
@@ -8111,8 +8778,11 @@ msgid "Tier 0"
 msgstr "Tier 0"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER0.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+#| msgid "Morale Expectation"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER0.NAME"
-msgid "Morale expectation"
+msgid "Morale Expectation"
 msgstr "士気期待値"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER1.DESCRIPTION
@@ -8121,8 +8791,11 @@ msgid "Tier 1"
 msgstr "Tier 1"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER1.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+#| msgid "Morale Expectation"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER1.NAME"
-msgid "Morale expectation"
+msgid "Morale Expectation"
 msgstr "士気期待値"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER2.DESCRIPTION
@@ -8131,8 +8804,11 @@ msgid "Tier 2"
 msgstr "Tier 2"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER2.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+#| msgid "Morale Expectation"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER2.NAME"
-msgid "Morale expectation"
+msgid "Morale Expectation"
 msgstr "士気期待値"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER3.DESCRIPTION
@@ -8141,8 +8817,11 @@ msgid "Tier 3"
 msgstr "Tier 3"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER3.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+#| msgid "Morale Expectation"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER3.NAME"
-msgid "Morale expectation"
+msgid "Morale Expectation"
 msgstr "士気期待値"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER4.DESCRIPTION
@@ -8151,8 +8830,11 @@ msgid "Tier 4"
 msgstr "Tier 4"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER4.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+#| msgid "Morale Expectation"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER4.NAME"
-msgid "Morale expectation"
+msgid "Morale Expectation"
 msgstr "士気期待値"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER5.DESCRIPTION
@@ -8161,8 +8843,11 @@ msgid "Tier 5"
 msgstr "Tier 5"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER5.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+#| msgid "Morale Expectation"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER5.NAME"
-msgid "Morale expectation"
+msgid "Morale Expectation"
 msgstr "士気期待値"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER6.DESCRIPTION
@@ -8171,8 +8856,11 @@ msgid "Tier 6"
 msgstr "Tier 6"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER6.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+#| msgid "Morale Expectation"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER6.NAME"
-msgid "Morale expectation"
+msgid "Morale Expectation"
 msgstr "士気期待値"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER7.DESCRIPTION
@@ -8191,8 +8879,11 @@ msgid "Tier 8"
 msgstr "Tier 8"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER8.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.DESC"
+#| msgid "Morale Expectation"
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER8.NAME"
-msgid "Morale expectation"
+msgid "Morale Expectation"
 msgstr "士気期待値"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.TITLE
@@ -8242,6 +8933,14 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_VERY_FIRM.DESCRIPTION"
 msgid "Trait: <link=\"HARDNESS\">Very Firm Material</link> Mining"
 msgstr "特性: <link=\"HARDNESS\">超硬質素材</link>採掘"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DO_ASTRONAUT_TRAINING.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_RANCH_STATION.DESCRIPTION"
+#| msgid "Trait: Grooming Station Training"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DO_ASTRONAUT_TRAINING.DESCRIPTION"
+msgid "Trait: Astronaut-in-Training"
+msgstr "特性: お手入れ端末操作"
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DO_PLUMBING.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DO_PLUMBING.DESCRIPTION"
 msgid "Trait: Plumbing"
@@ -8277,6 +8976,11 @@ msgstr "特性: 地勢分析"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_RANCH_STATION.DESCRIPTION"
 msgid "Trait: Grooming Station Training"
 msgstr "特性: お手入れ端末操作"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_ROCKETS.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_ROCKETS.DESCRIPTION"
+msgid "Trait: Astronaut"
+msgstr ""
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_WRANGLE_CREATURES.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_WRANGLE_CREATURES.DESCRIPTION"
@@ -8367,6 +9071,17 @@ msgstr "作業負荷ストレス"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.NO_PERKS"
 msgid "This job comes with no training"
 msgstr "この作業は訓練になりません"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.TELESCOPE_RESEARCH.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION"
+#| msgid ""
+#| "Trait: <link=\"ADVANCEDRESEARCHCENTER\">Super Computer</link> Researching"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.TELESCOPE_RESEARCH.DESCRIPTION"
+msgid "Trait: <link=\"TELESCOPE\">Research Telescope</link> Researching"
+msgstr ""
+"特性: <link=\"ADVANCEDRESEARCHCENTER\">スーパーコンピューター</link>を使った"
+"研究"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING"
@@ -8473,6 +9188,15 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.UNASSIGNED_TOOLTIP"
 msgid "Click to assign a Duplicant to this job opening"
 msgstr "クリックして複製人間を職業に割り当てます"
 
+#. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.EIGHT
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER8.DESCRIPTION"
+#| msgid "Tier 8"
+msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.EIGHT"
+msgid "Tier 8"
+msgstr "Tier 8"
+
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.FIVE
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.FIVE"
 msgid "Tier 5"
@@ -8482,6 +9206,15 @@ msgstr "Tier 5"
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.FOUR"
 msgid "Tier 4"
 msgstr "Tier 4"
+
+#. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.NINE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER0.DESCRIPTION"
+#| msgid "Tier 0"
+msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.NINE"
+msgid "Tier 9"
+msgstr "Tier 0"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.ONE
 msgctxt "STRINGS.UI.ROLES_SCREEN.TIER_NAMES.ONE"
@@ -8547,8 +9280,11 @@ msgid "Back"
 msgstr "戻る"
 
 #. STRINGS.UI.SANDBOXTOOLS.FILTERS.COMMON
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.COMMON"
+#| msgid "Common substances"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.COMMON"
-msgid "Common substances"
+msgid "Common Substances"
 msgstr "一般的な物質"
 
 #. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.CREATURE
@@ -8599,8 +9335,8 @@ msgstr "特殊"
 
 #. STRINGS.UI.SANDBOXTOOLS.FILTERS.GAS
 msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.GAS"
-msgid "Gasses"
-msgstr "気体"
+msgid "Gases"
+msgstr ""
 
 #. STRINGS.UI.SANDBOXTOOLS.FILTERS.LIQUID
 msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.LIQUID"
@@ -8861,10 +9597,19 @@ msgid "Work"
 msgstr "労働"
 
 #. STRINGS.UI.SCHEDULEGROUPS.HYGENE.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULEGROUPS.HYGENE.DESCRIPTION"
+#| msgid ""
+#| "During bathtime blocks my Duplicants will take care of their hygienic "
+#| "needs, such as going to the bathroom, using the shower or washing their "
+#| "hands."
 msgctxt "STRINGS.UI.SCHEDULEGROUPS.HYGENE.DESCRIPTION"
 msgid ""
-"During bathtime blocks my Duplicants will take care of their hygienic needs, "
-"such as going to the bathroom, using the shower or washing their hands."
+"During Bathtime shifts my Duplicants will take care of their hygienic needs, "
+"such as going to the bathroom, using the shower or washing their hands.\n"
+"\n"
+"Once they're all caught up on personal hygiene, Duplicants will head back to "
+"work."
 msgstr ""
 "入浴時間になると、複製人間はトイレに行ったりシャワーを浴びたり手を洗ったりし"
 "ます。"
@@ -8874,10 +9619,45 @@ msgctxt "STRINGS.UI.SCHEDULEGROUPS.HYGENE.NAME"
 msgid "Bathtime"
 msgstr "入浴"
 
+#. STRINGS.UI.SCHEDULEGROUPS.HYGENE.NOTIFICATION_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULEGROUPS.HYGENE.DESCRIPTION"
+#| msgid ""
+#| "During bathtime blocks my Duplicants will take care of their hygienic "
+#| "needs, such as going to the bathroom, using the shower or washing their "
+#| "hands."
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.HYGENE.NOTIFICATION_TOOLTIP"
+msgid ""
+"During Bathtime shifts my Duplicants will take care of their hygienic needs, "
+"such as going to the bathroom, using the shower or washing their hands."
+msgstr ""
+"入浴時間になると、複製人間はトイレに行ったりシャワーを浴びたり手を洗ったりし"
+"ます。"
+
+#. STRINGS.UI.SCHEDULEGROUPS.MISSINGBLOCKS
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.MISSINGBLOCKS"
+msgid "Warning: Scheduling Issues ({0})"
+msgstr ""
+
+#. STRINGS.UI.SCHEDULEGROUPS.NOTIME
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.NOTIME"
+msgid "No {0} shifts allotted"
+msgstr ""
+
 #. STRINGS.UI.SCHEDULEGROUPS.RECREATION.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULEGROUPS.RECREATION.DESCRIPTION"
+#| msgid ""
+#| "During downtime my Duplicants they may do as they please.\n"
+#| "\n"
+#| "This may include personal matters like bathroom visits or snacking, or "
+#| "they may choose to engage in leisure activities like socializing with "
+#| "friends.\n"
+#| "\n"
+#| "Downtime increases Duplicant Morale."
 msgctxt "STRINGS.UI.SCHEDULEGROUPS.RECREATION.DESCRIPTION"
 msgid ""
-"During downtime my Duplicants they may do as they please.\n"
+"During Downtime my Duplicants they may do as they please.\n"
 "\n"
 "This may include personal matters like bathroom visits or snacking, or they "
 "may choose to engage in leisure activities like socializing with friends.\n"
@@ -8895,12 +9675,24 @@ msgctxt "STRINGS.UI.SCHEDULEGROUPS.RECREATION.NAME"
 msgid "Downtime"
 msgstr "休憩"
 
+#. STRINGS.UI.SCHEDULEGROUPS.RECREATION.NOTIFICATION_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.RECREATION.NOTIFICATION_TOOLTIP"
+msgid "During Downtime shifts my Duplicants they may do as they please."
+msgstr ""
+
 #. STRINGS.UI.SCHEDULEGROUPS.SLEEP.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULEGROUPS.SLEEP.DESCRIPTION"
+#| msgid ""
+#| "My Duplicants use bedtime blocks to rest up after a hard day's work.\n"
+#| "\n"
+#| "Scheduling too few bedtime blocks may prevent my Duplicants from "
+#| "regaining enough Stamina to make it through the following day."
 msgctxt "STRINGS.UI.SCHEDULEGROUPS.SLEEP.DESCRIPTION"
 msgid ""
-"My Duplicants use bedtime blocks to rest up after a hard day's work.\n"
+"My Duplicants use Bedtime shifts to rest up after a hard day's work.\n"
 "\n"
-"Scheduling too few bedtime blocks may prevent my Duplicants from regaining "
+"Scheduling too few bedtime shifts may prevent my Duplicants from regaining "
 "enough Stamina to make it through the following day."
 msgstr ""
 "複製人間は一日の労働の後就寝時間を取ります。\n"
@@ -8911,6 +9703,26 @@ msgstr ""
 msgctxt "STRINGS.UI.SCHEDULEGROUPS.SLEEP.NAME"
 msgid "Bedtime"
 msgstr "就寝"
+
+#. STRINGS.UI.SCHEDULEGROUPS.SLEEP.NOTIFICATION_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.SLEEP.NOTIFICATION_TOOLTIP"
+msgid "My Duplicants use Bedtime shifts to rest up after a hard day's work."
+msgstr ""
+
+#. STRINGS.UI.SCHEDULEGROUPS.TOOLTIP_FORMAT
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.MATURITY.TOOLTIP"
+#| msgid ""
+#| "Growth Progress\n"
+#| "------------------\n"
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.TOOLTIP_FORMAT"
+msgid ""
+"{0}\n"
+"------------------\n"
+"{1}"
+msgstr ""
+"成長状況\n"
+"----------\n"
 
 #. STRINGS.UI.SCHEDULEGROUPS.WORKTIME.DESCRIPTION
 msgctxt "STRINGS.UI.SCHEDULEGROUPS.WORKTIME.DESCRIPTION"
@@ -8931,14 +9743,43 @@ msgctxt "STRINGS.UI.SCHEDULEGROUPS.WORKTIME.NAME"
 msgid "Work"
 msgstr "労働"
 
+#. STRINGS.UI.SCHEDULEGROUPS.WORKTIME.NOTIFICATION_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULEGROUPS.WORKTIME.NOTIFICATION_TOOLTIP"
+msgid ""
+"During Work shifts my Duplicants must perform the work tasks I've placed for "
+"them throughout the colony."
+msgstr ""
+
+#. STRINGS.UI.SCHEDULESCREEN.ADD_SCHEDULE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.TITLE"
+#| msgid "Time Schedule"
+msgctxt "STRINGS.UI.SCHEDULESCREEN.ADD_SCHEDULE"
+msgid "Add New Schedule"
+msgstr "時間割"
+
+#. STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON
+msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON"
+msgid "Shift Alarms"
+msgstr ""
+
 #. STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_OFF_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_OFF_TOOLTIP"
+#| msgid ""
+#| "Toggle Sounds and Notifications\n"
+#| "\n"
+#| "Disabled. No sounds or notifications will play for this schedule.\n"
+#| "\n"
+#| "Click to enable."
 msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_OFF_TOOLTIP"
 msgid ""
-"Toggle Sounds and Notifications\n"
+"Toggle Notifications\n"
+"------------------\n"
+"No sounds or notifications will play for this schedule.\n"
 "\n"
-"Disabled. No sounds or notifications will play for this schedule.\n"
-"\n"
-"Click to enable."
+"DISABLED\n"
+"Click to enable"
 msgstr ""
 "音と通知の切替\n"
 "\n"
@@ -8947,14 +9788,23 @@ msgstr ""
 "クリックで有効化します。"
 
 #. STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_ON_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_ON_TOOLTIP"
+#| msgid ""
+#| "Toggle Sounds and Notifications\n"
+#| "\n"
+#| "Enabled. Sounds and notifications will play when schedule blocks change "
+#| "for this schedule.\n"
+#| "\n"
+#| "Click to disable."
 msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_ON_TOOLTIP"
 msgid ""
-"Toggle Sounds and Notifications\n"
+"Toggle Notifications\n"
+"------------------\n"
+"Sounds and notifications will play when shifts change for this schedule.\n"
 "\n"
-"Enabled. Sounds and notifications will play when schedule blocks change for "
-"this schedule.\n"
-"\n"
-"Click to disable."
+"ENABLED\n"
+"Click to disable"
 msgstr ""
 "音と通知の切替\n"
 "\n"
@@ -8967,10 +9817,68 @@ msgctxt "STRINGS.UI.SCHEDULESCREEN.DELETE_BUTTON_TOOLTIP"
 msgid "Delete Schedule"
 msgstr "スケジュール削除"
 
+#. STRINGS.UI.SCHEDULESCREEN.DOWNTIME_MORALE
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.HALF_LIFE_POS"
+#| msgid "Doubling time: {0}"
+msgctxt "STRINGS.UI.SCHEDULESCREEN.DOWNTIME_MORALE"
+msgid "Downtime Morale: {0}"
+msgstr "倍加時間: {0}"
+
+#. STRINGS.UI.SCHEDULESCREEN.PAINT_TOOLS
+msgctxt "STRINGS.UI.SCHEDULESCREEN.PAINT_TOOLS"
+msgid "Paint Tools:"
+msgstr ""
+
 #. STRINGS.UI.SCHEDULESCREEN.RENAME_BUTTON_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULESCREEN.RENAME_BUTTON_TOOLTIP"
+#| msgid "Rename Schedule"
 msgctxt "STRINGS.UI.SCHEDULESCREEN.RENAME_BUTTON_TOOLTIP"
-msgid "Rename Schedule"
+msgid "Rename custom schedule"
 msgstr "スケジュール名前変更"
+
+#. STRINGS.UI.SCHEDULESCREEN.RESET_SETTINGS
+#, fuzzy
+#| msgctxt "STRINGS.UI.JOBSSCREEN.RESET_SETTINGS"
+#| msgid "Reset Priorities"
+msgctxt "STRINGS.UI.SCHEDULESCREEN.RESET_SETTINGS"
+msgid "Reset Shifts"
+msgstr "初期化"
+
+#. STRINGS.UI.SCHEDULESCREEN.RESET_SETTINGS_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULESCREEN.RESET_SETTINGS_TOOLTIP"
+msgid ""
+"<b>Reset Shifts</b>\n"
+"------------------\n"
+"Restore this schedule to default shifts"
+msgstr ""
+
+#. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_DOWNTIME_MORALE
+msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_DOWNTIME_MORALE"
+msgid "Duplicants will receive {0} Morale from the scheduled Downtime shifts"
+msgstr ""
+
+#. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_DROPDOWN_ASSIGNED
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.ASSIGNED"
+#| msgid "Assigned"
+msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_DROPDOWN_ASSIGNED"
+msgid "{0} (Assigned)"
+msgstr "割り当て"
+
+#. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_DROPDOWN_BLANK
+msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_DROPDOWN_BLANK"
+msgid "<i>Move Duplicant...</i>"
+msgstr ""
+
+#. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_EDITOR
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_FORMAT"
+#| msgid "Schedule {0}"
+msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_EDITOR"
+msgid "Schedule Editor"
+msgstr "スケジュール {0}"
 
 #. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT
 msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT"
@@ -8981,6 +9889,179 @@ msgstr "デフォルト"
 msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_FORMAT"
 msgid "Schedule {0}"
 msgstr "スケジュール {0}"
+
+#. STRINGS.UI.SCHEDULESCREEN.SETTINGS
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.COPY_BUILDING_SETTINGS.NAME"
+#| msgid "Copy Settings"
+msgctxt "STRINGS.UI.SCHEDULESCREEN.SETTINGS"
+msgid "Settings"
+msgstr "設定をコピー"
+
+#. STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.CARBONACEOUSASTEROID.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt ""
+"STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.CARBONACEOUSASTEROID.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.CARBONACEOUSASTEROID.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.ASTEROID"
+#| msgid "Asteroid"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.CARBONACEOUSASTEROID.NAME"
+msgid "Carbon Asteroid"
+msgstr "アステロイド"
+
+#. STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.METALLICASTEROID.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.METALLICASTEROID.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.METALLICASTEROID.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.ASTEROID"
+#| msgid "Asteroid"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.METALLICASTEROID.NAME"
+msgid "Metallic Asteroid"
+msgstr "アステロイド"
+
+#. STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.ROCKYASTEROID.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.ROCKYASTEROID.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.ROCKYASTEROID.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.ASTEROID"
+#| msgid "Asteroid"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.ASTEROIDS.ROCKYASTEROID.NAME"
+msgid "Rocky Asteroid"
+msgstr "アステロイド"
+
+#. STRINGS.UI.SPACEDESINATIONS.DEBRIS.SATELLITE.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.DEBRIS.SATELLITE.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.DEBRIS.SATELLITE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.PROPSURFACESATELLITE1.NAME"
+#| msgid "Crashed Satellite"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.DEBRIS.SATELLITE.NAME"
+msgid "Satellite"
+msgstr "墜落した人工衛星"
+
+#. STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.DUSTYDWARF.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.DUSTYDWARF.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.DUSTYDWARF.NAME
+msgctxt "STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.DUSTYDWARF.NAME"
+msgid "Dusty Dwarf Planet"
+msgstr ""
+
+#. STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.ICYDWARF.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.ICYDWARF.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.ICYDWARF.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.PLANET"
+#| msgid "Planet"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.ICYDWARF.NAME"
+msgid "Ice Planet"
+msgstr "惑星"
+
+#. STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.ORGANICDWARF.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.ORGANICDWARF.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.ORGANICDWARF.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.ORGANICS"
+#| msgid "Organic"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.DWARFPLANETS.ORGANICDWARF.NAME"
+msgid "Organic Mass"
+msgstr "有機物"
+
+#. STRINGS.UI.SPACEDESINATIONS.GIANTS.GASGIANT.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.GIANTS.GASGIANT.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.GIANTS.GASGIANT.NAME
+msgctxt "STRINGS.UI.SPACEDESINATIONS.GIANTS.GASGIANT.NAME"
+msgid "Gas Giant"
+msgstr ""
+
+#. STRINGS.UI.SPACEDESINATIONS.GIANTS.ICEGIANT.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.GIANTS.ICEGIANT.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.GIANTS.ICEGIANT.NAME
+msgctxt "STRINGS.UI.SPACEDESINATIONS.GIANTS.ICEGIANT.NAME"
+msgid "Ice Giant"
+msgstr ""
+
+#. STRINGS.UI.SPACEDESINATIONS.PLANETS.TERRAPLANET.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.PLANETS.TERRAPLANET.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.PLANETS.TERRAPLANET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.THIMBLEREED.SUBTITLE"
+#| msgid "Textile Plant"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.PLANETS.TERRAPLANET.NAME"
+msgid "Terrestrial Planet"
+msgstr "繊維植物"
+
+#. STRINGS.UI.SPACEDESINATIONS.PLANETS.VOLCANOPLANET.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.DECORATION"
+#| msgid "Decoration"
+msgctxt "STRINGS.UI.SPACEDESINATIONS.PLANETS.VOLCANOPLANET.DESCRIPTION"
+msgid "No Description"
+msgstr "装飾"
+
+#. STRINGS.UI.SPACEDESINATIONS.PLANETS.VOLCANOPLANET.NAME
+msgctxt "STRINGS.UI.SPACEDESINATIONS.PLANETS.VOLCANOPLANET.NAME"
+msgid "Volcanic Planet"
+msgstr ""
 
 #. STRINGS.UI.SPEED_FAST
 msgctxt "STRINGS.UI.SPEED_FAST"
@@ -8996,6 +10077,593 @@ msgstr "中速"
 msgctxt "STRINGS.UI.SPEED_SLOW"
 msgid "SLOW"
 msgstr "低速"
+
+#. STRINGS.UI.STARMAP.CAN_CARRY_ELEMENT
+#, fuzzy
+#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.BUTCHERED"
+#| msgid "Butchered for {0}"
+msgctxt "STRINGS.UI.STARMAP.CAN_CARRY_ELEMENT"
+msgid "Gathered by: {1}"
+msgstr "屠殺して{0}を得た"
+
+#. STRINGS.UI.STARMAP.CANT_CARRY_ELEMENT
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.MESSAGING.RESEARCHTYPEREQUIRED"
+#| msgid "{0} required"
+msgctxt "STRINGS.UI.STARMAP.CANT_CARRY_ELEMENT"
+msgid "{0} required."
+msgstr "{0} が必要"
+
+#. STRINGS.UI.STARMAP.COMPONENT.CARGO_BAY
+msgctxt "STRINGS.UI.STARMAP.COMPONENT.CARGO_BAY"
+msgid "Cargo Bay"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.COMPONENT.FUEL_TANK
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.FUEL_BRICK.NAME"
+#| msgid "Fuel Brick"
+msgctxt "STRINGS.UI.STARMAP.COMPONENT.FUEL_TANK"
+msgid "Fuel Tank"
+msgstr "固形燃料"
+
+#. STRINGS.UI.STARMAP.COMPONENT.ROCKET_ENGINE
+msgctxt "STRINGS.UI.STARMAP.COMPONENT.ROCKET_ENGINE"
+msgid "Rocket Engine"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.CONTAINER_REQUIRED
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.MESSAGING.RESEARCHTYPEREQUIRED"
+#| msgid "{0} required"
+msgctxt "STRINGS.UI.STARMAP.CONTAINER_REQUIRED"
+msgid "{0} required."
+msgstr "{0} が必要"
+
+#. STRINGS.UI.STARMAP.DEFAULT_NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.ROCKY"
+#| msgid "Rocky"
+msgctxt "STRINGS.UI.STARMAP.DEFAULT_NAME"
+msgid "Rocket"
+msgstr "ごつごつした"
+
+#. STRINGS.UI.STARMAP.DESTINATIONSELECTION.NOTSELECTED
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.RESUME.NO_SELECTION"
+#| msgid "No Duplicant selected"
+msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.NOTSELECTED"
+msgid "Destination not selected"
+msgstr "複製人間未選択"
+
+#. STRINGS.UI.STARMAP.DESTINATIONSELECTION.REACHABLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.RESUME.NO_SELECTION"
+#| msgid "No Duplicant selected"
+msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.REACHABLE"
+msgid "Destination selected"
+msgstr "複製人間未選択"
+
+#. STRINGS.UI.STARMAP.DESTINATIONSELECTION.UNREACHABLE
+msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.UNREACHABLE"
+msgid "Destination beyond reach"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED
+msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED"
+msgid "Select a destination from the starmap"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.REACHABLE
+msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.REACHABLE"
+msgid "Viable destination selected, ready for launch"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.UNREACHABLE
+msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.UNREACHABLE"
+msgid "The selected destination is beyond rocket reach"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.DESTINATIONTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.DOMESTICATION.NAME"
+#| msgid "Domestication"
+msgctxt "STRINGS.UI.STARMAP.DESTINATIONTITLE"
+msgid "Destination Status"
+msgstr "家畜化"
+
+#. STRINGS.UI.STARMAP.DISTANCE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.NOISE_POLLUTION.RANGE"
+#| msgid "{0} dB"
+msgctxt "STRINGS.UI.STARMAP.DISTANCE"
+msgid "{0} km"
+msgstr "{0} dB"
+
+#. STRINGS.UI.STARMAP.DISTANCE_OVERLAY
+msgctxt "STRINGS.UI.STARMAP.DISTANCE_OVERLAY"
+msgid "TOO FAR FOR THIS ROCKET"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.EMPTYOXIDIZERTANK.NAME
+msgctxt "STRINGS.UI.STARMAP.EMPTYOXIDIZERTANK.NAME"
+msgid "Oxidizer tank not full"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.EMPTYOXIDIZERTANK.TOOLTIP
+msgctxt "STRINGS.UI.STARMAP.EMPTYOXIDIZERTANK.TOOLTIP"
+msgid "Oxidizer tank must be filled before launch"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.EMPTYTANK.NAME
+msgctxt "STRINGS.UI.STARMAP.EMPTYTANK.NAME"
+msgid "Fuel Tank not full"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.EMPTYTANK.TOOLTIP
+msgctxt "STRINGS.UI.STARMAP.EMPTYTANK.TOOLTIP"
+msgid "Fuel Tank must be filled before launch"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.FULLOXIDIZERTANK.NAME
+msgctxt "STRINGS.UI.STARMAP.FULLOXIDIZERTANK.NAME"
+msgid "Oxidizer tank full"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.FULLOXIDIZERTANK.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.HUNGRY.TOOLTIP"
+#| msgid "This Duplicant is ready for lunch"
+msgctxt "STRINGS.UI.STARMAP.FULLOXIDIZERTANK.TOOLTIP"
+msgid "Tank is full, ready to launch"
+msgstr "この複製人間はランチの準備ができています"
+
+#. STRINGS.UI.STARMAP.FULLTANK.NAME
+msgctxt "STRINGS.UI.STARMAP.FULLTANK.NAME"
+msgid "Fuel Tank full"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.FULLTANK.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.HUNGRY.TOOLTIP"
+#| msgid "This Duplicant is ready for lunch"
+msgctxt "STRINGS.UI.STARMAP.FULLTANK.TOOLTIP"
+msgid "Tank is full, ready to launch"
+msgstr "この複製人間はランチの準備ができています"
+
+#. STRINGS.UI.STARMAP.HASFOOD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.FOOD_BOX.NAME"
+#| msgid "Food storage"
+msgctxt "STRINGS.UI.STARMAP.HASFOOD.NAME"
+msgid "Food Loaded"
+msgstr "食糧保管庫"
+
+#. STRINGS.UI.STARMAP.HASFOOD.TOOLTIP
+msgctxt "STRINGS.UI.STARMAP.HASFOOD.TOOLTIP"
+msgid "Sufficient food stores have been loaded, ready for launch"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.HASSUIT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.NAME"
+#| msgid "Atmo Suit"
+msgctxt "STRINGS.UI.STARMAP.HASSUIT.NAME"
+msgid "Has Atmo Suit"
+msgstr "アトモスーツ"
+
+#. STRINGS.UI.STARMAP.HASSUIT.TOOLTIP
+msgctxt "STRINGS.UI.STARMAP.HASSUIT.TOOLTIP"
+msgid "An Atmo Suit has been loaded"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCH_MISSION
+msgctxt "STRINGS.UI.STARMAP.LAUNCH_MISSION"
+msgid "LAUNCH MISSION"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCH_ROCKET
+msgctxt "STRINGS.UI.STARMAP.LAUNCH_ROCKET"
+msgid "Launch Rocket"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ASTRONAUGHT
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.MESSAGING.NO_RESEARCHER_ROLE"
+#| msgid "No Researchers assigned"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ASTRONAUGHT"
+msgid "No Astronaut assigned"
+msgstr "研究者の割り当てなし"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ASTRONAUT_TITLE
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ASTRONAUT_TITLE"
+msgid "Astronaut"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HASASTRONAUT
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HASASTRONAUT"
+msgid "Astronaut ready for liftoff"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSTALLED
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.TRANSLATIONS_SCREEN.INSTALLED"
+#| msgid "Installed"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSTALLED"
+msgid "Installed"
+msgstr "インストール済"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSTALLED_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.HUNGRY.TOOLTIP"
+#| msgid "This Duplicant is ready for lunch"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSTALLED_TOOLTIP"
+msgid "{0} installed, ready for launch"
+msgstr "この複製人間はランチの準備ができています"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.REQUIRED
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEADERS.BUILDINGREQUIREMENTS"
+#| msgid "Requirements"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.REQUIRED"
+msgid "Required"
+msgstr "必要条件"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.REQUIRED_TOOLTIP
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.REQUIRED_TOOLTIP"
+msgid "A {0} must be installed before launch"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LISTTITLES.DISTANCE
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.NB.DANCER"
+#| msgid "Dancer"
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.DISTANCE"
+msgid "Distance"
+msgstr "ダンサー"
+
+#. STRINGS.UI.STARMAP.LISTTITLES.FUEL
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.FUEL"
+msgid "Fuel"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LISTTITLES.LAUNCHCHECKLIST
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.LAUNCHCHECKLIST"
+msgid "Launch Checklist"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LISTTITLES.MASS
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.ELEMENTALMASS.NAME"
+#| msgid "{Mass}"
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.MASS"
+msgid "Mass"
+msgstr "{Mass}"
+
+#. STRINGS.UI.STARMAP.LISTTITLES.MAXRANGE
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.MAXRANGE"
+msgid "Max Range"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LISTTITLES.MISSIONSTATUS
+#, fuzzy
+#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.DISEASE_STATUS.NAME"
+#| msgid "Disease Status:"
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.MISSIONSTATUS"
+msgid "Mission Status"
+msgstr "病気状態:"
+
+#. STRINGS.UI.STARMAP.LISTTITLES.MODULES
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.MODULES"
+msgid "Modules"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LISTTITLES.OXIDIZER
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.OXIDIZER"
+msgid "Oxidizer"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LISTTITLES.PASSENGERS
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.EXPELLING_GAS.NAME"
+#| msgid "Passing Gas"
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.PASSENGERS"
+msgid "Passengers"
+msgstr "おなら"
+
+#. STRINGS.UI.STARMAP.LISTTITLES.RESEARCH
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.RESEARCH.NAME"
+#| msgid "Research"
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.RESEARCH"
+msgid "Research"
+msgstr "研究"
+
+#. STRINGS.UI.STARMAP.LISTTITLES.RESOURCES
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.RESOURCEMELTED.NAME"
+#| msgid "Resources melted"
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.RESOURCES"
+msgid "Resources"
+msgstr "資源が溶融しました"
+
+# 格納庫以外にも、農地タイルでこのアクションが使用できた
+#. STRINGS.UI.STARMAP.LISTTITLES.STORAGE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.STORAGE.NAME"
+#| msgid "Storage"
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.STORAGE"
+msgid "Storage"
+msgstr "格納"
+
+#. STRINGS.UI.STARMAP.LISTTITLES.TYPE
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.TYPE"
+msgid "Type"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LISTTITLES.WORLDCOMPOSITION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.OPERATING"
+#| msgid "Normal operation"
+msgctxt "STRINGS.UI.STARMAP.LISTTITLES.WORLDCOMPOSITION"
+msgid "World Composition"
+msgstr "通常操作"
+
+#. STRINGS.UI.STARMAP.MANAGEMENT_BUTTON
+msgctxt "STRINGS.UI.STARMAP.MANAGEMENT_BUTTON"
+msgid "STARMAP"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.MISSION_STATUS.GO
+msgctxt "STRINGS.UI.STARMAP.MISSION_STATUS.GO"
+msgid "ALL SYSTEMS GO"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.MISSION_STATUS.GROUNDED
+msgctxt "STRINGS.UI.STARMAP.MISSION_STATUS.GROUNDED"
+msgid "Grounded"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.MISSION_STATUS.LAUNCHING
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.RANCHING.NAME"
+#| msgid "Ranching"
+msgctxt "STRINGS.UI.STARMAP.MISSION_STATUS.LAUNCHING"
+msgid "Launching"
+msgstr "牧畜"
+
+#. STRINGS.UI.STARMAP.MISSION_STATUS.UNDERWAY
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.UNDERWATER.NAME"
+#| msgid "Underwater"
+msgctxt "STRINGS.UI.STARMAP.MISSION_STATUS.UNDERWAY"
+msgid "Underway"
+msgstr "潜水中"
+
+#. STRINGS.UI.STARMAP.MISSION_STATUS.WAITING_TO_LAND
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ENOUGH_COOLANT.NAME"
+#| msgid "Awaiting Coolant"
+msgctxt "STRINGS.UI.STARMAP.MISSION_STATUS.WAITING_TO_LAND"
+msgid "Waiting To Land"
+msgstr "冷却液待ち"
+
+#. STRINGS.UI.STARMAP.MODULE_MASS
+#, fuzzy
+#| msgctxt "STRINGS.UI.CHARACTERCONTAINER_SKILL_VALUE"
+#| msgid " {0} {1}"
+msgctxt "STRINGS.UI.STARMAP.MODULE_MASS"
+msgid "+ {0} t"
+msgstr " {0} {1}"
+
+#. STRINGS.UI.STARMAP.MODULE_STORAGE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFE.DESC_FORMAT"
+#| msgid "{0} / {1}"
+msgctxt "STRINGS.UI.STARMAP.MODULE_STORAGE"
+msgid "{0} / {1}"
+msgstr "{0} / {1}"
+
+#. STRINGS.UI.STARMAP.NO_ROCKETS_HELP_TEXT
+msgctxt "STRINGS.UI.STARMAP.NO_ROCKETS_HELP_TEXT"
+msgid ""
+"Rockets allow you to visit nearby celestial bodies.\n"
+"\n"
+"Each rocket must have a Command Module, an Engine, and Fuel.\n"
+"\n"
+"You can also carry other modules that allow you to gather specific resources "
+"from the places you visit.\n"
+"\n"
+"Remember the more weight a rocket has, the more limited it'll be on the "
+"distance it can travel. You can add more fuel to fix that, but fuel will add "
+"weight as well."
+msgstr ""
+
+#. STRINGS.UI.STARMAP.NO_ROCKETS_TITLE
+msgctxt "STRINGS.UI.STARMAP.NO_ROCKETS_TITLE"
+msgid "NO ROCKETS"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.NOFOOD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NOTENOUGHPOWER.NAME"
+#| msgid "Insufficient Power"
+msgctxt "STRINGS.UI.STARMAP.NOFOOD.NAME"
+msgid "Insufficient Food"
+msgstr "電力不足"
+
+#. STRINGS.UI.STARMAP.NOFOOD.TOOLTIP
+msgctxt "STRINGS.UI.STARMAP.NOFOOD.TOOLTIP"
+msgid "Rocket cannot launch without adequate food stores for passengers"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.NOSUIT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.MOVETOSUITNOTREQUIRED.NAME"
+#| msgid "Exiting Atmo Suit area"
+msgctxt "STRINGS.UI.STARMAP.NOSUIT.NAME"
+msgid "Missing Atmo Suit"
+msgstr "アトモスーツエリアから離脱"
+
+#. STRINGS.UI.STARMAP.NOSUIT.TOOLTIP
+msgctxt "STRINGS.UI.STARMAP.NOSUIT.TOOLTIP"
+msgid "Rocket cannot launch without an Atmo Suit loaded"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.RESEARCH_DESCRIPTION
+msgctxt "STRINGS.UI.STARMAP.RESEARCH_DESCRIPTION"
+msgid ""
+"Gather Interstellar Research Data on a Research Module.\n"
+"Research Modules Equipped: {0}."
+msgstr ""
+
+#. STRINGS.UI.STARMAP.ROCKET_COUNT
+msgctxt "STRINGS.UI.STARMAP.ROCKET_COUNT"
+msgid "ROCKETS: {0}"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.ROCKET_RENAME_BUTTON_TOOLTIP
+msgctxt "STRINGS.UI.STARMAP.ROCKET_RENAME_BUTTON_TOOLTIP"
+msgid "Rename this rocket"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.ROCKETLIST
+msgctxt "STRINGS.UI.STARMAP.ROCKETLIST"
+msgid "Rocket Hangar"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.DESTINATIONVALUE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CONGENITALTRAITS.NONE.NAME"
+#| msgid "None"
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.DESTINATIONVALUE"
+msgid "None"
+msgstr "なし"
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.NODESTINATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.NOELEMENTSELECTED"
+#| msgid "No element selected"
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.NODESTINATION"
+msgid "No destination selected"
+msgstr "要素未選択"
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.NONE
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.NONE"
+msgid "NONE"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.NOPASSENGERS
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.NOPASSENGERS"
+msgid "No passengers"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.SELECTED
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.EGGINCUBATOR.SELECT_TITLE"
+#| msgid "SELECT"
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.SELECTED"
+msgid "SELECTED"
+msgstr "選択"
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.STATUS
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.NAME"
+#| msgid "Status"
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.STATUS"
+msgid "Status"
+msgstr "ステータス"
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.STATUS_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.NAME"
+#| msgid "Status"
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.STATUS_TITLE"
+msgid "Rocket Status"
+msgstr "ステータス"
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.TIMEREMAINING
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TIME_REMAINING"
+#| msgid ""
+#| "\n"
+#| "Time Remaining: {0}"
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.TIMEREMAINING"
+msgid "Time Remaining"
+msgstr ""
+"\n"
+"残り時間: {0}"
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.TOTAL
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.NOISE_POLLUTION.TOTAL"
+#| msgid "Total"
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.TOTAL"
+msgid "Total"
+msgstr "合計"
+
+#. STRINGS.UI.STARMAP.ROCKETSTATUS.WEIGHTPENALTY
+msgctxt "STRINGS.UI.STARMAP.ROCKETSTATUS.WEIGHTPENALTY"
+msgid "Weight Penalty"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.ROCKETWEIGHT.CURRENTMASS
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIMEDSWITCHSIDESCREEN.CURRENTSTATE"
+#| msgid "Current State:"
+msgctxt "STRINGS.UI.STARMAP.ROCKETWEIGHT.CURRENTMASS"
+msgid "Current Rocket Mass: "
+msgstr "現在の状態:"
+
+#. STRINGS.UI.STARMAP.ROCKETWEIGHT.CURRENTMASSPENALTY
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIMEDSWITCHSIDESCREEN.CURRENTSTATE"
+#| msgid "Current State:"
+msgctxt "STRINGS.UI.STARMAP.ROCKETWEIGHT.CURRENTMASSPENALTY"
+msgid "Current Weight Penalty: "
+msgstr "現在の状態:"
+
+#. STRINGS.UI.STARMAP.ROCKETWEIGHT.MASS
+#, fuzzy
+#| msgctxt "STRINGS.UI.ELEMENTAL.MASS.NAME"
+#| msgid "Mass: {0}"
+msgctxt "STRINGS.UI.STARMAP.ROCKETWEIGHT.MASS"
+msgid "Mass: "
+msgstr "質量: {0}"
+
+#. STRINGS.UI.STARMAP.ROCKETWEIGHT.MASSPENALTY
+msgctxt "STRINGS.UI.STARMAP.ROCKETWEIGHT.MASSPENALTY"
+msgid "Mass Penalty: "
+msgstr ""
+
+#. STRINGS.UI.STARMAP.SEE_ROCKETS_LIST
+msgctxt "STRINGS.UI.STARMAP.SEE_ROCKETS_LIST"
+msgid "See Rockets List"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.STATUS
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.EGGINCUBATOR.SELECT_TITLE"
+#| msgid "SELECT"
+msgctxt "STRINGS.UI.STARMAP.STATUS"
+msgid "SELECTED"
+msgstr "選択"
+
+#. STRINGS.UI.STARMAP.SUBROW
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MATERIALSUNAVAILABLE.LINE_ITEM_UNITS"
+#| msgid "• {0}"
+msgctxt "STRINGS.UI.STARMAP.SUBROW"
+msgid "•  {0}"
+msgstr "• {0}"
+
+#. STRINGS.UI.STARMAP.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.NB.STAR"
+#| msgid "Star"
+msgctxt "STRINGS.UI.STARMAP.TITLE"
+msgid "Starmap"
+msgstr "スター"
 
 #. STRINGS.UI.TABLESCREENS.COLUMN_SORT_BY_EATEN_TODAY
 msgctxt "STRINGS.UI.TABLESCREENS.COLUMN_SORT_BY_EATEN_TODAY"
@@ -9108,9 +10776,12 @@ msgid "Cannot Wrangle"
 msgstr "懐柔不可"
 
 #. STRINGS.UI.TOOLS.CAPTURE.TOOLACTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.HARVEST.TOOLACTION"
+#| msgid "DRAG TO TOGGLE HARVEST"
 msgctxt "STRINGS.UI.TOOLS.CAPTURE.TOOLACTION"
-msgid "DRAG TO WRANGLE CRITTERS"
-msgstr "ドラッグして動物を懐柔します"
+msgid "DRAG TO TOGGLE WRANGLE"
+msgstr "ドラッグして収穫を切替"
 
 #. STRINGS.UI.TOOLS.CAPTURE.TOOLNAME
 msgctxt "STRINGS.UI.TOOLS.CAPTURE.TOOLNAME"
@@ -9193,8 +10864,11 @@ msgid "Empty Pipe"
 msgstr "配管掃除"
 
 #. STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLACTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLACTION"
+#| msgid "DRAG TO MARK PIPES TO EMPTY"
 msgctxt "STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLACTION"
-msgid "DRAG TO MARK PIPES TO EMPTY"
+msgid "DRAG TO REMOVE PIPE CONTENTS"
 msgstr "ドラッグして配管掃除"
 
 #. STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLNAME
@@ -9203,9 +10877,12 @@ msgid "Empty Pipe Tool"
 msgstr "配管掃除ツール"
 
 #. STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.CLEARBUTTON"
+#| msgid "Drag to move debris into storage"
 msgctxt "STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLTIP"
-msgid "Drag to mark pipes for emptying"
-msgstr "ドラッグして配管掃除"
+msgid "Drag to remove contents of pipe"
+msgstr "ドラッグしてがれきを格納庫に移動します"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.ALL
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.ALL"
@@ -9486,8 +11163,11 @@ msgid "Cancel queued orders or deconstruct existing buildings"
 msgstr "指示をキャンセルまたは既存の設備を解体します"
 
 #. STRINGS.UI.TOOLTIPS.CAPTUREBUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.CAPTUREBUTTON"
+#| msgid "Drag to capture live critters"
 msgctxt "STRINGS.UI.TOOLTIPS.CAPTUREBUTTON"
-msgid "Drag to capture live critters"
+msgid "Drag to capture critters"
 msgstr "ドラッグして動物を捕獲します"
 
 #. STRINGS.UI.TOOLTIPS.CLEANUPMAINBUTTON
@@ -9521,8 +11201,11 @@ msgid "Drag to demolish buildings"
 msgstr "ドラッグして設備を破壊"
 
 #. STRINGS.UI.TOOLTIPS.DECOROVERLAYSTRING
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.DECOROVERLAYSTRING"
+#| msgid "Displays decor values"
 msgctxt "STRINGS.UI.TOOLTIPS.DECOROVERLAYSTRING"
-msgid "Displays decor values"
+msgid "Displays areas with Morale-boosting decor values"
 msgstr "装飾値を表示します"
 
 #. STRINGS.UI.TOOLTIPS.DIGBUTTON
@@ -9531,8 +11214,11 @@ msgid "Drag to set dig errands"
 msgstr "ドラッグして採掘指示を出します"
 
 #. STRINGS.UI.TOOLTIPS.DISEASEOVERLAYSTRING
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.DISEASEOVERLAYSTRING"
+#| msgid "Displays disease risk areas"
 msgctxt "STRINGS.UI.TOOLTIPS.DISEASEOVERLAYSTRING"
-msgid "Displays disease risk areas"
+msgid "Displays areas of disease risk"
 msgstr "病気リスクのあるエリアを表示します"
 
 #. STRINGS.UI.TOOLTIPS.DISINFECTBUTTON
@@ -9571,13 +11257,19 @@ msgid "Displays gas pipe system components"
 msgstr "気体用パイプの配管を表示します"
 
 #. STRINGS.UI.TOOLTIPS.HARVESTBUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.HARVESTBUTTON"
+#| msgid "Drag to harvest plants"
 msgctxt "STRINGS.UI.TOOLTIPS.HARVESTBUTTON"
-msgid "Drag to harvest plants"
+msgid "Drag to harvest fullgrown plants"
 msgstr "ドラッグして熟した植物を収穫します"
 
 #. STRINGS.UI.TOOLTIPS.HEATFLOWOVERLAYSTRING
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.HEATFLOWOVERLAYSTRING"
+#| msgid "Displays areas with comfortable temperatures for Duplicants"
 msgctxt "STRINGS.UI.TOOLTIPS.HEATFLOWOVERLAYSTRING"
-msgid "Displays areas with comfortable temperatures for Duplicants"
+msgid "Displays comfortable temperatures for Duplicants"
 msgstr "複製人間が快適に感じる温度帯のエリアを表示します"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_ATTACHPOINT
@@ -9594,6 +11286,14 @@ msgstr "天井に建設する必要があります"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_FLOOR"
 msgid "Must be built on solid ground"
 msgstr "安定した土台に建設する必要があります"
+
+#. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_FLOOR_OR_ATTACHPOINT
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_ATTACHPOINT"
+#| msgid "Must be built overlapping an {0}"
+msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_FLOOR_OR_ATTACHPOINT"
+msgid "Must be built on solid ground or overlapping an {0}"
+msgstr "{0}に重ねて建設する必要があります"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_GASPORTS_OBSTRUCTED
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_GASPORTS_OBSTRUCTED"
@@ -9629,6 +11329,14 @@ msgstr "タイル内に敷設できません"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_OCCUPIED"
 msgid "Must be built in unoccupied space"
 msgstr "空いている空間に建設する必要があります"
+
+#. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_PLATE_OBSTRUCTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_WIRE_OBSTRUCTION"
+#| msgid "Obstructed by wire"
+msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_PLATE_OBSTRUCTION"
+msgid "Obstructed by Tempshift Plate"
+msgstr "電線による妨げ"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_SOLIDPORTS_OBSTRUCTED
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_SOLIDPORTS_OBSTRUCTED"
@@ -9727,24 +11435,36 @@ msgid "Displays automation grid components"
 msgstr "コロニーの自動化グリッド部品を表示します"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CODEX
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.OPEN_CODEX_ENTRY"
+#| msgid "View full entry in database"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CODEX"
-msgid "Browse database entries"
-msgstr "データベースの項目を参照します"
+msgid "Browse entries in my Database"
+msgstr "データベースの全ての項目を参照します"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CONSUMABLES
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MANAGEDCOLONY.NAME"
+#| msgid "Managed Colony"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CONSUMABLES"
-msgid "Manage Duplicants' diets"
-msgstr "複製人間の健康状態を管理します"
+msgid "Manage colony diets"
+msgstr "管理されたコロニー"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_DAILYREPORT
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_DAILYREPORT"
+#| msgid "View daily Colony Reports"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_DAILYREPORT"
-msgid "View daily Colony Reports"
+msgid "View each cycle's Colony Report"
 msgstr "デイリーレポートを見ます"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CONSUMABLES"
+#| msgid "Manage Duplicants' diets"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS"
-msgid "Manage Duplicants' errand priorities"
-msgstr "複製人間の作業優先度を管理します"
+msgid "Manage my Duplicants' work behavior"
+msgstr "複製人間の健康状態を管理します"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_RESEARCH
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_RESEARCH"
@@ -9776,18 +11496,32 @@ msgid "View the Research Tree"
 msgstr "研究ツリーを見ます"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_ROLES
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_ROLES"
+#| msgid "Manage Duplicants' priorities and job assignments"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_ROLES"
-msgid "Manage Duplicants' priorities and job assignments"
+msgid "Manage Duplicants' job assignments"
 msgstr "複製人間の優先度および職業割り当てを管理します"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_SCHEDULE
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_SCHEDULE"
+#| msgid "Adjust colony scheduling"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_SCHEDULE"
-msgid "Adjust colony scheduling"
+msgid "Adjust the colony's time usage"
 msgstr "コロニーのスケジュールを調整します"
 
+#. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_STARMAP
+msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_STARMAP"
+msgid "Manage astronaut rocket missions"
+msgstr ""
+
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_VITALS
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_VITALS"
+#| msgid "View Duplicants' vitals"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_VITALS"
-msgid "View Duplicants' vitals"
+msgid "View my Duplicants' vitals"
 msgstr "複製人間の健康状態を見ます"
 
 #. STRINGS.UI.TOOLTIPS.MATIERIAL_MOD
@@ -9823,8 +11557,8 @@ msgstr "人口: {0}"
 
 #. STRINGS.UI.TOOLTIPS.MOPBUTTON
 msgctxt "STRINGS.UI.TOOLTIPS.MOPBUTTON"
-msgid "Drag to swab unwanted liquids"
-msgstr "ドラッグして零れた液体をふき取ります"
+msgid "Drag to mop small spills"
+msgstr ""
 
 #. STRINGS.UI.TOOLTIPS.NEXTMESSAGESTOOLTIP
 msgctxt "STRINGS.UI.TOOLTIPS.NEXTMESSAGESTOOLTIP"
@@ -9929,11 +11663,10 @@ msgstr "非常警報を鳴らす"
 #. STRINGS.UI.TOOLTIPS.RED_ALERT_CONTENT
 msgctxt "STRINGS.UI.TOOLTIPS.RED_ALERT_CONTENT"
 msgid ""
-"Colonywide emergency state\n"
-"Duplicants ignore basic needs to work"
+"Duplicants will work, ignoring schedules and their basic needs\n"
+"\n"
+"Use in case of emergency"
 msgstr ""
-"コロニー全体が緊急事態\n"
-"複製人間は作業に必要なものを無視します"
 
 #. STRINGS.UI.TOOLTIPS.RED_ALERT_TITLE
 msgctxt "STRINGS.UI.TOOLTIPS.RED_ALERT_TITLE"
@@ -9941,9 +11674,12 @@ msgid "Toggle Red Alert"
 msgstr "非常警報を切り替える"
 
 #. STRINGS.UI.TOOLTIPS.ROOMSOVERLAYSTRING
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.DISEASEOVERLAYSTRING"
+#| msgid "Displays disease risk areas"
 msgctxt "STRINGS.UI.TOOLTIPS.ROOMSOVERLAYSTRING"
-msgid "Displays fully enclosed rooms"
-msgstr "閉鎖空間を表示します"
+msgid "Displays special purpose rooms and bonuses"
+msgstr "病気リスクのあるエリアを表示します"
 
 #. STRINGS.UI.TOOLTIPS.SELECTAMATERIAL
 msgctxt "STRINGS.UI.TOOLTIPS.SELECTAMATERIAL"
@@ -10333,6 +12069,17 @@ msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.UNITS_SUFFIX"
 msgid " Critters"
 msgstr " 動物"
 
+#. STRINGS.UI.UISIDESCREENS.COMMAND_MODULE_SIDE_SCREEN.DESTINATION_BUTTON
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.COMMAND_MODULE_SIDE_SCREEN.DESTINATION_BUTTON"
+msgid "Show Starmap"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.COMMAND_MODULE_SIDE_SCREEN.TITLE
+msgctxt "STRINGS.UI.UISIDESCREENS.COMMAND_MODULE_SIDE_SCREEN.TITLE"
+msgid "Launch Conditions"
+msgstr ""
+
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT"
 msgid ""
@@ -10693,10 +12440,21 @@ msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.NOELEMENTSELECTED"
 msgid "No element selected"
 msgstr "要素未選択"
 
+#. STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.OUTPUTELEMENTHEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.CONSUMER"
+#| msgid "Output Pipe"
+msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.OUTPUTELEMENTHEADER"
+msgid "Output 1"
+msgstr "出力パイプ"
+
 #. STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.SELECTELEMENTHEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.CONSUMER"
+#| msgid "Output Pipe"
 msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.SELECTELEMENTHEADER"
-msgid "Select Element"
-msgstr "要素を選択"
+msgid "Output 2"
+msgstr "出力パイプ"
 
 #. STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.TITLE"
@@ -11497,6 +13255,14 @@ msgctxt "STRINGS.UI.UNITSUFFIXES.DISEASE.UNITS"
 msgid " germs"
 msgstr " germs"
 
+#. STRINGS.UI.UNITSUFFIXES.DISTANCE.KILOMETER
+#, fuzzy
+#| msgctxt "STRINGS.UI.UNITSUFFIXES.DISTANCE.METER"
+#| msgid " m"
+msgctxt "STRINGS.UI.UNITSUFFIXES.DISTANCE.KILOMETER"
+msgid " km"
+msgstr " m"
+
 #. STRINGS.UI.UNITSUFFIXES.DISTANCE.METER
 msgctxt "STRINGS.UI.UNITSUFFIXES.DISTANCE.METER"
 msgid " m"
@@ -11526,6 +13292,26 @@ msgstr " MJ"
 msgctxt "STRINGS.UI.UNITSUFFIXES.ELECTRICAL.WATT"
 msgid " W"
 msgstr " W"
+
+#. STRINGS.UI.UNITSUFFIXES.HEAT.DTU
+msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.DTU"
+msgid " DTU"
+msgstr ""
+
+#. STRINGS.UI.UNITSUFFIXES.HEAT.DTU_S
+msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.DTU_S"
+msgid " DTU/s"
+msgstr ""
+
+#. STRINGS.UI.UNITSUFFIXES.HEAT.KDTU
+msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.KDTU"
+msgid " kDTU"
+msgstr ""
+
+#. STRINGS.UI.UNITSUFFIXES.HEAT.KDTU_S
+msgctxt "STRINGS.UI.UNITSUFFIXES.HEAT.KDTU_S"
+msgid " kDTU/s"
+msgstr ""
 
 #. STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA
 msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA"
@@ -11992,8 +13778,11 @@ msgid "Deliver materials to this building"
 msgstr "この設備に資源を配達します"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME"
+#| msgid "Enable Autobottling"
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME"
-msgid "Enable Autobottling"
+msgid "Enable Auto-Bottle"
 msgstr "自動ボトル化有効"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP
@@ -12005,9 +13794,34 @@ msgstr ""
 "有効にした場合、複製人間はピッチャーポンプから直接この設備に液体ボトルを配達"
 "します"
 
+#. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED_GAS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.REPAIRABLE.ENABLE_AUTOREPAIR.NAME"
+#| msgid "Enable Autorepair"
+msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED_GAS.NAME"
+msgid "Enable Auto-Canister"
+msgstr "自動修理有効化"
+
+#. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED_GAS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP"
+#| msgid ""
+#| "If enabled, Duplicants will deliver bottled liquids to this building "
+#| "directly from Pitcher Pumps"
+msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED_GAS.TOOLTIP"
+msgid ""
+"If enabled, Duplicants will deliver gas canisters to this building directly "
+"from Canister Fillers"
+msgstr ""
+"有効にした場合、複製人間はピッチャーポンプから直接この設備に液体ボトルを配達"
+"します"
+
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME"
+#| msgid "Disable Autobottling"
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME"
-msgid "Disable Autobottling"
+msgid "Disable Auto-Bottle"
 msgstr "自動ボトル化無効"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.TOOLTIP
@@ -12015,6 +13829,28 @@ msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.TOOLTIP"
 msgid ""
 "If disabled, Duplicants will no longer deliver bottled liquids directly from "
 "Pitcher Pumps"
+msgstr ""
+"無効にした場合、複製人間はピッチャーポンプからこの設備に液体ボトルを配達しま"
+"せん"
+
+#. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED_GAS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.REPAIRABLE.DISABLE_AUTOREPAIR.NAME"
+#| msgid "Disable Autorepair"
+msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED_GAS.NAME"
+msgid "Disable Auto-Canister"
+msgstr "自動修理無効化"
+
+#. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED_GAS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.TOOLTIP"
+#| msgid ""
+#| "If disabled, Duplicants will no longer deliver bottled liquids directly "
+#| "from Pitcher Pumps"
+msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED_GAS.TOOLTIP"
+msgid ""
+"If disabled, Duplicants will no longer deliver gas canisters directly from "
+"Canister Fillers"
 msgstr ""
 "無効にした場合、複製人間はピッチャーポンプからこの設備に液体ボトルを配達しま"
 "せん"
@@ -12079,12 +13915,22 @@ msgid "Cancel this quarantine order"
 msgstr "隔離指示を取り消します"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.ALREADY_SEARCHED
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.ALREADY_SEARCHED"
+#| msgid ""
+#| "I already took everything of interest from this. I can check the Codex to "
+#| "re-read what I found."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.ALREADY_SEARCHED"
 msgid ""
-"I already took everything of interest from this. I can check the Codex to re-"
-"read what I found."
+"I already took everything of interest from this. I can check the Database to "
+"re-read what I found."
 msgstr ""
 "これについては既に調査済みです。データベースで再確認することができます。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.GOTODATABASE
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.GOTODATABASE"
+msgid "View Entry"
+msgstr ""
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.NAME"
@@ -12169,12 +14015,20 @@ msgstr ""
 "ません。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH1
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH1"
+#| msgid ""
+#| "After searching through the computer's database, I managed to piece "
+#| "together some files that piqued my interest.\n"
+#| "\n"
+#| "New Codex Entry unlocked."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH1"
 msgid ""
 "After searching through the computer's database, I managed to piece together "
 "some files that piqued my interest.\n"
 "\n"
-"New Codex Entry unlocked."
+"New Database Entry unlocked."
 msgstr ""
 "コンピューターのデータベースを検索したところ、データの断片から興味深い内容の"
 "ファイルを組み立てることができました。\n"
@@ -12182,25 +14036,42 @@ msgstr ""
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH2
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH2"
+#| msgid ""
+#| "Searching through the computer, I find some recoverable files that are "
+#| "still readable.\n"
+#| "\n"
+#| "New Codex Entry unlocked."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH2"
 msgid ""
 "Searching through the computer, I find some recoverable files that are still "
 "readable.\n"
 "\n"
-"New Codex Entry unlocked."
+"New Database Entry unlocked."
 msgstr ""
 "コンピューターを検索すると、判読可能なファイルをいくつか見つけました。\n"
 "\n"
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH3
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH3"
+#| msgid ""
+#| "The computer looks pristine on the outside, but is corrupted internally. "
+#| "Still, I managed to find one uncorrupted file, and have added it to my "
+#| "database.\n"
+#| "\n"
+#| "New Codex Entry unlocked."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH3"
 msgid ""
 "The computer looks pristine on the outside, but is corrupted internally. "
 "Still, I managed to find one uncorrupted file, and have added it to my "
 "database.\n"
 "\n"
-"New Codex Entry unlocked."
+"New Database Entry unlocked."
 msgstr ""
 "コンピューターの見た目は新品ですが、中身は壊れてしまっています。どうにか破損"
 "していないファイルを見つけ出し、データベースに追加しました。\n"
@@ -12208,12 +14079,20 @@ msgstr ""
 "辞書に新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH4
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH4"
+#| msgid ""
+#| "The computer was wiped almost completely clean, except for one file "
+#| "hidden in the recycle bin.\n"
+#| "\n"
+#| "New Codex Entry unlocked."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH4"
 msgid ""
 "The computer was wiped almost completely clean, except for one file hidden "
 "in the recycle bin.\n"
 "\n"
-"New Codex Entry unlocked."
+"New Database Entry unlocked."
 msgstr ""
 "コンピューターはきれいさっぱり初期化されていますが、ゴミ箱から隠しファイルが"
 "見つかりました。\n"
@@ -12221,24 +14100,40 @@ msgstr ""
 "辞書に新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH5
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH5"
+#| msgid ""
+#| "I search the computer, storing what useful data I can find in my own "
+#| "memory.\n"
+#| "\n"
+#| "New Codex Entry unlocked."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH5"
 msgid ""
 "I search the computer, storing what useful data I can find in my own "
 "memory.\n"
 "\n"
-"New Codex Entry unlocked."
+"New Database Entry unlocked."
 msgstr ""
 "コンピューターを検索し、発見したデータをメモリに格納しました。\n"
 "\n"
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH6
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH6"
+#| msgid ""
+#| "This computer is broken and requires some finessing to get working. "
+#| "Still, I recover a handful of interesting files.\n"
+#| "\n"
+#| "New Codex Entry unlocked."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_COMPUTER_SUCCESS.SEARCH6"
 msgid ""
 "This computer is broken and requires some finessing to get working. Still, I "
 "recover a handful of interesting files.\n"
 "\n"
-"New Codex Entry unlocked."
+"New Database Entry unlocked."
 msgstr ""
 "このコンピューターは壊れており、稼働させるには替えの部品が必要です。その中か"
 "らいくつか役に立ちそうなファイルを発見しました。\n"
@@ -12246,11 +14141,17 @@ msgstr ""
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_DISPLAY
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_DISPLAY"
+#| msgid ""
+#| "The display is still functional. I copy its message into my database.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_DISPLAY"
 msgid ""
 "The display is still functional. I copy its message into my database.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "ディスプレイはまだ機能するようです。表示されているメッセージをメモリにコピー"
 "しました。\n"
@@ -12263,103 +14164,164 @@ msgid "I look around but find nothing of interest."
 msgstr "辺りを見回しましたが、特に有用なものは見つかりませんでした。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH1
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH1"
+#| msgid ""
+#| "I look around and recover an old file.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH1"
 msgid ""
 "I look around and recover an old file.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "辺りを見回すと、古いファイルを発見しました。\n"
 "\n"
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH2
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH2"
+#| msgid ""
+#| "There's a three-ringed binder inside. I scan the surviving documents.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH2"
 msgid ""
 "There's a three-ringed binder inside. I scan the surviving documents.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "3穴バインダーを見つけたため、残っていた書類をスキャンします。\n"
 "\n"
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH3
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH3"
+#| msgid ""
+#| "A discarded journal inside remains mostly intact. I scan the pages of "
+#| "use.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH3"
 msgid ""
 "A discarded journal inside remains mostly intact. I scan the pages of use.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "ほぼ手つかずの破棄された研究日誌を見つけたため、ページをスキャンします。\n"
 "\n"
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH4
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH4"
+#| msgid ""
+#| "A single page of a long printout remains legible. I scan it and add it to "
+#| "my database.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH4"
 msgid ""
 "A single page of a long printout remains legible. I scan it and add it to my "
 "database.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "判読可能な状態の長い1ページの印刷物を見つけたため、ページをスキャンします。\n"
 "\n"
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH5
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH5"
+#| msgid ""
+#| "A few loose papers can be found inside. I scan the ones that look "
+#| "interesting.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH5"
 msgid ""
 "A few loose papers can be found inside. I scan the ones that look "
 "interesting.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "数枚のノートを見つけたため、ページをスキャンします。\n"
 "\n"
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH6
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH6"
+#| msgid ""
+#| "I find a memory stick inside and copy its data into my database.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH6"
 msgid ""
 "I find a memory stick inside and copy its data into my database.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "メモリースティックを見つけたため、中のデータをコピーします。\n"
 "\n"
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_POD
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_POD"
+#| msgid ""
+#| "I search my incoming message history and find a single entry. I move the "
+#| "odd message into my database.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_POD"
 msgid ""
 "I search my incoming message history and find a single entry. I move the odd "
 "message into my database.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "メッセージ履歴を検索し、項目を発見しました。データベースに登録します。\n"
 "\n"
 "新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH1
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH1"
+#| msgid ""
+#| "I scour the internal systems and find something of interest.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH1"
 msgid ""
 "I scour the internal systems and find something of interest.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "内部システムを磨くと、興味深いものを見つけました。\n"
 "\n"
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH2
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH2"
+#| msgid ""
+#| "I see if I can salvage anything from the electronics. I add what I find "
+#| "to the codex.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH2"
 msgid ""
 "I see if I can salvage anything from the electronics. I add what I find to "
-"the codex.\n"
+"my database.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "電子機器から何か復元できそうなものがあったため、データベースに追加しまし"
 "た。\n"
@@ -12367,12 +14329,20 @@ msgstr ""
 "データベースに新しい項目が追加されました。"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH3
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH3"
+#| msgid ""
+#| "I look for anything of interest within the abandoned machinery and add "
+#| "what I find to my database.\n"
+#| "\n"
+#| "New Codex Entry discovered."
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TECHNOLOGY_SUCCESS.SEARCH3"
 msgid ""
 "I look for anything of interest within the abandoned machinery and add what "
 "I find to my database.\n"
 "\n"
-"New Codex Entry discovered."
+"New Database Entry discovered."
 msgstr ""
 "廃棄された機械から何か興味を惹くものを探し、データベースに登録しました。\n"
 "\n"
@@ -12734,13 +14704,23 @@ msgid "BEGIN"
 msgstr "開始"
 
 #. STRINGS.UI.WELCOMEMESSAGEBODY
+#, fuzzy
+#| msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY"
+#| msgid ""
+#| "I've awakened trapped inside an asteroid with a crew of three "
+#| "Duplicants.\n"
+#| "\n"
+#| "Resources are scarce. I can't remember how we got here.\n"
+#| "\n"
+#| "I'll need to help the Duplicants survive if we're going to find answers."
 msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY"
 msgid ""
-"I've awakened trapped inside an asteroid with a crew of three Duplicants.\n"
+"I've awakened trapped at the center of a large asteroid, in full control of "
+"a crew of three Duplicants.\n"
 "\n"
-"Resources are scarce. I can't remember how we got here.\n"
+"I can't recall how I got here, but our resources are scarce.\n"
 "\n"
-"I'll need to help the Duplicants survive if we're going to find answers."
+"If I'm going to find answers, I'll need to help my Duplicants survive."
 msgstr ""
 "私は3人の複製人間とともに小惑星内部で目覚めた。\n"
 "\n"
@@ -13253,6 +15233,96 @@ msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
 
+#~ msgctxt "STRINGS.UI.ASTEROIDCLOCK.SCHEDULE_BUTTON_TOOLTIP"
+#~ msgid ""
+#~ "Manage Schedule\n"
+#~ "\n"
+#~ "NOT IMPLEMENTED"
+#~ msgstr ""
+#~ "スケジュールの管理\n"
+#~ "\n"
+#~ "[未実装]"
+
+#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY"
+#~ msgid "Quality: {0}"
+#~ msgstr "品質: {0}"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
+#~ msgid "EXPRESSIVE UPGRADE"
+#~ msgstr "表現アップグレード"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.HOVERTITLE"
+#~ msgid "THERMAL COMFORT"
+#~ msgstr "適温"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER1.NAME"
+#~ msgid "Morale expectation"
+#~ msgstr "士気期待値"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER2.NAME"
+#~ msgid "Morale expectation"
+#~ msgstr "士気期待値"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER3.NAME"
+#~ msgid "Morale expectation"
+#~ msgstr "士気期待値"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER4.NAME"
+#~ msgid "Morale expectation"
+#~ msgstr "士気期待値"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER5.NAME"
+#~ msgid "Morale expectation"
+#~ msgstr "士気期待値"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER6.NAME"
+#~ msgid "Morale expectation"
+#~ msgstr "士気期待値"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATIONS.QUALITYOFLIFE.TIER8.NAME"
+#~ msgid "Morale expectation"
+#~ msgstr "士気期待値"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.GAS"
+#~ msgid "Gasses"
+#~ msgstr "気体"
+
+#~ msgctxt "STRINGS.UI.TOOLS.CAPTURE.TOOLACTION"
+#~ msgid "DRAG TO WRANGLE CRITTERS"
+#~ msgstr "ドラッグして動物を懐柔します"
+
+#~ msgctxt "STRINGS.UI.TOOLS.EMPTY_PIPE.TOOLTIP"
+#~ msgid "Drag to mark pipes for emptying"
+#~ msgstr "ドラッグして配管掃除"
+
+#~ msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CODEX"
+#~ msgid "Browse database entries"
+#~ msgstr "データベースの項目を参照します"
+
+#~ msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS"
+#~ msgid "Manage Duplicants' errand priorities"
+#~ msgstr "複製人間の作業優先度を管理します"
+
+#~ msgctxt "STRINGS.UI.TOOLTIPS.MOPBUTTON"
+#~ msgid "Drag to swab unwanted liquids"
+#~ msgstr "ドラッグして零れた液体をふき取ります"
+
+#~ msgctxt "STRINGS.UI.TOOLTIPS.RED_ALERT_CONTENT"
+#~ msgid ""
+#~ "Colonywide emergency state\n"
+#~ "Duplicants ignore basic needs to work"
+#~ msgstr ""
+#~ "コロニー全体が緊急事態\n"
+#~ "複製人間は作業に必要なものを無視します"
+
+#~ msgctxt "STRINGS.UI.TOOLTIPS.ROOMSOVERLAYSTRING"
+#~ msgid "Displays fully enclosed rooms"
+#~ msgstr "閉鎖空間を表示します"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.SELECTELEMENTHEADER"
+#~ msgid "Select Element"
+#~ msgstr "要素を選択"
+
 #~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.EXPECTATIONS_ABOVE"
 #~ msgid "<b><color=#B87194FF>fulfills</color></b>"
 #~ msgstr "<b><color=#B87194FF>満足</color></b>"
@@ -13415,10 +15485,6 @@ msgstr "砂散布中..."
 #~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
 #~ msgid "RANCHING UPGRADE MARK II"
 #~ msgstr "家畜アップデート第二弾"
-
-#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MINION_DESTRUCTION"
-#~ msgid "Anger Damage"
-#~ msgstr "八つ当たりダメージ"
 
 #~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION"
 #~ msgid "Trait: <link=\"SUPER COMPUTER\">Researching</link>"
