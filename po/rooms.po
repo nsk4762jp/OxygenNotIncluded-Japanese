@@ -55,13 +55,13 @@ msgstr "良質な装飾"
 
 #. STRINGS.ROOMS.CRITERIA.CEILING_HEIGHT.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.CEILING_HEIGHT.DESCRIPTION"
-msgid "The ceiling must be at least {0} tiles above the floor"
-msgstr "天井は少なくとも床から{0}タイル以上離れている必要があります"
+msgid "Must have a ceiling height of at least {0} tiles"
+msgstr "少なくとも {0} タイル以上の高さでなければいけません"
 
 #. STRINGS.ROOMS.CRITERIA.CEILING_HEIGHT.NAME
 msgctxt "STRINGS.ROOMS.CRITERIA.CEILING_HEIGHT.NAME"
-msgid "Minimum ceiling height: {0} tiles"
-msgstr "天井までの高さ(最小): {0} タイル"
+msgid "Minimum height: {0} tiles"
+msgstr "必要最低限の高さ: {0} タイル"
 
 #. STRINGS.ROOMS.CRITERIA.CLINIC.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.CLINIC.DESCRIPTION"
@@ -110,12 +110,12 @@ msgstr "一つ以上の絵画、彫像、植木鉢が必要です"
 
 #. STRINGS.ROOMS.CRITERIA.DECORATIVE_ITEM.NAME
 msgctxt "STRINGS.ROOMS.CRITERIA.DECORATIVE_ITEM.NAME"
-msgid "Decoration item"
+msgid "Decor item"
 msgstr "装飾品"
 
 #. STRINGS.ROOMS.CRITERIA.DECORATIVE_ITEM_N.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.DECORATIVE_ITEM_N.DESCRIPTION"
-msgid "Requires a decorative object with a Decor of at least {0}."
+msgid "Requires a decorative item with a minimum Decor value of {0}"
 msgstr "{0}以上の装飾値を持つ装飾品が必要です"
 
 #. STRINGS.ROOMS.CRITERIA.DECORATIVE_ITEM_N.NAME
@@ -170,13 +170,13 @@ msgstr "光源"
 
 #. STRINGS.ROOMS.CRITERIA.LUXURY_BED_SINGLE.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.LUXURY_BED_SINGLE.DESCRIPTION"
-msgid "Requires Comfy Bed"
+msgid "Requires a Comfy Bed"
 msgstr "快適ベッドが必要です"
 
 #. STRINGS.ROOMS.CRITERIA.LUXURY_BED_SINGLE.NAME
 msgctxt "STRINGS.ROOMS.CRITERIA.LUXURY_BED_SINGLE.NAME"
-msgid "Single luxury bed"
-msgstr "豪華なシングルベッド"
+msgid "Single Comfy Bed"
+msgstr "快適ベッドが必要です"
 
 #. STRINGS.ROOMS.CRITERIA.MACHINE_SHOP.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.MACHINE_SHOP.DESCRIPTION"
@@ -243,6 +243,16 @@ msgctxt "STRINGS.ROOMS.CRITERIA.NEUTRAL_TYPE"
 msgid "Enclosed by wall tiles"
 msgstr "壁タイルに囲まれています"
 
+#. STRINGS.ROOMS.CRITERIA.NO_COTS.DESCRIPTION
+msgctxt "STRINGS.ROOMS.CRITERIA.NO_COTS.DESCRIPTION"
+msgid "Room cannot contain a Cot"
+msgstr "部屋に簡易ベッドがありません"
+
+#. STRINGS.ROOMS.CRITERIA.NO_COTS.NAME
+msgctxt "STRINGS.ROOMS.CRITERIA.NO_COTS.NAME"
+msgid "No Cots"
+msgstr "簡易ベッドなし"
+
 #. STRINGS.ROOMS.CRITERIA.NO_INDUSTRIAL_MACHINERY.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.NO_INDUSTRIAL_MACHINERY.DESCRIPTION"
 msgid "Cannot contain any building labelled Industrial Machinery"
@@ -252,6 +262,16 @@ msgstr "工業用機械とラベル付けされた設備がありません"
 msgctxt "STRINGS.ROOMS.CRITERIA.NO_INDUSTRIAL_MACHINERY.NAME"
 msgid "No industrial machinery"
 msgstr "工業用機械なし"
+
+#. STRINGS.ROOMS.CRITERIA.NO_OUTHOUSES.DESCRIPTION
+msgctxt "STRINGS.ROOMS.CRITERIA.NO_OUTHOUSES.DESCRIPTION"
+msgid "Cannot contain basic Outhouses"
+msgstr "野営トイレがありません"
+
+#. STRINGS.ROOMS.CRITERIA.NO_OUTHOUSES.NAME
+msgctxt "STRINGS.ROOMS.CRITERIA.NO_OUTHOUSES.NAME"
+msgid "No Outhouses"
+msgstr "野営トイレなし"
 
 #. STRINGS.ROOMS.CRITERIA.NO_TYPE_CONFLICTS
 msgctxt "STRINGS.ROOMS.CRITERIA.NO_TYPE_CONFLICTS"
@@ -275,17 +295,17 @@ msgstr "電力制御端末"
 
 #. STRINGS.ROOMS.CRITERIA.RANCH_STATION.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.RANCH_STATION.DESCRIPTION"
-msgid "Requires a single Ranch Station"
-msgstr "牧畜端末が必要です"
+msgid "Requires a single Grooming Station"
+msgstr "お手入れ端末が必要です"
 
 #. STRINGS.ROOMS.CRITERIA.RANCH_STATION.NAME
 msgctxt "STRINGS.ROOMS.CRITERIA.RANCH_STATION.NAME"
-msgid "Ranch Station"
-msgstr "牧畜端末"
+msgid "Grooming Station"
+msgstr "お手入れ端末"
 
 #. STRINGS.ROOMS.CRITERIA.REC_BUILDING.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.REC_BUILDING.DESCRIPTION"
-msgid "Requires one or more Recreational Buildings"
+msgid "Requires one or more recreational buildings"
 msgstr "一つ以上の娯楽設備が必要です"
 
 #. STRINGS.ROOMS.CRITERIA.REC_BUILDING.NAME
@@ -367,6 +387,11 @@ msgctxt "STRINGS.ROOMS.DETAILS.SIZE.NAME"
 msgid "Room size: {0} Tiles"
 msgstr "部屋サイズ: {0} タイル"
 
+#. STRINGS.ROOMS.EFFECTS.HEADER
+msgctxt "STRINGS.ROOMS.EFFECTS.HEADER"
+msgid "Room Effects"
+msgstr "部屋効果"
+
 #. STRINGS.ROOMS.TYPES.BARRACKS.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.BARRACKS.EFFECT"
 msgid "- Morale bonus"
@@ -379,10 +404,8 @@ msgstr "宿舎"
 
 #. STRINGS.ROOMS.TYPES.BARRACKS.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.BARRACKS.TOOLTIP"
-msgid ""
-"Sleeping in a bed will improve Morale for Duplicants if it is located within "
-"Barracks."
-msgstr "宿舎に設置されたベッドで寝ることにより、複製人間の士気が改善されます。"
+msgid "Sleeping in Barracks will improve Duplicants' Morale."
+msgstr "宿舎で睡眠を取ると、複製人間の士気が上昇します。"
 
 #. STRINGS.ROOMS.TYPES.BEDROOM.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.BEDROOM.EFFECT"
@@ -396,8 +419,8 @@ msgstr "寝室"
 
 #. STRINGS.ROOMS.TYPES.BEDROOM.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.BEDROOM.TOOLTIP"
-msgid "Sleeping in a comfortable Bedroom will improve Morale for Duplicants"
-msgstr "快適な寝室で寝ることにより、複製人間の士気が改善されます"
+msgid "Sleeping in a private Bedroom will improve Duplicants' Morale."
+msgstr "寝室で睡眠を取ると、複製人間の士気が上昇します。"
 
 #. STRINGS.ROOMS.TYPES.CONFLICTED
 msgctxt "STRINGS.ROOMS.TYPES.CONFLICTED"
@@ -416,7 +439,7 @@ msgstr "厩舎"
 
 #. STRINGS.ROOMS.TYPES.CREATUREPEN.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.CREATUREPEN.TOOLTIP"
-msgid "Stabled critters will be more productive and less hostile."
+msgid "Stabled critters will become more productive and less hostile."
 msgstr "家畜化された動物は生産率が上がり、敵対しなくなります。"
 
 #. STRINGS.ROOMS.TYPES.FARM.EFFECT
@@ -448,11 +471,8 @@ msgstr "大広間"
 
 #. STRINGS.ROOMS.TYPES.GREATHALL.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.GREATHALL.TOOLTIP"
-msgid ""
-"Eating and relaxing in a Great Hall will significantly improve Duplicants' "
-"Morale."
-msgstr ""
-"大広間で食事や休息を取ることにより、複製人間の士気が劇的に改善されます。"
+msgid "Eating in a Great Hall will significantly improve Duplicants' Morale."
+msgstr "大広間で食事や休息を取ると、複製人間の士気が劇的に上昇します。"
 
 #. STRINGS.ROOMS.TYPES.HOSPITAL.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.HOSPITAL.EFFECT"
@@ -486,7 +506,7 @@ msgstr "公衆トイレ"
 #. STRINGS.ROOMS.TYPES.LATRINE.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.LATRINE.TOOLTIP"
 msgid "Using a toilet in an enclosed room will improve Duplicants' Morale."
-msgstr "部屋に設置されたトイレを使うことにより、複製人間の士気が改善されます。"
+msgstr "部屋に設置されたトイレを使うことにより、複製人間の士気が上昇します。"
 
 #. STRINGS.ROOMS.TYPES.MACHINE_SHOP.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.MACHINE_SHOP.EFFECT"
@@ -501,8 +521,8 @@ msgstr "機械工場"
 #. STRINGS.ROOMS.TYPES.MACHINE_SHOP.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.MACHINE_SHOP.TOOLTIP"
 msgid ""
-"Engineers working in a Machine Shop can maintain buildings and increase the "
-"speed with which they produce items."
+"Engineers working in a Machine Shop can maintain buildings and increase "
+"their production speed."
 msgstr "機械工場で働く技術者は設備を稼働維持させ、生産速度を上昇させます。"
 
 #. STRINGS.ROOMS.TYPES.MASSAGE_CLINIC.EFFECT
@@ -517,8 +537,10 @@ msgstr "マッサージ部屋"
 
 #. STRINGS.ROOMS.TYPES.MASSAGE_CLINIC.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.MASSAGE_CLINIC.TOOLTIP"
-msgid "Massage tables relieve more stress when in a proper room."
-msgstr "適切な部屋に設置されたマッサージ台は、よりストレスを開放します。"
+msgid ""
+"Receiving massages at a Massage Clinic will significantly improve Stress "
+"reduction."
+msgstr "マッサージ部屋でマッサージを受けると、ストレスが劇的に軽減します。"
 
 #. STRINGS.ROOMS.TYPES.MESSHALL.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.MESSHALL.EFFECT"
@@ -532,11 +554,8 @@ msgstr "食堂"
 
 #. STRINGS.ROOMS.TYPES.MESSHALL.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.MESSHALL.TOOLTIP"
-msgid ""
-"Eating at a Mess Table will improve Morale for Duplicants if it is located "
-"within a Mess Hall."
-msgstr ""
-"食堂に設置された食卓で食事を取ることにより、複製人間の士気が改善されます。"
+msgid "Eating at a Mess Table in a Mess Hall will improve Duplicants' Morale."
+msgstr "食堂で食事を取ると、複製人間の士気が上昇します。"
 
 #. STRINGS.ROOMS.TYPES.NEUTRAL.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.NEUTRAL.EFFECT"
@@ -566,7 +585,7 @@ msgstr "洗面所"
 #. STRINGS.ROOMS.TYPES.PLUMBEDBATHROOM.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.PLUMBEDBATHROOM.TOOLTIP"
 msgid "Using a fully plumbed Washroom will improve Duplicants' Morale."
-msgstr "整備された洗面台を使うことにより、複製人間の士気が改善されます。"
+msgstr "整備された洗面台を使うことにより、複製人間の士気が上昇します。"
 
 #. STRINGS.ROOMS.TYPES.POWER_PLANT.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.POWER_PLANT.EFFECT"
@@ -581,8 +600,8 @@ msgstr "電力プラント"
 #. STRINGS.ROOMS.TYPES.POWER_PLANT.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.POWER_PLANT.TOOLTIP"
 msgid ""
-"Electrical Engineers can tune-up generators built within a Power Plant, "
-"improving their power production."
+"Electrical Engineers can tune-up generators built within a Power Plant and "
+"improve their power production."
 msgstr "電気工は電力プラント内の発電機の出力を調整することができます。"
 
 #. STRINGS.ROOMS.TYPES.PRIVATE_BATHROOM.EFFECT
@@ -636,9 +655,47 @@ msgstr "娯楽室"
 #. STRINGS.ROOMS.TYPES.REC_ROOM.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.REC_ROOM.TOOLTIP"
 msgid ""
-"Leisure time will further improve Morale for Duplicants visiting a "
+"Downtime shifts will further improve Morale for Duplicants visiting a "
 "Recreation Room."
-msgstr "娯楽室で過ごした時間は複製人間の士気をかなり改善します。"
+msgstr "娯楽室で過ごすと、複製人間の士気がかなり上昇します。"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.CEILING_HEIGHT.DESCRIPTION"
+#~ msgid "The ceiling must be at least {0} tiles above the floor"
+#~ msgstr "天井は少なくとも床から{0}タイル以上離れている必要があります"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.LUXURY_BED_SINGLE.NAME"
+#~ msgid "Single luxury bed"
+#~ msgstr "豪華なシングルベッド"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.RANCH_STATION.DESCRIPTION"
+#~ msgid "Requires a single Ranch Station"
+#~ msgstr "牧畜端末が必要です"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.RANCH_STATION.NAME"
+#~ msgid "Ranch Station"
+#~ msgstr "牧畜端末"
+
+#~ msgctxt "STRINGS.ROOMS.TYPES.BARRACKS.TOOLTIP"
+#~ msgid ""
+#~ "Sleeping in a bed will improve Morale for Duplicants if it is located "
+#~ "within Barracks."
+#~ msgstr ""
+#~ "宿舎に設置されたベッドで寝ることにより、複製人間の士気が改善されます。"
+
+#~ msgctxt "STRINGS.ROOMS.TYPES.BEDROOM.TOOLTIP"
+#~ msgid "Sleeping in a comfortable Bedroom will improve Morale for Duplicants"
+#~ msgstr "快適な寝室で寝ることにより、複製人間の士気が改善されます"
+
+#~ msgctxt "STRINGS.ROOMS.TYPES.MASSAGE_CLINIC.TOOLTIP"
+#~ msgid "Massage tables relieve more stress when in a proper room."
+#~ msgstr "適切な部屋に設置されたマッサージ台は、よりストレスを開放します。"
+
+#~ msgctxt "STRINGS.ROOMS.TYPES.MESSHALL.TOOLTIP"
+#~ msgid ""
+#~ "Eating at a Mess Table will improve Morale for Duplicants if it is "
+#~ "located within a Mess Hall."
+#~ msgstr ""
+#~ "食堂に設置された食卓で食事を取ることにより、複製人間の士気が改善されます。"
 
 #~ msgctxt "STRINGS.ROOMS.CRITERIA.REC_BUILDING.DESCRIPTION"
 #~ msgid "Requires one or more Massage Tables"
