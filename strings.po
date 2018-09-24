@@ -404,7 +404,7 @@ msgstr "{ElementTypes} 消費: {FlowRate}"
 #. STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.TOOLTIP"
 msgid "This building is consuming {ElementTypes} from storage"
-msgstr "この設備は格納庫から{ElementTypes}を {FlowRate} 使用しています"
+msgstr "この設備は格納庫から{ElementTypes}を消費しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONVEYOR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONVEYOR.NAME"
@@ -583,7 +583,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME"
 msgid "Scan Quality: {Quality}"
-msgstr "アンテナ精度: {0}"
+msgstr "アンテナ精度: {Quality}"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP"
@@ -751,7 +751,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.NAME"
 msgid "Emitting <link=\"OXYGEN\">Oxygen</link>: {FlowRate}"
-msgstr "<link=\"OXYGEN\">酸素</style>産出: {FlowRate}"
+msgstr "<link=\"OXYGEN\">酸素</link>産出: {FlowRate}"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.TOOLTIP"
@@ -2508,8 +2508,8 @@ msgid ""
 "The {ELEMENT} present below this turbine must be {MASS} more pressurized "
 "than the {ELEMENT} above it in order to turn the turbine"
 msgstr ""
-"このタービンの下側にある{ELEMENT}は、タービンが稼働するために{MASS}以上の圧力"
-"が必要です"
+"このタービンの下側にある{ELEMENT}は、タービンが稼働するために{ELEMENT}が"
+"{MASS}以上加圧されていなければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME"
@@ -5693,7 +5693,7 @@ msgid ""
 "\">Liquid Pipes</link>."
 msgstr ""
 "<link=\"LIQUIDPIPING\">液体用パイプ</link>を通して<link=\"ELEMENTSLIQUID\">液"
-"体</style>を放出します。"
+"体</link>を放出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.NAME"
@@ -13462,7 +13462,7 @@ msgid ""
 "\n"
 "Oil can be extracted from a reservoir with sufficient pressure."
 msgstr ""
-"原油溜まりは<link=\"CRUDEOIL\">原油</style>が造岩上に滲出したものです。\n"
+"原油溜まりは<link=\"CRUDEOIL\">原油</link>が造岩上に滲出したものです。\n"
 "\n"
 "原油は十分な圧力がある場合に原油溜まりから抽出できます。"
 
@@ -17555,7 +17555,7 @@ msgstr "{Selected}は移動しません"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_NARCOLEPSING
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_NARCOLEPSING"
 msgid "{Selected} is currently napping"
-msgstr "{Target}はうたた寝しています"
+msgstr "{Selected}はうたた寝しています"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_NOT_ANGRY
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_NOT_ANGRY"
@@ -18743,7 +18743,7 @@ msgstr "{0}を軽減"
 #. STRINGS.DUPLICANTS.DISEASES.MEDICINE.CURES_ANY
 msgctxt "STRINGS.DUPLICANTS.DISEASES.MEDICINE.CURES_ANY"
 msgid "Alleviates <link=\"DISEASE\">All Diseases</link>"
-msgstr "<link=\"DISEASE\">全ての{Diseases}</link>を軽減"
+msgstr "<link=\"DISEASE\">全ての病気</link>を軽減"
 
 #. STRINGS.DUPLICANTS.DISEASES.MEDICINE.CURES_ANY_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.MEDICINE.CURES_ANY_TOOLTIP"
@@ -20578,7 +20578,7 @@ msgid ""
 "Duration: {0}"
 msgstr ""
 "\n"
-"継続期間:"
+"継続期間: {0}"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.TOOKABREAK.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TOOKABREAK.NAME"
@@ -22463,7 +22463,7 @@ msgstr "{Target} を装備中"
 #. STRINGS.DUPLICANTS.STATUSITEMS.EQUIPPING.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EQUIPPING.TOOLTIP"
 msgid "This Duplicant is equipping a {Target}"
-msgstr "この複製人間は {Item} を装備中です"
+msgstr "この複製人間は {Target} を装備中です"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.FABRICATEDELIVERSTATUS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.FABRICATEDELIVERSTATUS.NAME"
@@ -24831,7 +24831,7 @@ msgid ""
 msgstr ""
 "(Cu<sub>2</sub>0) 銅鉱石は伝導性のある<link=\"RAWMETAL\">金属</link>です。\n"
 "\n"
-"<link=\"POWER\">Power</link> 電力</link>設備の材料に適しています。"
+"<link=\"POWER\">電力</link>設備の材料に適しています。"
 
 #. STRINGS.ELEMENTS.CUPRITE.NAME
 msgctxt "STRINGS.ELEMENTS.CUPRITE.NAME"
@@ -28309,7 +28309,7 @@ msgid ""
 "\n"
 "Increases the growth rate of one <link=\"PLANTS\">Plant</link>."
 msgstr ""
-"熟練農夫の手による特別製のlink=\"FERTILIZER\">肥料</link>です。\n"
+"熟練農夫の手による特別製の<link=\"FERTILIZER\">肥料</link>です。\n"
 "\n"
 "<link=\"PLANTS\">植物</link>の成長率を上昇させます。"
 
@@ -34553,8 +34553,7 @@ msgstr "冷却剤: {1} {0}"
 #. STRINGS.UI.BUILDINGEFFECTS.DECORPROVIDED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.DECORPROVIDED"
 msgid "<link=\"DECOR\">Decor</link>: {1} (Radius: {2} tiles)"
-msgstr ""
-"<link=\"DECOR\">装飾</link>: <style=\"{0}\">{1}</style>(半径 {2} タイル)"
+msgstr "<link=\"DECOR\">装飾</link>: {1} (半径: {2} タイル)"
 
 #. STRINGS.UI.BUILDINGEFFECTS.DIET_CONSUMED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_CONSUMED"
@@ -35056,17 +35055,17 @@ msgstr "このタイル上では複製人間は通常より {0} 倍速く移動�
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTCONSUMED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTCONSUMED"
 msgid "Consumes {1} of {0} when in use"
-msgstr "使用時に{1}を{2}消費します"
+msgstr "使用時に{0}を{1}消費します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTCONSUMEDPERUSE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTCONSUMEDPERUSE"
 msgid "Consumes {1} of {0} per use"
-msgstr "使用ごとに{1}を{2}消費します"
+msgstr "使用ごとに{0}を{1}消費します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTEMITTED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTEMITTED"
 msgid "Produces {1} of {0} when in use"
-msgstr "使用時に{1}を{2}産出します"
+msgstr "使用時に{0}を{1}産出します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTEMITTEDPERUSE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTEMITTEDPERUSE"
@@ -36220,7 +36219,7 @@ msgstr "追加情報"
 #. STRINGS.UI.DETAILTABS.DETAILS.NAME
 msgctxt "STRINGS.UI.DETAILTABS.DETAILS.NAME"
 msgid "Properties"
-msgstr "特性: {0}"
+msgstr "特性"
 
 #. STRINGS.UI.DETAILTABS.DETAILS.NET_STRESS
 msgctxt "STRINGS.UI.DETAILTABS.DETAILS.NET_STRESS"
@@ -43002,16 +43001,13 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_TINKER.DESCRIPTION"
 msgid ""
 "Trait: <link=\"PLANTS\">Crop Tending</link> and Micronutrient Fertilizer "
 "Crafting"
-msgstr ""
-"特性: <link=\"PLANTS\">作物栽培</link>および<link=\"MISC\">微量栄養素</link>"
-"作成"
+msgstr "特性: <link=\"PLANTS\">作物栽培</link>および微量栄養素作成"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION"
 msgid "Trait: <link=\"POWER\">Generator Tuning</link> and Microchip Crafting"
 msgstr ""
-"特性: <link=\"POWER\">発電機のチューニング</link>および<link=\"MICROCHIP\">マ"
-"イクロチップ</link>作成"
+"特性: <link=\"POWER\">発電機のチューニング</link>およびマイクロチップ作成"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION"
