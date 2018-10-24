@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -404,7 +404,7 @@ msgstr "{ElementTypes} 消費: {FlowRate}"
 #. STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.TOOLTIP"
 msgid "This building is consuming {ElementTypes} from storage"
-msgstr "この設備は格納庫から{ElementTypes}を {FlowRate} 使用しています"
+msgstr "この設備は格納庫から{ElementTypes}を消費しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONVEYOR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONVEYOR.NAME"
@@ -583,7 +583,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME"
 msgid "Scan Quality: {Quality}"
-msgstr "アンテナ精度: {0}"
+msgstr "アンテナ精度: {Quality}"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.TOOLTIP"
@@ -592,13 +592,13 @@ msgid ""
 "\n"
 "Decreased scan quality may be due to:\n"
 "    • Interference from nearby heavy machinery\n"
-"    • Rock or tile obstructing the dish's view of the sky"
+"    • Rock or tile obstructing the dish's line of sight on space"
 msgstr ""
 "このアンテナは現在精度 {Quality} で動作中です\n"
 "\n"
 "精度低下の原因は以下の通りです:\n"
 "    • 重機がそばにある\n"
-"    • 岩やタイルによって検出範囲が阻害されている"
+"    • 岩やタイルによってアンテナの視界が阻害されている"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.NAME"
@@ -751,7 +751,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.NAME"
 msgid "Emitting <link=\"OXYGEN\">Oxygen</link>: {FlowRate}"
-msgstr "<link=\"OXYGEN\">酸素</style>産出: {FlowRate}"
+msgstr "<link=\"OXYGEN\">酸素</link>産出: {FlowRate}"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.TOOLTIP"
@@ -918,6 +918,26 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.FOOD_CONTAINERS_OUTSIDE_RANGE.TOOLTIP"
 msgid "Recuperating Duplicants must have food available within {0} cells"
 msgstr "回復中の複製人間の周囲 {0} セル以内に食糧が必要です"
 
+#. STRINGS.BUILDING.STATUSITEMS.GANTRY.AUTOMATION_CONTROL
+msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.AUTOMATION_CONTROL"
+msgid "Automation Control: {0}"
+msgstr "自動化制御: {0}"
+
+#. STRINGS.BUILDING.STATUSITEMS.GANTRY.EXTENDED
+msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.EXTENDED"
+msgid "Extended"
+msgstr "展開済"
+
+#. STRINGS.BUILDING.STATUSITEMS.GANTRY.MANUAL_CONTROL
+msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.MANUAL_CONTROL"
+msgid "Manual Control: {0}"
+msgstr "手動制御: {0}"
+
+#. STRINGS.BUILDING.STATUSITEMS.GANTRY.RETRACTED
+msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.RETRACTED"
+msgid "Retracted"
+msgstr "格納済"
+
 #. STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME"
 msgid "Empty Pipe"
@@ -1075,8 +1095,8 @@ msgstr "この設備が動作するには液体の中に沈めないといけま
 
 #. STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.NAME"
-msgid "Incoming Meteors"
-msgstr "隕石襲来"
+msgid "Incoming Object Detected"
+msgstr "飛来物検知"
 
 #. STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INCOMINGMETEORS.TOOLTIP"
@@ -1570,14 +1590,17 @@ msgstr "アンテナネットワーク品質: {TotalQuality}"
 #. STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP"
 msgid ""
-"Your scanner network is scanning at {TotalQuality} effectiveness, and will "
-"detect meteor showers {WorstTime} to {BestTime} before they strike\n"
+"Your scanner network is scanning at {TotalQuality} effectiveness\n"
+"\n"
+"It will detect incoming objects {WorstTime} to {BestTime} before they "
+"arrive\n"
 "\n"
 "Build multiple detectors and ensure they're each scanning effectively for "
-"the best results"
+"the best detection results"
 msgstr ""
-"アンテナネットワークは{TotalQuality}の精度で稼働中です。流星群の着弾する"
-"{WorstTime}前から{BestTime}前の範囲で検知できます\n"
+"アンテナネットワークは{TotalQuality}の精度で稼働中です。\n"
+"\n"
+"飛来物が到達する{WorstTime}前から{BestTime}前の範囲で検知できます\n"
 "\n"
 "複数のアンテナを建築し、お互いの検出範囲を被せると、最大限の効果を発揮します"
 
@@ -1617,6 +1640,29 @@ msgstr ""
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP"
 msgid "I am ready to print a new colony member"
 msgstr "新しい人員の製造準備ができたようだ"
+
+#. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NAME"
+msgid "No studyable starmap destination selected"
+msgstr "調査可能な目的地が未選択"
+
+#. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NOTIFICATION_NAME
+msgctxt ""
+"STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NOTIFICATION_NAME"
+msgid "<link=\"TELESCOPE\">Telescope</link> idle"
+msgstr "<link=\"TELESCOPE\">観測望遠鏡</link> 待機中"
+
+#. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NOTIFICATION_TOOLTIP
+msgctxt ""
+"STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED."
+"NOTIFICATION_TOOLTIP"
+msgid "These buildings need a space destination to study"
+msgstr "これらの設備は調査対象が必要です"
+
+#. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.TOOLTIP"
+msgid "Select an unknown destination in the starmap to study"
+msgstr "星図から未知の目的地を選択してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.NAME"
@@ -1737,6 +1783,42 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.NOPOWERCONSUMERS.TOOLTIP"
 msgid "No buildings are connected to this power source"
 msgstr "この電源を消費できる設備と接続されていません"
 
+#. STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED.NAME"
+msgid "No Research Focus or Starmap Destination Selected"
+msgstr "研究課題または星図未選択"
+
+#. STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED.NOTIFICATION_NAME
+msgctxt ""
+"STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED."
+"NOTIFICATION_NAME"
+msgid "No <link=\"TECH\">Research Focus</link> or Starmap destination selected"
+msgstr "<link=\"TECH\">研究課題</link>または星図が未選択です"
+
+#. STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED.NOTIFICATION_TOOLTIP
+msgctxt ""
+"STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED."
+"NOTIFICATION_TOOLTIP"
+msgid ""
+"Select a Project in the <color=#833A5FFF>Research Tree</color> "
+"{RESEARCH_MENU_KEY} or a Destination in the <color=#833A5FFF>Starmap</color> "
+"{STARMAP_MENU_KEY}"
+msgstr ""
+"<color=#833A5FFF>研究ツリー</color> {RESEARCH_MENU_KEY} からプロジェクトを選"
+"択するか、<color=#833A5FFF>星図</color> {STARMAP_MENU_KEY} から目的地を選択し"
+"てください"
+
+#. STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED.TOOLTIP"
+msgid ""
+"Select a Project in the <color=#833A5FFF>Research Tree</color> "
+"{RESEARCH_MENU_KEY} or a Destination in the <color=#833A5FFF>Starmap</color> "
+"{STARMAP_MENU_KEY}"
+msgstr ""
+"<color=#833A5FFF>研究ツリー</color> {RESEARCH_MENU_KEY} からプロジェクトを選"
+"択するか、<color=#833A5FFF>星図</color> {STARMAP_MENU_KEY} から目的地を選択し"
+"てください"
+
 #. STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NAME"
 msgid "No Research Focus Selected"
@@ -1750,20 +1832,20 @@ msgstr "<link=\"TECH\">研究課題</link>が未選択です"
 #. STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NOTIFICATION_TOOLTIP"
 msgid ""
-"Open the <color=#833A5FFF>Research Tree</color> [R] to select a new <link="
-"\"TECH\">Research</link> project"
+"Open the <color=#833A5FFF>Research Tree</color> to select a new <link=\"TECH"
+"\">Research</link> project"
 msgstr ""
-"<color=#833A5FFF>研究ツリー</color>[R] を開いて、新しい<link=\"TECH\">研究</"
-"link>プロジェクトを選んでください"
+"<color=#833A5FFF>研究ツリー</color>を開いて、新しい<link=\"TECH\">研究</link>"
+"プロジェクトを選んでください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.TOOLTIP"
 msgid ""
-"Open the <color=#833A5FFF>Research Tree</color> [R] to select a new <link="
-"\"TECH\">Research</link> project"
+"Open the <color=#833A5FFF>Research Tree</color> {RESEARCH_MENU_KEY} to "
+"select a new <link=\"TECH\">Research</link> project"
 msgstr ""
-"<color=#833A5FFF>研究ツリー</color>[R] を開いて、新しい<link=\"TECH\">研究</"
-"link>プロジェクトを選んでください"
+"<color=#833A5FFF>研究ツリー</color> {RESEARCH_MENU_KEY} を開いて、新しい"
+"<link=\"TECH\">研究</link>プロジェクトを選んでください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NORMAL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NORMAL.NAME"
@@ -1923,6 +2005,29 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.OVERHEATED.TOOLTIP"
 msgid "This building is taking damage and will meltdown if not cooled"
 msgstr ""
 "この設備はダメージを受けており、冷却しなければメルトダウンしてしまうでしょう"
+
+#. STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME"
+msgid "Launch Path Blocked"
+msgstr "ロケット打ち上げ軌道阻害"
+
+#. STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.TILE_FORMAT
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.TILE_FORMAT"
+msgid "Solid {0}"
+msgstr "個体の {0}"
+
+#. STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.TOOLTIP"
+msgid ""
+"There are solid obstructions in this rocket's launch trajectory:\n"
+"    • {0}\n"
+"\n"
+"This rocket requires a clear flight path for launch"
+msgstr ""
+"このロケットの打ち上げ軌道に阻害物があります:\n"
+"    • {0}\n"
+"\n"
+"ロケットの打ち上げ軌道はきれいに片付いている必要があります"
 
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME"
@@ -2287,6 +2392,16 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NEED_CONFIGURATION.TOOLTIP"
 msgid "Set this Dock to store an Exosuit or remain on Standby"
 msgstr "ドックにEXOスーツを収納するか、待機状態にします"
 
+#. STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NO_FUEL.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NO_FUEL.NAME"
+msgid "Current Status: No Fuel"
+msgstr "現在の状態: 燃料なし"
+
+#. STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NO_FUEL.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NO_FUEL.TOOLTIP"
+msgid "This Dock does not contain enough fuel to refill a suit"
+msgstr "ドックはEXOスーツに充填するための十分な燃料がありません"
+
 #. STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NO_OXYGEN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NO_OXYGEN.NAME"
 msgid "Current Status: No Oxygen"
@@ -2294,7 +2409,7 @@ msgstr "現在の状態: 酸素なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NO_OXYGEN.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NO_OXYGEN.TOOLTIP"
-msgid "This Dock is not receiving enough oxygen to refill an Exosuit"
+msgid "This Dock does not contain enough oxygen to refill a suit"
 msgstr "ドックはEXOスーツに充填するための十分な酸素がありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.NOT_OPERATIONAL.NAME
@@ -2508,8 +2623,8 @@ msgid ""
 "The {ELEMENT} present below this turbine must be {MASS} more pressurized "
 "than the {ELEMENT} above it in order to turn the turbine"
 msgstr ""
-"このタービンの下側にある{ELEMENT}は、タービンが稼働するために{MASS}以上の圧力"
-"が必要です"
+"このタービンの下側にある{ELEMENT}は、タービンが稼働するために{ELEMENT}が"
+"{MASS}以上加圧されていなければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME"
