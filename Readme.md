@@ -2,7 +2,7 @@ Oxygen Not Included 日本語化
 ====
 
 Klei Entertainment 制作のスペースコロニー経営ゲーム「[Oxygen Not Included](http://store.steampowered.com/app/457140/)」の日本語化作業を行っています。  
-Space Industry Upgradeに対応しています。
+QoL Upgrade Mk1に対応しています。
 
 ## 翻訳サンプル
 <image src="https://raw.githubusercontent.com/wiki/nsk4762jp/OxygenNotIncluded-Japanese/sample.jpg" width="75%">
@@ -43,6 +43,8 @@ MIT License
 
 [seisuke](https://github.com/seisuke)
 
+[shohei918](https://github.com/shohei918)
+
 
 ## 翻訳の手伝いをしてくれる人を募集しています
 
@@ -51,6 +53,7 @@ MIT License
 1. 自分用の翻訳ブランチを作成します。  
 1. poフォルダ内のカテゴリ分けされた翻訳ファイルから任意のファイルを翻訳します。  
 poファイルの編集には [POEdit](https://poedit.net/) がお勧めです。  
+[翻訳ポリシー(案)](https://github.com/nsk4762jp/OxygenNotIncluded-Japanese/wiki)に沿った翻訳でお願いします。  
 1. コミットします。  
 1. プルリクエストを出す前に、翻訳ブランチの最新状況を自分のブランチに取り込みます。  
 1. プルリクエストを出します。
