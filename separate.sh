@@ -14,5 +14,4 @@ msggrep -J -E -e 'STRINGS.MISC' strings.po > po/misc.po
 msggrep -J -E -e 'STRINGS.NAMEGEN' strings.po  > po/namegen.po
 msggrep -J -E -e 'STRINGS.RESEARCH' strings.po > po/research.po
 msggrep -J -E -e 'STRINGS.ROOMS' strings.po  > po/rooms.po
-msggrep -J -E -e 'STRINGS.SETITEMS' strings.po  > po/set_items.po
 msggrep -J -E -e 'STRINGS.UI' strings.po  > po/ui.po
