@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -378,22 +378,33 @@ msgid "Notes on measuring heat energy"
 msgstr "熱エネルギー測定についての覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY"
+#| msgid ""
+#| "New Duplicants are no longer available for printing.\n"
+#| "Countdown to the next production was rebooted."
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY"
 msgid ""
-"New Duplicants are no longer available for printing.\n"
+"The Printing Pod is no longer available for printing.\n"
 "Countdown to the next production was rebooted."
 msgstr ""
 "新しい複製人間は製造できません。\n"
 "次の製造工程再起動のカウントダウンを始めます。"
 
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.TOOLTIP"
+#| msgid "The printable Duplicants have been reabsorbed"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.NAME"
-msgid "New Duplicants have been reabsorbed"
-msgstr "新しい複製人間は再吸収されました"
+msgid "Printables have been reabsorbed"
+msgstr "製造可能な複製人間は再吸収されました"
 
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.TOOLTIP"
+#| msgid "The printable Duplicants have been reabsorbed"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.TOOLTIP"
-msgid "The printable Duplicants have been reabsorbed"
+msgid "Printables have been reabsorbed"
 msgstr "製造可能な複製人間は再吸収されました"
 
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTDIED.NAME
@@ -405,6 +416,20 @@ msgstr "複製人間が死亡しました"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTDIED.TOOLTIP"
 msgid "These Duplicants have died:"
 msgstr "これらの複製人間は死亡しました:"
+
+#. STRINGS.MISC.NOTIFICATIONS.EMERGENCY_CHORES.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.PENDINGCLEAR.NAME"
+#| msgid "Sweep Errand"
+msgctxt "STRINGS.MISC.NOTIFICATIONS.EMERGENCY_CHORES.NAME"
+msgid "Emergency Errands"
+msgstr "掃除作業"
+
+#. STRINGS.MISC.NOTIFICATIONS.EMERGENCY_CHORES.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.EMERGENCY_CHORES.TOOLTIP"
+msgid ""
+"The colony is in Red Alert mode because Emergency Priority has been set."
+msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.FABRICATOREMPTY.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.FABRICATOREMPTY.NAME"
@@ -607,13 +632,21 @@ msgstr ""
 "\"WASHBASIN\">洗面台</link>を建設出来ます"
 
 #. STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.TOOLTIP"
+#| msgid "The printable Duplicants have been reabsorbed"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.NAME"
-msgid "New Duplicants have been reabsorbed"
-msgstr "複製人間は再吸収されました"
+msgid "Printables have been reabsorbed"
+msgstr "製造可能な複製人間は再吸収されました"
 
 #. STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.TOOLTIP"
+#| msgid "The printable Duplicants have been Oozed"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.TOOLTIP"
-msgid "The printable Duplicants have been Oozed"
+msgid ""
+"The care packages have been disintegrated and printable Duplicants have been "
+"Oozed"
 msgstr "製造可能な複製人間は再吸収されました"
 
 #. STRINGS.MISC.NOTIFICATIONS.INCREASEDEXPECTATIONS.NAME
@@ -1644,6 +1677,22 @@ msgid ""
 "Object is marked and will be moved to compost once a Duplicant is available"
 msgstr "マークを付け、複製人間の手が空いた時に堆肥置き場へ移動されます"
 
+#. STRINGS.MISC.STATUSITEMS.MARKEDFORCOMPOSTINSTORAGE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.COMPOSTWORKABLE.NAME"
+#| msgid "Compost"
+msgctxt "STRINGS.MISC.STATUSITEMS.MARKEDFORCOMPOSTINSTORAGE.NAME"
+msgid "Composted"
+msgstr "堆肥作成"
+
+#. STRINGS.MISC.STATUSITEMS.MARKEDFORCOMPOSTINSTORAGE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.ELEMENTALTEMPERATURE.TOOLTIP"
+#| msgid "The selected object is currently {Temp}"
+msgctxt "STRINGS.MISC.STATUSITEMS.MARKEDFORCOMPOSTINSTORAGE.TOOLTIP"
+msgid "The selected object is currently in the compost"
+msgstr "選択している物体の温度は {Temp} です"
+
 #. STRINGS.MISC.STATUSITEMS.MARKEDFORDISINFECTION.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.MARKEDFORDISINFECTION.NAME"
 msgid "Disinfect Errand"
@@ -2261,6 +2310,15 @@ msgctxt "STRINGS.MISC.TAGS.MARKEDFORCOMPOST"
 msgid "Marked For Compost"
 msgstr "堆肥用にマーク済"
 
+# 格納庫以外にも、農地タイルでこのアクションが使用できた
+#. STRINGS.MISC.TAGS.MARKEDFORCOMPOSTINSTORAGE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.EMPTYSTORAGE.NAME"
+#| msgid "Empty Storage"
+msgctxt "STRINGS.MISC.TAGS.MARKEDFORCOMPOSTINSTORAGE"
+msgid "In Compost Storage"
+msgstr "貯蔵分を空ける"
+
 #. STRINGS.MISC.TAGS.MASSAGE_TABLE
 msgctxt "STRINGS.MISC.TAGS.MASSAGE_TABLE"
 msgid "Massage Table"
@@ -2429,7 +2487,7 @@ msgstr "毒"
 #. STRINGS.MISC.TAGS.TRANSPARENT
 msgctxt "STRINGS.MISC.TAGS.TRANSPARENT"
 msgid "Transparent"
-msgstr "輸送"
+msgstr "透過"
 
 #. STRINGS.MISC.TAGS.UNBREATHABLE
 msgctxt "STRINGS.MISC.TAGS.UNBREATHABLE"
@@ -2450,6 +2508,14 @@ msgstr "配線関連の配送"
 msgctxt "STRINGS.MISC.TUTORIAL.DONT_SHOW_AGAIN"
 msgid "Don't Show Again"
 msgstr "今後表示しない"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.NAME"
+#~ msgid "New Duplicants have been reabsorbed"
+#~ msgstr "新しい複製人間は再吸収されました"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.NAME"
+#~ msgid "New Duplicants have been reabsorbed"
+#~ msgstr "複製人間は再吸収されました"
 
 #~ msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.NAME"
 #~ msgid "TIP: Duplicant Immune Systems"
@@ -2568,10 +2634,6 @@ msgstr "今後表示しない"
 #~ msgctxt "STRINGS.MISC.TAGS.METAL"
 #~ msgid "Raw Metal"
 #~ msgstr "金属原石"
-
-#~ msgctxt "STRINGS.MISC.TAGS.RAREMATERIALS"
-#~ msgid "Rare Material"
-#~ msgstr "希少材料"
 
 #~ msgctxt "STRINGS.MISC.TAGS.RAWPRECIOUSMETAL"
 #~ msgid "Raw Precious Metal"

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -1163,10 +1163,16 @@ msgid "These buildings must be rebuilt with non-overlapping ports:"
 msgstr "これらの設備は入出力が被らないように再建設する必要があります:"
 
 #. STRINGS.BUILDING.STATUSITEMS.INVALIDPORTOVERLAP.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.INVALIDPORTOVERLAP.TOOLTIP"
+#| msgid ""
+#| "Ports on this building overlap those on another building. This building "
+#| "must be rebuilt in a valid location."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INVALIDPORTOVERLAP.TOOLTIP"
 msgid ""
-"Ports on this building overlap those on another building. This building must "
-"be rebuilt in a valid location."
+"Ports on this building overlap those on another building\n"
+"------------------\n"
+"This building must be rebuilt in a valid location"
 msgstr ""
 "この設備の入出力は他の設備と被っています。正しい場所に再建設する必要がありま"
 "す。"
@@ -1636,36 +1642,57 @@ msgid "This resource cannot be mined by Duplicant tools"
 msgstr "複製人間はこの資源を採掘できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_RANCHING"
+#| msgid "No Critters Available"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NAME"
-msgid "New Duplicants Available"
-msgstr "複製人間の準備完了"
+msgid "Printables Available"
+msgstr "動物不在"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NOTIFICATION_NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NOTIFICATION_NAME"
+#| msgid "New Duplicants are available"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NOTIFICATION_NAME"
-msgid "New Duplicants are available"
+msgid "New Printables are available"
 msgstr "新しい複製人間を複製できます"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NOTIFICATION_TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NOTIFICATION_TOOLTIP"
+#| msgid ""
+#| "The Printing Pod <color=#F44A47><b>[H]</b></color> is ready to print a "
+#| "new Duplicant.\n"
+#| "I'll need to select a DNA blueprint:"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NOTIFICATION_TOOLTIP"
 msgid ""
 "The Printing Pod <color=#F44A47><b>[H]</b></color> is ready to print a new "
-"Duplicant.\n"
-"I'll need to select a DNA blueprint:"
+"Duplicant or care package.\n"
+"I'll need to select a blueprint:"
 msgstr ""
 "製造ポッド<color=#F44A47><b>[H]</b></color> は新しい複製人間の複製準備が整っ"
 "たようだ。\n"
 "DNA設計図を選ぶとしよう:"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP"
+#| msgid "I am ready to print a new colony member"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.TOOLTIP"
-msgid "I am ready to print a new colony member"
+msgid "I am ready to print a new colony member or care package"
 msgstr "新しい人員の製造準備ができたようだ"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHSELECTED.NAME"
+#| msgid "No Research Focus Selected"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NAME"
-msgid "No studyable starmap destination selected"
-msgstr "調査可能な目的地が未選択"
+msgid "No Anaylsis Focus Selected"
+msgstr "研究課題未選択"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NOTIFICATION_NAME
 msgctxt ""
@@ -1674,15 +1701,23 @@ msgid "<link=\"TELESCOPE\">Telescope</link> idle"
 msgstr "<link=\"TELESCOPE\">観測望遠鏡</link> 待機中"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NOTIFICATION_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.AWAITINGARTING.TOOLTIP"
+#| msgid "This building requires a Duplicant's artistic touch"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED."
 "NOTIFICATION_TOOLTIP"
-msgid "These buildings need a space destination to study"
-msgstr "これらの設備は調査対象が必要です"
+msgid "These buildings require an analysis focus:"
+msgstr "この設備は複製人間の芸術的手腕が必要です"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.TOOLTIP"
+#| msgid "Select an unknown destination in the starmap to study"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.TOOLTIP"
-msgid "Select an unknown destination in the starmap to study"
+msgid ""
+"Select an unknown destination from the Starmap <color=#F44A47><b>[R]</b></"
+"color> to begin analysis"
 msgstr "星図から未知の目的地を選択してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLERESEARCHSELECTED.NAME
@@ -2835,15 +2870,24 @@ msgid "This building is generating {Wattage} of power"
 msgstr "この設備は {Wattage} の電力を生成しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.WATTSON.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.WATTSON.NAME"
+#| msgid "Next Duplicant: {TimeRemaining}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WATTSON.NAME"
-msgid "Next Duplicant: {TimeRemaining}"
+msgid "Next Print: {TimeRemaining}"
 msgstr "次の複製まで: {TimeRemaining}"
 
 #. STRINGS.BUILDING.STATUSITEMS.WATTSON.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.WATTSON.TOOLTIP"
+#| msgid ""
+#| "The Printing Pod can print out new Duplicants over time.\n"
+#| "The next one will be ready in {TimeRemaining}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WATTSON.TOOLTIP"
 msgid ""
-"The Printing Pod can print out new Duplicants over time.\n"
-"The next one will be ready in {TimeRemaining}"
+"The Printing Pod can print out new Duplicants and useful resources over "
+"time.\n"
+"The next print be ready in {TimeRemaining}"
 msgstr ""
 "製造ポッドは時間経過で新しく人間を複製できます。\n"
 "次の複製準備完了まで残り {TimeRemaining} です"
@@ -2946,6 +2990,20 @@ msgstr "定格"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKING.TOOLTIP"
 msgid "This building is working as intended"
 msgstr "この設備は想定通りに稼働中です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.NEWDUPLICANTSAVAILABLE.NAME"
+#~ msgid "New Duplicants Available"
+#~ msgstr "複製人間の準備完了"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED.NAME"
+#~ msgid "No studyable starmap destination selected"
+#~ msgstr "調査可能な目的地が未選択"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDING.STATUSITEMS.NOAPPLICABLEANALYSISSELECTED."
+#~ "NOTIFICATION_TOOLTIP"
+#~ msgid "These buildings need a space destination to study"
+#~ msgstr "これらの設備は調査対象が必要です"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.TOOLTIP"
 #~ msgid "This pipe system is not serviceable"
