@@ -5419,7 +5419,7 @@ msgid ""
 "\n"
 "Cannot be run through wall and floor tile."
 msgstr ""
-"通常の<link=\"WIRE\">Wire</link>より大きな<link=\"POWER\">ワット数</link>を、"
+"通常の<link=\"WIRE\">電線</link>より大きな<link=\"POWER\">ワット数</link>を、"
 "過負荷を起こさずに扱えます。\n"
 "\n"
 "壁や床のタイル中に敷設することができません。"
@@ -22031,7 +22031,7 @@ msgstr ""
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.LEGEND_HOVERTEXT
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.LEGEND_HOVERTEXT"
 msgid "Food Poisoning Germs Present\n"
-msgstr "食中毒の原因となる病原菌を表示\n"
+msgstr "食中毒の原因となる病原菌がいる場所です\n"
 
 #. STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.NAME
 msgctxt "STRINGS.DUPLICANTS.DISEASES.FOODPOISONING.NAME"
@@ -22287,7 +22287,7 @@ msgstr ""
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.LEGEND_HOVERTEXT
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.LEGEND_HOVERTEXT"
 msgid "Slimelung Germs Present\n"
-msgstr "腐肺病の原因となる病原菌を表示\n"
+msgstr "腐肺病の原因となる病原菌がいる場所です\n"
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.NAME
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.NAME"
@@ -38893,10 +38893,13 @@ msgctxt "STRINGS.UI.BUILDCATEGORIES.REFINING.TOOLTIP"
 msgid "Use the resources I want, filter the ones I don't. {Hotkey}"
 msgstr "いらないものはろ過して、欲しいものだけ使いましょう。{Hotkey}"
 
+# ロケット工 で改行されてしまうので改行追加
 #. STRINGS.UI.BUILDCATEGORIES.ROCKETRY.NAME
 msgctxt "STRINGS.UI.BUILDCATEGORIES.ROCKETRY.NAME"
 msgid "<link=\"BUILDCATEGORYROCKETRY\">Rocketry</link>"
-msgstr "<link=\"BUILDCATEGORYROCKETRY\">ロケット工学</link>"
+msgstr ""
+"<link=\"BUILDCATEGORYROCKETRY\">ロケット\n"
+"工学</link>"
 
 #. STRINGS.UI.BUILDCATEGORIES.ROCKETRY.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.ROCKETRY.TOOLTIP"
@@ -44141,7 +44144,7 @@ msgstr "<link=\"HEAT\">冷却効果</link>"
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CIRCUIT_OVERLOADED
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CIRCUIT_OVERLOADED"
 msgid "Overload Damage"
-msgstr "過負荷ダメージ"
+msgstr "過剰電圧ダメージ"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.COMET
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.COMET"
@@ -45739,7 +45742,7 @@ msgid ""
 "* Lighting and aesthetically pleasing buildings increase decor"
 msgstr ""
 "<b>良質な装飾</b>\n"
-"十分な装飾値を持つエリア\n"
+"十分な装飾値を持つエリアです\n"
 "* 照明や、美的に素晴らしい設備は装飾値を上げます"
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR
@@ -45750,7 +45753,7 @@ msgid ""
 "* Resources on the floor are considered \"debris\" and will decrease decor"
 msgstr ""
 "<b>貧相な装飾</b>\n"
-"装飾値が低いエリア\n"
+"装飾値が低いエリアです\n"
 "* 床に転がっている素材は「がれき」とみなされ、装飾値が下がります"
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOTAL
@@ -45860,7 +45863,7 @@ msgid ""
 "disease spread"
 msgstr ""
 "<b>病原菌源</b>\n"
-"病原菌が生産されるエリア\n"
+"病原菌が生産されるエリアです\n"
 "* 洗面台または消毒剤を設置することで病原菌の拡散を防ぎます"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS
@@ -46093,7 +46096,7 @@ msgid ""
 "Must be on the same network as at least one <link=\"GASPIPING\">Intake</link>"
 msgstr ""
 "<b>出力パイプ</b>\n"
-"出力はパイプに気体を排気する\n"
+"出力はパイプに気体を排気します\n"
 "------------------\n"
 "同じ経路にある最低一つの<link=\"GASPIPING\">入力</link>と繋がっている必要があ"
 "ります"
@@ -46131,7 +46134,7 @@ msgid ""
 "Must be on the same network as at least one <link=\"GASPIPING\">Output</link>"
 msgstr ""
 "<b>設備側入力</b>\n"
-"入力はパイプから気体を吸気する\n"
+"入力はパイプから気体を吸気します\n"
 "------------------\n"
 "* 同じ経路にある最低一つの<link=\"GASPIPING\">出力</link>と繋がっている必要が"
 "あります"
@@ -46178,7 +46181,7 @@ msgstr ""
 "<b>低体温の危険性</b>\n"
 "適応不可エリア\n"
 "------------------\n"
-"複製人間はこの環境下では熱を受け取るより多くの熱放出をする\n"
+"複製人間はこの環境下では熱を受け取るより多くの熱を放出します\n"
 "* あったかセーターは複製人間の体温を保つのに役立ちます"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING
@@ -46193,7 +46196,7 @@ msgstr ""
 "<b>過剰体温の危険性</b>\n"
 "不快なほど温かい\n"
 "------------------\n"
-"複製人間はこの環境下では熱を放出するより多くの熱を吸収する\n"
+"複製人間はこの環境下では熱を放出するより多くの熱を吸収します\n"
 "* クールベストは複製人間の体温を放熱させるのに役立ちます"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.NEUTRAL
@@ -46296,7 +46299,7 @@ msgid ""
 "Duplicants cannot see in these areas"
 msgstr ""
 "<b>照明外範囲</b>\n"
-"複製人間が何も見ることができない範囲"
+"複製人間が何も見ることができない範囲です"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA"
@@ -46305,7 +46308,7 @@ msgid ""
 "Duplicants have adequate lighting in these areas"
 msgstr ""
 "<b>照明範囲</b>\n"
-"複製人間に十分な明かりがある"
+"複製人間に十分な明かりがある範囲です"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.NAME
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.NAME"
@@ -46478,7 +46481,7 @@ msgid ""
 "Receives a signal from an automation grid"
 msgstr ""
 "<b>入力ポート</b>\n"
-"自動化グリッドからシグナルを受信しています"
+"自動化グリッドからシグナルを受信します"
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.ONE
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.ONE"
@@ -46487,7 +46490,7 @@ msgid ""
 "This port is currently active"
 msgstr ""
 "<b>アクティブ</b>\n"
-"これらのポートは現在アクティブです"
+"このポートは現在アクティブです"
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.OUTPUT
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.OUTPUT"
@@ -46496,7 +46499,7 @@ msgid ""
 "Sends a signal out to an automation grid"
 msgstr ""
 "<b>出力ポート</b>\n"
-"自動化グリッドにシグナルを送信しています"
+"自動化グリッドにシグナルを送信します"
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RESET_UPDATE
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RESET_UPDATE"
@@ -46510,9 +46513,7 @@ msgstr ""
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.ZERO
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.ZERO"
 msgid "<b>Standby</b>This port is currently on standby"
-msgstr ""
-"<b>スタンバイ</b>\n"
-"これらのポートは現在スタンバイです"
+msgstr "<b>スタンバイ</b>このポートは現在スタンバイです"
 
 #. STRINGS.UI.OVERLAYS.LOGIC.ZERO
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.ZERO"
@@ -46815,7 +46816,7 @@ msgid ""
 "Low oxygen concentrations"
 msgstr ""
 "<b>低濃度</b>\n"
-"酸素濃度が薄い"
+"低い酸素濃度"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND4"
@@ -47506,8 +47507,8 @@ msgid ""
 "This Duplicant's Morale is too low to handle the rigors of this position, "
 "which will cause them Stress over time."
 msgstr ""
-"複製人間の士気が割り当てられた職業の基準値より下回っているため、ストレスを受"
-"けています。"
+"複製人間の士気が割り当てられた職業の基準値より下回っているため、時間とともに"
+"ストレスを受けます。"
 
 #. STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_DESC_JOB
 msgctxt "STRINGS.UI.ROLES_SCREEN.EXPECTATION_ALERT_DESC_JOB"
@@ -48845,12 +48846,12 @@ msgstr "ハッチ初期種の保存された骨です。"
 #. STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.NAME"
 msgid "Pristine Fossil"
-msgstr "原始の化石"
+msgstr "自然のままの化石"
 
 #. STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.DESCRIPTION"
 msgid "The sequel to \"Lava Lamp\"."
-msgstr "\"ラバランプ\"の後継品。"
+msgstr "\"溶岩ランプ\"の後継品。"
 
 #. STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.NAME"
@@ -49007,7 +49008,7 @@ msgstr "砂岩"
 #. STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.DESCRIPTION"
 msgid "The name \"Pesquet\" is barely legible on the inside."
-msgstr "内側に\"ペスケ\"という名前が、なんとか判読できます。"
+msgstr "\"ペスケ\"という名前は、内側ではほとんど判読出来ません。"
 
 #. STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.NAME"
@@ -49040,12 +49041,12 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.SOLARSYSTEM.DESCRIPTION"
 msgid ""
 "A marvel of the cosmos, inside this display is an entirely self-contained "
 "solar system."
-msgstr "驚異的なことに、この展示の中の宇宙は完全に自己完結した恒星系です。"
+msgstr "このディスプレイの中の宇宙の驚異は、完全な自己完結型の太陽光発電です。"
 
 #. STRINGS.UI.SPACEARTIFACTS.SOLARSYSTEM.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SOLARSYSTEM.NAME"
 msgid "Self-Contained System"
-msgstr "自己完結型システム"
+msgstr "自己完結型のシステム"
 
 #. STRINGS.UI.SPACEARTIFACTS.STETHOSCOPE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.STETHOSCOPE.DESCRIPTION"
@@ -49092,7 +49093,7 @@ msgstr "石炭隕石"
 #. STRINGS.UI.SPACEDESTINATIONS.ASTEROIDS.METALLICASTEROID.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.ASTEROIDS.METALLICASTEROID.DESCRIPTION"
 msgid "A shimmering conglomerate of various metals."
-msgstr "様々な金属の輝く集合体。"
+msgstr "様々な金属の輝く集合体です。"
 
 #. STRINGS.UI.SPACEDESTINATIONS.ASTEROIDS.METALLICASTEROID.NAME
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.ASTEROIDS.METALLICASTEROID.NAME"
@@ -49287,7 +49288,7 @@ msgstr "採集元: {1}"
 #. STRINGS.UI.STARMAP.CANT_CARRY_ELEMENT
 msgctxt "STRINGS.UI.STARMAP.CANT_CARRY_ELEMENT"
 msgid "{0} installation required to retrieve material"
-msgstr "資材を受け取るためには{0}の設置が必要です"
+msgstr "資源を受け取るためには{0}の設置が必要です"
 
 #. STRINGS.UI.STARMAP.CANT_LAUNCH_MISSION
 msgctxt "STRINGS.UI.STARMAP.CANT_LAUNCH_MISSION"
@@ -49615,7 +49616,7 @@ msgstr "タイプ"
 #. STRINGS.UI.STARMAP.LISTTITLES.WORLDCOMPOSITION
 msgctxt "STRINGS.UI.STARMAP.LISTTITLES.WORLDCOMPOSITION"
 msgid "World Composition"
-msgstr "世界の構図"
+msgstr "世界の構成"
 
 #. STRINGS.UI.STARMAP.MANAGEMENT_BUTTON
 msgctxt "STRINGS.UI.STARMAP.MANAGEMENT_BUTTON"
@@ -50757,7 +50758,7 @@ msgid ""
 "Duplicants' priorities are calculated <i>before</i> specific errand priority "
 "set using the Priority tool."
 msgstr ""
-"複製人間の作業種別の優先度管理{Hotkey}\n"
+"複製人間の作業種別の優先度を管理します{Hotkey}\n"
 "------------------\n"
 "複製人間の優先度は優先度ツールで設定した特定作業の優先度より<i>後で</i>計算さ"
 "れます。"
@@ -50923,10 +50924,10 @@ msgid ""
 "Specific priority set from this tool are calculated <i>after</i> the "
 "Duplicants' priorities set on the Priorities Screen"
 msgstr ""
-"特定作業の優先度設定{Hotkey}\n"
+"特定作業の優先度を設定します{Hotkey}\n"
 "------------------\n"
-"このツールで設定した特定優先度は優先度画面設定した複製人間の優先度より<i>後で"
-"</i>計算されます"
+"このツールで設定した特定優先度は優先度画面で設定した複製人間の優先度より<i>後"
+"で</i>計算されます"
 
 #. STRINGS.UI.TOOLTIPS.PRIORITIZEMAINBUTTON
 msgctxt "STRINGS.UI.TOOLTIPS.PRIORITIZEMAINBUTTON"
@@ -51044,7 +51045,7 @@ msgstr "EXOスーツおよび関連設備を表示します {Hotkey}"
 #. STRINGS.UI.TOOLTIPS.TEMPERATUREOVERLAYSTRING
 msgctxt "STRINGS.UI.TOOLTIPS.TEMPERATUREOVERLAYSTRING"
 msgid "Displays ambient temperature {Hotkey}"
-msgstr "大気温度を表示 {Hotkey}"
+msgstr "大気温度を表示します {Hotkey}"
 
 #. STRINGS.UI.TOOLTIPS.UNPAUSE
 msgctxt "STRINGS.UI.TOOLTIPS.UNPAUSE"
