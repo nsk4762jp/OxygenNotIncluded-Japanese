@@ -2,7 +2,7 @@ Oxygen Not Included 日本語化
 ====
 
 Klei Entertainment 制作のスペースコロニー経営ゲーム「[Oxygen Not Included](http://store.steampowered.com/app/457140/)」の日本語化作業を行っています。  
-QoL Upgrade Mk2に対応しています。
+QoL Upgrade Mk3に対応しています。
 
 ## 翻訳サンプル
 <image src="https://raw.githubusercontent.com/wiki/nsk4762jp/OxygenNotIncluded-Japanese/sample.jpg" width="75%">
@@ -47,6 +47,7 @@ MIT License
 
 [souki-tn](https://github.com/souki-tn)
 
+[kankoromochi](https://github.com/kankoromochi)
 
 ## 翻訳の手伝いをしてくれる人を募集しています
 
@@ -63,6 +64,7 @@ poファイルの編集には [POEdit](https://poedit.net/) がお勧めです�
 
 ### for Non-Github User  
 「Gitとかよく分からないし...」と思った方。翻訳に参加するためにGithubユーザーである必要はありません。  
-翻訳案はWorkshopの[翻訳スレッド](https://steamcommunity.com/workshop/filedetails/discussion/928606476/1290690669224436955/)でも受け付けていますので、「ここが変だ」とか「ここはこういう訳にしたほうが良いんじゃないか」と言ったコメントは大歓迎です。
-
+翻訳案はWorkshopの[翻訳スレッド](https://steamcommunity.com/workshop/filedetails/discussion/928606476/1290690669224436955/)でも受け付けています。  
+「ここが変だ」とか「ここはこういう訳にしたほうが良いんじゃないか」と言ったコメントは大歓迎です。  
+特にアイテム名については意訳しているところが多いので、原文と照らし合わせてもっと良い訳があればどんどん採用していきたいと思います。  
 
