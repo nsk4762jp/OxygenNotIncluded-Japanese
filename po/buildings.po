@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -150,16 +150,18 @@ msgstr "この設備は消毒済みです"
 #. STRINGS.BUILDINGS.PREFABS.ADVANCEDDOCTORSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDDOCTORSTATION.DESC"
 msgid ""
-"Duplicants can receive treatment for severe sicknesses by a Doctor at a "
-"Disease Clinic"
-msgstr "複製人間は診療所で医者から重病の手当を受けることができます"
+"Disease clinics require power, but treat more serious illnesses than sick "
+"bays alone."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.ADVANCEDDOCTORSTATION.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDDOCTORSTATION.EFFECT"
 msgid ""
-"Duplicants can receive treatment for severe sicknesses by a Doctor at a "
-"Disease Clinic"
-msgstr "複製人間は診療所で医者から重病の手当を受けることができます"
+"Allows Duplicants to administer powerful treatments to sick Duplicants.\n"
+"\n"
+"Duplicants must possess the Duplicant Care <link=\"ROLES\">Skill</link> to "
+"treat peers."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.ADVANCEDDOCTORSTATION.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDDOCTORSTATION.NAME"
@@ -193,15 +195,26 @@ msgid "<link=\"ADVANCEDRESEARCHCENTER\">Super Computer</link>"
 msgstr "<link=\"ADVANCEDRESEARCHCENTER\">スパコン</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRBORNECREATURELURE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.AIRBORNECREATURELURE.DESC"
+#| msgid ""
+#| "Lures can relocate Pufts or Shine Bugs to specific locations in your base."
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRBORNECREATURELURE.DESC"
 msgid ""
-"Lures can relocate Pufts or Shine Bugs to specific locations in your base."
+"Lures can relocate Pufts or Shine Bugs to specific locations in my colony."
 msgstr "ルアーはパフやシャインバグを特定の場所に誘導するために使われます。"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRBORNECREATURELURE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.AIRBORNECREATURELURE.EFFECT"
+#| msgid ""
+#| "Attracts one type of airborne critter.\n"
+#| "\n"
+#| "Must be baited with <link=\"SLIMEMOLD\">Slime</link> or <link="
+#| "\"PHOSPHORITE\">Phosphorite</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRBORNECREATURELURE.EFFECT"
 msgid ""
-"Attracts one type of airborne critter.\n"
+"Attracts one type of airborne critter at a time.\n"
 "\n"
 "Must be baited with <link=\"SLIMEMOLD\">Slime</link> or <link=\"PHOSPHORITE"
 "\">Phosphorite</link>."
@@ -212,8 +225,11 @@ msgstr ""
 "を給餌することで浮遊動物をおびき寄せます。"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRBORNECREATURELURE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.AIRBORNECREATURELURE.NAME"
+#| msgid "<link=\"AIRBORNECREATURELURE\">Critter Lure</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRBORNECREATURELURE.NAME"
-msgid "<link=\"AIRBORNECREATURELURE\">Critter Lure</link>"
+msgid "<link=\"AIRBORNECREATURELURE\">Airborne Critter Lure</link>"
 msgstr "<link=\"AIRBORNECREATURELURE\">動物ルアー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.DESC
@@ -305,8 +321,10 @@ msgstr "<link=\"DIRTYWATER\">汚染水</link>のしきい値"
 
 #. STRINGS.BUILDINGS.PREFABS.APOTHECARY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.APOTHECARY.DESC"
-msgid "All-natural remedies to cure what ails you."
-msgstr "あなたを蝕むものを治す天然の治療薬です。"
+msgid ""
+"Some medications help prevent diseases, while others aim to alleviate "
+"existing illness."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.APOTHECARY.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.APOTHECARY.EFFECT"
@@ -444,35 +462,44 @@ msgstr "<link=\"BATTERYMEDIUM\">大容量バッテリー</link>"
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
 msgid ""
-"Logic input will become <link=\"LOGIC\">Active</link> when battery is less "
-"than {0}% charged"
+"Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less than "
+"<b>{0}%</b> charged"
 msgstr ""
-"論理入力はバッテリーが{0}%未満になると<link=\"LOGIC\">アクティブ</link>になり"
-"ます"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP"
 msgid ""
-"Logic input will go on <link=\"LOGIC\">Standby</link> when battery is more "
-"than {0}% charged"
+"Sends a <b><color=#f44a47>Red Signal</b></color> when battery is more than "
+"<b>{0}%</b> charged"
 msgstr ""
-"論理入力はバッテリーが{0}%以上になると<link=\"LOGIC\">スタンバイ</link>になり"
-"ます"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DESC"
+#| msgid ""
+#| "Smart batteries can send an automation signal while they require charging."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DESC"
 msgid ""
-"Smart batteries can send an automation signal while they require charging."
+"Smart batteries send an active automation signal when they require charging."
 msgstr "スマートバッテリーは充電が必要になると自動的にシグナルを送信します。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT"
+#| msgid ""
+#| "Stores most runoff <link=\"POWER\">Power</link> from generators, but "
+#| "loses charge over time.\n"
+#| "\n"
+#| "Sends an <link=\"LOGIC\">Active</link> or <link=\"LOGIC\">Standby</link> "
+#| "signal based on the configuration of the Logic Activation Parameters."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT"
 msgid ""
 "Stores most runoff <link=\"POWER\">Power</link> from generators, but loses "
 "charge over time.\n"
 "\n"
-"Sends an <link=\"LOGIC\">Active</link> or <link=\"LOGIC\">Standby</link> "
-"signal based on the configuration of the Logic Activation Parameters."
+"Sends a <b><color=#57b95e>Green Signal</b></color> or <b><color=#f44a47>Red "
+"Signal</b></color> based on the configuration of the Logic Activation "
+"Parameters."
 msgstr ""
 "発電機から送られた余剰<link=\"POWER\">電力</link>を蓄えますが、蓄えられた電力"
 "は時間とともに失われます。\n"
@@ -488,20 +515,16 @@ msgstr "充電パラメータ"
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal when the charge falls below "
-"the configured Active Parameter"
+"Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less than "
+"<b>Low Threshold</b> charged"
 msgstr ""
-"設定したアクティブパラメータを下回ると<link=\"LOGIC\">アクティブ</link>シグナ"
-"ルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE"
 msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal when the charge rises above "
-"the configured Standby Parameter"
+"Sends a <b><color=#f44a47>Red Signal</b></color> when the battery is more "
+"than <b>High Threshold</b> charged"
 msgstr ""
-"設定したスタンバイパラメータを下回ると<link=\"LOGIC\">スタンバイ</link>シグナ"
-"ルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.NAME"
@@ -509,14 +532,20 @@ msgid "<link=\"BATTERYSMART\">Smart Battery</link>"
 msgstr "<link=\"BATTERYSMART\">スマートバッテリー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_ACTIVATE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.DISEASE_TITLE"
+#| msgid "Germ Threshold"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_ACTIVATE"
-msgid "Active:"
-msgstr "アクティブ:"
+msgid "Low Threshold:"
+msgstr "病原菌しきい値"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_DEACTIVATE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SCALDINGTHRESHOLD.NAME"
+#| msgid "Scalding Threshold"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_DEACTIVATE"
-msgid "Standby:"
-msgstr "スタンバイ:"
+msgid "High Threshold:"
+msgstr "火傷しきい値"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_TITLE
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_TITLE"
@@ -565,10 +594,15 @@ msgid "<link=\"BOTTLEEMPTIER\">Bottle Emptier</link>"
 msgstr "<link=\"BOTTLEEMPTIER\">ボトル空け</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BOTTLEEMPTIERGAS.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BOTTLEEMPTIERGAS.DESC"
+#| msgid ""
+#| "A canister emptier's Element Filter can be used to designate areas for "
+#| "specific gas storage."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BOTTLEEMPTIERGAS.DESC"
 msgid ""
-"A canister emptier's Element Filter can be used to designate areas for "
-"specific gas storage."
+"A canister emptier's Element Filter can designate areas for specific gas "
+"storage."
 msgstr "ボンベ空けの要素フィルターは特定の気体容器を指定することができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BOTTLEEMPTIERGAS.EFFECT
@@ -605,10 +639,14 @@ msgid "<link=\"BUNKERDOOR\">Bunker Door</link>"
 msgstr "<link=\"BUNKERDOOR\">シェルター ドア</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BUNKERTILE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.DESC"
+#| msgid ""
+#| "Bunker tile can be used to build strong shelters in otherwise dangerous "
+#| "environments."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.DESC"
 msgid ""
-"Bunker tile can be used to build strong shelters in otherwise dangerous "
-"environments."
+"Bunker tile can build strong shelters in otherwise dangerous environments."
 msgstr ""
 "普通なら危険な環境において、シェルター タイルは強いシェルターを作るために利用"
 "されます。"
@@ -628,25 +666,6 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.NAME"
 msgid "<link=\"BUNKERTILE\">Bunker Tile</link>"
 msgstr "<link=\"BUNKERTILE\">シェルター タイル</link>"
-
-#. STRINGS.BUILDINGS.PREFABS.BURNER.DESC
-msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.DESC"
-msgid "Burners reach incredible temperatures and can quickly melt large areas."
-msgstr "バーナーは超高温の熱で広範囲を速やかに溶解させます。"
-
-#. STRINGS.BUILDINGS.PREFABS.BURNER.EFFECT
-msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.EFFECT"
-msgid ""
-"Produces a searing <link=\"HEAT\">Heat Jet</link> using <link="
-"\"ELEMENTSLIQUID\">Liquid</link> <link=\"CRUDEOIL\">Crude Oil</link>."
-msgstr ""
-"<link=\"ELEMENTSLIQUID\">液体</link>の<link=\"CRUDEOIL\">原油</link>を使用し"
-"て高熱の<link=\"HEAT\">ヒートジェット</link>を生産します。"
-
-#. STRINGS.BUILDINGS.PREFABS.BURNER.NAME
-msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.NAME"
-msgid "<link=\"BURNER\">Burner</link>"
-msgstr "<link=\"BURNER\">バーナー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.CANVAS.AVERAGEQUALITYNAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.CANVAS.AVERAGEQUALITYNAME"
@@ -769,10 +788,15 @@ msgid "Crude Painting"
 msgstr "酷い落書き"
 
 #. STRINGS.BUILDINGS.PREFABS.CARGOBAY.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CARGOBAY.DESC"
+#| msgid ""
+#| "Duplicants will fill cargo bays with whatever resources they find during "
+#| "their space missions."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CARGOBAY.DESC"
 msgid ""
-"Duplicants will fill cargo bays with whatever resources they find during "
-"their space missions."
+"Duplicants will fill cargo bays with any resources they find during space "
+"missions."
 msgstr "複製人間は宇宙ミッション中に見つけた資源を貨物ベイに保管します。"
 
 #. STRINGS.BUILDINGS.PREFABS.CARGOBAY.EFFECT
@@ -794,10 +818,14 @@ msgid "<link=\"CARGOBAY\">Cargo Bay</link>"
 msgstr "<link=\"CARGOBAY\">貨物ベイ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.CARPETTILE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CARPETTILE.DESC"
+#| msgid ""
+#| "Carpeted tile is a luxury that remains decorative even when other tile is "
+#| "stacked atop it."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CARPETTILE.DESC"
 msgid ""
-"Carpeted tile is a luxury that remains decorative even when other tile is "
-"stacked atop it."
+"Carpeted tile remains decorative even when other tile is stacked atop it."
 msgstr "絨毯タイルは他のタイルが上に重なっていても装飾効果を発揮します。"
 
 #. STRINGS.BUILDINGS.PREFABS.CARPETTILE.EFFECT
@@ -825,9 +853,15 @@ msgstr ""
 "光源は複製人間のストレスを減らします。特定の植物の成長に必要とされます。"
 
 #. STRINGS.BUILDINGS.PREFABS.CEILINGLIGHT.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CEILINGLIGHT.EFFECT"
+#| msgid ""
+#| "Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CEILINGLIGHT.EFFECT"
 msgid ""
-"Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>."
+"Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>.\n"
+"\n"
+"Duplicants can operate buildings more quickly the building is lit."
 msgstr ""
 "<link=\"POWER\">電力</link>が供給されると、<link=\"LIGHT\">光源</link>として"
 "機能します。"
@@ -847,11 +881,19 @@ msgstr ""
 "ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.CHECKPOINT.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CHECKPOINT.EFFECT"
+#| msgid ""
+#| "Allows Duplicants to pass when <link=\"LOGIC\">Active</link>.\n"
+#| "\n"
+#| "Prevents Duplicants from passing when on <link=\"LOGIC\">Standby</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CHECKPOINT.EFFECT"
 msgid ""
-"Allows Duplicants to pass when <link=\"LOGIC\">Active</link>.\n"
+"Allows Duplicants to pass when receiving a <b><color=#57b95e>Green Signal</"
+"b></color>.\n"
 "\n"
-"Prevents Duplicants from passing when on <link=\"LOGIC\">Standby</link>."
+"Prevents Duplicants from passing when receiving a <b><color=#f44a47>Red "
+"Signal</b></color>."
 msgstr ""
 "<link=\"LOGIC\">アクティブ</link>のとき、複製人間が通行できるようになりま"
 "す。\n"
@@ -865,20 +907,13 @@ msgstr "複製人間の通行可否"
 
 #. STRINGS.BUILDINGS.PREFABS.CHECKPOINT.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.CHECKPOINT.LOGIC_PORT_ACTIVE"
-msgid ""
-"Allows Duplicant passage while an <link=\"LOGIC\">Active</link> signal is "
-"being received"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Allow Duplicant passage"
 msgstr ""
-"<link=\"LOGIC\">アクティブ</link>シグナルを受信中は複製人間が通行できるように"
-"なります"
 
 #. STRINGS.BUILDINGS.PREFABS.CHECKPOINT.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.CHECKPOINT.LOGIC_PORT_INACTIVE"
-msgid ""
-"Prevents Duplicant passage while a <link=\"LOGIC\">Standby</link> signal is "
-"being received"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Prevent Duplicant passage"
 msgstr ""
-"<link=\"LOGIC\">スタンバイ</link>シグナルを受信中は複製人間の通行を妨げます"
 
 #. STRINGS.BUILDINGS.PREFABS.CHECKPOINT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.CHECKPOINT.NAME"
@@ -909,10 +944,15 @@ msgid "<link=\"CLOTHINGFABRICATOR\">Textile Loom</link>"
 msgstr "<link=\"CLOTHINGFABRICATOR\">紡績機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.DESC"
+#| msgid ""
+#| "Carbon skimmers remove large amounts of carbon dioxide, but produce no "
+#| "breathable air."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CO2SCRUBBER.DESC"
 msgid ""
-"Carbon skimmers remove large amounts of carbon dioxide, but produce no "
-"breathable air."
+"Skimmers remove large amounts of carbon dioxide, but produce no breathable "
+"air."
 msgstr ""
 "炭素スキマーは二酸化炭素を大量に除去しますが、呼吸可能な気体は生産しません。"
 
@@ -931,18 +971,30 @@ msgid "<link=\"CO2SCRUBBER\">Carbon Skimmer</link>"
 msgstr "<link=\"CO2SCRUBBER\">炭素スキマー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.DESC"
+#| msgid ""
+#| "Networks of many scanners will detect objects more efficiently than one "
+#| "scanner alone."
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.DESC"
 msgid ""
-"Networks of many scanners will detect objects more efficiently than one "
-"scanner alone."
+"Networks of many scanners will scan more efficiently than one on its own."
 msgstr ""
 "並べたスキャナーのネットワークは単体のそれより効果的に飛来物を検出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.EFFECT"
+#| msgid ""
+#| "Sends an <link=\"LOGIC\">Active Signal</link> to its logic circuit when "
+#| "it detects incoming objects from space.\n"
+#| "\n"
+#| "Can be configured to detect incoming meteor showers or returning space "
+#| "rockets."
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMETDETECTOR.EFFECT"
 msgid ""
-"Sends an <link=\"LOGIC\">Active Signal</link> to its logic circuit when it "
-"detects incoming objects from space.\n"
+"Sends a <b><color=#57b95e>Green Signal</b></color> to its automation circuit "
+"when it detects incoming objects from space.\n"
 "\n"
 "Can be configured to detect incoming meteor showers or returning space "
 "rockets."
@@ -984,18 +1036,13 @@ msgstr "ロケット発射"
 
 #. STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH_ACTIVE"
-msgid "Launches rockets when receiving an <link=\"LOGIC\">Active</link> signal"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Launch rocket"
 msgstr ""
-"<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、ロケットを発射します"
 
 #. STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH_INACTIVE"
-msgid ""
-"Awaits an Active signal when receiving a <link=\"LOGIC\">Standby</link> "
-"signal"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Awaits launch command"
 msgstr ""
-"<link=\"LOGIC\">スタンバイ</link>シグナルを受信中はアクティブシグナルを受信す"
-"るまで待機します"
 
 #. STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY"
@@ -1003,22 +1050,23 @@ msgid "Rocket Checklist"
 msgstr "ロケットチェックリスト"
 
 #. STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_ACTIVE"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> when its rocket launch checklist is "
+#| "complete"
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_ACTIVE"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when its rocket launch checklist is "
-"complete"
+"Sends a <b><color=#57b95e>Green Signal</b></color> when its rocket launch "
+"checklist is complete"
 msgstr ""
 "ロケットチェックリストが全件消化済みの場合<link=\"LOGIC\">アクティブ</link>に"
 "なります"
 
 #. STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
-msgid ""
-"Goes on <link=\"LOGIC\">Standby</link> when its rocket launch checklist has "
-"unchecked items"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"ロケットチェックリストが1つでも未消化の場合<link=\"LOGIC\">スタンバイ</link>"
-"をキープします"
 
 #. STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.NAME"
@@ -1100,10 +1148,15 @@ msgid "<link=\"CORNERMOULDING\">Corner Moulding</link>"
 msgstr "<link=\"CORNERMOULDING\">コーナー モール</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.COSMICRESEARCHCENTER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COSMICRESEARCHCENTER.DESC"
+#| msgid ""
+#| "Virtual planetariums allow the simulated exploration of locations "
+#| "discovered with telescopes."
 msgctxt "STRINGS.BUILDINGS.PREFABS.COSMICRESEARCHCENTER.DESC"
 msgid ""
-"Virtual planetariums allow the simulated exploration of locations discovered "
-"with telescopes."
+"Planetariums allow the simulated exploration of locations discovered with a "
+"telescope."
 msgstr ""
 "仮想プラネタリウムは観測望遠鏡で発見した宙域の探索シミュレートを可能としま"
 "す。"
@@ -1154,10 +1207,15 @@ msgid "<link=\"CREATUREDELIVERYPOINT\">Critter Drop-Off</link>"
 msgstr "<link=\"CREATUREDELIVERYPOINT\">動物開放ポイント</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.DESC"
+#| msgid ""
+#| "Critters tend to stay close to their food source and will wander less "
+#| "when given a Feeder."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.DESC"
 msgid ""
-"Critters tend to stay close to their food source and will wander less when "
-"given a Feeder."
+"Critters tend to stay close to their food source and wander less when given "
+"a feeder."
 msgstr "動物は給餌機のそばに留まるようになり、遠くまでさ迷う頻度が減ります。"
 
 #. STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.EFFECT
@@ -1172,8 +1230,11 @@ msgid "<link=\"CREATUREFEEDER\">Critter Feeder</link>"
 msgstr "<link=\"CREATUREFEEDER\">給餌機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.CREATURETRAP.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CREATURETRAP.DESC"
+#| msgid "Traps cannot catch flying critters."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CREATURETRAP.DESC"
-msgid "Traps cannot catch flying critters."
+msgid "Critter traps cannot catch swimming or flying critters."
 msgstr "罠は浮遊動物を捕獲できません。"
 
 #. STRINGS.BUILDINGS.PREFABS.CREATURETRAP.EFFECT
@@ -1214,6 +1275,38 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.CROWNMOULDING.NAME"
 msgid "<link=\"CROWNMOULDING\">Crown Moulding</link>"
 msgstr "<link=\"CROWNMOULDING\">王冠 モール</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.DESALINATOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.DESALINATOR.DESC"
+msgid "Salt can be refined into table salt for a mealtime morale boost."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.DESALINATOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.EFFECT"
+#| msgid ""
+#| "Produces clean <link=\"WATER\">Water</link> from <link=\"DIRTYWATER"
+#| "\">Polluted Water</link> using <link=\"SAND\">Sand</link>.\n"
+#| "\n"
+#| "Produces <link=\"TOXICSAND\">Polluted Dirt</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.DESALINATOR.EFFECT"
+msgid ""
+"Removes <link=\"SALT\">Salt</link> from <link=\"BRINE\">Brine</link> or "
+"<link=\"SALTWATER\">Salt Water</link>, producing <link=\"WATER\">Water</"
+"link>."
+msgstr ""
+"<link=\"DIRTYWATER\">汚染水</link>を、<link=\"SAND\">砂</link>を使って<link="
+"\"WATER\">水</link>にします。\n"
+"\n"
+"<link=\"TOXICSAND\">汚染土</link>を生産します。"
+
+#. STRINGS.BUILDINGS.PREFABS.DESALINATOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.DEVGENERATOR.NAME"
+#| msgid "<link=\"DEVGENERATOR\">DEV Generator</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.DESALINATOR.NAME"
+msgid "<link=\"DESALINATOR\">Desalinator</link>"
+msgstr "<link=\"DEVGENERATOR\">DEV発電機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.DEVGENERATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.DEVGENERATOR.DESC"
@@ -1301,16 +1394,18 @@ msgstr "<link=\"DISTILLATIONCOLUMN\">蒸留塔</link>"
 #. STRINGS.BUILDINGS.PREFABS.DOCTORSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.DOCTORSTATION.DESC"
 msgid ""
-"Duplicants can receive treatment for intermediate sicknesses by a Doctor at "
-"a Sick Bay"
-msgstr "複製人間は医務室で医者から病気の手当を受けることができます"
+"Sick bays can be placed in hospital rooms to decrease the likelihood of "
+"disease spreading."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.DOCTORSTATION.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.DOCTORSTATION.EFFECT"
 msgid ""
-"Duplicants can receive treatment for intermediate sicknesses by a Doctor at "
-"a Sick Bay"
-msgstr "複製人間は医務室で医者から病気の手当を受けることができます"
+"Allows Duplicants to administer basic treatments to sick Duplicants.\n"
+"\n"
+"Duplicants must possess the Medicine Compounding <link=\"ROLES\">Skill</"
+"link> to treat peers."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.DOCTORSTATION.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.DOCTORSTATION.NAME"
@@ -1393,18 +1488,13 @@ msgstr "開閉"
 
 #. STRINGS.BUILDINGS.PREFABS.DOOR.LOGIC_OPEN_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.LOGIC_OPEN_ACTIVE"
-msgid ""
-"Opens with Duplicant proximity while an <link=\"LOGIC\">Active</link> signal "
-"is being received"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Open"
 msgstr ""
-"<link=\"LOGIC\">アクティブ</link>シグナルを受信中は複製人間が近づくと開きます"
 
 #. STRINGS.BUILDINGS.PREFABS.DOOR.LOGIC_OPEN_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.LOGIC_OPEN_INACTIVE"
-msgid ""
-"Closes and locks while a <link=\"LOGIC\">Standby</link> signal is being "
-"received"
-msgstr "<link=\"LOGIC\">スタンバイ</link>シグナルを受信中は施錠されます"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Close and lock"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.DOOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.NAME"
@@ -1427,8 +1517,11 @@ msgid "on right"
 msgstr "右側"
 
 #. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.DESC"
+#| msgid "Raw eggs are an ingredient in some high quality food recipes."
 msgctxt "STRINGS.BUILDINGS.PREFABS.EGGCRACKER.DESC"
-msgid "Raw eggs are an ingredient in some high quality food recipes."
+msgid "Raw eggs are an ingredient in certain high quality food recipes."
 msgstr "卵の中身は高品質な食糧の材料になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.EGGCRACKER.EFFECT
@@ -1531,10 +1624,76 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.ESPRESSOMACHINE.NAME"
 msgid "<link=\"ESPRESSOMACHINE\">Espresso Machine</link>"
 msgstr "<link=\"ESPRESSOMACHINE\">エスプレッソマシーン</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.ETHANOLDISTILLERY.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.ETHANOLDISTILLERY.DESC"
+msgid ""
+"Ethanol distillers convert Lumber into burnable <link=\"ETHANOL\">Ethanol</"
+"link> fuel."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ETHANOLDISTILLERY.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SPACEHEATER.EFFECT"
+#| msgid "Radiates a moderate amount of <link=\"HEAT\">Heat</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.ETHANOLDISTILLERY.EFFECT"
+msgid "Refines Lumber into <link=\"ETHANOL\">Ethanol</link>."
+msgstr "適度な量の<link=\"HEAT\">熱</link>を放射します。"
+
+#. STRINGS.BUILDINGS.PREFABS.ETHANOLDISTILLERY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.NAME"
+#| msgid "<link=\"ALGAEDISTILLERY\">Algae Distiller</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ETHANOLDISTILLERY.NAME"
+msgid "<link=\"ETHANOLDISTILLERY\">Ethanol Distiller</link>"
+msgstr "<link=\"ALGAEDISTILLERY\">蒸留機</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.ETHANOLGENERATOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.ETHANOLGENERATOR.DESC"
+msgid ""
+"Ethanol generators require less Duplicant operation, but produce significant "
+"waste."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ETHANOLGENERATOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.METHANEGENERATOR.EFFECT"
+#| msgid ""
+#| "Converts <link=\"METHANE\">Natural Gas</link> into electrical <link="
+#| "\"POWER\">Power</link>.\n"
+#| "\n"
+#| "Produces <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> and <link="
+#| "\"DIRTYWATER\">Polluted Water</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.ETHANOLGENERATOR.EFFECT"
+msgid ""
+"Converts <link=\"ETHANOL\">Ethanol</link> into electrical <link=\"POWER"
+"\">Power</link>.\n"
+"\n"
+"Produces <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> and <link=\"DIRTYWATER"
+"\">Polluted Water</link>."
+msgstr ""
+"<link=\"METHANE\">天然ガス</link>を<link=\"POWER\">電力</link>に変換しま"
+"す。\n"
+"\n"
+"<link=\"CARBONDIOXIDE\">二酸化炭素</link>と<link=\"DIRTYWATER\">汚染水</link>"
+"を産出します。"
+
+#. STRINGS.BUILDINGS.PREFABS.ETHANOLGENERATOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.NAME"
+#| msgid "<link=\"MANUALGENERATOR\">Manual Generator</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ETHANOLGENERATOR.NAME"
+msgid "<link=\"ETHANOLGENERATOR\">Ethanol Generator</link>"
+msgstr "<link=\"MANUALGENERATOR\">人力発電機</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.DESC"
+#| msgid ""
+#| "Drywall can be used in conjunction with tile to build airtight rooms on "
+#| "the surface."
 msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.DESC"
 msgid ""
-"Drywall can be used in conjunction with tile to build airtight rooms on the "
+"Drywall can be used in conjunction with tiles to build airtight rooms on the "
 "surface."
 msgstr "石膏ボードはタイルと組み合わせて気密室を地表に作ることができます。"
 
@@ -1590,7 +1749,8 @@ msgstr ""
 "<link=\"PLANTS\">植物</link>の成長率を上昇させる <link=\"FARMSTATIONTOOLS\">"
 "微量栄養素</link>を生産します。\n"
 "\n"
-"<link=\"FARMER\">作物の手入れ</link>特性を持った複製人間を割り当ててください。\n"
+"<link=\"FARMER\">作物の手入れ</link>特性を持った複製人間を割り当ててくださ"
+"い。\n"
 "\n"
 "この設備は温室に必須の構成要素です。"
 
@@ -1600,9 +1760,14 @@ msgid "<link=\"FARMSTATION\">Farm Station</link>"
 msgstr "<link=\"FARMSTATION\">農業端末</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FARMTILE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FARMTILE.DESC"
+#| msgid ""
+#| "Duplicants can deliver fertilizer and liquids to farm tile, accelerating "
+#| "plant growth."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FARMTILE.DESC"
 msgid ""
-"Duplicants can deliver fertilizer and liquids to farm tile, accelerating "
+"Duplicants can deliver fertilizer and liquids to farm tiles, accelerating "
 "plant growth."
 msgstr ""
 "複製人間は植物の成長を促成させるために、肥料や水を栽培タイルに届けることがで"
@@ -1650,9 +1815,9 @@ msgstr "<link=\"FERTILIZERMAKER\">肥料合成機</link>"
 #. STRINGS.BUILDINGS.PREFABS.FIREPOLE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FIREPOLE.DESC"
 msgid ""
-"Fire poles provide quick downward travel, while ladders provide better "
-"upward movement."
-msgstr "滑り棒は素早く下降できますが、登りは梯子を使ったほうが良いでしょう。"
+"Build these in addition to ladders for efficient upward and downward "
+"movement."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.FIREPOLE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.FIREPOLE.EFFECT"
@@ -1671,9 +1836,14 @@ msgid "<link=\"FIREPOLE\">Fire Pole</link>"
 msgstr "<link=\"FIREPOLE\">滑り棒</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.DESC"
+#| msgid ""
+#| "This building must be built above liquid to prevent fish from suffocating."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.DESC"
 msgid ""
-"This building must be built above liquid to prevent fish from suffocating."
+"A fish release must be built above liquid to prevent released fish from "
+"suffocating."
 msgstr ""
 "魚が窒息しないためにも、この設備は液体より上に設置しなければなりません。"
 
@@ -1737,15 +1907,26 @@ msgid "<link=\"FISHTRAP\">Fish Trap</link>"
 msgstr "<link=\"FISHTRAP\">フィッシュトラップ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FLOORLAMP.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FLOORLAMP.DESC"
+#| msgid ""
+#| "The emitting radius of a building's light can be viewed in the Light "
+#| "Overlay."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLOORLAMP.DESC"
 msgid ""
-"The emitting radius of a building's light can be viewed in the Light Overlay."
+"Any building's light emitting radius can be viewed in the light overlay."
 msgstr "この設備の照明範囲は光源レイヤーから参照できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.FLOORLAMP.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FLOORLAMP.EFFECT"
+#| msgid ""
+#| "Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLOORLAMP.EFFECT"
 msgid ""
-"Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>."
+"Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>.\n"
+"\n"
+"Duplicants can operate buildings more quickly when the building is lit."
 msgstr ""
 "<link=\"POWER\">電力</link>が供給されると、<link=\"LIGHT\">光源</link>として"
 "機能します。"
@@ -1762,10 +1943,18 @@ msgid ""
 msgstr "加重プレートは複製人間通過時にアメニティを動かすために使えます。"
 
 #. STRINGS.BUILDINGS.PREFABS.FLOORSWITCH.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FLOORSWITCH.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> when an object or Duplicant is "
+#| "placed atop of it.\n"
+#| "\n"
+#| "Cannot be triggered by <link=\"ELEMENTSGAS\">Gas</link> or <link="
+#| "\"ELEMENTSLIQUID\">Liquids</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLOORSWITCH.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when an object or Duplicant is placed "
-"atop of it.\n"
+"Sends a <b><color=#57b95e>Green Signal</b></color> when an object or "
+"Duplicant is placed atop of it.\n"
 "\n"
 "Cannot be triggered by <link=\"ELEMENTSGAS\">Gas</link> or <link="
 "\"ELEMENTSLIQUID\">Liquids</link>."
@@ -1812,10 +2001,15 @@ msgid "<link=\"FLOWERVASE\">Flower Pot</link>"
 msgstr "<link=\"FLOWERVASE\">植木鉢</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FLOWERVASEHANGING.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FLOWERVASEHANGING.DESC"
+#| msgid ""
+#| "Hanging pots can add a bit of decor to a room, without interferring with "
+#| "buildings on the floor."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLOWERVASEHANGING.DESC"
 msgid ""
-"Hanging pots can add a bit of decor to a room, without interferring with "
-"buildings on the floor."
+"Hanging pots can add some decor to a room, without blocking buildings on the "
+"floor."
 msgstr "吊り鉢は床の設備に干渉せず部屋を飾り立てることができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.FLOWERVASEHANGING.EFFECT
@@ -1904,25 +2098,60 @@ msgid "<link=\"FLOWERVASEWALL\">Wall Pot</link>"
 msgstr "<link=\"FLOWERVASEWALL\">壁掛け鉢</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.DESC"
+#| msgid ""
+#| "Lavatories transmit fewer germs to Duplicants' skin and require no manual "
+#| "emptying."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.DESC"
 msgid ""
-"Lavatories transmit fewer germs to Duplicants' skin and require no manual "
-"emptying."
+"Lavatories transmit fewer germs to Duplicants' skin and require no emptying."
 msgstr ""
 "水洗トイレは複製人間に付着する病原菌を減らし、手動で空にする操作を必要としま"
 "せん。"
 
 #. STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.PILLS.BASICCURE.RECIPEDESC"
+#| msgid ""
+#| "Duplicants can take this to cure themselves of minor germ-based <link="
+#| "\"DISEASE\">Diseases</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.EFFECT"
 msgid ""
-"Gives Duplicants a place to <link=\"HYGIENE\">Hygienically</link> relieve "
-"themselves."
-msgstr "複製人間に<link=\"HYGIENE\">衛生的な</link>排泄場所を提供します。"
+"Gives Duplicants a place to relieve themselves.\n"
+"\n"
+"Spreads very few <link=\"DISEASE\">Germs</link>."
+msgstr ""
+"複製人間は、病原菌由来の軽度の<link=\"DISEASE\">病気</link>なら、これを飲んで"
+"自分で治すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.NAME"
 msgid "<link=\"FLUSHTOILET\">Lavatory</link>"
 msgstr "<link=\"FLUSHTOILET\">水洗トイレ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.FLYINGCREATUREBAIT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.FLYINGCREATUREBAIT.DESC"
+msgid ""
+"The type of critter attracted by critter bait depends on the construction "
+"material."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.FLYINGCREATUREBAIT.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.FLYINGCREATUREBAIT.EFFECT"
+msgid ""
+"Attracts one type of airborne critter.\n"
+"\n"
+"Single use."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.FLYINGCREATUREBAIT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CREATURETRAP.NAME"
+#| msgid "<link=\"CREATURETRAP\">Critter Trap</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FLYINGCREATUREBAIT.NAME"
+msgid "<link=\"FLYINGCREATUREBAIT\">Airborne Critter Bait</link>"
+msgstr "<link=\"CREATURETRAP\">捕獲罠</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GANTRY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GANTRY.DESC"
@@ -1942,15 +2171,26 @@ msgid "Extend/Retract"
 msgstr "展開/格納"
 
 #. STRINGS.BUILDINGS.PREFABS.GANTRY.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GANTRY.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Extends gantry when an <link=\"LOGIC\">Active</link> signal is received"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GANTRY.LOGIC_PORT_ACTIVE"
-msgid "Extends gantry when an <link=\"LOGIC\">Active</link> signal is received"
+msgid ""
+"<b>Extends gantry</b> when a <b><color=#57b95e>Green Signal</b></color> "
+"signal is received"
 msgstr ""
 "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると発射台を展開します"
 
 #. STRINGS.BUILDINGS.PREFABS.GANTRY.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GANTRY.LOGIC_PORT_INACTIVE"
+#| msgid ""
+#| "Retracts gantry when a <link=\"LOGIC\">Standby</link> signal is received"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GANTRY.LOGIC_PORT_INACTIVE"
 msgid ""
-"Retracts gantry when a <link=\"LOGIC\">Standby</link> signal is received"
+"<b>Retracts gantry</b> when a <b><color=#f44a47>Red Signal</b></color> "
+"signal is received"
 msgstr ""
 "<link=\"LOGIC\">スタンバイ</link>シグナルを受信すると発射台を格納します"
 
@@ -1980,10 +2220,15 @@ msgid "<link=\"GASBOTTLER\">Canister Filler</link>"
 msgstr "<link=\"GASBOTTLER\">ボンベ充填所</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCARGOBAY.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCARGOBAY.DESC"
+#| msgid ""
+#| "Duplicants will fill cargo canisters with whatever resources they find "
+#| "during their space missions."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCARGOBAY.DESC"
 msgid ""
-"Duplicants will fill cargo canisters with whatever resources they find "
-"during their space missions."
+"Duplicants fill cargo canisters with any resources they find during space "
+"missions."
 msgstr "複製人間は宇宙ミッション中に見つけた資源を貨物ボンベに保管します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCARGOBAY.EFFECT
@@ -2053,19 +2298,29 @@ msgid "<link=\"GASCONDUITBRIDGE\">Gas Bridge</link>"
 msgstr "<link=\"GASCONDUITBRIDGE\">気体ブリッジ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.DESC"
+#| msgid ""
+#| "Germ sensors are used to control automation behaviour in the presence of "
+#| "disease."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.DESC"
 msgid ""
-"Germ sensors are used to control automation behaviour in the presence of "
-"disease."
+"Germ sensors can help control automation behavior in the presence of germs."
 msgstr ""
 "病原菌センサーは、病原菌の有無によって動きを変える自動化制御に使います。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
+#| "link> depending on the internal <link=\"DISEASE\">Germ</link> count of "
+#| "the pipe."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
-"link> depending on the internal <link=\"DISEASE\">Germ</link> count of the "
-"pipe."
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> based on the internal <link="
+"\"DISEASE\">Germ</link> count of the pipe."
 msgstr ""
 "内部の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
 "\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
@@ -2079,22 +2334,14 @@ msgstr "内部<link=\"DISEASE\">病原菌</link>濃度"
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal when the number of <link="
-"\"DISEASE\">Germs</link> in the pipe enters the configured Germ Threshold "
-"range"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the number of Germs in "
+"the pipe is within the selected range"
 msgstr ""
-"内部の<link=\"DISEASE\">病原菌</link>が設定した濃度範囲内の場合<link=\"LOGIC"
-"\">アクティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal when the number of <link="
-"\"DISEASE\">Germs</link> in the pipe is outside the configured Germ "
-"Threshold range"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"内部の<link=\"DISEASE\">病原菌</link>が設定した濃度範囲外の場合<link=\"LOGIC"
-"\">スタンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.NAME"
@@ -2109,10 +2356,15 @@ msgid ""
 msgstr "元素センサーはパイプ内の特定の気体を検出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> when the chosen <link=\"ELEMENTSGAS"
+#| "\">Gas</link> is detected."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when the chosen <link=\"ELEMENTSGAS"
-"\">Gas</link> is detected."
+"Sends a <b><color=#57b95e>Green Signal</b></color> when the chosen <link="
+"\"ELEMENTSGAS\">Gas</link> is detected."
 msgstr ""
 "設定した<link=\"ELEMENTSGAS\">気体</link>を検出すると<link=\"LOGIC\">アクティ"
 "ブ</link>になります。"
@@ -2125,20 +2377,14 @@ msgstr "内部<link=\"ELEMENTSGAS\">気体</link>判定"
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal while the configured <link="
-"\"ELEMENTSGAS\">Gas</link> is detected"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the configured Gas is "
+"detected"
 msgstr ""
-"設定した<link=\"ELEMENTSGAS\">気体</link>を検出すると<link=\"LOGIC\">アクティ"
-"ブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal while the configured <link="
-"\"ELEMENTSGAS\">Gas</link> is not detected"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"設定した<link=\"ELEMENTSGAS\">気体</link>を検出できないと<link=\"LOGIC\">スタ"
-"ンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.NAME"
@@ -2214,27 +2460,43 @@ msgid "<link=\"GASCONDUITRADIANT\">Radiant Gas Pipe</link>"
 msgstr "<link=\"GASCONDUITRADIANT\">気体用 輻射パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC"
+#| msgid ""
+#| "Thermo sensors can disable buildings when their pipe contents reach a "
+#| "certain temperature."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC"
 msgid ""
-"Thermo sensors can disable buildings when their pipe contents reach a "
-"certain temperature."
+"Thermo sensors disable buildings when their pipe contents reach a certain "
+"temperature."
 msgstr ""
 "温度センサーは内容物が特定の温度に達した時に設備を自動停止させることができま"
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
+#| "link> when contents enter the chosen <link=\"HEAT\">Temperature</link> "
+#| "range."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
-"link> when contents enter the chosen <link=\"HEAT\">Temperature</link> range."
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> when contents enter the chosen "
+"<link=\"HEAT\">Temperature</link> range."
 msgstr ""
 "内容物の<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link=\"LOGIC\">"
 "アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT"
+#| msgid ""
+#| "Internal <link=\"ELEMENTSGAS\">Gas</link><link=\"HEAT\">Temperature</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT"
 msgid ""
-"Internal <link=\"ELEMENTSGAS\">Gas</link><link=\"HEAT\">Temperature</link>"
+"Internal <link=\"ELEMENTSGAS\">Gas</link> <link=\"HEAT\">Temperature</link>"
 msgstr ""
 "内部の<link=\"ELEMENTSGAS\">気体</link><style=\"temperature\">温度</style>"
 
@@ -2242,21 +2504,15 @@ msgstr ""
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal when the contained gas's "
-"temperature matches its configuration."
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the contained Gas is "
+"within the selected Temperature range"
 msgstr ""
-"内部の気体温度が設定した値になると、<link=\"LOGIC\">アクティブ</link>シグナル"
-"を送信します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_INACTIVE
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal when the contained gas's "
-"temperature does not match its configuration."
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"内部の気体温度が設定した値を外れると、<link=\"LOGIC\">スタンバイ</link>シグナ"
-"ルを送信します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.NAME"
@@ -2266,11 +2522,9 @@ msgstr "<link=\"GASCONDUITTEMPERATURESENSOR\">気体用パイプ 温度センサ
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.DESC"
 msgid ""
-"Gas filters send the selected filter gas into a special pipe, expelling "
-"everything else through a second output."
+"All gases are sent into the building's output pipe, except the gas chosen "
+"for filtering."
 msgstr ""
-"気体フィルターは指定した気体を別のパイプに流し、それ以外をもう一つの出力側に"
-"送ります。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.EFFECT"
@@ -2297,13 +2551,18 @@ msgid "Filters: {0}"
 msgstr "フィルター: {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC"
+#| msgid ""
+#| "Automated systems save power and time by removing the need for Duplicant "
+#| "management."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.DESC"
 msgid ""
-"Automated piping saves time and resources by removing the need for Duplicant "
-"management."
+"Automated piping saves power and time by removing the need for Duplicant "
+"input."
 msgstr ""
-"自動化された配管は複製人間による管理の必要性を無くし、時間と資源を節約しま"
-"す。"
+"自動化されたシステムは複製人間による管理の必要性を無くし、時間と資源を節約し"
+"ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.EFFECT"
@@ -2321,15 +2580,13 @@ msgstr "開閉"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.LOGIC_PORT_ACTIVE"
-msgid "Allows gas flow when receiving an <link=\"LOGIC\">Active</link> signal"
-msgstr "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、気体を通します"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Allow gas flow"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.LOGIC_PORT_INACTIVE"
-msgid ""
-"Prevents gas flow when receiving a <link=\"LOGIC\">Standby</link> signal"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Prevent gas flow"
 msgstr ""
-"<link=\"LOGIC\">スタンバイ</link>シグナルを受信すると、気体を通しません"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.NAME"
@@ -2337,17 +2594,28 @@ msgid "<link=\"GASLOGICVALVE\">Gas Shutoff</link>"
 msgstr "<link=\"GASLOGICVALVE\">気体遮断器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.DESC"
+#| msgid ""
+#| "Mini pumps are useful for moving small quantities of gas with minimum "
+#| "power draw."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.DESC"
 msgid ""
-"Mini pumps are useful for moving small quantities of gas with minimum power "
-"draw."
+"Mini pumps are useful for moving small quantities of gas with minimum power."
 msgstr "ミニポンプは少量のエネルギーで少量の気体を移動させるのに適しています。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.EFFECT"
+#| msgid ""
+#| "Draws in a small amount of <link=\"ELEMENTSGAS\">Gas</link> runs it "
+#| "through <link=\"GASPIPING\">Pipes</link>.\n"
+#| "\n"
+#| "Must be immersed in <link=\"ELEMENTSGAS\">Gas</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.EFFECT"
 msgid ""
-"Draws in a small amount of <link=\"ELEMENTSGAS\">Gas</link> runs it through "
-"<link=\"GASPIPING\">Pipes</link>.\n"
+"Draws in a small amount of <link=\"ELEMENTSGAS\">Gas</link> and runs it "
+"through <link=\"GASPIPING\">Pipes</link>.\n"
 "\n"
 "Must be immersed in <link=\"ELEMENTSGAS\">Gas</link>."
 msgstr ""
@@ -2386,17 +2654,28 @@ msgid "<link=\"GASPERMEABLEMEMBRANE\">Airflow Tile</link>"
 msgstr "<link=\"GASPERMEABLEMEMBRANE\">気流タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASPUMP.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.DESC"
+#| msgid ""
+#| "Piping a pump's intake to another building's output will send gas to that "
+#| "building."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.DESC"
 msgid ""
-"Piping a pump's intake to another building's output will send gas to that "
-"building."
+"Piping a pump's output to a building's intake will send gas to that building."
 msgstr "設置された場所の空気を吸気口から吸い込み、他の設備の出力に移送します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASPUMP.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.EFFECT"
+#| msgid ""
+#| "Draws in <link=\"ELEMENTSGAS\">Gas</link> runs it through <link="
+#| "\"GASPIPING\">Pipes</link>.\n"
+#| "\n"
+#| "Must be immersed in <link=\"ELEMENTSGAS\">Gas</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.EFFECT"
 msgid ""
-"Draws in <link=\"ELEMENTSGAS\">Gas</link> runs it through <link=\"GASPIPING"
-"\">Pipes</link>.\n"
+"Draws in <link=\"ELEMENTSGAS\">Gas</link> and runs it through <link="
+"\"GASPIPING\">Pipes</link>.\n"
 "\n"
 "Must be immersed in <link=\"ELEMENTSGAS\">Gas</link>."
 msgstr ""
@@ -2465,10 +2744,14 @@ msgid "<link=\"GASVENT\">Gas Vent</link>"
 msgstr "<link=\"GASVENT\">通風口</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.DESC"
+#| msgid ""
+#| "High pressure Vents can exhaust gas into more highly pressurized "
+#| "environments."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.DESC"
 msgid ""
-"High pressure Vents can exhaust gas into more highly pressurized "
-"environments."
+"High pressure vents can expel gas into more highly pressurized environments."
 msgstr "高圧通風口は高圧環境下でも気体を排出できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.EFFECT
@@ -2486,10 +2769,15 @@ msgid "<link=\"GASVENTHIGHPRESSURE\">High Pressure Gas Vent</link>"
 msgstr "<link=\"GASVENTHIGHPRESSURE\">高圧通風口</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GENERATOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.DESC"
+#| msgid ""
+#| "Coal generators produce more energy than manual generators, but emit heat "
+#| "and exhaust."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.DESC"
 msgid ""
-"Coal generators produce more energy than manual generators, but emit heat "
-"and exhaust."
+"Burning coal produces more energy than manual power, but emits heat and "
+"exhaust."
 msgstr ""
 "石炭発電機は人力発電機より多くのエネルギーを生産しますが、排熱および排気をし"
 "ます。"
@@ -2607,6 +2895,38 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSTILE.NAME"
 msgid "<link=\"GLASSTILE\">Window Tile</link>"
 msgstr "<link=\"GLASSTILE\">窓タイル</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.GOURMETCOOKINGSTATION.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.GOURMETCOOKINGSTATION.DESC"
+msgid ""
+"Luxury meals increase Duplicants morale and prevents them from becoming "
+"stressed."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.GOURMETCOOKINGSTATION.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.EFFECT"
+#| msgid ""
+#| "Cooks a wide variety of improved <link=\"FOOD\">Foods</link>.\n"
+#| "\n"
+#| "Duplicants will not fabricate items unless recipes are queued."
+msgctxt "STRINGS.BUILDINGS.PREFABS.GOURMETCOOKINGSTATION.EFFECT"
+msgid ""
+"Cooks a wide variety of quality <link=\"FOOD\">Foods</link>.\n"
+"\n"
+"Duplicants will not fabricate items unless recipes are queued."
+msgstr ""
+"改善された様々な<link=\"FOOD\">食糧</link>を生産します。\n"
+"\n"
+"レシピがセットされていないと複製人間は製作作業をしません。"
+
+#. STRINGS.BUILDINGS.PREFABS.GOURMETCOOKINGSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COOKINGSTATION.NAME"
+#| msgid "<link=\"COOKINGSTATION\">Electric Grill</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GOURMETCOOKINGSTATION.NAME"
+msgid "<link=\"GOURMETCOOKINGSTATION\">Gas Range</link>"
+msgstr "<link=\"COOKINGSTATION\">電気グリル</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.GRAVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVE.DESC"
 msgid ""
@@ -2654,10 +2974,14 @@ msgid "<link=\"HANDSANITIZER\">Hand Sanitizer</link>"
 msgstr "<link=\"HANDSANITIZER\">消毒剤</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HEADQUARTERS.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.HEADQUARTERS.DESC"
+#| msgid ""
+#| "New Duplicants will come out here, but thank goodness, they'll never go "
+#| "back in."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEADQUARTERS.DESC"
 msgid ""
-"New Duplicants will come out here, but thank goodness, they'll never go back "
-"in."
+"New Duplicants come out here, but thank goodness, they never go back in."
 msgstr ""
 "新しい複製人間はここからやってきます。ありがたいことに、彼らはここへ戻ろうと"
 "は思いません。"
@@ -2738,10 +3062,13 @@ msgid "<link=\"HYDROGENENGINE\">Hydrogen Engine</link>"
 msgstr "<link=\"HYDROGENENGINE\">水素エンジン</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.DESC"
+#| msgid ""
+#| "Hydrogen generators are exceptionally efficient power sources and emit "
+#| "next to no waste."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.DESC"
-msgid ""
-"Hydrogen generators are exceptionally efficient power sources and emit next "
-"to no waste."
+msgid "Hydrogen generators are extremely efficient, emitting next to no waste."
 msgstr "水素発電機は極めて効率的な電力源で、排気がほとんどありません。"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.EFFECT
@@ -2758,10 +3085,14 @@ msgid "<link=\"HYDROGENGENERATOR\">Hydrogen Generator</link>"
 msgstr "<link=\"HYDROGENGENERATOR\">水素発電機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.DESC"
+#| msgid ""
+#| "Hydroponic farms reduce Duplicant traffic by automating liquid delivery "
+#| "with irrigation pipes."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.DESC"
 msgid ""
-"Hydroponic farms reduce Duplicant traffic by automating liquid delivery with "
-"irrigation pipes."
+"Hydroponic farms reduce Duplicant traffic by automating irrigating crops."
 msgstr ""
 "水耕タイルは灌漑用パイプからの自動取水により、複製人間の手間を省きます。"
 
@@ -2936,9 +3267,14 @@ msgid "<link=\"INSULATEDWIRE\">Insulated Wire</link>"
 msgstr "<link=\"INSULATEDWIRE\">断熱型電線</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.DESC"
+#| msgid ""
+#| "The lowered thermal conductivity of insulated tile slows heat from "
+#| "passing through them."
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.DESC"
 msgid ""
-"The lowered thermal conductivity of insulated tile slows heat from passing "
+"The low thermal conductivity of insulated tiles slows any heat passing "
 "through them."
 msgstr "断熱タイルの低伝熱性が、タイルを通して伝わる熱を低減します。"
 
@@ -2988,8 +3324,14 @@ msgid "<link=\"ITEMPEDESTAL\">Pedestal</link>"
 msgstr "<link=\"ITEMPEDESTAL\">展示台</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.JETSUITLOCKER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.JETSUITLOCKER.DESC"
+#| msgid ""
+#| "Docks can refill jet suits with air and fuel, or empty them of waste."
 msgctxt "STRINGS.BUILDINGS.PREFABS.JETSUITLOCKER.DESC"
-msgid "Docks can refill jet suits with air and fuel, or empty them of waste."
+msgid ""
+"Jet Suit Docks can refill jet suits with air and fuel, or empty them of "
+"waste."
 msgstr ""
 "ドックはジェットスーツに空気や燃料を充填したり、廃棄物を空にすることができま"
 "す。"
@@ -3129,10 +3471,15 @@ msgid "<link=\"LADDERFAST\">Plastic Ladder</link>"
 msgstr "<link=\"LADDERFAST\">プラスチック製梯子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCARGOBAY.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCARGOBAY.DESC"
+#| msgid ""
+#| "Duplicants will fill cargo tanks with whatever resources they find during "
+#| "their space missions."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCARGOBAY.DESC"
 msgid ""
 "Duplicants will fill cargo tanks with whatever resources they find during "
-"their space missions."
+"space missions."
 msgstr "複製人間は宇宙ミッション中に見つけた資源を貨物タンクに保管します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCARGOBAY.EFFECT
@@ -3197,9 +3544,15 @@ msgid "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link>"
 msgstr "<link=\"LIQUIDCONDUIT\">液体用パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.DESC"
+#| msgid ""
+#| "Separate pipe systems prevent mingled contents from causing building "
+#| "damage."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.DESC"
 msgid ""
-"Separate pipe systems prevent mingled contents from causing building damage."
+"Separate pipe systems help prevent building damage caused by mingled pipe "
+"contents."
 msgstr ""
 "パイプの配管を分離することで、設備損傷の原因となる内容物の混入を避けます。"
 
@@ -3221,19 +3574,29 @@ msgid "<link=\"LIQUIDCONDUITBRIDGE\">Liquid Bridge</link>"
 msgstr "<link=\"LIQUIDCONDUITBRIDGE\">液体ブリッジ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.DESC"
+#| msgid ""
+#| "Germ sensors are used to control automation behaviour in the presence of "
+#| "disease."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.DESC"
 msgid ""
-"Germ sensors are used to control automation behaviour in the presence of "
-"disease."
+"Germ sensors can help control automation behavior in the presence of germs."
 msgstr ""
 "病原菌センサーは、病原菌の有無によって動きを変える自動化制御に使います。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
+#| "link> depending on the internal <link=\"DISEASE\">Germ</link> count of "
+#| "the pipe."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
-"link> depending on the internal <link=\"DISEASE\">Germ</link> count of the "
-"pipe."
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> based on the internal <link="
+"\"DISEASE\">Germ</link> count of the pipe."
 msgstr ""
 "内部の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、<link="
 "\"LOGIC\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になりま"
@@ -3248,23 +3611,15 @@ msgstr "内部<link=\"DISEASE\">病原菌</link>濃度"
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal when the number of <link="
-"\"DISEASE\">Germs</link> in the pipe enters the configured Germ Threshold "
-"range"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the number of Germs in "
+"the pipe is within the selected range"
 msgstr ""
-"内部の<link=\"DISEASE\">病原菌</link>が設定した濃度範囲内の場合<link=\"LOGIC"
-"\">アクティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal when the number of <link="
-"\"DISEASE\">Germs</link> in the pipe is outside the configured Germ "
-"Threshold range"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"内部の<link=\"DISEASE\">病原菌</link>が設定した濃度範囲外の場合<link=\"LOGIC"
-"\">スタンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.NAME"
@@ -3280,10 +3635,15 @@ msgid ""
 msgstr "元素センサーはパイプ内の特定の液体を検出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> when the chosen <link="
+#| "\"ELEMENTSLIQUID\">Liquid</link> is detected."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when the chosen <link=\"ELEMENTSLIQUID"
-"\">Liquid</link> is detected."
+"Sends a <b><color=#57b95e>Green Signal</b></color> when the chosen <link="
+"\"ELEMENTSLIQUID\">Liquid</link> is detected."
 msgstr ""
 "設定した<link=\"ELEMENTSLIQUID\">液体</link>を検出すると<link=\"LOGIC\">アク"
 "ティブ</link>になります。"
@@ -3294,11 +3654,17 @@ msgid "Internal <link=\"ELEMENTSLIQUID\">Liquid</link> Presence"
 msgstr "内部<link=\"ELEMENTSLIQUID\">液体</link>検知 "
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends an <link=\"LOGIC\">Active</link> signal while the configured <link="
+#| "\"ELEMENTSLIQUID\">Liquid</link> is detected within the pipe"
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal while the configured <link="
-"\"ELEMENTSLIQUID\">Liquid</link> is detected within the pipe"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the configured Liquid "
+"is detected within the pipe"
 msgstr ""
 "設定した<link=\"ELEMENTSLIQUID\">液体</link>を検出すると<link=\"LOGIC\">アク"
 "ティブ</link>シグナルを送信します"
@@ -3306,12 +3672,8 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal while the configured <link="
-"\"ELEMENTSLIQUID\">Liquid</link> is not detected within the pipe"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"設定した<link=\"ELEMENTSLIQUID\">液体</link>を検出しなくなると<link=\"LOGIC"
-"\">スタンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.NAME"
@@ -3388,46 +3750,60 @@ msgid "<link=\"LIQUIDCONDUITRADIANT\">Radiant Liquid Pipe</link>"
 msgstr "<link=\"LIQUIDCONDUITRADIANT\">液体用 輻射パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC"
+#| msgid ""
+#| "Thermo sensors can disable buildings when their pipe contents reach a "
+#| "certain temperature."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC"
 msgid ""
-"Thermo sensors can disable buildings when their pipe contents reach a "
-"certain temperature."
+"Thermo sensors disable buildings when their pipe contents reach a certain "
+"temperature."
 msgstr ""
 "温度センサーは内容物が特定の温度に達した時に設備を自動停止させることができま"
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
+#| "link> when contents enter the chosen <link=\"HEAT\">Temperature</link> "
+#| "range."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
-"link> when contents enter the chosen <link=\"HEAT\">Temperature</link> range."
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> when contents enter the chosen "
+"<link=\"HEAT\">Temperature</link> range."
 msgstr ""
 "内容物の<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link=\"LOGIC\">"
 "アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT"
+#| msgid ""
+#| "Internal <link=\"ELEMENTSGAS\">Gas</link><link=\"HEAT\">Temperature</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT"
-msgid "Internal Liquid <link=\"HEAT\">Temperature</link>"
-msgstr "内部液体<link=\"HEAT\">温度</link>"
+msgid ""
+"Internal <link=\"ELEMENTSLIQUID\">Liquid</link> <link=\"HEAT\">Temperature</"
+"link>"
+msgstr ""
+"内部の<link=\"ELEMENTSGAS\">気体</link><style=\"temperature\">温度</style>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Active when the contained liquid's temperature matches its configuration."
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the contained Liquid "
+"is within the selected Temperature range"
 msgstr ""
-"内部の液体温度が設定した値になると、<link=\"LOGIC\">アクティブ</link>になりま"
-"す。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_INACTIVE
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Standby when the contained liquid's temperature does not match its "
-"configuration."
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"内部の液体温度が設定した値から外れると、<link=\"LOGIC\">スタンバイ</link>にな"
-"ります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.NAME"
@@ -3455,19 +3831,29 @@ msgid "<link=\"LIQUIDCOOLEDFAN\">Hydrofan</link>"
 msgstr "<link=\"LIQUIDCOOLEDFAN\">水冷扇風機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.DESC"
+#| msgid ""
+#| "Piping a pump's intake to another building's output will send liquid to "
+#| "that building."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC"
 msgid ""
-"Liquid filters send the selected liquid into a special pipe, expelling "
-"everything else through a second output."
-msgstr ""
-"液体フィルターは指定した液体を別のパイプに流し、それ以外をもう一つの出力側に"
-"送ります。"
+"All liquids are sent into the building's output pipe, except the liquid "
+"chosen for filtering."
+msgstr "設置された場所の液体を給水口から吸い込み、他の設備の出力に移送します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.EFFECT"
+#| msgid ""
+#| "Sieves one <link=\"ELEMENTSLIQUID\">Liquid</link> out of a mix, sending "
+#| "it into a dedicated <link=\"LIQUIDPIPING\">Pipe</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.EFFECT"
 msgid ""
 "Sieves one <link=\"ELEMENTSLIQUID\">Liquid</link> out of a mix, sending it "
-"into a dedicated <link=\"LIQUIDPIPING\">Pipe</link>."
+"into a dedicated <link=\"LIQUIDPIPING\">Filtered Output Pipe</link>.\n"
+"\n"
+"Can only filter one liquid type at a time."
 msgstr ""
 "混合液体から、指定した<link=\"ELEMENTSLIQUID\">液体</link>をろ過し、別の口に"
 "繋がった<link=\"LIQUIDPIPING\">パイプ</link>へ移送します。"
@@ -3504,10 +3890,15 @@ msgid "<link=\"LIQUIDFUELTANK\">Liquid Fuel Tank</link>"
 msgstr "<link=\"LIQUIDFUELTANK\">液体燃料タンク</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.DESC"
+#| msgid ""
+#| "Liquid tepidizers kill waterborne germs and heat liquid to a perfect "
+#| "showering temperature."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.DESC"
 msgid ""
-"Liquid tepidizers kill waterborne germs and heat liquid to a perfect "
-"showering temperature."
+"Tepidizers kill waterborne germs and heat liquid to perfect showering "
+"temperature."
 msgstr "液体ヒーターは水中の病原菌を殺菌し、シャワーに適した温度に温めます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.EFFECT
@@ -3528,13 +3919,18 @@ msgid "<link=\"LIQUIDHEATER\">Liquid Tepidizer</link>"
 msgstr "<link=\"LIQUIDHEATER\">液体ヒーター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC"
+#| msgid ""
+#| "Automated systems save power and time by removing the need for Duplicant "
+#| "management."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.DESC"
 msgid ""
-"Automated piping saves time and resources by removing the need for Duplicant "
-"management."
+"Automated piping saves power and time by removing the need for Duplicant "
+"input."
 msgstr ""
-"自動化された配管は複製人間による管理の必要性を無くし、時間と資源を節約しま"
-"す。"
+"自動化されたシステムは複製人間による管理の必要性を無くし、時間と資源を節約し"
+"ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.EFFECT"
@@ -3552,16 +3948,13 @@ msgstr "開閉"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.LOGIC_PORT_ACTIVE"
-msgid ""
-"Allows liquid flow while receiving an <link=\"LOGIC\">Active</link> signal"
-msgstr "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、液体を通します"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Allow Liquid flow"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.LOGIC_PORT_INACTIVE"
-msgid ""
-"Prevents liquid flow while receiving a <link=\"LOGIC\">Standby</link> signal"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Prevent Liquid flow"
 msgstr ""
-"<link=\"LOGIC\">スタンバイ</link>シグナルを受信すると、液体を通しません"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.NAME"
@@ -3569,10 +3962,15 @@ msgid "<link=\"LIQUIDLOGICVALVE\">Liquid Shutoff</link>"
 msgstr "<link=\"LIQUIDLOGICVALVE\">液体遮断器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.DESC"
+#| msgid ""
+#| "Mini pumps are useful for moving small quantities of liquid with minimum "
+#| "power draw."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.DESC"
 msgid ""
 "Mini pumps are useful for moving small quantities of liquid with minimum "
-"power draw."
+"power."
 msgstr "ミニポンプは少量のエネルギーで少量の液体を移動させるのに適しています。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.EFFECT
@@ -3594,9 +3992,14 @@ msgid "<link=\"LIQUIDMINIPUMP\">Mini Liquid Pump</link>"
 msgstr "<link=\"LIQUIDMINIPUMP\">ミニ吸水ポンプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.DESC"
+#| msgid ""
+#| "Piping a pump's intake to another building's output will send liquid to "
+#| "that building."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.DESC"
 msgid ""
-"Piping a pump's intake to another building's output will send liquid to that "
+"Piping a pump's output to a building's intake will send liquid to that "
 "building."
 msgstr "設置された場所の液体を給水口から吸い込み、他の設備の出力に移送します。"
 
@@ -3619,11 +4022,15 @@ msgid "<link=\"LIQUIDPUMP\">Liquid Pump</link>"
 msgstr "<link=\"LIQUIDPUMP\">吸水ポンプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASBOTTLER.DESC"
+#| msgid ""
+#| "Canisters allow Duplicants to manually deliver gases from place to place."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.DESC"
 msgid ""
-"Pitcher pumps are used to fetch water and other liquids for delivery to "
-"buildings."
-msgstr "手押しポンプは設備に運搬する水や他の液体をくみ上げるのに使います。"
+"Pitcher pumps allow Duplicants to bottle and deliver liquids from place to "
+"place."
+msgstr "ボンベは複製人間が気体を他の場所へ輸送できるようにします。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.EFFECT"
@@ -3709,11 +4116,10 @@ msgstr "動物の頭数を検出することで、自動給餌や繁殖を調整
 #. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
-"link> depending on the number of eggs and critters in a room."
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> based on the number of eggs and "
+"critters in a room."
 msgstr ""
-"室内に存在する卵や動物の数によって、<link=\"LOGIC\">アクティブ</link>または"
-"<link=\"LOGIC\">スタンバイ</link>になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT"
@@ -3721,22 +4127,24 @@ msgid "Critter Count"
 msgstr "動物の頭数"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends an <link=\"LOGIC\">Active</link> signal while the number of "
+#| "critters in the room is within the configured Critter Count range"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal while the number of critters "
-"in the room is within the configured Critter Count range"
+"Sends a <b><color=#57b95e>Green Signal</b></color> while the number of "
+"critters in the room is within the selected range"
 msgstr ""
 "室内の動物と卵の数が指定した範囲内にある時、<link=\"LOGIC\">アクティブ</link>"
 "シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal while the number of critters "
-"in the room is outside the configured Critter Count range"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"室内の動物と卵の数が設定した範囲外にある時、<link=\"LOGIC\">スタンバイ</link>"
-"シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.NAME"
@@ -3744,21 +4152,24 @@ msgid "<link=\"LOGICCRITTERCOUNTSENSOR\">Critter Sensor</link>"
 msgstr "<link=\"LOGICCRITTERCOUNTSENSOR\">動物センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC"
+#| msgid ""
+#| "Automatically detecting germ populations can help block off or clean up "
+#| "dangerous areas."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC"
 msgid ""
-"Automatically detecting germ populations can help block off or clean up "
-"dangerous areas."
+"Detecting germ populations can help block off or clean up dangerous areas."
 msgstr ""
 "病原菌濃度を検出することで、危険地帯をブロックしたり清掃したりできます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
-"link> depending on quantity of surrounding <link=\"DISEASE\">Germs</link>."
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> based on quantity of surrounding "
+"<link=\"DISEASE\">Germs</link>."
 msgstr ""
-"周囲の<link=\"DISEASE\">病原菌</link>が指定した濃度にある時、<link=\"LOGIC\">"
-"アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT"
@@ -3768,25 +4179,62 @@ msgstr "<link=\"DISEASE\">病原菌</link>濃度"
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal when the number of <link="
-"\"DISEASE\">Germ</link> enters the configured Germ Threshold range"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the number of Germs is "
+"within the selected range"
 msgstr ""
-"<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内の場合、<link=\"LOGIC\">ア"
-"クティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal when the number of <link="
-"\"DISEASE\">Germ</link> is outside the configured Germ Threshold range"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"<link=\"DISEASE\">病原菌</link>濃度が指定した範囲外の場合、<link=\"LOGIC\">ス"
-"タンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
 msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
 msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.DESC"
+msgid ""
+"Motion sensors save power by only enabling buildings when Duplicants are "
+"nearby."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.EFFECT"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> based on whether a Duplicant is in "
+"the sensor's range."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESMANUALOPERATION"
+#| msgid "Duplicant operation"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.LOGIC_PORT"
+msgid "Duplicant Motion Sensor"
+msgstr "複製人間の操作"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.LOGIC_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> while a Duplicant is in "
+"the sensor's tile range"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.LOGIC_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.LOGIC_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ROLES"
+#| msgid "<link=\"ROLES\">Duplicant Jobs</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDUPLICANTSENSOR.NAME"
+msgid "<link=\"DUPLICANTSENSOR\">Duplicant Motion Sensor</link>"
+msgstr "<link=\"ROLES\">複製人間の職業</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.DESC"
@@ -3796,12 +4244,20 @@ msgid ""
 msgstr "これらのセンサーは特定の気体を検出し、それに応じて経路を変更できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> when the chosen <link=\"ELEMENTSGAS"
+#| "\">Gas</link> is detected.\n"
+#| "\n"
+#| "Remains on <link=\"LOGIC\">Standby</link> when the selected <link="
+#| "\"ELEMENTSGAS\">Gas</link> is not present."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when the chosen <link=\"ELEMENTSGAS"
-"\">Gas</link> is detected.\n"
+"Sends a <b><color=#57b95e>Green Signal</b></color> when the selected <link="
+"\"ELEMENTSGAS\">Gas</link> is detected.\n"
 "\n"
-"Remains on <link=\"LOGIC\">Standby</link> when the selected <link="
+"Sends a <b><color=#f44a47>Red Signal</b></color> when the selected <link="
 "\"ELEMENTSGAS\">Gas</link> is not present."
 msgstr ""
 "指定した<link=\"ELEMENTSGAS\">気体</link>を検出すると、<link=\"LOGIC\">アク"
@@ -3810,27 +4266,24 @@ msgstr ""
 "検出できなかった場合、<link=\"LOGIC\">スタンバイ</link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT"
+#| msgid "Specific<link=\"ELEMENTSGAS\">Gas</link> Presence"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT"
-msgid "Specific<link=\"ELEMENTSGAS\">Gas</link> Presence"
+msgid "Specific <link=\"ELEMENTSGAS\">Gas</link> Presence"
 msgstr "特定の<link=\"ELEMENTSGAS\">気体</link>判定"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal while the configured <link="
-"\"ELEMENTSGAS\">Gas</link> element is detected"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the selected Gas is "
+"detected"
 msgstr ""
-"設定した<link=\"ELEMENTSGAS\">気体</link>元素を検出すると<link=\"LOGIC\">アク"
-"ティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal while the configured <link="
-"\"ELEMENTSGAS\">Gas</link> element is not detected"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"設定した<link=\"ELEMENTSGAS\">気体</link>元素を検出できないと<link=\"LOGIC\">"
-"スタンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.NAME"
@@ -3846,13 +4299,21 @@ msgstr ""
 "これらのセンサーは、特定の液体を検出し、それに応じて経路を変更できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> when the chosen <link="
+#| "\"ELEMENTSLIQUID\">Liquid</link> is detected.\n"
+#| "\n"
+#| "Remains on <link=\"LOGIC\">Standby</link> when the <link=\"ELEMENTSLIQUID"
+#| "\">Liquid</link> is not present."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when the chosen <link=\"ELEMENTSLIQUID"
-"\">Liquid</link> is detected.\n"
+"Sends a <b><color=#57b95e>Green Signal</b></color> when the chosen <link="
+"\"ELEMENTSLIQUID\">Liquid</link> is detected.\n"
 "\n"
-"Remains on <link=\"LOGIC\">Standby</link> when the <link=\"ELEMENTSLIQUID"
-"\">Liquid</link> is not present."
+"Sends a <b><color=#f44a47>Red Signal</b></color> when the <link="
+"\"ELEMENTSLIQUID\">Liquid</link> is not present."
 msgstr ""
 "指定した<link=\"ELEMENTSLIQUID\">液体</link>を検出すると、<link=\"LOGIC\">ア"
 "クティブ</link>になります。\n"
@@ -3868,21 +4329,15 @@ msgstr "特定の<link=\"ELEMENTSLIQUID\">液体</link>検知"
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal while the configured <link="
-"\"ELEMENTSLIQUID\">Liquid</link> element is detected"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the selected Liquid is "
+"detected"
 msgstr ""
-"設定した<link=\"ELEMENTSLIQUID\">液体</link>元素を検出すると<link=\"LOGIC\">"
-"アクティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_INACTIVE
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal while the configured <link="
-"\"ELEMENTSLIQUID\">Liquid</link> element is not detected"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"設定した<link=\"ELEMENTSLIQUID\">液体</link>元素を検出しなくなると<link="
-"\"LOGIC\">スタンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.NAME"
@@ -3890,10 +4345,15 @@ msgid "<link=\"LOGICELEMENTSENSORLIQUID\">Liquid Element Sensor</link>"
 msgstr "<link=\"LOGICELEMENTSENSORLIQUID\">液体元素センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC"
+#| msgid ""
+#| "This gate only turns buildings on when both its inputs are active at the "
+#| "same time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.DESC"
 msgid ""
-"This gate only turns buildings on when both its inputs are active at the "
-"same time."
+"This gate outputs a Green Signal when both its inputs are receiving Green "
+"Signals at the same time."
 msgstr ""
 "この論理ゲートは入力側の設備が両方とも稼働状態になった時に出力側の設備を稼働"
 "させます。"
@@ -3901,17 +4361,12 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when both the systems connected to its "
-"Inputs are <link=\"LOGIC\">Active</link>.\n"
+"Outputs a <b><color=#57b95e>Green Signal</b></color> when both Input A "
+"<b>AND</b> Input B are receiving <b><color=#57b95e>Green</b></color>.\n"
 "\n"
-"Goes into <link=\"LOGIC\">Standby</link> when one or both Inputs are on "
-"<link=\"LOGIC\">Standby</link>."
+"Outputs a <b><color=#f44a47>Red Signal</b></color> when even one Input is "
+"receiving <b><color=#f44a47>Red</b></color>."
 msgstr ""
-"両方の入力が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC\">アクティブ"
-"</link>になります。\n"
-"\n"
-"いずれか一方の入力が<link=\"LOGIC\">スタンバイ</link>になると、<link=\"LOGIC"
-"\">スタンバイ</link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.NAME"
@@ -3921,31 +4376,32 @@ msgstr "<link=\"LOGICGATEAND\">AND ゲート</link>"
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_ACTIVE"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when both the A Input and B Input are "
-"Active"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if both Inputs are "
+"receiving <b><color=#57b95e>Green</b></color>"
 msgstr ""
-"入力Aおよび入力Bがアクティブになると、<link=\"LOGIC\">アクティブ</link>になり"
-"ます"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_INACTIVE"
 msgid ""
-"Goes on <link=\"LOGIC\">Standby</link> when either or both Inputs are on "
-"Standby"
+"Sends a <b><color=#f44a47>Red Signal</b></color> if any Input is receiving "
+"<b><color=#f44a47>Red</b></color>"
 msgstr ""
-"いずれか一方または両方がスタンバイになると、<link=\"LOGIC\">スタンバイ</link>"
-"になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
-msgid "AND Gate"
-msgstr "ANDゲート"
+msgid "OUTPUT"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.DESC"
+#| msgid ""
+#| "This gate will keep buildings running for a short time after the input "
+#| "building is deactivated."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.DESC"
 msgid ""
-"This gate will keep buildings running for a short time after the input "
-"building is deactivated."
+"This gate continues outputting a Green Signal for a short time after the "
+"gate stops receiving a Green Signal."
 msgstr ""
 "この論理ゲートは入力側の設備が非稼働状態になった後でも、しばらくの間設備を稼"
 "働させます。"
@@ -3953,17 +4409,13 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> if the system connected to its Input "
-"is <link=\"LOGIC\">Active</link>.\n"
+"Outputs a <b><color=#57b95e>Green Signal</b></color> if the Input is "
+"receiving a <b><color=#57b95e>Green Signal</b></color>.\n"
 "\n"
-"Stays <link=\"LOGIC\">Active</link> for a short time after its Input enters "
-"<link=\"LOGIC\">Standby</link>."
+"Continues sending a <b><color=#57b95e>Green Signal</b></color> for an amount "
+"of buffer time after the Input receives a <b><color=#f44a47>Red Signal</b></"
+"color>."
 msgstr ""
-"入力が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC\">アクティブ</"
-"link>になります。\n"
-"\n"
-"入力が<link=\"LOGIC\">スタンバイ</link>になっても、少しの間<link=\"LOGIC\">ア"
-"クティブ</link>を保ちます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.NAME"
@@ -3973,49 +4425,39 @@ msgstr "<link=\"LOGICGATEBUFFER\">BUFFER ゲート</link>"
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_ACTIVE"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when its Input is Active, or while its "
-"timer is ticking down"
+"Sends a <b><color=#57b95e>Green Signal</b></color> while receiving "
+"<b><color=#57b95e>Green</b></color>. After receiving <b><color=#f44a47>Red</"
+"b></color>, will continue sending <b><color=#57b95e>Green</b></color> until "
+"the timer has expired"
 msgstr ""
-"入力がアクティブまたはタイマーが進行中の時、<link=\"LOGIC\">アクティブ</link>"
-"になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_INACTIVE"
-msgid ""
-"Goes on <link=\"LOGIC\">Standby</link> when both its Input is on Standby and "
-"its timer has expired"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>."
 msgstr ""
-"入力がスタンバイかつタイマーが切れていると、<link=\"LOGIC\">スタンバイ</link>"
-"になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_NAME"
-msgid "Buffered Signal"
-msgstr "バッファー シグナル"
+msgid "OUTPUT"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.DESC"
 msgid ""
-"This gate will keep buildings turned off for a short time after the input "
-"building is activated."
+"This gate only lets a Green Signal through if its Input has received a Green "
+"Signal that lasted longer than the selected filter time."
 msgstr ""
-"この論理ゲートは入力側の設備が稼働状態になった後でも、しばらくの間設備を非稼"
-"働にします。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.EFFECT"
 msgid ""
-"Enters <link=\"LOGIC\">Standby</link> if the system connected to its Input "
-"is also on <link=\"LOGIC\">Standby</link>.\n"
+"Only lets a <b><color=#57b95e>Green Signal</b></color> through if the Input "
+"has received a <b><color=#57b95e>Green Signal</b></color> for longer than "
+"the selected filter time.\n"
 "\n"
-"Stays in <link=\"LOGIC\">Standby</link> for a short time after its Input "
-"becomes <link=\"LOGIC\">Active</link>."
+"Will continue outputting a <b><color=#f44a47>Red Signal</b></color> if the "
+"<b><color=#57b95e>Green Signal</b></color> did not last long enough."
 msgstr ""
-"入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">スタンバイ</"
-"link>になります。\n"
-"\n"
-"入力が<link=\"LOGIC\">アクティブ</link>になっても、少しの間<link=\"LOGIC\">ス"
-"タンバイ</link>を保ちます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.NAME"
@@ -4025,31 +4467,30 @@ msgstr "<link=\"LOGICGATEFILTER\">FILTER ゲート</link>"
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_ACTIVE"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when both its Input is Active and its "
-"timer has expired"
+"Sends a <b><color=#57b95e>Green Signal</b></color> after receiving "
+"<b><color=#57b95e>Green</b></color> for longer than the selected filter timer"
 msgstr ""
-"入力がアクティブかつタイマーが切れていると、<link=\"LOGIC\">アクティブ</link>"
-"になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_INACTIVE"
-msgid ""
-"Goes on <link=\"LOGIC\">Standby</link> when its Input is on Standby or when "
-"its timer is ticking down"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>."
 msgstr ""
-"入力がスタンバイまたはタイマーが進行中の時、<link=\"LOGIC\">スタンバイ</link>"
-"になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_NAME"
-msgid "Filtered Signal"
-msgstr "FILTER シグナル"
+msgid "OUTPUT"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.DESC"
+#| msgid ""
+#| "This gate reverses logic, turning buildings on when it receives off "
+#| "values and vice versa."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.DESC"
 msgid ""
-"This gate reverses logic, turning buildings on when it receives off values "
-"and vice versa."
+"This gate reverses automation signals, turning a Green Signal into a Red "
+"Signal and vice versa."
 msgstr ""
 "この論理ゲートは論理状態を反転させます。設備の稼働状態は受け取った入力値を逆"
 "転させたものになります。"
@@ -4057,17 +4498,12 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> if the system connected to its Input "
-"is on <link=\"LOGIC\">Standby</link>.\n"
+"Outputs a <b><color=#57b95e>Green Signal</b></color> if the Input is "
+"receiving a <b><color=#f44a47>Red Signal</b></color>.\n"
 "\n"
-"Goes into <link=\"LOGIC\">Standby</link> when its Input is <link=\"LOGIC"
-"\">Active</link>."
+"Outputs a <b><color=#f44a47>Red Signal</b></color> when its Input is "
+"receiving a <b><color=#57b95e>Green Signal</b></color>."
 msgstr ""
-"入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">アクティブ</"
-"link>になります。\n"
-"\n"
-"入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">スタンバイ</"
-"link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.NAME"
@@ -4076,42 +4512,38 @@ msgstr "<link=\"LOGICGATENOT\">NOT ゲート</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_ACTIVE"
-msgid "Becomes <link=\"LOGIC\">Active</link> when its Input is on Standby"
-msgstr "入力がスタンバイの時、<link=\"LOGIC\">アクティブ</link>になります"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> if receiving "
+"<b><color=#f44a47>Red</b></color>"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_INACTIVE"
-msgid "Goes on <link=\"LOGIC\">Standby</link> when its Input is Active"
-msgstr "入力がアクティブの時、<link=\"LOGIC\">スタンバイ</link>になります"
+msgid ""
+"Sends a <b><color=#f44a47>Red Signal</b></color> if receiving "
+"<b><color=#57b95e>Green</b></color>"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_NAME"
-msgid "NOT Gate"
-msgstr "NOTゲート"
+msgid "OUTPUT"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.DESC"
 msgid ""
-"This gate can only turn buildings on if it has one or more active inputs "
-"connected to it."
+"This gate outputs a Green Signal if receiving one or more Green Signals."
 msgstr ""
-"この論理ゲートは最低1つ以上のアクティブな入力があった場合のみ設備を稼働させま"
-"す。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> if one or both of the systems "
-"connected to its Inputs are <link=\"LOGIC\">Active</link>.\n"
+"Outputs a <b><color=#57b95e>Green Signal</b></color> if at least one of "
+"Input A <b>OR</b> Input B is receiving <b><color=#57b95e>Green</b></color>.\n"
 "\n"
-"Goes into <link=\"LOGIC\">Standby</link> when neither Inputs are <link="
-"\"LOGIC\">Active</link>."
+"Outputs a <b><color=#f44a47>Red Signal</b></color> when neither Input A or "
+"Input B are receiving <b><color=#57b95e>Green</b></color>."
 msgstr ""
-"いずれか一方の入力が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC\">ア"
-"クティブ</link>になります。\n"
-"\n"
-"両方の入力が<link=\"LOGIC\">スタンバイ</link>になると、<link=\"LOGIC\">スタン"
-"バイ</link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.NAME"
@@ -4121,43 +4553,44 @@ msgstr "<link=\"LOGICGATEOR\">OR ゲート</link>"
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.OUTPUT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.OUTPUT_ACTIVE"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when either the A Input or B Input is "
-"Active"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if any Input is receiving "
+"<b><color=#57b95e>Green</b></color>"
 msgstr ""
-"入力Aまたは入力Bがアクティブの時、<link=\"LOGIC\">アクティブ</link>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.OUTPUT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.OUTPUT_INACTIVE"
-msgid "Goes on <link=\"LOGIC\">Standby</link> when both Inputs are on Standby"
+msgid ""
+"Sends a <b><color=#f44a47>Red Signal</b></color> if both Inputs are "
+"receiving <b><color=#f44a47>Red</b></color>"
 msgstr ""
-"両方の入力がスタンバイの時、<link=\"LOGIC\">スタンバイ</link>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.OUTPUT_NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.OUTPUT_NAME"
-msgid "OR Gate"
-msgstr "ORゲート"
+msgid "OUTPUT"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.DESC"
+#| msgid ""
+#| "This gate needs exactly one of its inputs to be active to turn on "
+#| "buildings."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.DESC"
 msgid ""
-"This gate needs exactly one of its inputs to be active to turn on buildings."
+"This gate outputs a Green Signal if exactly one of its Inputs is receiving a "
+"Green Signal."
 msgstr ""
 "この論理ゲートはいずれか一方の入力がアクティブな場合のみ設備を稼働させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> if one of the systems connected to its "
-"Inputs is <link=\"LOGIC\">Active</link>.\n"
+"Outputs a <b><color=#57b95e>Green Signal</b></color> if exactly one of its "
+"Inputs is receiving <b><color=#57b95e>Green</b></color>.\n"
 "\n"
-"Goes into <link=\"LOGIC\">Standby</link> if both or neither Inputs are <link="
-"\"LOGIC\">Active</link>."
+"Outputs a <b><color=#f44a47>Red Signal</b></color> if both or neither Inputs "
+"are receiving a <b><color=#57b95e>Green Signal</b></color>."
 msgstr ""
-"いずれか一方の入力が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC\">ア"
-"クティブ</link>になります。\n"
-"\n"
-"両方の入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">スタン"
-"バイ</link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.NAME"
@@ -4167,49 +4600,42 @@ msgstr "<link=\"LOGICGATEXOR\">XOR ゲート</link>"
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_ACTIVE"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when one of its Inputs is Active, but "
-"not both"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if exactly one of its "
+"Inputs is receiving <b><color=#57b95e>Green</b></color>"
 msgstr ""
-"いずれか一方の入力がアクティブの時(両方はNG)、<link=\"LOGIC\">アクティブ</"
-"link>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_INACTIVE"
 msgid ""
-"Goes on <link=\"LOGIC\">Standby</link> when both Input signals match (either "
-"Active or Standby)"
+"Sends a <b><color=#f44a47>Red Signal</b></color> if both Input signals match "
+"(any color)"
 msgstr ""
-"両方の入力が同じ時(アクティブ-アクティブ、スタンバイ-スタンバイ)、<link="
-"\"LOGIC\">スタンバイ</link>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_NAME"
-msgid "XOR Gate"
-msgstr "XORゲート"
+msgid "OUTPUT"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.DESC"
 msgid ""
-"Once active, a memory toggle keeps buildings on until the refresh port "
-"receives an active signal."
+"A Memory stores a Green Signal received in the Set Port (S) until the Reset "
+"Port (R) receives a Green Signal."
 msgstr ""
-"アクティブになると、リフレッシュポートがシグナルを受信するまで設備の状態を維"
-"持します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> when the Set Port (S) is <link=\"LOGIC"
-"\">Active</link>.\n"
+"Contains an internal Memory, and will output whatever signal is stored in "
+"that Memory. Signals sent to the Inputs <i>only</i> affect the Memory, and "
+"do not pass through to the Output. \n"
 "\n"
-"Goes on <link=\"LOGIC\">Standby</link> if the Refresh Port (R) becomes <link="
-"\"LOGIC\">Active</link>."
+"Sending a <b><color=#57b95e>Green Signal</b></color> to the Set Port (S) "
+"will set the memory to <b><color=#57b95e>Green</b></color>. \n"
+"\n"
+"Sending a <b><color=#57b95e>Green Signal</b></color> to the Reset Port (R) "
+"will reset the memory back to <b><color=#f44a47>Red</b></color>."
 msgstr ""
-"設定ポート(S)が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC\">アク"
-"ティブ</link>になります。\n"
-"\n"
-"リフレッシュポート(R)が<link=\"LOGIC\">アクティブ</link>になると、<link="
-"\"LOGIC\">スタンバイ</link>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.NAME"
@@ -4218,59 +4644,61 @@ msgstr "<link=\"LOGICMEMORY\">メモリスイッチ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT"
-msgid "Current Value"
-msgstr "現在の値"
+msgid "MEMORY OUTPUT"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_ACTIVE"
-msgid "Becomes <link=\"LOGIC\">Active</link> when Refresh Port is Set"
+msgid ""
+"Outputs a <b><color=#57b95e>Green Signal</b></color> if the internal Memory "
+"is set to <b><color=#57b95e>Green</b></color>"
 msgstr ""
-"リフレッシュポートがセットになると、<link=\"LOGIC\">アクティブ</link>になりま"
-"す。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_INACTIVE"
-msgid "Goes on <link=\"LOGIC\">Standby</link> when Refresh Port is Cleared"
+msgid ""
+"Outputs a <b><color=#f44a47>Red Signal</b></color> if the internal Memory is "
+"set to <b><color=#f44a47>Red</b></color>"
 msgstr ""
-"リフレッシュポートがクリアになると、<link=\"LOGIC\">スタンバイ</link>になりま"
-"す"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT
+#, fuzzy
+#| msgctxt "STRINGS.UI.CRASHSCREEN.REPORTBUTTON"
+#| msgid "REPORT CRASH"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT"
-msgid "Clear Active"
-msgstr "クリア"
+msgid "RESET PORT (R)"
+msgstr "送信"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_ACTIVE"
 msgid ""
-"Clears the Refresh Port when an <link=\"LOGIC\">Active</link> signal is "
-"received"
+"<b><color=#57b95e>Green Signal</b></color>: Reset the internal Memory to "
+"<b><color=#f44a47>Red</b></color>"
 msgstr ""
-"<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、リフレッシュポートをク"
-"リアします"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_INACTIVE"
-msgid ""
+msgid "<b><color=#f44a47>Red Signal</b></color>: No effect"
 msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT
+#, fuzzy
+#| msgctxt "STRINGS.UI.REPORT"
+#| msgid "REPORTS"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT"
-msgid "Set Active"
-msgstr "セット"
+msgid "SET PORT (S)"
+msgstr "レポート"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT_ACTIVE"
 msgid ""
-"Sets the Refresh Port when an <link=\"LOGIC\">Active</link> signal is "
-"received"
+"<b><color=#57b95e>Green Signal</b></color>: Set the internal Memory to "
+"<b><color=#57b95e>Green</b></color>"
 msgstr ""
-"<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、リフレッシュポートを"
-"セットにします"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT_INACTIVE"
-msgid ""
+msgid "<b><color=#f44a47>Red Signal</b></color>: No effect"
 msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.STATUS_ITEM_VALUE
@@ -4279,10 +4707,15 @@ msgid "Current Value: {0}"
 msgstr "現在の値: {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC"
+#| msgid ""
+#| "Automated systems save power and time by removing the need for Duplicant "
+#| "management."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC"
 msgid ""
 "Automated systems save power and time by removing the need for Duplicant "
-"management."
+"input."
 msgstr ""
 "自動化されたシステムは複製人間による管理の必要性を無くし、時間と資源を節約し"
 "ます。"
@@ -4308,19 +4741,16 @@ msgstr "電力遮断"
 #. STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.LOGIC_PORT_ACTIVE"
 msgid ""
-"Allows power through connected circuits while receiving an <link=\"LOGIC"
-"\">Active</link> signal"
+"<b><color=#57b95e>Green Signal</b></color>: Allow <style=\"KKeyword\">Power</"
+"style> through connected circuits"
 msgstr ""
-"<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、電力を回路に接続します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.LOGIC_PORT_INACTIVE"
 msgid ""
-"Prevents power from flowing through connected circuits while receiving a "
-"<link=\"LOGIC\">Standby</link> signal"
+"<b><color=#f44a47>Red Signal</b></color>: Prevent <style=\"KKeyword\">Power</"
+"style> from flowing through connected circuits"
 msgstr ""
-"<link=\"LOGIC\">スタンバイ</link>シグナルを受信すると、電力が回路に流れるをの"
-"妨げます"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.NAME"
@@ -4328,17 +4758,29 @@ msgid "<link=\"LOGICPOWERRELAY\">Power Shutoff</link>"
 msgstr "<link=\"LOGICPOWERRELAY\">電源遮断器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.DESC"
+#| msgid ""
+#| "Atmo Sensors can be used to prevent excess oxygen production and "
+#| "overpressurization."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.DESC"
 msgid ""
-"Atmo Sensors can be used to prevent excess oxygen production and "
+"Atmo sensors can be used to prevent excess oxygen production and "
 "overpressurization."
 msgstr "気圧センサーは無駄な酸素生産や気圧超過を防ぐために使えます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
+#| "link> when <link=\"ELEMENTSGAS\">Gas</link> pressure enters the chosen "
+#| "range."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
-"link> when <link=\"ELEMENTSGAS\">Gas</link> pressure enters the chosen range."
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> when <link=\"ELEMENTSGAS\">Gas</"
+"link> pressure enters the chosen range."
 msgstr ""
 "<link=\"ELEMENTSGAS\">気</link>圧が指定した範囲内にある時、<link=\"LOGIC\">ア"
 "クティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
@@ -4351,20 +4793,14 @@ msgstr "<link=\"ELEMENTSGAS\">気</link>圧"
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal when <link=\"ELEMENTSGAS"
-"\">Gas</link> pressure is within its configured Pressure Threshold range"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if Gas pressure is within "
+"the selected range"
 msgstr ""
-"<link=\"ELEMENTSGAS\">気</link>圧が指定した範囲内にある時、<link=\"LOGIC\">ア"
-"クティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal when <link=\"ELEMENTSGAS"
-"\">Gas</link> pressure is outside its configured Pressure Threshold range"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"<link=\"ELEMENTSGAS\">気</link>圧が指定した範囲外にある時、<link=\"LOGIC\">ス"
-"タンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.NAME"
@@ -4381,11 +4817,19 @@ msgstr ""
 "します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
+#| "link> when <link=\"ELEMENTSLIQUID\">Liquid</link> pressure enters the "
+#| "chosen range.\n"
+#| "\n"
+#| "Must be submerged in <link=\"ELEMENTSLIQUID\">Liquid</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
-"link> when <link=\"ELEMENTSLIQUID\">Liquid</link> pressure enters the chosen "
-"range.\n"
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> when <link=\"ELEMENTSLIQUID"
+"\">Liquid</link> pressure enters the chosen range.\n"
 "\n"
 "Must be submerged in <link=\"ELEMENTSLIQUID\">Liquid</link>."
 msgstr ""
@@ -4402,21 +4846,15 @@ msgstr "<link=\"ELEMENTSLIQUID\">水</link>圧"
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal while <link=\"ELEMENTSLIQUID"
-"\">Liquid</link> pressure is within its configured Pressure Threshold range"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if Liquid pressure is "
+"within the selected range"
 msgstr ""
-"<link=\"ELEMENTSLIQUID\">水</link>圧が指定した範囲内にある時、<link=\"LOGIC"
-"\">アクティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_INACTIVE
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal while <link=\"ELEMENTSLIQUID"
-"\">Liquid</link> pressure is outside its configured Pressure Threshold range"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"<link=\"ELEMENTSLIQUID\">水</link>圧が指定した範囲外にある時、<link=\"LOGIC"
-"\">Standby</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.NAME"
@@ -4424,19 +4862,32 @@ msgid "<link=\"LOGICPRESSURESENSORLIQUID\">Hydro Sensor</link>"
 msgstr "<link=\"LOGICPRESSURESENSORLIQUID\">水圧センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.DESC"
+#| msgid ""
+#| "Signal switches do not turn grids on and off like power switches, but add "
+#| "an additional signal."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.DESC"
 msgid ""
-"Signal switches do not turn grids on and off like power switches, but add an "
-"additional signal."
+"Signal switches don't turn grids on and off like power switches, but add an "
+"extra signal."
 msgstr ""
 "シグナル スイッチは電源スイッチのようにグリッドのオン/オフはしませんが、追加"
 "の信号を出力します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.EFFECT"
+#| msgid ""
+#| "Can be made <link=\"LOGIC\">Active</link> or <link=\"LOGIC\">Standby</"
+#| "link> on an <link=\"LOGIC\">Automation</link> grid.\n"
+#| "\n"
+#| "Must be manually toggled by a Duplicant."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.EFFECT"
 msgid ""
-"Can be made <link=\"LOGIC\">Active</link> or <link=\"LOGIC\">Standby</link> "
-"on an <link=\"LOGIC\">Automation</link> grid.\n"
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> on an <link=\"LOGIC\">Automation</"
+"link> grid.\n"
 "\n"
 "Must be manually toggled by a Duplicant."
 msgstr ""
@@ -4452,15 +4903,13 @@ msgstr "シグナル切り換え"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_ACTIVE"
-msgid "Sends an <link=\"LOGIC\">Active</link> signal while toggled on"
+msgid "Sends a <b><color=#57b95e>Green Signal</b></color> if toggled ON"
 msgstr ""
-"スイッチがONになると<link=\"LOGIC\">アクティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_INACTIVE"
-msgid "Sends a <link=\"LOGIC\">Standby</link> signal while toggled off"
+msgid "Sends a <b><color=#f44a47>Red Signal</b></color> if toggled OFF"
 msgstr ""
-"スイッチがOFFになると<link=\"LOGIC\">スタンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.NAME"
@@ -4468,19 +4917,31 @@ msgid "<link=\"LOGICSWITCH\">Signal Switch</link>"
 msgstr "<link=\"LOGICSWITCH\">シグナル スイッチ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC"
+#| msgid ""
+#| "Thermo sensors can auto-disable buildings when they approach dangerous "
+#| "temperatures."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC"
 msgid ""
-"Thermo sensors can auto-disable buildings when they approach dangerous "
+"Thermo sensors can disable buildings when they approach dangerous "
 "temperatures."
 msgstr ""
 "温度センサーは設備が稼働不可能な温度に達した時に自動停止させることができま"
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.EFFECT"
+#| msgid ""
+#| "Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
+#| "link> when ambient <link=\"HEAT\">Temperature</link> enters the chosen "
+#| "range."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.EFFECT"
 msgid ""
-"Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
-"link> when ambient <link=\"HEAT\">Temperature</link> enters the chosen range."
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> when ambient <link=\"HEAT"
+"\">Temperature</link> enters the chosen range."
 msgstr ""
 "周辺<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link=\"LOGIC\">アク"
 "ティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
@@ -4491,22 +4952,23 @@ msgid "Ambient <link=\"HEAT\">Temperature</link>"
 msgstr "周辺<link=\"HEAT\">温度</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends an <link=\"LOGIC\">Active</link> signal while ambient <link=\"HEAT"
+#| "\">Temperature</link> is within its configured Temperature Threshold range"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal while ambient <link=\"HEAT"
-"\">Temperature</link> is within its configured Temperature Threshold range"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if ambient <link=\"HEAT"
+"\">Temperature</link> is within the selected range"
 msgstr ""
 "周辺<link=\"HEAT\">温度</link>が指定した範囲内にある時、<link=\"LOGIC\">アク"
 "ティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal while ambient <link=\"HEAT"
-"\">Temperature</link> is outside its configured Temperature Threshold range"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"周辺<link=\"HEAT\">温度</link>が指定した範囲外にある時、<link=\"LOGIC\">スタ"
-"ンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.NAME"
@@ -4514,20 +4976,23 @@ msgid "<link=\"LOGICTEMPERATURESENSOR\">Thermo Sensor</link>"
 msgstr "<link=\"LOGICTEMPERATURESENSOR\">熱センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.DESC"
+#| msgid ""
+#| "Clock sensors ensure that systems always turn on at the same time, day or "
+#| "night, every cycle."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.DESC"
 msgid ""
-"Clock sensors ensure that systems always turn on at the same time, day or "
-"night, every cycle."
+"Clock sensors ensure systems always turn on at the same time, day or night, "
+"every cycle."
 msgstr "時刻センサーは毎サイクルの日中または夜間の同じ時間帯に稼働します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.EFFECT"
 msgid ""
-"Sets an automatic <link=\"LOGIC\">Active</link> and <link=\"LOGIC\">Standby</"
-"link> schedule using a timer."
+"Sets an automatic <b><color=#57b95e>Green Signal</b></color> and "
+"<b><color=#f44a47>Red Signal</b></color> schedule using a timer."
 msgstr ""
-"自動的に<link=\"LOGIC\">アクティブ</link>/<link=\"LOGIC\">スタンバイ</link>に"
-"なる時刻を設定します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT"
@@ -4537,18 +5002,14 @@ msgstr "サイクル時間"
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
-"Sends an <link=\"LOGIC\">Active</link> signal when the current time enters "
-"its configured Time Schedule range"
+"Sends a <b><color=#57b95e>Green Signal</b></color> if current time is within "
+"the selected <b><color=#57b95e>Green</b></color> range"
 msgstr ""
-"指定した時刻範囲内の時、<link=\"LOGIC\">アクティブ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT_INACTIVE"
-msgid ""
-"Sends a <link=\"LOGIC\">Standby</link> signal when current time is not "
-"within its configured Time Schedule range"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"指定した時刻範囲外の時、<link=\"LOGIC\">スタンバイ</link>シグナルを送信します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.NAME"
@@ -4556,20 +5017,29 @@ msgid "<link=\"LOGICTIMEOFDAYSENSOR\">Clock Sensor</link>"
 msgstr "<link=\"LOGICTIMEOFDAYSENSOR\">時刻センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICWIRE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIRE.DESC"
+#| msgid ""
+#| "Automation wire is used to connect electronic components to the inputs of "
+#| "automation gates."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIRE.DESC"
-msgid ""
-"Automation wire is used to connect electronic components to the inputs of "
-"automation gates."
+msgid "Automation wire is used to connect building ports to automation gates."
 msgstr "自動化ワイヤーは電気機器を自動化ゲートの入力に接続するのに使います。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICWIRE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIRE.EFFECT"
+#| msgid ""
+#| "Connects buildings to <link=\"POWER\">Power</link> sources.\n"
+#| "\n"
+#| "Can be run through wall and floor tile."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIRE.EFFECT"
 msgid ""
-"Connects automatable buildings to <link=\"LOGIC\">Automation Gates</link>.\n"
+"Connects buildings to <link=\"LOGIC\">Sensors</link>.\n"
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"自動化可能な設備と<link=\"LOGIC\">自動化ゲート</link>を接続します。\n"
+"<link=\"POWER\">電力</link>源と設備を接続します。\n"
 "\n"
 "壁や床のタイルを貫通して敷設できます。"
 
@@ -4606,20 +5076,16 @@ msgstr "伝送シグナル"
 #. STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_ACTIVE"
 msgid ""
-"Transmits an <link=\"LOGIC\">Active</link> signal when receiving an Active "
-"signal"
+"<b><color=#57b95e>Green Signal</b></color>: Pass through the "
+"<b><color=#57b95e>Green Signal</b></color>"
 msgstr ""
-"アクティブシグナルを受信すると<link=\"LOGIC\">アクティブ</link>シグナルを伝送"
-"します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_INACTIVE"
 msgid ""
-"Transmits a <link=\"LOGIC\">Standby</link> signal when receiving a Standby "
-"signal"
+"<b><color=#f44a47>Red Signal</b></color>: Pass through the "
+"<b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"スタンバイシグナルを受信すると<link=\"LOGIC\">スタンバイ</link>シグナルを伝送"
-"します"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.NAME"
@@ -4627,10 +5093,15 @@ msgid "<link=\"LOGICWIREBRIDGE\">Automation Wire Bridge</link>"
 msgstr "<link=\"LOGICWIREBRIDGE\">自動化ワイヤーブリッジ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LUXURYBED.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LUXURYBED.DESC"
+#| msgid ""
+#| "Duplicants prefer comfy beds to cots and will gain more stamina back from "
+#| "sleeping in them."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LUXURYBED.DESC"
 msgid ""
-"Duplicants prefer comfy beds to cots and will gain more stamina back from "
-"sleeping in them."
+"Duplicants prefer comfy beds to cots and gain more stamina from sleeping in "
+"them."
 msgstr ""
 "複製人間は簡易ベッドより快適ベッドを好み、そこで睡眠を取ることによってより多"
 "くのスタミナを回復させます。"
@@ -4697,9 +5168,14 @@ msgid "<link=\"MANUALGENERATOR\">Manual Generator</link>"
 msgstr "<link=\"MANUALGENERATOR\">人力発電機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.MANUALPRESSUREDOOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALPRESSUREDOOR.DESC"
+#| msgid ""
+#| "Airlocks can quarter off dangerous areas or prevent gases from seeping "
+#| "into the colony."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALPRESSUREDOOR.DESC"
 msgid ""
-"Airlocks can quarter off dangerous areas or prevent gases from seeping into "
+"Airlocks can quarter off dangerous areas and prevent gases from seeping into "
 "the colony."
 msgstr ""
 "エアロックは危険地帯を封鎖したり、コロニーに気体が漏れ出ることを防止します。"
@@ -4836,14 +5312,18 @@ msgstr ""
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.MEDICALCOT.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MEDICALCOT.EFFECT"
+#| msgid ""
+#| "Accelerates <link=\"HEALTH\">Health</link> restoration and the healing of "
+#| "physical injuries."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MEDICALCOT.EFFECT"
 msgid ""
 "Accelerates <link=\"HEALTH\">Health</link> restoration and the healing of "
-"physical injuries."
-msgstr ""
-"<link=\"DISEASE\">病気</link>からの快復を促進します。\n"
+"physical injuries.\n"
 "\n"
-"<link=\"HEALTH\">生命力</link>を回復させ、傷を治癒します。"
+"Revives incapacitated Duplicants."
+msgstr "<link=\"HEALTH\">生命力</link>を回復させ、傷を治癒します。"
 
 #. STRINGS.BUILDINGS.PREFABS.MEDICALCOT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.MEDICALCOT.NAME"
@@ -4851,10 +5331,14 @@ msgid "<link=\"MEDICALCOT\">Triage Cot</link>"
 msgstr "<link=\"MEDICALCOT\">医療ベッド</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.MESHTILE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MESHTILE.DESC"
+#| msgid ""
+#| "Mesh tile can be used to make Duplicant pathways in areas where liquid "
+#| "needs to flow."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MESHTILE.DESC"
 msgid ""
-"Mesh tile can be used to make Duplicant pathways in areas where liquid needs "
-"to flow."
+"Mesh tile can be used to make Duplicant pathways in areas where liquid flows."
 msgstr ""
 "網状タイルは液体を通過させる必要がある場所へ複製人間の通り道を作るために使わ"
 "れます。"
@@ -4884,13 +5368,23 @@ msgid ""
 msgstr "精錬された金属は高度な電子機器の建築や技術に必要です。"
 
 #. STRINGS.BUILDINGS.PREFABS.METALREFINERY.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.METALREFINERY.EFFECT"
+#| msgid ""
+#| "Produces <link=\"REFINEDMETAL\">Refined Metals</link> from raw <link="
+#| "\"RAWMETAL\">Metal Ore</link>.\n"
+#| "\n"
+#| "Outputs significantly <link=\"HEAT\">Heated</link> <link=\"ELEMENTSLIQUID"
+#| "\">Liquid</link>.\n"
+#| "\n"
+#| "Duplicants will not fabricate items unless recipes are queued."
 msgctxt "STRINGS.BUILDINGS.PREFABS.METALREFINERY.EFFECT"
 msgid ""
 "Produces <link=\"REFINEDMETAL\">Refined Metals</link> from raw <link="
 "\"RAWMETAL\">Metal Ore</link>.\n"
 "\n"
-"Outputs significantly <link=\"HEAT\">Heated</link> <link=\"ELEMENTSLIQUID"
-"\">Liquid</link>.\n"
+"Significantly <link=\"HEAT\">Heats</link> and outputs the <link="
+"\"ELEMENTSLIQUID\">Liquid</link> piped into it.\n"
 "\n"
 "Duplicants will not fabricate items unless recipes are queued."
 msgstr ""
@@ -5003,10 +5497,15 @@ msgid "<link=\"METHANEGENERATOR\">Natural Gas Generator</link>"
 msgstr "<link=\"METHANEGENERATOR\">天然ガス発電機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.MICROBEMUSHER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MICROBEMUSHER.DESC"
+#| msgid ""
+#| "Food from a musher will keep Duplicants alive, but may cause stress and "
+#| "disease over time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MICROBEMUSHER.DESC"
 msgid ""
-"Food from a musher will keep Duplicants alive, but may cause stress and "
-"disease over time."
+"Musher recipes will keep Duplicants fed, but may impact health and morale "
+"over time."
 msgstr ""
 "粉砕機で作られた食糧は複製人間の糧になりますが、古くなったものはストレスや病"
 "気の原因になります。"
@@ -5028,10 +5527,15 @@ msgid "<link=\"MICROBEMUSHER\">Microbe Musher</link>"
 msgstr "<link=\"MICROBEMUSHER\">微生物粉砕機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.DESC"
+#| msgid ""
+#| "Oxygen diffusers are inefficient, but can output enough <link=\"OXYGEN"
+#| "\">Oxygen</link> to keep a colony breathing."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.DESC"
 msgid ""
-"Oxygen diffusers are inefficient, but can output enough <link=\"OXYGEN"
-"\">Oxygen</link> to keep a colony breathing."
+"Oxygen diffusers are inefficient, but output enough oxygen to keep a colony "
+"breathing."
 msgstr ""
 "酸素散布装置は非効率ですが、コロニー内で呼吸可能な量の<link=\"OXYGEN\">酸素</"
 "link>を出力します。"
@@ -5053,6 +5557,77 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.NAME"
 msgid "<link=\"MINERALDEOXIDIZER\">Oxygen Diffuser</link>"
 msgstr "<link=\"MINERALDEOXIDIZER\">酸素散布装置</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.MONUMENTBOTTOM.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.MONUMENTBOTTOM.DESC"
+msgid "The base of a monument must be constructed first."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.MONUMENTBOTTOM.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.MONUMENTBOTTOM.EFFECT"
+msgid ""
+"Builds the bottom section of a Great Monument.\n"
+"\n"
+"Can be customized.\n"
+"\n"
+"A Great Monument must be built to achieve the Colonize Imperative."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.MONUMENTBOTTOM.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.CEMENT.NAME"
+#| msgid "<link=\"CEMENT\">Cement</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MONUMENTBOTTOM.NAME"
+msgid "<link=\"MONUMENTBOTTOM\">Monument Base</link>"
+msgstr "<link=\"CEMENT\">セメント</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.MONUMENTMIDDLE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.MONUMENTMIDDLE.DESC"
+msgid "Customized sections of a Great Monument can be mixed and matched."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.MONUMENTMIDDLE.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.MONUMENTMIDDLE.EFFECT"
+msgid ""
+"Builds the middle section of a Great Monument.\n"
+"\n"
+"Can be customized.\n"
+"\n"
+"A Great Monument must be built to achieve the Colonize Imperative."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.MONUMENTMIDDLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.CEMENTMIX.NAME"
+#| msgid "<link=\"CEMENTMIX\">Cement Mix</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MONUMENTMIDDLE.NAME"
+msgid "<link=\"MONUMENTMIDDLE\">Monument Midsection</link>"
+msgstr "<link=\"CEMENTMIX\">セメントミックス</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.MONUMENTTOP.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.MONUMENTTOP.DESC"
+msgid ""
+"Building a Great Monument will declare to the universe that this hunk of "
+"rock is your own."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.MONUMENTTOP.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.MONUMENTTOP.EFFECT"
+msgid ""
+"Builds the top section of a Great Monument.\n"
+"\n"
+"Can be customized.\n"
+"\n"
+"A Great Monument must be built to achieve the Colonize Imperative."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.MONUMENTTOP.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.CEMENT.NAME"
+#| msgid "<link=\"CEMENT\">Cement</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MONUMENTTOP.NAME"
+msgid "<link=\"MONUMENTTOP\">Monument Top</link>"
+msgstr "<link=\"CEMENT\">セメント</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.MOULDINGTILE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MOULDINGTILE.DESC"
@@ -5077,19 +5652,51 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.MOULDINGTILE.NAME"
 msgid "<link=\"MOUDLINGTILE\">Trimming Tile</link>"
 msgstr "<link=\"MOUDLINGTILE\">トリム タイル</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.NUCLEARREACTOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.NUCLEARREACTOR.DESC"
+msgid "Makes an absurd amount of heat"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.NUCLEARREACTOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.HEATGUN.NAME"
+#| msgid "Heat Gun"
+msgctxt "STRINGS.BUILDINGS.PREFABS.NUCLEARREACTOR.EFFECT"
+msgid "Heat!"
+msgstr "ヒートガン"
+
+#. STRINGS.BUILDINGS.PREFABS.NUCLEARREACTOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALGENERATOR.NAME"
+#| msgid "<link=\"MANUALGENERATOR\">Manual Generator</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.NUCLEARREACTOR.NAME"
+msgid "<link=\"NUCLEARREACTOR\">Nuclear Reactor</link>"
+msgstr "<link=\"MANUALGENERATOR\">人力発電機</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.DESC"
+#| msgid "Automatic dispensers will store and drop a small amount of objects."
 msgctxt "STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.DESC"
-msgid "Automatic dispensers will store and drop a small amount of objects."
+msgid "Automatic dispensers will store and drop resources in small quantities."
 msgstr "自動化ディスペンサーは少量の物体を保管、排出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.EFFECT"
+#| msgid ""
+#| "Stores any <link=\"ELEMENTSSOLID\">Solid Materials</link> delivered to it "
+#| "by Duplicants.\n"
+#| "\n"
+#| "Dumps stored materials back into the world when it receives an <link="
+#| "\"LOGIC\">Active</link> logic signal."
 msgctxt "STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.EFFECT"
 msgid ""
 "Stores any <link=\"ELEMENTSSOLID\">Solid Materials</link> delivered to it by "
 "Duplicants.\n"
 "\n"
-"Dumps stored materials back into the world when it receives an <link=\"LOGIC"
-"\">Active</link> logic signal."
+"Dumps stored materials back into the world when it receives a "
+"<b><color=#57b95e>Green Signal</b></color>."
 msgstr ""
 "複製人間によって配達された<link=\"ELEMENTSSOLID\">固体の素材</link>を保管しま"
 "す。\n"
@@ -5104,17 +5711,13 @@ msgstr "排出トリガー"
 
 #. STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.LOGIC_PORT_ACTIVE"
-msgid ""
-"Dumps all stored materials when it receives an <link=\"LOGIC\">Active</link> "
-"signal"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Dump all stored materials"
 msgstr ""
-"<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、内容物をすべて排出しま"
-"す"
 
 #. STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.LOGIC_PORT_INACTIVE"
-msgid "Holds materials while receiving a <link=\"LOGIC\">Standby</link> signal"
-msgstr "<link=\"LOGIC\">スタンバイ</link>シグナルを受信中は、素材を保持します"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Store materials"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.NAME"
@@ -5164,9 +5767,14 @@ msgid "<link=\"OILWELLCAP\">Oil Well</link>"
 msgstr "<link=\"OILWELLCAP\">油井</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.DESC"
+#| msgid ""
+#| "Ore scrubbers sanitize freshly mined resources before bringing them into "
+#| "the colony."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.DESC"
 msgid ""
-"Ore scrubbers sanitize freshly mined resources before bringing them into the "
+"Scrubbers sanitize freshly mined materials before they're brought into the "
 "colony."
 msgstr "鉱石洗浄機はコロニー内に持ち込む前に鉱石を消毒します。"
 
@@ -5264,6 +5872,27 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.OXYLITEREFINERY.NAME"
 msgid "<link=\"OXYLITEREFINERY\">Oxylite Refinery</link>"
 msgstr "<link=\"OXYLITEREFINERY\">オキシライト精錬装置</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.PARKSIGN.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.TYPES.BARRACKS.TOOLTIP"
+#| msgid "Sleeping in Barracks will improve Duplicants' Morale."
+msgctxt "STRINGS.BUILDINGS.PREFABS.PARKSIGN.DESC"
+msgid "Passing through parks will increase Duplicant Morale."
+msgstr "宿舎で睡眠を取ると、複製人間の士気が上昇します。"
+
+#. STRINGS.BUILDINGS.PREFABS.PARKSIGN.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.PARKSIGN.EFFECT"
+msgid "Classifies an area as a Park or Nature Reserve."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PARKSIGN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WASHSINK.NAME"
+#| msgid "<link=\"WASHSINK\">Sink</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.PARKSIGN.NAME"
+msgid "<link=\"PARKSIGN\">Park Sign</link>"
+msgstr "<link=\"WASHSINK\">流し台</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.DESC"
 msgid ""
@@ -5291,8 +5920,11 @@ msgid "<link=\"PETROLEUMGENERATOR\">Petroleum Generator</link>"
 msgstr "<link=\"PETROLEUMGENERATOR\">石油発電機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.PHONOBOX.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.PHONOBOX.DESC"
+#| msgid "Dancing helps Duplicants get their feelings out."
 msgctxt "STRINGS.BUILDINGS.PREFABS.PHONOBOX.DESC"
-msgid "Dancing helps Duplicants get their feelings out."
+msgid "Dancing helps Duplicants get their innermost feelings out."
 msgstr "ダンスは複製人間の感情を引き出すのに役立ちます。"
 
 #. STRINGS.BUILDINGS.PREFABS.PHONOBOX.EFFECT
@@ -5420,8 +6052,11 @@ msgid "<link=\"POLYMERIZER\">Polymer Press</link>"
 msgstr "<link=\"POLYMERIZER\">ポリマープレス機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.DESC"
+#| msgid "Only one Duplicant may be assigned to a Station at a time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.DESC"
-msgid "Only one Duplicant may be assigned to a Station at a time."
+msgid "Only one Duplicant may be assigned to a station at a time."
 msgstr "端末には一度に一人の複製人間を割り当てることがでいます。"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERCONTROLSTATION.EFFECT
@@ -5472,10 +6107,15 @@ msgid "<link=\"POWERTRANSFORMER\">Large Power Transformer</link>"
 msgstr "<link=\"POWERTRANSFORMER\">大型電力変圧器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMERSMALL.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMERSMALL.DESC"
+#| msgid ""
+#| "Transformers prevent wires and buildings from frying when on circuits "
+#| "with powerful generators."
 msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMERSMALL.DESC"
 msgid ""
-"Transformers prevent wires and buildings from frying when on circuits with "
-"powerful generators."
+"Transformers prevent buildings from frying on circuits with powerful "
+"generators."
 msgstr ""
 "変圧器は強力な発電機と接続した設備および電線が焼き付いてしまうのを防ぎます。"
 
@@ -5498,11 +6138,15 @@ msgid "<link=\"POWERTRANSFORMERSMALL\">Power Transformer</link>"
 msgstr "<link=\"POWERTRANSFORMERSMALL\">電力変圧器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.PRESSUREDOOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.METALTILE.DESC"
+#| msgid ""
+#| "Heat travels much more quickly through metal tile than other types of "
+#| "flooring."
 msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSUREDOOR.DESC"
 msgid ""
-"Mechanized airlocks have the same function as other doors, but open and "
-"close more quickly."
-msgstr "自動エアロックは他のドアと同じ機能を持ちますが、素早く開閉できます。"
+"Mechanized airlocks open and close more quickly than other types of door."
+msgstr "金属タイルは他のタイプの床よりも高速に熱を移動させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.PRESSUREDOOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSUREDOOR.EFFECT"
@@ -5934,7 +6578,8 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.RANCHSTATION.DESC"
 msgid ""
 "Grooming critters make them look nice, smell pretty, feel happy, and produce "
 "more."
-msgstr "動物の毛づくろいをしてやると、見た目も匂いも気分も良くなり、繁殖します。"
+msgstr ""
+"動物の毛づくろいをしてやると、見た目も匂いも気分も良くなり、繁殖します。"
 
 #. STRINGS.BUILDINGS.PREFABS.RANCHSTATION.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.RANCHSTATION.EFFECT"
@@ -5984,9 +6629,14 @@ msgid "<link=\"RATIONBOX\">Ration Box</link>"
 msgstr "<link=\"RATIONBOX\">食糧保管箱</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.DESC"
+#| msgid ""
+#| "Food spoilage can be slowed by certain ambient conditions as well as by "
+#| "refrigerators."
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.DESC"
 msgid ""
-"Food spoilage can be slowed by certain ambient conditions as well as by "
+"Food spoilage can be slowed by ambient conditions as well as by "
 "refrigerators."
 msgstr ""
 "特定の大気条件下では、冷蔵庫と同じように食糧の腐敗を遅らせることができます。"
@@ -6007,13 +6657,13 @@ msgstr "満タン/空き有り"
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_ACTIVE"
-msgid "Sends an <link=\"LOGIC\">Active</link> signal when full"
-msgstr "満タンの時、<link=\"LOGIC\">アクティブ</link>シグナルを送信します"
+msgid "Sends a <b><color=#57b95e>Green Signal</b></color> when full"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_INACTIVE"
-msgid "Sends a <link=\"LOGIC\">Standby</link> signal when not full"
-msgstr "満タンでない時、<link=\"LOGIC\">スタンバイ</link>シグナルを送信します"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.NAME"
@@ -6040,10 +6690,15 @@ msgid "<link=\"RESEARCHCENTER\">Research Station</link>"
 msgstr "<link=\"RESEARCHCENTER\">研究端末</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.RESEARCHMODULE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHMODULE.DESC"
+#| msgid ""
+#| "Data banks can be used at virtual planetariums to produce additional "
+#| "research points."
 msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHMODULE.DESC"
 msgid ""
 "Data banks can be used at virtual planetariums to produce additional "
-"research points."
+"research."
 msgstr ""
 "データバンクは仮想プラネタリウムで追加研究ポイントを得るために使われます。"
 
@@ -6079,8 +6734,11 @@ msgstr "複製人間の記憶からスキルを消去し、デフォルトの能
 
 #. STRINGS.BUILDINGS.PREFABS.RESETSKILLSSTATION.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.RESETSKILLSSTATION.EFFECT"
-msgid "Removes specialized skills from the assigned Duplicant."
-msgstr "割り当てた複製人間から特定のスキルを取り除きます。"
+msgid ""
+"Refunds a Duplicant's Skill Points for reassignment.\n"
+"\n"
+"Duplicants will lose all assigned skills in the process."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.RESETSKILLSSTATION.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.RESETSKILLSSTATION.NAME"
@@ -6089,25 +6747,26 @@ msgstr "<link=\"RESETSKILLSSTATION\">スキル洗浄機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.DESC"
-msgid "Sand is used in an array of liquid and air filtering processes."
-msgstr "砂は液体や気体をろ過する過程で層状に積み重ねて使われます。"
+msgid ""
+"Rock Crushers loosen nuggets from raw ore and can process many different "
+"resources."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MICROBEMUSHER.EFFECT"
+#| msgid ""
+#| "Produces low quality <link=\"FOOD\">Food</link> using common "
+#| "ingredients.\n"
+#| "\n"
+#| "Duplicants will not fabricate items unless recipes are queued."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.EFFECT"
 msgid ""
-"Produces <link=\"SAND\">Sand</link> from <link=\"RAWMINERAL\">Raw Mineral</"
-"link>.\n"
-"\n"
-"Inefficiently produces <link=\"REFINEDMETAL\">Refined Metals</link> from raw "
-"<link=\"RAWMETAL\">Metal Ore</link>.\n"
+"Inefficiently produces refined materials from raw resources.\n"
 "\n"
 "Duplicants will not fabricate items unless recipes are queued."
 msgstr ""
-"<link=\"RAWMINERAL\">無機物原石</link>から<link=\"SAND\">砂</link>を生産しま"
-"す。\n"
-"\n"
-"<link=\"RAWMETAL\">鉱石</link>から<link=\"REFINEDMETAL\">精錬金属</link>を生"
-"産するにはあまり効率的ではありません。\n"
+"ありふれた材料を使って、低品質の<link=\"FOOD\">食糧</link>を生産します。\n"
 "\n"
 "レシピがセットされていないと複製人間は製作作業をしません。"
 
@@ -6128,8 +6787,11 @@ msgid "Crushes {1} into <link=\"SAND\">Sand</link> and pure {0}."
 msgstr "{1}を粉砕し<link=\"SAND\">砂</link>と精錬された{0}にします。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.NAME"
+#| msgid "<link=\"ROCKCRUSHER\">Rock Granulator</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.NAME"
-msgid "<link=\"ROCKCRUSHER\">Rock Granulator</link>"
+msgid "<link=\"ROCKCRUSHER\">Rock Crusher</link>"
 msgstr "<link=\"ROCKCRUSHER\">岩石粉砕機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.RECIPE_DESCRIPTION
@@ -6140,19 +6802,57 @@ msgstr "{0}を粉砕し{1}にします。"
 #. STRINGS.BUILDINGS.PREFABS.ROLESTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROLESTATION.DESC"
 msgid ""
-"As Duplicants become more experienced, they can be given new "
-"responsibilities."
-msgstr "複製人間が経験を積むと、新たな権限が与えられます。"
+"A skills board can teach special skills to Duplicants they can't learn on "
+"their own."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.ROLESTATION.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ROLESTATION.EFFECT"
+#| msgid "Allows Duplicants to be trained in new <link=\"JOBS\">Skills</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROLESTATION.EFFECT"
-msgid "Allows Duplicants to be trained in new <link=\"JOBS\">Skills</link>."
+msgid ""
+"Allows Duplicants to spend Skill Points to learn new <link=\"JOBS\">Skills</"
+"link>."
 msgstr "複製人間に新しい<link=\"JOBS\">スキル</link>を割り当てます。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROLESTATION.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROLESTATION.NAME"
 msgid "<link=\"ROLESTATION\">Skills Board</link>"
 msgstr "<link=\"ROLESTATION\">スキルボード</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.RUSTDEOXIDIZER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.RUSTDEOXIDIZER.DESC"
+msgid "Rust and salt goes in, oxygen comes out."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.RUSTDEOXIDIZER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROLYZER.EFFECT"
+#| msgid ""
+#| "Converts <link=\"WATER\">Water</link> into <link=\"OXYGEN\">Oxygen</link> "
+#| "and <link=\"HYDROGEN\">Hydrogen</link>.\n"
+#| "\n"
+#| "Becomes idle when the area reaches maximum pressure capacity."
+msgctxt "STRINGS.BUILDINGS.PREFABS.RUSTDEOXIDIZER.EFFECT"
+msgid ""
+"Converts <link=\"RUST\">Rust</link> into <link=\"OXYGEN\">Oxygen</link> and "
+"<link=\"CHLORINE\">Chlorine</link>.\n"
+"\n"
+"Becomes idle when the area reaches maximum pressure capacity."
+msgstr ""
+"<link=\"WATER\">水</link>を<link=\"OXYGEN\">酸素</link>と<link=\"HYDROGEN\">"
+"水素</link>に変換します。\n"
+"\n"
+"部屋の気圧が上限に達すると待機状態になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.RUSTDEOXIDIZER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.FERTILIZER.NAME"
+#| msgid "<link=\"FERTILIZER\">Fertilizer</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.RUSTDEOXIDIZER.NAME"
+msgid "<link=\"RUSTDEOXIDIZER\">Rust Deoxidizer</link>"
+msgstr "<link=\"FERTILIZER\">肥料</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SCULPTURE.AVERAGEQUALITYNAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCULPTURE.AVERAGEQUALITYNAME"
@@ -6232,14 +6932,19 @@ msgstr "<link=\"SHEARINGSTATION\">毛刈り端末</link>"
 #. STRINGS.BUILDINGS.PREFABS.SHOWER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SHOWER.DESC"
 msgid ""
-"Showers remove the \"Grimy\" effect and kill all germs present on "
-"Duplicant's skin."
-msgstr "シャワーは「不潔」効果を除去し、複製人間の皮膚から病原菌を殺菌します。"
+"Regularly showering will prevent Duplicants spreading germs to the things "
+"they touch."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.SHOWER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SHOWER.EFFECT"
+#| msgid ""
+#| "Improves Duplicant <link=\"HYGIENE\">Hygiene</link> and removes <link="
+#| "\"DISEASE\">Germs</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SHOWER.EFFECT"
 msgid ""
-"Improves Duplicant <link=\"HYGIENE\">Hygiene</link> and removes <link="
+"Improves Duplicant <link=\"MORALE\">Morale</link> and removes surface <link="
 "\"DISEASE\">Germs</link>."
 msgstr ""
 "複製人間の<link=\"HYGIENE\">衛生状態</link>を改善し、<link=\"DISEASE\">病原菌"
@@ -6256,10 +6961,13 @@ msgid "Mediocre Sculpture"
 msgstr "ありふれた彫像"
 
 #. STRINGS.BUILDINGS.PREFABS.SMALLSCULPTURE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SMALLSCULPTURE.DESC"
+#| msgid ""
+#| "Duplicants with high art skill will produce better, more decorative "
+#| "sculptures."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SMALLSCULPTURE.DESC"
-msgid ""
-"Duplicants with high art skill will produce better, more decorative "
-"sculptures."
+msgid "Duplicants who have learned art skills can produce decorative artworks."
 msgstr "芸術スキルの高い複製人間は、より精巧で装飾値の高い彫像を創造します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SMALLSCULPTURE.EFFECT
@@ -6291,8 +6999,13 @@ msgid "\"Abstract\" Sculpture"
 msgstr "彫像のようなもの"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLARPANEL.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANEL.DESC"
+#| msgid "Solar panels convert high intensity Sunlight into usable power."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANEL.DESC"
-msgid "Solar panels convert high intensity Sunlight into usable power."
+msgid ""
+"Solar panels convert high intensity sunlight into power and produce zero "
+"waste."
 msgstr "ソーラーパネルは強烈な太陽光を利用可能な電力に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLARPANEL.EFFECT
@@ -6333,10 +7046,15 @@ msgid "<link=\"SOLIDBOOSTER\">Solid Fuel Thruster</link>"
 msgstr "<link=\"SOLIDBOOSTER\">固体燃料スラスター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUIT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUIT.DESC"
+#| msgid ""
+#| "Rails automatically move materials where they'll be needed most, saving "
+#| "Duplicants the walk."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUIT.DESC"
 msgid ""
-"Rails automatically move materials where they'll be needed most, saving "
-"Duplicants the walk."
+"Rails move materials where they'll be needed most, saving Duplicants the "
+"walk."
 msgstr ""
 "レールは素材を必要な場所へ自動的に輸送します。複製人間の足を節約できます。"
 
@@ -6361,9 +7079,14 @@ msgid "<link=\"SOLIDCONDUIT\">Conveyor Rail</link>"
 msgstr "<link=\"SOLIDCONDUIT\">コンベアレール</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.DESC"
+#| msgid ""
+#| "Separating rail systems helps prevent materials from reaching the wrong "
+#| "destinations."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.DESC"
 msgid ""
-"Separating rail systems helps prevent materials from reaching the wrong "
+"Separating rail systems helps ensure materials go to the intended "
 "destinations."
 msgstr "レールを分けることで素材が誤った地点に送られるのを防ぎます。"
 
@@ -6385,10 +7108,15 @@ msgid "<link=\"SOLIDCONDUITBRIDGE\">Conveyor Bridge</link>"
 msgstr "<link=\"SOLIDCONDUITBRIDGE\">コンベアブリッジ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.DESC"
+#| msgid ""
+#| "The filters on a loader can be used to determine what materials should be "
+#| "sent down the rail."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.DESC"
 msgid ""
-"The filters on a loader can be used to determine what materials should be "
-"sent down the rail."
+"Material filters can be used to determine what resources are sent down the "
+"rail."
 msgstr "ローダーのフィルターはどの素材を送り出すか決定するのに使います。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.EFFECT
@@ -6431,11 +7159,18 @@ msgid "<link=\"SOLIDCONDUITOUTBOX\">Conveyor Receptacle</link>"
 msgstr "<link=\"SOLIDCONDUITOUTBOX\">コンベアレセプタ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.DESC"
+#| msgid ""
+#| "Automated systems save power and time by removing the need for Duplicant "
+#| "management."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.DESC"
 msgid ""
-"Automated conveyors saves time and resources by removing the need for "
-"Duplicant management."
-msgstr "自動化されたコンベアは時間と人的資源を節約します。"
+"Automated conveyors save power and time by removing the need for Duplicant "
+"input."
+msgstr ""
+"自動化されたシステムは複製人間による管理の必要性を無くし、時間と資源を節約し"
+"ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.EFFECT"
@@ -6453,17 +7188,13 @@ msgstr "開閉"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.LOGIC_PORT_ACTIVE"
-msgid ""
-"Allows material transport while an <link=\"LOGIC\">Active</link> signal is "
-"being received"
-msgstr "<link=\"LOGIC\">アクティブ</link>シグナルを受信中は素材を輸送します"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Allow material transport"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.LOGIC_PORT_INACTIVE"
-msgid ""
-"Prevents material transport while a <link=\"LOGIC\">Standby</link> signal is "
-"being received"
-msgstr "<link=\"LOGIC\">スタンバイ</link>シグナルを受信中は素材を輸送しません"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Prevent material transport"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.NAME"
@@ -6471,9 +7202,14 @@ msgid "<link=\"SOLIDLOGICVALVE\">Conveyor Shutoff</link>"
 msgstr "<link=\"SOLIDLOGICVALVE\">コンベア遮断器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDTRANSFERARM.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDTRANSFERARM.DESC"
+#| msgid ""
+#| "An auto-sweeper's suction range can be viewed at any time by clicking on "
+#| "the building."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDTRANSFERARM.DESC"
 msgid ""
-"An auto-sweeper's suction range can be viewed at any time by clicking on the "
+"An auto-sweeper's range can be viewed at any time by clicking on the "
 "building."
 msgstr "自動掃除機の吸引範囲は設備をクリックすることでいつでも確認できます。"
 
@@ -6675,12 +7411,8 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.EFFECT"
 msgid ""
 "Stores the resources of your choosing.\n"
 "\n"
-"Logic input becomes <link=\"LOGIC\">Active</link> when bin is filled above "
-"the set threshold."
+"Sends a <b><color=#57b95e>Green Signal</b></color> when bin is full."
 msgstr ""
-"指定した資源を格納します。\n"
-"\n"
-"論理入力は設定値以上になると<link=\"LOGIC\">アクティブ</link>になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT"
@@ -6689,13 +7421,13 @@ msgstr "満タン/空き有り"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_ACTIVE"
-msgid "Sends an <link=\"LOGIC\">Active</link> signal when full"
-msgstr "満タンの時、<link=\"LOGIC\">アクティブ</link>シグナルを送信します"
+msgid "Sends a <b><color=#57b95e>Green Signal</b></color> when full"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_INACTIVE"
-msgid "Sends a <link=\"LOGIC\">Standby</link> signal when not full"
-msgstr "満タンでない時、<link=\"LOGIC\">スタンバイ</link>シグナルを送信します"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.NAME"
@@ -6703,10 +7435,15 @@ msgid "<link=\"STORAGELOCKERSMART\">Smart Storage Bin</link>"
 msgstr "<link=\"STORAGELOCKERSMART\">スマート格納庫</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SUITFABRICATOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SUITFABRICATOR.DESC"
+#| msgid ""
+#| "Exosuits can be filled with oxygen to allow Duplicants to safely enter "
+#| "uninhabitable areas."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SUITFABRICATOR.DESC"
 msgid ""
 "Exosuits can be filled with oxygen to allow Duplicants to safely enter "
-"uninhabitable areas."
+"hazardous areas."
 msgstr ""
 "EXOスーツは住むのに適さないエリアへ入るために酸素を充填することができます。"
 
@@ -6728,10 +7465,15 @@ msgid "<link=\"SUITFABRICATOR\">Exosuit Forge</link>"
 msgstr "<link=\"SUITFABRICATOR\">EXOスーツ製造所</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SUITLOCKER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SUITLOCKER.DESC"
+#| msgid ""
+#| "Docks can refill atmo suits with air or empty them of waste, but can only "
+#| "charge one suit at a time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SUITLOCKER.DESC"
 msgid ""
-"Docks can refill atmo suits with air or empty them of waste, but can only "
-"charge one suit at a time."
+"An atmo suit dock will empty atmo suits of waste, but only one suit can "
+"charge at a time."
 msgstr ""
 "ドックはアトモスーツに空気を充填したり、廃棄物を空にすることができます。一度"
 "に充填できるのは1着のみです。"
@@ -6853,11 +7595,26 @@ msgstr ""
 "ビスコ ゲルは高い表面張力を持った<link=\"ELEMENTSLIQUID\">液体</link>ポリマー"
 "です。"
 
-#. STRINGS.BUILDINGS.PREFABS.SWITCH.DESC
-msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.DESC"
+#. STRINGS.BUILDINGS.PREFABS.SUPERMATERIALREFINERY.YELLOWCAKE_RECIPE_DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDRESERVOIR.EFFECT"
+#| msgid ""
+#| "Stores any <link=\"ELEMENTSLIQUID\">Liquid</link> resources piped into it."
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SUPERMATERIALREFINERY.YELLOWCAKE_RECIPE_DESCRIPTION"
 msgid ""
-"Switches do not affect buildings preceding them on a circuit, but control "
-"all buildings after."
+"Yellowcake is a <link=\"ELEMENTSSOLID\">Solid</link> used in uranium "
+"enrichment."
+msgstr "パイプ接続された<link=\"ELEMENTSLIQUID\">液体</link>資源を貯蔵します。"
+
+#. STRINGS.BUILDINGS.PREFABS.SWITCH.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.DESC"
+#| msgid ""
+#| "Switches do not affect buildings preceding them on a circuit, but control "
+#| "all buildings after."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.DESC"
+msgid "Switches can only affect buildings that come after them on a circuit."
 msgstr ""
 "スイッチは回路の前にある設備に対しては影響を及ぼしませんが、後ろにある全ての"
 "設備を制御します。"
@@ -6961,16 +7718,21 @@ msgstr "<link=\"TEMPERATURECONTROLLEDSWITCH\">温度スイッチ</link>"
 #. STRINGS.BUILDINGS.PREFABS.THERMALBLOCK.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.THERMALBLOCK.DESC"
 msgid ""
-"Construction materials have different thermal properties that affect how "
-"well they retain heat."
+"The thermal properties of construction materials determine their heat "
+"retention."
 msgstr ""
-"建設に使った素材は、どれくらい熱を保持できるかを決定する独自の熱特性を持ちま"
-"す。"
 
 #. STRINGS.BUILDINGS.PREFABS.THERMALBLOCK.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.THERMALBLOCK.EFFECT"
+#| msgid ""
+#| "Accelerates or buffers <link=\"HEAT\">Heat</link> dispersal depending on "
+#| "the construction material used.\n"
+#| "\n"
+#| "Has a small area of effect."
 msgctxt "STRINGS.BUILDINGS.PREFABS.THERMALBLOCK.EFFECT"
 msgid ""
-"Accelerates or buffers <link=\"HEAT\">Heat</link> dispersal depending on the "
+"Accelerates or buffers <link=\"HEAT\">Heat</link> dispersal based on the "
 "construction material used.\n"
 "\n"
 "Has a small area of effect."
@@ -7068,10 +7830,13 @@ msgid "<link=\"TRAVELTUBE\">Transit Tube</link>"
 msgstr "<link=\"TRAVELTUBE\">移動チューブ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.TRAVELTUBEENTRANCE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.TRAVELTUBEENTRANCE.DESC"
+#| msgid ""
+#| "Access points are required for Duplicants to enter tubes, but are not "
+#| "required to exit them."
 msgctxt "STRINGS.BUILDINGS.PREFABS.TRAVELTUBEENTRANCE.DESC"
-msgid ""
-"Access points are required for Duplicants to enter tubes, but are not "
-"required to exit them."
+msgid "Duplicants require access points to enter tubes, but not to exit them."
 msgstr ""
 "入口は複製人間がチューブに入るために必要ですが、チューブから出る場合は不要で"
 "す。"
@@ -7121,6 +7886,30 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.TRAVELTUBEWALLBRIDGE.NAME"
 msgid "<link=\"TRAVELTUBEWALLBRIDGE\">Transit Tube Crossing</link>"
 msgstr "<link=\"TRAVELTUBEWALLBRIDGE\">移動チューブ交差</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.URANIUMCENTRIFUGE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.URANIUMCENTRIFUGE.DESC"
+msgid ""
+"Enriched uranium is a specialized substance that can be used to fuel "
+"powerful nuclear reactors."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.URANIUMCENTRIFUGE.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.URANIUMCENTRIFUGE.EFFECT"
+msgid ""
+"Extracts <link=\"ENRICHEDURANIUM\">Enriched Uranium</link> from <link="
+"\"URANIUMORE\">Uranium Ore</link>.\n"
+"\n"
+"Outputs <link=\"DEPLETEDURANIUM\">Depleted Uranium</link> in molten form."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.URANIUMCENTRIFUGE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.GRANITE.NAME"
+#| msgid "<link=\"GRANITE\">Granite</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.URANIUMCENTRIFUGE.NAME"
+msgid "<link=\"URANIUMCENTRIFUGE\">Uranium Centrifuge</link>"
+msgstr "<link=\"GRANITE\">花崗岩</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.VENDINGMACHINE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.VENDINGMACHINE.DESC"
 msgid "A pristine <link=\"FIELDRATION\">Field Ration</link> dispenser."
@@ -7132,10 +7921,15 @@ msgid "Vending Machine"
 msgstr "自動販売機"
 
 #. STRINGS.BUILDINGS.PREFABS.WASHBASIN.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WASHBASIN.DESC"
+#| msgid ""
+#| "Germ spread can be reduced by building wash basins where Duplicants are "
+#| "likely to get dirty."
 msgctxt "STRINGS.BUILDINGS.PREFABS.WASHBASIN.DESC"
 msgid ""
-"Germ spread can be reduced by building wash basins where Duplicants are "
-"likely to get dirty."
+"Germ spread can be reduced by building these where Duplicants often get "
+"dirty."
 msgstr ""
 "複製人間が汚れそうな場所に洗面台を設置すると、病原菌の拡大を抑えることができ"
 "ます。"
@@ -7203,10 +7997,15 @@ msgid "<link=\"WATERCOOLER\">Water Cooler</link>"
 msgstr "<link=\"WATERCOOLER\">ウォータークーラー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.DESC"
+#| msgid ""
+#| "Sieves cannot kill germs and pass any disease they receive into their "
+#| "waste and water output."
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.DESC"
 msgid ""
-"Sieves cannot kill germs and pass any disease they receive into their waste "
-"and water output."
+"Sieves cannot kill germs and pass any they receive into their waste and "
+"water output."
 msgstr "浄水機は病原菌を殺菌できません。汚染物質は出力にそのまま流します。"
 
 #. STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.EFFECT
@@ -7250,10 +8049,15 @@ msgid "<link=\"WIRE\">Wire</link>"
 msgstr "<link=\"WIRE\">電線</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREBRIDGE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREBRIDGE.DESC"
+#| msgid ""
+#| "Splitting generators onto separate systems can prevent power overloads "
+#| "and wasted electricity."
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREBRIDGE.DESC"
 msgid ""
-"Splitting generators onto separate systems can prevent power overloads and "
-"wasted electricity."
+"Splitting generators onto separate grids can prevent overloads and wasted "
+"electricity."
 msgstr ""
 "発電機の出力を複数の回路に分散させることで、過負荷や無駄な電力を防止できま"
 "す。"
@@ -7275,9 +8079,15 @@ msgid "<link=\"WIREBRIDGE\">Wire Bridge</link>"
 msgstr "<link=\"WIREBRIDGE\">電線ブリッジ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREBRIDGEHIGHWATTAGE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREBRIDGEHIGHWATTAGE.DESC"
+#| msgid ""
+#| "Joint plates can run Heavi wires through walls without leaking gas or "
+#| "liquid."
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREBRIDGEHIGHWATTAGE.DESC"
 msgid ""
-"Joint plates can run Heavi wires through walls without leaking gas or liquid."
+"Joint plates can run Heavi-Watt wires through walls without leaking gas or "
+"liquid."
 msgstr ""
 "継ぎ板は大容量電線を壁を通して接続でき、気体や液体を漏らすことがありません。"
 
@@ -7323,10 +8133,15 @@ msgid "<link=\"WIREREFINED\">Conductive Wire</link>"
 msgstr "<link=\"WIREREFINED\">導電線</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGE.DESC"
+#| msgid ""
+#| "Splitting generators onto separate systems can prevent power overloads "
+#| "and wasted electricity."
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGE.DESC"
 msgid ""
-"Splitting generators onto separate systems can prevent power overloads and "
-"wasted electricity."
+"Splitting generators onto separate systems can prevent overloads and wasted "
+"electricity."
 msgstr ""
 "発電機の出力を複数の回路に分散させることで、過負荷や無駄な電力を防止できま"
 "す。"
@@ -7354,9 +8169,15 @@ msgid "<link=\"WIREREFINEDBRIDGE\">Conductive Wire Bridge</link>"
 msgstr "<link=\"WIREREFINEDBRIDGE\">導電線ブリッジ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGEHIGHWATTAGE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGEHIGHWATTAGE.DESC"
+#| msgid ""
+#| "Joint plates can run Heavi wires through walls without leaking gas or "
+#| "liquid."
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGEHIGHWATTAGE.DESC"
 msgid ""
-"Joint plates can run Heavi wires through walls without leaking gas or liquid."
+"Joint plates can run Heavi-Watt wires through walls without leaking gas or "
+"liquid."
 msgstr ""
 "継ぎ板は大容量電線を壁を通して接続でき、気体や液体を漏らすことがありません。"
 
@@ -7376,9 +8197,14 @@ msgstr ""
 "床や壁に<link=\"HIGHWATTAGEWIRE\">大容量電線</link>を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGEHIGHWATTAGE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGEHIGHWATTAGE.NAME"
+#| msgid ""
+#| "<link=\"WIREREFINEDBRIDGEHIGHWATTAGE\">Heavi Conductive Joint Plate</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGEHIGHWATTAGE.NAME"
 msgid ""
-"<link=\"WIREREFINEDBRIDGEHIGHWATTAGE\">Heavi Conductive Joint Plate</link>"
+"<link=\"WIREREFINEDBRIDGEHIGHWATTAGE\">Heavi-Watt Conductive Joint Plate</"
+"link>"
 msgstr "<link=\"WIREREFINEDBRIDGEHIGHWATTAGE\">大容量導線継ぎ手</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREREFINEDHIGHWATTAGE.DESC
@@ -7402,9 +8228,49 @@ msgstr ""
 "壁や床のタイル中に敷設することができません。"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREREFINEDHIGHWATTAGE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDHIGHWATTAGE.NAME"
+#| msgid "<link=\"WIREREFINEDHIGHWATTAGE\">Heavi Conductive Wire</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDHIGHWATTAGE.NAME"
-msgid "<link=\"WIREREFINEDHIGHWATTAGE\">Heavi Conductive Wire</link>"
+msgid "<link=\"WIREREFINEDHIGHWATTAGE\">Heavi-Watt Conductive Wire</link>"
 msgstr "<link=\"WIREREFINEDHIGHWATTAGE\">大容量導電線</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.WOODGASGENERATOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.WOODGASGENERATOR.DESC"
+msgid ""
+"Wood burners are small and easy to maintain, but produce a fair amount of "
+"heat."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.WOODGASGENERATOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.EFFECT"
+#| msgid ""
+#| "Converts <link=\"PETROLEUM\">Petroleum</link> into electrical <link="
+#| "\"POWER\">Power</link>.\n"
+#| "\n"
+#| "Produces <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> and <link="
+#| "\"DIRTYWATER\">Polluted Water</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.WOODGASGENERATOR.EFFECT"
+msgid ""
+"Burns <link=\"WOOD\">Lumber</link> to produce electrical <link=\"POWER"
+"\">Power</link>.\n"
+"\n"
+"Produces <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> and <link=\"HEAT"
+"\">Heat</link>."
+msgstr ""
+"<link=\"PETROLEUM\">石油</link>を<link=\"POWER\">電力</link>に変換します。\n"
+"\n"
+"<link=\"CARBONDIOXIDE\">二酸化炭素</link>と<link=\"DIRTYWATER\">汚染水</link>"
+"を産出します。"
+
+#. STRINGS.BUILDINGS.PREFABS.WOODGASGENERATOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.NAME"
+#| msgid "<link=\"GENERATOR\">Coal Generator</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.WOODGASGENERATOR.NAME"
+msgid "<link=\"WOODGASGENERATOR\">Wood Burner</link>"
+msgstr "<link=\"GENERATOR\">石炭発電機</link>"
 
 #. STRINGS.BUILDINGS.REPAIRABLE.DISABLE_AUTOREPAIR.NAME
 msgctxt "STRINGS.BUILDINGS.REPAIRABLE.DISABLE_AUTOREPAIR.NAME"
@@ -7425,6 +8291,900 @@ msgstr "自動修理有効化"
 msgctxt "STRINGS.BUILDINGS.REPAIRABLE.ENABLE_AUTOREPAIR.TOOLTIP"
 msgid "Automatically repair this building when damaged"
 msgstr "設備に損傷があると自動的に修理します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDDOCTORSTATION.DESC"
+#~ msgid ""
+#~ "Duplicants can receive treatment for severe sicknesses by a Doctor at a "
+#~ "Disease Clinic"
+#~ msgstr "複製人間は診療所で医者から重病の手当を受けることができます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDDOCTORSTATION.EFFECT"
+#~ msgid ""
+#~ "Duplicants can receive treatment for severe sicknesses by a Doctor at a "
+#~ "Disease Clinic"
+#~ msgstr "複製人間は診療所で医者から重病の手当を受けることができます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.APOTHECARY.DESC"
+#~ msgid "All-natural remedies to cure what ails you."
+#~ msgstr "あなたを蝕むものを治す天然の治療薬です。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
+#~ msgid ""
+#~ "Logic input will become <link=\"LOGIC\">Active</link> when battery is "
+#~ "less than {0}% charged"
+#~ msgstr ""
+#~ "論理入力はバッテリーが{0}%未満になると<link=\"LOGIC\">アクティブ</link>に"
+#~ "なります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP"
+#~ msgid ""
+#~ "Logic input will go on <link=\"LOGIC\">Standby</link> when battery is "
+#~ "more than {0}% charged"
+#~ msgstr ""
+#~ "論理入力はバッテリーが{0}%以上になると<link=\"LOGIC\">スタンバイ</link>に"
+#~ "なります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal when the charge falls below "
+#~ "the configured Active Parameter"
+#~ msgstr ""
+#~ "設定したアクティブパラメータを下回ると<link=\"LOGIC\">アクティブ</link>シ"
+#~ "グナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal when the charge rises above "
+#~ "the configured Standby Parameter"
+#~ msgstr ""
+#~ "設定したスタンバイパラメータを下回ると<link=\"LOGIC\">スタンバイ</link>シ"
+#~ "グナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_ACTIVATE"
+#~ msgid "Active:"
+#~ msgstr "アクティブ:"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_DEACTIVATE"
+#~ msgid "Standby:"
+#~ msgstr "スタンバイ:"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.DESC"
+#~ msgid ""
+#~ "Burners reach incredible temperatures and can quickly melt large areas."
+#~ msgstr "バーナーは超高温の熱で広範囲を速やかに溶解させます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BURNER.EFFECT"
+#~ msgid ""
+#~ "Produces a searing <link=\"HEAT\">Heat Jet</link> using <link="
+#~ "\"ELEMENTSLIQUID\">Liquid</link> <link=\"CRUDEOIL\">Crude Oil</link>."
+#~ msgstr ""
+#~ "<link=\"ELEMENTSLIQUID\">液体</link>の<link=\"CRUDEOIL\">原油</link>を使用"
+#~ "して高熱の<link=\"HEAT\">ヒートジェット</link>を生産します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.CHECKPOINT.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Allows Duplicant passage while an <link=\"LOGIC\">Active</link> signal is "
+#~ "being received"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">アクティブ</link>シグナルを受信中は複製人間が通行できるよ"
+#~ "うになります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.CHECKPOINT.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Prevents Duplicant passage while a <link=\"LOGIC\">Standby</link> signal "
+#~ "is being received"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">スタンバイ</link>シグナルを受信中は複製人間の通行を妨げま"
+#~ "す"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH_ACTIVE"
+#~ msgid ""
+#~ "Launches rockets when receiving an <link=\"LOGIC\">Active</link> signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、ロケットを発射しま"
+#~ "す"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH_INACTIVE"
+#~ msgid ""
+#~ "Awaits an Active signal when receiving a <link=\"LOGIC\">Standby</link> "
+#~ "signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">スタンバイ</link>シグナルを受信中はアクティブシグナルを受"
+#~ "信するまで待機します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
+#~ msgid ""
+#~ "Goes on <link=\"LOGIC\">Standby</link> when its rocket launch checklist "
+#~ "has unchecked items"
+#~ msgstr ""
+#~ "ロケットチェックリストが1つでも未消化の場合<link=\"LOGIC\">スタンバイ</"
+#~ "link>をキープします"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.DOCTORSTATION.DESC"
+#~ msgid ""
+#~ "Duplicants can receive treatment for intermediate sicknesses by a Doctor "
+#~ "at a Sick Bay"
+#~ msgstr "複製人間は医務室で医者から病気の手当を受けることができます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.DOCTORSTATION.EFFECT"
+#~ msgid ""
+#~ "Duplicants can receive treatment for intermediate sicknesses by a Doctor "
+#~ "at a Sick Bay"
+#~ msgstr "複製人間は医務室で医者から病気の手当を受けることができます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.LOGIC_OPEN_ACTIVE"
+#~ msgid ""
+#~ "Opens with Duplicant proximity while an <link=\"LOGIC\">Active</link> "
+#~ "signal is being received"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">アクティブ</link>シグナルを受信中は複製人間が近づくと開き"
+#~ "ます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.LOGIC_OPEN_INACTIVE"
+#~ msgid ""
+#~ "Closes and locks while a <link=\"LOGIC\">Standby</link> signal is being "
+#~ "received"
+#~ msgstr "<link=\"LOGIC\">スタンバイ</link>シグナルを受信中は施錠されます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.FIREPOLE.DESC"
+#~ msgid ""
+#~ "Fire poles provide quick downward travel, while ladders provide better "
+#~ "upward movement."
+#~ msgstr ""
+#~ "滑り棒は素早く下降できますが、登りは梯子を使ったほうが良いでしょう。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.EFFECT"
+#~ msgid ""
+#~ "Gives Duplicants a place to <link=\"HYGIENE\">Hygienically</link> relieve "
+#~ "themselves."
+#~ msgstr "複製人間に<link=\"HYGIENE\">衛生的な</link>排泄場所を提供します。"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal when the number of <link="
+#~ "\"DISEASE\">Germs</link> in the pipe enters the configured Germ Threshold "
+#~ "range"
+#~ msgstr ""
+#~ "内部の<link=\"DISEASE\">病原菌</link>が設定した濃度範囲内の場合<link="
+#~ "\"LOGIC\">アクティブ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal when the number of <link="
+#~ "\"DISEASE\">Germs</link> in the pipe is outside the configured Germ "
+#~ "Threshold range"
+#~ msgstr ""
+#~ "内部の<link=\"DISEASE\">病原菌</link>が設定した濃度範囲外の場合<link="
+#~ "\"LOGIC\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal while the configured <link="
+#~ "\"ELEMENTSGAS\">Gas</link> is detected"
+#~ msgstr ""
+#~ "設定した<link=\"ELEMENTSGAS\">気体</link>を検出すると<link=\"LOGIC\">アク"
+#~ "ティブ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal while the configured <link="
+#~ "\"ELEMENTSGAS\">Gas</link> is not detected"
+#~ msgstr ""
+#~ "設定した<link=\"ELEMENTSGAS\">気体</link>を検出できないと<link=\"LOGIC\">"
+#~ "スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal when the contained gas's "
+#~ "temperature matches its configuration."
+#~ msgstr ""
+#~ "内部の気体温度が設定した値になると、<link=\"LOGIC\">アクティブ</link>シグ"
+#~ "ナルを送信します。"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal when the contained gas's "
+#~ "temperature does not match its configuration."
+#~ msgstr ""
+#~ "内部の気体温度が設定した値を外れると、<link=\"LOGIC\">スタンバイ</link>シ"
+#~ "グナルを送信します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.DESC"
+#~ msgid ""
+#~ "Gas filters send the selected filter gas into a special pipe, expelling "
+#~ "everything else through a second output."
+#~ msgstr ""
+#~ "気体フィルターは指定した気体を別のパイプに流し、それ以外をもう一つの出力側"
+#~ "に送ります。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.DESC"
+#~ msgid ""
+#~ "Automated piping saves time and resources by removing the need for "
+#~ "Duplicant management."
+#~ msgstr ""
+#~ "自動化された配管は複製人間による管理の必要性を無くし、時間と資源を節約しま"
+#~ "す。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Allows gas flow when receiving an <link=\"LOGIC\">Active</link> signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、気体を通します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Prevents gas flow when receiving a <link=\"LOGIC\">Standby</link> signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">スタンバイ</link>シグナルを受信すると、気体を通しません"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal when the number of <link="
+#~ "\"DISEASE\">Germs</link> in the pipe enters the configured Germ Threshold "
+#~ "range"
+#~ msgstr ""
+#~ "内部の<link=\"DISEASE\">病原菌</link>が設定した濃度範囲内の場合<link="
+#~ "\"LOGIC\">アクティブ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal when the number of <link="
+#~ "\"DISEASE\">Germs</link> in the pipe is outside the configured Germ "
+#~ "Threshold range"
+#~ msgstr ""
+#~ "内部の<link=\"DISEASE\">病原菌</link>が設定した濃度範囲外の場合<link="
+#~ "\"LOGIC\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal while the configured <link="
+#~ "\"ELEMENTSLIQUID\">Liquid</link> is not detected within the pipe"
+#~ msgstr ""
+#~ "設定した<link=\"ELEMENTSLIQUID\">液体</link>を検出しなくなると<link="
+#~ "\"LOGIC\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT"
+#~ msgid "Internal Liquid <link=\"HEAT\">Temperature</link>"
+#~ msgstr "内部液体<link=\"HEAT\">温度</link>"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Active when the contained liquid's temperature matches its configuration."
+#~ msgstr "内部の液体温度が設定した値になると、アクティブになります。"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR."
+#~ "LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Standby when the contained liquid's temperature does not match its "
+#~ "configuration."
+#~ msgstr "内部の液体温度が設定した値から外れると、スタンバイになります。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC"
+#~ msgid ""
+#~ "Liquid filters send the selected liquid into a special pipe, expelling "
+#~ "everything else through a second output."
+#~ msgstr ""
+#~ "液体フィルターは指定した液体を別のパイプに流し、それ以外をもう一つの出力側"
+#~ "に送ります。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.DESC"
+#~ msgid ""
+#~ "Automated piping saves time and resources by removing the need for "
+#~ "Duplicant management."
+#~ msgstr ""
+#~ "自動化された配管は複製人間による管理の必要性を無くし、時間と資源を節約しま"
+#~ "す。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Allows liquid flow while receiving an <link=\"LOGIC\">Active</link> signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、液体を通します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Prevents liquid flow while receiving a <link=\"LOGIC\">Standby</link> "
+#~ "signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">スタンバイ</link>シグナルを受信すると、液体を通しません"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMPINGSTATION.DESC"
+#~ msgid ""
+#~ "Pitcher pumps are used to fetch water and other liquids for delivery to "
+#~ "buildings."
+#~ msgstr "手押しポンプは設備に運搬する水や他の液体をくみ上げるのに使います。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.EFFECT"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
+#~ "link> depending on the number of eggs and critters in a room."
+#~ msgstr ""
+#~ "室内に存在する卵や動物の数によって、<link=\"LOGIC\">アクティブ</link>また"
+#~ "は<link=\"LOGIC\">スタンバイ</link>になります。"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal while the number of "
+#~ "critters in the room is outside the configured Critter Count range"
+#~ msgstr ""
+#~ "室内の動物と卵の数が設定した範囲外にある時、<link=\"LOGIC\">スタンバイ</"
+#~ "link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> or goes on <link=\"LOGIC\">Standby</"
+#~ "link> depending on quantity of surrounding <link=\"DISEASE\">Germs</link>."
+#~ msgstr ""
+#~ "周囲の<link=\"DISEASE\">病原菌</link>が指定した濃度にある時、<link=\"LOGIC"
+#~ "\">アクティブ</link>または<link=\"LOGIC\">スタンバイ</link>になります。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal when the number of <link="
+#~ "\"DISEASE\">Germ</link> enters the configured Germ Threshold range"
+#~ msgstr ""
+#~ "<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内の場合、<link=\"LOGIC"
+#~ "\">アクティブ</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal when the number of <link="
+#~ "\"DISEASE\">Germ</link> is outside the configured Germ Threshold range"
+#~ msgstr ""
+#~ "<link=\"DISEASE\">病原菌</link>濃度が指定した範囲外の場合、<link=\"LOGIC"
+#~ "\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal while the configured <link="
+#~ "\"ELEMENTSGAS\">Gas</link> element is detected"
+#~ msgstr ""
+#~ "設定した<link=\"ELEMENTSGAS\">気体</link>元素を検出すると<link=\"LOGIC\">"
+#~ "アクティブ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal while the configured <link="
+#~ "\"ELEMENTSGAS\">Gas</link> element is not detected"
+#~ msgstr ""
+#~ "設定した<link=\"ELEMENTSGAS\">気体</link>元素を検出できないと<link=\"LOGIC"
+#~ "\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal while the configured <link="
+#~ "\"ELEMENTSLIQUID\">Liquid</link> element is detected"
+#~ msgstr ""
+#~ "設定した<link=\"ELEMENTSLIQUID\">液体</link>元素を検出すると<link=\"LOGIC"
+#~ "\">アクティブ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal while the configured <link="
+#~ "\"ELEMENTSLIQUID\">Liquid</link> element is not detected"
+#~ msgstr ""
+#~ "設定した<link=\"ELEMENTSLIQUID\">液体</link>元素を検出しなくなると<link="
+#~ "\"LOGIC\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.EFFECT"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> when both the systems connected to "
+#~ "its Inputs are <link=\"LOGIC\">Active</link>.\n"
+#~ "\n"
+#~ "Goes into <link=\"LOGIC\">Standby</link> when one or both Inputs are on "
+#~ "<link=\"LOGIC\">Standby</link>."
+#~ msgstr ""
+#~ "両方の入力が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC\">アク"
+#~ "ティブ</link>になります。\n"
+#~ "\n"
+#~ "いずれか一方の入力が<link=\"LOGIC\">スタンバイ</link>になると、<link="
+#~ "\"LOGIC\">スタンバイ</link>に遷移します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_ACTIVE"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> when both the A Input and B Input "
+#~ "are Active"
+#~ msgstr ""
+#~ "入力Aおよび入力Bがアクティブになると、<link=\"LOGIC\">アクティブ</link>に"
+#~ "なります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_INACTIVE"
+#~ msgid ""
+#~ "Goes on <link=\"LOGIC\">Standby</link> when either or both Inputs are on "
+#~ "Standby"
+#~ msgstr ""
+#~ "いずれか一方または両方がスタンバイになると、<link=\"LOGIC\">スタンバイ</"
+#~ "link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#~ msgid "AND Gate"
+#~ msgstr "ANDゲート"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.EFFECT"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> if the system connected to its "
+#~ "Input is <link=\"LOGIC\">Active</link>.\n"
+#~ "\n"
+#~ "Stays <link=\"LOGIC\">Active</link> for a short time after its Input "
+#~ "enters <link=\"LOGIC\">Standby</link>."
+#~ msgstr ""
+#~ "入力が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC\">アクティブ</"
+#~ "link>になります。\n"
+#~ "\n"
+#~ "入力が<link=\"LOGIC\">スタンバイ</link>になっても、少しの間<link=\"LOGIC"
+#~ "\">アクティブ</link>を保ちます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_ACTIVE"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> when its Input is Active, or while "
+#~ "its timer is ticking down"
+#~ msgstr ""
+#~ "入力がアクティブまたはタイマーが進行中の時、<link=\"LOGIC\">アクティブ</"
+#~ "link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_INACTIVE"
+#~ msgid ""
+#~ "Goes on <link=\"LOGIC\">Standby</link> when both its Input is on Standby "
+#~ "and its timer has expired"
+#~ msgstr ""
+#~ "入力がスタンバイかつタイマーが切れていると、<link=\"LOGIC\">スタンバイ</"
+#~ "link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.DESC"
+#~ msgid ""
+#~ "This gate will keep buildings turned off for a short time after the input "
+#~ "building is activated."
+#~ msgstr ""
+#~ "この論理ゲートは入力側の設備が稼働状態になった後でも、しばらくの間設備を非"
+#~ "稼働にします。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.EFFECT"
+#~ msgid ""
+#~ "Enters <link=\"LOGIC\">Standby</link> if the system connected to its "
+#~ "Input is also on <link=\"LOGIC\">Standby</link>.\n"
+#~ "\n"
+#~ "Stays in <link=\"LOGIC\">Standby</link> for a short time after its Input "
+#~ "becomes <link=\"LOGIC\">Active</link>."
+#~ msgstr ""
+#~ "入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">スタンバイ</"
+#~ "link>になります。\n"
+#~ "\n"
+#~ "入力が<link=\"LOGIC\">アクティブ</link>になっても、少しの間<link=\"LOGIC"
+#~ "\">スタンバイ</link>を保ちます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_ACTIVE"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> when both its Input is Active and "
+#~ "its timer has expired"
+#~ msgstr ""
+#~ "入力がアクティブかつタイマーが切れていると、<link=\"LOGIC\">アクティブ</"
+#~ "link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_INACTIVE"
+#~ msgid ""
+#~ "Goes on <link=\"LOGIC\">Standby</link> when its Input is on Standby or "
+#~ "when its timer is ticking down"
+#~ msgstr ""
+#~ "入力がスタンバイまたはタイマーが進行中の時、<link=\"LOGIC\">スタンバイ</"
+#~ "link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_NAME"
+#~ msgid "Filtered Signal"
+#~ msgstr "FILTER シグナル"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.EFFECT"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> if the system connected to its "
+#~ "Input is on <link=\"LOGIC\">Standby</link>.\n"
+#~ "\n"
+#~ "Goes into <link=\"LOGIC\">Standby</link> when its Input is <link=\"LOGIC"
+#~ "\">Active</link>."
+#~ msgstr ""
+#~ "入力が<link=\"LOGIC\">スタンバイ</link>の時、<link=\"LOGIC\">アクティブ</"
+#~ "link>になります。\n"
+#~ "\n"
+#~ "入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">スタンバ"
+#~ "イ</link>に遷移します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_ACTIVE"
+#~ msgid "Becomes <link=\"LOGIC\">Active</link> when its Input is on Standby"
+#~ msgstr "入力がスタンバイの時、<link=\"LOGIC\">アクティブ</link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_INACTIVE"
+#~ msgid "Goes on <link=\"LOGIC\">Standby</link> when its Input is Active"
+#~ msgstr "入力がアクティブの時、<link=\"LOGIC\">スタンバイ</link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_NAME"
+#~ msgid "NOT Gate"
+#~ msgstr "NOTゲート"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.DESC"
+#~ msgid ""
+#~ "This gate can only turn buildings on if it has one or more active inputs "
+#~ "connected to it."
+#~ msgstr ""
+#~ "この論理ゲートは最低1つ以上のアクティブな入力があった場合のみ設備を稼働さ"
+#~ "せます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.EFFECT"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> if one or both of the systems "
+#~ "connected to its Inputs are <link=\"LOGIC\">Active</link>.\n"
+#~ "\n"
+#~ "Goes into <link=\"LOGIC\">Standby</link> when neither Inputs are <link="
+#~ "\"LOGIC\">Active</link>."
+#~ msgstr ""
+#~ "いずれか一方の入力が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC"
+#~ "\">アクティブ</link>になります。\n"
+#~ "\n"
+#~ "両方の入力が<link=\"LOGIC\">スタンバイ</link>になると、<link=\"LOGIC\">ス"
+#~ "タンバイ</link>に遷移します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.OUTPUT_ACTIVE"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> when either the A Input or B Input "
+#~ "is Active"
+#~ msgstr ""
+#~ "入力Aまたは入力Bがアクティブの時、<link=\"LOGIC\">アクティブ</link>になり"
+#~ "ます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.OUTPUT_INACTIVE"
+#~ msgid ""
+#~ "Goes on <link=\"LOGIC\">Standby</link> when both Inputs are on Standby"
+#~ msgstr ""
+#~ "両方の入力がスタンバイの時、<link=\"LOGIC\">スタンバイ</link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.EFFECT"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> if one of the systems connected to "
+#~ "its Inputs is <link=\"LOGIC\">Active</link>.\n"
+#~ "\n"
+#~ "Goes into <link=\"LOGIC\">Standby</link> if both or neither Inputs are "
+#~ "<link=\"LOGIC\">Active</link>."
+#~ msgstr ""
+#~ "いずれか一方の入力が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC"
+#~ "\">アクティブ</link>になります。\n"
+#~ "\n"
+#~ "両方の入力が<link=\"LOGIC\">アクティブ</link>になると、<link=\"LOGIC\">ス"
+#~ "タンバイ</link>に遷移します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_ACTIVE"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> when one of its Inputs is Active, "
+#~ "but not both"
+#~ msgstr ""
+#~ "いずれか一方の入力がアクティブの時(両方はNG)、<link=\"LOGIC\">アクティブ</"
+#~ "link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_INACTIVE"
+#~ msgid ""
+#~ "Goes on <link=\"LOGIC\">Standby</link> when both Input signals match "
+#~ "(either Active or Standby)"
+#~ msgstr ""
+#~ "両方の入力が同じ時(アクティブ-アクティブ、スタンバイ-スタンバイ)、<link="
+#~ "\"LOGIC\">スタンバイ</link>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_NAME"
+#~ msgid "XOR Gate"
+#~ msgstr "XORゲート"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.DESC"
+#~ msgid ""
+#~ "Once active, a memory toggle keeps buildings on until the refresh port "
+#~ "receives an active signal."
+#~ msgstr ""
+#~ "アクティブになると、リフレッシュポートがシグナルを受信するまで設備の状態を"
+#~ "維持します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.EFFECT"
+#~ msgid ""
+#~ "Becomes <link=\"LOGIC\">Active</link> when the Set Port (S) is <link="
+#~ "\"LOGIC\">Active</link>.\n"
+#~ "\n"
+#~ "Goes on <link=\"LOGIC\">Standby</link> if the Refresh Port (R) becomes "
+#~ "<link=\"LOGIC\">Active</link>."
+#~ msgstr ""
+#~ "設定ポート(S)が<link=\"LOGIC\">アクティブ</link>の時、<link=\"LOGIC\">アク"
+#~ "ティブ</link>になります。\n"
+#~ "\n"
+#~ "リフレッシュポート(R)が<link=\"LOGIC\">アクティブ</link>になると、<link="
+#~ "\"LOGIC\">スタンバイ</link>に遷移します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT"
+#~ msgid "Current Value"
+#~ msgstr "現在の値"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_ACTIVE"
+#~ msgid "Becomes <link=\"LOGIC\">Active</link> when Refresh Port is Set"
+#~ msgstr ""
+#~ "リフレッシュポートがセットになると、<link=\"LOGIC\">アクティブ</link>にな"
+#~ "ります。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.READ_PORT_INACTIVE"
+#~ msgid "Goes on <link=\"LOGIC\">Standby</link> when Refresh Port is Cleared"
+#~ msgstr ""
+#~ "リフレッシュポートがクリアになると、<link=\"LOGIC\">スタンバイ</link>にな"
+#~ "ります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT"
+#~ msgid "Clear Active"
+#~ msgstr "クリア"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_ACTIVE"
+#~ msgid ""
+#~ "Clears the Refresh Port when an <link=\"LOGIC\">Active</link> signal is "
+#~ "received"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、リフレッシュポート"
+#~ "をクリアします"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT"
+#~ msgid "Set Active"
+#~ msgstr "セット"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.SET_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sets the Refresh Port when an <link=\"LOGIC\">Active</link> signal is "
+#~ "received"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、リフレッシュポート"
+#~ "をセットにします"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Allows power through connected circuits while receiving an <link=\"LOGIC"
+#~ "\">Active</link> signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、電力を回路に接続し"
+#~ "ます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Prevents power from flowing through connected circuits while receiving a "
+#~ "<link=\"LOGIC\">Standby</link> signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">スタンバイ</link>シグナルを受信すると、電力が回路に流れる"
+#~ "をの妨げます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal when <link=\"ELEMENTSGAS"
+#~ "\">Gas</link> pressure is within its configured Pressure Threshold range"
+#~ msgstr ""
+#~ "<link=\"ELEMENTSGAS\">気</link>圧が指定した範囲内にある時、<link=\"LOGIC"
+#~ "\">アクティブ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal when <link=\"ELEMENTSGAS"
+#~ "\">Gas</link> pressure is outside its configured Pressure Threshold range"
+#~ msgstr ""
+#~ "<link=\"ELEMENTSGAS\">気</link>圧が指定した範囲外にある時、<link=\"LOGIC"
+#~ "\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal while <link=\"ELEMENTSLIQUID"
+#~ "\">Liquid</link> pressure is within its configured Pressure Threshold "
+#~ "range"
+#~ msgstr ""
+#~ "<link=\"ELEMENTSLIQUID\">水</link>圧が指定した範囲内にある時、<link="
+#~ "\"LOGIC\">アクティブ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal while <link=\"ELEMENTSLIQUID"
+#~ "\">Liquid</link> pressure is outside its configured Pressure Threshold "
+#~ "range"
+#~ msgstr ""
+#~ "<link=\"ELEMENTSLIQUID\">水</link>圧が指定した範囲外にある時、<link="
+#~ "\"LOGIC\">Standby</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_ACTIVE"
+#~ msgid "Sends an <link=\"LOGIC\">Active</link> signal while toggled on"
+#~ msgstr ""
+#~ "スイッチがONになると<link=\"LOGIC\">アクティブ</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_INACTIVE"
+#~ msgid "Sends a <link=\"LOGIC\">Standby</link> signal while toggled off"
+#~ msgstr ""
+#~ "スイッチがOFFになると<link=\"LOGIC\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal while ambient <link=\"HEAT"
+#~ "\">Temperature</link> is outside its configured Temperature Threshold "
+#~ "range"
+#~ msgstr ""
+#~ "周辺<link=\"HEAT\">温度</link>が指定した範囲外にある時、<link=\"LOGIC\">ス"
+#~ "タンバイ</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.EFFECT"
+#~ msgid ""
+#~ "Sets an automatic <link=\"LOGIC\">Active</link> and <link=\"LOGIC"
+#~ "\">Standby</link> schedule using a timer."
+#~ msgstr ""
+#~ "自動的に<link=\"LOGIC\">アクティブ</link>/<link=\"LOGIC\">スタンバイ</"
+#~ "link>になる時刻を設定します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Sends an <link=\"LOGIC\">Active</link> signal when the current time "
+#~ "enters its configured Time Schedule range"
+#~ msgstr ""
+#~ "指定した時刻範囲内の時、<link=\"LOGIC\">アクティブ</link>シグナルを送信し"
+#~ "ます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Sends a <link=\"LOGIC\">Standby</link> signal when current time is not "
+#~ "within its configured Time Schedule range"
+#~ msgstr ""
+#~ "指定した時刻範囲外の時、<link=\"LOGIC\">スタンバイ</link>シグナルを送信し"
+#~ "ます"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIRE.EFFECT"
+#~ msgid ""
+#~ "Connects automatable buildings to <link=\"LOGIC\">Automation Gates</"
+#~ "link>.\n"
+#~ "\n"
+#~ "Can be run through wall and floor tile."
+#~ msgstr ""
+#~ "自動化可能な設備と<link=\"LOGIC\">自動化ゲート</link>を接続します。\n"
+#~ "\n"
+#~ "壁や床のタイルを貫通して敷設できます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Transmits an <link=\"LOGIC\">Active</link> signal when receiving an "
+#~ "Active signal"
+#~ msgstr ""
+#~ "アクティブシグナルを受信すると<link=\"LOGIC\">アクティブ</link>シグナルを"
+#~ "伝送します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Transmits a <link=\"LOGIC\">Standby</link> signal when receiving a "
+#~ "Standby signal"
+#~ msgstr ""
+#~ "スタンバイシグナルを受信すると<link=\"LOGIC\">スタンバイ</link>シグナルを"
+#~ "伝送します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Dumps all stored materials when it receives an <link=\"LOGIC\">Active</"
+#~ "link> signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">アクティブ</link>シグナルを受信すると、内容物をすべて排出"
+#~ "します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.OBJECTDISPENSER.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Holds materials while receiving a <link=\"LOGIC\">Standby</link> signal"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">スタンバイ</link>シグナルを受信中は、素材を保持します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSUREDOOR.DESC"
+#~ msgid ""
+#~ "Mechanized airlocks have the same function as other doors, but open and "
+#~ "close more quickly."
+#~ msgstr ""
+#~ "自動エアロックは他のドアと同じ機能を持ちますが、素早く開閉できます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_ACTIVE"
+#~ msgid "Sends an <link=\"LOGIC\">Active</link> signal when full"
+#~ msgstr "満タンの時、<link=\"LOGIC\">アクティブ</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_INACTIVE"
+#~ msgid "Sends a <link=\"LOGIC\">Standby</link> signal when not full"
+#~ msgstr ""
+#~ "満タンでない時、<link=\"LOGIC\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.RESETSKILLSSTATION.EFFECT"
+#~ msgid "Removes specialized skills from the assigned Duplicant."
+#~ msgstr "割り当てた複製人間から特定のスキルを取り除きます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.DESC"
+#~ msgid "Sand is used in an array of liquid and air filtering processes."
+#~ msgstr "砂は液体や気体をろ過する過程で層状に積み重ねて使われます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKCRUSHER.EFFECT"
+#~ msgid ""
+#~ "Produces <link=\"SAND\">Sand</link> from <link=\"RAWMINERAL\">Raw "
+#~ "Mineral</link>.\n"
+#~ "\n"
+#~ "Inefficiently produces <link=\"REFINEDMETAL\">Refined Metals</link> from "
+#~ "raw <link=\"RAWMETAL\">Metal Ore</link>.\n"
+#~ "\n"
+#~ "Duplicants will not fabricate items unless recipes are queued."
+#~ msgstr ""
+#~ "<link=\"RAWMINERAL\">無機物原石</link>から<link=\"SAND\">砂</link>を生産し"
+#~ "ます。\n"
+#~ "\n"
+#~ "<link=\"RAWMETAL\">鉱石</link>から<link=\"REFINEDMETAL\">精錬金属</link>を"
+#~ "生産するにはあまり効率的ではありません。\n"
+#~ "\n"
+#~ "レシピがセットされていないと複製人間は製作作業をしません。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ROLESTATION.DESC"
+#~ msgid ""
+#~ "As Duplicants become more experienced, they can be given new "
+#~ "responsibilities."
+#~ msgstr "複製人間が経験を積むと、新たな権限が与えられます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.SHOWER.DESC"
+#~ msgid ""
+#~ "Showers remove the \"Grimy\" effect and kill all germs present on "
+#~ "Duplicant's skin."
+#~ msgstr ""
+#~ "シャワーは「不潔」効果を除去し、複製人間の皮膚から病原菌を殺菌します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.DESC"
+#~ msgid ""
+#~ "Automated conveyors saves time and resources by removing the need for "
+#~ "Duplicant management."
+#~ msgstr "自動化されたコンベアは時間と人的資源を節約します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.LOGIC_PORT_ACTIVE"
+#~ msgid ""
+#~ "Allows material transport while an <link=\"LOGIC\">Active</link> signal "
+#~ "is being received"
+#~ msgstr "<link=\"LOGIC\">アクティブ</link>シグナルを受信中は素材を輸送します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.LOGIC_PORT_INACTIVE"
+#~ msgid ""
+#~ "Prevents material transport while a <link=\"LOGIC\">Standby</link> signal "
+#~ "is being received"
+#~ msgstr ""
+#~ "<link=\"LOGIC\">スタンバイ</link>シグナルを受信中は素材を輸送しません"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.EFFECT"
+#~ msgid ""
+#~ "Stores the resources of your choosing.\n"
+#~ "\n"
+#~ "Logic input becomes <link=\"LOGIC\">Active</link> when bin is filled "
+#~ "above the set threshold."
+#~ msgstr ""
+#~ "指定した資源を格納します。\n"
+#~ "\n"
+#~ "論理入力は設定値以上になると<link=\"LOGIC\">アクティブ</link>になります。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_ACTIVE"
+#~ msgid "Sends an <link=\"LOGIC\">Active</link> signal when full"
+#~ msgstr "満タンの時、<link=\"LOGIC\">アクティブ</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_INACTIVE"
+#~ msgid "Sends a <link=\"LOGIC\">Standby</link> signal when not full"
+#~ msgstr ""
+#~ "満タンでない時、<link=\"LOGIC\">スタンバイ</link>シグナルを送信します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.THERMALBLOCK.DESC"
+#~ msgid ""
+#~ "Construction materials have different thermal properties that affect how "
+#~ "well they retain heat."
+#~ msgstr ""
+#~ "建設に使った素材は、どれくらい熱を保持できるかを決定する独自の熱特性を持ち"
+#~ "ます。"
 
 #~ msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_DESC"
 #~ msgid "Active/Standby based on internal <link=\"DISEASE\">Germs</link>"
@@ -7727,10 +9487,6 @@ msgstr "設備に損傷があると自動的に修理します"
 #~ "床や壁に大容量電線を通すことができます。\n"
 #~ "\n"
 #~ "通常のタイルとしても機能します。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.DEVGENERATOR.NAME"
-#~ msgid "<link=\"DEVGENERATOR\">DEV Generator</link>"
-#~ msgstr "<link=\"DEVGENERATOR\">DEV発電機</link>"
 
 #~ msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.DESC"
 #~ msgid ""
