@@ -15,3 +15,4 @@ msggrep -J -E -e 'STRINGS.NAMEGEN' strings.po  > po/namegen.po
 msggrep -J -E -e 'STRINGS.RESEARCH' strings.po > po/research.po
 msggrep -J -E -e 'STRINGS.ROOMS' strings.po  > po/rooms.po
 msggrep -J -E -e 'STRINGS.UI' strings.po  > po/ui.po
+msggrep -J -E -e 'STRINGS.WORLD' strings.po  > po/world.po
