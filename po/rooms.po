@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -65,13 +65,14 @@ msgstr "必要最低限の高さ: {0} タイル"
 
 #. STRINGS.ROOMS.CRITERIA.CLINIC.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.CLINIC.DESCRIPTION"
-msgid "Requires one or more Med-Beds or Pharma Chambers"
-msgstr "一つ以上の医療ベッドまたは投薬カプセルが必要です"
+msgid "Requires one or more Sick Bays or Disease Clinics"
+msgstr "一つ以上の医務室もしくは診療所が必要です"
 
 #. STRINGS.ROOMS.CRITERIA.CLINIC.NAME
+#, fuzzy
 msgctxt "STRINGS.ROOMS.CRITERIA.CLINIC.NAME"
-msgid "Medical bed"
-msgstr "医療ベッド"
+msgid "Medical equipment"
+msgstr "医療設備"
 
 #. STRINGS.ROOMS.CRITERIA.CREATURE_FEEDER.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.CREATURE_FEEDER.DESCRIPTION"
@@ -120,8 +121,8 @@ msgstr "{0}以上の装飾値を持つ装飾品が必要です"
 
 #. STRINGS.ROOMS.CRITERIA.DECORATIVE_ITEM_N.NAME
 msgctxt "STRINGS.ROOMS.CRITERIA.DECORATIVE_ITEM_N.NAME"
-msgid "Decor item: {0}+ Decor"
-msgstr "装飾品: {0}+ 装飾値"
+msgid "Decor item: +{0} Decor"
+msgstr "装飾品: +{0} 装飾値"
 
 #. STRINGS.ROOMS.CRITERIA.FARM_STATION.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.FARM_STATION.DESCRIPTION"
@@ -154,9 +155,12 @@ msgid "Food storage"
 msgstr "食糧保管庫"
 
 #. STRINGS.ROOMS.CRITERIA.HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.OPERATIONREQUIREMENTS"
+#| msgid "<b>Requirements:</b>"
 msgctxt "STRINGS.ROOMS.CRITERIA.HEADER"
-msgid "Room Criteria"
-msgstr "部屋の基準"
+msgid "<b>Requirements:</b>"
+msgstr "<b>必要条件:</b>"
 
 #. STRINGS.ROOMS.CRITERIA.LIGHT.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.LIGHT.DESCRIPTION"
@@ -254,8 +258,11 @@ msgid "No Cots"
 msgstr "簡易ベッドなし"
 
 #. STRINGS.ROOMS.CRITERIA.NO_INDUSTRIAL_MACHINERY.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.NO_INDUSTRIAL_MACHINERY.DESCRIPTION"
+#| msgid "Cannot contain any building labelled Industrial Machinery"
 msgctxt "STRINGS.ROOMS.CRITERIA.NO_INDUSTRIAL_MACHINERY.DESCRIPTION"
-msgid "Cannot contain any building labelled Industrial Machinery"
+msgid "Cannot contain any building labeled Industrial Machinery"
 msgstr "工業用機械とラベル付けされた設備がありません"
 
 #. STRINGS.ROOMS.CRITERIA.NO_INDUSTRIAL_MACHINERY.NAME
@@ -277,6 +284,16 @@ msgstr "野営トイレなし"
 msgctxt "STRINGS.ROOMS.CRITERIA.NO_TYPE_CONFLICTS"
 msgid "Remove conflicting buildings"
 msgstr "競合する設備を削除"
+
+#. STRINGS.ROOMS.CRITERIA.PARK_BUILDING.DESCRIPTION
+msgctxt "STRINGS.ROOMS.CRITERIA.PARK_BUILDING.DESCRIPTION"
+msgid "Requires one or more Park Signs"
+msgstr "一つ以上の公園の標識が必要です"
+
+#. STRINGS.ROOMS.CRITERIA.PARK_BUILDING.NAME
+msgctxt "STRINGS.ROOMS.CRITERIA.PARK_BUILDING.NAME"
+msgid "Park Sign"
+msgstr "公園の標識"
 
 #. STRINGS.ROOMS.CRITERIA.POSSIBLE_TYPES_HEADER
 msgctxt "STRINGS.ROOMS.CRITERIA.POSSIBLE_TYPES_HEADER"
@@ -343,6 +360,47 @@ msgctxt "STRINGS.ROOMS.CRITERIA.WASH_STATION.NAME"
 msgid "Wash station"
 msgstr "洗い場"
 
+#. STRINGS.ROOMS.CRITERIA.WILDANIMAL.DESCRIPTION
+msgctxt "STRINGS.ROOMS.CRITERIA.WILDANIMAL.DESCRIPTION"
+msgid "At least one wild creature."
+msgstr "最低1頭の野生動物"
+
+#. STRINGS.ROOMS.CRITERIA.WILDANIMAL.NAME
+msgctxt "STRINGS.ROOMS.CRITERIA.WILDANIMAL.NAME"
+msgid "Wildlife"
+msgstr "野生動物"
+
+#. STRINGS.ROOMS.CRITERIA.WILDANIMALS.DESCRIPTION
+msgctxt "STRINGS.ROOMS.CRITERIA.WILDANIMALS.DESCRIPTION"
+msgid "At least two wild creatures."
+msgstr "最低2頭の野生動物"
+
+#. STRINGS.ROOMS.CRITERIA.WILDANIMALS.NAME
+#, fuzzy
+msgctxt "STRINGS.ROOMS.CRITERIA.WILDANIMALS.NAME"
+msgid "More Wildlife"
+msgstr "野生動物"
+
+#. STRINGS.ROOMS.CRITERIA.WILDPLANT.DESCRIPTION
+msgctxt "STRINGS.ROOMS.CRITERIA.WILDPLANT.DESCRIPTION"
+msgid "At least two wild plants."
+msgstr "最低2つの野生植物"
+
+#. STRINGS.ROOMS.CRITERIA.WILDPLANT.NAME
+msgctxt "STRINGS.ROOMS.CRITERIA.WILDPLANT.NAME"
+msgid "At least two Wild Plants"
+msgstr "最低2つの野生植物"
+
+#. STRINGS.ROOMS.CRITERIA.WILDPLANTS.DESCRIPTION
+msgctxt "STRINGS.ROOMS.CRITERIA.WILDPLANTS.DESCRIPTION"
+msgid "At least two wild plants."
+msgstr "最低2つの野生植物"
+
+#. STRINGS.ROOMS.CRITERIA.WILDPLANTS.NAME
+msgctxt "STRINGS.ROOMS.CRITERIA.WILDPLANTS.NAME"
+msgid "At least four Wild Plants"
+msgstr "最低4つの野生植物"
+
 #. STRINGS.ROOMS.DETAILS.ASSIGNED_TO.NAME
 msgctxt "STRINGS.ROOMS.DETAILS.ASSIGNED_TO.NAME"
 msgid ""
@@ -382,15 +440,23 @@ msgctxt "STRINGS.ROOMS.DETAILS.HEADER"
 msgid "Room Details"
 msgstr "部屋詳細"
 
+#. STRINGS.ROOMS.DETAILS.PLANT_COUNT.NAME
+msgctxt "STRINGS.ROOMS.DETAILS.PLANT_COUNT.NAME"
+msgid "Plants: {0}"
+msgstr "植物: {0}"
+
 #. STRINGS.ROOMS.DETAILS.SIZE.NAME
 msgctxt "STRINGS.ROOMS.DETAILS.SIZE.NAME"
 msgid "Room size: {0} Tiles"
 msgstr "部屋サイズ: {0} タイル"
 
 #. STRINGS.ROOMS.EFFECTS.HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.OPERATIONEFFECTS"
+#| msgid "<b>Effects:</b>"
 msgctxt "STRINGS.ROOMS.EFFECTS.HEADER"
-msgid "Room Effects"
-msgstr "部屋効果"
+msgid "<b>Effects:</b>"
+msgstr "<b>効果:</b>"
 
 #. STRINGS.ROOMS.TYPES.BARRACKS.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.BARRACKS.EFFECT"
@@ -428,9 +494,10 @@ msgid "Conflicted Room"
 msgstr "競合する部屋"
 
 #. STRINGS.ROOMS.TYPES.CREATUREPEN.EFFECT
+#, fuzzy
 msgctxt "STRINGS.ROOMS.TYPES.CREATUREPEN.EFFECT"
-msgid "- Hastens critter domestication"
-msgstr "- 動物の家畜化を促進"
+msgid "- Enables Grooming Station use"
+msgstr "- 毛づくろい端末の使用を有効化"
 
 #. STRINGS.ROOMS.TYPES.CREATUREPEN.NAME
 msgctxt "STRINGS.ROOMS.TYPES.CREATUREPEN.NAME"
@@ -439,13 +506,17 @@ msgstr "厩舎"
 
 #. STRINGS.ROOMS.TYPES.CREATUREPEN.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.CREATUREPEN.TOOLTIP"
-msgid "Stabled critters will become more productive and less hostile."
-msgstr "家畜化された動物は生産率が上がり、敵対しなくなります。"
+msgid ""
+"Stabled critters can be tended at a Grooming Station to hasten their "
+"domestication and increase their production."
+msgstr ""
+"厩舎内の動物は、毛づくろい端末で世話をすることで家畜化を促進し、生産速度を上"
+"昇させます。"
 
 #. STRINGS.ROOMS.TYPES.FARM.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.FARM.EFFECT"
-msgid "- Accelerated plant growth"
-msgstr "- 植物の成長を促進"
+msgid "- Enables Farm Station use"
+msgstr "- 農業端末の使用を有効化"
 
 #. STRINGS.ROOMS.TYPES.FARM.NAME
 msgctxt "STRINGS.ROOMS.TYPES.FARM.NAME"
@@ -455,9 +526,9 @@ msgstr "温室"
 #. STRINGS.ROOMS.TYPES.FARM.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.FARM.TOOLTIP"
 msgid ""
-"Crops grown within a Greenhouse can be tended by Farmers to increase their "
-"growth speed."
-msgstr "温室内の作物は、農家の世話を受けることで成長速度が上昇します。"
+"Crops grown within a Greenhouse can be tended with Farm Station fertilizer "
+"to increase their growth speed."
+msgstr "温室内の作物は、農業端末で世話をすることで成長速度が上昇します。"
 
 #. STRINGS.ROOMS.TYPES.GREATHALL.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.GREATHALL.EFFECT"
@@ -480,18 +551,21 @@ msgid "- Quarantine sick Duplicants"
 msgstr "- 病気の複製人間を隔離"
 
 #. STRINGS.ROOMS.TYPES.HOSPITAL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.HOSPITAL"
+#| msgid "Hospital"
 msgctxt "STRINGS.ROOMS.TYPES.HOSPITAL.NAME"
-msgid "Med Bay"
-msgstr "医務室"
+msgid "Hospital"
+msgstr "病院"
 
 #. STRINGS.ROOMS.TYPES.HOSPITAL.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.HOSPITAL.TOOLTIP"
 msgid ""
-"Sick Duplicants assigned to medical beds located within a Med Bay are less "
-"likely to spread Disease."
+"Sick Duplicants assigned to medical buildings located within a Hospital are "
+"less likely to spread Disease."
 msgstr ""
-"医務室に設置された医療ベッドに病気の複製人間を割り当てることで、病気の拡大を"
-"抑えます。"
+"病院に設置された医療設備に病気の複製人間を割り当てることで、病気の拡大を抑え"
+"ます。"
 
 #. STRINGS.ROOMS.TYPES.LATRINE.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.LATRINE.EFFECT"
@@ -519,16 +593,17 @@ msgid "Machine Shop"
 msgstr "機械工場"
 
 #. STRINGS.ROOMS.TYPES.MACHINE_SHOP.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.ROOMS.TYPES.MACHINE_SHOP.TOOLTIP"
 msgid ""
-"Engineers working in a Machine Shop can maintain buildings and increase "
+"Duplicants working in a Machine Shop can maintain buildings and increase "
 "their production speed."
-msgstr "機械工場で働く技術者は設備を稼働維持させ、生産速度を上昇させます。"
+msgstr "機械工場で働く技術者は設備をメンテナンスし、生産速度を上昇させます。"
 
 #. STRINGS.ROOMS.TYPES.MASSAGE_CLINIC.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.MASSAGE_CLINIC.EFFECT"
-msgid "- Stress relief bonus"
-msgstr "- ストレス開放ボーナス"
+msgid "- Massage stress relief bonus"
+msgstr "- マッサージストレス開放ボーナス"
 
 #. STRINGS.ROOMS.TYPES.MASSAGE_CLINIC.NAME
 msgctxt "STRINGS.ROOMS.TYPES.MASSAGE_CLINIC.NAME"
@@ -557,6 +632,26 @@ msgctxt "STRINGS.ROOMS.TYPES.MESSHALL.TOOLTIP"
 msgid "Eating at a Mess Table in a Mess Hall will improve Duplicants' Morale."
 msgstr "食堂で食事を取ると、複製人間の士気が上昇します。"
 
+#. STRINGS.ROOMS.TYPES.NATURERESERVE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.TYPES.BARRACKS.EFFECT"
+#| msgid "- Morale bonus"
+msgctxt "STRINGS.ROOMS.TYPES.NATURERESERVE.EFFECT"
+msgid "- Morale bonus"
+msgstr "- 士気ボーナス"
+
+#. STRINGS.ROOMS.TYPES.NATURERESERVE.NAME
+msgctxt "STRINGS.ROOMS.TYPES.NATURERESERVE.NAME"
+msgid "Nature Reserve"
+msgstr "自然保護区"
+
+#. STRINGS.ROOMS.TYPES.NATURERESERVE.TOOLTIP
+#, fuzzy
+msgctxt "STRINGS.ROOMS.TYPES.NATURERESERVE.TOOLTIP"
+msgid ""
+"A Nature Reserve will grant higher Morale bonuses to Duplicants than a Park."
+msgstr "自然保護区は、複製人間に公園よりも高い士気ボーナスを与えます。"
+
 #. STRINGS.ROOMS.TYPES.NEUTRAL.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.NEUTRAL.EFFECT"
 msgid "- No effect"
@@ -568,9 +663,34 @@ msgid "Miscellaneous Room"
 msgstr "多目的室"
 
 #. STRINGS.ROOMS.TYPES.NEUTRAL.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.TYPES.NEUTRAL.TOOLTIP"
+#| msgid "This area qualifies as a room but has no dedicated use."
 msgctxt "STRINGS.ROOMS.TYPES.NEUTRAL.TOOLTIP"
-msgid "This area qualifies as a room but has no dedicated use."
+msgid "This area has walls and doors but no dedicated use."
 msgstr "このエリアは部屋として使えますが、特定用途向けではありません。"
+
+#. STRINGS.ROOMS.TYPES.PARK.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.TYPES.BARRACKS.EFFECT"
+#| msgid "- Morale bonus"
+msgctxt "STRINGS.ROOMS.TYPES.PARK.EFFECT"
+msgid "- Morale bonus"
+msgstr "- 士気ボーナス"
+
+#. STRINGS.ROOMS.TYPES.PARK.NAME
+msgctxt "STRINGS.ROOMS.TYPES.PARK.NAME"
+msgid "Park"
+msgstr "公園"
+
+#. STRINGS.ROOMS.TYPES.PARK.TOOLTIP
+msgctxt "STRINGS.ROOMS.TYPES.PARK.TOOLTIP"
+msgid ""
+"Passing through natural spaces throughout the day will raise the Morale of "
+"Duplicants."
+msgstr ""
+"一日を通じて自然な空間を通過することで、複製人間の士気を向上させることができ"
+"ます。"
 
 #. STRINGS.ROOMS.TYPES.PLUMBEDBATHROOM.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.PLUMBEDBATHROOM.EFFECT"
@@ -589,20 +709,22 @@ msgstr "整備された洗面台を使うことにより、複製人間の士気
 
 #. STRINGS.ROOMS.TYPES.POWER_PLANT.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.POWER_PLANT.EFFECT"
-msgid "- Power production increase"
-msgstr "- 電力生産量工場"
+msgid "- Enables Power Control Station use"
+msgstr "- 電力制御端末の使用を有効化"
 
 #. STRINGS.ROOMS.TYPES.POWER_PLANT.NAME
 msgctxt "STRINGS.ROOMS.TYPES.POWER_PLANT.NAME"
 msgid "Power Plant"
-msgstr "電力プラント"
+msgstr "発電所"
 
 #. STRINGS.ROOMS.TYPES.POWER_PLANT.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.POWER_PLANT.TOOLTIP"
 msgid ""
-"Electrical Engineers can tune-up generators built within a Power Plant and "
-"improve their power production."
-msgstr "電気工は電力プラント内の発電機の出力を調整することができます。"
+"Generators built within a Power Plant can be tuned up using Power Control "
+"Stations to improve their power production."
+msgstr ""
+"発電機を発電所内に建設し、電力制御端末でチューンアップすると発電能力を改善で"
+"きます。"
 
 #. STRINGS.ROOMS.TYPES.PRIVATE_BATHROOM.EFFECT
 msgctxt "STRINGS.ROOMS.TYPES.PRIVATE_BATHROOM.EFFECT"
@@ -655,9 +777,45 @@ msgstr "娯楽室"
 #. STRINGS.ROOMS.TYPES.REC_ROOM.TOOLTIP
 msgctxt "STRINGS.ROOMS.TYPES.REC_ROOM.TOOLTIP"
 msgid ""
-"Downtime shifts will further improve Morale for Duplicants visiting a "
+"Scheduled Downtime will further improve Morale for Duplicants visiting a "
 "Recreation Room."
-msgstr "娯楽室で過ごすと、複製人間の士気がかなり上昇します。"
+msgstr "休憩時間中に娯楽室を訪れることで、複製人間の士気はより上昇します。"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.CLINIC.DESCRIPTION"
+#~ msgid "Requires one or more Med-Beds or Pharma Chambers"
+#~ msgstr "一つ以上の医療ベッドまたは投薬カプセルが必要です"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.CLINIC.NAME"
+#~ msgid "Medical bed"
+#~ msgstr "医療ベッド"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.HEADER"
+#~ msgid "Room Criteria"
+#~ msgstr "部屋の基準"
+
+#~ msgctxt "STRINGS.ROOMS.EFFECTS.HEADER"
+#~ msgid "Room Effects"
+#~ msgstr "部屋効果"
+
+#~ msgctxt "STRINGS.ROOMS.TYPES.CREATUREPEN.EFFECT"
+#~ msgid "- Hastens critter domestication"
+#~ msgstr "- 動物の家畜化を促進"
+
+#~ msgctxt "STRINGS.ROOMS.TYPES.CREATUREPEN.TOOLTIP"
+#~ msgid "Stabled critters will become more productive and less hostile."
+#~ msgstr "家畜化された動物は生産率が上がり、敵対しなくなります。"
+
+#~ msgctxt "STRINGS.ROOMS.TYPES.FARM.EFFECT"
+#~ msgid "- Accelerated plant growth"
+#~ msgstr "- 植物の成長を促進"
+
+#~ msgctxt "STRINGS.ROOMS.TYPES.HOSPITAL.NAME"
+#~ msgid "Med Bay"
+#~ msgstr "医務室"
+
+#~ msgctxt "STRINGS.ROOMS.TYPES.POWER_PLANT.EFFECT"
+#~ msgid "- Power production increase"
+#~ msgstr "- 電力生産量工場"
 
 #~ msgctxt "STRINGS.ROOMS.CRITERIA.CEILING_HEIGHT.DESCRIPTION"
 #~ msgid "The ceiling must be at least {0} tiles above the floor"

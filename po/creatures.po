@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -22,6 +22,11 @@ msgstr "この {0} は捕獲され、安全に移動できます。"
 msgctxt "STRINGS.CREATURES.BAGGED_NAME_FMT"
 msgid "Bagged {0}"
 msgstr "袋詰めされた {0}"
+
+#. STRINGS.CREATURES.FAMILY.CRAB
+msgctxt "STRINGS.CREATURES.FAMILY.CRAB"
+msgid "<link=\"CRABSPECIES\">Pokeshell</link>"
+msgstr "<link=\"CRABSPECIES\">ポークシェル</link>"
 
 #. STRINGS.CREATURES.FAMILY.DRECKO
 msgctxt "STRINGS.CREATURES.FAMILY.DRECKO"
@@ -68,6 +73,16 @@ msgctxt "STRINGS.CREATURES.FAMILY.PUFT"
 msgid "<link=\"PUFTSPECIES\">Puft</link>"
 msgstr "<link=\"PUFTSPECIES\">パフ</link>"
 
+#. STRINGS.CREATURES.FAMILY.SQUIRREL
+msgctxt "STRINGS.CREATURES.FAMILY.SQUIRREL"
+msgid "<link=\"SQUIRRELSPECIES\">Pip</link>"
+msgstr "<link=\"SQUIRRELSPECIES\">ピップ</link>"
+
+#. STRINGS.CREATURES.FAMILY_PLURAL.CRABSPECIES
+msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.CRABSPECIES"
+msgid "<link=\"CRABSPECIES\">Pokeshells</link>"
+msgstr "<link=\"CRABSPECIES\">ポークシェル種</link>"
+
 #. STRINGS.CREATURES.FAMILY_PLURAL.DRECKOSPECIES
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.DRECKOSPECIES"
 msgid "<link=\"DRECKOSPECIES\">Dreckos</link>"
@@ -112,6 +127,11 @@ msgstr "<link=\"PACUSPECIES\">パクー種</link>"
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.PUFTSPECIES"
 msgid "<link=\"PUFTSPECIES\">Pufts</link>"
 msgstr "<link=\"PUFTSPECIES\">パフ種</link>"
+
+#. STRINGS.CREATURES.FAMILY_PLURAL.SQUIRRELSPECIES
+msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.SQUIRRELSPECIES"
+msgid "<link=\"SQUIRRELSPECIES\">Pips</link>"
+msgstr "<link=\"SQUIRRELSPECIES\">ピップ種</link>"
 
 #. STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.DESC
 msgctxt "STRINGS.CREATURES.FERTILITY_MODIFIERS.DIET.DESC"
@@ -170,8 +190,12 @@ msgstr "給餌機から摂取済み"
 
 #. STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.ATE_FROM_FEEDER.TOOLTIP"
-msgid "This critter is getting tamer because it ate from a feeder."
-msgstr "この動物は給餌機から餌を食べたため、飼い慣らされてきています。"
+msgid ""
+"This critter is getting more <style=\"KKeyword\">Tame</style> because it ate "
+"from a feeder."
+msgstr ""
+"この動物は給餌機から餌を食べたため、<style=\"KKeyword\">飼い慣らされて</"
+"style>きています。"
 
 #. STRINGS.CREATURES.MODIFIERS.BABY.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.BABY.NAME"
@@ -192,8 +216,10 @@ msgstr "基本繁殖力"
 
 #. STRINGS.CREATURES.MODIFIERS.BASE_FERTILITY.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.BASE_FERTILITY.TOOLTIP"
-msgid "This is the base speed with which critters produce new eggs"
-msgstr "動物が新しく卵を産む基本速度です"
+msgid ""
+"This is the base speed with which critters produce new <style=\"KKeyword"
+"\">Eggs</style>"
+msgstr "動物が新しく<style=\"KKeyword\">卵</style>を産む基本速度です"
 
 #. STRINGS.CREATURES.MODIFIERS.BASE_INCUBATION_RATE.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.BASE_INCUBATION_RATE.NAME"
@@ -244,14 +270,17 @@ msgstr "窮屈"
 #. STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.FUTURE_OVERCROWDED.TOOLTIP"
 msgid ""
-"This room will become overcrowded once all nearby eggs hatch\n"
+"This <style=\"KKeyword\">Room</style> will become overcrowded once all "
+"nearby <style=\"KKeyword\">Eggs</style> hatch\n"
 "\n"
-"The selected critter has slowed its egg production to prevent further "
-"overpopulation"
+"The selected critter has slowed its <style=\"KKeyword\">Reproduction</style> "
+"to prevent further overpopulation"
 msgstr ""
-"周囲の卵が孵化すると、この部屋は手狭になります\n"
+"周囲の<style=\"KKeyword\">卵</style>が孵化すると、この<style=\"KKeyword\">部"
+"屋</style>は手狭になります\n"
 "\n"
-"選択した動物は過密を避けるため、卵の生産性が低下します"
+"選択した動物は過密を避けるため、<style=\"KKeyword\">卵</style>の生産性が低下"
+"します"
 
 #. STRINGS.CREATURES.MODIFIERS.HAPPY.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.NAME"
@@ -303,13 +332,18 @@ msgstr "子守歌"
 #. STRINGS.CREATURES.MODIFIERS.INCUBATOR_SONG.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_SONG.TOOLTIP"
 msgid ""
-"This calm egg was recently sung to by a Rancher\n"
+"This egg was recently sung to by a kind Duplicant\n"
 "------------------\n"
-"Increased incubation rate"
+"Increased <style=\"KKeyword\">Incubation Rate</style>\n"
+"\n"
+"Duplicants must possess the <style=\"KKeyword\">Critter Ranching</style> "
+"Skill to sing to eggs"
 msgstr ""
-"この卵は牧夫の歌を聴きました。\n"
+"この卵は最近優しい複製人間によって歌を歌ってもらいました\n"
 "------------------\n"
-"孵化率上昇中"
+"<style=\"KKeyword\">孵化速度</style>が上昇します\n"
+"\n"
+"複製人間が歌を歌うには <style=\"KKeyword\">家畜</style>のスキルが必要です"
 
 #. STRINGS.CREATURES.MODIFIERS.OUT_OF_CALORIES.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.OUT_OF_CALORIES.NAME"
@@ -329,10 +363,11 @@ msgstr "過密"
 #. STRINGS.CREATURES.MODIFIERS.OVERCROWDED.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.OVERCROWDED.TOOLTIP"
 msgid ""
-"This critter isn't comfortable with so many other critters in a room of this "
-"size"
+"This critter isn't comfortable with so many other critters in a <style="
+"\"KKeyword\">Room</style> of this size"
 msgstr ""
-"この動物は部屋の大きさに対し仲間の数が多すぎるため、心地よいと感じていません"
+"この動物は<style=\"KKeyword\">部屋</style>の大きさに対し仲間の数が多すぎるた"
+"め、心地よいと感じていません"
 
 #. STRINGS.CREATURES.MODIFIERS.RANCHED.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.RANCHED.NAME"
@@ -341,8 +376,16 @@ msgstr "毛づくろい済み"
 
 #. STRINGS.CREATURES.MODIFIERS.RANCHED.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.RANCHED.TOOLTIP"
-msgid "This critter has recently been attended to by a Rancher"
-msgstr "この動物は牧夫の手入れを受けたばかりです"
+msgid ""
+"This critter has recently been attended to by a kind Duplicant\n"
+"\n"
+"Duplicants must possess the <style=\"KKeyword\">Critter Ranching</style> "
+"Skill to care for critters"
+msgstr ""
+"この動物は最近優しい複製人間に面倒を見てもらいました\n"
+"\n"
+"複製人間が動物の面倒をみるには <style=\"KKeyword\">家畜</style>のスキルが必要"
+"です"
 
 #. STRINGS.CREATURES.MODIFIERS.SCALE_GROWTH_RATE.NAME
 msgctxt "STRINGS.CREATURES.MODIFIERS.SCALE_GROWTH_RATE.NAME"
@@ -356,7 +399,7 @@ msgstr "従順"
 
 #. STRINGS.CREATURES.MODIFIERS.TAME.TOOLTIP
 msgctxt "STRINGS.CREATURES.MODIFIERS.TAME.TOOLTIP"
-msgid "This critter is tame"
+msgid "This critter is <style=\"KKeyword\">Tame</style>"
 msgstr "この動物は飼い慣らされています"
 
 #. STRINGS.CREATURES.MODIFIERS.UNHAPPY.NAME
@@ -437,6 +480,25 @@ msgstr ""
 msgctxt "STRINGS.CREATURES.SPECIES.BASICSINGLEHARVESTPLANT.NAME"
 msgid "<link=\"BASICSINGLEHARVESTPLANT\">Mealwood</link>"
 msgstr "<link=\"BASICSINGLEHARVESTPLANT\">ミールウッド</link>"
+
+#. STRINGS.CREATURES.SPECIES.BEAN_PLANT.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.BEAN_PLANT.DESC"
+msgid ""
+"Nosh Sprouts thrive in colder climates and produce edible <link=\"BEAN"
+"\">Nosh Beans</link>."
+msgstr ""
+"ノッシュの木は寒い気候でよく育ち、食用の<link=\"BEAN\">ノッシュ豆</link>を生"
+"産します。"
+
+#. STRINGS.CREATURES.SPECIES.BEAN_PLANT.DOMESTICATEDDESC
+msgctxt "STRINGS.CREATURES.SPECIES.BEAN_PLANT.DOMESTICATEDDESC"
+msgid "This plant produces <link=\"BEAN\">Nosh Beans</link>."
+msgstr "この植物は<link=\"BEAN\">ノッシュ豆</link>を生産します。"
+
+#. STRINGS.CREATURES.SPECIES.BEAN_PLANT.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.BEAN_PLANT.NAME"
+msgid "<link=\"BEANPLANT\">Nosh Sprout</link>"
+msgstr "<link=\"BEANPLANT\">ノッシュの木</link>"
 
 #. STRINGS.CREATURES.SPECIES.BULBPLANT.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.BULBPLANT.DESC"
@@ -549,6 +611,46 @@ msgctxt "STRINGS.CREATURES.SPECIES.COLDWHEAT.NAME"
 msgid "<link=\"COLDWHEAT\">Sleet Wheat</link>"
 msgstr "<link=\"COLDWHEAT\">スリートウィート</link>"
 
+#. STRINGS.CREATURES.SPECIES.CRAB.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.CRAB.BABY.DESC"
+msgid ""
+"A snippy little Pokeshell Spawn.\n"
+"\n"
+"In time it will mature into a fully grown <link=\"CRAB\">Pokeshell</link>."
+msgstr ""
+"小さくて短気なポークシェルの幼生です。\n"
+"\n"
+"時間経過とともに成長し、<link=\"CRAB\">ポークシェル</link>になります。"
+
+#. STRINGS.CREATURES.SPECIES.CRAB.BABY.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.CRAB.BABY.NAME"
+msgid "<link=\"CRAB\">Pokeshell Spawn</link>"
+msgstr "<link=\"CRAB\">ポークシェルの幼生</link>"
+
+#. STRINGS.CREATURES.SPECIES.CRAB.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.CRAB.DESC"
+msgid ""
+"Pokeshells are nonhostile critters that eat <link=\"TOXICSAND\">Polluted "
+"Dirt</link> and <link=\"COMPOST\">Rot Piles</link>.\n"
+"\n"
+"The shells they leave behind after molting can be crushed into <link=\"LIME"
+"\">Lime</link>."
+msgstr ""
+"ポークシェルは<link=\"TOXICSAND\">汚染土</link>と<link=\"COMPOST\">腐った塊</"
+"link>を食べる、非敵対的な動物です。\n"
+"\n"
+"彼らが脱皮の後に残す殻は、粉砕して<link=\"LIME\">石灰</link>にできます。"
+
+#. STRINGS.CREATURES.SPECIES.CRAB.EGG_NAME
+msgctxt "STRINGS.CREATURES.SPECIES.CRAB.EGG_NAME"
+msgid "<link=\"CRAB\">Pinch Roe</link>"
+msgstr "<link=\"CRAB\">窮屈な卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.CRAB.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.CRAB.NAME"
+msgid "<link=\"CRAB\">Pokeshell</link>"
+msgstr "<link=\"CRAB\">ポークシェル</link>"
+
 #. STRINGS.CREATURES.SPECIES.DRECKO.BABY.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.DRECKO.BABY.DESC"
 msgid ""
@@ -636,15 +738,17 @@ msgstr "<link=\"DRECKOPLASTIC\">つやつや ドレッコ</link>"
 #. STRINGS.CREATURES.SPECIES.EVILFLOWER.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.EVILFLOWER.DESC"
 msgid ""
-"This beautiful specemin is actually the host for a particularly nasty strain "
-"of brain fungus."
-msgstr "この美しい標本は、やっかいな脳障害を引き起こす胞子の宿主です。"
+"Sporechids have an eerily alluring appearance to mask the fact that they "
+"host particularly nasty strain of brain fungus."
+msgstr ""
+"胞子ランは不気味なほどに魅力的な見た目をしています。まるで厄介な菌種である脳"
+"キノコの宿主であることを隠すように。"
 
 #. STRINGS.CREATURES.SPECIES.EVILFLOWER.DOMESTICATEDDESC
 msgctxt "STRINGS.CREATURES.SPECIES.EVILFLOWER.DOMESTICATEDDESC"
 msgid ""
-"This plant improves <link=\"DECOR\">Decor</link> but also produces <link="
-"\"ZOMBIESPORES\">Zombie Spores</link> in abundance."
+"This plant improves <link=\"DECOR\">Decor</link> but produces high "
+"quantities of <link=\"ZOMBIESPORES\">Zombie Spores</link>."
 msgstr ""
 "この植物は<link=\"DECOR\">装飾</link>を改善しますが、大量の<link="
 "\"ZOMBIESPORES\">ゾンビ胞子</link>も生産します。"
@@ -664,6 +768,20 @@ msgstr "<link=\"EVILFLOWER\">胞子ラン</link>"
 msgctxt "STRINGS.CREATURES.SPECIES.EVILFLOWER.WILT_PENALTY"
 msgid "Wilt Penalty"
 msgstr "萎れペナルティ"
+
+#. STRINGS.CREATURES.SPECIES.FORESTFORAGEPLANTPLANTED.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.FORESTFORAGEPLANTPLANTED.DESC"
+msgid ""
+"Hexalents are incapable of propagating but can be harvested for a single, "
+"calorie dense <link=\"FOOD\">Food</link> serving."
+msgstr ""
+"ヘキサレントは繁殖できませんが、一回だけ、カロリーを濃縮した<link=\"FOOD\">食"
+"糧</link>が収穫できます。"
+
+#. STRINGS.CREATURES.SPECIES.FORESTFORAGEPLANTPLANTED.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.FORESTFORAGEPLANTPLANTED.NAME"
+msgid "<link=\"FORESTFORAGEPLANTPLANTED\">Hexalent</link>"
+msgstr "<link=\"FORESTFORAGEPLANTPLANTED\">ヘキサレント</link>"
 
 #. STRINGS.CREATURES.SPECIES.GASGRASS.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.GASGRASS.DESC"
@@ -880,6 +998,19 @@ msgctxt "STRINGS.CREATURES.SPECIES.GEYSER.OIL_DRIP.NAME"
 msgid "<link=\"GEYSERGENERICOILDRIP\">Leaky Oil Fissure</link>"
 msgstr "<link=\"GEYSERGENERICOILDRIP\">オイル噴出口</link>"
 
+#. STRINGS.CREATURES.SPECIES.GEYSER.SALT_WATER.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.GEYSER.SALT_WATER.DESC"
+msgid ""
+"A highly pressurized geyser that periodically erupts with <link=\"SALTWATER"
+"\">Salt Water</link>."
+msgstr ""
+"定期的に<link=\"SALTWATER\">塩水</link>を噴き上げる、高圧の間欠泉です。"
+
+#. STRINGS.CREATURES.SPECIES.GEYSER.SALT_WATER.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.GEYSER.SALT_WATER.NAME"
+msgid "<link=\"GEYSERGENERICSALTWATER\">Salt Water Geyser</link>"
+msgstr "<link=\"GEYSERGENERICSALTWATER\">塩水間欠泉</link>"
+
 #. STRINGS.CREATURES.SPECIES.GEYSER.SLIMY_PO2.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.GEYSER.SLIMY_PO2.DESC"
 msgid ""
@@ -1095,8 +1226,8 @@ msgid ""
 "Sage Hatches excrete solid <link=\"CARBON\">Coal</link> as waste and enjoy "
 "burrowing into the ground."
 msgstr ""
-"セイジ ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。地面を掘り進"
-"むことを好みます。"
+"セイジ ハッチは固形の<link=\"CARBON\">石炭</link>を排泄します。地面を掘り進む"
+"ことを好みます。"
 
 #. STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.EGG_NAME
 msgctxt "STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.EGG_NAME"
@@ -1466,12 +1597,12 @@ msgid ""
 msgstr ""
 "モコモコの幼体です。\n"
 "\n"
-"いつか成長し大人の<link=\"MOLE\">ホリネズミ</link>になるでしょう。"
+"いつか成長し大人の<link=\"MOLE\">ぐりぐりネズミ</link>になるでしょう。"
 
 #. STRINGS.CREATURES.SPECIES.MOLE.BABY.NAME
 msgctxt "STRINGS.CREATURES.SPECIES.MOLE.BABY.NAME"
 msgid "<link=\"MOLE\">Vole Pup</link>"
-msgstr "<link=\"MOLE\">ホリネズミ幼体</link>"
+msgstr "<link=\"MOLE\">ぐりぐりネズミ幼体</link>"
 
 #. STRINGS.CREATURES.SPECIES.MOLE.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.MOLE.DESC"
@@ -1481,7 +1612,8 @@ msgid ""
 "\n"
 "They cannot burrow through <link=\"REFINEDMETAL\">Refined Metals</link>."
 msgstr ""
-"ぐりぐりネズミは<link=\"REGOLITH\">表土</link>を掘り進みながら食べる動物です。\n"
+"ぐりぐりネズミは<link=\"REGOLITH\">表土</link>を掘り進みながら食べる動物で"
+"す。\n"
 "\n"
 "彼らは<link=\"REFINEDMETAL\">精錬金属</link>を掘ることはできません。"
 
@@ -1677,6 +1809,29 @@ msgstr "原油を吹き出す、ごつごつした噴出口です。"
 msgctxt "STRINGS.CREATURES.SPECIES.OILSPOUT.NAME"
 msgid "<link=\"OILSPOUT\">Oil Spout</link>"
 msgstr "<link=\"OILSPOUT\">原油噴出口</link>"
+
+#. STRINGS.CREATURES.SPECIES.OXYFERN.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.OXYFERN.DESC"
+msgid ""
+"Oxyferns absorb <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> and exude "
+"breathable <link=\"OXYGEN\">Oxygen</link>."
+msgstr ""
+"オキシファーンは<link=\"CARBONDIOXIDE\">二酸化炭素</link>を消費し、呼吸可能な"
+"<link=\"OXYGEN\">酸素</link>を排出します。"
+
+#. STRINGS.CREATURES.SPECIES.OXYFERN.DOMESTICATEDDESC
+msgctxt "STRINGS.CREATURES.SPECIES.OXYFERN.DOMESTICATEDDESC"
+msgid ""
+"This plant converts <link=\"CARBONDIOXIDE\">CO<sub>2</sub></link> into <link="
+"\"OXYGEN\">Oxygen</link>."
+msgstr ""
+"この植物は<link=\"CARBONDIOXIDE\">CO<sub>2</sub></link>を<link=\"OXYGEN\">酸"
+"素</link>に変換します。"
+
+#. STRINGS.CREATURES.SPECIES.OXYFERN.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.OXYFERN.NAME"
+msgid "<link=\"OXYFERN\">Oxyfern</link>"
+msgstr "<link=\"OXYFERN\">オキシファーン</link>"
 
 #. STRINGS.CREATURES.SPECIES.PACU.BABY.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.PACU.BABY.DESC"
@@ -2006,6 +2161,47 @@ msgctxt "STRINGS.CREATURES.SPECIES.PUFT.VARIANT_OXYLITE.NAME"
 msgid "<link=\"PUFTOXYLITE\">Dense Puft</link>"
 msgstr "<link=\"PUFTOXYLITE\">こってり パフ</link>"
 
+#. STRINGS.CREATURES.SPECIES.SALTPLANT.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SALTPLANT.DESC"
+msgid ""
+"Dasha Saltvines consume small amounts of <link=\"CHLORINE\">Chlorine Gas</"
+"link> and form sodium deposits as they grow, producing harvestable <link="
+"\"SALT\">Salt</link>."
+msgstr ""
+"ダーシャ・シオカズラは少量の<link=\"CHLORINE\">塩素ガス</link>を消費して成長"
+"とともにナトリウムを析出させ、収穫可能な<link=\"SALT\">塩</link>を生産しま"
+"す。"
+
+#. STRINGS.CREATURES.SPECIES.SALTPLANT.DOMESTICATEDDESC
+msgctxt "STRINGS.CREATURES.SPECIES.SALTPLANT.DOMESTICATEDDESC"
+msgid "This plant produces unrefined <link=\"SALT\">Salt</link>."
+msgstr "この植物は未精製の<link=\"SALT\">塩</link>を生産します。"
+
+#. STRINGS.CREATURES.SPECIES.SALTPLANT.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SALTPLANT.NAME"
+msgid "<link=\"SALTPLANT\">Dasha Saltvine</link>"
+msgstr "<link=\"SALTPLANT\">ダーシャ・シオカズラ</link>"
+
+# 塩水と濃塩水の両方を含む表現なので修正しました
+#. STRINGS.CREATURES.SPECIES.SEALETTUCE.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SEALETTUCE.DESC"
+msgid ""
+"Waterweeds thrive in salty water and can be harvested for fresh, edible "
+"<link=\"LETTUCE\">Lettuce</link>."
+msgstr ""
+"水草は塩が溶けた水の中でよく育ち、食用可能で新鮮な<link=\"LETTUCE\">レタス</"
+"link>を生産します。"
+
+#. STRINGS.CREATURES.SPECIES.SEALETTUCE.DOMESTICATEDDESC
+msgctxt "STRINGS.CREATURES.SPECIES.SEALETTUCE.DOMESTICATEDDESC"
+msgid "This plant produces <link=\"LETTUCE\">Lettuce</link>."
+msgstr "この植物は<link=\"LETTUCE\">レタス</link>を生産します。"
+
+#. STRINGS.CREATURES.SPECIES.SEALETTUCE.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SEALETTUCE.NAME"
+msgid "<link=\"SEALETTUCE\">Waterweed</link>"
+msgstr "<link=\"SEALETTUCE\">水草</link>"
+
 #. STRINGS.CREATURES.SPECIES.SEEDS.BASICFABRICMATERIALPLANT.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.BASICFABRICMATERIALPLANT.DESC"
 msgid ""
@@ -2042,6 +2238,23 @@ msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.BASICSINGLEHARVESTPLANT.NAME"
 msgid "<link=\"BASICSINGLEHARVESTPLANT\">Mealwood Seed</link>"
 msgstr "<link=\"BASICSINGLEHARVESTPLANT\">ミールウッドの種子</link>"
 
+#. STRINGS.CREATURES.SPECIES.SEEDS.BEAN_PLANT.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.BEAN_PLANT.DESC"
+msgid ""
+"The <link=\"PLANTS\">Seed</link> of a <link=\"BEANPLANT\">Nosh Sprout</"
+"link>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Nosh Bean."
+msgstr ""
+"<link=\"BEANPLANT\">ノッシュの木</link>の<link=\"PLANTS\">種子</link>です。\n"
+"\n"
+"埋もれた物体を掘り起こすとノッシュ豆を発見することがあります。"
+
+#. STRINGS.CREATURES.SPECIES.SEEDS.BEAN_PLANT.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.BEAN_PLANT.NAME"
+msgid "<link=\"BEANPLANT\">Nosh Bean</link>"
+msgstr "<link=\"BEANPLANT\">ノッシュ豆</link>"
+
 #. STRINGS.CREATURES.SPECIES.SEEDS.BULBPLANT.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.BULBPLANT.DESC"
 msgid ""
@@ -2065,10 +2278,10 @@ msgid ""
 "The <link=\"PLANTS\">Seed</link> of a <link=\"CACTUSPLANT\">Jumping Joya</"
 "link>.\n"
 "\n"
-"Digging up Buried Objects may uncover a Joy Seed."
+"Digging up Buried Objects may uncover a Joya Seed."
 msgstr ""
-"<link=\"CACTUSPLANT\">ジャンピング ジョヤ</link>の<link=\"PLANTS\">種子</"
-"link>です。\n"
+"<link=\"CACTUSPLANT\">ジャンピングジョヤ</link>の<link=\"PLANTS\">種子</link>"
+"です。\n"
 "\n"
 "埋もれた物体を掘り起こすとジョヤの種子を発見することがあります。"
 
@@ -2122,7 +2335,7 @@ msgid ""
 "link>.\n"
 "\n"
 "Digging up Buried Objects may uncover a <link=\"EVILFLOWER\">Sporechid Seed</"
-"link>"
+"link>."
 msgstr ""
 "<link=\"EVILFLOWER\">胞子ラン</link>の<link=\"PLANTS\">種子</link>です。\n"
 "\n"
@@ -2203,6 +2416,19 @@ msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.OILEATER.NAME"
 msgid "<link=\"OILEATER\">Ink Bloom Seed</link>"
 msgstr "<link=\"OILEATER\">インク花の種子</link>"
 
+#. STRINGS.CREATURES.SPECIES.SEEDS.OXYFERN.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.OXYFERN.DESC"
+msgid ""
+"The <link=\"PLANTS\">Seed</link> of an <link=\"OXYFERN\">Oxyfern</link> "
+"plant."
+msgstr ""
+"<link=\"OXYFERN\">オキシファーン</link>の<link=\"PLANTS\">種子</link>。"
+
+#. STRINGS.CREATURES.SPECIES.SEEDS.OXYFERN.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.OXYFERN.NAME"
+msgid "<link=\"OXYFERN\">Oxyfern Seed</link>"
+msgstr "<link=\"OXYFERN\">オキシファーンの種子</link>"
+
 #. STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEFLOWER.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEFLOWER.DESC"
 msgid ""
@@ -2239,6 +2465,42 @@ msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.PRICKLEGRASS.NAME"
 msgid "<link=\"PRICKLEGRASS\">Briar Seed</link>"
 msgstr "<link=\"PRICKLEGRASS\">いばらの種子</link>"
 
+#. STRINGS.CREATURES.SPECIES.SEEDS.SALTPLANT.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SALTPLANT.DESC"
+msgid ""
+"The <link=\"PLANTS\">Seed</link> of a <link=\"SALTPLANT\">Dasha Saltvine</"
+"link>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Dasha Saltvine Seed."
+msgstr ""
+"<link=\"SALTPLANT\">ダーシャ・シオカズラ</link>の <link=\"PLANTS\">種子</"
+"link>です。\n"
+"\n"
+"埋もれた物体を掘り起こすとダーシャ・シオカズラの種子を発見することがありま"
+"す。"
+
+#. STRINGS.CREATURES.SPECIES.SEEDS.SALTPLANT.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SALTPLANT.NAME"
+msgid "<link=\"SALTPLANT\">Dasha Saltvine Seed</link>"
+msgstr "<link=\"SALTPLANT\">ダーシャ・シオカズラ</link>"
+
+#. STRINGS.CREATURES.SPECIES.SEEDS.SEALETTUCE.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SEALETTUCE.DESC"
+msgid ""
+"The <link=\"PLANTS\">Seed</link> of a <link=\"SEALETTUCE\">Waterweed</"
+"link>.\n"
+"\n"
+"Digging up Buried Objects may uncover a Waterweed Seed."
+msgstr ""
+"<link=\"SEALETTUCE\">水草</link>の<link=\"PLANTS\">種子</link>です。\n"
+"\n"
+"埋もれた物体を掘り起こすと水草の種子を発見することがあります。"
+
+#. STRINGS.CREATURES.SPECIES.SEEDS.SEALETTUCE.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SEALETTUCE.NAME"
+msgid "<link=\"SEALETTUCE\">Waterweed Seed</link>"
+msgstr "<link=\"SEALETTUCE\">水草</link>"
+
 #. STRINGS.CREATURES.SPECIES.SEEDS.SPICE_VINE.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SPICE_VINE.DESC"
 msgid ""
@@ -2273,6 +2535,24 @@ msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SWAMPLILY.NAME"
 msgid "<link=\"SWAMPLILY\">Balm Lily Seed</link>"
 msgstr "<link=\"SWAMPLILY\">バームリリーの種子</link>"
 
+#. STRINGS.CREATURES.SPECIES.SEEDS.WOOD_TREE.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.WOOD_TREE.DESC"
+msgid ""
+"The <link=\"PLANTS\">Seed</link> of an <link=\"WOODTREE\">Arbor Tree</"
+"link>.\n"
+"\n"
+"Digging up Buried Objects may uncover an Arbor Acorn."
+msgstr ""
+"<link=\"WOODTREE\">アーバーツリー</link>の<link=\"PLANTS\">種子</link>で"
+"す。\n"
+"\n"
+"埋もれた物体を掘り起こすとアーバーどんぐりを発見することがあります。"
+
+#. STRINGS.CREATURES.SPECIES.SEEDS.WOOD_TREE.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.WOOD_TREE.NAME"
+msgid "<link=\"WOODTREE\">Arbor Acorn</link>"
+msgstr "<link=\"WOODTREE\">アーバーどんぐり</link>"
+
 #. STRINGS.CREATURES.SPECIES.SHOCKWORM.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.SHOCKWORM.DESC"
 msgid ""
@@ -2304,6 +2584,46 @@ msgctxt "STRINGS.CREATURES.SPECIES.SPICE_VINE.NAME"
 msgid "<link=\"SPICEVINE\">Pincha Pepperplant</link>"
 msgstr "<link=\"SPICEVINE\">ピンチャペッパー</link>"
 
+#. STRINGS.CREATURES.SPECIES.SQUIRREL.BABY.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SQUIRREL.BABY.DESC"
+msgid ""
+"A little purring Pipsqueak.\n"
+"\n"
+"In time it will mature into a fully grown <link=\"SQUIRREL\">Pip</link>."
+msgstr ""
+"ちいさな、のどを鳴らして甘えているピップの幼体です。\n"
+"\n"
+"時間経過とともに成長し、<link=\"SQUIRREL\">ピップ</link>.になります。"
+
+#. STRINGS.CREATURES.SPECIES.SQUIRREL.BABY.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SQUIRREL.BABY.NAME"
+msgid "<link=\"SQUIRREL\">Pipsqueak</link>"
+msgstr "<link=\"SQUIRREL\">ピップの幼体</link>"
+
+#. STRINGS.CREATURES.SPECIES.SQUIRREL.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SQUIRREL.DESC"
+msgid ""
+"Pips are pesky, nonhostile critters that subsist on raw <link=\"WOOD"
+"\">Lumber</link>.\n"
+"\n"
+"They are known to bury <link=\"PLANTS\">Seeds</link> in the ground whenever "
+"they can find a suitable area with enough space."
+msgstr ""
+"ピップは、自然の<link=\"WOOD\">木</link>の上に住む厄介な非敵対的動物です。\n"
+"\n"
+"彼らは、十分なスペースがある地面なら所かまわず<link=\"PLANTS\">種子</link>を"
+"植えることで知られています。"
+
+#. STRINGS.CREATURES.SPECIES.SQUIRREL.EGG_NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SQUIRREL.EGG_NAME"
+msgid "<link=\"SQUIRREL\">Pip Egg</link>"
+msgstr "<link=\"SQUIRREL\">ピップの卵</link>"
+
+#. STRINGS.CREATURES.SPECIES.SQUIRREL.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.SQUIRREL.NAME"
+msgid "<link=\"SQUIRREL\">Pip</link>"
+msgstr "<link=\"SQUIRREL\">ピップ</link>"
+
 #. STRINGS.CREATURES.SPECIES.STEAMSPOUT.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.STEAMSPOUT.DESC"
 msgid "A rocky vent that spouts <link=\"STEAM\">Steam</link>."
@@ -2331,6 +2651,39 @@ msgctxt "STRINGS.CREATURES.SPECIES.SWAMPLILY.NAME"
 msgid "<link=\"SWAMPLILY\">Balm Lily</link>"
 msgstr "<link=\"SWAMPLILY\">バームリリー</link>"
 
+#. STRINGS.CREATURES.SPECIES.WOOD_TREE.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.WOOD_TREE.DESC"
+msgid ""
+"Arbor Trees grow <link=\"FORESTTREE\">Arbor Tree Branches</link> that can be "
+"harvested for <link=\"WOOD\">Lumber</link>."
+msgstr ""
+"アーバーツリーは<link=\"WOOD\">木材</link>として収穫可能な<link=\"FORESTTREE"
+"\">アーバーツリーの枝</link>を生産します。"
+
+#. STRINGS.CREATURES.SPECIES.WOOD_TREE.DOMESTICATEDDESC
+msgctxt "STRINGS.CREATURES.SPECIES.WOOD_TREE.DOMESTICATEDDESC"
+msgid ""
+"This plant produces <link=\"FORESTTREE\">Arbor Tree Branches</link> that can "
+"be harvested for <link=\"WOOD\">Lumber</link>."
+msgstr ""
+"この植物は<link=\"WOOD\">木材</link>として収穫可能な<link=\"FORESTTREE\">アー"
+"バーツリーの枝</link>を生産します。"
+
+#. STRINGS.CREATURES.SPECIES.WOOD_TREE.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.WOOD_TREE.NAME"
+msgid "<link=\"FORESTTREE\">Arbor Tree</link>"
+msgstr "<link=\"FORESTTREE\">アーバーツリー</link>"
+
+#. STRINGS.CREATURES.SPECIES.WOOD_TREE_BRANCH.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.WOOD_TREE_BRANCH.DESC"
+msgid "Arbor Trees Branches can be harvested for <link=\"WOOD\">Lumber</link>."
+msgstr "アーバーツリーの枝は<link=\"WOOD\">木材</link>として収穫可能です。"
+
+#. STRINGS.CREATURES.SPECIES.WOOD_TREE_BRANCH.NAME
+msgctxt "STRINGS.CREATURES.SPECIES.WOOD_TREE_BRANCH.NAME"
+msgid "<link=\"FORESTTREE\">Arbor Tree Branch</link>"
+msgstr "<link=\"FORESTTREE\">アーバーツリーの枝</link>"
+
 #. STRINGS.CREATURES.STATS.AGE.NAME
 msgctxt "STRINGS.CREATURES.STATS.AGE.NAME"
 msgid "Age"
@@ -2339,8 +2692,11 @@ msgstr "年齢"
 #. STRINGS.CREATURES.STATS.AGE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.AGE.TOOLTIP"
 msgid ""
-"This critter will die when its Age reaches its species' maximum lifespan"
-msgstr "この動物は種族ごとの最大寿命に達すると死を迎えます"
+"This critter will die when its <style=\"KKeyword\">Age</style> reaches its "
+"species' maximum lifespan"
+msgstr ""
+"この動物は種族ごとの最大<style=\"KKeyword\">寿命</style>に達すると死を迎えま"
+"す"
 
 #. STRINGS.CREATURES.STATS.AIRPRESSURE.NAME
 msgctxt "STRINGS.CREATURES.STATS.AIRPRESSURE.NAME"
@@ -2349,8 +2705,10 @@ msgstr "気圧"
 
 #. STRINGS.CREATURES.STATS.AIRPRESSURE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.AIRPRESSURE.TOOLTIP"
-msgid "The average gas density of the air surrounding this plant"
-msgstr "この植物の周囲にある気体の平均密度です"
+msgid ""
+"The average <style=\"KKeyword\">Gas</style> density of the air surrounding "
+"this plant"
+msgstr "この植物の周囲にある<style=\"KKeyword\">気体</style>の平均密度です"
 
 #. STRINGS.CREATURES.STATS.DOMESTICATION.NAME
 msgctxt "STRINGS.CREATURES.STATS.DOMESTICATION.NAME"
@@ -2360,15 +2718,15 @@ msgstr "家畜化"
 #. STRINGS.CREATURES.STATS.DOMESTICATION.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.DOMESTICATION.TOOLTIP"
 msgid ""
-"Fully domesticated critters produce more materials than wild ones, and may "
-"even provide psychological benefits to my colony\n"
+"Fully <style=\"KKeyword\">Tame</style> critters produce more materials than "
+"wild ones, and may even provide psychological benefits to my colony\n"
 "\n"
-"This critter is {0} domesticated"
+"This critter is <b>{0}</b> domesticated"
 msgstr ""
 "完全に飼い慣らされた動物は野生種よりも素材の生産性が向上し、心理学的な利益も"
 "コロニーにもたらします。\n"
 "\n"
-"この動物は {0} 家畜化されています"
+"この動物は<b>{0}</b>家畜化されています"
 
 #. STRINGS.CREATURES.STATS.FERTILITY.NAME
 msgctxt "STRINGS.CREATURES.STATS.FERTILITY.NAME"
@@ -2378,14 +2736,18 @@ msgstr "繁殖力"
 #. STRINGS.CREATURES.STATS.FERTILITY.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.FERTILITY.TOOLTIP"
 msgid ""
-"At 100% Reproduction, critters will reach the end of their reproduction "
-"cycle and lay a new egg\n"
+"At 100% <style=\"KKeyword\">Reproduction</style>, critters will reach the "
+"end of their reproduction cycle and lay a new <style=\"KKeyword\">Egg</"
+"style>\n"
 "\n"
-"After an egg is laid, Reproduction is rolled back to 0%"
+"After an <style=\"KKeyword\">Egg</style> is laid, <style=\"KKeyword"
+"\">Reproduction</style> is rolled back to 0%"
 msgstr ""
-"繁殖力が100%になると、動物は繁殖サイクルの終わりに達し卵を産みます\n"
+"<style=\"KKeyword\">繁殖力</style>が100%になると、動物は繁殖サイクルの終わり"
+"に達し<style=\"KKeyword\">卵</style>を産みます\n"
 "\n"
-"卵を産むと繁殖力は0%に戻ります"
+"<style=\"KKeyword\">卵</style>を産むと<style=\"KKeyword\">繁殖力</style>は0%"
+"に戻ります"
 
 #. STRINGS.CREATURES.STATS.FERTILIZATION.ABSORBING_MODIFIER
 msgctxt "STRINGS.CREATURES.STATS.FERTILIZATION.ABSORBING_MODIFIER"
@@ -2410,13 +2772,15 @@ msgstr "幸福度"
 #. STRINGS.CREATURES.STATS.HAPPINESS.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.HAPPINESS.TOOLTIP"
 msgid ""
-"High Happiness increases a critter's productivity and indirectly improves "
-"their egg laying rates\n"
+"High <style=\"KKeyword\">Happiness</style> increases a critter's "
+"productivity and indirectly improves their <style=\"KKeyword\">Egg</style> "
+"laying rates\n"
 "\n"
 "It also provides the satisfaction in knowing they're living a good little "
 "critter life"
 msgstr ""
-"高い幸福度は動物の繁殖力を増加させ、産卵までの時間を短縮します\n"
+"高い<style=\"KKeyword\">幸福度</style>は動物の繁殖力を増加させ、産卵までの時"
+"間を短縮します\n"
 "\n"
 "彼らの幸せな生活を観察することは満足感にもつながります"
 
@@ -2438,8 +2802,11 @@ msgstr "孵化"
 #. STRINGS.CREATURES.STATS.INCUBATION.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.INCUBATION.TOOLTIP"
 msgid ""
-"Eggs hatch into brand new critters at the end of their incubation period"
-msgstr "孵化期間が満了すると、卵から新しい動物が孵化します"
+"Eggs hatch into brand new <link=\"CREATURES\">Critters</link> at the end of "
+"their incubation period"
+msgstr ""
+"孵化期間が満了すると、卵から新しい<style=\"KKeyword\">動物</style>が孵化しま"
+"す"
 
 #. STRINGS.CREATURES.STATS.IRRIGATION.ABSORBING_MODIFIER
 msgctxt "STRINGS.CREATURES.STATS.IRRIGATION.ABSORBING_MODIFIER"
@@ -2460,19 +2827,19 @@ msgstr "灌漑"
 msgctxt "STRINGS.CREATURES.STATS.MATURITY.AMOUNT_DESC_FMT"
 msgid ""
 "{0}: {1}\n"
-"Next harvest in {2}"
+"Next harvest in <b>{2}</b>"
 msgstr ""
 "{0}: {1}\n"
-"次の収穫まで {2}"
+"次の収穫まで<b>{2}</b>"
 
 #. STRINGS.CREATURES.STATS.MATURITY.GROWING
 msgctxt "STRINGS.CREATURES.STATS.MATURITY.GROWING"
-msgid "Domestic growth rate"
+msgid "Domestic Growth Rate"
 msgstr "栽培成長率"
 
 #. STRINGS.CREATURES.STATS.MATURITY.GROWINGWILD
 msgctxt "STRINGS.CREATURES.STATS.MATURITY.GROWINGWILD"
-msgid "Wild growth rate"
+msgid "Wild Growth Rate"
 msgstr "野生成長率"
 
 #. STRINGS.CREATURES.STATS.MATURITY.NAME
@@ -2491,17 +2858,17 @@ msgstr ""
 
 #. STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_GROWING
 msgctxt "STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_GROWING"
-msgid "Predicted Maturation: {0}"
-msgstr "成熟まで: {0}"
+msgid "Predicted Maturation: <b>{0}</b>"
+msgstr "成熟まで: <b>{0}</b>"
 
 #. STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_GROWING_CROP
 msgctxt "STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_GROWING_CROP"
 msgid ""
-"Predicted Maturation Time: {0}\n"
-"Next harvest occurs in approximately {1}"
+"Predicted Maturation Time: <b>{0}</b>\n"
+"Next harvest occurs in approximately <b>{1}</b>"
 msgstr ""
-"成熟までの時間: {0}\n"
-"次の収穫までおよそ {1}"
+"成熟までの時間: <b>{0}</b>\n"
+"次の収穫までおよそ <b>{1}</b>"
 
 #. STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_GROWN
 msgctxt "STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_GROWN"
@@ -2513,16 +2880,20 @@ msgctxt "STRINGS.CREATURES.STATS.MATURITY.TOOLTIP_STALLED"
 msgid "Poor conditions have halted this plant's growth"
 msgstr "この植物の成長は悪条件下のため停滞しています"
 
+# ハッチが資源を食べた時に出たメッセージ
 #. STRINGS.CREATURES.STATS.ROT.NAME
 msgctxt "STRINGS.CREATURES.STATS.ROT.NAME"
-msgid "Freshness Percent"
+msgid "Freshness"
 msgstr "鮮度"
 
 #. STRINGS.CREATURES.STATS.ROT.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.ROT.TOOLTIP"
 msgid ""
-"Food items become stale at fifty percent freshness, and rot at zero percent"
-msgstr "食糧品は鮮度50%以下になると痛み始め、0%の時点で腐ります"
+"Food items become stale at fifty percent <style=\"KKeyword\">Freshness</"
+"style>, and rot at zero percent"
+msgstr ""
+"食糧品は<style=\"KKeyword\">鮮度</style>50%以下になると痛み始め、0%の時点で腐"
+"ります"
 
 #. STRINGS.CREATURES.STATS.SCALEGROWTH.NAME
 msgctxt "STRINGS.CREATURES.STATS.SCALEGROWTH.NAME"
@@ -2542,9 +2913,11 @@ msgstr "熱伝導バリア"
 #. STRINGS.CREATURES.STATS.THERMALCONDUCTIVITYBARRIER.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.THERMALCONDUCTIVITYBARRIER.TOOLTIP"
 msgid ""
-"Thick conductivity barriers increase the time it takes an object to heat up "
-"or cool down"
-msgstr "バリアの層が物体の加熱/冷却に要する時間を増加させます"
+"Thick <style=\"KKeyword\">Conductivity Barriers</style> increase the time it "
+"takes an object to heat up or cool down"
+msgstr ""
+"厚い<style=\"KKeyword\">熱バリアの層</style>が物体の加熱/冷却に要する時間を増"
+"加させます"
 
 #. STRINGS.CREATURES.STATS.VIABILITY.NAME
 msgctxt "STRINGS.CREATURES.STATS.VIABILITY.NAME"
@@ -2554,14 +2927,16 @@ msgstr "生存力"
 #. STRINGS.CREATURES.STATS.VIABILITY.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.VIABILITY.TOOLTIP"
 msgid ""
-"Eggs will lose viability over time when exposed to poor environmental "
-"conditions\n"
+"Eggs will lose <style=\"KKeyword\">Viability</style> over time when exposed "
+"to poor environmental conditions\n"
 "\n"
-"At 0% Viability a critter egg will become \"Cracked\" and be unable to hatch"
+"At 0% <style=\"KKeyword\">Viability</style> a critter egg will crack and "
+"produce a <link=\"RAWEGG\">Raw Egg</link> and Egg Shell"
 msgstr ""
-"卵は貧弱な環境条件下では生存能力を失います。\n"
+"卵は貧弱な環境条件下では<style=\"KKeyword\">生存能力</style>を失います\n"
 "\n"
-"生存力が0％になると割れた卵になり、孵化することはありません"
+"<style=\"KKeyword\">生存力</style>が0％になると割れた卵になり、<link=\"RAWEGG"
+"\">生卵</link>と卵の殻になります"
 
 #. STRINGS.CREATURES.STATS.WILDNESS.NAME
 msgctxt "STRINGS.CREATURES.STATS.WILDNESS.NAME"
@@ -2571,11 +2946,19 @@ msgstr "野性"
 #. STRINGS.CREATURES.STATS.WILDNESS.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATS.WILDNESS.TOOLTIP"
 msgid ""
-"At 0% Wildness a critter becomes Tame, increasing its metabolism and "
-"requiring regular care from a Rancher"
+"At 0% <style=\"KKeyword\">Wildness</style> a critter becomes <style="
+"\"KKeyword\">Tame</style>, increasing its <style=\"KKeyword\">Metabolism</"
+"style> and requiring regular care from Duplicants\n"
+"\n"
+"Duplicants must possess the <style=\"KKeyword\">Critter Ranching</style> "
+"Skill to care for critters"
 msgstr ""
-"野性が0%になると動物は飼い慣らされた状態になります。必要になる食事の量が増"
-"え、牧夫による世話が必要になります"
+"<style=\"KKeyword\">野生</style>が0%の動物は<style=\"KKeyword\">家畜化</"
+"style>状態になり、<style=\"KKeyword\">代謝</style>が向上して、継続的な複製人"
+"間の世話が必要になります\n"
+"\n"
+"複製人間が動物の面倒を見るには、<style=\"KKeyword\">家畜</style>スキルが必要"
+"です"
 
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.NAME"
@@ -2585,8 +2968,10 @@ msgstr "    • 圧力"
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOHIGH.TOOLTIP"
 msgid ""
-"Growth will resume when air pressure is between {low_mass} and {high_mass}"
-msgstr "気圧が{low_mass}から{high_mass}の条件下にある場合、成長します"
+"Growth will resume when air pressure is between <b>{low_mass}</b> and "
+"<b>{high_mass}</b>"
+msgstr ""
+"気圧が<b>{low_mass}</b>から<b>{high_mass}</b>の条件下にある場合、成長します"
 
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.NAME"
@@ -2596,8 +2981,10 @@ msgstr "    • 圧力"
 #. STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATMOSPHERICPRESSURETOOLOW.TOOLTIP"
 msgid ""
-"Growth will resume when air pressure is between {low_mass} and {high_mass}"
-msgstr "気圧が{low_mass}から{high_mass}の条件下にある場合、成長します"
+"Growth will resume when air pressure is between <b>{low_mass}</b> and "
+"<b>{high_mass}</b>"
+msgstr ""
+"気圧が<b>{low_mass}</b>から<b>{high_mass}</b>の条件下にある場合、成長します"
 
 #. STRINGS.CREATURES.STATUSITEMS.ATTACK.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.ATTACK.NAME"
@@ -2636,8 +3023,8 @@ msgstr "不毛"
 
 #. STRINGS.CREATURES.STATUSITEMS.BARREN.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BARREN.TOOLTIP"
-msgid "This plant will produce no more seeds"
-msgstr "この植物はもう種子を生産できません"
+msgid "This plant will produce no more <style=\"KKeyword\">Seeds</style>"
+msgstr "この植物はもう<style=\"KKeyword\">種子</style>を生産できません"
 
 #. STRINGS.CREATURES.STATUSITEMS.BREATH.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.BREATH.NAME"
@@ -2687,11 +3074,11 @@ msgstr "    • 施肥"
 #. STRINGS.CREATURES.STATUSITEMS.CANTACCEPTFERTILIZER.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CANTACCEPTFERTILIZER.TOOLTIP"
 msgid ""
-"This farm plot does not accept fertilizer\n"
+"This farm plot does not accept <style=\"KKeyword\">Fertilizer</style>\n"
 "\n"
 "Move the selected plant to a fertilization capable plot for optimal growth"
 msgstr ""
-"この農地は肥料を受け付けません\n"
+"この農地は<style=\"KKeyword\">肥料</style>を受け付けません\n"
 "\n"
 "成長を速成させるためには、この植物を施肥可能な農地へ植え替えてください"
 
@@ -2703,11 +3090,11 @@ msgstr "    • 灌漑"
 #. STRINGS.CREATURES.STATUSITEMS.CANTACCEPTIRRIGATION.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CANTACCEPTIRRIGATION.TOOLTIP"
 msgid ""
-"This farm plot does not accept irrigation\n"
+"This farm plot does not accept <style=\"KKeyword\">Irrigation</style>\n"
 "\n"
 "Move the selected plant to an irrigation capable plot for optimal growth"
 msgstr ""
-"この農地は灌漑を受け付けません\n"
+"この農地は<style=\"KKeyword\">灌漑</style>を受け付けません\n"
 "\n"
 "成長を速成させるためには、この植物を灌漑可能な農地へ植え替えてください"
 
@@ -2719,13 +3106,16 @@ msgstr "周囲が寒すぎる"
 #. STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP"
 msgid ""
-"This critter cannot retain enough heat to stay warm in this environment\n"
+"This critter cannot retain enough <style=\"KKeyword\">Heat</style> to stay "
+"warm in this environment\n"
 "\n"
-"It prefers temperatures between {0} and {1}"
+"It prefers <style=\"KKeyword\">Temperatures</style> between <b>{0}</b> and "
+"<b>{1}</b>"
 msgstr ""
-"この動物は、現環境で内部温度を維持するのに十分な熱を保てません。\n"
+"この動物は、現環境では高い<style=\"KKeyword\">体温</style>を維持するのに十分"
+"な熱を保てません\n"
 "\n"
-"好適温度は {0} ～ {1} です。"
+"好適温度は<b>{0}</b> ～ <b>{1}</b>です"
 
 #. STRINGS.CREATURES.STATUSITEMS.COLD_CROP.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD_CROP.NAME"
@@ -2735,11 +3125,11 @@ msgstr "    • 体温"
 #. STRINGS.CREATURES.STATUSITEMS.COLD_CROP.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD_CROP.TOOLTIP"
 msgid ""
-"Growth will resume when ambient temperature is between {low_temperature} and "
-"{high_temperature}"
+"Growth will resume when ambient <style=\"KKeyword\">Temperature</style> is "
+"between <b>{low_temperature}</b> and <b>{high_temperature}</b>"
 msgstr ""
-"周囲の温度が{low_temperature}から{high_temperature}の条件下にある場合、成長し"
-"ます"
+"周囲の<style=\"KKeyword\">温度</style>が<b>{low_temperature}</b>から"
+"<b>{high_temperature}</b>の条件下にある場合、成長します"
 
 #. STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.NAME"
@@ -2748,8 +3138,9 @@ msgstr "誘導"
 
 #. STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONSIDERINGLURE.TOOLTIP"
-msgid "This critter is tempted to bite a nearby lure"
-msgstr "この動物は囮に引き寄せられています"
+msgid ""
+"This critter is tempted to bite a nearby <style=\"KKeyword\">Lure</style>"
+msgstr "この動物は近くのルアーに引き寄せられています"
 
 #. STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.NAME"
@@ -2758,8 +3149,12 @@ msgstr "汚染曝露"
 
 #. STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.TOOLTIP"
-msgid "Exposure to contaminants is accelerating this food's decay rate"
-msgstr "汚染物質にさらすことは、食糧の腐敗を早めることになります"
+msgid ""
+"Exposure to contaminants is accelerating this food's <style=\"KKeyword"
+"\">Decay Rate</style>"
+msgstr ""
+"汚染物質にさらすことは、食糧の<style=\"KKeyword\">腐敗を早める</style>ことに"
+"なります"
 
 #. STRINGS.CREATURES.STATUSITEMS.COOLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COOLING.NAME"
@@ -2788,8 +3183,8 @@ msgstr "暗すぎ"
 
 #. STRINGS.CREATURES.STATUSITEMS.CROP_SLEEPING.REQUIREMENT_LUMINANCE
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_SLEEPING.REQUIREMENT_LUMINANCE"
-msgid "{0} Lux"
-msgstr "{0} ルクス"
+msgid "<b>{0}</b> Lux"
+msgstr "<b>{0}</b> ルクス"
 
 #. STRINGS.CREATURES.STATUSITEMS.CROP_SLEEPING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_SLEEPING.TOOLTIP"
@@ -2803,8 +3198,10 @@ msgstr "    • 照明"
 
 #. STRINGS.CREATURES.STATUSITEMS.CROP_TOO_BRIGHT.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_BRIGHT.TOOLTIP"
-msgid "Growth will resume when darkness requirements are met"
-msgstr "暗さの条件を満たした場合、成長します"
+msgid ""
+"Growth will resume when <style=\"KKeyword\">Light</style> requirements are "
+"met"
+msgstr "<style=\"KKeyword\">明るさ</style>の条件を満たした場合、成長します"
 
 #. STRINGS.CREATURES.STATUSITEMS.CROP_TOO_DARK.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_DARK.NAME"
@@ -2813,8 +3210,10 @@ msgstr "    • 照明"
 
 #. STRINGS.CREATURES.STATUSITEMS.CROP_TOO_DARK.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_DARK.TOOLTIP"
-msgid "Growth will resume when light requirements are met"
-msgstr "明るさの条件を満たした場合、成長します"
+msgid ""
+"Growth will resume when <style=\"KKeyword\">Light</style> requirements are "
+"met"
+msgstr "<style=\"KKeyword\">明るさ</style>の条件を満たした場合、成長します"
 
 #. STRINGS.CREATURES.STATUSITEMS.DEAD.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DEAD.NAME"
@@ -2863,7 +3262,7 @@ msgstr "溺れている"
 
 #. STRINGS.CREATURES.STATUSITEMS.DROWNING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DROWNING.TOOLTIP"
-msgid "This critter can't breathe in liquid!"
+msgid "This critter can't breathe in <style=\"KKeyword\">Liquid</style>!"
 msgstr "この動物は水中で呼吸できません！"
 
 #. STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.NAME
@@ -2873,8 +3272,11 @@ msgstr "    • 干上がっている"
 
 #. STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.TOOLTIP"
-msgid "This plant must be submerged in liquid to grow"
-msgstr "この植物を育てるには液体の中に沈めないといけません"
+msgid ""
+"This plant must be submerged in <style=\"KKeyword\">Liquid</style> to grow"
+msgstr ""
+"この植物を育てるには<style=\"KKeyword\">液体</style>の中に沈めないといけませ"
+"ん"
 
 #. STRINGS.CREATURES.STATUSITEMS.EATING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EATING.NAME"
@@ -2911,6 +3313,34 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.ENTOMBED.TOOLTIP"
 msgid "This {0} is trapped and needs help digging out"
 msgstr "この{0}は嵌まっているため、掘り出してやらないといけません"
 
+#. STRINGS.CREATURES.STATUSITEMS.EXCHANGINGELEMENTCONSUME.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.EXCHANGINGELEMENTCONSUME.NAME"
+msgid "Consuming {ConsumeElement} at {ConsumeRate}"
+msgstr "{ConsumeElement} 消費: {ConsumeRate}"
+
+#. STRINGS.CREATURES.STATUSITEMS.EXCHANGINGELEMENTCONSUME.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.EXCHANGINGELEMENTCONSUME.TOOLTIP"
+msgid ""
+"{ConsumeElement} is being used at a rate of <style=\"consumed\">{ConsumeRate}"
+"</style>"
+msgstr ""
+"{ConsumeElement}は<style=\"consumed\">{ConsumeRate}</style>の速度で消費されま"
+"す。"
+
+#. STRINGS.CREATURES.STATUSITEMS.EXCHANGINGELEMENTOUTPUT.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.EXCHANGINGELEMENTOUTPUT.NAME"
+msgid "Outputting {OutputElement} at {OutputRate}"
+msgstr "{OutputElement} 産出: {OutputRate}"
+
+#. STRINGS.CREATURES.STATUSITEMS.EXCHANGINGELEMENTOUTPUT.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.EXCHANGINGELEMENTOUTPUT.TOOLTIP"
+msgid ""
+"{OutputElement} is being expelled at a rate of <style=\"produced"
+"\">{OutputRate}</style>"
+msgstr ""
+"{OutputElement} は<style=\"produced\">{OutputRate}</style>の速度で消費されま"
+"す。"
+
 #. STRINGS.CREATURES.STATUSITEMS.EXCITED_TO_BE_RANCHED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EXCITED_TO_BE_RANCHED.NAME"
 msgid "Freshly Groomed"
@@ -2928,7 +3358,7 @@ msgstr "大喜び"
 
 #. STRINGS.CREATURES.STATUSITEMS.EXCITED_TO_GET_RANCHED.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EXCITED_TO_GET_RANCHED.TOOLTIP"
-msgid "This critter heard a Rancher call for it and is very excited!"
+msgid "This critter heard a Duplicant call for it and is very excited!"
 msgstr "この動物は牧夫に呼ばれて大変喜んでいます！"
 
 #. STRINGS.CREATURES.STATUSITEMS.EXHALING.NAME
@@ -2938,8 +3368,9 @@ msgstr "はき出している"
 
 #. STRINGS.CREATURES.STATUSITEMS.EXHALING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EXHALING.TOOLTIP"
-msgid "This critter is expelling gas from its lungsacs"
-msgstr "この動物は肺腑から気体をはき出しています"
+msgid ""
+"This critter is expelling <style=\"KKeyword\">Gas</style> from its lungsacs"
+msgstr "この動物は肺腑から<style=\"KKeyword\">気体</style>をはき出しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.EXPELLING_GAS.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EXPELLING_GAS.NAME"
@@ -2949,11 +3380,11 @@ msgstr "おなら"
 #. STRINGS.CREATURES.STATUSITEMS.EXPELLING_GAS.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.EXPELLING_GAS.TOOLTIP"
 msgid ""
-"This critter is emitting gas\n"
+"This critter is emitting <style=\"KKeyword\">Gas</style>\n"
 "\n"
 "Yuck!"
 msgstr ""
-"この動物は気体を排泄しています。\n"
+"この動物は<style=\"KKeyword\">気体</style>を排泄しています。\n"
 "\n"
 "臭っ！"
 
@@ -3070,8 +3501,8 @@ msgstr "生育中 [{PercentGrow}%]"
 
 #. STRINGS.CREATURES.STATUSITEMS.GROWING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.GROWING.TOOLTIP"
-msgid "Next harvest: {TimeUntilNextHarvest}"
-msgstr "次の収穫まで: {TimeUntilNextHarvest}"
+msgid "Next harvest: <b>{TimeUntilNextHarvest}</b>"
+msgstr "次の収穫まで: <b>{TimeUntilNextHarvest}</b>"
 
 #. STRINGS.CREATURES.STATUSITEMS.GROWINGUP.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.GROWINGUP.NAME"
@@ -3130,13 +3561,16 @@ msgstr "周囲が暑すぎる"
 #. STRINGS.CREATURES.STATUSITEMS.HOT.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT.TOOLTIP"
 msgid ""
-"This critter cannot let off enough heat to keep cool in this environment\n"
+"This critter cannot let off enough <style=\"KKeyword\">Heat</style> to keep "
+"cool in this environment\n"
 "\n"
-"It prefers temperatures between {0} and {1}"
+"It prefers <style=\"KKeyword\">Temperatures</style> between <b>{0}</b> and "
+"<b>{1}</b>"
 msgstr ""
-"この動物は、現環境で内部温度を維持するのに十分な熱を放てません。\n"
+"この動物は、現環境では低い<style=\"KKeyword\">体温</style>維持するために十分"
+"な<style=\"KKeyword\">熱</style>を放散できません\n"
 "\n"
-"好適環境は {0} ～ {1} です。"
+"好適<style=\"KKeyword\">温度</style>は<b>{0}</b> ～ <b>{1}</b>です"
 
 #. STRINGS.CREATURES.STATUSITEMS.HOT_CROP.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT_CROP.NAME"
@@ -3146,11 +3580,11 @@ msgstr "    • 体温"
 #. STRINGS.CREATURES.STATUSITEMS.HOT_CROP.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT_CROP.TOOLTIP"
 msgid ""
-"Growth will resume when ambient temperature is between {low_temperature} and "
-"{high_temperature}"
+"Growth will resume when ambient <style=\"KKeyword\">Temperature</style> is "
+"between <b>{low_temperature}</b> and <b>{high_temperature}</b>"
 msgstr ""
-"周囲の温度が{low_temperature}から{high_temperature}の条件下にある場合、成長し"
-"ます"
+"周囲の<style=\"KKeyword\">温度</style>が<b>{low_temperature}</b>から"
+"<b>{high_temperature}</b>の条件下にある場合、成長します"
 
 #. STRINGS.CREATURES.STATUSITEMS.HUNGRY.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HUNGRY.NAME"
@@ -3170,11 +3604,11 @@ msgstr "致命的に暑い"
 #. STRINGS.CREATURES.STATUSITEMS.HYPERTHERMIA.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HYPERTHERMIA.TOOLTIP"
 msgid ""
-"Internal temperature is dangerously high [{InternalTemperature} / "
-"{TargetTemperature}]"
+"Internal <style=\"KKeyword\">Temperature</style> is dangerously high "
+"[<b>{InternalTemperature}</b> / <b>{TargetTemperature}</b>]"
 msgstr ""
-"体温が危険なほどまで増加しています [{InternalTemperature} / "
-"{TargetTemperature}]"
+"<style=\"KKeyword\">体温</style>が危険なほどまで増加しています "
+"[<b>{InternalTemperature}</b> / <b>{TargetTemperature}</b>]"
 
 #. STRINGS.CREATURES.STATUSITEMS.HYPOTHERMIA.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HYPOTHERMIA.NAME"
@@ -3183,8 +3617,8 @@ msgstr "致命的に寒い"
 
 #. STRINGS.CREATURES.STATUSITEMS.HYPOTHERMIA.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HYPOTHERMIA.TOOLTIP"
-msgid "Internal temperature is dangerously low"
-msgstr "体温が危険なほどまで低下しています"
+msgid "Internal <style=\"KKeyword\">Temperature</style> is dangerously low"
+msgstr "<style=\"KKeyword\">体温</style>が危険なほどまで低下しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.IDLE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.IDLE.NAME"
@@ -3244,8 +3678,8 @@ msgstr "食い漁っている"
 
 #. STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LOOKINGFORFOOD.TOOLTIP"
-msgid "This critter is hungry and looking for food"
-msgstr "この動物は腹ペコなので食べ物を探しています"
+msgid "This critter is hungry and looking for <style=\"KKeyword\">Food</style>"
+msgstr "この動物は腹ペコなので<style=\"KKeyword\">食べ物</style>を探しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.LOW_YIELD.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LOW_YIELD.NAME"
@@ -3256,6 +3690,16 @@ msgstr "凡作"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.LOW_YIELD.TOOLTIP"
 msgid "This plant produced an average yield"
 msgstr "この植物の生産量は平均的です"
+
+#. STRINGS.CREATURES.STATUSITEMS.MOLTING.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.MOLTING.NAME"
+msgid "Molting"
+msgstr "脱皮中"
+
+#. STRINGS.CREATURES.STATUSITEMS.MOLTING.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.MOLTING.TOOLTIP"
+msgid "This critter is shedding its skin. Yuck"
+msgstr "この動物は脱皮中です。ウェッ"
 
 #. STRINGS.CREATURES.STATUSITEMS.NAME_NON_GROWING_PLANT
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NAME_NON_GROWING_PLANT"
@@ -3278,8 +3722,10 @@ msgstr "    • 施肥"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP"
-msgid "Growth will resume when fertilization requirements are met"
-msgstr "施肥の条件を満たした場合、成長します"
+msgid ""
+"Growth will resume when <style=\"KKeyword\">Fertilization</style> "
+"requirements are met"
+msgstr "<style=\"KKeyword\">施肥</style>の条件を満たした場合、成長します"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.LINE_ITEM"
@@ -3297,8 +3743,10 @@ msgstr "    • 灌漑"
 
 #. STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSIRRIGATION.TOOLTIP"
-msgid "Growth will resume when liquid requirements are met"
-msgstr "灌漑の条件を満たした場合、成長します"
+msgid ""
+"Growth will resume when <style=\"KKeyword\">Liquid</style> requirements are "
+"met"
+msgstr "<style=\"KKeyword\">灌漑</style>の条件を満たした場合、成長します"
 
 #. STRINGS.CREATURES.STATUSITEMS.NORMAL_YIELD.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.NORMAL_YIELD.LINE_ITEM"
@@ -3329,9 +3777,11 @@ msgstr "老齢"
 #. STRINGS.CREATURES.STATUSITEMS.OLD.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.OLD.TOOLTIP"
 msgid ""
-"This sweet ol'critter is over the hill and will pass on in {TimeUntilDeath}"
+"This sweet ol'critter is over the hill and will pass on in "
+"<b>{TimeUntilDeath}</b>"
 msgstr ""
-"この動物は高齢化しており、残された時間は {TimeUntilDeath} しかありません"
+"この動物は高齢化しており、残された時間は <b>{TimeUntilDeath}</b>しかありませ"
+"ん"
 
 #. STRINGS.CREATURES.STATUSITEMS.PERFECTATMOSPHERICPRESSURE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTATMOSPHERICPRESSURE.NAME"
@@ -3343,11 +3793,11 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTATMOSPHERICPRESSURE.TOOLTIP"
 msgid ""
 "This critter is comfortable in the current atmospheric pressure\n"
 "\n"
-"Ideal Range: {0} - {1}"
+"Ideal Range: <b>{0}</b> - <b>{1}</b>"
 msgstr ""
 "この動物は現在の気圧に満足しています\n"
 "\n"
-"理想範囲: {0} - {1}"
+"理想範囲: <b>{0}</b> - <b>{1}</b>"
 
 #. STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.NAME"
@@ -3357,13 +3807,14 @@ msgstr "理想温度"
 #. STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.TOOLTIP"
 msgid ""
-"This critter finds the current ambient temperature comfortable\n"
+"This critter finds the current ambient <style=\"KKeyword\">Temperature</"
+"style> comfortable\n"
 "\n"
-"Ideal Range: {0} - {1}"
+"Ideal Range: <b>{0}</b> - <b>{1}</b>"
 msgstr ""
-"この動物は現在の気温に満足しています\n"
+"この動物は現在の<style=\"KKeyword\">気温</style>に満足しています\n"
 "\n"
-"理想範囲: {0} - {1}"
+"理想範囲: <b>{0}</b> - <b>{1}</b>"
 
 #. STRINGS.CREATURES.STATUSITEMS.PLANTDEATH.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.PLANTDEATH.NAME"
@@ -3385,6 +3836,30 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.PLANTDEATH.TOOLTIP"
 msgid "This plant will produce no more harvests"
 msgstr "この植物はもう収穫できません"
 
+#. STRINGS.CREATURES.STATUSITEMS.PLANTINGSEED.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.PLANTINGSEED.NAME"
+msgid "Planting Seed"
+msgstr "種子を植える"
+
+#. STRINGS.CREATURES.STATUSITEMS.PLANTINGSEED.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.PLANTINGSEED.TOOLTIP"
+msgid "This critter is burying a <style=\"KKeyword\">Seed</style> for later"
+msgstr "この動物は、将来のために<style=\"KKeyword\">種子</style>を埋めています"
+
+#. STRINGS.CREATURES.STATUSITEMS.PROTECTINGENTITY.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.PROTECTINGENTITY.NAME"
+msgid "Protecting"
+msgstr "護衛中"
+
+#. STRINGS.CREATURES.STATUSITEMS.PROTECTINGENTITY.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.PROTECTINGENTITY.TOOLTIP"
+msgid ""
+"This creature is guarding something special to them and will likely attack "
+"if approached"
+msgstr ""
+"この動物はなにか大事なものを守っており、もしそれに触れようとすれば攻撃される"
+"でしょう。"
+
 #. STRINGS.CREATURES.STATUSITEMS.READYFORHARVEST.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.READYFORHARVEST.NAME"
 msgid "Harvest Ready"
@@ -3402,8 +3877,11 @@ msgstr "    • 農地栽培機能不全"
 
 #. STRINGS.CREATURES.STATUSITEMS.RECEPTACLEINOPERATIONAL.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.RECEPTACLEINOPERATIONAL.TOOLTIP"
-msgid "This farm plot cannot grow plants in its current state"
-msgstr "この農地は現在の状態では植物を育成できません"
+msgid ""
+"This farm plot cannot grow <style=\"KKeyword\">Plants</style> in its current "
+"state"
+msgstr ""
+"この農地は現在の状態では<style=\"KKeyword\">植物</style>を育成できません"
 
 #. STRINGS.CREATURES.STATUSITEMS.RECEPTACLEOPERATIONAL.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.RECEPTACLEOPERATIONAL.NAME"
@@ -3422,8 +3900,35 @@ msgstr "冷蔵状態"
 
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.TOOLTIP"
-msgid "Ideal temperature storage is slowing this food's decay rate"
-msgstr "適切な貯蔵をしているため食糧が腐りにくくなっています"
+msgid ""
+"Ideal <style=\"KKeyword\">Temperature</style> storage is slowing this food's "
+"<style=\"KKeyword\">Decay Rate</style>"
+msgstr ""
+"適切な<style=\"KKeyword\">温度</style>で貯蔵しているため食糧が腐りにくくなっ"
+"ています"
+
+#. STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.NAME"
+msgid "Rummaging for seeds"
+msgstr "種子のために地面をひっかき中"
+
+#. STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.TOOLTIP"
+msgid "This critter is searching for tasty <style=\"KKeyword\">Seeds</style>"
+msgstr "この動物はおいしい<style=\"KKeyword\">種子</style>を探しています"
+
+#. STRINGS.CREATURES.STATUSITEMS.SATURATED.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.SATURATED.NAME"
+msgid "Too Wet!"
+msgstr "濡れすぎ！"
+
+#. STRINGS.CREATURES.STATUSITEMS.SATURATED.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.SATURATED.TOOLTIP"
+msgid ""
+"This critter likes <style=\"KKeyword\">Liquid</style>, but not that much!"
+msgstr ""
+"この動物は<style=\"KKeyword\">液体</style>が好きですが、こんなには要りませ"
+"ん！"
 
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.NAME"
@@ -3437,17 +3942,20 @@ msgstr "ヤケド！"
 
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_TOOLTIP"
-msgid "Scalding temperatures are hurting these Duplicants:"
-msgstr "これらの複製人間が高温によって火傷を負っています:"
+msgid ""
+"Scalding <style=\"KKeyword\">Temperatures</style> are hurting these "
+"Duplicants:"
+msgstr ""
+"これらの複製人間が<style=\"KKeyword\">高温</style>によって火傷を負っています:"
 
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.TOOLTIP"
 msgid ""
-"Current external temperature is perilously high [{ExternalTemperature} / "
-"{TargetTemperature}]"
+"Current external <style=\"KKeyword\">Temperature</style> is perilously high "
+"[<b>{ExternalTemperature}</b> / <b>{TargetTemperature}</b>]"
 msgstr ""
-"外部温度が危険なほどまで高温です [{ExternalTemperature} / "
-"{TargetTemperature}]"
+"外部<style=\"KKeyword\">温度</style>が危険なほどまで高温です "
+"[<b>{ExternalTemperature}</b> / <b>{TargetTemperature}</b>]"
 
 #. STRINGS.CREATURES.STATUSITEMS.SLEEPING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SLEEPING.NAME"
@@ -3456,8 +3964,8 @@ msgstr "睡眠中"
 
 #. STRINGS.CREATURES.STATUSITEMS.SLEEPING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SLEEPING.TOOLTIP"
-msgid "This critter is replenishing its stamina"
-msgstr "この動物はスタミナを回復中です"
+msgid "This critter is replenishing its <style=\"KKeyword\">Stamina</style>"
+msgstr "この動物は<style=\"KKeyword\">スタミナ</style>を回復中です"
 
 #. STRINGS.CREATURES.STATUSITEMS.SPOILED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SPOILED.NAME"
@@ -3466,8 +3974,11 @@ msgstr "腐敗"
 
 #. STRINGS.CREATURES.STATUSITEMS.SPOILED.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SPOILED.TOOLTIP"
-msgid "This food has putrefied and should not be consumed"
-msgstr "この食糧は腐っており、食べるべきではありません"
+msgid ""
+"This <style=\"KKeyword\">Food</style> has putrefied and should not be "
+"consumed"
+msgstr ""
+"この<style=\"KKeyword\">食糧</style>は腐っており、食べるべきではありません"
 
 #. STRINGS.CREATURES.STATUSITEMS.STALE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STALE.NAME"
@@ -3477,10 +3988,11 @@ msgstr "傷んでいる {RotPercentage}"
 #. STRINGS.CREATURES.STATUSITEMS.STALE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STALE.TOOLTIP"
 msgid ""
-"This food is still edible but will soon expire\n"
+"This <style=\"KKeyword\">Food</style> is still edible but will soon expire\n"
 "{RotTooltip}"
 msgstr ""
-"この食糧はまだ食べられますが、すぐに消費期限がくるでしょう\n"
+"この<style=\"KKeyword\">食糧</style>はまだ食べられますが、すぐに消費期限がく"
+"るでしょう\n"
 "{RotTooltip}"
 
 #. STRINGS.CREATURES.STATUSITEMS.STARVING.NAME
@@ -3514,8 +4026,12 @@ msgstr "滅菌環境"
 
 #. STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.TOOLTIP"
-msgid "Microbe destroying conditions are preventing this food from decaying"
-msgstr "菌の繁殖が抑えられていることにより、食糧の腐敗を防いでいます"
+msgid ""
+"Microbe destroying conditions have decreased this food's <style=\"KKeyword"
+"\">Decay Rate</style>"
+msgstr ""
+"菌の繁殖が抑えられていることにより、食糧の<style=\"KKeyword\">腐敗</style>を"
+"防いでいます"
 
 #. STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME"
@@ -3535,8 +4051,11 @@ msgstr "不揃いの鱗"
 #. STRINGS.CREATURES.STATUSITEMS.STUNTED_SCALE_GROWTH.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STUNTED_SCALE_GROWTH.TOOLTIP"
 msgid ""
-"This critter's scale growth is being stunted by an unfavorable environment"
-msgstr "この動物の鱗は不適合な環境下にあるため発育が停止しています"
+"This critter's <style=\"KKeyword\">Scale Growth</style> is being stunted by "
+"an unfavorable environment"
+msgstr ""
+"この動物は不適切な環境下にあるため、<style=\"KKeyword\">鱗の発育</style>が停"
+"止しています"
 
 #. STRINGS.CREATURES.STATUSITEMS.SUFFOCATING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SUFFOCATING.NAME"
@@ -3575,8 +4094,12 @@ msgstr "冷蔵されていない"
 
 #. STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.TOOLTIP"
-msgid "Temperatures above {RotTemperature} spoil food more quickly"
-msgstr "{RotTemperature} より高い温度では、食糧がより腐りやすくなります"
+msgid ""
+"<style=\"KKeyword\">Temperatures</style> above <b>{RotTemperature}</b> spoil "
+"food more quickly"
+msgstr ""
+"<b>{RotTemperature}</b>より高い<style=\"KKeyword\">温度</style>では、食糧がよ"
+"り腐りやすくなります"
 
 #. STRINGS.CREATURES.STATUSITEMS.WILTING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WILTING.NAME"
@@ -3616,8 +4139,11 @@ msgstr "    • 大気"
 #. STRINGS.CREATURES.STATUSITEMS.WRONGATMOSPHERE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGATMOSPHERE.TOOLTIP"
 msgid ""
-"Growth will resume when submersed in one of the following gases: {elements}"
-msgstr "次のいずれかの気体中にある場合、成長します: {elements}"
+"Growth will resume when submersed in one of the following <style=\"KKeyword"
+"\">Gases</style>: {elements}"
+msgstr ""
+"次のいずれかの<style=\"KKeyword\">気体</style>中にある場合、成長します: "
+"{elements}"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.LINE_ITEM"
@@ -3636,11 +4162,12 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.TOOLTIP"
 msgid ""
 "This farm is storing materials that are not suitable for this plant\n"
 "------------------\n"
-"Empty this building's storage to remove the unusable materials"
+"Empty this building's <style=\"KKeyword\">Storage</style> to remove the "
+"unusable materials"
 msgstr ""
 "この農地には植物に適さない素材が格納されています\n"
 "------------------\n"
-"この設備の格納庫から使用できない素材を取り出してください"
+"この設備の格納庫から不要な素材を取り出してください"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.LINE_ITEM"
@@ -3657,11 +4184,13 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.TOOLTIP"
 msgid ""
 "This farm is storing materials that are not suitable for this plant\n"
 "------------------\n"
-"Empty this building's storage to remove the unusable materials"
+"<style=\"KKeyword\">Empty Storage</style> on this building to remove the "
+"unusable materials"
 msgstr ""
 "この農地には植物に適さない素材が格納されています\n"
 "------------------\n"
-"この設備の格納庫から使用できない素材を取り出してください"
+"<style=\"KKeyword\">設備を空にする</style>を押して、不要な素材を取り出してく"
+"ださい"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.LINE_ITEM"
@@ -3701,10 +4230,44 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.TOOLTIP"
 msgid ""
 "This farm is storing materials that are not suitable for this plant\n"
 "------------------\n"
-"Empty this building's storage to remove the incorrect materials"
+"<style=\"KKeyword\">Empty Storage</style> on this building to remove the "
+"incorrect materials"
 msgstr ""
 "この農地には植物に適さない素材が格納されています\n"
 "------------------\n"
-"この設備の格納庫から不適切な素材を取り出してください"
+"<style=\"KKeyword\">設備を空にする</style>を押して、誤った素材を取り出してく"
+"ださい"
 
+#~ msgctxt "STRINGS.CREATURES.MODIFIERS.INCUBATOR_SONG.TOOLTIP"
+#~ msgid ""
+#~ "This calm egg was recently sung to by a Rancher\n"
+#~ "------------------\n"
+#~ "Increased incubation rate"
+#~ msgstr ""
+#~ "この卵は牧夫の歌を聴きました。\n"
+#~ "------------------\n"
+#~ "孵化率上昇中"
 
+#~ msgctxt "STRINGS.CREATURES.MODIFIERS.RANCHED.TOOLTIP"
+#~ msgid "This critter has recently been attended to by a Rancher"
+#~ msgstr "この動物は牧夫の手入れを受けたばかりです"
+
+#~ msgctxt "STRINGS.CREATURES.STATS.ROT.NAME"
+#~ msgid "Freshness Percent"
+#~ msgstr "鮮度"
+
+#~ msgctxt "STRINGS.CREATURES.STATS.WILDNESS.TOOLTIP"
+#~ msgid ""
+#~ "At 0% Wildness a critter becomes Tame, increasing its metabolism and "
+#~ "requiring regular care from a Rancher"
+#~ msgstr ""
+#~ "野性が0%になると動物は飼い慣らされた状態になります。必要になる食事の量が増"
+#~ "え、牧夫による世話が必要になります"
+
+#~ msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_SLEEPING.REQUIREMENT_LUMINANCE"
+#~ msgid "{0} Lux"
+#~ msgstr "{0} ルクス"
+
+#~ msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_BRIGHT.TOOLTIP"
+#~ msgid "Growth will resume when darkness requirements are met"
+#~ msgstr "暗さの条件を満たした場合、成長します"
