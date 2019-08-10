@@ -3,6 +3,7 @@
 msggrep -J -E -e "STRINGS.BUILDING\." strings.po > po/building.po
 msggrep -J -E -e "STRINGS.BUILDINGS\." strings.po > po/buildings.po
 msggrep -J -E -e 'STRINGS.CODEX' strings.po > po/codex.po
+msggrep -J -E -e 'STRINGS.COLONY_ACHIEVEMENTS' strings.po > po/colony.po
 msggrep -J -E -e 'STRINGS.CREATURES' strings.po > po/creatures.po
 msggrep -J -E -e 'STRINGS.DUPLICANTS' strings.po  > po/duplicants.po
 msggrep -J -E -e 'STRINGS.ELEMENTS' strings.po  > po/elements.po
