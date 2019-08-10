@@ -2556,7 +2556,7 @@ msgstr "特性"
 #. STRINGS.UI.DETAILTABS.DETAILS.NET_STRESS
 msgctxt "STRINGS.UI.DETAILTABS.DETAILS.NET_STRESS"
 msgid "<b>Today's Net Stress: {0}%</b>"
-msgstr "<b>本日の合計ストレス: {0}%</b>"
+msgstr "<b>本日の純増減ストレス: {0}%</b>"
 
 #. STRINGS.UI.DETAILTABS.DETAILS.STORAGE_EMPTY
 msgctxt "STRINGS.UI.DETAILTABS.DETAILS.STORAGE_EMPTY"
@@ -3867,7 +3867,7 @@ msgstr "複製人間は本日合計{0}スキルレベルを獲得しました"
 #. STRINGS.UI.ENDOFDAYREPORT.NET
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NET"
 msgid "Net"
-msgstr "合計"
+msgstr "純増減"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NEXT
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NEXT"
@@ -3963,6 +3963,44 @@ msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTIFICATION_TOOLTIP"
 msgid "The daily report for Cycle {0} is ready to view"
 msgstr "サイクル{0}経過レポートを見ます"
 
+#. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DRECKO.SUBTITLE"
+#| msgid "Domesticable Critter"
+msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NAME"
+msgid "Domesticated Critters:"
+msgstr "家畜化可能な動物"
+
+#. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NEGATIVE_TOOLTIP
+msgctxt ""
+"STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NEGATIVE_TOOLTIP"
+msgid "My colony has {0} critters"
+msgstr ""
+
+#. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.POSITIVE_TOOLTIP
+msgctxt ""
+"STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.POSITIVE_TOOLTIP"
+msgid "My colony has {0} critters"
+msgstr ""
+
+#. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.UNITS_SUFFIX"
+#| msgid " Critters"
+msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NAME"
+msgid "Wild Critters:"
+msgstr " 動物"
+
+#. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NEGATIVE_TOOLTIP
+msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NEGATIVE_TOOLTIP"
+msgid "There are {0} wild critters around my colony"
+msgstr ""
+
+#. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.POSITIVE_TOOLTIP
+msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.POSITIVE_TOOLTIP"
+msgid "There are {0} wild critters around my colony"
+msgstr ""
+
 #. STRINGS.UI.ENDOFDAYREPORT.OXYGEN_CREATED.NAME
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.OXYGEN_CREATED.NAME"
 msgid "<link=\"OXYGEN\">Oxygen</link> Generation:"
@@ -4008,6 +4046,21 @@ msgstr "減少"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.REPORT_TITLE"
 msgid "DAILY REPORTS"
 msgstr "デイリーレポート"
+
+#. STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.NAME
+msgctxt "STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.NAME"
+msgid "Rocket Missions Underway:"
+msgstr ""
+
+#. STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.NEGATIVE_TOOLTIP
+msgctxt "STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.NEGATIVE_TOOLTIP"
+msgid "There are {0} Rockets currently flying missions"
+msgstr ""
+
+#. STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.POSITIVE_TOOLTIP
+msgctxt "STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.POSITIVE_TOOLTIP"
+msgid "There are {0} Rockets currently flying missions"
+msgstr ""
 
 #. STRINGS.UI.ENDOFDAYREPORT.STRESS_DELTA.NAME
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.STRESS_DELTA.NAME"
@@ -4235,6 +4288,17 @@ msgstr "しない"
 msgctxt "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.DESCRIPTION"
 msgid "Note: These values are configured per save file"
 msgstr "注: この設定値はセーブファイルごとに設定されています"
+
+#. STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.TIMELAPSE_DISABLED_DESCRIPTION
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS."
+#| "DISABLED.NAME"
+#| msgid "Disabled"
+msgctxt ""
+"STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.TIMELAPSE_DISABLED_DESCRIPTION"
+msgid "Disabled"
+msgstr "無効化"
 
 #. STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.TIMELAPSE_RESOLUTION
 #, fuzzy
@@ -6443,6 +6507,14 @@ msgstr ""
 "セーブ中にアクセスエラーが発生しました。\n"
 "以下の場所の書き込み権限があるか確認してください:\n"
 "{0}"
+
+#. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.PLAYER_PREFS_CORRUPTED
+msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.PLAYER_PREFS_CORRUPTED"
+msgid ""
+"A problem occurred while loading your game options.\n"
+"They have been reset to their default settings.\n"
+"\n"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.SAVE_DIRECTORY_INSUFFICIENT_SPACE
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.SAVE_DIRECTORY_INSUFFICIENT_SPACE"
@@ -9086,19 +9158,25 @@ msgstr "暗い"
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.DARK"
 msgid ""
 "<b>Unlit Area</b>\n"
-"Duplicants cannot see in these areas"
+"Working in the dark has no effect on Duplicants"
 msgstr ""
-"<b>照明外範囲</b>\n"
-"複製人間が何も見ることができない範囲です"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ESPRESSO.TOOLTIP"
+#| msgid ""
+#| "This Duplicant had delicious drink!\n"
+#| "\n"
+#| "Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA"
 msgid ""
 "<b>Lit Area</b>\n"
-"Duplicants have adequate lighting in these areas"
+"Working in well lit areas improves Duplicant <style=\"KKeyword\">Morale</"
+"style>"
 msgstr ""
-"<b>照明範囲</b>\n"
-"複製人間に十分な明かりがある範囲です"
+"この複製人間は美味しい飲み物を手に入れました！\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.NAME
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.NAME"
@@ -9820,7 +9898,7 @@ msgstr "低エネルギー側の状態変化"
 #. STRINGS.UI.OVERLAYS.STATECHANGE.STABLE
 msgctxt "STRINGS.UI.OVERLAYS.STATECHANGE.STABLE"
 msgid "Stable"
-msgstr "厩舎"
+msgstr "安定"
 
 #. STRINGS.UI.OVERLAYS.STATECHANGE.TOOLTIPS.HIGHPOINT
 msgctxt "STRINGS.UI.OVERLAYS.STATECHANGE.TOOLTIPS.HIGHPOINT"
@@ -10211,38 +10289,58 @@ msgstr "スキルレベル: {0}"
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_GERMS
 #, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL."
+#| "AVERAGE_MASS"
+#| msgid "Average cell mass: {0}"
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_GERMS"
 msgid "Average Germs"
-msgstr "平均病原菌量"
+msgstr "平均セル質量: {0}"
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_STRESS_CREATED
 #, fuzzy
+#| msgctxt "STRINGS.ROOMS.DETAILS.AVERAGE_TEMPERATURE.NAME"
+#| msgid "Average temperature: {0}"
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_STRESS_CREATED"
 msgid "Average Stress Created"
-msgstr "平均ストレス増加量"
+msgstr "平均温度: {0}"
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_STRESS_REMOVED
-#, fuzzy
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_STRESS_REMOVED"
 msgid "Average Stress Removed"
-msgstr "平均ストレス減少量"
+msgstr ""
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_TRAVEL_TIME
+#, fuzzy
+#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.TRAVEL_TIME.NAME"
+#| msgid "Travel Time:"
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_TRAVEL_TIME"
 msgid "Average Travel Time"
-msgstr "移動時間"
+msgstr "移動時間:"
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_WORK_TIME
 #, fuzzy
+#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.WORK_TIME.NAME"
+#| msgid "Working Time:"
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.AVERAGE_WORK_TIME"
 msgid "Average Work Time"
-msgstr "平均作業時間"
+msgstr "労働時間:"
+
+#. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.CALORIES_CONSUMED
+#, fuzzy
+#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.NAME"
+#| msgid "Calorie Generation:"
+msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.CALORIES_CONSUMED"
+msgid "Calorie Consumption"
+msgstr "カロリー生成:"
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.CALORIES_CREATED
 #, fuzzy
+#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.NAME"
+#| msgid "Calorie Generation:"
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.CALORIES_CREATED"
 msgid "Calorie Generation"
-msgstr "カロリー生成"
+msgstr "カロリー生成:"
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.LIVE_DUPLICANTS
 #, fuzzy
@@ -10252,30 +10350,66 @@ msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.LIVE_DUPLICANTS"
 msgid "Duplicants"
 msgstr "複製人間"
 
+#. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.NUMBER_DOMESTICATED_CRITTERS
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.DRECKO.SUBTITLE"
+#| msgid "Domesticable Critter"
+msgctxt ""
+"STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.NUMBER_DOMESTICATED_CRITTERS"
+msgid "Domesticated Critters"
+msgstr "家畜化可能な動物"
+
+#. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.NUMBER_WILD_CRITTERS
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.UNITS_SUFFIX"
+#| msgid " Critters"
+msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.NUMBER_WILD_CRITTERS"
+msgid "Wild Critters"
+msgstr " 動物"
+
+#. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.OXYGEN_CONSUMED
+msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.OXYGEN_CONSUMED"
+msgid "Total Oxygen Consumed"
+msgstr ""
+
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.OXYGEN_CREATED
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.OXYGEN_CREATED"
-msgid "Average Oxygen Produced"
-msgstr "平均酸素生成量"
+msgid "Total Oxygen Produced"
+msgstr ""
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.POWER_CREATED
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.POWER_CREATED"
 msgid "Average Power Produced"
-msgstr "平均電力生成量"
+msgstr ""
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.POWER_WASTED
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.PUMPINGLIQUIDORGAS.NAME"
+#| msgid "Average Flow Rate: {FlowRate}"
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.POWER_WASTED"
 msgid "Average Power Wasted"
-msgstr "平均電力浪費量"
+msgstr "平均流量: {FlowRate}"
+
+#. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.ROCKET_MISSIONS
+msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.ROCKET_MISSIONS"
+msgid "Rocket Missions Underway"
+msgstr ""
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.TRAVEL_TIME
+#, fuzzy
+#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.TRAVEL_TIME.NAME"
+#| msgid "Travel Time:"
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.TRAVEL_TIME"
 msgid "Total Travel Time"
-msgstr "移動時間"
+msgstr "移動時間:"
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.WORK_TIME
+#, fuzzy
+#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.WORK_TIME.NAME"
+#| msgid "Working Time:"
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.WORK_TIME"
 msgid "Total Work Time"
-msgstr "労働時間"
+msgstr "労働時間:"
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.TIMELAPSE_UNAVAILABLE
 #, fuzzy
@@ -12365,10 +12499,26 @@ msgctxt "STRINGS.UI.SPACEDESTINATIONS.ASTEROIDS.ROCKYASTEROID.NAME"
 msgid "Rocky Asteroid"
 msgstr "岩石質小惑星"
 
+#. STRINGS.UI.SPACEDESTINATIONS.COMETS.COPPERCOMET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.IRONCOMET.NAME"
+#| msgid "Iron Comet"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.COPPERCOMET.NAME"
+msgid "Copper Comet"
+msgstr "鉄彗星"
+
 #. STRINGS.UI.SPACEDESTINATIONS.COMETS.DUSTCOMET.NAME
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.DUSTCOMET.NAME"
 msgid "Dust Comet"
 msgstr "塵彗星"
+
+#. STRINGS.UI.SPACEDESTINATIONS.COMETS.GOLDCOMET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.IRONCOMET.NAME"
+#| msgid "Iron Comet"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.GOLDCOMET.NAME"
+msgid "Gold Comet"
+msgstr "鉄彗星"
 
 #. STRINGS.UI.SPACEDESTINATIONS.COMETS.IRONCOMET.NAME
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.IRONCOMET.NAME"
@@ -12494,8 +12644,11 @@ msgid "Ice Giant"
 msgstr "巨大氷惑星"
 
 #. STRINGS.UI.SPACEDESTINATIONS.PLANETS.CHLORINEPLANET.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.CHLORINEPLANET.DESCRIPTION"
+#| msgid "A noxious planet permeated by toxic chlorine."
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.CHLORINEPLANET.DESCRIPTION"
-msgid "A noxious planet permeated by toxic chlorine."
+msgid "A noxious planet permeated by unbreathable chlorine."
 msgstr "塩素が立ち込める有害な惑星です。"
 
 #. STRINGS.UI.SPACEDESTINATIONS.PLANETS.CHLORINEPLANET.NAME
@@ -15943,11 +16096,22 @@ msgstr ""
 "    •全ての{BestGroup}の優先度: {TypePriority}"
 
 #. STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.TOOLTIP_PERSONAL
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.TOOLTIP_PERSONAL"
+#| msgid ""
+#| "{Description}\n"
+#| "\n"
+#| "<b<{Errand}</b> is a Personal Needs errand and so will be performed "
+#| "before all Regular errands\n"
+#| "\n"
+#| "Total <style=\"KKeyword\">Priority</style>: {TotalPriority}\n"
+#| "    • Personal Needs: {ClassPriority}\n"
+#| "    • All {BestGroup} Errands: {TypePriority}"
 msgctxt "STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.TOOLTIP_PERSONAL"
 msgid ""
 "{Description}\n"
 "\n"
-"<b<{Errand}</b> is a Personal Needs errand and so will be performed before "
+"<b>{Errand}</b> is a Personal Needs errand and so will be performed before "
 "all Regular errands\n"
 "\n"
 "Total <style=\"KKeyword\">Priority</style>: {TotalPriority}\n"
@@ -16927,6 +17091,14 @@ msgstr "/サイクル"
 msgctxt "STRINGS.UI.UNITSUFFIXES.PERSECOND"
 msgid "/s"
 msgstr "/秒"
+
+#. STRINGS.UI.UNITSUFFIXES.ROCKET_MISSIONS
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LISTTITLES.MISSIONSTATUS"
+#| msgid "Mission Status"
+msgctxt "STRINGS.UI.UNITSUFFIXES.ROCKET_MISSIONS"
+msgid "Missions"
+msgstr "ミッション状況"
 
 #. STRINGS.UI.UNITSUFFIXES.SECOND
 msgctxt "STRINGS.UI.UNITSUFFIXES.SECOND"
@@ -18263,18 +18435,19 @@ msgid "BEGIN"
 msgstr "開始"
 
 #. STRINGS.UI.WELCOMEMESSAGEBODY
+#, fuzzy
 msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY"
 msgid ""
-"I've awoken at the location, but my colonization efforts have already hit a "
-"hitch. I was supposed to land on the planet's surface, but became trapped "
-"many miles underground instead.\n"
+"I've awoken at the target location, but colonization efforts have already "
+"hit a hitch. I was supposed to land on the planet's surface, but became "
+"trapped many miles underground instead.\n"
 "\n"
 "Although the conditions are not ideal, it's imperative that I establish a "
 "colony here and begin mounting efforts to escape."
 msgstr ""
-"叩き起こされた私は、コロニー計画が問題をはらんでいる状態に直面した。惑星の地"
-"表に着地する予定だったが、その代わりに何マイルもの地下にとらわれてしまっ"
-"た。\n"
+"私はその場で目が覚めたが、私のコロニー建設の努力はすでに問題をはらんでいる。"
+"私は惑星の地表に着地する予定だったが、その代わりに何マイルもの地下にとらわれ"
+"てしまった。\n"
 "\n"
 "状況は理想的とは言い難いが、ここにコロニーを建設し、脱出に向けた努力を始める"
 "ことが必要だ。"
@@ -18595,8 +18768,11 @@ msgid ""
 msgstr ""
 
 #. STRINGS.UI.WORLDGEN.NORMALISENOISE
+#, fuzzy
+#| msgctxt "STRINGS.UI.WORLDGEN.NORMALISENOISE"
+#| msgid "Interpolating toxic gas..."
 msgctxt "STRINGS.UI.WORLDGEN.NORMALISENOISE"
-msgid "Interpolating toxic gas..."
+msgid "Interpolating suffocating gas..."
 msgstr "有毒ガス挿入中..."
 
 #. STRINGS.UI.WORLDGEN.PLACINGCREATURES
@@ -18783,868 +18959,3 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
-
-#~ msgctxt "STRINGS.UI.BUILDCATEGORIES.ROCKETRY.TOOLTIP"
-#~ msgid "Rocketry {Hotkey}"
-#~ msgstr "ロケット工学{Hotkey}"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.ELEMENTEMITTED"
-#~ msgid "{0}: {1}"
-#~ msgstr "{0}: {1}"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_LURE"
-#~ msgid "This critter can be moved using a Critter Lure"
-#~ msgstr "この動物はルアーで誘導することができます"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DISEASECONSUMEDPERUSE"
-#~ msgid "Removes {0} of any disease per use"
-#~ msgstr "使用すると病気を {0} 個除去します"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DISEASEEMITTEDPERUSE"
-#~ msgid "Produces {1} of {0} per use"
-#~ msgstr "使用時に {0} を {1} 産出します"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTCONSUMED"
-#~ msgid "Consumes {1} of {0} when in use"
-#~ msgstr "使用時に{0}を{1}消費します"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTCONSUMEDPERUSE"
-#~ msgid "Consumes {1} of {0} per use"
-#~ msgstr "使用ごとに{0}を{1}消費します"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTEMITTED"
-#~ msgid "Produces {1} of {0} when in use"
-#~ msgstr "使用時に{0}を{1}産出します"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ELEMENTEMITTEDPERUSE"
-#~ msgid "Produces {1} of {0} per use"
-#~ msgstr "使用ごとに{0}を{1}産出します"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESGASINPUT"
-#~ msgid "Must receive gas from a gas pipe system"
-#~ msgstr "気体用パイプ経由で気体の供給元が必要です"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESGASOUTPUT"
-#~ msgid "Must expel gas through a gas pipe system"
-#~ msgstr "気体用パイプ経由で気体の排出先が必要です"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESGASOUTPUTS"
-#~ msgid "Must expel gas through a gas pipe system"
-#~ msgstr "気体用パイプ経由で気体の排出先が必要です"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESLIQUIDINPUT"
-#~ msgid "Must receive liquid from a liquid pipe system"
-#~ msgstr "液体用パイプ経由で液体の供給元が必要です"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESLIQUIDOUTPUT"
-#~ msgid "Must expel liquid through a liquid pipe system"
-#~ msgstr "液体用パイプ経由で液体の排出先が必要です"
-
-#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESLIQUIDOUTPUTS"
-#~ msgid "Must expel liquid through a liquid pipe system"
-#~ msgstr "液体用パイプ経由で液体の排出先が必要です"
-
-#~ msgctxt "STRINGS.UI.CHARACTERCONTAINER_EXPECTATIONS_TITLE"
-#~ msgid "ADDITIONAL"
-#~ msgstr "追加"
-
-#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY"
-#~ msgid "Morale: {0}"
-#~ msgstr "士気: {0}"
-
-#~ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_QUALITY_VS_EXPECTATION"
-#~ msgid ""
-#~ "------------------\n"
-#~ "This food will give {0} Morale if {1} eats it:"
-#~ msgstr ""
-#~ "------------------\n"
-#~ "{1} が食べると士気に {0} されます:"
-
-#~ msgctxt "STRINGS.UI.DETAILTABS.BUILDING_CHORES.DUPE_TOOLTIP_DESC_ACTIVE"
-#~ msgid "{Name} is currently working on '{Errand}'."
-#~ msgstr "{Name}は現在'{Errand}'の作業をしています。"
-
-#~ msgctxt "STRINGS.UI.DETAILTABS.PERSONALITY.RESUME.MASTERED_SKILLS_TOOLTIP"
-#~ msgid ""
-#~ "All traits and expectations become permanent once a Duplicant unlocks a "
-#~ "skill.\n"
-#~ "------------------\n"
-#~ "The skill Respeccer needs to be used to reset the Duplicant traits and "
-#~ "expectations."
-#~ msgstr ""
-#~ "複製人間が勤務中に得た全ての特性と期待値は、スキルを習得すると永続効果とし"
-#~ "て表れます。\n"
-#~ "------------------\n"
-#~ "複製人間の特性と期待値を変更するには、スキル洗浄機が必要です。"
-
-#~ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.ANIMATION_HEADER"
-#~ msgid "LAUNCH DATE ANNOUNCEMENT!"
-#~ msgstr "発売日予告！"
-
-#~ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.HEADER"
-#~ msgid "DEVELOPMENT BUILD"
-#~ msgstr "開発版ビルド"
-
-#~ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.MAILINGLIST"
-#~ msgid "NOTIFY ME!"
-#~ msgstr "通知を受ける！"
-
-#~ msgctxt "STRINGS.UI.ENDOFDAYREPORT.CHORE_STATUS.NAME"
-#~ msgid "Chores:"
-#~ msgstr "作業:"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "DEFAULT.NAME"
-#~ msgid "Regular"
-#~ msgstr "通常"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "DEFAULT.TOOLTIP"
-#~ msgid "Duplicants have typical hunger"
-#~ msgstr "複製人間は腹ペコになります"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "DISABLED.NAME"
-#~ msgid "Oxygenarian"
-#~ msgstr "仙人"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "DISABLED.TOOLTIP"
-#~ msgid "Duplicants somehow manage to sustain themselves on nothing at all"
-#~ msgstr "複製人間は霞を食べるだけで生きていけます"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "EASY.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Fasting (Easy)"
-#~ msgstr "断食 (イージー)"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "EASY.TOOLTIP"
-#~ msgid "Duplicants get by with fewer calories than usual"
-#~ msgstr "複製人間は通常よりも低いカロリーで生きていけます"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "HARD.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Hungry (Hard)"
-#~ msgstr "腹ペコ (ハード)"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "HARD.NAME"
-#~ msgid "Hungry"
-#~ msgstr "腹ペコ"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "VERYHARD.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Ravaging Hunger (Very Hard)"
-#~ msgstr "飽くなき食欲 (ベリーハード)"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "VERYHARD.NAME"
-#~ msgid "Ravaging Hunger"
-#~ msgstr "飽くなき食欲"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#~ "VERYHARD.TOOLTIP"
-#~ msgid "Duplicants require near-constant feeding"
-#~ msgstr "複製人間は常に食べていなければなりません"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.NAME"
-#~ msgid "Hunger Rate"
-#~ msgstr "空腹レート"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CAREPACKAGES.LEVELS."
-#~ "DUPLICANTS_ONLY.TOOLTIP"
-#~ msgid "Click to enable all care packages"
-#~ msgstr "補給品を有効にする"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CAREPACKAGES.LEVELS."
-#~ "NORMAL.NAME"
-#~ msgid "Normal"
-#~ msgstr "通常"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CAREPACKAGES.LEVELS."
-#~ "NORMAL.TOOLTIP"
-#~ msgid "Click to restrict printer pod deliveries to Duplicants only"
-#~ msgstr "製造ポッドから複製人間だけを出力できるようにするにはここをクリック"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CAREPACKAGES.NAME"
-#~ msgid "Printer Pod Deliveries"
-#~ msgstr "製造ポッド"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "COMPROMISED.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Very Low Germ Resistance"
-#~ msgstr "非常に低い免疫力"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "COMPROMISED.NAME"
-#~ msgid "Miserable"
-#~ msgstr "悲惨"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "COMPROMISED.TOOLTIP"
-#~ msgid "Duplicants are exceptionally vulnerable to infection"
-#~ msgstr "複製人間は感染に対し極めて脆弱です"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "DEFAULT.NAME"
-#~ msgid "Regular"
-#~ msgstr "通常"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "DEFAULT.TOOLTIP"
-#~ msgid "Duplicants have normal germ resistance"
-#~ msgstr "複製人間の免疫力は通常通りです"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "INVINCIBLE.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Total Germ Resistence"
-#~ msgstr "総免疫力"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "INVINCIBLE.NAME"
-#~ msgid "Perfect"
-#~ msgstr "完璧"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "INVINCIBLE.TOOLTIP"
-#~ msgid "Duplicants will never catch a germ-based disease"
-#~ msgstr "複製人間は病原菌由来の病気に罹りません"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "STRONG.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "High Germ Resistence"
-#~ msgstr "高い免疫力"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "STRONG.NAME"
-#~ msgid "Strong"
-#~ msgstr "強力"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "STRONG.TOOLTIP"
-#~ msgid "Duplicants have increased germ resistance"
-#~ msgstr "複製人間の免疫力が増加します"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "WEAK.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Low Germ Resistance"
-#~ msgstr "低い免疫力"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "WEAK.NAME"
-#~ msgid "Weak"
-#~ msgstr "弱体"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
-#~ "WEAK.TOOLTIP"
-#~ msgid "Duplicants have decreased germ resistance"
-#~ msgstr "複製人間の免疫力が減少します"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS."
-#~ "DEFAULT.NAME"
-#~ msgid "Regular"
-#~ msgstr "通常"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS."
-#~ "DEFAULT.TOOLTIP"
-#~ msgid "Duplicants have normal Morale requirements"
-#~ msgstr "複製人間の士気要求は通常です"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS."
-#~ "DISABLED.NAME"
-#~ msgid "None"
-#~ msgstr "なし"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY."
-#~ "ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Low Morale (Easy)"
-#~ msgstr "士気低下 (イージー)"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY."
-#~ "NAME"
-#~ msgid "Low"
-#~ msgstr "低"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD."
-#~ "ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Low Morale (Hard)"
-#~ msgstr "士気低下 (ハード)"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD."
-#~ "NAME"
-#~ msgid "High"
-#~ msgstr "高"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD."
-#~ "TOOLTIP"
-#~ msgid ""
-#~ "Duplicants must maintain higher than normal Morale ratings to prevent "
-#~ "stress"
-#~ msgstr ""
-#~ "複製人間はストレスに対抗するため、より高い士気を維持する必要があります"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS."
-#~ "VERYHARD.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Low Morale (Very Hard)"
-#~ msgstr "士気低下 (ベリーハード)"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS."
-#~ "VERYHARD.NAME"
-#~ msgid "Very High"
-#~ msgstr "最高"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS."
-#~ "VERYHARD.TOOLTIP"
-#~ msgid ""
-#~ "Duplicants must maintain extremely high Morale ratings to prevent stress"
-#~ msgstr ""
-#~ "複製人間はストレスに対抗するため、とても高い士気を維持する必要があります"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.NAME"
-#~ msgid "Morale Requirements"
-#~ msgstr "士気要求"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS."
-#~ "DISABLED.TOOLTIP"
-#~ msgid "Click to enable Sandbox mode"
-#~ msgstr "サンドボックスを有効にする"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS."
-#~ "ENABLED.TOOLTIP"
-#~ msgid "Click to disable Sandbox mode"
-#~ msgstr "サンドボックスを無効にする"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "DEFAULT.NAME"
-#~ msgid "Regular"
-#~ msgstr "通常"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "DEFAULT.TOOLTIP"
-#~ msgid "Duplicants gain and lose stress normally"
-#~ msgstr "複製人間は通常通りストレスを受けたり減らしたりします"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "DOOMED.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Fatalistic"
-#~ msgstr "宿命"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "DOOMED.NAME"
-#~ msgid "Fatalistic"
-#~ msgstr "宿命"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "DOOMED.TOOLTIP"
-#~ msgid "Duplicants stress out at an extremely accelerated rate"
-#~ msgstr "複製人間は極めて急速にストレスを受けます"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "INDOMITABLE.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Unflappable"
-#~ msgstr "動じない"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "INDOMITABLE.NAME"
-#~ msgid "Unflappable"
-#~ msgstr "動じない"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "INDOMITABLE.TOOLTIP"
-#~ msgid "Duplicants will never get stressed"
-#~ msgstr "複製人間はストレスを受けません"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "OPTIMISTIC.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Optimistic"
-#~ msgstr "楽観的"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "OPTIMISTIC.NAME"
-#~ msgid "Optimistic"
-#~ msgstr "楽観的"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "OPTIMISTIC.TOOLTIP"
-#~ msgid "Duplicants are harder to stress out"
-#~ msgstr "複製人間はストレスを受けづらくなります"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "PESSIMISTIC.ATTRIBUTE_MODIFIER_NAME"
-#~ msgid "Pessimistic"
-#~ msgstr "悲観的"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "PESSIMISTIC.NAME"
-#~ msgid "Pessimistic"
-#~ msgstr "悲観的"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
-#~ "PESSIMISTIC.TOOLTIP"
-#~ msgid "Duplicants stress out easily"
-#~ msgstr "複製人間が容易にストレスを受けます"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.NAME"
-#~ msgid "Duplicant Mood"
-#~ msgstr "複製人間の雰囲気"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP"
-#~ msgid "Affects how well Duplicants handle stress"
-#~ msgstr "複製人間が受けるストレスの影響度です"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS."
-#~ "LEVELS.DEFAULT.NAME"
-#~ msgid "Normal"
-#~ msgstr "通常"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLDGEN_SEED."
-#~ "TOOLTIP"
-#~ msgid "This chooses the random parameters of your new world"
-#~ msgstr "新しいワールド生成のためのランダムなパラメータを指定します"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.LOAD_FAILURE.RESTART_LATER"
-#~ msgid "Continue"
-#~ msgstr "続行"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.LOAD_FAILURE.RESTART_NOW"
-#~ msgid "Restart"
-#~ msgstr "再起動"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.MOD_ERRORS_ON_BOOT.DEV_CONTINUE"
-#~ msgid "CONTINUE"
-#~ msgstr "続行"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.MOD_EVENTS.MESSAGE"
-#~ msgid ""
-#~ "Mod events:\n"
-#~ "{0}"
-#~ msgstr ""
-#~ "MODイベント:\n"
-#~ "{0}"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.MOD_EVENTS.TITLE"
-#~ msgid "MODS CHANGED"
-#~ msgstr "MODの変更"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.CONTENT_DELETED"
-#~ msgid "CONTENT DELETED"
-#~ msgstr "内容削除済"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.CONTENT_DELETED"
-#~ msgid "Missing installed content"
-#~ msgstr "不明なインストール済みコンテンツです"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.NOSWEAT_DESC"
-#~ msgid ""
-#~ "The cosmos is a glorious place where you can lead your colony into "
-#~ "adventure with ease."
-#~ msgstr "宇宙はあなたのコロニーを冒険に導く、輝かしい場所です。"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.SURVIVAL_DESC"
-#~ msgid ""
-#~ "Only you can protect your fragile colony from this harsh and unforgiving "
-#~ "universe."
-#~ msgstr ""
-#~ "あなただけが、この壊れやすいコロニーを過酷で容赦ない宇宙から守ってあげられ"
-#~ "ます。"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
-#~ msgid ""
-#~ "<b>Update Features:</b>\n"
-#~ "\n"
-#~ "• Major disease rebalance focused on more regular and manageable "
-#~ "sickness\n"
-#~ "• Skills system replaces the Jobs system\n"
-#~ "• New buildings, overlays, diseases, a new plant, and a Steam Turbine "
-#~ "rebuild\n"
-#~ "• Many, many bug fixes, optimizations, polish passes, updated animations "
-#~ "and more!\n"
-#~ "\n"
-#~ "Please view the full patch notes for further details!"
-#~ msgstr ""
-#~ "<b>更新された機能:</b>\n"
-#~ "\n"
-#~ "•病気の大型リバランス：病気をより定期的で管理可能なものに\n"
-#~ "•ジョブシステムはスキルシステムに置き換えられた\n"
-#~ "•新しい建物、オーバーレイ、病気、新しい植物、および蒸気タービンの再構築\n"
-#~ "•たくさんの、たくさんのバグ修正、最適化、パスの磨き上げ、アニメーションの"
-#~ "アップデートなど。\n"
-#~ "\n"
-#~ "更なる詳細についてはパッチノートをご覧ください！"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
-#~ msgid "QUALITY OF LIFE UPGRADE MK III"
-#~ msgstr "QoL アップグレード第三弾"
-
-#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.EMITS_LIGHT"
-#~ msgid "Emits light"
-#~ msgstr "発光"
-
-#~ msgctxt "STRINGS.UI.IMMIGRANTSCREEN.SHUFFLE"
-#~ msgid "SHUFFLE"
-#~ msgstr "シャッフル"
-
-#~ msgctxt "STRINGS.UI.JOBSSCREEN.PRIORITY_CLASS.COMPULSORY"
-#~ msgid "Compulsory"
-#~ msgstr "強制"
-
-#~ msgctxt "STRINGS.UI.JOBSSCREEN.TRAIT_DISABLED"
-#~ msgid ""
-#~ "{Name} cannot do {Job} Errands because they possess the {Trait} trait"
-#~ msgstr "{Name}は{Trait}特性の影響で{Job}作業ができません"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_ACTIVE"
-#~ msgid "Building turns on when Active signal received"
-#~ msgstr "設備は、アクティブシグナルを受信すると稼働します"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
-#~ msgid "Building turns off when Standby signal received"
-#~ msgstr "設備は、スタンバイシグナルを受信すると停止します"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
-#~ msgid "Active"
-#~ msgstr "アクティブ"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
-#~ msgid "Standby"
-#~ msgstr "スタンバイ"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME"
-#~ msgid "Input A"
-#~ msgstr "入力ポートA"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_ACTIVE"
-#~ msgid "Active"
-#~ msgstr "アクティブ"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_INACTIVE"
-#~ msgid "Standby"
-#~ msgstr "スタンバイ"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_NAME"
-#~ msgid "Input B"
-#~ msgstr "入力ポートB"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_ACTIVE"
-#~ msgid "Active"
-#~ msgstr "アクティブ"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_INACTIVE"
-#~ msgid "Standby"
-#~ msgstr "スタンバイ"
-
-#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_NAME"
-#~ msgid "The Input"
-#~ msgstr "入力"
-
-#~ msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FOODANDAGRICULTURE.TOOLTIP"
-#~ msgid "Keep your Duplicants' spirits high and their bellies full. {Hotkey}"
-#~ msgstr "複製人間の心と胃袋を満たしましょう。{Hotkey}"
-
-#~ msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.FURNITURE.TOOLTIP"
-#~ msgid ""
-#~ "Amenities to keep your Duplicants happy, comfy and efficient. {Hotkey}"
-#~ msgstr ""
-#~ "複製人間が幸せで快適に効率よく生活するためのアメニティです。{Hotkey}"
-
-#~ msgctxt "STRINGS.UI.OVERLAYS.LOGIC.ONE"
-#~ msgid "Active"
-#~ msgstr "アクティブ"
-
-#~ msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE"
-#~ msgid "Refresh Port"
-#~ msgstr "リフレッシュポート"
-
-#~ msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RESET_UPDATE"
-#~ msgid ""
-#~ "<b>Refresh Port</b>\n"
-#~ "Resets or updates a building when activated"
-#~ msgstr ""
-#~ "<b>リフレッシュポート</b>\n"
-#~ "アクティブになると、設備をリセットまたは更新します"
-
-#~ msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.ZERO"
-#~ msgid "<b>Standby</b>This port is currently on standby"
-#~ msgstr "<b>スタンバイ</b>このポートは現在スタンバイです"
-
-#~ msgctxt "STRINGS.UI.OVERLAYS.LOGIC.ZERO"
-#~ msgid "Standby"
-#~ msgstr "スタンバイ"
-
-#~ msgctxt "STRINGS.UI.OVERLAYS.TILEMODE.BUTTON"
-#~ msgid "MATERIALS"
-#~ msgstr "素材"
-
-#~ msgctxt "STRINGS.UI.PRIORITYSCREEN.DIAGRAM_TITLE"
-#~ msgid "SPECIFIC ERRAND PRIORITY"
-#~ msgstr "特定の作業の優先度"
-
-#~ msgctxt "STRINGS.UI.ROLES_SCREEN.NO_JOB_STATION_WARNING"
-#~ msgid "Build a Jobs Board to unlock Job Assignments"
-#~ msgstr "職業ボードを建設して、職業割り当てを開放しましょう"
-
-#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ATTRIBUTE_EFFECT_FMT"
-#~ msgid "{0} to {1}"
-#~ msgstr "{1}に{0}"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.CAN_MASTER"
-#~ msgid "{0} can master {1} skill"
-#~ msgstr "{0}は{1}スキルをマスターしました"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.CANNOT_MASTER"
-#~ msgid "{0} <color=#F44A47FF>cannot master</color> the {1} skill"
-#~ msgstr "{0}は{1}スキルを<color=#F44A47FF>習得できません</color>"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.HAS_MASTERED"
-#~ msgid "{0} <color=#5FDB37FF>has mastered</color> {1} skill"
-#~ msgstr "{0}は{1}スキルを<color=#5FDB37FF>習得しました</color>"
-
-#~ msgctxt "STRINGS.UI.SKILLS_SCREEN.CURRENT_MORALE"
-#~ msgid ""
-#~ "Current Morale: {0}\n"
-#~ "Morale Expectation: {1}"
-#~ msgstr ""
-#~ "現在の士気: {0}\n"
-#~ "職業に必要な士気: {1}"
-
-#~ msgctxt "STRINGS.UI.SKILLS_SCREEN.EXPERIENCE_TOOLTIP"
-#~ msgid ""
-#~ "{0} additional experience points required to unlock the next skill point"
-#~ msgstr "次のスキルポイントを開放するためには、さらに{0}の経験が必要です"
-
-#~ msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE_EXPECTATION"
-#~ msgid "<b>Morale expectation</b>"
-#~ msgstr "<b>士気期待値</b>"
-
-#~ msgctxt "STRINGS.UI.SKILLS_SCREEN.SORT_BY_EXPERIENCE"
-#~ msgid "Experience"
-#~ msgstr "経験"
-
-#~ msgctxt "STRINGS.UI.SPACEARTIFACTS.ARTIFACTTIERS.TIER0"
-#~ msgid "Tier 0"
-#~ msgstr "Tier 0"
-
-#~ msgctxt "STRINGS.UI.SPACEARTIFACTS.ARTIFACTTIERS.TIER1"
-#~ msgid "Tier 1"
-#~ msgstr "Tier 1"
-
-#~ msgctxt "STRINGS.UI.SPACEARTIFACTS.ARTIFACTTIERS.TIER2"
-#~ msgid "Tier 2"
-#~ msgstr "Tier 2"
-
-#~ msgctxt "STRINGS.UI.SPACEARTIFACTS.ARTIFACTTIERS.TIER3"
-#~ msgid "Tier 3"
-#~ msgstr "Tier 3"
-
-#~ msgctxt "STRINGS.UI.SPACEARTIFACTS.ARTIFACTTIERS.TIER4"
-#~ msgid "Tier 4"
-#~ msgstr "Tier 4"
-
-#~ msgctxt "STRINGS.UI.SPACEARTIFACTS.ARTIFACTTIERS.TIER5"
-#~ msgid "Tier 5"
-#~ msgstr "Tier 5"
-
-#~ msgctxt "STRINGS.UI.SPACEDESTINATIONS.DWARFPLANETS.ICYDWARF.NAME"
-#~ msgid "Ice Planet"
-#~ msgstr "氷惑星"
-
-#~ msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.SHATTEREDPLANET.DESCRIPTION"
-#~ msgid ""
-#~ "A largely damaged but theoretically habitable planet. An active energy "
-#~ "field prevents regular travel to this destination."
-#~ msgstr ""
-#~ "大きく傷ついていますが、理論上は居住可能な惑星です。 活発なエネルギー"
-#~ "フィールドがこの目的地への定期的な移動を妨げています。"
-
-#~ msgctxt "STRINGS.UI.STARMAP.TITLE"
-#~ msgid "Starmap"
-#~ msgstr "星図"
-
-#~ msgctxt "STRINGS.UI.TABLESCREENS.COLUMN_SORT_BY_EXPECTATIONS"
-#~ msgid "Sort by quality expectations"
-#~ msgstr "品質期待値で並べ替え"
-
-#~ msgctxt "STRINGS.UI.TABLESCREENS.COLUMN_SORT_BY_HITPOINTS"
-#~ msgid "Sort by hit points"
-#~ msgstr "ヒットポイントで並べ替え"
-
-#~ msgctxt "STRINGS.UI.TOOLS.GENERIC.LOGIC_OUTPUT_HOVER_FMT"
-#~ msgid "OUTPUT: {Port}    <style=\"hovercard_element\">({Name})</style>"
-#~ msgstr "出力: {Port}    <style=\"hovercard_element\">({Name})</style>"
-
-#~ msgctxt "STRINGS.UI.TOOLTIPS.HELP_REQUIRES_ROOM"
-#~ msgid "Must be in a room"
-#~ msgstr "部屋に建設する必要があります"
-
-#~ msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_CONSUMABLES"
-#~ msgid "Manage colony diets {Hotkey}"
-#~ msgstr "コロニーの食糧を管理します{Hotkey}"
-
-#~ msgctxt "STRINGS.UI.TOOLTIPS.PRIORITIZEBUTTON"
-#~ msgid ""
-#~ "Set Specific Errand Priority {Hotkey}\n"
-#~ "------------------\n"
-#~ "Specific priority set from this tool are calculated <i>after</i> the "
-#~ "Duplicants' priorities set on the Priorities Screen"
-#~ msgstr ""
-#~ "特定作業の優先度を設定します{Hotkey}\n"
-#~ "------------------\n"
-#~ "このツールで設定した特定優先度は優先度画面で設定した複製人間の優先度より"
-#~ "<i>後で</i>計算されます"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.MEDICALCOTSIDESCREEN.TITLE"
-#~ msgid "Minimum Health Requirement"
-#~ msgstr "生命力閾値"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.MEDICALCOTSIDESCREEN.TOOLTIP"
-#~ msgid ""
-#~ "The minimum health requirement before a Duplicant can occupy a medical "
-#~ "bed."
-#~ msgstr "複製人間が医療ベッドを明け渡すのに必要な生命力の最低値。"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.CURRENT_SCHEDULE_BLOCK"
-#~ msgid "Current schedule block: {0}"
-#~ msgstr "現在の予定ブロック: {0}"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.ACTIVATE_IF"
-#~ msgid "Activate if:"
-#~ msgstr "次の条件でオン:"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.ACTIVATE_IF"
-#~ msgid "Activate if:"
-#~ msgstr "次の条件でオン:"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.DISEASE"
-#~ msgid "Disease"
-#~ msgstr "病気"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.DISEASE_TOOLTIP_ABOVE"
-#~ msgid "Switch will be on if the number of germs is above {0}"
-#~ msgstr "病原菌の数が {0} 以上になるとスイッチがオンになります"
-
-# 「オフ」は原文の誤りのようで、実際は「～以下になるとオンにする」という設定
-#~ msgctxt ""
-#~ "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.DISEASE_TOOLTIP_BELOW"
-#~ msgid "Switch will be off if the number of germs is below {0}"
-#~ msgstr "病原菌の数が {0} 以下になるとスイッチがオフになります"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN."
-#~ "PRESSURE_TOOLTIP_ABOVE"
-#~ msgid "Switch will be on if the pressure is above {0}"
-#~ msgstr "圧力が {0} 以上になるとスイッチがオンになります"
-
-# 「オフ」は原文の誤りのようで、実際は「～以下になるとオンにする」という設定
-#~ msgctxt ""
-#~ "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN."
-#~ "PRESSURE_TOOLTIP_BELOW"
-#~ msgid "Switch will be off if the pressure is below {0}"
-#~ msgstr "圧力が {0} 以下になるとスイッチがオフになります"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN."
-#~ "TEMPERATURE_TOOLTIP_ABOVE"
-#~ msgid "Switch will be on if the ambient temperature is above {0}"
-#~ msgstr "周囲の温度が {0} 以上になるとスイッチがオンになります"
-
-# 「オフ」は原文の誤りのようで、実際は「～以下になるとオンにする」という設定
-#~ msgctxt ""
-#~ "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN."
-#~ "TEMPERATURE_TOOLTIP_BELOW"
-#~ msgid "Switch will be off if the ambient temperature is below {0}"
-#~ msgstr "周囲の温度が {0} 以下になるとスイッチがオフになります"
-
-#~ msgctxt "STRINGS.UI.UNITSUFFIXES.TEMPERATURE.KELVIN"
-#~ msgid " ºK"
-#~ msgstr " ºK"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_STERNSDESK"
-#~ msgid ""
-#~ "There's a handwritten note tucked in the back of the top drawer. I add it "
-#~ "to my database."
-#~ msgstr ""
-#~ "一番上の引き出しの後ろに丸まった手書きのメモがある。データベースに追加し"
-#~ "た。"
-
-#~ msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY"
-#~ msgid ""
-#~ "I've awoken with a starting crew of three Duplicants, but the situation "
-#~ "here is not as we expected.\n"
-#~ "\n"
-#~ "Resources are scarce and our Pod is embedded miles beneath the planet's "
-#~ "surface.\n"
-#~ "\n"
-#~ "I must help my Duplicants survive before I investigate what went wrong."
-#~ msgstr ""
-#~ "私は3人の複製人間とともに目覚めたが、現在の状況は期待していたものではな"
-#~ "かった。\n"
-#~ "\n"
-#~ "資源は乏しく、製造ポッドは惑星表面から数マイルも埋没している。\n"
-#~ "\n"
-#~ "状況が悪化する前に、彼らが生存できるよう手助けしなければなるまい。"
