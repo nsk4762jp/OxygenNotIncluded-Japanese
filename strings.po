@@ -3901,8 +3901,8 @@ msgid ""
 "Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less than "
 "<b>Low Threshold</b> charged"
 msgstr ""
-"バッテリー充電量が<b>閾値下限</b>を下回ると<b><color=#57b95e>グリーン</b></"
-"color>になります"
+"バッテリー充電量が<b>しきい値下限</b>を下回ると<b><color=#57b95e>グリーン</"
+"b></color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE"
@@ -3910,7 +3910,7 @@ msgid ""
 "Sends a <b><color=#f44a47>Red Signal</b></color> when the battery is more "
 "than <b>High Threshold</b> charged"
 msgstr ""
-"バッテリー充電量が<b>閾値上限</b>を上回ると<b><color=#f44a47>レッド</b></"
+"バッテリー充電量が<b>しきい値上限</b>を上回ると<b><color=#f44a47>レッド</b></"
 "color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.NAME
@@ -3921,12 +3921,12 @@ msgstr "<link=\"BATTERYSMART\">スマートバッテリー</link>"
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_ACTIVATE
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_ACTIVATE"
 msgid "Low Threshold:"
-msgstr "閾値下限:"
+msgstr "しきい値下限:"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_DEACTIVATE
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_DEACTIVATE"
 msgid "High Threshold:"
-msgstr "閾値上限:"
+msgstr "しきい値上限:"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_TITLE
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_TITLE"
@@ -7193,18 +7193,12 @@ msgid "Critter Count"
 msgstr "動物の頭数"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_ACTIVE
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_ACTIVE"
-#| msgid ""
-#| "Sends a <b><color=#57b95e>Green Signal</b></color> while the number of "
-#| "critters in the room is within the selected range"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_ACTIVE"
 msgid ""
 "Sends a <b><color=#57b95e>Green Signal</b></color> if the number of Critters "
 "and Eggs in the Room is greater than the selected threshold."
 msgstr ""
-"室内の動物と卵の数が指定した範囲内にある時、<b><color=#57b95e>グリーン</b></"
+"室内の動物と卵の数がしきい値を超えた場合、<b><color=#57b95e>グリーン</b></"
 "color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.LOGIC_PORT_INACTIVE
@@ -18420,6 +18414,7 @@ msgid ""
 "Have Auto Sweepers complete more deliveries to machines than Duplicatnts "
 "over 5 cycles."
 msgstr ""
+"5サイクル以上に渡って、自動掃除機による供給が複製人間による供給を上回る。"
 
 #. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.INSPECT_POI
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.INSPECT_POI"
@@ -38890,28 +38885,19 @@ msgstr ""
 "回路に電流が流れすぎているため、<link=\"WIRE\">電線</link>が溶けています"
 
 #. STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.MESSAGEBODY
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.NO_CODEX_ENTRY"
-#| msgid "No database entry available"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.MESSAGEBODY"
 msgid "A new Database entry is available"
-msgstr "データベースの項目がありません"
+msgstr "データベースの新しい項目が利用可能です"
 
 #. STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.NO_CODEX_ENTRY"
-#| msgid "No database entry available"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.NAME"
 msgid "New Database Entry"
-msgstr "データベースの項目がありません"
+msgstr "データベースの新規項目"
 
 #. STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.NO_CODEX_ENTRY"
-#| msgid "No database entry available"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.TOOLTIP"
 msgid "A new Database entry is available"
-msgstr "データベースの項目がありません"
+msgstr "データベースの新しい項目が利用可能です"
 
 #. STRINGS.MISC.NOTIFICATIONS.COLONY_ACHIEVEMENT_EARNED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.COLONY_ACHIEVEMENT_EARNED.NAME"
@@ -39978,12 +39964,9 @@ msgid "Skill point earned"
 msgstr "スキルポイント獲得"
 
 #. STRINGS.MISC.NOTIFICATIONS.SKILL_POINT_EARNED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.SKILL_POINT_EARNED.TOOLTIP"
-#| msgid "A Duplicant can now learn new skills"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.SKILL_POINT_EARNED.TOOLTIP"
 msgid "Duplicants can now learn new skills"
-msgstr "この複製人間は新しいスキルを習得できます"
+msgstr "複製人間は新しいスキルを習得できます"
 
 #. STRINGS.MISC.NOTIFICATIONS.STRESSMANAGEMENTMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.STRESSMANAGEMENTMESSAGE.MESSAGEBODY"
@@ -40184,17 +40167,11 @@ msgid "Unrefrigerated Food"
 msgstr "冷蔵されていない食糧"
 
 #. STRINGS.MISC.NOTIFICATIONS.UNREFRIGERATEDFOOD.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.UNREFRIGERATEDFOOD.TOOLTIP"
-#| msgid ""
-#| "These <link=\"FOOD\">Food</link> items are in storage but are not "
-#| "refrigerated:\n"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.UNREFRIGERATEDFOOD.TOOLTIP"
 msgid ""
 "These <link=\"FOOD\">Food</link> items are stored but not refrigerated:\n"
 msgstr ""
-"これらの<link=\"FOOD\">食糧</link>は格納庫に保管されていますが、冷蔵されてい"
-"ません:\n"
+"これらの<link=\"FOOD\">食糧</link>は保管されていますが、冷蔵されていません:\n"
 
 #. STRINGS.MISC.NOTIFICATIONS.VENTBLOCKED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.VENTBLOCKED.NAME"
@@ -40202,7 +40179,6 @@ msgid "Vent blocked"
 msgstr "通風口詰まり"
 
 #. STRINGS.MISC.NOTIFICATIONS.VENTBLOCKED.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.NOTIFICATIONS.VENTBLOCKED.TOOLTIP"
 msgid ""
 "Blocked <style=\"KKeyword\">Pipes</style> have stopped these systems from "
@@ -40217,14 +40193,13 @@ msgid "Vent overpressurized"
 msgstr "通風口気圧超過"
 
 #. STRINGS.MISC.NOTIFICATIONS.VENTOVERPRESSURE.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.NOTIFICATIONS.VENTOVERPRESSURE.TOOLTIP"
 msgid ""
 "These <style=\"KKeyword\">Pipe</style> systems have exited the ideal <style="
 "\"KKeyword\">Pressure</style> range:"
 msgstr ""
-"これらの<style=\"KKeyword\">パイプ</style>システムは理想的な圧力帯を逸脱して"
-"います:"
+"これらの<style=\"KKeyword\">パイプ</style>システムは理想的な<style=\"KKeyword"
+"\">圧力</style>帯を逸脱しています:"
 
 #. STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.MESSAGEBODY"
@@ -40313,7 +40288,6 @@ msgid "Inert"
 msgstr "不活性"
 
 #. STRINGS.MISC.STATUSITEMS.BLEACHSTONE.OVERPRESSURE.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONE.OVERPRESSURE.TOOLTIP"
 msgid ""
 "Environmental <style=\"KKeyword\">Gas Pressure</style> is too high for this "
@@ -40343,11 +40317,10 @@ msgid "Emitting {Element}: {FlowRate}"
 msgstr "{Element} 産出: {FlowRate}"
 
 #. STRINGS.MISC.STATUSITEMS.BLEACHSTONEEMITTING.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONEEMITTING.TOOLTIP"
 msgid "Producing {Element} at a rate of <style=\"produced\">{FlowRate}</style>"
 msgstr ""
-"{Element} を <style=\"produced\">{FlowRate}</style>の速さで産出しています"
+"{Element}を<style=\"produced\">{FlowRate}</style>の速さで産出しています"
 
 #. STRINGS.MISC.STATUSITEMS.BLEACHSTONEINACTIVE.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONEINACTIVE.NAME"
@@ -40585,7 +40558,6 @@ msgid "No Harvest Pending"
 msgstr "収穫作業待ち"
 
 #. STRINGS.MISC.STATUSITEMS.NOTMARKEDFORHARVEST.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.NOTMARKEDFORHARVEST.TOOLTIP"
 msgid ""
 "Use the <b>Harvest Tool</b> <b><color=#F44A4A>[Y]</b></color> to mark this "
@@ -40624,7 +40596,6 @@ msgid "Pending Wrangle"
 msgstr "懐柔作業待ち"
 
 #. STRINGS.MISC.STATUSITEMS.ORDERCAPTURE.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.ORDERCAPTURE.TOOLTIP"
 msgid ""
 "Waiting for a Duplicant to capture this <style=\"KKeyword\">Critter</style>\n"
@@ -40634,8 +40605,8 @@ msgid ""
 msgstr ""
 "複製人間がこの<style=\"KKeyword\">動物</style>を捕獲するのを待っています\n"
 "------------------\n"
-"<link=\"RANCHER\">動物懐柔</link>スキルをもった複製人間のみが動物を罠いらずで"
-"捕獲できます"
+"<link=\"RANCHER\">畜産 I</link>スキルをもった複製人間のみが動物を罠いらずで捕"
+"獲できます"
 
 #. STRINGS.MISC.STATUSITEMS.OREMASS.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.OREMASS.NAME"
@@ -40663,7 +40634,6 @@ msgid "Oxylite blocked"
 msgstr "オキシライト詰まり"
 
 #. STRINGS.MISC.STATUSITEMS.OXYROCK.NEIGHBORSBLOCKED.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCK.NEIGHBORSBLOCKED.TOOLTIP"
 msgid ""
 "This <link=\"OXYROCK\">Oxylite</link> deposit is not exposed to air and "
@@ -40721,7 +40691,6 @@ msgid "Inert"
 msgstr "不活性"
 
 #. STRINGS.MISC.STATUSITEMS.OXYROCKINACTIVE.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCKINACTIVE.TOOLTIP"
 msgid ""
 "Environmental <style=\"KKeyword\">Gas Pressure</style> is too high for this "
@@ -40742,13 +40711,11 @@ msgid "Debris will be swept once a Duplicant is available"
 msgstr "複製人間の手が空くと、がれきは片づけられます"
 
 #. STRINGS.MISC.STATUSITEMS.PENDINGCLEARNOSTORAGE.NAME
-#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.PENDINGCLEARNOSTORAGE.NAME"
 msgid "Storage Unavailable"
 msgstr "格納庫利用不能"
 
 #. STRINGS.MISC.STATUSITEMS.PENDINGCLEARNOSTORAGE.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.PENDINGCLEARNOSTORAGE.TOOLTIP"
 msgid "No available storage lockers can accept this item"
 msgstr "このアイテムを受け入れ可能な格納庫がありません"
@@ -40789,14 +40756,13 @@ msgid "High Priority"
 msgstr "優先度高"
 
 #. STRINGS.MISC.STATUSITEMS.PRIORITIZED.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.MISC.STATUSITEMS.PRIORITIZED.TOOLTIP"
 msgid ""
 "This <style=\"KKeyword\">Errand</style> has been marked as important and "
 "will be preferred over other pending <style=\"KKeyword\">Errands</style>"
 msgstr ""
-"この<style=\"KKeyword\">作業</style>は重要とマークされ、他の順番待ち作業より"
-"も優先されます"
+"この<style=\"KKeyword\">作業</style>は重要とマークされ、他の順番待ち<style="
+"\"KKeyword\">作業</style>よりも優先されます"
 
 #. STRINGS.MISC.STATUSITEMS.REGIONISBLOCKED.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.REGIONISBLOCKED.NAME"
@@ -47150,12 +47116,9 @@ msgid "<link=\"GEYSERS\">Geysers</link>"
 msgstr "<link=\"GEYSERS\">間欠泉</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.INVESTIGATIONS
-#, fuzzy
-#| msgctxt "STRINGS.RESEARCH.TECHS.INSULATION.NAME"
-#| msgid "<link=\"INSULATION\">Insulation</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.INVESTIGATIONS"
 msgid "<link=\"INVESTIGATIONS\">Investigations</link>"
-msgstr "<link=\"INSULATION\">断熱</link>"
+msgstr "<link=\"INVESTIGATIONS\">調査</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.JOURNALS
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.JOURNALS"
@@ -47163,12 +47126,9 @@ msgid "<link=\"JOURNALS\">Journals</link>"
 msgstr "<link=\"JOURNALS\">日誌</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.MYLOG
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.GLOM.NAME"
-#| msgid "<link=\"GLOM\">Morb</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MYLOG"
 msgid "<link=\"MYLOG\">My Log</link>"
-msgstr "<link=\"GLOM\">モーブ</link>"
+msgstr "<link=\"MYLOG\">私的記録</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.NOTICES
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.NOTICES"
@@ -47216,20 +47176,14 @@ msgid "<link=\"TIPS\">Tips and Information</link>"
 msgstr "<link=\"TIPS\">ヒントと情報</link>"
 
 #. STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.BODY
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.BODY"
-#| msgid "Codex Discovered: {codex}"
 msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.BODY"
 msgid "Database Update Discovered: {codex}\n"
-msgstr "データ発見: {codex}"
+msgstr "データベースのアップデートを発見: {codex}\n"
 
 #. STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.TITLE"
-#| msgid "Codex Discovered"
 msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.TITLE"
 msgid "Database Update Discovered"
-msgstr "データ発見"
+msgstr "データベースのアップデートを発見"
 
 #. STRINGS.UI.CODEX.DETAILS
 msgctxt "STRINGS.UI.CODEX.DETAILS"
@@ -60307,20 +60261,15 @@ msgid "Critter Count"
 msgstr "動物の数"
 
 #. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.DISEASE_TOOLTIP_ABOVE"
-#| msgid ""
-#| "Will send a <b><color=#57b95e>Green Signal</b></color> if the number of "
-#| "<style=\"KKeyword\">Germs</style> is above <b>{0}</b>"
 msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP"
 msgid ""
 "Will send a <b><color=#57b95e>Green Signal</b></color> if there are more "
 "than <b>{0}</b> <style=\"KKeyword\">Critters</style> or <style=\"KKeyword"
 "\">Eggs</style> in the room"
 msgstr ""
-"<style=\"KKeyword\">病原菌</style>の数が<b>{0}</b>を超えたとき、"
-"<b><color=#57b95e>グリーン</b></color>を送信します"
+"部屋に居る<style=\"KKeyword\">動物</style>または<style=\"KKeyword\">卵</"
+"style>が<b>{0}</b>を越えると<b><color=#57b95e>グリーン</b></color>になりま"
+"す。"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT"
@@ -60801,49 +60750,31 @@ msgid "Neural Vacillation in progress."
 msgstr "神経シャッフル中です。"
 
 #. STRINGS.UI.UISIDESCREENS.LOGIC_BUFFER_SIDE_SCREEN.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.LOGIC_BUFFER_SIDE_SCREEN.TITLE"
-#| msgid "Green Buffer Time"
 msgctxt "STRINGS.UI.UISIDESCREENS.LOGIC_BUFFER_SIDE_SCREEN.TITLE"
 msgid "Buffer Time"
-msgstr "グリーンバッファ時間"
+msgstr "バッファ時間"
 
 #. STRINGS.UI.UISIDESCREENS.LOGIC_BUFFER_SIDE_SCREEN.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.LOGIC_BUFFER_SIDE_SCREEN.TOOLTIP"
-#| msgid ""
-#| "This gate will continue to send a <b><color=#57b95e>Green Signal</b></"
-#| "color> for {0} seconds after receiving a <b><color=#f44a47>Red Signal</"
-#| "b></color>"
 msgctxt "STRINGS.UI.UISIDESCREENS.LOGIC_BUFFER_SIDE_SCREEN.TOOLTIP"
 msgid ""
 "Will continue to send a <b><color=#57b95e>Green Signal</b></color> for "
 "<b>{0} seconds</b> after receiving a <b><color=#f44a47>Red Signal</b></color>"
 msgstr ""
-"このゲートは<b><color=#f44a47>レッド</b></color>を受信しても {0} 秒間は"
+"<b><color=#f44a47>レッド</b></color>を受信しても<b>{0}秒間</b>は"
 "<b><color=#57b95e>グリーン</b></color>を送信し続けます"
 
 #. STRINGS.UI.UISIDESCREENS.LOGIC_FILTER_SIDE_SCREEN.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.LOGIC_FILTER_SIDE_SCREEN.TITLE"
-#| msgid "Green Filter Time"
 msgctxt "STRINGS.UI.UISIDESCREENS.LOGIC_FILTER_SIDE_SCREEN.TITLE"
 msgid "Filter Time"
-msgstr "グリーンフィルター時間"
+msgstr "フィルター時間"
 
 #. STRINGS.UI.UISIDESCREENS.LOGIC_FILTER_SIDE_SCREEN.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_ACTIVE"
-#| msgid ""
-#| "Sends a <b><color=#57b95e>Green Signal</b></color> after receiving "
-#| "<b><color=#57b95e>Green</b></color> for longer than the selected filter "
-#| "timer"
 msgctxt "STRINGS.UI.UISIDESCREENS.LOGIC_FILTER_SIDE_SCREEN.TOOLTIP"
 msgid ""
 "Will only send a <b><color=#57b95e>Green Signal</b></color> if it receives "
 "<b><color=#57b95e>Green</b></color> for longer than <b>{0} seconds</b>"
 msgstr ""
-"入力の<b><color=#57b95e>グリーン</b></color>を指定した時間以上キープすると"
+"<b><color=#57b95e>グリーン</b></color>を<b>{0}秒間</b>受信し続けると、"
 "<b><color=#57b95e>グリーン</b></color>になります"
 
 #. STRINGS.UI.UISIDESCREENS.LURE.ATTRACTS
@@ -60882,38 +60813,25 @@ msgid "Select Bait"
 msgstr "餌を選択"
 
 #. STRINGS.UI.UISIDESCREENS.MANUALDELIVERYGENERATORSIDESCREEN.CURRENT_THRESHOLD
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.UISIDESCREENS.MANUALGENERATORSIDESCREEN.CURRENT_THRESHOLD"
-#| msgid "Current Threshold: {0}%"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.MANUALDELIVERYGENERATORSIDESCREEN.CURRENT_THRESHOLD"
 msgid "Current Threshold: {0}%"
 msgstr "現在のしきい値: {0}%"
 
 #. STRINGS.UI.UISIDESCREENS.MANUALDELIVERYGENERATORSIDESCREEN.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.OIL_WELL_CAP_SIDE_SCREEN.TITLE"
-#| msgid "Pressure Release Threshold"
 msgctxt "STRINGS.UI.UISIDESCREENS.MANUALDELIVERYGENERATORSIDESCREEN.TITLE"
 msgid "Fuel Request Threshold"
-msgstr "圧力開放しきい値"
+msgstr "燃料要求しきい値"
 
 #. STRINGS.UI.UISIDESCREENS.MANUALDELIVERYGENERATORSIDESCREEN.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.GEYSER_PRODUCTION"
-#| msgid ""
-#| "While erupting, this geyser will produce <style=\"KKeyword\">{0}</style> "
-#| "at a rate of <style=\"produced\">{1}</style>, and at a <style=\"KKeyword"
-#| "\">Temperature</style> of <b>{2}</b>"
 msgctxt "STRINGS.UI.UISIDESCREENS.MANUALDELIVERYGENERATORSIDESCREEN.TOOLTIP"
 msgid ""
 "Duplicants will be requested to deliver <style=\"KKeyword\">{0}</style> when "
 "the total charge of the connected <style=\"KKeyword\">Batteries</style> "
 "falls below <b>{1}%</b>"
 msgstr ""
-"噴出中、この間欠泉は<style=\"produced\">{1}</style>の速さで<style=\"KKeyword"
-"\">{0}</style>を生産し、その<style=\"KKeyword\">温度</style>は<b>{2}</b>です"
+"接続された<style=\"KKeyword\">バッテリー</style>の容量が<b>{1}%</b>を下回る場"
+"合、複製人間に<style=\"KKeyword\">{0}</style>を要求します"
 
 #. STRINGS.UI.UISIDESCREENS.MANUALGENERATORSIDESCREEN.CURRENT_THRESHOLD
 msgctxt "STRINGS.UI.UISIDESCREENS.MANUALGENERATORSIDESCREEN.CURRENT_THRESHOLD"
@@ -60932,6 +60850,8 @@ msgid ""
 "of the connected <style=\"KKeyword\">Batteries</style> falls below <b>{0}%</"
 "b>"
 msgstr ""
+"接続された<style=\"KKeyword\">バッテリー</style>の容量が<b>{0}%</b>を下回る場"
+"合、複製人間にこの発電機を操作させます"
 
 #. STRINGS.UI.UISIDESCREENS.MEDICALCOTSIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.MEDICALCOTSIDESCREEN.TITLE"
@@ -60939,16 +60859,13 @@ msgid "Severity Requirement"
 msgstr "重症時のみ"
 
 #. STRINGS.UI.UISIDESCREENS.MEDICALCOTSIDESCREEN.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.MEDICALCOTSIDESCREEN.TOOLTIP"
-#| msgid ""
-#| "A Duplicant may not use this cot until their health falls below the "
-#| "selected percentage"
 msgctxt "STRINGS.UI.UISIDESCREENS.MEDICALCOTSIDESCREEN.TOOLTIP"
 msgid ""
 "A Duplicant may not use this cot until their <style=\"KKeyword\">Health</"
 "style> falls below <b>{0}%</b>"
-msgstr "複製人間は、生命力が指定した割合を下回るまでこのベッドを使用しません"
+msgstr ""
+"複製人間は、<style=\"KKeyword\">生命力</style>が<b>{0}%</b>を下回るまでこの"
+"ベッドを使用しません"
 
 #. STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.CHORE_GROUP_SEPARATOR
 msgctxt "STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.CHORE_GROUP_SEPARATOR"
@@ -61139,19 +61056,16 @@ msgid "Great Monument"
 msgstr "偉大なモニュメント"
 
 #. STRINGS.UI.UISIDESCREENS.OIL_WELL_CAP_SIDE_SCREEN.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.OIL_WELL_CAP_SIDE_SCREEN.TITLE"
-#| msgid "Pressure Release Threshold"
 msgctxt "STRINGS.UI.UISIDESCREENS.OIL_WELL_CAP_SIDE_SCREEN.TITLE"
 msgid "Backpressure Release Threshold"
-msgstr "圧力開放しきい値"
+msgstr "背圧しきい値"
 
 #. STRINGS.UI.UISIDESCREENS.OIL_WELL_CAP_SIDE_SCREEN.TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.OIL_WELL_CAP_SIDE_SCREEN.TOOLTIP"
 msgid ""
 "Duplicants will be requested to release backpressure buildup when it exceeds "
 "<b>{0}%</b>"
-msgstr ""
+msgstr "背圧が<b>{0}%</b>を上回る場合、複製人間に圧力を開放させます"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGDELIVERY
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGDELIVERY"
@@ -61757,12 +61671,6 @@ msgid "Time-of-Day Sensor"
 msgstr "時刻センサー"
 
 #. STRINGS.UI.UISIDESCREENS.TIME_OF_DAY_SIDE_SCREEN.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_OF_DAY_SIDE_SCREEN.TOOLTIP"
-#| msgid ""
-#| "This sensor will send a <b><color=#57b95e>Green Signal</b></color> after "
-#| "the selected Turn On time, and a <b><color=#f44a47>Red Signal</b></color> "
-#| "after the selected Turn Off time"
 msgctxt "STRINGS.UI.UISIDESCREENS.TIME_OF_DAY_SIDE_SCREEN.TOOLTIP"
 msgid ""
 "Will send a <b><color=#57b95e>Green Signal</b></color> after the selected "
@@ -61786,7 +61694,7 @@ msgid ""
 "This sensor will send a <b><color=#57b95e>Green Signal</b></color> for {0} "
 "of the day"
 msgstr ""
-"稼働時間はこのセンサーが1日のうち何％の時間 <b><color=#57b95e>グリーン</b></"
+"稼働時間はこのセンサーが1日のうち何%の時間 <b><color=#57b95e>グリーン</b></"
 "color>を送信するかを決定します\n"
 "\n"
 "このセンサーは1日につき{0}の間 <b><color=#57b95e>グリーン</b></color>を送信し"
