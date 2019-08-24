@@ -4218,7 +4218,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.CEILINGLIGHT.EFFECT"
 msgid ""
 "Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>.\n"
 "\n"
-"Duplicants can operate buildings more quickly the building is lit."
+"Duplicants can operate buildings more quickly when the building is lit."
 msgstr ""
 "<link=\"POWER\">電力</link>が供給されると、<link=\"LIGHT\">光源</link>として"
 "機能します。\n"
@@ -6166,6 +6166,11 @@ msgstr "<link=\"HEADQUARTERS\">製造ポッド</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEADQUARTERSCOMPLETE.NAME"
 msgid "<link=\"HEADQUARTERS\">Printing Pod</link>"
 msgstr "<link=\"HEADQUARTERS\">製造ポッド</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.HEADQUARTERSCOMPLETE.UNIQUE_POPTEXT
+msgctxt "STRINGS.BUILDINGS.PREFABS.HEADQUARTERSCOMPLETE.UNIQUE_POPTEXT"
+msgid "Only one {0} allowed!"
+msgstr "{0}は一つだけです！"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.DESC"
@@ -16332,8 +16337,8 @@ msgstr "サイクル1"
 #. STRINGS.CODEX.MYLOG.BODY.LOG2.BODY
 msgctxt "STRINGS.CODEX.MYLOG.BODY.LOG2.BODY"
 msgid ""
-"I've synthesized enough Ooze to print a new Duplicant; all I have to do now "
-"is choose a blueprint.\n"
+"I've almost synthesized enough Ooze to print a new Duplicant; once the Ooze "
+"is ready, all I'll have left to do is choose a blueprint.\n"
 "\n"
 "It'd be helpful to have an extra set of hands around the colony, but having "
 "another Duplicant also means another mouth to feed.\n"
@@ -16342,7 +16347,8 @@ msgid ""
 "instead. I'm sure they would appreciate it.\n"
 "\n"
 msgstr ""
-"新しい複製人間を作れるだけの生命の素を合成した。あとは設計図を選ぶだけだ。\n"
+"新しい複製人間を作れるだけの生命の素を合成した。生命の素が準備できたら、あと"
+"は設計図を選ぶだけだ。\n"
 "\n"
 "コロニーの働き手が増えるということは、食べる口と空気を吸いこむ肺が増えるとい"
 "うことでもある。\n"
@@ -18180,6 +18186,11 @@ msgstr ""
 "故郷と呼べる場所を見つけるだろう。そして彼らは自身のコロニーを繁栄させるの"
 "だ。"
 
+#. STRINGS.COLONY_ACHIEVEMENTS.FAILED_THIS_COLONY
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.FAILED_THIS_COLONY"
+msgid "The current colony cannot fulfill this Initiative"
+msgstr "現在のコロニーはこの取り組みを達成していません"
+
 #. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.AUTOMATE_A_BUILDING
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.AUTOMATE_A_BUILDING"
 msgid "Red Light, Green Light"
@@ -18409,8 +18420,8 @@ msgstr "気楽な暮らし"
 msgctxt ""
 "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.IDLE_DUPLICANTS_DESCRIPTION"
 msgid ""
-"Have Auto Sweepers complete more deliveries to machines than Duplicatnts "
-"over 5 cycles."
+"Have Auto-Sweepers complete more deliveries to machines than Duplicants over "
+"5 cycles."
 msgstr ""
 "5サイクル以上に渡って、自動掃除機による供給が複製人間による供給を上回る。"
 
@@ -18490,6 +18501,253 @@ msgctxt ""
 "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.SIXKELVIN_BUILDING_DESCRIPTION"
 msgid "Reduce the temperature of a building to 6 Kelvin."
 msgstr "設備の温度を 6K まで下げる。"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.ARM_PERFORMANCE
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.ARM_PERFORMANCE"
+msgid "Auto-Sweepers outperformed dupes for cycles: {0} / {1}"
+msgstr "複製人間以上に機能した自動掃除機: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.ARM_VS_DUPE_FETCHES
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.ARM_VS_DUPE_FETCHES"
+msgid "Deliveries this cycle: Auto-Sweepers: {1} Duplicants: {2}"
+msgstr "このサイクルでの供給量: 自動掃除機:{1}、複製人間:{2}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.AUTOMATE_A_BUILDING
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.AUTOMATE_A_BUILDING"
+msgid "Automated a building"
+msgstr "設備の自動化"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BLOCKED_A_COMET
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BLOCKED_A_COMET"
+msgid "Blocked a meteor with a Bunker Door"
+msgstr "シェルタードアを使って隕石を防ぐ。"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILING_BEDS
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILING_BEDS"
+msgid "Built beds: {0} ({1} Needed)"
+msgstr "ベッド数: {0} ({1} 必要)"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILT_A_ROOM
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILT_A_ROOM"
+msgid "Built a {0}."
+msgstr "{0} を建設した。"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILT_N_ROOMS
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILT_N_ROOMS"
+msgid "Built {0}: {1} / {2}"
+msgstr "建設した{0}: {1} / {2}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILT_ONE_BED_PER_DUPLICANT
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS."
+"BUILT_ONE_BED_PER_DUPLICANT"
+msgid "Built one bed for each Duplicant"
+msgstr "複製人間全員にベッドを割り当てた"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILT_ONE_TOILET
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILT_ONE_TOILET"
+msgid "Built one toilet"
+msgstr "トイレを1つ建設した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILT_OUTSIDE_START
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.BUILT_OUTSIDE_START"
+msgid "Built outside the starting biome"
+msgstr "初期バイオームの外側に設備を建設した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CALORIE_SURPLUS
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CALORIE_SURPLUS"
+msgid "Calorie surplus: {0} / {1}"
+msgstr "余剰カロリー: {0}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CALORIES_FROM_MEAT
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CALORIES_FROM_MEAT"
+msgid "Calories from meat: {0} / {1}"
+msgstr "肉から摂取したカロリー: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CHORES_OF_TYPE
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CHORES_OF_TYPE"
+msgid "{2} errands: {0} / {1}"
+msgstr "{2}作業: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CLOTHE_DUPES
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CLOTHE_DUPES"
+msgid "Duplicants in clothing: {0} / {1}"
+msgstr "着衣中の複製人間: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CONSUME_CALORIES
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CONSUME_CALORIES"
+msgid "Calories: {0} / {1}"
+msgstr "カロリー: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CONSUME_ITEM
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CONSUME_ITEM"
+msgid "Consume something prepared at {0}"
+msgstr "{0} に用意された物を消費"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CREATE_A_PAINTING
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CREATE_A_PAINTING"
+msgid "Created a masterpiece painting"
+msgstr "傑作と呼べる絵画を制作した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CURED_DISEASE
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CURED_DISEASE"
+msgid "Cured a disease"
+msgstr "病気から快復した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CYCLE_NUMBER
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CYCLE_NUMBER"
+msgid "Cycle: {0} / {1}"
+msgstr "サイクル: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.ENTER_OIL_BIOME
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.ENTER_OIL_BIOME"
+msgid "Entered an oil biome"
+msgstr "オイルバイオームに到達した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.EXOSUIT_CYCLES
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.EXOSUIT_CYCLES"
+msgid "All Dupes completed a Exosuit errand for cycles: {0} / {1}"
+msgstr "全ての複製人間が1サイクル中にEXOスーツ作業を完了させた: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.EXOSUIT_THIS_CYCLE
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.EXOSUIT_THIS_CYCLE"
+msgid "Dupes who completed Exosuit errands this cycle: {0} / {1}"
+msgstr "複製人間が1サイクル中にEXOスーツ作業を完了させた: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.EXPAND_TOOLTIP
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.EXPAND_TOOLTIP"
+msgid "<i>Click to view progress</i>"
+msgstr "<i>クリックして進捗状況を確認</i>"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.FRACTIONAL_CYCLE
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.FRACTIONAL_CYCLE"
+msgid "Cycle: {0:0.##} / {1:0.##}"
+msgstr "サイクル: {0:0.##} / {1:0.##}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.GENERATE_POWER
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.GENERATE_POWER"
+msgid "Energy generated: {0} / {1}"
+msgstr "生産エネルギー: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.HATCH_A_MORPH
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.HATCH_A_MORPH"
+msgid "Hatched a critter morph"
+msgstr "動物変種を孵化させた"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.INVESTIGATE_A_POI
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.INVESTIGATE_A_POI"
+msgid "Inspected a ruin"
+msgstr "遺跡を調査した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.KELVIN_COOLING
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.KELVIN_COOLING"
+msgid "Coldest building: {0:##0.#}k"
+msgstr "最も冷たい設備: {0:##0.#}k"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.LAUNCHED_ROCKET
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.LAUNCHED_ROCKET"
+msgid "Launched a Rocket into Space"
+msgstr "ロケットを宇宙に飛ばした"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.LAUNCHED_ROCKET_TO_WORMHOLE
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS."
+"LAUNCHED_ROCKET_TO_WORMHOLE"
+msgid ""
+"Sent a Duplicant on a one-way mission to the furthest Starmap destination"
+msgstr "複製人間を星図の最も遠い場所へと送り出す、片道ミッションを実施した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.NO_BUILDING
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.NO_BUILDING"
+msgid "Never built a {0}"
+msgstr "{0}を建設しなかった"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.NO_FARM_TILES
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.NO_FARM_TILES"
+msgid "No farmed plants"
+msgstr "農耕植物禁止"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.PLATFORM_UNLOCKING_DISABLED
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS."
+"PLATFORM_UNLOCKING_DISABLED"
+msgid ""
+"Platform achievements cannot be unlocked because a debug command was used in "
+"this colony. "
+msgstr ""
+"このコロニーではデバッグコマンドが使われたため、実績はアンロックできません。"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.PLATFORM_UNLOCKING_ENABLED
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS."
+"PLATFORM_UNLOCKING_ENABLED"
+msgid "Platform achievements can be unlocked."
+msgstr "実績はアンロックできます。"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.POOP_PRODUCTION
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.POOP_PRODUCTION"
+msgid "Poop production: {0} / {1}"
+msgstr "排泄物生産: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.POPULATION
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.POPULATION"
+msgid "Population: {0} / {1}"
+msgstr "人口: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.PREPARED_SEPARATOR
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.PREPARED_SEPARATOR"
+msgid " or "
+msgstr " か "
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.REMAINING_CYCLES
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.REMAINING_CYCLES"
+msgid "Cycles remaining: {0} / {1}"
+msgstr "残りサイクル: {0} / {1}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.REVEALED
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.REVEALED"
+msgid "Revealed: {0:0.##}% / {1:0.##}%"
+msgstr "視界確保: {0:0.##}% / {1:0.##}%"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.SKILL_BRANCH
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.SKILL_BRANCH"
+msgid "Unlocked an entire branch of the skill tree"
+msgstr "複製人間のスキルポイントをスキルツリーの枝に全て割り当てる。"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.TAME_A_CRITTER
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.TAME_A_CRITTER"
+msgid "Tamed a {0}"
+msgstr "{0}を懐柔した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.TECH_RESEARCHED
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.TECH_RESEARCHED"
+msgid "Tech researched: {0} / {1}"
+msgstr "研究済みの技術: {1} {0}"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.TRAVELED_IN_TUBES
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.TRAVELED_IN_TUBES"
+msgid "Distance: {0:n} m / {1:n} m"
+msgstr "距離: {0:n} m / {1:n} m"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.UPGRADE_ALL_BUILDINGS
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.UPGRADE_ALL_BUILDINGS"
+msgid "All {0} updgraded to {1}"
+msgstr "全ての {0} を {1} に更新した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.VENTED_MASS
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.VENTED_MASS"
+msgid "Vented: {0} / {1}"
+msgstr "放出量: {0} / {1}"
 
 #. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.SURVIVE_HUNDRED_CYCLES
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.SURVIVE_HUNDRED_CYCLES"
@@ -33084,11 +33342,11 @@ msgstr "この複製人間の仕事は、定期的に居眠りで中断されま
 #. STRINGS.DUPLICANTS.TRAITS.NEEDS.CLAUSTROPHOBIC.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NEEDS.CLAUSTROPHOBIC.DESC"
 msgid ""
-"This Duplicant feels suffocated in spaces less than four tiles high or three "
-"tiles wide"
+"This Duplicant feels suffocated in spaces fewer than four tiles high or "
+"three tiles wide"
 msgstr ""
-"この複製人間は4タイル以下の高さや3タイル以下の幅の広さにいると窒息していると"
-"感じます"
+"この複製人間は4タイル以下の高さや3タイル以下の幅の広さにいると息苦しさを感じ"
+"ます"
 
 #. STRINGS.DUPLICANTS.TRAITS.NEEDS.CLAUSTROPHOBIC.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NEEDS.CLAUSTROPHOBIC.NAME"
@@ -38886,18 +39144,18 @@ msgstr ""
 
 #. STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.MESSAGEBODY"
-msgid "A new Database entry is available"
-msgstr "データベースの新しい項目が利用可能です"
+msgid "I've added a new log entry to my Database"
+msgstr "新しいログをデータベースに追加した"
 
 #. STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.NAME"
-msgid "New Database Entry"
-msgstr "データベースの新規項目"
+msgid "New Log Entry"
+msgstr "新しいログ"
 
 #. STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.TOOLTIP"
-msgid "A new Database entry is available"
-msgstr "データベースの新しい項目が利用可能です"
+msgid "I've added a new log entry to my Database"
+msgstr "新しいログをデータベースに追加した"
 
 #. STRINGS.MISC.NOTIFICATIONS.COLONY_ACHIEVEMENT_EARNED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.COLONY_ACHIEVEMENT_EARNED.NAME"
@@ -47177,13 +47435,13 @@ msgstr "<link=\"TIPS\">ヒントと情報</link>"
 
 #. STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.BODY
 msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.BODY"
-msgid "Database Update Discovered: {codex}\n"
-msgstr "データベースのアップデートを発見: {codex}\n"
+msgid "I've added a new entry to my log: {codex}\n"
+msgstr "新しい項目をログに追加した: {codex}\n"
 
 #. STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.TITLE
 msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.TITLE"
-msgid "Database Update Discovered"
-msgstr "データベースのアップデートを発見"
+msgid "New Log Entry"
+msgstr "新しいログ"
 
 #. STRINGS.UI.CODEX.DETAILS
 msgctxt "STRINGS.UI.CODEX.DETAILS"
@@ -47948,7 +48206,7 @@ msgctxt ""
 msgid ""
 "Low germ count in this area is causing germs to die rapidly\n"
 "\n"
-"Less than {0} germs are on this {1} of material.\n"
+"Fewer than {0} germs are on this {1} of material.\n"
 "({2} germs/Kg)"
 msgstr ""
 "このエリアの病原菌の数はわずかであるため、菌はあっという間に死滅します\n"
@@ -51369,7 +51627,7 @@ msgstr ""
 "•ピップ、ポークシェル、ダーシャ・シオカズラ、水草、ノッシュの木が育てられるよ"
 "うになりました\n"
 "• 新たな資源を処理し、コロニーをより改善するための新たな設備\n"
-"• コロニーイニシアチブと指令が、あなたのコロニーの発展の記録となります\n"
+"• コロニーの取り組みと使命が、あなたのコロニーの発展の記録となります\n"
 "• たくさんの古くからあるバグと問題を解消!\n"
 "\n"
 "さらなる詳細はフルパッチノートをご覧ください！"
@@ -60257,11 +60515,11 @@ msgstr "OFF にする"
 
 #. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TITLE"
-msgid "Critter Count"
-msgstr "動物の数"
+msgid "Critter Count Sensor"
+msgstr "動物数センサー"
 
-#. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP
-msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP"
+#. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP_ABOVE
+msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP_ABOVE"
 msgid ""
 "Will send a <b><color=#57b95e>Green Signal</b></color> if there are more "
 "than <b>{0}</b> <style=\"KKeyword\">Critters</style> or <style=\"KKeyword"
@@ -60270,6 +60528,22 @@ msgstr ""
 "部屋に居る<style=\"KKeyword\">動物</style>または<style=\"KKeyword\">卵</"
 "style>が<b>{0}</b>を越えると<b><color=#57b95e>グリーン</b></color>になりま"
 "す。"
+
+#. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP_BELOW
+msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP_BELOW"
+msgid ""
+"Will send a <b><color=#57b95e>Green Signal</b></color> if there are fewer "
+"than <b>{0}</b> <style=\"KKeyword\">Critters</style> or <style=\"KKeyword"
+"\">Eggs</style> in the room"
+msgstr ""
+"部屋に居る<style=\"KKeyword\">動物</style>または<style=\"KKeyword\">卵</"
+"style>が<b>{0}</b>を下回ると<b><color=#57b95e>グリーン</b></color>になりま"
+"す。"
+
+#. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME
+msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME"
+msgid "Critter / Egg Count"
+msgstr "動物/卵の数"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT"
@@ -64354,6 +64628,38 @@ msgstr ""
 msgctxt "STRINGS.WORLDS.VOLCANIC.NAME"
 msgid "Volcanea"
 msgstr "ボルカニア"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.CEILINGLIGHT.EFFECT"
+#~ msgid ""
+#~ "Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</"
+#~ "link>.\n"
+#~ "\n"
+#~ "Duplicants can operate buildings more quickly the building is lit."
+#~ msgstr ""
+#~ "<link=\"POWER\">電力</link>が供給されると、<link=\"LIGHT\">光源</link>とし"
+#~ "て機能します。\n"
+#~ "\n"
+#~ "複製人間は設備が光源下にあるとより効率的に操作できます。"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.MESSAGEBODY"
+#~ msgid "A new Database entry is available"
+#~ msgstr "データベースの新しい項目が利用可能です"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.NAME"
+#~ msgid "New Database Entry"
+#~ msgstr "データベースの新規項目"
+
+#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.TOOLTIP"
+#~ msgid "A new Database entry is available"
+#~ msgstr "データベースの新しい項目が利用可能です"
+
+#~ msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.BODY"
+#~ msgid "Database Update Discovered: {codex}\n"
+#~ msgstr "データベースのアップデートを発見: {codex}\n"
+
+#~ msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.TITLE"
+#~ msgid "Database Update Discovered"
+#~ msgstr "データベースのアップデートを発見"
 
 #~ msgctxt ""
 #~ "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.IDLE_DUPLICANTS_DESCRIPTION"
