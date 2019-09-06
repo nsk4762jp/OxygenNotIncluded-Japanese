@@ -228,6 +228,11 @@ msgctxt "STRINGS.UI.BUILDCATEGORIES.UTILITIES.TOOLTIP"
 msgid "Heat up and cool down. {Hotkey}"
 msgstr "温めたり、冷やしたりします。{Hotkey}"
 
+#. STRINGS.UI.BUILDINGEFFECTS.ACCESS_CONTROL
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.ACCESS_CONTROL"
+msgid "Duplicant Access Permissions"
+msgstr "複製人間アクセス許可リスト"
+
 #. STRINGS.UI.BUILDINGEFFECTS.ADDED_EFFECT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.ADDED_EFFECT"
 msgid "Added Effect: {0}"
@@ -255,8 +260,8 @@ msgstr "<link=\"POWER\">電力</link>容量: {0}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.BATTERYLEAK
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.BATTERYLEAK"
-msgid "<link=\"POWER\">Power</link> runoff: {0}"
-msgstr "<link=\"POWER\">電力</link>流出: {0}"
+msgid "<link=\"POWER\">Power</link> leak: {0}"
+msgstr "<link=\"POWER\">電力</link>漏洩: {0}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_LURE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_LURE"
@@ -453,6 +458,11 @@ msgstr "活動間隔: (分析が必要)"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.HEATCONSUMED"
 msgid "<link=\"HEAT\">Heat</link>: -{0}/s"
 msgstr "<link=\"HEAT\">熱</link>: -{0}/s"
+
+#. STRINGS.UI.BUILDINGEFFECTS.HEATER_TARGETTEMPERATURE
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.HEATER_TARGETTEMPERATURE"
+msgid "Target <link=\"HEAT\">Temperature</link>: {0}"
+msgstr "目標<link=\"HEAT\">温度</link>: {0}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.HEATGENERATED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.HEATGENERATED"
@@ -684,6 +694,11 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.STRESSREDUCEDPERMINUTE"
 msgid "<link=\"STRESS\">Stress</link>: {0} per minute"
 msgstr "<link=\"STRESS\">ストレス</link>: {0}/分"
 
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ACCESS_CONTROL
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ACCESS_CONTROL"
+msgid "Settings to allow or restrict Duplicants from passing through the door."
+msgstr "複製人間がドアを通行できるか否かを設定します"
+
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ADDED_EFFECT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ADDED_EFFECT"
 msgid ""
@@ -720,20 +735,20 @@ msgstr "このアメニティは割り当てられた複製人間だけが使用
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.BATTERYCAPACITY
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.BATTERYCAPACITY"
 msgid ""
-"Can hold {0} of <style=\"KKeyword\">Power</style> when connected to a <style="
-"\"KKeyword\">Generator</style>"
+"Can hold <b>{0}</b> of <style=\"KKeyword\">Power</style> when connected to a "
+"<style=\"KKeyword\">Generator</style>"
 msgstr ""
 "<style=\"KKeyword\">発電機</style>に接続されている場合、<style=\"KKeyword\">"
-"電力</style>を {0} 保持できます"
+"電力</style>を <b>{0}</b> 保持できます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.BATTERYLEAK
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.BATTERYLEAK"
 msgid ""
-"Imperfect buildings materials mean <style=\"consumed\">{0}</style> battery "
-"charge will be lost as <style=\"KKeyword\">Heat</style>"
+"<style=\"consumed\">{0}</style> of this battery's charge will be lost as "
+"<style=\"KKeyword\">Heat</style>"
 msgstr ""
-"不完全な建設材料は、<style=\"consumed\">{0}</style>の電力が<style=\"KKeyword"
-"\">熱</style>として失われる原因になります"
+"<style=\"consumed\">{0}</style>の電力が<style=\"KKeyword\">熱</style>として失"
+"われます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_LURE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_LURE"
@@ -1079,6 +1094,15 @@ msgstr ""
 "    • 断熱の厚さ\n"
 "    • 熱伝導率"
 
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATER_TARGETTEMPERATURE
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATER_TARGETTEMPERATURE"
+msgid ""
+"Stops heating when the surrounding average <style=\"KKeyword\">Tempature</"
+"style> is above <b>{0}</b>"
+msgstr ""
+"周囲の平均<style=\"KKeyword\">温度</style>が <b>{0}</b> を上回ると動作を停止"
+"します"
+
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED"
 msgid ""
@@ -1246,8 +1270,8 @@ msgstr "この素材を精製することで <style=\"KKeyword\">{0}</style>を�
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PROCESSES
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PROCESSES"
-msgid "This building processes raw materials into refined materials"
-msgstr "この設備は原料素材を精製された素材に加工します"
+msgid "Processes raw materials into refined materials"
+msgstr "原料素材を精製素材に加工します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PRODUCES_RESEARCH_POINTS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PRODUCES_RESEARCH_POINTS"
@@ -1712,13 +1736,13 @@ msgstr "<link=\"TIPS\">ヒントと情報</link>"
 
 #. STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.BODY
 msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.BODY"
-msgid "Database Update Discovered: {codex}\n"
-msgstr "データベースのアップデートを発見: {codex}\n"
+msgid "I've added a new entry to my log: {codex}\n"
+msgstr "新しい項目をログに追加した: {codex}\n"
 
 #. STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.TITLE
 msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.TITLE"
-msgid "Database Update Discovered"
-msgstr "データベースのアップデートを発見"
+msgid "New Log Entry"
+msgstr "新しいログ"
 
 #. STRINGS.UI.CODEX.DETAILS
 msgctxt "STRINGS.UI.CODEX.DETAILS"
@@ -2483,7 +2507,7 @@ msgctxt ""
 msgid ""
 "Low germ count in this area is causing germs to die rapidly\n"
 "\n"
-"Less than {0} germs are on this {1} of material.\n"
+"Fewer than {0} germs are on this {1} of material.\n"
 "({2} germs/Kg)"
 msgstr ""
 "このエリアの病原菌の数はわずかであるため、菌はあっという間に死滅します\n"
@@ -3304,6 +3328,26 @@ msgctxt "STRINGS.UI.DUPLICANTPRINTING"
 msgid "Duplicant Printing"
 msgstr "複製人間複製中"
 
+#. STRINGS.UI.ELEMENTAL.AGE.NAME
+msgctxt "STRINGS.UI.ELEMENTAL.AGE.NAME"
+msgid "Age: {0}"
+msgstr "年齢: {0}"
+
+#. STRINGS.UI.ELEMENTAL.AGE.TOOLTIP
+msgctxt "STRINGS.UI.ELEMENTAL.AGE.TOOLTIP"
+msgid "The selected object is {0} cycles old"
+msgstr "選択した物体の年齢は {0} サイクルです"
+
+#. STRINGS.UI.ELEMENTAL.AGE.UNKNOWN
+msgctxt "STRINGS.UI.ELEMENTAL.AGE.UNKNOWN"
+msgid "Unknown"
+msgstr "不明"
+
+#. STRINGS.UI.ELEMENTAL.AGE.UNKNOWN_TOOLTIP
+msgctxt "STRINGS.UI.ELEMENTAL.AGE.UNKNOWN_TOOLTIP"
+msgid "The age of the selected object is unknown"
+msgstr "選択された物体の年齢は不明です"
+
 #. STRINGS.UI.ELEMENTAL.CONDUCTIVITYBARRIER.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.CONDUCTIVITYBARRIER.NAME"
 msgid "Insulation Thickness: {0}"
@@ -3342,7 +3386,7 @@ msgstr "凝固点: {0}"
 #. STRINGS.UI.ELEMENTAL.FREEZEPOINT.TOOLTIP
 msgctxt "STRINGS.UI.ELEMENTAL.FREEZEPOINT.TOOLTIP"
 msgid "The selected object will cool into a solid at {0}"
-msgstr "選択した物体は {0} で固体に凍結します"
+msgstr "選択した物体は {0} で固体に凝固します"
 
 #. STRINGS.UI.ELEMENTAL.MASS.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.MASS.NAME"
@@ -3477,6 +3521,11 @@ msgctxt "STRINGS.UI.ELEMENTAL.UNITS.TOOLTIP"
 msgid "This stack contains {0} units of {1}"
 msgstr "{1}が{0}個あります"
 
+#. STRINGS.UI.ELEMENTAL.UPTIME.NAME
+msgctxt "STRINGS.UI.ELEMENTAL.UPTIME.NAME"
+msgid "Uptime: ({0}/ {1}/ {2}) {3}/ {4}/ {5}"
+msgstr "稼働時間: ({0}/ {1}/ {2}) {3}/ {4}/ {5}"
+
 #. STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.NAME"
 msgid "Vaporization Point: {0}"
@@ -3485,7 +3534,7 @@ msgstr "蒸発点: {0}"
 #. STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.TOOLTIP
 msgctxt "STRINGS.UI.ELEMENTAL.VAPOURIZATIONPOINT.TOOLTIP"
 msgid "The selected object will evaporate into a gas at {0}"
-msgstr "選択した物体は{0}で気体に蒸発します"
+msgstr "選択した物体は {0} で気体に蒸発します"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ADDED
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ADDED"
@@ -3814,7 +3863,7 @@ msgstr "サイクル{0}経過レポートを見ます"
 #. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NAME
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NAME"
 msgid "Domesticated Critters:"
-msgstr "家畜化可能な動物:"
+msgstr "家畜化された動物:"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NEGATIVE_TOOLTIP
 msgctxt ""
@@ -5873,20 +5922,6 @@ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
 msgid ""
 "<b>Welcome to the Launch Upgrade! ONI Has Launched!</b>\n"
 "\n"
-"{0}"
-msgstr ""
-"<b>Launchアップグレードへようこそ！ONIの正式版発表！</b>\n"
-"\n"
-"{0}"
-
-#. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON
-msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON"
-msgid "OK"
-msgstr "OK"
-
-#. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES
-msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
-msgid ""
 "<b>Update Features:</b>\n"
 "\n"
 "• New asteroid selections with 3 new biomes to explore and exploit\n"
@@ -5898,21 +5933,23 @@ msgid ""
 "\n"
 "Please view the full patch notes for further details!"
 msgstr ""
-"<b>アップデート内容:</b>\n"
+"<b>正式アップグレードにようこそ！ONI は正式リリースされました！</b>\n"
+"\n"
+"<b>新機能:</b>\n"
 "\n"
 "• 探索・開拓できる新しい小惑星が、3つの新バイオームとともに登場\n"
-"•ピップ、ポークシェル、ダーシャ・シオカズラ、水草、ノッシュの木が育てられるよ"
-"うになりました\n"
+"• ピップ、ポークシェル、ダーシャ・シオカズラ、水草、ノッシュの木が育てられる"
+"ように\n"
 "• 新たな資源を処理し、コロニーをより改善するための新たな設備\n"
-"• コロニーイニシアチブと指令が、あなたのコロニーの発展の記録となります\n"
-"• たくさんの古くからあるバグと問題を解消!\n"
+"• あなたのコロニーの発展の記録となる、コロニーの取り組みと使命\n"
+"• たくさんの古くからあるバグと問題を解消！\n"
 "\n"
 "さらなる詳細はフルパッチノートをご覧ください！"
 
-#. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE
-msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
-msgid "LAUNCH UPGRADE"
-msgstr "LAUNCH アップグレード"
+#. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON
+msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON"
+msgid "OK"
+msgstr "OK"
 
 #. STRINGS.UI.FRONTEND.PAUSE_SCREEN.COLONY_SUMMARY
 msgctxt "STRINGS.UI.FRONTEND.PAUSE_SCREEN.COLONY_SUMMARY"
@@ -8413,28 +8450,28 @@ msgstr "供給"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND4"
-msgid "<b>CIRCUIT POWER LOAD</b>"
+msgid "<b>CIRCUIT POWER HEALTH</b>"
 msgstr "<b>回路の電力負荷</b>"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND5
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND5"
-msgid "Energy Surplus"
-msgstr "余剰電力"
+msgid "Inactive"
+msgstr "スイッチオフ"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND6
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND6"
-msgid "Strained"
-msgstr "逼迫"
+msgid "Safe"
+msgstr "安全"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND7
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND7"
-msgid "Overloaded"
-msgstr "過負荷"
+msgid "Strained"
+msgstr "逼迫"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND8
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND8"
-msgid "Underpowered"
-msgstr "電力不足"
+msgid "Overloaded"
+msgstr "過負荷"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.NAME
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.NAME"
@@ -8476,45 +8513,44 @@ msgstr ""
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND4"
-msgid "Displays the power load on wire systems"
+msgid "Displays the health of wire systems"
 msgstr "回路にかかる負荷電力を表示します"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND5
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND5"
 msgid ""
-"<b>Energy Surplus</b>\n"
-"These circuits produce more power than they can consume"
+"<b>Inactive</b>\n"
+"There is no power activity on these circuits"
 msgstr ""
-"<b>エネルギー余剰</b>\n"
-"この回路は消費できる電力より多くの電力を供給しています"
+"<b>スイッチオフ</b>\n"
+"この回路に電力は流れていません"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6"
 msgid ""
-"<b>Strained</b>\n"
-"These circuits consume nearly all power they produce, but can still function "
-"as intended"
+"<b>Safe</b>\n"
+"These circuits are not in danger of overloading"
 msgstr ""
-"<b>逼迫</b>\n"
-"この回路は供給された電力のほぼ全てを消費していますが、まだ機能しています"
+"<b>安全</b>\n"
+"これらの回路に過負荷の危険はありません"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7"
-msgid "Too much power being drawn from system"
-msgstr "回路に流れる電力が定格を越えています"
+msgid ""
+"<b>Strained</b>\n"
+"These circuits are close to consuming more power than their wires support"
+msgstr ""
+"<b>逼迫</b>\n"
+"これらの回路は電線が許容している電力に近づいています"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8"
 msgid ""
-"<b>Underpowered</b>\n"
-"These circuits consume more power than they can produce\n"
-"------------------\n"
-"Buildings may be frequently shut off when connected to underpowered circuits"
+"<b>Overloaded</b>\n"
+"These circuits are consuming more power than their wires support"
 msgstr ""
-"<b>電力不足</b>\n"
-"この回路は供給された電力より多くの電力を消費しています\n"
-"------------------\n"
-"設備は電力不足になると頻繁に停止状態になります"
+"<b>過負荷</b>\n"
+"これらの回路は電線が許容している以上の電力を消費しています"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.BUTTON"
@@ -9272,13 +9308,13 @@ msgstr "呼吸不可"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.LEGEND5
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.LEGEND5"
-msgid "Slightly Toxic"
-msgstr "やや有害"
+msgid "Barely Breathable"
+msgstr "呼吸困難"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.LEGEND6
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.LEGEND6"
-msgid "Very Toxic"
-msgstr "極めて有害"
+msgid "Unbreathable"
+msgstr "呼吸不可"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.NAME
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.NAME"
@@ -9817,6 +9853,11 @@ msgstr ""
 "------------------\n"
 "クリックして展開します"
 
+#. STRINGS.UI.RESOURCESCREEN.HEADER
+msgctxt "STRINGS.UI.RESOURCESCREEN.HEADER"
+msgid "RESOURCES"
+msgstr "資源"
+
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.BUILDING_COUNT
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.BUILDING_COUNT"
 msgid "Count: {0}"
@@ -9925,7 +9966,7 @@ msgstr "複製人間"
 msgctxt ""
 "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.NUMBER_DOMESTICATED_CRITTERS"
 msgid "Domesticated Critters"
-msgstr "家畜化可能な動物"
+msgstr "家畜化された動物"
 
 #. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.NUMBER_WILD_CRITTERS
 msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.STATS.NUMBER_WILD_CRITTERS"
@@ -11360,10 +11401,38 @@ msgctxt "STRINGS.UI.SCHEDULESCREEN.DELETE_BUTTON_TOOLTIP"
 msgid "Delete Schedule"
 msgstr "スケジュール削除"
 
+#. STRINGS.UI.SCHEDULESCREEN.DELETE_SCHEDULE
+msgctxt "STRINGS.UI.SCHEDULESCREEN.DELETE_SCHEDULE"
+msgid "Delete Schedule"
+msgstr "スケジュール削除"
+
+#. STRINGS.UI.SCHEDULESCREEN.DELETE_SCHEDULE_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULESCREEN.DELETE_SCHEDULE_TOOLTIP"
+msgid "Remove this schedule and unassign all Duplicants from it"
+msgstr "このスケジュールを複製人間全員から削除します"
+
 #. STRINGS.UI.SCHEDULESCREEN.DOWNTIME_MORALE
 msgctxt "STRINGS.UI.SCHEDULESCREEN.DOWNTIME_MORALE"
 msgid "Downtime Morale: {0}"
 msgstr "休憩時間の士気: {0}"
+
+#. STRINGS.UI.SCHEDULESCREEN.DUPLICANT_EARLYBIRD_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULESCREEN.DUPLICANT_EARLYBIRD_TOOLTIP"
+msgid ""
+"Early Bird\n"
+"• All <style=\"KKeyword\">Attributes</style> <b>+2</b> in the morning"
+msgstr ""
+"早起き\n"
+"• 朝に全ての<style=\"KKeyword\">属性</style> <b>+2</b>"
+
+#. STRINGS.UI.SCHEDULESCREEN.DUPLICANT_NIGHTOWL_TOOLTIP
+msgctxt "STRINGS.UI.SCHEDULESCREEN.DUPLICANT_NIGHTOWL_TOOLTIP"
+msgid ""
+"Night Owl\n"
+"• All <style=\"KKeyword\">Attributes</style> <b>+3</b> at night"
+msgstr ""
+"夜更かし\n"
+"• 朝に全ての<style=\"KKeyword\">属性</style> <b>+3</b>"
 
 #. STRINGS.UI.SCHEDULESCREEN.PAINT_TOOLS
 msgctxt "STRINGS.UI.SCHEDULESCREEN.PAINT_TOOLS"
@@ -11387,14 +11456,8 @@ msgstr "時間割初期化"
 
 #. STRINGS.UI.SCHEDULESCREEN.RESET_SETTINGS_TOOLTIP
 msgctxt "STRINGS.UI.SCHEDULESCREEN.RESET_SETTINGS_TOOLTIP"
-msgid ""
-"<b>Reset Shifts</b>\n"
-"------------------\n"
-"Restore this schedule to default shifts"
-msgstr ""
-"<b>時間帯リセット</b>\n"
-"------------------\n"
-"このスケジュールをデフォルトの状態に戻します"
+msgid "Restore this schedule to default shifts"
+msgstr "このスケジュールをデフォルトの状態に戻します"
 
 #. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_DOWNTIME_MORALE
 msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_DOWNTIME_MORALE"
@@ -12117,7 +12180,7 @@ msgid ""
 "A massive volume of <link=\"HYDROGEN\">Hydrogen</link> formed around a small "
 "solid center."
 msgstr ""
-"小さな個体の核の周りに形成された膨大な量の<link=\"HYDROGEN\">水素</link>で"
+"小さな固体の核の周りに形成された膨大な量の<link=\"HYDROGEN\">水素</link>で"
 "す。"
 
 #. STRINGS.UI.SPACEDESTINATIONS.GIANTS.GASGIANT.NAME
@@ -12131,7 +12194,7 @@ msgid ""
 "A massive volume of <link=\"HELIUM\">Helium</link> formed around a small "
 "solid center."
 msgstr ""
-"小さな個体の核の周りに形成された膨大な量の<link=\"HYDROGEN\">ヘリウム</link>"
+"小さな固体の核の周りに形成された膨大な量の<link=\"HYDROGEN\">ヘリウム</link>"
 "です。"
 
 #. STRINGS.UI.SPACEDESTINATIONS.GIANTS.HYDROGENGIANT.NAME
@@ -12416,7 +12479,7 @@ msgstr "目的地到達不可"
 
 #. STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED
 msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED"
-msgid "Select a destination from the starmap"
+msgid "Select a destination from the Starmap"
 msgstr "星図から目的地を選択してください"
 
 #. STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.REACHABLE
@@ -14792,11 +14855,11 @@ msgstr "OFF にする"
 
 #. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TITLE"
-msgid "Critter Count"
-msgstr "動物の数"
+msgid "Critter Count Sensor"
+msgstr "動物数センサー"
 
-#. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP
-msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP"
+#. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP_ABOVE
+msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP_ABOVE"
 msgid ""
 "Will send a <b><color=#57b95e>Green Signal</b></color> if there are more "
 "than <b>{0}</b> <style=\"KKeyword\">Critters</style> or <style=\"KKeyword"
@@ -14805,6 +14868,22 @@ msgstr ""
 "部屋に居る<style=\"KKeyword\">動物</style>または<style=\"KKeyword\">卵</"
 "style>が<b>{0}</b>を越えると<b><color=#57b95e>グリーン</b></color>になりま"
 "す。"
+
+#. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP_BELOW
+msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TOOLTIP_BELOW"
+msgid ""
+"Will send a <b><color=#57b95e>Green Signal</b></color> if there are fewer "
+"than <b>{0}</b> <style=\"KKeyword\">Critters</style> or <style=\"KKeyword"
+"\">Eggs</style> in the room"
+msgstr ""
+"部屋に居る<style=\"KKeyword\">動物</style>または<style=\"KKeyword\">卵</"
+"style>が<b>{0}</b>を下回ると<b><color=#57b95e>グリーン</b></color>になりま"
+"す。"
+
+#. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME
+msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME"
+msgid "Critter / Egg Count"
+msgstr "動物/卵の数"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT"
@@ -15615,7 +15694,7 @@ msgstr "掘起し待ち: {0}"
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGREQUEST
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGREQUEST"
 msgid "PLANT: {0}"
-msgstr "植込中: {0}"
+msgstr "植える: {0}"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.BONUS_SEEDS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.BONUS_SEEDS"
@@ -16019,10 +16098,11 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.NO_SELECTED_ANALYSIS_TARGET"
 msgid ""
 "No analysis focus selected.\n"
-"Open the starmap to selected a focus."
+"Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to selected a "
+"focus."
 msgstr ""
 "分析対象が未選択です。\n"
-"星図を開き、対象を選択してください。"
+"<b>星図</b> <b><color=#F44A4A>[Z]</b></color>を開き、対象を選択してください。"
 
 #. STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.OPENSTARMAPBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.OPENSTARMAPBUTTON"
@@ -16819,7 +16899,7 @@ msgstr "この複製人間が移動可能なエリアを非表示にします"
 #. STRINGS.UI.USERMENUACTIONS.DUMP.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.DUMP.NAME"
 msgid "Empty"
-msgstr "空"
+msgstr "空ける"
 
 #. STRINGS.UI.USERMENUACTIONS.DUMP.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.DUMP.NAME_OFF"
@@ -17209,8 +17289,8 @@ msgid ""
 "\n"
 "New Database Entry unlocked."
 msgstr ""
-"コンピューターの見た目は新品ですが、中身は壊れてしまっている。私はどうにか破"
-"損していないファイルを見つけ出し、データベースに追加した。\n"
+"コンピューターの見た目は新品だが、中身は壊れてしまっている。私はどうにか破損"
+"していないファイルを見つけ出し、データベースに追加した。\n"
 "\n"
 "データベースに新しい項目を追加した。"
 
@@ -17288,7 +17368,7 @@ msgid ""
 "\n"
 "New Database Entry discovered."
 msgstr ""
-"私が辺りを見回すと、古いファイルを発見した。\n"
+"辺りを見回すと、古いファイルを発見した。\n"
 "\n"
 "データベースに新しい項目を追加した。"
 
@@ -17460,8 +17540,9 @@ msgstr "研究選択"
 #. STRINGS.UI.USERMENUACTIONS.SELECTRESEARCH.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.SELECTRESEARCH.TOOLTIP"
 msgid ""
-"Choose a technology from the Research Tree <color=#F44A47><b>[R]</b></color>"
-msgstr "研究ツリー<color=#F44A47>[R]</color>から技術を選んでください"
+"Choose a technology from the <b>Research Tree</b> <b><color=#F44A4A>[R]</b></"
+"color>"
+msgstr "<b>研究ツリー</b> <color=#F44A47>[R]</color>から技術を選んでください"
 
 #. STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ALWAYS.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ALWAYS.NAME"
@@ -18357,6 +18438,74 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
+
+#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.BATTERYLEAK"
+#~ msgid "<link=\"POWER\">Power</link> runoff: {0}"
+#~ msgstr "<link=\"POWER\">電力</link>流出: {0}"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
+#~ msgid ""
+#~ "<b>Welcome to the Launch Upgrade! ONI Has Launched!</b>\n"
+#~ "\n"
+#~ "{0}"
+#~ msgstr ""
+#~ "<b>Launchアップグレードへようこそ！ONIの正式版発表！</b>\n"
+#~ "\n"
+#~ "{0}"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
+#~ msgid "LAUNCH UPGRADE"
+#~ msgstr "LAUNCH アップグレード"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND5"
+#~ msgid "Energy Surplus"
+#~ msgstr "余剰電力"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND8"
+#~ msgid "Underpowered"
+#~ msgstr "電力不足"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6"
+#~ msgid ""
+#~ "<b>Strained</b>\n"
+#~ "These circuits consume nearly all power they produce, but can still "
+#~ "function as intended"
+#~ msgstr ""
+#~ "<b>逼迫</b>\n"
+#~ "この回路は供給された電力のほぼ全てを消費していますが、まだ機能しています"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7"
+#~ msgid "Too much power being drawn from system"
+#~ msgstr "回路に流れる電力が定格を越えています"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8"
+#~ msgid ""
+#~ "<b>Underpowered</b>\n"
+#~ "These circuits consume more power than they can produce\n"
+#~ "------------------\n"
+#~ "Buildings may be frequently shut off when connected to underpowered "
+#~ "circuits"
+#~ msgstr ""
+#~ "<b>電力不足</b>\n"
+#~ "この回路は供給された電力より多くの電力を消費しています\n"
+#~ "------------------\n"
+#~ "設備は電力不足になると頻繁に停止状態になります"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.LEGEND5"
+#~ msgid "Slightly Toxic"
+#~ msgstr "やや有害"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.LEGEND6"
+#~ msgid "Very Toxic"
+#~ msgstr "極めて有害"
+
+#~ msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.BODY"
+#~ msgid "Database Update Discovered: {codex}\n"
+#~ msgstr "データベースのアップデートを発見: {codex}\n"
+
+#~ msgctxt "STRINGS.UI.CODEX.CODEX_DISCOVERED_MESSAGE.TITLE"
+#~ msgid "Database Update Discovered"
+#~ msgstr "データベースのアップデートを発見"
 
 #~ msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MYLOG"
 #~ msgid "<link=\"MYLOG\">My Investigations</link>"
