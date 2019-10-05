@@ -2,7 +2,7 @@ Oxygen Not Included 日本語化
 ====
 
 Klei Entertainment 制作のスペースコロニー経営ゲーム「[Oxygen Not Included](http://store.steampowered.com/app/457140/)」の日本語化作業を行っています。  
-Launch Upgradeに対応しています。
+Launch Upgrade(20191004版)に対応しています。
 
 ## 翻訳サンプル
 <image src="https://raw.githubusercontent.com/wiki/nsk4762jp/OxygenNotIncluded-Japanese/sample.jpg" width="75%">
@@ -22,7 +22,6 @@ Steam Workshop で[日本語化MOD](http://steamcommunity.com/sharedfiles/filede
 
 サブスクライブが上手くいかない場合は、[Release](https://github.com/nsk4762jp/OxygenNotIncluded-Japanese/releases) から Source code(zip) をダウンロードし、解凍して出てきた `strings.po` を下記フォルダにコピーしてください。  
 
-    (Steamフォルダ)/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/StreamingAssets/Mods  
     (Steamフォルダ)/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/StreamingAssets/Strings  
 
 
@@ -54,8 +53,9 @@ MIT License
 
 ### for Github User
 1. 翻訳ブランチ(大抵は xxx-upgarde という名前がついています)をforkします。  
+1. 翻訳ブランチのプルリクエストにカテゴリごとのチェックリストがあるので、空いているカテゴリを担当するということをコメントで宣言します。(他の人と作業が被らないようにするため)  
 1. 自分用の翻訳ブランチを作成します。  
-1. poフォルダ内のカテゴリ分けされた翻訳ファイルから任意のファイルを翻訳します。  
+1. poフォルダ内のカテゴリ分けされた翻訳ファイルから上記で宣言したカテゴリのファイルを翻訳します。  
 poファイルの編集には [POEdit](https://poedit.net/) がお勧めです。  
 [翻訳ポリシー(案)](https://github.com/nsk4762jp/OxygenNotIncluded-Japanese/wiki)に沿った翻訳でお願いします。  
 1. コミットします。  
