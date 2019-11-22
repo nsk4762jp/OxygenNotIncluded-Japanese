@@ -596,8 +596,8 @@ msgstr "{0}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.REMOVES_DISEASE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.REMOVES_DISEASE"
-msgid "Removes disease"
-msgstr "病気除去"
+msgid "Kills germs"
+msgstr "殺菌"
 
 #. STRINGS.UI.BUILDINGEFFECTS.REMOVESEFFECTSUBTITLE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.REMOVESEFFECTSUBTITLE"
@@ -1025,11 +1025,11 @@ msgstr ""
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.GASCOOLING
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.GASCOOLING"
 msgid ""
-"Reduces the <style=\"KKeyword\">Temperature</style> of piped gases by <b>{0}"
-"</b>"
+"Reduces the <style=\"KKeyword\">Temperature</style> of piped <style="
+"\"KKeyword\">Gases</style>by <b>{0}</b>"
 msgstr ""
-"このパイプを通過した気体の<style=\"KKeyword\">温度</style>を<b>{0}</b>下げま"
-"す"
+"このパイプを通過した<style=\"KKeyword\">気体</style>の<style=\"KKeyword\">温"
+"度</style>を<b>{0}</b>下げます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.GEYSER_DISEASE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.GEYSER_DISEASE"
@@ -1139,35 +1139,33 @@ msgstr ""
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_AIRCONDITIONER"
 msgid ""
 "Generates <style=\"KKeyword\">Heat</style> based on the <style=\"KKeyword"
-"\">Volume</style>, <style=\"KKeyword\">Temperature</style>, and <style="
-"\"KKeyword\">Specific Heat Capacity</style> of the pumped <style=\"KKeyword"
-"\">Gas</style>\n"
-"------------------\n"
-"Cooling 1 Kg of room temperature <link=\"OXYGEN\">Oxygen</link> will output "
-"<b>{0}</b> per second"
+"\">Volume</style> and <style=\"KKeyword\">Specific Heat Capacity</style> of "
+"the pumped <style=\"KKeyword\">Gas</style>\n"
+"\n"
+"Cooling 1 Kg of <link=\"OXYGEN\">Oxygen</link> the entire <b>{1}</b> will "
+"output <b>{0}</b>"
 msgstr ""
 "吸入した<style=\"KKeyword\">気体</style>の<style=\"KKeyword\">体積</style>、"
-"<style=\"KKeyword\">温度</style>、<style=\"KKeyword\">比熱容量</style>をもと"
-"に発熱します\n"
+"<style=\"KKeyword\">比熱容量</style>をもとに<style=\"KKeyword\">発熱</style>"
+"します\n"
 "------------------\n"
-"室温の酸素1Kgを冷却すると、1秒ごとに<b>{0}</b>出力します"
+"<link=\"OXYGEN\">酸素</link>1Kgを<b>{1}</b>に冷却すると、<b>{0}</b>出力します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_LIQUIDCONDITIONER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_LIQUIDCONDITIONER"
 msgid ""
 "Generates <style=\"KKeyword\">Heat</style> based on the <style=\"KKeyword"
-"\">Volume</style>, <style=\"KKeyword\">Temperature</style>, and <style="
-"\"KKeyword\">Specific Heat Capacity</style> of the pumped <style=\"KKeyword"
-"\">Liquid</style>\n"
-"------------------\n"
-"Cooling 1 Kg of room temperature <link=\"WATER\">Water</link> will output "
-"<style=\"consumed\">{0}</style> per second"
+"\">Volume</style> and <style=\"KKeyword\">Specific Heat Capacity</style> of "
+"the pumped <style=\"KKeyword\">Liquid</style>\n"
+"\n"
+"Cooling 10 Kg of <link=\"WATER\">Water</link> the entire <b>{1}</b> will "
+"output <b>{0}</b>"
 msgstr ""
 "吸入した<style=\"KKeyword\">液体</style>の<style=\"KKeyword\">体積</style>、"
-"<style=\"KKeyword\">温度</style>、<style=\"KKeyword\">比熱容量</style>をもと"
-"に発熱します\n"
+"<style=\"KKeyword\">比熱容量</style>をもとに<style=\"KKeyword\">発熱</style>"
+"します\n"
 "------------------\n"
-"室温の水1Kgを冷却すると、1秒ごとに<style=\"consumed\">{0}</style>出力します"
+"水10Kgを<b>{1}</b>に冷却すると、<b>{0}</b>出力します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.IMPROVED_BUILDINGS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.IMPROVED_BUILDINGS"
@@ -1192,11 +1190,11 @@ msgstr ""
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.LIQUIDCOOLING
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.LIQUIDCOOLING"
 msgid ""
-"Reduces the <style=\"KKeyword\">Temperature</style> of piped liquids by "
-"<b>{0}</b>"
+"Reduces the <style=\"KKeyword\">Temperature</style> of piped <style="
+"\"KKeyword\">Liquid</style> by <b>{0}</b>"
 msgstr ""
-"このパイプを通過した液体の<style=\"KKeyword\">温度</style>を<b>{0}</b>下げま"
-"す"
+"このパイプを通過した<style=\"KKeyword\">液体</style>の<style=\"KKeyword\">温"
+"度</style>を<b>{0}</b>下げます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_WATTAGE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_WATTAGE"
@@ -1345,9 +1343,12 @@ msgstr "{0}"
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REMOVES_DISEASE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REMOVES_DISEASE"
 msgid ""
-"Cooking will pasteurize ingredients and remove their <style=\"KKeyword"
-"\">Disease</style> risk"
-msgstr "調理は食材を殺菌し<style=\"KKeyword\">病気</style>のリスクを除去します"
+"The cooking process kills all <style=\"KKeyword\">Germs</style> present in "
+"the ingredients, removing the <style=\"KKeyword\">Disease</style> risk when "
+"eating the product"
+msgstr ""
+"調理過程で素材から全ての<style=\"KKeyword\">病原菌</style>を取り除き、摂食す"
+"ることによる<style=\"KKeyword\">病気</style>のリスクを無くします"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REMOVESEFFECTSUBTITLE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REMOVESEFFECTSUBTITLE"
@@ -1611,6 +1612,11 @@ msgctxt "STRINGS.UI.CHARACTERCONTAINER_EXPECTATIONS_TITLE"
 msgid "ADDITIONAL INFORMATION"
 msgstr "追加情報"
 
+#. STRINGS.UI.CHARACTERCONTAINER_JOYTRAIT
+msgctxt "STRINGS.UI.CHARACTERCONTAINER_JOYTRAIT"
+msgid "Overjoyed Response: {0}"
+msgstr "歓喜反応: {0}"
+
 #. STRINGS.UI.CHARACTERCONTAINER_NEED
 msgctxt "STRINGS.UI.CHARACTERCONTAINER_NEED"
 msgid "{0}: {1}"
@@ -1842,6 +1848,24 @@ msgid ""
 msgstr ""
 "保存温度: {0}\n"
 "腐敗まで: {1}"
+
+#. STRINGS.UI.CODEX.FORWARD_BUTTON_NO_HISTORY_TOOLTIP
+msgctxt "STRINGS.UI.CODEX.FORWARD_BUTTON_NO_HISTORY_TOOLTIP"
+msgid ""
+"Click to go forward:\n"
+"N/A"
+msgstr ""
+"クリックして進む:\n"
+"N/A"
+
+#. STRINGS.UI.CODEX.FORWARD_BUTTON_TOOLTIP
+msgctxt "STRINGS.UI.CODEX.FORWARD_BUTTON_TOOLTIP"
+msgid ""
+"Click to go forward:\n"
+"{0}"
+msgstr ""
+"クリックして進む:\n"
+"{0}"
 
 #. STRINGS.UI.CODEX.GAME_SYSTEMS
 msgctxt "STRINGS.UI.CODEX.GAME_SYSTEMS"
@@ -2263,6 +2287,12 @@ msgstr "FoW(戦場の霧)が晴れるのを許可する"
 msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.SAMPLE"
 msgid "Sample"
 msgstr "サンプル"
+
+# 格納庫以外にも、農地タイルでこのアクションが使用できた
+#. STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.STORE
+msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.STORE"
+msgid "Store"
+msgstr "格納"
 
 #. STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.TEMPERATURE_KELVIN
 msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.TEMPERATURE_KELVIN"
@@ -5036,6 +5066,11 @@ msgctxt "STRINGS.UI.FRONTEND.GRAPHICS_OPTIONS_SCREEN.HEADER_UI"
 msgid "INTERFACE"
 msgstr "インターフェース"
 
+#. STRINGS.UI.FRONTEND.GRAPHICS_OPTIONS_SCREEN.LOWRES
+msgctxt "STRINGS.UI.FRONTEND.GRAPHICS_OPTIONS_SCREEN.LOWRES"
+msgid "Low Resolution Textures"
+msgstr "低解像度用テクスチャ"
+
 #. STRINGS.UI.FRONTEND.GRAPHICS_OPTIONS_SCREEN.RESOLUTION
 msgctxt "STRINGS.UI.FRONTEND.GRAPHICS_OPTIONS_SCREEN.RESOLUTION"
 msgid "Resolution:"
@@ -5390,6 +5425,11 @@ msgstr ""
 msgctxt "STRINGS.UI.FRONTEND.MINSPECSCREEN.TITLE"
 msgid "WARNING!"
 msgstr "警告！"
+
+#. STRINGS.UI.FRONTEND.MOD_DIALOGS.ADDITIONAL_MOD_EVENTS
+msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.ADDITIONAL_MOD_EVENTS"
+msgid "(...additional entries omitted)"
+msgstr "(...以降は省略されました)"
 
 #. STRINGS.UI.FRONTEND.MOD_DIALOGS.INSTALL_INFO_INACCESSIBLE.MESSAGE
 msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.INSTALL_INFO_INACCESSIBLE.MESSAGE"
@@ -5850,8 +5890,8 @@ msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "LAUNCH TRAILER!"
-msgstr "正式版トレイラー！"
+msgid "RECREATION PACK!"
+msgstr "レクリエーション パック！"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -5869,31 +5909,26 @@ msgstr "議論に参加"
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"<b>Welcome to the Launch Upgrade! ONI Has Launched!</b>\n"
+"<b>Welcome to Meep's Mandatory Recreation Pack!</b>\n"
 "\n"
 "<b>Update Features:</b>\n"
 "\n"
-"• New asteroid selections with 3 new biomes to explore and exploit\n"
-"• Pips, Pokeshells, Dasha Saltvines, Waterweed, and Nosh Sprouts to tend and "
-"grow\n"
-"• New buildings to process new resources and improve your colony\n"
-"• Colony Initiatives and Imperatives keep track of your colony's progress\n"
-"• The squashing of many long-standing bugs and issues!\n"
+"• New recreational buildings for Duplicants to relax in\n"
+"• New 'Overjoyed Reactions' may trigger when Duplicants have an excess of "
+"morale\n"
+"• Numerous bug fixes and improvements\n"
 "\n"
 "Please view the full patch notes for further details!"
 msgstr ""
-"<b>正式アップグレードにようこそ！ONI は正式リリースされました！</b>\n"
+"<b>ミープの『絶対欲しい』レクリエーション パックにようこそ！</b>\n"
 "\n"
 "<b>新機能:</b>\n"
 "\n"
-"• 探索・開拓できる新しい小惑星が、3つの新バイオームとともに登場\n"
-"• ピップ、ポークシェル、ダーシャ・シオカズラ、水草、ノッシュの木が育てられる"
-"ように\n"
-"• 新たな資源を処理し、コロニーをより改善するための新たな設備\n"
-"• あなたのコロニーの発展の記録となる、コロニーの取り組みと使命\n"
-"• たくさんの古くからあるバグと問題を解消！\n"
+"• 複製人間がリラックスできる新しい娯楽設備\n"
+"• 複製人間が十分に高い士気を持つ場合、「歓喜反応」をするようになった\n"
+"• 大量のバグ修正と改善\n"
 "\n"
-"さらなる詳細はフルパッチノートをご覧ください！"
+"詳細はパッチノート全文を参照してください！"
 
 #. STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT
 msgctxt "STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT"
@@ -6350,11 +6385,29 @@ msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.IO_UNAUTHORIZED"
 msgid ""
 "An Unauthorized Access Error occurred when trying to write to disk.\n"
 "Please check that you have permissions to write to:\n"
+"{0}\n"
+"\n"
+"This may prevent the game from saving."
+msgstr ""
+"ディスクへのアクセス中に権限エラーが発生しました。\n"
+"以下の場所の書き込み権限があるか確認してください:\n"
+"{0}\n"
+"\n"
+"権限が無い場合セーブに失敗します。"
+
+#. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.IO_UNKNOWN
+msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.IO_UNKNOWN"
+msgid ""
+"An unknown error occurred when trying to write or access a file.\n"
 "{0}"
 msgstr ""
-"セーブ中にアクセスエラーが発生しました。\n"
-"以下の場所の書き込み権限があるか確認してください:\n"
+"ファイルの書き込み(または読み込み)に失敗しました。\n"
 "{0}"
+
+#. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.MORE_INFO_BUTTON
+msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.MORE_INFO_BUTTON"
+msgid "More Info"
+msgstr "追加情報"
 
 #. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.PLAYER_PREFS_CORRUPTED
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.PLAYER_PREFS_CORRUPTED"
@@ -6699,6 +6752,11 @@ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.EMITS_LIGHT"
 msgid "<link=\"LIGHT\">Light Range</link>: {0} tiles"
 msgstr "<link=\"LIGHT\">照明範囲</link>: {0} タイル"
 
+#. STRINGS.UI.GAMEOBJECTEFFECTS.EMITS_LIGHT_LUX
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.EMITS_LIGHT_LUX"
+msgid "<link=\"LIGHT\">Brightness</link>: {0} Lux"
+msgstr "<link=\"LIGHT\">光量</link>: {0} ルクス"
+
 #. STRINGS.UI.GAMEOBJECTEFFECTS.EQUIPMENT_MODS
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.EQUIPMENT_MODS"
 msgid "{Attribute} {Value}"
@@ -6878,6 +6936,17 @@ msgstr "大気の温度を冷やす"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.EMITS_LIGHT
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.EMITS_LIGHT"
+msgid ""
+"Emits <style=\"KKeyword\">Light</style>\n"
+"\n"
+"Duplicants can operate buildings more quickly when they're well lit"
+msgstr ""
+"<style=\"KKeyword\">光</style>で照らす\n"
+"\n"
+"十分な明かりの下では、複製人間はより早く機械を操作できます"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.EMITS_LIGHT_LUX
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.EMITS_LIGHT_LUX"
 msgid ""
 "Emits <style=\"KKeyword\">Light</style>\n"
 "\n"
@@ -11557,7 +11626,7 @@ msgid ""
 "• All <style=\"KKeyword\">Attributes</style> <b>+3</b> at night"
 msgstr ""
 "夜更かし\n"
-"• 朝に全ての<style=\"KKeyword\">属性</style> <b>+3</b>"
+"• 夜に全ての<style=\"KKeyword\">属性</style> <b>+3</b>"
 
 #. STRINGS.UI.SCHEDULESCREEN.PAINT_TOOLS
 msgctxt "STRINGS.UI.SCHEDULESCREEN.PAINT_TOOLS"
@@ -16202,12 +16271,12 @@ msgstr "次の生産物: {0}"
 
 #. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SKILLS_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SKILLS_BUTTON"
-msgid "DUPLICANT SKILLS"
+msgid "Duplicant Skills"
 msgstr "複製人間のスキル"
 
 #. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_TITLE"
-msgid "COLONY SUMMARY"
+msgid "Colony Summary"
 msgstr "コロニー概要"
 
 #. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.TITLE
@@ -16774,6 +16843,11 @@ msgstr " ºF"
 msgctxt "STRINGS.UI.UNITSUFFIXES.TEMPERATURE.KELVIN"
 msgid " K"
 msgstr " K"
+
+#. STRINGS.UI.UNITSUFFIXES.UNIT
+msgctxt "STRINGS.UI.UNITSUFFIXES.UNIT"
+msgid " unit"
+msgstr " 単位"
 
 #. STRINGS.UI.UNITSUFFIXES.UNITS
 msgctxt "STRINGS.UI.UNITSUFFIXES.UNITS"
@@ -18579,6 +18653,58 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
+
+#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.REMOVES_DISEASE"
+#~ msgid "Removes disease"
+#~ msgstr "病気除去"
+
+#~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REMOVES_DISEASE"
+#~ msgid ""
+#~ "Cooking will pasteurize ingredients and remove their <style=\"KKeyword"
+#~ "\">Disease</style> risk"
+#~ msgstr ""
+#~ "調理は食材を殺菌し<style=\"KKeyword\">病気</style>のリスクを除去します"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "LAUNCH TRAILER!"
+#~ msgstr "正式版トレイラー！"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#~ msgid ""
+#~ "<b>Welcome to the Launch Upgrade! ONI Has Launched!</b>\n"
+#~ "\n"
+#~ "<b>Update Features:</b>\n"
+#~ "\n"
+#~ "• New asteroid selections with 3 new biomes to explore and exploit\n"
+#~ "• Pips, Pokeshells, Dasha Saltvines, Waterweed, and Nosh Sprouts to tend "
+#~ "and grow\n"
+#~ "• New buildings to process new resources and improve your colony\n"
+#~ "• Colony Initiatives and Imperatives keep track of your colony's "
+#~ "progress\n"
+#~ "• The squashing of many long-standing bugs and issues!\n"
+#~ "\n"
+#~ "Please view the full patch notes for further details!"
+#~ msgstr ""
+#~ "<b>正式アップグレードにようこそ！ONI は正式リリースされました！</b>\n"
+#~ "\n"
+#~ "<b>新機能:</b>\n"
+#~ "\n"
+#~ "• 探索・開拓できる新しい小惑星が、3つの新バイオームとともに登場\n"
+#~ "• ピップ、ポークシェル、ダーシャ・シオカズラ、水草、ノッシュの木が育てられ"
+#~ "るように\n"
+#~ "• 新たな資源を処理し、コロニーをより改善するための新たな設備\n"
+#~ "• あなたのコロニーの発展の記録となる、コロニーの取り組みと使命\n"
+#~ "• たくさんの古くからあるバグと問題を解消！\n"
+#~ "\n"
+#~ "さらなる詳細はフルパッチノートをご覧ください！"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SKILLS_BUTTON"
+#~ msgid "DUPLICANT SKILLS"
+#~ msgstr "複製人間のスキル"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_TITLE"
+#~ msgid "COLONY SUMMARY"
+#~ msgstr "コロニー概要"
 
 #~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.PROCESSEDITEM"
 #~ msgid "{1}"
