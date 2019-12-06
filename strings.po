@@ -4074,25 +4074,31 @@ msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_HIGH
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_HIGH"
-msgid "{attrib}: {amount} (High Lux)"
-msgstr "{attrib}: {amount} (高光量)"
+msgid "{attrib}: {amount} (Bright Light)"
+msgstr "{attrib}: {amount} (明るい光)"
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_HIGH_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_HIGH_TOOLTIP"
 msgid ""
-"Duplicants will gain {amount} {attrib} if this building is in bright light."
-msgstr "この設備が十分明るい場合、複製人間は {amount} {attrib} を獲得します。"
+"Duplicants will gain {amount} {attrib} if this building is in at least {lux} "
+"light."
+msgstr ""
+"この設備が{lux}以上の光量下にある場合 、複製人間は {amount} {attrib} を獲得し"
+"ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW"
-msgid "{attrib}: {amount} (Low Lux)"
-msgstr "{attrib}: {amount} (低光量)"
+msgid "{attrib}: {amount} (Dim Light)"
+msgstr "{attrib}: {amount} (暗い光)"
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW_TOOLTIP"
 msgid ""
-"Duplicants will gain {amount} {attrib} if this building is in dim light."
-msgstr "この設備が薄暗い場合、複製人間は {amount} {attrib} を獲得します。"
+"Duplicants will gain {amount} {attrib} if this building is in light dimmer "
+"than {lux}."
+msgstr ""
+"この設備が{lux}未満の光量下にある場合、複製人間は {amount} {attrib} を獲得し"
+"ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.NAME"
@@ -6386,13 +6392,13 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.NAME"
 msgid "<link=\"HOTTUB\">Hot Tub</link>"
 msgstr "<link=\"HOTTUB\">湯船</link>"
 
-#. STRINGS.BUILDINGS.PREFABS.HOTTUB.REQUIREMENT
-msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.REQUIREMENT"
+#. STRINGS.BUILDINGS.PREFABS.HOTTUB.TEMPERATURE_REQUIREMENT
+msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.TEMPERATURE_REQUIREMENT"
 msgid "Minimum {element} Temperature: {temperature}"
 msgstr "{element}の最低温度: {temperature}"
 
-#. STRINGS.BUILDINGS.PREFABS.HOTTUB.REQUIREMENT_TOOLTIP
-msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.REQUIREMENT_TOOLTIP"
+#. STRINGS.BUILDINGS.PREFABS.HOTTUB.TEMPERATURE_REQUIREMENT_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.TEMPERATURE_REQUIREMENT_TOOLTIP"
 msgid ""
 "The Hot Tub will only be usable if supplied with {temperature} {element}. If "
 "the {element} gets too cold, the Hot Tub will drain and require refilling "
@@ -6400,6 +6406,18 @@ msgid ""
 msgstr ""
 "湯船は{temperature}の{element}が供給された場合のみ使用可能です。{element}が冷"
 "たすぎる場合、湯船は排水したのち{element}を入れ替える必要があります。"
+
+#. STRINGS.BUILDINGS.PREFABS.HOTTUB.WATER_REQUIREMENT
+msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.WATER_REQUIREMENT"
+msgid "{element}: {amount}"
+msgstr "{element}: {amount}"
+
+#. STRINGS.BUILDINGS.PREFABS.HOTTUB.WATER_REQUIREMENT_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.WATER_REQUIREMENT_TOOLTIP"
+msgid ""
+"This building must be filled with {amount} {element} in order to function."
+msgstr ""
+"この設備が動作するには{amount}の{element}で満たされている必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROGENENGINE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENENGINE.DESC"
@@ -8566,10 +8584,38 @@ msgstr ""
 "\n"
 "使用中は床に<link=\"WATER\">水</link>が飛び散ります。"
 
+#. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.LEAK_REQUIREMENT
+msgctxt "STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.LEAK_REQUIREMENT"
+msgid "Spillage: {amount}"
+msgstr "流出量: {amount}"
+
+#. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.LEAK_REQUIREMENT_TOOLTIP
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.LEAK_REQUIREMENT_TOOLTIP"
+msgid ""
+"This building will spill {amount} of its contents on to the floor during "
+"use, which must be replenished."
+msgstr ""
+"この設備の使用中は{amount}の内容物を床にこぼします。あとで補充する必要があり"
+"ます。"
+
 #. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.NAME"
 msgid "<link=\"MECHANICALSURFBOARD\">Mechanical Surfboard</link>"
 msgstr "<link=\"MECHANICALSURFBOARD\">機械式サーフボード</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.WATER_REQUIREMENT
+msgctxt "STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.WATER_REQUIREMENT"
+msgid "{element}: {amount}"
+msgstr "{element}: {amount}"
+
+#. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.WATER_REQUIREMENT_TOOLTIP
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.WATER_REQUIREMENT_TOOLTIP"
+msgid ""
+"This building must be filled with {amount} {element} in order to function."
+msgstr ""
+"この設備が動作するには{amount}の{element}で満たされている必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.MEDICALCOT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MEDICALCOT.DESC"
@@ -11108,6 +11154,17 @@ msgstr "自動販売機"
 msgctxt "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DESC"
 msgid "Duplicants love the feeling of high-powered wind through their hair."
 msgstr "高出力の風が髪を梳かすことを複製人間は好みます。"
+
+#. STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT"
+msgid "Gas Displacement: {amount}"
+msgstr "気体排気量: {amount}"
+
+#. STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT_TOOLTIP
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT_TOOLTIP"
+msgid "This building will displace {amount} Gas while in use."
+msgstr "この設備の使用中は{amount}の気体を排気します。"
 
 #. STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.EFFECT"
@@ -30565,6 +30622,11 @@ msgstr "士気要件"
 msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.NEUTRAL_MODIFIER"
 msgid "Sufficient Morale"
 msgstr "十分な士気"
+
+#. STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.TOTAL_SKILL_POINTS
+msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.TOTAL_SKILL_POINTS"
+msgid "Total Skill Points: {0}"
+msgstr "スキルポイント合計: {0}"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.ABE.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.ABE.DESC"
@@ -63342,6 +63404,11 @@ msgctxt "STRINGS.UI.UNITSUFFIXES.INFORMATION.MEGABYTE"
 msgid "MB"
 msgstr "MB"
 
+#. STRINGS.UI.UNITSUFFIXES.LIGHT.LUX
+msgctxt "STRINGS.UI.UNITSUFFIXES.LIGHT.LUX"
+msgid "Lux"
+msgstr "ルクス"
+
 #. STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA
 msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA"
 msgid " dr"
@@ -65461,6 +65528,11 @@ msgctxt "STRINGS.WORLD_TRAITS.MISALIGNED_START.NAME"
 msgid "Miscalculated Pod Location"
 msgstr "見当違いな製造ポッド"
 
+#. STRINGS.WORLD_TRAITS.MISSING_TRAIT
+msgctxt "STRINGS.WORLD_TRAITS.MISSING_TRAIT"
+msgid "<missing trait>"
+msgstr "<missing trait>"
+
 #. STRINGS.WORLD_TRAITS.NO_TRAITS.DESCRIPTION
 msgctxt "STRINGS.WORLD_TRAITS.NO_TRAITS.DESCRIPTION"
 msgid ""
@@ -65773,6 +65845,10 @@ msgstr ""
 msgctxt "STRINGS.WORLDS.VOLCANIC.NAME"
 msgid "Volcanea"
 msgstr "ボルカニア"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW"
+#~ msgid "{attrib}: {amount} (Low Lux)"
+#~ msgstr "{attrib}: {amount} (低光量)"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.WIRECIRCUITSTATUS.TOOLTIP"
 #~ msgid "The current load on this circuit"
