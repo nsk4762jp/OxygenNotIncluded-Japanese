@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -508,6 +508,14 @@ msgstr "<link=\"FOOD\">KCal</link>/サイクル: {0}"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.LIQUIDCOOLING"
 msgid "<link=\"HEAT\">Cooling factor</link>: {0}"
 msgstr "<link=\"HEAT\">冷却要素</link>: {0}"
+
+#. STRINGS.UI.BUILDINGEFFECTS.MAX_BITS
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.EMITS_LIGHT_LUX"
+#| msgid "<link=\"LIGHT\">Brightness</link>: {0} Lux"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.MAX_BITS"
+msgid "<link=\"LOGIC\">Bit</link> Depth: {0}"
+msgstr "<link=\"LIGHT\">光量</link>: {0} ルクス"
 
 #. STRINGS.UI.BUILDINGEFFECTS.MAX_WATTAGE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.MAX_WATTAGE"
@@ -1195,6 +1203,21 @@ msgid ""
 msgstr ""
 "このパイプを通過した<style=\"KKeyword\">液体</style>の<style=\"KKeyword\">温"
 "度</style>を<b>{0}</b>下げます"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_BITS
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.TRANSFORMER_INPUT_WIRE"
+#| msgid ""
+#| "Connect a <style=\"KKeyword\">Wire</style> to the large <style=\"KKeyword"
+#| "\">Input</style> with any amount of <style=\"KKeyword\">Watts</style>."
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_BITS"
+msgid ""
+"Sending an <style=\"KKeyword\">Automation Signal</style> with a higher "
+"<style=\"KKeyword\">Bit Depth</style> than the connected <style=\"KKeyword"
+"\">Logic Wire</style> can result in damage to the circuit"
+msgstr ""
+"大きいほうの<style=\"KKeyword\">入力</style>側に任意の<style=\"KKeyword\">"
+"ワット数</style>の<style=\"KKeyword\">電線</style>を接続します。"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_WATTAGE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_WATTAGE"
@@ -4487,6 +4510,46 @@ msgctxt ""
 msgid "Affects what resources can be printed from the Printing Pod"
 msgstr "製造ポッドで何を製造できるかに影響します"
 
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.LEVELS.DISABLED.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.LEVELS."
+"DISABLED.NAME"
+msgid "Disabled"
+msgstr "無効"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.LEVELS.DISABLED.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.LEVELS."
+"DISABLED.TOOLTIP"
+msgid "Unchecked: Fast Workers Mode is turned off (Default)"
+msgstr "チェックなし：高速労働モードがオフになります（デフォルト）"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.LEVELS.ENABLED.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.LEVELS."
+"ENABLED.NAME"
+msgid "Enabled"
+msgstr "有効"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.LEVELS.ENABLED.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.LEVELS."
+"ENABLED.TOOLTIP"
+msgid "Checked: Fast Workers Mode is turned on"
+msgstr "チェックあり：高速労働モードがオンになります"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.NAME"
+msgid "Fast Workers Mode"
+msgstr "高速労働モード"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.TOOLTIP"
+msgid "Dupes will finish most work immediately and require little sleep"
+msgstr "複製人間は労働を最速で終えることができ、睡眠は最低限で済みます"
+
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.COMPROMISED.ATTRIBUTE_MODIFIER_NAME
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
@@ -5889,9 +5952,12 @@ msgid "STEAM WORKSHOP"
 msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.NAME"
+#| msgid "AUTOMATION OVERLAY"
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "RECREATION PACK!"
-msgstr "レクリエーション パック！"
+msgid "AUTOMATION PACK!"
+msgstr "自動化レイヤー"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -5907,16 +5973,28 @@ msgid "JOIN THE DISCUSSION"
 msgstr "議論に参加"
 
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#| msgid ""
+#| "<b>Welcome to Meep's Mandatory Recreation Pack!</b>\n"
+#| "\n"
+#| "<b>Update Features:</b>\n"
+#| "\n"
+#| "• New recreational buildings for Duplicants to relax in\n"
+#| "• New 'Overjoyed Reactions' may trigger when Duplicants have an excess of "
+#| "morale\n"
+#| "• Numerous bug fixes and improvements\n"
+#| "\n"
+#| "Please view the full patch notes for further details!"
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"<b>Welcome to Meep's Mandatory Recreation Pack!</b>\n"
+"<b>Welcome to Banhi's Automation Innovation Pack!</b>\n"
 "\n"
 "<b>Update Features:</b>\n"
 "\n"
-"• New recreational buildings for Duplicants to relax in\n"
-"• New 'Overjoyed Reactions' may trigger when Duplicants have an excess of "
-"morale\n"
-"• Numerous bug fixes and improvements\n"
+"• New and Improved automation sensors and outputs for work and for play\n"
+"• New 'Sweepy' robot helps keep your colony tidy and stylish\n"
+"• Bunches of optimizations, bug fixes, and improvements across the game\n"
 "\n"
 "Please view the full patch notes for further details!"
 msgstr ""
@@ -6217,6 +6295,23 @@ msgstr "セーブ名"
 msgctxt "STRINGS.UI.FRONTEND.SAVESCREEN.TITLE"
 msgid "SAVE SLOTS"
 msgstr "セーブスロット"
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING"
+msgid ""
+"The following buildings have acquired new automation ports!\n"
+"\n"
+"These buildings in your colony can now be connected to existing <link="
+"\"LOGICWIRE\">Automation Wire</link>s."
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.NAME"
+#| msgid "AUTOMATION OVERLAY"
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING_TITLE"
+msgid "AUTOMATION CHANGES"
+msgstr "自動化レイヤー"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER"
@@ -6716,6 +6811,14 @@ msgstr "凍結ダメージ"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LIQUID_PRESSURE"
 msgid "Pressure Damage"
 msgstr "水圧ダメージ"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LOGIC_CIRCUIT_OVERLOADED
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CIRCUIT_OVERLOADED"
+#| msgid "Overload Damage"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LOGIC_CIRCUIT_OVERLOADED"
+msgid "Signal Overload Damage"
+msgstr "過負荷ダメージ"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MICROMETEORITE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MICROMETEORITE"
@@ -7597,35 +7700,250 @@ msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
 msgid "<b><color=#f44a47>Red Signal</b></color>: Disable building"
 msgstr "<b><color=#f44a47>レッド</b></color>: 設備を無効化"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_ACTIVE"
 msgid "Green Signal"
 msgstr "グリーン"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_INACTIVE"
 msgid "Red Signal"
 msgstr "レッド"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME"
+#| msgid "INPUT A"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_NAME"
+msgid "INPUT D"
+msgstr "入力A"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME"
+#| msgid "INPUT A"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_NAME"
 msgid "INPUT A"
 msgstr "入力A"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_ACTIVE
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_ACTIVE"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_ACTIVE"
 msgid "Green Signal"
 msgstr "グリーン"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_INACTIVE
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_INACTIVE"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_INACTIVE"
 msgid "Red Signal"
 msgstr "レッド"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_NAME
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_NAME"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME"
+#| msgid "INPUT A"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_NAME"
+msgid "INPUT C"
+msgstr "入力A"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_NAME"
+#| msgid "INPUT B"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_NAME"
 msgid "INPUT B"
 msgstr "入力B"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_NAME"
+msgid "OUTPUT D"
+msgstr "出力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_NAME"
+msgid "OUTPUT A"
+msgstr "出力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_NAME"
+msgid "OUTPUT C"
+msgstr "出力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_NAME"
+msgid "OUTPUT B"
+msgstr "出力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_ACTIVE"
+#| msgid "<b><color=#57b95e>Green Signal</b></color>: Enable building"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Set signal path to <b>down</b> "
+"position"
+msgstr "<b><color=#57b95e>グリーン</b></color>: 設備を有効化"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
+#| msgid "<b><color=#f44a47>Red Signal</b></color>: Disable building"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Set signal path to <b>up</b> "
+"position"
+msgstr "<b><color=#f44a47>レッド</b></color>: 設備を無効化"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.DISEASE.CONTRACTION_RATES"
+#| msgid "CONTRACTION RATES"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_NAME"
+msgid "CONTROL A"
+msgstr "罹患率"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_ACTIVE"
+#| msgid "<b><color=#57b95e>Green Signal</b></color>: Enable building"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Set signal path to <b>down</b> "
+"position"
+msgstr "<b><color=#57b95e>グリーン</b></color>: 設備を有効化"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
+#| msgid "<b><color=#f44a47>Red Signal</b></color>: Disable building"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Set signal path to <b>up</b> "
+"position"
+msgstr "<b><color=#f44a47>レッド</b></color>: 設備を無効化"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_NAME
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_NAME"
+msgid "CONTROL B"
+msgstr ""
 
 #. STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_ACTIVE
 msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_ACTIVE"
@@ -7641,6 +7959,30 @@ msgstr "レッド"
 msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_NAME"
 msgid "INPUT"
 msgstr "入力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_NAME"
+msgid "OUTPUT"
+msgstr "出力"
 
 #. STRINGS.UI.LOGIC_PORTS.INPUT_PORT_TOOLTIP
 msgctxt "STRINGS.UI.LOGIC_PORTS.INPUT_PORT_TOOLTIP"
@@ -9155,6 +9497,14 @@ msgctxt "STRINGS.UI.OVERLAYS.LOGIC.CIRCUIT_STATUS_HEADER"
 msgid "GRID STATUS"
 msgstr "グリッドステータス"
 
+#. STRINGS.UI.OVERLAYS.LOGIC.CONTROL_INPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.CONTROLS"
+#| msgid "Controls"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.CONTROL_INPUT"
+msgid "Control Port"
+msgstr "コントロール"
+
 #. STRINGS.UI.OVERLAYS.LOGIC.DISCONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.DISCONNECTED"
 msgid "DISCONNECTED"
@@ -9184,6 +9534,30 @@ msgstr "出力ポート"
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE"
 msgid "Reset Port"
 msgstr "リセットポート"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.RIBBON_INPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.INPUT"
+#| msgid "Input Port"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RIBBON_INPUT"
+msgid "Ribbon Input Port"
+msgstr "入力ポート"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.RIBBON_OUTPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.OUTPUT"
+#| msgid "Output Port"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RIBBON_OUTPUT"
+msgid "Ribbon Output Port"
+msgstr "出力ポート"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.CONTROL_INPUT
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.CONTROL_INPUT"
+msgid ""
+"<b>Control Port</b>\n"
+"Control the signal selection of a <link=\"LOGICGATEMULTIPLEXER\">Signal "
+"Selector</link> or <link=\"LOGICGATEDEMULTIPLEXER\">Signal Distributor</link>"
+msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.DISCONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.DISCONNECTED"
@@ -9222,13 +9596,47 @@ msgstr ""
 "自動化グリッドにシグナルを送信します"
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RESET_UPDATE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_ACTIVE"
+#| msgid ""
+#| "<b><color=#57b95e>Green Signal</b></color>: Reset the internal Memory to "
+#| "<b><color=#f44a47>Red</b></color>"
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RESET_UPDATE"
 msgid ""
 "<b>Reset Port</b>\n"
-"Can reset a Memory Toggle's internal Memory"
+"Reset a <link=\"LOGICMEMORY\">Memory Toggle</link>'s internal Memory to "
+"<b><color=#f44a47>Red</b></color>"
 msgstr ""
-"<b>リセットポート</b>\n"
-"メモリ内の記録をリセットします"
+"<b><color=#57b95e>グリーン</b></color>: 内部メモリを<b><color=#f44a47>レッド"
+"</b></color>に初期化"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RIBBON_INPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.INPUT"
+#| msgid ""
+#| "<b>Input Port</b>\n"
+#| "Receives a signal from an automation grid"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RIBBON_INPUT"
+msgid ""
+"<b>Ribbon Input Port</b>\n"
+"Receives a 4-bit signal from an automation grid"
+msgstr ""
+"<b>入力ポート</b>\n"
+"自動化グリッドからシグナルを受信します"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RIBBON_OUTPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.OUTPUT"
+#| msgid ""
+#| "<b>Output Port</b>\n"
+#| "Sends a signal out to an automation grid"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RIBBON_OUTPUT"
+msgid ""
+"<b>Ribbon Output Port</b>\n"
+"Sends a 4-bit signal out to an automation grid"
+msgstr ""
+"<b>出力ポート</b>\n"
+"自動化グリッドにシグナルを送信します"
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.ZERO
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.ZERO"
@@ -11165,20 +11573,42 @@ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH.TOOLTIP"
 msgid "Paint elements into the world simulation {Hotkey}"
 msgstr "シミュレーションへ元素を塗りたくります{Hotkey}"
 
-#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME
-msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME"
-msgid "Noise"
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_DENSITY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME"
+#| msgid "Noise"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_DENSITY.NAME"
+msgid "Noise B"
 msgstr "ノイズ"
 
-#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP
-msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP"
-msgid "Adjust brush noisiness"
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_DENSITY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP"
+#| msgid "Adjust brush noisiness"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_DENSITY.TOOLTIP"
+msgid "Adjust brush noisiness B"
+msgstr "ブラシのノイズを調整します"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_SCALE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME"
+#| msgid "Noise"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_SCALE.NAME"
+msgid "Noise A"
+msgstr "ノイズ"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_SCALE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP"
+#| msgid "Adjust brush noisiness"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_SCALE.TOOLTIP"
+msgid "Adjust brush noisiness A"
 msgstr "ブラシのノイズを調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.NAME"
-msgid "Brush size"
-msgstr "ブラシサイズ"
+msgid "Size"
+msgstr ""
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.TOOLTIP"
@@ -11205,14 +11635,50 @@ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.TOOLTIP"
 msgid "Delete everything in the selected cell(s) {Hotkey}"
 msgstr "選択したセル内の全てを破壊します{Hotkey}"
 
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.HOVERTITLE"
+#| msgid "Germ"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE.NAME"
+msgid "Germ"
+msgstr "病原菌"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP"
+#| msgid "Adjust germ count"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE.TOOLTIP"
+msgid "Adjust type of germ"
+msgstr "病原菌の量を調整します"
+
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.DISEASES.GERMS"
+#| msgid "Germs"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME"
-msgid "Germ count"
-msgstr "病原菌量"
+msgid "Germs"
+msgstr "病原菌"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP"
 msgid "Adjust germ count"
+msgstr "病原菌の量を調整します"
+
+# 直訳だと微妙かもしれない
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.ELEMENT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.ELEMENT"
+#| msgid "Element"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.ELEMENT.NAME"
+msgid "Element"
+msgstr "要素"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.ELEMENT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP"
+#| msgid "Adjust germ count"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.ELEMENT.TOOLTIP"
+msgid "Adjust type of element"
 msgstr "病原菌の量を調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.NAME
@@ -11256,9 +11722,12 @@ msgid "Toggle between placing construction plans and fully built buildings"
 msgstr "設置予定と完成品の切替をします"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LISTTITLES.MASS"
+#| msgid "Mass"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.NAME"
-msgid "Absolute mass"
-msgstr "絶対質量"
+msgid "Mass"
+msgstr "質量"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.TOOLTIP"
@@ -11301,9 +11770,12 @@ msgid "Paint elements into the simulation using noise {Hotkey}"
 msgstr "元素をスプレーします{Hotkey}"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEAT.HEADER_1"
+#| msgid "Temperature"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME"
-msgid "Absolute temperature"
-msgstr "絶対温度"
+msgid "Temperature"
+msgstr "温度"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.TOOLTIP"
@@ -11311,9 +11783,12 @@ msgid "Adjust absolute temperature"
 msgstr "絶対温度を調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEAT.HEADER_1"
+#| msgid "Temperature"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME"
-msgid "Additive temperature"
-msgstr "相対温度"
+msgid "Temperature"
+msgstr "温度"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.TOOLTIP"
@@ -15037,6 +15512,43 @@ msgctxt "STRINGS.UI.UISIDESCREENS.COMMAND_MODULE_SIDE_SCREEN.TITLE"
 msgid "Launch Conditions"
 msgstr "発射条件"
 
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.DECREMENT_MODE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.NAME"
+#| msgid "Morale Requirements"
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.DECREMENT_MODE"
+msgid "Mode: Decrement"
+msgstr "士気要件"
+
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_ACTIVE"
+#| msgid "Sends a <b><color=#57b95e>Green Signal</b></color> when full"
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.DESCRIPTION"
+msgid "Send <b><color=#57b95e>Green Signal</b></color> when count is reached:"
+msgstr "満タンになると<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.INCREMENT_MODE
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.INCREMENT_MODE"
+msgid "Mode: Increment"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.RESET_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE"
+#| msgid "Reset Port"
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.RESET_BUTTON"
+msgid "Reset Counter"
+msgstr "リセットポート"
+
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.INPUT.ENTER"
+#| msgid "Enter"
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.TITLE"
+msgid "Counter"
+msgstr "Enter"
+
 #. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.START
 msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.START"
 msgid "Turn On"
@@ -15073,9 +15585,12 @@ msgstr ""
 "style>が<b>{0}</b>を下回ると<b><color=#57b95e>グリーン</b></color>になります"
 
 #. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.BUILDING_COUNT"
+#| msgid "Count: {0}"
 msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME"
-msgid "Critter / Egg Count"
-msgstr "動物/卵の数"
+msgid "Count"
+msgstr "設備数: {0}"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT"
@@ -15376,6 +15891,14 @@ msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_DETAILS"
 msgid "Recipe Details"
 msgstr "レシピ詳細"
 
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_FOREVER
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.AUTOSAVE_NEVER"
+#| msgid "Never"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_FOREVER"
+msgid "Forever"
+msgstr "しない"
+
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_QUEUE
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_QUEUE"
 msgid "Order Production Quantity:"
@@ -15462,6 +15985,20 @@ msgstr ""
 "フィルター出力する液体:\n"
 "{0}"
 
+#. STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.FILTEREDELEMENT.SOLID
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.FILTEREDELEMENT.LIQUID"
+#| msgid ""
+#| "Filtered Liquid Output:\n"
+#| "{0}"
+msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.FILTEREDELEMENT.SOLID"
+msgid ""
+"Filtered Solid Output:\n"
+"{0}"
+msgstr ""
+"フィルター出力する液体:\n"
+"{0}"
+
 #. STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.NO_SELECTION
 msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.NO_SELECTION"
 msgid "None"
@@ -15510,6 +16047,21 @@ msgstr ""
 msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.UNFILTEREDELEMENTS.LIQUID"
 msgid ""
 "Liquid Output:\n"
+"All"
+msgstr ""
+"出力する液体:\n"
+"全て"
+
+#. STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.UNFILTEREDELEMENTS.SOLID
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.UNFILTEREDELEMENTS.LIQUID"
+#| msgid ""
+#| "Liquid Output:\n"
+#| "All"
+msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.UNFILTEREDELEMENTS.SOLID"
+msgid ""
+"Solid Output:\n"
 "All"
 msgstr ""
 "出力する液体:\n"
@@ -15582,6 +16134,157 @@ msgid ""
 msgstr ""
 "<b><color=#57b95e>グリーン</b></color>を<b>{0}秒間</b>受信し続けると、"
 "<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.DESCRIPTION
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.DESCRIPTION"
+msgid ""
+"Notification will be sent upon receiving a <b><color=#57b95e>Green Signal</"
+"b></color>\n"
+"\n"
+"Making modifications will clear any existing notifications being sent by "
+"this building."
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE"
+#| msgid "<b>Morale</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.NAME"
+msgid "<b>Name:</b>"
+msgstr "<b>士気</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.NAME_DEFAULT
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNOTIFICATION"
+#| msgid "Debug Notification"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.NAME_DEFAULT"
+msgid "Notification"
+msgstr "デバッグ:通知"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.PAUSE
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE"
+#| msgid "<b>Morale</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.PAUSE"
+msgid "<b>Pause:</b>"
+msgstr "<b>士気</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNOTIFICATIONMESSAGE"
+#| msgid "Debug Notification Message"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TITLE"
+msgid "Notification Designer"
+msgstr "デバッグ:通知メッセージ"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE"
+#| msgid "<b>Morale</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIP"
+msgid "<b>Tooltip:</b>"
+msgstr "<b>士気</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIP_DEFAULT
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.TOOL.NAME"
+#| msgid "Tool"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIP_DEFAULT"
+msgid "Tooltip"
+msgstr "ツール"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNOTIFICATION"
+#| msgid "Debug Notification"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.NAME"
+msgid "Select notification text"
+msgstr "デバッグ:通知"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.PAUSE
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.PAUSE"
+msgid "Time will pause upon notification when checked"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.TOOLTIP
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.TOOLTIP"
+msgid "Select notification hover text"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.TYPE
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.TYPE"
+msgid "Select the visual and aural style of the notification"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.ZOOM
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.ZOOM"
+msgid "The view will zoom to this building upon notification when checked"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TYPE
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.EFFECTS.HEADER"
+#| msgid "<b>Effects:</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TYPE"
+msgid "<b>Type:</b>"
+msgstr "<b>効果:</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.ZOOM
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE"
+#| msgid "<b>Morale</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.ZOOM"
+msgid "<b>Zoom:</b>"
+msgstr "<b>士気</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.BIT
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.BUILD.NAME"
+#| msgid "Build {0}"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.BIT"
+msgid "Bit {0}"
+msgstr "{0} を建設"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_DESCRIPTION
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_DESCRIPTION"
+msgid ""
+"Selected <b>Bit</b>'s <b>Signal</b> will be read by the <b>Output Port</b>."
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_TITLE
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_TITLE"
+msgid "Ribbon Reader"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_DESCRIPTION
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_DESCRIPTION"
+msgid "Received <b>Signal</b> will be written to selected <b>Bit</b>"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_TITLE
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_TITLE"
+msgid "Ribbon Writer"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.STATE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.ONE"
+#| msgid "Green"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.STATE_ACTIVE"
+msgid "Green"
+msgstr "グリーン"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.STATE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.ZERO"
+#| msgid "Red"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.STATE_INACTIVE"
+msgid "Red"
+msgstr "レッド"
 
 #. STRINGS.UI.UISIDESCREENS.LURE.ATTRACTS
 msgctxt "STRINGS.UI.UISIDESCREENS.LURE.ATTRACTS"
@@ -16480,6 +17183,45 @@ msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TITLE"
 msgid "Pressure Threshold"
 msgstr "圧力しきい値"
 
+#. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE
+msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE"
+msgid "Watts"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE_TOOLTIP_ABOVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN."
+#| "PRESSURE_TOOLTIP_ABOVE"
+#| msgid ""
+#| "Will send a <b><color=#57b95e>Green Signal</b></color> if the <style="
+#| "\"KKeyword\">Pressure</style> is above <b>{0}</b>"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE_TOOLTIP_ABOVE"
+msgid ""
+"Will send a <b><color=#57b95e>Green Signal</b></color> if the <style="
+"\"KKeyword\">Wattage</style> consumed is above <b>{0}</b>"
+msgstr ""
+"<style=\"KKeyword\">圧力</style>が<b>{0}</b>を超えたとき、<b><color=#57b95e>"
+"グリーン</b></color>を送信します"
+
+#. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE_TOOLTIP_BELOW
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN."
+#| "PRESSURE_TOOLTIP_BELOW"
+#| msgid ""
+#| "Will send a <b><color=#57b95e>Green Signal</b></color> if the <style="
+#| "\"KKeyword\">Pressure</style> is below <b>{0}</b>"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE_TOOLTIP_BELOW"
+msgid ""
+"Will send a <b><color=#57b95e>Green Signal</b></color> if the <style="
+"\"KKeyword\">Wattage</style> consumed is below <b>{0}</b>"
+msgstr ""
+"<style=\"KKeyword\">圧力</style>が<b>{0}</b>を下回った時、<b><color=#57b95e>"
+"グリーン</b></color>を送信します"
+
 #. STRINGS.UI.UISIDESCREENS.TIME_OF_DAY_SIDE_SCREEN.START
 msgctxt "STRINGS.UI.UISIDESCREENS.TIME_OF_DAY_SIDE_SCREEN.START"
 msgid "Turn On"
@@ -16595,6 +17337,112 @@ msgid "Switch must be connected to a <link=\"POWER\">Power</link> grid"
 msgstr ""
 "スイッチは<link=\"POWER\">配電</link>設備に接続されている必要があります"
 
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.CURRENT_TIME
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.CURRENT_TIME"
+msgid "{0}/{1}"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.DISABLED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN."
+#| "TIMELAPSE_DISABLED_DESCRIPTION"
+#| msgid "Disabled"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.DISABLED"
+msgid "Timer Disabled"
+msgstr "無効化"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.GREEN_DURATION_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.ON_TOOLTIP"
+#| msgid ""
+#| "Activation time determines the time of day this sensor should begin "
+#| "sending a <b><color=#57b95e>Green Signal</b></color>\n"
+#| "------------------\n"
+#| "This sensor sends a <b><color=#57b95e>Green Signal</b></color> {0} "
+#| "through the day"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.GREEN_DURATION_TOOLTIP"
+msgid ""
+"Green duration determines the amount of time this sensor should send a "
+"<b><color=#57b95e>Green Signal</b></color>\n"
+"------------------\n"
+"This sensor sends a <b><color=#57b95e>Green Signal</b></color> for {0}"
+msgstr ""
+"稼働時刻はこのセンサーが<b><color=#57b95e>グリーン</b></color>を送信し始める"
+"時刻を決定します\n"
+"------------------\n"
+"このセンサーは１日のうち、{0}からグリーンを送信します"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.MODE_LABEL_CYCLES
+#, fuzzy
+#| msgctxt "STRINGS.UI.MATH_PICTURES.AXIS_LABELS.CYCLES"
+#| msgid "Cycles"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.MODE_LABEL_CYCLES"
+msgid "Mode: Cycles"
+msgstr "サイクル"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.MODE_LABEL_SECONDS
+#, fuzzy
+#| msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.SECONDS"
+#| msgid "Seconds"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.MODE_LABEL_SECONDS"
+msgid "Mode: Seconds"
+msgstr "秒"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.OFF
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.DURATION"
+#| msgid "Active Duration"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.OFF"
+msgid "Red Duration"
+msgstr "稼働時間"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.ON
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.DURATION"
+#| msgid "Active Duration"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.ON"
+msgid "Green Duration"
+msgstr "稼働時間"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.RED_DURATION_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.DURATION_TOOLTIP"
+#| msgid ""
+#| "Active duration determines what percentage of the day this sensor will "
+#| "spend sending a <b><color=#57b95e>Green Signal</b></color>\n"
+#| "------------------\n"
+#| "This sensor will send a <b><color=#57b95e>Green Signal</b></color> for "
+#| "{0} of the day"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.RED_DURATION_TOOLTIP"
+msgid ""
+"Red duration determines the amount of time this sensor should send a "
+"<b><color=#f44a47>Red Signal</b></color>\n"
+"------------------\n"
+"This sensor will send a <b><color=#57b95e>Red Signal</b></color> for {0}"
+msgstr ""
+"稼働時間はこのセンサーが1日のうち何%の時間 <b><color=#57b95e>グリーン</b></"
+"color>を送信するかを決定します\n"
+"\n"
+"このセンサーは1日につき{0}の間 <b><color=#57b95e>グリーン</b></color>を送信し"
+"ます"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.RESET_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE"
+#| msgid "Reset Port"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.RESET_BUTTON"
+msgid "Reset Timer"
+msgstr "リセットポート"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.TIMELINE"
+#| msgid "Timeline"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.TITLE"
+msgid "Timer"
+msgstr "時間軸"
+
 #. STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ALLBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ALLBUTTON"
 msgid "All"
@@ -16648,6 +17496,48 @@ msgstr "動物フィルター"
 msgctxt "STRINGS.UI.UISIDESCREENS.VALVESIDESCREEN.TITLE"
 msgid "Flow Control"
 msgstr "流量制御"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.ACTIVATE_IF
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.ACTIVATE_IF"
+#| msgid "Send <b><color=#57b95e>Green Signal</b></color> if:"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.ACTIVATE_IF"
+msgid "Send <b><color=#57b95e>Green Signal</b></color> if:"
+msgstr "以下の条件で<b><color=#57b95e>グリーン</b></color>を送信:"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.COLDER_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.COLDER_BUTTON"
+#| msgid "Below"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.COLDER_BUTTON"
+msgid "Below"
+msgstr "以下"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.CURRENT_TEMPERATURE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.NAME"
+#| msgid "Current Wattage: {Wattage}"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.CURRENT_TEMPERATURE"
+msgid ""
+"Current Wattage:\n"
+"{0}"
+msgstr "現在のワット数: {Wattage}"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.MANUALGENERATORSIDESCREEN.TITLE"
+#| msgid "Battery Recharge Threshold"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.TITLE"
+msgid "Wattage Threshold"
+msgstr "バッテリー充填しきい値"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.WARMER_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.WARMER_BUTTON"
+#| msgid "Above"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.WARMER_BUTTON"
+msgid "Above"
+msgstr "以上"
 
 #. STRINGS.UI.UNITSUFFIXES.CALORIES.CALORIE
 msgctxt "STRINGS.UI.UNITSUFFIXES.CALORIES.CALORIE"
@@ -16753,6 +17643,11 @@ msgstr "kB"
 msgctxt "STRINGS.UI.UNITSUFFIXES.INFORMATION.MEGABYTE"
 msgid "MB"
 msgstr "MB"
+
+#. STRINGS.UI.UNITSUFFIXES.LIGHT.LUX
+msgctxt "STRINGS.UI.UNITSUFFIXES.LIGHT.LUX"
+msgid "Lux"
+msgstr "ルクス"
 
 #. STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA
 msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.DRACHMA"
@@ -17254,8 +18149,8 @@ msgid ""
 "If enabled, Duplicants will deliver bottled liquids to this building "
 "directly from Pitcher Pumps"
 msgstr ""
-"有効にした場合、複製人間はピッチャーポンプから直接この設備に液体ボトルを配達"
-"します"
+"有効にした場合、複製人間は手押しポンプから直接この設備に液体ボトルを配達しま"
+"す"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED_GAS.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED_GAS.NAME"
@@ -17282,8 +18177,7 @@ msgid ""
 "If disabled, Duplicants will no longer deliver bottled liquids directly from "
 "Pitcher Pumps"
 msgstr ""
-"無効にした場合、複製人間はピッチャーポンプからこの設備に液体ボトルを配達しま"
-"せん"
+"無効にした場合、複製人間は手押しポンプからこの設備に液体ボトルを配達しません"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED_GAS.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED_GAS.NAME"
@@ -18653,6 +19547,50 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "RECREATION PACK!"
+#~ msgstr "レクリエーション パック！"
+
+#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_ACTIVE"
+#~ msgid "Green Signal"
+#~ msgstr "グリーン"
+
+#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_INACTIVE"
+#~ msgid "Red Signal"
+#~ msgstr "レッド"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RESET_UPDATE"
+#~ msgid ""
+#~ "<b>Reset Port</b>\n"
+#~ "Can reset a Memory Toggle's internal Memory"
+#~ msgstr ""
+#~ "<b>リセットポート</b>\n"
+#~ "メモリ内の記録をリセットします"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.NAME"
+#~ msgid "Brush size"
+#~ msgstr "ブラシサイズ"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME"
+#~ msgid "Germ count"
+#~ msgstr "病原菌量"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.NAME"
+#~ msgid "Absolute mass"
+#~ msgstr "絶対質量"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME"
+#~ msgid "Absolute temperature"
+#~ msgstr "絶対温度"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME"
+#~ msgid "Additive temperature"
+#~ msgstr "相対温度"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME"
+#~ msgid "Critter / Egg Count"
+#~ msgstr "動物/卵の数"
 
 #~ msgctxt "STRINGS.UI.BUILDINGEFFECTS.REMOVES_DISEASE"
 #~ msgid "Removes disease"
