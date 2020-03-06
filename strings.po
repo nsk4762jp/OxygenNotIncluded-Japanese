@@ -1457,6 +1457,30 @@ msgstr ""
 "フィードバック ループは自動化された設備の<style=\"KKeyword\">論理出力</style>"
 "を<style=\"KKeyword\">論理入力</style>に繋げると発生します"
 
+#. STRINGS.BUILDING.STATUSITEMS.LOGICOVERLOADED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.OVERLOADED.NAME"
+#| msgid "Damage: Overloading"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LOGICOVERLOADED.NAME"
+msgid "Damage: Overloading"
+msgstr "損傷: 過負荷"
+
+#. STRINGS.BUILDING.STATUSITEMS.LOGICOVERLOADED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.TRANSFORMER_OUTPUT_WIRE"
+#| msgid ""
+#| "The <style=\"KKeyword\">Power</style> provided by the the small <style="
+#| "\"KKeyword\">Output</style> will be limited to {0}."
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LOGICOVERLOADED.TOOLTIP"
+msgid ""
+"This <style=\"KKeyword\">Logic Wire</style> is taking damage.\n"
+"\n"
+"Use a <style=\"KKeyword\">Logic Ribbon</style> instead, or limit the output "
+"to one Bit."
+msgstr ""
+"小さいほうの<style=\"KKeyword\">出力</style>側から供給される<style=\"KKeyword"
+"\">電力</style>は {0} に制限されます。"
+
 #. STRINGS.BUILDING.STATUSITEMS.LOGICSENSORSTATUSACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LOGICSENSORSTATUSACTIVE.NAME"
 msgid "Sending a <b><color=#57b95e>Green Signal</b></color>"
@@ -2553,6 +2577,16 @@ msgid ""
 msgstr ""
 "このパイプは現在の<style=\"KKeyword\">温度</style>では融ける危険があります"
 
+#. STRINGS.BUILDING.STATUSITEMS.PLAYERCONTROLLEDTOGGLESIDESCREEN.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PLAYERCONTROLLEDTOGGLESIDESCREEN.NAME"
+msgid "Pending Toggle on Unpause"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.PLAYERCONTROLLEDTOGGLESIDESCREEN.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PLAYERCONTROLLEDTOGGLESIDESCREEN.TOOLTIP"
+msgid "This will be toggled when time is unpaused"
+msgstr ""
+
 #. STRINGS.BUILDING.STATUSITEMS.POWERBUTTONOFF.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.POWERBUTTONOFF.NAME"
 msgid "Function Suspended"
@@ -3605,6 +3639,14 @@ msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE"
 msgid "neighboring liquid pressure"
 msgstr "隣接する液体の圧力"
 
+#. STRINGS.BUILDINGS.DAMAGESOURCES.LOGIC_CIRCUIT_OVERLOADED
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.CIRCUIT_OVERLOADED"
+#| msgid "an overloaded circuit"
+msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.LOGIC_CIRCUIT_OVERLOADED"
+msgid "an overloaded logic circuit"
+msgstr "過負荷"
+
 #. STRINGS.BUILDINGS.DAMAGESOURCES.MICROMETEORITE
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.MICROMETEORITE"
 msgid "micrometeorite"
@@ -3966,22 +4008,32 @@ msgid "<link=\"BATTERYMEDIUM\">Jumbo Battery</link>"
 msgstr "<link=\"BATTERYMEDIUM\">大容量バッテリー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less "
+#| "than <b>Low Threshold</b> charged"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
 msgid ""
 "Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less than "
-"<b>{0}%</b> charged"
+"<b>{0}%</b> charged, until it is <b>{1}% (High Threshold)</b> charged"
 msgstr ""
-"バッテリー充電量が <b>{0}%</b> を下回ると<b><color=#57b95e>グリーン</b></"
-"color>になります"
+"バッテリー充電量が<b>しきい値下限</b>を下回ると<b><color=#57b95e>グリーン</"
+"b></color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less "
+#| "than <b>Low Threshold</b> charged"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP"
 msgid ""
-"Sends a <b><color=#f44a47>Red Signal</b></color> when battery is more than "
-"<b>{0}%</b> charged"
+"Sends a <b><color=#f44a47>Red Signal</b></color> when battery is <b>{0}%</b> "
+"charged, until it is less than <b>{1}% (Low Threshold)</b> charged"
 msgstr ""
-"バッテリー充電量が <b>{0}%</b> を上回ると<b><color=#f44a47>レッド</b></color>"
-"になります"
+"バッテリー充電量が<b>しきい値下限</b>を下回ると<b><color=#57b95e>グリーン</"
+"b></color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DESC"
@@ -4018,13 +4070,19 @@ msgid "Charge Parameters"
 msgstr "充電パラメータ"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#f44a47>Red Signal</b></color> when the battery is more "
+#| "than <b>High Threshold</b> charged, until <b>Low Threshold</b> is reached "
+#| "again"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_ACTIVE"
 msgid ""
 "Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less than "
-"<b>Low Threshold</b> charged"
+"<b>Low Threshold</b> charged, until <b>High Threshold</b> is reached again"
 msgstr ""
-"バッテリー充電量が<b>しきい値下限</b>を下回ると<b><color=#57b95e>グリーン</"
-"b></color>になります"
+"バッテリー充電量が<b>しきい値上限</b>を上回った時、<b>しきい値下限</b>を下回"
+"るまで<b><color=#f44a47>レッド</b></color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE"
@@ -7414,6 +7472,190 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.NAME"
 msgid "<link=\"LIQUIDVENT\">Liquid Vent</link>"
 msgstr "<link=\"LIQUIDVENT\">排水口</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.LOGICSENSORSTATUSACTIVE.NAME"
+#| msgid "Sending a <b><color=#57b95e>Green Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.DESC"
+msgid ""
+"Sends a notification when it receives a <b><color=#57b95e>Green Signal</b></"
+"color>."
+msgstr "<b><color=#57b95e>グリーン</b></color>です"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.EFFECT"
+msgid ""
+"Attach to sensors to send a notification when certain conditions are met.\n"
+"\n"
+"Notifications can be customized."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_NAME"
+#| msgid "INPUT"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_NAME"
+msgid "INPUT"
+msgstr "入力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH_ACTIVE"
+#| msgid "<b><color=#57b95e>Green Signal</b></color>: Launch rocket"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_ACTIVE"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Push notification"
+msgstr "<b><color=#57b95e>グリーン</b></color>: ロケット発射"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_INACTIVE"
+#| msgid "<b><color=#f44a47>Red Signal</b></color>: No effect"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_INACTIVE"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Nothing"
+msgstr "<b><color=#f44a47>レッド</b></color>: 効果なし"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNOTIFICATION"
+#| msgid "Debug Notification"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.LOGIC_PORT"
+msgid "Notification"
+msgstr "デバッグ:通知"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.AUTOMATION.TITLE"
+#| msgid "<link=\"LOGIC\">Automation</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.NAME"
+msgid "<link=\"LOGICALARM\">Automated Notifier</link>"
+msgstr "<link=\"LOGIC\">自動化</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.DESC"
+msgid "For numbers higher than ten connect multiple counters together."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.EFFECT"
+#| msgid ""
+#| "Outputs a <b><color=#57b95e>Green Signal</b></color> if the Input is "
+#| "receiving a <b><color=#57b95e>Green Signal</b></color>.\n"
+#| "\n"
+#| "Continues sending a <b><color=#57b95e>Green Signal</b></color> for an "
+#| "amount of buffer time after the Input receives a <b><color=#f44a47>Red "
+#| "Signal</b></color>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.EFFECT"
+msgid ""
+"Counts how many times a <b><color=#57b95e>Green Signal</b></color> has been "
+"received up to a chosen number.\n"
+"\n"
+"When the chosen number is reached it sends a <b><color=#57b95e>Green Signal</"
+"b></color> until it receives another <b><color=#57b95e>Green Signal</b></"
+"color> to start the count over."
+msgstr ""
+"入力が<b><color=#57b95e>グリーン</b></color>の時、<b><color=#57b95e>グリーン"
+"</b></color>になります。\n"
+"\n"
+"入力が<b><color=#f44a47>レッド</b></color>になると、バッファ時間が経過するま"
+"で<b><color=#57b95e>グリーン</b></color>を維持します。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.INPUT_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH_ACTIVE"
+#| msgid "<b><color=#57b95e>Green Signal</b></color>: Launch rocket"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.INPUT_PORT_ACTIVE"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Increase counter by one"
+msgstr "<b><color=#57b95e>グリーン</b></color>: ロケット発射"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.INPUT_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_INACTIVE"
+#| msgid "<b><color=#f44a47>Red Signal</b></color>: No effect"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.INPUT_PORT_INACTIVE"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Nothing"
+msgstr "<b><color=#f44a47>レッド</b></color>: 効果なし"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT"
+msgid "Internal Counter Value"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_OUTPUT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_OUTPUT"
+msgid "Number Reached"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_RESET
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE"
+#| msgid "Reset Port"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_RESET"
+msgid "Reset Counter"
+msgstr "リセットポート"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.LOGICCONTROL.NAME"
+#| msgid "<link=\"LOGICCONTROL\">Smart Home</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.NAME"
+msgid "<link=\"LOGICCOUNTER\">Signal Counter</link>"
+msgstr "<link=\"LOGICCONTROL\">スマートホーム</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.OUTPUT_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if the number of Germs "
+#| "is within the selected range"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.OUTPUT_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> when the counter matches "
+"the selected value"
+msgstr ""
+"病原菌濃度が指定した範囲内にある時、<b><color=#57b95e>グリーン</b></color>に"
+"なります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.OUTPUT_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
+#| msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.OUTPUT_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.DOOR.LOGIC_OPEN_ACTIVE"
+#| msgid "<b><color=#57b95e>Green Signal</b></color>: Open"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_ACTIVE"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Reset counter"
+msgstr "<b><color=#57b95e>グリーン</b></color>: 開放"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_INACTIVE"
+#| msgid "<b><color=#f44a47>Red Signal</b></color>: No effect"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_INACTIVE"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Nothing"
+msgstr "<b><color=#f44a47>レッド</b></color>: 効果なし"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.COUNT_CRITTER_LABEL
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.UNITS_SUFFIX"
+#| msgid " Critters"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.COUNT_CRITTER_LABEL"
+msgid "Count Critters"
+msgstr " 動物"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.COUNT_EGG_LABEL
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.EGGINCUBATOR.TITLE"
+#| msgid "Critter Eggs"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.COUNT_EGG_LABEL"
+msgid "Count Eggs"
+msgstr "動物の卵"
+
 #. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.DESC"
 msgid ""
@@ -7454,6 +7696,14 @@ msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になり
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.NAME"
 msgid "<link=\"LOGICCRITTERCOUNTSENSOR\">Critter Sensor</link>"
 msgstr "<link=\"LOGICCRITTERCOUNTSENSOR\">動物センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.SIDESCREEN_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.TITLE"
+#| msgid "Critter Count Sensor"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.SIDESCREEN_TITLE"
+msgid "Critter Sensor"
+msgstr "動物数センサー"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC"
@@ -7607,8 +7857,11 @@ msgstr ""
 "<b><color=#f44a47>レッド</b></color>に遷移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT"
+#| msgid "Specific<link=\"ELEMENTSLIQUID\">Liquid</link> Presence"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT"
-msgid "Specific<link=\"ELEMENTSLIQUID\">Liquid</link> Presence"
+msgid "Specific <link=\"ELEMENTSLIQUID\">Liquid</link> Presence"
 msgstr "特定の<link=\"ELEMENTSLIQUID\">液体</link>検知"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_ACTIVE
@@ -7734,6 +7987,62 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_NAME"
 msgid "OUTPUT"
 msgstr "出力"
 
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.DESC"
+msgid ""
+"Signal Distributors can be used to choose which circuit should receive a "
+"given automation signal."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.EFFECT"
+msgid ""
+"Route a single Input signal out one of four possible Outputs, based on the "
+"selection made by the Control Inputs.\n"
+"\n"
+"Send a <b><color=#57b95e>Green Signal</b></color> or a <b><color=#f44a47>Red "
+"Signal</b></color> to the two Control Inputs to determine which Output is "
+"selected."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.NAME"
+#| msgid "<link=\"ALGAEDISTILLERY\">Algae Distiller</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.NAME"
+msgid "<link=\"LOGICGATEDEMULTIPLEXER\">Signal Distributor</link>"
+msgstr "<link=\"ALGAEDISTILLERY\">蒸留機</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if receiving "
+#| "<b><color=#f44a47>Red</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green</b></color> or <b><color=#f44a47>Red</b></"
+"color> signal to the selected output"
+msgstr ""
+"入力が<b><color=#f44a47>レッド</b></color>の時、<b><color=#57b95e>グリーン</"
+"b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEARTIFACTS.ARTIFACTTIERS.TIER_NONE"
+#| msgid "Nothing"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_INACTIVE"
+msgid "Nothing"
+msgstr "無し"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_NAME"
+msgid "OUTPUT"
+msgstr "出力"
+
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.DESC"
 msgid ""
@@ -7780,6 +8089,62 @@ msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になり
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_NAME"
+msgid "OUTPUT"
+msgstr "出力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.DESC"
+msgid ""
+"Signal Selectors can be used to select which automation signal is relevant "
+"to pass through to a given circuit"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.EFFECT"
+msgid ""
+"Select which one of four Input signals should be sent out the Output, using "
+"Control Inputs.\n"
+"\n"
+"Send a <b><color=#57b95e>Green Signal</b></color> or a <b><color=#f44a47>Red "
+"Signal</b></color> to the two Control Inputs to determine which Input is "
+"selected."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.NAME"
+#| msgid "<link=\"LOGICSWITCH\">Signal Switch</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.NAME"
+msgid "<link=\"LOGICGATEMULTIPLEXER\">Signal Selector</link>"
+msgstr "<link=\"LOGICSWITCH\">シグナル スイッチ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATENOT.OUTPUT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if receiving "
+#| "<b><color=#f44a47>Red</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_ACTIVE"
+msgid ""
+"Receives a <b><color=#57b95e>Green</b></color> or <b><color=#f44a47>Red</b></"
+"color> signal from the selected input"
+msgstr ""
+"入力が<b><color=#f44a47>レッド</b></color>の時、<b><color=#57b95e>グリーン</"
+"b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEARTIFACTS.ARTIFACTTIERS.TIER_NONE"
+#| msgid "Nothing"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_INACTIVE"
+msgid "Nothing"
+msgstr "無し"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_NAME"
 msgid "OUTPUT"
 msgstr "出力"
 
@@ -7933,6 +8298,61 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_NAME"
 msgid "OUTPUT"
 msgstr "出力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.DESC"
+msgid "The hammer makes neat sounds when it strikes buildings."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.EFFECT"
+msgid ""
+"In its default orientation, the hammer strikes the building to the left when "
+"it recieves a <b><color=#57b95e>Green Signal</b></color>.\n"
+"\n"
+"Each building has a unique sound when struck by the hammer. The hammer does "
+"no damage when it strikes."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_NAME"
+#| msgid "INPUT"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_NAME"
+msgid "INPUT"
+msgstr "入力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH_ACTIVE"
+#| msgid "<b><color=#57b95e>Green Signal</b></color>: Launch rocket"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_PORT_ACTIVE"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Hammer strikes once"
+msgstr "<b><color=#57b95e>グリーン</b></color>: ロケット発射"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_INACTIVE"
+#| msgid "<b><color=#f44a47>Red Signal</b></color>: No effect"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_PORT_INACTIVE"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Nothing"
+msgstr "<b><color=#f44a47>レッド</b></color>: 効果なし"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.TOOL.ROTATEBUILDING"
+#| msgid "Rotate Building"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.LOGIC_PORT"
+msgid "Resonating Buildings"
+msgstr "設備を回転"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.NAME"
+#| msgid "<link=\"LOGICGATEOR\">OR Gate</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.NAME"
+msgid "<link=\"LOGICHAMMER\">Hammer</link>"
+msgstr "<link=\"LOGICGATEOR\">OR ゲート</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.DESC"
@@ -8176,6 +8596,354 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.NAME"
 msgid "<link=\"LOGICPRESSURESENSORLIQUID\">Hydro Sensor</link>"
 msgstr "<link=\"LOGICPRESSURESENSORLIQUID\">水圧センサー</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.DESC"
+msgid ""
+"Logic ribbons use significantly less space to carry multiple automation "
+"signals."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.EFFECT"
+msgid ""
+"A 4-Bit <link=\"LOGICWIRE\">Automation Wire</link> which can carry up to "
+"four automation signals.\n"
+"\n"
+"Use a <link=\"LOGICRIBBONWRITER\">Ribbon Writer</link> to output to multiple "
+"Bits, and a <link=\"LOGICRIBBONREADER\">Ribbon Reader</link> to input from "
+"multiple Bits."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.AUTOMATION.TITLE"
+#| msgid "<link=\"LOGIC\">Automation</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.NAME"
+msgid "<link=\"LOGICRIBBON\">Automation Ribbon</link>"
+msgstr "<link=\"LOGIC\">自動化</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.DESC"
+#| msgid ""
+#| "Wire bridges allow multiple automation grids to exist in a small area "
+#| "without connecting."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.DESC"
+msgid ""
+"Wire bridges allow multiple automation grids to exist in a small area "
+"without connecting."
+msgstr ""
+"ワイヤーブリッジは狭い場所に複数の自動化グリッドを共存させることができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.EFFECT"
+#| msgid ""
+#| "Runs one <link=\"LOGICWIRE\">Automation Wire</link> section over another "
+#| "without joining them.\n"
+#| "\n"
+#| "Can be run through wall and floor tile."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.EFFECT"
+msgid ""
+"Runs one <link=\"LOGICRIBBON\">Automation Ribbon</link> section over another "
+"without joining them.\n"
+"\n"
+"Can be run through wall and floor tile."
+msgstr ""
+"他の<link=\"GASPIPING\">気体用パイプ</link>に干渉せずに配管できます。\n"
+"\n"
+"壁や床のタイルを貫通して敷設できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT"
+#| msgid "Transmit Signal"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT"
+msgid "Transmit Signal"
+msgstr "伝送シグナル"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "<b><color=#57b95e>Green Signal</b></color>: Pass through the "
+#| "<b><color=#57b95e>Green Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Pass through the "
+"<b><color=#57b95e>Green Signal</b></color>"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: <b><color=#57b95e>グリーン</b></"
+"color>を送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_INACTIVE"
+#| msgid ""
+#| "<b><color=#f44a47>Red Signal</b></color>: Pass through the "
+#| "<b><color=#f44a47>Red Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Pass through the "
+"<b><color=#f44a47>Red Signal</b></color>"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: <b><color=#f44a47>レッド</b></color>を"
+"送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.NAME"
+#| msgid "<link=\"LOGICWIREBRIDGE\">Automation Wire Bridge</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.NAME"
+msgid "<link=\"LOGICRIBBONBRIDGE\">Automation Ribbon Bridge</link>"
+msgstr "<link=\"LOGICWIREBRIDGE\">自動化ワイヤーブリッジ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.DESC"
+msgid ""
+"Inputs the signal from a single Bit in an <link=\"LOGICRIBBON\">Automation "
+"Ribbon</link> into an <link=\"LOGICWIRE\">Automation Wire</link>."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.EFFECT"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+#| "<b><color=#f44a47>Red Signal</b></color> on an <link=\"LOGIC"
+#| "\">Automation</link> grid.\n"
+#| "\n"
+#| "Must be manually toggled by a Duplicant."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.EFFECT"
+msgid ""
+"Reads a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> from the specified Bit of an <link="
+"\"LOGICRIBBON\">Automation Ribbon</link> onto an <link=\"LOGICWIRE"
+"\">Automation Wire</link>."
+msgstr ""
+"<link=\"LOGIC\">自動化</link>グリッドの<b><color=#57b95e>グリーン</b></color>"
+"または<b><color=#f44a47>レッド</b></color>にします。\n"
+"\n"
+"複製人間によって操作しなければなりません。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_NAME"
+msgid "RIBBON INPUT"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "<b><color=#57b95e>Green Signal</b></color>: Pass through the "
+#| "<b><color=#57b95e>Green Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Reads a <b><color=#57b95e>Green "
+"Signal</b></color> from selected Bit"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: <b><color=#57b95e>グリーン</b></"
+"color>を送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_INACTIVE"
+#| msgid ""
+#| "<b><color=#f44a47>Red Signal</b></color>: Pass through the "
+#| "<b><color=#f44a47>Red Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Reads a <b><color=#f44a47>Red "
+"Signal</b></color> from selected Bit"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: <b><color=#f44a47>レッド</b></color>を"
+"送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.LOGIC_PORT"
+msgid "4-Bit Input"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.LOGIC_PORT_OUTPUT
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.BUILD.NAME"
+#| msgid "Building"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.LOGIC_PORT_OUTPUT"
+msgid "Bit Reading"
+msgstr "建設"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEOR.NAME"
+#| msgid "<link=\"LOGICGATEOR\">OR Gate</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.NAME"
+msgid "<link=\"LOGICRIBBONREADER\">Ribbon Reader</link>"
+msgstr "<link=\"LOGICGATEOR\">OR ゲート</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_NAME"
+msgid "OUTPUT"
+msgstr "出力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "<b><color=#57b95e>Green Signal</b></color>: Pass through the "
+#| "<b><color=#57b95e>Green Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Sends a <b><color=#57b95e>Green "
+"Signal</b></color> to attached <link=\"LOGICWIRE\">Automation Wire</link>"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: <b><color=#57b95e>グリーン</b></"
+"color>を送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_INACTIVE"
+#| msgid ""
+#| "<b><color=#f44a47>Red Signal</b></color>: Pass through the "
+#| "<b><color=#f44a47>Red Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Sends a <b><color=#f44a47>Red "
+"Signal</b></color> to attached <link=\"LOGICWIRE\">Automation Wire</link>"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: <b><color=#f44a47>レッド</b></color>を"
+"送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.DESC"
+msgid ""
+"Translates the signal from an <link=\"LOGICWIRE\">Automation Wire</link> to "
+"a single Bit in an <link=\"LOGICRIBBON\">Automation Ribbon</link>"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.EFFECT"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+#| "<b><color=#f44a47>Red Signal</b></color> on an <link=\"LOGIC"
+#| "\">Automation</link> grid.\n"
+#| "\n"
+#| "Must be manually toggled by a Duplicant."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.EFFECT"
+msgid ""
+"Writes a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> to the specified Bit of an <link="
+"\"LOGICRIBBON\">Automation Ribbon</link>\n"
+"\n"
+"<link=\"LOGICRIBBON\">Automation Ribbon</link> must be used as the output "
+"wire to avoid overloading."
+msgstr ""
+"<link=\"LOGIC\">自動化</link>グリッドの<b><color=#57b95e>グリーン</b></color>"
+"または<b><color=#f44a47>レッド</b></color>にします。\n"
+"\n"
+"複製人間によって操作しなければなりません。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_NAME"
+#| msgid "INPUT"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_NAME"
+msgid "INPUT"
+msgstr "入力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> after receiving "
+#| "<b><color=#57b95e>Green</b></color> for longer than the selected filter "
+#| "timer"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Receives <b><color=#57b95e>Green "
+"Signal</b></color> to be written to selected Bit"
+msgstr ""
+"入力の<b><color=#57b95e>グリーン</b></color>を指定した時間以上キープすると"
+"<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_INACTIVE"
+#| msgid ""
+#| "<b><color=#f44a47>Red Signal</b></color>: Pass through the "
+#| "<b><color=#f44a47>Red Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Receives <b><color=#f44a47>Red "
+"Signal</b></color> to to be written selected Bit"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: <b><color=#f44a47>レッド</b></color>を"
+"送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.LOGIC_PORT"
+msgid "1-Bit Input"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.LOGIC_PORT_OUTPUT
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.GROUPS.SUITS"
+#| msgid "Suit Wearing"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.LOGIC_PORT_OUTPUT"
+msgid "Bit Writing"
+msgstr "スーツ装着"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIRE.NAME"
+#| msgid "<link=\"LOGICWIRE\">Automation Wire</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.NAME"
+msgid "<link=\"LOGICRIBBONWRITER\">Ribbon Writer</link>"
+msgstr "<link=\"LOGICWIRE\">自動化ワイヤー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_NAME"
+msgid "RIBBON OUTPUT"
+msgstr "出力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+#| "<b><color=#f44a47>Red Signal</b></color> based on quantity of surrounding "
+#| "<link=\"DISEASE\">Germs</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Writes a <b><color=#57b95e>Green "
+"Signal</b></color> to selected Bit of an <link=\"LOGICRIBBON\">Automation "
+"Ribbon</link>"
+msgstr ""
+"周囲の<link=\"DISEASE\">病原菌</link>濃度に応じて<b><color=#57b95e>グリーン</"
+"b></color>または<b><color=#f44a47>レッド</b></color>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.EFFECT"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+#| "<b><color=#f44a47>Red Signal</b></color> based on quantity of surrounding "
+#| "<link=\"DISEASE\">Germs</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Writes a <b><color=#f44a47>Red "
+"Signal</b></color> to selected Bit of an <link=\"LOGICRIBBON\">Automation "
+"Ribbon</link>"
+msgstr ""
+"周囲の<link=\"DISEASE\">病原菌</link>濃度に応じて<b><color=#57b95e>グリーン</"
+"b></color>または<b><color=#f44a47>レッド</b></color>になります。"
+
 #. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.DESC"
 msgid ""
@@ -8186,13 +8954,19 @@ msgstr ""
 "の信号を出力します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.EFFECT"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+#| "<b><color=#f44a47>Red Signal</b></color> on an <link=\"LOGIC"
+#| "\">Automation</link> grid.\n"
+#| "\n"
+#| "Must be manually toggled by a Duplicant."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.EFFECT"
 msgid ""
 "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
 "<b><color=#f44a47>Red Signal</b></color> on an <link=\"LOGIC\">Automation</"
-"link> grid.\n"
-"\n"
-"Must be manually toggled by a Duplicant."
+"link> grid."
 msgstr ""
 "<link=\"LOGIC\">自動化</link>グリッドの<b><color=#57b95e>グリーン</b></color>"
 "または<b><color=#f44a47>レッド</b></color>にします。\n"
@@ -8218,6 +8992,14 @@ msgstr "スイッチOFFにすると<b><color=#f44a47>レッド</b></color>にな
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.NAME"
 msgid "<link=\"LOGICSWITCH\">Signal Switch</link>"
 msgstr "<link=\"LOGICSWITCH\">シグナル スイッチ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.SIDESCREEN_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND_SWITCH"
+#| msgid "Switch"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.SIDESCREEN_TITLE"
+msgid "Signal Switch"
+msgstr "スイッチ"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC"
@@ -8263,17 +9045,27 @@ msgid "<link=\"LOGICTEMPERATURESENSOR\">Thermo Sensor</link>"
 msgstr "<link=\"LOGICTEMPERATURESENSOR\">熱センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.DESC"
+#| msgid ""
+#| "Clock sensors ensure systems always turn on at the same time, day or "
+#| "night, every cycle."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.DESC"
 msgid ""
-"Clock sensors ensure systems always turn on at the same time, day or night, "
+"Cycle sensors ensure systems always turn on at the same time, day or night, "
 "every cycle."
 msgstr "時刻センサーは毎サイクルの日中または夜間の同じ時間帯に稼働します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.EFFECT"
+#| msgid ""
+#| "Sets an automatic <b><color=#57b95e>Green Signal</b></color> and "
+#| "<b><color=#f44a47>Red Signal</b></color> schedule using a timer."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.EFFECT"
 msgid ""
 "Sets an automatic <b><color=#57b95e>Green Signal</b></color> and "
-"<b><color=#f44a47>Red Signal</b></color> schedule using a timer."
+"<b><color=#f44a47>Red Signal</b></color> schedule within one day-night cycle."
 msgstr ""
 "タイマーを使って<b><color=#57b95e>グリーン</b></color>と<b><color=#f44a47>"
 "レッド</b></color>を自動的に切り替えます。"
@@ -8298,9 +9090,138 @@ msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
 msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.NAME"
+#| msgid "<link=\"LOGICTIMEOFDAYSENSOR\">Clock Sensor</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.NAME"
-msgid "<link=\"LOGICTIMEOFDAYSENSOR\">Clock Sensor</link>"
+msgid "<link=\"LOGICTIMEOFDAYSENSOR\">Cycle Sensor</link>"
 msgstr "<link=\"LOGICTIMEOFDAYSENSOR\">時刻センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.DESC"
+msgid ""
+"Timer sensors create automation schedules for very short or very long "
+"periods of time."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.EFFECT"
+#| msgid ""
+#| "Sets an automatic <b><color=#57b95e>Green Signal</b></color> and "
+#| "<b><color=#f44a47>Red Signal</b></color> schedule using a timer."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.EFFECT"
+msgid ""
+"Creates a timer to send <b><color=#57b95e>Green Signals</b></color> and "
+"<b><color=#f44a47>Red Signals</b></color> for specific amounts of time."
+msgstr ""
+"タイマーを使って<b><color=#57b95e>グリーン</b></color>と<b><color=#f44a47>"
+"レッド</b></color>を自動的に切り替えます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.TITLE"
+#| msgid "Time Schedule"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT"
+msgid "Timer Schedule"
+msgstr "時間割"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if the selected Gas is "
+#| "detected"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> for the selected amount "
+"of Green time"
+msgstr ""
+"指定した気体を検出すると<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if the selected Gas is "
+#| "detected"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT_INACTIVE"
+msgid ""
+"Then, sends a <b><color=#f44a47>Red Signal</b></color> for the selected "
+"amount of Red time"
+msgstr ""
+"指定した気体を検出すると<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.NAME"
+#| msgid "<link=\"LOGICTEMPERATURESENSOR\">Thermo Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.NAME"
+msgid "<link=\"LOGICTIMERSENSOR\">Timer Sensor</link>"
+msgstr "<link=\"LOGICTEMPERATURESENSOR\">熱センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.OUTPUT_PORTS_TOOLTIP"
+#| msgid "Output ports send a signal when this building changes state"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.DESC"
+msgid ""
+"Wattage sensors can send a signal when a building has switched on or off."
+msgstr "この設備の状態が変化したとき、出力ポートはシグナルを送信します"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORGAS.EFFECT"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+#| "<b><color=#f44a47>Red Signal</b></color> when <link=\"ELEMENTSGAS\">Gas</"
+#| "link> pressure enters the chosen range."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.EFFECT"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> when <link=\"POWER\">Wattage</link> "
+"consumed enters the chosen range."
+msgstr ""
+"<link=\"ELEMENTSGAS\">気</link>圧が指定した範囲内にある時、<b><color=#57b95e>"
+"グリーン</b></color>または<b><color=#f44a47>レッド</b></color>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.WATER.NAME"
+#| msgid "<link=\"WATER\">Water</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT"
+msgid "Consumed <link=\"POWER\">Wattage</link>"
+msgstr "<link=\"WATER\">水</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if ambient <link=\"HEAT"
+#| "\">Temperature</link> is within the selected range"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> if current <link=\"POWER"
+"\">Wattage</link> is within the selected range"
+msgstr ""
+"周辺<link=\"HEAT\">温度</link>が指定した範囲内にある時、<b><color=#57b95e>グ"
+"リーン</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
+#| msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.NAME"
+#| msgid "<link=\"LOGICDISEASESENSOR\">Germ Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.NAME"
+msgid "<link=\"LOGICWATTSENSOR\">Wattage Sensor</link>"
+msgstr "<link=\"LOGICDISEASESENSOR\">病原菌センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICWIRE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIRE.DESC"
@@ -8508,13 +9429,22 @@ msgid "\"Abstract\" Marble Sculpture"
 msgstr "大理石の彫像のようなもの"
 
 #. STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.ACTIVATE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.ACTIVATE_TOOLTIP"
+#| msgid "Duplicants must take a break when their stress reaches {0}"
 msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.ACTIVATE_TOOLTIP"
-msgid "Duplicants must take a break when their stress reaches {0}"
+msgid ""
+"Duplicants must take a massage break when their <style=\"KKeyword\">Stress</"
+"style> reaches {0}%"
 msgstr "ストレスが{0}に到達した複製人間を休憩させるようにします"
 
 #. STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DEACTIVATE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DEACTIVATE_TOOLTIP"
+#| msgid "Breaktime ends when stress is reduced to {0}"
 msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DEACTIVATE_TOOLTIP"
-msgid "Breaktime ends when stress is reduced to {0}"
+msgid ""
+"Breaktime ends when <style=\"KKeyword\">Stress</style> is reduced to {0}%"
 msgstr "ストレスが{0}以下になると休憩を終えます"
 
 #. STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DESC
@@ -9207,6 +10137,80 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.PHONOBOX.NAME"
 msgid "<link=\"PHONOBOX\">Jukebot</link>"
 msgstr "<link=\"PHONOBOX\">ジュークボット</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.DESC"
+msgid "Four pixels which can be individually designated different colors."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.EFFECT"
+msgid ""
+"Pixels can be designated a color when it receives a <b><color=#57b95e>Green "
+"Signal</b></color> and a different color when it receives a "
+"<b><color=#f44a47>Red Signal</b></color>.\n"
+"\n"
+"Input from an <link=\"LOGICWIRE\">Automation Wire</link> controls the whole "
+"strip. Input from an <link=\"LOGICRIBBON\">Automation Ribbon</link> can "
+"control individual pixels on the strip."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_NAME"
+msgid "RIBBON INPUT"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "<b><color=#57b95e>Green Signal</b></color>: Pass through the "
+#| "<b><color=#57b95e>Green Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Display the configured "
+"<b><color=#57b95e>Green Signal</b></color> pixels"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: <b><color=#57b95e>グリーン</b></"
+"color>を送信"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT_INACTIVE"
+#| msgid ""
+#| "<b><color=#f44a47>Red Signal</b></color>: Pass through the "
+#| "<b><color=#f44a47>Red Signal</b></color>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Display the configured "
+"<b><color=#f44a47>Red Signal</b></color> pixels"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: <b><color=#f44a47>レッド</b></color>を"
+"送信"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.CLEAR_SELECTION_BUTTON"
+#| msgid "Clear Selection"
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.LOGIC_PORT"
+msgid "Color Selection"
+msgstr "選択箇所をクリア"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.JETPACKS.NAME"
+#| msgid "<link=\"JETPACKS\">Jetpacks</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.NAME"
+msgid "<link=\"PIXELPACK\">Pixel Pack</link>"
+msgstr "<link=\"JETPACKS\">ジェットパック</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.SIDESCREEN_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.PILLS.INTERMEDIATECURE.NAME"
+#| msgid "Medical Pack"
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.SIDESCREEN_TITLE"
+msgid "Pixel Pack"
+msgstr "パック入りの薬"
 
 #. STRINGS.BUILDINGS.PREFABS.PLANTERBOX.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PLANTERBOX.DESC"
@@ -10230,6 +11234,96 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SMALLSCULPTURE.POORQUALITYNAME"
 msgid "\"Abstract\" Sculpture"
 msgstr "彫像のようなもの"
 
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.ACTIVATE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less "
+#| "than <b>{0}%</b> charged"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.ACTIVATE_TOOLTIP"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> when reservoir is less "
+"than <b>{0}%</b> full, until it is <b>{1}% (High Threshold)</b> full"
+msgstr ""
+"バッテリー充電量が <b>{0}%</b> を下回ると<b><color=#57b95e>グリーン</b></"
+"color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.DEACTIVATE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less "
+#| "than <b>Low Threshold</b> charged"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.DEACTIVATE_TOOLTIP"
+msgid ""
+"Sends a <b><color=#f44a47>Red Signal</b></color> when reservoir is <b>{0}%</"
+"b> full, until it is less than <b>{1}% (Low Threshold)</b> full"
+msgstr ""
+"バッテリー充電量が<b>しきい値下限</b>を下回ると<b><color=#57b95e>グリーン</"
+"b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT"
+#| msgid "Charge Parameters"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT"
+msgid "Refill Parameters"
+msgstr "充電パラメータ"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#f44a47>Red Signal</b></color> when the battery is more "
+#| "than <b>High Threshold</b> charged, until <b>Low Threshold</b> is reached "
+#| "again"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> when reservoir is less "
+"than <b>Low Threshold</b> full, until <b>High Threshold</b> is reached again"
+msgstr ""
+"バッテリー充電量が<b>しきい値上限</b>を上回った時、<b>しきい値下限</b>を下回"
+"るまで<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#f44a47>Red Signal</b></color> when the battery is more "
+#| "than <b>High Threshold</b> charged, until <b>Low Threshold</b> is reached "
+#| "again"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT_INACTIVE"
+msgid ""
+"Sends a <b><color=#f44a47>Red Signal</b></color> when reservoir is <b>High "
+"Threshold</b> full, until <b>Low Threshold</b> is reached again"
+msgstr ""
+"バッテリー充電量が<b>しきい値上限</b>を上回った時、<b>しきい値下限</b>を下回"
+"るまで<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_ACTIVATE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_ACTIVATE"
+#| msgid "Low Threshold:"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_ACTIVATE"
+msgid "Low Threshold:"
+msgstr "しきい値下限:"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_DEACTIVATE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_DEACTIVATE"
+#| msgid "High Threshold:"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_DEACTIVATE"
+msgid "High Threshold:"
+msgstr "しきい値上限:"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.SIDESCREEN_TITLE"
+#| msgid "Logic Activation Parameters"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_TITLE"
+msgid "Logic Activation Parameters"
+msgstr "論理起動パラメータ"
+
 # Sparkle と Twinkle で掛詞になっている
 #. STRINGS.BUILDINGS.PREFABS.SODAFOUNTAIN.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SODAFOUNTAIN.DESC"
@@ -10351,6 +11445,139 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.NAME"
 msgid "<link=\"SOLIDCONDUITBRIDGE\">Conveyor Bridge</link>"
 msgstr "<link=\"SOLIDCONDUITBRIDGE\">コンベアブリッジ</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.DESC"
+#| msgid ""
+#| "Germ sensors can help control automation behavior in the presence of "
+#| "germs."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.DESC"
+msgid ""
+"Germ sensors can help control automation behavior in the presence of germs."
+msgstr ""
+"病原菌センサーは、病原菌の有無によって動きを変える自動化制御に使います。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.EFFECT"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+#| "<b><color=#f44a47>Red Signal</b></color> based on the internal <link="
+#| "\"DISEASE\">Germ</link> count of the pipe."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.EFFECT"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> based on the internal <link="
+"\"DISEASE\">Germ</link> count of the object on the rail."
+msgstr ""
+"内部の<link=\"DISEASE\">病原菌</link>濃度が指定した範囲内にある時、"
+"<b><color=#57b95e>グリーン</b></color>または<b><color=#f44a47>レッド</b></"
+"color>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT"
+#| msgid "Internal <link=\"DISEASE\">Germ</link> Count"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT"
+msgid "Internal <link=\"DISEASE\">Germ</link> Count"
+msgstr "内部<link=\"DISEASE\">病原菌</link>濃度"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if the number of Germs "
+#| "in the pipe is within the selected range"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the number of Germs on "
+"the object on the rail is within the selected range"
+msgstr ""
+"パイプ内の病原菌が指定した範囲内にある時、<b><color=#57b95e>グリーン</b></"
+"color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
+#| msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.NAME"
+#| msgid "<link=\"GASCONDUITDISEASESENSOR\">Gas Pipe Germ Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.NAME"
+msgid "<link=\"SOLIDCONDUITDISEASESENSOR\">Conveyor Rail Germ Sensor</link>"
+msgstr "<link=\"GASCONDUITDISEASESENSOR\">気体用パイプ 病原菌センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.DESC"
+#| msgid ""
+#| "Element sensors can be used to detect the presence of a specific gas in a "
+#| "pipe."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.DESC"
+msgid ""
+"Element sensors can be used to detect the presence of a specific item on a "
+"rail."
+msgstr "元素センサーはパイプ内の特定の気体を検出します。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if the selected Gas is "
+#| "detected"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.EFFECT"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> when the selected item is "
+"detected on a rail."
+msgstr ""
+"指定した気体を検出すると<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT"
+#| msgid "Internal <link=\"ELEMENTSLIQUID\">Liquid</link> Presence"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT"
+msgid "Internal <link=\"ELEMENTSLIQUID\">Item</link> Presence"
+msgstr "内部<link=\"ELEMENTSLIQUID\">液体</link>検知"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if the configured "
+#| "Liquid is detected within the pipe"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the configured item is "
+"detected on the rail"
+msgstr ""
+"設定した液体を検出すると<b><color=#57b95e>グリーン</b></color>を送信します"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
+#| msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.NAME"
+#| msgid "<link=\"GASCONDUITELEMENTSENSOR\">Gas Pipe Element Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.NAME"
+msgid "<link=\"SOLIDCONDUITELEMENTSENSOR\">Conveyor Rail Element Sensor</link>"
+msgstr "<link=\"GASCONDUITELEMENTSENSOR\">気体用パイプ 元素センサー</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.DESC"
 msgid ""
@@ -10396,6 +11623,129 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.NAME"
 msgid "<link=\"SOLIDCONDUITOUTBOX\">Conveyor Receptacle</link>"
 msgstr "<link=\"SOLIDCONDUITOUTBOX\">コンベアレセプタ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC"
+#| msgid ""
+#| "Thermo sensors disable buildings when their pipe contents reach a certain "
+#| "temperature."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.DESC"
+msgid ""
+"Thermo sensors disable buildings when their rail contents reach a certain "
+"temperature."
+msgstr ""
+"温度センサーは内容物が特定の温度に達した時に設備を自動停止させることができま"
+"す。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.EFFECT"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+#| "<b><color=#f44a47>Red Signal</b></color> when pipe contents enter the "
+#| "chosen <link=\"HEAT\">Temperature</link> range."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.EFFECT"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> when rail contents enter the chosen "
+"<link=\"HEAT\">Temperature</link> range."
+msgstr ""
+"パイプ内容物の<link=\"HEAT\">温度</link>が指定した範囲内にある時、"
+"<b><color=#57b95e>グリーン</b></color>または<b><color=#f44a47>レッド</b></"
+"color>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.LOGIC_PORT"
+#| msgid "Ambient <link=\"HEAT\">Temperature</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT"
+msgid "Internal item <link=\"HEAT\">Temperature</link>"
+msgstr "周辺<link=\"HEAT\">温度</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
+#| msgid ""
+#| "Sends a <b><color=#57b95e>Green Signal</b></color> if the contained Gas "
+#| "is within the selected Temperature range"
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the contained item is "
+"within the selected Temperature range"
+msgstr ""
+"内容物の気体温度が指定した範囲内にある時、<b><color=#57b95e>グリーン</b></"
+"color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
+#| msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.NAME"
+#| msgid "<link=\"GASCONDUITTEMPERATURESENSOR\">Gas Pipe Thermo Sensor</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.NAME"
+msgid ""
+"<link=\"SOLIDCONDUITTEMPERATURESENSOR\">Conveyor Rail Thermo Sensor</link>"
+msgstr "<link=\"GASCONDUITTEMPERATURESENSOR\">気体用パイプ 温度センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC"
+#| msgid ""
+#| "All liquids are sent into the building's output pipe, except the liquid "
+#| "chosen for filtering."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.DESC"
+msgid ""
+"All solids are sent into the building's output conveyor, except the solid "
+"chosen for filtering."
+msgstr "指定した液体を除く全ての液体が出力先パイプに送出されます。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.EFFECT"
+#| msgid ""
+#| "Sieves one <link=\"ELEMENTSGAS\">Gas</link> from the air, sending it into "
+#| "a dedicated <link=\"GASPIPING\">Pipe</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.EFFECT"
+msgid ""
+"Separates one <link=\"ELEMENTSSOLID\">Solid</link> from the conveyor, "
+"sending it into a dedicated <link=\"SOLIDCONDUIT\">Conveyor Rail</link>."
+msgstr ""
+"混合気体から、指定した<link=\"ELEMENTSGAS\">気体</link>をろ過し、別の口に繋"
+"がった<link=\"GASPIPING\">パイプ</link>へ移送します。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.ELEMENT_NOT_SPECIFIED
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.ELEMENT_NOT_SPECIFIED"
+#| msgid "Not Specified"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.ELEMENT_NOT_SPECIFIED"
+msgid "Not Specified"
+msgstr "指定なし"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.NAME"
+#| msgid "<link=\"LIQUIDFILTER\">Liquid Filter</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.NAME"
+msgid "<link=\"SOLIDFILTER\">Solid Filter</link>"
+msgstr "<link=\"LIQUIDFILTER\">液体フィルター</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.STATUS_ITEM
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.STATUS_ITEM"
+#| msgid "Filters: {0}"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.STATUS_ITEM"
+msgid "Filters: {0}"
+msgstr "フィルター: {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.DESC"
@@ -10855,6 +12205,44 @@ msgid ""
 msgstr ""
 "イエローケーキはウラン濃縮に使われる<link=\"ELEMENTSSOLID\">固体</link>です。"
 
+#. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.DESC"
+msgid "Deploys a helpful little Sweepy robot."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALPRESSUREDOOR.EFFECT"
+#| msgid ""
+#| "Blocks <link=\"ELEMENTSLIQUID\">Liquid</link> and <link=\"ELEMENTSGAS"
+#| "\">Gas</link> flow, maintaining pressure between areas.\n"
+#| "\n"
+#| "Wild <link=\"CRITTERS\">Critters</link> cannot pass through doors."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.EFFECT"
+msgid ""
+"Stores <link=\"ELEMENTSLIQUID\">Liquid</link> and <link=\"ELEMENTSSOLID"
+"\">Solid Materials</link> debris from the Sweepy.\n"
+"\n"
+"Requires <link=\"POWER\">Power</link> to recharge the Sweepy."
+msgstr ""
+"<link=\"ELEMENTSLIQUID\">液体</link>と<link=\"ELEMENTSGAS\">気体</link>の流入"
+"を防ぎ、分断されたエリアの圧力を維持します。\n"
+"\n"
+"野生<link=\"CRITTERS\">動物</link>はドアを通り抜けることができません。"
+
+#. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.DOCTORSTATION.NAME"
+#| msgid "<link=\"DOCTORSTATION\">Sick Bay</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAME"
+msgid "<link=\"SWEEPBOTSTATION\">Sweepy Dock</link>"
+msgstr "<link=\"DOCTORSTATION\">医務室</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAMEDSTATION
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAMEDSTATION"
+msgid "{0}'s Dock"
+msgstr ""
+
 #. STRINGS.BUILDINGS.PREFABS.SWITCH.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.DESC"
 msgid "Switches can only affect buildings that come after them on a circuit."
@@ -10877,6 +12265,14 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.NAME"
 msgid "<link=\"SWITCH\">Switch</link>"
 msgstr "<link=\"SWITCH\">スイッチ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SWITCH.SIDESCREEN_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.LEGEND_SWITCH"
+#| msgid "Switch"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.SIDESCREEN_TITLE"
+msgid "Switch"
+msgstr "スイッチ"
 
 #. STRINGS.BUILDINGS.PREFABS.SWITCH.TURN_OFF
 msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.TURN_OFF"
@@ -16177,6 +17573,20 @@ msgctxt "STRINGS.CODEX.HEADERS.HATCHESFROMEGG"
 msgid "Hatched from"
 msgstr "以下のものから孵化する"
 
+#. STRINGS.CODEX.HEADERS.INTERNALBATTERY
+msgctxt "STRINGS.CODEX.HEADERS.INTERNALBATTERY"
+msgid "Battery"
+msgstr ""
+
+# 格納庫以外にも、農地タイルでこのアクションが使用できた
+#. STRINGS.CODEX.HEADERS.INTERNALSTORAGE
+#, fuzzy
+#| msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.BUILDMENUTITLE"
+#| msgid "Storage"
+msgctxt "STRINGS.CODEX.HEADERS.INTERNALSTORAGE"
+msgid "Storage"
+msgstr "格納"
+
 #. STRINGS.CODEX.HEADERS.PREREQUISITE_ROLES
 msgctxt "STRINGS.CODEX.HEADERS.PREREQUISITE_ROLES"
 msgid "Prerequisite Jobs"
@@ -18097,6 +19507,22 @@ msgctxt "STRINGS.CODEX.RESEARCH.TITLE"
 msgid "<link=\"RESEARCH\">Research</link>"
 msgstr "<link=\"RESEARCH\">研究</link>"
 
+#. STRINGS.CODEX.ROBOT_DESCRIPTORS.BATTERY.CAPACITY
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.STORAGECAPACITY"
+#| msgid "Storage capacity: {0}"
+msgctxt "STRINGS.CODEX.ROBOT_DESCRIPTORS.BATTERY.CAPACITY"
+msgid "Battery capacity: <b>{0} J</b>"
+msgstr "格納庫容積: {0}"
+
+#. STRINGS.CODEX.ROBOT_DESCRIPTORS.STORAGE.CAPACITY
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.IGNORED_EFFECTS"
+#| msgid "Immune to <b>{0}</b>"
+msgctxt "STRINGS.CODEX.ROBOT_DESCRIPTORS.STORAGE.CAPACITY"
+msgid "Internal storage: <b>{0} Kg</b>"
+msgstr "<b>{0}</b>に対する免疫"
+
 #. STRINGS.CODEX.ROYAL.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.ROYAL.BODY.CONTAINER1"
 msgid "<smallcaps>Pictured: \"Royal\" Shine Bug variant</smallcaps>"
@@ -18474,6 +19900,34 @@ msgstr "動物(変種)"
 msgctxt "STRINGS.CODEX.SUNNY.TITLE"
 msgid "Sun Bug"
 msgstr "太陽 バグ"
+
+#. STRINGS.CODEX.SWEEPY.BODY.CONTAINER1
+msgctxt "STRINGS.CODEX.SWEEPY.BODY.CONTAINER1"
+msgid ""
+"The Sweepy is a domesticated sweeping robot programmed to clean solid and "
+"liquid debris. The Sweepy Dock will automatically launch the Sweepy, store "
+"the debris the robot picks up, and recharge the Sweepy's battery provided it "
+"has been plugged into a power source.\n"
+"\n"
+"Though the Sweepy can not travel over gaps or uneven ground, it is "
+"programmed to feel really bad about this."
+msgstr ""
+
+#. STRINGS.CODEX.SWEEPY.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.CLEANING.NAME"
+#| msgid "Cleaning"
+msgctxt "STRINGS.CODEX.SWEEPY.SUBTITLE"
+msgid "Cleaning Robot"
+msgstr "清掃"
+
+#. STRINGS.CODEX.SWEEPY.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.TRANSPORT.NAME"
+#| msgid "Sweep"
+msgctxt "STRINGS.CODEX.SWEEPY.TITLE"
+msgid "Sweepy"
+msgstr "掃除"
 
 #. STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1"
@@ -19653,6 +21107,14 @@ msgstr "<link=\"PUFTSPECIES\">パフ</link>"
 msgctxt "STRINGS.CREATURES.FAMILY.SQUIRREL"
 msgid "<link=\"SQUIRRELSPECIES\">Pip</link>"
 msgstr "<link=\"SQUIRRELSPECIES\">ピップ</link>"
+
+#. STRINGS.CREATURES.FAMILY.SWEEPBOT
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.STEEL.NAME"
+#| msgid "<link=\"STEEL\">Steel</link>"
+msgctxt "STRINGS.CREATURES.FAMILY.SWEEPBOT"
+msgid "<link=\"SWEEPBOT\">Sweepys</link>"
+msgstr "<link=\"STEEL\">鋼鉄</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.CRABSPECIES
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.CRABSPECIES"
@@ -28434,6 +29896,19 @@ msgstr "注目の的"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CENTEROFATTENTION.TOOLTIP"
 msgid "This Duplicant feels like someone's watching over them..."
 msgstr "この複製人間は誰かからの視線を感じています..."
+
+#. STRINGS.DUPLICANTS.MODIFIERS.CHARGING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MANUALGENERATORCHARGINGUP.NAME"
+#| msgid "Charging Up"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CHARGING.NAME"
+msgid "Charging"
+msgstr "充電完了"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.CHARGING.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CHARGING.TOOLTIP"
+msgid "This Robot is charging its internal battery"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.CLAUSTROPHOBIC.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CLAUSTROPHOBIC.CAUSE"
@@ -40616,6 +42091,27 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.TOOLTIP"
 msgid "Notes on my Duplicants' maneuverability"
 msgstr "複製人間の移動方法覚書"
 
+#. STRINGS.MISC.NOTIFICATIONS.LOGIC_CIRCUIT_OVERLOADED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.CIRCUIT_OVERLOADED.NAME"
+#| msgid "Circuit Overloaded"
+msgctxt "STRINGS.MISC.NOTIFICATIONS.LOGIC_CIRCUIT_OVERLOADED.NAME"
+msgid "Logic Circuit Overloaded"
+msgstr "回路が過負荷状態です"
+
+#. STRINGS.MISC.NOTIFICATIONS.LOGIC_CIRCUIT_OVERLOADED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.CIRCUIT_OVERLOADED.TOOLTIP"
+#| msgid ""
+#| "These <link=\"WIRE\">Wire</link>s melted due to excessive current demands "
+#| "on their circuits"
+msgctxt "STRINGS.MISC.NOTIFICATIONS.LOGIC_CIRCUIT_OVERLOADED.TOOLTIP"
+msgid ""
+"These <link=\"LOGICWIRE\">Automation Wire</link>s melted due to more bits of "
+"data being sent over them than they can support"
+msgstr ""
+"回路に電流が流れすぎているため、<link=\"WIRE\">電線</link>が溶けています"
+
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY"
 msgid ""
@@ -45065,6 +46561,19 @@ msgctxt "STRINGS.RESEARCH.TECHS.ANIMALCONTROL.NAME"
 msgid "<link=\"ANIMALCONTROL\">Animal Control</link>"
 msgstr "<link=\"ANIMALCONTROL\">動物管理</link>"
 
+#. STRINGS.RESEARCH.TECHS.ARTIFICIALFRIENDS.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.ARTIFICIALFRIENDS.DESC"
+msgid "Sweeping advances in companion technology."
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.ARTIFICIALFRIENDS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.AGRICULTURE.NAME"
+#| msgid "<link=\"AGRICULTURE\">Agriculture</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.ARTIFICIALFRIENDS.NAME"
+msgid "<link=\"ARTIFICIALFRIENDS\">Artificial Friends</link>"
+msgstr "<link=\"AGRICULTURE\">農業</link>"
+
 #. STRINGS.RESEARCH.TECHS.ARTISTRY.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.ARTISTRY.DESC"
 msgid ""
@@ -45605,6 +47114,45 @@ msgctxt "STRINGS.RESEARCH.TECHS.MEDICINEIV.NAME"
 msgid "<link=\"MEDICINEIV\">Micro-Targeted Medicine</link>"
 msgstr "<link=\"MEDIC\">マイクロターゲット医薬品</link>"
 
+#. STRINGS.RESEARCH.TECHS.MULTIPLEXING.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.MULTIPLEXING.DESC"
+msgid "More choices for Automation signal distribution."
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.MULTIPLEXING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.BUILDINGS"
+#| msgid "<link=\"BUILDINGS\">Buildings</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.MULTIPLEXING.NAME"
+msgid "<link=\"MULTIPLEXING\">Multiplexing</link>"
+msgstr "<link=\"BUILDINGS\">設備</link>"
+
+#. STRINGS.RESEARCH.TECHS.NOTIFICATIONSYSTEMS.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.NOTIFICATIONSYSTEMS.DESC"
+msgid "Get all the news you need to know about your complex colony."
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.NOTIFICATIONSYSTEMS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.SYSTEMS"
+#| msgid "<link=\"SYSTEMS\">Systems</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.NOTIFICATIONSYSTEMS.NAME"
+msgid "<link=\"NOTIFICATIONSYSTEMS\">Notification Systems</link>"
+msgstr "<link=\"SYSTEMS\">システム</link>"
+
+#. STRINGS.RESEARCH.TECHS.PARALLELAUTOMATION.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.PARALLELAUTOMATION.DESC"
+msgid "Multi-wire automation at a fraction of the space."
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.PARALLELAUTOMATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDCATEGORIES.AUTOMATION.NAME"
+#| msgid "<link=\"BUILDCATEGORYAUTOMATION\">Automation</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.PARALLELAUTOMATION.NAME"
+msgid "<link=\"PARALLELAUTOMATION\">Parallel Automation</link>"
+msgstr "<link=\"BUILDCATEGORYAUTOMATION\">自動化</link>"
+
 #. STRINGS.RESEARCH.TECHS.PLASTICS.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.PLASTICS.DESC"
 msgid ""
@@ -45733,6 +47281,19 @@ msgctxt "STRINGS.RESEARCH.TECHS.SANITATIONSCIENCES.NAME"
 msgid "<link=\"SANITATIONSCIENCES\">Sanitation</link>"
 msgstr "<link=\"SANITATIONSCIENCES\">衛生</link>"
 
+#. STRINGS.RESEARCH.TECHS.SCREENS.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.SCREENS.DESC"
+msgid "High tech displays with lots of pretty colors."
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.SCREENS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.CEMENT.NAME"
+#| msgid "<link=\"CEMENT\">Cement</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.SCREENS.NAME"
+msgid "<link=\"SCREENS\">New Media</link>"
+msgstr "<link=\"CEMENT\">セメント</link>"
+
 #. STRINGS.RESEARCH.TECHS.SKYDETECTORS.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.SKYDETECTORS.DESC"
 msgid ""
@@ -45766,6 +47327,26 @@ msgstr "高温は、より純粋な特殊用途向け素材の製造を円滑に
 msgctxt "STRINGS.RESEARCH.TECHS.SMELTING.NAME"
 msgid "<link=\"SMELTING\">Smelting</link>"
 msgstr "<link=\"SMELTING\">精錬</link>"
+
+#. STRINGS.RESEARCH.TECHS.SOLIDMANAGEMENT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.SOLIDNAPHTHA.DESC"
+#| msgid ""
+#| "Naphtha is a distilled hydrocarbon mixture in a <link=\"ELEMENTSSOLID"
+#| "\">Solid</link> state."
+msgctxt "STRINGS.RESEARCH.TECHS.SOLIDMANAGEMENT.DESC"
+msgid "Make solid decisions in <link=\"ELEMENTSSOLID\">Solid</link> sorting."
+msgstr ""
+"ナフサは蒸留した炭化水素混合物です。<link=\"ELEMENTSSOLID\">固体</link>状態に"
+"あります。"
+
+#. STRINGS.RESEARCH.TECHS.SOLIDMANAGEMENT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.SANDCEMENT.NAME"
+#| msgid "<link=\"SANDCEMENT\">Sand Cement</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.SOLIDMANAGEMENT.NAME"
+msgid "<link=\"SOLIDMANAGEMENT\">Solid Management</link>"
+msgstr "<link=\"SANDCEMENT\">砂セメント</link>"
 
 #. STRINGS.RESEARCH.TECHS.SOLIDTRANSPORT.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.SOLIDTRANSPORT.DESC"
@@ -45941,6 +47522,83 @@ msgstr "星間研究"
 msgctxt "STRINGS.RESEARCH.TYPES.GAMMA.RECIPEDESC"
 msgid "Unlocks cutting-edge technologies."
 msgstr "最先端の技術を発明します。"
+
+#. STRINGS.ROBOTS.CATEGORY_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEARTIFACTS.ROBOTARM.NAME"
+#| msgid "Robot Arm"
+msgctxt "STRINGS.ROBOTS.CATEGORY_NAME"
+msgid "Robots"
+msgstr "ロボットアーム"
+
+#. STRINGS.ROBOTS.MODELS.SWEEPBOT.DESC
+msgctxt "STRINGS.ROBOTS.MODELS.SWEEPBOT.DESC"
+msgid ""
+"An automated sweeping robot.\n"
+"\n"
+"Picks up both <link=\"ELEMENTSSOLID\">Solid</link> and <link=\"ELEMENTSLIQUID"
+"\">Liquid</link> debris and stores it in a <link=\"SWEEPBOTSTATION\">Sweepy "
+"Dock</link>."
+msgstr ""
+
+#. STRINGS.ROBOTS.MODELS.SWEEPBOT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.TRANSPORT.NAME"
+#| msgid "Sweep"
+msgctxt "STRINGS.ROBOTS.MODELS.SWEEPBOT.NAME"
+msgid "Sweepy"
+msgstr "掃除"
+
+#. STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.DESC
+msgctxt "STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.DESC"
+msgid "Something is blocking this robot from reaching its base station"
+msgstr ""
+
+#. STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNREACHABLE.NAME"
+#| msgid "Cannot reach quarantine"
+msgctxt "STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.NAME"
+msgid "Can't reach base station"
+msgstr "隔離不可"
+
+#. STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.TOOLTIP
+msgctxt "STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.TOOLTIP"
+msgid "Something is blocking this robot from reaching its base station"
+msgstr ""
+
+#. STRINGS.ROBOTS.STATUSITEMS.DUSTBINFULL.DESC
+msgctxt "STRINGS.ROBOTS.STATUSITEMS.DUSTBINFULL.DESC"
+msgid "This robot must return to its base station to unload"
+msgstr ""
+
+#. STRINGS.ROBOTS.STATUSITEMS.DUSTBINFULL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTPIPEFULL.NAME"
+#| msgid "Output Pipe Full"
+msgctxt "STRINGS.ROBOTS.STATUSITEMS.DUSTBINFULL.NAME"
+msgid "Dust Bin Full"
+msgstr "出力パイプ詰まり"
+
+#. STRINGS.ROBOTS.STATUSITEMS.DUSTBINFULL.TOOLTIP
+msgctxt "STRINGS.ROBOTS.STATUSITEMS.DUSTBINFULL.TOOLTIP"
+msgid "This robot must return to its base station to unload"
+msgstr ""
+
+#. STRINGS.ROBOTS.STATUSITEMS.LOWBATTERY.DESC
+msgctxt "STRINGS.ROBOTS.STATUSITEMS.LOWBATTERY.DESC"
+msgid "This robot's battery is low and needs to recharge"
+msgstr ""
+
+#. STRINGS.ROBOTS.STATUSITEMS.LOWBATTERY.NAME
+msgctxt "STRINGS.ROBOTS.STATUSITEMS.LOWBATTERY.NAME"
+msgid "Low Battery"
+msgstr ""
+
+#. STRINGS.ROBOTS.STATUSITEMS.LOWBATTERY.TOOLTIP
+msgctxt "STRINGS.ROBOTS.STATUSITEMS.LOWBATTERY.TOOLTIP"
+msgid "This robot's battery is low and needs to recharge"
+msgstr ""
 
 #. STRINGS.ROOMS.CRITERIA.ADVANCED_WASH_STATION.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.ADVANCED_WASH_STATION.DESCRIPTION"
@@ -47190,6 +48848,14 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.LIQUIDCOOLING"
 msgid "<link=\"HEAT\">Cooling factor</link>: {0}"
 msgstr "<link=\"HEAT\">冷却要素</link>: {0}"
 
+#. STRINGS.UI.BUILDINGEFFECTS.MAX_BITS
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.EMITS_LIGHT_LUX"
+#| msgid "<link=\"LIGHT\">Brightness</link>: {0} Lux"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.MAX_BITS"
+msgid "<link=\"LOGIC\">Bit</link> Depth: {0}"
+msgstr "<link=\"LIGHT\">光量</link>: {0} ルクス"
+
 #. STRINGS.UI.BUILDINGEFFECTS.MAX_WATTAGE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.MAX_WATTAGE"
 msgid "Max <link=\"POWER\">Power</link>: {0}"
@@ -47876,6 +49542,21 @@ msgid ""
 msgstr ""
 "このパイプを通過した<style=\"KKeyword\">液体</style>の<style=\"KKeyword\">温"
 "度</style>を<b>{0}</b>下げます"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_BITS
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.TRANSFORMER_INPUT_WIRE"
+#| msgid ""
+#| "Connect a <style=\"KKeyword\">Wire</style> to the large <style=\"KKeyword"
+#| "\">Input</style> with any amount of <style=\"KKeyword\">Watts</style>."
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_BITS"
+msgid ""
+"Sending an <style=\"KKeyword\">Automation Signal</style> with a higher "
+"<style=\"KKeyword\">Bit Depth</style> than the connected <style=\"KKeyword"
+"\">Logic Wire</style> can result in damage to the circuit"
+msgstr ""
+"大きいほうの<style=\"KKeyword\">入力</style>側に任意の<style=\"KKeyword\">"
+"ワット数</style>の<style=\"KKeyword\">電線</style>を接続します。"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_WATTAGE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_WATTAGE"
@@ -52610,9 +54291,12 @@ msgid "STEAM WORKSHOP"
 msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.NAME"
+#| msgid "AUTOMATION OVERLAY"
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "RECREATION PACK!"
-msgstr "レクリエーション パック！"
+msgid "AUTOMATION PACK!"
+msgstr "自動化レイヤー"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -52628,16 +54312,28 @@ msgid "JOIN THE DISCUSSION"
 msgstr "議論に参加"
 
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#| msgid ""
+#| "<b>Welcome to Meep's Mandatory Recreation Pack!</b>\n"
+#| "\n"
+#| "<b>Update Features:</b>\n"
+#| "\n"
+#| "• New recreational buildings for Duplicants to relax in\n"
+#| "• New 'Overjoyed Reactions' may trigger when Duplicants have an excess of "
+#| "morale\n"
+#| "• Numerous bug fixes and improvements\n"
+#| "\n"
+#| "Please view the full patch notes for further details!"
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"<b>Welcome to Meep's Mandatory Recreation Pack!</b>\n"
+"<b>Welcome to Banhi's Automation Innovation Pack!</b>\n"
 "\n"
 "<b>Update Features:</b>\n"
 "\n"
-"• New recreational buildings for Duplicants to relax in\n"
-"• New 'Overjoyed Reactions' may trigger when Duplicants have an excess of "
-"morale\n"
-"• Numerous bug fixes and improvements\n"
+"• New and Improved automation sensors and outputs for work and for play\n"
+"• New 'Sweepy' robot helps keep your colony tidy and stylish\n"
+"• Bunches of optimizations, bug fixes, and improvements across the game\n"
 "\n"
 "Please view the full patch notes for further details!"
 msgstr ""
@@ -52938,6 +54634,23 @@ msgstr "セーブ名"
 msgctxt "STRINGS.UI.FRONTEND.SAVESCREEN.TITLE"
 msgid "SAVE SLOTS"
 msgstr "セーブスロット"
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING"
+msgid ""
+"The following buildings have acquired new automation ports!\n"
+"\n"
+"These buildings in your colony can now be connected to existing <link="
+"\"LOGICWIRE\">Automation Wire</link>s."
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.NAME"
+#| msgid "AUTOMATION OVERLAY"
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING_TITLE"
+msgid "AUTOMATION CHANGES"
+msgstr "自動化レイヤー"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.SUDDENMORALEHELPER"
@@ -53437,6 +55150,14 @@ msgstr "凍結ダメージ"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LIQUID_PRESSURE"
 msgid "Pressure Damage"
 msgstr "水圧ダメージ"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LOGIC_CIRCUIT_OVERLOADED
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CIRCUIT_OVERLOADED"
+#| msgid "Overload Damage"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LOGIC_CIRCUIT_OVERLOADED"
+msgid "Signal Overload Damage"
+msgstr "過負荷ダメージ"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MICROMETEORITE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.MICROMETEORITE"
@@ -54318,35 +56039,250 @@ msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
 msgid "<b><color=#f44a47>Red Signal</b></color>: Disable building"
 msgstr "<b><color=#f44a47>レッド</b></color>: 設備を無効化"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_ACTIVE"
 msgid "Green Signal"
 msgstr "グリーン"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_INACTIVE"
 msgid "Red Signal"
 msgstr "レッド"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME"
+#| msgid "INPUT A"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_FOUR_NAME"
+msgid "INPUT D"
+msgstr "入力A"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME"
+#| msgid "INPUT A"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_ONE_NAME"
 msgid "INPUT A"
 msgstr "入力A"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_ACTIVE
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_ACTIVE"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_ACTIVE"
 msgid "Green Signal"
 msgstr "グリーン"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_INACTIVE
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_INACTIVE"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_INACTIVE"
 msgid "Red Signal"
 msgstr "レッド"
 
-#. STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_NAME
-msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_NAME"
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_NAME"
+#| msgid "INPUT A"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_THREE_NAME"
+msgid "INPUT C"
+msgstr "入力A"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_NAME"
+#| msgid "INPUT B"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_INPUT_TWO_NAME"
 msgid "INPUT B"
 msgstr "入力B"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_FOUR_NAME"
+msgid "OUTPUT D"
+msgstr "出力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_ONE_NAME"
+msgid "OUTPUT A"
+msgstr "出力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_THREE_NAME"
+msgid "OUTPUT C"
+msgstr "出力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTI_OUTPUT_TWO_NAME"
+msgid "OUTPUT B"
+msgstr "出力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_ACTIVE"
+#| msgid "<b><color=#57b95e>Green Signal</b></color>: Enable building"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Set signal path to <b>down</b> "
+"position"
+msgstr "<b><color=#57b95e>グリーン</b></color>: 設備を有効化"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
+#| msgid "<b><color=#f44a47>Red Signal</b></color>: Disable building"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Set signal path to <b>up</b> "
+"position"
+msgstr "<b><color=#f44a47>レッド</b></color>: 設備を無効化"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.DISEASE.CONTRACTION_RATES"
+#| msgid "CONTRACTION RATES"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_ONE_NAME"
+msgid "CONTROL A"
+msgstr "罹患率"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_ACTIVE"
+#| msgid "<b><color=#57b95e>Green Signal</b></color>: Enable building"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Set signal path to <b>down</b> "
+"position"
+msgstr "<b><color=#57b95e>グリーン</b></color>: 設備を有効化"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
+#| msgid "<b><color=#f44a47>Red Signal</b></color>: Disable building"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Set signal path to <b>up</b> "
+"position"
+msgstr "<b><color=#f44a47>レッド</b></color>: 設備を無効化"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_NAME
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_MULTIPLEXER_CONTROL_TWO_NAME"
+msgid "CONTROL B"
+msgstr ""
 
 #. STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_ACTIVE
 msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_ACTIVE"
@@ -54362,6 +56298,30 @@ msgstr "レッド"
 msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_INPUT_ONE_NAME"
 msgid "INPUT"
 msgstr "入力"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_ACTIVE"
+#| msgid "Green Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_ACTIVE"
+msgid "Green Signal"
+msgstr "グリーン"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_ONE_INACTIVE"
+#| msgid "Red Signal"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_INACTIVE"
+msgid "Red Signal"
+msgstr "レッド"
+
+#. STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEAND.OUTPUT_NAME"
+#| msgid "OUTPUT"
+msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_SINGLE_OUTPUT_ONE_NAME"
+msgid "OUTPUT"
+msgstr "出力"
 
 #. STRINGS.UI.LOGIC_PORTS.INPUT_PORT_TOOLTIP
 msgctxt "STRINGS.UI.LOGIC_PORTS.INPUT_PORT_TOOLTIP"
@@ -55876,6 +57836,14 @@ msgctxt "STRINGS.UI.OVERLAYS.LOGIC.CIRCUIT_STATUS_HEADER"
 msgid "GRID STATUS"
 msgstr "グリッドステータス"
 
+#. STRINGS.UI.OVERLAYS.LOGIC.CONTROL_INPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.CONTROLS"
+#| msgid "Controls"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.CONTROL_INPUT"
+msgid "Control Port"
+msgstr "コントロール"
+
 #. STRINGS.UI.OVERLAYS.LOGIC.DISCONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.DISCONNECTED"
 msgid "DISCONNECTED"
@@ -55905,6 +57873,30 @@ msgstr "出力ポート"
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE"
 msgid "Reset Port"
 msgstr "リセットポート"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.RIBBON_INPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.INPUT"
+#| msgid "Input Port"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RIBBON_INPUT"
+msgid "Ribbon Input Port"
+msgstr "入力ポート"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.RIBBON_OUTPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.OUTPUT"
+#| msgid "Output Port"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RIBBON_OUTPUT"
+msgid "Ribbon Output Port"
+msgstr "出力ポート"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.CONTROL_INPUT
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.CONTROL_INPUT"
+msgid ""
+"<b>Control Port</b>\n"
+"Control the signal selection of a <link=\"LOGICGATEMULTIPLEXER\">Signal "
+"Selector</link> or <link=\"LOGICGATEDEMULTIPLEXER\">Signal Distributor</link>"
+msgstr ""
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.DISCONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.DISCONNECTED"
@@ -55943,13 +57935,47 @@ msgstr ""
 "自動化グリッドにシグナルを送信します"
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RESET_UPDATE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.RESET_PORT_ACTIVE"
+#| msgid ""
+#| "<b><color=#57b95e>Green Signal</b></color>: Reset the internal Memory to "
+#| "<b><color=#f44a47>Red</b></color>"
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RESET_UPDATE"
 msgid ""
 "<b>Reset Port</b>\n"
-"Can reset a Memory Toggle's internal Memory"
+"Reset a <link=\"LOGICMEMORY\">Memory Toggle</link>'s internal Memory to "
+"<b><color=#f44a47>Red</b></color>"
 msgstr ""
-"<b>リセットポート</b>\n"
-"メモリ内の記録をリセットします"
+"<b><color=#57b95e>グリーン</b></color>: 内部メモリを<b><color=#f44a47>レッド"
+"</b></color>に初期化"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RIBBON_INPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.INPUT"
+#| msgid ""
+#| "<b>Input Port</b>\n"
+#| "Receives a signal from an automation grid"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RIBBON_INPUT"
+msgid ""
+"<b>Ribbon Input Port</b>\n"
+"Receives a 4-bit signal from an automation grid"
+msgstr ""
+"<b>入力ポート</b>\n"
+"自動化グリッドからシグナルを受信します"
+
+#. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RIBBON_OUTPUT
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.OUTPUT"
+#| msgid ""
+#| "<b>Output Port</b>\n"
+#| "Sends a signal out to an automation grid"
+msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RIBBON_OUTPUT"
+msgid ""
+"<b>Ribbon Output Port</b>\n"
+"Sends a 4-bit signal out to an automation grid"
+msgstr ""
+"<b>出力ポート</b>\n"
+"自動化グリッドにシグナルを送信します"
 
 #. STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.ZERO
 msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.ZERO"
@@ -57886,20 +59912,42 @@ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH.TOOLTIP"
 msgid "Paint elements into the world simulation {Hotkey}"
 msgstr "シミュレーションへ元素を塗りたくります{Hotkey}"
 
-#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME
-msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME"
-msgid "Noise"
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_DENSITY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME"
+#| msgid "Noise"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_DENSITY.NAME"
+msgid "Noise B"
 msgstr "ノイズ"
 
-#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP
-msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP"
-msgid "Adjust brush noisiness"
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_DENSITY.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP"
+#| msgid "Adjust brush noisiness"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_DENSITY.TOOLTIP"
+msgid "Adjust brush noisiness B"
+msgstr "ブラシのノイズを調整します"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_SCALE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.NAME"
+#| msgid "Noise"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_SCALE.NAME"
+msgid "Noise A"
+msgstr "ノイズ"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_SCALE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE.TOOLTIP"
+#| msgid "Adjust brush noisiness"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_NOISE_SCALE.TOOLTIP"
+msgid "Adjust brush noisiness A"
 msgstr "ブラシのノイズを調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.NAME"
-msgid "Brush size"
-msgstr "ブラシサイズ"
+msgid "Size"
+msgstr ""
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.TOOLTIP"
@@ -57926,14 +59974,50 @@ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DESTROY.TOOLTIP"
 msgid "Delete everything in the selected cell(s) {Hotkey}"
 msgstr "選択したセル内の全てを破壊します{Hotkey}"
 
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.DISEASE.HOVERTITLE"
+#| msgid "Germ"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE.NAME"
+msgid "Germ"
+msgstr "病原菌"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP"
+#| msgid "Adjust germ count"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE.TOOLTIP"
+msgid "Adjust type of germ"
+msgstr "病原菌の量を調整します"
+
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.DISEASES.GERMS"
+#| msgid "Germs"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME"
-msgid "Germ count"
-msgstr "病原菌量"
+msgid "Germs"
+msgstr "病原菌"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP"
 msgid "Adjust germ count"
+msgstr "病原菌の量を調整します"
+
+# 直訳だと微妙かもしれない
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.ELEMENT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.ELEMENT"
+#| msgid "Element"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.ELEMENT.NAME"
+msgid "Element"
+msgstr "要素"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.ELEMENT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.TOOLTIP"
+#| msgid "Adjust germ count"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.ELEMENT.TOOLTIP"
+msgid "Adjust type of element"
 msgstr "病原菌の量を調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.FLOOD.NAME
@@ -57977,9 +60061,12 @@ msgid "Toggle between placing construction plans and fully built buildings"
 msgstr "設置予定と完成品の切替をします"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LISTTITLES.MASS"
+#| msgid "Mass"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.NAME"
-msgid "Absolute mass"
-msgstr "絶対質量"
+msgid "Mass"
+msgstr "質量"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.TOOLTIP"
@@ -58022,9 +60109,12 @@ msgid "Paint elements into the simulation using noise {Hotkey}"
 msgstr "元素をスプレーします{Hotkey}"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEAT.HEADER_1"
+#| msgid "Temperature"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME"
-msgid "Absolute temperature"
-msgstr "絶対温度"
+msgid "Temperature"
+msgstr "温度"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.TOOLTIP"
@@ -58032,9 +60122,12 @@ msgid "Adjust absolute temperature"
 msgstr "絶対温度を調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEAT.HEADER_1"
+#| msgid "Temperature"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME"
-msgid "Additive temperature"
-msgstr "相対温度"
+msgid "Temperature"
+msgstr "温度"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.TOOLTIP"
@@ -61758,6 +63851,43 @@ msgctxt "STRINGS.UI.UISIDESCREENS.COMMAND_MODULE_SIDE_SCREEN.TITLE"
 msgid "Launch Conditions"
 msgstr "発射条件"
 
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.DECREMENT_MODE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.NEEDS.QUALITYOFLIFE.NAME"
+#| msgid "Morale Requirements"
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.DECREMENT_MODE"
+msgid "Mode: Decrement"
+msgstr "士気要件"
+
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_ACTIVE"
+#| msgid "Sends a <b><color=#57b95e>Green Signal</b></color> when full"
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.DESCRIPTION"
+msgid "Send <b><color=#57b95e>Green Signal</b></color> when count is reached:"
+msgstr "満タンになると<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.INCREMENT_MODE
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.INCREMENT_MODE"
+msgid "Mode: Increment"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.RESET_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE"
+#| msgid "Reset Port"
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.RESET_BUTTON"
+msgid "Reset Counter"
+msgstr "リセットポート"
+
+#. STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.INPUT.ENTER"
+#| msgid "Enter"
+msgctxt "STRINGS.UI.UISIDESCREENS.COUNTER_SIDE_SCREEN.TITLE"
+msgid "Counter"
+msgstr "Enter"
+
 #. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.START
 msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.START"
 msgid "Turn On"
@@ -61794,9 +63924,12 @@ msgstr ""
 "style>が<b>{0}</b>を下回ると<b><color=#57b95e>グリーン</b></color>になります"
 
 #. STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.BUILDING_COUNT"
+#| msgid "Count: {0}"
 msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME"
-msgid "Critter / Egg Count"
-msgstr "動物/卵の数"
+msgid "Count"
+msgstr "設備数: {0}"
 
 #. STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT
 msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.ACCESS_FORMAT"
@@ -62097,6 +64230,14 @@ msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_DETAILS"
 msgid "Recipe Details"
 msgstr "レシピ詳細"
 
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_FOREVER
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.AUTOSAVE_NEVER"
+#| msgid "Never"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_FOREVER"
+msgid "Forever"
+msgstr "しない"
+
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_QUEUE
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_QUEUE"
 msgid "Order Production Quantity:"
@@ -62183,6 +64324,20 @@ msgstr ""
 "フィルター出力する液体:\n"
 "{0}"
 
+#. STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.FILTEREDELEMENT.SOLID
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.FILTEREDELEMENT.LIQUID"
+#| msgid ""
+#| "Filtered Liquid Output:\n"
+#| "{0}"
+msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.FILTEREDELEMENT.SOLID"
+msgid ""
+"Filtered Solid Output:\n"
+"{0}"
+msgstr ""
+"フィルター出力する液体:\n"
+"{0}"
+
 #. STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.NO_SELECTION
 msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.NO_SELECTION"
 msgid "None"
@@ -62231,6 +64386,21 @@ msgstr ""
 msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.UNFILTEREDELEMENTS.LIQUID"
 msgid ""
 "Liquid Output:\n"
+"All"
+msgstr ""
+"出力する液体:\n"
+"全て"
+
+#. STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.UNFILTEREDELEMENTS.SOLID
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.UNFILTEREDELEMENTS.LIQUID"
+#| msgid ""
+#| "Liquid Output:\n"
+#| "All"
+msgctxt "STRINGS.UI.UISIDESCREENS.FILTERSIDESCREEN.UNFILTEREDELEMENTS.SOLID"
+msgid ""
+"Solid Output:\n"
 "All"
 msgstr ""
 "出力する液体:\n"
@@ -62303,6 +64473,157 @@ msgid ""
 msgstr ""
 "<b><color=#57b95e>グリーン</b></color>を<b>{0}秒間</b>受信し続けると、"
 "<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.DESCRIPTION
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.DESCRIPTION"
+msgid ""
+"Notification will be sent upon receiving a <b><color=#57b95e>Green Signal</"
+"b></color>\n"
+"\n"
+"Making modifications will clear any existing notifications being sent by "
+"this building."
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE"
+#| msgid "<b>Morale</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.NAME"
+msgid "<b>Name:</b>"
+msgstr "<b>士気</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.NAME_DEFAULT
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNOTIFICATION"
+#| msgid "Debug Notification"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.NAME_DEFAULT"
+msgid "Notification"
+msgstr "デバッグ:通知"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.PAUSE
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE"
+#| msgid "<b>Morale</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.PAUSE"
+msgid "<b>Pause:</b>"
+msgstr "<b>士気</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNOTIFICATIONMESSAGE"
+#| msgid "Debug Notification Message"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TITLE"
+msgid "Notification Designer"
+msgstr "デバッグ:通知メッセージ"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE"
+#| msgid "<b>Morale</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIP"
+msgid "<b>Tooltip:</b>"
+msgstr "<b>士気</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIP_DEFAULT
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.TOOL.NAME"
+#| msgid "Tool"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIP_DEFAULT"
+msgid "Tooltip"
+msgstr "ツール"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.DEBUG.DEBUGNOTIFICATION"
+#| msgid "Debug Notification"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.NAME"
+msgid "Select notification text"
+msgstr "デバッグ:通知"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.PAUSE
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.PAUSE"
+msgid "Time will pause upon notification when checked"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.TOOLTIP
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.TOOLTIP"
+msgid "Select notification hover text"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.TYPE
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.TYPE"
+msgid "Select the visual and aural style of the notification"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.ZOOM
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIPS.ZOOM"
+msgid "The view will zoom to this building upon notification when checked"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TYPE
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.EFFECTS.HEADER"
+#| msgid "<b>Effects:</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TYPE"
+msgid "<b>Type:</b>"
+msgstr "<b>効果:</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.ZOOM
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE"
+#| msgid "<b>Morale</b>"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.ZOOM"
+msgid "<b>Zoom:</b>"
+msgstr "<b>士気</b>"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.BIT
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.BUILD.NAME"
+#| msgid "Build {0}"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.BIT"
+msgid "Bit {0}"
+msgstr "{0} を建設"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_DESCRIPTION
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_DESCRIPTION"
+msgid ""
+"Selected <b>Bit</b>'s <b>Signal</b> will be read by the <b>Output Port</b>."
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_TITLE
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_TITLE"
+msgid "Ribbon Reader"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_DESCRIPTION
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_DESCRIPTION"
+msgid "Received <b>Signal</b> will be written to selected <b>Bit</b>"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_TITLE
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_TITLE"
+msgid "Ribbon Writer"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.STATE_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.ONE"
+#| msgid "Green"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.STATE_ACTIVE"
+msgid "Green"
+msgstr "グリーン"
+
+#. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.STATE_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.ZERO"
+#| msgid "Red"
+msgctxt "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.STATE_INACTIVE"
+msgid "Red"
+msgstr "レッド"
 
 #. STRINGS.UI.UISIDESCREENS.LURE.ATTRACTS
 msgctxt "STRINGS.UI.UISIDESCREENS.LURE.ATTRACTS"
@@ -63201,6 +65522,45 @@ msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TITLE"
 msgid "Pressure Threshold"
 msgstr "圧力しきい値"
 
+#. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE
+msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE"
+msgid "Watts"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE_TOOLTIP_ABOVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN."
+#| "PRESSURE_TOOLTIP_ABOVE"
+#| msgid ""
+#| "Will send a <b><color=#57b95e>Green Signal</b></color> if the <style="
+#| "\"KKeyword\">Pressure</style> is above <b>{0}</b>"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE_TOOLTIP_ABOVE"
+msgid ""
+"Will send a <b><color=#57b95e>Green Signal</b></color> if the <style="
+"\"KKeyword\">Wattage</style> consumed is above <b>{0}</b>"
+msgstr ""
+"<style=\"KKeyword\">圧力</style>が<b>{0}</b>を超えたとき、<b><color=#57b95e>"
+"グリーン</b></color>を送信します"
+
+#. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE_TOOLTIP_BELOW
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN."
+#| "PRESSURE_TOOLTIP_BELOW"
+#| msgid ""
+#| "Will send a <b><color=#57b95e>Green Signal</b></color> if the <style="
+#| "\"KKeyword\">Pressure</style> is below <b>{0}</b>"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE_TOOLTIP_BELOW"
+msgid ""
+"Will send a <b><color=#57b95e>Green Signal</b></color> if the <style="
+"\"KKeyword\">Wattage</style> consumed is below <b>{0}</b>"
+msgstr ""
+"<style=\"KKeyword\">圧力</style>が<b>{0}</b>を下回った時、<b><color=#57b95e>"
+"グリーン</b></color>を送信します"
+
 #. STRINGS.UI.UISIDESCREENS.TIME_OF_DAY_SIDE_SCREEN.START
 msgctxt "STRINGS.UI.UISIDESCREENS.TIME_OF_DAY_SIDE_SCREEN.START"
 msgid "Turn On"
@@ -63316,6 +65676,112 @@ msgid "Switch must be connected to a <link=\"POWER\">Power</link> grid"
 msgstr ""
 "スイッチは<link=\"POWER\">配電</link>設備に接続されている必要があります"
 
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.CURRENT_TIME
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.CURRENT_TIME"
+msgid "{0}/{1}"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.DISABLED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN."
+#| "TIMELAPSE_DISABLED_DESCRIPTION"
+#| msgid "Disabled"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.DISABLED"
+msgid "Timer Disabled"
+msgstr "無効化"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.GREEN_DURATION_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.ON_TOOLTIP"
+#| msgid ""
+#| "Activation time determines the time of day this sensor should begin "
+#| "sending a <b><color=#57b95e>Green Signal</b></color>\n"
+#| "------------------\n"
+#| "This sensor sends a <b><color=#57b95e>Green Signal</b></color> {0} "
+#| "through the day"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.GREEN_DURATION_TOOLTIP"
+msgid ""
+"Green duration determines the amount of time this sensor should send a "
+"<b><color=#57b95e>Green Signal</b></color>\n"
+"------------------\n"
+"This sensor sends a <b><color=#57b95e>Green Signal</b></color> for {0}"
+msgstr ""
+"稼働時刻はこのセンサーが<b><color=#57b95e>グリーン</b></color>を送信し始める"
+"時刻を決定します\n"
+"------------------\n"
+"このセンサーは１日のうち、{0}からグリーンを送信します"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.MODE_LABEL_CYCLES
+#, fuzzy
+#| msgctxt "STRINGS.UI.MATH_PICTURES.AXIS_LABELS.CYCLES"
+#| msgid "Cycles"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.MODE_LABEL_CYCLES"
+msgid "Mode: Cycles"
+msgstr "サイクル"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.MODE_LABEL_SECONDS
+#, fuzzy
+#| msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.SECONDS"
+#| msgid "Seconds"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.MODE_LABEL_SECONDS"
+msgid "Mode: Seconds"
+msgstr "秒"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.OFF
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.DURATION"
+#| msgid "Active Duration"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.OFF"
+msgid "Red Duration"
+msgstr "稼働時間"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.ON
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.DURATION"
+#| msgid "Active Duration"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.ON"
+msgid "Green Duration"
+msgstr "稼働時間"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.RED_DURATION_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIME_RANGE_SIDE_SCREEN.DURATION_TOOLTIP"
+#| msgid ""
+#| "Active duration determines what percentage of the day this sensor will "
+#| "spend sending a <b><color=#57b95e>Green Signal</b></color>\n"
+#| "------------------\n"
+#| "This sensor will send a <b><color=#57b95e>Green Signal</b></color> for "
+#| "{0} of the day"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.RED_DURATION_TOOLTIP"
+msgid ""
+"Red duration determines the amount of time this sensor should send a "
+"<b><color=#f44a47>Red Signal</b></color>\n"
+"------------------\n"
+"This sensor will send a <b><color=#57b95e>Red Signal</b></color> for {0}"
+msgstr ""
+"稼働時間はこのセンサーが1日のうち何%の時間 <b><color=#57b95e>グリーン</b></"
+"color>を送信するかを決定します\n"
+"\n"
+"このセンサーは1日につき{0}の間 <b><color=#57b95e>グリーン</b></color>を送信し"
+"ます"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.RESET_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.LOGIC.RESET_UPDATE"
+#| msgid "Reset Port"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.RESET_BUTTON"
+msgid "Reset Timer"
+msgstr "リセットポート"
+
+#. STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.TIMELINE"
+#| msgid "Timeline"
+msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.TITLE"
+msgid "Timer"
+msgstr "時間軸"
+
 #. STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ALLBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ALLBUTTON"
 msgid "All"
@@ -63369,6 +65835,48 @@ msgstr "動物フィルター"
 msgctxt "STRINGS.UI.UISIDESCREENS.VALVESIDESCREEN.TITLE"
 msgid "Flow Control"
 msgstr "流量制御"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.ACTIVATE_IF
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.ACTIVATE_IF"
+#| msgid "Send <b><color=#57b95e>Green Signal</b></color> if:"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.ACTIVATE_IF"
+msgid "Send <b><color=#57b95e>Green Signal</b></color> if:"
+msgstr "以下の条件で<b><color=#57b95e>グリーン</b></color>を送信:"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.COLDER_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.COLDER_BUTTON"
+#| msgid "Below"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.COLDER_BUTTON"
+msgid "Below"
+msgstr "以下"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.CURRENT_TEMPERATURE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.NAME"
+#| msgid "Current Wattage: {Wattage}"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.CURRENT_TEMPERATURE"
+msgid ""
+"Current Wattage:\n"
+"{0}"
+msgstr "現在のワット数: {Wattage}"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.MANUALGENERATORSIDESCREEN.TITLE"
+#| msgid "Battery Recharge Threshold"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.TITLE"
+msgid "Wattage Threshold"
+msgstr "バッテリー充填しきい値"
+
+#. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.WARMER_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.WARMER_BUTTON"
+#| msgid "Above"
+msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.WARMER_BUTTON"
+msgid "Above"
+msgstr "以上"
 
 #. STRINGS.UI.UNITSUFFIXES.CALORIES.CALORIE
 msgctxt "STRINGS.UI.UNITSUFFIXES.CALORIES.CALORIE"
@@ -65915,6 +68423,58 @@ msgstr ""
 msgctxt "STRINGS.WORLDS.VOLCANIC.NAME"
 msgid "Volcanea"
 msgstr "ボルカニア"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP"
+#~ msgid ""
+#~ "Sends a <b><color=#f44a47>Red Signal</b></color> when battery is more "
+#~ "than <b>{0}%</b> charged"
+#~ msgstr ""
+#~ "バッテリー充電量が <b>{0}%</b> を上回ると<b><color=#f44a47>レッド</b></"
+#~ "color>になります"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "RECREATION PACK!"
+#~ msgstr "レクリエーション パック！"
+
+#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_ACTIVE"
+#~ msgid "Green Signal"
+#~ msgstr "グリーン"
+
+#~ msgctxt "STRINGS.UI.LOGIC_PORTS.GATE_DOUBLE_INPUT_TWO_INACTIVE"
+#~ msgid "Red Signal"
+#~ msgstr "レッド"
+
+#~ msgctxt "STRINGS.UI.OVERLAYS.LOGIC.TOOLTIPS.RESET_UPDATE"
+#~ msgid ""
+#~ "<b>Reset Port</b>\n"
+#~ "Can reset a Memory Toggle's internal Memory"
+#~ msgstr ""
+#~ "<b>リセットポート</b>\n"
+#~ "メモリ内の記録をリセットします"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.BRUSH_SIZE.NAME"
+#~ msgid "Brush size"
+#~ msgstr "ブラシサイズ"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.DISEASE_COUNT.NAME"
+#~ msgid "Germ count"
+#~ msgstr "病原菌量"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.NAME"
+#~ msgid "Absolute mass"
+#~ msgstr "絶対質量"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME"
+#~ msgid "Absolute temperature"
+#~ msgstr "絶対温度"
+
+#~ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME"
+#~ msgid "Additive temperature"
+#~ msgstr "相対温度"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.CRITTER_COUNT_SIDE_SCREEN.VALUE_NAME"
+#~ msgid "Critter / Egg Count"
+#~ msgstr "動物/卵の数"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACECRAFTREADYTOLAND.NOTIFICATION"
 #~ msgid "Ready to land"
