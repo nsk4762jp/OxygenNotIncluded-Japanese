@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -101,6 +101,11 @@ msgstr "パイプ内容物の過冷却"
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE"
 msgid "neighboring liquid pressure"
 msgstr "隣接する液体の圧力"
+
+#. STRINGS.BUILDINGS.DAMAGESOURCES.LOGIC_CIRCUIT_OVERLOADED
+msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.LOGIC_CIRCUIT_OVERLOADED"
+msgid "an overloaded logic circuit"
+msgstr "論理回路過負荷"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.MICROMETEORITE
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.MICROMETEORITE"
@@ -466,19 +471,19 @@ msgstr "<link=\"BATTERYMEDIUM\">大容量バッテリー</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
 msgid ""
 "Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less than "
-"<b>{0}%</b> charged"
+"<b>{0}%</b> charged, until it is <b>{1}% (High Threshold)</b> charged"
 msgstr ""
-"バッテリー充電量が <b>{0}%</b> を下回ると<b><color=#57b95e>グリーン</b></"
-"color>になります"
+"バッテリー充電量が<b>{0}%</b>を下回った時、<b>{1}% (上限)</b>を上回るまで"
+"<b><color=#57b95e>グリーン</b></color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP"
 msgid ""
-"Sends a <b><color=#f44a47>Red Signal</b></color> when battery is more than "
-"<b>{0}%</b> charged"
+"Sends a <b><color=#f44a47>Red Signal</b></color> when battery is <b>{0}%</b> "
+"charged, until it is less than <b>{1}% (Low Threshold)</b> charged"
 msgstr ""
-"バッテリー充電量が <b>{0}%</b> を上回ると<b><color=#f44a47>レッド</b></color>"
-"になります"
+"バッテリー充電量が<b>{0}%</b>を上回った時、<b>{1}% (下限)</b>を下回るまで"
+"<b><color=#f44a47>レッド</b></color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DESC"
@@ -518,10 +523,10 @@ msgstr "充電パラメータ"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_ACTIVE"
 msgid ""
 "Sends a <b><color=#57b95e>Green Signal</b></color> when battery is less than "
-"<b>Low Threshold</b> charged"
+"<b>Low Threshold</b> charged, until <b>High Threshold</b> is reached again"
 msgstr ""
-"バッテリー充電量が<b>しきい値下限</b>を下回ると<b><color=#57b95e>グリーン</"
-"b></color>になります"
+"バッテリー充電量が<b>しきい値下限</b>を下回った時、<b>しきい値上限</b>を上回"
+"るまで<b><color=#57b95e>グリーン</b></color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.LOGIC_PORT_INACTIVE"
@@ -571,25 +576,31 @@ msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_HIGH
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_HIGH"
-msgid "{attrib}: {amount} (High Lux)"
-msgstr "{attrib}: {amount} (高光量)"
+msgid "{attrib}: {amount} (Bright Light)"
+msgstr "{attrib}: {amount} (明るい光)"
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_HIGH_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_HIGH_TOOLTIP"
 msgid ""
-"Duplicants will gain {amount} {attrib} if this building is in bright light."
-msgstr "この設備が十分明るい場合、複製人間は {amount} {attrib} を獲得します。"
+"Duplicants will gain {amount} {attrib} if this building is in at least {lux} "
+"light."
+msgstr ""
+"この設備が{lux}以上の光量下にある場合 、複製人間は {amount} {attrib} を獲得し"
+"ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW"
-msgid "{attrib}: {amount} (Low Lux)"
-msgstr "{attrib}: {amount} (低光量)"
+msgid "{attrib}: {amount} (Dim Light)"
+msgstr "{attrib}: {amount} (暗い光)"
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW_TOOLTIP"
 msgid ""
-"Duplicants will gain {amount} {attrib} if this building is in dim light."
-msgstr "この設備が薄暗い場合、複製人間は {amount} {attrib} を獲得します。"
+"Duplicants will gain {amount} {attrib} if this building is in light dimmer "
+"than {lux}."
+msgstr ""
+"この設備が{lux}未満の光量下にある場合、複製人間は {amount} {attrib} を獲得し"
+"ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.NAME"
@@ -2883,13 +2894,13 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.NAME"
 msgid "<link=\"HOTTUB\">Hot Tub</link>"
 msgstr "<link=\"HOTTUB\">湯船</link>"
 
-#. STRINGS.BUILDINGS.PREFABS.HOTTUB.REQUIREMENT
-msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.REQUIREMENT"
+#. STRINGS.BUILDINGS.PREFABS.HOTTUB.TEMPERATURE_REQUIREMENT
+msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.TEMPERATURE_REQUIREMENT"
 msgid "Minimum {element} Temperature: {temperature}"
 msgstr "{element}の最低温度: {temperature}"
 
-#. STRINGS.BUILDINGS.PREFABS.HOTTUB.REQUIREMENT_TOOLTIP
-msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.REQUIREMENT_TOOLTIP"
+#. STRINGS.BUILDINGS.PREFABS.HOTTUB.TEMPERATURE_REQUIREMENT_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.TEMPERATURE_REQUIREMENT_TOOLTIP"
 msgid ""
 "The Hot Tub will only be usable if supplied with {temperature} {element}. If "
 "the {element} gets too cold, the Hot Tub will drain and require refilling "
@@ -2897,6 +2908,18 @@ msgid ""
 msgstr ""
 "湯船は{temperature}の{element}が供給された場合のみ使用可能です。{element}が冷"
 "たすぎる場合、湯船は排水したのち{element}を入れ替える必要があります。"
+
+#. STRINGS.BUILDINGS.PREFABS.HOTTUB.WATER_REQUIREMENT
+msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.WATER_REQUIREMENT"
+msgid "{element}: {amount}"
+msgstr "{element}: {amount}"
+
+#. STRINGS.BUILDINGS.PREFABS.HOTTUB.WATER_REQUIREMENT_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.HOTTUB.WATER_REQUIREMENT_TOOLTIP"
+msgid ""
+"This building must be filled with {amount} {element} in order to function."
+msgstr ""
+"この設備が動作するには{amount}の{element}で満たされている必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROGENENGINE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENENGINE.DESC"
@@ -3234,7 +3257,7 @@ msgstr "<link=\"JETSUITMARKER\">ジェットスーツ検問所</link>"
 #. STRINGS.BUILDINGS.PREFABS.JUICER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.JUICER.DESC"
 msgid "Fruity juice can really brighten a Duplicant's breaktime"
-msgstr "瑞々しいジュースは複製人間の休憩時間をとても明るくします。"
+msgstr "瑞々しいジュースは複製人間の休憩時間をとても明るくします"
 
 #. STRINGS.BUILDINGS.PREFABS.JUICER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.JUICER.EFFECT"
@@ -3492,7 +3515,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT"
 msgid "Internal <link=\"ELEMENTSLIQUID\">Liquid</link> Presence"
-msgstr "内部<link=\"ELEMENTSLIQUID\">液体</link>検知"
+msgstr "内部<link=\"ELEMENTSLIQUID\">液体</link>判定"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE
 msgctxt ""
@@ -3501,7 +3524,7 @@ msgid ""
 "Sends a <b><color=#57b95e>Green Signal</b></color> if the configured Liquid "
 "is detected within the pipe"
 msgstr ""
-"設定した液体を検出すると<b><color=#57b95e>グリーン</b></color>を送信します"
+"設定した液体を検出すると<b><color=#57b95e>グリーン</b></color>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE
 msgctxt ""
@@ -3893,6 +3916,135 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.NAME"
 msgid "<link=\"LIQUIDVENT\">Liquid Vent</link>"
 msgstr "<link=\"LIQUIDVENT\">排水口</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.DESC"
+msgid ""
+"Sends a notification when it receives a <b><color=#57b95e>Green Signal</b></"
+"color>."
+msgstr "<b><color=#57b95e>グリーン</b></color>を受信すると通知を出します。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.EFFECT"
+msgid ""
+"Attach to sensors to send a notification when certain conditions are met.\n"
+"\n"
+"Notifications can be customized."
+msgstr ""
+"センサーに取り付けることで、特定の条件が満たされた時に通知が出るようになりま"
+"す。\n"
+"\n"
+"通知はカスタマイズ可能です。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_NAME"
+msgid "INPUT"
+msgstr "入力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_ACTIVE"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Push notification"
+msgstr "<b><color=#57b95e>グリーン</b></color>: 通知表示"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_INACTIVE"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Nothing"
+msgstr "<b><color=#f44a47>レッド</b></color>: 効果なし"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.LOGIC_PORT"
+msgid "Notification"
+msgstr "通知"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICALARM.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.NAME"
+msgid "<link=\"LOGICALARM\">Automated Notifier</link>"
+msgstr "<link=\"LOGICALARM\">自動化通知</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.DESC"
+msgid "For numbers higher than ten connect multiple counters together."
+msgstr "10以上の数を扱うには、複数のカウンターを接続します。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.EFFECT"
+msgid ""
+"Counts how many times a <b><color=#57b95e>Green Signal</b></color> has been "
+"received up to a chosen number.\n"
+"\n"
+"When the chosen number is reached it sends a <b><color=#57b95e>Green Signal</"
+"b></color> until it receives another <b><color=#57b95e>Green Signal</b></"
+"color> to start the count over."
+msgstr ""
+"指定した回数になるまで、受信した<b><color=#57b95e>グリーン</b></color>の数を"
+"カウントします。\n"
+"\n"
+"指定した数に到達すると<b><color=#57b95e>グリーン</b></color>になり、次の"
+"<b><color=#57b95e>グリーン</b></color>を受け取るとカウントは初期化されます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.INPUT_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.INPUT_PORT_ACTIVE"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Increase counter by one"
+msgstr "<b><color=#57b95e>グリーン</b></color>: カウンターを1増加"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.INPUT_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.INPUT_PORT_INACTIVE"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Nothing"
+msgstr "<b><color=#f44a47>レッド</b></color>: 効果なし"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT"
+msgid "Internal Counter Value"
+msgstr "内部カウンターの値"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_OUTPUT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_OUTPUT"
+msgid "Number Reached"
+msgstr "到達数"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_RESET
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_RESET"
+msgid "Reset Counter"
+msgstr "リセットカウンター"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.NAME"
+msgid "<link=\"LOGICCOUNTER\">Signal Counter</link>"
+msgstr "<link=\"LOGICCOUNTER\">シグナルカウンター</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.OUTPUT_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.OUTPUT_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> when the counter matches "
+"the selected value"
+msgstr ""
+"カウンターが指定した値になると、<b><color=#57b95e>グリーン</b></color>になり"
+"ます"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.OUTPUT_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.OUTPUT_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_ACTIVE"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Reset counter"
+msgstr "<b><color=#57b95e>グリーン</b></color>: カウンターリセット"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_INACTIVE"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Nothing"
+msgstr "<b><color=#f44a47>レッド</b></color>: 効果なし"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.COUNT_CRITTER_LABEL
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.COUNT_CRITTER_LABEL"
+msgid "Count Critters"
+msgstr "動物の頭数"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.COUNT_EGG_LABEL
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.COUNT_EGG_LABEL"
+msgid "Count Eggs"
+msgstr "卵の数"
+
 #. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.DESC"
 msgid ""
@@ -3933,6 +4085,11 @@ msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になり
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.NAME"
 msgid "<link=\"LOGICCRITTERCOUNTSENSOR\">Critter Sensor</link>"
 msgstr "<link=\"LOGICCRITTERCOUNTSENSOR\">動物センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.SIDESCREEN_TITLE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCRITTERCOUNTSENSOR.SIDESCREEN_TITLE"
+msgid "Critter Sensor"
+msgstr "動物センサー"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICDISEASESENSOR.DESC"
@@ -4087,8 +4244,8 @@ msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT"
-msgid "Specific<link=\"ELEMENTSLIQUID\">Liquid</link> Presence"
-msgstr "特定の<link=\"ELEMENTSLIQUID\">液体</link>検知"
+msgid "Specific <link=\"ELEMENTSLIQUID\">Liquid</link> Presence"
+msgstr "特定の<link=\"ELEMENTSLIQUID\">液体</link>判定"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORLIQUID.LOGIC_PORT_ACTIVE"
@@ -4213,6 +4370,52 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEBUFFER.OUTPUT_NAME"
 msgid "OUTPUT"
 msgstr "出力"
 
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.DESC"
+msgid ""
+"Signal Distributors can be used to choose which circuit should receive a "
+"given automation signal."
+msgstr "シグナル配電器は受信したシグナルをどの回路に流すか選択できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.EFFECT"
+msgid ""
+"Route a single Input signal out one of four possible Outputs, based on the "
+"selection made by the Control Inputs.\n"
+"\n"
+"Send a <b><color=#57b95e>Green Signal</b></color> or a <b><color=#f44a47>Red "
+"Signal</b></color> to the two Control Inputs to determine which Output is "
+"selected."
+msgstr ""
+"制御入力による選択に基づいて、入力信号を4つの出力のうちの一つに伝送します。\n"
+"\n"
+"<b><color=#57b95e>グリーン</b></color>または<b><color=#f44a47>レッド</b></"
+"color>を2つの制御入力に渡すことで、どの出力先に伝送するかが決まります。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.NAME"
+msgid "<link=\"LOGICGATEDEMULTIPLEXER\">Signal Distributor</link>"
+msgstr "<link=\"LOGICGATEDEMULTIPLEXER\">シグナル配電器</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green</b></color> or <b><color=#f44a47>Red</b></"
+"color> signal to the selected output"
+msgstr ""
+"指定した出力に対し、<b><color=#57b95e>グリーン</b></color>または"
+"<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_INACTIVE"
+msgid "Nothing"
+msgstr "無し"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEDEMULTIPLEXER.OUTPUT_NAME"
+msgid "OUTPUT"
+msgstr "出力"
+
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.DESC"
 msgid ""
@@ -4259,6 +4462,52 @@ msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になり
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_NAME"
+msgid "OUTPUT"
+msgstr "出力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.DESC"
+msgid ""
+"Signal Selectors can be used to select which automation signal is relevant "
+"to pass through to a given circuit"
+msgstr "シグナルセレクタはどの回路のシグナルを送るか選択できます"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.EFFECT"
+msgid ""
+"Select which one of four Input signals should be sent out the Output, using "
+"Control Inputs.\n"
+"\n"
+"Send a <b><color=#57b95e>Green Signal</b></color> or a <b><color=#f44a47>Red "
+"Signal</b></color> to the two Control Inputs to determine which Input is "
+"selected."
+msgstr ""
+"制御入力により、4つの入力のうち1つを出力します。\n"
+"\n"
+"<b><color=#57b95e>グリーン</b></color>または<b><color=#f44a47>レッド</b></"
+"color>を2つの制御入力に渡すことで、どの入力を選択するかが決まります。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.NAME"
+msgid "<link=\"LOGICGATEMULTIPLEXER\">Signal Selector</link>"
+msgstr "<link=\"LOGICGATEMULTIPLEXER\">シグナルセレクタ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_ACTIVE"
+msgid ""
+"Receives a <b><color=#57b95e>Green</b></color> or <b><color=#f44a47>Red</b></"
+"color> signal from the selected input"
+msgstr ""
+"選択された入力から<b><color=#57b95e>グリーン</b></color>または"
+"<b><color=#f44a47>レッド</b></color>を受信します"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_INACTIVE"
+msgid "Nothing"
+msgstr "無し"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_NAME"
 msgid "OUTPUT"
 msgstr "出力"
 
@@ -4412,6 +4661,51 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEXOR.OUTPUT_NAME"
 msgid "OUTPUT"
 msgstr "出力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.DESC"
+msgid "The hammer makes neat sounds when it strikes buildings."
+msgstr "ハンマーが設備を叩くと小気味好い音がします。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.EFFECT"
+msgid ""
+"In its default orientation, the hammer strikes the building to the left when "
+"it recieves a <b><color=#57b95e>Green Signal</b></color>.\n"
+"\n"
+"Each building has a unique sound when struck by the hammer. The hammer does "
+"no damage when it strikes."
+msgstr ""
+"デフォルトの向きでは、<b><color=#57b95e>グリーン</b></color>を受信するとハン"
+"マーは左側の設備を叩きます。\n"
+"\n"
+"ハンマーが出す音は設備ごとに異なります。ハンマーによる殴打は設備にダメージを"
+"与えません。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_NAME"
+msgid "INPUT"
+msgstr "入力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_PORT_ACTIVE"
+msgid "<b><color=#57b95e>Green Signal</b></color>: Hammer strikes once"
+msgstr "<b><color=#57b95e>グリーン</b></color>: ハンマー一打"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.INPUT_PORT_INACTIVE"
+msgid "<b><color=#f44a47>Red Signal</b></color>: Nothing"
+msgstr "<b><color=#f44a47>レッド</b></color>: 効果なし"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.LOGIC_PORT"
+msgid "Resonating Buildings"
+msgstr "共鳴させる設備"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICHAMMER.NAME"
+msgid "<link=\"LOGICHAMMER\">Hammer</link>"
+msgstr "<link=\"LOGICHAMMER\">ハンマー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICMEMORY.DESC"
@@ -4655,6 +4949,254 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.NAME"
 msgid "<link=\"LOGICPRESSURESENSORLIQUID\">Hydro Sensor</link>"
 msgstr "<link=\"LOGICPRESSURESENSORLIQUID\">水圧センサー</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.DESC"
+msgid ""
+"Logic ribbons use significantly less space to carry multiple automation "
+"signals."
+msgstr ""
+"論理リボンは複数の自動化シグナルを伝送するためのスペースを節約できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.EFFECT"
+msgid ""
+"A 4-Bit <link=\"LOGICWIRE\">Automation Wire</link> which can carry up to "
+"four automation signals.\n"
+"\n"
+"Use a <link=\"LOGICRIBBONWRITER\">Ribbon Writer</link> to output to multiple "
+"Bits, and a <link=\"LOGICRIBBONREADER\">Ribbon Reader</link> to input from "
+"multiple Bits."
+msgstr ""
+"最大4つまでの自動化シグナルを伝送できる4ビットの<link=\"LOGICWIRE\">論理ワイ"
+"ヤ</link>です。\n"
+"\n"
+"<link=\"LOGICRIBBONWRITER\">リボンライター</link>を使うことで複数ビットを出力"
+"でき、<link=\"LOGICRIBBONREADER\">リボンリーダー</link>で複数ビットを読み込む"
+"ことができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBON.NAME"
+msgid "<link=\"LOGICRIBBON\">Automation Ribbon</link>"
+msgstr "<link=\"LOGICRIBBON\">自動化リボン</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.DESC"
+msgid ""
+"Wire bridges allow multiple automation grids to exist in a small area "
+"without connecting."
+msgstr ""
+"ワイヤーブリッジは狭い場所に複数の自動化グリッドを共存させることができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.EFFECT"
+msgid ""
+"Runs one <link=\"LOGICRIBBON\">Automation Ribbon</link> section over another "
+"without joining them.\n"
+"\n"
+"Can be run through wall and floor tile."
+msgstr ""
+"他の<link=\"LOGICRIBBON\">自動化リボン</link>に干渉せずに配線できます。\n"
+"\n"
+"壁や床のタイルを貫通して敷設できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT"
+msgid "Transmit Signal"
+msgstr "伝送シグナル"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Pass through the "
+"<b><color=#57b95e>Green Signal</b></color>"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: <b><color=#57b95e>グリーン</b></"
+"color>を送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Pass through the "
+"<b><color=#f44a47>Red Signal</b></color>"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: <b><color=#f44a47>レッド</b></color>を"
+"送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.NAME"
+msgid "<link=\"LOGICRIBBONBRIDGE\">Automation Ribbon Bridge</link>"
+msgstr "<link=\"LOGICRIBBONBRIDGE\">自動化リボンブリッジ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.DESC"
+msgid ""
+"Inputs the signal from a single Bit in an <link=\"LOGICRIBBON\">Automation "
+"Ribbon</link> into an <link=\"LOGICWIRE\">Automation Wire</link>."
+msgstr ""
+"Inputs the signal from a single Bit in an <link=\"LOGICRIBBON\">自動化リボン"
+"</link>の単一ビットを<link=\"LOGICWIRE\">自動化ワイヤ</link>に入力します。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.EFFECT"
+msgid ""
+"Reads a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> from the specified Bit of an <link="
+"\"LOGICRIBBON\">Automation Ribbon</link> onto an <link=\"LOGICWIRE"
+"\">Automation Wire</link>."
+msgstr ""
+"<link=\"LOGICRIBBON\">自動化リボン</link>の特定ビットから<b><color=#57b95e>グ"
+"リーン</b></color>または<b><color=#f44a47>レッド</b></color>読み込み、<link="
+"\"LOGICWIRE\">自動化ワイヤー</link>に伝送します。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_NAME"
+msgid "RIBBON INPUT"
+msgstr "リボン入力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Reads a <b><color=#57b95e>Green "
+"Signal</b></color> from selected Bit"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: 指定したビットから<b><color=#57b95e>"
+"グリーン</b></color>を読み込む"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.INPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Reads a <b><color=#f44a47>Red "
+"Signal</b></color> from selected Bit"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: 指定したビットから<b><color=#f44a47>"
+"レッド</b></color>を読み込む"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.LOGIC_PORT"
+msgid "4-Bit Input"
+msgstr "4ビット入力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.LOGIC_PORT_OUTPUT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.LOGIC_PORT_OUTPUT"
+msgid "Bit Reading"
+msgstr "ビット読み込み"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.NAME"
+msgid "<link=\"LOGICRIBBONREADER\">Ribbon Reader</link>"
+msgstr "<link=\"LOGICRIBBONREADER\">リボンリーダー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_NAME"
+msgid "OUTPUT"
+msgstr "出力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Sends a <b><color=#57b95e>Green "
+"Signal</b></color> to attached <link=\"LOGICWIRE\">Automation Wire</link>"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: 接続された<link=\"LOGICWIRE\">自動化"
+"ワイヤー</link><b>に<color=#57b95e>グリーン</b></color>を送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONREADER.OUTPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Sends a <b><color=#f44a47>Red "
+"Signal</b></color> to attached <link=\"LOGICWIRE\">Automation Wire</link>"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: 接続された<link=\"LOGICWIRE\">自動化ワ"
+"イヤー</link><b>に<color=#f44a47>レッド</b></color>を送信"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.DESC"
+msgid ""
+"Translates the signal from an <link=\"LOGICWIRE\">Automation Wire</link> to "
+"a single Bit in an <link=\"LOGICRIBBON\">Automation Ribbon</link>"
+msgstr ""
+"<link=\"LOGICWIRE\">自動化ワイヤー</link>からの信号を<link=\"LOGICRIBBON\">自"
+"動化リボン</link>の単一ビットに変換します"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.EFFECT"
+msgid ""
+"Writes a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> to the specified Bit of an <link="
+"\"LOGICRIBBON\">Automation Ribbon</link>\n"
+"\n"
+"<link=\"LOGICRIBBON\">Automation Ribbon</link> must be used as the output "
+"wire to avoid overloading."
+msgstr ""
+"<link=\"LOGICRIBBON\">自動化リボン</link>の特定ビットに<b><color=#57b95e>グ"
+"リーン</b></color>または<b><color=#f44a47>レッド</b></color>を書き込みます\n"
+"\n"
+"<link=\"LOGICRIBBON\">自動化リボン</link>は過負荷を避けるため出力ワイヤとして"
+"使用する必要があります。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_NAME"
+msgid "INPUT"
+msgstr "入力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Receives <b><color=#57b95e>Green "
+"Signal</b></color> to be written to selected Bit"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: 受信した<b><color=#57b95e>グリーン</"
+"b></color>を指定したビットに書き込む"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Receives <b><color=#f44a47>Red "
+"Signal</b></color> to to be written selected Bit"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: 受信した<b><color=#f44a47>レッド</b></"
+"color>を指定したビットに書き込む"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.LOGIC_PORT"
+msgid "1-Bit Input"
+msgstr "1ビット入力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.LOGIC_PORT_OUTPUT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.LOGIC_PORT_OUTPUT"
+msgid "Bit Writing"
+msgstr "ビット書き込み"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.NAME"
+msgid "<link=\"LOGICRIBBONWRITER\">Ribbon Writer</link>"
+msgstr "<link=\"LOGICRIBBONWRITER\">リボンライター</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_NAME"
+msgid "RIBBON OUTPUT"
+msgstr "リボン出力"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Writes a <b><color=#57b95e>Green "
+"Signal</b></color> to selected Bit of an <link=\"LOGICRIBBON\">Automation "
+"Ribbon</link>"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: <b><color=#57b95e>グリーン</b></"
+"color>を<link=\"LOGICRIBBON\">自動化リボン</link>の指定ビットに書き込む"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.OUTPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Writes a <b><color=#f44a47>Red "
+"Signal</b></color> to selected Bit of an <link=\"LOGICRIBBON\">Automation "
+"Ribbon</link>"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: <b><color=#f44a47>レッド</b></color>を"
+"<link=\"LOGICRIBBON\">自動化リボン</link>の指定ビットに書き込む"
+
 #. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.DESC"
 msgid ""
@@ -4669,14 +5211,10 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.EFFECT"
 msgid ""
 "Sends a <b><color=#57b95e>Green Signal</b></color> or a "
 "<b><color=#f44a47>Red Signal</b></color> on an <link=\"LOGIC\">Automation</"
-"link> grid.\n"
-"\n"
-"Must be manually toggled by a Duplicant."
+"link> grid."
 msgstr ""
-"<link=\"LOGIC\">自動化</link>グリッドの<b><color=#57b95e>グリーン</b></color>"
-"または<b><color=#f44a47>レッド</b></color>にします。\n"
-"\n"
-"複製人間によって操作しなければなりません。"
+"<b><color=#57b95e>グリーン</b></color>または<b><color=#f44a47>レッド</b></"
+"color>を<link=\"LOGIC\">自動化</link>グリッドに送信します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT"
@@ -4697,6 +5235,11 @@ msgstr "スイッチOFFにすると<b><color=#f44a47>レッド</b></color>にな
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.NAME"
 msgid "<link=\"LOGICSWITCH\">Signal Switch</link>"
 msgstr "<link=\"LOGICSWITCH\">シグナル スイッチ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.SIDESCREEN_TITLE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.SIDESCREEN_TITLE"
+msgid "Signal Switch"
+msgstr "シグナル スイッチ"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTEMPERATURESENSOR.DESC"
@@ -4744,18 +5287,18 @@ msgstr "<link=\"LOGICTEMPERATURESENSOR\">熱センサー</link>"
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.DESC"
 msgid ""
-"Clock sensors ensure systems always turn on at the same time, day or night, "
+"Cycle sensors ensure systems always turn on at the same time, day or night, "
 "every cycle."
-msgstr "時刻センサーは毎サイクルの日中または夜間の同じ時間帯に稼働します。"
+msgstr "サイクルセンサーは毎サイクルの日中または夜間の同じ時間帯に稼働します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.EFFECT"
 msgid ""
 "Sets an automatic <b><color=#57b95e>Green Signal</b></color> and "
-"<b><color=#f44a47>Red Signal</b></color> schedule using a timer."
+"<b><color=#f44a47>Red Signal</b></color> schedule within one day-night cycle."
 msgstr ""
-"タイマーを使って<b><color=#57b95e>グリーン</b></color>と<b><color=#f44a47>"
-"レッド</b></color>を自動的に切り替えます。"
+"昼-夜の1サイクル内で<b><color=#57b95e>グリーン</b></color>と"
+"<b><color=#f44a47>レッド</b></color>を自動的に切り替えます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.LOGIC_PORT"
@@ -4778,8 +5321,91 @@ msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になり
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMEOFDAYSENSOR.NAME"
-msgid "<link=\"LOGICTIMEOFDAYSENSOR\">Clock Sensor</link>"
-msgstr "<link=\"LOGICTIMEOFDAYSENSOR\">時刻センサー</link>"
+msgid "<link=\"LOGICTIMEOFDAYSENSOR\">Cycle Sensor</link>"
+msgstr "<link=\"LOGICTIMEOFDAYSENSOR\">サイクルセンサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.DESC"
+msgid ""
+"Timer sensors create automation schedules for very short or very long "
+"periods of time."
+msgstr ""
+"タイマーセンサーは非常に短い(または長い)期間の自動化スケジュールを作成しま"
+"す。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.EFFECT"
+msgid ""
+"Creates a timer to send <b><color=#57b95e>Green Signals</b></color> and "
+"<b><color=#f44a47>Red Signals</b></color> for specific amounts of time."
+msgstr ""
+"特定の時間だけ<b><color=#57b95e>グリーン</b></color>または<b><color=#f44a47>"
+"レッド</b></color>を送信するタイマーを作成します。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT"
+msgid "Timer Schedule"
+msgstr "タイマースケジュール"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> for the selected amount "
+"of Green time"
+msgstr "指定した時間だけ、<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.LOGIC_PORT_INACTIVE"
+msgid ""
+"Then, sends a <b><color=#f44a47>Red Signal</b></color> for the selected "
+"amount of Red time"
+msgstr "そして、指定した時間だけ<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICTIMERSENSOR.NAME"
+msgid "<link=\"LOGICTIMERSENSOR\">Timer Sensor</link>"
+msgstr "<link=\"LOGICTIMERSENSOR\">タイマーセンサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.DESC"
+msgid ""
+"Wattage sensors can send a signal when a building has switched on or off."
+msgstr ""
+"ワット数センサーは設備の稼働非稼働を切り替える信号を送ることができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.EFFECT"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> when <link=\"POWER\">Wattage</link> "
+"consumed enters the chosen range."
+msgstr ""
+"消費<link=\"POWER\">ワット数</link>が指定幅の間、<b><color=#57b95e>グリーン</"
+"b></color>または<b><color=#f44a47>レッド</b></color>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT"
+msgid "Consumed <link=\"POWER\">Wattage</link>"
+msgstr "消費<link=\"POWER\">ワット数</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> if current <link=\"POWER"
+"\">Wattage</link> is within the selected range"
+msgstr ""
+"Sends a <b><color=#57b95e>グリーン</b></color> if current <link=\"POWER\">"
+"ワット数</link> is within the selected range"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.LOGIC_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWATTAGESENSOR.NAME"
+msgid "<link=\"LOGICWATTSENSOR\">Wattage Sensor</link>"
+msgstr "<link=\"LOGICWATTSENSOR\">ワット数センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICWIRE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIRE.DESC"
@@ -4988,13 +5614,18 @@ msgstr "大理石の彫像のようなもの"
 
 #. STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.ACTIVATE_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.ACTIVATE_TOOLTIP"
-msgid "Duplicants must take a break when their stress reaches {0}"
-msgstr "ストレスが{0}に到達した複製人間を休憩させるようにします"
+msgid ""
+"Duplicants must take a massage break when their <style=\"KKeyword\">Stress</"
+"style> reaches {0}%"
+msgstr ""
+"<style=\"KKeyword\">ストレス</style>が{0}%に到達した複製人間はマッサージ休憩"
+"が必要です"
 
 #. STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DEACTIVATE_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DEACTIVATE_TOOLTIP"
-msgid "Breaktime ends when stress is reduced to {0}"
-msgstr "ストレスが{0}以下になると休憩を終えます"
+msgid ""
+"Breaktime ends when <style=\"KKeyword\">Stress</style> is reduced to {0}%"
+msgstr "<style=\"KKeyword\">ストレス</style>が{0}%以下になると休憩を終えます"
 
 #. STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DESC"
@@ -5063,10 +5694,38 @@ msgstr ""
 "\n"
 "使用中は床に<link=\"WATER\">水</link>が飛び散ります。"
 
+#. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.LEAK_REQUIREMENT
+msgctxt "STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.LEAK_REQUIREMENT"
+msgid "Spillage: {amount}"
+msgstr "流出量: {amount}"
+
+#. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.LEAK_REQUIREMENT_TOOLTIP
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.LEAK_REQUIREMENT_TOOLTIP"
+msgid ""
+"This building will spill {amount} of its contents on to the floor during "
+"use, which must be replenished."
+msgstr ""
+"この設備の使用中は{amount}の内容物を床にこぼします。あとで補充する必要があり"
+"ます。"
+
 #. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.NAME"
 msgid "<link=\"MECHANICALSURFBOARD\">Mechanical Surfboard</link>"
 msgstr "<link=\"MECHANICALSURFBOARD\">機械式サーフボード</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.WATER_REQUIREMENT
+msgctxt "STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.WATER_REQUIREMENT"
+msgid "{element}: {amount}"
+msgstr "{element}: {amount}"
+
+#. STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.WATER_REQUIREMENT_TOOLTIP
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.MECHANICALSURFBOARD.WATER_REQUIREMENT_TOOLTIP"
+msgid ""
+"This building must be filled with {amount} {element} in order to function."
+msgstr ""
+"この設備が動作するには{amount}の{element}で満たされている必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.MEDICALCOT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MEDICALCOT.DESC"
@@ -5658,6 +6317,67 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.PHONOBOX.NAME"
 msgid "<link=\"PHONOBOX\">Jukebot</link>"
 msgstr "<link=\"PHONOBOX\">ジュークボット</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.DESC"
+msgid "Four pixels which can be individually designated different colors."
+msgstr "4つのピクセルは個別に色を設定できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.EFFECT"
+msgid ""
+"Pixels can be designated a color when it receives a <b><color=#57b95e>Green "
+"Signal</b></color> and a different color when it receives a "
+"<b><color=#f44a47>Red Signal</b></color>.\n"
+"\n"
+"Input from an <link=\"LOGICWIRE\">Automation Wire</link> controls the whole "
+"strip. Input from an <link=\"LOGICRIBBON\">Automation Ribbon</link> can "
+"control individual pixels on the strip."
+msgstr ""
+"ピクセルは<b><color=#57b95e>グリーン</b></color>を受信した時の色と"
+"<b><color=#f44a47>レッド</b></color>を受信した時の色をそれぞれ指定できま"
+"す。\n"
+"\n"
+"<link=\"LOGICWIRE\">自動化ワイヤー</link>からの入力は全体を制御し、<link="
+"\"LOGICRIBBON\">自動化リボン</link>からの入力は個々のピクセルを制御します。"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_NAME"
+msgid "RIBBON INPUT"
+msgstr "リボン入力"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_PORT_ACTIVE"
+msgid ""
+"<b><color=#57b95e>Green Signal</b></color>: Display the configured "
+"<b><color=#57b95e>Green Signal</b></color> pixels"
+msgstr ""
+"<b><color=#57b95e>グリーン</b></color>: <b><color=#57b95e>グリーン</b></"
+"color>に設定されたピクセルを表示する"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.INPUT_PORT_INACTIVE"
+msgid ""
+"<b><color=#f44a47>Red Signal</b></color>: Display the configured "
+"<b><color=#f44a47>Red Signal</b></color> pixels"
+msgstr ""
+"<b><color=#f44a47>レッド</b></color>: <b><color=#f44a47>レッド</b></color>に"
+"設定されたピクセルを表示する"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.LOGIC_PORT"
+msgid "Color Selection"
+msgstr "色選択"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.NAME"
+msgid "<link=\"PIXELPACK\">Pixel Pack</link>"
+msgstr "<link=\"PIXELPACK\">ピクセルパック</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.PIXELPACK.SIDESCREEN_TITLE
+msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.SIDESCREEN_TITLE"
+msgid "Pixel Pack"
+msgstr "ピクセルパック"
 
 #. STRINGS.BUILDINGS.PREFABS.PLANTERBOX.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PLANTERBOX.DESC"
@@ -6450,7 +7170,7 @@ msgid ""
 "\n"
 "Duplicants will not fabricate items unless recipes are queued."
 msgstr ""
-"原石から鉱石を生産しますが、あまり効率的ではありません。\n"
+"原料素材から精製素材を生産しますが、あまり効率的ではありません。\n"
 "\n"
 "レシピがセットされていないと複製人間は製作作業をしません。"
 
@@ -6681,6 +7401,62 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SMALLSCULPTURE.POORQUALITYNAME"
 msgid "\"Abstract\" Sculpture"
 msgstr "彫像のようなもの"
 
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.ACTIVATE_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.ACTIVATE_TOOLTIP"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> when reservoir is less "
+"than <b>{0}%</b> full, until it is <b>{1}% (High Threshold)</b> full"
+msgstr ""
+"タンク容量が<b>{0}%</b>を下回ると、<b>{1}% (しきい値上限)</b>になるまで"
+"<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.DEACTIVATE_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.DEACTIVATE_TOOLTIP"
+msgid ""
+"Sends a <b><color=#f44a47>Red Signal</b></color> when reservoir is <b>{0}%</"
+"b> full, until it is less than <b>{1}% (Low Threshold)</b> full"
+msgstr ""
+"タンク容量が<b>{0}%</b>になると、<b>{1}% (しきい値下限)</b>を上回るまで"
+"<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT"
+msgid "Refill Parameters"
+msgstr "充填パラメータ"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> when reservoir is less "
+"than <b>Low Threshold</b> full, until <b>High Threshold</b> is reached again"
+msgstr ""
+"タンク容量が<b>しきい値上限</b>を上回った時、<b>しきい値下限</b>を下回るまで"
+"<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT_INACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.LOGIC_PORT_INACTIVE"
+msgid ""
+"Sends a <b><color=#f44a47>Red Signal</b></color> when reservoir is <b>High "
+"Threshold</b> full, until <b>Low Threshold</b> is reached again"
+msgstr ""
+"タンク容量が<b>しきい値上限</b>を上回った時、<b>しきい値下限</b>を下回るまで"
+"<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_ACTIVATE
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_ACTIVATE"
+msgid "Low Threshold:"
+msgstr "しきい値下限:"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_DEACTIVATE
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_DEACTIVATE"
+msgid "High Threshold:"
+msgstr "しきい値上限:"
+
+#. STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_TITLE
+msgctxt "STRINGS.BUILDINGS.PREFABS.SMARTRESERVOIR.SIDESCREEN_TITLE"
+msgid "Logic Activation Parameters"
+msgstr "論理起動パラメータ"
+
 # Sparkle と Twinkle で掛詞になっている
 #. STRINGS.BUILDINGS.PREFABS.SODAFOUNTAIN.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SODAFOUNTAIN.DESC"
@@ -6802,6 +7578,90 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.NAME"
 msgid "<link=\"SOLIDCONDUITBRIDGE\">Conveyor Bridge</link>"
 msgstr "<link=\"SOLIDCONDUITBRIDGE\">コンベアブリッジ</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.DESC"
+msgid ""
+"Germ sensors can help control automation behavior in the presence of germs."
+msgstr ""
+"病原菌センサーは、病原菌の有無によって動きを変える自動化制御に使います。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.EFFECT"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> based on the internal <link="
+"\"DISEASE\">Germ</link> count of the object on the rail."
+msgstr ""
+"レール上のオブジェクト表面に存在する<link=\"DISEASE\">病原菌</link>の濃度に"
+"よって、<b><color=#57b95e>グリーン</b></color>または<b><color=#f44a47>レッド"
+"</b></color>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT"
+msgid "Internal <link=\"DISEASE\">Germ</link> Count"
+msgstr "内部<link=\"DISEASE\">病原菌</link>濃度"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the number of Germs on "
+"the object on the rail is within the selected range"
+msgstr ""
+"レール上にあるオブジェクト表面の病原菌が指定した範囲内にある時、"
+"<b><color=#57b95e>グリーン</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.LOGIC_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITDISEASESENSOR.NAME"
+msgid "<link=\"SOLIDCONDUITDISEASESENSOR\">Conveyor Rail Germ Sensor</link>"
+msgstr ""
+"<link=\"SOLIDCONDUITDISEASESENSOR\">コンベアレール 病原菌センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.DESC"
+msgid ""
+"Element sensors can be used to detect the presence of a specific item on a "
+"rail."
+msgstr "元素センサーはレール上にある特定の物体を検出します。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.EFFECT"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> when the selected item is "
+"detected on a rail."
+msgstr ""
+"指定した物体を検出すると<b><color=#57b95e>グリーン</b></color>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT"
+msgid "Internal <link=\"ELEMENTSLIQUID\">Item</link> Presence"
+msgstr "内部<link=\"ELEMENTSLIQUID\">物体</link>判定"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the configured item is "
+"detected on the rail"
+msgstr ""
+"レール上に設定した物体を検出すると<b><color=#57b95e>グリーン</b></color>にな"
+"ります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.NAME"
+msgid "<link=\"SOLIDCONDUITELEMENTSENSOR\">Conveyor Rail Element Sensor</link>"
+msgstr "<link=\"SOLIDCONDUITELEMENTSENSOR\">コンベアレール 元素センサー</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.DESC"
 msgid ""
@@ -6847,6 +7707,85 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.NAME"
 msgid "<link=\"SOLIDCONDUITOUTBOX\">Conveyor Receptacle</link>"
 msgstr "<link=\"SOLIDCONDUITOUTBOX\">コンベアレセプタ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.DESC"
+msgid ""
+"Thermo sensors disable buildings when their rail contents reach a certain "
+"temperature."
+msgstr ""
+"温度センサーはレール上にある物体が特定の温度に達した時に設備を自動停止させる"
+"ことができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.EFFECT"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> or a "
+"<b><color=#f44a47>Red Signal</b></color> when rail contents enter the chosen "
+"<link=\"HEAT\">Temperature</link> range."
+msgstr ""
+"レール上にある物体の<link=\"HEAT\">温度</link>が指定した範囲内にある時、"
+"<b><color=#57b95e>グリーン</b></color>または<b><color=#f44a47>レッド</b></"
+"color>になります。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT"
+msgid "Internal item <link=\"HEAT\">Temperature</link>"
+msgstr "内部物体<link=\"HEAT\">温度</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_ACTIVE"
+msgid ""
+"Sends a <b><color=#57b95e>Green Signal</b></color> if the contained item is "
+"within the selected Temperature range"
+msgstr ""
+"内容物の気体温度が指定した範囲内にある時、<b><color=#57b95e>グリーン</b></"
+"color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_INACTIVE
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.LOGIC_PORT_INACTIVE"
+msgid "Otherwise, sends a <b><color=#f44a47>Red Signal</b></color>"
+msgstr "そうでない場合、<b><color=#f44a47>レッド</b></color>になります"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.NAME"
+msgid ""
+"<link=\"SOLIDCONDUITTEMPERATURESENSOR\">Conveyor Rail Thermo Sensor</link>"
+msgstr ""
+"<link=\"SOLIDCONDUITTEMPERATURESENSOR\">コンベアレール 温度センサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.DESC"
+msgid ""
+"All solids are sent into the building's output conveyor, except the solid "
+"chosen for filtering."
+msgstr "指定した固体を除く全ての個体がコンベア出力先に送出されます。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.EFFECT"
+msgid ""
+"Separates one <link=\"ELEMENTSSOLID\">Solid</link> from the conveyor, "
+"sending it into a dedicated <link=\"SOLIDCONDUIT\">Conveyor Rail</link>."
+msgstr ""
+"コンベアから、指定した<link=\"ELEMENTSSOLID\">固体</link>を選出し、別の口に繋"
+"がった <link=\"SOLIDCONDUIT\">コンベアレール</link>へ移送します。"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.ELEMENT_NOT_SPECIFIED
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.ELEMENT_NOT_SPECIFIED"
+msgid "Not Specified"
+msgstr "指定なし"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.NAME"
+msgid "<link=\"SOLIDFILTER\">Solid Filter</link>"
+msgstr "<link=\"SOLIDFILTER\">固体フィルター</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.STATUS_ITEM
+msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.STATUS_ITEM"
+msgid "Filters: {0}"
+msgstr "フィルター: {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.DESC"
@@ -7306,6 +8245,34 @@ msgid ""
 msgstr ""
 "イエローケーキはウラン濃縮に使われる<link=\"ELEMENTSSOLID\">固体</link>です。"
 
+#. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.DESC"
+msgid "Deploys a helpful little Sweepy robot."
+msgstr "小さなお役立ちお掃除ロボを格納します。"
+
+#. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.EFFECT"
+msgid ""
+"Stores <link=\"ELEMENTSLIQUID\">Liquid</link> and <link=\"ELEMENTSSOLID"
+"\">Solid Materials</link> debris from the Sweepy.\n"
+"\n"
+"Requires <link=\"POWER\">Power</link> to recharge the Sweepy."
+msgstr ""
+"<link=\"ELEMENTSLIQUID\">液体</link>と<link=\"ELEMENTSSOLID\">固形素材</link>"
+"のがれきをスウィーピーから受け取ります。\n"
+"\n"
+"スウィーピーの充電には<link=\"POWER\">電力</link>が必要です。"
+
+#. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAME"
+msgid "<link=\"SWEEPBOTSTATION\">Sweepy Dock</link>"
+msgstr "<link=\"SWEEPBOTSTATION\">スウィーピー ドック</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAMEDSTATION
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAMEDSTATION"
+msgid "{0}'s Dock"
+msgstr "{0} ドック"
+
 #. STRINGS.BUILDINGS.PREFABS.SWITCH.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.DESC"
 msgid "Switches can only affect buildings that come after them on a circuit."
@@ -7328,6 +8295,11 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.NAME"
 msgid "<link=\"SWITCH\">Switch</link>"
 msgstr "<link=\"SWITCH\">スイッチ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SWITCH.SIDESCREEN_TITLE
+msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.SIDESCREEN_TITLE"
+msgid "Switch"
+msgstr "スイッチ"
 
 #. STRINGS.BUILDINGS.PREFABS.SWITCH.TURN_OFF
 msgctxt "STRINGS.BUILDINGS.PREFABS.SWITCH.TURN_OFF"
@@ -7605,6 +8577,17 @@ msgstr "自動販売機"
 msgctxt "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DESC"
 msgid "Duplicants love the feeling of high-powered wind through their hair."
 msgstr "高出力の風が髪を梳かすことを複製人間は好みます。"
+
+#. STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT"
+msgid "Gas Displacement: {amount}"
+msgstr "気体排気量: {amount}"
+
+#. STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT_TOOLTIP
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT_TOOLTIP"
+msgid "This building will displace {amount} Gas while in use."
+msgstr "この設備の使用中は{amount}の気体を排気します。"
 
 #. STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.EFFECT"
@@ -7948,6 +8931,18 @@ msgstr "自動修理有効化"
 msgctxt "STRINGS.BUILDINGS.REPAIRABLE.ENABLE_AUTOREPAIR.TOOLTIP"
 msgid "Automatically repair this building when damaged"
 msgstr "設備に損傷があると自動的に修理します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP"
+#~ msgid ""
+#~ "Sends a <b><color=#f44a47>Red Signal</b></color> when battery is more "
+#~ "than <b>{0}%</b> charged"
+#~ msgstr ""
+#~ "バッテリー充電量が <b>{0}%</b> を上回ると<b><color=#f44a47>レッド</b></"
+#~ "color>になります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW"
+#~ msgid "{attrib}: {amount} (Low Lux)"
+#~ msgstr "{attrib}: {amount} (低光量)"
 
 #~ msgctxt "STRINGS.BUILDINGS.PREFABS.CARPETTILE.DESC"
 #~ msgid ""
