@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4\n"
+"X-Generator: Poedit 2.4.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -334,7 +334,7 @@ msgstr "最低気温到達"
 #. STRINGS.BUILDING.STATUSITEMS.CANNOTCOOLFURTHER.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CANNOTCOOLFURTHER.TOOLTIP"
 msgid "This building cannot cool the surrounding environment below <b>{0}</b>"
-msgstr "この設備は周囲を <b>{0}</b> 以下に冷却することはできません"
+msgstr "この設備は周囲を <b>{0}</b> 未満に冷却することはできません"
 
 #. STRINGS.BUILDING.STATUSITEMS.CHANGEDOORCONTROLSTATE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CHANGEDOORCONTROLSTATE.NAME"
@@ -3226,8 +3226,8 @@ msgid ""
 "The {Src_Element} present below this turbine must be at least <b>{Min_Mass}</"
 "b> in order to turn the turbine"
 msgstr ""
-"このタービンの下側にある{Src_Element}は、タービンが稼働するために最低"
-"<b>{Min_Mass}</b>以上加圧されていなければなりません"
+"このタービンの下側にある{Src_Element}は、タービンが稼働するために最低でも"
+"<b>{Min_Mass}</b>に加圧されていなければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME"
@@ -4062,7 +4062,7 @@ msgstr ""
 "発電機から送られた余剰<link=\"POWER\">電力</link>を蓄え、<link=\"POWER\">電力"
 "</link>を設備に供給します。\n"
 "\n"
-"論理入力は設定値以上になると<b><style=\"logic_on\">グリーン</style></b>または"
+"論理入力は設定値に応じて<b><style=\"logic_on\">グリーン</style></b>または"
 "<b><style=\"logic_off\">レッド</style></b>になります。\n"
 "\n"
 "蓄えられた電力は時間とともにほんの僅かですが失われます。"
@@ -7522,7 +7522,7 @@ msgstr "<link=\"LOGICALARM\">自動化通知</link>"
 #. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.DESC"
 msgid "For numbers higher than ten connect multiple counters together."
-msgstr "10以上の数を扱うには、複数のカウンターを接続します。"
+msgstr "10より大きい数を扱うには、複数のカウンターを接続します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.EFFECT"
@@ -7986,8 +7986,8 @@ msgid ""
 "This gate only lets a Green Signal through if its Input has received a Green "
 "Signal that lasted longer than the selected filter time."
 msgstr ""
-"この論理ゲートは入力のグリーンを指定した時間以上キープするとグリーンになりま"
-"す。"
+"この論理ゲートは指定した時間を超えて入力からグリーンを受信し続けるとグリーン"
+"になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.EFFECT"
@@ -7999,8 +7999,8 @@ msgid ""
 "Will continue outputting a <b><style=\"logic_off\">Red Signal</style></b> if "
 "the <b><style=\"logic_on\">Green Signal</style></b> did not last long enough."
 msgstr ""
-"入力の<b><style=\"logic_on\">グリーン</style></b>をフィルターで指定した時間以"
-"上キープすると<b><style=\"logic_on\">グリーン</style></b>になります。\n"
+"指定した時間を超えて入力から<b><style=\"logic_on\">グリーン</style></b>を受信"
+"し続けると<b><style=\"logic_on\">グリーン</style></b>になります。\n"
 "\n"
 "入力の<b><style=\"logic_on\">グリーン</style></b>を指定した時間キープできな"
 "かった場合<b><style=\"logic_off\">レッド</style></b>になります。"
@@ -8017,8 +8017,8 @@ msgid ""
 "<b><style=\"logic_on\">Green</style></b> for longer than the selected filter "
 "timer"
 msgstr ""
-"入力の<b><style=\"logic_on\">グリーン</style></b>を指定した時間以上キープする"
-"と<b><style=\"logic_on\">グリーン</style></b>になります"
+"指定した時間を超えて入力から<b><style=\"logic_on\">グリーン</style></b>を受信"
+"し続けると<b><style=\"logic_on\">グリーン</style></b>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEFILTER.OUTPUT_INACTIVE"
@@ -9202,7 +9202,7 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DEACTIVATE_TOOLTIP"
 msgid ""
 "Breaktime ends when <style=\"KKeyword\">Stress</style> is reduced to {0}%"
-msgstr "<style=\"KKeyword\">ストレス</style>が{0}%以下になると休憩を終えます"
+msgstr "<style=\"KKeyword\">ストレス</style>が{0}%になると休憩を終えます"
 
 #. STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MASSAGETABLE.DESC"
@@ -10101,14 +10101,14 @@ msgid ""
 "valve and prevent <link=\"WIRE\">Wires</link> from drawing more than 4 kW."
 msgstr ""
 "<link=\"BATTERY\">バッテリー</link>に対し防御弁として機能し、<link=\"WIRE\">"
-"電線</link>に4kW以上の電流が流れないようにします。"
+"電線</link>に4kWを超える電流が流れないようにします。"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMER.EFFECT"
 msgid ""
 "Limits <link=\"POWER\">Power</link> flowing through the Transformer to 4 kW."
 msgstr ""
-"変圧器を通して流れる<link=\"POWER\">電力</link>を 4kW までに制限します。"
+"変圧器を通して流れる<link=\"POWER\">電力</link>を 4 kW までに制限します。"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMER.NAME"
@@ -10123,7 +10123,7 @@ msgid ""
 "and suffering overload damage."
 msgstr ""
 "<link=\"BATTERY\">バッテリー</link>に対し防御弁として機能し、<link=\"WIRE\">"
-"電線</link>に1000 W以上の電流が流れることによる過負荷ダメージを防ぎます。"
+"電線</link>に1000 W を超える電流が流れることによる過負荷ダメージを防ぎます。"
 
 #. STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMERSMALL.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMERSMALL.EFFECT"
@@ -34986,7 +34986,7 @@ msgid ""
 "• Will not repair buildings while above 60% <style=\"KKeyword\">Stress</"
 "style>"
 msgstr ""
-"• <style=\"KKeyword\">ストレス</style>60%以上になると設備を修理しなくなります"
+"• <style=\"KKeyword\">ストレス</style>60%を超えると設備を修理しなくなります"
 
 #. STRINGS.DUPLICANTS.TRAITS.ALLERGIES.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ALLERGIES.DESC"
@@ -35387,8 +35387,7 @@ msgid ""
 "This Duplicant feels suffocated in spaces fewer than four tiles high or "
 "three tiles wide"
 msgstr ""
-"この複製人間は4タイル以下の高さや3タイル以下の幅の広さにいると息苦しさを感じ"
-"ます"
+"この複製人間は4タイル未満の高さや3タイル未満の広さに居ると息苦しさを感じます"
 
 #. STRINGS.DUPLICANTS.TRAITS.NEEDS.CLAUSTROPHOBIC.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NEEDS.CLAUSTROPHOBIC.NAME"
@@ -35400,7 +35399,8 @@ msgctxt "STRINGS.DUPLICANTS.TRAITS.NEEDS.CLIMACOPHOBIC.DESC"
 msgid ""
 "Climbing ladders more than four tiles tall makes this Duplicant's stomach do "
 "flips"
-msgstr "この複製人間は4タイル以上のハシゴを登ろうとすると吐き気を催すようです"
+msgstr ""
+"この複製人間は4タイルより高いハシゴを登ろうとすると吐き気を催すようです"
 
 #. STRINGS.DUPLICANTS.TRAITS.NEEDS.CLIMACOPHOBIC.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NEEDS.CLIMACOPHOBIC.NAME"
@@ -41763,8 +41763,8 @@ msgid ""
 "These <link=\"LOGICWIRE\">Automation Wire</link>s melted due to more bits of "
 "data being sent over them than they can support"
 msgstr ""
-"これらの<link=\"LOGICWIRE\">自動化ワイヤー</link>は許容量以上のデータビットを"
-"受信しているため、溶融しています"
+"これらの<link=\"LOGICWIRE\">自動化ワイヤー</link>は許容量を超えるデータビット"
+"を受信しているため、溶融しています"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY"
@@ -42095,9 +42095,9 @@ msgstr ""
 "\n"
 "電力レイヤー<b><color=#F44A4A>[F2]</b></color>から現在の回路の状態を確認する"
 "ことができる。発電機が生成するよりも多くのワット数を消費している場合、バッテ"
-"リーに蓄えられた電力は枯渇してしまうだろう。加えて、電線が耐えられる以上の"
-"ワット数を消費側で使用していると、電線は過負荷と起こし焼け落ちてしまう。これ"
-"らの状況に正しく対処するため、時には回路を分割し再編成する必要があるだろう。"
+"リーに蓄えられた電力は枯渇してしまうだろう。加えて、電線が耐えられないワット"
+"数を消費側で使用していると、電線は過負荷を起こし焼け落ちてしまう。これらの状"
+"況に正しく対処するため、時には回路を分割し再編成する必要があるだろう。"
 
 #. STRINGS.MISC.NOTIFICATIONS.POWER.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.POWER.NAME"
@@ -47524,7 +47524,7 @@ msgstr "マッサージ台"
 #. STRINGS.ROOMS.CRITERIA.MAXIMUM_SIZE.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.MAXIMUM_SIZE.DESCRIPTION"
 msgid "Must have an area no larger than {0} tiles"
-msgstr "広くとも {0} タイル以下でなければいけません"
+msgstr "広くとも {0} タイル未満でなければいけません"
 
 #. STRINGS.ROOMS.CRITERIA.MAXIMUM_SIZE.NAME
 msgctxt "STRINGS.ROOMS.CRITERIA.MAXIMUM_SIZE.NAME"
@@ -47554,7 +47554,7 @@ msgstr "食卓"
 #. STRINGS.ROOMS.CRITERIA.MINIMUM_SIZE.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.MINIMUM_SIZE.DESCRIPTION"
 msgid "Must have an area of at least {0} tiles"
-msgstr "少なくとも {0} タイル以上でなければいけません"
+msgstr "最低でも {0} タイルの広さが必要です"
 
 #. STRINGS.ROOMS.CRITERIA.MINIMUM_SIZE.NAME
 msgctxt "STRINGS.ROOMS.CRITERIA.MINIMUM_SIZE.NAME"
@@ -47649,7 +47649,7 @@ msgstr "娯楽設備"
 #. STRINGS.ROOMS.CRITERIA.RESEARCH_STATION.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.RESEARCH_STATION.DESCRIPTION"
 msgid "Requires one or more Research Stations or Super Computers"
-msgstr "一つ以上の研究端末またはスーパーコンピュータが必要です"
+msgstr "一つ以上の研究端末またはスパコンが必要です"
 
 #. STRINGS.ROOMS.CRITERIA.RESEARCH_STATION.NAME
 msgctxt "STRINGS.ROOMS.CRITERIA.RESEARCH_STATION.NAME"
@@ -50709,7 +50709,7 @@ msgid ""
 msgstr ""
 "このエリアの病原菌の数はわずかであるため、菌はあっという間に死滅します\n"
 "\n"
-"この {1} に {0} 以下の病原菌が存在します。\n"
+"この {1} に {0} 未満の病原菌が存在します。\n"
 "({2} germs/Kg)"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.ENVIRONMENT.DIE_TOOLTIP
@@ -55356,7 +55356,7 @@ msgid ""
 "This plant requires <b>{1}</b> of <style=\"KKeyword\">{0}</style> for basic "
 "growth"
 msgstr ""
-"この植物が成長するためには <style=\"KKeyword\">{0}</style>が <b>{1}</b>必要で"
+"この植物が成長するためには<style=\"KKeyword\">{0}</style>が <b>{1}</b> 必要で"
 "す"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_PRESSURE
@@ -55364,7 +55364,7 @@ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_PRESSURE"
 msgid ""
 "This plant requires <style=\"KKeyword\">Gas</style> pressures above <b>{0}</"
 "b> for basic growth"
-msgstr "この植物が成長するためには気圧が <b>{0}</b> 以上必要です"
+msgstr "この植物が成長するためには <b>{0}</b> より大きい気圧が必要です"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_TEMPERATURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.IDEAL_TEMPERATURE"
@@ -57078,7 +57078,7 @@ msgstr "消毒:"
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP"
 msgid ""
 "Automatically disinfect any building with more than {NumberOfGerms} germs."
-msgstr "病原菌が {NumberOfGerms} 以上となった場合、自動的に消毒します。"
+msgstr "病原菌が {NumberOfGerms} を超えた場合、自動的に消毒します。"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP_DISABLED
 msgctxt ""
@@ -58931,7 +58931,7 @@ msgctxt ""
 "STRINGS.UI.ROLES_SCREEN.ASSIGNMENT_REQUIREMENTS.HAS_COMPLETED_ANY_OTHER_ROLE."
 "DESCRIPTION"
 msgid "Mastery of <b>at least one</b> job"
-msgstr "<b>少なくとも一つ以上の</b>職の習得"
+msgstr "<b>最低一つの</b>職の習得"
 
 #. STRINGS.UI.ROLES_SCREEN.ASSIGNMENT_REQUIREMENTS.HAS_COMPLETED_ANY_OTHER_ROLE.NAME
 msgctxt ""
@@ -64663,7 +64663,7 @@ msgstr ""
 #. STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.TRUNCATED_CHORES
 msgctxt "STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.TRUNCATED_CHORES"
 msgid "{0} more"
-msgstr "{0}以上"
+msgstr "{0} 以上"
 
 #. STRINGS.UI.UISIDESCREENS.MONUMENTSIDESCREEN.FLIP_FACING_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.MONUMENTSIDESCREEN.FLIP_FACING_BUTTON"
@@ -65146,7 +65146,7 @@ msgstr "以下の条件で<b><style=\"logic_on\">グリーン</style></b>を送�
 #. STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.COLDER_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.COLDER_BUTTON"
 msgid "Below"
-msgstr "以下"
+msgstr "未満"
 
 #. STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.CURRENT_TEMPERATURE
 msgctxt ""
@@ -65166,12 +65166,12 @@ msgstr "温度しきい値"
 #. STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.WARMER_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.WARMER_BUTTON"
 msgid "Above"
-msgstr "以上"
+msgstr "超過"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.ABOVE_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.ABOVE_BUTTON"
 msgid "Above"
-msgstr "以上"
+msgstr "超過"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.ACTIVATE_IF
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.ACTIVATE_IF"
@@ -65181,7 +65181,7 @@ msgstr "以下の条件で<b><style=\"logic_on\">グリーン</style></b>を送�
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.BELOW_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.BELOW_BUTTON"
 msgid "Below"
-msgstr "以下"
+msgstr "未満"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.CURRENT_VALUE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.CURRENT_VALUE"
@@ -65565,7 +65565,7 @@ msgstr "以下の条件で<b><style=\"logic_on\">グリーン</style></b>にな�
 #. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.COLDER_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.COLDER_BUTTON"
 msgid "Below"
-msgstr "以下"
+msgstr "未満"
 
 #. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.CURRENT_TEMPERATURE
 msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.CURRENT_TEMPERATURE"
@@ -65584,7 +65584,7 @@ msgstr "ワット数しきい値"
 #. STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.WARMER_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.WATTAGESWITCHSIDESCREEN.WARMER_BUTTON"
 msgid "Above"
-msgstr "以上"
+msgstr "超過"
 
 #. STRINGS.UI.UNITSUFFIXES.CALORIES.CALORIE
 msgctxt "STRINGS.UI.UNITSUFFIXES.CALORIES.CALORIE"
