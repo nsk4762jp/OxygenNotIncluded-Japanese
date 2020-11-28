@@ -2,7 +2,7 @@ Oxygen Not Included 日本語化
 ====
 
 Klei Entertainment 制作のスペースコロニー経営ゲーム「[Oxygen Not Included](http://store.steampowered.com/app/457140/)」の日本語化作業を行っています。  
-2020 Summer Patchに対応しています。
+Cloud Save Update に対応しています。
 
 ## 翻訳サンプル
 <image src="https://raw.githubusercontent.com/wiki/nsk4762jp/OxygenNotIncluded-Japanese/sample.jpg" width="75%">
@@ -37,17 +37,22 @@ MIT License
 
 ## 貢献者
 
-[seameteo(LefTonbo)](https://github.com/seameteo)  
+[LefTonbo](https://github.com/seameteo)  
+
+[Shohei](https://github.com/shohei918)
+
+[Yoshida Seisuke](https://github.com/seisuke)
+
+[Souki Tanaka](https://github.com/souki-tn)
+
+[kankoromochi](https://github.com/kankoromochi)
 
 [piyo-gh](https://github.com/piyo-gh)
 
-[seisuke](https://github.com/seisuke)
+[yamashu](https://github.com/yamashush)
 
-[shohei918](https://github.com/shohei918)
+[Kazuhiro Mizushima](https://github.com/VoQn)
 
-[souki-tn](https://github.com/souki-tn)
-
-[kankoromochi](https://github.com/kankoromochi)
 
 ## 翻訳の手伝いをしてくれる人を募集しています
 
