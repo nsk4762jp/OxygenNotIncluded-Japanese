@@ -193,15 +193,15 @@ msgid "{0} Bait"
 msgstr "{0} の餌"
 
 #. STRINGS.BUILDING.STATUSITEMS.BAITED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.SELECTAMATERIAL"
-#| msgid "There are insufficient materials to construct this building"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BAITED.TOOLTIP"
 msgid ""
 "This lure is baited with {0}\n"
 "\n"
 "Bait material is set during the construction of the building"
-msgstr "この設備に必要な素材が不足しています"
+msgstr ""
+"このルアーは{0}をおびき寄せます\n"
+"\n"
+"おびき寄せる素材は設備の建設中にセットされます"
 
 #. STRINGS.BUILDING.STATUSITEMS.BATTERIESSUFFICIENTLYFULL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BATTERIESSUFFICIENTLYFULL.NAME"
@@ -653,6 +653,7 @@ msgid ""
 "This building needs to be emptied of <link=\"SALT\">Salt</link> to resume "
 "function"
 msgstr ""
+"この設備が機能するためには<link=\"SALT\">塩</link>を排出する必要があります"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME"
@@ -5104,7 +5105,7 @@ msgid ""
 msgstr ""
 "<link=\"CRITTERS\">動物</link>の卵を孵化させます。\n"
 "\n"
-"<link=\"RANCHER\">動物懐柔</link>特性を持った複製人間を割り当ててください。"
+"<link=\"RANCHER\">動物手懐け</link>特性を持った複製人間を割り当ててください。"
 
 #. STRINGS.BUILDINGS.PREFABS.EGGINCUBATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.EGGINCUBATOR.NAME"
@@ -5879,7 +5880,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.NAME"
 msgid "<link=\"GASCONDUITRADIANT\">Radiant Gas Pipe</link>"
-msgstr "<link=\"GASCONDUITRADIANT\">気体用 輻射パイプ</link>"
+msgstr "<link=\"GASCONDUITRADIANT\">輻射型 気体用パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC"
@@ -7133,7 +7134,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.NAME"
 msgid "<link=\"LIQUIDCONDUITRADIANT\">Radiant Liquid Pipe</link>"
-msgstr "<link=\"LIQUIDCONDUITRADIANT\">液体用 輻射パイプ</link>"
+msgstr "<link=\"LIQUIDCONDUITRADIANT\">輻射型 液体用パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC"
@@ -8006,7 +8007,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.DESC"
 msgid ""
 "Signal Selectors can be used to select which automation signal is relevant "
 "to pass through to a given circuit"
-msgstr "シグナルセレクタはどの回路のシグナルを送るか選択できます"
+msgstr "シグナルセレクターはどの回路のシグナルを送るか選択できます"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.EFFECT"
@@ -8026,7 +8027,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.NAME"
 msgid "<link=\"LOGICGATEMULTIPLEXER\">Signal Selector</link>"
-msgstr "<link=\"LOGICGATEMULTIPLEXER\">シグナルセレクタ</link>"
+msgstr "<link=\"LOGICGATEMULTIPLEXER\">シグナルセレクター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICGATEMULTIPLEXER.OUTPUT_ACTIVE"
@@ -9828,14 +9829,6 @@ msgid ""
 msgstr "石油発電機は高出力ですが、その分大量の廃棄物を生産します。"
 
 #. STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.EFFECT"
-#| msgid ""
-#| "Converts <link=\"PETROLEUM\">Petroleum</link> into electrical <link="
-#| "\"POWER\">Power</link>.\n"
-#| "\n"
-#| "Produces <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> and <link="
-#| "\"DIRTYWATER\">Polluted Water</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.PETROLEUMGENERATOR.EFFECT"
 msgid ""
 "Converts either <link=\"PETROLEUM\">Petroleum</link> or <link=\"ETHANOL"
@@ -9844,7 +9837,8 @@ msgid ""
 "Produces <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> and <link=\"DIRTYWATER"
 "\">Polluted Water</link>."
 msgstr ""
-"<link=\"PETROLEUM\">石油</link>を<link=\"POWER\">電力</link>に変換します。\n"
+"<link=\"PETROLEUM\">石油</link>または<link=\"ETHANOL\">エタノール</link>を"
+"<link=\"POWER\">電力</link>に変換します。\n"
 "\n"
 "<link=\"CARBONDIOXIDE\">二酸化炭素</link>と<link=\"DIRTYWATER\">汚染水</link>"
 "を産出します。"
@@ -10570,7 +10564,8 @@ msgstr ""
 "<link=\"RANCHER\">牧夫</link>が<link=\"CRITTERS\">動物</link>の世話をできるよ"
 "うにします。\n"
 "\n"
-"<link=\"RANCHER\">動物懐柔</link>特性を持った複製人間を割り当ててください。\n"
+"<link=\"RANCHER\">動物手懐け</link>特性を持った複製人間を割り当ててくださ"
+"い。\n"
 "\n"
 "この設備は厩舎に必須の構成要素です。"
 
@@ -11102,8 +11097,8 @@ msgid ""
 "Can be run through wall and floor tile."
 msgstr ""
 "<link=\"ELEMENTSSOLID\">固形素材</link>を <link=\"SOLIDCONDUITINBOX\">コンベ"
-"ア ローダー</link>から<link=\"SOLIDCONDUITOUTBOX\">コンベア レセプタ</link>ま"
-"で輸送します。\n"
+"ア ローダー</link>から<link=\"SOLIDCONDUITOUTBOX\">コンベア レセプター</link>"
+"まで輸送します。\n"
 "\n"
 "壁や床のタイルを貫通して敷設できます。"
 
@@ -11251,7 +11246,8 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.DESC"
 msgid ""
 "When materials reach the end of a rail they enter a receptacle to be used by "
 "Duplicants."
-msgstr "素材がレール終端に来ると、複製人間が使うためにレセプタへ格納されます。"
+msgstr ""
+"素材がレール終端に来ると、複製人間が使うためにレセプターへ格納されます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.EFFECT"
@@ -11265,7 +11261,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.NAME"
 msgid "<link=\"SOLIDCONDUITOUTBOX\">Conveyor Receptacle</link>"
-msgstr "<link=\"SOLIDCONDUITOUTBOX\">コンベアレセプタ</link>"
+msgstr "<link=\"SOLIDCONDUITOUTBOX\">コンベアレセプター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITTEMPERATURESENSOR.DESC"
@@ -11405,8 +11401,8 @@ msgstr ""
 "</link>と<link=\"CHORES\">供給</link>作業を自動化します。 \n"
 "\n"
 "素材は自動的に<link=\"SOLIDCONDUITINBOX\">コンベアローダー</link>、<link="
-"\"SOLIDCONDUITOUTBOX\">コンベアレセプタ</link>、格納庫または範囲内の設備に搬"
-"入されます。"
+"\"SOLIDCONDUITOUTBOX\">コンベアレセプター</link>、格納庫または範囲内の設備に"
+"搬入されます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDTRANSFERARM.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDTRANSFERARM.NAME"
@@ -24109,7 +24105,7 @@ msgstr "この動物は手入れが終わるととてもキレイになります
 #. STRINGS.CREATURES.STATUSITEMS.GETTING_WRANGLED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.GETTING_WRANGLED.NAME"
 msgid "Being Wrangled"
-msgstr "懐柔中"
+msgstr "縄掛け中"
 
 #. STRINGS.CREATURES.STATUSITEMS.GETTING_WRANGLED.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.GETTING_WRANGLED.TOOLTIP"
@@ -26252,7 +26248,7 @@ msgstr "この配達は建設が予定されている場所に素材を供給し
 #. STRINGS.DUPLICANTS.CHORES.CAPTURE.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.CAPTURE.NAME"
 msgid "Wrangle"
-msgstr "懐柔"
+msgstr "縄掛け"
 
 #. STRINGS.DUPLICANTS.CHORES.CAPTURE.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.CAPTURE.STATUS"
@@ -26264,7 +26260,9 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.CAPTURE.TOOLTIP"
 msgid ""
 "Duplicants that possess the Critter Ranching Skill can wrangle most critters "
 "without traps"
-msgstr "\"畜産\"スキルをもつ複製人間は殆どの動物を罠いらずで懐柔できます"
+msgstr ""
+"\"畜産\"スキルをもつ複製人間は殆どの動物を罠を使わずに縄を掛けることができま"
+"す"
 
 #. STRINGS.DUPLICANTS.CHORES.CHECKPOINT.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.CHECKPOINT.NAME"
@@ -32546,11 +32544,6 @@ msgid "<link=\"MEDIC\">Advanced Medical Care</link>"
 msgstr "<link=\"MEDIC\">高度な医療看護</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.DESCRIPTION"
-#| msgid ""
-#| "Allows excavation of extremely hard materials like <link=\"DIAMOND"
-#| "\">Diamond</link> and <link=\"OBSIDIAN\">Obsidian</link>"
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.DESCRIPTION"
 msgid ""
 "Allows the excavation of <style=\"KKeyword\">Nearly Impenetrable</style> "
@@ -32558,12 +32551,9 @@ msgid ""
 "\">Obsidian</link>"
 msgstr ""
 "<link=\"DIAMOND\">ダイヤモンド</link>や<link=\"OBSIDIAN\">黒曜石</link>のよう"
-"な非常に硬い物質を採掘できるようになります"
+"な<style=\"KKeyword\">ほぼ貫通不可能な</style>物質を採掘できるようになります"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.NAME"
-#| msgid "<link=\"SENIORMINER\">Superduperhard Digging</link>"
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.NAME"
 msgid "<link=\"SENIORMINER\">Super-Duperhard Digging</link>"
 msgstr "<link=\"MINER\">超々硬質採掘</link>"
@@ -36489,44 +36479,32 @@ msgstr "{0} (堅固)"
 #. STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.FIRM
 msgctxt "STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.FIRM"
 msgid "Firm"
-msgstr ""
+msgstr "堅固"
 
 #. STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.IMPENETRABLE
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.IMPENETRABLE"
-#| msgid "Impenetrable"
 msgctxt "STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.IMPENETRABLE"
 msgid "Impenetrable"
-msgstr "鉄壁の"
+msgstr "貫通不可"
 
 #. STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.NEARLYIMPENETRABLE
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.HARDNESS.NEARLYIMPENETRABLE"
-#| msgid "{0} (Nearly Impenetrable)"
 msgctxt "STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.NEARLYIMPENETRABLE"
 msgid "Nearly Impenetrable"
-msgstr "{0} (ほぼ貫通不可)"
+msgstr "ほぼ貫通不可"
 
 #. STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.SOFT
 msgctxt "STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.SOFT"
 msgid "Soft"
-msgstr ""
+msgstr "軟質"
 
 #. STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.VERYFIRM
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.HARDNESS.VERYFIRM"
-#| msgid "{0} (Very Firm)"
 msgctxt "STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.VERYFIRM"
 msgid "Very Firm"
-msgstr "{0} (とても堅固)"
+msgstr "とても堅固"
 
 #. STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.VERYSOFT
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.HARDNESS.VERYSOFT"
-#| msgid "{0} (Very Soft)"
 msgctxt "STRINGS.ELEMENTS.HARDNESS.HARDNESS_DESCRIPTOR.VERYSOFT"
 msgid "Very Soft"
-msgstr "{0} (とても軟質)"
+msgstr "とても軟質"
 
 #. STRINGS.ELEMENTS.HARDNESS.IMPENETRABLE
 msgctxt "STRINGS.ELEMENTS.HARDNESS.IMPENETRABLE"
@@ -40986,11 +40964,10 @@ msgid ""
 "A feat of artistic vision and expert engineering that will doubtless inspire "
 "Duplicants for thousands of cycles to come"
 msgstr ""
+"芸術的ビジョンと先進的エンジニアリングの賜物は、間違いなく今後数千サイクルに"
+"渡って複製人間達を鼓舞するでしょう。"
 
 #. STRINGS.MISC.MONUMENT_COMPLETE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.MONUMENTSIDESCREEN.TITLE"
-#| msgid "Great Monument"
 msgctxt "STRINGS.MISC.MONUMENT_COMPLETE.NAME"
 msgid "Great Monument"
 msgstr "偉大なモニュメント"
@@ -41319,18 +41296,6 @@ msgid "These Duplicants died from a lack of <link=\"OXYGEN\">Oxygen</link>:"
 msgstr "これらの複製人間は<link=\"OXYGEN\">酸素</link>欠乏により死亡しました:"
 
 #. STRINGS.MISC.NOTIFICATIONS.DIGGING.MESSAGEBODY
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DIGGING.MESSAGEBODY"
-#| msgid ""
-#| "Everything a colony needs to get going is found in the ground. By "
-#| "instructing a Duplicant to dig in an area I can mine resources to build "
-#| "infrastructure, find food, and clear space for the colony to grow. I can "
-#| "access the Dig Tool <b><color=#F44A4A>[G]</b></color> which allows me to "
-#| "select the area I want my Duplicants to dig.\n"
-#| "\n"
-#| "Duplicants will need to gain the Superhard Digging skill to mine "
-#| "Abyssalite and the Superduperhard Digging skill to mine Diamond and "
-#| "Obsidian."
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DIGGING.MESSAGEBODY"
 msgid ""
 "Everything a colony needs to get going is found in the ground. Instructing "
@@ -41344,7 +41309,7 @@ msgid ""
 "the proper skills, these materials will be undiggable."
 msgstr ""
 "コロニーが発展するために必要なものは全て地中にある。複製人間に掘り方を教える"
-"ことで、インフラ構築の資源を採掘したり、食糧を見つけたり、コロニーを拡張する"
+"ことで、食糧を見つけたり、インフラ構築の資源を採掘したり、コロニーを拡張する"
 "ためのスペースを確保できる。採掘ツール<b><color=#F44A4A>[G]</b></color>を使え"
 "ば任意の場所を複製人間に採掘させることができる。\n"
 "\n"
@@ -41717,18 +41682,6 @@ msgstr ""
 "• 前のサイクルで消費した酸素: {ConsumptionRate}"
 
 #. STRINGS.MISC.NOTIFICATIONS.INSULATION.MESSAGEBODY
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.INSULATION.MESSAGEBODY"
-#| msgid ""
-#| "The temperature of an environment can have positive or negative effects "
-#| "on the wellbeing of my Duplicants, and the plants and critters in my "
-#| "colony. Selecting <b><color=#F44A4A>[F3]</b></color> will open the "
-#| "Temperature Overlay where I can check for hot and cold spots.\n"
-#| "\n"
-#| "I can use a Utility like an Ice-E Fan or a Space Heater to make an area "
-#| "colder or hotter. However, I will have limited success changing the "
-#| "temperature of a room unless I build the area with insulating tiles to "
-#| "prevent cold or warm air from escaping."
 msgctxt "STRINGS.MISC.NOTIFICATIONS.INSULATION.MESSAGEBODY"
 msgid ""
 "The temperature of an environment can have positive or negative effects on "
@@ -41775,12 +41728,9 @@ msgid "Attribute increase"
 msgstr "属性上昇"
 
 #. STRINGS.MISC.NOTIFICATIONS.LEVELUP.SUFFIX
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.LEVELUP.SUFFIX"
-#| msgid " - {0} raised to {1}"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LEVELUP.SUFFIX"
 msgid " - {0} Skill Level modifier raised to +{1}"
-msgstr " - {0} は {1} に上昇しました"
+msgstr " - {0}スキル補正が +{1} に上昇しました"
 
 #. STRINGS.MISC.NOTIFICATIONS.LEVELUP.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LEVELUP.TOOLTIP"
@@ -41898,17 +41848,6 @@ msgid "Notes on handling polluted materials"
 msgstr "汚染素材の取り扱い覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.MORALE.MESSAGEBODY
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.MORALE.MESSAGEBODY"
-#| msgid ""
-#| "Food, Rooms, Decor, and Recreation all have have an effect on Duplicant "
-#| "Morale. Good experiences improve their Morale and poor experiences lower "
-#| "it. When Morale is below their Expectations, Duplicants will become "
-#| "Stressed.\n"
-#| "\n"
-#| "As Duplicants are given new Skills they gain increased Expectations, and "
-#| "the colony will have to be improved to keep up their Morale. An overview "
-#| "of Morale and Stress can be viewed on the Vitals screen."
 msgctxt "STRINGS.MISC.NOTIFICATIONS.MORALE.MESSAGEBODY"
 msgid ""
 "Food, Rooms, Decor, and Recreation all have an effect on Duplicant Morale. "
@@ -41921,12 +41860,12 @@ msgid ""
 "Morale and Stress can be viewed on the Vitals screen."
 msgstr ""
 "食糧、部屋、装飾、気分転換は複製人間の士気に影響します。良い経験であれば士気"
-"は向上し、良くないものであれば下降します。士気が彼らの期待値を下回った時、複"
-"製人間はストレスを感じます。\n"
+"は向上し、満足できなければ下降します。士気が彼らの期待値を下回った時、複製人"
+"間はストレスを感じます。\n"
 "\n"
 "複製人間が新しいスキルを習得すると、彼らの期待値は上昇します。そのため、彼ら"
-"の士気を維持し続けるためのコロニーの改善が必要になるでしょう。士気の概要およ"
-"びストレスの状況は健康状態パネルから参照出来ます。"
+"の士気を維持し続けるためにコロニーの改善が必要になるでしょう。士気の概要およ"
+"びストレスの状況は健康状態パネルから参照できます。"
 
 #. STRINGS.MISC.NOTIFICATIONS.MORALE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.MORALE.NAME"
@@ -42033,7 +41972,7 @@ msgid ""
 "an existing <link=\"LOGICWIRE\">Automation Wire</link>"
 msgstr ""
 "この設備は新たな自動化ポートを獲得しました。既存の<link=\"LOGICWIRE\">自動化"
-"ワイヤ</link>と意図しない接続がされています。"
+"ワイヤ</link>と意図しない接続がされています"
 
 #. STRINGS.MISC.NOTIFICATIONS.NEWTRAIT.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NEWTRAIT.NAME"
@@ -42150,20 +42089,6 @@ msgid "Notes on connecting buildings with pipes"
 msgstr "設備のパイプ接続に関する覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.POWER.MESSAGEBODY
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.POWER.MESSAGEBODY"
-#| msgid ""
-#| "Generators produce power and the various buildings and machines in the "
-#| "colony are the Consumers. Each Consumer will pull a certain wattage from "
-#| "the power circuit it is connected to.\n"
-#| "\n"
-#| "I can use the Power Overlay <b><color=#F44A4A>[F2]</b></color> to check "
-#| "the status of my circuits. If the Consumers are consuming more wattage "
-#| "than the Generators are producing, the Batteries will drain and there "
-#| "will be brownouts. Additionally, if the Consumers are consuming more "
-#| "wattage than the Wires can handle, the Wires will overload and burn out. "
-#| "To correct both these situations, I will need to reorganize my Consumers "
-#| "onto separate circuits."
 msgctxt "STRINGS.MISC.NOTIFICATIONS.POWER.MESSAGEBODY"
 msgid ""
 "Generators are considered \"Producers\" of Power, while the various "
@@ -42182,14 +42107,17 @@ msgid ""
 "these situations, I will need to reorganize my Consumers onto separate "
 "circuits."
 msgstr ""
-"発電機は電力を生成し、コロニー内の様々な設備や機械によって消費される。消費側"
-"は接続された回路から定格のワット数を引き出す。\n"
+"発電機は電力の「生産者」と見なされ、コロニー内の様々な設備や機械は「消費者」"
+"と見なされる。消費側は接続された回路から定格のワット数を引き出す。設備のエネ"
+"ルギータブをクリックすることでワット数を確認できる。\n"
 "\n"
-"電力レイヤー<b><color=#F44A4A>[F2]</b></color>から現在の回路の状態を確認する"
-"ことができる。発電機が生成するよりも多くのワット数を消費している場合、バッテ"
-"リーに蓄えられた電力は枯渇してしまうだろう。加えて、電線が耐えられないワット"
-"数を消費側で使用していると、電線は過負荷を起こし焼け落ちてしまう。これらの状"
-"況に正しく対処するため、時には回路を分割し再編成する必要があるだろう。"
+"現在の回路の状態は電力レイヤー<b><color=#F44A4A>[F2]</b></color>から参照でき"
+"る。発電機が生成するよりも多くのワット数を消費している場合、バッテリーに蓄え"
+"られた電力は枯渇してしまうだろう。\n"
+"\n"
+"加えて、電線が耐えられないワット数を消費側で使用していると、電線は過負荷を起"
+"こし焼け落ちてしまう。これらの状況に正しく対処するため、時には回路を分割し再"
+"編成する必要があるだろう。"
 
 #. STRINGS.MISC.NOTIFICATIONS.POWER.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.POWER.NAME"
@@ -42985,7 +42913,7 @@ msgstr ""
 #. STRINGS.MISC.STATUSITEMS.ORDERCAPTURE.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.ORDERCAPTURE.NAME"
 msgid "Pending Wrangle"
-msgstr "懐柔作業待ち"
+msgstr "縄掛け作業待ち"
 
 #. STRINGS.MISC.STATUSITEMS.ORDERCAPTURE.TOOLTIP
 msgctxt "STRINGS.MISC.STATUSITEMS.ORDERCAPTURE.TOOLTIP"
@@ -48433,7 +48361,7 @@ msgstr "捕獲方法: 罠"
 #. STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_WRANGLE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_WRANGLE"
 msgid "Capture Method: Wrangling"
-msgstr "捕獲方法: 懐柔"
+msgstr "捕獲方法: 縄掛け"
 
 # 直訳だと微妙かもしれない
 #. STRINGS.UI.BUILDINGEFFECTS.CONSUMESANYELEMENT
@@ -48941,10 +48869,11 @@ msgid ""
 msgstr ""
 "この動物は捕獲することができます\n"
 "------------------\n"
-"<b>懐柔ツール</b><b><color=#F44A4A>[N]</b></color>で動物をマークしてくださ"
+"<b>縄掛けツール</b><b><color=#F44A4A>[N]</b></color>で動物をマークしてくださ"
 "い\n"
 "\n"
-"複製人間が動物を懐柔するには<style=\"KKeyword\">畜産</style>スキルが必要です"
+"複製人間が動物に縄を掛けるには<style=\"KKeyword\">畜産</style>スキルが必要で"
+"す"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.COOLANT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.COOLANT"
@@ -51555,15 +51484,6 @@ msgid "Previous Version"
 msgstr "過去のバージョン"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.TESTING_MESSAGE
-#, fuzzy
-#| msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.TESTING_MESSAGE"
-#| msgid ""
-#| "This game is running a Test version of Oxygen Not Included. This means "
-#| "that some features may be in development or buggier than normal, and not "
-#| "quite ready to go to the Release version of the game.\n"
-#| "\n"
-#| "If you encounter any bugs or strange behavior, we'd appreciate if you "
-#| "took the time to add a report to the bug forums."
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.TESTING_MESSAGE"
 msgid ""
 "This game is running a Test version of Oxygen Not Included. This means that "
@@ -51577,7 +51497,7 @@ msgstr ""
 "ていたり、通常版よりも不安定だったり、正式版からはほど遠いということです。\n"
 "\n"
 "バグや不可解な動作に遭遇したら、バグフォーラムに投稿する時間を取って頂けると"
-"助かります。"
+"助かります！"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.TESTING_MESSAGE_TITLE
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.TESTING_MESSAGE_TITLE"
@@ -51590,12 +51510,6 @@ msgid "BUG FORUMS"
 msgstr "バグフォーラム"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.TESTING_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.TESTING_TOOLTIP"
-#| msgid ""
-#| "The game is currently running a Test version\n"
-#| "\n"
-#| "Click for more info."
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.TESTING_TOOLTIP"
 msgid ""
 "This game is currently running a Test version.\n"
@@ -52108,9 +52022,6 @@ msgid "My Duplicants gained a total of {0} skill levels today"
 msgstr "複製人間は本日合計{0}スキルレベルを獲得しました"
 
 #. STRINGS.UI.ENDOFDAYREPORT.MY_COLONY
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.COLONY"
-#| msgid "Colony"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.MY_COLONY"
 msgid "my colony"
 msgstr "コロニー"
@@ -52126,9 +52037,6 @@ msgid "Next"
 msgstr "次へ"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NONE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CONGENITALTRAITS.NONE.NAME"
-#| msgid "None"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NONE"
 msgid "None"
 msgstr "なし"
@@ -52231,13 +52139,13 @@ msgstr "家畜化された動物:"
 msgctxt ""
 "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NEGATIVE_TOOLTIP"
 msgid "{0} domestic critters live in {1}"
-msgstr ""
+msgstr "{1} 内に {0} 匹の家畜"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.POSITIVE_TOOLTIP
 msgctxt ""
 "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.POSITIVE_TOOLTIP"
 msgid "{0} domestic critters live in {1}"
-msgstr ""
+msgstr "{1} 内に {0} 匹の家畜"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NAME
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NAME"
@@ -52247,12 +52155,12 @@ msgstr "野生動物:"
 #. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NEGATIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NEGATIVE_TOOLTIP"
 msgid "{0} domestic critters live in {1}"
-msgstr ""
+msgstr "{1} 内に {0} 匹の家畜"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.POSITIVE_TOOLTIP"
 msgid "{0} domestic critters live in {1}"
-msgstr ""
+msgstr "{1} 内に {0} 匹の家畜"
 
 #. STRINGS.UI.ENDOFDAYREPORT.OXYGEN_CREATED.NAME
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.OXYGEN_CREATED.NAME"
@@ -52306,20 +52214,14 @@ msgid "Rocket Missions Underway:"
 msgstr "ロケットミッション進行状況:"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.NEGATIVE_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.NEGATIVE_TOOLTIP"
-#| msgid "There are {0} Rockets currently flying missions"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.NEGATIVE_TOOLTIP"
 msgid "{0} rockets are currently flying missions for {1}"
-msgstr "{0}機のロケットが飛翔中です"
+msgstr "{0}機のロケットが{1}に向かって飛翔中です"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.POSITIVE_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.POSITIVE_TOOLTIP"
-#| msgid "There are {0} Rockets currently flying missions"
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ROCKETS_IN_FLIGHT.POSITIVE_TOOLTIP"
 msgid "{0} rockets are currently flying missions for {1}"
-msgstr "{0}機のロケットが飛翔中です"
+msgstr "{0}機のロケットが{1}に向かって飛翔中です"
 
 #. STRINGS.UI.ENDOFDAYREPORT.STRESS_DELTA.NAME
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.STRESS_DELTA.NAME"
@@ -53079,30 +52981,20 @@ msgid ""
 msgstr "ゲームの制限を無視できるツールを使ってシミュレーションします"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.LEVELS.DISABLED.NAME
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN."
-#| "TIMELAPSE_DISABLED_DESCRIPTION"
-#| msgid "Disabled"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.LEVELS."
 "DISABLED.NAME"
 msgid "Disabled"
-msgstr "無効化"
+msgstr "無効"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.LEVELS.DISABLED.TOOLTIP
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.LEVELS."
 "DISABLED.TOOLTIP"
 msgid "Unchecked: This colony will be a local save"
-msgstr ""
+msgstr "未チェック: コロニーはローカル環境にセーブされます"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.LEVELS.ENABLED.NAME
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE."
-#| "LEVELS.ENABLED.NAME"
-#| msgid "Enabled"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.LEVELS."
 "ENABLED.NAME"
@@ -53114,13 +53006,13 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.LEVELS."
 "ENABLED.TOOLTIP"
 msgid "Checked: This colony will be a cloud save (Default)"
-msgstr ""
+msgstr "チェック: コロニーはクラウドセーブされます(デフォルト)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.NAME
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.NAME"
 msgid "Save To Cloud"
-msgstr ""
+msgstr "クラウドセーブ"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.TOOLTIP
 msgctxt ""
@@ -53129,6 +53021,8 @@ msgid ""
 "This colony will be created in the cloud saves folder, and synced by the "
 "game platform."
 msgstr ""
+"このコロニーはゲームプラットフォーム上で同期されたクラウドセーブフォルダに作"
+"成されます。"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.TOOLTIP_EXTRA
 msgctxt ""
@@ -53137,7 +53031,7 @@ msgctxt ""
 msgid ""
 "This can be changed later with the colony management options in the load "
 "screen, from the main menu."
-msgstr ""
+msgstr "コロニー管理オプションで後から変更できます。"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SAVETOCLOUD.TOOLTIP_LOCAL
 msgctxt ""
@@ -53147,6 +53041,8 @@ msgid ""
 "This colony will be created in the local saves folder. It will not be a "
 "cloud save and will not be synced by the game platform."
 msgstr ""
+"このコロニーはゲームプラットフォーム上で同期されないローカル環境のフォルダに"
+"作成されます。"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.NAME
 msgctxt ""
@@ -53429,14 +53325,9 @@ msgid "Change key bindings"
 msgstr "キー割り当て変更"
 
 #. STRINGS.UI.FRONTEND.GAME_OPTIONS_SCREEN.DEFAULT_TO_CLOUD_SAVES
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#| "DEFAULT.TOOLTIP"
-#| msgid "Default calorie burn rate"
 msgctxt "STRINGS.UI.FRONTEND.GAME_OPTIONS_SCREEN.DEFAULT_TO_CLOUD_SAVES"
 msgid "Default to cloud saves"
-msgstr "デフォルトカロリー消費速度"
+msgstr "クラウドセーブに戻す"
 
 #. STRINGS.UI.FRONTEND.GAME_OPTIONS_SCREEN.DEFAULT_TO_CLOUD_SAVES_TOOLTIP
 msgctxt ""
@@ -53445,6 +53336,7 @@ msgid ""
 "When a new colony is created, this controls whether it will be saved into "
 "the cloud saves folder for syncing or not."
 msgstr ""
+"新しくコロニーが生成された時、クラウドセーブに保存する/しないを制御します。"
 
 #. STRINGS.UI.FRONTEND.GAME_OPTIONS_SCREEN.DISABLED_WARNING
 msgctxt "STRINGS.UI.FRONTEND.GAME_OPTIONS_SCREEN.DISABLED_WARNING"
@@ -53658,12 +53550,9 @@ msgstr ""
 "は削除されます</color>"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.BACKBUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.IMMIGRANTSCREEN.BACK"
-#| msgid "BACK"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.BACKBUTTON"
 msgid "< BACK"
-msgstr "戻る"
+msgstr "< 戻る"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.BASE_NAME
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.BASE_NAME"
@@ -53673,41 +53562,32 @@ msgstr "基地の名前"
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CLOUD_SAVE
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CLOUD_SAVE"
 msgid "cloud"
-msgstr ""
+msgstr "クラウド"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CLOUD_TUTORIAL_BOUNCER
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CLOUD_TUTORIAL_BOUNCER"
 msgid "Upload Saves to Cloud"
-msgstr ""
+msgstr "クラウドにセーブをアップロード"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.COLONIES_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.COLONY"
-#| msgid "Colony"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.COLONIES_TITLE"
 msgid "Colony View"
-msgstr "コロニー"
+msgstr "コロニー参照"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.COLONY_FILE_NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_AVAILABLE"
-#| msgid "Available: {0}"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.COLONY_FILE_NAME"
 msgid "File: '{0}'"
-msgstr "在庫: {0}"
+msgstr "ファイル: '{0}'"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.COLONY_FILE_SIZE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.RACE_PREFIX"
-#| msgid "Species: {0}"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.COLONY_FILE_SIZE"
 msgid "Size: {0}"
-msgstr "種族: {0}"
+msgstr "サイズ: {0}"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.COLONY_TITLE
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.COLONY_TITLE"
 msgid "Viewing colony '{0}'"
-msgstr ""
+msgstr "'{0}' を参照中"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONFIRMDELETE
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONFIRMDELETE"
@@ -53721,12 +53601,12 @@ msgstr ""
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_COLONIES
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_COLONIES"
 msgid "CONVERT ALL"
-msgstr ""
+msgstr "全て変換"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_TO_CLOUD
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_TO_CLOUD"
 msgid "Convert <b>all</b> colonies below to use cloud saves"
-msgstr ""
+msgstr "<b>全て</b>のコロニーをクラウドセーブ対応にします"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_TO_CLOUD_SUCCESS
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_TO_CLOUD_SUCCESS"
@@ -53739,11 +53619,18 @@ msgid ""
 "{Client} may take longer than usual to sync the next time you exit the game "
 "as a result of this change."
 msgstr ""
+"<style=\"KKeyword\">成功しました！</style>\n"
+"全てのコロニーは<style=\"KKeyword\">クラウド</style>セーブに対応しました。\n"
+"新しいコロニーはデフォルトで<style=\"KKeyword\">クラウド</style>セーブされま"
+"す。\n"
+"\n"
+"この変更の結果、次回ゲーム終了時に同期を取るため {Client} は通常より時間がか"
+"かるかもしれません。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_TO_LOCAL
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_TO_LOCAL"
 msgid "Convert <b>all</b> colonies below to use local saves"
-msgstr ""
+msgstr "<b>全て</b>のコロニーをローカルセーブ対応にします"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_TO_LOCAL_SUCCESS
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_TO_LOCAL_SUCCESS"
@@ -53756,6 +53643,13 @@ msgid ""
 "{Client} may take longer than usual to sync the next time you exit the game "
 "as a result of this change."
 msgstr ""
+"<style=\"KKeyword\">成功しました！</style>\n"
+"全てのコロニーは<style=\"KKeyword\">ローカル</style>セーブに対応しました。\n"
+"新しいコロニーはデフォルトで<style=\"KKeyword\">ローカル</style>セーブされま"
+"す。\n"
+"\n"
+"この変更の結果、次回ゲーム終了時に同期を取るため {Client} は通常より時間がか"
+"かるかもしれません。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_WARNING
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ALL_WARNING"
@@ -53763,27 +53657,23 @@ msgid ""
 "<style=\"KKeyword\">\n"
 "Warning:</style> Converting all colonies may take some time."
 msgstr ""
+"<style=\"KKeyword\">\n"
+"警告:</style> 全てのコロニーを変換するには時間がかかります。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_COLONY
-#, fuzzy
-#| msgctxt "STRINGS.UI.IMMIGRANTSCREEN.NAME_YOUR_COLONY"
-#| msgid "NAME THE COLONY"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_COLONY"
 msgid "CONVERT COLONY"
-msgstr "コロニーの名前"
+msgstr "コロニーの変換"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_COLONY_TO_CLOUD
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_COLONY_TO_CLOUD"
 msgid "Convert colony to use cloud saves"
-msgstr ""
+msgstr "コロニーをクラウドセーブに対応させる"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_COLONY_TO_LOCAL
-#, fuzzy
-#| msgctxt "STRINGS.UI.USERMENUACTIONS.UPROOT.TOOLTIP"
-#| msgid "Convert this plant into a seed"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_COLONY_TO_LOCAL"
 msgid "Convert to colony to use local saves"
-msgstr "この植物を種子に変換します"
+msgstr "コロニーをローカルセーブに対応させる"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ERROR
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ERROR"
@@ -53797,16 +53687,22 @@ msgid ""
 "Please try again, or post a bug in the forums if this problem keeps "
 "happening."
 msgstr ""
+"コロニー <style=\"KKeyword\">{Colony}</style> の変換に失敗しました！\n"
+"エラー:\n"
+"\n"
+"<b>{Error}</b>\n"
+"\n"
+"やり直すか、問題が解決しない場合はフォーラムにバグ報告をお願いします。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ERROR_TITLE
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_ERROR_TITLE"
 msgid "SAVE CONVERSION UNSUCCESSFUL"
-msgstr ""
+msgstr "セーブファイル変換失敗"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_TO_CLOUD
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_TO_CLOUD"
 msgid "CONVERT TO CLOUD SAVES"
-msgstr ""
+msgstr "クラウドセーブに変換"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_TO_CLOUD_DETAILS
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_TO_CLOUD_DETAILS"
@@ -53817,11 +53713,16 @@ msgid ""
 "This allows your game platform to sync this colony to the cloud for your "
 "account, so it can be played on multiple machines."
 msgstr ""
+"コロニーをクラウドセーブに変換すると、そのコロニーの全てのセーブファイルはク"
+"ラウドセーブフォルダに移動します。\n"
+"\n"
+"アカウントに紐づけられたクラウド上でコロニーを同期させることで、異なるマシン"
+"上でも同じデータで遊ぶことができます。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_TO_LOCAL
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_TO_LOCAL"
 msgid "CONVERT TO LOCAL SAVES"
-msgstr ""
+msgstr "ローカルセーブに変換"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_TO_LOCAL_DETAILS
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CONVERT_TO_LOCAL_DETAILS"
@@ -53832,6 +53733,11 @@ msgid ""
 "<style=\"KKeyword\">These save files will no longer be synced to the cloud.</"
 "style>"
 msgstr ""
+"コロニーをクラウドセーブ非対応に変換すると、クラウド上のセーブファイルをロー"
+"カルセーブフォルダに移動します。\n"
+"\n"
+"<style=\"KKeyword\">このセーブファイルはクラウドと同期しなくなります。</"
+"style>"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.CORRUPTEDSAVE
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CORRUPTEDSAVE"
@@ -53858,48 +53764,32 @@ msgid "Duplicants Alive"
 msgstr "生存中の複製人間"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.LOCAL_SAVE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.RELOCATE.NAME"
-#| msgid "Relocate"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.LOCAL_SAVE"
 msgid "local"
-msgstr "移設"
+msgstr "ローカル"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_COUNT
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.GEOACTIVE.DESCRIPTION"
-#| msgid ""
-#| "This world has more <style=\"KKeyword\">Geysers</style> and <style="
-#| "\"KKeyword\">Vents</style> than usual"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_COUNT"
 msgid ""
 "\n"
 "Found <style=\"KKeyword\">{0}</style> saves and <style=\"KKeyword\">{1}</"
 "style> autosaves that require migration."
 msgstr ""
-"この世界には通常より多めの<style=\"KKeyword\">間欠泉</style><style=\"KKeyword"
-"\">噴出口</style>があります"
+"\n"
+"移行が必要な<style=\"KKeyword\">{0}</style>のセーブファイルおよび<style="
+"\"KKeyword\">{1}</style>の自動セーブファイルを見つけました。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_DONE
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.RESTART.CANCEL"
-#| msgid "CONTINUE"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_DONE"
 msgid "CONTINUE"
 msgstr "続行"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_FAILURES_DONE
-#, fuzzy
-#| msgctxt "STRINGS.UI.CRASHSCREEN.MOREINFOBUTTON"
-#| msgid "MORE INFO"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_FAILURES_DONE"
 msgid "MORE INFO"
 msgstr "追加情報"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_FAILURES_FORUM_BUTTON
-#, fuzzy
-#| msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.FORUMBUTTON"
-#| msgid "FORUMS"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_FAILURES_FORUM_BUTTON"
 msgid "VISIT FORUMS"
 msgstr "フォーラム"
@@ -53910,21 +53800,20 @@ msgid ""
 "We've changed how save files are organized!\n"
 "Please click the button below to automatically update your save file storage."
 msgstr ""
+"セーブファイルの保存方法を変更しました！\n"
+"\n"
+"セーブファイルを自動アップデートするには、下のボタンをクリックしてください。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.TRANSFORMER_INPUT_WIRE"
-#| msgid ""
-#| "Connect a <style=\"KKeyword\">Wire</style> to the large <style=\"KKeyword"
-#| "\">Input</style> with any amount of <style=\"KKeyword\">Watts</style>."
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT"
 msgid ""
 "<style=\"KKeyword\">SUCCESS!</style>\n"
 "Migration moved <style=\"KKeyword\">{0}/{1}</style> saves and <style="
 "\"KKeyword\">{2}/{3}</style> autosaves</style>."
 msgstr ""
-"大きいほうの<style=\"KKeyword\">入力</style>側に任意の<style=\"KKeyword\">"
-"ワット数</style>の<style=\"KKeyword\">電線</style>を接続します。"
+"<style=\"KKeyword\">成功しました！</style>\n"
+"<style=\"KKeyword\">{0}/{1}</style>のセーブファイルと<style=\"KKeyword\">{2}/"
+"{3}</style>の自動セーブファイルは正しく移行できました。</style>"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES"
@@ -53938,6 +53827,14 @@ msgid ""
 "\n"
 "<b>{ErrorMessage}</b>"
 msgstr ""
+"<style=\"KKeyword\"><b>警告:</b> 一部のセーブファイルは移行できませんでした。"
+"</style>\n"
+"<style=\"KKeyword\">{0}/{1}</style>のセーブファイルと<style=\"KKeyword\">{2}/"
+"{3}</style>の自動セーブファイルは正しく移行できました。\n"
+"\n"
+"<style=\"KKeyword\">{ErrorColony}</style>には以下のエラーが発生しています:\n"
+"\n"
+"<b>{ErrorMessage}</b>"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_ITEM1
 msgctxt ""
@@ -53945,19 +53842,19 @@ msgctxt ""
 msgid ""
 "    1. Try temporarily disabling virus scanners and malware\n"
 "         protection programs."
-msgstr ""
+msgstr "    1. アンチウィルスを一時停止する。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_ITEM2
 msgctxt ""
 "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_ITEM2"
 msgid "    2. Turn off file sync services such as OneDrive and DropBox."
-msgstr ""
+msgstr "    2. OneDriveやDropBoxの同期サービスをオフにする。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_ITEM3
 msgctxt ""
 "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_ITEM3"
 msgid "    3. Restart the game to retry file migration."
-msgstr ""
+msgstr "    3. ゲームを再起動し、再度移行する。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_POST
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_POST"
@@ -53966,6 +53863,9 @@ msgid ""
 "<b>If this still doesn't solve the problem, please post a bug in the forums "
 "and we will attempt to assist with your issue.</b>"
 msgstr ""
+"\n"
+"<b>問題が解決しない場合は、フォーラムにバグ報告していただければ我々がお手伝い"
+"します。</b>"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_PRE
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_PRE"
@@ -53974,28 +53874,25 @@ msgid ""
 "To fix this, please:</b>\n"
 "\n"
 msgstr ""
+"<b>セーブファイルを新しい場所へ移動できませんでした。\n"
+"修正するには、下記の手順を試してください:</b>\n"
+"\n"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.GENESHUFFLERMESSAGE.HEADER"
-#| msgid "NEURAL VACILLATION COMPLETE"
 msgctxt ""
 "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_RESULT_FAILURES_MORE_INFO_TITLE"
 msgid "MIGRATION INCOMPLETE"
-msgstr "神経シャッフル完了"
+msgstr "移行中断"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_SAVE_FILES
-#, fuzzy
-#| msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_LORE"
-#| msgid "RECOVERED FILES"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_SAVE_FILES"
 msgid "MIGRATE SAVE FILES"
-msgstr "復元したファイル"
+msgstr "セーブファイルを移行します"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_TITLE
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_TITLE"
 msgid "SAVE FILE MIGRATION"
-msgstr ""
+msgstr "セーブファイルの移行"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MORE_INFO
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MORE_INFO"
@@ -54015,57 +53912,46 @@ msgstr "ファイル未選択"
 #. STRINGS.UI.FRONTEND.LOADSCREEN.NO_PREVIEW
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.NO_PREVIEW"
 msgid "NO PREVIEW"
-msgstr ""
+msgstr "プレビューなし"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.OPEN_CLOUDSAVE_FOLDER
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.OPEN_CLOUDSAVE_FOLDER"
 msgid "CLOUD SAVES"
-msgstr ""
+msgstr "クラウドセーブ"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.OPEN_SAVE_FOLDER
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.OPEN_SAVE_FOLDER"
 msgid "LOCAL SAVES"
-msgstr ""
+msgstr "ローカルセーブ"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_INFO
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.CONVEYOR_CONTENTS.CONTENTS"
-#| msgid "{0} of {1} at {2}"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_INFO"
 msgid "{0} saves  {1} autosaves  {2}"
-msgstr "{2} で {0} の {1}"
+msgstr "{0} のセーブ、{1} の自動セーブ  {2}"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_INFO_DIALOG_TEXT
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_INFO_DIALOG_TEXT"
 msgid "Access your save files using the options below."
-msgstr ""
+msgstr "下記オプションからセーブファイルにアクセスできます。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_INFO_DIALOG_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_DESCRIPTION"
-#| msgid "INFORMATION"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_INFO_DIALOG_TITLE"
 msgid "SAVE INFORMATION"
-msgstr "情報"
+msgstr "セーブ情報"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_INFO_DIALOG_TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_INFO_DIALOG_TOOLTIP"
 msgid "Access your save file locations from here."
-msgstr ""
+msgstr "ここからセーブファイルにアクセスできます。"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_TOO_NEW
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_TOO_NEW"
-#| msgid ""
-#| "<b><color=#ff0000>Could not load file {0}. File is using build {1}. This "
-#| "build is {2}.</color></b>"
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.SAVE_TOO_NEW"
 msgid ""
 "<b><color=#ff0000>Could not load file {0}. File is using build {1}, v{2}. "
 "This build is {3}, v{4}.</color></b>"
 msgstr ""
-"<b><color=#ff0000>{0} をロードできませんでした。ファイルはビルド {1} で作られ"
-"ましたが、このビルドは {2} です。</color></b>"
+"<b><color=#ff0000>ファイル {0} をロードできませんでした。このファイルはビル"
+"ド {1}, v{2} で使われています。現在のビルドは {3}, v{4} です。</color></b>"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.SAVEDETAILS
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.SAVEDETAILS"
@@ -54354,18 +54240,13 @@ msgid "MOD ERRORS"
 msgstr "MODエラー"
 
 #. STRINGS.UI.FRONTEND.MOD_DIALOGS.MOD_EVENTS.DEV_MESSAGE
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.MOD_EVENTS.DEV_MESSAGE"
-#| msgid ""
-#| "{0}\n"
-#| "Check output_log.txt for details."
 msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.MOD_EVENTS.DEV_MESSAGE"
 msgid ""
 "{0}\n"
 "Check Player.log for details."
 msgstr ""
 "{0}\n"
-"詳細は output_log.txtを参照してください。"
+"詳細は Player.log を参照してください。"
 
 #. STRINGS.UI.FRONTEND.MOD_DIALOGS.MOD_EVENTS.MESSAGE
 msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.MOD_EVENTS.MESSAGE"
@@ -54800,6 +54681,15 @@ msgid ""
 "\n"
 "Check out the full patch notes for more details!"
 msgstr ""
+"<b>2020年11月 クラウドセーブアップデート</b>\n"
+"\n"
+" • クラウドセーブに対応しました。「つづきから」をクリックするとセーブファイル"
+"を開いたりクラウド/ローカルの切替ができます！\n"
+" • パフォーマンスの改善。特に大勢の複製人間を抱えるコロニーにおいて顕著で"
+"す。\n"
+" • Unityゲームエンジンを最新のLTSバージョンに更新しました。\n"
+"\n"
+"詳細はパッチノート全文を確認してください！"
 
 #. STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT
 msgctxt "STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT"
@@ -56150,7 +56040,7 @@ msgstr "全ての製造物を拒否しますか？"
 #. STRINGS.UI.IMMIGRANTSCREEN.DUPLICATE_COLONY_NAME
 msgctxt "STRINGS.UI.IMMIGRANTSCREEN.DUPLICATE_COLONY_NAME"
 msgid "A colony named \"{0}\" already exists!"
-msgstr ""
+msgstr "\"{0}\" という名のコロニーは既に存在します！"
 
 #. STRINGS.UI.IMMIGRANTSCREEN.EMBARK
 msgctxt "STRINGS.UI.IMMIGRANTSCREEN.EMBARK"
@@ -57392,7 +57282,7 @@ msgstr "コンベアレイヤー"
 #. STRINGS.UI.OVERLAYS.CONVEYOR.INPUT
 msgctxt "STRINGS.UI.OVERLAYS.CONVEYOR.INPUT"
 msgid "Receptacle"
-msgstr "レセプタ"
+msgstr "レセプター"
 
 #. STRINGS.UI.OVERLAYS.CONVEYOR.NAME
 msgctxt "STRINGS.UI.OVERLAYS.CONVEYOR.NAME"
@@ -57410,7 +57300,7 @@ msgid ""
 "<b>Receptacle</b>\n"
 "Receives material from a Conveyor Rail and stores it for Duplicant use"
 msgstr ""
-"<b>レセプタ</b>\n"
+"<b>レセプター</b>\n"
 "コンベアから素材を受け取り、複製人間が使うときまで保管します"
 
 #. STRINGS.UI.OVERLAYS.CONVEYOR.TOOLTIPS.OUTPUT
@@ -57420,7 +57310,7 @@ msgid ""
 "Loads material onto a Conveyor Rail for transport to Receptacles"
 msgstr ""
 "<b>ローダー</b>\n"
-"コンベアに素材を積載し、レセプタまで輸送します"
+"コンベアに素材を積載し、レセプターまで輸送します"
 
 #. STRINGS.UI.OVERLAYS.CROP.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CROP.BUTTON"
@@ -58995,22 +58885,22 @@ msgstr "植える"
 #. STRINGS.UI.PLATFORMS.EPIC
 msgctxt "STRINGS.UI.PLATFORMS.EPIC"
 msgid "Epic Games Store"
-msgstr ""
+msgstr "Epic Games Store"
 
 #. STRINGS.UI.PLATFORMS.STEAM
 msgctxt "STRINGS.UI.PLATFORMS.STEAM"
 msgid "Steam"
-msgstr ""
+msgstr "Steam"
 
 #. STRINGS.UI.PLATFORMS.UNKNOWN
 msgctxt "STRINGS.UI.PLATFORMS.UNKNOWN"
 msgid "Your game client"
-msgstr ""
+msgstr "あなたのゲームクライアント"
 
 #. STRINGS.UI.PLATFORMS.WEGAME
 msgctxt "STRINGS.UI.PLATFORMS.WEGAME"
 msgid "Wegame"
-msgstr ""
+msgstr "Wegame"
 
 #. STRINGS.UI.POS_INFINITY
 msgctxt "STRINGS.UI.POS_INFINITY"
@@ -60024,7 +59914,7 @@ msgstr "<link=\"COMMANDMODULE\">制御カプセル</link>が利用可能"
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_WRANGLE_CREATURES.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_WRANGLE_CREATURES.DESCRIPTION"
 msgid "Critter Wrangling"
-msgstr "動物懐柔"
+msgstr "動物手懐け"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CONVEYOR_BUILD.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CONVEYOR_BUILD.DESCRIPTION"
@@ -61116,7 +61006,7 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.BLENDER.DESCRIPTION"
 msgid ""
 "Equipment used to conduct experiments answering the age-old question, "
 "\"Could that blend\"?"
-msgstr "古くからある質問、\"混ぜてもいいか？\"に答える実験を行うための機器です"
+msgstr "古くからある質問、「混ぜてもいいか？」に答える実験を行うための機器です"
 
 #. STRINGS.UI.SPACEARTIFACTS.BLENDER.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.BLENDER.NAME"
@@ -62584,12 +62474,12 @@ msgstr "キャンセルツール"
 #. STRINGS.UI.TOOLS.CAPTURE.NAME
 msgctxt "STRINGS.UI.TOOLS.CAPTURE.NAME"
 msgid "Wrangle"
-msgstr "懐柔"
+msgstr "縄掛け"
 
 #. STRINGS.UI.TOOLS.CAPTURE.NOT_CAPTURABLE
 msgctxt "STRINGS.UI.TOOLS.CAPTURE.NOT_CAPTURABLE"
 msgid "Cannot Wrangle"
-msgstr "懐柔不可"
+msgstr "縄掛け不可"
 
 #. STRINGS.UI.TOOLS.CAPTURE.TOOLACTION
 msgctxt "STRINGS.UI.TOOLS.CAPTURE.TOOLACTION"
@@ -62599,7 +62489,7 @@ msgstr "ドラッグ"
 #. STRINGS.UI.TOOLS.CAPTURE.TOOLNAME
 msgctxt "STRINGS.UI.TOOLS.CAPTURE.TOOLNAME"
 msgid "Wrangle tool"
-msgstr "懐柔ツール"
+msgstr "縄掛けツール"
 
 #. STRINGS.UI.TOOLS.CLEANUPCATEGORY.NAME
 msgctxt "STRINGS.UI.TOOLS.CLEANUPCATEGORY.NAME"
@@ -64119,7 +64009,7 @@ msgstr "ここに格納する最大容量を調整します"
 #. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE"
 msgid "Auto-Wrangle Surplus"
-msgstr "自動間引き"
+msgstr "余剰分自動縄掛け"
 
 #. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE_TOOLTIP
 msgctxt ""
@@ -64131,16 +64021,16 @@ msgid ""
 "Duplicants must possess the Critter Ranching Skill in order to wrangle "
 "critters"
 msgstr ""
-"複製人間は、動物が過密状態になるまで、厩舎に属していない動物を自動的に懐柔す"
-"るようになります\n"
+"複製人間は、動物が過密状態になるまで、厩舎に属していない動物を自動的に縄掛け"
+"するようになります\n"
 "\n"
-"複製人間が動物を懐柔するには牧畜スキルが必要です"
+"複製人間が動物に縄を掛けるには牧畜スキルが必要です"
 
 #. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.LIMIT_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.LIMIT_TOOLTIP"
 msgid ""
 "Critters exceeding this population limit will automatically be wrangled:"
-msgstr "過密状態になった動物は自動的に懐柔されます:"
+msgstr "過密状態になった動物は自動的に縄掛けされます:"
 
 #. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.TITLE"
@@ -66265,12 +66155,9 @@ msgid " kDTU/s"
 msgstr " kDTU/s"
 
 #. STRINGS.UI.UNITSUFFIXES.INFORMATION.BYTE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UNITSUFFIXES.INFORMATION.GIGABYTE"
-#| msgid "GB"
 msgctxt "STRINGS.UI.UNITSUFFIXES.INFORMATION.BYTE"
 msgid "B"
-msgstr "GB"
+msgstr "B"
 
 #. STRINGS.UI.UNITSUFFIXES.INFORMATION.GIGABYTE
 msgctxt "STRINGS.UI.UNITSUFFIXES.INFORMATION.GIGABYTE"
@@ -66290,7 +66177,7 @@ msgstr "MB"
 #. STRINGS.UI.UNITSUFFIXES.INFORMATION.TERABYTE
 msgctxt "STRINGS.UI.UNITSUFFIXES.INFORMATION.TERABYTE"
 msgid "TB"
-msgstr ""
+msgstr "TB"
 
 #. STRINGS.UI.UNITSUFFIXES.LIGHT.LUX
 msgctxt "STRINGS.UI.UNITSUFFIXES.LIGHT.LUX"
@@ -66430,12 +66317,12 @@ msgstr "攻撃指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.CANCELCAPTURE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELCAPTURE.NAME"
 msgid "Cancel Wrangle"
-msgstr "懐柔をやめる"
+msgstr "縄掛けをやめる"
 
 #. STRINGS.UI.USERMENUACTIONS.CANCELCAPTURE.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELCAPTURE.TOOLTIP"
 msgid "Cancel this wrangle order"
-msgstr "懐柔指示を取り消します"
+msgstr "縄掛け指示を取り消します"
 
 #. STRINGS.UI.USERMENUACTIONS.CANCELCLEANTOILET.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELCLEANTOILET.NAME"
@@ -66500,7 +66387,7 @@ msgstr "掘り起こし指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.CAPTURE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CAPTURE.NAME"
 msgid "Wrangle"
-msgstr "懐柔"
+msgstr "縄掛け"
 
 #. STRINGS.UI.USERMENUACTIONS.CAPTURE.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CAPTURE.TOOLTIP"
@@ -67398,7 +67285,7 @@ msgstr "複製人間がこの設備を左から右に通り過ぎるときに洗
 #. STRINGS.UI.VICTORYSCREEN.DESCRIPTION
 msgctxt "STRINGS.UI.VICTORYSCREEN.DESCRIPTION"
 msgid "I have fulfilled the conditions of one of my Hardwired Imperatives"
-msgstr "私は、私に\"刻み込まれた使命\"の一つについて、条件を満たした"
+msgstr "私は、私に「刻み込まれた使命」の一つについて、条件を満たした"
 
 #. STRINGS.UI.VICTORYSCREEN.DISMISSBUTTON
 msgctxt "STRINGS.UI.VICTORYSCREEN.DISMISSBUTTON"
@@ -68234,7 +68121,7 @@ msgstr "チュートリアル:"
 #. STRINGS.WORLD_TRAITS.BOULDERS_LARGE.DESCRIPTION
 msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_LARGE.DESCRIPTION"
 msgid "Huge boulders make digging through this world more difficult"
-msgstr ""
+msgstr "巨大な岩塊はこの世界の採掘をより困難にします"
 
 #. STRINGS.WORLD_TRAITS.BOULDERS_LARGE.NAME
 msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_LARGE.NAME"
@@ -68244,7 +68131,7 @@ msgstr "巨大な岩塊"
 #. STRINGS.WORLD_TRAITS.BOULDERS_MEDIUM.DESCRIPTION
 msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_MEDIUM.DESCRIPTION"
 msgid "Mid-sized boulders make digging through this world more difficult"
-msgstr ""
+msgstr "中程度の岩塊はこの世界の採掘をより困難にします"
 
 #. STRINGS.WORLD_TRAITS.BOULDERS_MEDIUM.NAME
 msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_MEDIUM.NAME"
@@ -68255,7 +68142,7 @@ msgstr "中程度の岩塊"
 msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_MIXED.DESCRIPTION"
 msgid ""
 "Boulders of various sizes make digging through this world more difficult"
-msgstr ""
+msgstr "大小混合の岩塊はこの世界の採掘をより困難にします"
 
 #. STRINGS.WORLD_TRAITS.BOULDERS_MIXED.NAME
 msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_MIXED.NAME"
@@ -68265,7 +68152,7 @@ msgstr "大小混合の岩塊"
 #. STRINGS.WORLD_TRAITS.BOULDERS_SMALL.DESCRIPTION
 msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_SMALL.DESCRIPTION"
 msgid "Tiny boulders make digging through this world more difficult"
-msgstr ""
+msgstr "小さな岩塊はこの世界の採掘をより困難にします"
 
 #. STRINGS.WORLD_TRAITS.BOULDERS_SMALL.NAME
 msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_SMALL.NAME"
@@ -68273,34 +68160,23 @@ msgid "Small Boulders"
 msgstr "小さな岩塊"
 
 #. STRINGS.WORLD_TRAITS.DEEP_OIL.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.DEEP_OIL.DESCRIPTION"
-#| msgid ""
-#| "Most of the <style=\"KKeyword\">Oil</style> in this world remains inside "
-#| "the rock and must be extracted with <link=\"OILWELLCAP\">Oil Well</link>s"
 msgctxt "STRINGS.WORLD_TRAITS.DEEP_OIL.DESCRIPTION"
 msgid ""
 "Most of the <style=\"KKeyword\">Oil</style> in this world will need to be "
 "extracted with <link=\"OILWELLCAP\">Oil Well</link>s"
 msgstr ""
-"たいていの<style=\"KKeyword\">原油</style>は岩石内部にあり、<link="
-"\"OILWELLCAP\">油井</link>で汲み上げる必要があります"
+"この世界の<style=\"KKeyword\">原油</style>は通常<link=\"OILWELLCAP\">油井</"
+"link>経由で採取されます"
 
 #. STRINGS.WORLD_TRAITS.DEEP_OIL.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.TRAPPED.NAME"
-#| msgid "Trapped"
 msgctxt "STRINGS.WORLD_TRAITS.DEEP_OIL.NAME"
 msgid "Trapped Oil"
-msgstr "捕らわれの身"
+msgstr "原油溜まり"
 
 #. STRINGS.WORLD_TRAITS.FROZEN_CORE.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.FROZEN_CORE.DESCRIPTION"
-#| msgid "The core of this world is a block of <link=\"ICE\">Ice</link>"
 msgctxt "STRINGS.WORLD_TRAITS.FROZEN_CORE.DESCRIPTION"
 msgid "This world has a chilly core of solid <link=\"ICE\">Ice</link>"
-msgstr "この世界の中心に<link=\"ICE\">氷</link>の核があります"
+msgstr "この世界には<link=\"ICE\">氷</link>の核があります"
 
 #. STRINGS.WORLD_TRAITS.FROZEN_CORE.NAME
 msgctxt "STRINGS.WORLD_TRAITS.FROZEN_CORE.NAME"
@@ -68322,15 +68198,10 @@ msgid "Geoactive"
 msgstr "活発な地核"
 
 #. STRINGS.WORLD_TRAITS.GEODES.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.GEODES.DESCRIPTION"
-#| msgid ""
-#| "A number of large geodes containing caches of rare material have been "
-#| "deposited around this asteroid"
 msgctxt "STRINGS.WORLD_TRAITS.GEODES.DESCRIPTION"
 msgid ""
 "Large geodes containing rare material caches are deposited across this world"
-msgstr "この小隕石中には希少な鉱物を含んだ大きなジオード(晶洞)があります"
+msgstr "この世界には希少な鉱物を含んだ大きなジオード(晶洞)があります"
 
 #. STRINGS.WORLD_TRAITS.GEODES.NAME
 msgctxt "STRINGS.WORLD_TRAITS.GEODES.NAME"
@@ -68352,16 +68223,12 @@ msgid "Geodormant"
 msgstr "安定した地核"
 
 #. STRINGS.WORLD_TRAITS.GLACIERS_LARGE.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.GLACIERS_LARGE.DESCRIPTION"
-#| msgid ""
-#| "Huge chunks of primordial <link=\"ICE\">Ice</link> have been captured in "
-#| "this world"
 msgctxt "STRINGS.WORLD_TRAITS.GLACIERS_LARGE.DESCRIPTION"
 msgid ""
 "Huge chunks of primordial <link=\"ICE\">Ice</link> are scattered across this "
 "world"
-msgstr "太古の巨大な<link=\"ICE\">氷</link>塊が閉じ込められています"
+msgstr ""
+"この世界には太古の巨大な<link=\"ICE\">氷</link>塊が閉じ込められています"
 
 #. STRINGS.WORLD_TRAITS.GLACIERS_LARGE.NAME
 msgctxt "STRINGS.WORLD_TRAITS.GLACIERS_LARGE.NAME"
@@ -68380,11 +68247,6 @@ msgid "Irregular Oil"
 msgstr "不規則な原油"
 
 #. STRINGS.WORLD_TRAITS.MAGMA_VENTS.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.MAGMA_VENTS.DESCRIPTION"
-#| msgid ""
-#| "The <link=\"MAGMA\">Magma</link> of the core has spread up in to the body "
-#| "of this world"
 msgctxt "STRINGS.WORLD_TRAITS.MAGMA_VENTS.DESCRIPTION"
 msgid ""
 "The <link=\"MAGMA\">Magma</link> from this world's core has leaked into the "
@@ -68398,11 +68260,6 @@ msgid "Magma Channels"
 msgstr "マグマの流れ"
 
 #. STRINGS.WORLD_TRAITS.METAL_POOR.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.METAL_POOR.DESCRIPTION"
-#| msgid ""
-#| "There is less <style=\"KKeyword\">Metal Ore</style> than expected here, "
-#| "proceed with caution!"
 msgctxt "STRINGS.WORLD_TRAITS.METAL_POOR.DESCRIPTION"
 msgid ""
 "There is a reduced amount of <style=\"KKeyword\">Metal Ore</style> on this "
@@ -68428,22 +68285,15 @@ msgid "Metal Rich"
 msgstr "豊富な金属"
 
 #. STRINGS.WORLD_TRAITS.MISALIGNED_START.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.MISALIGNED_START.DESCRIPTION"
-#| msgid ""
-#| "The <link=\"HEADQUARTERS\">Printing Pod</link> failed to land in the "
-#| "center of this world"
 msgctxt "STRINGS.WORLD_TRAITS.MISALIGNED_START.DESCRIPTION"
 msgid ""
 "The <link=\"HEADQUARTERS\">Printing Pod</link> didn't end up in the "
 "asteroid's exact center this time... but it's still nowhere near the surface"
 msgstr ""
-"<link=\"HEADQUARTERS\">製造ポッド</link>は世界の真ん中に着地失敗しました"
+"今回、<link=\"HEADQUARTERS\">製造ポッド</link>はこの世界の中心に位置できませ"
+"んでしたが、どうやら表層部あたりにあるようです"
 
 #. STRINGS.WORLD_TRAITS.MISALIGNED_START.NAME
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.MISALIGNED_START.NAME"
-#| msgid "Miscalculated Pod Location"
 msgctxt "STRINGS.WORLD_TRAITS.MISALIGNED_START.NAME"
 msgid "Alternate Pod Location"
 msgstr "見当違いな製造ポッド"
@@ -68454,16 +68304,11 @@ msgid "<missing trait>"
 msgstr "<missing trait>"
 
 #. STRINGS.WORLD_TRAITS.NO_TRAITS.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.NO_TRAITS.DESCRIPTION"
-#| msgid ""
-#| "This world exists in a particularly stable configuration each time it is "
-#| "encountered."
 msgctxt "STRINGS.WORLD_TRAITS.NO_TRAITS.DESCRIPTION"
 msgid ""
 "This world exists in a particularly stable configuration each time it is "
 "encountered"
-msgstr "この世界は、生成するたび特に安定した構成で存在します。"
+msgstr "この世界は、生成するたび特に安定した構成で存在します"
 
 #. STRINGS.WORLD_TRAITS.NO_TRAITS.NAME
 msgctxt "STRINGS.WORLD_TRAITS.NO_TRAITS.NAME"
@@ -68471,17 +68316,13 @@ msgid "<i>This world is stable and has no unusual features.</i>"
 msgstr "<i>この世界は安定しており、目立った特徴はありません。</i>"
 
 #. STRINGS.WORLD_TRAITS.SLIME_SPLATS.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.WORLD_TRAITS.SLIME_SPLATS.DESCRIPTION"
-#| msgid ""
-#| "Sickly <link=\"SLIMEMOLD\">Slime</link> growths have been located all "
-#| "over this world"
 msgctxt "STRINGS.WORLD_TRAITS.SLIME_SPLATS.DESCRIPTION"
 msgid ""
 "Sickly <link=\"SLIMEMOLD\">Slime</link> growths have crept all over this "
 "world"
 msgstr ""
-"気持ち悪い<link=\"SLIMEMOLD\">ヘドロ</link>塊が世界に散りばめられています"
+"この世界には気持ち悪い<link=\"SLIMEMOLD\">ヘドロ</link>塊が散りばめられていま"
+"す"
 
 #. STRINGS.WORLD_TRAITS.SLIME_SPLATS.NAME
 msgctxt "STRINGS.WORLD_TRAITS.SLIME_SPLATS.NAME"
@@ -68507,12 +68348,9 @@ msgid ""
 msgstr "この世界には活<style=\"KKeyword\">火山</style>が検知されました"
 
 #. STRINGS.WORLD_TRAITS.VOLCANOES.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.VOLCANOPLANET.NAME"
-#| msgid "Volcanic Planet"
 msgctxt "STRINGS.WORLD_TRAITS.VOLCANOES.NAME"
 msgid "Volcanic Activity"
-msgstr "溶岩惑星"
+msgstr "火山活動"
 
 #. STRINGS.WORLDS.BADLANDS.DESCRIPTION
 msgctxt "STRINGS.WORLDS.BADLANDS.DESCRIPTION"
@@ -68779,245 +68617,6 @@ msgctxt "STRINGS.WORLDS.VOLCANIC.NAME"
 msgid "Volcanea"
 msgstr "ボルカニア"
 
-#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.BAITED.TOOLTIP"
-#~ msgid "This lure is baited with {0}"
-#~ msgstr "このルアーは{0}をおびき寄せます"
-
-#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.DESALINATORNEEDSEMPTYING.TOOLTIP"
-#~ msgid ""
-#~ "This building is full of <link=\"SALT\">Salt</link> and can no longer "
-#~ "operate.\n"
-#~ "------------------\n"
-#~ "A Duplicant must empty it for operation to continue."
-#~ msgstr ""
-#~ "この設備は<link=\"SALT\">塩</link>で満タンになっており、これ以上操作できま"
-#~ "せん。\n"
-#~ "------------------\n"
-#~ "操作を続けるには複製人間によって空にする必要があります。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ETHANOLGENERATOR.DESC"
-#~ msgid ""
-#~ "Ethanol generators require less Duplicant operation, but produce "
-#~ "significant waste."
-#~ msgstr ""
-#~ "エタノール発電機は複製人間の操作をあまり必要としませんが、大量の廃棄物を排"
-#~ "出します。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ETHANOLGENERATOR.EFFECT"
-#~ msgid ""
-#~ "Converts <link=\"ETHANOL\">Ethanol</link> into electrical <link=\"POWER"
-#~ "\">Power</link>.\n"
-#~ "\n"
-#~ "Produces <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> and <link="
-#~ "\"DIRTYWATER\">Polluted Water</link>."
-#~ msgstr ""
-#~ "<link=\"ETHANOL\">エタノール</link>を<link=\"POWER\">電力</link>に変換しま"
-#~ "す。\n"
-#~ "\n"
-#~ "<link=\"CARBONDIOXIDE\">二酸化炭素</link>と<link=\"DIRTYWATER\">汚染水</"
-#~ "link>を排出します。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ETHANOLGENERATOR.NAME"
-#~ msgid "<link=\"ETHANOLGENERATOR\">Ethanol Generator</link>"
-#~ msgstr "<link=\"ETHANOLGENERATOR\">エタノール発電機</link>"
-
-#~ msgctxt "STRINGS.MISC.MONUMENT_COMPLETE.DESC"
-#~ msgid "Monument has head, midsection and bottom."
-#~ msgstr "モニュメントは、頭部、胴部、脚部を備えています。"
-
-#~ msgctxt "STRINGS.MISC.MONUMENT_COMPLETE.NAME"
-#~ msgid "Completed Monument"
-#~ msgstr "完成したモニュメント"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NEGATIVE_TOOLTIP"
-#~ msgid "My colony has {0} critters"
-#~ msgstr "コロニーには{0}頭の動物がいます"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.POSITIVE_TOOLTIP"
-#~ msgid "My colony has {0} critters"
-#~ msgstr "コロニーには{0}頭の動物がいます"
-
-#~ msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NEGATIVE_TOOLTIP"
-#~ msgid "There are {0} wild critters around my colony"
-#~ msgstr "コロニーには{0}頭の野生動物がいます"
-
-#~ msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.POSITIVE_TOOLTIP"
-#~ msgid "There are {0} wild critters around my colony"
-#~ msgstr "コロニーには{0}頭の野生動物がいます"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
-#~ msgid ""
-#~ "<b>New Bugfix Patch for July 2020</b>\n"
-#~ "\n"
-#~ " • Fixed multiple simulation heat creation/destruction bugs\n"
-#~ " • Fixed Duplicants getting stuck digging forever\n"
-#~ " • Continued work on alternate color sets\n"
-#~ " • Dozens of other fixes and improvements\n"
-#~ "\n"
-#~ "Please check out the full patch notes for more details!"
-#~ msgstr ""
-#~ "<b>2020年6月のバグ修正パッチ</b>\n"
-#~ "\n"
-#~ " • 熱生成/破壊に関する複数のバグを修正\n"
-#~ " • 複製人間が永遠に採掘してしまうバグを修正\n"
-#~ " • 色モードの調整\n"
-#~ " • その他様々な修正および改善\n"
-#~ "\n"
-#~ "詳細はパッチノート全文を参照してください！"
-
-#~ msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_LARGE.DESCRIPTION"
-#~ msgid ""
-#~ "A number of large but hard-to-dig boulders are scattered around this world"
-#~ msgstr "大きくて採掘の難しい岩塊が世界に散りばめられています"
-
-#~ msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_MEDIUM.DESCRIPTION"
-#~ msgid ""
-#~ "A number of moderately-sized but hard-to-dig boulders are scattered "
-#~ "around this world"
-#~ msgstr ""
-#~ "そこそこの大きさを持った採掘の難しい岩塊が世界に散りばめられています"
-
-#~ msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_MIXED.DESCRIPTION"
-#~ msgid ""
-#~ "A number of hard-to-dig boulders of various sizes are scattered around "
-#~ "this world"
-#~ msgstr "様々な大きさを持った採掘の難しい岩塊が世界に散りばめられています"
-
-#~ msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_SMALL.DESCRIPTION"
-#~ msgid ""
-#~ "A number of small but hard-to-dig boulders are scattered around this world"
-#~ msgstr "小さな採掘の難しい岩塊が世界に散りばめられています"
-
-#~ msgctxt "STRINGS.WORLD_TRAITS.DEEP_OIL.NAME"
-#~ msgid "Buried Oil"
-#~ msgstr "埋もれた原油"
-
-#~ msgctxt "STRINGS.WORLD_TRAITS.VOLCANOES.NAME"
-#~ msgid "Volcanoes"
-#~ msgstr "火山"
-
-#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACECRAFTREADYTOLAND.NOTIFICATION"
-#~ msgid "Ready to land"
-#~ msgstr "着陸準備完了"
-
-#~ msgctxt ""
-#~ "STRINGS.BUILDING.STATUSITEMS.SPACECRAFTREADYTOLAND.NOTIFICATION_TOOLTIP"
-#~ msgid "A spacecraft is ready to land"
-#~ msgstr "宇宙船は着陸準備が完了しています"
-
-#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.WIRECIRCUITSTATUS.TOOLTIP"
-#~ msgid "The current load on this circuit"
-#~ msgstr "この回路の現在最大ワット数です"
-
-#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.WIREMAXWATTAGESTATUS.NAME"
-#~ msgid "Max Wattage: {WireMaxWattage}"
-#~ msgstr "最大ワット数: {WireMaxWattage}"
-
-#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.WIREMAXWATTAGESTATUS.TOOLTIP"
-#~ msgid "The maximum wattage that this wire can safely sustain"
-#~ msgstr "この電線は最大ワット数までは安全に維持できます"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DEACTIVATE_TOOLTIP"
-#~ msgid ""
-#~ "Sends a <b><color=#f44a47>Red Signal</b></color> when battery is more "
-#~ "than <b>{0}%</b> charged"
-#~ msgstr ""
-#~ "バッテリー充電量が <b>{0}%</b> を上回ると<b><color=#f44a47>レッド</b></"
-#~ "color>になります"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.LIGHTEFFECT_LOW"
-#~ msgid "{attrib}: {amount} (Low Lux)"
-#~ msgstr "{attrib}: {amount} (低光量)"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.CARPETTILE.DESC"
-#~ msgid ""
-#~ "Carpeted tile remains decorative even when other tile is stacked atop it."
-#~ msgstr "絨毯タイルは他のタイルが上に重なっていても装飾効果を発揮します。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT"
-#~ msgid ""
-#~ "Stores most runoff <link=\"POWER\">Power</link> from generators, but "
-#~ "loses charge over time."
-#~ msgstr ""
-#~ "発電機から送られた余剰<link=\"POWER\">電力</link>を蓄えますが、蓄えられた"
-#~ "電力は時間とともに失われます。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.DESC"
-#~ msgid ""
-#~ "Smart batteries send an active automation signal when they require "
-#~ "charging."
-#~ msgstr ""
-#~ "スマートバッテリーは充電が必要になると自動的にシグナルを送信します。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.DESC"
-#~ msgid ""
-#~ "Tepidizers kill waterborne germs and heat liquid to perfect showering "
-#~ "temperature."
-#~ msgstr ""
-#~ "液体ヒーターは水中の病原菌を殺菌し、シャワーに適した温度に温めます。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMER.DESC"
-#~ msgid "Shh! It only transforms when no one's looking."
-#~ msgstr "シッ！誰も見てない時にだけ変身するんです。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMER.EFFECT"
-#~ msgid ""
-#~ "Protects circuits from overloading by increasing or decreasing <link="
-#~ "\"POWER\">Power</link> flow.\n"
-#~ "\n"
-#~ "Stores a great deal of <link=\"POWER\">Power</link>."
-#~ msgstr ""
-#~ "供給される<link=\"POWER\">電力</link>を増減させることで電線の過負荷を防ぎ"
-#~ "ます。\n"
-#~ "\n"
-#~ "かなりの<link=\"POWER\">電力</link>を蓄えられます。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMERSMALL.DESC"
-#~ msgid ""
-#~ "Transformers prevent buildings from frying on circuits with powerful "
-#~ "generators."
-#~ msgstr ""
-#~ "変圧器は強力な発電機と接続した設備および電線が焼き付いてしまうのを防ぎま"
-#~ "す。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.POWERTRANSFORMERSMALL.EFFECT"
-#~ msgid ""
-#~ "Protects circuits from overloading by increasing or decreasing <link="
-#~ "\"POWER\">Power</link> flow.\n"
-#~ "\n"
-#~ "Stores the <link=\"POWER\">Power</link> that is fed into it."
-#~ msgstr ""
-#~ "供給される<link=\"POWER\">電力</link>を増減させることで電線の過負荷を防ぎ"
-#~ "ます。\n"
-#~ "\n"
-#~ "<link=\"POWER\">電力</link>を蓄えられます。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDHIGHWATTAGE.EFFECT"
-#~ msgid ""
-#~ "Carries more <link=\"POWER\">Wattage</link> than regular <link=\"WIRE"
-#~ "\">WIRE</link> without overloading.\n"
-#~ "\n"
-#~ "Cannot be run through wall and floor tile."
-#~ msgstr ""
-#~ "通常の電線より大きな<link=\"POWER\">ワット数</link>を過負荷を起こさずに扱"
-#~ "えます。\n"
-#~ "\n"
-#~ "壁や床のタイル中に敷設することができません。"
-
-#~ msgctxt "STRINGS.BUILDINGS.PREFABS.CEILINGLIGHT.EFFECT"
-#~ msgid ""
-#~ "Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</"
-#~ "link>.\n"
-#~ "\n"
-#~ "Duplicants can operate buildings more quickly the building is lit."
-#~ msgstr ""
-#~ "<link=\"POWER\">電力</link>が供給されると、<link=\"LIGHT\">光源</link>とし"
-#~ "て機能します。\n"
-#~ "\n"
-#~ "複製人間は設備が光源下にあるとより効率的に操作できます。"
-
 #~ msgctxt "STRINGS.CODEX.HEADERS.SUBENTRIES"
 #~ msgid "Entries"
 #~ msgstr "項目一覧"
@@ -69250,6 +68849,14 @@ msgstr "ボルカニア"
 #~ "<link=\"LIGHTBUG\">シャインバグ</link>の<style=\"KKeyword\">卵</style>で"
 #~ "す。"
 
+#~ msgctxt "STRINGS.MISC.MONUMENT_COMPLETE.DESC"
+#~ msgid "Monument has head, midsection and bottom."
+#~ msgstr "モニュメントは、頭部、胴部、脚部を備えています。"
+
+#~ msgctxt "STRINGS.MISC.MONUMENT_COMPLETE.NAME"
+#~ msgid "Completed Monument"
+#~ msgstr "完成したモニュメント"
+
 #~ msgctxt "STRINGS.MISC.NOTIFICATIONS.INSULATION.NAME"
 #~ msgid "Tutorial: Insulation"
 #~ msgstr "チュートリアル: 断熱効果"
@@ -69277,6 +68884,44 @@ msgstr "ボルカニア"
 #~ msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.TOOLTIP"
 #~ msgid "A new Database entry is available"
 #~ msgstr "データベースの新しい項目が利用可能です"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.NEGATIVE_TOOLTIP"
+#~ msgid "My colony has {0} critters"
+#~ msgstr "コロニーには{0}頭の動物がいます"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_DOMESTICATED_CRITTERS.POSITIVE_TOOLTIP"
+#~ msgid "My colony has {0} critters"
+#~ msgstr "コロニーには{0}頭の動物がいます"
+
+#~ msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.NEGATIVE_TOOLTIP"
+#~ msgid "There are {0} wild critters around my colony"
+#~ msgstr "コロニーには{0}頭の野生動物がいます"
+
+#~ msgctxt "STRINGS.UI.ENDOFDAYREPORT.NUMBER_OF_WILD_CRITTERS.POSITIVE_TOOLTIP"
+#~ msgid "There are {0} wild critters around my colony"
+#~ msgstr "コロニーには{0}頭の野生動物がいます"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#~ msgid ""
+#~ "<b>New Bugfix Patch for July 2020</b>\n"
+#~ "\n"
+#~ " • Fixed multiple simulation heat creation/destruction bugs\n"
+#~ " • Fixed Duplicants getting stuck digging forever\n"
+#~ " • Continued work on alternate color sets\n"
+#~ " • Dozens of other fixes and improvements\n"
+#~ "\n"
+#~ "Please check out the full patch notes for more details!"
+#~ msgstr ""
+#~ "<b>2020年6月のバグ修正パッチ</b>\n"
+#~ "\n"
+#~ " • 熱生成/破壊に関する複数のバグを修正\n"
+#~ " • 複製人間が永遠に採掘してしまうバグを修正\n"
+#~ " • 色モードの調整\n"
+#~ " • その他様々な修正および改善\n"
+#~ "\n"
+#~ "詳細はパッチノート全文を参照してください！"
 
 #~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
 #~ msgid "AUTOMATION PACK!"
@@ -69526,3 +69171,34 @@ msgstr "ボルカニア"
 #~ "Duplicants will release gas buildup in this well when it exceeds the "
 #~ "selected percentage"
 #~ msgstr "複製人間は指定した割合よりガス圧が超えた場合のみ開放します"
+
+#~ msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_LARGE.DESCRIPTION"
+#~ msgid ""
+#~ "A number of large but hard-to-dig boulders are scattered around this world"
+#~ msgstr "大きくて採掘の難しい岩塊が世界に散りばめられています"
+
+#~ msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_MEDIUM.DESCRIPTION"
+#~ msgid ""
+#~ "A number of moderately-sized but hard-to-dig boulders are scattered "
+#~ "around this world"
+#~ msgstr ""
+#~ "そこそこの大きさを持った採掘の難しい岩塊が世界に散りばめられています"
+
+#~ msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_MIXED.DESCRIPTION"
+#~ msgid ""
+#~ "A number of hard-to-dig boulders of various sizes are scattered around "
+#~ "this world"
+#~ msgstr "様々な大きさを持った採掘の難しい岩塊が世界に散りばめられています"
+
+#~ msgctxt "STRINGS.WORLD_TRAITS.BOULDERS_SMALL.DESCRIPTION"
+#~ msgid ""
+#~ "A number of small but hard-to-dig boulders are scattered around this world"
+#~ msgstr "小さな採掘の難しい岩塊が世界に散りばめられています"
+
+#~ msgctxt "STRINGS.WORLD_TRAITS.DEEP_OIL.NAME"
+#~ msgid "Buried Oil"
+#~ msgstr "埋もれた原油"
+
+#~ msgctxt "STRINGS.WORLD_TRAITS.VOLCANOES.NAME"
+#~ msgid "Volcanoes"
+#~ msgstr "火山"
