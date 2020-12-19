@@ -53,6 +53,21 @@ MIT License
 
 [Kazuhiro Mizushima](https://github.com/VoQn)
 
+[halver3214](https://github.com/halver3214)
+
+
+## このリポジトリの運用方法
+
+1. 作業用ブランチを作成する。
+1. 最新の strings_template.pot をリポジトリにコピーする。
+1. strings.po をPOEditで開き、strings_template.potを取り込む。
+1. separate.sh を実行し、カテゴリごとに分けたpoファイルを作成する。
+1. 作業用ブランチのプルリクエストを作成する。
+1. poフォルダにある各 *.po ファイルを翻訳する。
+1. concat.sh を実行し、翻訳済みの *.po ファイルを strings.po にマージする。
+1. master ブランチへマージする。
+1. リリースを作成する。
+
 
 ## 翻訳の手伝いをしてくれる人を募集しています
 
