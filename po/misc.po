@@ -173,7 +173,7 @@ msgstr "コロニー実績達成"
 
 #. STRINGS.MISC.NOTIFICATIONS.COLONY_ACHIEVEMENT_EARNED.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.COLONY_ACHIEVEMENT_EARNED.TOOLTIP"
-msgid "Colony has earned a new achievement."
+msgid "The colony has earned a new achievement."
 msgstr "コロニーは新たに実績を達成しました。"
 
 #. STRINGS.MISC.NOTIFICATIONS.COLONYLOST.NAME
@@ -311,7 +311,7 @@ msgstr "複製人間が窒息死しました"
 
 #. STRINGS.MISC.NOTIFICATIONS.DEATH_SUFFOCATEDAIRTOOCOLD.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_SUFFOCATEDAIRTOOCOLD.TOOLTIP"
-msgid "These Duplicants have asphyxiated in <link=\"HEAT\">cold</link> air:"
+msgid "These Duplicants have asphyxiated in <link=\"HEAT\">Cold</link> air:"
 msgstr "これらの複製人間は<link=\"HEAT\">冷気</link>の中で窒息死しました:"
 
 #. STRINGS.MISC.NOTIFICATIONS.DEATH_SUFFOCATEDAIRTOOHOT.NAME
@@ -322,7 +322,7 @@ msgstr "複製人間が窒息死しました"
 #. STRINGS.MISC.NOTIFICATIONS.DEATH_SUFFOCATEDAIRTOOHOT.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_SUFFOCATEDAIRTOOHOT.TOOLTIP"
 msgid ""
-"These Duplicants have asphyxiated in <style=\"KKeyword\">Heat</style> air:"
+"These Duplicants have asphyxiated in <style=\"KKeyword\">Hot</style> air:"
 msgstr ""
 "これらの複製人間は<style=\"KKeyword\">熱気</style>の中で窒息死しました:"
 
@@ -457,10 +457,15 @@ msgid "Notes on measuring heat energy"
 msgstr "熱エネルギー測定についての覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY"
+#| msgid ""
+#| "The Printing Pod is no longer available for printing.\n"
+#| "Countdown to the next production was rebooted."
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY"
 msgid ""
 "The Printing Pod is no longer available for printing.\n"
-"Countdown to the next production was rebooted."
+"Countdown to the next production has been rebooted."
 msgstr ""
 "製造ポッドは利用できません。\n"
 "次の製造工程再起動のカウントダウンを始めます。"
@@ -471,9 +476,10 @@ msgid "Printables have been reabsorbed"
 msgstr "製造可能物は再吸収されました"
 
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.TOOLTIP
+#, fuzzy
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.TOOLTIP"
-msgid "Printables have been reabsorbed"
-msgstr "製造可能物は再吸収されました"
+msgid "Printing countdown rebooted"
+msgstr "製造カウントダウンは再起動されました"
 
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTDIED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTDIED.NAME"
@@ -547,11 +553,16 @@ msgid "Food has decayed"
 msgstr "食糧が腐敗しました"
 
 #. STRINGS.MISC.NOTIFICATIONS.FOODROT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.FOODROT.TOOLTIP"
+#| msgid ""
+#| "These <link=\"FOOD\">Food</link> items have rotted and are no longer "
+#| "edible:\n"
+#| "• {0}"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.FOODROT.TOOLTIP"
 msgid ""
-"These <link=\"FOOD\">Food</link> items have rotted and are no longer "
-"edible:\n"
-"• {0}"
+"These <link=\"FOOD\">Food</link> items have rotted and are no longer edible:"
+"{0}"
 msgstr ""
 "これらの<link=\"FOOD\">食糧</link>は腐敗したため、食べられなくなりました:\n"
 "• {0}"
@@ -793,10 +804,20 @@ msgid "These Duplicants' <style=\"KKeyword\">Attributes</style> have improved:"
 msgstr "これらの複製人間の<style=\"KKeyword\">属性</style>が上昇しました:"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.MESSAGEBODY
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.MESSAGEBODY"
+#| msgid ""
+#| "Duplicants have limited jumping and climbing abilities. They can only "
+#| "climb two tiles high and cannot fit into spaces shorter than two tiles or "
+#| "cross gaps wider than one tile. I should keep this in mind while placing "
+#| "errands.\n"
+#| "\n"
+#| "To check if an errand I've placed is accessible, I can select a Duplicant "
+#| "and click <b>Show Navigation</b> to view all areas within their reach."
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOCOMOTIONMESSAGE.MESSAGEBODY"
 msgid ""
 "Duplicants have limited jumping and climbing abilities. They can only climb "
-"two tiles high and cannot fit into spaces shorter than two tiles or cross "
+"two tiles high and cannot fit into spaces shorter than two tiles, or cross "
 "gaps wider than one tile. I should keep this in mind while placing errands.\n"
 "\n"
 "To check if an errand I've placed is accessible, I can select a Duplicant "
@@ -1210,6 +1231,38 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.PRIORITIESMESSAGE.TOOLTIP"
 msgid "Notes on my Duplicants' priorities"
 msgstr "複製人間の優先度覚書"
 
+#. STRINGS.MISC.NOTIFICATIONS.RADIATION.MESSAGEBODY
+#, fuzzy
+msgctxt "STRINGS.MISC.NOTIFICATIONS.RADIATION.MESSAGEBODY"
+msgid ""
+"Objects such as <link=\"URANIUMORE\">Uranium Ore</link> and <link=\"BEE"
+"\">Beetafineries</link> emit a <link=\"RADIOACTIVE\">Radioactive</link> "
+"energy that can be toxic to my Duplicants.\n"
+"\n"
+"I can use the Radiation Overlay <b><color=#F44A4A>[L-SHIFT + F4]</b></color> "
+"to check the scope of the Radiation field. Building thick walls around "
+"radiation emitters will dampen the field and protect my Duplicants from "
+"getting <link=\"RADIATIONSICKNESS\">Radiation Sickness</link> ."
+msgstr ""
+"<link=\"URANIUMORE\">ウラン鉱石</link>や<link=\"BEE\">ビータの巣</link>のよう"
+"な物体は、我々の複製人間を蝕む<link=\"RADIOACTIVE\">放射線</link>を放射す"
+"る。\n"
+"\n"
+"放射線オーバーレイ<b><color=#F44A4A>[L-SHIFT + F4]</b></color>を使うことで、"
+"放射線の範囲を調べることができる。放射線源の周りに厚い壁を築くことでこれを弱"
+"め、我々の複製人間を<link=\"RADIATIONSICKNESS\">放射線障害</link>から守ること"
+"ができる。"
+
+#. STRINGS.MISC.NOTIFICATIONS.RADIATION.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.RADIATION.NAME"
+msgid "Tutorial: Radiation"
+msgstr "チュートリアル: 放射線"
+
+#. STRINGS.MISC.NOTIFICATIONS.RADIATION.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.RADIATION.TOOLTIP"
+msgid "Notes on managing radiation"
+msgstr "放射線の管理覚書"
+
 #. STRINGS.MISC.NOTIFICATIONS.REDALERT.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.REDALERT.NAME"
 msgid "Red Alert"
@@ -1221,9 +1274,16 @@ msgid "The colony is prioritizing work over their individual well-being"
 msgstr "コロニーは個人の作業よりも優先すべきことがあります"
 
 #. STRINGS.MISC.NOTIFICATIONS.RESEARCHCOMPLETE.MESSAGEBODY
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.RESEARCHCOMPLETE.MESSAGEBODY"
+#| msgid ""
+#| "Eureka! My Duplicants have discovered {0} Technology.\n"
+#| "\n"
+#| "New buildings have become available:\n"
+#| "  • {1}"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.RESEARCHCOMPLETE.MESSAGEBODY"
 msgid ""
-"Eureka! My Duplicants have discovered {0} Technology.\n"
+"Eureka! We've discovered {0} Technology.\n"
 "\n"
 "New buildings have become available:\n"
 "  • {1}"
@@ -1245,16 +1305,16 @@ msgstr "{0}の研究が完了しました！"
 
 #. STRINGS.MISC.NOTIFICATIONS.RESETSKILL.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.RESETSKILL.NAME"
-msgid "Reset skills"
+msgid "Skills reset"
 msgstr "スキルリセット"
 
 #. STRINGS.MISC.NOTIFICATIONS.RESETSKILL.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.RESETSKILL.TOOLTIP"
 msgid ""
-"Duplicants <style=\"KKeyword\">Skills</style> have been reset to defaults."
+"These Duplicants have had their <style=\"KKeyword\">Skill Points</style> "
+"refunded:"
 msgstr ""
-"複製人間の<style=\"KKeyword\">スキル</style>はデフォルトにリセットされまし"
-"た。"
+"これらの複製人間の<style=\"KKeyword\">スキルポイント</style>が返却されました:"
 
 #. STRINGS.MISC.NOTIFICATIONS.RESOURCEMELTED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.RESOURCEMELTED.NAME"
@@ -1335,13 +1395,19 @@ msgstr ""
 "{0}"
 
 #. STRINGS.MISC.NOTIFICATIONS.SKILL_POINT_EARNED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.SKILL_POINT_EARNED.TOOLTIP"
+#| msgid "Duplicants can now learn new skills"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.SKILL_POINT_EARNED.NAME"
-msgid "Skill point earned"
-msgstr "スキルポイント獲得"
+msgid "{Duplicant} earned a skill point!"
+msgstr "複製人間は新しいスキルを習得できます"
 
 #. STRINGS.MISC.NOTIFICATIONS.SKILL_POINT_EARNED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.SKILL_POINT_EARNED.TOOLTIP"
+#| msgid "Duplicants can now learn new skills"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.SKILL_POINT_EARNED.TOOLTIP"
-msgid "Duplicants can now learn new skills"
+msgid "{Duplicant} has been working hard and is ready to learn a new skill"
 msgstr "複製人間は新しいスキルを習得できます"
 
 #. STRINGS.MISC.NOTIFICATIONS.STRESSMANAGEMENTMESSAGE.MESSAGEBODY
@@ -1498,6 +1564,16 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.THERMALCOMFORT.TOOLTIP"
 msgid "Notes on helping Duplicants keep their cool"
 msgstr "複製人間を適温に保つための覚書"
 
+#. STRINGS.MISC.NOTIFICATIONS.TILECOLLAPSE.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.TILECOLLAPSE.NAME"
+msgid "Ceiling Collapse!"
+msgstr "天井が崩落しました！"
+
+#. STRINGS.MISC.NOTIFICATIONS.TILECOLLAPSE.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.TILECOLLAPSE.TOOLTIP"
+msgid "Falling material fell on these Duplicants and displaced them:"
+msgstr "落下物がこれらの複製人間の頭上に落ち、彼らを押しのけました:"
+
 #. STRINGS.MISC.NOTIFICATIONS.TUTORIAL_OVERHEATING.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.TUTORIAL_OVERHEATING.MESSAGEBODY"
 msgid ""
@@ -1577,6 +1653,16 @@ msgstr ""
 "これらの<style=\"KKeyword\">パイプ</style>システムは理想的な<style=\"KKeyword"
 "\">圧力</style>帯を逸脱しています:"
 
+#. STRINGS.MISC.NOTIFICATIONS.WARP_PORTAL_DUPE_READY.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.WARP_PORTAL_DUPE_READY.NAME"
+msgid "Duplicant warp ready"
+msgstr "複製人間はワープ可能です"
+
+#. STRINGS.MISC.NOTIFICATIONS.WARP_PORTAL_DUPE_READY.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.WARP_PORTAL_DUPE_READY.TOOLTIP"
+msgid "{dupe} is ready to warp from the Teleporter Transmitter"
+msgstr "{dupe}はテレポーター送信機からワープする準備ができました"
+
 #. STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.MESSAGEBODY"
 msgid ""
@@ -1602,6 +1688,25 @@ msgstr "チュートリアル: コロニー管理"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.WELCOMEMESSAGE.TOOLTIP"
 msgid "Notes on getting Duplicants to do my bidding"
 msgstr "複製人間へ指示を出すときの覚書"
+
+#. STRINGS.MISC.NOTIFICATIONS.WORLDDETECTED.MESSAGEBODY
+msgctxt "STRINGS.MISC.NOTIFICATIONS.WORLDDETECTED.MESSAGEBODY"
+msgid ""
+"The Duplicants' astrological efforts have uncovered new Planetoids:\n"
+"{0}"
+msgstr ""
+"複製人間たちの占星術は、新しい小惑星を発見しました:\n"
+"{0}"
+
+#. STRINGS.MISC.NOTIFICATIONS.WORLDDETECTED.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.WORLDDETECTED.NAME"
+msgid "New Planetoid detected"
+msgstr "新しい小惑星が検出されました"
+
+#. STRINGS.MISC.NOTIFICATIONS.WORLDDETECTED.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.WORLDDETECTED.TOOLTIP"
+msgid "{0} discovered"
+msgstr "{0} を発見しました"
 
 #. STRINGS.MISC.NOTIFICATIONS.YELLOWALERT.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.YELLOWALERT.NAME"
@@ -1642,75 +1747,6 @@ msgid ""
 "New information on this Natural Feature will be compiled once the field "
 "study is complete"
 msgstr "この地勢の現地調査が完了すると、新たな情報が蓄積されます"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONE.NEIGHBORSBLOCKED.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONE.NEIGHBORSBLOCKED.NAME"
-msgid "Bleachstone blocked"
-msgstr "漂白石詰まり"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONE.NEIGHBORSBLOCKED.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONE.NEIGHBORSBLOCKED.TOOLTIP"
-msgid ""
-"This <link=\"BLEACHSTONE\">Bleachstone</link> deposit is not exposed to air "
-"and cannot emit <link=\"CHLORINE\">Chlorine</link>"
-msgstr ""
-"<link=\"BLEACHSTONE\">漂白石</link>の鉱脈が曝露していないため、<link="
-"\"CHLORINE\">塩素</link>を排出できません"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONE.OVERPRESSURE.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONE.OVERPRESSURE.NAME"
-msgid "Inert"
-msgstr "不活性"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONE.OVERPRESSURE.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONE.OVERPRESSURE.TOOLTIP"
-msgid ""
-"Environmental <style=\"KKeyword\">Gas Pressure</style> is too high for this "
-"<link=\"BLEACHSTONE\">Bleachstone</link> deposit to emit <link=\"CHLORINE"
-"\">Chlorine</link>"
-msgstr ""
-"周囲の<style=\"KKeyword\">気圧</style>が高すぎるため、<link=\"BLEACHSTONE\">"
-"漂白石</link>は<link=\"CHLORINE\">塩素</link>を放出できません"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONEBLOCKED.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONEBLOCKED.NAME"
-msgid "{BlockedString}"
-msgstr "{BlockedString}"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONEBLOCKED.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONEBLOCKED.TOOLTIP"
-msgid ""
-"This <link=\"BLEACHSTONE\">Bleachstone</link> deposit has no room to emit "
-"<link=\"CHLORINE\">Chlorine</link>"
-msgstr ""
-"<link=\"BLEACHSTONE\">漂白石</link>が<link=\"CHLORINE\">塩素</link>を排出する"
-"空間がありません"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONEEMITTING.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONEEMITTING.NAME"
-msgid "Emitting {Element}: {FlowRate}"
-msgstr "{Element} 産出: {FlowRate}"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONEEMITTING.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONEEMITTING.TOOLTIP"
-msgid "Producing {Element} at a rate of <style=\"produced\">{FlowRate}</style>"
-msgstr ""
-"{Element}を<style=\"produced\">{FlowRate}</style>の速さで産出しています"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONEINACTIVE.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONEINACTIVE.NAME"
-msgid "Inert"
-msgstr "不活性"
-
-#. STRINGS.MISC.STATUSITEMS.BLEACHSTONEINACTIVE.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONEINACTIVE.TOOLTIP"
-msgid ""
-"Environmental <style=\"KKeyword\">Gas Pressure</style> is too high for this "
-"<link=\"BLEACHSTONE\">Bleachstone</link> deposit to emit <link=\"CHLORINE"
-"\">Chlorine</link>"
-msgstr ""
-"周囲の<style=\"KKeyword\">気圧</style>が高すぎるため、<link=\"BLEACHSTONE\">"
-"漂白石</link>は<link=\"CHLORINE\">塩素</link>を放出できません"
 
 #. STRINGS.MISC.STATUSITEMS.BURIEDITEM.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.BURIEDITEM.NAME"
@@ -1797,6 +1833,16 @@ msgstr "{Temp}"
 msgctxt "STRINGS.MISC.STATUSITEMS.ELEMENTALTEMPERATURE.TOOLTIP"
 msgid "The selected object is currently <b>{Temp}</b>"
 msgstr "選択している物体の温度は <b>{Temp}</b> です"
+
+#. STRINGS.MISC.STATUSITEMS.GENETICANALYSISCOMPLETED.NAME
+msgctxt "STRINGS.MISC.STATUSITEMS.GENETICANALYSISCOMPLETED.NAME"
+msgid "Genome Sequenced"
+msgstr "ゲノム解析完了"
+
+#. STRINGS.MISC.STATUSITEMS.GENETICANALYSISCOMPLETED.TOOLTIP
+msgctxt "STRINGS.MISC.STATUSITEMS.GENETICANALYSISCOMPLETED.TOOLTIP"
+msgid "This Station has sequenced a new seed mutation"
+msgstr "この端末は新たなゲノム解析が完了しました"
 
 #. STRINGS.MISC.STATUSITEMS.GROWINGBRANCHES.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.GROWINGBRANCHES.NAME"
@@ -2003,78 +2049,6 @@ msgctxt "STRINGS.MISC.STATUSITEMS.ORETEMP.TOOLTIP"
 msgid "The selected object is currently <b>{Temp}</b>"
 msgstr "選択している物体の温度は<b>{Temp}</b>です"
 
-#. STRINGS.MISC.STATUSITEMS.OXYROCK.NEIGHBORSBLOCKED.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCK.NEIGHBORSBLOCKED.NAME"
-msgid "Oxylite blocked"
-msgstr "オキシライト詰まり"
-
-#. STRINGS.MISC.STATUSITEMS.OXYROCK.NEIGHBORSBLOCKED.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCK.NEIGHBORSBLOCKED.TOOLTIP"
-msgid ""
-"This <link=\"OXYROCK\">Oxylite</link> deposit is not exposed to air and "
-"cannot emit <link=\"OXYGEN\">Oxygen</link>"
-msgstr ""
-"<link=\"OXYROCK\">オキシライト</link>の鉱脈が空気に曝露していないため、<link="
-"\"OXYGEN\">酸素</link>を放出できません"
-
-#. STRINGS.MISC.STATUSITEMS.OXYROCK.OVERPRESSURE.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCK.OVERPRESSURE.NAME"
-msgid "Inert"
-msgstr "不活性"
-
-#. STRINGS.MISC.STATUSITEMS.OXYROCK.OVERPRESSURE.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCK.OVERPRESSURE.TOOLTIP"
-msgid ""
-"Environmental <style=\"KKeyword\">Gas Pressure</style> is too high for this "
-"<link=\"OXYROCK\">Oxylite</link> deposit to emit <link=\"OXYGEN\">Oxygen</"
-"link>"
-msgstr ""
-"周囲の<style=\"KKeyword\">気圧</style>が高すぎるため、<link=\"OXYROCK\">オキ"
-"シライト</link>は<link=\"OXYGEN\">酸素</link>を放出できません"
-
-#. STRINGS.MISC.STATUSITEMS.OXYROCKBLOCKED.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCKBLOCKED.NAME"
-msgid "{BlockedString}"
-msgstr "{BlockedString}"
-
-#. STRINGS.MISC.STATUSITEMS.OXYROCKBLOCKED.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCKBLOCKED.TOOLTIP"
-msgid ""
-"This <link=\"OXYROCK\">Oxylite</link> deposit has no room to emit <link="
-"\"OXYGEN\">Oxygen</link>"
-msgstr ""
-"<link=\"OXYROCK\">オキシライト</link>が<link=\"OXYGEN\">酸素</link>を排出する"
-"空間がありません"
-
-#. STRINGS.MISC.STATUSITEMS.OXYROCKEMITTING.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCKEMITTING.NAME"
-msgid "Emitting <link=\"OXYGEN\">Oxygen</link>: {FlowRate}"
-msgstr "<link=\"OXYGEN\">酸素</link>産出: {FlowRate}"
-
-#. STRINGS.MISC.STATUSITEMS.OXYROCKEMITTING.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCKEMITTING.TOOLTIP"
-msgid ""
-"Producing <link=\"OXYGEN\">Oxygen</link> at a rate of <style=\"produced"
-"\">{FlowRate}</style>"
-msgstr ""
-"<link=\"OXYGEN\">酸素</link>を<style=\"produced\">{FlowRate}</style>の速さで"
-"生産しています"
-
-#. STRINGS.MISC.STATUSITEMS.OXYROCKINACTIVE.NAME
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCKINACTIVE.NAME"
-msgid "Inert"
-msgstr "不活性"
-
-#. STRINGS.MISC.STATUSITEMS.OXYROCKINACTIVE.TOOLTIP
-msgctxt "STRINGS.MISC.STATUSITEMS.OXYROCKINACTIVE.TOOLTIP"
-msgid ""
-"Environmental <style=\"KKeyword\">Gas Pressure</style> is too high for this "
-"<link=\"OXYROCK\">Oxylite</link> deposit to emit <link=\"OXYGEN\">Oxygen</"
-"link>"
-msgstr ""
-"周囲の<style=\"KKeyword\">気圧</style>が高すぎるため、<link=\"OXYROCK\">オキ"
-"シライト</link>は<link=\"OXYGEN\">酸素</link>を放出できません"
-
 #. STRINGS.MISC.STATUSITEMS.PENDINGCLEAR.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.PENDINGCLEAR.NAME"
 msgid "Sweep Errand"
@@ -2257,6 +2231,52 @@ msgstr "分析完了"
 msgctxt "STRINGS.MISC.STATUSITEMS.STUDIED.TOOLTIP"
 msgid "Information on this Natural Feature has been compiled below."
 msgstr "この地勢に関する情報が蓄積されました。"
+
+#. STRINGS.MISC.STATUSITEMS.SUBLIMATIONBLOCKED.NAME
+msgctxt "STRINGS.MISC.STATUSITEMS.SUBLIMATIONBLOCKED.NAME"
+msgid "{SubElement} emission blocked"
+msgstr "{SubElement}の放出はふさがれています"
+
+#. STRINGS.MISC.STATUSITEMS.SUBLIMATIONBLOCKED.TOOLTIP
+#, fuzzy
+msgctxt "STRINGS.MISC.STATUSITEMS.SUBLIMATIONBLOCKED.TOOLTIP"
+msgid ""
+"This {Element} deposit is not exposed to air and cannot emit {SubElement}"
+msgstr "この{Element}が空気に暴露していないため、{SubElement}を放出できません"
+
+#. STRINGS.MISC.STATUSITEMS.SUBLIMATIONEMITTING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGGASAVG.NAME"
+#| msgid "Emitting {Element}: {FlowRate}"
+msgctxt "STRINGS.MISC.STATUSITEMS.SUBLIMATIONEMITTING.NAME"
+msgid "Emitting {Element}: {FlowRate}"
+msgstr "{Element} 産出: {FlowRate}"
+
+#. STRINGS.MISC.STATUSITEMS.SUBLIMATIONEMITTING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGGASAVG.TOOLTIP"
+#| msgid ""
+#| "Producing {Element} at a rate of <style=\"produced\">{FlowRate}</style>"
+msgctxt "STRINGS.MISC.STATUSITEMS.SUBLIMATIONEMITTING.TOOLTIP"
+msgid "Producing {Element} at a rate of <style=\"produced\">{FlowRate}</style>"
+msgstr "{Element}を <style=\"produced\">{FlowRate}</style> 産出しています"
+
+#. STRINGS.MISC.STATUSITEMS.SUBLIMATIONOVERPRESSURE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.BLEACHSTONE.OVERPRESSURE.NAME"
+#| msgid "Inert"
+msgctxt "STRINGS.MISC.STATUSITEMS.SUBLIMATIONOVERPRESSURE.NAME"
+msgid "Inert"
+msgstr "不活性"
+
+#. STRINGS.MISC.STATUSITEMS.SUBLIMATIONOVERPRESSURE.TOOLTIP
+msgctxt "STRINGS.MISC.STATUSITEMS.SUBLIMATIONOVERPRESSURE.TOOLTIP"
+msgid ""
+"Environmental <style=\"KKeyword\">Gas Pressure</style> is too high for this "
+"{Element} deposit to emit {SubElement}"
+msgstr ""
+"周囲の<style=\"KKeyword\">気圧</style>が高すぎるため、{Element}は{SubElement}"
+"を放出できません"
 
 #. STRINGS.MISC.STATUSITEMS.TREEFILTERABLETAGS.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.TREEFILTERABLETAGS.NAME"
@@ -2544,6 +2564,11 @@ msgctxt "STRINGS.MISC.TAGS.GENE_SHUFFLER"
 msgid "Neural Vacillator"
 msgstr "神経シャッフルマシン"
 
+#. STRINGS.MISC.TAGS.HABITAT_MODULE
+msgctxt "STRINGS.MISC.TAGS.HABITAT_MODULE"
+msgid "Habitat Module"
+msgstr "居住モジュール"
+
 #. STRINGS.MISC.TAGS.ICEORE
 msgctxt "STRINGS.MISC.TAGS.ICEORE"
 msgid "Ice"
@@ -2558,6 +2583,13 @@ msgstr "工業素材"
 msgctxt "STRINGS.MISC.TAGS.INDUSTRIALPRODUCT"
 msgid "Industrial Product"
 msgstr "工業製品"
+
+# 電気的な「絶縁」か熱的な「断熱」かが分かりません
+#. STRINGS.MISC.TAGS.INSULATOR
+#, fuzzy
+msgctxt "STRINGS.MISC.TAGS.INSULATOR"
+msgid "Insulator"
+msgstr "断熱材"
 
 #. STRINGS.MISC.TAGS.LIFE
 msgctxt "STRINGS.MISC.TAGS.LIFE"
@@ -2649,6 +2681,11 @@ msgstr "有機物"
 msgctxt "STRINGS.MISC.TAGS.OTHER"
 msgid "Miscellaneous"
 msgstr "その他"
+
+#. STRINGS.MISC.TAGS.OXIDIZER
+msgctxt "STRINGS.MISC.TAGS.OXIDIZER"
+msgid "Oxidizer"
+msgstr "酸化剤"
 
 #. STRINGS.MISC.TAGS.PHOSPHORUS
 msgctxt "STRINGS.MISC.TAGS.PHOSPHORUS"
@@ -2781,10 +2818,22 @@ msgctxt "STRINGS.MISC.TAGS.UNBREATHABLE"
 msgid "Unbreathable Gas"
 msgstr "呼吸不可能な気体"
 
+#. STRINGS.MISC.TAGS.UNIDENTIFIEDSEED
+msgctxt "STRINGS.MISC.TAGS.UNIDENTIFIEDSEED"
+msgid "Strange Seed"
+msgstr "奇妙な種子"
+
 #. STRINGS.MISC.TAGS.UNSTABLE
 msgctxt "STRINGS.MISC.TAGS.UNSTABLE"
 msgid "Unstable"
 msgstr "不安定"
+
+# teleport + portalの造語?
+#. STRINGS.MISC.TAGS.WARP_PORTAL
+#, fuzzy
+msgctxt "STRINGS.MISC.TAGS.WARP_PORTAL"
+msgid "Teleportal"
+msgstr "テレポータル"
 
 #. STRINGS.MISC.TAGS.WIRING
 msgctxt "STRINGS.MISC.TAGS.WIRING"
@@ -2795,39 +2844,3 @@ msgstr "配線関連の配送"
 msgctxt "STRINGS.MISC.TUTORIAL.DONT_SHOW_AGAIN"
 msgid "Don't Show Again"
 msgstr "今後表示しない"
-
-#~ msgctxt "STRINGS.MISC.MONUMENT_COMPLETE.DESC"
-#~ msgid "Monument has head, midsection and bottom."
-#~ msgstr "モニュメントは、頭部、胴部、脚部を備えています。"
-
-#~ msgctxt "STRINGS.MISC.MONUMENT_COMPLETE.NAME"
-#~ msgid "Completed Monument"
-#~ msgstr "完成したモニュメント"
-
-#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.INSULATION.NAME"
-#~ msgid "Tutorial: Insulation"
-#~ msgstr "チュートリアル: 断熱効果"
-
-#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.MORALE.NAME"
-#~ msgid "Tutorial: Morale"
-#~ msgstr "チュートリアル: 士気"
-
-#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.NO_OXYGEN_GENERATOR.NAME"
-#~ msgid "No <link=\"MINERALDEOXIDIZER\">Oxygen Diffuser</link> built"
-#~ msgstr "<link=\"MINERALDEOXIDIZER\">酸素散布装置</link>がありません"
-
-#~ msgctxt "STRINGS.MISC.STATUSITEMS.PENDINGCLEARNOSTORAGE.TOOLTIP"
-#~ msgid "No available storage lockers can accept this item"
-#~ msgstr "このアイテムを受け入れ可能な格納庫がありません"
-
-#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.MESSAGEBODY"
-#~ msgid "A new Database entry is available"
-#~ msgstr "データベースの新しい項目が利用可能です"
-
-#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.NAME"
-#~ msgid "New Database Entry"
-#~ msgstr "データベースの新規項目"
-
-#~ msgctxt "STRINGS.MISC.NOTIFICATIONS.CODEXUNLOCK.TOOLTIP"
-#~ msgid "A new Database entry is available"
-#~ msgstr "データベースの新しい項目が利用可能です"

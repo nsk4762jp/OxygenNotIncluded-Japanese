@@ -2,7 +2,7 @@ Oxygen Not Included 日本語化
 ====
 
 Klei Entertainment 制作のスペースコロニー経営ゲーム「[Oxygen Not Included](http://store.steampowered.com/app/457140/)」の日本語化作業を行っています。  
-Cloud Save Update に対応しています。
+Spaced Out! DLC Early Access (2020/12/09) に対応しています。
 
 ## 翻訳サンプル
 <image src="https://raw.githubusercontent.com/wiki/nsk4762jp/OxygenNotIncluded-Japanese/sample.jpg" width="75%">
@@ -52,6 +52,21 @@ MIT License
 [yamashu](https://github.com/yamashush)
 
 [Kazuhiro Mizushima](https://github.com/VoQn)
+
+[halver3214](https://github.com/halver3214)
+
+
+## このリポジトリの運用方法
+
+1. 作業用ブランチを作成する。
+1. 最新の strings_template.pot をリポジトリにコピーする。
+1. strings.po をPOEditで開き、strings_template.potを取り込む。
+1. separate.sh を実行し、カテゴリごとに分けたpoファイルを作成する。
+1. 作業用ブランチのプルリクエストを作成する。
+1. poフォルダにある各 *.po ファイルを翻訳する。
+1. concat.sh を実行し、翻訳済みの *.po ファイルを strings.po にマージする。
+1. master ブランチへマージする。
+1. リリースを作成する。
 
 
 ## 翻訳の手伝いをしてくれる人を募集しています
