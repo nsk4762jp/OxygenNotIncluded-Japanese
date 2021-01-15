@@ -117,8 +117,8 @@ msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.AUTOPILOTACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.AUTOPILOTACTIVE.NAME"
-msgid "Auto pilot engaged"
-msgstr "オートパイロット中"
+msgid "Autopilot Engaged"
+msgstr "オートパイロットに移行"
 
 #. STRINGS.BUILDING.STATUSITEMS.AUTOPILOTACTIVE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.AUTOPILOTACTIVE.TOOLTIP"
@@ -180,8 +180,8 @@ msgstr "排出作業"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.AWAITINGEMPTYBUILDING.TOOLTIP"
 msgid ""
 "This building has been marked for emptying and is awaiting a Duplicant to "
-"take care of it."
-msgstr "この設備は排出用にマークされており、担当の複製人間を待ち受けています。"
+"take care of it"
+msgstr "この設備は排出用にマークされており、担当の複製人間を待ち受けています"
 
 #. STRINGS.BUILDING.STATUSITEMS.AWAITINGFUEL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.AWAITINGFUEL.NAME"
@@ -480,46 +480,55 @@ msgstr "出力先の<style=\"KKeyword\">パイプ<style=\"KKeyword\">が詰ま�
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_NO_PORT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_NO_PORT.NAME"
-msgid "Missing Conduit Ports"
-msgstr "入出力口不足"
+msgid "Missing Rocket Ports"
+msgstr "ロケット入出力口不足"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_NO_PORT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_NO_PORT.TOOLTIP"
 msgid ""
-"The current launchpad has no Conduit Ports attached to it.\n"
+"The current <link=\"LAUNCHPLATFORM\">Rocket Platform</link> has no <link="
+"\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> attached to it.\n"
 "\n"
-"Please build appropriate Solid, Gas, and Liquid Conduit Ports in order to "
-"load and unload materials from Cargo Bays."
+"Please build appropriate the Solid, Gas, or Liquid <link="
+"\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> in order to load and unload "
+"materials from Cargo Bays."
 msgstr ""
-"発射台の入出力口に繋がる先がありません。\n"
+"<link=\"LAUNCHPLATFORM\">発射台</link>の<link=\"MODULARLAUNCHPADPORTSOLID\">"
+"ロケット入出力口</link>に繋がる先がありません。\n"
 "\n"
-"貨物ベイから搬入・搬出するために、適切な固体・気体・液体の出力ポートを建設し"
-"てください。"
+"貨物ベイから搬入・搬出するために、適切な固体・気体・液体の<link="
+"\"MODULARLAUNCHPADPORTSOLID\">ロケット入出力口</link>を建設してください。"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.NAME"
-msgid "Conduit Network Attached"
-msgstr "入出力配管済み"
+msgid "Rocket Network Attached"
+msgstr "ロケット経路接続済み"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.TOOLTIP"
 msgid ""
-"The current launchpad has a Conduit Port which can load or unload from this "
-"module."
-msgstr "発射台はこのモジュールから搬入出可能な配管がされています。"
+"The current <link=\"LAUNCHPLATFORM\">Rocket Platform</link> has a <link="
+"\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> which can load or unload "
+"from this module."
+msgstr ""
+"<link=\"LAUNCHPLATFORM\">ロケット発射台</link>にはこのモジュールから搬入出可"
+"能な<link=\"MODULARLAUNCHPADPORTSOLID\">ロケット入出力口</link>があります。"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.NAME"
-msgid "Unserviced by Conduit Network"
-msgstr "配管不良"
+msgid "Unserviced by Port Network"
+msgstr "入出力経路不良"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.TOOLTIP"
 msgid ""
-"The Conduit Ports attached to the current launchpad are not the correct type "
-"for this Cargo Bay."
+"The <link=\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> attached to the "
+"current <link=\"LAUNCHPLATFORM\">Rocket Platform</link> are not the correct "
+"type for this Cargo Bay."
 msgstr ""
-"発射台に接続された入出力口は、貨物ベイが受け取れるタイプではありません。"
+"<link=\"LAUNCHPLATFORM\">ロケット発射台</link>に取り付けられた<link="
+"\"MODULARLAUNCHPADPORTSOLID\">ロケット入出力口</link>はこの貨物ベイのタイプと"
+"合っていません。"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.NAME"
@@ -742,14 +751,21 @@ msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.DESTINATIONOUTOFRANGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DESTINATIONOUTOFRANGE.NAME"
-msgid "Out of range {Range} / {Distance}"
-msgstr "範囲外 {Range} / {Distance}"
+msgid "Destination Out Of Range"
+msgstr "範囲外の目的地"
 
 #. STRINGS.BUILDING.STATUSITEMS.DESTINATIONOUTOFRANGE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DESTINATIONOUTOFRANGE.TOOLTIP"
 msgid ""
-"This rocket lacks the range to reach its destination {Range} / {Distance}"
-msgstr "このロケットは飛距離が足りません。{Range} / {Distance}"
+"This rocket lacks the range to reach its destination\n"
+"------------------\n"
+"Rocket Range: {Range}\n"
+"Destination Distance: {Distance}"
+msgstr ""
+"このロケットは目的地までの距離が足りません\n"
+"------------------\n"
+"ロケット航行距離: {Range}\n"
+"目的地までの距離: {Distance}"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DETECTORQUALITY.NAME"
@@ -1536,17 +1552,20 @@ msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.INFLIGHT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INFLIGHT.NAME"
-msgid "In Flight to {Destination_Asteroid}: {ETA}"
+msgid "In Flight To {Destination_Asteroid}: {ETA}"
 msgstr "{Destination_Asteroid}へ飛翔中: {ETA}"
 
 #. STRINGS.BUILDING.STATUSITEMS.INFLIGHT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INFLIGHT.TOOLTIP"
 msgid ""
-"This rocket is currently traveling to {Destination_Pad} at "
-"{Destination_Asteroid}, and will arrive in approximately {ETA}."
+"This rocket is currently traveling to {Destination_Pad} on "
+"{Destination_Asteroid}\n"
+"\n"
+"It arrive in {ETA}"
 msgstr ""
-"このロケットは{Destination_Asteroid}の{Destination_Pad}へ向かっています。到着"
-"までおよそ{ETA}です。"
+"このロケットは{Destination_Asteroid}の{Destination_Pad}へ向かっています。\n"
+"\n"
+"到着までおよそ{ETA}です。"
 
 #. STRINGS.BUILDING.STATUSITEMS.INORBIT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INORBIT.NAME"
@@ -1555,7 +1574,7 @@ msgstr "軌道上: {Destination}"
 
 #. STRINGS.BUILDING.STATUSITEMS.INORBIT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INORBIT.TOOLTIP"
-msgid "This rocket is currently in orbit around {Destination}."
+msgid "This rocket is currently in orbit around {Destination}"
 msgstr "このロケットは{Destination}の軌道に乗っています。"
 
 #. STRINGS.BUILDING.STATUSITEMS.INVALIDBUILDINGLOCATION.NAME
@@ -2821,7 +2840,7 @@ msgstr "複製人間の操作が必要"
 
 #. STRINGS.BUILDING.STATUSITEMS.PILOTNEEDED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PILOTNEEDED.TOOLTIP"
-msgid "Without duplicant interaction auto pilot engaging in {timeRemaining}."
+msgid "Without Duplicant interaction auto pilot engaging in {timeRemaining}."
 msgstr ""
 "複製人間が操作しないオートパイロットでは突入まで{timeRemaining}かかります。"
 
@@ -2956,7 +2975,7 @@ msgstr "射出先なし"
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP"
 msgid ""
-"A launch destination has not been selected.    • {0}\n"
+"A launch destination has not been selected    • {0}\n"
 "\n"
 "Set destination for this load using the "
 msgstr ""
@@ -2985,21 +3004,22 @@ msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME"
-msgid "Ready For Emptying"
+msgid "Ready To Unpack"
 msgstr "排出準備完了"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.TOOLTIP"
 msgid ""
-"This payload has reached its target and is ready for emptying.\n"
+"This payload has reached its target and is ready be unloaded\n"
 "\n"
-"Either mark it for emptying directly, or build an <TODO EMPTYER STATION> to "
-"automatically empty all payloads."
+"Either mark it for unpacking directly, or build an <link="
+"\"RAILGUNPAYLOADOPENER\">Payload Opener</link> to automatically unpack "
+"incoming payloads"
 msgstr ""
 "この積み荷は目的地に到着し、排出準備ができています。\n"
 "\n"
-"排出用にマークするか、<TODO EMPTYER STATION>を建てることで自動的に排出できま"
-"す。"
+"排出用にマークするか、<link=\"RAILGUNPAYLOADOPENER\">貨物オープナー</link>を"
+"建てることで自動的に排出できます。"
 
 #. STRINGS.BUILDING.STATUSITEMS.RATIONBOXCONTENTS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RATIONBOXCONTENTS.NAME"
@@ -3056,8 +3076,11 @@ msgstr "ロケット未接続"
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_IDLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_IDLE.TOOLTIP"
 msgid ""
-"This port is idle because there is no rocket on the connected launch pad."
-msgstr "このポートは接続先の発射台にロケットが無いため待機中です。"
+"This port is idle because there is no rocket on the connected <link="
+"\"LAUNCHPLATFORM\">Rocket Platform</link>"
+msgstr ""
+"このポートは接続先の<link=\"LAUNCHPLATFORM\">発射台</link>にロケットが無いた"
+"め待機中です"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.NAME"
@@ -3067,10 +3090,11 @@ msgstr "転送完了"
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.TOOLTIP"
 msgid ""
-"The rocket on the connected launch pad is either full of this type of "
-"resource or has no matching storage modules."
+"The rocket on the connected <link=\"LAUNCHPLATFORM\">Rocket Platform</link> "
+"is either full of this type of resource or has no matching storage modules."
 msgstr ""
-"発射台に接続されたロケットは資源が満載か適合する格納モジュールがありません。"
+"<link=\"LAUNCHPLATFORM\">発射台</link>に接続されたロケットは資源が満載か適合"
+"する格納モジュールがありません。"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADING.NAME"
@@ -3092,9 +3116,11 @@ msgstr "搬出中"
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.TOOLTIP"
 msgid ""
-"This port is currently unloading resources from the connected launch pad "
-"into the pipe network."
-msgstr "このポートは配管へ資源を発射台経由で搬出中です。"
+"This port is currently unloading resources from the connected <link="
+"\"LAUNCHPLATFORM\">Rocket Platform</link> into the pipe network"
+msgstr ""
+"このポートは配管へ資源を<link=\"LAUNCHPLATFORM\">発射台</link>経由で搬出中で"
+"す"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.NAME"
@@ -3104,12 +3130,13 @@ msgstr "貨物の搬出"
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.TOOLTIP"
 msgid ""
-"This launchpad is unloading available resources from the rocket to the "
-"material ports.\n"
+"This <link=\"LAUNCHPLATFORM\">Rocket Platform</link> is unloading available "
+"resources from the rocket to the material ports.\n"
 "\n"
 "Loading will proceed afterwards."
 msgstr ""
-"この発射台は素材ポートを通じて資源を搬出しています。\n"
+"この<link=\"LAUNCHPLATFORM\">発射台</link>は素材ポートを通じて資源を搬出して"
+"います。\n"
 "\n"
 "その後、搬入に移行します。"
 
@@ -3121,19 +3148,20 @@ msgstr "貨物の搬入"
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFILLING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFILLING.TOOLTIP"
 msgid ""
-"This launchpad is loading available resources from the material ports to the "
-"rocket.\n"
+"This <link=\"LAUNCHPLATFORM\">Rocket Platform</link> is loading available "
+"resources from the material ports to the rocket.\n"
 "\n"
 "Unloading has been completed."
 msgstr ""
-"この発射台は素材ポートを通じて資源を搬入しています。\n"
+"この<link=\"LAUNCHPLATFORM\">発射台</link>は素材ポートを通じて資源を搬入して"
+"います。\n"
 "\n"
 "搬出は完了しました。"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFULL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFULL.NAME"
-msgid "Launch Pad Ready"
-msgstr "発射台準備完了"
+msgid "Rocket Platform Ready"
+msgstr "ロケット発射台準備完了"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFULL.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFULL.TOOLTIP"
@@ -3142,14 +3170,14 @@ msgstr "貨物の搬入出が完了しました。"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCHECKLISTINCOMPLETE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCHECKLISTINCOMPLETE.NAME"
-msgid "Launch checklist incomplete"
+msgid "Launch Checklist Incomplete"
 msgstr "発射チェックリスト未完了"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCHECKLISTINCOMPLETE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCHECKLISTINCOMPLETE.TOOLTIP"
 msgid ""
-"A critical launch task has not been completed yet - check the launch "
-"checklist in the status panel"
+"A critical launch task has not been completed yet - check the Launch "
+"Checklist in the status panel"
 msgstr ""
 "必要な発射タスクが未完了です - ステータスパネルの発射チェックリストを確認して"
 "ください"
@@ -3172,7 +3200,7 @@ msgstr "立往生"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETSTRANDED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETSTRANDED.TOOLTIP"
-msgid "This rocket lacks the fuel to move"
+msgid "This rocket has run out of fuel and cannot move"
 msgstr "このロケットは燃料不足で動けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.SKILL_POINTS_AVAILABLE.NAME
@@ -3938,17 +3966,15 @@ msgstr "この設備が稼働するには、これらの素材が配達される
 
 #. STRINGS.BUILDING.STATUSITEMS.WARPCONDUITPARTNERDISABLED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WARPCONDUITPARTNERDISABLED.NAME"
-msgid "Warp Conduit Disabled ({x}/2)"
-msgstr "ワープ入出力使用不可 ({x}/2)"
+msgid "Teleporter Disabled ({x}/2)"
+msgstr "テレポーター使用不可 ({x}/2)"
 
 #. STRINGS.BUILDING.STATUSITEMS.WARPCONDUITPARTNERDISABLED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WARPCONDUITPARTNERDISABLED.TOOLTIP"
 msgid ""
-"Both sides of this portal must be activated by a Duplicant with the <link="
-"\"RESEARCHER\">Field Research</link> skill before it can be used."
-msgstr ""
-"ポータルは使用前に<link=\"RESEARCHER\">実地調査</link>スキルを持った複製人間"
-"の手で起動させる必要があります。"
+"This teleporter cannot be used until both the transmitting and receiving "
+"sides have been activated"
+msgstr "この手レポーターは送受信側が両方とも起動していないと使えません"
 
 #. STRINGS.BUILDING.STATUSITEMS.WARPPORTALCHARGING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WARPPORTALCHARGING.NAME"
@@ -3957,12 +3983,8 @@ msgstr "充電中: {charge}"
 
 #. STRINGS.BUILDING.STATUSITEMS.WARPPORTALCHARGING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WARPPORTALCHARGING.TOOLTIP"
-msgid ""
-"The Teleportal is not ready to use yet. Current estimates predict it should "
-"be ready in {cycles} cycles."
-msgstr ""
-"このテレポータルはまだ利用できません。見積では {cycles} サイクルで準備ができ"
-"る見込みです。"
+msgid "This teleporter will be ready for use in {cycles} cycles"
+msgstr "この手レポーターは{cycles}サイクルで使用可能になります"
 
 #. STRINGS.BUILDING.STATUSITEMS.WATTAGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WATTAGE.NAME"
@@ -4133,3 +4155,31 @@ msgstr "複製人間の操作が必要"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKREQUIRESMINION.TOOLTIP"
 msgid "A Duplicant must be present to complete this operation"
 msgstr "この操作には複製人間が必要です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.DESTINATIONOUTOFRANGE.NAME"
+#~ msgid "Out of range {Range} / {Distance}"
+#~ msgstr "範囲外 {Range} / {Distance}"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME"
+#~ msgid "Ready For Emptying"
+#~ msgstr "排出準備完了"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFULL.NAME"
+#~ msgid "Launch Pad Ready"
+#~ msgstr "発射台準備完了"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.WARPCONDUITPARTNERDISABLED.TOOLTIP"
+#~ msgid ""
+#~ "Both sides of this portal must be activated by a Duplicant with the <link="
+#~ "\"RESEARCHER\">Field Research</link> skill before it can be used."
+#~ msgstr ""
+#~ "ポータルは使用前に<link=\"RESEARCHER\">実地調査</link>スキルを持った複製人"
+#~ "間の手で起動させる必要があります。"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.WARPPORTALCHARGING.TOOLTIP"
+#~ msgid ""
+#~ "The Teleportal is not ready to use yet. Current estimates predict it "
+#~ "should be ready in {cycles} cycles."
+#~ msgstr ""
+#~ "このテレポータルはまだ利用できません。見積では {cycles} サイクルで準備がで"
+#~ "きる見込みです。"
