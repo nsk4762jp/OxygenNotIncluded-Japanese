@@ -2320,8 +2320,8 @@ msgstr "作業"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ALLCHORESDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ALLCHORESDIAGNOSTIC.NORMAL"
-msgid "    • {0} total errands"
-msgstr "    • 合計作業数 {0}"
+msgid "    • {0} errands pending or in progress"
+msgstr "    • (待ちを含む)仕掛中の作業 {0}個"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ALLCHORESDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ALLCHORESDIAGNOSTIC.TOOLTIP_NAME"
@@ -2335,8 +2335,8 @@ msgstr "労働時間"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ALLWORKTIMEDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ALLWORKTIMEDIAGNOSTIC.NORMAL"
-msgid "    • {0} time spent working"
-msgstr "    • 労働に{0}時間消費"
+msgid "    • {0} of Duplicant time spent working"
+msgstr "    • 複製人間が労働に費やした時間 {0}時間"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ALLWORKTIMEDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ALLWORKTIMEDIAGNOSTIC.TOOLTIP_NAME"
@@ -2348,25 +2348,37 @@ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.ALL_NAME"
 msgid "Battery"
 msgstr "バッテリー"
 
+#. STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.CRITERIA_CHECK_CAPACITY.FAIL
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.CRITERIA_CHECK_CAPACITY.FAIL"
+msgid ""
+msgstr ""
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.CRITERIA_CHECK_CAPACITY.PASS
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.CRITERIA_CHECK_CAPACITY.PASS"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.DEAD_BATTERY
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.DEAD_BATTERY"
-msgid "    • Dead battery"
-msgstr "    • 無効バッテリー"
+msgid "    • One or more batteries have died"
+msgstr "    • バッテリーが破損しています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.LIMITED_CAPACITY
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.LIMITED_CAPACITY"
-msgid "    • Limited battery capacity relative to power use"
-msgstr "    • バッテリー容量を超える電力使用"
+msgid "    • Low battery capacity relative to power use"
+msgstr "    • 電力使用量に対しバッテリー容量が少なくなっています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.NONE
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.NONE"
-msgid "    • No Batteries built"
-msgstr "    • バッテリーなし"
+msgid "    • No batteries are connected to a power grid"
+msgstr "    • 回路に接続されたバッテリーがありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.NORMAL"
-msgid "    • Battery"
-msgstr "    • バッテリー"
+msgid "    • All batteries functional"
+msgstr "    • 全てのバッテリーは機能しています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.TOOLTIP_NAME"
@@ -2380,13 +2392,13 @@ msgstr "ベッド"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BEDDIAGNOSTIC.MISSING_ASSIGNMENT
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BEDDIAGNOSTIC.MISSING_ASSIGNMENT"
-msgid "    • One or more Duplicants don't have beds assigned"
+msgid "    • One or more Duplicants don't have an assigned bed"
 msgstr "    • ベッドが割り当てられていない複製人間がいます"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BEDDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BEDDIAGNOSTIC.NORMAL"
-msgid "    • Currently has an adequate amount of beds"
-msgstr "    • 現在、十分な数のベッドがあります"
+msgid "    • Colony has adequate bedding"
+msgstr "    • コロニーには十分な数のベッドがあります"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BEDDIAGNOSTIC.NOT_ENOUGH_BEDS
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BEDDIAGNOSTIC.NOT_ENOUGH_BEDS"
@@ -2405,8 +2417,8 @@ msgstr "通気性"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.NORMAL"
-msgid "    • There is currently adequate oxygen available"
-msgstr "    • 現在十分な量の酸素があります"
+msgid "    • Oxygen levels are satisfactory"
+msgstr "    • 酸素レベルは快適です"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.POOR
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.POOR"
@@ -2416,7 +2428,7 @@ msgstr "    • 酸素が欠乏または少なくなっています"
 # ここでの意味は直訳のほうの full of shit
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.SUFFOCATING
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.SUFFOCATING"
-msgid "    • One or more Duplicants are currently suffocating"
+msgid "    • One or more Duplicants are suffocating"
 msgstr "    • 窒息している複製人間がいます"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.TOOLTIP_NAME
@@ -2436,13 +2448,13 @@ msgstr "装飾"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.DECORDIAGNOSTIC.LOW
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.DECORDIAGNOSTIC.LOW"
-msgid "    • Currently has very low Decor levels"
-msgstr "    • 現在の装飾値は極めて低いです"
+msgid "    • Decor levels are low"
+msgstr "    • 装飾レベルが貧相です"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.DECORDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.DECORDIAGNOSTIC.NORMAL"
-msgid "    • Currently has adequate Decor levels"
-msgstr "    • 現在の装飾値は十分なレベルにあります"
+msgid "    • Decor levels are satisfactory"
+msgstr "    • 十分な装飾レベルです"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.DECORDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.DECORDIAGNOSTIC.TOOLTIP_NAME"
@@ -2481,7 +2493,7 @@ msgstr "    • 農耕不可能な農地があります"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NONE
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NONE"
-msgid "    • There are no farm plots in the colony"
+msgid "    • Colony has no farm plots"
 msgstr "    • コロニーに農地はありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NONE_PLANTED
@@ -2491,8 +2503,8 @@ msgstr "    • 作物がありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NORMAL"
-msgid "    • Colony is growing adequate crops"
-msgstr "    • コロニーには十分な量の作物が生育しています"
+msgid "    • Crops are being grown in sufficient quantity"
+msgstr "    • 作物は十分な量が栽培されています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.TOOLTIP_NAME"
@@ -2511,13 +2523,15 @@ msgstr "航行状態"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.NORMAL_FLIGHT
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.NORMAL_FLIGHT"
-msgid "    • Rocket is on its way to destination"
+msgid "    • This rocket is in flight towards its destination"
 msgstr "    • ロケットは目的地に向かって飛翔中です"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.NORMAL_LANDED
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.NORMAL_LANDED"
-msgid "    • Rocket is landed"
-msgstr "    • ロケットは着陸しました"
+msgid ""
+"    • This rocket is currently landed on a <style=\"KKeyword\">Rocket "
+"Platform</style>"
+msgstr "    • ロケットは<style=\"KKeyword\">ロケット発射台</style>に着陸中です"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.TOOLTIP_NAME"
@@ -2527,19 +2541,29 @@ msgstr "<b>航行状態</b>"
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.WARNING_NO_DESTINATION
 msgctxt ""
 "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.WARNING_NO_DESTINATION"
-msgid "    • Rocket is floating in space with no destination"
+msgid "    • This rocket is suspended in space with no set destination"
 msgstr "    • ロケットはアテもなく宇宙を漂っています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.WARNING_NO_SPEED
 msgctxt ""
 "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.WARNING_NO_SPEED"
-msgid "    • Rocket not progressing towards destination"
-msgstr "    • ロケットは目的地に向かっていません"
+msgid "    • This rocket's flight has been halted"
+msgstr "    • ロケット航行は中断しています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.ALL_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.ALL_NAME"
 msgid "Food"
 msgstr "食糧"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.CRITERIA_HAS_FOOD.FAIL
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.CRITERIA_HAS_FOOD.FAIL"
+msgid "    • Duplicants have no food"
+msgstr "    • 複製人間に割り当てる食糧がありません"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.CRITERIA_HAS_FOOD.PASS
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.CRITERIA_HAS_FOOD.PASS"
+msgid "    • Duplicants have food"
+msgstr "    • 複製人間に割り当てる食糧があります"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.HUNGRY
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.HUNGRY"
@@ -2548,23 +2572,38 @@ msgstr "    • 腹ペコの複製人間がいます"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.LOW_CALORIES
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.LOW_CALORIES"
-msgid "    • Duplicant to food ratio is low"
+msgid "    • Food-to-Duplicant ratio is low"
 msgstr "    • 複製人間に割り当てられる食糧が少なくなっています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.NO_FOOD
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.NO_FOOD"
-msgid "    • This colony has no food"
-msgstr "    • コロニーに食糧がありません"
+msgid "    • Duplicants have no food"
+msgstr "    • 複製人間に割り当てる食糧がありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.NORMAL"
-msgid "    • Adequate food supply"
-msgstr "    • 十分な量の食糧があります"
+msgid "    • Food supply is currently adequate"
+msgstr "    • 十分な量の食糧が供給されています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.TOOLTIP_NAME"
 msgid "<b>Food</b>"
 msgstr "<b>食糧</b>"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.GENERIC_CRITERIA_FAIL
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.GENERIC_CRITERIA_FAIL"
+msgid "Criteria not met"
+msgstr "基準が満たされていません"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.GENERIC_CRITERIA_PASS
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.GENERIC_CRITERIA_PASS"
+msgid "Criteria met"
+msgstr "基準が満たされています"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.GENERIC_STATUS_NORMAL
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.GENERIC_STATUS_NORMAL"
+msgid "All values nominal"
+msgstr "全ての値は理想値です"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.HEATDIAGNOSTIC.ALL_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.HEATDIAGNOSTIC.ALL_NAME"
@@ -2610,16 +2649,13 @@ msgstr "    • データがありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.NO_MINIONS
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.NO_MINIONS"
-msgid ""
-"    • There are no Duplicants on this <style=\"KKeyword\">Planetoid</style>"
-msgstr "    • この<style=\"KKeyword\">小惑星</style>に複製人間はいません"
+msgid "    • There are no Duplicants on this {0}"
+msgstr "    • {0} に複製人間は存在しません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.NO_MINIONS_REQUESTED
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.NO_MINIONS_REQUESTED"
-msgid ""
-"    • This diagnostic in not concerned with rockets that don't have their "
-"crew requested"
-msgstr "    • この診断は、乗員のいないロケットを考慮していません"
+msgid "    • Crew must be requested to update this diagnostic"
+msgstr "    • この診断を更新するために乗員が必要です"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.ALL_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.ALL_NAME"
@@ -2628,8 +2664,8 @@ msgstr "電力平均"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.NORMAL"
-msgid "    • Currently has adequate power supply"
-msgstr "    • 現在十分な量の電力が供給されています"
+msgid "    • Power supply is satisfactory"
+msgstr "    • 十分な量の電力が供給されています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.OVERLOADED
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.OVERLOADED"
@@ -2641,6 +2677,11 @@ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.TOOLTIP_NAME"
 msgid "<b>Avg Power</b>"
 msgstr "<b>電力平均</b>"
 
+#. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKET
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKET"
+msgid "rocket"
+msgstr "ロケット"
+
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETFUELDIAGNOSTIC.ALL_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETFUELDIAGNOSTIC.ALL_NAME"
 msgid "Rocket Fuel"
@@ -2648,8 +2689,8 @@ msgstr "ロケット燃料"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETFUELDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETFUELDIAGNOSTIC.NORMAL"
-msgid "    • Rocket has fuel"
-msgstr "    • ロケットには燃料があります"
+msgid "    • This rocket has sufficient fuel"
+msgstr "    • ロケットは十分な量の燃料があります"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETFUELDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETFUELDIAGNOSTIC.TOOLTIP_NAME"
@@ -2658,7 +2699,7 @@ msgstr "<b>ロケット燃料</b>"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETFUELDIAGNOSTIC.WARNING
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETFUELDIAGNOSTIC.WARNING"
-msgid "    • Rocket has no fuel"
+msgid "    • This rocket has no fuel"
 msgstr "    • ロケットに燃料がありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETOXIDIZERDIAGNOSTIC.ALL_NAME
@@ -2668,8 +2709,8 @@ msgstr "ロケット酸化剤"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETOXIDIZERDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETOXIDIZERDIAGNOSTIC.NORMAL"
-msgid "    • Oxidizer requirements met"
-msgstr "    • 酸化剤は要件を満たしています"
+msgid "    • This rocket has sufficient oxidizer"
+msgstr "    • ロケットは十分な量の酸化剤があります"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETOXIDIZERDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETOXIDIZERDIAGNOSTIC.TOOLTIP_NAME"
@@ -2678,8 +2719,8 @@ msgstr "<b>ロケット酸化剤</b>"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETOXIDIZERDIAGNOSTIC.WARNING
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETOXIDIZERDIAGNOSTIC.WARNING"
-msgid "    • Insufficient oxidizer"
-msgstr "    • 酸化剤が不足しています"
+msgid "    • This rocket has insufficient oxidizer"
+msgstr "    • ロケットは酸化剤が不足しています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.STRESSDIAGNOSTIC.ALL_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.STRESSDIAGNOSTIC.ALL_NAME"
@@ -2688,13 +2729,13 @@ msgstr "最大ストレス"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.STRESSDIAGNOSTIC.HIGH_STRESS
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.STRESSDIAGNOSTIC.HIGH_STRESS"
-msgid "    • One or more Duplicants is suffering from high Stress"
+msgid "    • One or more Duplicants is suffering high stress"
 msgstr "    • 高ストレス下の複製人間がいます"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.STRESSDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.STRESSDIAGNOSTIC.NORMAL"
-msgid "    • All Duplicants currently have manageable stress levels"
-msgstr "    • 全ての複製人間が自己対処できるストレスレベルです"
+msgid "    • Duplicants have acceptable stress levels"
+msgstr "    • 複製人間が自己対処できるストレスレベルです"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.STRESSDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.STRESSDIAGNOSTIC.TOOLTIP_NAME"
@@ -2708,7 +2749,7 @@ msgstr "トイレ"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.FEW_TOILETS
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.FEW_TOILETS"
-msgid "    • Low toilet to Duplicant ratio"
+msgid "    • Toilet-to-Duplicant ratio is low"
 msgstr "    • 複製人間の人数に対しトイレが足りていません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.INOPERATIONAL
@@ -2718,18 +2759,18 @@ msgstr "    • トイレが故障中です"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.NO_TOILETS
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.NO_TOILETS"
-msgid "    • Currently has no toilets"
-msgstr "    • 現在、トイレがありません"
+msgid "    • Colony has no toilets"
+msgstr "    • コロニーにトイレがありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.NO_WORKING_TOILETS
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.NO_WORKING_TOILETS"
-msgid "    • Currently has no working toilets"
-msgstr "    • 現在、使えるトイレがありません"
+msgid "    • Colony has no working toilets"
+msgstr "    • コロニーに使えるトイレがありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.NORMAL"
-msgid "    • Currently has an adequate amount of toilets"
-msgstr "    • 現在、十分な数のトイレがあります"
+msgid "    • Colony has adequate working toilets"
+msgstr "    • コロニーに十分な数のトイレがあります"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.TOOLTIP_NAME"
@@ -2743,7 +2784,7 @@ msgstr "捕らわれの身"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.NORMAL"
-msgid "    • No Duplicants are currently trapped"
+msgid "    • No Duplicants are trapped"
 msgstr "    • 捕らわれの複製人間はいません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.STUCK
@@ -2763,8 +2804,8 @@ msgstr "移動時間"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TRAVEL_TIME.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TRAVEL_TIME.NORMAL"
-msgid "    • {0} time spent traveling between tasks"
-msgstr "    • タスク間の移動に{0}費やしています"
+msgid "    • {0} of Duplicant time spent traveling between errands"
+msgstr "    • 作業間の移動に時間を{0}費やしています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TRAVEL_TIME.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TRAVEL_TIME.TOOLTIP_NAME"
@@ -3156,6 +3197,11 @@ msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.SAMPLE"
 msgid "Sample"
 msgstr "サンプル"
 
+#. STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.SPAWN_ALL
+msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.SPAWN_ALL"
+msgid "Spawn All (Slow)"
+msgstr "全て生成(スロー)"
+
 # 格納庫以外にも、農地タイルでこのアクションが使用できた
 #. STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.STORE
 msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.STORE"
@@ -3254,7 +3300,7 @@ msgstr "合計放射線量: {0}"
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.TITLE
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.TITLE"
 msgid "Base and World Tools"
-msgstr "基地/世界ツール"
+msgstr "基地/惑星ツール"
 
 #. STRINGS.UI.DELIVERED
 msgctxt "STRINGS.UI.DELIVERED"
@@ -4252,31 +4298,37 @@ msgstr "ありがとう！"
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.BODY
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.BODY"
 msgid ""
-"This DLC is currently in active development, which means you're likely to "
+"This game is in the early stages of development which means you're likely to "
 "encounter strange, amusing, and occasionally just downright frustrating "
 "bugs.\n"
 "\n"
-" During this time Spaced Out! will be receiving regular updates to fix bugs, "
-"add features, and introduce additional content. To stay up-to-date with our "
-"latest plans, report issues, or make suggestions, please join us on the "
-"forums: http://forums.kleientertainment.com\n"
+"During this time Oxygen Not Included will be receiving regular updates to "
+"fix bugs, add features, and introduce additional content, so if you "
+"encounter issues or just have suggestions to share, please let us know on "
+"our forums: <u>http://forums.kleientertainment.com</u>\n"
 "\n"
-" We've got lots of content old and new to add to this DLC before it's ready, "
-"and we're happy to have you along with us. Enjoy your time in deep space!\n"
+"A special thanks to those who joined us during our time in Alpha. We value "
+"your feedback and thank you for joining us in the development process. We "
+"couldn't do this without you.\n"
 "\n"
-" - The Team at Klei"
+"Enjoy your time in deep space!\n"
+"\n"
+"- Klei"
 msgstr ""
-"このDLCは開発中です。ということで、おかしな動作をしたり不快なバグを含んでいま"
-"す。\n"
+"このゲームは開発プロセスの早い段階にあるため、おかしな動作をしたり不快なバグ"
+"を含んでいます。\n"
 "\n"
-"今回の宇宙進出！DLCは定期的なバグ修正や新機能追加、追加コンテンツを行っていき"
-"ます。もし何か問題があったり、共有したい提案がある場合は、どうぞフォーラムを"
-"通して我々に知らせてください。 <u>http://forums.kleientertainment.com</u>\n"
+"Oxygen Not Included は定期的なバグ修正や新機能追加、追加コンテンツを行ってい"
+"きます。もし何か問題があったり、共有したい提案がある場合は、どうぞフォーラム"
+"を通して我々に知らせてください。 <u>http://forums.kleientertainment.com</u>\n"
 "\n"
-"リリースできるようになるまでに、このDLCに追加する新旧コンテンツがたくさんあり"
-"ます。どうぞ素晴らしい宇宙探検をお楽しみください！\n"
+"アルファの期間中に参加してくれた方々に感謝を申し上げます。開発に参加していた"
+"だき、またフィードバックをお寄せいただきありがとうございます。あなたが居なけ"
+"ればこのゲームは存在していなかったでしょう。\n"
 "\n"
-"- Kleiの開発チームより"
+"どうぞ素晴らしい宇宙探検をお楽しみください！\n"
+"\n"
+"- Klei"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.BODY_NOLINKS
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.BODY_NOLINKS"
@@ -4316,8 +4368,8 @@ msgstr "フォーラムを見る"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.TITLE
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.TITLE"
-msgid "<b>Welcome to <i>Spaced Out!</i></b>"
-msgstr "<b><i>宇宙進出！</i>にようこそ</b>"
+msgid "<b>Welcome to Oxygen Not Included!</b>"
+msgstr "<b>Oxygen Not Included にようこそ！</b>"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.FEEDBACK
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.MESSAGES.FEEDBACK"
@@ -5430,7 +5482,7 @@ msgid ""
 msgstr ""
 "ワールド生成シードをリロールします\n"
 "\n"
-"世界の配置や、下記に列挙された地学的特徴をシャッフルします"
+"惑星の配置や、下記に列挙された地学的特徴をシャッフルします"
 
 #. STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.START_GAME
 msgctxt "STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.START_GAME"
@@ -5651,8 +5703,9 @@ msgstr "<i>宇宙進出！</i>コンテンツの有効化"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.EXPANSION1ACTIVE."
 "TOOLTIP"
-msgid "FIXME"
-msgstr "直して～"
+msgid ""
+"If checked, content from the <i>Spaced Out!</i> Expansion will be available"
+msgstr "チェックを入れると、<i>宇宙進出！</i>DLCの内容が利用可能になります"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.FASTWORKERSMODE.LEVELS.DISABLED.NAME
 msgctxt ""
@@ -6229,7 +6282,7 @@ msgstr ""
 "この数字は、あなたのオリジナルマップを生成するためのプロシージャル用パラメー"
 "タです\n"
 "\n"
-"ワールド生成シードをコピー＆ペーストすれば、他の人もあなたの世界のコピーで遊"
+"ワールド生成シードをコピー＆ペーストすれば、他の人もあなたの惑星のコピーで遊"
 "ぶことができます"
 
 #. STRINGS.UI.FRONTEND.DEMO_OVER_SCREEN.BODY
@@ -7729,7 +7782,7 @@ msgid ""
 "Stay on your toes and one step ahead of this unforgiving world. One slip up "
 "could bring your colony crashing down."
 msgstr ""
-"慎重に、この容赦のない世界に一歩を踏み出してください。あなたのコロニーは、一"
+"慎重に、この容赦のない惑星へ一歩を踏み出してください。あなたのコロニーは、一"
 "度の誤りでも瓦解する可能性があります。"
 
 #. STRINGS.UI.FRONTEND.MODESELECTSCREEN.SURVIVAL_TITLE
@@ -7788,6 +7841,11 @@ msgctxt "STRINGS.UI.FRONTEND.MODS.MANAGE_LOCAL"
 msgid "Browse"
 msgstr "参照"
 
+#. STRINGS.UI.FRONTEND.MODS.MOD_DISABLED_CONTENT
+msgctxt "STRINGS.UI.FRONTEND.MODS.MOD_DISABLED_CONTENT"
+msgid " - <i>Not compatible with {Content}</i>"
+msgstr " - <i>{Content}と互換性がありません</i>"
+
 #. STRINGS.UI.FRONTEND.MODS.REQUIRES_RESTART
 msgctxt "STRINGS.UI.FRONTEND.MODS.REQUIRES_RESTART"
 msgid "Mod changes require restart"
@@ -7825,8 +7883,8 @@ msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "DLC EARLY ACCESS!"
-msgstr "DLCアーリーアクセス！"
+msgid "RE-ROCKETRY UPDATE!"
+msgstr "新ロケット工学アップデート！"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -7844,24 +7902,29 @@ msgstr "議論に参加"
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"<b><i>Spaced Out!</i> DLC comes to Early Access Dec 2020!</b>\n"
+"<b>Re-Rocketry Update</b>\n"
 "\n"
-" • New real-time, multi-world gameplay on brand new Planetoids\n"
-" • New mid-game rocketry technology and modular rocket construction\n"
-" • Completely overhauled Starmap for new rocket expeditions\n"
-" • New critters, resources, tech, biomes and more\n"
+"Added <i>Spaced Out!</i> versions of many rocket modules from the base game "
+"as well as a new type of Petroleum engine.\n"
 "\n"
-"Check out the full patch notes for more details and instructions on how to "
-"participate!"
+"Added a durability system to suits and revised Oxygen masks to behave more "
+"like Atmo Suits.\n"
+"\n"
+"Plenty of bug fixes and balance changes.\n"
+"\n"
+"Check out the full patch notes for more details"
 msgstr ""
-"<b><i>宇宙進出！</i>DLCが2020年12月にアーリーアクセス入りしました！</b>\n"
+"<b>新ロケット工学 アップデート</b>\n"
 "\n"
-" • 新しい小惑星による、リアルタイムかつ複数ワールドのゲームプレイ\n"
-" • 新しいゲーム中盤ロケット技術およびモジュール式ロケット構造\n"
-" • 新しいロケット遠征のために完全に作り直された星図\n"
-" • 新しい動物、資源、技術、バイオームなどなど\n"
+"石油エンジンといった、ベースゲームにあったロケットエンジンを<i>宇宙進出！</i>"
+"用に追加。\n"
 "\n"
-"参加方法、遊び方、その他詳細はパッチノート全文を参照してください！"
+"スーツに耐久度システムを追加。酸素マスクがアトモスーツと同じ振舞いをするよう"
+"に変更。\n"
+"\n"
+"その他大量のバグ修正およびバランス調整。\n"
+"\n"
+"詳細はパッチノート全文を確認してください"
 
 #. STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT
 msgctxt "STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT"
@@ -10499,19 +10562,23 @@ msgstr "ローダー"
 msgctxt "STRINGS.UI.OVERLAYS.CONVEYOR.TOOLTIPS.INPUT"
 msgid ""
 "<b>Receptacle</b>\n"
-"Receives material from a Conveyor Rail and stores it for Duplicant use"
+"Receives material from a <style=\"KKeyword\">Conveyor Rail</style> and "
+"stores it for Duplicant use"
 msgstr ""
 "<b>レセプター</b>\n"
-"コンベアから素材を受け取り、複製人間が使うときまで保管します"
+"<style=\"KKeyword\">コンベアレール</style>から素材を受け取り、複製人間が使う"
+"ときまで保管します"
 
 #. STRINGS.UI.OVERLAYS.CONVEYOR.TOOLTIPS.OUTPUT
 msgctxt "STRINGS.UI.OVERLAYS.CONVEYOR.TOOLTIPS.OUTPUT"
 msgid ""
 "<b>Loader</b>\n"
-"Loads material onto a Conveyor Rail for transport to Receptacles"
+"Loads material onto a <style=\"KKeyword\">Conveyor Rail</style> for "
+"transport to Receptacles"
 msgstr ""
 "<b>ローダー</b>\n"
-"コンベアに素材を積載し、レセプターまで輸送します"
+"<style=\"KKeyword\">コンベアレール</style>に素材を積載し、レセプターまで輸送"
+"します"
 
 #. STRINGS.UI.OVERLAYS.CROP.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CROP.BUTTON"
@@ -12266,12 +12333,12 @@ msgstr "素材が必要:"
 
 #. STRINGS.UI.PRODUCTINFO_MISSINGRESOURCES_DESC
 msgctxt "STRINGS.UI.PRODUCTINFO_MISSINGRESOURCES_DESC"
-msgid "{0} has yet to be discovered."
-msgstr "{0} はまだ未発見です。"
+msgid "{0} has yet to be discovered"
+msgstr "{0} はまだ未発見です"
 
 #. STRINGS.UI.PRODUCTINFO_MISSINGRESOURCES_HOVER
 msgctxt "STRINGS.UI.PRODUCTINFO_MISSINGRESOURCES_HOVER"
-msgid "Missing resource(s)"
+msgid "Missing resources"
 msgstr "素材が不足しています"
 
 #. STRINGS.UI.PRODUCTINFO_MISSINGRESOURCES_TITLE
@@ -12296,7 +12363,7 @@ msgstr "ロケット内装のみ"
 
 #. STRINGS.UI.PRODUCTINFO_ROCKET_NOT_INTERIOR
 msgctxt "STRINGS.UI.PRODUCTINFO_ROCKET_NOT_INTERIOR"
-msgid "Can't build inside rocket"
+msgid "Cannot build inside rocket"
 msgstr "ロケット内には建設できません"
 
 #. STRINGS.UI.PRODUCTINFO_SELECTMATERIAL
@@ -12306,8 +12373,8 @@ msgstr "{0} を選択:"
 
 #. STRINGS.UI.PRODUCTINFO_UNIQUE_PER_WORLD
 msgctxt "STRINGS.UI.PRODUCTINFO_UNIQUE_PER_WORLD"
-msgid "Only one {0} per world."
-msgstr "{0}は世界ごとに一つです。"
+msgid "Limit one per Planetoid"
+msgstr "小惑星ごとに1つだけです"
 
 #. STRINGS.UI.QUEUE
 msgctxt "STRINGS.UI.QUEUE"
@@ -13198,14 +13265,15 @@ msgstr "職業"
 #. STRINGS.UI.ROLES_SCREEN.NO_JOB_STATION_WARNING
 msgctxt "STRINGS.UI.ROLES_SCREEN.NO_JOB_STATION_WARNING"
 msgid ""
-"Build a <style=\"KKeyword\">Porta-Pod</style> to unlock this menu\n"
+"Build a <style=\"KKeyword\">Mini-Pod</style> to unlock this menu\n"
 "------------------\n"
-"The <style=\"KKeyword\">Porta-Pod</style> can be found in the <b>Stations "
+"The <style=\"KKeyword\">Mini-Pod</style> can be found in the <b>Stations "
 "Tab</b> <b><color=#F44A4A>[0]</b></color> of the Build Menu"
 msgstr ""
-"解放するには<style=\"KKeyword\">携帯ポッド</style>を建設してください\n"
+"このメニューを解放するには<style=\"KKeyword\">ミニポッド</style>を建設してく"
+"ださい\n"
 "------------------\n"
-"<style=\"KKeyword\">携帯ポッド</style>は建築メニューの<b>端末タブ</"
+"<style=\"KKeyword\">ミニポッド</style>は建築メニューの<b>端末タブ</"
 "b><b><color=#F44A4A>[0]</b></color>にあります"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.ADVANCED_RESEARCH.DESCRIPTION
@@ -14327,8 +14395,8 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.SKILL_GRANTED"
 msgid ""
-"{0} has been granted {1} by a Trait and does not have increased <style="
-"\"KKeyword\">Morale Requirements</style> from knowing it"
+"{0} has been granted {1} by a Trait, but does not have increased <style="
+"\"KKeyword\">Morale Requirements</style> from learning it"
 msgstr ""
 "{0}は特性により{1}を授けられており、そのことによって<style=\"KKeyword\">士気"
 "要求</style>が上昇することはありません"
@@ -15206,6 +15274,11 @@ msgctxt "STRINGS.UI.STARMAP.COMPONENT.FUEL_TANK"
 msgid "Fuel Tank"
 msgstr "燃料タンク"
 
+#. STRINGS.UI.STARMAP.COMPONENT.OXIDIZER_TANK
+msgctxt "STRINGS.UI.STARMAP.COMPONENT.OXIDIZER_TANK"
+msgid "Oxidizer Tank"
+msgstr "酸化剤タンク"
+
 #. STRINGS.UI.STARMAP.COMPONENT.ROCKET_ENGINE
 msgctxt "STRINGS.UI.STARMAP.COMPONENT.ROCKET_ENGINE"
 msgid "Rocket Engine"
@@ -15470,8 +15543,8 @@ msgstr "有資格者搭乗済み"
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.FAILURE"
 msgid ""
-"Missing crew - at least one crew member must have the <link=\"PILOT\">Rocket "
-"Piloting</link> skill"
+"Missing crew - at least one crew member aboard the rocket must have the "
+"<link=\"PILOT\">Rocket Piloting</link> skill"
 msgstr ""
 "乗員なし - <link=\"PILOT\">ロケット操縦</link>スキルを持った乗員が最低でも一"
 "人必要です"
@@ -15610,6 +15683,36 @@ msgstr "ロケットにノーズコーンがあります"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.WARNING"
 msgid "Nosecone warning"
 msgstr "ノーズコーン不備あり"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.FAILURE
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.FAILURE"
+msgid "Needs oxidizer tank"
+msgstr "酸化剤タンクが必要です"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.READY
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.READY"
+msgid "Oxidizer tank"
+msgstr "酸化剤タンク"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.WARNING
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.WARNING"
+msgid "Oxidizer tank warning"
+msgstr "酸化剤タンク不備あり"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.FAILURE
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.FAILURE"
+msgid "Rocket needs an Oxidizer tank"
+msgstr "ロケットに酸化剤タンクが必要です"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.READY
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.READY"
+msgid "Rocket has an Oxidizer tank"
+msgstr "ロケットに酸化剤タンクがあります"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.WARNING
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.WARNING"
+msgid "Oxidizer tank warning"
+msgstr "酸化剤タンク不備あり"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HASASTRONAUT
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HASASTRONAUT"
@@ -15783,7 +15886,7 @@ msgstr "乗員に不備あり"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.FAILURE"
-msgid "Insufficient Fuel"
+msgid "Insufficient fuel"
 msgstr "燃料不足"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.READY
@@ -15793,41 +15896,40 @@ msgstr "燃料満載"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.WARNING"
-msgid "Warning: Partially Fueled"
+msgid "Warning: partially fueled"
 msgstr "警告: 燃料不十分"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.FAILURE"
 msgid ""
-"More fuel or oxidizer must be loaded before this rocket is ready for "
-"takeoff.\n"
+"More fuel must be loaded before this rocket is ready for takeoff.\n"
 "\n"
 "If the tanks are already full then this rocket can never reach that "
 "destination"
 msgstr ""
-"このロケットが発射準備完了となるには、追加の燃料または酸化剤が必要です。\n"
+"このロケットが発射準備完了となるには、追加の燃料が必要です。\n"
 "\n"
 "タンクが既に満タンの場合、このロケットは目的地に到達できません"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.READY"
 msgid ""
-"This rocket has sufficient fuel and oxidizer a round trip to and from its "
+"This rocket has sufficient fuel to make a round trip to and from its "
 "selected destination (or fully fuelled if no destination selected)"
 msgstr ""
-"このロケットは目的地まで航行するにあたって十分な燃料および酸化剤があります(目"
-"的地が指定されていない場合は満タンまで燃料が供給されます)"
+"このロケットは目的地まで航行するにあたって十分な燃料があります(目的地が指定さ"
+"れていない場合は満タンまで燃料が供給されます)"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.WARNING"
 msgid ""
-"This rocket has enough fuel and oxidizer to make it to its destination, but "
-"not back again.\n"
+"This rocket has enough fuel to make it to its destination, but not back "
+"again.\n"
 "\n"
 "The rocket can still be launched if necessary"
 msgstr ""
-"このロケットは目的地まで航行するにあたって十分な燃料および酸化剤があります"
-"が、戻ってくることはありません。\n"
+"このロケットは目的地まで航行するにあたって十分な燃料がありますが、戻ってくる"
+"ことはありません。\n"
 "\n"
 "必要に応じて発射することができます"
 
@@ -15849,6 +15951,48 @@ msgid ""
 msgstr ""
 "{0} では {1} の資源が利用可能です。 \n"
 "ロケットの最大積載量は {2}です。"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.FAILURE
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.FAILURE"
+msgid "Insufficient oxidizer"
+msgstr "酸化剤不足"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.READY
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.READY"
+msgid "Sufficient oxidizer"
+msgstr "酸化剤十分"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.WARNING
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.WARNING"
+msgid "Warning: limited oxidizer"
+msgstr "警告: 酸化剤不十分"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.FAILURE
+msgctxt ""
+"STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.FAILURE"
+msgid "More oxidizer must be loaded before this rocket is ready for takeoff."
+msgstr "このロケットが発射準備完了となるには、追加の酸化剤が必要です。"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.READY
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.READY"
+msgid ""
+"This rocket has sufficient oxidizer for a round trip to and from its "
+"selected destination"
+msgstr "このロケットは目的地まで航行するにあたって十分な酸化剤があります"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.WARNING
+msgctxt ""
+"STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.WARNING"
+msgid ""
+"This rocket has enough oxidizer to make it to its destination, but not back "
+"again.\n"
+"\n"
+"The rocket can still be launched if necessary"
+msgstr ""
+"このロケットは目的地まで航行するにあたって十分な酸化剤がありますが、戻ってく"
+"ることはありません。\n"
+"\n"
+"必要に応じて発射することができます"
 
 #. STRINGS.UI.STARMAP.LISTTITLES.ANALYSIS
 msgctxt "STRINGS.UI.STARMAP.LISTTITLES.ANALYSIS"
@@ -15940,7 +16084,7 @@ msgstr "タイプ"
 #. STRINGS.UI.STARMAP.LISTTITLES.WORLDCOMPOSITION
 msgctxt "STRINGS.UI.STARMAP.LISTTITLES.WORLDCOMPOSITION"
 msgid "World Composition"
-msgstr "世界の構成"
+msgstr "惑星の構成"
 
 #. STRINGS.UI.STARMAP.MANAGEMENT_BUTTON
 msgctxt "STRINGS.UI.STARMAP.MANAGEMENT_BUTTON"
@@ -17092,6 +17236,11 @@ msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_BACK_WALL"
 msgid "Obstructed by back wall"
 msgstr "裏壁で妨げられています"
 
+#. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_BELOWROCKETCEILING
+msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_BELOWROCKETCEILING"
+msgid "Must be placed further from the edge of space"
+msgstr "宇宙の表層から離れた場所に建設する必要があります"
+
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_CEILING
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_CEILING"
 msgid "Must be built on the ceiling"
@@ -17146,10 +17295,10 @@ msgstr "自動化ワイヤーブリッジは重ねられません"
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_MISSING_TELEPAD"
 msgid ""
 "World has no <link=\"HEADQUARTERS\">Printing Pod</link> or <link="
-"\"EXOBASEHEADQUARTERS\">Porta-Pod</link>"
+"\"EXOBASEHEADQUARTERS\">Mini-Pod</link>"
 msgstr ""
-"世界に<link=\"HEADQUARTERS\">製造ポッド</link>または<link="
-"\"EXOBASEHEADQUARTERS\">携帯ポッド</link>がありません"
+"惑星に<link=\"HEADQUARTERS\">製造ポッド</link>または<link="
+"\"EXOBASEHEADQUARTERS\">ミニポッド</link>がありません"
 
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_NOT_IN_TILES
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_NOT_IN_TILES"
@@ -17318,14 +17467,15 @@ msgstr ""
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_SKILL_STATION
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_SKILL_STATION"
 msgid ""
-"Build a Porta-Pod to unlock this menu\n"
+"Build a Mini-Pod to unlock this menu\n"
 "------------------\n"
-"The <link=\"EXOBASEHEADQUARTERS\">Porta-Pod</link> can be found in the "
+"The <link=\"EXOBASEHEADQUARTERS\">Mini-Pod</link> can be found in the "
 "<b>Base Tab</b> <b><color=#F44A4A>[0]</b></color> of the Build Menu"
 msgstr ""
-"解放するには<style=\"KKeyword\">携帯ポッド</style>を建設してください\n"
+"このメニューを解放するには<style=\"KKeyword\">ミニポッド</style>を建設してく"
+"ださい\n"
 "------------------\n"
-"<style=\"KKeyword\">携帯ポッド</style>は建築メニューの<b>端末タブ</"
+"<style=\"KKeyword\">ミニポッド</style>は建築メニューの<b>端末タブ</"
 "b><b><color=#F44A4A>[0]</b></color>にあります"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_TELESCOPE
@@ -18125,8 +18275,8 @@ msgstr "クリア"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
 "CLEAR_DESTINATION_BUTTON_TOOLTIP"
-msgid "Clear this rocket's destination"
-msgstr "ロケットの目的地をクリアします"
+msgid "Clear this rocket's selected destination"
+msgstr "選択済みのロケット目的地をクリアします"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.FIRSTAVAILABLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.FIRSTAVAILABLE"
@@ -18136,8 +18286,10 @@ msgstr "発射台なし"
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.LOOP_BUTTON_TOOLTIP
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.LOOP_BUTTON_TOOLTIP"
-msgid "Toggle a looping round trip for this rocket"
-msgstr "ロケットの軌道周回を切り替えます"
+msgid ""
+"Toggle a roundtrip flight between this rocket's destination and its original "
+"takeoff location"
+msgstr "このロケットの発射元・目的地間の往復航行を切り替えます"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NONEAVAILABLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NONEAVAILABLE"
@@ -18157,7 +18309,13 @@ msgstr "小惑星"
 #. STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.VIEW_WORLD
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.VIEW_WORLD"
 msgid "Oversee Planetoid"
-msgstr "小惑星の監督"
+msgstr "小惑星の監視"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.VIEW_WORLD_DISABLE_TOOLTIP
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.VIEW_WORLD_DISABLE_TOOLTIP"
+msgid "Enter the planetoid orbit to inspect the surface."
+msgstr "小惑星の軌道に入り、表層を観察します。"
 
 #. STRINGS.UI.UISIDESCREENS.COMETDETECTORSIDESCREEN.ASSIGN_TO_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.COMETDETECTORSIDESCREEN.ASSIGN_TO_TOOLTIP"
@@ -18869,14 +19027,14 @@ msgstr "現在のしきい値: {0}%"
 
 #. STRINGS.UI.UISIDESCREENS.HIGHENERGYPARTICLESPAWNERSIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.HIGHENERGYPARTICLESPAWNERSIDESCREEN.TITLE"
-msgid "High Energy Particle Threshold"
-msgstr "高エネルギー粒子しきい値"
+msgid "HEP Threshold"
+msgstr "HEPしきい値"
 
 #. STRINGS.UI.UISIDESCREENS.HIGHENERGYPARTICLESPAWNERSIDESCREEN.TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.HIGHENERGYPARTICLESPAWNERSIDESCREEN.TOOLTIP"
 msgid ""
 "Emits a <style=\"KKeyword\">High Energy Particle</style> when the stored "
-"particles exceeds <b>{0} particles</b>"
+"particles exceed <b>{0}</b>"
 msgstr ""
 "粒子が<b>{0}</b>を超えると、<style=\"KKeyword\">高エネルギー粒子</style>を放"
 "出します"
@@ -18917,8 +19075,8 @@ msgstr ""
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON_TOOLTIP"
-msgid "3... 2... 1... Blast off!"
-msgstr "3...2...1...発射！"
+msgid "Blast off!"
+msgstr "発射！"
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_REQUESTED_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_REQUESTED_BUTTON"
@@ -18930,7 +19088,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_REQUESTED_BUTTON_TOOLTIP"
 msgid ""
 "This rocket will take off as soon as a Duplicant takes the controls\n"
-"\n"
+"------------------\n"
 "<b>Click to cancel launch</b>"
 msgstr ""
 "このロケットは複製人間が操縦桿を握ればいつでも離陸できます！\n"
@@ -18946,13 +19104,13 @@ msgstr "警告受諾"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_WARNINGS_BUTTON_TOOLTIP"
 msgid ""
-"<b>Some items in the Launch Checklist require attention!</b>\n"
+"Some items in the Launch Checklist require attention!\n"
 "------------------\n"
-"Click to ignore warnings and proceed with launch"
+"<b>Click to ignore warnings and proceed with launch</b>"
 msgstr ""
-"<b>発射チェックリストに事前確認が必要なものがあります！</b>\n"
+"発射チェックリストに事前確認が必要なものがあります！\n"
 "------------------\n"
-"このまま発射してよければクリック"
+"<b>このまま発射してよければクリック</b>"
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.NEW_ROCKET_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.NEW_ROCKET_BUTTON"
@@ -19106,10 +19264,8 @@ msgstr "ビット {0}"
 #. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_DESCRIPTION
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_DESCRIPTION"
-msgid ""
-"Selected <b>Bit</b>'s <b>Signal</b> will be read by the <b>Output Port</b>."
-msgstr ""
-"<b>出力ポート</b>にある指定した<b>ビット</b>の<b>信号</b>が読み込まれます。"
+msgid "Selected <b>Bit's Signal</b> will be read by the <b>Output Port</b>."
+msgstr "<b>出力ポート</b>にある指定した<b>ビットの信号</b>が読み込まれます。"
 
 #. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_TITLE
 msgctxt ""
@@ -19120,8 +19276,8 @@ msgstr "リボンリーダー"
 #. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_DESCRIPTION
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_DESCRIPTION"
-msgid "Received <b>Signal</b> will be written to selected <b>Bit</b>"
-msgstr "受診した<b>信号</b>が指定した<b>ビット</b>に書き込まれます"
+msgid "Received <b>Signal</b> will be written to selected <b>Bit</b>."
+msgstr "受診した<b>信号</b>が指定した<b>ビット</b>に書き込まれます。"
 
 #. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_TITLE
 msgctxt ""
@@ -19486,8 +19642,8 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.MODULEFLIGHTUTILITYSIDESCREEN.REPEAT_BUTTON_TOOLTIP"
 msgid ""
 "Automatically deploy this module's contents when a destination orbit is "
-"reached."
-msgstr "目的地の軌道上に到達すると自動的に展開されます。"
+"reached"
+msgstr "目的地の軌道上に到達すると自動的に展開されます"
 
 #. STRINGS.UI.UISIDESCREENS.MODULEFLIGHTUTILITYSIDESCREEN.SELECT_DUPLICANT
 msgctxt ""
@@ -19927,8 +20083,8 @@ msgid ""
 "Modules cannot be added above this module, or there is no room above to add "
 "a module"
 msgstr ""
-"このモジュール上に新しくモジュールを追加することはできません。またはモジュー"
-"ルを追加するスペースがありません。"
+"このモジュール上に新しくモジュールを追加することができないか、モジュールを追"
+"加するスペースがありません"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONCHANGEMODULE.DESC
 msgctxt ""
@@ -19982,7 +20138,7 @@ msgstr "入れ替えるモジュールがありません"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONVIEWEXTERIOR.DESC"
 msgid "Switch to external world view"
-msgstr "外部の世界視点に切り替えます"
+msgstr "外部の惑星視点に切り替えます"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONVIEWEXTERIOR.INVALID
 msgctxt ""
@@ -20114,8 +20270,8 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.ENGINE_AT_BOTTOM."
 "FAILED"
-msgid "Must install engine module at bottom of rocket"
-msgstr "ロケットの最後尾にエンジンモジュールが必要です"
+msgid "    • Must install at bottom of rocket"
+msgstr "    • ロケットの最後尾に導入する必要があります"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MATERIALS_AVAILABLE.COMPLETE
 msgctxt ""
@@ -20142,8 +20298,8 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_MODULES."
 "FAILED"
-msgid "Exceeds engine's maximum module limit"
-msgstr "エンジンの最大モジュール上限を超過しています"
+msgid "    • Max module limit of engine reached"
+msgstr "    • エンジンのモジュール上限に達しました"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.ONE_COMMAND_PER_ROCKET.COMPLETE
 msgctxt ""
@@ -20156,8 +20312,8 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS."
 "ONE_COMMAND_PER_ROCKET.FAILED"
-msgid "Command module already installed"
-msgstr "制御モジュールは導入済みです"
+msgid "    • Command module already installed"
+msgstr "    • 制御モジュールは導入済みです"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.ONE_ENGINE_PER_ROCKET.COMPLETE
 msgctxt ""
@@ -20170,8 +20326,8 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS."
 "ONE_ENGINE_PER_ROCKET.FAILED"
-msgid "Engine module already installed"
-msgstr "エンジンモジュールは導入済みです"
+msgid "    • Engine module already installed"
+msgstr "    • エンジンモジュールは導入済みです"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.PASSENGER_MODULE_AVAILABLE.COMPLETE
 msgctxt ""
@@ -20184,8 +20340,8 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS."
 "PASSENGER_MODULE_AVAILABLE.FAILED"
-msgid "Maximum number of passenger modules reached"
-msgstr "搭乗者モジュールが上限に達しています"
+msgid "    • Max number of passenger modules installed"
+msgstr "    • 搭乗者モジュールが上限に達しています"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.RESEARCHED.COMPLETE
 msgctxt ""
@@ -20211,8 +20367,8 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.SPACE_AVAILABLE."
 "FAILED"
-msgid "Space above rocket is blocked"
-msgstr "ロケット上部の空間が封鎖されています"
+msgid "    • Space above rocket blocked"
+msgstr "    • ロケット上部の空間が封鎖されています"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.TOP_ONLY.COMPLETE
 msgctxt ""
@@ -20223,8 +20379,8 @@ msgstr ""
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.TOP_ONLY.FAILED
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.TOP_ONLY.FAILED"
-msgid "Must be installed at the top of a rocket"
-msgstr "ロケットの一番上に導入する必要があります"
+msgid "    • Must install at top of rocket"
+msgstr "    • ロケットの一番上に導入する必要があります"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.TITLE"
@@ -21136,7 +21292,7 @@ msgstr "起動"
 #. STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATE_CANCEL
 msgctxt "STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATE_CANCEL"
 msgid "Cancel Activation"
-msgstr "軌道を取り消す"
+msgstr "起動を取り消す"
 
 #. STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATED
 msgctxt "STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATED"
@@ -22494,8 +22650,20 @@ msgstr ""
 
 #. STRINGS.UI.WELCOMEMESSAGEBODY_SPACEDOUT
 msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY_SPACEDOUT"
-msgid "DLC1"
-msgstr "DLC1"
+msgid ""
+"The asteroid we call home has collided with an anomalous planet, decimating "
+"our colony. Rebuilding it is of the utmost importance.\n"
+"\n"
+"I've detected a new cluster of material-rich planetoids in nearby space. If "
+"I can guide the Duplicants through the perils of space travel, we could "
+"build a colony even bigger and better than before."
+msgstr ""
+"我々が家と呼ぶ小惑星は変則惑星と衝突し、コロニーは壊滅的な被害を被った。まず"
+"はその再建が最優先事項だ。\n"
+"\n"
+"近傍宇宙に豊富な素材を含む小惑星クラスターを検知した。危険な宇宙旅行を乗り越"
+"えて複製人間を導くことができれば、以前よりもより良いコロニーを築き上げること"
+"ができるだろう。"
 
 #. STRINGS.UI.WELCOMEMESSAGETITLE
 msgctxt "STRINGS.UI.WELCOMEMESSAGETITLE"
@@ -23007,6 +23175,132 @@ msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
 
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ALLCHORESDIAGNOSTIC.NORMAL"
+#~ msgid "    • {0} total errands"
+#~ msgstr "    • 合計作業数 {0}"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.DEAD_BATTERY"
+#~ msgid "    • Dead battery"
+#~ msgstr "    • 無効バッテリー"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.NORMAL"
+#~ msgid "    • Battery"
+#~ msgstr "    • バッテリー"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BEDDIAGNOSTIC.NORMAL"
+#~ msgid "    • Currently has an adequate amount of beds"
+#~ msgstr "    • 現在、十分な数のベッドがあります"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.NORMAL"
+#~ msgid "    • There is currently adequate oxygen available"
+#~ msgstr "    • 現在十分な量の酸素があります"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.DECORDIAGNOSTIC.LOW"
+#~ msgid "    • Currently has very low Decor levels"
+#~ msgstr "    • 現在の装飾値は極めて低いです"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.DECORDIAGNOSTIC.NORMAL"
+#~ msgid "    • Currently has adequate Decor levels"
+#~ msgstr "    • 現在の装飾値は十分なレベルにあります"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.NORMAL_LANDED"
+#~ msgid "    • Rocket is landed"
+#~ msgstr "    • ロケットは着陸しました"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.WARNING_NO_SPEED"
+#~ msgid "    • Rocket not progressing towards destination"
+#~ msgstr "    • ロケットは目的地に向かっていません"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FOODDIAGNOSTIC.NORMAL"
+#~ msgid "    • Adequate food supply"
+#~ msgstr "    • 十分な量の食糧があります"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.NO_MINIONS_REQUESTED"
+#~ msgid ""
+#~ "    • This diagnostic in not concerned with rockets that don't have their "
+#~ "crew requested"
+#~ msgstr "    • この診断は、乗員のいないロケットを考慮していません"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.NORMAL"
+#~ msgid "    • Currently has adequate power supply"
+#~ msgstr "    • 現在十分な量の電力が供給されています"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETFUELDIAGNOSTIC.NORMAL"
+#~ msgid "    • Rocket has fuel"
+#~ msgstr "    • ロケットには燃料があります"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETOXIDIZERDIAGNOSTIC.NORMAL"
+#~ msgid "    • Oxidizer requirements met"
+#~ msgstr "    • 酸化剤は要件を満たしています"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.NORMAL"
+#~ msgid "    • Currently has an adequate amount of toilets"
+#~ msgstr "    • 現在、十分な数のトイレがあります"
+
+#~ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.TITLE"
+#~ msgid "<b>Welcome to <i>Spaced Out!</i></b>"
+#~ msgstr "<b><i>宇宙進出！</i>にようこそ</b>"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.EXPANSION1ACTIVE."
+#~ "TOOLTIP"
+#~ msgid "FIXME"
+#~ msgstr "直して～"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "DLC EARLY ACCESS!"
+#~ msgstr "DLCアーリーアクセス！"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#~ msgid ""
+#~ "<b><i>Spaced Out!</i> DLC comes to Early Access Dec 2020!</b>\n"
+#~ "\n"
+#~ " • New real-time, multi-world gameplay on brand new Planetoids\n"
+#~ " • New mid-game rocketry technology and modular rocket construction\n"
+#~ " • Completely overhauled Starmap for new rocket expeditions\n"
+#~ " • New critters, resources, tech, biomes and more\n"
+#~ "\n"
+#~ "Check out the full patch notes for more details and instructions on how "
+#~ "to participate!"
+#~ msgstr ""
+#~ "<b><i>宇宙進出！</i>DLCが2020年12月にアーリーアクセス入りしました！</b>\n"
+#~ "\n"
+#~ " • 新しい小惑星による、リアルタイムかつ複数ワールドのゲームプレイ\n"
+#~ " • 新しいゲーム中盤ロケット技術およびモジュール式ロケット構造\n"
+#~ " • 新しいロケット遠征のために完全に作り直された星図\n"
+#~ " • 新しい動物、資源、技術、バイオームなどなど\n"
+#~ "\n"
+#~ "参加方法、遊び方、その他詳細はパッチノート全文を参照してください！"
+
+#~ msgctxt "STRINGS.UI.PRODUCTINFO_UNIQUE_PER_WORLD"
+#~ msgid "Only one {0} per world."
+#~ msgstr "{0}は惑星ごとに一つです。"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.LOOP_BUTTON_TOOLTIP"
+#~ msgid "Toggle a looping round trip for this rocket"
+#~ msgstr "ロケットの軌道周回を切り替えます"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.HIGHENERGYPARTICLESPAWNERSIDESCREEN.TITLE"
+#~ msgid "High Energy Particle Threshold"
+#~ msgstr "高エネルギー粒子しきい値"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON_TOOLTIP"
+#~ msgid "3... 2... 1... Blast off!"
+#~ msgstr "3...2...1...発射！"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_MODULES."
+#~ "FAILED"
+#~ msgid "Exceeds engine's maximum module limit"
+#~ msgstr "エンジンの最大モジュール上限を超過しています"
+
+#~ msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY_SPACEDOUT"
+#~ msgid "DLC1"
+#~ msgstr "DLC1"
+
 #~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERY.NAME"
 #~ msgid "Battery"
 #~ msgstr "バッテリー"
@@ -23094,10 +23388,6 @@ msgstr "砂散布中..."
 #~ msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETPREP_TOOLTIP"
 #~ msgid "Launch Preparation"
 #~ msgstr "発射準備"
-
-#~ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.TITLE"
-#~ msgid "<b>Welcome to Oxygen Not Included!</b>"
-#~ msgstr "<b>Oxygen Not Included にようこそ！</b>"
 
 #~ msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.NEVER"
 #~ msgid "Click to <b>mute</b> this diagnostic"
