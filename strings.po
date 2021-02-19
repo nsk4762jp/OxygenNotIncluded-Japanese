@@ -458,19 +458,34 @@ msgid "Local Colony Lacks {Skills}"
 msgstr "{Skills}スキル不足のコロニー"
 
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP"
+#| msgid ""
+#| "{Skills} Skill required to operate\n"
+#| "------------------\n"
+#| "Open the <b>Skills Panel</b> <b><color=#F44A4A>[L]</b></color> to teach a "
+#| "local Duplicant {Skills}, or bring in a Duplicant with the appropriate "
+#| "skill from another <style=\"KKeyword\">Planetoid</style>"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP"
 msgid ""
 "{Skills} Skill required to operate\n"
 "------------------\n"
-"Open the <b>Skills Panel</b> <b><color=#F44A4A>[L]</b></color> to teach a "
-"local Duplicant {Skills}, or bring in a Duplicant with the appropriate skill "
-"from another <style=\"KKeyword\">Planetoid</style>"
+"Open the <b>Skills Panel</b> <b><color=#F44A4A>[L]</b></color> to teach "
+"{Skills} to a Duplicant"
 msgstr ""
 "操作には{Skills}スキルが必要です\n"
 "------------------\n"
 "<b>スキルパネル</b><b><color=#F44A4A>[L]</b></color>を開き、現地の複製人間に"
 "{Skills}を習得させるか、他の<style=\"KKeyword\">小惑星</style>から適切なスキ"
 "ルを持った複製人間を連れてきましょう"
+
+#. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP_CLUSTER
+msgctxt ""
+"STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP_CLUSTER"
+msgid ""
+" on this Planetoid, or bring in a Duplicant with the appropriate skill from "
+"another Planetoid"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.NAME"
@@ -936,6 +951,29 @@ msgid ""
 msgstr ""
 "この物体は{ElementTypes}を <style=\"produced\">{FlowRate}</style> 産出してい"
 "ます"
+
+#. STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDHIGHPRESSURE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.ALLOWED_TO_DEPRESSURIZE"
+#| msgid "Not currently overpressure"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDHIGHPRESSURE.NAME"
+msgid "Not Emitting: Overpressure"
+msgstr "気圧超過でない"
+
+#. STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDHIGHPRESSURE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDHIGHPRESSURE.TOOLTIP"
+msgid "Ambient pressure is too high for {Element} to be released"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDLOWTEMPERATURE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDLOWTEMPERATURE.NAME"
+msgid "Not Emitting: Too Cold"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDLOWTEMPERATURE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDLOWTEMPERATURE.TOOLTIP"
+msgid "Temperature is too low for {Element} to be released"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGCO2.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGCO2.NAME"
@@ -1996,6 +2034,39 @@ msgid ""
 "operational"
 msgstr "この設備が稼働するには、これらの問題が解決される必要があります"
 
+#. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME"
+msgid "Power From Thruster: {ActiveWattage}/{MaxWattage}"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.TOOLTIP"
+#| msgid ""
+#| "This panel is generating <style=\"produced\">{Wattage}</style> of <style="
+#| "\"KKeyword\">Power</style>"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.TOOLTIP"
+msgid ""
+"Engine will generate <style=\"produced\">{MaxWattage}</style> of <style="
+"\"KKeyword\">Power</style> while travelling through space. Right now, it's "
+"not doing much of anything."
+msgstr ""
+"このパネルは <style=\"produced\">{Wattage}</style> の<style=\"KKeyword\">電力"
+"</style>を生成しています"
+
+#. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.NAME"
+msgid "Power From Thruster: {ActiveWattage}/{MaxWattage}"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.TOOLTIP"
+msgid ""
+"Engine is generating <style=\"produced\">{MaxWattage}</style> of <style="
+"\"KKeyword\">Power</style> extracted from the thruster. It will continue "
+"generating power as long as it's travelling through space."
+msgstr ""
+
 #. STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.NAME"
 msgid "Unreachable Mop"
@@ -2997,11 +3068,14 @@ msgid "No Delivery Destination"
 msgstr "配達先なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP"
+#| msgid ""
+#| "A delivery destination has not been set    • {0}\n"
+#| "\n"
+#| "Set destination for this payload using the "
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP"
-msgid ""
-"A delivery destination has not been set    • {0}\n"
-"\n"
-"Set destination for this payload using the "
+msgid "A delivery destination has not been set    • {0}"
 msgstr ""
 "射出先が指定されていません。    • {0}\n"
 "\n"
@@ -4641,10 +4715,17 @@ msgid "Batteries allow power from generators to be stored for later."
 msgstr "バッテリーは発電機から得られた電力を溜めておくことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERY.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERY.EFFECT"
+#| msgid ""
+#| "Stores <link=\"POWER\">Power</link> from generators, then provides that "
+#| "<link=\"POWER\">Power</link> to buildings.\n"
+#| "\n"
+#| "Loses charge over time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERY.EFFECT"
 msgid ""
 "Stores <link=\"POWER\">Power</link> from generators, then provides that "
-"<link=\"POWER\">Power</link> to buildings.\n"
+"power to buildings.\n"
 "\n"
 "Loses charge over time."
 msgstr ""
@@ -4668,10 +4749,17 @@ msgstr ""
 "きます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT"
+#| msgid ""
+#| "Stores <link=\"POWER\">Power</link> from generators, then provides that "
+#| "<link=\"POWER\">Power</link> to buildings.\n"
+#| "\n"
+#| "Slightly loses charge over time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT"
 msgid ""
 "Stores <link=\"POWER\">Power</link> from generators, then provides that "
-"<link=\"POWER\">Power</link> to buildings.\n"
+"power to buildings.\n"
 "\n"
 "Slightly loses charge over time."
 msgstr ""
@@ -4684,6 +4772,33 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.NAME"
 msgid "<link=\"BATTERYMEDIUM\">Jumbo Battery</link>"
 msgstr "<link=\"BATTERYMEDIUM\">大容量バッテリー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.DESC"
+msgid ""
+"Charging a battery module before takeoff makes it easier to power buildings "
+"during flight."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.EFFECT"
+msgid ""
+"Stores the excess <link=\"POWER\">Power</link> generated by a Rocket Engine "
+"or <link=\"LAUNCHPLATFORM\">Rocket Platform</link>.\n"
+"\n"
+"Provides stored power to <link=\"ROCKETINTERIORPOWERPLUG\">Interior Rocket "
+"Outlets</link>.\n"
+"\n"
+"Loses charge over time."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERY.NAME"
+#| msgid "<link=\"BATTERY\">Battery</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.NAME"
+msgid "<link=\"BATTERYMODULE\">Battery Module</link>"
+msgstr "<link=\"BATTERY\">バッテリー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
@@ -4714,10 +4829,21 @@ msgstr ""
 "style></b>になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT"
+#| msgid ""
+#| "Stores <link=\"POWER\">Power</link> from generators, then provides that "
+#| "<link=\"POWER\">Power</link> to buildings.\n"
+#| "\n"
+#| "Sends a <b><style=\"logic_on\">Green Signal</style></b> or <b><style="
+#| "\"logic_off\">Red Signal</style></b> based on the configuration of the "
+#| "Logic Activation Parameters.\n"
+#| "\n"
+#| "Very slightly loses charge over time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT"
 msgid ""
 "Stores <link=\"POWER\">Power</link> from generators, then provides that "
-"<link=\"POWER\">Power</link> to buildings.\n"
+"power to buildings.\n"
 "\n"
 "Sends a <b><style=\"logic_on\">Green Signal</style></b> or <b><style="
 "\"logic_off\">Red Signal</style></b> based on the configuration of the Logic "
@@ -5585,28 +5711,35 @@ msgstr "<link=\"COSMICRESEARCHCENTER\">仮想プラネタリウム</link>"
 #. STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.DESC"
 msgid ""
-"Duplicants can use this Crafting Table to build various gadgets used in the "
-"colony."
+"Crafting stations allow Duplicants to make oxygen masks to wear in low "
+"breathability areas."
 msgstr ""
-"複製人間はこの工作台でコロニーに必要なありとあらゆる道具を作り出すことができ"
-"ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SUITFABRICATOR.EFFECT"
+#| msgid ""
+#| "Forges protective <link=\"EXOSUIT\">Exosuits</link> for Duplicants to "
+#| "wear.\n"
+#| "\n"
+#| "Duplicants will not fabricate items unless recipes are queued."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.EFFECT"
 msgid ""
-"Duplicants can use this Crafting Table to build various gadgets used in the "
-"colony.\n"
+"Produces items and equipment for Duplicant use.\n"
 "\n"
 "Duplicants will not fabricate items unless recipes are queued."
 msgstr ""
-"複製人間はこの工作台でコロニーに必要なありとあらゆる道具を作り出すことができ"
-"ます。\n"
+"複製人間が着用するための防護 <link=\"EXOSUIT\">EXOスーツ</link>を製造しま"
+"す。\n"
 "\n"
-"レシピがセットされていないと複製人間は製作作業をしません。"
+"レシピがセットされていないと複製人間は製造作業をしません。"
 
 #. STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.NAME"
+#| msgid "<link=\"CRAFTINGTABLE\">Crafting Table</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.NAME"
-msgid "<link=\"CRAFTINGTABLE\">Crafting Table</link>"
+msgid "<link=\"CRAFTINGTABLE\">Crafting Station</link>"
 msgstr "<link=\"CRAFTINGTABLE\">工作台</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.CREATUREDELIVERYPOINT.DESC
@@ -7522,9 +7655,16 @@ msgid "High energy particles are necessary for producing atomic research."
 msgstr "高エネルギー粒子は原子力の研究に必要です。"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.EFFECT"
+#| msgid ""
+#| "Attracts nearby <link=\"RADIATION\">Radiation</link> to generates <style="
+#| "\"KKeyword\">High Energy Particles</style>.\n"
+#| "\n"
+#| "Emits generated particles in the direction of your choosing."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.EFFECT"
 msgid ""
-"Attracts nearby <link=\"RADIATION\">Radiation</link> to generates <style="
+"Attracts nearby <link=\"RADIATION\">Radiation</link> to generate <style="
 "\"KKeyword\">High Energy Particles</style>.\n"
 "\n"
 "Emits generated particles in the direction of your choosing."
@@ -8051,10 +8191,8 @@ msgstr "<link=\"KEROSENEENGINE\">石油エンジン</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.KEROSENEENGINECLUSTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.KEROSENEENGINECLUSTER.DESC"
-msgid ""
-"Rockets can be used to send Duplicants into space and retrieve rare "
-"resources."
-msgstr "ロケットは複製人間を宇宙に送り出し、貴重な資源を回収します。"
+msgid "More powerful rocket engines can propel heavier burdens."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.KEROSENEENGINECLUSTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.KEROSENEENGINECLUSTER.EFFECT"
@@ -11352,6 +11490,45 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALCARGOMODULE.NAME"
 msgid "<link=\"ORBITALCARGOMODULE\">Orbital Cargo Module</link>"
 msgstr "<link=\"ORBITALCARGOMODULE\">軌道貨物モジュール</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCENTER.EFFECT"
+#| msgid ""
+#| "Conducts <link=\"RESEARCH\">Novice Research</link> to unlock new "
+#| "technologies."
+msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT"
+msgid "Conducts <link=\"RESEARCH\">Interstellar Research</link> using ....."
+msgstr ""
+"複製人間が従事している間<link=\"RESEARCH\">初歩の研究</link>を行い、新しい技"
+"術を発明します。"
+
+#. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.COSMICRESEARCHCENTER.NAME"
+#| msgid "<link=\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.NAME"
+msgid "<link=\"ORBITALRESEARCHCENTER\">Orbital Microlab</link>"
+msgstr "<link=\"COSMICRESEARCHCENTER\">仮想プラネタリウム</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.DESC"
 msgid ""
@@ -11478,25 +11655,41 @@ msgstr ""
 "ロケット燃料として、<link=\"LIQUIDOXYGEN\">液体酸素</link>を格納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.NAME"
+#| msgid ""
+#| "<link=\"LIQUIDOXIDIZERTANKCLUSTER\">Large Liquid Oxidizer Tank</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.NAME"
-msgid "<link=\"LIQUIDOXIDIZERTANKCLUSTER\">Large Liquid Oxidizer Tank</link>"
+msgid "<link=\"LIQUIDOXIDIZERTANKCLUSTER\">Liquid Oxidizer Tank</link>"
 msgstr "<link=\"LIQUIDOXIDIZERTANKCLUSTER\">大型液体酸素タンク</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.DESC"
+#| msgid ""
+#| "An Oxygen Mask dock is a handy holding place for an Oxygen Mask when it "
+#| "isn't in use."
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.DESC"
 msgid ""
-"An Oxygen Mask dock is a handy holding place for an Oxygen Mask when it "
-"isn't in use."
+"An oxygen mask dock will store and refill masks while they're not in use."
 msgstr "酸素マスクドックは使用中でない酸素マスクを掛けておける場所です。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.EFFECT"
+#| msgid ""
+#| "Stores <link=\"OXYGENMASK\">Oxygen Masks</link> and refuels them with "
+#| "<link=\"OXYGEN\">Oxygen</link>.\n"
+#| "\n"
+#| "Build next to an <link=\"OXYGENMASKMARKER\">Oxygen Mask Checkpoint</link> "
+#| "to make Duplicants put on an Oxygen Mask when passing by."
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.EFFECT"
 msgid ""
 "Stores <link=\"OXYGENMASK\">Oxygen Masks</link> and refuels them with <link="
 "\"OXYGEN\">Oxygen</link>.\n"
 "\n"
 "Build next to an <link=\"OXYGENMASKMARKER\">Oxygen Mask Checkpoint</link> to "
-"make Duplicants put on an Oxygen Mask when passing by."
+"make Duplicants put on masks when passing by."
 msgstr ""
 "<link=\"OXYGENMASK\">酸素マスク</link>を格納し、<link=\"OXYGEN\">酸素</link>"
 "を充填します。\n"
@@ -11510,13 +11703,17 @@ msgid "<link=\"OXYGENMASKLOCKER\">Oxygen Mask Dock</link>"
 msgstr "<link=\"OXYGENMASKLOCKER\">酸素マスクドック</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.OXYGENMASKMARKER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.JETSUITMARKER.DESC"
+#| msgid ""
+#| "A checkpoint must have a correlating dock built on the opposite side its "
+#| "arrow faces."
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKMARKER.DESC"
 msgid ""
-"A checkpoint must have an oxygen mask dock built on the opposite side its "
+"A checkpoint must have a correlating dock built on the opposite side its "
 "arrow faces."
 msgstr ""
-"チェックポイントが指す向きとは反対側に酸素マスク ドックを設置しなければなりま"
-"せん。"
+"矢印が指す向きとは反対側にジェットスーツドックを設置しなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXYGENMASKMARKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKMARKER.EFFECT"
@@ -12795,6 +12992,191 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETENVELOPEWINDOWTILE.NAME"
 msgid "<link=\"ROCKETENVELOPEWINDOWTILE\">Rocket Window</link>"
 msgstr "<link=\"ROCKETENVELOPEWINDOWTILE\">ロケット窓</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.DESC"
+msgid "It's basically central-vac."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.EFFECT"
+msgid ""
+"Allows <link=\"ELEMENTSGAS\">Gases</link> to be pumped into rocket storage "
+"via <link=\"GASCONDUIT\">Pipes</link>.\n"
+"\n"
+"Sends gas to the first Rocket Module with available space.\n"
+"\n"
+"Must be built within the interior of a Rocket Module."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESGASINPUT"
+#| msgid "<link=\"GASPIPING\">Gas Intake Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.NAME"
+msgid "<link=\"ROCKETINTERIORGASINPUT\">Gas Intake Fitting</link>"
+msgstr "<link=\"GASPIPING\">気体入力パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.DESC"
+msgid "Refreshing breezes on-demand."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.EFFECT"
+msgid ""
+"Allows <link=\"ELEMENTSGAS\">Gases</link> to be drawn from rocket storage "
+"via <link=\"GASCONDUIT\">Pipes</link>.\n"
+"\n"
+"Draws gas from the first Rocket Module with the requested material.\n"
+"\n"
+"Must be built within the interior of a Rocket Module."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESGASOUTPUT"
+#| msgid "<link=\"GASPIPING\">Gas Output Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.NAME"
+msgid "<link=\"ROCKETINTERIORGASOUTPUT\">Gas Output Fitting</link>"
+msgstr "<link=\"GASPIPING\">気体出力パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.DESC"
+msgid "Begone, foul waters!"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.EFFECT"
+msgid ""
+"Allows <link=\"ELEMENTSLIQUID\">Liquids</link> to be pumped into rocket "
+"storage via <link=\"LIQUIDCONDUIT\">Pipes</link>.\n"
+"\n"
+"Sends liquid to the first Rocket Module with available space.\n"
+"\n"
+"Must be built within the interior of a Rocket Module."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESLIQUIDINPUT"
+#| msgid "<link=\"LIQUIDPIPING\">Liquid Intake Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.NAME"
+msgid "<link=\"ROCKETINTERIORLIQUIDINPUT\">Liquid Intake Fitting</link>"
+msgstr "<link=\"LIQUIDPIPING\">液体入力パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.DESC"
+msgid "Now if only we had some water balloons..."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.EFFECT"
+msgid ""
+"Allows <link=\"ELEMENTSLIQUID\">Liquids</link> to be drawn from rocket "
+"storage via <link=\"LIQUIDCONDUIT\">Pipes</link>.\n"
+"\n"
+"Draws liquid from the first Rocket Module with the requested material.\n"
+"\n"
+"Must be built within the interior of a Rocket Module."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESLIQUIDOUTPUT"
+#| msgid "<link=\"LIQUIDPIPING\">Liquid Output Pipe</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.NAME"
+msgid "<link=\"ROCKETINTERIORLIQUIDOUTPUT\">Liquid Output Fitting</link>"
+msgstr "<link=\"LIQUIDPIPING\">液体出力パイプ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.DESC"
+msgid ""
+"Outlets conveniently power buildings inside a cockpit using their rocket's "
+"power stores."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.EFFECT"
+msgid ""
+"Provides <link=\"POWER\">Power</link> to connected buildings.\n"
+"\n"
+"Pulls power from <link=\"BATTERYMODULE\">Battery Modules</link> and Rocket "
+"Engines.\n"
+"\n"
+"Must be built within the interior of a Rocket Module."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDCATEGORIES.POWER.NAME"
+#| msgid "<link=\"BUILDCATEGORYPOWER\">Power</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.NAME"
+msgid "<link=\"ROCKETINTERIORPOWERPLUG\">Power Outlet Fitting</link>"
+msgstr "<link=\"BUILDCATEGORYPOWER\">電力</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.DESC"
+msgid "Why organize your shelves when you can just shove everything in here?"
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.EFFECT"
+#| msgid ""
+#| "Loads <link=\"ELEMENTSSOLID\">Solid Materials</link> onto <link="
+#| "\"SOLIDCONDUIT\">Conveyor Rail</link> for transport.\n"
+#| "\n"
+#| "Only loads the resources of your choosing."
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.EFFECT"
+msgid ""
+"Allows <link=\"ELEMENTSSOLID\">Solid Materials</link> to be moved into "
+"rocket storage via <link=\"SOLIDCONDUIT\">Conveyor Rails</link>.\n"
+"\n"
+"Sends solid material to the first Rocket Module with available space.\n"
+"\n"
+"Must be built within the interior of a Rocket Module."
+msgstr ""
+"輸送用に<link=\"ELEMENTSSOLID\">固形素材</link>を<link=\"SOLIDCONDUIT\">コン"
+"ベアレール</link>に積載します。\n"
+"\n"
+"選んだ資源のみ積載できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.NAME"
+#| msgid "<link=\"SOLIDCONDUITOUTBOX\">Conveyor Receptacle</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.NAME"
+msgid "<link=\"ROCKETINTERIORSOLIDINPUT\">Conveyor Receptacle Fitting</link>"
+msgstr "<link=\"SOLIDCONDUITOUTBOX\">コンベアレセプター</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.ALLRESOURCESSCREEN.FIRST_FRAME_NO_DATA"
+#| msgid "..."
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.DESC"
+msgid "..."
+msgstr "…"
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.EFFECT"
+msgid ""
+"Allows <link=\"ELEMENTSSOLID\">Solid Materials</link> to be moved out of "
+"rocket storage via <link=\"SOLIDCONDUIT\">Conveyor Rails</link>.\n"
+"\n"
+"Draws solid material from the first Rocket Module with the requested "
+"material.\n"
+"\n"
+"Must be built within the interior of a Rocket Module."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.NAME"
+#| msgid "<link=\"SOLIDCONDUITINBOX\">Conveyor Loader</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.NAME"
+msgid "<link=\"ROCKETINTERIORSOLIDOUTPUT\">Conveyor Loader Fitting</link>"
+msgstr "<link=\"SOLIDCONDUITINBOX\">コンベアローダー</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.ROCKETPOD.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETPOD.DESC"
 msgid "The Duplicant inside is equal parts nervous and excited."
@@ -14029,13 +14411,17 @@ msgid "<link=\"SUITLOCKER\">Atmo Suit Dock</link>"
 msgstr "<link=\"SUITLOCKER\">アトモスーツ ドック</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SUITMARKER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.JETSUITMARKER.DESC"
+#| msgid ""
+#| "A checkpoint must have a correlating dock built on the opposite side its "
+#| "arrow faces."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SUITMARKER.DESC"
 msgid ""
-"A checkpoint must have an atmo suit dock built on the opposite side its "
+"A checkpoint must have a correlating dock built on the opposite side its "
 "arrow faces."
 msgstr ""
-"チェックポイントが指す向きとは反対側にアトモスーツ ドックを設置しなければなり"
-"ません。"
+"矢印が指す向きとは反対側にジェットスーツドックを設置しなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.SUITMARKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SUITMARKER.EFFECT"
@@ -14101,6 +14487,15 @@ msgstr ""
 "希少素材は宇宙ミッションを通じて手に入れることができます。\n"
 "\n"
 "レシピがセットされていないと複製人間は製作作業をしません。"
+
+#. STRINGS.BUILDINGS.PREFABS.SUPERMATERIALREFINERY.FULLERENE_RECIPE_DESCRIPTION
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.SUPERMATERIALREFINERY.FULLERENE_RECIPE_DESCRIPTION"
+msgid ""
+"Fullerene is a <link=\"ELEMENTSSOLID\">Solid Material</link> useful in "
+"creating <link=\"<LINK=\"SUPERCOOLANT\">SUPER COOLANT</LINK>\">Super "
+"Coolant</link>."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.SUPERMATERIALREFINERY.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SUPERMATERIALREFINERY.NAME"
@@ -26315,6 +26710,23 @@ msgctxt "STRINGS.CREATURES.SPECIES.SALTPLANT.NAME"
 msgid "<link=\"SALTPLANT\">Dasha Saltvine</link>"
 msgstr "<link=\"SALTPLANT\">ダーシャ シオカズラ</link>"
 
+#. STRINGS.CREATURES.SPECIES.SAPTREE.DESC
+msgctxt "STRINGS.CREATURES.SPECIES.SAPTREE.DESC"
+msgid ""
+"An <link=\"ISORESIN\">Isoresin</link>-producing, cybernetic tree that shows "
+"signs of sentience.\n"
+"\n"
+"It is rooted firmly in place, and appears to have been here for some time."
+msgstr ""
+
+#. STRINGS.CREATURES.SPECIES.SAPTREE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.CEMENT.NAME"
+#| msgid "<link=\"CEMENT\">Cement</link>"
+msgctxt "STRINGS.CREATURES.SPECIES.SAPTREE.NAME"
+msgid "<link=\"SAPTREE\">Experiment 52B</link>"
+msgstr "<link=\"CEMENT\">セメント</link>"
+
 # 塩水と濃塩水の両方を含む表現なので修正しました
 #. STRINGS.CREATURES.SPECIES.SEALETTUCE.DESC
 msgctxt "STRINGS.CREATURES.SPECIES.SEALETTUCE.DESC"
@@ -27996,8 +28408,11 @@ msgid "Foraging for Materials"
 msgstr "素材採集中"
 
 #. STRINGS.CREATURES.STATUSITEMS.FORAGINGMATERIAL.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.FORAGINGMATERIAL.TOOLTIP"
+#| msgid "This critter is foraging materials for later use."
 msgctxt "STRINGS.CREATURES.STATUSITEMS.FORAGINGMATERIAL.TOOLTIP"
-msgid "This critter is foraging materials for later use."
+msgid "This critter is stocking up on supplies for later use"
 msgstr "この動物はは後で使うために素材を採集しています。"
 
 #. STRINGS.CREATURES.STATUSITEMS.FRESH.NAME
@@ -30981,13 +31396,12 @@ msgid "Overjoyed"
 msgstr "歓喜"
 
 #. STRINGS.DUPLICANTS.CHORES.JOYREACTION.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.HEAL.TOOLTIP"
+#| msgid "This Duplicant is taking some time to recover from their wounds"
 msgctxt "STRINGS.DUPLICANTS.CHORES.JOYREACTION.TOOLTIP"
-msgid ""
-"This Duplicant is doing something because they are <style=\"KKeyword"
-"\">Overjoyed</style>"
-msgstr ""
-"この複製人間は<style=\"KKeyword\">歓喜</style>しているため何かしらのアクショ"
-"ンを起こしています"
+msgid "This Duplicant is taking a moment to relish in their own happiness"
+msgstr "この複製人間は傷を癒すために休憩しています"
 
 #. STRINGS.DUPLICANTS.CHORES.LEARNSKILL.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.LEARNSKILL.NAME"
@@ -31042,13 +31456,19 @@ msgid ""
 msgstr "この複製人間は要求された場所へ操作用の素材を配達中です"
 
 #. STRINGS.DUPLICANTS.CHORES.MIGRATE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.MIGRATE.NAME"
+#| msgid "Use Teleportal"
 msgctxt "STRINGS.DUPLICANTS.CHORES.MIGRATE.NAME"
-msgid "Use Teleportal"
+msgid "Use Teleporter"
 msgstr "テレポータル使用"
 
 #. STRINGS.DUPLICANTS.CHORES.MIGRATE.STATUS
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.MIGRATE.STATUS"
+#| msgid "Using Teleportal"
 msgctxt "STRINGS.DUPLICANTS.CHORES.MIGRATE.STATUS"
-msgid "Using Teleportal"
+msgid "Using Teleporter"
 msgstr "テレポータル使用中"
 
 #. STRINGS.DUPLICANTS.CHORES.MIGRATE.TOOLTIP
@@ -32892,6 +33312,21 @@ msgid ""
 msgstr ""
 "\n"
 "•  詳細は感染した物体を選んでください"
+
+#. STRINGS.DUPLICANTS.DISEASES.MEDICINE.BOOSTER
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.TUNGSTEN.NAME"
+#| msgid "<link=\"TUNGSTEN\">Tungsten</link>"
+msgctxt "STRINGS.DUPLICANTS.DISEASES.MEDICINE.BOOSTER"
+msgid "<link=\"IMMUNE SYSTEM\">Immune Booster</link>"
+msgstr "<link=\"TUNGSTEN\">タングステン</link>"
+
+#. STRINGS.DUPLICANTS.DISEASES.MEDICINE.BOOSTER_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.DISEASES.MEDICINE.BOOSTER_TOOLTIP"
+msgid ""
+"Boosters can be taken by both healthy and sick Duplicants to prevent "
+"potential disease"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.DISEASES.MEDICINE.CURES
 msgctxt "STRINGS.DUPLICANTS.DISEASES.MEDICINE.CURES"
@@ -37067,10 +37502,15 @@ msgid "<link=\"RANCHER\">Critter Ranching I</link>"
 msgstr "<link=\"RANCHER\">畜産 I</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.RESEARCHER.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.RESEARCHER.DESCRIPTION"
+#| msgid ""
+#| "Duplicants can perform studies on <style=\"KKeyword\">Geysers</style>, "
+#| "<style=\"KKeyword\">Planetoid</style>, and other geographical phenomena"
 msgctxt "STRINGS.DUPLICANTS.ROLES.RESEARCHER.DESCRIPTION"
 msgid ""
 "Duplicants can perform studies on <style=\"KKeyword\">Geysers</style>, "
-"<style=\"KKeyword\">Planetoid</style>, and other geographical phenomena"
+"Planetoid, and other geographical phenomena"
 msgstr ""
 "複製人間は<style=\"KKeyword\">間欠泉</style>や<style=\"KKeyword\">小惑星</"
 "style>、他の現象を調査できます"
@@ -37174,6 +37614,19 @@ msgstr "複製人間がロケットを速く飛ばせるようになります"
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_ROCKETPILOT.NAME"
 msgid "<link=\"SENIORPILOT\">Rocket Piloting II</link>"
 msgstr "<link=\"SENIORPILOT\">ロケット操縦 II</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.DESCRIPTION"
+msgid "Enables Duplicants to perform experiments inside a launched rocket"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.RESEARCH.ARCHETYPE_NAME"
+#| msgid "Researcher"
+msgctxt "STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.NAME"
+msgid "Orbital Researcher"
+msgstr "研究者"
 
 #. STRINGS.DUPLICANTS.ROLES.SUIT_EXPERT.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SUIT_EXPERT.DESCRIPTION"
@@ -37723,9 +38176,12 @@ msgid "This Duplicant is cooking up a tasty <b>{Item}</b>"
 msgstr "この複製人間は美味しい <b>{Item}</b>を調理中です"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.COUGHING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CONTAMINATEDLUNGS.NAME"
+#| msgid "Yucky Lungs"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COUGHING.NAME"
-msgid "Coughing"
-msgstr "咳をしている"
+msgid "Yucky Lungs Coughing"
+msgstr "息苦しさ"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.COUGHING.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COUGHING.TOOLTIP"
@@ -39938,10 +40394,15 @@ msgid "Shabby Dresser"
 msgstr "ヨレヨレの服"
 
 #. STRINGS.DUPLICANTS.TRAITS.DECORUP.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.DECORUP.DESC"
+#| msgid ""
+#| "This Duplicant's radiant self-confidence makes even the rattiest outfits "
+#| "look trendy on them"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DECORUP.DESC"
 msgid ""
 "This Duplicant's radiant self-confidence makes even the rattiest outfits "
-"look trendy on them"
+"look trendy"
 msgstr ""
 "この複製人間の輝く自信は、身に纏う襤褸切れですら流行の最先端に見せることがで"
 "きます"
@@ -39952,8 +40413,11 @@ msgid "Innately Stylish"
 msgstr "粋な人"
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC"
+#| msgid "This Duplicant has a frankly impressive ability to hold this breath"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC"
-msgid "This Duplicant has a frankly impressive ability to hold this breath"
+msgid "This Duplicant has a frankly impressive ability to hold their breath"
 msgstr "この複製人間は息を止めることにおいて素晴らしい能力を持っています"
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.NAME
@@ -40828,10 +41292,15 @@ msgstr ""
 "\"KKeyword\">スキル</style>の恩恵を受けられます"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.DESC"
+#| msgid ""
+#| "Duplicants can perform studies on <style=\"KKeyword\">Geysers</style>, "
+#| "<style=\"KKeyword\">Planetoid</style>, and other geographical phenomena"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.DESC"
 msgid ""
 "Duplicants can perform studies on <style=\"KKeyword\">Geysers</style>, "
-"<style=\"KKeyword\">Planetoid</style>, and other geographical phenomena"
+"Planetoid, and other geographical phenomena"
 msgstr ""
 "複製人間は<style=\"KKeyword\">間欠泉</style>や<style=\"KKeyword\">小惑星</"
 "style>、他の現象を調査できます"
@@ -42404,6 +42873,23 @@ msgctxt "STRINGS.ELEMENTS.GRANITE.NAME"
 msgid "<link=\"GRANITE\">Granite</link>"
 msgstr "<link=\"GRANITE\">花崗岩</link>"
 
+#. STRINGS.ELEMENTS.GRAPHITE.DESC
+msgctxt "STRINGS.ELEMENTS.GRAPHITE.DESC"
+msgid ""
+"(C) Graphite is the most stable form of carbon.\n"
+"\n"
+"It is useful as a <b>Construction Material</b> where high thermal "
+"conducitivty matters."
+msgstr ""
+
+#. STRINGS.ELEMENTS.GRAPHITE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.GRANITE.NAME"
+#| msgid "<link=\"GRANITE\">Granite</link>"
+msgctxt "STRINGS.ELEMENTS.GRAPHITE.NAME"
+msgid "<link=\"GRAPHITE\">Graphite</link>"
+msgstr "<link=\"GRANITE\">花崗岩</link>"
+
 #. STRINGS.ELEMENTS.HARDNESS.FIRM
 msgctxt "STRINGS.ELEMENTS.HARDNESS.FIRM"
 msgid "{0} (Firm)"
@@ -43528,6 +44014,21 @@ msgctxt "STRINGS.ELEMENTS.REGOLITH.NAME"
 msgid "<link=\"REGOLITH\">Regolith</link>"
 msgstr "<link=\"REGOLITH\">表土</link>"
 
+#. STRINGS.ELEMENTS.RESIN.DESC
+msgctxt "STRINGS.ELEMENTS.RESIN.DESC"
+msgid ""
+"Sticky tree goo. When the moisture is boiled from it, it will polymerize "
+"into Isoresin."
+msgstr ""
+
+#. STRINGS.ELEMENTS.RESIN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.ISORESIN.NAME"
+#| msgid "<link=\"ISORESIN\">Isoresin</link>"
+msgctxt "STRINGS.ELEMENTS.RESIN.NAME"
+msgid "<link=\"RESIN\">Resin</link>"
+msgstr "<link=\"ISORESIN\">イソレジン</link>"
+
 #. STRINGS.ELEMENTS.ROCKGAS.DESC
 msgctxt "STRINGS.ELEMENTS.ROCKGAS.DESC"
 msgid ""
@@ -43883,6 +44384,19 @@ msgstr ""
 msgctxt "STRINGS.ELEMENTS.SOLIDPROPANE.NAME"
 msgid "<link=\"SOLIDPROPANE\">Propane</link>"
 msgstr "<link=\"SOLIDPROPANE\">プロパン</link>"
+
+#. STRINGS.ELEMENTS.SOLIDRESIN.DESC
+msgctxt "STRINGS.ELEMENTS.SOLIDRESIN.DESC"
+msgid "Solid sticky tree goo."
+msgstr ""
+
+#. STRINGS.ELEMENTS.SOLIDRESIN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.ISORESIN.NAME"
+#| msgid "<link=\"ISORESIN\">Isoresin</link>"
+msgctxt "STRINGS.ELEMENTS.SOLIDRESIN.NAME"
+msgid "<link=\"SOLIDRESIN\">Resin</link>"
+msgstr "<link=\"ISORESIN\">イソレジン</link>"
 
 #. STRINGS.ELEMENTS.SOLIDSUPERCOOLANT.DESC
 msgctxt "STRINGS.ELEMENTS.SOLIDSUPERCOOLANT.DESC"
@@ -48386,6 +48900,21 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.AVAILABLE.TOOLTIP"
 msgid "These resources have become available:"
 msgstr "これらの資源は利用可能になりました:"
 
+#. STRINGS.MISC.NOTIFICATIONS.BADROCKETPATH.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME"
+#| msgid "Launcher Path Blocked"
+msgctxt "STRINGS.MISC.NOTIFICATIONS.BADROCKETPATH.NAME"
+msgid "Rocket Path Blocked"
+msgstr "射出軌道阻害"
+
+#. STRINGS.MISC.NOTIFICATIONS.BADROCKETPATH.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.BADROCKETPATH.TOOLTIP"
+msgid ""
+"A rocket has had its flight plan interrupted by a new discovery. Its path "
+"can be reassigned on the Starmap screen."
+msgstr ""
+
 #. STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BASICCONTROLS.MESSAGEBODY"
 msgid ""
@@ -49991,9 +50520,14 @@ msgid "Notes on getting Duplicants to do my bidding"
 msgstr "複製人間へ指示を出すときの覚書"
 
 #. STRINGS.MISC.NOTIFICATIONS.WORLDDETECTED.MESSAGEBODY
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.WORLDDETECTED.MESSAGEBODY"
+#| msgid ""
+#| "The Duplicants' astrological efforts have uncovered new Planetoids:\n"
+#| "{0}"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.WORLDDETECTED.MESSAGEBODY"
 msgid ""
-"The Duplicants' astrological efforts have uncovered new Planetoids:\n"
+"The Duplicants' astronomical efforts have uncovered new Planetoids:\n"
 "{0}"
 msgstr ""
 "複製人間たちの占星術は、新しい小惑星を発見しました:\n"
@@ -53716,9 +54250,12 @@ msgid "Nobody here..."
 msgstr "誰もいない…"
 
 #. STRINGS.NAMEGEN.WORLD.NO_DUPES_ON_PLANET_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.NO_MINIONS"
+#| msgid "    • There are no Duplicants on this {0}"
 msgctxt "STRINGS.NAMEGEN.WORLD.NO_DUPES_ON_PLANET_TOOLTIP"
-msgid "There are no Duplicants on this <style=\"KKeyword\">Planetoid</style>"
-msgstr "この<style=\"KKeyword\">小惑星</style>には複製人間がいません"
+msgid "There are no Duplicants on this Planetoid"
+msgstr "    • {0} に複製人間は存在しません"
 
 #. STRINGS.NAMEGEN.WORLD.PLANETOID_PREFIX
 msgctxt "STRINGS.NAMEGEN.WORLD.PLANETOID_PREFIX"
@@ -53867,6 +54404,13 @@ msgstr ""
 "バーン\n"
 "チャー\n"
 
+#. STRINGS.NAMEGEN.WORLD.ROOTS.MOO
+msgctxt "STRINGS.NAMEGEN.WORLD.ROOTS.MOO"
+msgid ""
+"Moo\n"
+"Gas\n"
+msgstr ""
+
 #. STRINGS.NAMEGEN.WORLD.ROOTS.OILY
 msgctxt "STRINGS.NAMEGEN.WORLD.ROOTS.OILY"
 msgid ""
@@ -53966,6 +54510,13 @@ msgstr ""
 "フリッジ\n"
 "フロスト\n"
 
+#. STRINGS.NAMEGEN.WORLD.ROOTS.WATER
+msgctxt "STRINGS.NAMEGEN.WORLD.ROOTS.WATER"
+msgid ""
+"Wat\n"
+"Au\n"
+msgstr ""
+
 #. STRINGS.NAMEGEN.WORLD.SUFFIXES.GENERICLIST
 msgctxt "STRINGS.NAMEGEN.WORLD.SUFFIXES.GENERICLIST"
 msgid ""
@@ -54017,8 +54568,11 @@ msgstr ""
 "ボ\n"
 
 #. STRINGS.NAMEGEN.WORLD.WORLDDIVIDER_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.WORLD.WORLDDIVIDER_TOOLTIP"
+#| msgid "Duplicants on the <style=\"KKeyword\">Planetoid</style> {0}"
 msgctxt "STRINGS.NAMEGEN.WORLD.WORLDDIVIDER_TOOLTIP"
-msgid "Duplicants on the <style=\"KKeyword\">Planetoid</style> {0}"
+msgid "Duplicants on the Planetoid {0}"
 msgstr "<style=\"KKeyword\">小惑星</style> {0} 上の複製人間"
 
 #. STRINGS.RESEARCH.MESSAGING.DLC.EXPANSION1
@@ -54192,10 +54746,15 @@ msgid "<style=\"KKeyword\">Lead Suit</style> Pattern"
 msgstr "<style=\"KKeyword\">鉛スーツ</style>パターン"
 
 #. STRINGS.RESEARCH.OTHER_TECH_ITEMS.OXYGEN_MASK.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.OTHER_TECH_ITEMS.OXYGEN_MASK.DESC"
+#| msgid ""
+#| "Enables fabrication of <style=\"KKeyword\">Oxygen Masks</style> at the "
+#| "<link=\"CRAFTINGTABLE\">Crafting Table</link>"
 msgctxt "STRINGS.RESEARCH.OTHER_TECH_ITEMS.OXYGEN_MASK.DESC"
 msgid ""
 "Enables fabrication of <style=\"KKeyword\">Oxygen Masks</style> at the <link="
-"\"CRAFTINGTABLE\">Crafting Table</link>"
+"\"CRAFTINGTABLE\">Crafting Station</link>"
 msgstr ""
 "<link=\"CRAFTINGTABLE\">作業台</link>で<style=\"KKeyword\">酸素マスク</style>"
 "を製造できます"
@@ -54599,6 +55158,19 @@ msgctxt "STRINGS.RESEARCH.TECHS.FOODREPURPOSING.NAME"
 msgid "<link=\"FOODREPURPOSING\">Food Repurposing</link>"
 msgstr "<link=\"FOODREPURPOSING\">食糧の再利用</link>"
 
+#. STRINGS.RESEARCH.TECHS.GASDISTRIBUTION.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.GASDISTRIBUTION.DESC"
+msgid "Internal rocket hookups for gas resources"
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.GASDISTRIBUTION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.DISTILLATION.NAME"
+#| msgid "<link=\"DISTILLATION\">Distillation</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.GASDISTRIBUTION.NAME"
+msgid "<link=\"GASDISTRIBUTION\">Gas Distribution</link>"
+msgstr "<link=\"DISTILLATION\">蒸留</link>"
+
 #. STRINGS.RESEARCH.TECHS.GASPIPING.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.GASPIPING.DESC"
 msgid ""
@@ -54765,6 +55337,19 @@ msgstr "複製人間が得たスキルポイントを、新たな特性や能力
 msgctxt "STRINGS.RESEARCH.TECHS.JOBS.NAME"
 msgid "<link=\"JOBS\">Employment</link>"
 msgstr "<link=\"JOBS\">職業</link>"
+
+#. STRINGS.RESEARCH.TECHS.LIQUIDDISTRIBUTION.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.LIQUIDDISTRIBUTION.DESC"
+msgid "Internal rocket hookups for liquid resources"
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.LIQUIDDISTRIBUTION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.NAME"
+#| msgid "<link=\"LIQUIDFILTER\">Liquid Filter</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.LIQUIDDISTRIBUTION.NAME"
+msgid "<link=\"LIQUIDDISTRIBUTION\">Liquid Distribution</link>"
+msgstr "<link=\"LIQUIDFILTER\">液体フィルター</link>"
 
 #. STRINGS.RESEARCH.TECHS.LIQUIDFILTERING.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.LIQUIDFILTERING.DESC"
@@ -54948,13 +55533,19 @@ msgid "<link=\"PLASTICS\">Plastic Manufacturing</link>"
 msgstr "<link=\"PLASTICS\">プラスチック製造</link>"
 
 #. STRINGS.RESEARCH.TECHS.PORTABLEGASSES.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.PORTABLEGASSES.DESC"
+#| msgid "Unlock technologies to easily move gasses around your colony."
 msgctxt "STRINGS.RESEARCH.TECHS.PORTABLEGASSES.DESC"
-msgid "Unlock technologies to easily move gasses around your colony."
+msgid "Unlock technologies to easily move gases around your colony."
 msgstr "コロニー周辺の気体を簡単に移動させる技術を発明します。"
 
 #. STRINGS.RESEARCH.TECHS.PORTABLEGASSES.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.PORTABLEGASSES.NAME"
+#| msgid "<link=\"PORTABLEGASSES\">Portable Gasses</link>"
 msgctxt "STRINGS.RESEARCH.TECHS.PORTABLEGASSES.NAME"
-msgid "<link=\"PORTABLEGASSES\">Portable Gasses</link>"
+msgid "<link=\"PORTABLEGASSES\">Portable Gases</link>"
 msgstr "<link=\"PORTABLEGASSES\">運搬可能な気体</link>"
 
 #. STRINGS.RESEARCH.TECHS.POWERREGULATION.DESC
@@ -55139,6 +55730,19 @@ msgctxt "STRINGS.RESEARCH.TECHS.SMELTING.NAME"
 msgid "<link=\"SMELTING\">Smelting</link>"
 msgstr "<link=\"SMELTING\">精錬</link>"
 
+#. STRINGS.RESEARCH.TECHS.SOLIDDISTRIBUTION.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.SOLIDDISTRIBUTION.DESC"
+msgid "Internal rocket hookups for solid resources"
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.SOLIDDISTRIBUTION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.DISTILLATION.NAME"
+#| msgid "<link=\"DISTILLATION\">Distillation</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.SOLIDDISTRIBUTION.NAME"
+msgid "<link=\"SOLIDDISTRIBUTION\">Solid Distribution</link>"
+msgstr "<link=\"DISTILLATION\">蒸留</link>"
+
 #. STRINGS.RESEARCH.TECHS.SOLIDMANAGEMENT.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.SOLIDMANAGEMENT.DESC"
 msgid "Make solid decisions in <link=\"ELEMENTSSOLID\">Solid</link> sorting."
@@ -55162,6 +55766,19 @@ msgstr ""
 msgctxt "STRINGS.RESEARCH.TECHS.SOLIDTRANSPORT.NAME"
 msgid "<link=\"SOLIDTRANSPORT\">Solid Transport</link>"
 msgstr "<link=\"SOLIDTRANSPORT\">固体輸送</link>"
+
+#. STRINGS.RESEARCH.TECHS.SPACEPOWER.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.SPACEPOWER.DESC"
+msgid "It's like power... in space!"
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.SPACEPOWER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.SPACEPROGRAM.NAME"
+#| msgid "<link=\"SPACEPROGRAM\">Space Program</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.SPACEPOWER.NAME"
+msgid "<link=\"SPACEPOWER\">Space Power</link>"
+msgstr "<link=\"SPACEPROGRAM\">宇宙計画</link>"
 
 #. STRINGS.RESEARCH.TECHS.SPACEPROGRAM.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.SPACEPROGRAM.DESC"
@@ -55374,10 +55991,13 @@ msgid "Robots"
 msgstr "ロボット"
 
 #. STRINGS.ROBOTS.MODELS.SCOUT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ROBOTS.MODELS.SCOUT.DESC"
+#| msgid ""
+#| "A curious bot that can remotely explore new <style=\"KKeyword"
+#| "\">Planetoid</style> locations."
 msgctxt "STRINGS.ROBOTS.MODELS.SCOUT.DESC"
-msgid ""
-"A curious bot that can remotely explore new <style=\"KKeyword\">Planetoid</"
-"style> locations."
+msgid "A curious bot that can remotely explore new Planetoid locations."
 msgstr ""
 "新しい<style=\"KKeyword\">小惑星</style>を遠距離から探索できる凄いやつです。"
 
@@ -56420,9 +57040,16 @@ msgstr ""
 "る本質的に危険なものは何もない。探索しても安全なはずだ。"
 
 #. STRINGS.SUBWORLDS.FOREST.DESC
+#, fuzzy
+#| msgctxt "STRINGS.SUBWORLDS.FOREST.DESC"
+#| msgid ""
+#| "Temperate and filled with unique <link=\"PLANTS\">plant life</link>, this "
+#| "biome contains all the necessities for life support, although not in "
+#| "quantities sufficient to sustain a long term colony. Exploration into "
+#| "neighboring biomes should be a priority."
 msgctxt "STRINGS.SUBWORLDS.FOREST.DESC"
 msgid ""
-"Temperate and filled with unique <link=\"PLANTS\">plant life</link>, this "
+"Temperate and filled with unique <link=\"PLANTS\">Plant</link> life, this "
 "biome contains all the necessities for life support, although not in "
 "quantities sufficient to sustain a long term colony. Exploration into "
 "neighboring biomes should be a priority."
@@ -58681,9 +59308,12 @@ msgid "Planetoid"
 msgstr "小惑星"
 
 #. STRINGS.UI.CLUSTERMAP.PLANETOID_KEYWORD
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.PLANETOID"
+#| msgid "Planetoid"
 msgctxt "STRINGS.UI.CLUSTERMAP.PLANETOID_KEYWORD"
-msgid "<style=\"KKeyword\">Planetoid</style>"
-msgstr "<style=\"KKeyword\">小惑星</style>"
+msgid "Planetoid"
+msgstr "小惑星"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.BURDEN_MODULE.NAME
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.BURDEN_MODULE.NAME"
@@ -58731,8 +59361,11 @@ msgid "Max Modules: "
 msgstr "最大モジュール数: "
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_MODULES.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_MODULES.TOOLTIP"
+#| msgid "The {0} can support a maximum of {1} modules (including itself)"
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_MODULES.TOOLTIP"
-msgid "The {0} can support a maximum of {1} modules (including itself)"
+msgid "The {0} can support {1} rocket modules, plus itself"
 msgstr "{0}は(自身を含む)最大 {1} 個のモジュールを接続できます"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.NAME
@@ -58837,10 +59470,19 @@ msgstr ""
 "ジュール</link>で宇宙解析が可能です"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_NO_LAUNCH_PAD
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_NO_LAUNCH_PAD"
+#| msgid ""
+#| "There is no <link=\"LAUNCHPLATFORM\">Rocket Platform</link> on this "
+#| "<style=\"KKeyword\">Planetoid</style> for a rocket to land on\n"
+#| "\n"
+#| "Use a <link=\"PIONEERMODULE\">Trailblazer Module</link> or <link="
+#| "\"SCOUTMODULE\">Rover's Module</link> to deploy a scout and make first "
+#| "contact"
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_NO_LAUNCH_PAD"
 msgid ""
-"There is no <link=\"LAUNCHPLATFORM\">Rocket Platform</link> on this <style="
-"\"KKeyword\">Planetoid</style> for a rocket to land on\n"
+"There is no <link=\"LAUNCHPLATFORM\">Rocket Platform</link> on this "
+"Planetoid for a rocket to land on\n"
 "\n"
 "Use a <link=\"PIONEERMODULE\">Trailblazer Module</link> or <link="
 "\"SCOUTMODULE\">Rover's Module</link> to deploy a scout and make first "
@@ -58853,10 +59495,17 @@ msgstr ""
 "\"SCOUTMODULE\">ローバーモジュール</link>を使用してください"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_NO_PATH
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_NO_PATH"
+#| msgid ""
+#| "There is no navigable rocket path to this <style=\"KKeyword\">Planetoid</"
+#| "style>\n"
+#| "\n"
+#| "Space can be analyzed with a <link=\"TELESCOPE\">Telescope</link> or "
+#| "<link=\"SCANNERMODULE\">Cartographic Module</link> to clear the way"
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_NO_PATH"
 msgid ""
-"There is no navigable rocket path to this <style=\"KKeyword\">Planetoid</"
-"style>\n"
+"There is no navigable rocket path to this Planetoid\n"
 "\n"
 "Space can be analyzed with a <link=\"TELESCOPE\">Telescope</link> or <link="
 "\"SCANNERMODULE\">Cartographic Module</link> to clear the way"
@@ -58867,8 +59516,11 @@ msgstr ""
 "ジュール</link>で宇宙解析が可能です"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_REQUIRE_ASTEROID
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_REQUIRE_ASTEROID"
+#| msgid "Must select a <style=\"KKeyword\">Planetoid</style> destination"
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_REQUIRE_ASTEROID"
-msgid "Must select a <style=\"KKeyword\">Planetoid</style> destination"
+msgid "Must select a Planetoid destination"
 msgstr "目的地となる<style=\"KKeyword\">小惑星</style>を指定してください"
 
 #. STRINGS.UI.CLUSTERMAP.UNKNOWN_DESTINATION
@@ -59157,6 +59809,39 @@ msgstr "{0} x {1}{2}"
 msgctxt "STRINGS.UI.CODEX.SEARCH_HEADER"
 msgid "Search Database"
 msgstr "データベースを検索"
+
+#. STRINGS.UI.CODEX.SUBWORLDS.CRITTERS
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.CREATURE"
+#| msgid "Critters"
+msgctxt "STRINGS.UI.CODEX.SUBWORLDS.CRITTERS"
+msgid "Critters"
+msgstr "動物"
+
+# 直訳だと微妙かもしれない
+#. STRINGS.UI.CODEX.SUBWORLDS.ELEMENTS
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.ELEMENT"
+#| msgid "Element"
+msgctxt "STRINGS.UI.CODEX.SUBWORLDS.ELEMENTS"
+msgid "Elements"
+msgstr "要素"
+
+#. STRINGS.UI.CODEX.SUBWORLDS.NONE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CONGENITALTRAITS.NONE.NAME"
+#| msgid "None"
+msgctxt "STRINGS.UI.CODEX.SUBWORLDS.NONE"
+msgid "None"
+msgstr "なし"
+
+#. STRINGS.UI.CODEX.SUBWORLDS.PLANTS
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.PLANTS"
+#| msgid "Plants"
+msgctxt "STRINGS.UI.CODEX.SUBWORLDS.PLANTS"
+msgid "Plants"
+msgstr "植物"
 
 #. STRINGS.UI.CODEX.TIPS
 msgctxt "STRINGS.UI.CODEX.TIPS"
@@ -59833,8 +60518,13 @@ msgid "Copy"
 msgstr "コピー"
 
 #. STRINGS.UI.COPY_BUILDING_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.COPY_BUILDING_TOOLTIP"
+#| msgid "Create new build orders based off the selected building. {Hotkey}"
 msgctxt "STRINGS.UI.COPY_BUILDING_TOOLTIP"
-msgid "Create new build orders based off the selected building. {Hotkey}"
+msgid ""
+"Create new build orders using the current building selection as a template. "
+"{Hotkey}"
 msgstr "選択した設備を元に、新しい設備の建設命令を出します。{Hotkey}"
 
 #. STRINGS.UI.CRAFT
@@ -60072,6 +60762,14 @@ msgstr "温度 (K)"
 msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.TITLE"
 msgid "CELL PAINTER"
 msgstr "セル ペインター"
+
+#. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.BASE_GAME_FOLDER_NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.BASE_NAME"
+#| msgid "Base Name"
+msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.BASE_GAME_FOLDER_NAME"
+msgid "Base Game"
+msgstr "基地の名前"
 
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.CLEAR_BUTTON
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.CLEAR_BUTTON"
@@ -60996,20 +61694,31 @@ msgid "These conditions must be fulfilled in order to launch a rocket mission"
 msgstr "ロケットを発射させるにはこれら全ての条件に合致していなければなりません"
 
 #. STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.NAME"
+#| msgid "CHECKLIST"
 msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.NAME"
-msgid "CHECKLIST"
+msgid "LAUNCH CHECKLIST"
 msgstr "チェックリスト"
 
 #. STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.WARNING"
+#| msgid "Crew warning"
 msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD"
-msgid "Crew Checklist"
-msgstr "乗員チェックリスト"
+msgid "Crew Manifest"
+msgstr "乗員不備あり"
 
 #. STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD_TOOLTIP"
+#| msgid ""
+#| "It is recommended that all boxes on the Crew Checklist be checked before "
+#| "launching"
 msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD_TOOLTIP"
 msgid ""
-"It is recommended that all boxes on the Crew Checklist be checked before "
-"launching"
+"It is recommended that all boxes on the Crew Manifest checklist be ticked "
+"before launching"
 msgstr ""
 "発射前には乗員チェックリストの一覧全てにチェック済みであることが推奨されてい"
 "ます"
@@ -61026,17 +61735,47 @@ msgid ""
 msgstr "ロケットはミッション遂行のために設定された目的地へのルートを要求します"
 
 #. STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETPREP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.ROCKETCONTROL.NAME"
+#| msgid "Rocket Control"
 msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETPREP"
-msgid "Launch Checklist"
-msgstr "発射チェックリスト"
+msgid "Rocket Construction"
+msgstr "ロケット制御"
 
 #. STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETPREP_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD_TOOLTIP"
+#| msgid ""
+#| "It is recommended that all boxes on the Crew Checklist be checked before "
+#| "launching"
 msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETPREP_TOOLTIP"
 msgid ""
-"It is recommended that all boxes on the Launch Checklist be checked before "
-"launching"
+"It is recommended that all boxes on the Rocket Construction checklist be "
+"ticked before launching"
 msgstr ""
-"発射前には発射チェックリストの一覧全てにチェック済みであることが推奨されてい"
+"発射前には乗員チェックリストの一覧全てにチェック済みであることが推奨されてい"
+"ます"
+
+#. STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETSTORAGE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.COMPONENT.CARGO_BAY"
+#| msgid "Cargo Bay"
+msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETSTORAGE"
+msgid "Cargo Manifest"
+msgstr "貨物ベイ"
+
+#. STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETSTORAGE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD_TOOLTIP"
+#| msgid ""
+#| "It is recommended that all boxes on the Crew Checklist be checked before "
+#| "launching"
+msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETSTORAGE_TOOLTIP"
+msgid ""
+"It is recommended that all boxes on the Cargo Manifest checklist be ticked "
+"before launching"
+msgstr ""
+"発射前には乗員チェックリストの一覧全てにチェック済みであることが推奨されてい"
 "ます"
 
 #. STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_BIOMES
@@ -61387,8 +62126,11 @@ msgid "Status"
 msgstr "ステータス"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.DIAGNOSTIC"
+#| msgid "Diagnostic"
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.TITLE"
-msgid "DIAGNOSTICS"
+msgid "Diagnostics"
 msgstr "診断"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.TOTAL
@@ -62519,6 +63261,163 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CLUSTER_CHOICE.TOOLTIP"
 msgid "New asteroid belts added by mods can be selected here"
 msgstr "MODによって追加されたアステロイドベルトをここで指定できます"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.DEFAULT.NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+#| "DEFAULT.NAME"
+#| msgid "Default"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"DEFAULT.NAME"
+msgid "Default"
+msgstr "デフォルト"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.DEFAULT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.DURABILITY.NAME"
+#| msgid "Durability: {durability}"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"DEFAULT.TOOLTIP"
+msgid "Default suit durability"
+msgstr "耐久度: {durability}"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.FLIMSY.ATTRIBUTE_MODIFIER_NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+#| "HARD.ATTRIBUTE_MODIFIER_NAME"
+#| msgid "Rumbly Tummies (Difficulty Up)"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"FLIMSY.ATTRIBUTE_MODIFIER_NAME"
+msgid "Flimsy Suits (Difficulty Up)"
+msgstr "ぐーぐーおなか (難易度上昇)"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.FLIMSY.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"FLIMSY.NAME"
+msgid "Flimsy"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.FLIMSY.TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
+#| "OPTIMISTIC.TOOLTIP"
+#| msgid "Duplicants gain stress slower than usual"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"FLIMSY.TOOLTIP"
+msgid "Suits wear out faster than usual"
+msgstr "複製人間のストレスの感じ方が普通よりもゆっくりになります"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.INDESTRUCTIBLE.ATTRIBUTE_MODIFIER_NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"INDESTRUCTIBLE.ATTRIBUTE_MODIFIER_NAME"
+msgid "Indestructible Suits (No Durability)"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.INDESTRUCTIBLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.AGGRESSIVE.NAME"
+#| msgid "Destructive"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"INDESTRUCTIBLE.NAME"
+msgid "Indestructible"
+msgstr "破壊衝動"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.INDESTRUCTIBLE.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"INDESTRUCTIBLE.TOOLTIP"
+msgid ""
+"Duplicants have perfected clothes manufacturing and are able to make suits "
+"that last forever"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.REINFORCED.ATTRIBUTE_MODIFIER_NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
+#| "STRONG.ATTRIBUTE_MODIFIER_NAME"
+#| msgid "Germ Resistance (Difficulty Down)"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"REINFORCED.ATTRIBUTE_MODIFIER_NAME"
+msgid "Reinforced Suits (Difficulty Down)"
+msgstr "抗菌 (難易度低下)"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.REINFORCED.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"REINFORCED.NAME"
+msgid "Reinforced"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.REINFORCED.TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
+#| "PESSIMISTIC.TOOLTIP"
+#| msgid "Duplicants gain stress more quickly than usual"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"REINFORCED.TOOLTIP"
+msgid "Suits are more durable than usual"
+msgstr "複製人間のストレスの感じ方が普通よりも早くなります"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.THREADBARE.ATTRIBUTE_MODIFIER_NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
+#| "VERYHARD.ATTRIBUTE_MODIFIER_NAME"
+#| msgid "Ravenous (Highest Difficulty)"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"THREADBARE.ATTRIBUTE_MODIFIER_NAME"
+msgid "Threadbare Suits (Highest Difficulty)"
+msgstr "貪欲 (最高難易度)"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.THREADBARE.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"THREADBARE.NAME"
+msgid "Threadbare"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.THREADBARE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.STRONGIMMUNESYSTEM.DESC"
+#| msgid "This Duplicant's immune system bounces back faster than most"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
+"THREADBARE.TOOLTIP"
+msgid "These Duplicants are no tailors - suits wear out much faster than usual"
+msgstr "この複製人間の免疫力は大方の予想よりも早く回復します"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATS.SKIN_DURABILITY.NAME"
+#| msgid "Skin Durability"
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.NAME"
+msgid "Durability"
+msgstr "皮膚の耐久力"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP"
+#| msgid "Affects how quickly Duplicant stress rises"
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.TOOLTIP"
+msgid "Affects how quickly equippable suits wear out"
+msgstr "複製人間のストレスがどのくらい早く上昇するかに影響します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.EXPANSION1ACTIVE.LEVELS.DISABLED.NAME
 msgctxt ""
@@ -64232,11 +65131,18 @@ msgid "(...additional entries omitted)"
 msgstr "(...以降は省略されました)"
 
 #. STRINGS.UI.FRONTEND.MOD_DIALOGS.ALL_MODS_DISABLED_EARLY_ACCESS.MESSAGE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.MOD_DIALOGS.ALL_MODS_DISABLED_EARLY_ACCESS.MESSAGE"
+#| msgid ""
+#| "Mod support is temporarily suspended for the initial launch of Spaced "
+#| "Out! into Early Access:\n"
+#| "{0}"
 msgctxt ""
 "STRINGS.UI.FRONTEND.MOD_DIALOGS.ALL_MODS_DISABLED_EARLY_ACCESS.MESSAGE"
 msgid ""
-"Mod support is temporarily suspended for the initial launch of Spaced Out! "
-"into Early Access:\n"
+"Mod support is temporarily suspended for the initial launch of <i>Spaced Out!"
+"</i> into Early Access:\n"
 "{0}"
 msgstr ""
 "宇宙進出！のアーリーアクセス中につき、MODのサポートは一時的に停止していま"
@@ -64524,9 +65430,13 @@ msgstr ""
 "MODがクラッシュ時に有効化されていたため、その原因である可能性があります"
 
 #. STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.ALL_MODS_DISABLED_EARLY_ACCESS
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.ALL_MODS_DISABLED_EARLY_ACCESS"
+#| msgid "Deactivated due to Early Access for Spaced Out!"
 msgctxt ""
 "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.ALL_MODS_DISABLED_EARLY_ACCESS"
-msgid "Deactivated due to Early Access for Spaced Out!"
+msgid "Deactivated due to Early Access for <i>Spaced Out!</i>"
 msgstr "宇宙進出！アーリーアクセス中のため無効化されています"
 
 #. STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.AVAILABLE_CONTENT_CHANGED
@@ -64697,8 +65607,11 @@ msgid "Browse"
 msgstr "参照"
 
 #. STRINGS.UI.FRONTEND.MODS.MOD_DISABLED_CONTENT
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MODS.MOD_DISABLED_CONTENT"
+#| msgid " - <i>Not compatible with {Content}</i>"
 msgctxt "STRINGS.UI.FRONTEND.MODS.MOD_DISABLED_CONTENT"
-msgid " - <i>Not compatible with {Content}</i>"
+msgid " - <b>Not compatible with <i>{Content}</i></b>"
 msgstr " - <i>{Content}と互換性がありません</i>"
 
 #. STRINGS.UI.FRONTEND.MODS.REQUIRES_RESTART
@@ -64737,9 +65650,12 @@ msgid "STEAM WORKSHOP"
 msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.VERSION_UPDATE"
+#| msgid "VERSION UPDATE"
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "RE-ROCKETRY UPDATE!"
-msgstr "新ロケット工学アップデート！"
+msgid "NO EARTHLY RESIN UPDATE"
+msgstr "バージョンアップデート"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -64757,34 +65673,42 @@ msgstr "議論に参加"
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"<b>Re-Rocketry Update</b>\n"
+"<b>No Earthly Resin Update</b>\n"
 "\n"
-"Added <i>Spaced Out!</i> versions of many rocket modules from the base game "
-"as well as a new type of Petroleum engine.\n"
+"Added new conduit Fittings to connect interior rocket infrastructure to "
+"storage modules.\n"
 "\n"
-"Added a durability system to suits and revised Oxygen masks to behave more "
-"like Atmo Suits.\n"
+"Added new planetoids to the cluster, bearing late-game resources, along with "
+"new rocket modules to help reach them.\n"
 "\n"
-"Plenty of bug fixes and balance changes.\n"
+"Tons of bug fixes, balance changes and more.\n"
 "\n"
-"Check out the full patch notes for more details"
+"Check out the full patch notes for more details!"
 msgstr ""
-"<b>新ロケット工学 アップデート</b>\n"
-"\n"
-"石油エンジンといった、ベースゲームにあったロケットエンジンを<i>宇宙進出！</i>"
-"用に追加。\n"
-"\n"
-"スーツに耐久度システムを追加。酸素マスクがアトモスーツと同じ振舞いをするよう"
-"に変更。\n"
-"\n"
-"その他大量のバグ修正およびバランス調整。\n"
-"\n"
-"詳細はパッチノート全文を確認してください"
 
 #. STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT
 msgctxt "STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT"
 msgid "LAUNCHED!"
 msgstr "正式版発売！"
+
+#. STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT_EXPANSION1
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT_EXPANSION1"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.UI.FRONTEND.NEWGAMESETTINGS.BUTTONS.CANCEL
 msgctxt "STRINGS.UI.FRONTEND.NEWGAMESETTINGS.BUTTONS.CANCEL"
@@ -65028,10 +65952,16 @@ msgstr ""
 "{2} - 難易度及びカスタム設定"
 
 #. STRINGS.UI.FRONTEND.RAILFORCEQUIT.DLC_NOT_PURCHASED
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.RAILFORCEQUIT.DLC_NOT_PURCHASED"
+#| msgid ""
+#| "Spaced Out! Dlc has not yet been purchased in the Wegame store. Purchase "
+#| "Spaced Out! to support Oxygen Not Included and enjoy the new content!"
 msgctxt "STRINGS.UI.FRONTEND.RAILFORCEQUIT.DLC_NOT_PURCHASED"
 msgid ""
-"Spaced Out! Dlc has not yet been purchased in the Wegame store. Purchase "
-"Spaced Out! to support Oxygen Not Included and enjoy the new content!"
+"The <i>Spaced Out!</i> DLC has not yet been purchased in the WeGame store. "
+"Purchase <i>Spaced Out!</i> to support <i>Oxygen Not Included</i> and enjoy "
+"the new content!"
 msgstr ""
 "宇宙進出！DLCはまだWegameストアで購入していません。宇宙進出！DLCを購入して"
 "Oxygen Not Includedをサポートし、新しいコンテンツを楽しみましょう！"
@@ -65346,9 +66276,16 @@ msgstr ""
 "{0}"
 
 #. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FAILURE"
+#| msgid ""
+#| "A problem occurred while generating a world from this seed: {0}. \n"
+#| "\n"
+#| "Please try again with a different seed."
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FAILURE"
 msgid ""
-"A problem occurred while generating a world from this seed: {0}. \n"
+"A problem occurred while generating a world from this seed:\n"
+"{0}. \n"
 "\n"
 "Please try again with a different seed."
 msgstr ""
@@ -70118,11 +71055,18 @@ msgid "JOBS"
 msgstr "職業"
 
 #. STRINGS.UI.ROLES_SCREEN.NO_JOB_STATION_WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.NO_JOB_STATION_WARNING"
+#| msgid ""
+#| "Build a <style=\"KKeyword\">Mini-Pod</style> to unlock this menu\n"
+#| "------------------\n"
+#| "The <style=\"KKeyword\">Mini-Pod</style> can be found in the <b>Stations "
+#| "Tab</b> <b><color=#F44A4A>[0]</b></color> of the Build Menu"
 msgctxt "STRINGS.UI.ROLES_SCREEN.NO_JOB_STATION_WARNING"
 msgid ""
-"Build a <style=\"KKeyword\">Mini-Pod</style> to unlock this menu\n"
+"Build a <style=\"KKeyword\">Printing Pod</style> to unlock this menu\n"
 "------------------\n"
-"The <style=\"KKeyword\">Mini-Pod</style> can be found in the <b>Stations "
+"The <style=\"KKeyword\">Printing Pod</style> can be found in the <b>Stations "
 "Tab</b> <b><color=#F44A4A>[0]</b></color> of the Build Menu"
 msgstr ""
 "このメニューを解放するには<style=\"KKeyword\">ミニポッド</style>を建設してく"
@@ -72038,6 +72982,14 @@ msgctxt "STRINGS.UI.SPACEDESTINATIONS.RESEARCHDESTINATION.NAME"
 msgid "Alluring Anomaly"
 msgstr "惹きつけられる特異点"
 
+#. STRINGS.UI.SPACEDESTINATIONS.TELESCOPE_TARGET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.TITLE"
+#| msgid "Telescope Configuration"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.TELESCOPE_TARGET.NAME"
+msgid "Telescope Target"
+msgstr "観測望遠鏡設定"
+
 #. STRINGS.UI.SPACEDESTINATIONS.WORMHOLE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.WORMHOLE.DESCRIPTION"
 msgid ""
@@ -72196,9 +73148,12 @@ msgid "Rocket"
 msgstr "ロケット"
 
 #. STRINGS.UI.STARMAP.DESTINATIONSELECTION.NOTSELECTED
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.REACHABLE"
+#| msgid "Destination set"
 msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.NOTSELECTED"
-msgid "Destination not set"
-msgstr "目的地未選択"
+msgid "Destination set"
+msgstr "目的地選択済"
 
 #. STRINGS.UI.STARMAP.DESTINATIONSELECTION.REACHABLE
 msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.REACHABLE"
@@ -72206,14 +73161,22 @@ msgid "Destination set"
 msgstr "目的地選択済"
 
 #. STRINGS.UI.STARMAP.DESTINATIONSELECTION.UNREACHABLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.REACHABLE"
+#| msgid "Destination set"
 msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.UNREACHABLE"
-msgid "Destination beyond reach"
-msgstr "目的地到達不可"
+msgid "Destination set"
+msgstr "目的地選択済"
 
 #. STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
+#| "CLEAR_DESTINATION_BUTTON_TOOLTIP"
+#| msgid "Clear this rocket's selected destination"
 msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED"
-msgid "Select a destination from the Starmap"
-msgstr "星図から目的地を選択してください"
+msgid "Select the rocket's nosecone to set a destination"
+msgstr "選択済みのロケット目的地をクリアします"
 
 #. STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.REACHABLE
 msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.REACHABLE"
@@ -72266,8 +73229,11 @@ msgid "TOO FAR FOR THIS ROCKET"
 msgstr "このロケットでは遠すぎます"
 
 #. STRINGS.UI.STARMAP.EMPTYOXIDIZERTANK.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.EMPTYOXIDIZERTANK.NAME"
+#| msgid "Oxidizer tank not full"
 msgctxt "STRINGS.UI.STARMAP.EMPTYOXIDIZERTANK.NAME"
-msgid "Oxidizer tank not full"
+msgid "Oxidizer Tank not full"
 msgstr "酸素タンク充填不足"
 
 #. STRINGS.UI.STARMAP.EMPTYOXIDIZERTANK.TOOLTIP
@@ -72281,18 +73247,27 @@ msgid "Fuel Tank not full"
 msgstr "燃料タンク補給不足"
 
 #. STRINGS.UI.STARMAP.EMPTYTANK.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.EMPTYTANK.TOOLTIP"
+#| msgid "Fuel Tank must be filled before launch"
 msgctxt "STRINGS.UI.STARMAP.EMPTYTANK.TOOLTIP"
-msgid "Fuel Tank must be filled before launch"
+msgid "Fuel tank must be filled before launch"
 msgstr "燃料タンクは発射前に補給する必要があります"
 
 #. STRINGS.UI.STARMAP.FULLOXIDIZERTANK.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.FULLOXIDIZERTANK.NAME"
+#| msgid "Oxidizer tank full"
 msgctxt "STRINGS.UI.STARMAP.FULLOXIDIZERTANK.NAME"
-msgid "Oxidizer tank full"
+msgid "Oxidizer Tank full"
 msgstr "酸素タンク フル充填"
 
 #. STRINGS.UI.STARMAP.FULLOXIDIZERTANK.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.FULLOXIDIZERTANK.TOOLTIP"
+#| msgid "Tank is full, ready to launch"
 msgctxt "STRINGS.UI.STARMAP.FULLOXIDIZERTANK.TOOLTIP"
-msgid "Tank is full, ready to launch"
+msgid "Tank is full, ready for launch"
 msgstr "タンクは充填完了し、発射準備ができています"
 
 #. STRINGS.UI.STARMAP.FULLTANK.NAME
@@ -72301,8 +73276,11 @@ msgid "Fuel Tank full"
 msgstr "燃料タンク 満タン"
 
 #. STRINGS.UI.STARMAP.FULLTANK.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.FULLTANK.TOOLTIP"
+#| msgid "Tank is full, ready to launch"
 msgctxt "STRINGS.UI.STARMAP.FULLTANK.TOOLTIP"
-msgid "Tank is full, ready to launch"
+msgid "Tank is full, ready for launch"
 msgstr "タンクは充填完了し、発射準備ができています"
 
 #. STRINGS.UI.STARMAP.HASFOOD.NAME
@@ -72351,27 +73329,36 @@ msgid "Astronaut"
 msgstr "宇宙飛行士"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.BUILDDIG.STATUS"
+#| msgid "Going to construction dig"
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.FAILURE"
-msgid "Construction incomplete"
-msgstr "建設未完了"
+msgid "No active construction"
+msgstr "建設用の採掘に向かっている"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.READY
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.BUILDDIG.STATUS"
+#| msgid "Going to construction dig"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.READY"
-msgid "Construction complete"
-msgstr "建設完了"
+msgid "No active construction"
+msgstr "建設用の採掘に向かっている"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.BUILDDIG.STATUS"
+#| msgid "Going to construction dig"
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.WARNING"
-msgid "Construction warning"
-msgstr "建設不備あり"
+msgid "No active construction"
+msgstr "建設用の採掘に向かっている"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.TOOLTIP.FAILURE
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.TOOLTIP.FAILURE"
-msgid "Construction of all modules must be completed before launch"
-msgstr "ロケット発射前に、全てのモジュールの建設が完了していなければなりません"
+msgid "In-progress module construction is preventing takeoff"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.TOOLTIP.READY
 msgctxt ""
@@ -72386,63 +73373,77 @@ msgid "Construction warning"
 msgstr "建設不備あり"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.READY"
+#| msgid "Crew boarded"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.FAILURE"
-msgid "Missing qualified crew"
-msgstr "有資格者なし"
+msgid "All crew boarded"
+msgstr "乗員は搭乗済みです"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.READY
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.READY"
+#| msgid "Crew boarded"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.READY"
-msgid "Qualified crew boarded"
-msgstr "有資格者搭乗済み"
+msgid "All crew boarded"
+msgstr "乗員は搭乗済みです"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.FAILURE"
 msgid ""
-"Missing crew - at least one crew member aboard the rocket must have the "
-"<link=\"PILOT\">Rocket Piloting</link> skill"
+"No crew members have boarded this rocket\n"
+"\n"
+"Make sure Duplicants have been assigned to this rocket's crew, and that they "
+"have access to the rocket's hatch"
 msgstr ""
-"乗員なし - <link=\"PILOT\">ロケット操縦</link>スキルを持った乗員が最低でも一"
-"人必要です"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.READY"
-msgid "Crew boarded"
-msgstr "乗員は搭乗済みです"
+msgid ""
+"All Duplicants assigned to this rocket crew are on board and ready for launch"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.WARNING"
-msgid "Crew warning"
-msgstr "乗員不備あり"
+msgid "Some Duplicants assigned to this rocket's crew have not yet boarded"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.READY"
+#| msgid "Crew boarded"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.WARNING"
-msgid "Crew warning"
-msgstr "乗員不備あり"
+msgid "All crew boarded"
+msgstr "乗員は搭乗済みです"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.STATUS.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.STATUS.FAILURE"
-msgid "Flight path not clear"
-msgstr "航路障害物あり"
+msgid "Clear launch path"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.STATUS.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.STATUS.READY"
-msgid "Flight path clear"
-msgstr "航路よし"
+msgid "Clear launch path"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.STATUS.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.STATUS.WARNING"
-msgid ""
+msgid "Clear launch path"
 msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.FAILURE"
-msgid "The space above this rocket is obstructed"
-msgstr "ロケット上部の空間が封鎖されています"
+msgid ""
+"This rocket does not have a clear line of sight to space, preventing launch\n"
+"\n"
+"Clear this rocket's launch path by excavating undug tiles and deconstructing "
+"any buildings above the rocket"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.READY"
-msgid "Nothing is blocking the path of the rocket"
-msgstr "ロケットの航路に障害物はありません"
+msgid "The rocket's launch path is clear for takeoff"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.WARNING"
@@ -72450,9 +73451,12 @@ msgid ""
 msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.READY"
+#| msgid "Engine"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.FAILURE"
-msgid "Needs engine"
-msgstr "エンジンが必要です"
+msgid "Engine"
+msgstr "エンジン"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.READY"
@@ -72460,19 +73464,25 @@ msgid "Engine"
 msgstr "エンジン"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.READY"
+#| msgid "Engine"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.WARNING"
-msgid "Engine warning"
-msgstr "エンジン不備あり"
+msgid "Engine"
+msgstr "エンジン"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.FAILURE"
-msgid "Needs engine"
-msgstr "エンジンが必要です"
+msgid ""
+"No engine installed\n"
+"\n"
+"This rocket cannot launch without a completed engine"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.READY"
-msgid "Rocket has Engine"
-msgstr "ロケットにエンジンがあります"
+msgid "A suitable engine has been installed"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.WARNING"
@@ -72480,29 +73490,41 @@ msgid "Engine warning"
 msgstr "エンジン不備あり"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.STATUS.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.EQUIPMENT.PREFABS.JET_SUIT.TANK_EFFECT_NAME"
+#| msgid "Fuel Tank"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.STATUS.FAILURE"
-msgid "Needs fuel tank"
-msgstr "燃料タンクが必要です"
+msgid "Fuel Tank"
+msgstr "燃料タンク"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.STATUS.READY
+#, fuzzy
+#| msgctxt "STRINGS.EQUIPMENT.PREFABS.JET_SUIT.TANK_EFFECT_NAME"
+#| msgid "Fuel Tank"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.STATUS.READY"
-msgid "Fuel tank"
+msgid "Fuel Tank"
 msgstr "燃料タンク"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.EQUIPMENT.PREFABS.JET_SUIT.TANK_EFFECT_NAME"
+#| msgid "Fuel Tank"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.STATUS.WARNING"
-msgid "Fuel tank warning"
-msgstr "燃料タンク不備あり"
+msgid "Fuel Tank"
+msgstr "燃料タンク"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.FAILURE"
-msgid "Needs fuel tank"
-msgstr "燃料タンクが必要です"
+msgid ""
+"No fuel tank installed\n"
+"\n"
+"This rocket cannot launch without a completed fuel tank"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.READY"
-msgid "Rocket has Fuel tank"
-msgstr "ロケットに燃料タンクがあります"
+msgid "A fuel tank has been installed"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.WARNING"
@@ -72510,9 +73532,12 @@ msgid "Fuel tank warning"
 msgstr "燃料タンク不備あり"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.READY"
+#| msgid "Nosecone"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.FAILURE"
-msgid "Needs nosecone"
-msgstr "ノーズコーンが必要です"
+msgid "Nosecone"
+msgstr "ノーズコーン"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.READY"
@@ -72520,54 +73545,30 @@ msgid "Nosecone"
 msgstr "ノーズコーン"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.READY"
+#| msgid "Nosecone"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.WARNING"
-msgid "Nosecone warning"
-msgstr "ノーズコーン不備あり"
+msgid "Nosecone"
+msgstr "ノーズコーン"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.FAILURE"
-msgid "Needs nosecone"
-msgstr "ノーズコーンが必要です"
+msgid ""
+"No nosecone installed\n"
+"\n"
+"This rocket cannot launch without a completed nosecone"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.READY"
-msgid "Rocket has Nosecone"
-msgstr "ロケットにノーズコーンがあります"
+msgid "A suitable nosecone has been installed"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.WARNING"
 msgid "Nosecone warning"
 msgstr "ノーズコーン不備あり"
-
-#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.FAILURE
-msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.FAILURE"
-msgid "Needs oxidizer tank"
-msgstr "酸化剤タンクが必要です"
-
-#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.READY
-msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.READY"
-msgid "Oxidizer tank"
-msgstr "酸化剤タンク"
-
-#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.WARNING
-msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.WARNING"
-msgid "Oxidizer tank warning"
-msgstr "酸化剤タンク不備あり"
-
-#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.FAILURE
-msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.FAILURE"
-msgid "Rocket needs an Oxidizer tank"
-msgstr "ロケットに酸化剤タンクが必要です"
-
-#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.READY
-msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.READY"
-msgid "Rocket has an Oxidizer tank"
-msgstr "ロケットに酸化剤タンクがあります"
-
-#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.WARNING
-msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.WARNING"
-msgid "Oxidizer tank warning"
-msgstr "酸化剤タンク不備あり"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HASASTRONAUT
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HASASTRONAUT"
@@ -72581,20 +73582,28 @@ msgstr "組み立て済み"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSTALLED_TOOLTIP
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSTALLED_TOOLTIP"
-msgid "{0} installed, ready for launch"
-msgstr "{0} は組み立て済みです。発射準備ができています"
+msgid "A suitable {0} has been installed"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSUFFICENT_MASS_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSUFFICENT_MASS_TOOLTIP"
+#| msgid "Launching to this destination will not return a full cargo load."
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSUFFICENT_MASS_TOOLTIP"
-msgid "Launching to this destination will not return a full cargo load."
+msgid "Launching to this destination will not return a full cargo load"
 msgstr "この目的地への打ち上げでは、ロケットは貨物をいっぱいにせず帰還します。"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.STATUS.FAILURE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.STATUS."
+#| "READY"
+#| msgid "Landers Ready"
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.STATUS."
 "FAILURE"
-msgid "Lander not constructed"
-msgstr "ランダーが建設されていません"
+msgid "Landers Ready"
+msgstr "ランダー準備完了"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.STATUS.READY
 msgctxt ""
@@ -72614,14 +73623,21 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.TOOLTIP."
 "FAILURE"
-msgid "Some landers still require construction"
-msgstr "建設が必要なランダーがあります"
+msgid ""
+"Additional landers must be constructed to fulfill the lander requests of "
+"this rocket"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.TOOLTIP.READY
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.TOOLTIP."
+#| "READY"
+#| msgid "All requested landers are built and ready for deployment"
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.TOOLTIP."
 "READY"
-msgid "All requested landers are built and ready for deployment"
+msgid "All requested landers have been built and are ready for deployment"
 msgstr "要求されたランダーは全て建設済みで、準備が完了しています"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.TOOLTIP.WARNING
@@ -72642,9 +73658,12 @@ msgid "Cargo Loading Complete"
 msgstr "貨物積載完了"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.STATUS.READY"
+#| msgid "Cargo Loading Complete"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.STATUS.WARNING"
-msgid "Cargo Loading Incomplete"
-msgstr "貨物積載未完了"
+msgid "Cargo Loading Complete"
+msgstr "貨物積載完了"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.TOOLTIP.FAILURE"
@@ -72668,81 +73687,172 @@ msgstr ""
 "出中です"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.READY"
+#| msgid "Module count"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.FAILURE"
-msgid "Too many modules"
-msgstr "モジュール過多"
+msgid "Module limit"
+msgstr "モジュール数"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.READY
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.READY"
+#| msgid "Module count"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.READY"
-msgid "Module count"
+msgid "Module limit"
 msgstr "モジュール数"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.READY"
+#| msgid "Module count"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.WARNING"
-msgid "Module warning"
-msgstr "モジュール不備あり"
+msgid "Module limit"
+msgstr "モジュール数"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.FAILURE"
-msgid "This rocket's engine can not support this many modules"
-msgstr "このロケットのエンジンはこの数のモジュールを扱いきれません"
+msgid ""
+"The number of installed modules exceeds the engine's module limit\n"
+"\n"
+"Excess modules must be removed"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.READY
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.FAILURE"
+#| msgid "This rocket's engine can not support this many modules"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.READY"
-msgid "Module count"
-msgstr "モジュール数"
+msgid "The rocket's engine can support the number of installed rocket modules"
+msgstr "このロケットのエンジンはこの数のモジュールを扱いきれません"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.WARNING"
+#| msgid "Module warning"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.WARNING"
-msgid "Construction warning"
-msgstr "建設不備あり"
+msgid "Module limit warning"
+msgstr "モジュール不備あり"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MINIMUM_MASS
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MINIMUM_MASS"
 msgid "Resources available {0}"
 msgstr "資源が利用可能になりました{0}"
 
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MISSING_TOOLTIP
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MISSING_TOOLTIP"
+msgid ""
+"No {0} installed\n"
+"\n"
+"This rocket cannot launch without a completed {0}"
+msgstr ""
+
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_DESTINATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.NO_ANALYZABLE_DESTINATION_SELECTED"
+#| msgid "No destination selected"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_DESTINATION"
-msgid "No destination selected."
-msgstr "目的地が選択されていません。"
+msgid "No destination selected"
+msgstr "目的地未選択"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.FAILURE"
-msgid "Extra passengers onboard"
-msgstr "同乗者搭乗中"
+msgid "Non-crew exited"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.READY"
-msgid "No extra passengers"
-msgstr "同乗者なし"
+msgid "Non-crew exited"
+msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.NO_ELIGIBLE_DUPLICANTS"
+#| msgid "No Duplicants meet the requirements for this job"
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.TOOLTIP.FAILURE"
-msgid "Extra passengers"
-msgstr "同乗者"
+msgid "Non-crew Duplicants must exit the rocket before launch"
+msgstr "この職業に適合する複製人間がいません"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.TOOLTIP.READY
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTDIED.NAME"
+#| msgid "Duplicants have died"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.TOOLTIP.READY"
-msgid "Crew correct"
-msgstr "適正乗員"
+msgid "All non-crew Duplicants have disembarked"
+msgstr "複製人間が死亡しました"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.TOOLTIP.WARNING
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.TOOLTIP.WARNING"
+#| msgid "Crew warning"
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.TOOLTIP.WARNING"
-msgid "Crew warning"
+msgid "Non-crew warning"
 msgstr "乗員に不備あり"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.WARNING"
-msgid "Crew warning"
-msgstr "乗員に不備あり"
+msgid "Non-crew exited"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.READY"
+#| msgid "Crew boarded"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.FAILURE"
+msgid "Pilot boarded"
+msgstr "乗員は搭乗済みです"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.READY
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.READY"
+#| msgid "Crew boarded"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.READY"
+msgid "Pilot boarded"
+msgstr "乗員は搭乗済みです"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.FAILURE
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.FAILURE"
+msgid ""
+"At least one crew member aboard the rocket must possess the <link=\"PILOT"
+"\">Rocket Piloting</link> skill to launch\n"
+"\n"
+"Make sure a qualified Duplicant is assigned to this rocket's crew, and that "
+"they have access to the rocket's hatch"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.READY
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.READY"
+msgid ""
+"A Duplicant with the <link=\"PILOT\">Rocket Piloting</link> skill is "
+"currently onboard"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SPACENAVIGATION.NAME"
+#| msgid "Piloting"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.WARNING"
+msgid "Pilot warning"
+msgstr "操縦"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.READY"
+#| msgid "Crew boarded"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.WARNING"
+msgid "Pilot boarded"
+msgstr "乗員は搭乗済みです"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.READY"
+#| msgid "Fueled"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.FAILURE"
-msgid "Insufficient fuel"
-msgstr "燃料不足"
+msgid "Fueled"
+msgstr "燃料満載"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.READY"
@@ -72750,9 +73860,12 @@ msgid "Fueled"
 msgstr "燃料満載"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.READY"
+#| msgid "Fueled"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.WARNING"
-msgid "Warning: partially fueled"
-msgstr "警告: 燃料不十分"
+msgid "Fueled"
+msgstr "燃料満載"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.FAILURE"
@@ -72799,27 +73912,44 @@ msgid "A {0} must be installed before launch"
 msgstr "発射には {0} を組み立てる必要があります"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.RESOURCE_MASS_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.RESOURCE_MASS_TOOLTIP"
+#| msgid ""
+#| "{0} has {1} resources available.\n"
+#| "Rocket has capacity for {2}."
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.RESOURCE_MASS_TOOLTIP"
 msgid ""
-"{0} has {1} resources available.\n"
-"Rocket has capacity for {2}."
+"{0} has {1} resources available\n"
+"This rocket has capacity for {2}"
 msgstr ""
 "{0} では {1} の資源が利用可能です。 \n"
 "ロケットの最大積載量は {2}です。"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.FAILURE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.READY"
+#| msgid "Sufficient oxidizer"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.FAILURE"
-msgid "Insufficient oxidizer"
-msgstr "酸化剤不足"
+msgid "Sufficient Oxidizer"
+msgstr "酸化剤十分"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.READY
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.READY"
+#| msgid "Sufficient oxidizer"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.READY"
-msgid "Sufficient oxidizer"
+msgid "Sufficient Oxidizer"
 msgstr "酸化剤十分"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.WARNING
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.WARNING"
+#| msgid "Warning: limited oxidizer"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.WARNING"
-msgid "Warning: limited oxidizer"
+msgid "Warning: Limited oxidizer"
 msgstr "警告: 酸化剤不十分"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.FAILURE
@@ -74165,6 +75295,14 @@ msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_OCCUPIED"
 msgid "Must be built in unoccupied space"
 msgstr "空いている空間に建設する必要があります"
 
+#. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_ONROCKETENVELOPE
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_SPACE"
+#| msgid "Must be built on the surface in space"
+msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_ONROCKETENVELOPE"
+msgid "Must be built on the floor of a rocket interior"
+msgstr "宇宙の表層に建設する必要があります"
+
 #. STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_SOLIDPORTS_OVERLAP
 msgctxt "STRINGS.UI.TOOLTIPS.HELP_BUILDLOCATION_SOLIDPORTS_OVERLAP"
 msgid "Solid ports cannot overlap"
@@ -74320,12 +75458,19 @@ msgstr ""
 "b><color=#F44A47>[0]</color>にあります"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_SKILL_STATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_SKILL_STATION"
+#| msgid ""
+#| "Build a Mini-Pod to unlock this menu\n"
+#| "------------------\n"
+#| "The <link=\"EXOBASEHEADQUARTERS\">Mini-Pod</link> can be found in the "
+#| "<b>Base Tab</b> <b><color=#F44A4A>[0]</b></color> of the Build Menu"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_SKILL_STATION"
 msgid ""
-"Build a Mini-Pod to unlock this menu\n"
+"Build a Printing Pod to unlock this menu\n"
 "------------------\n"
-"The <link=\"EXOBASEHEADQUARTERS\">Mini-Pod</link> can be found in the "
-"<b>Base Tab</b> <b><color=#F44A4A>[0]</b></color> of the Build Menu"
+"The <link=\"HEADQUARTERS\">Printing Pod</link> can be found in the <b>Base "
+"Tab</b> <b><color=#F44A4A>[0]</b></color> of the Build Menu"
 msgstr ""
 "このメニューを解放するには<style=\"KKeyword\">ミニポッド</style>を建設してく"
 "ださい\n"
@@ -74403,7 +75548,20 @@ msgid "Calories Available: {0}"
 msgstr "消費可能なカロリー: {0}"
 
 #. STRINGS.UI.TOOLTIPS.METERSCREEN_POPULATION
+#, fuzzy
+#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.POPULATION"
+#| msgid "Population: {0} / {1}"
 msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_POPULATION"
+msgid "Population: {0}"
+msgstr "人口: {0} / {1}"
+
+#. STRINGS.UI.TOOLTIPS.METERSCREEN_POPULATION_CLUSTER
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_POPULATION"
+#| msgid ""
+#| "<style=\"KKeyword\">{0}</style> Population: {1}\n"
+#| "Total Population: {2}"
+msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_POPULATION_CLUSTER"
 msgid ""
 "<style=\"KKeyword\">{0}</style> Population: {1}\n"
 "Total Population: {2}"
@@ -75167,10 +76325,18 @@ msgid "Oversee Planetoid"
 msgstr "小惑星の監視"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.VIEW_WORLD_DISABLE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.EXOBASES.HEADER_1"
+#| msgid "Discovering New Planetoids"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.VIEW_WORLD_DISABLE_TOOLTIP"
-msgid "Enter the planetoid orbit to inspect the surface."
-msgstr "小惑星の軌道に入り、表層を観察します。"
+msgid "Cannot view Planetoid"
+msgstr "新しい小惑星を見つける"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.VIEW_WORLD_TOOLTIP
+msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.VIEW_WORLD_TOOLTIP"
+msgid "View this Planetoid's surface"
+msgstr ""
 
 #. STRINGS.UI.UISIDESCREENS.COMETDETECTORSIDESCREEN.ASSIGN_TO_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.COMETDETECTORSIDESCREEN.ASSIGN_TO_TOOLTIP"
@@ -75911,17 +77077,30 @@ msgstr "ここに着陸"
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON"
-msgid "LAUNCH"
-msgstr "発射"
+msgid "BEGIN LAUNCH SEQUENCE"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON_DEBUG
+msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON_DEBUG"
+msgid "BEGIN LAUNCH SEQUENCE (DEBUG ENABLED)"
+msgstr ""
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON_NOT_READY_TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN."
+#| "LAUNCH_BUTTON_NOT_READY_TOOLTIP"
+#| msgid ""
+#| "This rocket is not ready to launch\n"
+#| "------------------\n"
+#| "Review the Launch Checklist in the <link=\"LAUNCHPLATFORM\">Rocket "
+#| "Platform</link> status panel for more detail"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON_NOT_READY_TOOLTIP"
 msgid ""
-"This rocket is not ready to launch\n"
+"This rocket is <b>not</b> ready to launch\n"
 "------------------\n"
-"Review the Launch Checklist in the <link=\"LAUNCHPLATFORM\">Rocket Platform</"
-"link> status panel for more detail"
+"<b>Review the Launch Checklist in the status panel for more detail</b>"
 msgstr ""
 "このロケットは発射準備ができていません。\n"
 "------------------\n"
@@ -75934,9 +77113,12 @@ msgid "Blast off!"
 msgstr "発射！"
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_REQUESTED_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.CANT_LAUNCH_MISSION"
+#| msgid "CANNOT LAUNCH"
 msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_REQUESTED_BUTTON"
-msgid "AWAITING PILOT"
-msgstr "パイロット待ち"
+msgid "CANCEL LAUNCH"
+msgstr "発射不可"
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_REQUESTED_BUTTON_TOOLTIP
 msgctxt ""
@@ -75956,10 +77138,18 @@ msgid "ACKNOWLEDGE WARNINGS"
 msgstr "警告受諾"
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_WARNINGS_BUTTON_TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN."
+#| "LAUNCH_WARNINGS_BUTTON_TOOLTIP"
+#| msgid ""
+#| "Some items in the Launch Checklist require attention!\n"
+#| "------------------\n"
+#| "<b>Click to ignore warnings and proceed with launch</b>"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_WARNINGS_BUTTON_TOOLTIP"
 msgid ""
-"Some items in the Launch Checklist require attention!\n"
+"Some items in the Launch Checklist require attention\n"
 "------------------\n"
 "<b>Click to ignore warnings and proceed with launch</b>"
 msgstr ""
@@ -75976,6 +77166,54 @@ msgstr "新しいロケット"
 msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.NO_ROCKETS_WAITING"
 msgid "No rockets in orbit"
 msgstr "軌道上のロケットなし"
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.COUNTING_DOWN
+msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.COUNTING_DOWN"
+msgid "5... 4... 3... 2... 1..."
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.LOADING_CREW
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.LOADING"
+#| msgid "Loading..."
+msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.LOADING_CREW"
+msgid "Loading crew..."
+msgstr "ロード中..."
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.READY_FOR_LAUNCH
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME"
+#| msgid "Ready To Unpack"
+msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.READY_FOR_LAUNCH"
+msgid "Ready to Launch"
+msgstr "排出準備完了"
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.STILL_PREPPING
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCHECKLISTINCOMPLETE.NAME"
+#| msgid "Launch Checklist Incomplete"
+msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.STILL_PREPPING"
+msgid "Launch Checklist Incomplete"
+msgstr "発射チェックリスト未完了"
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.TAKING_OFF
+msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.TAKING_OFF"
+msgid "Liftoff!!"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.UNLOADING_PASSENGERS
+#, fuzzy
+#| msgctxt "STRINGS.UI.WORLDGEN.LOADING"
+#| msgid "Loading world..."
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.UNLOADING_PASSENGERS"
+msgid "Unloading non-crew..."
+msgstr "ワールド読込中..."
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.WAITING_FOR_PILOT
+msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.STATUS.WAITING_FOR_PILOT"
+msgid "Pilot requested at control station..."
+msgstr ""
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.TITLE"
@@ -76117,9 +77355,14 @@ msgid "Bit {0}"
 msgstr "ビット {0}"
 
 #. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_DESCRIPTION
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN."
+#| "RIBBON_READER_DESCRIPTION"
+#| msgid "Selected <b>Bit's Signal</b> will be read by the <b>Output Port</b>."
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_DESCRIPTION"
-msgid "Selected <b>Bit's Signal</b> will be read by the <b>Output Port</b>."
+msgid "Selected <b>Bit's Signal</b> will be read by the <b>Output Port</b>"
 msgstr "<b>出力ポート</b>にある指定した<b>ビットの信号</b>が読み込まれます。"
 
 #. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_READER_TITLE
@@ -76129,9 +77372,14 @@ msgid "Ribbon Reader"
 msgstr "リボンリーダー"
 
 #. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_DESCRIPTION
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN."
+#| "RIBBON_WRITER_DESCRIPTION"
+#| msgid "Received <b>Signal</b> will be written to selected <b>Bit</b>."
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_DESCRIPTION"
-msgid "Received <b>Signal</b> will be written to selected <b>Bit</b>."
+msgid "Received <b>Signal</b> will be written to selected <b>Bit</b>"
 msgstr "受診した<b>信号</b>が指定した<b>ビット</b>に書き込まれます。"
 
 #. STRINGS.UI.UISIDESCREENS.LOGICBITSELECTORSIDESCREEN.RIBBON_WRITER_TITLE
@@ -76474,11 +77722,20 @@ msgid "Deploy"
 msgstr "設置"
 
 #. STRINGS.UI.UISIDESCREENS.MODULEFLIGHTUTILITYSIDESCREEN.DEPLOY_BUTTON_TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.MODULEFLIGHTUTILITYSIDESCREEN."
+#| "DEPLOY_BUTTON_TOOLTIP"
+#| msgid ""
+#| "Send this module's contents to the surface of the currently orbited "
+#| "<style=\"KKeyword\">Planetoid</style>\n"
+#| "\n"
+#| "A specific deploy location may need to be chosen for certain modules"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.MODULEFLIGHTUTILITYSIDESCREEN.DEPLOY_BUTTON_TOOLTIP"
 msgid ""
-"Send this module's contents to the surface of the currently orbited <style="
-"\"KKeyword\">Planetoid</style>\n"
+"Send this module's contents to the surface of the currently orbited "
+"Planetoid\n"
 "\n"
 "A specific deploy location may need to be chosen for certain modules"
 msgstr ""
@@ -76942,9 +78199,13 @@ msgstr ""
 "加するスペースがありません"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONCHANGEMODULE.DESC
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONCHANGEMODULE.DESC"
+#| msgid "Change this module to a different type"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONCHANGEMODULE.DESC"
-msgid "Change this module to a different type"
+msgid "Swap this module for a different module"
 msgstr "このモジュールを別のタイプに変更します"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONCHANGEMODULE.INVALID
@@ -79525,6 +80786,14 @@ msgctxt "STRINGS.UI.WELCOMEMESSAGETITLE"
 msgid "- ALERT -"
 msgstr "- 警告 -"
 
+#. STRINGS.UI.WORLD_SELECTOR_SCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.PLANETOID"
+#| msgid "Planetoid"
+msgctxt "STRINGS.UI.WORLD_SELECTOR_SCREEN.TITLE"
+msgid "Planetoid"
+msgstr "小惑星"
+
 #. STRINGS.UI.WORLDGEN.ANALYZINGWORLD
 msgctxt "STRINGS.UI.WORLDGEN.ANALYZINGWORLD"
 msgid "Shuffling DNA Blueprints..."
@@ -80461,6 +81730,22 @@ msgctxt "STRINGS.WORLDS.METALHEAVYLANDINGSITE.NAME"
 msgid "Irradiated Marsh Asteroid"
 msgstr "放射性湿原型小惑星"
 
+#. STRINGS.WORLDS.MOOMOONLET.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.ALLRESOURCESSCREEN.FIRST_FRAME_NO_DATA"
+#| msgid "..."
+msgctxt "STRINGS.WORLDS.MOOMOONLET.DESCRIPTION"
+msgid "..."
+msgstr "…"
+
+#. STRINGS.WORLDS.MOOMOONLET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.ASTEROID"
+#| msgid "Asteroid"
+msgctxt "STRINGS.WORLDS.MOOMOONLET.NAME"
+msgid "Moo Asteroid"
+msgstr "アステロイド"
+
 #. STRINGS.WORLDS.MOON_BARREN.DESCRIPTION
 msgctxt "STRINGS.WORLDS.MOON_BARREN.DESCRIPTION"
 msgid ""
@@ -80910,6 +82195,373 @@ msgctxt "STRINGS.WORLDS.WARPOILYSWAMP.NAME"
 msgid "Oily Swamp Asteroid"
 msgstr "油質沼地型小惑星"
 
+#. STRINGS.WORLDS.WATERMOONLET.DESCRIPTION
+msgctxt "STRINGS.WORLDS.WATERMOONLET.DESCRIPTION"
+msgid ""
+"A small, water filled world.\n"
+"\n"
+"<smallcaps>Water Asteroids are offer various liquids and are a source of "
+"Graphite. The surface island does not include much building material.</"
+"smallcaps>"
+msgstr ""
+
+#. STRINGS.WORLDS.WATERMOONLET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.WORLDS.TERRAMOONLET.NAME"
+#| msgid "Terra Asteroid"
+msgctxt "STRINGS.WORLDS.WATERMOONLET.NAME"
+msgid "Water Asteroid"
+msgstr "テラ型小惑星"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.DESC"
+#~ msgid ""
+#~ "Duplicants can use this Crafting Table to build various gadgets used in "
+#~ "the colony."
+#~ msgstr ""
+#~ "複製人間はこの工作台でコロニーに必要なありとあらゆる道具を作り出すことがで"
+#~ "きます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.EFFECT"
+#~ msgid ""
+#~ "Duplicants can use this Crafting Table to build various gadgets used in "
+#~ "the colony.\n"
+#~ "\n"
+#~ "Duplicants will not fabricate items unless recipes are queued."
+#~ msgstr ""
+#~ "複製人間はこの工作台でコロニーに必要なありとあらゆる道具を作り出すことがで"
+#~ "きます。\n"
+#~ "\n"
+#~ "レシピがセットされていないと複製人間は製作作業をしません。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.KEROSENEENGINECLUSTER.DESC"
+#~ msgid ""
+#~ "Rockets can be used to send Duplicants into space and retrieve rare "
+#~ "resources."
+#~ msgstr "ロケットは複製人間を宇宙に送り出し、貴重な資源を回収します。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKMARKER.DESC"
+#~ msgid ""
+#~ "A checkpoint must have an oxygen mask dock built on the opposite side its "
+#~ "arrow faces."
+#~ msgstr ""
+#~ "チェックポイントが指す向きとは反対側に酸素マスク ドックを設置しなければな"
+#~ "りません。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.SUITMARKER.DESC"
+#~ msgid ""
+#~ "A checkpoint must have an atmo suit dock built on the opposite side its "
+#~ "arrow faces."
+#~ msgstr ""
+#~ "チェックポイントが指す向きとは反対側にアトモスーツ ドックを設置しなければ"
+#~ "なりません。"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.JOYREACTION.TOOLTIP"
+#~ msgid ""
+#~ "This Duplicant is doing something because they are <style=\"KKeyword"
+#~ "\">Overjoyed</style>"
+#~ msgstr ""
+#~ "この複製人間は<style=\"KKeyword\">歓喜</style>しているため何かしらのアク"
+#~ "ションを起こしています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COUGHING.NAME"
+#~ msgid "Coughing"
+#~ msgstr "咳をしている"
+
+#~ msgctxt "STRINGS.NAMEGEN.WORLD.NO_DUPES_ON_PLANET_TOOLTIP"
+#~ msgid ""
+#~ "There are no Duplicants on this <style=\"KKeyword\">Planetoid</style>"
+#~ msgstr "この<style=\"KKeyword\">小惑星</style>には複製人間がいません"
+
+#~ msgctxt "STRINGS.UI.CLUSTERMAP.PLANETOID_KEYWORD"
+#~ msgid "<style=\"KKeyword\">Planetoid</style>"
+#~ msgstr "<style=\"KKeyword\">小惑星</style>"
+
+#~ msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD"
+#~ msgid "Crew Checklist"
+#~ msgstr "乗員チェックリスト"
+
+#~ msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETPREP"
+#~ msgid "Launch Checklist"
+#~ msgstr "発射チェックリスト"
+
+#~ msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETPREP_TOOLTIP"
+#~ msgid ""
+#~ "It is recommended that all boxes on the Launch Checklist be checked "
+#~ "before launching"
+#~ msgstr ""
+#~ "発射前には発射チェックリストの一覧全てにチェック済みであることが推奨されて"
+#~ "います"
+
+#~ msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.TITLE"
+#~ msgid "DIAGNOSTICS"
+#~ msgstr "診断"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "RE-ROCKETRY UPDATE!"
+#~ msgstr "新ロケット工学アップデート！"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#~ msgid ""
+#~ "<b>Re-Rocketry Update</b>\n"
+#~ "\n"
+#~ "Added <i>Spaced Out!</i> versions of many rocket modules from the base "
+#~ "game as well as a new type of Petroleum engine.\n"
+#~ "\n"
+#~ "Added a durability system to suits and revised Oxygen masks to behave "
+#~ "more like Atmo Suits.\n"
+#~ "\n"
+#~ "Plenty of bug fixes and balance changes.\n"
+#~ "\n"
+#~ "Check out the full patch notes for more details"
+#~ msgstr ""
+#~ "<b>新ロケット工学 アップデート</b>\n"
+#~ "\n"
+#~ "石油エンジンといった、ベースゲームにあったロケットエンジンを<i>宇宙進出！"
+#~ "</i>用に追加。\n"
+#~ "\n"
+#~ "スーツに耐久度システムを追加。酸素マスクがアトモスーツと同じ振舞いをするよ"
+#~ "うに変更。\n"
+#~ "\n"
+#~ "その他大量のバグ修正およびバランス調整。\n"
+#~ "\n"
+#~ "詳細はパッチノート全文を確認してください"
+
+#~ msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.NOTSELECTED"
+#~ msgid "Destination not set"
+#~ msgstr "目的地未選択"
+
+#~ msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.UNREACHABLE"
+#~ msgid "Destination beyond reach"
+#~ msgstr "目的地到達不可"
+
+#~ msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED"
+#~ msgid "Select a destination from the Starmap"
+#~ msgstr "星図から目的地を選択してください"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.FAILURE"
+#~ msgid "Construction incomplete"
+#~ msgstr "建設未完了"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.READY"
+#~ msgid "Construction complete"
+#~ msgstr "建設完了"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.WARNING"
+#~ msgid "Construction warning"
+#~ msgstr "建設不備あり"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.TOOLTIP.FAILURE"
+#~ msgid "Construction of all modules must be completed before launch"
+#~ msgstr ""
+#~ "ロケット発射前に、全てのモジュールの建設が完了していなければなりません"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.FAILURE"
+#~ msgid "Missing qualified crew"
+#~ msgstr "有資格者なし"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.READY"
+#~ msgid "Qualified crew boarded"
+#~ msgstr "有資格者搭乗済み"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.TOOLTIP.FAILURE"
+#~ msgid ""
+#~ "Missing crew - at least one crew member aboard the rocket must have the "
+#~ "<link=\"PILOT\">Rocket Piloting</link> skill"
+#~ msgstr ""
+#~ "乗員なし - <link=\"PILOT\">ロケット操縦</link>スキルを持った乗員が最低でも"
+#~ "一人必要です"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CREW_BOARDED.WARNING"
+#~ msgid "Crew warning"
+#~ msgstr "乗員不備あり"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.STATUS.FAILURE"
+#~ msgid "Flight path not clear"
+#~ msgstr "航路障害物あり"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.STATUS.READY"
+#~ msgid "Flight path clear"
+#~ msgstr "航路よし"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.FAILURE"
+#~ msgid "The space above this rocket is obstructed"
+#~ msgstr "ロケット上部の空間が封鎖されています"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.READY"
+#~ msgid "Nothing is blocking the path of the rocket"
+#~ msgstr "ロケットの航路に障害物はありません"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.FAILURE"
+#~ msgid "Needs engine"
+#~ msgstr "エンジンが必要です"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.WARNING"
+#~ msgid "Engine warning"
+#~ msgstr "エンジン不備あり"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.FAILURE"
+#~ msgid "Needs engine"
+#~ msgstr "エンジンが必要です"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.READY"
+#~ msgid "Rocket has Engine"
+#~ msgstr "ロケットにエンジンがあります"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.STATUS.FAILURE"
+#~ msgid "Needs fuel tank"
+#~ msgstr "燃料タンクが必要です"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.STATUS.READY"
+#~ msgid "Fuel tank"
+#~ msgstr "燃料タンク"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.STATUS.WARNING"
+#~ msgid "Fuel tank warning"
+#~ msgstr "燃料タンク不備あり"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.FAILURE"
+#~ msgid "Needs fuel tank"
+#~ msgstr "燃料タンクが必要です"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.READY"
+#~ msgid "Rocket has Fuel tank"
+#~ msgstr "ロケットに燃料タンクがあります"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.FAILURE"
+#~ msgid "Needs nosecone"
+#~ msgstr "ノーズコーンが必要です"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.STATUS.WARNING"
+#~ msgid "Nosecone warning"
+#~ msgstr "ノーズコーン不備あり"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.FAILURE"
+#~ msgid "Needs nosecone"
+#~ msgstr "ノーズコーンが必要です"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.READY"
+#~ msgid "Rocket has Nosecone"
+#~ msgstr "ロケットにノーズコーンがあります"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.FAILURE"
+#~ msgid "Needs oxidizer tank"
+#~ msgstr "酸化剤タンクが必要です"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.READY"
+#~ msgid "Oxidizer tank"
+#~ msgstr "酸化剤タンク"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.STATUS.WARNING"
+#~ msgid "Oxidizer tank warning"
+#~ msgstr "酸化剤タンク不備あり"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.FAILURE"
+#~ msgid "Rocket needs an Oxidizer tank"
+#~ msgstr "ロケットに酸化剤タンクが必要です"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.READY"
+#~ msgid "Rocket has an Oxidizer tank"
+#~ msgstr "ロケットに酸化剤タンクがあります"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_OXIDIZER_TANK.TOOLTIP.WARNING"
+#~ msgid "Oxidizer tank warning"
+#~ msgstr "酸化剤タンク不備あり"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INSTALLED_TOOLTIP"
+#~ msgid "{0} installed, ready for launch"
+#~ msgstr "{0} は組み立て済みです。発射準備ができています"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.STATUS."
+#~ "FAILURE"
+#~ msgid "Lander not constructed"
+#~ msgstr "ランダーが建設されていません"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.INTERNAL_CONSTRUCTION_COMPLETE.TOOLTIP."
+#~ "FAILURE"
+#~ msgid "Some landers still require construction"
+#~ msgstr "建設が必要なランダーがあります"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.STATUS.WARNING"
+#~ msgid "Cargo Loading Incomplete"
+#~ msgstr "貨物積載未完了"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.FAILURE"
+#~ msgid "Too many modules"
+#~ msgstr "モジュール過多"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.READY"
+#~ msgid "Module count"
+#~ msgstr "モジュール数"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.WARNING"
+#~ msgid "Construction warning"
+#~ msgstr "建設不備あり"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_DESTINATION"
+#~ msgid "No destination selected."
+#~ msgstr "目的地が選択されていません。"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.FAILURE"
+#~ msgid "Extra passengers onboard"
+#~ msgstr "同乗者搭乗中"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.READY"
+#~ msgid "No extra passengers"
+#~ msgstr "同乗者なし"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.TOOLTIP.FAILURE"
+#~ msgid "Extra passengers"
+#~ msgstr "同乗者"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.TOOLTIP.READY"
+#~ msgid "Crew correct"
+#~ msgstr "適正乗員"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_EXTRA_PASSENGERS.WARNING"
+#~ msgid "Crew warning"
+#~ msgstr "乗員に不備あり"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.FAILURE"
+#~ msgid "Insufficient fuel"
+#~ msgstr "燃料不足"
+
+#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.STATUS.WARNING"
+#~ msgid "Warning: partially fueled"
+#~ msgstr "警告: 燃料不十分"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.FAILURE"
+#~ msgid "Insufficient oxidizer"
+#~ msgstr "酸化剤不足"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.VIEW_WORLD_DISABLE_TOOLTIP"
+#~ msgid "Enter the planetoid orbit to inspect the surface."
+#~ msgstr "小惑星の軌道に入り、表層を観察します。"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON"
+#~ msgid "LAUNCH"
+#~ msgstr "発射"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_REQUESTED_BUTTON"
+#~ msgid "AWAITING PILOT"
+#~ msgstr "パイロット待ち"
+
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.AUTOPILOTACTIVE.TOOLTIP"
 #~ msgid ""
 #~ "Rocket has entered auto pilot mode and reduced speed. Duplicant "
@@ -80958,10 +82610,6 @@ msgstr "油質沼地型小惑星"
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.NAME"
 #~ msgid "No Launch Destination"
 #~ msgstr "射出先なし"
-
-#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME"
-#~ msgid "Launcher Path Blocked"
-#~ msgstr "射出軌道阻害"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_IDLE.NAME"
 #~ msgid "No connected rocket"
@@ -81431,10 +83079,6 @@ msgstr "油質沼地型小惑星"
 #~ "STRINGS.UI.UISIDESCREENS.MODULAR_CONDUIT_PORT_SIDE_SCREEN.LABEL_BOTH"
 #~ msgid "Both"
 #~ msgstr "両方"
-
-#~ msgctxt "STRINGS.WORLDS.TERRAMOONLET.NAME"
-#~ msgid "Terra Asteroid"
-#~ msgstr "テラ型小惑星"
 
 #~ msgctxt "STRINGS.WORLDS.IDEALLANDINGSITE.DESCRIPTION"
 #~ msgid ""
