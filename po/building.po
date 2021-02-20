@@ -458,14 +458,6 @@ msgid "Local Colony Lacks {Skills}"
 msgstr "{Skills}スキル不足のコロニー"
 
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP"
-#| msgid ""
-#| "{Skills} Skill required to operate\n"
-#| "------------------\n"
-#| "Open the <b>Skills Panel</b> <b><color=#F44A4A>[L]</b></color> to teach a "
-#| "local Duplicant {Skills}, or bring in a Duplicant with the appropriate "
-#| "skill from another <style=\"KKeyword\">Planetoid</style>"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP"
 msgid ""
 "{Skills} Skill required to operate\n"
@@ -475,9 +467,8 @@ msgid ""
 msgstr ""
 "操作には{Skills}スキルが必要です\n"
 "------------------\n"
-"<b>スキルパネル</b><b><color=#F44A4A>[L]</b></color>を開き、現地の複製人間に"
-"{Skills}を習得させるか、他の<style=\"KKeyword\">小惑星</style>から適切なスキ"
-"ルを持った複製人間を連れてきましょう"
+"<b>スキルパネル</b><b><color=#F44A4A>[L]</b></color>を開き、複製人間に"
+"{Skills}を習得させましょう"
 
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP_CLUSTER
 msgctxt ""
@@ -485,7 +476,7 @@ msgctxt ""
 msgid ""
 " on this Planetoid, or bring in a Duplicant with the appropriate skill from "
 "another Planetoid"
-msgstr ""
+msgstr "もしくは、他の惑星から適切なスキルを持った複製人間を連れてきましょう"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.NAME"
@@ -953,27 +944,24 @@ msgstr ""
 "ます"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDHIGHPRESSURE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.ALLOWED_TO_DEPRESSURIZE"
-#| msgid "Not currently overpressure"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDHIGHPRESSURE.NAME"
 msgid "Not Emitting: Overpressure"
-msgstr "気圧超過でない"
+msgstr "放出停止: 圧力超過"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDHIGHPRESSURE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDHIGHPRESSURE.TOOLTIP"
 msgid "Ambient pressure is too high for {Element} to be released"
-msgstr ""
+msgstr "周囲の圧力が高すぎるため、{Element}を放出できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDLOWTEMPERATURE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDLOWTEMPERATURE.NAME"
 msgid "Not Emitting: Too Cold"
-msgstr ""
+msgstr "放出停止: 低温"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDLOWTEMPERATURE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGBLOCKEDLOWTEMPERATURE.TOOLTIP"
 msgid "Temperature is too low for {Element} to be released"
-msgstr ""
+msgstr "気温が低すぎるため、{Element}を放出できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGCO2.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGCO2.NAME"
@@ -2037,27 +2025,22 @@ msgstr "この設備が稼働するには、これらの問題が解決される
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME"
 msgid "Power From Thruster: {ActiveWattage}/{MaxWattage}"
-msgstr ""
+msgstr "スラスター出力: {ActiveWattage}/{MaxWattage}"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SOLARPANELWATTAGE.TOOLTIP"
-#| msgid ""
-#| "This panel is generating <style=\"produced\">{Wattage}</style> of <style="
-#| "\"KKeyword\">Power</style>"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.TOOLTIP"
 msgid ""
 "Engine will generate <style=\"produced\">{MaxWattage}</style> of <style="
 "\"KKeyword\">Power</style> while travelling through space. Right now, it's "
 "not doing much of anything."
 msgstr ""
-"このパネルは <style=\"produced\">{Wattage}</style> の<style=\"KKeyword\">電力"
-"</style>を生成しています"
+"宇宙を航行中のエンジンは<style=\"KKeyword\">電力</style>を<style=\"produced"
+"\">{MaxWattage}</style>生成します。現在のところ、エンジンは何もしていません。"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.NAME"
 msgid "Power From Thruster: {ActiveWattage}/{MaxWattage}"
-msgstr ""
+msgstr "スラスター出力: {ActiveWattage}/{MaxWattage}"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.TOOLTIP"
@@ -2066,6 +2049,8 @@ msgid ""
 "\"KKeyword\">Power</style> extracted from the thruster. It will continue "
 "generating power as long as it's travelling through space."
 msgstr ""
+"エンジンはスラスターから<style=\"KKeyword\">電力</style>を<style=\"produced"
+"\">{MaxWattage}</style>生成します。宇宙を航行中は継続して電力を生成します。"
 
 #. STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.NAME"
@@ -3068,18 +3053,9 @@ msgid "No Delivery Destination"
 msgstr "配達先なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP"
-#| msgid ""
-#| "A delivery destination has not been set    • {0}\n"
-#| "\n"
-#| "Set destination for this payload using the "
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP"
 msgid "A delivery destination has not been set    • {0}"
-msgstr ""
-"射出先が指定されていません。    • {0}\n"
-"\n"
-"この積み荷の射出先を指定してください "
+msgstr "射出先が指定されていません。    • {0}"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME"
