@@ -454,13 +454,6 @@ msgid "Batteries allow power from generators to be stored for later."
 msgstr "バッテリーは発電機から得られた電力を溜めておくことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERY.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERY.EFFECT"
-#| msgid ""
-#| "Stores <link=\"POWER\">Power</link> from generators, then provides that "
-#| "<link=\"POWER\">Power</link> to buildings.\n"
-#| "\n"
-#| "Loses charge over time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERY.EFFECT"
 msgid ""
 "Stores <link=\"POWER\">Power</link> from generators, then provides that "
@@ -468,8 +461,7 @@ msgid ""
 "\n"
 "Loses charge over time."
 msgstr ""
-"発電機から送られた余剰<link=\"POWER\">電力</link>を蓄え、<link=\"POWER\">電力"
-"</link>を設備に供給します。\n"
+"発電機から送られた<link=\"POWER\">電力</link>を蓄え、設備に供給します。\n"
 "\n"
 "蓄えられた電力は時間とともに失われます。"
 
@@ -488,13 +480,6 @@ msgstr ""
 "きます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT"
-#| msgid ""
-#| "Stores <link=\"POWER\">Power</link> from generators, then provides that "
-#| "<link=\"POWER\">Power</link> to buildings.\n"
-#| "\n"
-#| "Slightly loses charge over time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMEDIUM.EFFECT"
 msgid ""
 "Stores <link=\"POWER\">Power</link> from generators, then provides that "
@@ -502,8 +487,7 @@ msgid ""
 "\n"
 "Slightly loses charge over time."
 msgstr ""
-"発電機から送られた余剰<link=\"POWER\">電力</link>を蓄え、<link=\"POWER\">電力"
-"</link>を設備に供給します。\n"
+"発電機から送られた<link=\"POWER\">電力</link>を蓄え、設備に供給します。\n"
 "\n"
 "蓄えられた電力は時間とともに少しずつ失われます。"
 
@@ -518,6 +502,8 @@ msgid ""
 "Charging a battery module before takeoff makes it easier to power buildings "
 "during flight."
 msgstr ""
+"発射前にバッテリーモジュールを充電しておくことで、飛翔中に設備へ給電できま"
+"す。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.EFFECT"
@@ -530,14 +516,18 @@ msgid ""
 "\n"
 "Loses charge over time."
 msgstr ""
+"ロケットエンジンまたは<link=\"LAUNCHPLATFORM\">ロケット発射台</link>から発電"
+"された余剰<link=\"POWER\">電力</link>を蓄えます。\n"
+"\n"
+"<link=\"ROCKETINTERIORPOWERPLUG\">ロケット内コンセント</link>に電力を供給しま"
+"す。\n"
+"\n"
+"蓄えられた電力は時間とともに失われます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERY.NAME"
-#| msgid "<link=\"BATTERY\">Battery</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.NAME"
 msgid "<link=\"BATTERYMODULE\">Battery Module</link>"
-msgstr "<link=\"BATTERY\">バッテリー</link>"
+msgstr "<link=\"BATTERYMODULE\">バッテリーモジュール</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.ACTIVATE_TOOLTIP"
@@ -568,17 +558,6 @@ msgstr ""
 "style></b>になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT"
-#| msgid ""
-#| "Stores <link=\"POWER\">Power</link> from generators, then provides that "
-#| "<link=\"POWER\">Power</link> to buildings.\n"
-#| "\n"
-#| "Sends a <b><style=\"logic_on\">Green Signal</style></b> or <b><style="
-#| "\"logic_off\">Red Signal</style></b> based on the configuration of the "
-#| "Logic Activation Parameters.\n"
-#| "\n"
-#| "Very slightly loses charge over time."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYSMART.EFFECT"
 msgid ""
 "Stores <link=\"POWER\">Power</link> from generators, then provides that "
@@ -590,8 +569,7 @@ msgid ""
 "\n"
 "Very slightly loses charge over time."
 msgstr ""
-"発電機から送られた余剰<link=\"POWER\">電力</link>を蓄え、<link=\"POWER\">電力"
-"</link>を設備に供給します。\n"
+"発電機から送られた<link=\"POWER\">電力</link>を蓄え、設備に供給します。\n"
 "\n"
 "論理入力は設定値に応じて<b><style=\"logic_on\">グリーン</style></b>または"
 "<b><style=\"logic_off\">レッド</style></b>になります。\n"
@@ -1453,33 +1431,24 @@ msgid ""
 "Crafting stations allow Duplicants to make oxygen masks to wear in low "
 "breathability areas."
 msgstr ""
+"工作端末は呼吸困難な場所で着用するための酸素マスクを複製人間が作成できるよう"
+"になります。"
 
 #. STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.SUITFABRICATOR.EFFECT"
-#| msgid ""
-#| "Forges protective <link=\"EXOSUIT\">Exosuits</link> for Duplicants to "
-#| "wear.\n"
-#| "\n"
-#| "Duplicants will not fabricate items unless recipes are queued."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.EFFECT"
 msgid ""
 "Produces items and equipment for Duplicant use.\n"
 "\n"
 "Duplicants will not fabricate items unless recipes are queued."
 msgstr ""
-"複製人間が着用するための防護 <link=\"EXOSUIT\">EXOスーツ</link>を製造しま"
-"す。\n"
+"複製人間が着用するための装備やアイテムを製造します。\n"
 "\n"
 "レシピがセットされていないと複製人間は製造作業をしません。"
 
 #. STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.NAME"
-#| msgid "<link=\"CRAFTINGTABLE\">Crafting Table</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.CRAFTINGTABLE.NAME"
 msgid "<link=\"CRAFTINGTABLE\">Crafting Station</link>"
-msgstr "<link=\"CRAFTINGTABLE\">工作台</link>"
+msgstr "<link=\"CRAFTINGTABLE\">工作端末</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.CREATUREDELIVERYPOINT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREDELIVERYPOINT.DESC"
@@ -3394,13 +3363,6 @@ msgid "High energy particles are necessary for producing atomic research."
 msgstr "高エネルギー粒子は原子力の研究に必要です。"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.EFFECT"
-#| msgid ""
-#| "Attracts nearby <link=\"RADIATION\">Radiation</link> to generates <style="
-#| "\"KKeyword\">High Energy Particles</style>.\n"
-#| "\n"
-#| "Emits generated particles in the direction of your choosing."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.EFFECT"
 msgid ""
 "Attracts nearby <link=\"RADIATION\">Radiation</link> to generate <style="
@@ -3408,10 +3370,10 @@ msgid ""
 "\n"
 "Emits generated particles in the direction of your choosing."
 msgstr ""
-"近くの<link=\"RADIATION\">放射線</link>を引き付けて、<style=\"KKeyword\">高エ"
-"ネルギー粒子</style>を生成します。\n"
+"近くの<link=\"RADIATION\">放射線</link>を引き寄せ、<style=\"KKeyword\">高エネ"
+"ルギー粒子</style>を生成します。\n"
 "\n"
-"生成した粒子は指定方向に排出されます。"
+"生成した粒子は指定方向に放出されます。"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.LOGIC_PORT"
@@ -3855,8 +3817,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.JETSUITMARKER.DESC"
 msgid ""
 "A checkpoint must have a correlating dock built on the opposite side its "
 "arrow faces."
-msgstr ""
-"矢印が指す向きとは反対側にジェットスーツドックを設置しなければなりません。"
+msgstr "矢印が指す向きとは反対側にチェックポイントを設置しなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.JETSUITMARKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.JETSUITMARKER.EFFECT"
@@ -3931,7 +3892,7 @@ msgstr "<link=\"KEROSENEENGINE\">石油エンジン</link>"
 #. STRINGS.BUILDINGS.PREFABS.KEROSENEENGINECLUSTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.KEROSENEENGINECLUSTER.DESC"
 msgid "More powerful rocket engines can propel heavier burdens."
-msgstr ""
+msgstr "エンジンが強力なほど、より重い積み荷を運搬できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.KEROSENEENGINECLUSTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.KEROSENEENGINECLUSTER.EFFECT"
@@ -4107,7 +4068,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LEADSUITMARKER.DESC"
 msgid ""
 "A checkpoint must have a correlating dock built on the opposite side its "
 "arrow faces."
-msgstr "矢印が指す向きとは反対側に鉛スーツドックを設置しなければなりません。"
+msgstr "矢印が指す向きとは反対側にチェックポイントを設置しなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.LEADSUITMARKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LEADSUITMARKER.EFFECT"
@@ -7230,43 +7191,19 @@ msgid "<link=\"ORBITALCARGOMODULE\">Orbital Cargo Module</link>"
 msgstr "<link=\"ORBITALCARGOMODULE\">軌道貨物モジュール</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.DESC
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.DESC"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCENTER.EFFECT"
-#| msgid ""
-#| "Conducts <link=\"RESEARCH\">Novice Research</link> to unlock new "
-#| "technologies."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT"
 msgid "Conducts <link=\"RESEARCH\">Interstellar Research</link> using ....."
-msgstr ""
-"複製人間が従事している間<link=\"RESEARCH\">初歩の研究</link>を行い、新しい技"
-"術を発明します。"
+msgstr "<link=\"RESEARCH\">星間研究</link>を行います"
 
 #. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.COSMICRESEARCHCENTER.NAME"
-#| msgid "<link=\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.NAME"
 msgid "<link=\"ORBITALRESEARCHCENTER\">Orbital Microlab</link>"
-msgstr "<link=\"COSMICRESEARCHCENTER\">仮想プラネタリウム</link>"
+msgstr "<link=\"ORBITALRESEARCHCENTER\">軌道ラボ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.DESC"
@@ -7394,34 +7331,17 @@ msgstr ""
 "ロケット燃料として、<link=\"LIQUIDOXYGEN\">液体酸素</link>を格納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.NAME"
-#| msgid ""
-#| "<link=\"LIQUIDOXIDIZERTANKCLUSTER\">Large Liquid Oxidizer Tank</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.NAME"
 msgid "<link=\"LIQUIDOXIDIZERTANKCLUSTER\">Liquid Oxidizer Tank</link>"
-msgstr "<link=\"LIQUIDOXIDIZERTANKCLUSTER\">大型液体酸素タンク</link>"
+msgstr "<link=\"LIQUIDOXIDIZERTANKCLUSTER\">液体酸化剤タンク</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.DESC"
-#| msgid ""
-#| "An Oxygen Mask dock is a handy holding place for an Oxygen Mask when it "
-#| "isn't in use."
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.DESC"
 msgid ""
 "An oxygen mask dock will store and refill masks while they're not in use."
 msgstr "酸素マスクドックは使用中でない酸素マスクを掛けておける場所です。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.EFFECT"
-#| msgid ""
-#| "Stores <link=\"OXYGENMASK\">Oxygen Masks</link> and refuels them with "
-#| "<link=\"OXYGEN\">Oxygen</link>.\n"
-#| "\n"
-#| "Build next to an <link=\"OXYGENMASKMARKER\">Oxygen Mask Checkpoint</link> "
-#| "to make Duplicants put on an Oxygen Mask when passing by."
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKLOCKER.EFFECT"
 msgid ""
 "Stores <link=\"OXYGENMASK\">Oxygen Masks</link> and refuels them with <link="
@@ -7442,17 +7362,11 @@ msgid "<link=\"OXYGENMASKLOCKER\">Oxygen Mask Dock</link>"
 msgstr "<link=\"OXYGENMASKLOCKER\">酸素マスクドック</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.OXYGENMASKMARKER.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.JETSUITMARKER.DESC"
-#| msgid ""
-#| "A checkpoint must have a correlating dock built on the opposite side its "
-#| "arrow faces."
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKMARKER.DESC"
 msgid ""
 "A checkpoint must have a correlating dock built on the opposite side its "
 "arrow faces."
-msgstr ""
-"矢印が指す向きとは反対側にジェットスーツドックを設置しなければなりません。"
+msgstr "矢印が指す向きとは反対側にチェックポイントを設置しなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXYGENMASKMARKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXYGENMASKMARKER.EFFECT"
@@ -8734,7 +8648,7 @@ msgstr "<link=\"ROCKETENVELOPEWINDOWTILE\">ロケット窓</link>"
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.DESC"
 msgid "It's basically central-vac."
-msgstr ""
+msgstr "基本的なセントラルバキューム方式です。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.EFFECT"
@@ -8746,19 +8660,22 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
+"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>を"
+"ロケットに吸引させます。\n"
+"\n"
+"空きがある最初のロケットモジュールに気体を送ります。\n"
+"\n"
+"ロケットモジュール内に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESGASINPUT"
-#| msgid "<link=\"GASPIPING\">Gas Intake Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.NAME"
 msgid "<link=\"ROCKETINTERIORGASINPUT\">Gas Intake Fitting</link>"
-msgstr "<link=\"GASPIPING\">気体入力パイプ</link>"
+msgstr "<link=\"ROCKETINTERIORGASINPUT\">気体入力継ぎ手</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.DESC"
 msgid "Refreshing breezes on-demand."
-msgstr ""
+msgstr "好きな時にそよ風が吹きます。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.EFFECT"
@@ -8770,19 +8687,22 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
+"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>を"
+"ロケットに吸引させます。\n"
+"\n"
+"指定した素材を持つ最初のロケットモジュールから気体を吸い出します。\n"
+"\n"
+"ロケットモジュール内に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESGASOUTPUT"
-#| msgid "<link=\"GASPIPING\">Gas Output Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.NAME"
 msgid "<link=\"ROCKETINTERIORGASOUTPUT\">Gas Output Fitting</link>"
-msgstr "<link=\"GASPIPING\">気体出力パイプ</link>"
+msgstr "<link=\"ROCKETINTERIORGASOUTPUT\">気体出力継ぎ手</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.DESC"
 msgid "Begone, foul waters!"
-msgstr ""
+msgstr "汚い水め、あっちへ行け！"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.EFFECT"
@@ -8794,19 +8714,22 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
+"<link=\"LIQUIDCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSLIQUID\">液体</"
+"link>をロケットに吸引させます。\n"
+"\n"
+"空きがある最初のロケットモジュールに液体を送ります。\n"
+"\n"
+"ロケットモジュール内に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESLIQUIDINPUT"
-#| msgid "<link=\"LIQUIDPIPING\">Liquid Intake Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.NAME"
 msgid "<link=\"ROCKETINTERIORLIQUIDINPUT\">Liquid Intake Fitting</link>"
-msgstr "<link=\"LIQUIDPIPING\">液体入力パイプ</link>"
+msgstr "<link=\"ROCKETINTERIORLIQUIDINPUT\">液体入力継ぎ手</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.DESC"
 msgid "Now if only we had some water balloons..."
-msgstr ""
+msgstr "水風船を持って来てればなあ..."
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.EFFECT"
@@ -8818,21 +8741,24 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
+"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>を"
+"ロケットに吸引させます。\n"
+"\n"
+"指定した素材を持つ最初のロケットモジュールから液体を吸い出します。\n"
+"\n"
+"ロケットモジュール内に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESLIQUIDOUTPUT"
-#| msgid "<link=\"LIQUIDPIPING\">Liquid Output Pipe</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.NAME"
 msgid "<link=\"ROCKETINTERIORLIQUIDOUTPUT\">Liquid Output Fitting</link>"
-msgstr "<link=\"LIQUIDPIPING\">液体出力パイプ</link>"
+msgstr "<link=\"ROCKETINTERIORLIQUIDOUTPUT\">液体出力継ぎ手</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.DESC"
 msgid ""
 "Outlets conveniently power buildings inside a cockpit using their rocket's "
 "power stores."
-msgstr ""
+msgstr "コンセントはロケットの電源からコックピット内の設備に電力を供給します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.EFFECT"
@@ -8844,28 +8770,24 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
+"接続された設備に<link=\"POWER\">電力</link>を供給します。\n"
+"\n"
+"電力は<link=\"BATTERYMODULE\">バッテリーモジュール</link>およびロケットエンジ"
+"ンから引き出されます。\n"
+"\n"
+"ロケットモジュール内に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDCATEGORIES.POWER.NAME"
-#| msgid "<link=\"BUILDCATEGORYPOWER\">Power</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.NAME"
 msgid "<link=\"ROCKETINTERIORPOWERPLUG\">Power Outlet Fitting</link>"
-msgstr "<link=\"BUILDCATEGORYPOWER\">電力</link>"
+msgstr "<link=\"ROCKETINTERIORPOWERPLUG\">電源コンセント継ぎ手</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.DESC"
 msgid "Why organize your shelves when you can just shove everything in here?"
-msgstr ""
+msgstr "どうせごっちゃにするんだから、棚を整理する必要なくない？"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.EFFECT"
-#| msgid ""
-#| "Loads <link=\"ELEMENTSSOLID\">Solid Materials</link> onto <link="
-#| "\"SOLIDCONDUIT\">Conveyor Rail</link> for transport.\n"
-#| "\n"
-#| "Only loads the resources of your choosing."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.EFFECT"
 msgid ""
 "Allows <link=\"ELEMENTSSOLID\">Solid Materials</link> to be moved into "
@@ -8875,23 +8797,19 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"輸送用に<link=\"ELEMENTSSOLID\">固形素材</link>を<link=\"SOLIDCONDUIT\">コン"
-"ベアレール</link>に積載します。\n"
+"<link=\"SOLIDCONDUIT\">コンベアレール</link>を通じて<link=\"ELEMENTSSOLID\">"
+"固形素材</link>をロケットに格納します。\n"
 "\n"
-"選んだ資源のみ積載できます。"
+"空きがある最初のロケットモジュールに固形素材を送ります。\n"
+"\n"
+"ロケットモジュール内に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.NAME"
-#| msgid "<link=\"SOLIDCONDUITOUTBOX\">Conveyor Receptacle</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.NAME"
 msgid "<link=\"ROCKETINTERIORSOLIDINPUT\">Conveyor Receptacle Fitting</link>"
-msgstr "<link=\"SOLIDCONDUITOUTBOX\">コンベアレセプター</link>"
+msgstr "<link=\"ROCKETINTERIORSOLIDINPUT\">コンベアレセプタ継ぎ手</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.DESC
-#, fuzzy
-#| msgctxt "STRINGS.UI.ALLRESOURCESSCREEN.FIRST_FRAME_NO_DATA"
-#| msgid "..."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.DESC"
 msgid "..."
 msgstr "…"
@@ -8907,14 +8825,17 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
+"<link=\"SOLIDCONDUIT\">コンベアレール</link>を通じて<link=\"ELEMENTSSOLID\">"
+"固形素材</link>をロケットから取り出します。\n"
+"\n"
+"指定した素材を持つ最初のロケットモジュールから固形素材を取り出します。\n"
+"\n"
+"ロケットモジュール内に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.NAME"
-#| msgid "<link=\"SOLIDCONDUITINBOX\">Conveyor Loader</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.NAME"
 msgid "<link=\"ROCKETINTERIORSOLIDOUTPUT\">Conveyor Loader Fitting</link>"
-msgstr "<link=\"SOLIDCONDUITINBOX\">コンベアローダー</link>"
+msgstr "<link=\"ROCKETINTERIORSOLIDOUTPUT\">コンベアローダー継ぎ手</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETPOD.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETPOD.DESC"
@@ -10150,17 +10071,11 @@ msgid "<link=\"SUITLOCKER\">Atmo Suit Dock</link>"
 msgstr "<link=\"SUITLOCKER\">アトモスーツ ドック</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SUITMARKER.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.JETSUITMARKER.DESC"
-#| msgid ""
-#| "A checkpoint must have a correlating dock built on the opposite side its "
-#| "arrow faces."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SUITMARKER.DESC"
 msgid ""
 "A checkpoint must have a correlating dock built on the opposite side its "
 "arrow faces."
-msgstr ""
-"矢印が指す向きとは反対側にジェットスーツドックを設置しなければなりません。"
+msgstr "矢印が指す向きとは反対側にチェックポイントを設置しなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.SUITMARKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SUITMARKER.EFFECT"
@@ -10235,6 +10150,8 @@ msgid ""
 "creating <link=\"<LINK=\"SUPERCOOLANT\">SUPER COOLANT</LINK>\">Super "
 "Coolant</link>."
 msgstr ""
+"フラーレンは<link=\"SUPERCOOLANT\">超冷却剤</link>を生成するのに役立つ<link="
+"\"ELEMENTSSOLID\">固形素材</link>です。"
 
 #. STRINGS.BUILDINGS.PREFABS.SUPERMATERIALREFINERY.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SUPERMATERIALREFINERY.NAME"
