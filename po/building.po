@@ -452,9 +452,30 @@ msgstr ""
 "この<style=\"KKeyword\">観測望遠鏡</style>は現在地から観測可能な全ての場所を"
 "解析しました"
 
+#. STRINGS.BUILDING.STATUSITEMS.COLLECTINGHEP.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.COLLECTINGHEP.NAME"
+msgid "Collecting Radbolts ({x}/cycle)"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.COLLECTINGHEP.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.COLLECTINGHEP.TOOLTIP"
+msgid "Collecting Radbolts from ambient radiation"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.LOCAL
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.LOCAL_SAVE"
+#| msgid "local"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.LOCAL"
+msgid "Local"
+msgstr "ローカル"
+
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.NAME"
+#| msgid "Local Colony Lacks {Skills}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.NAME"
-msgid "Local Colony Lacks {Skills}"
+msgid "{Local}Colony Lacks {Skills}"
 msgstr "{Skills}スキル不足のコロニー"
 
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP
@@ -471,11 +492,15 @@ msgstr ""
 "{Skills}を習得させましょう"
 
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP_CLUSTER
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP_CLUSTER"
+#| msgid ""
+#| " on this Planetoid, or bring in a Duplicant with the appropriate skill "
+#| "from another Planetoid"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP_CLUSTER"
-msgid ""
-" on this Planetoid, or bring in a Duplicant with the appropriate skill from "
-"another Planetoid"
+msgid ", or bring a Duplicant with the skill from another Planetoid"
 msgstr "もしくは、他の惑星から適切なスキルを持った複製人間を連れてきましょう"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.NAME
@@ -494,15 +519,25 @@ msgid "No Rocket Ports"
 msgstr "ロケット入出力口不足"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_NO_PORT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_NO_PORT.TOOLTIP"
+#| msgid ""
+#| "The current <style=\"KKeyword\">Rocket Platform</style> has no <link="
+#| "\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> attached\n"
+#| "\n"
+#| "<style=\"KKeyword\">Solid</style>, <style=\"KKeyword\">Gas</style>, and "
+#| "<style=\"KKeyword\">Liquid</style> <link=\"MODULARLAUNCHPADPORTSOLID"
+#| "\">Rocket Port</link> are required to load and unload materials from a "
+#| "landed rocket's <style=\"KKeyword\">Cargo Bays</style>"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_NO_PORT.TOOLTIP"
 msgid ""
-"The current <style=\"KKeyword\">Rocket Platform</style> has no <link="
+"This <style=\"KKeyword\">Rocket Platform</style> has no <link="
 "\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> attached\n"
-"\n"
+"------------------\n"
 "<style=\"KKeyword\">Solid</style>, <style=\"KKeyword\">Gas</style>, and "
 "<style=\"KKeyword\">Liquid</style> <link=\"MODULARLAUNCHPADPORTSOLID"
-"\">Rocket Port</link> are required to load and unload materials from a "
-"landed rocket's <style=\"KKeyword\">Cargo Bays</style>"
+"\">Rocket Ports</link> can be attached to load and unload cargo from a "
+"landed rocket's modules"
 msgstr ""
 "<link=\"LAUNCHPLATFORM\">発射台</link>の<link=\"MODULARLAUNCHPADPORTSOLID\">"
 "ロケット入出力口</link>に繋がる先がありません\n"
@@ -513,35 +548,50 @@ msgstr ""
 "口</link>を建設してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.NAME"
+#| msgid "Rocket Network Attached"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.NAME"
-msgid "Rocket Network Attached"
+msgid "Port Network Attached"
 msgstr "ロケット経路接続済み"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.TOOLTIP"
+#| msgid ""
+#| "The current <style=\"KKeyword\">Rocket Platform</style> has a <link="
+#| "\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> which can load or unload "
+#| "from this module"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.TOOLTIP"
 msgid ""
-"The current <style=\"KKeyword\">Rocket Platform</style> has a <link="
-"\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> which can load or unload "
-"from this module"
+"This module has been connected to a <link=\"MODULARLAUNCHPADPORTSOLID"
+"\">Rocket Port</link> and can now load and unload cargo"
 msgstr ""
 "<link=\"LAUNCHPLATFORM\">ロケット発射台</link>にはこのモジュールから搬入出可"
 "能な<link=\"MODULARLAUNCHPADPORTSOLID\">ロケット入出力口</link>があります"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.NAME"
+#| msgid "Unconnected Port Network"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.NAME"
-msgid "Unconnected Port Network"
+msgid "Incorrect Port Network"
 msgstr "入出力経路不良"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_PORT.TOOLTIP"
+#| msgid ""
+#| "The current <style=\"KKeyword\">Rocket Platform</style> has a <link="
+#| "\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> which can load or unload "
+#| "from this module"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.TOOLTIP"
 msgid ""
-"The <link=\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> attached to the "
-"current <style=\"KKeyword\">Rocket Platform</style> are not the correct type "
-"for this <style=\"KKeyword\">Cargo Bay</style>"
+"The attached <link=\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> is not "
+"the correct type for this cargo module"
 msgstr ""
-"<link=\"LAUNCHPLATFORM\">ロケット発射台</link>に取り付けられた<link="
-"\"MODULARLAUNCHPADPORTSOLID\">ロケット入出力口</link>はこの<style=\"KKeyword"
-"\">貨物ベイ</style>のタイプと合っていません"
+"<link=\"LAUNCHPLATFORM\">ロケット発射台</link>にはこのモジュールから搬入出可"
+"能な<link=\"MODULARLAUNCHPADPORTSOLID\">ロケット入出力口</link>があります"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.NAME"
@@ -748,6 +798,19 @@ msgstr ""
 "自動: 複製人間は必要に応じて開閉します\n"
 "施錠: 誰も通れません\n"
 "開放: ドアを開けっぱなしにします"
+
+#. STRINGS.BUILDING.STATUSITEMS.DEADREACTORCOOLINGOFF.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.TOILET.NAME"
+#| msgid "{FlushesRemaining} \"Visits\" Remaining"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.DEADREACTORCOOLINGOFF.NAME"
+msgid "Cooling ({CyclesRemaining} cycles remaining)"
+msgstr "「訪問」回数残り {FlushesRemaining} 回"
+
+#. STRINGS.BUILDING.STATUSITEMS.DEADREACTORCOOLINGOFF.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.DEADREACTORCOOLINGOFF.TOOLTIP"
+msgid "The radiation coming from this reactor is diminishing"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.DESALINATORNEEDSEMPTYING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DESALINATORNEEDSEMPTYING.NAME"
@@ -1404,17 +1467,27 @@ msgstr ""
 "せん"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.LOGIC_CONTROLLED_ACTIVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR."
+#| "LOGIC_CONTROLLED_ACTIVE"
+#| msgid "Incoming HEP: Redirect"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR."
 "LOGIC_CONTROLLED_ACTIVE"
-msgid "Incoming HEP: Redirect"
+msgid "Incoming Radbolts: Redirect"
 msgstr "HEP接近: 転送"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.LOGIC_CONTROLLED_STANDBY
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR."
+#| "LOGIC_CONTROLLED_STANDBY"
+#| msgid "Incoming HEP: Ignore"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR."
 "LOGIC_CONTROLLED_STANDBY"
-msgid "Incoming HEP: Ignore"
+msgid "Incoming Radbolts: Ignore"
 msgstr "HEP接近: 無視"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.NORMAL
@@ -1423,47 +1496,77 @@ msgid "Normal"
 msgstr "通常"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.TOOLTIPS.LOGIC_CONTROLLED_ACTIVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.TOOLTIPS."
+#| "LOGIC_CONTROLLED_ACTIVE"
+#| msgid ""
+#| "Particle Redirector is receiving a <b><style=\"logic_on\">Green Signal</"
+#| "style></b>, accepting incoming <style=\"KKeyword\">High Energy Particles</"
+#| "style>"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.TOOLTIPS."
 "LOGIC_CONTROLLED_ACTIVE"
 msgid ""
-"Particle Redirector is receiving a <b><style=\"logic_on\">Green Signal</"
-"style></b>, accepting incoming <style=\"KKeyword\">High Energy Particles</"
-"style>"
+"<style=\"KKeyword\">Radbolt Reflector</style> is receiving a <b><style="
+"\"logic_on\">Green Signal</style></b>, accepting incoming <style=\"KKeyword"
+"\">Radbolts</style>"
 msgstr ""
 "粒子リダイレクターが<b><style=\"logic_on\">グリーン</style></b>を受信すると、"
 "<style=\"KKeyword\">高エネルギー粒子</style>を受け取るようになります"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.TOOLTIPS.LOGIC_CONTROLLED_STANDBY
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.TOOLTIPS."
+#| "LOGIC_CONTROLLED_STANDBY"
+#| msgid ""
+#| "Particle Redirector is receiving a <b><style=\"logic_off\">Red Signal</"
+#| "style></b>, ignoring incoming <style=\"KKeyword\">High Energy Particles</"
+#| "style>"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.TOOLTIPS."
 "LOGIC_CONTROLLED_STANDBY"
 msgid ""
-"Particle Redirector is receiving a <b><style=\"logic_off\">Red Signal</"
-"style></b>, ignoring incoming <style=\"KKeyword\">High Energy Particles</"
-"style>"
+"<style=\"KKeyword\">Radbolt Reflector</style> is receiving a <b><style="
+"\"logic_off\">Red Signal</style></b>, ignoring incoming <style=\"KKeyword"
+"\">Radbolts</style>"
 msgstr ""
 "粒子リダイレクターが<b><style=\"logic_off\">レッド</style></b>を受信すると、"
 "<style=\"KKeyword\">高エネルギー粒子</style>を無視するようになります"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.TOOLTIPS.NORMAL
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.TOOLTIPS.NORMAL"
+#| msgid "Incoming particles will be accepted and redirected"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLEREDIRECTOR.TOOLTIPS.NORMAL"
-msgid "Incoming particles will be accepted and redirected"
+msgid "Incoming Radbolts will be accepted and redirected"
 msgstr "接近する粒子を受け取り、転送します"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.LOGIC_CONTROLLED_ACTIVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER."
+#| "LOGIC_CONTROLLED_ACTIVE"
+#| msgid "Launch HEP: On"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER."
 "LOGIC_CONTROLLED_ACTIVE"
-msgid "Launch HEP: On"
+msgid "Launch Radbolt: On"
 msgstr "HEP発射: オン"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.LOGIC_CONTROLLED_STANDBY
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER."
+#| "LOGIC_CONTROLLED_STANDBY"
+#| msgid "Launch HEP: Off"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER."
 "LOGIC_CONTROLLED_STANDBY"
-msgid "Launch HEP: Off"
+msgid "Launch Radbolt: Off"
 msgstr "HEP発射: オフ"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.NORMAL
@@ -1472,35 +1575,56 @@ msgid "Normal"
 msgstr "通常"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.TOOLTIPS.LOGIC_CONTROLLED_ACTIVE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.TOOLTIPS."
+#| "LOGIC_CONTROLLED_ACTIVE"
+#| msgid ""
+#| "Particle Generator is receiving a <b><style=\"logic_on\">Green Signal</"
+#| "style></b>, accepting incoming <style=\"KKeyword\">High Energy Particles</"
+#| "style>"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.TOOLTIPS."
 "LOGIC_CONTROLLED_ACTIVE"
 msgid ""
-"Particle Generator is receiving a <b><style=\"logic_on\">Green Signal</"
-"style></b>, accepting incoming <style=\"KKeyword\">High Energy Particles</"
-"style>"
+"<style=\"KKeyword\">Radbolt Generator</style> is receiving a <b><style="
+"\"logic_on\">Green Signal</style></b>, accepting incoming <style=\"KKeyword"
+"\">Radbolts</style>"
 msgstr ""
 "粒子ジェネレーターが<b><style=\"logic_on\">グリーン</style></b>を受信すると、"
 "<style=\"KKeyword\">高エネルギー粒子</style>を受け取るようになります"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.TOOLTIPS.LOGIC_CONTROLLED_STANDBY
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.TOOLTIPS."
+#| "LOGIC_CONTROLLED_STANDBY"
+#| msgid ""
+#| "Particle Generator is receiving a <b><style=\"logic_off\">Red Signal</"
+#| "style></b>, ignoring incoming <style=\"KKeyword\">High Energy Particles</"
+#| "style>"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.TOOLTIPS."
 "LOGIC_CONTROLLED_STANDBY"
 msgid ""
-"Particle Generator is receiving a <b><style=\"logic_off\">Red Signal</"
-"style></b>, ignoring incoming <style=\"KKeyword\">High Energy Particles</"
-"style>"
+"<style=\"KKeyword\">Radbolt Generator</style> is receiving a <b><style="
+"\"logic_off\">Red Signal</style></b>, ignoring incoming <style=\"KKeyword"
+"\">Radbolts</style>"
 msgstr ""
 "粒子ジェネレーターが<b><style=\"logic_off\">レッド</style></b>を受信すると、"
 "<style=\"KKeyword\">高エネルギー粒子</style>を無視するようになります"
 
 #. STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.TOOLTIPS.NORMAL
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.TOOLTIPS.NORMAL"
+#| msgid ""
+#| "Incoming <style=\"KKeyword\">High Energy Particles</style> will be "
+#| "accepted and redirected"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.HIGHENERGYPARTICLESPAWNER.TOOLTIPS.NORMAL"
 msgid ""
-"Incoming <style=\"KKeyword\">High Energy Particles</style> will be accepted "
-"and redirected"
+"Incoming <style=\"KKeyword\">Radbolts</style> will be accepted and redirected"
 msgstr ""
 "接近する<style=\"KKeyword\">高エネルギー粒子</style>を受け取り、転送します"
 
@@ -1594,12 +1718,19 @@ msgid "In Flight To {Destination_Asteroid}: {ETA}"
 msgstr "{Destination_Asteroid}へ飛翔中: {ETA}"
 
 #. STRINGS.BUILDING.STATUSITEMS.INFLIGHT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.INFLIGHT.TOOLTIP"
+#| msgid ""
+#| "This rocket is currently traveling to {Destination_Pad} on "
+#| "{Destination_Asteroid}\n"
+#| "\n"
+#| "It arrive in {ETA}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INFLIGHT.TOOLTIP"
 msgid ""
 "This rocket is currently traveling to {Destination_Pad} on "
 "{Destination_Asteroid}\n"
 "\n"
-"It arrive in {ETA}"
+"It will arrive in {ETA}"
 msgstr ""
 "このロケットは{Destination_Asteroid}の{Destination_Pad}へ向かっています。\n"
 "\n"
@@ -1614,6 +1745,21 @@ msgstr "軌道上: {Destination}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INORBIT.TOOLTIP"
 msgid "This rocket is currently in orbit around {Destination}"
 msgstr "このロケットは{Destination}の軌道に乗っています。"
+
+#. STRINGS.BUILDING.STATUSITEMS.INORBITREQUIRED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.MISSION_STATUS.GROUNDED"
+#| msgid "Grounded"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.INORBITREQUIRED.NAME"
+msgid "Grounded"
+msgstr "着陸"
+
+#. STRINGS.BUILDING.STATUSITEMS.INORBITREQUIRED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.INORBITREQUIRED.TOOLTIP"
+msgid ""
+"This building cannot operate from the surface of a Planetoid and must be in "
+"space to function"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.INVALIDBUILDINGLOCATION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INVALIDBUILDINGLOCATION.NAME"
@@ -2023,31 +2169,51 @@ msgid ""
 msgstr "この設備が稼働するには、これらの問題が解決される必要があります"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME"
+#| msgid "Power From Thruster: {ActiveWattage}/{MaxWattage}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME"
-msgid "Power From Thruster: {ActiveWattage}/{MaxWattage}"
+msgid "Thrust Generation: {ActiveWattage}/{MaxWattage}"
 msgstr "スラスター出力: {ActiveWattage}/{MaxWattage}"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.TOOLTIP"
+#| msgid ""
+#| "Engine will generate <style=\"produced\">{MaxWattage}</style> of <style="
+#| "\"KKeyword\">Power</style> while travelling through space. Right now, "
+#| "it's not doing much of anything."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.TOOLTIP"
 msgid ""
 "Engine will generate <style=\"produced\">{MaxWattage}</style> of <style="
-"\"KKeyword\">Power</style> while travelling through space. Right now, it's "
-"not doing much of anything."
+"\"KKeyword\">Power</style> once traveling through space\n"
+"\n"
+"Right now, it's not doing much of anything"
 msgstr ""
 "宇宙を航行中のエンジンは<style=\"KKeyword\">電力</style>を<style=\"produced"
 "\">{MaxWattage}</style>生成します。現在のところ、エンジンは何もしていません。"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.NAME"
+#| msgid "Power From Thruster: {ActiveWattage}/{MaxWattage}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.NAME"
-msgid "Power From Thruster: {ActiveWattage}/{MaxWattage}"
+msgid "Thrust Generation: {ActiveWattage}/{MaxWattage}"
 msgstr "スラスター出力: {ActiveWattage}/{MaxWattage}"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.TOOLTIP"
+#| msgid ""
+#| "Engine is generating <style=\"produced\">{MaxWattage}</style> of <style="
+#| "\"KKeyword\">Power</style> extracted from the thruster. It will continue "
+#| "generating power as long as it's travelling through space."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.TOOLTIP"
 msgid ""
-"Engine is generating <style=\"produced\">{MaxWattage}</style> of <style="
-"\"KKeyword\">Power</style> extracted from the thruster. It will continue "
-"generating power as long as it's travelling through space."
+"Engine is extracting <style=\"produced\">{MaxWattage}</style> of <style="
+"\"KKeyword\">Power</style> from the thruster\n"
+"\n"
+"It will continue generating power as long as it travels through space"
 msgstr ""
 "エンジンはスラスターから<style=\"KKeyword\">電力</style>を<style=\"produced"
 "\">{MaxWattage}</style>生成します。宇宙を航行中は継続して電力を生成します。"
@@ -3105,6 +3271,33 @@ msgid "This box contains <b>{Stored}</b> of <style=\"KKeyword\">Food</style>"
 msgstr ""
 "この箱は<style=\"KKeyword\">食糧</style>を <b>{Stored}</b> 格納しています"
 
+#. STRINGS.BUILDING.STATUSITEMS.REACTORMELTDOWN.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.REACTORMELTDOWN.NAME"
+msgid "Reactor Meltdown"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.REACTORMELTDOWN.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.REACTORMELTDOWN.TOOLTIP"
+msgid ""
+"This reactor is spilling dangerous radioactive waste and cannot be stopped"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.REACTORREFUELDISABLED.NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN."
+#| "TIMELAPSE_DISABLED_DESCRIPTION"
+#| msgid "Disabled"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.REACTORREFUELDISABLED.NAME"
+msgid "Refuel Disabled"
+msgstr "無効化"
+
+#. STRINGS.BUILDING.STATUSITEMS.REACTORREFUELDISABLED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.REACTORREFUELDISABLED.TOOLTIP"
+msgid ""
+"This building will not be refueled once its active fuel has been consumed."
+msgstr ""
+
 #. STRINGS.BUILDING.STATUSITEMS.RELEASING_PRESSURE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RELEASING_PRESSURE.NAME"
 msgid "Releasing Pressure"
@@ -3156,82 +3349,94 @@ msgstr ""
 "ため待機中です"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.NAME"
+#| msgid "Transfer Complete"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.NAME"
-msgid "Transfer Complete"
+msgid "Cargo Transfer Complete"
 msgstr "転送完了"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.TOOLTIP"
 msgid ""
-"The rocket on the connected <style=\"KKeyword\">Rocket Platform</style> is "
-"either full of this type of resource or has no matching storage modules"
+"The connected rocket has either reached max capacity for this resource type, "
+"or lacks appropriate storage modules"
 msgstr ""
-"<link=\"KKeyword\">ロケット発射台</link>に接続されたロケットは資源が満載か適"
-"合する格納モジュールがありません"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAND_ROCKET"
+#| msgid "Land Rocket"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADING.NAME"
-msgid "Loading"
-msgstr "搬入中"
+msgid "Loading Rocket"
+msgstr "ロケット着陸"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADING.TOOLTIP"
 msgid ""
-"This port is transferring resources into the connected <style=\"KKeyword"
-"\">Rocket Platform's</style> landed rocket"
+"Resources are being loaded from the local network into the rocket's storage"
 msgstr ""
-"このポートは配管へ資源を<link=\"KKeyword\">ロケット発射台</link>経由で搬出中"
-"です"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.NAME"
+#| msgid "Unloading"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.NAME"
-msgid "Unloading"
+msgid "Unloading Rocket"
 msgstr "搬出中"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.TOOLTIP"
+msgid "Resources are being unloaded from the rocket into the local network"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.NAME"
+#| msgid "Unloading"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.NAME"
+msgid "Unloading Cargo"
+msgstr "搬出中"
+
+#. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.TOOLTIP"
+#| msgid ""
+#| "This port is unloading resources from the <style=\"KKeyword\">Rocket "
+#| "Platform</style> to the connected pipe network"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.TOOLTIP"
 msgid ""
-"This port is unloading resources from the <style=\"KKeyword\">Rocket "
-"Platform</style> to the connected pipe network"
+"Rocket cargo is being unloaded into the <style=\"KKeyword\">Rocket Platform</"
+"style>\n"
+"\n"
+"Loading of new cargo will begin once unloading is complete"
 msgstr ""
 "このポートは配管へ資源を<link=\"KKeyword\">ロケット発射台</link>経由で搬出中"
 "です"
 
-#. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.NAME
-msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.NAME"
-msgid "Cargo Emptying"
-msgstr "貨物の搬出"
-
-#. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.TOOLTIP
-msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.TOOLTIP"
-msgid ""
-"This <style=\"KKeyword\">Rocket Platform</style> is unloading available "
-"resources from the rocket to the material ports\n"
-"\n"
-"Loading will proceed afterwards"
-msgstr ""
-"この<link=\"KKeyword\">発射台</link>は素材ポートを通じて資源を搬出していま"
-"す\n"
-"\n"
-"その後、搬入に移行します"
-
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFILLING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADING.NAME"
+#| msgid "Loading"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFILLING.NAME"
-msgid "Cargo Loading"
-msgstr "貨物の搬入"
+msgid "Loading Cargo"
+msgstr "搬入中"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFILLING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_UNLOADING.TOOLTIP"
+#| msgid ""
+#| "This port is unloading resources from the <style=\"KKeyword\">Rocket "
+#| "Platform</style> to the connected pipe network"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFILLING.TOOLTIP"
 msgid ""
-"This <style=\"KKeyword\">Rocket Platform</style> is loading available "
-"resources from the material ports to the rocket\n"
+"Cargo is being loaded onto the rocket from the <style=\"KKeyword\">Rocket "
+"Platform</style>\n"
 "\n"
-"Unloading has been completed"
+"Rocket cargo will be ready for launch once loading is complete"
 msgstr ""
-"この<link=\"KKeyword\">発射台</link>は素材ポートを通じて資源を搬入していま"
-"す\n"
-"\n"
-"搬出は完了しました"
+"このポートは配管へ資源を<link=\"KKeyword\">ロケット発射台</link>経由で搬出中"
+"です"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFULL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFULL.NAME"
@@ -3249,10 +3454,16 @@ msgid "Launch Checklist Incomplete"
 msgstr "発射チェックリスト未完了"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETCHECKLISTINCOMPLETE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCHECKLISTINCOMPLETE.TOOLTIP"
+#| msgid ""
+#| "A critical launch task has not been completed yet - check the Launch "
+#| "Checklist in the status panel"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCHECKLISTINCOMPLETE.TOOLTIP"
 msgid ""
-"A critical launch task has not been completed yet - check the Launch "
-"Checklist in the status panel"
+"Critical launch tasks uncompleted\n"
+"\n"
+"Refer to the Launch Checklist in the status panel"
 msgstr ""
 "必要な発射タスクが未完了です - ステータスパネルの発射チェックリストを確認して"
 "ください"
@@ -3269,8 +3480,11 @@ msgstr ""
 "このモジュールはロケットに接続されています: <style=\"KKeyword\">{0}</style>"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETPLATFORMCLOSETOCEILING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETPLATFORMCLOSETOCEILING.NAME"
+#| msgid "Close To Ceiling ({distance} Tiles)"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETPLATFORMCLOSETOCEILING.NAME"
-msgid "Close To Ceiling ({distance} Tiles)"
+msgid "Low Clearance: {distance} Tiles"
 msgstr "天井注意({distance}タイル)"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETPLATFORMCLOSETOCEILING.TOOLTIP
@@ -4034,9 +4248,32 @@ msgid "These materials will be delivered once a Duplicant is available"
 msgstr "複製人間の手が空くと、これらの素材が配達されます"
 
 #. STRINGS.BUILDING.STATUSITEMS.WAITINGFORRADIATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.AWAITINGBAITDELIVERY.NAME"
+#| msgid "Awaiting Bait"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WAITINGFORRADIATION.NAME"
-msgid "Awaiting <style=\"KKeyword\">High Energy Particles</style>"
-msgstr "<style=\"KKeyword\">高エネルギー粒子</style>待ち"
+msgid "Awaiting Radbolts"
+msgstr "給餌待ち"
+
+#. STRINGS.BUILDING.STATUSITEMS.WAITINGFORRADIATION.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP"
+#| msgid ""
+#| "{Skills} Skill required to operate\n"
+#| "------------------\n"
+#| "Open the <b>Skills Panel</b> <b><color=#F44A4A>[L]</b></color> to teach "
+#| "{Skills} to a Duplicant"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.WAITINGFORRADIATION.TOOLTIP"
+msgid ""
+"This building requires Radbolts to function\n"
+"------------------\n"
+"Open the <b>Radiation Overlay</b> <b><color=#F44A4A>[L-SHIFT + F4]</b></"
+"color> to view this building's radiation port"
+msgstr ""
+"操作には{Skills}スキルが必要です\n"
+"------------------\n"
+"<b>スキルパネル</b><b><color=#F44A4A>[L]</b></color>を開き、複製人間に"
+"{Skills}を習得させましょう"
 
 #. STRINGS.BUILDING.STATUSITEMS.WAITINGFORREPAIRMATERIALS.LINE_ITEM
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WAITINGFORREPAIRMATERIALS.LINE_ITEM"
@@ -4250,6 +4487,68 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKREQUIRESMINION.TOOLTIP"
 msgid "A Duplicant must be present to complete this operation"
 msgstr "この操作には複製人間が必要です"
 
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.TOOLTIP"
+#~ msgid ""
+#~ "The <link=\"MODULARLAUNCHPADPORTSOLID\">Rocket Port</link> attached to "
+#~ "the current <style=\"KKeyword\">Rocket Platform</style> are not the "
+#~ "correct type for this <style=\"KKeyword\">Cargo Bay</style>"
+#~ msgstr ""
+#~ "<link=\"LAUNCHPLATFORM\">ロケット発射台</link>に取り付けられた<link="
+#~ "\"MODULARLAUNCHPADPORTSOLID\">ロケット入出力口</link>はこの<style="
+#~ "\"KKeyword\">貨物ベイ</style>のタイプと合っていません"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.TOOLTIP"
+#~ msgid ""
+#~ "The rocket on the connected <style=\"KKeyword\">Rocket Platform</style> "
+#~ "is either full of this type of resource or has no matching storage modules"
+#~ msgstr ""
+#~ "<link=\"KKeyword\">ロケット発射台</link>に接続されたロケットは資源が満載か"
+#~ "適合する格納モジュールがありません"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADING.TOOLTIP"
+#~ msgid ""
+#~ "This port is transferring resources into the connected <style=\"KKeyword"
+#~ "\">Rocket Platform's</style> landed rocket"
+#~ msgstr ""
+#~ "このポートは配管へ資源を<link=\"KKeyword\">ロケット発射台</link>経由で搬出"
+#~ "中です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.NAME"
+#~ msgid "Cargo Emptying"
+#~ msgstr "貨物の搬出"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOEMPTYING.TOOLTIP"
+#~ msgid ""
+#~ "This <style=\"KKeyword\">Rocket Platform</style> is unloading available "
+#~ "resources from the rocket to the material ports\n"
+#~ "\n"
+#~ "Loading will proceed afterwards"
+#~ msgstr ""
+#~ "この<link=\"KKeyword\">発射台</link>は素材ポートを通じて資源を搬出していま"
+#~ "す\n"
+#~ "\n"
+#~ "その後、搬入に移行します"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFILLING.NAME"
+#~ msgid "Cargo Loading"
+#~ msgstr "貨物の搬入"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETCARGOFILLING.TOOLTIP"
+#~ msgid ""
+#~ "This <style=\"KKeyword\">Rocket Platform</style> is loading available "
+#~ "resources from the material ports to the rocket\n"
+#~ "\n"
+#~ "Unloading has been completed"
+#~ msgstr ""
+#~ "この<link=\"KKeyword\">発射台</link>は素材ポートを通じて資源を搬入していま"
+#~ "す\n"
+#~ "\n"
+#~ "搬出は完了しました"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.WAITINGFORRADIATION.NAME"
+#~ msgid "Awaiting <style=\"KKeyword\">High Energy Particles</style>"
+#~ msgstr "<style=\"KKeyword\">高エネルギー粒子</style>待ち"
+
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.AUTOPILOTACTIVE.TOOLTIP"
 #~ msgid ""
 #~ "Rocket has entered auto pilot mode and reduced speed. Duplicant "
@@ -4273,12 +4572,6 @@ msgstr "この操作には複製人間が必要です"
 #~ "STRINGS.BUILDING.STATUSITEMS.CLUSTERTELESCOPEALLWORKCOMPLETE.TOOLTIP"
 #~ msgid "All space this telescope can see has fully been explored."
 #~ msgstr "観測望遠鏡で観測可能な宇宙空間は全て探査済みです。"
-
-#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.DUPLICANTACTIVATIONREQUIRED.TOOLTIP"
-#~ msgid ""
-#~ "This building won't be fully operational until a Duplicant submits a "
-#~ "bioscan."
-#~ msgstr "この設備は複製人間が生体認証をパスするまで機能しないでしょう。"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.PASSENGERMODULEUNREACHABLE.TOOLTIP"
 #~ msgid "Duplicants cannot reach this area"
@@ -4313,10 +4606,6 @@ msgstr "この操作には複製人間が必要です"
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGEUNREACHABLE.TOOLTIP"
 #~ msgid "Duplicants cannot reach this area"
 #~ msgstr "複製人間はこの位置まで到達できません"
-
-#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.WAITINGFORRADIATION.NAME"
-#~ msgid "Awaiting radiation orbs"
-#~ msgstr "放射能オーブ待ち"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.DESTINATIONOUTOFRANGE.NAME"
 #~ msgid "Out of range {Range} / {Distance}"
