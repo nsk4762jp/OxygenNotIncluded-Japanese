@@ -16,17 +16,9 @@ msgstr ""
 #. STRINGS.EQUIPMENT.PREFABS.AQUA_SUIT.DESC
 msgctxt "STRINGS.EQUIPMENT.PREFABS.AQUA_SUIT.DESC"
 msgid "Because breathing underwater is better than... not."
-msgstr "水中で呼吸できることより良いものは... ありません。"
+msgstr "水中で呼吸できることは素晴らしいことです...できないよりもずっと。"
 
 #. STRINGS.EQUIPMENT.PREFABS.AQUA_SUIT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.AQUA_SUIT.EFFECT"
-#| msgid ""
-#| "Supplies Duplicants with <style=\"oxygen\">Oxygen</style> in underwater "
-#| "environments.\n"
-#| "\n"
-#| "Must be refilled with <link=\"OXYGEN\">Oxygen</link> at an Atmo Suit Dock "
-#| "when depleted."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.AQUA_SUIT.EFFECT"
 msgid ""
 "Supplies Duplicants with <style=\"oxygen\">Oxygen</style> in underwater "
@@ -37,8 +29,8 @@ msgid ""
 msgstr ""
 "水中の複製人間に<style=\"oxygen\">酸素</style>を供給します。\n"
 "\n"
-"酸素が枯渇したら、アトモスーツドックで<link=\"OXYGEN\">酸素</link>を再充填し"
-"なければなりません。"
+"酸素が枯渇したら、<link=\"SUITLOCKER\">アトモスーツドック</link>で<link="
+"\"OXYGEN\">酸素</link>を再充填しなければなりません。"
 
 #. STRINGS.EQUIPMENT.PREFABS.AQUA_SUIT.NAME
 msgctxt "STRINGS.EQUIPMENT.PREFABS.AQUA_SUIT.NAME"
@@ -59,14 +51,15 @@ msgid ""
 "\n"
 "Suits can be repaired at a <link=\"CRAFTINGTABLE\">Crafting Station</link>."
 msgstr ""
+"破損した<link=\"AQUASUIT\">アクアスーツ</link>\n"
+"\n"
+"スーツは<link=\"CRAFTINGTABLE\">作業端末</link>で修理できます。"
 
+# 多分これ原文がミスってると思います。
 #. STRINGS.EQUIPMENT.PREFABS.AQUA_SUIT.WORN_NAME
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.WORN_NAME"
-#| msgid "<link=\"LEADSUIT\">Worn Lead Suit</link>"
 msgctxt "STRINGS.EQUIPMENT.PREFABS.AQUA_SUIT.WORN_NAME"
 msgid "<link=\"AQUASUIT\">Worn Lead Suit</link>"
-msgstr "<link=\"LEADSUIT\">破損した鉛スーツ</link>"
+msgstr "<link=\"AQUASUIT\">破損したアクアスーツ</link>"
 
 #. STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.DESC
 msgctxt "STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.DESC"
@@ -74,13 +67,6 @@ msgid "Ensures my Duplicants can breathe easy, anytime, anywhere."
 msgstr "複製人間がいついかなる場所でも快適に呼吸できるようにしましょう。"
 
 #. STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.EFFECT"
-#| msgid ""
-#| "Supplies Duplicants with <style=\"oxygen\">Oxygen</style> in toxic and "
-#| "low breathability environments.\n"
-#| "\n"
-#| "Must be refilled with oxygen at an Atmo Suit Dock when depleted."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.EFFECT"
 msgid ""
 "Supplies Duplicants with <style=\"oxygen\">Oxygen</style> in toxic and low "
@@ -89,9 +75,11 @@ msgid ""
 "Must be refilled with oxygen at an <link=\"SUITLOCKER\">Atmo Suit Dock</"
 "link> when depleted."
 msgstr ""
-"呼吸困難な環境下の複製人間に<style=\"oxygen\">酸素</style>を供給します。\n"
+"有毒、あるいは呼吸困難な環境下の複製人間に<style=\"oxygen\">酸素</style>を供"
+"給します。\n"
 "\n"
-"酸素が枯渇したら、アトモスーツドックで酸素を再充填しなければなりません。"
+"酸素が枯渇したら、<link=\"SUITLOCKER\">アトモスーツドック</link>で酸素を再充"
+"填しなければなりません。"
 
 #. STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.GENERICNAME
 msgctxt "STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.GENERICNAME"
@@ -112,19 +100,15 @@ msgstr ""
 "呼吸困難な環境下の複製人間に<style=\"oxygen\">酸素</style>を供給します。"
 
 #. STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.WORN_DESC
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.WORN_DESC"
-#| msgid ""
-#| "A worn out <link=\"ATMOSUIT\">Atmo Suit</link>.\n"
-#| "Needs to be repaired."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.WORN_DESC"
 msgid ""
 "A worn out <link=\"ATMOSUIT\">Atmo Suit</link>.\n"
 "\n"
 "Suits can be repaired at a <link=\"CRAFTINGTABLE\">Crafting Station</link>."
 msgstr ""
-"<link=\"ATMOSUIT\">アトモスーツ</link>が破損しました。\n"
-"修理が必要です。"
+"破損した<link=\"ATMOSUIT\">アトモスーツ</link>\n"
+"\n"
+"スーツは<link=\"CRAFTINGTABLE\">作業端末</link>で修理できます。"
 
 #. STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.WORN_NAME
 msgctxt "STRINGS.EQUIPMENT.PREFABS.ATMO_SUIT.WORN_NAME"
@@ -235,14 +219,6 @@ msgid "Allows my Duplicants to take to the skies, for a time."
 msgstr "複製人間がしばらくの間スキーできるようになります。"
 
 #. STRINGS.EQUIPMENT.PREFABS.JET_SUIT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.JET_SUIT.EFFECT"
-#| msgid ""
-#| "Supplies Duplicants with <link=\"OXYGEN\">Oxygen</link> in toxic and low "
-#| "breathability environments.\n"
-#| "\n"
-#| "Must be refilled with <link=\"OXYGEN\">Oxygen</link> and <link=\"PETROLEUM"
-#| "\">Petroleum</link> at a Jet Suit Dock when depleted."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.JET_SUIT.EFFECT"
 msgid ""
 "Supplies Duplicants with <link=\"OXYGEN\">Oxygen</link> in toxic and low "
@@ -252,10 +228,12 @@ msgid ""
 "\">Petroleum</link> at a <link=\"JETSUITLOCKER\">Jet Suit Dock</link> when "
 "depleted."
 msgstr ""
-"呼吸困難な環境下の複製人間に<style=\"oxygen\">酸素</style>を供給します。\n"
+"有毒、あるいは呼吸困難な環境下の複製人間に<style=\"oxygen\">酸素</style>を供"
+"給します。\n"
 "\n"
 "<link=\"OXYGEN\">酸素</link>や<link=\"PETROLEUM\">石油</link>が枯渇したら、"
-"ジェットスーツドックで再充填しなければなりません。"
+"<link=\"JETSUITLOCKER\">ジェットスーツドック</link>で再充填しなければなりませ"
+"ん。"
 
 #. STRINGS.EQUIPMENT.PREFABS.JET_SUIT.GENERICNAME
 msgctxt "STRINGS.EQUIPMENT.PREFABS.JET_SUIT.GENERICNAME"
@@ -285,11 +263,6 @@ msgid "Fuel Tank"
 msgstr "燃料タンク"
 
 #. STRINGS.EQUIPMENT.PREFABS.JET_SUIT.WORN_DESC
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.JET_SUIT.WORN_DESC"
-#| msgid ""
-#| "A worn out <link=\"JETSUIT\">Jet Suit</link>.\n"
-#| "Needs to be repaired."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.JET_SUIT.WORN_DESC"
 msgid ""
 "A worn out <link=\"JETSUIT\">Jet Suit</link>.\n"
@@ -297,7 +270,8 @@ msgid ""
 "Suits can be repaired at a <link=\"CRAFTINGTABLE\">Crafting Station</link>."
 msgstr ""
 "<link=\"JETSUIT\">ジェットスーツ</link>が破損しました。\n"
-"修理が必要です。"
+"\n"
+"スーツは<link=\"CRAFTINGTABLE\">作業端末</link>で修理できます。"
 
 #. STRINGS.EQUIPMENT.PREFABS.JET_SUIT.WORN_NAME
 msgctxt "STRINGS.EQUIPMENT.PREFABS.JET_SUIT.WORN_NAME"
@@ -312,17 +286,10 @@ msgstr "スーツバッテリー"
 #. STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.DESC
 msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.DESC"
 msgid "Because exposure to radiation doesn't grant Duplicants superpowers."
-msgstr "何故ならば、放射線への曝露は複製人間のパワーを認めないからです。"
+msgstr ""
+"何故ならば、複製人間は放射線に曝露してもスーパーパワーを得られないからです。"
 
 #. STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.EFFECT"
-#| msgid ""
-#| "Supplies Duplicants with <link=\"OXYGEN\">Oxygen</link> and protection in "
-#| "areas with <link=\"RADIATION\">Radiation</link>.\n"
-#| "\n"
-#| "Must be refilled with <link=\"OXYGEN\">Oxygen</link> at a Lead Suit Dock "
-#| "when depleted."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.EFFECT"
 msgid ""
 "Supplies Duplicants with <link=\"OXYGEN\">Oxygen</link> and protection in "
@@ -331,11 +298,11 @@ msgid ""
 "Must be refilled with <link=\"OXYGEN\">Oxygen</link> at a <link="
 "\"LEADSUITLOCKER\">Lead Suit Dock</link> when depleted."
 msgstr ""
-"複製人間に<style=\"oxygen\">酸素</style>を供給し、<link=\"RADIATION\">放射線"
-"</link>から防護します。\n"
+"複製人間に<link=\"OXYGEN\">酸素</link> を供給し、<link=\"RADIATION\">放射線</"
+"link>から防護します。\n"
 "\n"
-"<link=\"OXYGEN\">酸素</link>が枯渇したら、鉛スーツドックで再充填しなければな"
-"りません。"
+"<link=\"OXYGEN\">酸素</link>が枯渇したら、<link=\"LEADSUITLOCKER\"> 鉛スーツ"
+"ドック</link>で再充填しなければなりません。"
 
 #. STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.GENERICNAME
 msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.GENERICNAME"
@@ -348,13 +315,6 @@ msgid "<link=\"LEADSUIT\">Lead Suit</link>"
 msgstr "<link=\"LEADSUIT\">鉛スーツ</link>"
 
 #. STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.RECIPE_DESC
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.RECIPE_DESC"
-#| msgid ""
-#| "Supplies Duplicants with <link=\"OXYGEN\">Oxygen</link> in toxic and low "
-#| "breathability environments.\n"
-#| "\n"
-#| "Protects duplicants from Radiation."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.RECIPE_DESC"
 msgid ""
 "Supplies Duplicants with <link=\"OXYGEN\">Oxygen</link> in toxic and low "
@@ -362,9 +322,10 @@ msgid ""
 "\n"
 "Protects Duplicants from <link=\"RADIATION\">Radiation</link>."
 msgstr ""
-"呼吸困難な環境下の複製人間に<style=\"oxygen\">酸素</style>を供給します。\n"
+"有毒、あるいは呼吸困難な環境下の複製人間に<style=\"oxygen\">酸素</style>を供"
+"給します。\n"
 "\n"
-"放射線から複製人間を守ります。"
+"<link=\"RADIATION\">放射線</link>から複製人間を守ります。"
 
 #. STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.SUIT_OUT_OF_BATTERIES
 msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.SUIT_OUT_OF_BATTERIES"
@@ -372,19 +333,15 @@ msgid "Suit Batteries Empty"
 msgstr "スーツバッテリーが空"
 
 #. STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.WORN_DESC
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.WORN_DESC"
-#| msgid ""
-#| "A worn out <link=\"LEADSUIT\">Lead Suit</link>.\n"
-#| "Needs to be repaired."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.WORN_DESC"
 msgid ""
 "A worn out <link=\"LEADSUIT\">Lead Suit</link>.\n"
 "\n"
 "Suits can be repaired at a <link=\"CRAFTINGTABLE\">Crafting Station</link>."
 msgstr ""
-"<link=\"LEADSUIT\">鉛スーツ</link>が破損しました。\n"
-"修理が必要です。"
+"破損した<link=\"LEADSUIT\">鉛スーツ</link>\n"
+"\n"
+"スーツは<link=\"CRAFTINGTABLE\">作業端末</link>で修理できます。"
 
 #. STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.WORN_NAME
 msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.WORN_NAME"
@@ -397,13 +354,6 @@ msgid "Ensures my Duplicants can breathe easy... for a little while, anyways."
 msgstr "複製人間へ快適な呼吸を保証する。ちょっとの間、だけ。"
 
 #. STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.EFFECT"
-#| msgid ""
-#| "Supplies Duplicants with <style=\"oxygen\">Oxygen</style> in toxic and "
-#| "low breathability environments.\n"
-#| "\n"
-#| "Must be refilled with oxygen at an Atmo Suit Dock when depleted."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.EFFECT"
 msgid ""
 "Supplies Duplicants with <style=\"oxygen\">Oxygen</style> in toxic and low "
@@ -414,7 +364,8 @@ msgid ""
 msgstr ""
 "呼吸困難な環境下の複製人間に<style=\"oxygen\">酸素</style>を供給します。\n"
 "\n"
-"酸素が枯渇したら、アトモスーツドックで酸素を再充填しなければなりません。"
+"酸素が枯渇したら、<link=\"SUITLOCKER\">アトモスーツドック</link>で酸素を再充"
+"填しなければなりません。"
 
 #. STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.GENERICNAME
 msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.GENERICNAME"
@@ -435,19 +386,15 @@ msgstr ""
 "呼吸困難な環境下の複製人間に<style=\"oxygen\">酸素</style>を供給します。"
 
 #. STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.WORN_DESC
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.WORN_DESC"
-#| msgid ""
-#| "A worn out <link=\"OXYGENMASK\">Oxygen Mask</link>.\n"
-#| "Needs to be repaired."
 msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.WORN_DESC"
 msgid ""
 "A worn out <link=\"OXYGENMASK\">Oxygen Mask</link>.\n"
 "\n"
 "Masks can be repaired at a <link=\"CRAFTINGTABLE\">Crafting Station</link>."
 msgstr ""
-"<link=\"OXYGENMASK\">酸素マスク</link>が破損しました。\n"
-"修理が必要です。"
+"破損した<link=\"OXYGENMASK\">酸素マスク</link>\n"
+"\n"
+"マスクは<link=\"CRAFTINGTABLE\">作業端末</link>で修理できます。"
 
 #. STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.WORN_NAME
 msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_MASK.WORN_NAME"
@@ -457,7 +404,7 @@ msgstr "<link=\"OXYGENMASK\">破損した酸素マスク</link>"
 #. STRINGS.EQUIPMENT.PREFABS.OXYGEN_TANK.DESC
 msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_TANK.DESC"
 msgid "It's like a to-go bag for your lungs."
-msgstr ""
+msgstr "あなたの肺のためのテイクアウトセット、といったところです。"
 
 #. STRINGS.EQUIPMENT.PREFABS.OXYGEN_TANK.EFFECT
 msgctxt "STRINGS.EQUIPMENT.PREFABS.OXYGEN_TANK.EFFECT"
@@ -566,14 +513,15 @@ msgid ""
 "\n"
 "Suits can be repaired at a <link=\"CRAFTINGTABLE\">Crafting Station</link>."
 msgstr ""
+"破損した<link=\"TEMPERATURESUIT\">サーモスーツ</link>\n"
+"\n"
+"スーツは<link=\"CRAFTINGTABLE\">作業端末</link>で修理できます。"
 
+# これもおそらく原文のミス？
 #. STRINGS.EQUIPMENT.PREFABS.TEMPERATURE_SUIT.WORN_NAME
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.LEAD_SUIT.WORN_NAME"
-#| msgid "<link=\"LEADSUIT\">Worn Lead Suit</link>"
 msgctxt "STRINGS.EQUIPMENT.PREFABS.TEMPERATURE_SUIT.WORN_NAME"
 msgid "<link=\"TEMPERATURESUIT\">Worn Lead Suit</link>"
-msgstr "<link=\"LEADSUIT\">破損した鉛スーツ</link>"
+msgstr "<link=\"TEMPERATURESUIT\">破損したサーモスーツ</link>"
 
 #. STRINGS.EQUIPMENT.PREFABS.WARM_VEST.DESC
 msgctxt "STRINGS.EQUIPMENT.PREFABS.WARM_VEST.DESC"
