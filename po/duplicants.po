@@ -724,6 +724,35 @@ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.QUALITYOFLIFEEXPECTATION.NAME"
 msgid "Morale Need"
 msgstr "要求士気"
 
+#. STRINGS.DUPLICANTS.ATTRIBUTES.RADIATIONBALANCEDELTA.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.RADIATION.NAME"
+#| msgid "Absolute radiation"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.RADIATIONBALANCEDELTA.NAME"
+msgid "Absorbed Radiation Dose"
+msgstr "純粋な放射線"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.RADIATIONBALANCEDELTA.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP"
+#| msgid ""
+#| "Duplicants become stressed in areas with <style=\"KKeyword\">Decor</"
+#| "style> lower than their expectations\n"
+#| "Open the <b>Decor Overlay</b> <b><color=#F44A4A>[F8]</b></color> to view "
+#| "current <style=\"KKeyword\">Decor</style> values"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.RADIATIONBALANCEDELTA.TOOLTIP"
+msgid ""
+"Duplicants accumulate Rads in areas with <style=\"KKeyword\">Radiation</"
+"style> and recover at very slow rates\n"
+"\n"
+"Open the <b>Radiation Overlay</b> <b><color=#F44A4A>[L-SHIFT + F4]</b></"
+"color> to view current <style=\"KKeyword\">Rad</style> readings"
+msgstr ""
+"複製人間は期待値より高い<style=\"KKeyword\">装飾</style>を見られないとストレ"
+"スを蓄積します\n"
+"<b>装飾レイヤー</b> <color=#F44A47><b>[F8]</b></color> を開くと現在の<style="
+"\"KKeyword\">装飾</style>値を確認できます"
+
 #. STRINGS.DUPLICANTS.ATTRIBUTES.RADIATIONRECOVERY.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.RADIATIONRECOVERY.DESC"
 msgid ""
@@ -2803,6 +2832,32 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.VALID_MOURNING_SITE"
 msgid "Nowhere to mourn"
 msgstr "喪に服していない"
 
+#. STRINGS.DUPLICANTS.CHORES.RADIATIONPAIN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.RADIATION.HEADER_2"
+#| msgid "Radiation Sickness"
+msgctxt "STRINGS.DUPLICANTS.CHORES.RADIATIONPAIN.NAME"
+msgid "Radiation Aches"
+msgstr "放射線障害"
+
+#. STRINGS.DUPLICANTS.CHORES.RADIATIONPAIN.STATUS
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.WAITINGFORRADIATION.NAME"
+#| msgid "Awaiting radiation orbs"
+msgctxt "STRINGS.DUPLICANTS.CHORES.RADIATIONPAIN.STATUS"
+msgid "Feeling radiation aches"
+msgstr "放射能オーブ待ち"
+
+#. STRINGS.DUPLICANTS.CHORES.RADIATIONPAIN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.DISEASES.RADIATIONSICKNESS.NAME"
+#| msgid "<link=\"RADIATIONSICKNESS\">Radioactive Contaminants</link>"
+msgctxt "STRINGS.DUPLICANTS.CHORES.RADIATIONPAIN.TOOLTIP"
+msgid ""
+"Radiation Aches are a symptom of <link=\"RADIATIONSICKNESS\">Radioactive "
+"Contaminants</link>"
+msgstr "<link=\"RADIATIONSICKNESS\">放射能汚染物質</link>"
+
 #. STRINGS.DUPLICANTS.CHORES.RANCH.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.RANCH.NAME"
 msgid "Ranch"
@@ -3556,16 +3611,24 @@ msgid "Death"
 msgstr "死亡"
 
 #. STRINGS.DUPLICANTS.DEATHS.HITBYHIGHENERGYPARTICLE.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.DEATHS.HITBYHIGHENERGYPARTICLE.DESCRIPTION"
+#| msgid ""
+#| "{Target} was struck by a <style=\"KKeyword\">High Energy Particle</style> "
+#| "and perished."
 msgctxt "STRINGS.DUPLICANTS.DEATHS.HITBYHIGHENERGYPARTICLE.DESCRIPTION"
 msgid ""
-"{Target} was struck by a <style=\"KKeyword\">High Energy Particle</style> "
-"and perished."
+"{Target} was struck by a radioactive <style=\"KKeyword\">Radbolt</style> and "
+"perished."
 msgstr ""
 "{Target}は<style=\"KKeyword\">高エネルギー粒子</style>の直撃で死亡しました。"
 
 #. STRINGS.DUPLICANTS.DEATHS.HITBYHIGHENERGYPARTICLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.DEATHS.HITBYHIGHENERGYPARTICLE.NAME"
+#| msgid "Struck by HEP"
 msgctxt "STRINGS.DUPLICANTS.DEATHS.HITBYHIGHENERGYPARTICLE.NAME"
-msgid "Struck by HEP"
+msgid "Struck by Radbolt"
 msgstr "HEP直撃"
 
 #. STRINGS.DUPLICANTS.DEATHS.OVERHEATING.DESCRIPTION
@@ -6807,11 +6870,17 @@ msgid "Soiled Suit"
 msgstr "汚れたスーツ"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SOILEDSUIT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOILEDSUIT.TOOLTIP"
+#| msgid ""
+#| "This Duplicant's suit needs to be emptied of waste\n"
+#| "\n"
+#| "Preferably soon"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOILEDSUIT.TOOLTIP"
 msgid ""
 "This Duplicant's suit needs to be emptied of waste\n"
 "\n"
-"Preferably soon"
+"(Preferably soon)"
 msgstr ""
 "この複製人間のスーツから廃棄物を除去する必要があります\n"
 "\n"
@@ -8156,10 +8225,15 @@ msgid "<link=\"MASTERARTIST\">Masterworks</link>"
 msgstr "<link=\"MASTERARTIST\">傑作</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.MASTER_MINER.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.MASTER_MINER.DESCRIPTION"
+#| msgid ""
+#| "Allows the excavation of dangerous materials like <link="
+#| "\"SOLIDNUCLEARWASTE\">Corium</link>"
 msgctxt "STRINGS.DUPLICANTS.ROLES.MASTER_MINER.DESCRIPTION"
 msgid ""
-"Allows the excavation of dangerous materials like <link=\"SOLIDNUCLEARWASTE"
-"\">Corium</link>"
+"Allows the excavation of dangerous materials like <link=\"CORIUM\">Corium</"
+"link>"
 msgstr ""
 "<link=\"SOLIDNUCLEARWASTE\">炉心溶融物</link>のような危険な素材を採掘できるよ"
 "うになります"
@@ -8231,14 +8305,26 @@ msgid "<link=\"NOROLE\">Unemployed</link>"
 msgstr "<link=\"NOROLE\">無職</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.DESCRIPTION"
+#| msgid ""
+#| "Enables Duplicants to study outer space using the <link="
+#| "\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
 msgctxt "STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.DESCRIPTION"
-msgid "W.I.P. Skill"
-msgstr "W.I.P スキル"
+msgid ""
+"Enables Duplicants to study sub-atomic particles using the <link="
+"\"NUCLEARLABORATORY\">Atomic Collider</link>"
+msgstr ""
+"<link=\"COSMICRESEARCHCENTER\">仮想プラネタリウム</link>で外宇宙の観測を可能"
+"にします"
 
 #. STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.RESEARCHER.NAME"
+#| msgid "<link=\"RESEARCHER\">Field Research</link>"
 msgctxt "STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.NAME"
-msgid "W.I.P. Skill"
-msgstr "W.I.P スキル"
+msgid "<link=\"NUCLEARRESEARCHER\">Atomic Research</link>"
+msgstr "<link=\"RESEARCHER\">実地調査</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.OIL_TECHNICIAN.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.OIL_TECHNICIAN.DESCRIPTION"
@@ -8304,10 +8390,15 @@ msgid "<link=\"RESEARCHER\">Field Research</link>"
 msgstr "<link=\"RESEARCHER\">実地調査</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.ROCKETPILOT.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.ROCKETPILOT.DESCRIPTION"
+#| msgid ""
+#| "Allows a Duplicant to operate a <link=\"ROCKETCOMMANDCONSOLE\">Rocket "
+#| "Cockpit</link> and pilot rockets"
 msgctxt "STRINGS.DUPLICANTS.ROLES.ROCKETPILOT.DESCRIPTION"
 msgid ""
-"Allows a Duplicant to operate a <link=\"ROCKETCOMMANDCONSOLE\">Rocket "
-"Cockpit</link> and pilot rockets"
+"Allows a Duplicant to operate a <link=\"ROCKETCONTROLSTATION\">Rocket "
+"Control Station</link> and pilot rockets"
 msgstr ""
 "ロケットを操縦するための<link=\"ROCKETCOMMANDCONSOLE\">ロケット操縦席</link>"
 "が利用可能になります"
@@ -8375,10 +8466,15 @@ msgid "<link=\"SENIORRANCHER\">Critter Ranching II</link>"
 msgstr "<link=\"SENIORRANCHER\">畜産 II</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.DESCRIPTION"
+#| msgid ""
+#| "Enables Duplicants to study outer space using the <link="
+#| "\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.DESCRIPTION"
 msgid ""
-"Enables Duplicants to study outer space using the <link="
-"\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
+"Enables Duplicants to study outer space using the <link=\"TELESCOPE"
+"\">Telescope</link>"
 msgstr ""
 "<link=\"COSMICRESEARCHCENTER\">仮想プラネタリウム</link>で外宇宙の観測を可能"
 "にします"
@@ -8399,9 +8495,18 @@ msgid "<link=\"SENIORPILOT\">Rocket Piloting II</link>"
 msgstr "<link=\"SENIORPILOT\">ロケット操縦 II</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.DESCRIPTION"
+#| msgid ""
+#| "Enables Duplicants to study outer space using the <link="
+#| "\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
 msgctxt "STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.DESCRIPTION"
-msgid "Enables Duplicants to perform experiments inside a launched rocket"
-msgstr "複製人間が発射されたロケット内で実験を行えるようにします"
+msgid ""
+"Enables Duplicants to conduct research from within a rocket using the <link="
+"\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
+msgstr ""
+"<link=\"COSMICRESEARCHCENTER\">仮想プラネタリウム</link>で外宇宙の観測を可能"
+"にします"
 
 #. STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.NAME"
@@ -8546,10 +8651,18 @@ msgid "Decor"
 msgstr "装飾"
 
 #. STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP"
+#| msgid ""
+#| "Duplicants become stressed in areas with <style=\"KKeyword\">Decor</"
+#| "style> lower than their expectations\n"
+#| "Open the <b>Decor Overlay</b> <b><color=#F44A4A>[F8]</b></color> to view "
+#| "current <style=\"KKeyword\">Decor</style> values"
 msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP"
 msgid ""
 "Duplicants become stressed in areas with <style=\"KKeyword\">Decor</style> "
 "lower than their expectations\n"
+"\n"
 "Open the <b>Decor Overlay</b> <b><color=#F44A4A>[F8]</b></color> to view "
 "current <style=\"KKeyword\">Decor</style> values"
 msgstr ""
@@ -8621,6 +8734,69 @@ msgstr ""
 "\n"
 "動物の<style=\"KKeyword\">生命力</style>がゼロに達すると、彼らは直ちに死亡し"
 "ます"
+
+#. STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.CURRENT_EXPOSURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.CURRENT_ORDER"
+#| msgid "Current order: {0}"
+msgctxt "STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.CURRENT_EXPOSURE"
+msgid "Current Exposure: {0}/cycle"
+msgstr "現在の指示: {0}"
+
+#. STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.CURRENT_REJUVENATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.NEEDS.CURRENT_NEED_LEVEL"
+#| msgid "Current Level: {0}"
+msgctxt "STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.CURRENT_REJUVENATION"
+msgid "Current Rejuvenation: {0}/cycle"
+msgstr "現在の Level: {0}"
+
+#. STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.NAME
+msgctxt "STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.NAME"
+msgid "Absorbed Rad Dose"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP"
+#| msgid ""
+#| "Duplicants become stressed in areas with <style=\"KKeyword\">Decor</"
+#| "style> lower than their expectations\n"
+#| "Open the <b>Decor Overlay</b> <b><color=#F44A4A>[F8]</b></color> to view "
+#| "current <style=\"KKeyword\">Decor</style> values"
+msgctxt "STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.TOOLTIP"
+msgid ""
+"Duplicants accumulate Rads in areas with <style=\"KKeyword\">Radiation</"
+"style> and recover when using the toilet\n"
+"\n"
+"Open the <b>Radiation Overlay</b> <b><color=#F44A4A>[L-SHIFT + F4]</b></"
+"color> to view current <style=\"KKeyword\">Rad</style> readings"
+msgstr ""
+"複製人間は期待値より高い<style=\"KKeyword\">装飾</style>を見られないとストレ"
+"スを蓄積します\n"
+"<b>装飾レイヤー</b> <color=#F44A47><b>[F8]</b></color> を開くと現在の<style="
+"\"KKeyword\">装飾</style>値を確認できます"
+
+#. STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.TOOLTIP_CURRENT_BALANCE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATS.DECOR.TOOLTIP"
+#| msgid ""
+#| "Duplicants become stressed in areas with <style=\"KKeyword\">Decor</"
+#| "style> lower than their expectations\n"
+#| "Open the <b>Decor Overlay</b> <b><color=#F44A4A>[F8]</b></color> to view "
+#| "current <style=\"KKeyword\">Decor</style> values"
+msgctxt "STRINGS.DUPLICANTS.STATS.RADIATIONBALANCE.TOOLTIP_CURRENT_BALANCE"
+msgid ""
+"Duplicants accumulate Rads in areas with <style=\"KKeyword\">Radiation</"
+"style> and recover when using the toilet\n"
+"\n"
+"Open the <b>Radiation Overlay</b> <b><color=#F44A4A>[L-SHIFT + F4]</b></"
+"color> to view current <style=\"KKeyword\">Rad</style> readings"
+msgstr ""
+"複製人間は期待値より高い<style=\"KKeyword\">装飾</style>を見られないとストレ"
+"スを蓄積します\n"
+"<b>装飾レイヤー</b> <color=#F44A47><b>[F8]</b></color> を開くと現在の<style="
+"\"KKeyword\">装飾</style>値を確認できます"
 
 #. STRINGS.DUPLICANTS.STATS.SKIN_DURABILITY.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.SKIN_DURABILITY.NAME"
@@ -9172,6 +9348,23 @@ msgstr "{Target} を装備中"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EQUIPPING.TOOLTIP"
 msgid "This Duplicant is equipping a <b>{Target}</b>"
 msgstr "この複製人間は <b>{Target}</b>を装備中です"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.EXPELLINGRADS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.CLEANING.NAME"
+#| msgid "Cleaning"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EXPELLINGRADS.NAME"
+msgid "Cleansing Rads"
+msgstr "清掃"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.EXPELLINGRADS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.ARTING.TOOLTIP"
+#| msgid "This Duplicant is hard at work on their art"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EXPELLINGRADS.TOOLTIP"
+msgid ""
+"This Duplicant is, uh... \"expelling\" absorbed radiation from their system"
+msgstr "この複製人間は芸術活動に邁進中です"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.EXPOSEDTOGERMS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EXPOSEDTOGERMS.NAME"
@@ -11958,10 +12151,15 @@ msgstr ""
 "\"KKeyword\">スキル</style>の恩恵を受けられます"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING4.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING4.DESC"
+#| msgid ""
+#| "Allows the excavation of dangerous materials like <link="
+#| "\"SOLIDNUCLEARWASTE\">Corium</link>"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING4.DESC"
 msgid ""
-"Allows the excavation of dangerous materials like <link=\"SOLIDNUCLEARWASTE"
-"\">Corium</link>"
+"Allows the excavation of dangerous materials like <link=\"CORIUM\">Corium</"
+"link>"
 msgstr ""
 "<link=\"SOLIDNUCLEARWASTE\">炉心溶融物</link>のような危険な素材を採掘できるよ"
 "うになります"
@@ -12088,10 +12286,15 @@ msgstr ""
 "\"KKeyword\">スキル</style>の恩恵を受けられます"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING3.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING3.DESC"
+#| msgid ""
+#| "Enables Duplicants to study outer space using the <link="
+#| "\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING3.DESC"
 msgid ""
-"Enables Duplicants to study outer space using the <link="
-"\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
+"Enables Duplicants to study outer space using the <link=\"TELESCOPE"
+"\">Telescope</link>"
 msgstr ""
 "<link=\"COSMICRESEARCHCENTER\">仮想プラネタリウム</link>で外宇宙の観測を可能"
 "にします"
@@ -12116,14 +12319,26 @@ msgstr ""
 "\"KKeyword\">スキル</style>の恩恵を受けられます"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.DESCRIPTION"
+#| msgid ""
+#| "Enables Duplicants to study outer space using the <link="
+#| "\"COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.DESC"
-msgid "W.I.P. Skill"
-msgstr "W.I.P スキル"
+msgid ""
+"Enables Duplicants to study sub-atomic particles using the <link="
+"\"NUCLEARLABORATORY\">Atomic Collider</link>"
+msgstr ""
+"<link=\"COSMICRESEARCHCENTER\">仮想プラネタリウム</link>で外宇宙の観測を可能"
+"にします"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.NAME"
+#| msgid "Skilled: <link=\"RESEARCHER\">Field Research</link>"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.NAME"
-msgid "Skilled: W.I.P. Skill"
-msgstr "W.I.P スキル"
+msgid "Skilled: <link=\"NUCLEARRESEARCHER\">Atomic Research</link>"
+msgstr "習得済み: <link=\"RESEARCHER\">実地調査</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.SHORT_DESC"
@@ -12799,6 +13014,26 @@ msgstr ""
 msgctxt "STRINGS.DUPLICANTS.TRAITS.WEAKIMMUNESYSTEM.NAME"
 msgid "Biohazardous"
 msgstr "バイオハザード"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.DESCRIPTION"
+#~ msgid "W.I.P. Skill"
+#~ msgstr "W.I.P スキル"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.NAME"
+#~ msgid "W.I.P. Skill"
+#~ msgstr "W.I.P スキル"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.DESCRIPTION"
+#~ msgid "Enables Duplicants to perform experiments inside a launched rocket"
+#~ msgstr "複製人間が発射されたロケット内で実験を行えるようにします"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.DESC"
+#~ msgid "W.I.P. Skill"
+#~ msgstr "W.I.P スキル"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.NAME"
+#~ msgid "Skilled: W.I.P. Skill"
+#~ msgstr "W.I.P スキル"
 
 #~ msgctxt "STRINGS.DUPLICANTS.CHORES.JOYREACTION.TOOLTIP"
 #~ msgid ""

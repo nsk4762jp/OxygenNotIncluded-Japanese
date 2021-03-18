@@ -441,6 +441,32 @@ msgctxt "STRINGS.ELEMENTS.COPPERGAS.NAME"
 msgid "<link=\"COPPERGAS\">Copper</link>"
 msgstr "<link=\"COPPERGAS\">銅</link>"
 
+#. STRINGS.ELEMENTS.CORIUM.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.DESC"
+#| msgid ""
+#| "A radioactive mixture of nuclear waste and melted reactor materials.\n"
+#| "\n"
+#| "Releases <link=\"FALLOUT\">Nuclear Fallout</link> gas."
+msgctxt "STRINGS.ELEMENTS.CORIUM.DESC"
+msgid ""
+"A radioactive mixture of nuclear waste and melted reactor materials.\n"
+"\n"
+"Releases <link=\"FALLOUT\">Nuclear Fallout</link> gas."
+msgstr ""
+"核廃棄物と溶融した原子炉の放射性混合物です。\n"
+"\n"
+"<link=\"FALLOUT\">死の灰</link>を降らします。"
+
+#. STRINGS.ELEMENTS.CORIUM.NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_RADIOACTIVE_MATERIALS.DESCRIPTION"
+#| msgid "<link=\"CORIUM\">Corium</link> Mining"
+msgctxt "STRINGS.ELEMENTS.CORIUM.NAME"
+msgid "<link=\"CORIUM\">Corium</link>"
+msgstr "<link=\"CORIUM\">炉心溶融物</link>採掘"
+
 #. STRINGS.ELEMENTS.CREATURE.DESC
 msgctxt "STRINGS.ELEMENTS.CREATURE.DESC"
 msgid ""
@@ -850,12 +876,19 @@ msgid "<link=\"GRANITE\">Granite</link>"
 msgstr "<link=\"GRANITE\">花崗岩</link>"
 
 #. STRINGS.ELEMENTS.GRAPHITE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.GRAPHITE.DESC"
+#| msgid ""
+#| "(C) Graphite is the most stable form of carbon.\n"
+#| "\n"
+#| "It is useful as a <b>Construction Material</b> where high thermal "
+#| "conducitivty matters."
 msgctxt "STRINGS.ELEMENTS.GRAPHITE.DESC"
 msgid ""
 "(C) Graphite is the most stable form of carbon.\n"
 "\n"
-"It is useful as a <b>Construction Material</b> where high thermal "
-"conducitivty matters."
+"It has high thermal conductivity and is useful as a <b>Construction "
+"Material</b>."
 msgstr ""
 "(C) グラファイトは炭素の最も安定した形態です。\n"
 "\n"
@@ -1993,9 +2026,11 @@ msgstr "<link=\"REGOLITH\">表土</link>"
 #. STRINGS.ELEMENTS.RESIN.DESC
 msgctxt "STRINGS.ELEMENTS.RESIN.DESC"
 msgid ""
-"Sticky tree goo. When the moisture is boiled from it, it will polymerize "
-"into Isoresin."
-msgstr "べたべたする樹液です。水分を蒸発させると重合してイソレジンになります。"
+"Sticky goo harvested from a grumpy tree.\n"
+"\n"
+"It can be polymerized into <link=\"ISORESIN\">Isoresin</link> by boiling "
+"away its excess moisture."
+msgstr ""
 
 #. STRINGS.ELEMENTS.RESIN.NAME
 msgctxt "STRINGS.ELEMENTS.RESIN.NAME"
@@ -2299,20 +2334,26 @@ msgid "<link=\"SOLIDNAPHTHA\">Naphtha</link>"
 msgstr "<link=\"SOLIDNAPHTHA\">ナフサ</link>"
 
 #. STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.NUCLEARWASTE.DESC"
+#| msgid ""
+#| "Highly toxic liquid full of <link=\"RADIATION\">Radioactive Contaminants</"
+#| "link>. Formed in an <link=\"MELTDOWN\">Nuclear Meltdown</link>."
 msgctxt "STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.DESC"
 msgid ""
-"A radioactive mixture of nuclear waste and melted reactor materials.\n"
-"\n"
-"Releases <link=\"FALLOUT\">Nuclear Fallout</link> gas."
+"Highly toxic liquid full of <link=\"RADIATION\">Radioactive Contaminants</"
+"link>. Formed in an <link=\"MELTDOWN\">Nuclear Meltdown</link>."
 msgstr ""
-"核廃棄物と溶融した原子炉の放射性混合物です。\n"
-"\n"
-"<link=\"FALLOUT\">死の灰</link>を降らします。"
+"<link=\"RADIATION\">放射性汚染物質</link>で満たされた極めて毒性の高い液体で"
+"す。<link=\"MELTDOWN\">炉心溶融</link>時に現れます。"
 
 #. STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.NUCLEARWASTE.NAME"
+#| msgid "<link=\"NUCLEARWASTE\">Nuclear Waste</link>"
 msgctxt "STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.NAME"
-msgid "<link=\"SOLIDNUCLEARWASTE\">Corium</link>"
-msgstr "<link=\"SOLIDNUCLEARWASTE\">炉心溶融物</link>"
+msgid "<link=\"SOLIDNUCLEARWASTE\">Solid Nuclear Waste</link>"
+msgstr "<link=\"NUCLEARWASTE\">核廃棄物</link>"
 
 #. STRINGS.ELEMENTS.SOLIDOXYGEN.DESC
 msgctxt "STRINGS.ELEMENTS.SOLIDOXYGEN.DESC"
@@ -2360,8 +2401,11 @@ msgstr "<link=\"SOLIDPROPANE\">プロパン</link>"
 
 #. STRINGS.ELEMENTS.SOLIDRESIN.DESC
 msgctxt "STRINGS.ELEMENTS.SOLIDRESIN.DESC"
-msgid "Solid sticky tree goo."
-msgstr "固体状のべたべたする樹液です。"
+msgid ""
+"Solidified goo harvested from a grumpy tree.\n"
+"\n"
+"It is used in the production of <link=\"ISORESIN\">Isoresin</link>."
+msgstr ""
 
 #. STRINGS.ELEMENTS.SOLIDRESIN.NAME
 msgctxt "STRINGS.ELEMENTS.SOLIDRESIN.NAME"
@@ -2845,12 +2889,22 @@ msgid "<link=\"WOLFRAMITE\">Wolframite</link>"
 msgstr "<link=\"WOLFRAMITE\">鉄マンガン重石</link>"
 
 #. STRINGS.ELEMENTS.YELLOWCAKE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.YELLOWCAKE.DESC"
+#| msgid ""
+#| "(U<sub>3</sub>O<sub>8</sub>) Yellowcake is a byproduct of <link=\"URANIUM"
+#| "\">Uranium</link> mining.\n"
+#| "\n"
+#| "It is useful in preparing fuel for nuclear reactors.\n"
+#| "\n"
+#| "Note: Do not eat."
 msgctxt "STRINGS.ELEMENTS.YELLOWCAKE.DESC"
 msgid ""
 "(U<sub>3</sub>O<sub>8</sub>) Yellowcake is a byproduct of <link=\"URANIUM"
 "\">Uranium</link> mining.\n"
 "\n"
-"It is useful in preparing fuel for nuclear reactors.\n"
+"It is useful in preparing fuel for <link=\"NUCLEARREACTOR\">Research "
+"Reactors</link>.\n"
 "\n"
 "Note: Do not eat."
 msgstr ""
@@ -2865,3 +2919,18 @@ msgstr ""
 msgctxt "STRINGS.ELEMENTS.YELLOWCAKE.NAME"
 msgid "<link=\"YELLOWCAKE\">Yellowcake</link>"
 msgstr "<link=\"YELLOWCAKE\">イエローケーキ</link>"
+
+#~ msgctxt "STRINGS.ELEMENTS.RESIN.DESC"
+#~ msgid ""
+#~ "Sticky tree goo. When the moisture is boiled from it, it will polymerize "
+#~ "into Isoresin."
+#~ msgstr ""
+#~ "べたべたする樹液です。水分を蒸発させると重合してイソレジンになります。"
+
+#~ msgctxt "STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.NAME"
+#~ msgid "<link=\"SOLIDNUCLEARWASTE\">Corium</link>"
+#~ msgstr "<link=\"SOLIDNUCLEARWASTE\">炉心溶融物</link>"
+
+#~ msgctxt "STRINGS.ELEMENTS.SOLIDRESIN.DESC"
+#~ msgid "Solid sticky tree goo."
+#~ msgstr "固体状のべたべたする樹液です。"
