@@ -697,14 +697,6 @@ msgid "<link=\"BED\">Cot</link>"
 msgstr "<link=\"BED\">簡易ベッド</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BEEHIVE.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.BEEHIVE.DESC"
-#| msgid ""
-#| "A moderately <link=\"RADIATION\">Radioactive</link> nest made by <link="
-#| "\"BEE\">Beetas</link>.\n"
-#| "\n"
-#| "Converts <link=\"URANIUMORE\">Uranium</link> into <link=\"ENRICHEDURANIUM"
-#| "\">Enriched Uranium</link> when worked by a Beeta."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEEHIVE.DESC"
 msgid ""
 "A moderately <link=\"RADIATION\">Radioactive</link> nest made by <link=\"BEE"
@@ -718,7 +710,8 @@ msgstr ""
 "す。\n"
 "\n"
 "ビータの働きによって<link=\"URANIUMORE\">ウラン</link>を<link="
-"\"ENRICHEDURANIUM\">濃縮ウラン</link>へと変換します。"
+"\"ENRICHEDURANIUM\">濃縮ウラン</link>へと変換します。\n"
+"地面が破壊されていると機能しません。"
 
 #. STRINGS.BUILDINGS.PREFABS.BEEHIVE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEEHIVE.EFFECT"
@@ -3339,16 +3332,10 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.DESC"
 msgid ""
 "Radbolt-fueled rockets support few modules, but travel exceptionally far."
 msgstr ""
+"RADボルト燃料ロケットに接続できるモジュールは少ないですが、極めて遠くまで飛ぶ"
+"ことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPENGINE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.SUGARENGINE.EFFECT"
-#| msgid ""
-#| "Burns <link=\"SUCROSE\">Sucrose</link> to propel rockets for space "
-#| "exploration.\n"
-#| "\n"
-#| "The engine of a rocket must be built first before more rocket modules can "
-#| "be added."
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.EFFECT"
 msgid ""
 "Injects <link=\"HEP\">Radbolts</link> into a reaction chamber to propel "
@@ -3357,19 +3344,16 @@ msgid ""
 "The engine of a rocket must be built first before more rocket modules can be "
 "added."
 msgstr ""
-"<link=\"SUCROSE\">スクロース</link>を燃やし、宇宙探索ロケットの推進力としま"
-"す。\n"
+"<link=\"HEP\">RADボルト</link>を反応炉に注入し、宇宙探索ロケットの推進力とし"
+"ます。\n"
 "\n"
 "ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
 "ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPENGINE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.STEAMENGINE.NAME"
-#| msgid "<link=\"STEAMENGINE\">Steam Engine</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.NAME"
 msgid "<link=\"HEPENGINE\">Radbolt Engine</link>"
-msgstr "<link=\"STEAMENGINE\">蒸気エンジン</link>"
+msgstr "<link=\"HEPENGINE\">RADボルトエンジン</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLEREDIRECTOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLEREDIRECTOR.DESC"
@@ -4053,32 +4037,23 @@ msgid "Spacefarer Deploy Pod"
 msgstr "宇宙旅行着陸ポッド"
 
 #. STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.DESC
-#, fuzzy
-#| msgctxt "STRINGS.ITEMS.RAILGUNPAYLOAD.NAME"
-#| msgid "<link=\"RAILGUNPAYLOAD\">Interplanetary Payload</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.DESC"
 msgid ""
 "Guides <link=\"RAILGUNPAYLOAD\">Interplanetary Payloads</link> to land "
 "nearby."
-msgstr "<link=\"RAILGUNPAYLOAD\">星間貨物</link>"
+msgstr "<link=\"RAILGUNPAYLOAD\">星間貨物</link>を付近に着弾させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.ITEMS.RAILGUNPAYLOAD.NAME"
-#| msgid "<link=\"RAILGUNPAYLOAD\">Interplanetary Payload</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.EFFECT"
 msgid ""
 "Guides <link=\"RAILGUNPAYLOAD\">Interplanetary Payloads</link> to land "
 "nearby."
-msgstr "<link=\"RAILGUNPAYLOAD\">星間貨物</link>"
+msgstr "<link=\"RAILGUNPAYLOAD\">星間貨物</link>を付近に着弾させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.RATIONBOX.NAME"
-#| msgid "<link=\"RATIONBOX\">Ration Box</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.NAME"
 msgid "<link=\"LANDINGBEACON\">Targeting Beacon</link>"
-msgstr "<link=\"RATIONBOX\">食糧保管箱</link>"
+msgstr "<link=\"LANDINGBEACON\">ターゲット ビーコン</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LAUNCHPAD.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LAUNCHPAD.DESC"
@@ -7335,20 +7310,9 @@ msgstr "<link=\"ORBITALCARGOMODULE\">軌道貨物モジュール</link>"
 #. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.DESC"
 msgid "Orbital Microlabs perform research from the orbit around a Planetoid."
-msgstr ""
+msgstr "軌道ラボは小惑星の軌道上で研究を行います。"
 
 #. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT"
-#| msgid ""
-#| "Conducts <link=\"RESEARCH\">Interstellar Research</link> to unlock new "
-#| "technologies.\n"
-#| "\n"
-#| "Consumes data from <link=\"TELESCOPE\">Telescopes</link> and <link="
-#| "\"RESEARCHMODULE\">Research Modules</link>.\n"
-#| "\n"
-#| "Assigned Duplicants must possess the <link=\"SENIORRESEARCHER"
-#| "\">Astronomy</link> skill."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT"
 msgid ""
 "Conducts <link=\"RESEARCH\">Interstellar Research</link> to unlock new "
@@ -7363,8 +7327,8 @@ msgstr ""
 "新しい技術を発明するために、<link=\"RESEARCH\">星間研究</link>を実施しま"
 "す。\n"
 "\n"
-"<link=\"TELESCOPE\">観測望遠鏡</link>と<link=\"RESEARCHMODULE\">研究モジュー"
-"ル</link>から取得したデータを消費します。\n"
+"<link=\"POLYPROPYLENE\">プラスチック</link>と<link=\"POWER\">電力</link>を消"
+"費します。\n"
 "\n"
 "<link=\"SENIORRESEARCHER\">天文学</link>スキルを持った複製人間を割り当ててく"
 "ださい。"
@@ -8499,30 +8463,21 @@ msgstr ""
 "複製人間が運送することはできません。"
 
 #. STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.CLUSTERCOMMANDMODULE.LOGIC_PORT_LAUNCH"
-#| msgid "Launch Rocket"
 msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT"
 msgid "Launch Toggle"
-msgstr "ロケット発射"
+msgstr "発射切替"
 
 #. STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT_ACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_ACTIVE"
-#| msgid "<b><style=\"logic_on\">Green Signal</style></b>: Enable building"
 msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT_ACTIVE"
 msgid ""
 "<b><style=\"logic_on\">Green Signal</style></b>: Enable payload launching."
-msgstr "<b><style=\"logic_on\">グリーン</style></b>: 設備を有効化"
+msgstr "<b><style=\"logic_on\">グリーン</style></b>: 貨物発射有効"
 
 #. STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT_INACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
-#| msgid "<b><style=\"logic_off\">Red Signal</style></b>: Disable building"
 msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT_INACTIVE"
 msgid ""
 "<b><style=\"logic_off\">Red Signal</style></b>: Disable payload launching."
-msgstr "<b><style=\"logic_off\">レッド</style></b>: 設備を無効化"
+msgstr "<b><style=\"logic_off\">レッド</style></b>: 貨物発射無効"
 
 #. STRINGS.BUILDINGS.PREFABS.RAILGUN.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.NAME"
@@ -8532,7 +8487,7 @@ msgstr "<link=\"RAILGUN\">星間ランチャー</link>"
 #. STRINGS.BUILDINGS.PREFABS.RAILGUN.SIDESCREEN_HEP_REQUIRED
 msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.SIDESCREEN_HEP_REQUIRED"
 msgid "Launch cost: {current} / {required} radbolts"
-msgstr ""
+msgstr "発射コスト: {current} / {required} RADボルト"
 
 #. STRINGS.BUILDINGS.PREFABS.RAILGUNPAYLOADOPENER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUNPAYLOADOPENER.DESC"
