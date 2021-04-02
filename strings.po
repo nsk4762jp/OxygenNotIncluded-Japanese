@@ -2620,6 +2620,22 @@ msgstr ""
 "EXOスーツドックは<link=\"CHECKPOINT\">チェックポイント</link>が指す向きとは反"
 "対側に設置しなければなりません"
 
+#. STRINGS.BUILDING.STATUSITEMS.NOSURFACESIGHT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACE_VISIBILITY_NONE.NAME"
+#| msgid "No Line of Sight"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSURFACESIGHT.NAME"
+msgid "No Line of Sight"
+msgstr "視界不良"
+
+#. STRINGS.BUILDING.STATUSITEMS.NOSURFACESIGHT.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSURFACESIGHT.TOOLTIP"
+msgid ""
+"This building has no view of space\n"
+"\n"
+"Ensure an unblocked view of the sky."
+msgstr ""
+
 #. STRINGS.BUILDING.STATUSITEMS.NOTENOUGHPOWER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOTENOUGHPOWER.NAME"
 msgid "Insufficient Power"
@@ -3115,6 +3131,20 @@ msgstr ""
 "\n"
 "ランチャーの軌道を確保してください"
 
+#. STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.CLEANING.NAME"
+#| msgid "Cleaning {Target}"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.NAME"
+msgid "Cleaning Rails: {timeleft}"
+msgstr "{Target} を掃除中"
+
+#. STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.TOOLTIP"
+msgid ""
+"This building automatically performs routine maintenance every {x} launches"
+msgstr ""
+
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME"
 msgid "Ready To Unpack"
@@ -3162,9 +3192,13 @@ msgid "Refuel Disabled"
 msgstr "燃料補充不可"
 
 #. STRINGS.BUILDING.STATUSITEMS.REACTORREFUELDISABLED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.REACTORREFUELDISABLED.TOOLTIP"
+#| msgid ""
+#| "This building will not be refueled once its active fuel has been consumed."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.REACTORREFUELDISABLED.TOOLTIP"
 msgid ""
-"This building will not be refueled once its active fuel has been consumed."
+"This building will not be refueled once its active fuel has been consumed"
 msgstr "この設備は一度燃料を使い切ると、燃料の補充ができません。"
 
 #. STRINGS.BUILDING.STATUSITEMS.RELEASING_PRESSURE.NAME
@@ -3719,8 +3753,11 @@ msgid "Line of Sight: Obstructed"
 msgstr "視界: 妨害"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_LOS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_LOS.TOOLTIP"
+#| msgid "This device needs a clear view of space to operate."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_LOS.TOOLTIP"
-msgid "This device needs a clear view of space to operate."
+msgid "This device needs a clear view of space to operate"
 msgstr "この装置は視界が開けていないと操作できません。"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.NAME
@@ -3739,8 +3776,11 @@ msgid "Progress: {progress}"
 msgstr "進捗率: {progress}"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP"
+#| msgid "Operation will commence once this meter fills all the way up."
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP"
-msgid "Operation will commence once this meter fills all the way up."
+msgid "Operation will commence once this device is fully charged"
 msgstr "このメーターが満タンになると操作を開始します。"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION
@@ -3751,8 +3791,8 @@ msgstr "次元断裂機チャージ完了"
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION_TOOLTIP
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION_TOOLTIP"
-msgid "All that's left is to push the big red button."
-msgstr "後はこの大きな赤いボタンを押すだけです。"
+msgid "Push the red button to activate"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.TINKERING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TINKERING.NAME"
@@ -5002,13 +5042,22 @@ msgid "<link=\"BED\">Cot</link>"
 msgstr "<link=\"BED\">簡易ベッド</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.BEEHIVE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BEEHIVE.DESC"
+#| msgid ""
+#| "A moderately <link=\"RADIATION\">Radioactive</link> nest made by <link="
+#| "\"BEE\">Beetas</link>.\n"
+#| "\n"
+#| "Converts <link=\"URANIUMORE\">Uranium</link> into <link=\"ENRICHEDURANIUM"
+#| "\">Enriched Uranium</link> when worked by a Beeta."
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEEHIVE.DESC"
 msgid ""
 "A moderately <link=\"RADIATION\">Radioactive</link> nest made by <link=\"BEE"
 "\">Beetas</link>.\n"
 "\n"
 "Converts <link=\"URANIUMORE\">Uranium</link> into <link=\"ENRICHEDURANIUM"
-"\">Enriched Uranium</link> when worked by a Beeta."
+"\">Enriched Uranium</link> when worked by a Beeta.\n"
+"Will not function if ground below has been destroyed."
 msgstr ""
 "<link=\"BEE\">ビータ</link>が作った<link=\"RADIATION\">放射性</link>の巣で"
 "す。\n"
@@ -7630,6 +7679,43 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.HEATCOMPRESSOR.NAME"
 msgid "<link=\"HEATCOMPRESSOR\">Liquid Heatquilizer</link>"
 msgstr "<link=\"HEATCOMPRESSOR\">液体ヒーター</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.HEPENGINE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.DESC"
+msgid ""
+"Radbolt-fueled rockets support few modules, but travel exceptionally far."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.HEPENGINE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SUGARENGINE.EFFECT"
+#| msgid ""
+#| "Burns <link=\"SUCROSE\">Sucrose</link> to propel rockets for space "
+#| "exploration.\n"
+#| "\n"
+#| "The engine of a rocket must be built first before more rocket modules can "
+#| "be added."
+msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.EFFECT"
+msgid ""
+"Injects <link=\"HEP\">Radbolts</link> into a reaction chamber to propel "
+"rockets for space exploration.\n"
+"\n"
+"The engine of a rocket must be built first before more rocket modules can be "
+"added."
+msgstr ""
+"<link=\"SUCROSE\">スクロース</link>を燃やし、宇宙探索ロケットの推進力としま"
+"す。\n"
+"\n"
+"ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
+"ます。"
+
+#. STRINGS.BUILDINGS.PREFABS.HEPENGINE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.STEAMENGINE.NAME"
+#| msgid "<link=\"STEAMENGINE\">Steam Engine</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.NAME"
+msgid "<link=\"HEPENGINE\">Radbolt Engine</link>"
+msgstr "<link=\"STEAMENGINE\">蒸気エンジン</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLEREDIRECTOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLEREDIRECTOR.DESC"
 msgid "We were all out of mirrors."
@@ -8310,6 +8396,34 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.LANDING_POD.NAME"
 msgid "Spacefarer Deploy Pod"
 msgstr "宇宙旅行着陸ポッド"
+
+#. STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.DESC
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.RAILGUNPAYLOAD.NAME"
+#| msgid "<link=\"RAILGUNPAYLOAD\">Interplanetary Payload</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.DESC"
+msgid ""
+"Guides <link=\"RAILGUNPAYLOAD\">Interplanetary Payloads</link> to land "
+"nearby."
+msgstr "<link=\"RAILGUNPAYLOAD\">星間貨物</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.RAILGUNPAYLOAD.NAME"
+#| msgid "<link=\"RAILGUNPAYLOAD\">Interplanetary Payload</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.EFFECT"
+msgid ""
+"Guides <link=\"RAILGUNPAYLOAD\">Interplanetary Payloads</link> to land "
+"nearby."
+msgstr "<link=\"RAILGUNPAYLOAD\">星間貨物</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.RATIONBOX.NAME"
+#| msgid "<link=\"RATIONBOX\">Ration Box</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.NAME"
+msgid "<link=\"LANDINGBEACON\">Targeting Beacon</link>"
+msgstr "<link=\"RATIONBOX\">食糧保管箱</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LAUNCHPAD.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LAUNCHPAD.DESC"
@@ -11565,17 +11679,28 @@ msgstr "<link=\"ORBITALCARGOMODULE\">軌道貨物モジュール</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.DESC"
-msgid ""
+msgid "Orbital Microlabs perform research from the orbit around a Planetoid."
 msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT"
+#| msgid ""
+#| "Conducts <link=\"RESEARCH\">Interstellar Research</link> to unlock new "
+#| "technologies.\n"
+#| "\n"
+#| "Consumes data from <link=\"TELESCOPE\">Telescopes</link> and <link="
+#| "\"RESEARCHMODULE\">Research Modules</link>.\n"
+#| "\n"
+#| "Assigned Duplicants must possess the <link=\"SENIORRESEARCHER"
+#| "\">Astronomy</link> skill."
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.EFFECT"
 msgid ""
 "Conducts <link=\"RESEARCH\">Interstellar Research</link> to unlock new "
 "technologies.\n"
 "\n"
-"Consumes data from <link=\"TELESCOPE\">Telescopes</link> and <link="
-"\"RESEARCHMODULE\">Research Modules</link>.\n"
+"Consumes <link=\"POLYPROPYLENE\">Plastic</link> and <link=\"POWER\">Power</"
+"link>.\n"
 "\n"
 "Assigned Duplicants must possess the <link=\"SENIORRESEARCHER\">Astronomy</"
 "link> skill."
@@ -12718,10 +12843,41 @@ msgstr ""
 "\n"
 "複製人間が運送することはできません。"
 
+#. STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CLUSTERCOMMANDMODULE.LOGIC_PORT_LAUNCH"
+#| msgid "Launch Rocket"
+msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT"
+msgid "Launch Toggle"
+msgstr "ロケット発射"
+
+#. STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_ACTIVE"
+#| msgid "<b><style=\"logic_on\">Green Signal</style></b>: Enable building"
+msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT_ACTIVE"
+msgid ""
+"<b><style=\"logic_on\">Green Signal</style></b>: Enable payload launching."
+msgstr "<b><style=\"logic_on\">グリーン</style></b>: 設備を有効化"
+
+#. STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
+#| msgid "<b><style=\"logic_off\">Red Signal</style></b>: Disable building"
+msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.LOGIC_PORT_INACTIVE"
+msgid ""
+"<b><style=\"logic_off\">Red Signal</style></b>: Disable payload launching."
+msgstr "<b><style=\"logic_off\">レッド</style></b>: 設備を無効化"
+
 #. STRINGS.BUILDINGS.PREFABS.RAILGUN.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.NAME"
 msgid "<link=\"RAILGUN\">Interplanetary Launcher</link>"
 msgstr "<link=\"RAILGUN\">星間ランチャー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.RAILGUN.SIDESCREEN_HEP_REQUIRED
+msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUN.SIDESCREEN_HEP_REQUIRED"
+msgid "Launch cost: {current} / {required} radbolts"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.RAILGUNPAYLOADOPENER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.RAILGUNPAYLOADOPENER.DESC"
@@ -24127,6 +24283,22 @@ msgctxt "STRINGS.CREATURES.ATTRIBUTES.MATURITYDELTA.NAME"
 msgid "Growth Speed"
 msgstr "成長速度"
 
+#. STRINGS.CREATURES.ATTRIBUTES.MATURITYMAX.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.SCALEGROWTH.TOOLTIP"
+#| msgid "The amount of time required for this critter to regrow its scales"
+msgctxt "STRINGS.CREATURES.ATTRIBUTES.MATURITYMAX.DESC"
+msgid "The amount of time it takes this plant to grow."
+msgstr "この動物の鱗が再び生え揃うまでの時間です"
+
+#. STRINGS.CREATURES.ATTRIBUTES.MATURITYMAX.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.GROWTHTIME_SIMPLE"
+#| msgid "Life Cycle: {0}"
+msgctxt "STRINGS.CREATURES.ATTRIBUTES.MATURITYMAX.NAME"
+msgid "Life Cycle"
+msgstr "ライフサイクル: {0}"
+
 #. STRINGS.CREATURES.ATTRIBUTES.POWERCHARGEDELTA.DESC
 msgctxt "STRINGS.CREATURES.ATTRIBUTES.POWERCHARGEDELTA.DESC"
 msgid ""
@@ -24668,86 +24840,156 @@ msgctxt "STRINGS.CREATURES.MODIFIERS.WILD.TOOLTIP"
 msgid "This critter is wild"
 msgstr "この動物は野生種です"
 
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_A.DESCRIPTION
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_A.DESCRIPTION"
-msgid "A plant with this mutation produces a higher yield of crop"
+#. STRINGS.CREATURES.PLANT_MUTATIONS.BLOOMS.DESCRIPTION
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BLOOMS.DESCRIPTION"
+msgid ""
+"Vestigial flowers increase the beauty of this plant. Don't inhale the "
+"pollen, though!"
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.BLOOMS.NAME
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BLOOMS.NAME"
+msgid "Blooming"
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.BONUS_CROP_FMT
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BONUS_CROP_FMT"
+msgid "Bonus Crop: +{Amount} {Crop}"
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.BONUSLICE.DESCRIPTION
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BONUSLICE.DESCRIPTION"
+msgid "Something about this mutation causes Meal Lice to pupate on this plant."
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.BONUSLICE.NAME
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BONUSLICE.NAME"
+msgid "Licey"
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.EXTREMELYTIGHT.DESCRIPTION
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.EXTREMELYTIGHT.DESCRIPTION"
+msgid ""
+"Plants with this mutation are very difficult to keep alive, but produce a "
+"bounty."
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.EXTREMELYTIGHT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOCIALIZED.NAME"
+#| msgid "Socialized"
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.EXTREMELYTIGHT.NAME"
+msgid "Superspecialized"
+msgstr "社交的"
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.HEAVYFRUIT.DESCRIPTION
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.HEAVYFRUIT.DESCRIPTION"
+msgid ""
+"Extra water in these plump mutant veggies causes them to fall right off the "
+"plant! There's no extra nutritional value, though..."
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.HEAVYFRUIT.NAME
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.HEAVYFRUIT.NAME"
+msgid "Juicy Fruits"
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.LOADEDWITHFRUIT.DESCRIPTION
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.LOADEDWITHFRUIT.DESCRIPTION"
+msgid ""
+"This mutation produces lots of extra produce, though it also takes a long "
+"time to pick it all!"
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.LOADEDWITHFRUIT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.BEAUTIFUL"
+#| msgid "Beautiful"
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.LOADEDWITHFRUIT.NAME"
+msgid "Bountiful"
+msgstr "美しい"
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.MODERATELYLOOSE.DESCRIPTION
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.MODERATELYLOOSE.DESCRIPTION"
+msgid ""
+"Plants with this mutation are easier to take care of, but don't yield as "
+"much produce."
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.MODERATELYLOOSE.NAME
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.MODERATELYLOOSE.NAME"
+msgid "Easygoing"
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.MODERATELYTIGHT.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_A.DESCRIPTION"
+#| msgid "A plant with this mutation produces a higher yield of crop"
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.MODERATELYTIGHT.DESCRIPTION"
+msgid ""
+"Plants with this mutation are pickier about their conditions but yield more "
+"produce."
 msgstr "この変異を持つ植物は通常より多く実ります"
 
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_A.NAME
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_A.NAME"
-msgid "Plentiful"
-msgstr "豊作"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_B.DESCRIPTION
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_B.DESCRIPTION"
-msgid ""
-"A plant with this mutation prefers an environment with higher temperatures"
-msgstr "この変異を持つ植物は高温環境を好みます"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_B.NAME
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_B.NAME"
-msgid "Tropical"
-msgstr "熱帯"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_C.DESCRIPTION
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_C.DESCRIPTION"
-msgid ""
-"A plant with this mutation requires more <link=\"FERTILIZER\">Fertilizer</"
-"link>"
-msgstr ""
-"この変異を持つ植物はより多くの<link=\"FERTILIZER\">肥料</link>を要求します"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_C.NAME
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_C.NAME"
-msgid "Gluttonous"
-msgstr "大喰らい"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_D.DESCRIPTION
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_D.DESCRIPTION"
-msgid "A plant with this mutation requires more irrigation"
-msgstr "この変異を持つ植物はさらなる灌漑を要求します"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_D.NAME
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_D.NAME"
-msgid "Guzzling"
-msgstr "鯨飲"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_E.DESCRIPTION
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_E.DESCRIPTION"
-msgid ""
-"A plant with this mutation requires less <link=\"FERTILIZER\">Fertilizer</"
-"link>"
-msgstr "この変異を持つ植物は少ない<link=\"FERTILIZER\">肥料</link>でも育ちます"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_E.NAME
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_E.NAME"
-msgid "Fasting"
-msgstr "断食"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_F.DESCRIPTION
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_F.DESCRIPTION"
-msgid "A plant with this mutation requires less irrigation"
-msgstr "この変異を持つ植物は少ない灌漑でも育ちます"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_F.NAME
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_F.NAME"
-msgid "Arid"
-msgstr "乾燥"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_G.DESCRIPTION
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_G.DESCRIPTION"
-msgid "A plant with this mutation requires less growing time"
-msgstr "この変異を持つ植物は短い時間で成熟します"
-
-#. STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_G.NAME
-msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_G.NAME"
-msgid "Precocious"
-msgstr "早熟"
+#. STRINGS.CREATURES.PLANT_MUTATIONS.MODERATELYTIGHT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOCIALIZED.NAME"
+#| msgid "Socialized"
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.MODERATELYTIGHT.NAME"
+msgid "Specialized"
+msgstr "社交的"
 
 #. STRINGS.CREATURES.PLANT_MUTATIONS.NONE.NAME
 msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.NONE.NAME"
 msgid "Original"
 msgstr "原種"
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.PLANT_NAME_FMT
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.GENETICS.HEADER_1"
+#| msgid "Plant Mutations"
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.PLANT_NAME_FMT"
+msgid "{PlantName} ({MutationList})"
+msgstr "植物の突然変異"
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.ROTTENHEAPS.DESCRIPTION
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.ROTTENHEAPS.DESCRIPTION"
+msgid ""
+"Plants with this mutation grow extremely quickly, though the produce they "
+"make is sometimes questionable."
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.ROTTENHEAPS.NAME
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.ROTTENHEAPS.NAME"
+msgid "Exuberant"
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.SLOWBURN.DESCRIPTION
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.SLOWBURN.DESCRIPTION"
+msgid ""
+"These plants grow almost as slow as their wild cousins, but also consume "
+"almost no fertilizer."
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.SLOWBURN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.MODIFIERS.WILD.NAME"
+#| msgid "Wild"
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.SLOWBURN.NAME"
+msgid "Wildish"
+msgstr "野生"
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.SUNNYSPEED.DESCRIPTION
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.SUNNYSPEED.DESCRIPTION"
+msgid ""
+"This mutation provides the plant with sun-collecting leaves, allowing faster "
+"growth."
+msgstr ""
+
+#. STRINGS.CREATURES.PLANT_MUTATIONS.SUNNYSPEED.NAME
+msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.SUNNYSPEED.NAME"
+msgid "Leafy"
+msgstr ""
 
 #. STRINGS.CREATURES.PLANT_MUTATIONS.UNIDENTIFIED
 msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.UNIDENTIFIED"
@@ -25078,18 +25320,27 @@ msgid "<link=\"CRAB\">Pokeshell</link>"
 msgstr "<link=\"CRAB\">ポークシェル</link>"
 
 #. STRINGS.CREATURES.SPECIES.CRITTERTRAPPLANT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.CRITTERTRAPPLANT.DESC"
+#| msgid ""
+#| "Critter Traps are carnivorous plants that snatch up unsuspecting critters "
+#| "and consume them, releasing <link=\"HYDROGEN\">Hydrogen</link> as waste."
 msgctxt "STRINGS.CREATURES.SPECIES.CRITTERTRAPPLANT.DESC"
 msgid ""
-"Critter Traps are carnivorous plants that snatch up unsuspecting critters "
-"and consume them, releasing <link=\"HYDROGEN\">Hydrogen</link> as waste."
+"Critter Traps are carnivorous plants that trap unsuspecting critters and "
+"consume them, releasing <link=\"HYDROGEN\">Hydrogen</link> as waste."
 msgstr ""
 "ケモノジゴクは不注意な動物を捕らえ消化します。<link=\"HYDROGEN\">水素</link>"
 "を排出します。"
 
 #. STRINGS.CREATURES.SPECIES.CRITTERTRAPPLANT.DOMESTICATEDDESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.CRITTERTRAPPLANT.DOMESTICATEDDESC"
+#| msgid ""
+#| "This plant eat critters and produces <link=\"HYDROGEN\">Hydrogen</link>."
 msgctxt "STRINGS.CREATURES.SPECIES.CRITTERTRAPPLANT.DOMESTICATEDDESC"
 msgid ""
-"This plant eat critters and produces <link=\"HYDROGEN\">Hydrogen</link>."
+"This plant eats critters and produces <link=\"HYDROGEN\">Hydrogen</link>."
 msgstr "この植物は動物を捕食し、<link=\"HYDROGEN\">水素</link>を生産します。"
 
 # Venus’s Flytrap(ハエトリグサ) の捩り
@@ -28239,6 +28490,46 @@ msgid ""
 "met"
 msgstr "<style=\"KKeyword\">明るさ</style>の条件を満たした場合、成長します"
 
+#. STRINGS.CREATURES.STATUSITEMS.CROP_TOO_NONRADIATED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.CANTACCEPTIRRIGATION.NAME"
+#| msgid "    • Irrigation"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_NONRADIATED.NAME"
+msgid "    • Low Radiation Levels"
+msgstr "    • 灌漑"
+
+#. STRINGS.CREATURES.STATUSITEMS.CROP_TOO_NONRADIATED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP"
+#| msgid ""
+#| "Growth will resume when <style=\"KKeyword\">Fertilization</style> "
+#| "requirements are met"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_NONRADIATED.TOOLTIP"
+msgid ""
+"Growth will resume when <style=\"KKeyword\">Radiation</style> requirements "
+"are met"
+msgstr "<style=\"KKeyword\">施肥</style>の条件を満たした場合、成長します"
+
+#. STRINGS.CREATURES.STATUSITEMS.CROP_TOO_RADIATED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.CANTACCEPTIRRIGATION.NAME"
+#| msgid "    • Irrigation"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_RADIATED.NAME"
+msgid "    • High Radiation Levels"
+msgstr "    • 灌漑"
+
+#. STRINGS.CREATURES.STATUSITEMS.CROP_TOO_RADIATED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.NEEDSFERTILIZER.TOOLTIP"
+#| msgid ""
+#| "Growth will resume when <style=\"KKeyword\">Fertilization</style> "
+#| "requirements are met"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_RADIATED.TOOLTIP"
+msgid ""
+"Growth will resume when <style=\"KKeyword\">Radiation</style> requirements "
+"are met"
+msgstr "<style=\"KKeyword\">施肥</style>の条件を満たした場合、成長します"
+
 #. STRINGS.CREATURES.STATUSITEMS.DEAD.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DEAD.NAME"
 msgid "Dead"
@@ -28268,6 +28559,21 @@ msgstr "消化中"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DIGESTING.TOOLTIP"
 msgid "This critter is working off a big meal"
 msgstr "この動物は大量の食べ物を片付けています"
+
+#. STRINGS.CREATURES.STATUSITEMS.DISABLED.NAME
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN."
+#| "TIMELAPSE_DISABLED_DESCRIPTION"
+#| msgid "Disabled"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.DISABLED.NAME"
+msgid "Disabled"
+msgstr "無効化"
+
+#. STRINGS.CREATURES.STATUSITEMS.DISABLED.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.DISABLED.TOOLTIP"
+msgid "Something is preventing this critter from functioning!"
+msgstr ""
 
 #. STRINGS.CREATURES.STATUSITEMS.DIVERGENT_TENDING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.DIVERGENT_TENDING.NAME"
@@ -28847,6 +29153,19 @@ msgstr ""
 "この動物は高齢化しており、残された時間は <b>{TimeUntilDeath}</b>しかありませ"
 "ん"
 
+#. STRINGS.CREATURES.STATUSITEMS.ORIGINALPLANTMUTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.NONE.NAME"
+#| msgid "Original"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.ORIGINALPLANTMUTATION.NAME"
+msgid "Original Plant"
+msgstr "原種"
+
+#. STRINGS.CREATURES.STATUSITEMS.ORIGINALPLANTMUTATION.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.ORIGINALPLANTMUTATION.TOOLTIP"
+msgid "This is the original, unmutated variant of this species."
+msgstr ""
+
 #. STRINGS.CREATURES.STATUSITEMS.PERFECTATMOSPHERICPRESSURE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTATMOSPHERICPRESSURE.NAME"
 msgid "Ideal Air Pressure"
@@ -29031,6 +29350,19 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.SLEEPING.TOOLTIP"
 msgid "This critter is replenishing its <style=\"KKeyword\">Stamina</style>"
 msgstr "この動物は<style=\"KKeyword\">スタミナ</style>を回復中です"
 
+#. STRINGS.CREATURES.STATUSITEMS.SPECIFICPLANTMUTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.GENETICS.HEADER_1"
+#| msgid "Plant Mutations"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.SPECIFICPLANTMUTATION.NAME"
+msgid "Mutant Plant: {MutationName}"
+msgstr "植物の突然変異"
+
+#. STRINGS.CREATURES.STATUSITEMS.SPECIFICPLANTMUTATION.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.SPECIFICPLANTMUTATION.TOOLTIP"
+msgid "This plant is mutated with a genetic variant I call {MutationName}."
+msgstr ""
+
 #. STRINGS.CREATURES.STATUSITEMS.SPOILED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SPOILED.NAME"
 msgid "Rotten"
@@ -29160,6 +29492,28 @@ msgstr "捕らわれの身"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TRAPPED.TOOLTIP"
 msgid "This critter has been contained and cannot escape"
 msgstr "この動物は身動きできません"
+
+#. STRINGS.CREATURES.STATUSITEMS.UNKNOWNMUTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.GENETICS.HEADER_1"
+#| msgid "Plant Mutations"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.UNKNOWNMUTATION.NAME"
+msgid "Unknown Mutation"
+msgstr "植物の突然変異"
+
+#. STRINGS.CREATURES.STATUSITEMS.UNKNOWNMUTATION.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.UNIDENTIFIED_DESC"
+#| msgid ""
+#| "This seed must be identified at the <link=\"GENETICANALYSISSTATION"
+#| "\">Botanical Analyzer</link> before it can be planted."
+msgctxt "STRINGS.CREATURES.STATUSITEMS.UNKNOWNMUTATION.TOOLTIP"
+msgid ""
+"This seed carries some unexpected genetic markers. Analyze it at the <link="
+"\"GENETICANALYSISSTATION\">Botanical Analyzer</link> to learn its secrets."
+msgstr ""
+"この種子を植える前に、<link=\"GENETICANALYSISSTATION\">植物分析機</link>で解"
+"析する必要があります。"
 
 #. STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.NAME"
@@ -29530,6 +29884,19 @@ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOR.NAME"
 msgid "Decor"
 msgstr "装飾"
 
+#. STRINGS.DUPLICANTS.ATTRIBUTES.DECORBONUS.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECORBONUS.DESC"
+msgid "Change in Decor relative to the base crop"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.DECORBONUS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.NAME"
+#| msgid "Decor Morale Bonus"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECORBONUS.NAME"
+msgid "Decor Bonus"
+msgstr "装飾士気ボーナス"
+
 #. STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.DECOREXPECTATION.DESC"
 msgid ""
@@ -29628,6 +29995,21 @@ msgstr ""
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FATALTEMPERATURE.NAME"
 msgid "Break Down Temperature"
 msgstr "機能停止温度"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.FERTILIZERUSAGEMOD.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FERTILIZERUSAGEMOD.DESC"
+msgid ""
+"Fertilizer and irrigation amounts this plant requires relative to the base "
+"crop"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.FERTILIZERUSAGEMOD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.FARMINGMATERIAL"
+#| msgid "Fertilizer"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FERTILIZERUSAGEMOD.NAME"
+msgid "Fertilizer Usage"
+msgstr "肥料"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.FOODEXPECTATION.DESC"
@@ -29746,6 +30128,19 @@ msgstr ""
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HAPPINESSDELTA.NAME"
 msgid "Happiness"
 msgstr "幸福度"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.HARVESTTIME.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HARVESTTIME.DESC"
+msgid "Time it takes an unskilled Duplicant to harvest this plant's fruit"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.HARVESTTIME.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIMER_SIDE_SCREEN.ON"
+#| msgid "Green Duration"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HARVESTTIME.NAME"
+msgid "Harvest Duration"
+msgstr "グリーン期間"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.HITPOINTSDELTA.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.HITPOINTSDELTA.DESC"
@@ -29895,6 +30290,19 @@ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MACHINERYSPEED.NAME"
 msgid "Machinery Speed"
 msgstr "機械スピード"
 
+#. STRINGS.DUPLICANTS.ATTRIBUTES.MAXRADIATIONTHRESHOLD.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MAXRADIATIONTHRESHOLD.DESC"
+msgid "Largest amount of ambient Radiation this plant can tolerate"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.MAXRADIATIONTHRESHOLD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.RADIATION.HEADER_1"
+#| msgid "Radiation"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MAXRADIATIONTHRESHOLD.NAME"
+msgid "Maximum Radiation"
+msgstr "放射線"
+
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MAXUNDERWATERTRAVELCOST.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MAXUNDERWATERTRAVELCOST.DESC"
 msgid ""
@@ -29919,6 +30327,35 @@ msgstr ""
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.METABOLISM.NAME"
 msgid "Critter Metabolism"
 msgstr "動物の代謝"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.MINLIGHTLUX.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MINLIGHTLUX.DESC"
+msgid "Minimum lux this plant requires for growth"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.MINLIGHTLUX.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.LIGHT.HEADER_1"
+#| msgid "Light"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MINLIGHTLUX.NAME"
+msgid "Light"
+msgstr "光"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.MINRADIATIONTHRESHOLD.DESC
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.SCALEGROWTH.TOOLTIP"
+#| msgid "The amount of time required for this critter to regrow its scales"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MINRADIATIONTHRESHOLD.DESC"
+msgid "Smallest amount of ambient Radiation required for this plant to grow"
+msgstr "この動物の鱗が再び生え揃うまでの時間です"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.MINRADIATIONTHRESHOLD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.RADIATION"
+#| msgid "Ambient Radiation"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MINRADIATIONTHRESHOLD.NAME"
+msgid "Minimum Radiation"
+msgstr "周囲の放射線"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.MODIFIER_ENTRY
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.MODIFIER_ENTRY"
@@ -30291,6 +30728,32 @@ msgstr "間抜け"
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.VALUE"
 msgid "{0}: {1}"
 msgstr "{0}: {1}"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.WILTTEMPRANGEMOD.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.WILTTEMPRANGEMOD.DESC"
+msgid "Variance growth temperature relative to the base crop"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.WILTTEMPRANGEMOD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDHOTENV.NAME"
+#| msgid "Target Temperature Reached"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.WILTTEMPRANGEMOD.NAME"
+msgid "Viable Temperature Range"
+msgstr "指定温度到達"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.YIELDAMOUNT.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.YIELDAMOUNT.DESC"
+msgid "Plant production relative to the base crop"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.YIELDAMOUNT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.COMPOSITION_SMALL_AMOUNT"
+#| msgid "Trace Amount"
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.YIELDAMOUNT.NAME"
+msgid "Yield Amount"
+msgstr "痕跡量"
 
 #. STRINGS.DUPLICANTS.CHOREGROUPS.ART.ARCHETYPE_NAME
 msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.ART.ARCHETYPE_NAME"
@@ -38176,6 +38639,19 @@ msgstr "幹の生命力"
 msgctxt "STRINGS.DUPLICANTS.STATS.TRUNKHEALTH.TOOLTIP"
 msgid "Tree branches will die if they do not have a healthy trunk to grow from"
 msgstr "健康な幹でなければ、木の枝は生えてきません"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.ANALYZINGGENES.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.ANALYZINGGENES.NAME"
+msgid "Analyzing Plant Genes"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.ANALYZINGGENES.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MOURNING.TOOLTIP"
+#| msgid "This Duplicant is grieving the loss of a friend"
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.ANALYZINGGENES.TOOLTIP"
+msgid "This duplicant is peering deep into the genetic code of an odd seed"
+msgstr "この複製人間は友の喪失に嘆いています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.ARTING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.ARTING.NAME"
@@ -49874,6 +50350,33 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.GENESHUFFLER.TOOLTIP"
 msgid "These Duplicants had their genetic makeup modified:"
 msgstr "これらの複製人間は遺伝子調整されました:"
 
+#. STRINGS.MISC.NOTIFICATIONS.GENETICANALYSISCOMPLETE.MESSAGEBODY
+msgctxt "STRINGS.MISC.NOTIFICATIONS.GENETICANALYSISCOMPLETE.MESSAGEBODY"
+msgid ""
+"Deeply probing the genes of the {Plant} plant have led to the discovery of a "
+"promising new cultivatable mutation:\n"
+"\n"
+"<b>{Subspecies}</b>\n"
+"\n"
+"{Info}"
+msgstr ""
+
+#. STRINGS.MISC.NOTIFICATIONS.GENETICANALYSISCOMPLETE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.STUDIED.NAME"
+#| msgid "Analysis Complete"
+msgctxt "STRINGS.MISC.NOTIFICATIONS.GENETICANALYSISCOMPLETE.NAME"
+msgid "Seed Analysis Complete"
+msgstr "分析完了"
+
+#. STRINGS.MISC.NOTIFICATIONS.GENETICANALYSISCOMPLETE.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.STUDIED.NAME"
+#| msgid "Analysis Complete"
+msgctxt "STRINGS.MISC.NOTIFICATIONS.GENETICANALYSISCOMPLETE.TOOLTIP"
+msgid "{Plant} Analysis complete!"
+msgstr "分析完了"
+
 #. STRINGS.MISC.NOTIFICATIONS.HEALING.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.HEALING.NAME"
 msgid "Healing"
@@ -50267,6 +50770,25 @@ msgstr ""
 "この設備は新たな自動化ポートを獲得しました。既存の<link=\"LOGICWIRE\">自動化"
 "ワイヤ</link>と意図しない接続がされています"
 
+#. STRINGS.MISC.NOTIFICATIONS.NEWMUTANTSEED.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.NEWMUTANTSEED.NAME"
+msgid "New Mutant Seed Discovered"
+msgstr ""
+
+#. STRINGS.MISC.NOTIFICATIONS.NEWMUTANTSEED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.UNIDENTIFIED_DESC"
+#| msgid ""
+#| "This seed must be identified at the <link=\"GENETICANALYSISSTATION"
+#| "\">Botanical Analyzer</link> before it can be planted."
+msgctxt "STRINGS.MISC.NOTIFICATIONS.NEWMUTANTSEED.TOOLTIP"
+msgid ""
+"A new mutant variety of the {Plant} has been found. Analyze it at the <link="
+"\"GENETICANALYSISSTATION\">Botanical Analyzer</link> to learn more!"
+msgstr ""
+"この種子を植える前に、<link=\"GENETICANALYSISSTATION\">植物分析機</link>で解"
+"析する必要があります。"
+
 #. STRINGS.MISC.NOTIFICATIONS.NEWTRAIT.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NEWTRAIT.NAME"
 msgid "{0} has developed a trait"
@@ -50484,10 +51006,15 @@ msgid "Reactor Meltdown"
 msgstr "反応炉メルトダウン"
 
 #. STRINGS.MISC.NOTIFICATIONS.REACTORMELTDOWN.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.REACTORMELTDOWN.TOOLTIP"
+#| msgid ""
+#| "A Research Reactor has overheated and is meltingdown! Extreme radiation "
+#| "is flooding the area around it."
 msgctxt "STRINGS.MISC.NOTIFICATIONS.REACTORMELTDOWN.TOOLTIP"
 msgid ""
-"A Research Reactor has overheated and is meltingdown! Extreme radiation is "
-"flooding the area around it."
+"A Research Reactor has overheated and is melting down! Extreme radiation is "
+"flooding the area"
 msgstr ""
 "研究用反応炉がオーバーヒートしてメルトダウンしています！周囲におびただしい放"
 "射線があふれ出しています。"
@@ -55219,8 +55746,11 @@ msgid "<link=\"ADVANCEDRESEARCH\">Advanced Research</link>"
 msgstr "<link=\"ADVANCEDRESEARCH\">高度な研究</link>"
 
 #. STRINGS.RESEARCH.TECHS.ADVANCEDSANITATION.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.ADVANCEDSANITATION.DESC"
+#| msgid "Clean those dirty duplicants off."
 msgctxt "STRINGS.RESEARCH.TECHS.ADVANCEDSANITATION.DESC"
-msgid "Clean those dirty duplicants off."
+msgid "Clean up dirty Duplicants."
 msgstr "ばっちい複製人間たちをきれいにしましょう。"
 
 #. STRINGS.RESEARCH.TECHS.ADVANCEDSANITATION.NAME
@@ -55394,8 +55924,11 @@ msgid "<link=\"COMBUSTION\">Internal Combustion</link>"
 msgstr "<link=\"COMBUSTION\">内燃機関</link>"
 
 #. STRINGS.RESEARCH.TECHS.CRASHPLAN.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.CRASHPLAN.DESC"
+#| msgid "What goes up, must come down"
 msgctxt "STRINGS.RESEARCH.TECHS.CRASHPLAN.DESC"
-msgid "What goes up, must come down"
+msgid "What goes up, must come down."
 msgstr "上がったものは、必ず降りてきます"
 
 #. STRINGS.RESEARCH.TECHS.CRASHPLAN.NAME
@@ -55405,8 +55938,8 @@ msgstr "<link=\"CRASHPLAN\">クラッシュプラン</link>"
 
 #. STRINGS.RESEARCH.TECHS.CRYOFUELPROPULSION.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.CRYOFUELPROPULSION.DESC"
-msgid "With this technology, the sky is your oyster. Go exploring!"
-msgstr "この技術があれば、宇宙はあなたの思いのまま。探検に行こう！"
+msgid "A semi-powerful engine to propel you further into the galaxy."
+msgstr ""
 
 #. STRINGS.RESEARCH.TECHS.CRYOFUELPROPULSION.NAME
 msgctxt "STRINGS.RESEARCH.TECHS.CRYOFUELPROPULSION.NAME"
@@ -55447,8 +55980,11 @@ msgid "<link=\"DUPETRAFFICCONTROL\">Computing</link>"
 msgstr "<link=\"DUPETRAFFICCONTROL\">コンピューティング</link>"
 
 #. STRINGS.RESEARCH.TECHS.DURABLELIFESUPPORT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.DURABLELIFESUPPORT.DESC"
+#| msgid "Improved construction will allow extended missions into space."
 msgctxt "STRINGS.RESEARCH.TECHS.DURABLELIFESUPPORT.DESC"
-msgid "Improved construction will allow extended missions into space."
+msgid "Improved devices for extended missions into space."
 msgstr "改良された建造物は、宇宙空間での拡張ミッションを可能にします。"
 
 #. STRINGS.RESEARCH.TECHS.DURABLELIFESUPPORT.NAME
@@ -55577,8 +56113,11 @@ msgid "<link=\"FOODREPURPOSING\">Food Repurposing</link>"
 msgstr "<link=\"FOODREPURPOSING\">食糧の再利用</link>"
 
 #. STRINGS.RESEARCH.TECHS.GASDISTRIBUTION.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.GASDISTRIBUTION.DESC"
+#| msgid "Internal rocket hookups for gas resources"
 msgctxt "STRINGS.RESEARCH.TECHS.GASDISTRIBUTION.DESC"
-msgid "Internal rocket hookups for gas resources"
+msgid "Internal rocket hookups for gas resources."
 msgstr "気体資源のためのロケット内接続部品です"
 
 #. STRINGS.RESEARCH.TECHS.GASDISTRIBUTION.NAME
@@ -55630,6 +56169,19 @@ msgctxt "STRINGS.RESEARCH.TECHS.HIGHTEMPFORGING.NAME"
 msgid "<link=\"HIGHTEMPFORGING\">Superheated Forging</link>"
 msgstr "<link=\"HIGHTEMPFORGING\">高温鍛造</link>"
 
+#. STRINGS.RESEARCH.TECHS.HIGHVELOCITYTRANSPORT.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.HIGHVELOCITYTRANSPORT.DESC"
+msgid "Send things hurling through space."
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.HIGHVELOCITYTRANSPORT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.SOLIDTRANSPORT.NAME"
+#| msgid "<link=\"SOLIDTRANSPORT\">Solid Transport</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.HIGHVELOCITYTRANSPORT.NAME"
+msgid "<link=\"HIGHVELOCITY\">High Velocity Transport</link>"
+msgstr "<link=\"SOLIDTRANSPORT\">固体輸送</link>"
+
 #. STRINGS.RESEARCH.TECHS.HVAC.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.HVAC.DESC"
 msgid ""
@@ -55645,8 +56197,11 @@ msgid "<link=\"HVAC\">HVAC</link>"
 msgstr "<link=\"HVAC\">HVAC</link>"
 
 #. STRINGS.RESEARCH.TECHS.HYDROCARBONPROPULSION.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.HYDROCARBONPROPULSION.DESC"
+#| msgid "Big rocket engines with smoke"
 msgctxt "STRINGS.RESEARCH.TECHS.HYDROCARBONPROPULSION.DESC"
-msgid "Big rocket engines with smoke"
+msgid "Mid-range rocket engines with lots of smoke."
 msgstr "煙を吹き出す巨大なロケットエンジンです"
 
 #. STRINGS.RESEARCH.TECHS.HYDROCARBONPROPULSION.NAME
@@ -55754,8 +56309,11 @@ msgid "<link=\"JOBS\">Employment</link>"
 msgstr "<link=\"JOBS\">職業</link>"
 
 #. STRINGS.RESEARCH.TECHS.LIQUIDDISTRIBUTION.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.LIQUIDDISTRIBUTION.DESC"
+#| msgid "Internal rocket hookups for liquid resources"
 msgctxt "STRINGS.RESEARCH.TECHS.LIQUIDDISTRIBUTION.DESC"
-msgid "Internal rocket hookups for liquid resources"
+msgid "Internal rocket hookups for liquid resources."
 msgstr "液体資源のためのロケット内接続部品です"
 
 #. STRINGS.RESEARCH.TECHS.LIQUIDDISTRIBUTION.NAME
@@ -55902,6 +56460,19 @@ msgctxt "STRINGS.RESEARCH.TECHS.NOTIFICATIONSYSTEMS.NAME"
 msgid "<link=\"NOTIFICATIONSYSTEMS\">Notification Systems</link>"
 msgstr "<link=\"NOTIFICATIONSYSTEMS\">通知システム</link>"
 
+#. STRINGS.RESEARCH.TECHS.NUCLEARPROPULSION.DESC
+msgctxt "STRINGS.RESEARCH.TECHS.NUCLEARPROPULSION.DESC"
+msgid "Radical technology to get you to the stars."
+msgstr ""
+
+#. STRINGS.RESEARCH.TECHS.NUCLEARPROPULSION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.CRYOFUELPROPULSION.NAME"
+#| msgid "<link=\"CRYOFUELPROPULSION\">Cryofuel Propulsion</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.NUCLEARPROPULSION.NAME"
+msgid "<link=\"NUCLEARPROPULSION\">Radbolt Propulsion</link>"
+msgstr "<link=\"CRYOFUELPROPULSION\">極低温燃料ロケット</link>"
+
 #. STRINGS.RESEARCH.TECHS.NUCLEARREFINEMENT.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.NUCLEARREFINEMENT.DESC"
 msgid "Refine uranium and generate radiation."
@@ -55914,13 +56485,16 @@ msgstr "<link=\"NUCLEAR\">放射線精製</link>"
 
 #. STRINGS.RESEARCH.TECHS.NUCLEARRESEARCH.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.NUCLEARRESEARCH.DESC"
-msgid "W.I.P. skill"
-msgstr "W.I.P. スキル"
+msgid "Research and harness sub-atomic particles."
+msgstr ""
 
 #. STRINGS.RESEARCH.TECHS.NUCLEARRESEARCH.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.TECH"
+#| msgid "<link=\"TECH\">Research</link>"
 msgctxt "STRINGS.RESEARCH.TECHS.NUCLEARRESEARCH.NAME"
-msgid "W.I.P. Skill"
-msgstr "W.I.P. スキル"
+msgid "<link=\"ATOMIC\">Atomic Research</link>"
+msgstr "<link=\"TECH\">研究</link>"
 
 #. STRINGS.RESEARCH.TECHS.PARALLELAUTOMATION.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.PARALLELAUTOMATION.DESC"
@@ -56137,8 +56711,12 @@ msgid "<link=\"SMELTING\">Smelting</link>"
 msgstr "<link=\"SMELTING\">精錬</link>"
 
 #. STRINGS.RESEARCH.TECHS.SOLIDDISTRIBUTION.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.SOLIDDISTRIBUTION.DESC"
+#| msgid "Internal rocket hookups for solid resources"
 msgctxt "STRINGS.RESEARCH.TECHS.SOLIDDISTRIBUTION.DESC"
-msgid "Internal rocket hookups for solid resources"
+msgid ""
+"Internal rocket hookups for <link=\"ELEMENTSSOLID\">Solid</link> resources."
 msgstr "固体資源のためのロケット内接続部品です"
 
 #. STRINGS.RESEARCH.TECHS.SOLIDDISTRIBUTION.NAME
@@ -56155,6 +56733,25 @@ msgstr "<link=\"ELEMENTSSOLID\">固体</link>輸送に堅実な判断を下し�
 msgctxt "STRINGS.RESEARCH.TECHS.SOLIDMANAGEMENT.NAME"
 msgid "<link=\"SOLIDMANAGEMENT\">Solid Management</link>"
 msgstr "<link=\"SOLIDMANAGEMENT\">固体管理</link>"
+
+#. STRINGS.RESEARCH.TECHS.SOLIDSPACE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.SOLIDMANAGEMENT.DESC"
+#| msgid ""
+#| "Make solid decisions in <link=\"ELEMENTSSOLID\">Solid</link> sorting."
+msgctxt "STRINGS.RESEARCH.TECHS.SOLIDSPACE.DESC"
+msgid ""
+"Transport and sort <link=\"ELEMENTSSOLID\">Solid</link> resources... in "
+"space!"
+msgstr "<link=\"ELEMENTSSOLID\">固体</link>輸送に堅実な判断を下します。"
+
+#. STRINGS.RESEARCH.TECHS.SOLIDSPACE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.SOLIDTRANSPORT.NAME"
+#| msgid "<link=\"SOLIDTRANSPORT\">Solid Transport</link>"
+msgctxt "STRINGS.RESEARCH.TECHS.SOLIDSPACE.NAME"
+msgid "<link=\"SOLIDSPACE\">Solid Space Transport</link>"
+msgstr "<link=\"SOLIDTRANSPORT\">固体輸送</link>"
 
 #. STRINGS.RESEARCH.TECHS.SOLIDTRANSPORT.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.SOLIDTRANSPORT.DESC"
@@ -56182,10 +56779,8 @@ msgstr "<link=\"SPACEPOWER\">宇宙用電源</link>"
 
 #. STRINGS.RESEARCH.TECHS.SPACEPROGRAM.DESC
 msgctxt "STRINGS.RESEARCH.TECHS.SPACEPROGRAM.DESC"
-msgid ""
-"Basic facilities for allowing the first Duplicant to reach space with "
-"minimal harm."
-msgstr "複製人間を最小の被害で宇宙に到達させるための基本的設備です。"
+msgid "The first steps in getting a Duplicant to space."
+msgstr ""
 
 #. STRINGS.RESEARCH.TECHS.SPACEPROGRAM.NAME
 msgctxt "STRINGS.RESEARCH.TECHS.SPACEPROGRAM.NAME"
@@ -57622,12 +58217,10 @@ msgstr ""
 #. STRINGS.SUBWORLDS.MAGMA.DESC
 msgctxt "STRINGS.SUBWORLDS.MAGMA.DESC"
 msgid ""
-"Bring on the heat! With temperatures that can reach upwards of 1526 degrees "
-"the Magma Biome is a colony hotspot, although you may want to think twice "
-"about sending your Duplicants there without protection."
+"Temperatures in the Magma Biome can reach upwards of 1526 degrees, making it "
+"a reliable source of extreme heat that can be exploited for the purposes of "
+"producing <link=\"POWER\">Power</link> and fuel."
 msgstr ""
-"凄い熱だ！1526度にも達することがあるマグマバイオームはコロニーの不穏地帯だ。"
-"防護なしで複製人間を送り込もうと考えるなら、今一度考え直すべきだろう。"
 
 #. STRINGS.SUBWORLDS.MAGMA.NAME
 msgctxt "STRINGS.SUBWORLDS.MAGMA.NAME"
@@ -57640,18 +58233,31 @@ msgid ""
 "<link=\"MAGMA\">Magma</link> is source of extreme <link=\"HEAT\">Heat</link> "
 "which can be used to transform <link=\"WATER\">Water</link> in to <link="
 "\"STEAM\">Steam</link> or <link=\"CRUDEOIL\">Crude Oil</link> into <link="
-"\"PETROLEUM\">Petroleum</link>."
+"\"PETROLEUM\">Petroleum</link>. In order to prevent the extreme temperatures "
+"of this biome invading other parts of my base, suitable insulation must be "
+"constructed using materials with high melting points like  <link=\"CERAMIC"
+"\">Ceramic</link> or <link=\"OBSIDIAN\">Obsidian</link>.\n"
+"\n"
+"Though <link=\"EXOSUIT\">Exosuits</link> will provide some protection for my "
+"Duplicants, there is still a danger they will overheat if spending an "
+"extended amount of time in this Biome. I should ensure that suitable medical "
+"facilities have been constructed nearby to take care of any medical "
+"emergencies."
 msgstr ""
-"<link=\"MAGMA\">マグマ</link>は<link=\"WATER\">水</link>を<link=\"STEAM\">蒸"
-"気</link>に、<link=\"CRUDEOIL\">原油</link>を<link=\"PETROLEUM\">石油</link>"
-"に変換することができる 高<link=\"HEAT\">熱</link>源です。"
 
 #. STRINGS.SUBWORLDS.MARSH.DESC
+#, fuzzy
+#| msgctxt "STRINGS.SUBWORLDS.MARSH.DESC"
+#| msgid ""
+#| "Visitors to the Marsh Biome will be treated to the soft soothing sounds "
+#| "of <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</link> as it escapes the "
+#| "lush fields of <link=\"TOXICSAND\">Polluted Dirt</link> this biome is "
+#| "known for."
 msgctxt "STRINGS.SUBWORLDS.MARSH.DESC"
 msgid ""
-"Visitors to the Marsh Biome will be treated to the soft soothing sounds of "
-"<link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</link> as it escapes the lush "
-"fields of <link=\"TOXICSAND\">Polluted Dirt</link> this biome is known for."
+"<link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</link> dominates the atmosphere "
+"of the Marsh Biome as it escapes from the <link=\"TOXICSAND\">Polluted Dirt</"
+"link> this biome is known for."
 msgstr ""
 "湿原バイオームを訪れる者は、このバイオームで有名な<link=\"TOXICSAND\">汚染土"
 "</link>から漏れ出る<link=\"CONTAMINATEDOXYGEN\">汚染酸素</link>の慰撫するよう"
@@ -57665,19 +58271,16 @@ msgstr "湿原"
 #. STRINGS.SUBWORLDS.MARSH.UTILITY
 msgctxt "STRINGS.SUBWORLDS.MARSH.UTILITY"
 msgid ""
-"Be aware that Marsh Biomes frequently contain large amounts of <link="
-"\"SLIMEMOLD\">Slime</link> and should be contained so it doesn't infect your "
-"colony with <link=\"SLIMELUNG\">Slimelung</link>.\n"
+"Marsh Biomes contain large amounts of <link=\"SLIMEMOLD\">Slime</link> which "
+"can be converted into <link=\"ALGAE\">Algae</link> and provide a valuable "
+"resource for growing <link=\"MUSHROOMPLANT\">Dusk Caps</link> as well as "
+"feeding to <link=\"PACUSPECIES\">Pacus</link> for producing some higher tier "
+"<link=\"FOOD\">food</link>.\n"
 "\n"
-" <link=\"MUSHROOMPLANT\">Dusk Caps</link> and <link=\"PACUSPECIES\">Pacus</"
-"link> can provide some higher tier <link=\"FOOD\">food</link> ingredients."
+"Because of the high degree of probability that this biome will infect my "
+"Duplicants with <link=\"SLIMELUNG\">Slimelung</link>, it may be prudent to "
+"set up suitable containment for this area ."
 msgstr ""
-"湿原バイオームは大量の<link=\"SLIMEMOLD\">ヘドロ</link>が埋まっていることが多"
-"く、コロニー内に<link=\"SLIMELUNG\">腐肺病</link>を持ち込まないよう気を付けね"
-"ばならない。\n"
-"\n"
-"<link=\"MUSHROOMPLANT\">ダスク キャップ</link>や<link=\"PACUSPECIES\">パクー"
-"</link>は高品質の<link=\"FOOD\">食材</link>を提供してくれる。"
 
 #. STRINGS.SUBWORLDS.METALLIC.DESC
 msgctxt "STRINGS.SUBWORLDS.METALLIC.DESC"
@@ -57871,9 +58474,19 @@ msgid "Space"
 msgstr "宇宙"
 
 #. STRINGS.SUBWORLDS.SPACE.UTILITY
+#, fuzzy
+#| msgctxt "STRINGS.SUBWORLDS.SPACE.UTILITY"
+#| msgid ""
+#| "Setting up <link=\"SOLARPANELS\">Solar Panels</link> the surface will "
+#| "provide a source of renewable energy. However, much care must be taken to "
+#| "ensure <link=\"ELEMENTSLIQUID\">Liquids</link> or <link=\"ELEMENTSGAS"
+#| "\">Gases</link> are not sucked out into the <link=\"VACUUM\">Vacuum</"
+#| "link> of space. <link=\"MOLE\">Shove Voles</link> are native to this "
+#| "biome, and need to be wrangled or contained or they will infest the "
+#| "colony."
 msgctxt "STRINGS.SUBWORLDS.SPACE.UTILITY"
 msgid ""
-"Setting up <link=\"SOLARPANELS\">Solar Panels</link> the surface will "
+"Setting up <link=\"SOLARPANELS\">Solar Panels</link> on the surface will "
 "provide a source of renewable energy. However, much care must be taken to "
 "ensure <link=\"ELEMENTSLIQUID\">Liquids</link> or <link=\"ELEMENTSGAS"
 "\">Gases</link> are not sucked out into the <link=\"VACUUM\">Vacuum</link> "
@@ -65957,8 +66570,8 @@ msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "A TOTALLY RAD UPDATE"
-msgstr "TOTALLY RADアップデート"
+msgid "RADBOLT FROM THE BLUE"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -65976,21 +66589,14 @@ msgstr "議論に参加"
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"<b>A Totally Rad Update</b>\n"
+"<b>A Radbolt From The Blue Update</b>\n"
 "\n"
-"Added new Radiation system and Duplicant radiation sickness.\n"
-"Radbolts from the new Research Reactor or Beeta critter can power Nuclear "
-"Research at the Atomic Collider.\n"
+"Added the Radbolt Engine for using nuclear energy to explore space\n"
+"Added Interplanetary Payload Launcher to improve multi-asteroid "
+"infrastrucutre\n"
 "\n"
 "Check out the full patch notes for more details!"
 msgstr ""
-"<b>A Totally Rad アップデート</b>\n"
-"\n"
-"放射線に関するシステムと複製人間の放射線障害を追加しました\n"
-"研究用反応炉か、新しい生き物ビータから取得できるRADボルトを使って、原子衝突型"
-"加速器で原子力研究を進められます。\n"
-"\n"
-"詳しくはパッチノートをご覧ください！"
 
 #. STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT
 msgctxt "STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT"
@@ -66990,14 +67596,33 @@ msgid "<link=\"LIGHT\">Darkness</link>"
 msgstr "<link=\"LIGHT\">暗闇</link>"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_LIGHT
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_LIGHT"
+#| msgid "<link=\"LIGHT\">Light</link>"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_LIGHT"
-msgid "<link=\"LIGHT\">Light</link>"
+msgid "<link=\"LIGHT\">Light</link>: {Lux}"
 msgstr "<link=\"LIGHT\">光源</link>"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_NO_MIN_RADIATION
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.RADIATION.TITLE"
+#| msgid "<link=\"RADIATION\">Radiation</link>"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_NO_MIN_RADIATION"
+msgid "Maximum <link=\"RADIATION\">Radiation</link>: {MaxRads}"
+msgstr "<link=\"RADIATION\">放射線</link>"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE"
 msgid "<link=\"ATMOSPHERE\">Air</link> Pressure: {0} minimum"
 msgstr "<link=\"ATMOSPHERE\">気圧</link>: 最低 {0}"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_RADIATION
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.RADIATION.TITLE"
+#| msgid "<link=\"RADIATION\">Radiation</link>"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_RADIATION"
+msgid "<link=\"RADIATION\">Radiation</link>: {MinRads} to {MaxRads}"
+msgstr "<link=\"RADIATION\">放射線</link>"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_RECEPTACLE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_RECEPTACLE"
@@ -67167,9 +67792,21 @@ msgid "This plant requires complete darkness"
 msgstr "この植物は完全な暗闇が必要です"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_LIGHT
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_LIGHT"
+#| msgid "This plant requires a <style=\"KKeyword\">Light</style> source"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_LIGHT"
-msgid "This plant requires a <style=\"KKeyword\">Light</style> source"
+msgid ""
+"This plant requires a <style=\"KKeyword\">Light</style> source bathing it in "
+"at least {Lux}"
 msgstr "この植物は光源が必要です"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_NO_MIN_RADIATION
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_NO_MIN_RADIATION"
+msgid ""
+"This plant will stop growing if exposed to more than {MaxRads} of <link="
+"\"RADIATION\">Radiation</link>"
+msgstr ""
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE"
@@ -67177,6 +67814,13 @@ msgid ""
 "Ambient <style=\"KKeyword\">Gas</style> pressure must be at least <b>{0}</b> "
 "for basic growth"
 msgstr "この植物が成長するためには周囲の気圧が最低でも<b>{0}</b> 必要です"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_RADIATION
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_RADIATION"
+msgid ""
+"This plant will only grow if it has between {MinRads} and {MaxRads} of <link="
+"\"RADIATION\">Radiation</link>"
+msgstr ""
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_RECEPTACLE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_RECEPTACLE"
@@ -73769,6 +74413,52 @@ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.WARNING"
 msgid ""
 msgstr ""
 
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.POWER_STATION.NAME"
+#| msgid "Power Control Station"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.FAILURE"
+msgid "Control Station"
+msgstr "電力制御端末"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.READY
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.POWER_STATION.NAME"
+#| msgid "Power Control Station"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.READY"
+msgid "Control Station"
+msgstr "電力制御端末"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.POWER_STATION.NAME"
+#| msgid "Power Control Station"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.WARNING"
+msgid "Control Station"
+msgstr "電力制御端末"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE"
+msgid ""
+"No Control Station\n"
+"------------------\n"
+"A new Rocket Control Station must be installed inside the rocket"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.READY
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.READY"
+msgid "The control station is installed and waiting for the pilot"
+msgstr ""
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.WARNING
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.TOOLTIP.WARNING"
+#| msgid "Construction warning"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.WARNING"
+msgid "Control Station warning"
+msgstr "警告:建設中"
+
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.FAILURE"
 msgid "Engine"
@@ -77284,6 +77974,68 @@ msgctxt "STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.UNDERWAY"
 msgid "Neural Vacillation in progress."
 msgstr "神経シャッフル中です。"
 
+#. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.CANCEL_SEED
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.CLEANING.NAME"
+#| msgid "Cleaning {Target}"
+msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.CANCEL_SEED"
+msgid "Clear Analysis Target"
+msgstr "{Target} を掃除中"
+
+#. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.CURRENT_TARGET
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CURRENTLY_PEEING"
+#| msgid "Currently Peeing"
+msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.CURRENT_TARGET"
+msgid "Currently studying:"
+msgstr "現在おしっこ中"
+
+#. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.NONE_DISCOVERED
+msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.NONE_DISCOVERED"
+msgid "No mutant seeds have been found."
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.PICK_TARGET
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.BLANK_DESC"
+#| msgid "Select a playstyle..."
+msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.PICK_TARGET"
+msgid "Select a plant for study"
+msgstr "プレイスタイル選択..."
+
+#. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SEED_COMPLETE
+#, fuzzy
+#| msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.COMPLETED"
+#| msgid "Completed"
+msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SEED_COMPLETE"
+msgid "<i>Complete</i>"
+msgstr "完了"
+
+#. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SEED_PROGRESS_FMT
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TITLE"
+#| msgid "{0} Seeds"
+msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SEED_PROGRESS_FMT"
+msgid "{0}/{1} seeds"
+msgstr "{0}の種子"
+
+#. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SELECT_SEED
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.NUCLEAR_REACTOR_SIDE_SCREEN.TITLE"
+#| msgid "Reaction Mass Target"
+msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SELECT_SEED"
+msgid "Select Analysis Target"
+msgstr "反応生成量"
+
+#. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.TITLE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.ANALYSIS_TARGET_HEADER"
+#| msgid "Object Analysis"
+msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.TITLE"
+msgid "Genetic Analysis"
+msgstr "物体分析"
+
 #. STRINGS.UI.UISIDESCREENS.HABITATMODULESIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.HABITATMODULESIDESCREEN.TITLE"
 msgid "Spacefarer Module"
@@ -78084,6 +78836,11 @@ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.UNASSIGNED"
 msgid "Unassigned"
 msgstr "割り当てなし"
 
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AUTO_SELF_HARVEST
+msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AUTO_SELF_HARVEST"
+msgid "Self-Harvest On Grown"
+msgstr ""
+
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGDELIVERY
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGDELIVERY"
 msgid "AWAITING DELIVERY: {0}"
@@ -78118,6 +78875,24 @@ msgstr "キャンセル"
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DEPOSIT"
 msgid "Plant"
 msgstr "植える"
+
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_DROPPER_BURST
+msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_DROPPER_BURST"
+msgid "{Disease} Burst: {DiseaseAmount}"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_DROPPER_CONSTANT
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.ELEMENTALDISEASE.TOOLTIP"
+#| msgid "Current disease: {Disease}"
+msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_DROPPER_CONSTANT"
+msgid "{Disease}: {DiseaseAmount}"
+msgstr "現在の不健康度: {Disease}"
+
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_ON_HARVEST
+msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_ON_HARVEST"
+msgid "{Disease} on crop: {DiseaseAmount}"
+msgstr ""
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.ENTITYDEPOSITED
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.ENTITYDEPOSITED"
@@ -78189,10 +78964,42 @@ msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TITLE"
 msgid "{0} Seeds"
 msgstr "{0}の種子"
 
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.AUTO_SELF_HARVEST
+msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.AUTO_SELF_HARVEST"
+msgid ""
+"This plant will instantly drop its crop and begin regrowing when it is "
+"matured."
+msgstr ""
+
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.BONUS_SEEDS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.BONUS_SEEDS"
 msgid "This plant has a {0} chance to produce new seeds when harvested"
 msgstr "この植物は収穫されると新しい種子を生産する確率が {0} あります"
+
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_DROPPER_BURST
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_DROPPER_BURST"
+msgid ""
+"At certain points in this plant's lifecycle, it will emit a burst of "
+"{DiseaseAmount} {Disease}."
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_DROPPER_CONSTANT
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT_TOOLTIP"
+#| msgid "This building will displace {amount} Gas while in use."
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_DROPPER_CONSTANT"
+msgid "This plant emits {DiseaseAmount} {Disease} while it is alive."
+msgstr "この設備の使用中は{amount}の気体を排気します。"
+
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_ON_HARVEST
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_ON_HARVEST"
+msgid ""
+"The {Crop} produced by this plant will have {DiseaseAmount} {Disease} on it."
+msgstr ""
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.NUMBEROFHARVESTS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.NUMBEROFHARVESTS"
@@ -78220,6 +79027,14 @@ msgid "<link=\"KCAL\">{2}</link> produced [<link=\"KCAL\">{1}</link> / unit]"
 msgstr ""
 "<link=\"KCAL\">{2}</link> は [1個あたり<link=\"KCAL\">{1}</link>] を生産しま"
 "した"
+
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_NONFOOD
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELDPERHARVEST"
+#| msgid "{0} {1} per harvest"
+msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_NONFOOD"
+msgid "{0} produced per harvest"
+msgstr "収穫ごとに{0} {1}"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_SEED
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_SEED"
@@ -78251,6 +79066,14 @@ msgstr "{0} [{1} / 1個]"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELD
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELD"
+msgid "{0}: {1} "
+msgstr "{0}: {1} "
+
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELD_NONFOOD
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELD"
+#| msgid "{0}: {1} "
+msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELD_NONFOOD"
 msgid "{0}: {1} "
 msgstr "{0}: {1} "
 
@@ -78321,8 +79144,11 @@ msgid "Launch Resources:"
 msgstr "発射する資源:"
 
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.LAUNCH_TARGET_SELECTED
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.LAUNCH_TARGET_SELECTED"
+#| msgid "Launcher destination {0} set."
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.LAUNCH_TARGET_SELECTED"
-msgid "Launcher destination {0} set."
+msgid "Launcher destination {0} set"
 msgstr "ランチャーの目的地には{0}が指定されています。"
 
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.MINIMUM_PAYLOAD_MASS
@@ -78331,10 +79157,16 @@ msgid "Minimum launch mass:"
 msgstr "最小発射質量:"
 
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET"
+#| msgid ""
+#| "No destination selected.\n"
+#| "Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to set a course."
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET"
 msgid ""
-"No destination selected.\n"
-"Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to set a course."
+"No destination selected\n"
+"Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to set a course"
 msgstr ""
 "目的地が未選択です。\n"
 "<b>星図</b> <b><color=#F44A4A>[Z]</b></color>を開き、対象を選択してください。"
@@ -78872,21 +79704,33 @@ msgid "Object Analysis"
 msgstr "物体分析"
 
 #. STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.ANALYSIS_TARGET_SELECTED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.ANALYSIS_TARGET_SELECTED"
+#| msgid ""
+#| "Object focus selected.\n"
+#| "Analysis underway."
 msgctxt "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.ANALYSIS_TARGET_SELECTED"
 msgid ""
-"Object focus selected.\n"
-"Analysis underway."
+"Object focus selected\n"
+"Analysis underway"
 msgstr ""
 "分析対象が選択されました。\n"
 "分析が進行中です。"
 
 #. STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.NO_SELECTED_ANALYSIS_TARGET
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.NO_SELECTED_ANALYSIS_TARGET"
+#| msgid ""
+#| "No analysis focus selected.\n"
+#| "Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to selected a "
+#| "focus."
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.NO_SELECTED_ANALYSIS_TARGET"
 msgid ""
-"No analysis focus selected.\n"
-"Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to selected a "
-"focus."
+"No analysis focus selected\n"
+"Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to selected a focus"
 msgstr ""
 "分析対象が未選択です。\n"
 "<b>星図</b> <b><color=#F44A4A>[Z]</b></color>を開き、対象を選択してください。"
@@ -82482,6 +83326,148 @@ msgstr ""
 msgctxt "STRINGS.WORLDS.WATERMOONLET.NAME"
 msgid "Water Moonlet"
 msgstr "水の小衛星"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY."
+#~ "NOTIFICATION_TOOLTIP"
+#~ msgid "All that's left is to push the big red button."
+#~ msgstr "後はこの大きな赤いボタンを押すだけです。"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_A.NAME"
+#~ msgid "Plentiful"
+#~ msgstr "豊作"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_B.DESCRIPTION"
+#~ msgid ""
+#~ "A plant with this mutation prefers an environment with higher temperatures"
+#~ msgstr "この変異を持つ植物は高温環境を好みます"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_B.NAME"
+#~ msgid "Tropical"
+#~ msgstr "熱帯"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_C.DESCRIPTION"
+#~ msgid ""
+#~ "A plant with this mutation requires more <link=\"FERTILIZER\">Fertilizer</"
+#~ "link>"
+#~ msgstr ""
+#~ "この変異を持つ植物はより多くの<link=\"FERTILIZER\">肥料</link>を要求します"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_C.NAME"
+#~ msgid "Gluttonous"
+#~ msgstr "大喰らい"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_D.DESCRIPTION"
+#~ msgid "A plant with this mutation requires more irrigation"
+#~ msgstr "この変異を持つ植物はさらなる灌漑を要求します"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_D.NAME"
+#~ msgid "Guzzling"
+#~ msgstr "鯨飲"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_E.DESCRIPTION"
+#~ msgid ""
+#~ "A plant with this mutation requires less <link=\"FERTILIZER\">Fertilizer</"
+#~ "link>"
+#~ msgstr ""
+#~ "この変異を持つ植物は少ない<link=\"FERTILIZER\">肥料</link>でも育ちます"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_E.NAME"
+#~ msgid "Fasting"
+#~ msgstr "断食"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_F.DESCRIPTION"
+#~ msgid "A plant with this mutation requires less irrigation"
+#~ msgstr "この変異を持つ植物は少ない灌漑でも育ちます"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_F.NAME"
+#~ msgid "Arid"
+#~ msgstr "乾燥"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_G.DESCRIPTION"
+#~ msgid "A plant with this mutation requires less growing time"
+#~ msgstr "この変異を持つ植物は短い時間で成熟します"
+
+#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_G.NAME"
+#~ msgid "Precocious"
+#~ msgstr "早熟"
+
+#~ msgctxt "STRINGS.RESEARCH.TECHS.CRYOFUELPROPULSION.DESC"
+#~ msgid "With this technology, the sky is your oyster. Go exploring!"
+#~ msgstr "この技術があれば、宇宙はあなたの思いのまま。探検に行こう！"
+
+#~ msgctxt "STRINGS.RESEARCH.TECHS.NUCLEARRESEARCH.DESC"
+#~ msgid "W.I.P. skill"
+#~ msgstr "W.I.P. スキル"
+
+#~ msgctxt "STRINGS.RESEARCH.TECHS.NUCLEARRESEARCH.NAME"
+#~ msgid "W.I.P. Skill"
+#~ msgstr "W.I.P. スキル"
+
+#~ msgctxt "STRINGS.RESEARCH.TECHS.SPACEPROGRAM.DESC"
+#~ msgid ""
+#~ "Basic facilities for allowing the first Duplicant to reach space with "
+#~ "minimal harm."
+#~ msgstr "複製人間を最小の被害で宇宙に到達させるための基本的設備です。"
+
+#~ msgctxt "STRINGS.SUBWORLDS.MAGMA.DESC"
+#~ msgid ""
+#~ "Bring on the heat! With temperatures that can reach upwards of 1526 "
+#~ "degrees the Magma Biome is a colony hotspot, although you may want to "
+#~ "think twice about sending your Duplicants there without protection."
+#~ msgstr ""
+#~ "凄い熱だ！1526度にも達することがあるマグマバイオームはコロニーの不穏地帯"
+#~ "だ。防護なしで複製人間を送り込もうと考えるなら、今一度考え直すべきだろう。"
+
+#~ msgctxt "STRINGS.SUBWORLDS.MAGMA.UTILITY"
+#~ msgid ""
+#~ "<link=\"MAGMA\">Magma</link> is source of extreme <link=\"HEAT\">Heat</"
+#~ "link> which can be used to transform <link=\"WATER\">Water</link> in to "
+#~ "<link=\"STEAM\">Steam</link> or <link=\"CRUDEOIL\">Crude Oil</link> into "
+#~ "<link=\"PETROLEUM\">Petroleum</link>."
+#~ msgstr ""
+#~ "<link=\"MAGMA\">マグマ</link>は<link=\"WATER\">水</link>を<link=\"STEAM\">"
+#~ "蒸気</link>に、<link=\"CRUDEOIL\">原油</link>を<link=\"PETROLEUM\">石油</"
+#~ "link>に変換することができる 高<link=\"HEAT\">熱</link>源です。"
+
+#~ msgctxt "STRINGS.SUBWORLDS.MARSH.UTILITY"
+#~ msgid ""
+#~ "Be aware that Marsh Biomes frequently contain large amounts of <link="
+#~ "\"SLIMEMOLD\">Slime</link> and should be contained so it doesn't infect "
+#~ "your colony with <link=\"SLIMELUNG\">Slimelung</link>.\n"
+#~ "\n"
+#~ " <link=\"MUSHROOMPLANT\">Dusk Caps</link> and <link=\"PACUSPECIES"
+#~ "\">Pacus</link> can provide some higher tier <link=\"FOOD\">food</link> "
+#~ "ingredients."
+#~ msgstr ""
+#~ "湿原バイオームは大量の<link=\"SLIMEMOLD\">ヘドロ</link>が埋まっていること"
+#~ "が多く、コロニー内に<link=\"SLIMELUNG\">腐肺病</link>を持ち込まないよう気"
+#~ "を付けねばならない。\n"
+#~ "\n"
+#~ "<link=\"MUSHROOMPLANT\">ダスク キャップ</link>や<link=\"PACUSPECIES\">パ"
+#~ "クー</link>は高品質の<link=\"FOOD\">食材</link>を提供してくれる。"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "A TOTALLY RAD UPDATE"
+#~ msgstr "TOTALLY RADアップデート"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#~ msgid ""
+#~ "<b>A Totally Rad Update</b>\n"
+#~ "\n"
+#~ "Added new Radiation system and Duplicant radiation sickness.\n"
+#~ "Radbolts from the new Research Reactor or Beeta critter can power Nuclear "
+#~ "Research at the Atomic Collider.\n"
+#~ "\n"
+#~ "Check out the full patch notes for more details!"
+#~ msgstr ""
+#~ "<b>A Totally Rad アップデート</b>\n"
+#~ "\n"
+#~ "放射線に関するシステムと複製人間の放射線障害を追加しました\n"
+#~ "研究用反応炉か、新しい生き物ビータから取得できるRADボルトを使って、原子衝"
+#~ "突型加速器で原子力研究を進められます。\n"
+#~ "\n"
+#~ "詳しくはパッチノートをご覧ください！"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_WRONG_PORT.TOOLTIP"
 #~ msgid ""
