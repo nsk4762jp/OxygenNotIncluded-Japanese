@@ -352,7 +352,6 @@ msgstr "捕獲方法: 縄掛け"
 # 直訳だと微妙かもしれない
 # →こんな感じですかね？
 #. STRINGS.UI.BUILDINGEFFECTS.CONSUMESANYELEMENT
-#, fuzzy
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.CONSUMESANYELEMENT"
 msgid "Any Element"
 msgstr "どの元素でも"
@@ -8054,7 +8053,7 @@ msgstr "STEAM WORKSHOP"
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
 msgid "RADBOLT FROM THE BLUE"
-msgstr ""
+msgstr "宇宙からのRADボルト"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -8080,6 +8079,12 @@ msgid ""
 "\n"
 "Check out the full patch notes for more details!"
 msgstr ""
+"<b>宇宙からのRADボルト アップデート</b>\n"
+"\n"
+"宇宙探検に原子力を！RADボルトエンジン追加\n"
+"小惑星間のインフラ改善に星間貨物ランチャーを追加\n"
+"\n"
+"詳細はパッチノート全文を確認してください！"
 
 #. STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT
 msgctxt "STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT"
@@ -9079,20 +9084,14 @@ msgid "<link=\"LIGHT\">Darkness</link>"
 msgstr "<link=\"LIGHT\">暗闇</link>"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_LIGHT
-#, fuzzy
-#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_LIGHT"
-#| msgid "<link=\"LIGHT\">Light</link>"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_LIGHT"
 msgid "<link=\"LIGHT\">Light</link>: {Lux}"
-msgstr "<link=\"LIGHT\">光源</link>"
+msgstr "<link=\"LIGHT\">光量</link>: {Lux}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_NO_MIN_RADIATION
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.RADIATION.TITLE"
-#| msgid "<link=\"RADIATION\">Radiation</link>"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_NO_MIN_RADIATION"
 msgid "Maximum <link=\"RADIATION\">Radiation</link>: {MaxRads}"
-msgstr "<link=\"RADIATION\">放射線</link>"
+msgstr "最大<link=\"RADIATION\">放射線</link>量: {MaxRads}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE"
@@ -9100,12 +9099,9 @@ msgid "<link=\"ATMOSPHERE\">Air</link> Pressure: {0} minimum"
 msgstr "<link=\"ATMOSPHERE\">気圧</link>: 最低 {0}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_RADIATION
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.RADIATION.TITLE"
-#| msgid "<link=\"RADIATION\">Radiation</link>"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_RADIATION"
 msgid "<link=\"RADIATION\">Radiation</link>: {MinRads} to {MaxRads}"
-msgstr "<link=\"RADIATION\">放射線</link>"
+msgstr "<link=\"RADIATION\">放射線</link>量: {MinRads}～{MaxRads}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_RECEPTACLE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_RECEPTACLE"
@@ -9275,14 +9271,11 @@ msgid "This plant requires complete darkness"
 msgstr "この植物は完全な暗闇が必要です"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_LIGHT
-#, fuzzy
-#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_LIGHT"
-#| msgid "This plant requires a <style=\"KKeyword\">Light</style> source"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_LIGHT"
 msgid ""
 "This plant requires a <style=\"KKeyword\">Light</style> source bathing it in "
 "at least {Lux}"
-msgstr "この植物は光源が必要です"
+msgstr "この植物は最低{Lux}の<style=\"KKeyword\">光量</style>が必要です"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_NO_MIN_RADIATION
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_NO_MIN_RADIATION"
@@ -9290,6 +9283,8 @@ msgid ""
 "This plant will stop growing if exposed to more than {MaxRads} of <link="
 "\"RADIATION\">Radiation</link>"
 msgstr ""
+"この植物は{MaxRads}を超える<link=\"RADIATION\">放射線</link>に曝されると成長"
+"を停止します"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE"
@@ -9304,6 +9299,8 @@ msgid ""
 "This plant will only grow if it has between {MinRads} and {MaxRads} of <link="
 "\"RADIATION\">Radiation</link>"
 msgstr ""
+"この植物は<link=\"RADIATION\">放射線</link>量が{MinRads}～{MaxRads}の間にある"
+"ときだけ成長します"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_RECEPTACLE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_RECEPTACLE"
@@ -15897,28 +15894,19 @@ msgid ""
 msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.FAILURE
-#, fuzzy
-#| msgctxt "STRINGS.ROOMS.CRITERIA.POWER_STATION.NAME"
-#| msgid "Power Control Station"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.FAILURE"
 msgid "Control Station"
-msgstr "電力制御端末"
+msgstr "制御端末"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.READY
-#, fuzzy
-#| msgctxt "STRINGS.ROOMS.CRITERIA.POWER_STATION.NAME"
-#| msgid "Power Control Station"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.READY"
 msgid "Control Station"
-msgstr "電力制御端末"
+msgstr "制御端末"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.WARNING
-#, fuzzy
-#| msgctxt "STRINGS.ROOMS.CRITERIA.POWER_STATION.NAME"
-#| msgid "Power Control Station"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.WARNING"
 msgid "Control Station"
-msgstr "電力制御端末"
+msgstr "制御端末"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE"
@@ -15927,20 +15915,19 @@ msgid ""
 "------------------\n"
 "A new Rocket Control Station must be installed inside the rocket"
 msgstr ""
+"制御端末がありません\n"
+"------------------\n"
+"ロケット内にロケット制御端末が必要です"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.READY"
 msgid "The control station is installed and waiting for the pilot"
-msgstr ""
+msgstr "制御端末は取り付け済みで、パイロット待機中です"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.WARNING
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.TOOLTIP.WARNING"
-#| msgid "Construction warning"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.WARNING"
 msgid "Control Station warning"
-msgstr "警告:建設中"
+msgstr "警告:制御端末"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.FAILURE"
@@ -16141,7 +16128,7 @@ msgstr ""
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.TOOLTIP.READY"
 msgid "All possible loading and unloading has been completed"
-msgstr "可能な全ての荷下ろしと積み込みが完了しました。"
+msgstr "可能な全ての荷下ろしと積み込みが完了しました"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.TOOLTIP.WARNING"
@@ -17994,7 +17981,7 @@ msgstr "消費可能なカロリー: {0}"
 #. STRINGS.UI.TOOLTIPS.METERSCREEN_POPULATION
 msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_POPULATION"
 msgid "Population: {0}"
-msgstr "人口: {0} "
+msgstr "人口: {0}"
 
 #. STRINGS.UI.TOOLTIPS.METERSCREEN_POPULATION_CLUSTER
 msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_POPULATION_CLUSTER"
@@ -19458,66 +19445,44 @@ msgid "Neural Vacillation in progress."
 msgstr "神経シャッフル中です。"
 
 #. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.CANCEL_SEED
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.CLEANING.NAME"
-#| msgid "Cleaning {Target}"
 msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.CANCEL_SEED"
 msgid "Clear Analysis Target"
-msgstr "{Target} を掃除中"
+msgstr "分析対象クリア"
 
 #. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.CURRENT_TARGET
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CURRENTLY_PEEING"
-#| msgid "Currently Peeing"
 msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.CURRENT_TARGET"
 msgid "Currently studying:"
-msgstr "現在おしっこ中"
+msgstr "現在調査中:"
 
 #. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.NONE_DISCOVERED
 msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.NONE_DISCOVERED"
 msgid "No mutant seeds have been found."
-msgstr ""
+msgstr "変異種は見つかりませんでした。"
 
 #. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.PICK_TARGET
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.BLANK_DESC"
-#| msgid "Select a playstyle..."
 msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.PICK_TARGET"
 msgid "Select a plant for study"
-msgstr "プレイスタイル選択..."
+msgstr "調査する植物を選択"
 
 #. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SEED_COMPLETE
-#, fuzzy
-#| msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.COMPLETED"
-#| msgid "Completed"
 msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SEED_COMPLETE"
 msgid "<i>Complete</i>"
-msgstr "完了"
+msgstr "<i>完了</i>"
 
 #. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SEED_PROGRESS_FMT
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TITLE"
-#| msgid "{0} Seeds"
 msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SEED_PROGRESS_FMT"
 msgid "{0}/{1} seeds"
-msgstr "{0}の種子"
+msgstr "{0}/{1}種子"
 
 #. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SELECT_SEED
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.NUCLEAR_REACTOR_SIDE_SCREEN.TITLE"
-#| msgid "Reaction Mass Target"
 msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.SELECT_SEED"
 msgid "Select Analysis Target"
-msgstr "反応生成量"
+msgstr "分析対象を選択"
 
 #. STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.TITLE
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.ANALYSIS_TARGET_HEADER"
-#| msgid "Object Analysis"
 msgctxt "STRINGS.UI.UISIDESCREENS.GENETICANALYSISSIDESCREEN.TITLE"
 msgid "Genetic Analysis"
-msgstr "物体分析"
+msgstr "遺伝子分析"
 
 #. STRINGS.UI.UISIDESCREENS.HABITATMODULESIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.HABITATMODULESIDESCREEN.TITLE"
@@ -20322,7 +20287,7 @@ msgstr "割り当てなし"
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AUTO_SELF_HARVEST
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AUTO_SELF_HARVEST"
 msgid "Self-Harvest On Grown"
-msgstr ""
+msgstr "成長時に自己収穫"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGDELIVERY
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGDELIVERY"
@@ -20362,20 +20327,17 @@ msgstr "植える"
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_DROPPER_BURST
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_DROPPER_BURST"
 msgid "{Disease} Burst: {DiseaseAmount}"
-msgstr ""
+msgstr "{Disease} バースト: {DiseaseAmount}"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_DROPPER_CONSTANT
-#, fuzzy
-#| msgctxt "STRINGS.MISC.STATUSITEMS.ELEMENTALDISEASE.TOOLTIP"
-#| msgid "Current disease: {Disease}"
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_DROPPER_CONSTANT"
 msgid "{Disease}: {DiseaseAmount}"
-msgstr "現在の不健康度: {Disease}"
+msgstr "{Disease}: {DiseaseAmount}"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_ON_HARVEST
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.DISEASE_ON_HARVEST"
 msgid "{Disease} on crop: {DiseaseAmount}"
-msgstr ""
+msgstr "収穫時 {Disease}: {DiseaseAmount}"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.ENTITYDEPOSITED
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.ENTITYDEPOSITED"
@@ -20452,7 +20414,7 @@ msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.AUTO_SELF_HARVEST"
 msgid ""
 "This plant will instantly drop its crop and begin regrowing when it is "
 "matured."
-msgstr ""
+msgstr "この植物は成熟時に独りでに落果し、再成長を始めます。"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.BONUS_SEEDS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.BONUS_SEEDS"
@@ -20466,23 +20428,21 @@ msgid ""
 "At certain points in this plant's lifecycle, it will emit a burst of "
 "{DiseaseAmount} {Disease}."
 msgstr ""
+"この植物のライフサイクルには、{DiseaseAmount} {Disease} を大量に放出するポイ"
+"ントがあります。"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_DROPPER_CONSTANT
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.DISPLACEMENTEFFECT_TOOLTIP"
-#| msgid "This building will displace {amount} Gas while in use."
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_DROPPER_CONSTANT"
 msgid "This plant emits {DiseaseAmount} {Disease} while it is alive."
-msgstr "この設備の使用中は{amount}の気体を排気します。"
+msgstr "この植物は生育中{DiseaseAmount} {Disease}を排出します。"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_ON_HARVEST
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.DISEASE_ON_HARVEST"
 msgid ""
 "The {Crop} produced by this plant will have {DiseaseAmount} {Disease} on it."
-msgstr ""
+msgstr "この植物が生産する{Crop}は{DiseaseAmount} {Disease}を持ちます。"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.NUMBEROFHARVESTS
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.NUMBEROFHARVESTS"
@@ -20512,12 +20472,9 @@ msgstr ""
 "した"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_NONFOOD
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELDPERHARVEST"
-#| msgid "{0} {1} per harvest"
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_NONFOOD"
 msgid "{0} produced per harvest"
-msgstr "収穫ごとに{0} {1}"
+msgstr "収穫ごとに{0}生産"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_SEED
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.TOOLTIPS.YIELD_SEED"
@@ -20553,9 +20510,6 @@ msgid "{0}: {1} "
 msgstr "{0}: {1} "
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELD_NONFOOD
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELD"
-#| msgid "{0}: {1} "
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.YIELD_NONFOOD"
 msgid "{0}: {1} "
 msgstr "{0}: {1} "
@@ -20627,12 +20581,9 @@ msgid "Launch Resources:"
 msgstr "発射する資源:"
 
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.LAUNCH_TARGET_SELECTED
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.LAUNCH_TARGET_SELECTED"
-#| msgid "Launcher destination {0} set."
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.LAUNCH_TARGET_SELECTED"
 msgid "Launcher destination {0} set"
-msgstr "ランチャーの目的地には{0}が指定されています。"
+msgstr "ランチャーの目的地には{0}が指定されています"
 
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.MINIMUM_PAYLOAD_MASS
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.MINIMUM_PAYLOAD_MASS"
@@ -20640,19 +20591,13 @@ msgid "Minimum launch mass:"
 msgstr "最小発射質量:"
 
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET"
-#| msgid ""
-#| "No destination selected.\n"
-#| "Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to set a course."
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET"
 msgid ""
 "No destination selected\n"
 "Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to set a course"
 msgstr ""
 "目的地が未選択です。\n"
-"<b>星図</b> <b><color=#F44A4A>[Z]</b></color>を開き、対象を選択してください。"
+"<b>星図</b> <b><color=#F44A4A>[Z]</b></color>を開き、対象を選択してください"
 
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.OPENSTARMAPBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.OPENSTARMAPBUTTON"
@@ -21187,36 +21132,23 @@ msgid "Object Analysis"
 msgstr "物体分析"
 
 #. STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.ANALYSIS_TARGET_SELECTED
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.ANALYSIS_TARGET_SELECTED"
-#| msgid ""
-#| "Object focus selected.\n"
-#| "Analysis underway."
 msgctxt "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.ANALYSIS_TARGET_SELECTED"
 msgid ""
 "Object focus selected\n"
 "Analysis underway"
 msgstr ""
-"分析対象が選択されました。\n"
-"分析が進行中です。"
+"分析対象が選択されました\n"
+"分析が進行中です"
 
 #. STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.NO_SELECTED_ANALYSIS_TARGET
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.NO_SELECTED_ANALYSIS_TARGET"
-#| msgid ""
-#| "No analysis focus selected.\n"
-#| "Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to selected a "
-#| "focus."
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.NO_SELECTED_ANALYSIS_TARGET"
 msgid ""
 "No analysis focus selected\n"
 "Open the <b>Starmap</b> <b><color=#F44A4A>[Z]</b></color> to selected a focus"
 msgstr ""
-"分析対象が未選択です。\n"
-"<b>星図</b> <b><color=#F44A4A>[Z]</b></color>を開き、対象を選択してください。"
+"分析対象が未選択です\n"
+"<b>星図</b> <b><color=#F44A4A>[Z]</b></color>を開き、対象を選択してください"
 
 #. STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.OPENSTARMAPBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.TELESCOPESIDESCREEN.OPENSTARMAPBUTTON"
@@ -21849,12 +21781,12 @@ msgstr " kDTU/s"
 #. STRINGS.UI.UNITSUFFIXES.HIGHENERGYPARTICLES.PARTRICLE
 msgctxt "STRINGS.UI.UNITSUFFIXES.HIGHENERGYPARTICLES.PARTRICLE"
 msgid " Radbolt"
-msgstr "RADボルト"
+msgstr " RADボルト"
 
 #. STRINGS.UI.UNITSUFFIXES.HIGHENERGYPARTICLES.PARTRICLES
 msgctxt "STRINGS.UI.UNITSUFFIXES.HIGHENERGYPARTICLES.PARTRICLES"
 msgid " Radbolts"
-msgstr "RADボルト"
+msgstr " RADボルト"
 
 #. STRINGS.UI.UNITSUFFIXES.INFORMATION.BYTE
 msgctxt "STRINGS.UI.UNITSUFFIXES.INFORMATION.BYTE"
