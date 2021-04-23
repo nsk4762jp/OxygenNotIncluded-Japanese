@@ -1883,6 +1883,22 @@ msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.FUEL_REMAINING.TOOLTIP"
 msgid "This rocket has {0} fuel in its tank"
 msgstr "このロケットのタンクには燃料が {0} あります"
 
+#. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.VENTED_MASS"
+#| msgid "Vented: {0} / {1}"
+msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.NAME"
+msgid "Height: {0}/{1}"
+msgstr "放出量: {0} / {1}"
+
+#. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_MODULES.TOOLTIP"
+#| msgid "The {0} can support {1} rocket modules, plus itself"
+msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.TOOLTIP"
+msgid "The {0} can support a total rocket height {1}"
+msgstr "{0}は(自身を含まず)最大 {1} 個のモジュールを接続できます"
+
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_MODULES.NAME
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_MODULES.NAME"
 msgid "Max Modules: "
@@ -1954,10 +1970,16 @@ msgid "Rocket Speed: "
 msgstr "ロケット速度: "
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP"
+#| msgid ""
+#| "<b>Rocket Speed</b> is calculated by dividing <b>Engine Power</b> by "
+#| "<b>Burden</b>"
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP"
 msgid ""
 "<b>Rocket Speed</b> is calculated by dividing <b>Engine Power</b> by "
-"<b>Burden</b>"
+"<b>Burden</b>.\n"
+"Rockets operating on autopilot will have a reduced speed."
 msgstr ""
 "<b>ロケット速度</b>とは、<b>エンジン出力</b>を<b>積載量</b>で割ったものです"
 
@@ -2710,6 +2732,104 @@ msgstr "    • 電気回路が損傷しています"
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.TOOLTIP_NAME"
 msgid "<b>Avg Power</b>"
 msgstr "<b>電力平均</b>"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.ALL_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.RADIATION.HEADER_1"
+#| msgid "Radiation"
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.ALL_NAME"
+msgid "Radiation"
+msgstr "放射線"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.CRITERIA_RADIATION_EXPOSURE.FAIL_CONCERN
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC."
+"CRITERIA_RADIATION_EXPOSURE.FAIL_CONCERN"
+msgid "Exposure levels are above safe limits for one or more Duplicants"
+msgstr ""
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.CRITERIA_RADIATION_EXPOSURE.FAIL_WARNING
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC."
+"CRITERIA_RADIATION_EXPOSURE.FAIL_WARNING"
+msgid "One or more Duplicants are being exposed to extreme levels of radiation"
+msgstr ""
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.CRITERIA_RADIATION_EXPOSURE.PASS
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.SPACE.NAME"
+#| msgid "Space exposure"
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC."
+"CRITERIA_RADIATION_EXPOSURE.PASS"
+msgid "Safe exposure levels"
+msgstr "宇宙空間曝露"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.CRITERIA_RADIATION_SICKNESS.FAIL
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC."
+"CRITERIA_RADIATION_SICKNESS.FAIL"
+msgid "Sick"
+msgstr ""
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.CRITERIA_RADIATION_SICKNESS.PASS
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEALTH.HEADER_1"
+#| msgid "Health"
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC."
+"CRITERIA_RADIATION_SICKNESS.PASS"
+msgid "Healthy"
+msgstr "生命力"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.NORMAL
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_NONRADIATED.NAME"
+#| msgid "    • Low Radiation Levels"
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.NORMAL"
+msgid "    • No Radiation concerns"
+msgstr "    • 低放射線レベル"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.TOOLTIP_NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.RADIATION.HEADER_1"
+#| msgid "Radiation"
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.TOOLTIP_NAME"
+msgid "<b>Radiation</b>"
+msgstr "放射線"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.REACTORDIAGNOSTIC.ALL_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.NUCLEARREACTOR.NAME"
+#| msgid "<link=\"NUCLEARREACTOR\">Research Reactor</link>"
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.REACTORDIAGNOSTIC.ALL_NAME"
+msgid "<link=\"NUCLEARREACTOR\">Research Reactor</link>"
+msgstr "<link=\"NUCLEARREACTOR\">研究炉</link>"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.REACTORDIAGNOSTIC.CRITERIA_TEMPERATURE_WARNING
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD_CROP.NAME"
+#| msgid "    • Body Temperature"
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.REACTORDIAGNOSTIC.CRITERIA_TEMPERATURE_WARNING"
+msgid "    • Temperature dangerously high"
+msgstr "    • 体温"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.REACTORDIAGNOSTIC.NORMAL
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.NAME"
+#| msgid "    • Beached"
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.REACTORDIAGNOSTIC.NORMAL"
+msgid "    • Safe"
+msgstr "    • 干上がっている"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.REACTORDIAGNOSTIC.TOOLTIP_NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.NUCLEARREACTOR.NAME"
+#| msgid "<link=\"NUCLEARREACTOR\">Research Reactor</link>"
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.REACTORDIAGNOSTIC.TOOLTIP_NAME"
+msgid "<link=\"NUCLEARREACTOR\">Research Reactor</link>"
+msgstr "<link=\"NUCLEARREACTOR\">研究炉</link>"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKET
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKET"
@@ -5453,6 +5573,48 @@ msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.TITLE"
 msgid "AUDIO OPTIONS"
 msgstr "オーディオ設定"
 
+#. STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.BLANK_DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MODESELECTSCREEN.BLANK_DESC"
+#| msgid "Select a playstyle..."
+msgctxt "STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.BLANK_DESC"
+msgid "Select an asteroid style..."
+msgstr "プレイスタイル選択..."
+
+#. STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.HEADER
+msgctxt "STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.HEADER"
+msgid "ASTEROID STYLE"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.SPACEDOUT_DESC
+msgctxt "STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.SPACEDOUT_DESC"
+msgid ""
+"Scenarios designed for the <b>Spaced Out! DLC</b>.\n"
+"Smaller starting asteroids with resources distributed across the starmap. "
+"More emphasis on space travel."
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.SPACEDOUT_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.DLC1.NAME"
+#| msgid "Spaced Out!"
+msgctxt "STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.SPACEDOUT_TITLE"
+msgid "Spaced Out!"
+msgstr "宇宙進出！"
+
+#. STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.VANILLA_DESC
+msgctxt "STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.VANILLA_DESC"
+msgid ""
+"Scenarios similar to the <b>classic Oxygen Not Included</b> experience. "
+"Large starting asteroids with many resources.\n"
+"Less emphasis on space travel."
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.VANILLA_TITLE
+msgctxt "STRINGS.UI.FRONTEND.CLUSTERCATEGORYSELECTSCREEN.VANILLA_TITLE"
+msgid "Classic"
+msgstr ""
+
 #. STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.AUTOSAVE_FREQUENCY
 msgctxt "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.AUTOSAVE_FREQUENCY"
 msgid "Autosave frequency:"
@@ -8051,9 +8213,12 @@ msgid "STEAM WORKSHOP"
 msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.WORLDGENSCREEN.GENERATINGWORLD"
+#| msgid "GENERATING WORLD"
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "RADBOLT FROM THE BLUE"
-msgstr "宇宙からのRADボルト"
+msgid "BIGGER WORLDS"
+msgstr "ワールド生成中"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -8071,20 +8236,16 @@ msgstr "議論に参加"
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"<b>A Radbolt From The Blue Update</b>\n"
+"<b>Big Asteroid Update</b>\n"
 "\n"
-"Added the Radbolt Engine for using nuclear energy to explore space\n"
-"Added Interplanetary Payload Launcher to improve multi-asteroid "
-"infrastrucutre\n"
+"Added a <b>Bigger, More Inclusive Terra Style</b> and <b>Spaced Out! Style "
+"Forest</b> cluster.\n"
 "\n"
-"Check out the full patch notes for more details!"
+"Rebalanced rocketry to allow for easier and more customizable space travel.\n"
+"\n"
+"Bug fixes, animation updates, and more. Check out the full patch notes for "
+"more details!"
 msgstr ""
-"<b>宇宙からのRADボルト アップデート</b>\n"
-"\n"
-"宇宙探検に原子力を！RADボルトエンジン追加\n"
-"小惑星間のインフラ改善に星間貨物ランチャーを追加\n"
-"\n"
-"詳細はパッチノート全文を確認してください！"
 
 #. STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT
 msgctxt "STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT"
@@ -13683,6 +13844,14 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.NUCLEAR_RESEARCH.DESCRIPTION"
 msgid "<link=\"NUCLEARLABORATORY\">Atomic Collider</link> Usage"
 msgstr "<link=\"NUCLEARLABORATORY\">原子衝突型加速器</link>が利用可能"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALRESEARCHCENTER.NAME"
+#| msgid "<link=\"ORBITALRESEARCHCENTER\">Orbital Microlab</link>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION"
+msgid "<link=\"ORBITALRESEARCHCENTER\">Orbital Microlab</link> Usage"
+msgstr "<link=\"ORBITALRESEARCHCENTER\">軌道ラボ</link>"
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING"
 msgid "Basic Job Training"
@@ -15172,6 +15341,14 @@ msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.FULLERENECOMET.NAME"
 msgid "Fullerene Comet"
 msgstr "フラーレン彗星"
 
+#. STRINGS.UI.SPACEDESTINATIONS.COMETS.GASSYMOOCOMET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.GASSYMOO.TITLE"
+#| msgid "Gassy Moo"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.GASSYMOOCOMET.NAME"
+msgid "Gassy Mooteor"
+msgstr "ぷすぷす モー"
+
 #. STRINGS.UI.SPACEDESTINATIONS.COMETS.GOLDCOMET.NAME
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.GOLDCOMET.NAME"
 msgid "Gold Comet"
@@ -15753,6 +15930,89 @@ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ASTRONAUT_TITLE"
 msgid "Astronaut"
 msgstr "宇宙飛行士"
 
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.STATUS.FAILURE
+#, fuzzy
+#| msgid ""
+msgctxt ""
+"STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.STATUS.FAILURE"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.STATUS.READY
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.NAME"
+#| msgid "Cargo Transfer Complete"
+msgctxt ""
+"STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.STATUS.READY"
+msgid "Cargo Transfer Complete"
+msgstr "貨物移送完了"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKET_PORT_LOADED.NAME"
+#| msgid "Cargo Transfer Complete"
+msgctxt ""
+"STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.STATUS.WARNING"
+msgid "Cargo Transfer Complete"
+msgstr "貨物移送完了"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.TOOLTIP.FAILURE
+#, fuzzy
+#| msgid ""
+msgctxt ""
+"STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.TOOLTIP.FAILURE"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.TOOLTIP.READY
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.TOOLTIP.READY"
+#| msgid "All possible loading and unloading has been completed"
+msgctxt ""
+"STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.TOOLTIP.READY"
+msgid "All possible loading and unloading has been completed"
+msgstr "可能な全ての荷下ろしと積み込みが完了しました"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.TOOLTIP.WARNING
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.TOOLTIP.WARNING"
+#| msgid ""
+#| "The <link=\"LAUNCHPLATFORM\">Rocket Platform</link> could still transfer "
+#| "cargo to or from this rocket"
+msgctxt ""
+"STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CARGO_TRANSFER_COMPLETE.TOOLTIP.WARNING"
+msgid ""
+"The <link=\"LAUNCHPLATFORM\">Rocket Platform</link> could still transfer "
+"cargo to or from this rocket"
+msgstr ""
+"<link=\"LAUNCHPLATFORM\">ロケット発射台</link> はまだこのロケットに貨物を搬入"
+"出中です"
+
 # 有効な、などの方がよいか？
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.FAILURE
 msgctxt ""
@@ -16138,6 +16398,64 @@ msgid ""
 msgstr ""
 "<link=\"LAUNCHPLATFORM\">ロケット発射台</link> はまだこのロケットに貨物を搬入"
 "出中です"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.STATUS.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.EMITSLIGHT"
+#| msgid "Light Emitter"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.STATUS.FAILURE"
+msgid "Height limit"
+msgstr "光源"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.STATUS.READY
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.EMITSLIGHT"
+#| msgid "Light Emitter"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.STATUS.READY"
+msgid "Height limit"
+msgstr "光源"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.STATUS.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.EMITSLIGHT"
+#| msgid "Light Emitter"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.STATUS.WARNING"
+msgid "Height limit"
+msgstr "光源"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.FAILURE"
+#| msgid ""
+#| "The number of installed modules exceeds the engine's module limit\n"
+#| "------------------\n"
+#| "Excess modules must be removed"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.TOOLTIP.FAILURE"
+msgid ""
+"The height of the rocket exceeds the engine's limit\n"
+"------------------\n"
+"Excess modules must be removed"
+msgstr ""
+"装備されたモジュールの数がエンジンのモジュール数上限を超えています\n"
+"------------------\n"
+"過剰なモジュールを除去してください"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.TOOLTIP.READY
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.READY"
+#| msgid ""
+#| "The rocket's engine can support the number of installed rocket modules"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.TOOLTIP.READY"
+msgid "The rocket's engine can support the height of the rocket"
+msgstr "このロケットのエンジンでは装備されているモジュール数を扱いきれません"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.TOOLTIP.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.WARNING"
+#| msgid "Module limit warning"
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.TOOLTIP.WARNING"
+msgid "Height limit warning"
+msgstr "警告:モジュール数上限超過"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.STATUS.FAILURE"
@@ -18714,6 +19032,37 @@ msgctxt ""
 msgid "Clear this rocket's selected destination"
 msgstr "選択済みのロケット目的地をクリアします"
 
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_FIRST_AVAILABLE
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
+"DROPDOWN_TOOLTIP_FIRST_AVAILABLE"
+msgid "Select the first available landing site"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_OBSTRUCTED
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.BADROCKETPATH.NAME"
+#| msgid "Flight Path Obstructed"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
+"DROPDOWN_TOOLTIP_OBSTRUCTED"
+msgid "Landing path obstructed"
+msgstr "飛行経路障害"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_TOO_SHORT
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
+"DROPDOWN_TOOLTIP_TOO_SHORT"
+msgid "Landing site too short for this rocket's height"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_VALID_SITE
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
+"DROPDOWN_TOOLTIP_VALID_SITE"
+msgid "Land at {0} when the site is clear"
+msgstr ""
+
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.FIRSTAVAILABLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.FIRSTAVAILABLE"
 msgid "Any landing pad"
@@ -18726,6 +19075,15 @@ msgid ""
 "Toggle a roundtrip flight between this rocket's destination and its original "
 "takeoff location"
 msgstr "このロケットの発射元・目的地間の往復航行を切り替えます"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NO_TALL_SITES_AVAILABLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.READY"
+#| msgid "Nothing is blocking the path of the rocket"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NO_TALL_SITES_AVAILABLE"
+msgid "No landing sites fit the height of this rocket"
+msgstr "ロケットの航路に障害物はありません"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NONEAVAILABLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NONEAVAILABLE"
@@ -19534,6 +19892,32 @@ msgstr "軌道上のロケット"
 msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAND_BUTTON"
 msgid "LAND HERE"
 msgstr "ここに着陸"
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_AUTOMATION_CONTROLLED
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING_TITLE"
+#| msgid "AUTOMATION CHANGES"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_AUTOMATION_CONTROLLED"
+msgid "AUTOMATION CONTROLLED"
+msgstr "自動化の仕様が変わりました"
+
+#. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_AUTOMATION_CONTROLLED_TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.LOADING_COMPLETE.TOOLTIP.WARNING"
+#| msgid ""
+#| "The <link=\"LAUNCHPLATFORM\">Rocket Platform</link> could still transfer "
+#| "cargo to or from this rocket"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN."
+"LAUNCH_AUTOMATION_CONTROLLED_TOOLTIP"
+msgid ""
+"This <link=\"LAUNCHPLATFORM\">Rocket Platform</link>'s launch operation is "
+"controlled by automation signals"
+msgstr ""
+"<link=\"LAUNCHPLATFORM\">ロケット発射台</link> はまだこのロケットに貨物を搬入"
+"出中です"
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_BUTTON"
@@ -20784,6 +21168,11 @@ msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.CHANGEMODULEPANEL"
 msgid "Add or Change Module"
 msgstr "モジュールを追加/変更"
 
+#. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.ENGINE_MAX_HEIGHT
+msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.ENGINE_MAX_HEIGHT"
+msgid "This engine allows a <b>Maximum Rocket Height</b> of {0}"
+msgstr ""
+
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.BURDEN
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.BURDEN"
@@ -20795,6 +21184,26 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.ENGINEPOWER"
 msgid "    • Engine Power: {0} ({1})"
 msgstr "    • エンジン出力: {0} ({1})"
+
+#. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.HEIGHT
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.SPEED"
+#| msgid "    • Speed: {0} ({1})"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.HEIGHT"
+msgid "    • Height: {0}/{2} ({1})"
+msgstr "    • 速度: {0} ({1})"
+
+#. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.HEIGHT_NOMAX
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.SPEED"
+#| msgid "    • Speed: {0} ({1})"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.HEIGHT_NOMAX"
+msgid "    • Height: {0} ({1})"
+msgstr "    • 速度: {0} ({1})"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.NEGATIVEDELTA
 msgctxt ""
@@ -20895,6 +21304,38 @@ msgctxt ""
 "MATERIALS_AVAILABLE.FAILED"
 msgid "Materials unavailable"
 msgstr "素材利用不可"
+
+#. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_HEIGHT.COMPLETE
+#, fuzzy
+#| msgid ""
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_HEIGHT."
+"COMPLETE"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_HEIGHT.FAILED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_MODULES."
+#| "FAILED"
+#| msgid "    • Max module limit of engine reached"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_HEIGHT.FAILED"
+msgid "    • Engine's height limit reached"
+msgstr "    • エンジンのモジュール上限に達しました"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_MODULES.COMPLETE
 msgctxt ""
@@ -22829,6 +23270,45 @@ msgstr ""
 "\n"
 "データベースに新しい項目を追加した。"
 
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TELEPORTER_RECEIVER
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_POD"
+#| msgid ""
+#| "I search my incoming message history and find a single entry. I move the "
+#| "odd message into my database.\n"
+#| "\n"
+#| "New Database Entry discovered."
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TELEPORTER_RECEIVER"
+msgid ""
+"Incongruously placed research notes are hidden within the operating "
+"instructions of this device. I add them to my database.\n"
+"\n"
+"New Database Entry discovered."
+msgstr ""
+"私がメッセージ履歴を検索すると、1件ヒットした。私はこの変わったメッセージを"
+"データベースに登録した。\n"
+"\n"
+"データベースに新しい項目を追加した。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TELEPORTER_SENDER
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_OBJECT_SUCCESS.SEARCH4"
+#| msgid ""
+#| "A single page of a long printout remains legible. I scan it and add it to "
+#| "my database.\n"
+#| "\n"
+#| "New Database Entry discovered."
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_TELEPORTER_SENDER"
+msgid ""
+"While scanning the antiquated computer code of this machine I uncovered some "
+"research notes. I add them to my database.\n"
+"\n"
+"New Database Entry discovered."
+msgstr ""
+"判読可能な状態の長い1ページの印刷物を見つけ、私はページをスキャンした。\n"
+"\n"
+"データベースに新しい項目を追加した。"
+
 #. STRINGS.UI.USERMENUACTIONS.READLORE.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.TOOLTIP"
 msgid "Recover files from this structure"
@@ -23820,6 +24300,27 @@ msgid "Sprinkling sand..."
 msgstr "砂散布中..."
 
 #~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "RADBOLT FROM THE BLUE"
+#~ msgstr "宇宙からのRADボルト"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#~ msgid ""
+#~ "<b>A Radbolt From The Blue Update</b>\n"
+#~ "\n"
+#~ "Added the Radbolt Engine for using nuclear energy to explore space\n"
+#~ "Added Interplanetary Payload Launcher to improve multi-asteroid "
+#~ "infrastrucutre\n"
+#~ "\n"
+#~ "Check out the full patch notes for more details!"
+#~ msgstr ""
+#~ "<b>宇宙からのRADボルト アップデート</b>\n"
+#~ "\n"
+#~ "宇宙探検に原子力を！RADボルトエンジン追加\n"
+#~ "小惑星間のインフラ改善に星間貨物ランチャーを追加\n"
+#~ "\n"
+#~ "詳細はパッチノート全文を確認してください！"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
 #~ msgid "A TOTALLY RAD UPDATE"
 #~ msgstr "TOTALLY RADアップデート"
 
@@ -24082,10 +24583,6 @@ msgstr "砂散布中..."
 #~ "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.FAILURE"
 #~ msgid "The space above this rocket is obstructed"
 #~ msgstr "ロケット上部の空間が封鎖されています"
-
-#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.READY"
-#~ msgid "Nothing is blocking the path of the rocket"
-#~ msgstr "ロケットの航路に障害物はありません"
 
 #~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.FAILURE"
 #~ msgid "Needs engine"
