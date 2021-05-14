@@ -4985,10 +4985,28 @@ msgstr "冷蔵状態"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.TOOLTIP"
 msgid ""
 "Ideal <style=\"KKeyword\">Temperature</style> storage is slowing this food's "
-"<style=\"KKeyword\">Decay Rate</style>"
+"<style=\"KKeyword\">Decay Rate</style>\n"
+"\n"
+"<style=\"KKeyword\">Temperatures</style> above <b>{RotTemperature}</b> spoil "
+"food more quickly\n"
+"\n"
+"Store food below {PreserveTemperature} to further reduce spoilage."
 msgstr ""
-"適切な<style=\"KKeyword\">温度</style>で貯蔵しているため食糧が腐りにくくなっ"
-"ています"
+
+#. STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.NAME
+msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.NAME"
+msgid "Deep Freeze"
+msgstr ""
+
+#. STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.TOOLTIP"
+msgid ""
+"<style=\"KKeyword\">Temperatures</style> below <b>{PreserveTemperature}</b> "
+"are greatly prolonging the shelf-life of this food\n"
+"\n"
+"<style=\"KKeyword\">Temperatures</style> above <b>{RotTemperature}</b> spoil "
+"food more quickly"
+msgstr ""
 
 #. STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.NAME"
@@ -5211,8 +5229,15 @@ msgid "Unrefrigerated"
 msgstr "冷蔵されていない"
 
 #. STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.TOOLTIP"
+#| msgid ""
+#| "<style=\"KKeyword\">Temperatures</style> above <b>{RotTemperature}</b> "
+#| "spoil food more quickly"
 msgctxt "STRINGS.CREATURES.STATUSITEMS.UNREFRIGERATED.TOOLTIP"
 msgid ""
+"This food is warm\n"
+"\n"
 "<style=\"KKeyword\">Temperatures</style> above <b>{RotTemperature}</b> spoil "
 "food more quickly"
 msgstr ""
@@ -5355,131 +5380,3 @@ msgstr ""
 "------------------\n"
 "<style=\"KKeyword\">設備を空にする</style>を押して、誤った素材を取り出してく"
 "ださい"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_A.NAME"
-#~ msgid "Plentiful"
-#~ msgstr "豊作"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_B.DESCRIPTION"
-#~ msgid ""
-#~ "A plant with this mutation prefers an environment with higher temperatures"
-#~ msgstr "この変異を持つ植物は高温環境を好みます"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_B.NAME"
-#~ msgid "Tropical"
-#~ msgstr "熱帯"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_C.DESCRIPTION"
-#~ msgid ""
-#~ "A plant with this mutation requires more <link=\"FERTILIZER\">Fertilizer</"
-#~ "link>"
-#~ msgstr ""
-#~ "この変異を持つ植物はより多くの<link=\"FERTILIZER\">肥料</link>を要求します"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_C.NAME"
-#~ msgid "Gluttonous"
-#~ msgstr "大喰らい"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_D.DESCRIPTION"
-#~ msgid "A plant with this mutation requires more irrigation"
-#~ msgstr "この変異を持つ植物はさらなる灌漑を要求します"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_D.NAME"
-#~ msgid "Guzzling"
-#~ msgstr "鯨飲"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_E.DESCRIPTION"
-#~ msgid ""
-#~ "A plant with this mutation requires less <link=\"FERTILIZER\">Fertilizer</"
-#~ "link>"
-#~ msgstr ""
-#~ "この変異を持つ植物は少ない<link=\"FERTILIZER\">肥料</link>でも育ちます"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_E.NAME"
-#~ msgid "Fasting"
-#~ msgstr "断食"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_F.DESCRIPTION"
-#~ msgid "A plant with this mutation requires less irrigation"
-#~ msgstr "この変異を持つ植物は少ない灌漑でも育ちます"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_F.NAME"
-#~ msgid "Arid"
-#~ msgstr "乾燥"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_G.DESCRIPTION"
-#~ msgid "A plant with this mutation requires less growing time"
-#~ msgstr "この変異を持つ植物は短い時間で成熟します"
-
-#~ msgctxt "STRINGS.CREATURES.PLANT_MUTATIONS.BASIC_MUTATION_G.NAME"
-#~ msgid "Precocious"
-#~ msgstr "早熟"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.BEE.BABY.NAME"
-#~ msgid "<link=\"BEE\">Beeta Larva</link>"
-#~ msgstr "<link=\"BEE\">ビータ幼体</link>"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.BEE.DESC"
-#~ msgid ""
-#~ "Beetas are busy critters who harvest and refine <link=\"METAL\">Metals</"
-#~ "link> to use as building materials, and to feed their young."
-#~ msgstr ""
-#~ "ビータはせわしなく動く動物で、巣作りの素材や幼体に与えるために<link="
-#~ "\"METAL\">金属</link>を収穫、精錬します。"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SPACEDECORPLANT.DESC"
-#~ msgid ""
-#~ "The <link=\"PLANTS\">Seed</link> of a <link=\"SPACEDECORPLANT\">Space "
-#~ "Decor Plant</link>."
-#~ msgstr ""
-#~ "<link=\"SPACEDECORPLANT\">宇宙観葉植物</link>の<link=\"PLANTS\">種子</"
-#~ "link>です。"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SPACEDECORPLANT.NAME"
-#~ msgid "<link=\"SPACEDECORPLANT\">Space Decor Plant Seed</link>"
-#~ msgstr "<link=\"SPACEDECORPLANT\">宇宙観葉植物の種子</link>"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SPACEPLANT.DESC"
-#~ msgid ""
-#~ "The <link=\"PLANTS\">Seed</link> of a <link=\"SPACEPLANT\">Space Plant</"
-#~ "link>."
-#~ msgstr ""
-#~ "<link=\"SPACEPLANT\">宇宙植物</link>の<link=\"PLANTS\">種子</link>です。"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SEEDS.SPACEPLANT.NAME"
-#~ msgid "<link=\"SPACEPLANT\">Space Plant Seed</link>"
-#~ msgstr "<link=\"SPACEPLANT\">宇宙植物の種子</link>"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SPACEDECORPLANT.DESC"
-#~ msgid "Space Decor Plants are super duper pretty."
-#~ msgstr "宇宙観葉植物は超プリティです。"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SPACEDECORPLANT.DOMESTICATEDDESC"
-#~ msgid "This plant improves <link=\"DECOR\">Decor</link>."
-#~ msgstr "この植物は<link=\"DECOR\">装飾</link>を改善します。"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SPACEDECORPLANT.NAME"
-#~ msgid "<link=\"SPACEDECORPLANT\">Space Decor Plant</link>"
-#~ msgstr "<link=\"SPACEDECORPLANT\">宇宙観葉植物</link>"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SPACEPLANT.DESC"
-#~ msgid "Space Plant."
-#~ msgstr "宇宙植物です。"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SPACEPLANT.DOMESTICATEDDESC"
-#~ msgid "It's a plant, but in space."
-#~ msgstr "植物ですが、宇宙に生えています。"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.SPACEPLANT.NAME"
-#~ msgid "<link=\"SPACEPLANT\">Space Plant</link>"
-#~ msgstr "<link=\"SPACEPLANT\">宇宙植物</link>"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.CRITTERTRAPPLANT.DOMESTICATEDDESC"
-#~ msgid ""
-#~ "Saturn Critter Traps eat unsuspecting critters and digest them, releasing "
-#~ "unused Hydrogen."
-#~ msgstr "ケモノジゴクは不注意な動物を捕らえ昇華します。水素を放出します。"
-
-#~ msgctxt "STRINGS.CREATURES.SPECIES.OILSPOUT.DESC"
-#~ msgid "A rocky vent that spouts crude oil."
-#~ msgstr "原油を吹き出す、ごつごつした噴出口です。"
