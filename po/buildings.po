@@ -1571,12 +1571,9 @@ msgstr ""
 "凍り付いたガラスを通し、辛うじてシルエットが確認できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.CRYOTANK.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRYOTANK.NAME"
-#| msgid "<link=\"CRYOTANK\">Cryotank</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.CRYOTANK.NAME"
 msgid "<link=\"CRYOTANK\">Cryotank 3000</link>"
-msgstr "<link=\"CRYOTANK\">冷凍タンク</link>"
+msgstr "<link=\"CRYOTANK\">クリオタンク 3000</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.DECONTAMINATIONSHOWER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.DECONTAMINATIONSHOWER.DESC"
@@ -2829,89 +2826,55 @@ msgid "Filters: {0}"
 msgstr "フィルター: {0}"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.DESC"
-#| msgid ""
-#| "Valves control the amount of gas that moves through pipes, preventing "
-#| "waste."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.DESC"
 msgid ""
 "Meter Valves let an exact amount of gas pass through before shutting off."
-msgstr "バルブは無損失でパイプを流れる気体の量を調整します。"
+msgstr "メーターバルブは正確な量の気体を通すとバルブが閉じます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASLOGICVALVE.EFFECT"
-#| msgid ""
-#| "Connects to an <link=\"LOGIC\">Automation</link> grid to automatically "
-#| "turn <link=\"ELEMENTSGAS\">Gas</link> flow on or off."
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.EFFECT"
 msgid ""
 "Connects to an <link=\"LOGIC\">Automation</link> grid to automatically turn "
 "<link=\"ELEMENTSGAS\">Gas</link> flow off when the specified amount has "
 "passed through it."
 msgstr ""
-"<link=\"ELEMENTSGAS\">気体</link>の流れを制御できるよう、<link=\"LOGIC\">自動"
-"化</link>ネットワークに接続します。"
+"特定量を通すために<link=\"ELEMENTSGAS\">気体</link>の流れを制御できるよう、"
+"<link=\"LOGIC\">自動化</link>ネットワークに接続します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.LOGIC_PORT_OUTPUT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_OUTPUT"
-#| msgid "Number Reached"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.LOGIC_PORT_OUTPUT"
 msgid "Limit Reached"
-msgstr "到達数"
+msgstr "制限到達"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.LOGIC_PORT_RESET
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_RESET"
-#| msgid "Reset Counter"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.LOGIC_PORT_RESET"
 msgid "Reset Meter"
-msgstr "リセットカウンター"
+msgstr "メーターリセット"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.NAME"
-#| msgid "<link=\"GASVALVE\">Gas Valve</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.NAME"
 msgid "<link=\"GASLIMITVALVE\">Gas Meter Valve</link>"
-msgstr "<link=\"GASVALVE\">気体バルブ</link>"
+msgstr "<link=\"GASLIMITVALVE\">気体メーターバルブ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.OUTPUT_PORT_ACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_ACTIVE"
-#| msgid ""
-#| "Sends a <b><style=\"logic_on\">Green Signal</style></b> if the selected "
-#| "Gas is detected"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.OUTPUT_PORT_ACTIVE"
 msgid ""
 "Sends a <b><style=\"logic_on\">Green Signal</style></b> if limit has been "
 "reached"
 msgstr ""
-"指定した気体を検出すると<b><style=\"logic_on\">グリーン</style></b>になります"
+"制限量に到達すると<b><style=\"logic_on\">グリーン</style></b>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.OUTPUT_PORT_INACTIVE
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDINGS.PREFABS.CLUSTERCOMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
-#| msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.OUTPUT_PORT_INACTIVE"
 msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
 msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.RESET_PORT_ACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_ACTIVE"
-#| msgid "<b><style=\"logic_on\">Green Signal</style></b>: Reset counter"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.RESET_PORT_ACTIVE"
 msgid "<b><style=\"logic_on\">Green Signal</style></b>: Reset the amount"
-msgstr "<b><style=\"logic_on\">グリーン</style></b>: カウンターリセット"
+msgstr "<b><style=\"logic_on\">グリーン</style></b>: 制限量に到達"
 
 #. STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.RESET_PORT_INACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_INACTIVE"
-#| msgid "<b><style=\"logic_off\">Red Signal</style></b>: Nothing"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASLIMITVALVE.RESET_PORT_INACTIVE"
 msgid "<b><style=\"logic_off\">Red Signal</style></b>: Nothing"
 msgstr "<b><style=\"logic_off\">レッド</style></b>: 効果なし"
@@ -4790,89 +4753,55 @@ msgid "<link=\"LIQUIDHEATER\">Liquid Tepidizer</link>"
 msgstr "<link=\"LIQUIDHEATER\">液体ヒーター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.DESC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.DESC"
-#| msgid ""
-#| "Valves control the amount of liquid that moves through pipes, preventing "
-#| "waste."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.DESC"
 msgid ""
 "Meter Valves let an exact amount of liquid pass through before shutting off."
-msgstr "バルブは無損失でパイプを流れる液体の量を調整します。"
+msgstr "メーターバルブは正確な量の液体を通すとバルブが閉じます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLOGICVALVE.EFFECT"
-#| msgid ""
-#| "Connects to an <link=\"LOGIC\">Automation</link> grid to automatically "
-#| "turn <link=\"ELEMENTSLIQUID\">Liquid</link> flow on or off."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.EFFECT"
 msgid ""
 "Connects to an <link=\"LOGIC\">Automation</link> grid to automatically turn "
 "<link=\"ELEMENTSLIQUID\">Liquid</link> flow off when the specified amount "
 "has passed through it."
 msgstr ""
-"<link=\"ELEMENTSLIQUID\">液体</link>の流れを制御できるよう、<link=\"LOGIC\">"
-"自動化</link>ネットワークに接続します。"
+"特定量を通すために<link=\"ELEMENTSLIQUID\">液体</link>の流れを制御できるよ"
+"う、<link=\"LOGIC\">自動化</link>ネットワークに接続します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.LOGIC_PORT_OUTPUT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_OUTPUT"
-#| msgid "Number Reached"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.LOGIC_PORT_OUTPUT"
 msgid "Limit Reached"
-msgstr "到達数"
+msgstr "制限到達"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.LOGIC_PORT_RESET
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_RESET"
-#| msgid "Reset Counter"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.LOGIC_PORT_RESET"
 msgid "Reset Meter"
-msgstr "リセットカウンター"
+msgstr "メーターリセット"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.NAME"
-#| msgid "<link=\"LIQUIDVALVE\">Liquid Valve</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.NAME"
 msgid "<link=\"LIQUIDLIMITVALVE\">Liquid Meter Valve</link>"
-msgstr "<link=\"LIQUIDVALVE\">液体バルブ</link>"
+msgstr "<link=\"LIQUIDLIMITVALVE\">液体メーターバルブ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.OUTPUT_PORT_ACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_ACTIVE"
-#| msgid ""
-#| "Sends a <b><style=\"logic_on\">Green Signal</style></b> if the selected "
-#| "Gas is detected"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.OUTPUT_PORT_ACTIVE"
 msgid ""
 "Sends a <b><style=\"logic_on\">Green Signal</style></b> if limit has been "
 "reached"
 msgstr ""
-"指定した気体を検出すると<b><style=\"logic_on\">グリーン</style></b>になります"
+"制限量に到達すると<b><style=\"logic_on\">グリーン</style></b>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.OUTPUT_PORT_INACTIVE
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDINGS.PREFABS.CLUSTERCOMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
-#| msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.OUTPUT_PORT_INACTIVE"
 msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
 msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.RESET_PORT_ACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_ACTIVE"
-#| msgid "<b><style=\"logic_on\">Green Signal</style></b>: Reset counter"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.RESET_PORT_ACTIVE"
 msgid "<b><style=\"logic_on\">Green Signal</style></b>: Reset the amount"
-msgstr "<b><style=\"logic_on\">グリーン</style></b>: カウンターリセット"
+msgstr "<b><style=\"logic_on\">グリーン</style></b>: 制限量に到達"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.RESET_PORT_INACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_INACTIVE"
-#| msgid "<b><style=\"logic_off\">Red Signal</style></b>: Nothing"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDLIMITVALVE.RESET_PORT_INACTIVE"
 msgid "<b><style=\"logic_off\">Red Signal</style></b>: Nothing"
 msgstr "<b><style=\"logic_off\">レッド</style></b>: 効果なし"
@@ -10191,84 +10120,51 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.DESC"
 msgid ""
 "Conveyor Meters let an exact amount of materials pass through before "
 "shutting off."
-msgstr ""
+msgstr "コンベアメーターは正確な量の素材を通すとバルブが閉じます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPOWERRELAY.EFFECT"
-#| msgid ""
-#| "Connects to an <link=\"LOGIC\">Automation</link> grid to automatically "
-#| "turn <link=\"POWER\">Power</link> on or off.\n"
-#| "\n"
-#| "Does not affect circuitry preceding the switch."
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.EFFECT"
 msgid ""
 "Connects to an <link=\"LOGIC\">Automation</link> grid to automatically turn "
 "material transfer off when the specified amount has passed through it."
 msgstr ""
-"<link=\"POWER\">電力</link>のON/OFFを制御できるよう、<link=\"LOGIC\">自動化</"
-"link>ネットワークに接続します。\n"
-"\n"
-"スイッチの前にある回路には影響を及ぼしません。"
+"特定量を通した後で素材の輸送をオフにできるよう、<link=\"LOGIC\">自動化</link>"
+"ネットワークに接続します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.LOGIC_PORT_OUTPUT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_OUTPUT"
-#| msgid "Number Reached"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.LOGIC_PORT_OUTPUT"
 msgid "Limit Reached"
-msgstr "到達数"
+msgstr "制限到達"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.LOGIC_PORT_RESET
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.LOGIC_PORT_RESET"
-#| msgid "Reset Counter"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.LOGIC_PORT_RESET"
 msgid "Reset Meter"
-msgstr "リセットカウンター"
+msgstr "メーターリセット"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLOGICVALVE.NAME"
-#| msgid "<link=\"SOLIDLOGICVALVE\">Conveyor Shutoff</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.NAME"
 msgid "<link=\"SOLIDLIMITVALVE\">Conveyor Meter</link>"
-msgstr "<link=\"SOLIDLOGICVALVE\">コンベア遮断器</link>"
+msgstr "<link=\"SOLIDLIMITVALVE\">コンベアメーター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.OUTPUT_PORT_ACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICELEMENTSENSORGAS.LOGIC_PORT_ACTIVE"
-#| msgid ""
-#| "Sends a <b><style=\"logic_on\">Green Signal</style></b> if the selected "
-#| "Gas is detected"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.OUTPUT_PORT_ACTIVE"
 msgid ""
 "Sends a <b><style=\"logic_on\">Green Signal</style></b> if limit has been "
 "reached"
 msgstr ""
-"指定した気体を検出すると<b><style=\"logic_on\">グリーン</style></b>になります"
+"制限量に到達すると<b><style=\"logic_on\">グリーン</style></b>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.OUTPUT_PORT_INACTIVE
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDINGS.PREFABS.CLUSTERCOMMANDMODULE.LOGIC_PORT_READY_INACTIVE"
-#| msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.OUTPUT_PORT_INACTIVE"
 msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
 msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.RESET_PORT_ACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICCOUNTER.RESET_PORT_ACTIVE"
-#| msgid "<b><style=\"logic_on\">Green Signal</style></b>: Reset counter"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.RESET_PORT_ACTIVE"
 msgid "<b><style=\"logic_on\">Green Signal</style></b>: Reset the amount"
-msgstr "<b><style=\"logic_on\">グリーン</style></b>: カウンターリセット"
+msgstr "<b><style=\"logic_on\">グリーン</style></b>: 制限量に到達"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.RESET_PORT_INACTIVE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.INPUT_PORT_INACTIVE"
-#| msgid "<b><style=\"logic_off\">Red Signal</style></b>: Nothing"
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDLIMITVALVE.RESET_PORT_INACTIVE"
 msgid "<b><style=\"logic_off\">Red Signal</style></b>: Nothing"
 msgstr "<b><style=\"logic_off\">レッド</style></b>: 効果なし"
@@ -11330,13 +11226,6 @@ msgid "This building will displace {amount} Gas while in use."
 msgstr "この設備の使用中は{amount}の気体を排気します。"
 
 #. STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.EFFECT
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.EFFECT"
-#| msgid ""
-#| "Must be placed above an open space and connected to a <link=\"POWER"
-#| "\">Power Source</link>.\n"
-#| "\n"
-#| "Increases Duplicants <link=\"MORALE\">Morale</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.EFFECT"
 msgid ""
 "Must be connected to a <link=\"POWER\">Power Source</link>. To properly "
@@ -11344,15 +11233,15 @@ msgid ""
 "\n"
 "Increases Duplicants <link=\"MORALE\">Morale</link>."
 msgstr ""
-"開けた場所に建設し、<link=\"POWER\">電源</link>が接続されている必要がありま"
-"す。\n"
+"<link=\"POWER\">電源</link>が接続されている必要があります。機能させるために"
+"は、この設備の真下を空けた状態にしてください。\n"
 "\n"
 "複製人間の<link=\"MORALE\">士気</link>を高めます。"
 
 #. STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.VERTICALWINDTUNNEL.NAME"
 msgid "<link=\"VERTICALWINDTUNNEL\">Vertical Wind Tunnel</link>"
-msgstr "<link=\"VERTICALWINDTUNNEL\">垂直型風洞</link>"
+msgstr "<link=\"VERTICALWINDTUNNEL\">インドアスカイダイビング</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.WARPCONDUITRECEIVER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.WARPCONDUITRECEIVER.DESC"
