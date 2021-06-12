@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -1843,6 +1843,41 @@ msgctxt "STRINGS.UI.CLUSTERMAP.PLANETOID_KEYWORD"
 msgid "Planetoid"
 msgstr "小惑星"
 
+#. STRINGS.UI.CLUSTERMAP.POI.ARTIFACTS
+msgctxt "STRINGS.UI.CLUSTERMAP.POI.ARTIFACTS"
+msgid "Artifact"
+msgstr "遺物"
+
+#. STRINGS.UI.CLUSTERMAP.POI.ARTIFACTS_AVAILABLE
+msgctxt "STRINGS.UI.CLUSTERMAP.POI.ARTIFACTS_AVAILABLE"
+msgid "Available"
+msgstr "利用可能"
+
+#. STRINGS.UI.CLUSTERMAP.POI.ARTIFACTS_DEPLETED
+msgctxt "STRINGS.UI.CLUSTERMAP.POI.ARTIFACTS_DEPLETED"
+msgid "Collected"
+msgstr "収集済み"
+
+#. STRINGS.UI.CLUSTERMAP.POI.MASS_REMAINING
+msgctxt "STRINGS.UI.CLUSTERMAP.POI.MASS_REMAINING"
+msgid "<b>Total Mass Remaining</b>"
+msgstr "<b>合計残量</b>"
+
+#. STRINGS.UI.CLUSTERMAP.POI.ROCKETS_AT_THIS_LOCATION
+msgctxt "STRINGS.UI.CLUSTERMAP.POI.ROCKETS_AT_THIS_LOCATION"
+msgid "<b>Rockets at this location</b>"
+msgstr "<b>この場所にロケット</b>"
+
+#. STRINGS.UI.CLUSTERMAP.POI.TITLE
+msgctxt "STRINGS.UI.CLUSTERMAP.POI.TITLE"
+msgid "POINT OF INTEREST"
+msgstr "関心地点"
+
+#. STRINGS.UI.CLUSTERMAP.ROCKETS.ARTIFACT_MODULE.EMPTY
+msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.ARTIFACT_MODULE.EMPTY"
+msgid "Empty"
+msgstr "空"
+
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.BURDEN_MODULE.NAME
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.BURDEN_MODULE.NAME"
 msgid "Module Burden: "
@@ -1978,6 +2013,31 @@ msgstr ""
 msgctxt "STRINGS.UI.CLUSTERMAP.SELECT_DESTINATION"
 msgid "Select a new destination on the map"
 msgstr "星図から目的地を選択してください"
+
+#. STRINGS.UI.CLUSTERMAP.STATUS.NORMAL
+msgctxt "STRINGS.UI.CLUSTERMAP.STATUS.NORMAL"
+msgid "Normal"
+msgstr "通常"
+
+#. STRINGS.UI.CLUSTERMAP.STATUS.ROCKET.GROUNDED
+msgctxt "STRINGS.UI.CLUSTERMAP.STATUS.ROCKET.GROUNDED"
+msgid "Normal"
+msgstr "通常"
+
+#. STRINGS.UI.CLUSTERMAP.STATUS.ROCKET.IDLE
+msgctxt "STRINGS.UI.CLUSTERMAP.STATUS.ROCKET.IDLE"
+msgid "Idle"
+msgstr "待機中"
+
+#. STRINGS.UI.CLUSTERMAP.STATUS.ROCKET.STRANDED
+msgctxt "STRINGS.UI.CLUSTERMAP.STATUS.ROCKET.STRANDED"
+msgid "Stranded"
+msgstr "立往生"
+
+#. STRINGS.UI.CLUSTERMAP.STATUS.ROCKET.TRAVELING
+msgctxt "STRINGS.UI.CLUSTERMAP.STATUS.ROCKET.TRAVELING"
+msgid "Traveling"
+msgstr "飛翔中"
 
 #. STRINGS.UI.CLUSTERMAP.TILES
 msgctxt "STRINGS.UI.CLUSTERMAP.TILES"
@@ -2423,7 +2483,7 @@ msgstr ""
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.DEAD_BATTERY
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.DEAD_BATTERY"
 msgid "    • One or more batteries have died"
-msgstr "    • バッテリーが破損しています"
+msgstr "    • バッテリーが切れています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.LIMITED_CAPACITY
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BATTERYDIAGNOSTIC.LIMITED_CAPACITY"
@@ -2800,13 +2860,26 @@ msgstr "基準名称プレースホルダ"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.ALL_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.ALL_NAME"
-msgid "Avg Power"
-msgstr "電力平均"
+msgid "Power use"
+msgstr "電力使用量"
 
-#. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.CRITERIA.CHECKPOWER
-msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.CRITERIA.CHECKPOWER"
-msgid "Check power"
-msgstr "電力確認"
+#. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.CIRCUIT_OVER_CAPACITY
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.CIRCUIT_OVER_CAPACITY"
+msgid "Circuit overloaded {0}/{1}"
+msgstr "{0}/{1} 回路が過負荷状態です"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.CRITERIA.CHECKOVERWATTAGE
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.CRITERIA.CHECKOVERWATTAGE"
+msgid "Check circuit overloaded"
+msgstr "回路が過負荷状態です"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.CRITERIA.CHECKPOWERUSECHANGE
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.CRITERIA.CHECKPOWERUSECHANGE"
+msgid "Check power use change"
+msgstr "電力使用量変更確認"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.NORMAL"
@@ -2818,15 +2891,27 @@ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.OVERLOADED"
 msgid "    • One or more power grids are damaged"
 msgstr "    • 電気回路が損傷しています"
 
+#. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.SIGNIFICANT_POWER_CHANGE_DETECTED
+msgctxt ""
+"STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC."
+"SIGNIFICANT_POWER_CHANGE_DETECTED"
+msgid "Significant power use change detected. (Average:{0}, Current:{1})"
+msgstr "急激な電力使用を検出しました。(平均:{0}, 現在:{1})"
+
 #. STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.TOOLTIP_NAME"
-msgid "<b>Avg Power</b>"
-msgstr "<b>電力平均</b>"
+msgid "<b>Power use</b>"
+msgstr "<b>電力使用量</b>"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.ALL_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.ALL_NAME"
 msgid "Radiation"
 msgstr "放射線"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.AVERAGE_RADS
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.AVERAGE_RADS"
+msgid "Avg. {0}"
+msgstr "平均: {0}"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.CRITERIA.CHECKEXPOSED
 msgctxt ""
@@ -4419,7 +4504,7 @@ msgstr "ロケットを発射させるにはこれら全ての条件に合致し
 #. STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.NAME
 msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.NAME"
 msgid "LAUNCH CHECKLIST"
-msgstr "打ち上げ前チェックリスト"
+msgstr "発射チェックリスト"
 
 #. STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD
 msgctxt "STRINGS.UI.DETAILTABS.PROCESS_CONDITIONS.ROCKETBOARD"
@@ -4478,6 +4563,16 @@ msgstr ""
 msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_BIOMES"
 msgid "BIOMES"
 msgstr "バイオーム"
+
+#. STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_CARGOBAY
+msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_CARGOBAY"
+msgid "CARGO BAYS"
+msgstr "貨物ベイ"
+
+#. STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_CLUSTER_POI
+msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_CLUSTER_POI"
+msgid "POINT OF INTEREST"
+msgstr "関心地点"
 
 # 「状態」だと「ステータス」と被るのでまずい
 #. STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_CONDITION
@@ -4766,35 +4861,47 @@ msgstr "ビルド: {0}"
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALERT_ONLY
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALERT_ONLY"
 msgid ""
-"\n"
-"------------------\n"
-"Click to subscribe to this diagnostic - <b>Visible On Alert Only</b>"
-msgstr ""
-"\n"
-"------------------\n"
-"この診断結果を<b>警報時のみ</b>表示する"
+"Click to subscribe to this diagnostic - Current State:  <b>Never "
+"Visible      </b>"
+msgstr "診断を再表示するにはクリック - 現在の状態: <b>二度と表示しない</b>"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALWAYS
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALWAYS"
 msgid ""
-"\n"
-"------------------\n"
-"Click to pin this diagnostic to the sidebar -  <b>Always Visible</b>"
+"Click to pin this diagnostic to the sidebar - Current State: <b>Visible On "
+"Alert Only</b>"
 msgstr ""
-"\n"
-"------------------\n"
-"この診断結果を<b>常に表示する</b>"
+"診断をサイドバーに表示するにはクリック - 現在の状態: <b>警告時のみ表示</b>"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.NEVER
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.NEVER"
 msgid ""
-"\n"
-"------------------\n"
-"Click to mute this diagnostic on the sidebar -  <b>Never Visible      </b>"
+"Click to mute this diagnostic on the sidebar -  Current State: <b>Always "
+"Visible</b>"
 msgstr ""
-"\n"
-"------------------\n"
-"この診断結果をミュートし、<b>二度と表示しない</b>"
+"診断をサイドバーから非表示にするにはクリック - 現在の状態: <b>常に表示</b>"
+
+#. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED
+msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED"
+msgid ""
+"Click to enable this diagnostic -  Current State: <b>Tutorial Disabled</b>"
+msgstr "診断を表示するにはクリック - 現在の状態: <b>チュートリアル無効</b>"
+
+#. STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_ENABLED_COUNT
+msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_ENABLED_COUNT"
+msgid "{0}/{1} criteria enabled"
+msgstr "{0}/{1} 個の基準が有効"
+
+#. STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_HEADER_TOOLTIP
+msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_HEADER_TOOLTIP"
+msgid "Expand or collapse diagnostic criteria panel"
+msgstr "診断基準パネルの表示・非表示"
+
+#. STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_TOOLTIP
+msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_TOOLTIP"
+msgid ""
+"Toggle the <b>{0}</b> diagnostics evaluation of the <b>{1}</b> criteria."
+msgstr "<b>{1}</b>基準の<b>{0}</b>診断結果の表示・非表示を切り替えます。"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.DIAGNOSTIC
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.DIAGNOSTIC"
@@ -5756,7 +5863,7 @@ msgstr "注: この設定値はセーブファイルごとに設定されてい�
 msgctxt ""
 "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.TIMELAPSE_DISABLED_DESCRIPTION"
 msgid "Disabled"
-msgstr "無効化"
+msgstr "無効"
 
 #. STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.TIMELAPSE_RESOLUTION
 msgctxt "STRINGS.UI.FRONTEND.COLONY_SAVE_OPTIONS_SCREEN.TIMELAPSE_RESOLUTION"
@@ -6435,7 +6542,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS."
 "DISABLED.NAME"
 msgid "Disabled"
-msgstr "無効化"
+msgstr "無効"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.DISABLED.TOOLTIP
 msgctxt ""
@@ -6449,7 +6556,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS."
 "ENABLED.NAME"
 msgid "Enabled"
-msgstr "有効化"
+msgstr "有効"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.ENABLED.TOOLTIP
 msgctxt ""
@@ -6657,7 +6764,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS."
 "DEFAULT.NAME"
 msgid "Enabled"
-msgstr "有効化"
+msgstr "有効"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DEFAULT.TOOLTIP
 msgctxt ""
@@ -6674,7 +6781,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS."
 "DISABLED.NAME"
 msgid "Disabled"
-msgstr "無効化"
+msgstr "無効"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS_BREAKS.LEVELS.DISABLED.TOOLTIP
 msgctxt ""
@@ -6698,6 +6805,46 @@ msgid ""
 msgstr ""
 "複製人間のストレス最大値に達した時、複製人間がコロニーに惨事を引き起こすかど"
 "うかを決定します"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.LEVELS.DISABLED.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.LEVELS."
+"DISABLED.NAME"
+msgid "Disabled"
+msgstr "無効"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.LEVELS.DISABLED.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.LEVELS."
+"DISABLED.TOOLTIP"
+msgid "Unchecked: No Teleporters will be spawned during Worldgen"
+msgstr "チェックなし：ワールド生成中にテレポーターは出現しません"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.LEVELS.ENABLED.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.LEVELS."
+"ENABLED.NAME"
+msgid "Enabled"
+msgstr "有効"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.LEVELS.ENABLED.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.LEVELS."
+"ENABLED.TOOLTIP"
+msgid "Checked: Teleporters will be spawned during Worldgen (Default)"
+msgstr "チェックあり：ワールド生成中にテレポーターが出現します(デフォルト)"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.NAME"
+msgid "Teleporters"
+msgstr "テレポーター"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.TELEPORTERS.TOOLTIP"
+msgid "Affects whether teleporters are spawned during Worldgen."
+msgstr "ワールド生成中にテレポーターを出現させるかどうかに影響します。"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.WORLD_CHOICE.NAME
 msgctxt ""
@@ -8330,8 +8477,8 @@ msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "PECULIAR PLANTS UPDATE"
-msgstr "PECULIAR PLANTS UPDATE"
+msgid "MINE THE GAP UPDATE"
+msgstr "MINE THE GAP UPDATE"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -8349,31 +8496,32 @@ msgstr "議論に参加"
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"Welcome to the <b>Peculiar Plants Update!</b>\n"
+"Welcome to the <b>Mine The Gap Update!</b>\n"
 "\n"
-"   •<indent=20px>Crop plants now drop <b>Mutant Seeds</b> when exposed to "
-"radiation.</indent>\n"
+"   •<indent=20px>New Space Points-of-Interest can be mined using the "
+"Drillcone for renewable resources.</indent>\n"
 "\n"
-"   •<indent=20px>Food spoilage and refrigeration have been rebalanced.</"
+"   •<indent=20px>Gravitas Artifacts have been added back in to the game.</"
 "indent>\n"
 "\n"
-"   •<indent=20px>New <b>Meter Valves</b> allow precise plumbing deliveries.</"
-"indent>\n"
+"   •<indent=20px>Tech Tree rebalance and updates.</indent>\n"
 "\n"
-"   •<indent=20px>Bug fixes, animation updates, and more.</indent>\n"
+"   •<indent=20px>New sound effects, Diagnostics panel improvements, bug "
+"fixes and new lore entries.</indent>\n"
 "\n"
 "Check out the full patch notes for more details!"
 msgstr ""
-"<b>Peculiar Plants Update</b>にようこそ！\n"
+"<b>Mine the Gap Update</b>にようこそ！\n"
 "\n"
-"   •<indent=20px>放射線に曝された耕作物が<b>変異種子</b>を落とすように</"
-"indent>\n"
+"   •<indent=20px>再生可能資源を採掘できるドリルコーンおよび宇宙の関心場所を追"
+"加</indent>\n"
 "\n"
-"   •<indent=20px>食糧腐敗および冷蔵のバランス調整</indent>\n"
+"   •<indent=20px>グラビタスの遺物が帰ってきた</indent>\n"
 "\n"
-"   •<indent=20px>正確な量を輸送できる<b>メーターバルブ</b>を追加</indent>\n"
+"   •<indent=20px>技術ツリーの見直し</indent>\n"
 "\n"
-"   •<indent=20px>バグ修正、アニメーション更新、等々</indent>\n"
+"   •<indent=20px>新しい効果音、診断パネル改善、バグ修正、バックストーリーの追"
+"加</indent>\n"
 "\n"
 "詳細はパッチノート全文を参照してくださいね！"
 
@@ -9580,8 +9728,8 @@ msgstr ""
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.MUTANT_STERILE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.MUTANT_STERILE"
-msgid "Due to changes to its DNA this plant will not produce seeds of its own"
-msgstr "DNAが変異したことにより、この植物は種子を落とさなくなりました"
+msgid "This plant will not produce seeds of its own due to changes to its DNA"
+msgstr "この植物は自身のDNAが変異したため、種子を生成しません"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REGROWTHTIME
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REGROWTHTIME"
@@ -9619,7 +9767,9 @@ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE"
 msgid ""
 "Ambient <style=\"KKeyword\">Gas</style> pressure must be at least <b>{0}</b> "
 "for basic growth"
-msgstr "この植物が成長するためには周囲の気圧が最低でも<b>{0}</b> 必要です"
+msgstr ""
+"この植物が成長するためには周囲の<style=\"KKeyword\">気圧</style> が最低でも"
+"<b>{0}</b> 必要です"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_RADIATION
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_RADIATION"
@@ -13901,6 +14051,11 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_COMPOUND.DESCRIPTION"
 msgid "<link=\"APOTHECARY\">Apothecary</link> Usage"
 msgstr "<link=\"APOTHECARY\">調剤所</link>が利用可能"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DEMOLISH.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DEMOLISH.DESCRIPTION"
+msgid "Demolish Gravitas Buildings"
+msgstr "グラビタスの設備を破壊します"
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_NEARLY_IMPENETRABLE.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_NEARLY_IMPENETRABLE.DESCRIPTION"
 msgid "<link=\"KATAIRITE\">Abyssalite</link> Mining"
@@ -13970,6 +14125,11 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION"
 msgid "<link=\"POWER\">Generator Tuning</link> usage and Microchip Crafting"
 msgstr "<link=\"POWER\">発電機のチューニング</link>およびマイクロチップ作成"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_ARTIFACTS.DESCRIPTION
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_ARTIFACTS.DESCRIPTION"
+msgid "Artifact Analysis"
+msgstr "遺物分析"
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION"
 msgid "Geographical Analysis"
@@ -14017,8 +14177,8 @@ msgstr "この作業は訓練になりません"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.NUCLEAR_RESEARCH.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.NUCLEAR_RESEARCH.DESCRIPTION"
-msgid "<link=\"NUCLEARLABORATORY\">Atomic Collider</link> Usage"
-msgstr "<link=\"NUCLEARLABORATORY\">原子衝突型加速器</link>が利用可能"
+msgid "<link=\"NUCLEARLABORATORY\">Materials Study Terminal</link> Usage"
+msgstr "<link=\"NUCLEARLABORATORY\">材料工学端末</link>の使い方"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION"
@@ -15437,6 +15597,96 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.VHS.NAME"
 msgid "Archaic Tech"
 msgstr "古代の技術"
 
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION1.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION1.DESC"
+msgid "Default Description!"
+msgstr "デフォルトの説明！"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION1.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION1.NAME"
+msgid "Gravitas Spacejunk"
+msgstr "グラビタスのスペースデブリ"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION2.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION2.DESC"
+msgid "Default Description!"
+msgstr "デフォルトの説明！"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION2.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION2.NAME"
+msgid "Gravitas Spacejunk"
+msgstr "グラビタスのスペースデブリ"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION3.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION3.DESC"
+msgid "Default Description!"
+msgstr "デフォルトの説明！"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION3.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION3.NAME"
+msgid "Gravitas Spacejunk"
+msgstr "グラビタスのスペースデブリ"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION4.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION4.DESC"
+msgid "Default Description!"
+msgstr "デフォルトの説明！"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION4.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION4.NAME"
+msgid "Gravitas Spacejunk"
+msgstr "グラビタスのスペースデブリ"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION5.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION5.DESC"
+msgid "Default Description!"
+msgstr "デフォルトの説明！"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION5.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION5.NAME"
+msgid "Gravitas Spacejunk"
+msgstr "グラビタスのスペースデブリ"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION6.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION6.DESC"
+msgid "Default Description!"
+msgstr "デフォルトの説明！"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION6.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION6.NAME"
+msgid "Gravitas Spacejunk"
+msgstr "グラビタスのスペースデブリ"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION7.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION7.DESC"
+msgid "Default Description!"
+msgstr "デフォルトの説明！"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION7.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION7.NAME"
+msgid "Gravitas Spacejunk"
+msgstr "グラビタスのスペースデブリ"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION8.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION8.DESC"
+msgid "Default Description!"
+msgstr "デフォルトの説明！"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION8.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.GRAVITASSPACESTATION8.NAME"
+msgid "Gravitas Spacejunk"
+msgstr "グラビタスのスペースデブリ"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.RUSSELLSTEAPOT.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.RUSSELLSTEAPOT.DESC"
+msgid "Default Description!"
+msgstr "デフォルトの説明！"
+
+#. STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.RUSSELLSTEAPOT.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.RUSSELLSTEAPOT.NAME"
+msgid "Russell's Teapot"
+msgstr "ラッセルのティーポット"
+
 #. STRINGS.UI.SPACEDESTINATIONS.ASTEROIDS.CARBONACEOUSASTEROID.DESCRIPTION
 msgctxt ""
 "STRINGS.UI.SPACEDESTINATIONS.ASTEROIDS.CARBONACEOUSASTEROID.DESCRIPTION"
@@ -15543,6 +15793,11 @@ msgstr "岩彗星"
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.SATELLITE.NAME"
 msgid "Defunct Satellite"
 msgstr "大破した人工衛星"
+
+#. STRINGS.UI.SPACEDESTINATIONS.COMETS.URANIUMORECOMET.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.URANIUMORECOMET.NAME"
+msgid "Unanium Comet"
+msgstr "ウラン彗星"
 
 #. STRINGS.UI.SPACEDESTINATIONS.DEBRIS.SATELLITE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.DEBRIS.SATELLITE.DESCRIPTION"
@@ -15663,6 +15918,514 @@ msgctxt "STRINGS.UI.SPACEDESTINATIONS.GIANTS.ICEGIANT.NAME"
 msgid "Ice Giant"
 msgstr "巨大氷惑星"
 
+#. STRINGS.UI.SPACEDESTINATIONS.GRAVITAS_SPACE_POI.STATION
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.GRAVITAS_SPACE_POI.STATION"
+msgid "Destroyed Gravitas Space Station"
+msgstr "破壊されたグラビタス宇宙ステーション"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.CARBONASTEROIDFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.CARBONASTEROIDFIELD.DESC"
+msgid ""
+"An asteroid containing <link=\"REFINEDCARBON\">Refined Carbon</link> and "
+"<link=\"CARBON\">Coal</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"REFINEDCARBON\">精錬炭素</link>と<link=\"CARBON\">石炭</link>を含む小"
+"惑星です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.CARBONASTEROIDFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.CARBONASTEROIDFIELD.NAME"
+msgid "Carbon Asteroid Field"
+msgstr "炭素小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.CHLORINECLOUD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.CHLORINECLOUD.DESC"
+msgid ""
+"A cloud of harvestable debris containing <link=\"CHLORINEGAS\">Chlorine</"
+"link> and <link=\"BLEACHSTONE\">Bleach Stone</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"CHLORINEGAS\">塩素</link>と<link=\"BLEACHSTONE\">漂白石</link>を含"
+"む、採掘可能ながれきの雲です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.CHLORINECLOUD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.CHLORINECLOUD.NAME"
+msgid "Chlorine Cloud"
+msgstr "塩素雲"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FORESTYOREFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FORESTYOREFIELD.DESC"
+msgid ""
+"A field of harvestable resources containing <link=\"CARBONDIOXIDE\">Carbon "
+"Dioxide</link>, <link=\"IGNEOUSROCK\">Igneous Rock</link> and <link="
+"\"ALUMINUMORE\">Aluminum Ore</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"CARBONDIOXIDE\">二酸化炭素</link>、<link=\"IGNEOUSROCK\">火成岩</"
+"link>、<link=\"ALUMINUMORE\">アルミニウム鉱石</link>を含む、採掘可能な資源帯"
+"です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FORESTYOREFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FORESTYOREFIELD.NAME"
+msgid "Forested Ore Field"
+msgstr "森林鉱石帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FROZENOREFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FROZENOREFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"CUPRITE\">Copper Ore</link>, <link=\"ICE"
+"\">Ice</link>, <link=\"COBALTITE\">Cobalt Ore</link> and <link=\"ALUMINUMORE"
+"\">Aluminum Ore</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"CUPRITE\">銅鉱石</link>、<link=\"ICE\">氷</link>、<link=\"COBALTITE"
+"\">コバルト鉱石</link>、<link=\"ALUMINUMORE\">アルミニウム鉱石</link>を含む小"
+"惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FROZENOREFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FROZENOREFIELD.NAME"
+msgid "Frozen Ore Asteroid Field"
+msgstr "凍結鉱石小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GASGIANTCLOUD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GASGIANTCLOUD.DESC"
+msgid ""
+"The harvestable remains of a planet containing <link=\"HYDROGEN\">Hydrogen</"
+"link> in <link=\"ELEMENTSGAS\">gas</link> and <link=\"ELEMENTSSOLID\">solid</"
+"link> form, and <link=\"SOLIDMETHANE\">Methane</link> in <link=\"ELEMENTSGAS"
+"\">gas</link>, <link=\"ELEMENTSSOLID\">solid</link> and <link="
+"\"ELEMENTSLIQUID\">liquid</link> form.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"ELEMENTSGAS\">気体</link>・<link=\"ELEMENTSSOLID\">固体</link>の"
+"<link=\"HYDROGEN\">水素</link>、<link=\"ELEMENTSGAS\">気体</link>・<link="
+"\"ELEMENTSSOLID\">固体</link>・<link=\"ELEMENTSLIQUID\">液体</link>の<link="
+"\"SOLIDMETHANE\">メタン</link>を含む採取可能な惑星です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GASGIANTCLOUD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GASGIANTCLOUD.NAME"
+msgid "Exploded Gas Giant"
+msgstr "破砕した巨大ガス惑星"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GILDEDASTEROIDFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GILDEDASTEROIDFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"GOLD\">Gold</link>, <link=\"FULLERENE"
+"\">Fullerene</link> and <link=\"FOOLSGOLD\">Pyrite</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"GOLD\">金</link>、<link=\"FULLERENE\">フラーレン</link>、<link="
+"\"FOOLSGOLD\">黄鉄鉱</link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GILDEDASTEROIDFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GILDEDASTEROIDFIELD.NAME"
+msgid "Gilded Asteroid Field"
+msgstr "金ぴか小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GLIMMERINGASTEROIDFIELD.DESC
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GLIMMERINGASTEROIDFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"TUNGSTEN\">Tungsten</link> and <link="
+"\"WOLFRAMITE\">Wolframite</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"TUNGSTEN\">タングステン</link>、<link=\"WOLFRAMITE\">鉄マンガン重石</"
+"link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GLIMMERINGASTEROIDFIELD.NAME
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.GLIMMERINGASTEROIDFIELD.NAME"
+msgid "Glimmering Asteroid Field"
+msgstr "明滅小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.HELIUMCLOUD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.HELIUMCLOUD.DESC"
+msgid ""
+"A cloud of resources containing <link=\"WATER\">Water</link>, <link="
+"\"HYDROGEN\">Hydrogen</link>, and <link=\"NIOBIUM\">Niobium</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"WATER\">水</link>、<link=\"HYDROGEN\">水素</link>、<link=\"NIOBIUM\">"
+"ニオブ</link>を含む雲です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.HELIUMCLOUD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.HELIUMCLOUD.NAME"
+msgid "Helium Cloud"
+msgstr "ヘリウム雲"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ICEASTEROIDFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ICEASTEROIDFIELD.DESC"
+msgid ""
+"A cloud of planetary remains containing <link=\"ICE\">Ice</link>, <link="
+"\"CARBONDIOXIDE\">Carbon Dioxide</link>, <link=\"OXYGEN\">Oxygen</link> and "
+"<link=\"METHANE\">Methane</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"ICE\">氷</link>、<link=\"CARBONDIOXIDE\">二酸化炭素</link>、<link="
+"\"OXYGEN\">酸素</link>、<link=\"METHANE\">メタン</link>を含む、星の残骸からな"
+"る雲です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ICEASTEROIDFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ICEASTEROIDFIELD.NAME"
+msgid "Exploded Ice Giant"
+msgstr "破砕した巨大氷惑星"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.INTERSTELLARICEFIELD.DESC
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.INTERSTELLARICEFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"ICE\">Ice</link>, <link=\"CARBONDIOXIDE"
+"\">Carbon Dioxide</link> and <link=\"OXYGEN\">Oxygen</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"ICE\">氷</link>、<link=\"CARBONDIOXIDE\">二酸化炭素</link>、<link="
+"\"OXYGEN\">酸素</link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.INTERSTELLARICEFIELD.NAME
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.INTERSTELLARICEFIELD.NAME"
+msgid "Ice Asteroid Field"
+msgstr "氷結小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.INTERSTELLAROCEAN.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.INTERSTELLAROCEAN.DESC"
+msgid ""
+"An interplanetary body that consists of <link=\"SALTWATER\">Salt Water</"
+"link>,<link=\"BRINE\">Brine</link>, <link=\"SALT\">Salt</link> and <link="
+"\"ICE\">Ice</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"SALTWATER\">塩水</link>、<link=\"BRINE\">濃塩水</link>、<link=\"SALT"
+"\">塩</link>、<link=\"ICE\">氷</link>で構成された惑星間物質です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.INTERSTELLAROCEAN.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.INTERSTELLAROCEAN.NAME"
+msgid "Interstellar Ocean"
+msgstr "星間海"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.METALLICASTEROIDFIELD.DESC
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.METALLICASTEROIDFIELD.DESC"
+msgid ""
+"An asteroid containing <link=\"IRON\">Iron</link>, <link=\"COPPER\">Copper</"
+"link> and <link=\"OBSIDIAN\">Obsidian</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"IRON\">鉄</link>、<link=\"COPPER\">銅</link>、<link=\"OBSIDIAN\">黒曜"
+"石</link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.METALLICASTEROIDFIELD.NAME
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.METALLICASTEROIDFIELD.NAME"
+msgid "Metallic Asteroid Field"
+msgstr "金属質小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OILYASTEROIDFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OILYASTEROIDFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"METHANE\">Natural Gas</link>, <link="
+"\"CARBONDIOXIDE\">Carbon Dioxide</link>, <link=\"CRUDEOIL\">Crude Oil</link> "
+"and <link=\"PETROLEUM\">Petroleum</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"METHANE\">天然ガス</link>、<link=\"CARBONDIOXIDE\">二酸化炭素</"
+"link>、<link=\"CRUDEOIL\">原油</link>、<link=\"PETROLEUM\">石油</link>を含む"
+"小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OILYASTEROIDFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OILYASTEROIDFIELD.NAME"
+msgid "Oily Asteroid Field"
+msgstr "油質小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ORGANICMASSFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ORGANICMASSFIELD.DESC"
+msgid ""
+"A mass of harvestable resources containing <link=\"ALGAE\">Algae</link>, "
+"<link=\"SLIMEMOLD\">Slime</link>, <link=\"CONTAMINATEDOXYGEN\">Polluted "
+"Oxygen</link> and <link=\"DIRT\">Dirt</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"ALGAE\">緑藻</link>、<link=\"SLIMEMOLD\">ヘドロ</link>、<link="
+"\"CONTAMINATEDOXYGEN\">汚染酸素</link>、<link=\"DIRT\">土</link>を含む採取可"
+"能な資源塊です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ORGANICMASSFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ORGANICMASSFIELD.NAME"
+msgid "Organic Mass Field"
+msgstr "有機物質帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OXIDIZEDASTEROIDFIELD.DESC
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OXIDIZEDASTEROIDFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> "
+"and <link=\"RUST\">Rust</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"CARBONDIOXIDE\">二酸化炭素</link>、<link=\"RUST\">錆</link>を含む小惑"
+"星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OXIDIZEDASTEROIDFIELD.NAME
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OXIDIZEDASTEROIDFIELD.NAME"
+msgid "Oxidized Asteroid Field"
+msgstr "酸化型小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OXYGENRICHASTEROIDFIELD.DESC
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OXYGENRICHASTEROIDFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"ICE\">Ice</link>, <link="
+"\"CONTAMINATEDOXYGEN\">Polluted Oxygen</link> and <link=\"WATER\">Water</"
+"link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"ICE\">氷</link>、<link=\"CONTAMINATEDOXYGEN\">汚染酸素</link>、<link="
+"\"WATER\">水</link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OXYGENRICHASTEROIDFIELD.NAME
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.OXYGENRICHASTEROIDFIELD.NAME"
+msgid "Oxygen Rich Asteroid Field"
+msgstr "富酸素小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.POI_PRODUCTION
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.POI_PRODUCTION"
+msgid "{0}"
+msgstr "{0}"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.POI_PRODUCTION_TOOLTIP
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.POI_PRODUCTION_TOOLTIP"
+msgid "{0}"
+msgstr "{0}"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.RADIOACTIVEASTEROIDFIELD.DESC
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.RADIOACTIVEASTEROIDFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"BLEACHSTONE\">Bleach Stone</link>, "
+"<link=\"RUST\">Rust</link>,<link=\"URANIUMORE\">Uranium Ore</link> and <link="
+"\"SULFUR\">Sulfur</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"BLEACHSTONE\">漂白石</link>、<link=\"RUST\">錆</link>、<link="
+"\"URANIUMORE\">ウラン鉱石</link>、<link=\"SULFUR\">硫黄</link>を含む小惑星帯"
+"です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.RADIOACTIVEASTEROIDFIELD.NAME
+msgctxt ""
+"STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.RADIOACTIVEASTEROIDFIELD.NAME"
+msgid "Radioactive Asteroid Field"
+msgstr "放射性小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.RADIOACTIVEGASCLOUD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.RADIOACTIVEGASCLOUD.DESC"
+msgid ""
+"A cloud of resources containing <link=\"CHLORINEGAS\">Chlorine</link>, <link="
+"\"URANIUMORE\">Uranium Ore</link> and <link=\"CARBONDIOXIDE\">Carbon "
+"Dioxide</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"CHLORINEGAS\">塩素</link>、<link=\"URANIUMORE\">ウラン鉱石</link>、"
+"<link=\"CARBONDIOXIDE\">二酸化炭素</link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.RADIOACTIVEGASCLOUD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.RADIOACTIVEGASCLOUD.NAME"
+msgid "Radioactive Gas Cloud"
+msgstr "放射性ガス雲"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ROCKYASTEROIDFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ROCKYASTEROIDFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"CUPRITE\">Copper Ore</link>, <link="
+"\"SEDIMENTARYROCK\">Sedimentary Rock</link> and <link=\"IGNEOUSROCK"
+"\">Igneous Rock</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"CUPRITE\">銅鉱石</link>、<link=\"SEDIMENTARYROCK\">堆積岩</link>、"
+"<link=\"IGNEOUSROCK\">火成岩</link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ROCKYASTEROIDFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ROCKYASTEROIDFIELD.NAME"
+msgid "Rocky Asteroid Field"
+msgstr "岩石質小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SALTYASTEROIDFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SALTYASTEROIDFIELD.DESC"
+msgid ""
+"A field of harvestable resources containing <link=\"SALTWATER\">Salt Water</"
+"link>,<link=\"BRINE\">Brine</link> and <link=\"CARBONDIOXIDE\">Carbon "
+"Dioxide</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"SALTWATER\">塩水</link>、<link=\"BRINE\">濃塩水</link>、<link="
+"\"CARBONDIOXIDE\">二酸化炭素</link>を含む採取可能な資源帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SALTYASTEROIDFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SALTYASTEROIDFIELD.NAME"
+msgid "Salty Asteroid Field"
+msgstr "塩辛い小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SANDYOREFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SANDYOREFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"SANDSTONE\">Sandstone</link>, <link="
+"\"ALGAE\">Algae</link>, <link=\"CUPRITE\">Copper Ore</link> and <link=\"SAND"
+"\">Sand</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"SANDSTONE\">砂岩</link>、<link=\"ALGAE\">緑藻</link>、<link=\"CUPRITE"
+"\">銅鉱石</link>、<link=\"SAND\">砂</link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SANDYOREFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SANDYOREFIELD.NAME"
+msgid "Sandy Ore Field"
+msgstr "砂鉱石帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SATELLITEFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SATELLITEFIELD.DESC"
+msgid ""
+"\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SATELLITEFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SATELLITEFIELD.NAME"
+msgid "Satellite Asteroid Field"
+msgstr "衛星小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SWAMPYOREFIELD.DESC
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SWAMPYOREFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"MUD\">Mud</link>, <link=\"TOXICSAND"
+"\">Polluted Dirt</link> and <link=\"COBALTITE\">Cobalt Ore</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link="
+"\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"MUD\">泥</link>、<link=\"TOXICSAND\">汚染土</link>、<link=\"COBALTITE"
+"\">コバルト鉱石</link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要"
+"です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SWAMPYOREFIELD.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SWAMPYOREFIELD.NAME"
+msgid "Swampy Ore Field"
+msgstr "沼地鉱石帯"
+
 #. STRINGS.UI.SPACEDESTINATIONS.NONE.NAME
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.NONE.NAME"
 msgid "Unselected"
@@ -15671,7 +16434,7 @@ msgstr "指定なし"
 #. STRINGS.UI.SPACEDESTINATIONS.ORBIT.NAME_FMT
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.ORBIT.NAME_FMT"
 msgid "Orbiting {Name}"
-msgstr "{Name} 軌道周回中"
+msgstr "{Name} 軌道周回"
 
 #. STRINGS.UI.SPACEDESTINATIONS.PLANETS.CHLORINEPLANET.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.CHLORINEPLANET.DESCRIPTION"
@@ -16145,7 +16908,7 @@ msgstr ""
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.FAILURE"
 msgid "No active construction"
-msgstr "有効な建設現場がありません"
+msgstr "実行中の建設作業なし"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.STATUS.READY"
@@ -16168,7 +16931,7 @@ msgstr "現在進行中のモジュール建造が発進を妨害しています
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.TOOLTIP.READY"
 msgid "Construction of all modules is complete"
-msgstr "全モジュールの建設完了"
+msgstr "全モジュールの建設が完了しています"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.CONSTRUCTION_COMPLETE.TOOLTIP.WARNING
 msgctxt ""
@@ -16273,7 +17036,7 @@ msgstr ""
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.READY"
 msgid "The rocket's launch path is clear for takeoff"
-msgstr "発射経路確保。発射準備完了"
+msgstr "離陸のためのロケット発射経路が確保されています"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.WARNING"
@@ -16423,6 +17186,36 @@ msgstr "適切なノーズコーンが装備されています"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.WARNING"
 msgid "Nosecone warning"
 msgstr "警告:ノーズコーン確認"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.STATUS.FAILURE
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.STATUS.FAILURE"
+msgid "{0} missing {1}"
+msgstr "{0}に{1}がありません"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.STATUS.READY
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.STATUS.READY"
+msgid "{0} {1} supplied"
+msgstr "{0}が{1}供給されました"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.STATUS.WARNING
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.STATUS.WARNING"
+msgid "{0} missing {1}"
+msgstr "{0}に{1}がありません"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.TOOLTIP.FAILURE
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.TOOLTIP.FAILURE"
+msgid "{0} has less than {1} {2}"
+msgstr "{0}には{2}が{1}未満です"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.TOOLTIP.READY
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.TOOLTIP.READY"
+msgid "{0} {1} supplied"
+msgstr "{0}が{1}供給されました"
+
+#. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.TOOLTIP.WARNING
+msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_RESOURCE.TOOLTIP.WARNING"
+msgid "{0} has less than {1} {2}"
+msgstr "{0}には{2}が{1}未満です"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HASASTRONAUT
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HASASTRONAUT"
@@ -16591,7 +17384,7 @@ msgstr ""
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.READY"
 msgid "The rocket's engine can support the number of installed rocket modules"
-msgstr "このロケットのエンジンでは装備されているモジュール数を扱いきれません"
+msgstr "このロケットのエンジンは装備されているモジュール数を扱うことができます"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.WARNING"
@@ -16816,7 +17609,7 @@ msgstr "分析"
 #. STRINGS.UI.STARMAP.LISTTITLES.ARTIFACTS
 msgctxt "STRINGS.UI.STARMAP.LISTTITLES.ARTIFACTS"
 msgid "Artifacts"
-msgstr "アーティファクト"
+msgstr "遺物"
 
 #. STRINGS.UI.STARMAP.LISTTITLES.DESTINATION_MASS
 msgctxt "STRINGS.UI.STARMAP.LISTTITLES.DESTINATION_MASS"
@@ -19315,7 +20108,7 @@ msgstr "星図を表示"
 
 #. STRINGS.UI.UISIDESCREENS.COMMAND_MODULE_SIDE_SCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.COMMAND_MODULE_SIDE_SCREEN.TITLE"
-msgid "Launch Conditions"
+msgid "Launch Conditiothisns"
 msgstr "発射条件"
 
 #. STRINGS.UI.UISIDESCREENS.CONDITIONLISTSIDESCREEN.TITLE
@@ -19970,6 +20763,32 @@ msgstr "内部を参照"
 msgctxt "STRINGS.UI.UISIDESCREENS.HABITATMODULESIDESCREEN.VIEW_BUTTON_TOOLTIP"
 msgid "What's goin' on in there?"
 msgstr "何が起こっているかな？"
+
+#. STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.DISABLE
+msgctxt "STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.DISABLE"
+msgid "Disable Drill"
+msgstr "採掘無効化"
+
+#. STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.ENABLE
+msgctxt "STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.ENABLE"
+msgid "Enable Drill"
+msgstr "採掘有効化"
+
+#. STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.MINING_IN_PROGRESS
+msgctxt "STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.MINING_IN_PROGRESS"
+msgid "Drilling..."
+msgstr "採掘中"
+
+#. STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.MINING_STOPPED
+msgctxt "STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.MINING_STOPPED"
+msgid "Not drilling"
+msgstr "採掘しない"
+
+# Hatchに床落ちアイテムを食べられたときのポップアップ
+#. STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.TITLE
+msgctxt "STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.TITLE"
+msgid "Resource Gathering"
+msgstr "資源採取"
 
 #. STRINGS.UI.UISIDESCREENS.HIGHENERGYPARTICLEDIRECTIONSIDESCREEN.DIRECTION_E
 msgctxt ""
@@ -21874,7 +22693,7 @@ msgstr ""
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.PRESSURE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.PRESSURE"
 msgid "Ambient Pressure"
-msgstr "周囲の気圧"
+msgstr "周囲の圧力"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.PRESSURE_TOOLTIP_ABOVE
 msgctxt ""
@@ -21972,7 +22791,7 @@ msgstr "圧力"
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE"
 msgid "Wattage Reading"
-msgstr "ワット数読み込み"
+msgstr "消費ワット数"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.WATTAGE_TOOLTIP_ABOVE
 msgctxt ""
@@ -22787,25 +23606,45 @@ msgid ""
 "same type {Hotkey}"
 msgstr "この設備の設定と優先度を他の同じタイプの設備にコピーします{Hotkey}"
 
-#. STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME
-msgctxt "STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME"
+#. STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.NAME
+msgctxt "STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.NAME"
 msgid "Deconstruct"
 msgstr "解体"
 
-#. STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME_OFF
-msgctxt "STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME_OFF"
+#. STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.NAME_OFF
+msgctxt "STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.NAME_OFF"
 msgid "Cancel Deconstruct"
 msgstr "解体をやめる"
 
+#. STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.TOOLTIP
+msgctxt "STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.TOOLTIP"
+msgid "Deconstruct this building and refund all resources"
+msgstr "設備を解体し資源を取り戻します"
+
+#. STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.TOOLTIP_OFF
+msgctxt "STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.TOOLTIP_OFF"
+msgid "Cancel this deconstruct order"
+msgstr "解体指示を取り消します"
+
+#. STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME
+msgctxt "STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME"
+msgid "Demolish"
+msgstr "破壊"
+
+#. STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME_OFF
+msgctxt "STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME_OFF"
+msgid "Cancel Demolition"
+msgstr "破壊をやめる"
+
 #. STRINGS.UI.USERMENUACTIONS.DEMOLISH.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.DEMOLISH.TOOLTIP"
-msgid "Demolish this building and refund all resources"
-msgstr "設備を破壊し資源を取り戻します"
+msgid "Demolish this building"
+msgstr "設備を破壊します"
 
 #. STRINGS.UI.USERMENUACTIONS.DEMOLISH.TOOLTIP_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.DEMOLISH.TOOLTIP_OFF"
-msgid "Cancel this deconstruct order"
-msgstr "解体指示を取り消します"
+msgid "Cancel this demolition order"
+msgstr "破壊指示を取り消します"
 
 #. STRINGS.UI.USERMENUACTIONS.DIG.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.DIG.NAME"
@@ -24479,3 +25318,34 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.ALL_NAME"
+#~ msgid "Avg Power"
+#~ msgstr "電力平均"
+
+#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.POWERUSEDIAGNOSTIC.TOOLTIP_NAME"
+#~ msgid "<b>Avg Power</b>"
+#~ msgstr "<b>電力平均</b>"
+
+#~ msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALERT_ONLY"
+#~ msgid ""
+#~ "\n"
+#~ "------------------\n"
+#~ "Click to subscribe to this diagnostic - <b>Visible On Alert Only</b>"
+#~ msgstr ""
+#~ "\n"
+#~ "------------------\n"
+#~ "この診断結果を<b>警報時のみ</b>表示する"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "PECULIAR PLANTS UPDATE"
+#~ msgstr "PECULIAR PLANTS UPDATE"
+
+#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.MUTANT_STERILE"
+#~ msgid ""
+#~ "Due to changes to its DNA this plant will not produce seeds of its own"
+#~ msgstr "DNAが変異したことにより、この植物は種子を落とさなくなりました"
+
+#~ msgctxt "STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME"
+#~ msgid "Deconstruct"
+#~ msgstr "解体"
