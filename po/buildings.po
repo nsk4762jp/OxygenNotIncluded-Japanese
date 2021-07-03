@@ -414,11 +414,11 @@ msgstr "過去に何が起こったのかを発見します。"
 #. STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.EFFECT"
 msgid ""
-"Analysis artifacts and extracts the <link=\"UNOBTANIUM\">Neutronium</link> "
-"from their shell."
+"Analyses and extracts <link=\"UNOBTANIUM\">Neutronium</link> from artifacts "
+"of interest."
 msgstr ""
-"遺物を分析し、その外殻から<link=\"UNOBTANIUM\">ニュートロニウム</link>を抽出"
-"します。"
+"旧世界の遺物を分析し、<link=\"UNOBTANIUM\">ニュートロニウム</link>を抽出しま"
+"す。"
 
 #. STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.NAME"
@@ -428,7 +428,7 @@ msgstr "<link=\"ARTIFACTANALYSISSTATION\">遺物分析端末</link>"
 #. STRINGS.BUILDINGS.PREFABS.ARTIFACTCARGOBAY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTCARGOBAY.DESC"
 msgid "Holds artifacts found in space."
-msgstr "宇宙で見つけた遺物を保持します。"
+msgstr "宇宙で見つけた旧世界の遺物を保管します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ARTIFACTCARGOBAY.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTCARGOBAY.EFFECT"
@@ -438,7 +438,7 @@ msgid ""
 "\n"
 "Artifacts become available to the colony upon the rocket's return."
 msgstr ""
-"複製人間が宇宙ミッション中に見つけた遺物を格納します。\n"
+"複製人間が宇宙ミッション中に見つけた旧世界の遺物を格納します。\n"
 "\n"
 "遺物はロケット帰還時に利用可能となります。"
 
@@ -547,7 +547,7 @@ msgid ""
 "Charging a battery module before takeoff makes it easier to power buildings "
 "during flight."
 msgstr ""
-"発射前にバッテリーモジュールを充電しておくことで、飛翔中に設備へ給電できま"
+"発射前にバッテリーモジュールを充電しておくことで、航行中に設備へ給電できま"
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.EFFECT
@@ -564,10 +564,10 @@ msgstr ""
 "ロケットエンジンまたは<link=\"LAUNCHPLATFORM\">ロケット発射台</link>から発電"
 "された余剰<link=\"POWER\">電力</link>を蓄えます。\n"
 "\n"
-"<link=\"ROCKETINTERIORPOWERPLUG\">ロケット内コンセント</link>に電力を供給しま"
-"す。\n"
+"蓄えた電力はロケット内部の<link=\"ROCKETINTERIORPOWERPLUG\">電源コンセント</"
+"link>へ供給されます。\n"
 "\n"
-"蓄えられた電力は時間とともに失われます。"
+"蓄えた電力は時間とともに失われます。"
 
 #. STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.BATTERYMODULE.NAME"
@@ -1188,7 +1188,7 @@ msgstr "ロケットに乗り降りするためのハッチです。"
 #. STRINGS.BUILDINGS.PREFABS.CLUSTERCRAFTINTERIORDOOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.CLUSTERCRAFTINTERIORDOOR.EFFECT"
 msgid "Warning: Do not open mid-flight."
-msgstr "警告: 飛行中は開けないでください。"
+msgstr "警告: 航行中は開けないでください。"
 
 #. STRINGS.BUILDINGS.PREFABS.CLUSTERCRAFTINTERIORDOOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.CLUSTERCRAFTINTERIORDOOR.NAME"
@@ -1251,7 +1251,7 @@ msgstr ""
 "圧縮された<link=\"CARBONDIOXIDE\">二酸化炭素</link>を活用し、宇宙探索ロケット"
 "の推進力とします。\n"
 "\n"
-"二酸化炭素エンジンは大きさの割に高速なエンジンですが、ロケットの高さに制限が"
+"二酸化炭素エンジンは大きさの割に高速なエンジンですが、ロケットの全長に制限が"
 "あります。\n"
 "\n"
 "ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
@@ -1330,7 +1330,7 @@ msgid ""
 msgstr ""
 "<link=\"ASTRONAUT\">宇宙飛行士</link>の複製人間が座れる席があります。\n"
 "\n"
-"制御カプセルはロケットの一番上に位置していなければなりません。"
+"制御カプセルはロケットの先端に取り付けなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH
 msgctxt "STRINGS.BUILDINGS.PREFABS.COMMANDMODULE.LOGIC_PORT_LAUNCH"
@@ -1691,13 +1691,25 @@ msgstr "開発者用放射線源"
 
 #. STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.DESC"
-msgid "Crushes carbon into diamonds"
-msgstr "石炭を砕いてダイアモンドにします"
+msgid "Crushes refined carbon into diamond."
+msgstr "石炭を砕いてダイアモンドにします。"
 
 #. STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.EFFECT"
-msgid "Crushes carbon into diamonds"
-msgstr "石炭を砕いてダイアモンドにします"
+msgid ""
+"Uses <link=\"POWER\">Power</link> and <link=\"HEP\">Radbolts</link> to crush "
+"<link=\"REFINEDCARBON\">Refined Carbon</link> into <link=\"DIAMOND"
+"\">Diamond</link>.\n"
+"\n"
+"Duplicants will not fabricate items unless recipes are queued and <link="
+"\"REFINEDCARBON\">Refined Carbon</link> has been discovered."
+msgstr ""
+"<link=\"POWER\">電力</link>と<link=\"HEP\">RADボルド</link>を使い、<link="
+"\"REFINEDCARBON\">コークス</link>を砕いて<link=\"DIAMOND\">ダイアモンド</"
+"link>にします。\n"
+"\n"
+"<link=\"REFINEDCARBON\">コークス</link>が発見済みで、レシピがセットされていな"
+"いと複製人間は製作作業をしません。"
 
 #. STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.NAME"
@@ -2500,8 +2512,8 @@ msgstr "<link=\"GAMMARAYOVEN\">ガンマ線オーブン</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GANTRY.DESC"
 msgid "A gantry can be built over rocket pieces where ladders and tile cannot."
 msgstr ""
-"発射台は、タイルや梯子が届かない場所にあるロケット部品の上に建てることができ"
-"ます。"
+"整備用足場は、タイルや梯子が届かない場所にあるロケット部品の上に建てることが"
+"できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GANTRY.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GANTRY.EFFECT"
@@ -2519,8 +2531,8 @@ msgid ""
 "<b>Extends gantry</b> when a <b><style=\"logic_on\">Green Signal</style></b> "
 "signal is received"
 msgstr ""
-"<b><style=\"logic_on\">グリーン</style></b>を受信すると発射台を<b>展開</b>し"
-"ます"
+"<b><style=\"logic_on\">グリーン</style></b>を受信すると<b>整備用足場を展開</"
+"b>します"
 
 #. STRINGS.BUILDINGS.PREFABS.GANTRY.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.GANTRY.LOGIC_PORT_INACTIVE"
@@ -2528,13 +2540,13 @@ msgid ""
 "<b>Retracts gantry</b> when a <b><style=\"logic_off\">Red Signal</style></b> "
 "signal is received"
 msgstr ""
-"<b><style=\"logic_off\">レッド</style></b>を受信すると発射台を<b>格納</b>しま"
-"す"
+"<b><style=\"logic_off\">レッド</style></b>を受信すると<b>整備用足場を格納</b>"
+"します"
 
 #. STRINGS.BUILDINGS.PREFABS.GANTRY.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GANTRY.NAME"
 msgid "<link=\"GANTRY\">Gantry</link>"
-msgstr "<link=\"GANTRY\">発射台</link>"
+msgstr "<link=\"GANTRY\">整備用足場</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASBOTTLER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASBOTTLER.DESC"
@@ -3323,6 +3335,21 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVE.NAME"
 msgid "<link=\"GRAVE\">Tasteful Memorial</link>"
 msgstr "<link=\"GRAVE\">シックな墓標</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.GRAVITASDOOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVITASDOOR.DESC"
+msgid "An office door to an office that no longer exists."
+msgstr "もう存在しないオフィスの扉です。"
+
+#. STRINGS.BUILDINGS.PREFABS.GRAVITASDOOR.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVITASDOOR.EFFECT"
+msgid ""
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.GRAVITASDOOR.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVITASDOOR.NAME"
+msgid "Gravitas Door"
+msgstr "グラビタスの扉"
+
 #. STRINGS.BUILDINGS.PREFABS.GRAVITASPEDESTAL.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVITASPEDESTAL.DESC"
 msgid ""
@@ -3371,7 +3398,7 @@ msgstr ""
 "\n"
 "最大10人までの複製人間を収容できます。\n"
 "\n"
-"ロケット1基に1つ、制御モジュールが必要です。"
+"1基のロケットにつき、1つの制御モジュールを導入できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.HABITATMODULEMEDIUM.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HABITATMODULEMEDIUM.NAME"
@@ -3396,11 +3423,11 @@ msgid ""
 msgstr ""
 "制御モジュール及びノーズコーンとして機能します。\n"
 "\n"
-"複製人間は一人だけ収容できます。\n"
+"1人の複製人間を収容できます。\n"
 "\n"
-"ロケット1基に1つ、制御モジュールが必要です。\n"
+"1基のロケットにつき、1つの制御モジュールを導入できます。\n"
 "\n"
-"ロケットの先端に建設しなければなりません。"
+"ロケットの先端に取り付けなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.HABITATMODULESMALL.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HABITATMODULESMALL.NAME"
@@ -3515,7 +3542,7 @@ msgstr ""
 "ます。\n"
 "\n"
 "RADボルトエンジンは<link=\"HYDROGENENGINE\">水素エンジン</link>よりも高速です"
-"が、ロケットの高さの制限も厳しくなります。\n"
+"が、ロケット全長制限は厳しくなります。\n"
 "\n"
 "ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
 "ます。"
@@ -3686,7 +3713,7 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENENGINE.DESC"
 msgid ""
 "Hydrogen engines can propel rockets further than steam or petroleum engines."
-msgstr "水素エンジンは蒸気や石油エンジンよりも強力な推進力を持ちます。"
+msgstr "水素エンジンは蒸気エンジンや石油エンジンよりも強力な推進力を持ちます。"
 
 #. STRINGS.BUILDINGS.PREFABS.HYDROGENENGINE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENENGINE.EFFECT"
@@ -3703,8 +3730,8 @@ msgstr ""
 "<link=\"LIQUIDHYDROGEN\">液体水素</link>を燃やし、宇宙探索ロケットの推進力と"
 "します。\n"
 "\n"
-"水素エンジンは<link=\"KEROSENEENGINE\">石油エンジン</link>と同等のロケット高"
-"さ制限を持ちますが、それらと比較してやや高速です。\n"
+"水素エンジンは全長制限が<link=\"KEROSENEENGINE\">石油エンジン</link>と同等で"
+"かなり余裕がありますが、わずかに高速です。\n"
 "\n"
 "ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
 "ます。"
@@ -3735,8 +3762,8 @@ msgstr ""
 "<link=\"LIQUIDHYDROGEN\">液体水素</link>を燃やし、宇宙探索ロケットの推進力と"
 "します。\n"
 "\n"
-"水素エンジンは<link=\"KEROSENEENGINE\">石油エンジン</link>と同等のロケット高"
-"さ制限を持ちますが、それらと比較してやや高速です。\n"
+"水素エンジンは全長制限が<link=\"KEROSENEENGINE\">石油エンジン</link>と同等で"
+"かなり余裕がありますが、わずかに高速です。\n"
 "\n"
 "ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
 "ます。"
@@ -4097,8 +4124,8 @@ msgid ""
 msgstr ""
 "<link=\"PETROLEUM\">石油</link>を燃やし、宇宙探索ロケットの推進力とします。\n"
 "\n"
-"石油エンジンのロケット高さ制限は十分余裕があり、多くのモジュールを積み込むの"
-"に理想的です。\n"
+"石油エンジンのロケット全長制限は十分余裕があり、多くのモジュールを積み込むの"
+"に最適です。\n"
 "\n"
 "ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
 "ます。"
@@ -4127,8 +4154,8 @@ msgid ""
 msgstr ""
 "<link=\"PETROLEUM\">石油</link>を燃やし、宇宙探索ロケットの推進力とします。\n"
 "\n"
-"石油エンジンのロケット高さ制限は十分余裕があり、多くのモジュールを積み込むの"
-"に理想的です。\n"
+"石油エンジンのロケット全長制限は十分余裕があり、多くのモジュールを積み込むの"
+"に最適です。\n"
 "\n"
 "ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
 "ます。"
@@ -4160,7 +4187,7 @@ msgstr ""
 "<link=\"PETROLEUM\">石油</link>を燃やし、宇宙探索ロケットの推進力とします。\n"
 "\n"
 "小型石油エンジンは<link=\"KEROSENEENGINE\">石油エンジン</link>と同等の速度を"
-"持ちますが、ロケット高さ制限はそれよりも小さくなります。\n"
+"持ちますが、ロケット全長制限はそれよりも小さくなります。\n"
 "\n"
 "ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
 "ます。"
@@ -4239,7 +4266,7 @@ msgid ""
 "\n"
 "Pod will disintegrate on arrival."
 msgstr ""
-"軌道上から着陸するための複製人間が乗っています。\n"
+"軌道上から降下する複製人間が乗っています。\n"
 "\n"
 "ポッドは着陸時に大破します。"
 
@@ -4261,7 +4288,7 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.EFFECT"
 msgid ""
 "Guides <link=\"RAILGUNPAYLOAD\">Interplanetary Payloads</link> and <link="
-"\"ORBITALCARGOMODULE\">Orbital Cargo Modules</link>to land nearby.\n"
+"\"ORBITALCARGOMODULE\">Orbital Cargo Modules</link> to land nearby.\n"
 "\n"
 "<link=\"RAILGUNPAYLOAD\">Interplanetary Payloads</link> must be launched "
 "from a <link=\"RAILGUN\">Interplanetary Launcher</link>."
@@ -4294,7 +4321,7 @@ msgid ""
 "link><link=\"MODULARLAUNCHPADPORTSOLID\">s</link> built to either side of "
 "the platform."
 msgstr ""
-"ロケットの建造を可能にします。\n"
+"ロケットの建設を可能にします。\n"
 "\n"
 "ロケットを(発射元の)小惑星へ発着陸させます。\n"
 "\n"
@@ -4324,7 +4351,7 @@ msgstr "ロケットチェックリスト"
 #. STRINGS.BUILDINGS.PREFABS.LAUNCHPAD.LOGIC_PORT_READY_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LAUNCHPAD.LOGIC_PORT_READY_ACTIVE"
 msgid "Sends a Green Signal when its rocket is ready for flight"
-msgstr "ロケットが発射準備完了するとグリーンになります"
+msgstr "ロケット航行準備が完了するとグリーンになります"
 
 #. STRINGS.BUILDINGS.PREFABS.LAUNCHPAD.LOGIC_PORT_READY_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LAUNCHPAD.LOGIC_PORT_READY_INACTIVE"
@@ -7521,7 +7548,7 @@ msgstr "<link=\"MOUDLINGTILE\">トリム タイル</link>"
 #. STRINGS.BUILDINGS.PREFABS.NOSECONEBASIC.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.NOSECONEBASIC.DESC"
 msgid "Every rocket requires a nosecone to fly."
-msgstr "ロケットが飛翔するにはノーズコーンが必要です。"
+msgstr "ロケットの航行にはノーズコーンが必要です。"
 
 #. STRINGS.BUILDINGS.PREFABS.NOSECONEBASIC.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.NOSECONEBASIC.EFFECT"
@@ -7532,7 +7559,7 @@ msgid ""
 msgstr ""
 "離陸および着陸時にロケットを保護し、宇宙旅行を可能にします。\n"
 "\n"
-"ロケットの先端に建設する必要があります。"
+"ロケットの先端に取り付けなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.NOSECONEBASIC.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.NOSECONEBASIC.NAME"
@@ -7553,11 +7580,11 @@ msgid ""
 "\n"
 "Must be built at the top of a rocket."
 msgstr ""
-"ロケットが宇宙デブリを採掘できるようになり、宇宙から<link=\"ELEMENTSGAS\">気"
-"体</link>、<link=\"ELEMENTSLIQUID\">液体</link>、<link=\"ELEMENTSSOLID\">固体"
-"</link>といった資源を収集します。\n"
+"ロケットが宇宙ゴミを採掘できるようになり、宇宙から<link=\"ELEMENTSGAS\">気体"
+"</link>、<link=\"ELEMENTSLIQUID\">液体</link>、<link=\"ELEMENTSSOLID\">固体</"
+"link>といった資源を収集します。\n"
 "\n"
-"ロケットの先端に建設しなければなりません。"
+"ロケットの先端に取り付けなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.NOSECONEHARVEST.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.NOSECONEHARVEST.NAME"
@@ -7729,8 +7756,8 @@ msgid ""
 "Delivers cargo to the surface of Planetoids that do not yet have a <link="
 "\"LAUNCHPLATFORM\">Rocket Platform</link>."
 msgstr ""
-"<link=\"LAUNCHPLATFORM\">ロケット発射台</link>が無い小惑星の地表に貨物を配達"
-"します。"
+"<link=\"LAUNCHPLATFORM\">ロケット発射台</link>が整備されていない小惑星の地表"
+"に貨物を配達します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ORBITALCARGOMODULE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORBITALCARGOMODULE.NAME"
@@ -7819,7 +7846,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANK.DESC"
 msgid ""
 "Solid oxidizers allows rocket fuel to be efficiently burned in the vacuum of "
 "space."
-msgstr "酸化剤は宇宙空間で効率よく燃焼できるロケット燃料です。"
+msgstr "固形酸化剤は真空の宇宙空間で効率よく燃料を燃焼させることができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANK.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANK.EFFECT"
@@ -7827,7 +7854,8 @@ msgid ""
 "Stores <link=\"OXYROCK\">Oxylite</link> and other oxidizers for burning "
 "rocket fuels."
 msgstr ""
-"ロケット燃料として、<link=\"OXYROCK\">オキシライト</link>を格納します。"
+"ロケット燃料を燃焼させる酸化剤として、<link=\"OXYROCK\">オキシライト</link>を"
+"格納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANK.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANK.NAME"
@@ -7844,7 +7872,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKCLUSTER.DESC"
 msgid ""
 "Solid oxidizers allows rocket fuel to be efficiently burned in the vacuum of "
 "space."
-msgstr "固形酸化剤は宇宙空間で効率よく燃焼できるロケット燃料です。"
+msgstr "固形酸化剤は真空の宇宙空間で効率よく燃料を燃焼させることができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKCLUSTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKCLUSTER.EFFECT"
@@ -7852,7 +7880,8 @@ msgid ""
 "Stores <link=\"OXYROCK\">Oxylite</link> and other oxidizers for burning "
 "rocket fuels."
 msgstr ""
-"ロケット燃料として、<link=\"OXYROCK\">オキシライト</link>を格納します。"
+"ロケット燃料を燃焼させる酸化剤として、<link=\"OXYROCK\">オキシライト</link>を"
+"格納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKCLUSTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKCLUSTER.NAME"
@@ -7867,14 +7896,15 @@ msgstr "格納済み酸化剤"
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUID.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUID.DESC"
 msgid "Liquid oxygen improves the thrust-to-mass ratio of rocket fuels."
-msgstr "液体酸素はロケット燃料の水力質量比を改善します。"
+msgstr "液体酸素はロケット燃料の推力重量比を向上させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUID.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUID.EFFECT"
 msgid ""
 "Stores <link=\"LIQUIDOXYGEN\">Liquid Oxygen</link> for burning rocket fuels."
 msgstr ""
-"ロケット燃料として、<link=\"LIQUIDOXYGEN\">液体酸素</link>を格納します。"
+"ロケット燃料を燃焼させる酸化剤として、<link=\"LIQUIDOXYGEN\">液体酸素</link>"
+"を格納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUID.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUID.NAME"
@@ -7884,14 +7914,15 @@ msgstr "<link=\"LIQUIDOXIDIZERTANK\">液体酸素タンク</link>"
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.DESC"
 msgid "Liquid oxygen improves the thrust-to-mass ratio of rocket fuels."
-msgstr "液体酸素はロケット燃料の推力質量比を改善します。"
+msgstr "液体酸素はロケット燃料の推力重量比を向上させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.EFFECT"
 msgid ""
 "Stores <link=\"LIQUIDOXYGEN\">Liquid Oxygen</link> for burning rocket fuels."
 msgstr ""
-"ロケット燃料として、<link=\"LIQUIDOXYGEN\">液体酸素</link>を格納します。"
+"ロケット燃料を燃焼させる酸化剤として、<link=\"LIQUIDOXYGEN\">液体酸素</link>"
+"を格納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUIDCLUSTER.NAME"
@@ -8102,13 +8133,13 @@ msgid ""
 "Lands a Duplicant on a Planetoid from an orbiting <link=\"PIONEERMODULE"
 "\">Trailblazer Module</link>."
 msgstr ""
-"軌道上の<link=\"PIONEERMODULE\">開拓者モジュール</link>から小惑星に複製人間を"
-"着陸させます。"
+"小惑星の軌道上にある<link=\"SCOUTMODULE\">先遣隊モジュール</link>から、複製人"
+"間を小惑星へ着陸させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.PIONEERLANDER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.PIONEERLANDER.NAME"
 msgid "<link=\"PIONEERLANDER\">Trailblazer Lander</link>"
-msgstr "<link=\"PIONEERLANDER\">開拓者ランダー</link>"
+msgstr "<link=\"PIONEERLANDER\">先遣隊着陸船</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.PIONEERMODULE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PIONEERMODULE.DESC"
@@ -8125,17 +8156,17 @@ msgid ""
 "\n"
 "Deployment is available while in a Starmap hex adjacent to a Planetoid."
 msgstr ""
-"<link=\"LAUNCHPLATFORM\">ロケット発射台</link>のない小惑星への移動を可能にし"
-"ます。\n"
+"<link=\"LAUNCHPLATFORM\">ロケット発射台</link>が整備されていない小惑星へ複製"
+"人間を降下させることができます。\n"
 "\n"
 "収容できる複製人間は一人だけです。\n"
 "\n"
-"小惑星に隣接した星図ヘクスに設置できます。"
+"降下は、星図上で小惑星に隣接しているヘクスから実行できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.PIONEERMODULE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.PIONEERMODULE.NAME"
 msgid "<link=\"PIONEERMODULE\">Trailblazer Module</link>"
-msgstr "<link=\"PIONEERMODULE\">開拓者モジュール</link>"
+msgstr "<link=\"PIONEERMODULE\">先遣隊モジュール</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.PIXELPACK.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PIXELPACK.DESC"
@@ -8733,15 +8764,196 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.PROPFACILITYWALLDEGREE.NAME"
 msgid "Doctorate Degree"
 msgstr "博士号"
 
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASCEILINGROBOT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASCEILINGROBOT.DESC"
+msgid "Non-functioning robotic arms that once assisted lab technicians."
+msgstr ""
+"かつてラボ技術者達を補助したであろう、機能しなくなったロボットアームです。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASCEILINGROBOT.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASCEILINGROBOT.NAME"
+msgid "Ceiling Robot"
+msgstr "天井ロボット"
+
 #. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASDECORATIVEWINDOW.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASDECORATIVEWINDOW.DESC"
-msgid "A tall, thin window."
-msgstr "背の高い薄窓です。"
+msgid "A tall, thin window which once pointed to a courtyard."
+msgstr "かつて中庭に面していた、背の高い薄手の窓です。"
 
 #. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASDECORATIVEWINDOW.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASDECORATIVEWINDOW.NAME"
 msgid "Window"
 msgstr "窓"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASDISPLAY4.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASDISPLAY4.DESC"
+msgid ""
+"An electronic display projecting the blueprint of a robotic device.\n"
+"\n"
+"It looks like a ceiling robot."
+msgstr ""
+"ディスプレイは見慣れた装置の設計図を映し出している。\n"
+"\n"
+"それは天井ロボットのようだ。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASDISPLAY4.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASDISPLAY4.NAME"
+msgid "Electronic Display"
+msgstr "ディスプレイ"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASFLOORROBOT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASFLOORROBOT.DESC"
+msgid "The grasping robotic claw designed to assist technicians in a lab."
+msgstr "ラボの技術者達を補助するよう設計された、ロボットの爪です。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASFLOORROBOT.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASFLOORROBOT.NAME"
+msgid "Robotic Arm"
+msgstr "ロボットアーム"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASHANDSCANNER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASHANDSCANNER.DESC"
+msgid ""
+"A sophisticated security device.\n"
+"\n"
+"It appears to use a method other than fingerprints to verify an individual's "
+"identity."
+msgstr ""
+"洗練されたセキュリティ機器です。\n"
+"\n"
+"指紋以外の方法で個人を認識しているようです。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASHANDSCANNER.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASHANDSCANNER.NAME"
+msgid "Hand Scanner"
+msgstr "ハンドスキャナー"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASJAR1.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASJAR1.DESC"
+msgid ""
+"An abnormally large brain floating in embalming liquid to prevent "
+"decomposition."
+msgstr "分解を防ぐため、防腐処理液に浮かんでいる以上に大きな脳髄です。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASJAR1.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASJAR1.NAME"
+msgid "Big Brain Jar"
+msgstr "巨大脳髄標本瓶"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASJAR2.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASJAR2.DESC"
+msgid "The corpse of a proto-hatch creature meticulously preserved in a jar."
+msgstr "細心の注意を払って保存された、原始ハッチの死体です。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASJAR2.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASJAR2.NAME"
+msgid "Sample Jar"
+msgstr "標本瓶"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABTABLE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABTABLE.DESC"
+msgid ""
+"The quaint research desk of a departed lab technician.\n"
+"\n"
+"Perhaps the computer stores something of interest."
+msgstr ""
+"既に旅立ってしまったラボ技術者の、趣のある研究机です。\n"
+"\n"
+"コンピュータ内に何か面白いものがあるかもしれません。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABTABLE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABTABLE.NAME"
+msgid "Lab Desk"
+msgstr "ラボの机"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWALL.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWALL.DESC"
+msgid "A regular wall that once existed in a working lab."
+msgstr "かつて存在したラボの、普通サイズの壁です。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWALL.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWALL.EFFECT"
+msgid ""
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWALL.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWALL.NAME"
+msgid "Lab Wall"
+msgstr "ラボの壁"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOW.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOW.DESC"
+msgid "A lab window. Formerly a portal to the outside world."
+msgstr "ラボの窓です。以前は外世界へのポータルでした。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOW.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOW.EFFECT"
+msgid ""
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOW.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOW.NAME"
+msgid "Lab Window"
+msgstr "ラボの窓"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOWHORIZONTAL.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOWHORIZONTAL.DESC"
+msgid ""
+"A lab window.\n"
+"\n"
+"Someone once stared out this contemplating the results of an experiment."
+msgstr ""
+"ラボの窓です。\n"
+"\n"
+"実験の結果を考えながらこの窓を見つめた人も居たことでしょう。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOWHORIZONTAL.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOWHORIZONTAL.EFFECT"
+msgid ""
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOWHORIZONTAL.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASLABWINDOWHORIZONTAL.NAME"
+msgid "Lab Window"
+msgstr "ラボの窓"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASROBTICTABLE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASROBTICTABLE.DESC"
+msgid ""
+"The work space of an extinct robotics technician who left behind some "
+"unfinished prototypes."
+msgstr ""
+"未完成のプロトタイプが転がった、絶滅したロボット技術者の作業スペースです。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASROBTICTABLE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASROBTICTABLE.NAME"
+msgid "Robotics Research Desk"
+msgstr "ロボティクス研究机"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASSHELF.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASSHELF.DESC"
+msgid "A shelf holding jars just out of reach for a short person."
+msgstr "背の低い人が届かない位置にある、標本瓶を保管しておく棚です。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASSHELF.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASSHELF.NAME"
+msgid "Shelf"
+msgstr "棚"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASWALL.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASWALL.DESC"
+msgid "The granite wall of a once great scientific facility."
+msgstr "かつては素晴らしい科学設備だったであろう、花崗岩の壁です。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASWALL.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASWALL.EFFECT"
+msgid ""
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PROPGRAVITASWALL.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASWALL.NAME"
+msgid "Wall"
+msgstr "壁"
 
 #. STRINGS.BUILDINGS.PREFABS.PROPLADDER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PROPLADDER.DESC"
@@ -9259,17 +9471,17 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>を"
-"ロケットに吸引させます。\n"
+"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>資"
+"源をロケットに格納します。\n"
 "\n"
-"空きがある最初のロケットモジュールに気体を送ります。\n"
+"気体は、空きがある最初のロケットモジュールに格納されます。\n"
 "\n"
-"ロケットモジュール内に建設する必要があります。"
+"ロケット内部に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.NAME"
 msgid "<link=\"ROCKETINTERIORGASINPUT\">Gas Intake Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORGASINPUT\">気体入力継ぎ手</link>"
+msgstr "<link=\"ROCKETINTERIORGASINPUT\">気体入力端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.DESC"
@@ -9286,17 +9498,17 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>を"
-"ロケットに吸引させます。\n"
+"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>資"
+"源をロケットから取り出します。\n"
 "\n"
-"指定した素材を持つ最初のロケットモジュールから気体を吸い出します。\n"
+"気体は、指定した資源を格納した最初のロケットモジュールから取り出されます。\n"
 "\n"
-"ロケットモジュール内に建設する必要があります。"
+"ロケット内部に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.NAME"
 msgid "<link=\"ROCKETINTERIORGASOUTPUT\">Gas Output Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORGASOUTPUT\">気体出力継ぎ手</link>"
+msgstr "<link=\"ROCKETINTERIORGASOUTPUT\">気体出力端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.DESC"
@@ -9314,16 +9526,16 @@ msgid ""
 "Must be built within the interior of a Rocket Module."
 msgstr ""
 "<link=\"LIQUIDCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSLIQUID\">液体</"
-"link>をロケットに吸引させます。\n"
+"link>資源をロケットに格納します。\n"
 "\n"
-"空きがある最初のロケットモジュールに液体を送ります。\n"
+"液体は、空きがある最初のロケットモジュールに格納されます。\n"
 "\n"
-"ロケットモジュール内に建設する必要があります。"
+"ロケット内部に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.NAME"
 msgid "<link=\"ROCKETINTERIORLIQUIDINPUT\">Liquid Intake Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORLIQUIDINPUT\">液体入力継ぎ手</link>"
+msgstr "<link=\"ROCKETINTERIORLIQUIDINPUT\">液体入力端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.DESC"
@@ -9340,24 +9552,26 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>を"
-"ロケットに吸引させます。\n"
+"<link=\"LIQUIDCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSLIQUID\">液体</"
+"link>資源をロケットから取り出します。\n"
 "\n"
-"指定した素材を持つ最初のロケットモジュールから液体を吸い出します。\n"
+"液体は、指定した資源を格納した最初のロケットモジュールから取り出されます。\n"
 "\n"
-"ロケットモジュール内に建設する必要があります。"
+"ロケット内部に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.NAME"
 msgid "<link=\"ROCKETINTERIORLIQUIDOUTPUT\">Liquid Output Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORLIQUIDOUTPUT\">液体出力継ぎ手</link>"
+msgstr "<link=\"ROCKETINTERIORLIQUIDOUTPUT\">液体出力端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.DESC"
 msgid ""
 "Outlets conveniently power buildings inside a cockpit using their rocket's "
 "power stores."
-msgstr "コンセントはロケットの電源からコックピット内の設備に電力を供給します。"
+msgstr ""
+"コンセントは、ロケットの充電からコックピットにある設備へ電気を送るのに便利な"
+"のだ。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.EFFECT"
@@ -9372,14 +9586,14 @@ msgstr ""
 "接続された設備に<link=\"POWER\">電力</link>を供給します。\n"
 "\n"
 "電力は<link=\"BATTERYMODULE\">バッテリーモジュール</link>およびロケットエンジ"
-"ンから引き出されます。\n"
+"ンから供給されます。\n"
 "\n"
-"ロケットモジュール内に建設する必要があります。"
+"ロケット内部に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORPOWERPLUG.NAME"
 msgid "<link=\"ROCKETINTERIORPOWERPLUG\">Power Outlet Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORPOWERPLUG\">電源コンセント継ぎ手</link>"
+msgstr "<link=\"ROCKETINTERIORPOWERPLUG\">電源コンセント端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.DESC"
@@ -9399,19 +9613,19 @@ msgstr ""
 "<link=\"SOLIDCONDUIT\">コンベアレール</link>を通じて<link=\"ELEMENTSSOLID\">"
 "固形素材</link>をロケットに格納します。\n"
 "\n"
-"空きがある最初のロケットモジュールに固形素材を送ります。\n"
+"固形素材は、空きがある最初のロケットモジュールに格納されます。\n"
 "\n"
-"ロケットモジュール内に建設する必要があります。"
+"ロケット内部に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDINPUT.NAME"
 msgid "<link=\"ROCKETINTERIORSOLIDINPUT\">Conveyor Receptacle Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORSOLIDINPUT\">コンベアレセプタ継ぎ手</link>"
+msgstr "<link=\"ROCKETINTERIORSOLIDINPUT\">コンベアレセプタ端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.DESC"
 msgid "For accessing your stored luggage mid-flight."
-msgstr "飛翔中、積み荷へとアクセスします。"
+msgstr "航行中に、積み荷を手にしたくなったときのためのものです。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.EFFECT"
@@ -9427,19 +9641,20 @@ msgstr ""
 "<link=\"SOLIDCONDUIT\">コンベアレール</link>を通じて<link=\"ELEMENTSSOLID\">"
 "固形素材</link>をロケットから取り出します。\n"
 "\n"
-"指定した素材を持つ最初のロケットモジュールから固形素材を取り出します。\n"
+"固形素材は、指定した資源を格納した最初のロケットモジュールから取り出されま"
+"す。\n"
 "\n"
-"ロケットモジュール内に建設する必要があります。"
+"ロケット内部に建設する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORSOLIDOUTPUT.NAME"
 msgid "<link=\"ROCKETINTERIORSOLIDOUTPUT\">Conveyor Loader Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORSOLIDOUTPUT\">コンベアローダー継ぎ手</link>"
+msgstr "<link=\"ROCKETINTERIORSOLIDOUTPUT\">コンベアローダー端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETPOD.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETPOD.DESC"
 msgid "The Duplicant inside is equal parts nervous and excited."
-msgstr "中の複製人間は緊張と興奮が同居しています。"
+msgstr "複製人間の胸中では緊張と興奮が入り混じっています。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETPOD.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETPOD.EFFECT"
@@ -9449,15 +9664,15 @@ msgid ""
 "\n"
 "Pod will disintegrate on arrival."
 msgstr ""
-"軌道上の<link=\"PIONEERMODULE\">開拓者モジュール</link>から射出された複製人間"
-"を収容しています。\n"
+"小惑星の軌道上にある<link=\"PIONEERMODULE\">先遣隊モジュール</link>から降下す"
+"る複製人間を収容します。\n"
 "\n"
-"ポットは着陸時に大破します。"
+"ポッドは着陸時に大破します。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETPOD.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETPOD.NAME"
 msgid "<link=\"ROCKETPOD\">Trailblazer Deploy Pod</link>"
-msgstr "<link=\"ROCKETPOD\">開拓者着陸ポッド</link>"
+msgstr "<link=\"ROCKETPOD\">先遣隊着陸ポッド</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETWALLTILE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETWALLTILE.DESC"
@@ -9559,20 +9774,20 @@ msgid ""
 "Lands <link=\"SCOUT\">Rover</link> on a Planetoid when <link=\"SCOUTMODULE"
 "\">Rover's Module</link> is in orbit."
 msgstr ""
-"<link=\"SCOUTMODULE\">ローバーモジュール</link>が軌道上にある時、小惑星に"
-"<link=\"SCOUT\">ローバー</link>を着陸させます。"
+"小惑星の軌道上にある<link=\"SCOUTMODULE\">探査ロボモジュール</link>から、"
+"<link=\"SCOUT\">探査ロボ</link>を小惑星へ着陸させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SCOUTLANDER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCOUTLANDER.NAME"
 msgid "<link=\"SCOUTLANDER\">Rover's Lander</link>"
-msgstr "<link=\"SCOUTLANDER\">ローバーランダー</link>"
+msgstr "<link=\"SCOUTLANDER\">探査ロボ着陸船</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SCOUTMODULE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCOUTMODULE.DESC"
 msgid ""
 "Rover can conduct explorations of planetoids that don't have rocket "
 "platforms built."
-msgstr "ローバーはロケット発射台が無い小惑星を探査できます。"
+msgstr "探査ロボはロケット発射台が整備されていない小惑星を探査できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SCOUTMODULE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCOUTMODULE.EFFECT"
@@ -9582,15 +9797,15 @@ msgid ""
 "\n"
 "Deployment is available while in a Starmap hex adjacent to a Planetoid."
 msgstr ""
-"小惑星を遠距離から探索させるための<link=\"SCOUT\">ローバーボット</link>を1基"
-"着陸させます。\n"
+"1基の<link=\"SCOUT\">探査ロボボット</link>を小惑星へ降下させ、遠隔操作で小惑"
+"星を探索します。\n"
 "\n"
-"小惑星に隣接した星図ヘクスに設置できます。"
+"降下は、星図上で小惑星に隣接しているヘクスから実行できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SCOUTMODULE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCOUTMODULE.NAME"
 msgid "<link=\"SCOUTMODULE\">Rover's Module</link>"
-msgstr "<link=\"SCOUTMODULE\">ローバーモジュール</link>"
+msgstr "<link=\"SCOUTMODULE\">探査ロボモジュール</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SCOUTROCKETPOD.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCOUTROCKETPOD.DESC"
@@ -9605,15 +9820,15 @@ msgid ""
 "\n"
 "Pod will disintegrate on arrival."
 msgstr ""
-"軌道上の<link=\"SCOUTMODULE\">ローバーモジュール</link>から射出された<link="
-"\"SCOUT\">ローバー</link>を収容しています。\n"
+"小惑星の軌道上にある<link=\"PIONEERMODULE\">探査ロボモジュール</link>から降下"
+"する<link=\"SCOUT\">探査ロボ</link>を収容します。\n"
 "\n"
 "ポッドは着陸時に大破します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SCOUTROCKETPOD.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCOUTROCKETPOD.NAME"
 msgid "<link=\"SCOUTROCKETPOD\">Rover's Doghouse</link>"
-msgstr "<link=\"SCOUTROCKETPOD\">ローバー小屋</link>"
+msgstr "<link=\"SCOUTROCKETPOD\">探査ロボ小屋</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SCULPTURE.AVERAGEQUALITYNAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCULPTURE.AVERAGEQUALITYNAME"
@@ -9744,7 +9959,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SMALLOXIDIZERTANK.DESC"
 msgid ""
 "Solid oxidizers allows rocket fuel to be efficiently burned in the vacuum of "
 "space."
-msgstr "酸化剤は宇宙空間で効率よく燃焼できるロケット燃料です。"
+msgstr "固形酸化剤は真空の宇宙空間で効率よく燃料を燃焼させることができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SMALLOXIDIZERTANK.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SMALLOXIDIZERTANK.EFFECT"
@@ -9752,8 +9967,8 @@ msgid ""
 "Stores <link=\"FERTILIZER\">Fertilizer</link> and <link=\"OXYROCK\">Oxylite</"
 "link> for burning rocket fuels."
 msgstr ""
-"ロケット燃料として、<link=\"FERTILIZER\">肥料</link>と<link=\"OXYROCK\">オキ"
-"シライト</link>を格納します。"
+"ロケット燃料を燃焼させる酸化剤として、<link=\"FERTILIZER\">肥料</link>と"
+"<link=\"OXYROCK\">オキシライト</link>を格納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SMALLOXIDIZERTANK.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SMALLOXIDIZERTANK.NAME"
@@ -9914,7 +10129,7 @@ msgstr "<link=\"SOLARPANEL\">ソーラーパネル</link>"
 #. STRINGS.BUILDINGS.PREFABS.SOLARPANELMODULE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANELMODULE.DESC"
 msgid "Collect solar energy before takeoff and during flight."
-msgstr "発射前および飛翔中に太陽光エネルギーを収集します。"
+msgstr "発射前および航行中に太陽光エネルギーを収集します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLARPANELMODULE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLARPANELMODULE.EFFECT"
@@ -9969,7 +10184,7 @@ msgid ""
 "\n"
 "Stored resources become available to the colony upon the rocket's return."
 msgstr ""
-"複製人間は宇宙ミッション中に見つけた<link=\"ELEMENTSSOLID\">固体</link>資源を"
+"複製人間は宇宙ミッション中に見つけた<link=\"ELEMENTSSOLID\">固形素材</link>を"
 "格納します。\n"
 "\n"
 "格納された資源はロケット帰還時に利用可能となります。"
@@ -10216,7 +10431,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.DESC"
 msgid ""
 "All solids are sent into the building's output conveyor, except the solid "
 "chosen for filtering."
-msgstr "指定した固体を除く全ての個体がコンベア出力先に送出されます。"
+msgstr "指定した資源を除く全ての固形素材がコンベア出力先に送出されます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.EFFECT"
@@ -10225,8 +10440,8 @@ msgid ""
 "conveyor, sending it into a dedicated <link=\"SOLIDCONDUIT\">Conveyor Rail</"
 "link>."
 msgstr ""
-"コンベアから、指定した<link=\"ELEMENTSSOLID\">固体</link>を選出し、別の口に繋"
-"がった <link=\"SOLIDCONDUIT\">コンベアレール</link>へ移送します。"
+"コンベアから、指定した<link=\"ELEMENTSSOLID\">固形素材</link>を分別し、別の口"
+"に繋がった <link=\"SOLIDCONDUIT\">コンベアレール</link>へ移送します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.ELEMENT_NOT_SPECIFIED
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.ELEMENT_NOT_SPECIFIED"
@@ -10592,7 +10807,7 @@ msgstr "床に放置された資源は「がれき」扱いとなり、美観を
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.EFFECT"
 msgid ""
 "Stores the <link=\"ELEMENTSSOLID\">Solid Materials</link> of your choosing."
-msgstr "指定した<link=\"ELEMENTSSOLID\">固体</link>を格納します。"
+msgstr "指定した<link=\"ELEMENTSSOLID\">固形素材</link>を格納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.NAME"
@@ -10612,7 +10827,7 @@ msgid ""
 "\n"
 "Sends a <b><style=\"logic_on\">Green Signal</style></b> when bin is full."
 msgstr ""
-"指定した<link=\"ELEMENTSSOLID\">固体素材</link>資源を格納します。\n"
+"指定した<link=\"ELEMENTSSOLID\">固形素材</link>を格納します。\n"
 "\n"
 "満タンになると<b><style=\"logic_on\">グリーン</style></b>になります。"
 
@@ -10683,7 +10898,7 @@ msgstr ""
 "<link=\"SUCROSE\">スクロース</link>を燃やし、宇宙探索ロケットの短距離推進力と"
 "します。\n"
 "\n"
-"砂糖エンジンは<link=\"CO2ENGINE\">二酸化炭素エンジン</link>よりもロケット高さ"
+"砂糖エンジンは<link=\"CO2ENGINE\">二酸化炭素エンジン</link>よりもロケット全長"
 "制限は緩いですが、その分速度は遅めです。\n"
 "\n"
 "ロケットのエンジンは他のどのロケットモジュールよりも最初に建設する必要があり"
@@ -10888,7 +11103,7 @@ msgid ""
 "Yellowcake is a <link=\"ELEMENTSSOLID\">Solid Material</link> used in "
 "uranium enrichment."
 msgstr ""
-"イエローケーキはウラン濃縮に使われる<link=\"ELEMENTSSOLID\">固体素材</link>で"
+"イエローケーキはウラン濃縮に使われる<link=\"ELEMENTSSOLID\">固形素材</link>で"
 "す。"
 
 #. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.DESC
@@ -11200,7 +11415,7 @@ msgid ""
 msgstr ""
 "宇宙飛行士でない複製人間が一人搭乗できるスペースを確保します。\n"
 "\n"
-"ロケット観光は<link=\"STRESS\">ストレス</link>を減少させます。"
+"観光ロケット航行中は<link=\"STRESS\">ストレス</link>を減少させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.TOURISTMODULE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.TOURISTMODULE.NAME"
@@ -11797,3 +12012,11 @@ msgstr "自動修理有効化"
 msgctxt "STRINGS.BUILDINGS.REPAIRABLE.ENABLE_AUTOREPAIR.TOOLTIP"
 msgid "Automatically repair this building when damaged"
 msgstr "設備に損傷があると自動的に修理します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.EFFECT"
+#~ msgid "Crushes carbon into diamonds"
+#~ msgstr "石炭を砕いてダイアモンドにします"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.PROPGRAVITASDECORATIVEWINDOW.DESC"
+#~ msgid "A tall, thin window."
+#~ msgstr "背の高い薄窓です。"
