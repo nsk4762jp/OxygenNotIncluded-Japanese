@@ -1197,12 +1197,19 @@ msgstr "製作するレシピをセットしてください"
 
 #. STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.NAME"
-msgid "Waiting For Radbolts"
-msgstr "RADボルト待ち"
+msgid "Waiting For Radbolts ({CurrentHEP}/{HEPRequired})"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.TOOLTIP"
+#| msgid "A queued recipe requires more Radbolts than are currently stored"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.TOOLTIP"
-msgid "A queued recipe requires more Radbolts than are currently stored"
+msgid ""
+"A queued recipe requires more Radbolts than are currently stored.\n"
+"\n"
+"Currently stored: {CurrentHEP}\n"
+"Required for recipe: {HEPRequired}"
 msgstr "キューにあるレシピは現在貯蔵されている以上のRADボルトを必要とします"
 
 #. STRINGS.BUILDING.STATUSITEMS.FLIGHTALLCARGOFULL.NAME
@@ -1278,6 +1285,33 @@ msgid ""
 msgstr ""
 "回復中の複製人間の周囲 <b>{0}</b> セル以内に<style=\"KKeyword\">食糧</style>"
 "が必要です"
+
+#. STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.COOLINGDOWN.NAME"
+#| msgid "Cooling Down"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME"
+msgid "Cooling Contents"
+msgstr "体を冷やしている"
+
+#. STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.TOOLTIP"
+msgid "The contents of this food storage are still being cooled down."
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.NAME"
+msgid "Energy Saver: {UsedPower}"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.TOOLTIP"
+msgid ""
+"Energy saver activated, using {UsedPower} of {MaxPower}\n"
+"\n"
+"The contents of this food storage are at refrigeration temperatures and need "
+"no further cooling."
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.GANTRY.AUTOMATION_CONTROL
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.AUTOMATION_CONTROL"
@@ -3881,6 +3915,22 @@ msgid ""
 msgstr ""
 "心地よいこんがり肌を作るのに十分な<link=\"LIGHT\">光</link>量があります"
 
+#. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.MYLOG.BODY.PRINTINGPOD.TITLE"
+#| msgid "The Printing Pod"
+msgctxt ""
+"STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES.NAME"
+msgid "Too few Printing Pods {progress}"
+msgstr "製造ポッド"
+
+#. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES.TOOLTIP
+msgctxt ""
+"STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES."
+"TOOLTIP"
+msgid "This device relies on a network of activated Printing Pods {progress}"
+msgstr ""
+
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_LOS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_LOS.NAME"
 msgid "Line of Sight: Obstructed"
@@ -3892,28 +3942,45 @@ msgid "This device needs a clear view of space to operate"
 msgstr "この装置は視界が開けていないと操作できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.WORMHOLE.NAME"
+#| msgid "Temporal Tear"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.NAME"
-msgid "Target: None"
-msgstr "ターゲット: なし"
+msgid "Temporal Tear not revealed"
+msgstr "時間の裂け目"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.TOOLTIP"
-msgid "\"Awaiting transmission of coordinates...\""
-msgstr "「座標送信受付中...」"
+msgid ""
+"This machine is meant to target something in space, but the target is not "
+"yet revealed."
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.NAME"
+#| msgid "Progress: {progress}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.NAME"
-msgid "Progress: {progress}"
+msgid "Charging Progress: {progress}"
 msgstr "進捗率: {progress}"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP"
+#| msgid "Operation will commence once this device is fully charged"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP"
-msgid "Operation will commence once this device is fully charged"
+msgid ""
+"This device must be charged with a high number of Radbolts. Operation can "
+"commence once this device is fully charged"
 msgstr "このメーターが満タンになると操作を開始します"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION"
+#| msgid "Temporal Ripper fully charged"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION"
-msgid "Temporal Ripper fully charged"
+msgid "Temporal Tear Opener fully charged"
 msgstr "次元断裂機チャージ完了"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION_TOOLTIP
@@ -4570,6 +4637,14 @@ msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.CONDUIT_CONTENTS_FROZE"
 msgid "pipe contents becoming too cold"
 msgstr "パイプ内容物の過冷却"
 
+#. STRINGS.BUILDINGS.DAMAGESOURCES.CORROSIVE_ELEMENT
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.BLISSBURST.SUBTITLE"
+#| msgid "Decorative Plant"
+msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.CORROSIVE_ELEMENT"
+msgid "corrosive element"
+msgstr "観葉植物"
+
 #. STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE"
 msgid "neighboring liquid pressure"
@@ -4896,6 +4971,25 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.NAME"
 msgid "<link=\"ARTIFACTANALYSISSTATION\">Artifact Analysis Station</link>"
+msgstr "<link=\"ARTIFACTANALYSISSTATION\">遺物分析端末</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.PAYLOAD_DROP_RATE
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.GENE_SHUFFLER_RECHARGE.NAME"
+#| msgid "Vacillator Recharge"
+msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.PAYLOAD_DROP_RATE"
+msgid "Vacillator Recharge drop chance: {chance}"
+msgstr "神経シャッフルマシン充電器"
+
+#. STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.PAYLOAD_DROP_RATE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.NAME"
+#| msgid "<link=\"ARTIFACTANALYSISSTATION\">Artifact Analysis Station</link>"
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.PAYLOAD_DROP_RATE_TOOLTIP"
+msgid ""
+"This artifact has a {chance} to drop a Vacillator Recharge when analyzed at "
+"the <link=\"ARTIFACTANALYSISSTATION\">Artifact Analysis Station</link>"
 msgstr "<link=\"ARTIFACTANALYSISSTATION\">遺物分析端末</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ARTIFACTCARGOBAY.DESC
@@ -12045,13 +12139,23 @@ msgid "Harvests resources from the universe."
 msgstr "宇宙から資源を採取します。"
 
 #. STRINGS.BUILDINGS.PREFABS.NOSECONEHARVEST.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.NOSECONEHARVEST.EFFECT"
+#| msgid ""
+#| "Enables a rocket to drill into interstellar debris and collect <link="
+#| "\"ELEMENTSGAS\">gas</link>, <link=\"ELEMENTSLIQUID\">liquid</link> and "
+#| "<link=\"ELEMENTSSOLID\">solid</link> resources from space.\n"
+#| "\n"
+#| "Must be built at the top of a rocket."
 msgctxt "STRINGS.BUILDINGS.PREFABS.NOSECONEHARVEST.EFFECT"
 msgid ""
 "Enables a rocket to drill into interstellar debris and collect <link="
 "\"ELEMENTSGAS\">gas</link>, <link=\"ELEMENTSLIQUID\">liquid</link> and <link="
 "\"ELEMENTSSOLID\">solid</link> resources from space.\n"
 "\n"
-"Must be built at the top of a rocket."
+"Must be built at the top of a rocket with <link=\"ELEMENTSGAS\">gas</link>, "
+"<link=\"ELEMENTSLIQUID\">liquid</link> or <link=\"ELEMENTSSOLID\">solid</"
+"link> Cargo Module attached to store the appropriate resources."
 msgstr ""
 "ロケットが宇宙ゴミを採掘できるようになり、宇宙から<link=\"ELEMENTSGAS\">気体"
 "</link>、<link=\"ELEMENTSLIQUID\">液体</link>、<link=\"ELEMENTSSOLID\">固体</"
@@ -15778,9 +15882,12 @@ msgid "A strong door with a sophisticated genetic lock."
 msgstr "洗練された遺伝子ロックを持つ強力なドアです。"
 
 #. STRINGS.BUILDINGS.PREFABS.TEMPORALTEARANALYZER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.WORMHOLE.NAME"
+#| msgid "Temporal Tear"
 msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEARANALYZER.NAME"
-msgid "Anomaly Scanner"
-msgstr "特異点スキャナー"
+msgid "Temporal Tear Scanner"
+msgstr "時間の裂け目"
 
 #. STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.DESC"
@@ -15799,9 +15906,12 @@ msgid "A strong door with a sophisticated genetic lock."
 msgstr "洗練された遺伝子ロックを持つ強力なドアです。"
 
 #. STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.WORMHOLE.NAME"
+#| msgid "Temporal Tear"
 msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.NAME"
-msgid "Temporal Ripper"
-msgstr "次元断裂機"
+msgid "Temporal Tear Opener"
+msgstr "時間の裂け目"
 
 #. STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.SIDESCREEN.TEXT
 msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.SIDESCREEN.TEXT"
@@ -16551,6 +16661,22 @@ msgstr "有限の資源を共有する、2つの小ぢんまりした場所で�
 msgctxt "STRINGS.CLUSTER_NAMES.TWO_SMALL_WORLDS.NAME"
 msgid "Two Small Worlds"
 msgstr "小さな双子星"
+
+#. STRINGS.CLUSTER_NAMES.VANILLA_FOREST_CLUSTER.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.CLUSTER_NAMES.VANILLA_SANDSTONE_CLUSTER.DESCRIPTION"
+#| msgid "A cluster of planets with a larger earthy planetoid to start on."
+msgctxt "STRINGS.CLUSTER_NAMES.VANILLA_FOREST_CLUSTER.DESCRIPTION"
+msgid "A cluster of planets with a larger foresty planetoid to start on."
+msgstr "初期タイプの大型岩石小惑星群です。"
+
+#. STRINGS.CLUSTER_NAMES.VANILLA_FOREST_CLUSTER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CLUSTER_NAMES.FOREST_START_CLUSTER.NAME"
+#| msgid "Forest Cluster"
+msgctxt "STRINGS.CLUSTER_NAMES.VANILLA_FOREST_CLUSTER.NAME"
+msgid "Large Forest Cluster"
+msgstr "森林型小惑星群"
 
 #. STRINGS.CLUSTER_NAMES.VANILLA_SANDSTONE_CLUSTER.DESCRIPTION
 msgctxt "STRINGS.CLUSTER_NAMES.VANILLA_SANDSTONE_CLUSTER.DESCRIPTION"
@@ -19935,26 +20061,43 @@ msgid "Office Cake"
 msgstr "オフィスのケーキ"
 
 #. STRINGS.CODEX.B2_MEETTHEPILOT.BODY.CONTAINER1
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.B2_MEETTHEPILOT.BODY.CONTAINER1"
+#| msgid ""
+#| "Meet The Pilot:\n"
+#| "Captain Mae Johannsen\n"
+#| "\n"
+#| "From the time she was old enough to walk Captain Johannsen dreamed of "
+#| "reaching the sky. Growing up on an air force base she came to love the "
+#| "sound jet engines roaring overhead.\n"
+#| "\n"
+#| "At 16 she became the youngest pilot to fly a fighter jet and at 22 she "
+#| "had already entered the space flight program.\n"
+#| "\n"
+#| "Four years later Gravitas nabbed her for an exclusive contract piloting "
+#| "our space shuttles. In her time at Gravitas, Captain Johannsen has logged "
+#| "over 1,000 hours space flight time shuttling and deploying satellites to "
+#| "low Earth Orbits and has just been named the pilot of our inaugural "
+#| "civilian space tourist program, slated to begin in the next year.\n"
+#| "\n"
+#| "Gravitas is excited to have Captain Johannsen in the pilot seat as we "
+#| "reach for the stars...and beyond!"
 msgctxt "STRINGS.CODEX.B2_MEETTHEPILOT.BODY.CONTAINER1"
 msgid ""
-"Meet The Pilot:\n"
-"Captain Mae Johannsen\n"
-"\n"
-"From the time she was old enough to walk Captain Johannsen dreamed of "
-"reaching the sky. Growing up on an air force base she came to love the sound "
-"jet engines roaring overhead.\n"
-"\n"
-"At 16 she became the youngest pilot to fly a fighter jet and at 22 she had "
-"already entered the space flight program.\n"
+"<indent=%5>From the time she was old enough to walk Captain Johannsen "
+"dreamed of reaching the sky. Growing up on an air force base she came to "
+"love the sound jet engines roaring overhead. At 16 she became the youngest "
+"pilot ever to fly a fighter jet, and at 22 she had already entered the space "
+"flight program.\n"
 "\n"
 "Four years later Gravitas nabbed her for an exclusive contract piloting our "
 "space shuttles. In her time at Gravitas, Captain Johannsen has logged over "
-"1,000 hours space flight time shuttling and deploying satellites to low "
+"1,000 hours space flight time shuttling and deploying satellites to Low "
 "Earth Orbits and has just been named the pilot of our inaugural civilian "
 "space tourist program, slated to begin in the next year.\n"
 "\n"
 "Gravitas is excited to have Captain Johannsen in the pilot seat as we reach "
-"for the stars...and beyond!"
+"for the stars...and beyond!</indent>"
 msgstr ""
 "パイロット紹介:\n"
 "ミー・ヨハンセン船長\n"
@@ -19975,25 +20118,39 @@ msgstr ""
 "き、大変ワクワクしています！"
 
 #. STRINGS.CODEX.B2_MEETTHEPILOT.BODY.CONTAINER2
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.B2_MEETTHEPILOT.BODY.CONTAINER2"
+#| msgid ""
+#| "\n"
+#| "\n"
+#| "Brought to you by the Gravitas Facility."
 msgctxt "STRINGS.CODEX.B2_MEETTHEPILOT.BODY.CONTAINER2"
 msgid ""
+"<indent=%10><smallcaps>\n"
 "\n"
-"\n"
-"Brought to you by the Gravitas Facility."
+"Brought to you by the Gravitas Facility.</indent>"
 msgstr ""
 "\n"
 "\n"
 "グラビタス ファシリティがお送りしました。"
 
 #. STRINGS.CODEX.B2_MEETTHEPILOT.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.A1_RESEARCHGIANTARTICLE.SUBTITLE"
+#| msgid "ENCRYPTION LEVEL: ONE"
 msgctxt "STRINGS.CODEX.B2_MEETTHEPILOT.SUBTITLE"
-msgid "PUBLIC RELEASE"
-msgstr "一般公開"
+msgid "ENCRYPTION LEVEL: ONE"
+msgstr "暗号化レベル: 1"
 
 #. STRINGS.CODEX.B2_MEETTHEPILOT.TITLE
 msgctxt "STRINGS.CODEX.B2_MEETTHEPILOT.TITLE"
-msgid "The Future of Space Flight"
-msgstr "宇宙飛行の未来"
+msgid "Meet the Pilot"
+msgstr ""
+
+#. STRINGS.CODEX.B2_MEETTHEPILOT.TITLE2
+msgctxt "STRINGS.CODEX.B2_MEETTHEPILOT.TITLE2"
+msgid "Captain Mae Johannsen"
+msgstr ""
 
 #. STRINGS.CODEX.B2_TEMPORALBOWUPDATE.BODY.CONTAINER2
 msgctxt "STRINGS.CODEX.B2_TEMPORALBOWUPDATE.BODY.CONTAINER2"
@@ -21641,8 +21798,31 @@ msgctxt "STRINGS.CODEX.BUDDYBUD.TITLE"
 msgid "Buddy Bud"
 msgstr "バディのつぼみ"
 
-#. STRINGS.CODEX.C01_Evil.BODY.CONTAINER1
-msgctxt "STRINGS.CODEX.C01_Evil.BODY.CONTAINER1"
+#. STRINGS.CODEX.C01_EVIL.BODY.CONTAINER1
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.C01_Evil.BODY.CONTAINER1"
+#| msgid ""
+#| "Clearly Nikola is evil. He has some kind of scheme going on that he’s "
+#| "keeping secret from the rest of Gravitas and I haven’t been able to crack "
+#| "what that is because it’s offline and he’s always at his computer. "
+#| "Whenever I ask him what he’s up to he says I wouldn’t understand. Pfft! "
+#| "We both went through the same particle physics classes, buddy. Just "
+#| "because you mash a keyboard and I adjust knobs does not mean I don’t know "
+#| "what the Time Containment Field does.\n"
+#| "\n"
+#| "And then today I dropped a wrench and Nikola nearly jumped out of his "
+#| "skin! He spun around and screamed at me never to do that again. And then "
+#| "when I said, \"Geez, it’s not the end of the world,\" he was like, "
+#| "\"Yeah, it’s not like the world will blow up if I get this wrong\" really "
+#| "sarcastic like.\n"
+#| "\n"
+#| "Which technically is true. If the Time Containment Field were to break "
+#| "down the Temporal Bow could theoretically blow up the world but that’s "
+#| "why there are safety systems in place. And safety systems on safety "
+#| "systems. And then safety systems on top of that. But then he built all "
+#| "the safety systems so if he wanted to…\n"
+#| "------------------\n"
+msgctxt "STRINGS.CODEX.C01_EVIL.BODY.CONTAINER1"
 msgid ""
 "Clearly Nikola is evil. He has some kind of scheme going on that he’s "
 "keeping secret from the rest of Gravitas and I haven’t been able to crack "
@@ -21683,8 +21863,33 @@ msgstr ""
 "めば全てのセーフティシステムを構築するだろう...\n"
 "------------------\n"
 
-#. STRINGS.CODEX.C01_Evil.BODY.CONTAINER2
-msgctxt "STRINGS.CODEX.C01_Evil.BODY.CONTAINER2"
+#. STRINGS.CODEX.C01_EVIL.BODY.CONTAINER2
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.C01_Evil.BODY.CONTAINER2"
+#| msgid ""
+#| "I decided to get into work early today but when I got in Nikola was "
+#| "already there and it looked like he hadn’t been home all weekend. He was "
+#| "pacing back-and-forth in the lab, monologuing but not like an evil "
+#| "villain. Like someone who hadn’t slept in a week.\n"
+#| "\n"
+#| "\"Ruby,\" he said. \"You have to promise me that if anything goes wrong "
+#| "you’ll turn on this machine. They’re pushing it too far. The printing "
+#| "pods are pushing the...It’s too much - TOO MUCH! Something’s going to "
+#| "blow. I tried… I’m trying to save it. Not the Earth. There’s no hope for "
+#| "the Earth, it’s all going to…\" then he made this exploding sound. \"But "
+#| "the Universe. Time itself. It could all go, don’t you see? This machine "
+#| "can contain it. Put a Temporal Containment Field around the Earth so time "
+#| "itself doesn’t break down and...and…\"\n"
+#| "\n"
+#| "Then all of a sudden these security guys came in. New guys. People I "
+#| "haven’t seen before. And they just took him away. Then they took me to a "
+#| "room and asked me all kinds of questions and I answered them, I guess. I "
+#| "don’t remember much because the whole time I was thinking - What if I was "
+#| "wrong? What if he’s not evil, but Gravitas is?\n"
+#| "\n"
+#| "What if I was wrong and what if he’s right?\n"
+#| "------------------\n"
+msgctxt "STRINGS.CODEX.C01_EVIL.BODY.CONTAINER2"
 msgid ""
 "I decided to get into work early today but when I got in Nikola was already "
 "there and it looked like he hadn’t been home all weekend. He was pacing back-"
@@ -21729,8 +21934,13 @@ msgstr ""
 "もし私が間違っていて彼が正しいとしたら？\n"
 "------------------\n"
 
-#. STRINGS.CODEX.C01_Evil.BODY.CONTAINER3
-msgctxt "STRINGS.CODEX.C01_Evil.BODY.CONTAINER3"
+#. STRINGS.CODEX.C01_EVIL.BODY.CONTAINER3
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.C01_Evil.BODY.CONTAINER3"
+#| msgid ""
+#| "No seriously - what if he's right?\n"
+#| "------------------\n"
+msgctxt "STRINGS.CODEX.C01_EVIL.BODY.CONTAINER3"
 msgid ""
 "No seriously - what if he's right?\n"
 "------------------\n"
@@ -21738,31 +21948,60 @@ msgstr ""
 "いや、本当に…彼が正しいとしたら？\n"
 "------------------\n"
 
-#. STRINGS.CODEX.C01_Evil.SUBTITLE
-msgctxt "STRINGS.CODEX.C01_Evil.SUBTITLE"
+#. STRINGS.CODEX.C01_EVIL.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.A0_PRELIMINARYCALCULATIONS.SUBTITLE"
+#| msgid "ENCRYPTION LEVEL: NONE"
+msgctxt "STRINGS.CODEX.C01_EVIL.SUBTITLE"
 msgid "ENCRYPTION LEVEL: NONE"
 msgstr "暗号化レベル: なし"
 
-#. STRINGS.CODEX.C01_Evil.TITLE
-msgctxt "STRINGS.CODEX.C01_Evil.TITLE"
+#. STRINGS.CODEX.C01_EVIL.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.C01_Evil.TITLE"
+#| msgid "Evil"
+msgctxt "STRINGS.CODEX.C01_EVIL.TITLE"
 msgid "Evil"
 msgstr "邪悪"
 
 #. STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.BODY.CONTAINER3
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.BODY.CONTAINER3"
+#| msgid ""
+#| "<indent=5%>Director, I think I've found the perfect engineer candidate to "
+#| "design our small-scale colony machines.</indent>\n"
+#| "------------------\n"
 msgctxt "STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.BODY.CONTAINER3"
 msgid ""
 "<indent=5%>Director, I think I've found the perfect engineer candidate to "
-"design our small-scale colony machines.</indent>\n"
-"------------------\n"
+"design our small-scale colony machines.\n"
+"-----------------------------------------------------------------------------------------------------\n"
+"</indent>"
 msgstr ""
 "<indent=5%>監督官殿, 小規模コロニー向けの機械にうってつけのエンジニア候補を見"
 "つけました。</indent>\n"
 "------------------\n"
 
 #. STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.BODY.CONTAINER4
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.BODY.CONTAINER4"
+#| msgid ""
+#| "<b>Bringing Creative Workspace Ideas into the Industrial Setting</b>\n"
+#| "\n"
+#| "Michael E.E. Perlmutter is a rising star in the world industrial design, "
+#| "making a name for himself by cooking up playful workspaces for a work "
+#| "force typically left out of the creative conversation.\n"
+#| "\n"
+#| "\"Ergodynamic chairs have been done to death,\" says Perlmutter. \"What "
+#| "I'm interested in is redesigning the industrial space. There's no reason "
+#| "why a machine can't convey a sense of whimsy.\"\n"
+#| "\n"
+#| "It's this philosophy that has launched Perlmutter to the top of a very "
+#| "short list of hot new industrial designers."
 msgctxt "STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.BODY.CONTAINER4"
 msgid ""
-"<b>Bringing Creative Workspace Ideas into the Industrial Setting</b>\n"
+"<indent=10%><smallcaps><b>Bringing Creative Workspace Ideas into the "
+"Industrial Setting</b>\n"
 "\n"
 "Michael E.E. Perlmutter is a rising star in the world industrial design, "
 "making a name for himself by cooking up playful workspaces for a work force "
@@ -21773,7 +22012,7 @@ msgid ""
 "machine can't convey a sense of whimsy.\"\n"
 "\n"
 "It's this philosophy that has launched Perlmutter to the top of a very short "
-"list of hot new industrial designers."
+"list of hot new industrial designers.</indent></smallcaps>"
 msgstr ""
 "<b>クリエイティブな作業空間のアイデアを、産業環境に取り入れ</b>\n"
 "\n"
@@ -21822,9 +22061,57 @@ msgid "ENCRYPTION LEVEL: ONE"
 msgstr "暗号化レベル: 1"
 
 #. STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.TITLE"
+#| msgid "SUBJECT: Machine Engineer Candidate?"
 msgctxt "STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.TITLE"
-msgid "SUBJECT: Machine Engineer Candidate?"
+msgid "RE: Engineer Candidate?"
 msgstr "件名: 機械エンジニア候補とは？"
+
+#. STRINGS.CODEX.C7_FIRSTCOLONY.BODY.CONTAINER1
+msgctxt "STRINGS.CODEX.C7_FIRSTCOLONY.BODY.CONTAINER1"
+msgid ""
+"The first experiments with establishing a colony off planet were an "
+"unmitigated disaster. Without outside help, our current Artificial "
+"Intelligence was completely incapable of making the kind of spontaneous "
+"decisions needed to deal with unforeseen circumstances. Additionally, the "
+"colony subjects lacked the forethought to even build themselves toilet "
+"facilities, even after soiling themselves repeatedly.\n"
+"\n"
+"While initial experiments in a lab setting were encouraging, our latest "
+"operation on non-Terra soil revealed some massive inadequacies to our "
+"system. If this idea is ever going to work, we will either need to massively "
+"improve the AI directing the subjects, or improve the brains of our "
+"Duplicants to the point where they possess higher cognitive functions.\n"
+"\n"
+"Given the massive complications that I could forsee arising if our "
+"Duplicants were made less supplicant, I'm leaning toward a push to improve "
+"our Artificial Intellegence.\n"
+"\n"
+"Meanwhile, we will have to send a clean up crew to destroy all evidence of "
+"our little experiment beneath the Ceres' surface. We can't risk anyone "
+"discovering the remnants of our failed colony, even if the likelihood or "
+"that happening won't be for another few decades at least.\n"
+"\n"
+"(Sometimes it boggles my mind how much further behind the rest of the world "
+"is from Gravitas.)"
+msgstr ""
+
+#. STRINGS.CODEX.C7_FIRSTCOLONY.SUBTITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.A1A_B111.SUBTITLE"
+#| msgid "ENCRYPTION LEVEL: THREE"
+msgctxt "STRINGS.CODEX.C7_FIRSTCOLONY.SUBTITLE"
+msgid "ENCRYPTION LEVEL: THREE"
+msgstr "暗号化レベル: 3"
+
+#. STRINGS.CODEX.C7_FIRSTCOLONY.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.B6_TIMEMUSINGS.TITLE"
+#| msgid "Director's Notes"
+msgctxt "STRINGS.CODEX.C7_FIRSTCOLONY.TITLE"
+msgid "Director's Notes"
+msgstr "監督官のノート"
 
 #. STRINGS.CODEX.CLEANER.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.CLEANER.BODY.CONTAINER1"
@@ -24005,6 +24292,37 @@ msgctxt "STRINGS.CODEX.MYLOG.BODY.TELEPORT.TITLE"
 msgid "Duplicant Teleportation"
 msgstr "複製人間のテレポート"
 
+#. STRINGS.CODEX.MYLOG.BODY.TEMPORALOPENER.BODY
+msgctxt "STRINGS.CODEX.MYLOG.BODY.TEMPORALOPENER.BODY"
+msgid ""
+"In their interplanetary travels throughout this system, my Duplicants have "
+"discovered a Temporal Tear deep in space.\n"
+"\n"
+"Currently it is too small to send a rocket and crew through, but further "
+"investigation reveals the presence of a strange artifact on a nearby world "
+"which could feasably increase the size of the tear if a number of Printing "
+"Pods are erected in nearby worlds.\n"
+"\n"
+"However, I've determined that using the Temporal Bow to operate a Printing "
+"Pod was what led Gravitas down the disasterous path which eventually lead to "
+"the destruction of our home planet. My calculations seem to indicate that "
+"the size of that planet may have been a contributing factor in its "
+"destruction and in all probability opening the Temporal Tear in our current "
+"situation will not cause such a cataclysmic event. However, as with "
+"everything in science, one can never know all the outcomes of a situation "
+"until we perform an experiment.\n"
+"\n"
+"Dare we tempt fate again?"
+msgstr ""
+
+#. STRINGS.CODEX.MYLOG.BODY.TEMPORALOPENER.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.WORMHOLE.NAME"
+#| msgid "Temporal Tear"
+msgctxt "STRINGS.CODEX.MYLOG.BODY.TEMPORALOPENER.TITLE"
+msgid "Temporal Potential"
+msgstr "時間の裂け目"
+
 #. STRINGS.CODEX.MYLOG.BODY.TEMPORALTEAR.BODY
 msgctxt "STRINGS.CODEX.MYLOG.BODY.TEMPORALTEAR.BODY"
 msgid ""
@@ -25761,8 +26079,13 @@ msgstr ""
 
 #. STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_BODY_DLC1
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_BODY_DLC1"
-msgid "DLC1"
-msgstr "DLC1"
+msgid ""
+"We have always viewed the Temporal Tear as a phenomenon to fear but, like "
+"the civilizations before us, the call to adventure asks us to confront our "
+"anxiety and leap into the unknown. As a radical action of hope, I have sent "
+"enough Duplicants through the Temporal Tear to start another colony, explore "
+"dimensions beyond ours and plant the seeds of life throughout time and space."
+msgstr ""
 
 #. STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_TITLE
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_TITLE"
@@ -25771,8 +26094,8 @@ msgstr "コロニーの希望"
 
 #. STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_TITLE_DLC1
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_TITLE_DLC1"
-msgid "DLC1"
-msgstr "DLC1"
+msgid "A DIMENSIONAL ADVENTURE"
+msgstr ""
 
 #. STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MYLOGNAME
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MYLOGNAME"
@@ -25783,6 +26106,16 @@ msgstr "コロニーの希望"
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.NAME"
 msgid "The Great Escape"
 msgstr "大脱出"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.REQUIREMENTS.OPEN_TEMPORAL_TEAR
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.MYLOG.BODY.TEMPORALTEAR.TITLE"
+#| msgid "The Temporal Tear"
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.REQUIREMENTS."
+"OPEN_TEMPORAL_TEAR"
+msgid "Open the Temporal Tear"
+msgstr "時間の裂け目"
 
 #. STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.REQUIREMENTS.REACHED_SPACE_DESTINATION
 msgctxt ""
@@ -26226,6 +26559,22 @@ msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CLOTHE_DUPES"
 msgid "Duplicants in clothing: {0} / {1}"
 msgstr "着衣中の複製人間: {0} / {1}"
 
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.COLLECT_ARTIFACTS
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.COLLECT_ARTIFACTS"
+msgid ""
+"Study Terrestrial Artifacts at the Artifact Analysis Station.\n"
+"Terrestrial Artifacts studied: {collectedCount} / {neededCount}"
+msgstr ""
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.COLLECT_SPACE_ARTIFACTS
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.COLLECT_SPACE_ARTIFACTS"
+msgid ""
+"Study Space Artifacts at the Artifact Analysis Station.\n"
+"Space Artifacts studied: {collectedCount} / {neededCount}"
+msgstr ""
+
 #. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CONSUME_CALORIES
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.CONSUME_CALORIES"
 msgid "Calories: {0} / {1}"
@@ -26256,6 +26605,15 @@ msgstr "サイクル: {0} / {1}"
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.ENTER_OIL_BIOME"
 msgid "Entered an oil biome"
 msgstr "オイルバイオームに到達した"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.ESTABLISH_COLONIES
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.ESTABLISH_COLONIES"
+msgid ""
+"Establish colonies on {goalBaseCount} asteroids by building and activating "
+"Mini-Pods.\n"
+"Colonies established: {baseCount} / {neededCount}."
+msgstr ""
 
 #. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.EXOSUIT_CYCLES
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.EXOSUIT_CYCLES"
@@ -26327,6 +26685,13 @@ msgstr "{0}を建設しなかった"
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.NO_FARM_TILES"
 msgid "No farmed plants"
 msgstr "農耕植物禁止"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.OPEN_TEMPORAL_TEAR
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.OPEN_TEMPORAL_TEAR"
+msgid ""
+"Open the Temporal Tear by finding and activating the Temporal Tear Opener"
+msgstr ""
 
 #. STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.PLATFORM_UNLOCKING_DISABLED
 msgctxt ""
@@ -26534,6 +26899,172 @@ msgstr "達成した使命: {0}"
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.PRE_VICTORY_MESSAGE_HEADER"
 msgid "- ALERT -"
 msgstr "- 重大な通知 -"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.DESCRIPTION
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.DESCRIPTION"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MESSAGE_BODY
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MESSAGE_BODY"
+msgid ""
+"In exploring this corner of the universe we have found and assembled a "
+"collection of artifacts from another civilization. Studying these artifacts "
+"can give us a greater understanding of who we are and where we come from. "
+"Only by learning about the past can we build a brighter future, one where we "
+"learn from the mistakes of our predecessors."
+msgstr ""
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MESSAGE_BODY_DLC1
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_BODY_DLC1"
+#| msgid "DLC1"
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MESSAGE_BODY_DLC1"
+msgid "DLC1"
+msgstr "DLC1"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MESSAGE_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.MONUMENTSIDESCREEN.FLIP_FACING_BUTTON"
+#| msgid "CLICK TO ROTATE"
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MESSAGE_TITLE"
+msgid "LINK TO OUR PAST"
+msgstr "クリックして回転"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MESSAGE_TITLE_DLC1
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_BODY_DLC1"
+#| msgid "DLC1"
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MESSAGE_TITLE_DLC1"
+msgid "DLC1"
+msgstr "DLC1"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MYLOGNAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LISTTITLES.ARTIFACTS"
+#| msgid "Artifacts"
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MYLOGNAME"
+msgid "Artifacts"
+msgstr "旧世界の遺物"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.NAME
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.NAME"
+msgid "Cosmic Archaeology"
+msgstr ""
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS.SEVERAL_COLONIES
+#, fuzzy
+#| msgctxt "STRINGS.UI.WORLDGEN.DRAWWORLDBORDER"
+#| msgid "Establishing personal boundaries..."
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS.SEVERAL_COLONIES"
+msgid "Establish several colonies"
+msgstr "人格形成中..."
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS.SEVERAL_COLONIES_DESCRIPTION
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS."
+"SEVERAL_COLONIES_DESCRIPTION"
+msgid ""
+"Establish colonies on {count} asteroids by building and activating Mini-Pods"
+msgstr ""
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS.STUDY_ARTIFACTS
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS.STUDY_ARTIFACTS"
+msgid "Study {artifactCount} Terrestrial Artifacts"
+msgstr ""
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS.STUDY_ARTIFACTS_DESCRIPTION
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS."
+"STUDY_ARTIFACTS_DESCRIPTION"
+msgid ""
+"Study {artifactCount} Terrestrial Artifacts at the Artifact Analysis Station"
+msgstr ""
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS.STUDY_SPACE_ARTIFACTS
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS."
+"STUDY_SPACE_ARTIFACTS"
+msgid "Study {artifactCount} Space Artifacts"
+msgstr ""
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS.STUDY_SPACE_ARTIFACTS_DESCRIPTION
+msgctxt ""
+"STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.REQUIREMENTS."
+"STUDY_SPACE_ARTIFACTS_DESCRIPTION"
+msgid "Study {artifactCount} Space Artifacts at the Artifact Analysis Station"
+msgstr ""
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.VIDEO_TEXT.FIRST
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.VIDEO_TEXT.FIRST"
+#| msgid ""
+#| "Our homeworld in this universe is gone, replaced by the skeleton of a "
+#| "planet and a wound in the sky... But I hold out hope that other worlds "
+#| "exist out there, tucked away in other dimensions."
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.VIDEO_TEXT.FIRST"
+msgid ""
+"Our homeworld in this universe is gone, replaced by the skeleton of a planet "
+"and a wound in the sky... But I hold out hope that other worlds exist out "
+"there, tucked away in other dimensions."
+msgstr ""
+"この宇宙にあった我らが故郷は消え去り、あとには惑星の残骸と空に浮かぶ傷跡が残"
+"された...。しかし私は希望を信じる。別の世界が、異なる次元に隠れて存在すること"
+"を。"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.VIDEO_TEXT.SECOND
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.VIDEO_TEXT.SECOND"
+#| msgid ""
+#| "I sent my Duplicant through the Temporal Tear carrying that hope on their "
+#| "shoulders... Perhaps one day they'll find a place to call home, and begin "
+#| "a thriving colony all their own."
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.VIDEO_TEXT.SECOND"
+msgid ""
+"I sent my Duplicant through the Temporal Tear carrying that hope on their "
+"shoulders... Perhaps one day they'll find a place to call home, and begin a "
+"thriving colony all their own."
+msgstr ""
+"私は、その希望を背負った複製人間を時間の裂け目から送り出した...。いつの日か、"
+"彼らは故郷と呼べる場所を見つけ、自分たちのコロニーを繁栄させるだろう。"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.VIDEO_TEXT_DLC1.FIRST
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_BODY_DLC1"
+#| msgid "DLC1"
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.VIDEO_TEXT_DLC1.FIRST"
+msgid "DLC1"
+msgstr "DLC1"
+
+#. STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.VIDEO_TEXT_DLC1.SECOND
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_BODY_DLC1"
+#| msgid "DLC1"
+msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.VIDEO_TEXT_DLC1.SECOND"
+msgid "DLC1"
+msgstr "DLC1"
 
 #. STRINGS.COLONY_ACHIEVEMENTS.THRIVING.DESCRIPTION
 msgctxt "STRINGS.COLONY_ACHIEVEMENTS.THRIVING.DESCRIPTION"
@@ -26886,8 +27417,11 @@ msgid "<link=\"SQUIRRELSPECIES\">Pips</link>"
 msgstr "<link=\"SQUIRRELSPECIES\">ピップ属</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.STATERPILLARSPECIES
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.STATERPILLARSPECIES"
+#| msgid "<link=\"STATERPILLARSPECIES\">Plug Slug</link>"
 msgctxt "STRINGS.CREATURES.FAMILY_PLURAL.STATERPILLARSPECIES"
-msgid "<link=\"STATERPILLARSPECIES\">Plug Slug</link>"
+msgid "<link=\"STATERPILLARSPECIES\">Plug Slugs</link>"
 msgstr "<link=\"STATERPILLARSPECIES\">プラグスラッグ</link>"
 
 #. STRINGS.CREATURES.FAMILY_PLURAL.SWEEPBOT
@@ -31245,6 +31779,19 @@ msgid ""
 msgstr ""
 "理想条件を一貫して満たしているため、この植物は大量に産出します\n"
 "{Effects}"
+
+#. STRINGS.CREATURES.STATUSITEMS.HIVEHUNGRY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.COOKFETCH.NAME"
+#| msgid "Cook Supply"
+msgctxt "STRINGS.CREATURES.STATUSITEMS.HIVEHUNGRY.NAME"
+msgid "Food Supply Low"
+msgstr "食材の供給"
+
+#. STRINGS.CREATURES.STATUSITEMS.HIVEHUNGRY.TOOLTIP
+msgctxt "STRINGS.CREATURES.STATUSITEMS.HIVEHUNGRY.TOOLTIP"
+msgid "The food reserves in this hive are running low"
+msgstr ""
 
 #. STRINGS.CREATURES.STATUSITEMS.HOT.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT.NAME"
@@ -48978,6 +49525,30 @@ msgctxt "STRINGS.GAMEPLAY_EVENTS.DEFAULT_OPTION_NAME"
 msgid "Okay"
 msgstr "了解"
 
+#. STRINGS.GAMEPLAY_EVENTS.EVENT_TYPES.ARTIFACT_REVEAL.BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.CLOSETOOLTIP"
+#| msgid "Close"
+msgctxt "STRINGS.GAMEPLAY_EVENTS.EVENT_TYPES.ARTIFACT_REVEAL.BUTTON"
+msgid "Close"
+msgstr "閉じる"
+
+#. STRINGS.GAMEPLAY_EVENTS.EVENT_TYPES.ARTIFACT_REVEAL.DESCRIPTION
+msgctxt "STRINGS.GAMEPLAY_EVENTS.EVENT_TYPES.ARTIFACT_REVEAL.DESCRIPTION"
+msgid ""
+"An artifact from a past civilization was analyzed.\n"
+"\n"
+"{desc}"
+msgstr ""
+
+#. STRINGS.GAMEPLAY_EVENTS.EVENT_TYPES.ARTIFACT_REVEAL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_ARTIFACTS.DESCRIPTION"
+#| msgid "Artifact Analysis"
+msgctxt "STRINGS.GAMEPLAY_EVENTS.EVENT_TYPES.ARTIFACT_REVEAL.NAME"
+msgid "Artifact Analyzed"
+msgstr "遺物分析"
+
 #. STRINGS.GAMEPLAY_EVENTS.EVENT_TYPES.CREATURE_SPAWN.DESCRIPTION
 msgctxt "STRINGS.GAMEPLAY_EVENTS.EVENT_TYPES.CREATURE_SPAWN.DESCRIPTION"
 msgid "There was a massive influx of destructive critters"
@@ -53778,6 +54349,22 @@ msgctxt "STRINGS.MISC.POPFX.RESOURCE_EATEN"
 msgid "Resource Eaten"
 msgstr "資源が食べられた"
 
+#. STRINGS.MISC.STATUSITEMS.ARTIFACTENTOMBED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NAME"
+#| msgid "Entombed"
+msgctxt "STRINGS.MISC.STATUSITEMS.ARTIFACTENTOMBED.NAME"
+msgid "Entombed Artifact"
+msgstr "埋没"
+
+#. STRINGS.MISC.STATUSITEMS.ARTIFACTENTOMBED.TOOLTIP
+msgctxt "STRINGS.MISC.STATUSITEMS.ARTIFACTENTOMBED.TOOLTIP"
+msgid ""
+"This artifact is trapped in an obscuring shell limiting its decor. A skilled "
+"artist can remove it at the <link=\"ARTIFACTANALYSISSTATION\">Artifact "
+"Analysis Station</link>"
+msgstr ""
+
 #. STRINGS.MISC.STATUSITEMS.AWAITINGSTUDY.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.AWAITINGSTUDY.NAME"
 msgid "Analysis Pending"
@@ -54346,6 +54933,32 @@ msgid ""
 msgstr ""
 "周囲の<style=\"KKeyword\">気圧</style>が高すぎるため、{Element}は{SubElement}"
 "を放出できません"
+
+#. STRINGS.MISC.STATUSITEMS.TEARCLOSED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.WORMHOLE.NAME"
+#| msgid "Temporal Tear"
+msgctxt "STRINGS.MISC.STATUSITEMS.TEARCLOSED.NAME"
+msgid "Temporal Tear closed"
+msgstr "時間の裂け目"
+
+#. STRINGS.MISC.STATUSITEMS.TEARCLOSED.TOOLTIP
+msgctxt "STRINGS.MISC.STATUSITEMS.TEARCLOSED.TOOLTIP"
+msgid "Perhaps some technology could open the passage"
+msgstr ""
+
+#. STRINGS.MISC.STATUSITEMS.TEAROPEN.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.WORMHOLE.NAME"
+#| msgid "Temporal Tear"
+msgctxt "STRINGS.MISC.STATUSITEMS.TEAROPEN.NAME"
+msgid "Temporal Tear open"
+msgstr "時間の裂け目"
+
+#. STRINGS.MISC.STATUSITEMS.TEAROPEN.TOOLTIP
+msgctxt "STRINGS.MISC.STATUSITEMS.TEAROPEN.TOOLTIP"
+msgid "An open passage through spacetime"
+msgstr ""
 
 #. STRINGS.MISC.STATUSITEMS.TREEFILTERABLETAGS.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.TREEFILTERABLETAGS.NAME"
@@ -61613,6 +62226,14 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_PRODUCED_ITEM_FROM_PLANT"
 msgid "{Item}: {Amount} when properly fed"
 msgstr "{Item}: 正しく給餌された場合 {Amount}"
 
+#. STRINGS.UI.BUILDINGEFFECTS.DIET_STORED
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_CONSUMED"
+#| msgid "    • Diet: {Foodlist}"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_STORED"
+msgid "    • Stores: {Foodlist}"
+msgstr "    • 食糧: {Foodlist}"
+
 #. STRINGS.UI.BUILDINGEFFECTS.DISEASECONSUMEDPERUSE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.DISEASECONSUMEDPERUSE"
 msgid "All Diseases: -{0} per use"
@@ -63919,6 +64540,15 @@ msgid ""
 "    • This rocket is currently landed on a <style=\"KKeyword\">Rocket "
 "Platform</style>"
 msgstr "    • ロケットは<style=\"KKeyword\">ロケット発射台</style>に着陸中です"
+
+#. STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.NORMAL_UTILITY
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.NORMAL_FLIGHT"
+#| msgid "    • This rocket is in flight towards its destination"
+msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.NORMAL_UTILITY"
+msgid "    • This rocket is performing a utility at its destination"
+msgstr "    • ロケットは目的地に向かって航行中です"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FLOATINGROCKETDIAGNOSTIC.TOOLTIP_NAME"
@@ -69701,8 +70331,8 @@ msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "THE BIG MERGE"
-msgstr "THE BIG MERGE"
+msgid "A BREATH OF FRESH AIR"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -69718,26 +70348,42 @@ msgid "JOIN THE DISCUSSION"
 msgstr "議論に参加"
 
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#| msgid ""
+#| "Welcome to the <b>THE BIG MERGE</b>\n"
+#| "\n"
+#| "   •<indent=20px>Toggle between <i>Spaced Out!</i> and Base Game in the "
+#| "main menu without re-downloading the game.</indent>\n"
+#| "\n"
+#| "   •<indent=20px>Base Game now has all <i>Spaced Out!</i> bug fixes and "
+#| "quality-of-life improvements.</indent>\n"
+#| "\n"
+#| "   •<indent=20px>Several buildings and items have been added to the Base "
+#| "Game, including Oxygen Masks, and Meter Valves.</indent>\n"
+#| "\n"
+#| "   •<indent=20px>UI and Diagnostics improvements have been added to the "
+#| "Base Game.</indent>\n"
+#| "   \n"
+#| "   •<indent=20px>Significant updates to the Modding system, modders "
+#| "please see the forum for upgrade instructions.</indent>\n"
+#| "\n"
+#| "Check out the full patch notes for more details!"
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"Welcome to the <b>THE BIG MERGE</b>\n"
+"Welcome to the newest update <b>A BREATH OF FRESH AIR</b>:\n"
 "\n"
-"   •<indent=20px>Toggle between <i>Spaced Out!</i> and Base Game in the main "
+"•<indent=20px>Several buildings and items have been added to the Base Game, "
+"including Oxygen Masks, and Meter Valves.</indent>\n"
+"•<indent=20px>Base Game now has all <i>Spaced Out!</i> bug fixes and quality-"
+"of-life improvements.</indent>\n"
+"•<indent=20px>Updates to <i>Spaced Out!</i> Colony Imperatives</indent>\n"
+"•<indent=20px>Significant updates to the Modding system, modders please see "
+"the forum for upgrade instructions.</indent>\n"
+"•<indent=20px>Toggle between <i>Spaced Out!</i> and Base Game in the main "
 "menu without re-downloading the game.</indent>\n"
 "\n"
-"   •<indent=20px>Base Game now has all <i>Spaced Out!</i> bug fixes and "
-"quality-of-life improvements.</indent>\n"
-"\n"
-"   •<indent=20px>Several buildings and items have been added to the Base "
-"Game, including Oxygen Masks, and Meter Valves.</indent>\n"
-"\n"
-"   •<indent=20px>UI and Diagnostics improvements have been added to the Base "
-"Game.</indent>\n"
-"   \n"
-"   •<indent=20px>Significant updates to the Modding system, modders please "
-"see the forum for upgrade instructions.</indent>\n"
-"\n"
-"Check out the full patch notes for more details!"
+"   Check out the full patch notes for more details!"
 msgstr ""
 "<b>THE BIG MERGE</b>アップデートにようこそ\n"
 "\n"
@@ -70076,6 +70722,54 @@ msgstr "セーブ名"
 msgctxt "STRINGS.UI.FRONTEND.SAVESCREEN.TITLE"
 msgid "SAVE SLOTS"
 msgstr "セーブスロット"
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES"
+msgid ""
+"Oxygen Not Included has had a <b>major update</b> since this save file was "
+"created! In addition to the <b>multitude of bug fixes and quality-of-life "
+"features</b>, please pay attention to these changes which may affect your "
+"existing colony:"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_AIRFILTER
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_AIRFILTER"
+msgid ""
+"•<indent=20px>MISSING. now requires <b>5w Power</b>.</indent>\n"
+"•<indent=20px>Duplicants will get <b>Stinging Eyes</b> from gasses such as "
+"chlorine and hydrogen.</indent>"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_BUILDINGS
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_BUILDINGS"
+msgid ""
+"•<indent=20px>The <b>MISSING.</b> has been added to aid early-game "
+"exploration.</indent>\n"
+"•<indent=20px>Use the new <b>Meter Valves</b> for precise control of "
+"resources in pipes.</indent>"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_FOOD
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_FOOD"
+msgid ""
+"•<indent=20px>Fridges are more effective for early-game food storage</"
+"indent>\n"
+"•<indent=20px><b>Both</b> freezing temperatures and a sterile gas are needed "
+"for <b>total food preservation</b>.</indent>"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_SIMULATION
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_SIMULATION"
+msgid ""
+"•<indent=20px>Many <b>simulation bugs</b> have been fixed.</indent>\n"
+"•<indent=20px>This may <b>change the effectiveness</b> of certain "
+"contraptions and MISSING. setups.</indent>"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_TITLE
+msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_TITLE"
+msgid "BREATH OF FRESH AIR UPDATE CHANGES"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.NEWAUTOMATIONWARNING"
@@ -70617,6 +71311,14 @@ msgstr "沸騰ダメージ"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CONDUIT_CONTENTS_FROZE"
 msgid "Cold Damage"
 msgstr "凍結ダメージ"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CORROSIVE_ELEMENT
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.WRONG_ELEMENT"
+#| msgid "Wrong Element Damage"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.CORROSIVE_ELEMENT"
+msgid "Corrosive Element Damage"
+msgstr "素材誤りダメージ"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LIQUID_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.LIQUID_PRESSURE"
@@ -74723,6 +75425,14 @@ msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.TITLES.RETIRED_COLONIES"
 msgid "Colony Summaries"
 msgstr "コロニー概要"
 
+#. STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.TITLES.TIMELAPSE
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.NOUN.TIMELINE"
+#| msgid "Timeline"
+msgctxt "STRINGS.UI.RETIRED_COLONY_INFO_SCREEN.TITLES.TIMELAPSE"
+msgid "Timelapse"
+msgstr "時間軸"
+
 #. STRINGS.UI.ROLES
 msgctxt "STRINGS.UI.ROLES"
 msgid "JOB ASSIGNMENTS"
@@ -76588,6 +77298,19 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.EGGROCK.NAME"
 msgid "Egg-Shaped Rock"
 msgstr "卵型の岩"
 
+#. STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.MODIFIERS.DIVERGENTPLANTTENDEDWORM.NAME"
+#| msgid "Grubgrub Rub"
+msgctxt "STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.DESCRIPTION"
+msgid "Grub Grub"
+msgstr "グラブグラブのこすり付け"
+
+#. STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.NAME
+msgctxt "STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.NAME"
+msgid "Grub Statue"
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.DESCRIPTION"
 msgid "The preserved bones of an early species of Hatch."
@@ -76597,6 +77320,16 @@ msgstr "ハッチ初期種の保存された骨です。"
 msgctxt "STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.NAME"
 msgid "Pristine Fossil"
 msgstr "原始の化石"
+
+#. STRINGS.UI.SPACEARTIFACTS.HONEY_JAR.DESCRIPTION
+msgctxt "STRINGS.UI.SPACEARTIFACTS.HONEY_JAR.DESCRIPTION"
+msgid "This doesn't taste like uranium"
+msgstr ""
+
+#. STRINGS.UI.SPACEARTIFACTS.HONEY_JAR.NAME
+msgctxt "STRINGS.UI.SPACEARTIFACTS.HONEY_JAR.NAME"
+msgid "Honey Jar"
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.DESCRIPTION"
@@ -76628,6 +77361,19 @@ msgstr "隕石の衝撃で形成されたユニークな緑色の石です。"
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MOLDAVITE.NAME"
 msgid "Moldavite"
 msgstr "モルダバイト"
+
+#. STRINGS.UI.SPACEARTIFACTS.MOOD_RING.DESCRIPTION
+msgctxt "STRINGS.UI.SPACEARTIFACTS.MOOD_RING.DESCRIPTION"
+msgid "How radioactive are you feeling?"
+msgstr ""
+
+#. STRINGS.UI.SPACEARTIFACTS.MOOD_RING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RADIATIONVOMITING.NAME"
+#| msgid "Radiation vomiting"
+msgctxt "STRINGS.UI.SPACEARTIFACTS.MOOD_RING.NAME"
+msgid "Radiation Mood Ring"
+msgstr "放射性嘔吐中"
 
 #. STRINGS.UI.SPACEARTIFACTS.MOONMOONMOON.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MOONMOONMOON.DESCRIPTION"
@@ -76676,6 +77422,19 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.OKAYXRAY.NAME"
 msgid "Old X-Ray"
 msgstr "古いレントゲン"
 
+#. STRINGS.UI.SPACEARTIFACTS.ORACLE.DESCRIPTION
+msgctxt "STRINGS.UI.SPACEARTIFACTS.ORACLE.DESCRIPTION"
+msgid "What does it do?"
+msgstr ""
+
+#. STRINGS.UI.SPACEARTIFACTS.ORACLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.GENERATOR_TUNEUP"
+#| msgid "Finely Tuned Machine"
+msgctxt "STRINGS.UI.SPACEARTIFACTS.ORACLE.NAME"
+msgid "Useless Machine"
+msgstr "精密に調整されたマシン"
+
 #. STRINGS.UI.SPACEARTIFACTS.PERCOLATOR.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.PERCOLATOR.DESCRIPTION"
 msgid "Don't drink from it! There was a pacu... IN the percolator!"
@@ -76714,6 +77473,19 @@ msgstr ""
 msgctxt "STRINGS.UI.SPACEARTIFACTS.RAINBOWEGGROCK.NAME"
 msgid "Egg-Shaped Rock"
 msgstr "卵型の岩"
+
+#. STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.DESCRIPTION
+msgctxt "STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.DESCRIPTION"
+msgid "It's pronounced nuclear"
+msgstr ""
+
+#. STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.TYPES.POWER_PLANT.NAME"
+#| msgid "Power Plant"
+msgctxt "STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.NAME"
+msgid "Model Nuclear Power Plant"
+msgstr "発電所"
 
 #. STRINGS.UI.SPACEARTIFACTS.ROBOTARM.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.ROBOTARM.DESCRIPTION"
@@ -78019,8 +78791,11 @@ msgid "Destination set"
 msgstr "目的地の設定"
 
 #. STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED"
+#| msgid "Select the rocket's nosecone to set a destination"
 msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.NOTSELECTED"
-msgid "Select the rocket's nosecone to set a destination"
+msgid "Select the rocket's Command Module to set a destination"
 msgstr "目的地を設定するには、ロケットの制御モジュールを選択してください"
 
 #. STRINGS.UI.STARMAP.DESTINATIONSELECTION_TOOLTIP.REACHABLE
@@ -80956,6 +81731,22 @@ msgstr "スタンバイ終了:"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACTIVATION_RANGE_SIDE_SCREEN.NAME"
 msgid "Breaktime Policy"
 msgstr "休憩方針"
+
+#. STRINGS.UI.UISIDESCREENS.ARTIFACTANALYSISSIDESCREEN.NO_ARTIFACTS_DISCOVERED
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_ARTIFACTS.DESCRIPTION"
+#| msgid "Artifact Analysis"
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ARTIFACTANALYSISSIDESCREEN.NO_ARTIFACTS_DISCOVERED"
+msgid "No artifacts analyzed"
+msgstr "遺物分析"
+
+#. STRINGS.UI.UISIDESCREENS.ARTIFACTANALYSISSIDESCREEN.NO_ARTIFACTS_DISCOVERED_TOOLTIP
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ARTIFACTANALYSISSIDESCREEN."
+"NO_ARTIFACTS_DISCOVERED_TOOLTIP"
+msgid "A skilled artist can analyze artifacts"
+msgstr ""
 
 #. STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.ASSIGN_TO_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.ASSIGN_TO_TOOLTIP"
@@ -83919,6 +84710,30 @@ msgstr "温度しきい値"
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPERATURESWITCHSIDESCREEN.WARMER_BUTTON"
 msgid "Above"
 msgstr "超過"
+
+#. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.BUTTON_CLOSED
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.OBJECTDISPENSER.CLOSED"
+#| msgid "Closed"
+msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.BUTTON_CLOSED"
+msgid "Tear Closed"
+msgstr "閉鎖"
+
+#. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.BUTTON_OPEN
+#, fuzzy
+#| msgctxt "STRINGS.UI.FILE_NAME_DIALOG.ENTER_TEXT"
+#| msgid "Enter Text..."
+msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.BUTTON_OPEN"
+msgid "Enter Tear"
+msgstr "文字を入力..."
+
+#. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.WORMHOLE.NAME"
+#| msgid "Temporal Tear"
+msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.TITLE"
+msgid "Temporal Tear"
+msgstr "時間の裂け目"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.ABOVE_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.ABOVE_BUTTON"
@@ -87152,6 +87967,34 @@ msgctxt "STRINGS.WORLDS.MEDIUMRADIOACTIVEVANILLAWARPPLANET.NAME"
 msgid "Radioactive Swamp Asteroid"
 msgstr "放射性沼地型小惑星"
 
+#. STRINGS.WORLDS.MEDIUMSANDYRADIOACTIVEVANILLAWARPPLANET.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.WORLDS.MEDIUMRADIOACTIVEVANILLAWARPPLANET.DESCRIPTION"
+#| msgid ""
+#| "A large-ish partially frozen world with a radioactive core.\n"
+#| "\n"
+#| "<smallcaps>While Radioactive Swamp Asteroid are largely swampy, they also "
+#| "contain a great deal of rust.</smallcaps>"
+msgctxt "STRINGS.WORLDS.MEDIUMSANDYRADIOACTIVEVANILLAWARPPLANET.DESCRIPTION"
+msgid ""
+"A large-ish world with a radioactive core.\n"
+"\n"
+"<smallcaps>The Radioactive Terra Asteroid is fairly dry and sandy, but does "
+"contain areas of jungle.</smallcaps>"
+msgstr ""
+"放射性のコアを持ち、巨大な氷塊がある場所です。\n"
+"\n"
+"<smallcaps>放射性沼地型小惑星は大部分が沼地ですが、錆も多く含まれています。</"
+"smallcaps>"
+
+#. STRINGS.WORLDS.MEDIUMSANDYRADIOACTIVEVANILLAWARPPLANET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.WORLDS.MEDIUMRADIOACTIVEVANILLAWARPPLANET.NAME"
+#| msgid "Radioactive Swamp Asteroid"
+msgctxt "STRINGS.WORLDS.MEDIUMSANDYRADIOACTIVEVANILLAWARPPLANET.NAME"
+msgid "Radioactive Terra Asteroid"
+msgstr "放射性沼地型小惑星"
+
 #. STRINGS.WORLDS.METALHEAVYLANDINGSITE.DESCRIPTION
 msgctxt "STRINGS.WORLDS.METALHEAVYLANDINGSITE.DESCRIPTION"
 msgid ""
@@ -87311,11 +88154,18 @@ msgid "Viscosia Asteroid"
 msgstr "ビスコシア型小惑星"
 
 #. STRINGS.WORLDS.REGOLITHMOONLET.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.WORLDS.REGOLITHMOONLET.DESCRIPTION"
+#| msgid ""
+#| "A small, dusty world with plenty of craters.\n"
+#| "\n"
+#| "<smallcaps>Regolith Asteroids have frequent meteor showers</smallcaps>"
 msgctxt "STRINGS.WORLDS.REGOLITHMOONLET.DESCRIPTION"
 msgid ""
-"A small, dusty world with plenty of craters.\n"
+"A small, cold world with plenty of craters.\n"
 "\n"
-"<smallcaps>Regolith Asteroids have frequent meteor showers</smallcaps>"
+"<smallcaps>Regolith Asteroids have frequent meteor showers and are chalk "
+"full of Regolith, an incredibly useful filtration material. </smallcaps>"
 msgstr ""
 "たくさんのクレーターが存在する、小さな埃っぽい惑星です。\n"
 "\n"
@@ -87689,6 +88539,48 @@ msgstr ""
 msgctxt "STRINGS.WORLDS.WATERMOONLET.NAME"
 msgid "Water Asteroid"
 msgstr "水型小惑星"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.NAME"
+#~ msgid "Waiting For Radbolts"
+#~ msgstr "RADボルト待ち"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.NAME"
+#~ msgid "Target: None"
+#~ msgstr "ターゲット: なし"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.TOOLTIP"
+#~ msgid "\"Awaiting transmission of coordinates...\""
+#~ msgstr "「座標送信受付中...」"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEARANALYZER.NAME"
+#~ msgid "Anomaly Scanner"
+#~ msgstr "特異点スキャナー"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.NAME"
+#~ msgid "Temporal Ripper"
+#~ msgstr "次元断裂機"
+
+#~ msgctxt "STRINGS.CODEX.B2_MEETTHEPILOT.SUBTITLE"
+#~ msgid "PUBLIC RELEASE"
+#~ msgstr "一般公開"
+
+#~ msgctxt "STRINGS.CODEX.B2_MEETTHEPILOT.TITLE"
+#~ msgid "The Future of Space Flight"
+#~ msgstr "宇宙飛行の未来"
+
+#~ msgctxt "STRINGS.CODEX.C01_Evil.SUBTITLE"
+#~ msgid "ENCRYPTION LEVEL: NONE"
+#~ msgstr "暗号化レベル: なし"
+
+#~ msgctxt ""
+#~ "STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MESSAGE_TITLE_DLC1"
+#~ msgid "DLC1"
+#~ msgstr "DLC1"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "THE BIG MERGE"
+#~ msgstr "THE BIG MERGE"
 
 #~ msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.EFFECT"
 #~ msgid "Crushes carbon into diamonds"
