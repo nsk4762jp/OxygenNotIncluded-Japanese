@@ -97,6 +97,11 @@ msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.CONDUIT_CONTENTS_FROZE"
 msgid "pipe contents becoming too cold"
 msgstr "パイプ内容物の過冷却"
 
+#. STRINGS.BUILDINGS.DAMAGESOURCES.CORROSIVE_ELEMENT
+msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.CORROSIVE_ELEMENT"
+msgid "corrosive element"
+msgstr "腐食性元素"
+
 #. STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.LIQUID_PRESSURE"
 msgid "neighboring liquid pressure"
@@ -266,7 +271,7 @@ msgstr "<link=\"AIRBORNECREATURELURE\">浮遊動物ルアー</link>"
 #. STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.DESC"
 msgid "A thermo regulator doesn't remove heat, but relocates it to a new area."
-msgstr "空調設備は熱を除去する訳ではなく、別の場所に移し替えます。"
+msgstr "気体冷却機は熱を除去する訳ではなく、別の場所に移し替えます。"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.EFFECT"
@@ -280,7 +285,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRCONDITIONER.NAME"
 msgid "<link=\"AIRCONDITIONER\">Thermo Regulator</link>"
-msgstr "<link=\"AIRCONDITIONER\">空調設備</link>"
+msgstr "<link=\"AIRCONDITIONER\">気体冷却機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.DESC"
@@ -300,7 +305,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.AIRFILTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.AIRFILTER.NAME"
 msgid "<link=\"AIRFILTER\">Deodorizer</link>"
-msgstr "<link=\"AIRFILTER\">脱臭剤</link>"
+msgstr "<link=\"AIRFILTER\">脱臭機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ALGAEDISTILLERY.DESC"
@@ -424,6 +429,21 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.NAME"
 msgid "<link=\"ARTIFACTANALYSISSTATION\">Artifact Analysis Station</link>"
 msgstr "<link=\"ARTIFACTANALYSISSTATION\">遺物分析端末</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.PAYLOAD_DROP_RATE
+msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.PAYLOAD_DROP_RATE"
+msgid "Vacillator Recharge drop chance: {chance}"
+msgstr "神経シャッフルマシン充電器ドロップ率: {chance}"
+
+#. STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.PAYLOAD_DROP_RATE_TOOLTIP
+msgctxt ""
+"STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.PAYLOAD_DROP_RATE_TOOLTIP"
+msgid ""
+"This artifact has a {chance} to drop a Vacillator Recharge when analyzed at "
+"the <link=\"ARTIFACTANALYSISSTATION\">Artifact Analysis Station</link>"
+msgstr ""
+"この旧世界の遺物は<link=\"ARTIFACTANALYSISSTATION\">遺物分析端末</link>にかけ"
+"ると {chance} の確率で神経シャッフルマシン充電器をドロップします"
 
 #. STRINGS.BUILDINGS.PREFABS.ARTIFACTCARGOBAY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTCARGOBAY.DESC"
@@ -4496,7 +4516,7 @@ msgstr "<link=\"LIQUIDCARGOBAYSMALL\">液体貨物タンク</link>"
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.DESC"
 msgid "A thermo aquatuner cools liquid and outputs the heat elsewhere."
-msgstr "液体クーラーは液体を冷却し、その熱を外部に出力します。"
+msgstr "液体冷却機は液体を冷却し、その熱を外部に出力します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.EFFECT"
@@ -4510,7 +4530,7 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDITIONER.NAME"
 msgid "<link=\"LIQUIDCONDITIONER\">Thermo Aquatuner</link>"
-msgstr "<link=\"LIQUIDCONDITIONER\">液体クーラー</link>"
+msgstr "<link=\"LIQUIDCONDITIONER\">液体冷却機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.DESC"
@@ -7578,13 +7598,17 @@ msgid ""
 "\"ELEMENTSGAS\">gas</link>, <link=\"ELEMENTSLIQUID\">liquid</link> and <link="
 "\"ELEMENTSSOLID\">solid</link> resources from space.\n"
 "\n"
-"Must be built at the top of a rocket."
+"Must be built at the top of a rocket with <link=\"ELEMENTSGAS\">gas</link>, "
+"<link=\"ELEMENTSLIQUID\">liquid</link> or <link=\"ELEMENTSSOLID\">solid</"
+"link> Cargo Module attached to store the appropriate resources."
 msgstr ""
 "ロケットが宇宙ゴミを採掘できるようになり、宇宙から<link=\"ELEMENTSGAS\">気体"
 "</link>、<link=\"ELEMENTSLIQUID\">液体</link>、<link=\"ELEMENTSSOLID\">固体</"
 "link>といった資源を収集します。\n"
 "\n"
-"ロケットの先端に取り付けなければなりません。"
+"適切な資源を貯蔵するために<link=\"ELEMENTSGAS\">気体</link>、<link="
+"\"ELEMENTSLIQUID\">液体</link>、<link=\"ELEMENTSSOLID\">固体</link>貨物モ"
+"ジュールを備えたロケットの先端に取り付けなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.NOSECONEHARVEST.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.NOSECONEHARVEST.NAME"
@@ -11295,7 +11319,7 @@ msgid ""
 "\n"
 "Was it looking for something?"
 msgstr ""
-"これが何のためのものなのか判断しかねる。\n"
+"これが何のためのものなのか判断しかねます。\n"
 "\n"
 "何かを探していた？"
 
@@ -11306,8 +11330,8 @@ msgstr "洗練された遺伝子ロックを持つ強力なドアです。"
 
 #. STRINGS.BUILDINGS.PREFABS.TEMPORALTEARANALYZER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEARANALYZER.NAME"
-msgid "Anomaly Scanner"
-msgstr "特異点スキャナー"
+msgid "Temporal Tear Scanner"
+msgstr "時間の裂け目スキャナー"
 
 #. STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.DESC"
@@ -11327,8 +11351,8 @@ msgstr "洗練された遺伝子ロックを持つ強力なドアです。"
 
 #. STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.NAME"
-msgid "Temporal Ripper"
-msgstr "次元断裂機"
+msgid "Temporal Tear Opener"
+msgstr "時間の裂け目オープナー"
 
 #. STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.SIDESCREEN.TEXT
 msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.SIDESCREEN.TEXT"
@@ -12012,6 +12036,14 @@ msgstr "自動修理有効化"
 msgctxt "STRINGS.BUILDINGS.REPAIRABLE.ENABLE_AUTOREPAIR.TOOLTIP"
 msgid "Automatically repair this building when damaged"
 msgstr "設備に損傷があると自動的に修理します"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEARANALYZER.NAME"
+#~ msgid "Anomaly Scanner"
+#~ msgstr "特異点スキャナー"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.NAME"
+#~ msgid "Temporal Ripper"
+#~ msgstr "次元断裂機"
 
 #~ msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.EFFECT"
 #~ msgid "Crushes carbon into diamonds"
