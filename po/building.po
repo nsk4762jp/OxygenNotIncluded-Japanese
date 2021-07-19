@@ -1197,13 +1197,21 @@ msgstr "製作するレシピをセットしてください"
 
 #. STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.NAME"
-msgid "Waiting For Radbolts"
-msgstr "RADボルト待ち"
+msgid "Waiting For Radbolts ({CurrentHEP}/{HEPRequired})"
+msgstr "RADボルト待ち ({CurrentHEP}/{HEPRequired})"
 
 #. STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.TOOLTIP"
-msgid "A queued recipe requires more Radbolts than are currently stored"
-msgstr "キューにあるレシピは現在貯蔵されている以上のRADボルトを必要とします"
+msgid ""
+"A queued recipe requires more Radbolts than are currently stored.\n"
+"\n"
+"Currently stored: {CurrentHEP}\n"
+"Required for recipe: {HEPRequired}"
+msgstr ""
+"キューにあるレシピは現在貯蔵されている以上のRADボルトを必要とします。\n"
+"\n"
+"貯蔵分: {CurrentHEP}\n"
+"レシピ必要分: {HEPRequired}"
 
 #. STRINGS.BUILDING.STATUSITEMS.FLIGHTALLCARGOFULL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FLIGHTALLCARGOFULL.NAME"
@@ -1278,6 +1286,33 @@ msgid ""
 msgstr ""
 "回復中の複製人間の周囲 <b>{0}</b> セル以内に<style=\"KKeyword\">食糧</style>"
 "が必要です"
+
+#. STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME"
+msgid "Cooling Contents"
+msgstr "内容物冷却中"
+
+#. STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.TOOLTIP"
+msgid "The contents of this food storage are still being cooled down."
+msgstr "この食糧貯蔵庫内容物はまだ冷却中です。"
+
+#. STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.NAME"
+msgid "Energy Saver: {UsedPower}"
+msgstr "省エネ機能: {UsedPower}"
+
+#. STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.TOOLTIP"
+msgid ""
+"Energy saver activated, using {UsedPower} of {MaxPower}\n"
+"\n"
+"The contents of this food storage are at refrigeration temperatures and need "
+"no further cooling."
+msgstr ""
+"省エネ機能が有効になっており、{MaxPower}中{UsedPower}を使用しています。\n"
+"\n"
+"この食糧貯蔵庫の内容物は冷蔵温度に達しており、これ以上の冷却は不要です。"
 
 #. STRINGS.BUILDING.STATUSITEMS.GANTRY.AUTOMATION_CONTROL
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.AUTOMATION_CONTROL"
@@ -3881,6 +3916,19 @@ msgid ""
 msgstr ""
 "心地よいこんがり肌を作るのに十分な<link=\"LIGHT\">光</link>量があります"
 
+#. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES.NAME
+msgctxt ""
+"STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES.NAME"
+msgid "Too few Printing Pods {progress}"
+msgstr "製造ポッド不足 {progress}"
+
+#. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES.TOOLTIP
+msgctxt ""
+"STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES."
+"TOOLTIP"
+msgid "This device relies on a network of activated Printing Pods {progress}"
+msgstr "この機器は稼働中の製造ポッドネットワーク {progress} に依存しています"
+
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_LOS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_LOS.NAME"
 msgid "Line of Sight: Obstructed"
@@ -3893,27 +3941,35 @@ msgstr "この装置は視界が開けていないと操作できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.NAME"
-msgid "Target: None"
-msgstr "ターゲット: なし"
+msgid "Temporal Tear not revealed"
+msgstr "時間の裂け目未発見"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.TOOLTIP"
-msgid "\"Awaiting transmission of coordinates...\""
-msgstr "「座標送信受付中...」"
+msgid ""
+"This machine is meant to target something in space, but the target is not "
+"yet revealed."
+msgstr ""
+"この機械は宇宙のどこかをターゲットにしているようですが、それがどこかは明らか"
+"になっていません。"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.NAME"
-msgid "Progress: {progress}"
-msgstr "進捗率: {progress}"
+msgid "Charging Progress: {progress}"
+msgstr "チャージ進捗率: {progress}"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP"
-msgid "Operation will commence once this device is fully charged"
-msgstr "このメーターが満タンになると操作を開始します"
+msgid ""
+"This device must be charged with a high number of Radbolts. Operation can "
+"commence once this device is fully charged"
+msgstr ""
+"この機器は大量のRADボルトによるチャージが必要です。完全にチャージされると操作"
+"可能となります"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION"
-msgid "Temporal Ripper fully charged"
+msgid "Temporal Tear Opener fully charged"
 msgstr "次元断裂機チャージ完了"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION_TOOLTIP
@@ -4485,3 +4541,16 @@ msgstr "複製人間の操作が必要"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKREQUIRESMINION.TOOLTIP"
 msgid "A Duplicant must be present to complete this operation"
 msgstr "この操作には複製人間が必要です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.NAME"
+#~ msgid "Waiting For Radbolts"
+#~ msgstr "RADボルト待ち"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.NAME"
+#~ msgid "Target: None"
+#~ msgstr "ターゲット: なし"
+
+#~ msgctxt ""
+#~ "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.TOOLTIP"
+#~ msgid "\"Awaiting transmission of coordinates...\""
+#~ msgstr "「座標送信受付中...」"
