@@ -2,7 +2,7 @@ Oxygen Not Included 日本語化
 ====
 
 Klei Entertainment 制作のスペースコロニー経営ゲーム「[Oxygen Not Included](http://store.steampowered.com/app/457140/)」の日本語化作業を行っています。  
-Spaced Out! DLC Early Access (Big Merge Update) に対応しています。
+Spaced Out! DLC Early Access (Breath of Fresh Air Update) に対応しています。
 
 ## 翻訳サンプル
 <image src="https://raw.githubusercontent.com/wiki/nsk4762jp/OxygenNotIncluded-Japanese/sample.jpg" width="75%">
@@ -37,23 +37,28 @@ MIT License
 
 ## 貢献者
 
-[LefTonbo](https://github.com/seameteo)  
+[LefTonbo](https://github.com/leftonbo)  
 
-[Shohei](https://github.com/shohei918)
+[Shohei](https://github.com/shohei918)  
 
-[Yoshida Seisuke](https://github.com/seisuke)
+[Yoshida Seisuke](https://github.com/seisuke)  
 
-[Souki Tanaka](https://github.com/souki-tn)
+[Souki Tanaka](https://github.com/souki-tn)  
 
-[kankoromochi](https://github.com/kankoromochi)
+[kankoromochi](https://github.com/kankoromochi)  
 
-[piyo-gh](https://github.com/piyo-gh)
+[piyo-gh](https://github.com/piyo-gh)  
 
-[yamashu](https://github.com/yamashush)
+[yamashu](https://github.com/yamashush)  
 
-[Kazuhiro Mizushima](https://github.com/VoQn)
+[Kazuhiro Mizushima](https://github.com/VoQn)  
 
-[halver3214](https://github.com/halver3214)
+[halver3214](https://github.com/halver3214)  
+
+[wada314](https://github.com/wada314)  
+
+[denev-rove](https://github.com/denev-rove)  
+
 
 
 ## このリポジトリの運用方法
