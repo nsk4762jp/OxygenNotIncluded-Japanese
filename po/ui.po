@@ -771,6 +771,16 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.RESEARCH_MATERIALS"
 msgid "{0}: {1} per <link=\"RESEARCH\">Research</link> point"
 msgstr "{0}: <link=\"RESEARCH\">研究</link>ポイントごとに{1}"
 
+#. STRINGS.UI.BUILDINGEFFECTS.ROCKETRESTRICTION_BUILDINGS
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.ROCKETRESTRICTION_BUILDINGS"
+msgid "    • Buildings: {buildinglist}"
+msgstr "    • 設備: {buildinglist}"
+
+#. STRINGS.UI.BUILDINGEFFECTS.ROCKETRESTRICTION_HEADER
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.ROCKETRESTRICTION_HEADER"
+msgid "Restriction Control:"
+msgstr "操作制限:"
+
 #. STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH"
 msgid "Shearable {Item}: {Amount} per {Time}"
@@ -1249,14 +1259,14 @@ msgid ""
 "\">Volume</style> and <style=\"KKeyword\">Specific Heat Capacity</style> of "
 "the pumped <style=\"KKeyword\">Gas</style>\n"
 "\n"
-"Cooling 1  Kg of <link=\"OXYGEN\">Oxygen</link> the entire <b>{1}</b> will "
+"Cooling 1  kg of <link=\"OXYGEN\">Oxygen</link> the entire <b>{1}</b> will "
 "output <b>{0}</b>"
 msgstr ""
 "吸入した<style=\"KKeyword\">気体</style>の<style=\"KKeyword\">体積</style>、"
 "<style=\"KKeyword\">比熱容量</style>をもとに<style=\"KKeyword\">発熱</style>"
 "します\n"
 "\n"
-"<link=\"OXYGEN\">酸素</link>1Kgを<b>{1}</b>に冷却すると、<b>{0}</b>出力します"
+"<link=\"OXYGEN\">酸素</link>1Kgを<b>{1}</b>冷却すると、<b>{0}</b>出力します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_LIQUIDCONDITIONER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_LIQUIDCONDITIONER"
@@ -1265,14 +1275,14 @@ msgid ""
 "\">Volume</style> and <style=\"KKeyword\">Specific Heat Capacity</style> of "
 "the pumped <style=\"KKeyword\">Liquid</style>\n"
 "\n"
-"Cooling 10  Kg of <link=\"WATER\">Water</link> the entire <b>{1}</b> will "
+"Cooling 10  kg of <link=\"WATER\">Water</link> the entire <b>{1}</b> will "
 "output <b>{0}</b>"
 msgstr ""
 "吸入した<style=\"KKeyword\">液体</style>の<style=\"KKeyword\">体積</style>、"
 "<style=\"KKeyword\">比熱容量</style>をもとに<style=\"KKeyword\">発熱</style>"
 "します\n"
 "\n"
-"<link=\"WATER\">水</link>10Kgを<b>{1}</b>に冷却すると、<b>{0}</b>出力します"
+"<link=\"WATER\">水</link>10Kgを<b>{1}</b>冷却すると、<b>{0}</b>出力します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.IMPROVED_BUILDINGS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.IMPROVED_BUILDINGS"
@@ -1613,6 +1623,22 @@ msgid ""
 msgstr ""
 "この研究端末は<style=\"KKeyword\">研究ポイント</style>あたり<style=\"KKeyword"
 "\">{0}</style>を<style=\"consumed\">{1}</style>消費します"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ROCKETRESTRICTION_BUILDINGS
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ROCKETRESTRICTION_BUILDINGS"
+msgid ""
+"This station controls the operational status of the following buildings:\n"
+"\n"
+"{buildinglist}"
+msgstr ""
+"この端末は、以下の設備の稼働状況を管理します:\n"
+"\n"
+"{buildinglist}"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ROCKETRESTRICTION_HEADER
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ROCKETRESTRICTION_HEADER"
+msgid "Controls whether a building is operational within a rocket interior"
+msgstr "設備がロケット内で稼働可能かを制御します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH"
@@ -3899,7 +3925,7 @@ msgid ""
 "Low germ count in this area is causing germs to die rapidly\n"
 "\n"
 "Fewer than {0} germs are on this {1} of material.\n"
-"({2} germs/ Kg)"
+"({2} germs/ kg)"
 msgstr ""
 "このエリアの病原菌の数はわずかであるため、菌はあっという間に死滅します\n"
 "\n"
@@ -3973,7 +3999,7 @@ msgid ""
 "the population stabilizes\n"
 "\n"
 "A maximum of {0} can be on this {1} of material.\n"
-"({2} germs/ Kg)"
+"({2} germs/ kg)"
 msgstr ""
 "このエリアに病原菌が多すぎるため、安定するまでは急速に死滅します\n"
 "\n"
@@ -7790,7 +7816,15 @@ msgstr "DLC有効化"
 #. STRINGS.UI.FRONTEND.MAINMENU.DLC.ACTIVATE_EXPANSION1_DESC
 msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.ACTIVATE_EXPANSION1_DESC"
 msgid "The game will need to restart in order to activate <i>Spaced Out!</i>"
-msgstr "<i>宇宙進出！</i>DLCをアクティブにするため、ゲームを再起動してください"
+msgstr "<i>宇宙進出！</i>DLCを有効化するには、ゲームを再起動してください"
+
+#. STRINGS.UI.FRONTEND.MAINMENU.DLC.ACTIVATE_EXPANSION1_RAIL_DESC
+msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.ACTIVATE_EXPANSION1_RAIL_DESC"
+msgid ""
+"<i>Spaced Out!</i> will be activated the next time you launch the game. The "
+"game will now close."
+msgstr ""
+"<i>宇宙進出！</i>DLCは次回ゲーム起動時に有効になります。ゲームを終了します。"
 
 #. STRINGS.UI.FRONTEND.MAINMENU.DLC.DEACTIVATE_EXPANSION1
 msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.DEACTIVATE_EXPANSION1"
@@ -7803,8 +7837,16 @@ msgid ""
 "The game will need to restart in order to activate the <i>Oxygen Not "
 "Included</i> base game."
 msgstr ""
-"ベースとなる<i>Oxygen Not Included</i>をアクティブにするため、ゲームを再起動"
-"してください。"
+"ベースとなる<i>Oxygen Not Included</i>を有効化するため、ゲームを再起動してく"
+"ださい。"
+
+#. STRINGS.UI.FRONTEND.MAINMENU.DLC.DEACTIVATE_EXPANSION1_RAIL_DESC
+msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.DEACTIVATE_EXPANSION1_RAIL_DESC"
+msgid ""
+"<i>Spaced Out!</i> will be deactivated the next time you launch the game. "
+"The game will now close."
+msgstr ""
+"<i>宇宙進出！</i>DLCは次回ゲーム起動時に無効になります。ゲームを終了します。"
 
 #. STRINGS.UI.FRONTEND.MAINMENU.LOADGAME
 msgctxt "STRINGS.UI.FRONTEND.MAINMENU.LOADGAME"
@@ -8494,8 +8536,8 @@ msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "A BREATH OF FRESH AIR"
-msgstr "A BREATH OF FRESH AIR"
+msgid "SOLAR SWAMPED UPDATE"
+msgstr "SOLAR SWAMPED UPDATE"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -8513,33 +8555,38 @@ msgstr "議論に参加"
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"Welcome to the newest update <b>A BREATH OF FRESH AIR</b>:\n"
+"Welcome to the <b>SOLAR SWAMPED UPDATE</b>:\n"
 "\n"
-"•<indent=20px>Several buildings and items have been added to the Base Game, "
-"including Oxygen Masks, and Meter Valves.</indent>\n"
-"•<indent=20px>Base Game now has all <i>Spaced Out!</i> bug fixes and quality-"
-"of-life improvements.</indent>\n"
-"•<indent=20px>Updates to <i>Spaced Out!</i> Colony Imperatives</indent>\n"
-"•<indent=20px>Significant updates to the Modding system, modders please see "
-"the forum for upgrade instructions.</indent>\n"
-"•<indent=20px>Toggle between <i>Spaced Out!</i> and Base Game in the main "
-"menu without re-downloading the game.</indent>\n"
+"<b><i>Spaced Out!</i></b>\n"
+"•<indent=20px>Added a third Classic Cluster: play on the Swamp Start to try "
+"the new biomes in a larger world</indent>\n"
+"•<indent=20px>Variable sunlight intensity per-world, changing the "
+"progression of solar panels</indent>\n"
+"•<indent=20px>New Location Sensor and usage restrictions on the Rocket "
+"Control Station to keep rockets prepped for their mission</indent>\n"
+"<b>Base Game</b>\n"
+"•<indent=20px>Numerous worldgen fixes to bugs introduced in the last update "
+"(Only affects newly generated worlds)</indent>\n"
+"•<indent=20px>Other bug fixes, including resolving several issues with Space "
+"Scanners</indent>\n"
 "\n"
 "   Check out the full patch notes for more details!"
 msgstr ""
-"<b>A BREATH OF FRESH AIR</b>アップデートにようこそ\n"
+"<b>SOLAR SWAMPED UPDATE</b>にようこそ:\n"
 "\n"
-"•<indent=20px>ベースゲームに酸素マスク、メーターバルブと言った設備が導入され"
-"ました</indent>\n"
-"•<indent=20px>ベースゲームに<i>宇宙進出！</i>DLCのQoL改善・バグ修正が取り込ま"
-"れました</indent>\n"
-"•<indent=20px><i>宇宙進出！</i>DLCのコロニー指示を更新しました</indent>\n"
-"•<indent=20px>MODシステムに大幅なアップデートをしました。MOD製作者はフォーラ"
-"ムにある更新ガイドを参照してください。</indent>\n"
-"•<indent=20px><i>宇宙進出！</i>DLCとベースゲームの切替を再ダウンロードするこ"
-"と無しにメインメニューから行えるようにしました</indent>\n"
+"<b><i>宇宙進出！</i></b>\n"
+"•<indent=20px>3つ目のクラシック小惑星群を追加: 大きめの惑星にある新しいバイ"
+"オームでプレイしよう</indent>\n"
+"•<indent=20px>惑星ごとに太陽光の強さが変化し、ソーラーパネルの充電力に差が出"
+"るように</indent>\n"
+"•<indent=20px>ロケーションセンサー、ロケット制御端末に制限制御を追加し、ロ"
+"ケット航行中の備えを万全に</indent>\n"
+"<b>ベースゲーム</b>\n"
+"•<indent=20px>沢山のワールド生成バグを修正(新しく生成されるワールドにのみ影"
+"響)</indent>\n"
+"•<indent=20px>宇宙スキャナーに起因する問題を含む、数々のバグ修正</indent>\n"
 "\n"
-"詳細はパッチノート全文を確認してください！"
+"   詳細はパッチノート全文を参照してください！"
 
 #. STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT
 msgctxt "STRINGS.UI.FRONTEND.MOTD.UPDATE_TEXT"
@@ -8876,24 +8923,26 @@ msgstr ""
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_AIRFILTER
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_AIRFILTER"
 msgid ""
-"•<indent=20px>MISSING. now requires <b>5w Power</b>.</indent>\n"
+"•<indent=20px><link=\"AIRFILTER\">Deodorizer</link> now requires <b>5w "
+"Power</b>.</indent>\n"
 "•<indent=20px>Duplicants will get <b>Stinging Eyes</b> from gasses such as "
 "chlorine and hydrogen.</indent>"
 msgstr ""
-"•<indent=20px>[欠落]は<b>電力 5w</b>を必要とします。</indent>\n"
+"•<indent=20px><link=\"AIRFILTER\">脱臭機</link>は<b>電力 5w</b>を必要としま"
+"す。</indent>\n"
 "•<indent=20px>複製人間は水素や塩素に触れると<b>目に沁みる</b>ようになります。"
 "</indent>"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_BUILDINGS
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_BUILDINGS"
 msgid ""
-"•<indent=20px>The <b>MISSING.</b> has been added to aid early-game "
-"exploration.</indent>\n"
+"•<indent=20px>The <b><link=\"OXYGENMASKSTATION\">Oxygen Mask Station</link></"
+"b> has been added to aid early-game exploration.</indent>\n"
 "•<indent=20px>Use the new <b>Meter Valves</b> for precise control of "
 "resources in pipes.</indent>"
 msgstr ""
-"•<indent=20px>ゲーム初期の探索を助ける<b>[欠落]</b>が追加されました。</"
-"indent>\n"
+"•<indent=20px>ゲーム初期の探索を助ける<b><link=\"OXYGENMASKSTATION\">酸素マス"
+"ク端末</link></b>が追加されました。</indent>\n"
 "•<indent=20px>パイプに正確な量の資源を通したい場合は<b>メーターバルブ</b>を"
 "使ってください。</indent>"
 
@@ -8915,11 +8964,12 @@ msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_SIMULATION"
 msgid ""
 "•<indent=20px>Many <b>simulation bugs</b> have been fixed.</indent>\n"
 "•<indent=20px>This may <b>change the effectiveness</b> of certain "
-"contraptions and MISSING. setups.</indent>"
+"contraptions and <link=\"STEAMTURBINE2\">Steam Turbine</link> setups.</"
+"indent>"
 msgstr ""
 "•<indent=20px><b>シミュレーションのバグ</b>を大量に修正しました。</indent>\n"
-"•<indent=20px>これによって仕掛けや[欠落]の<b>有効性が変化</b>する場合がありま"
-"す。</indent>"
+"•<indent=20px>これによって仕掛けや<link=\"STEAMTURBINE2\">蒸気タービン</link>"
+"の<b>有効性が変化</b>する場合があります。</indent>"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_TITLE
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_TITLE"
@@ -9180,14 +9230,15 @@ msgstr ""
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FAILURE"
 msgid ""
 "A problem occurred while generating a world from this seed:\n"
-"{0}. \n"
+"{0}.\n"
 "\n"
-"Please try again with a different seed."
+"Unfortunately, not all seeds germinate. Please try again with a different "
+"seed."
 msgstr ""
 "このシード値でワールドを生成中にエラーが発生しました: \n"
 "{0}.\n"
 "\n"
-"違うシード値で再度行ってください。"
+"残念ながら、芽の出ないシードもあります。違うシード値で再度行ってください。"
 
 #. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FILES
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FILES"
@@ -15345,6 +15396,11 @@ msgctxt "STRINGS.UI.SKILLS_SCREEN.SORT_BY_SKILL_AVAILABLE"
 msgid "Skill Points"
 msgstr "スキルポイント"
 
+#. STRINGS.UI.SPACEARTIFACTS.AMELIASWATCH.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.AMELIASWATCH.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.AMELIASWATCH.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.AMELIASWATCH.DESCRIPTION"
 msgid ""
@@ -15392,6 +15448,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.ARTIFACTTIERS.TIER5"
 msgid "Rarity 5"
 msgstr "レア度5"
 
+#. STRINGS.UI.SPACEARTIFACTS.BIOLUMROCK.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.BIOLUMROCK.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.BIOLUMROCK.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.BIOLUMROCK.DESCRIPTION"
 msgid ""
@@ -15406,6 +15467,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.BIOLUMROCK.NAME"
 msgid "Bioluminescent Rock"
 msgstr "生物発光岩"
 
+#. STRINGS.UI.SPACEARTIFACTS.BLENDER.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.BLENDER.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.BLENDER.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.BLENDER.DESCRIPTION"
 msgid ""
@@ -15418,6 +15484,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.BLENDER.NAME"
 msgid "Blender"
 msgstr "撹拌機"
 
+#. STRINGS.UI.SPACEARTIFACTS.BRICKPHONE.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.BRICKPHONE.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.BRICKPHONE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.BRICKPHONE.DESCRIPTION"
 msgid "It still works."
@@ -15428,6 +15499,19 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.BRICKPHONE.NAME"
 msgid "Strange Brick"
 msgstr "奇妙なガラケー"
 
+#. STRINGS.UI.SPACEARTIFACTS.DNAMODEL.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.DNAMODEL.ARTIFACT"
+msgid ""
+"A physical representation of the building blocks of life.\n"
+"\n"
+"This one contains trace amounts of a Genetic Ooze prototype that was once "
+"used by Gravitas."
+msgstr ""
+"生命の構成要素を物理的に表現したものです。\n"
+"\n"
+"かつてグラビタスが使用していた遺伝子組み換え生命の素のプロトタイプの痕跡があ"
+"ります。"
+
 #. STRINGS.UI.SPACEARTIFACTS.DNAMODEL.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.DNAMODEL.DESCRIPTION"
 msgid "An educational model of genetic information."
@@ -15437,6 +15521,15 @@ msgstr "遺伝情報の教育モデルです。"
 msgctxt "STRINGS.UI.SPACEARTIFACTS.DNAMODEL.NAME"
 msgid "Double Helix Model"
 msgstr "二重らせんモデル"
+
+#. STRINGS.UI.SPACEARTIFACTS.EGGROCK.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.EGGROCK.ARTIFACT"
+msgid ""
+"The words \"Happy Farters Day Dad. Love Macy\" appear on the bottom of this "
+"rock, written in a childlish scrawl."
+msgstr ""
+"この石の底には「ぱぱのひ おめでとう メーシーより」という言葉が子供らしい文字"
+"で書かれています。"
 
 #. STRINGS.UI.SPACEARTIFACTS.EGGROCK.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.EGGROCK.DESCRIPTION"
@@ -15452,6 +15545,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.EGGROCK.NAME"
 msgid "Egg-Shaped Rock"
 msgstr "卵型の岩"
 
+#. STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.DESCRIPTION"
 msgid "Grub Grub"
@@ -15459,8 +15557,22 @@ msgstr "グラブグラブ"
 
 #. STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.GRUB_STATUE.NAME"
-msgid "Grub Statue"
-msgstr "グラブの彫像"
+msgid "Grubgrub Statue"
+msgstr "グラブグラブの彫像"
+
+#. STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.ARTIFACT"
+msgid ""
+"The preservation of this skeleton occurred artificially using a technique "
+"called the \"The Ali Method\".\n"
+"\n"
+"It should be noted that this fossilization technique was pioneered by one "
+"Dr. Ashkan Seyed Ali, an employee of Gravitas."
+msgstr ""
+"この骨格の保存は「アリ法」と呼ばれる手法で人工的に行われました。\n"
+"\n"
+"この化石化技術はグラビタスの従業員だったアシュカン・サイード・アリ博士により"
+"開拓されたと言います。"
 
 #. STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.DESCRIPTION"
@@ -15472,6 +15584,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.HATCHFOSSIL.NAME"
 msgid "Pristine Fossil"
 msgstr "原始の化石"
 
+#. STRINGS.UI.SPACEARTIFACTS.HONEY_JAR.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.HONEY_JAR.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.HONEY_JAR.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.HONEY_JAR.DESCRIPTION"
 msgid "This doesn't taste like uranium"
@@ -15481,6 +15598,11 @@ msgstr "ウランのような味はしません"
 msgctxt "STRINGS.UI.SPACEARTIFACTS.HONEY_JAR.NAME"
 msgid "Honey Jar"
 msgstr "蜂蜜入りの瓶"
+
+#. STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.ARTIFACT"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.DESCRIPTION"
@@ -15492,6 +15614,19 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.MAGMALAMP.NAME"
 msgid "Magma Lamp"
 msgstr "マグマランプ"
 
+#. STRINGS.UI.SPACEARTIFACTS.MODERNART.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.MODERNART.ARTIFACT"
+msgid ""
+"A sculpture of the Neoplastism movement of Modern Art.\n"
+"\n"
+"Gravitas records show that this piece was once used in a presentation called "
+"'Form and Function and the Corporate Aesthetic'."
+msgstr ""
+"モダンアートの新造形主義運動から生み出された彫刻です。\n"
+"\n"
+"グラビタスの記録によると、この作品はかつて「形と機能と企業の美学」というプレ"
+"ゼンテーションで使用されていました。"
+
 # sweat(名詞:汗、動詞:酷使する)
 #. STRINGS.UI.SPACEARTIFACTS.MODERNART.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MODERNART.DESCRIPTION"
@@ -15501,7 +15636,12 @@ msgstr "意味が分からない。"
 #. STRINGS.UI.SPACEARTIFACTS.MODERNART.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MODERNART.NAME"
 msgid "Modern Art"
-msgstr "近代美術"
+msgstr "モダンアート"
+
+#. STRINGS.UI.SPACEARTIFACTS.MOLDAVITE.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.MOLDAVITE.ARTIFACT"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.MOLDAVITE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MOLDAVITE.DESCRIPTION"
@@ -15513,6 +15653,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.MOLDAVITE.NAME"
 msgid "Moldavite"
 msgstr "モルダバイト"
 
+#. STRINGS.UI.SPACEARTIFACTS.MOOD_RING.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.MOOD_RING.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.MOOD_RING.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MOOD_RING.DESCRIPTION"
 msgid "How radioactive are you feeling?"
@@ -15523,6 +15668,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.MOOD_RING.NAME"
 msgid "Radiation Mood Ring"
 msgstr "放射線ムードリング"
 
+#. STRINGS.UI.SPACEARTIFACTS.MOONMOONMOON.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.MOONMOONMOON.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.MOONMOONMOON.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MOONMOONMOON.DESCRIPTION"
 msgid "A moon's moon's moon. It's very small."
@@ -15532,6 +15682,11 @@ msgstr "月の月の月。とても小さいです。"
 msgctxt "STRINGS.UI.SPACEARTIFACTS.MOONMOONMOON.NAME"
 msgid "Moonmoonmoon"
 msgstr "ムーンムーンムーン"
+
+#. STRINGS.UI.SPACEARTIFACTS.OBELISK.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.OBELISK.ARTIFACT"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.OBELISK.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.OBELISK.DESCRIPTION"
@@ -15549,6 +15704,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.OBELISK.NAME"
 msgid "Small Obelisk"
 msgstr "小さなオベリスク"
 
+#. STRINGS.UI.SPACEARTIFACTS.OFFICEMUG.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.OFFICEMUG.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.OFFICEMUG.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.OFFICEMUG.DESCRIPTION"
 msgid ""
@@ -15560,15 +15720,34 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.OFFICEMUG.NAME"
 msgid "Office Mug"
 msgstr "事務所のマグカップ"
 
+#. STRINGS.UI.SPACEARTIFACTS.OKAYXRAY.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.OKAYXRAY.ARTIFACT"
+msgid ""
+"The description on this X-ray indicates that it was taken in the Gravitas "
+"Medical Facility.\n"
+"\n"
+"Most likely this X-ray was performed to investigate an injury that occurred "
+"within the facility."
+msgstr ""
+"このX線の説明によると、グラビタス医療施設で撮影されたものであることがわかりま"
+"す。\n"
+"\n"
+"このX線は施設内で発生した怪我を調査するために行われた可能性が高いです。"
+
 #. STRINGS.UI.SPACEARTIFACTS.OKAYXRAY.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.OKAYXRAY.DESCRIPTION"
 msgid "Ew, weird. It has five fingers!"
-msgstr "えっ、変だ。指が5本ある！"
+msgstr "えっ、変じゃない？指が5本ある！"
 
 #. STRINGS.UI.SPACEARTIFACTS.OKAYXRAY.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.OKAYXRAY.NAME"
 msgid "Old X-Ray"
 msgstr "古いレントゲン"
+
+#. STRINGS.UI.SPACEARTIFACTS.ORACLE.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.ORACLE.ARTIFACT"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.ORACLE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.ORACLE.DESCRIPTION"
@@ -15580,16 +15759,36 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.ORACLE.NAME"
 msgid "Useless Machine"
 msgstr "役立たずの機械"
 
+#. STRINGS.UI.SPACEARTIFACTS.PERCOLATOR.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.PERCOLATOR.ARTIFACT"
+msgid ""
+"A coffee percolator with the reminants of a blend of coffee that was a "
+"personal favorite of Dr. Hassan Aydem.\n"
+"\n"
+"He would specifically reserve the consumption of this particular blend for "
+"when he was reviewing research papers on Sunday afternoons."
+msgstr ""
+"ハッサン・アイデム博士が好んで飲んでいたブレンドコーヒーの残骸が入ったコー"
+"ヒー沸かしです。\n"
+"\n"
+"彼は日曜日の午後に研究論文を読むときに備えて、この特別なブレンドを飲むことを"
+"特別に控えていました。"
+
 #. STRINGS.UI.SPACEARTIFACTS.PERCOLATOR.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.PERCOLATOR.DESCRIPTION"
 msgid "Don't drink from it! There was a pacu... IN the percolator!"
-msgstr "それから飲んでは駄目だ！そのコーヒー沸かしの中にパクーが居たんだ...！"
+msgstr "それを飲んでは駄目だ！そのコーヒー沸かしの中にパクーが居たんだ...！"
 
 # Prospect + lator
 #. STRINGS.UI.SPACEARTIFACTS.PERCOLATOR.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.PERCOLATOR.NAME"
 msgid "Percolator"
 msgstr "濾過装置付きコーヒー沸かし"
+
+#. STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.ARTIFACT"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.DESCRIPTION"
@@ -15600,6 +15799,17 @@ msgstr "それなしではスペースコロニーは完成しません。"
 msgctxt "STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.NAME"
 msgid "Plasma Lamp"
 msgstr "プラズマランプ"
+
+#. STRINGS.UI.SPACEARTIFACTS.RAINBOWEGGROCK.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.RAINBOWEGGROCK.ARTIFACT"
+msgid ""
+"The words \"Happy Father's Day, Dad. Love you!\" appear on the bottom of "
+"this rock, written in very neat handwriting. The words are surrounded by "
+"four hearts drawn in what appears to be a pink gel pen."
+msgstr ""
+"この岩の底にはとても綺麗な手書きの「父の日おめでとう、愛してる！」という言葉"
+"が書かれています。言葉はピンクのジェルペンで描かれた4つのハートに囲まれていま"
+"す。"
 
 #. STRINGS.UI.SPACEARTIFACTS.RAINBOWEGGROCK.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.RAINBOWEGGROCK.DESCRIPTION"
@@ -15619,15 +15829,32 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.RAINBOWEGGROCK.NAME"
 msgid "Egg-Shaped Rock"
 msgstr "卵型の岩"
 
+#. STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.DESCRIPTION"
-msgid "It's pronounced nuclear"
-msgstr "原・子・力と発音します"
+msgid "It's pronounced nu-clear."
+msgstr "原子力(はらこ つとむ)と発音します。"
 
 #. STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.REACTOR_MODEL.NAME"
 msgid "Model Nuclear Power Plant"
 msgstr "原子力発電所の模型"
+
+#. STRINGS.UI.SPACEARTIFACTS.ROBOTARM.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.ROBOTARM.ARTIFACT"
+msgid ""
+"A commercially available robot arm that has had a significant amount of "
+"modifications made to it.\n"
+"\n"
+"The initials B.A. appear on one of the fingers."
+msgstr ""
+"市販のロボットアームに大幅な改造を施したもの。\n"
+"\n"
+"指の一本に B.A. のイニシャルが入っている。"
 
 #. STRINGS.UI.SPACEARTIFACTS.ROBOTARM.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.ROBOTARM.DESCRIPTION"
@@ -15639,6 +15866,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.ROBOTARM.NAME"
 msgid "Robot Arm"
 msgstr "ロボットアーム"
 
+#. STRINGS.UI.SPACEARTIFACTS.ROCKTORNADO.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.ROCKTORNADO.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.ROCKTORNADO.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.ROCKTORNADO.DESCRIPTION"
 msgid "It's unclear how it formed, although I'm glad it did."
@@ -15648,6 +15880,11 @@ msgstr "どのように形成されたかは不明です、でもそうなった
 msgctxt "STRINGS.UI.SPACEARTIFACTS.ROCKTORNADO.NAME"
 msgid "Tornado Rock"
 msgstr "トルネードロック"
+
+#. STRINGS.UI.SPACEARTIFACTS.RUBIKSCUBE.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.RUBIKSCUBE.ARTIFACT"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.RUBIKSCUBE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.RUBIKSCUBE.DESCRIPTION"
@@ -15659,6 +15896,22 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.RUBIKSCUBE.NAME"
 msgid "Rubik's Cube"
 msgstr "ルービックキューブ"
 
+#. STRINGS.UI.SPACEARTIFACTS.SANDSTONE.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.SANDSTONE.ARTIFACT"
+msgid ""
+"This sample of sandstone appears to have been processed by the Gravitas "
+"Mining Gun that was made available to the general public.\n"
+"\n"
+"Note: Gravitas public Mining Gun model is different than ones used by "
+"Duplicants in its larger size, and extra precautionary features added in "
+"order to be compliant with national safety standards."
+msgstr ""
+"この砂岩のサンプルは一般に公開されているグラビタスの採掘銃で処理されたものと"
+"思われる。\n"
+"\n"
+"特記事項: グラビタスが公開している採掘銃は複製人間が使っているものと異なり、"
+"サイズは大きく国の安全基準に準拠するための予防措置が講じられている。"
+
 #. STRINGS.UI.SPACEARTIFACTS.SANDSTONE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SANDSTONE.DESCRIPTION"
 msgid "A beautiful rock composed of multiple layers of sediment."
@@ -15669,15 +15922,34 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.SANDSTONE.NAME"
 msgid "Sandstone"
 msgstr "砂岩"
 
+#. STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.DESCRIPTION"
 msgid "The name \"Pesquet\" is barely legible on the inside."
-msgstr "内側に\"ペスケ\"という名前が、なんとか判読できます。"
+msgstr "内側に「ペスケ」という名前が、なんとか判読できます。"
 
 #. STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.NAME
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SAXOPHONE.NAME"
 msgid "Mangled Saxophone"
 msgstr "ボロボロのサクソフォン"
+
+#. STRINGS.UI.SPACEARTIFACTS.SHIELDGENERATOR.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.SHIELDGENERATOR.ARTIFACT"
+msgid ""
+"The energy field produced by this shield generator completely ignores those "
+"light behaviors which are wave-like and focuses instead on its particle "
+"behaviors.\n"
+"\n"
+"This appears to be possible when light is slowed down until it stops."
+msgstr ""
+"このシールド生成器が作り出すエネルギーフィールドは、光の波動的なふるまいを完"
+"全に無視し、粒子のふるまいに焦点を当てています。\n"
+"\n"
+"これは光の速度を停止状態まで持っていくと可能になるようです。"
 
 #. STRINGS.UI.SPACEARTIFACTS.SHIELDGENERATOR.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SHIELDGENERATOR.DESCRIPTION"
@@ -15690,6 +15962,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.SHIELDGENERATOR.NAME"
 msgid "Shield Generator"
 msgstr "シールド生成器"
 
+#. STRINGS.UI.SPACEARTIFACTS.SINK.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.SINK.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.SINK.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SINK.DESCRIPTION"
 msgid "No collection is complete without it."
@@ -15699,6 +15976,11 @@ msgstr "それなしではコレクションは完成しません。"
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SINK.NAME"
 msgid "Sink"
 msgstr "シンク"
+
+#. STRINGS.UI.SPACEARTIFACTS.SOLARSYSTEM.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.SOLARSYSTEM.ARTIFACT"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.SOLARSYSTEM.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.SOLARSYSTEM.DESCRIPTION"
@@ -15712,6 +15994,11 @@ msgctxt "STRINGS.UI.SPACEARTIFACTS.SOLARSYSTEM.NAME"
 msgid "Self-Contained System"
 msgstr "自己完結型システム"
 
+#. STRINGS.UI.SPACEARTIFACTS.STETHOSCOPE.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.STETHOSCOPE.ARTIFACT"
+msgid ""
+msgstr ""
+
 #. STRINGS.UI.SPACEARTIFACTS.STETHOSCOPE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.STETHOSCOPE.DESCRIPTION"
 msgid "Listens to Duplicant heartbeats, or gurgly tummies."
@@ -15721,6 +16008,11 @@ msgstr "複製人間の心拍や、ゴロゴロ鳴るお腹を聴きます。"
 msgctxt "STRINGS.UI.SPACEARTIFACTS.STETHOSCOPE.NAME"
 msgid "Stethoscope"
 msgstr "聴診器"
+
+#. STRINGS.UI.SPACEARTIFACTS.TEAPOT.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.TEAPOT.ARTIFACT"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.TEAPOT.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.TEAPOT.DESCRIPTION"
@@ -15732,6 +16024,11 @@ msgstr "厚いニュートロニウムの層で覆われた、宇宙の深層の
 msgctxt "STRINGS.UI.SPACEARTIFACTS.TEAPOT.NAME"
 msgid "Encrusted Teapot"
 msgstr "覆われたティーポット"
+
+#. STRINGS.UI.SPACEARTIFACTS.VHS.ARTIFACT
+msgctxt "STRINGS.UI.SPACEARTIFACTS.VHS.ARTIFACT"
+msgid ""
+msgstr ""
 
 #. STRINGS.UI.SPACEARTIFACTS.VHS.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEARTIFACTS.VHS.DESCRIPTION"
@@ -19881,8 +20178,8 @@ msgstr "分析済みの遺物はありません"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ARTIFACTANALYSISSIDESCREEN."
 "NO_ARTIFACTS_DISCOVERED_TOOLTIP"
-msgid "A skilled artist can analyze artifacts"
-msgstr "熟練したアーティストが旧世界の遺物を分析できます"
+msgid "Analyzing artifacts requires a skilled artist"
+msgstr "旧世界の遺物を分析するには熟練したアーティストが必要です"
 
 #. STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.ASSIGN_TO_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.ASSIGN_TO_TOOLTIP"
@@ -20225,6 +20522,22 @@ msgstr "着陸地点なし"
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.TITLE"
 msgid "Destination"
 msgstr "目的地"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERLOCATIONFILTERSIDESCREEN.EMPTY_SPACE_ROW
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.CLUSTERLOCATIONFILTERSIDESCREEN.EMPTY_SPACE_ROW"
+msgid "In Space"
+msgstr "宇宙にて"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERLOCATIONFILTERSIDESCREEN.HEADER
+msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERLOCATIONFILTERSIDESCREEN.HEADER"
+msgid "Send Green signal at locations"
+msgstr "グリーンを送信する場所"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERLOCATIONFILTERSIDESCREEN.TITLE
+msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERLOCATIONFILTERSIDESCREEN.TITLE"
+msgid "Location Filter"
+msgstr "ロケーションフィルター"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERWORLDSIDESCREEN.TITLE"
@@ -22457,7 +22770,7 @@ msgstr "<b>{0}</b>"
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.RANGE
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.RANGE"
-msgid "    • Potential Range: {0}/1 Kg Fuel ({1})"
+msgid "    • Potential Range: {0}/1 kg Fuel ({1})"
 msgstr "    • 航続距離: {0}/1 Kg 燃料 ({1})"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.SPEED
@@ -22476,6 +22789,60 @@ msgstr "増築した場合のロケット性能:"
 msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.TITLE"
 msgid "Rocket Module"
 msgstr "ロケットモジュール"
+
+#. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.AUTOMATION
+msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.AUTOMATION"
+msgid "Automation Controlled"
+msgstr "自動化制御"
+
+#. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.AUTOMATION_TOOLTIP
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.AUTOMATION_TOOLTIP"
+msgid ""
+"Building restrictions are managed by automation\n"
+"\n"
+"Buildings with their access restricted cannot be operated, though they can "
+"still be filled"
+msgstr ""
+"設備制限は自動化によって管理されています\n"
+"\n"
+"アクセス制限された設備は充電できますが操作はできません"
+
+#. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.BUILDING_RESTRICTIONS_LABEL
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN."
+"BUILDING_RESTRICTIONS_LABEL"
+msgid "Interior Building Restrictions"
+msgstr "内装設備制限"
+
+#. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.GROUNDED_RESTRICTION_BUTTON
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN."
+"GROUNDED_RESTRICTION_BUTTON"
+msgid "Grounded"
+msgstr "着陸"
+
+#. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.GROUNDED_RESTRICTION_BUTTON_TOOLTIP
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN."
+"GROUNDED_RESTRICTION_BUTTON_TOOLTIP"
+msgid ""
+"Buildings with their access restricted cannot be operated while grounded, "
+"though they can still be filled"
+msgstr "アクセス制限された設備は充電できますが着陸中は操作はできません"
+
+#. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.NONE_RESTRICTION_BUTTON
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.NONE_RESTRICTION_BUTTON"
+msgid "None"
+msgstr "なし"
+
+#. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.NONE_RESTRICTION_BUTTON_TOOLTIP
+msgctxt ""
+"STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN."
+"NONE_RESTRICTION_BUTTON_TOOLTIP"
+msgid "There are no restrictions on buildings inside this rocket"
+msgstr "このロケット内に制限可能な設備はありません"
 
 #. STRINGS.UI.UISIDESCREENS.ROLESTATION.OPENROLESBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.ROLESTATION.OPENROLESBUTTON"
@@ -23507,8 +23874,8 @@ msgstr " g"
 
 #. STRINGS.UI.UNITSUFFIXES.MASS.KILOGRAM
 msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.KILOGRAM"
-msgid " Kg"
-msgstr " Kg"
+msgid " kg"
+msgstr " kg"
 
 #. STRINGS.UI.UNITSUFFIXES.MASS.MICROGRAM
 msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.MICROGRAM"
@@ -24699,6 +25066,35 @@ msgctxt "STRINGS.UI.USERMENUACTIONS.RELOCATE.TOOLTIP_OFF"
 msgid "Cancel this relocation order"
 msgstr "移設指示を取り消します"
 
+#. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_CONTROLLED
+msgctxt "STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_CONTROLLED"
+msgid "Controlled"
+msgstr "制御中"
+
+#. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_UNCONTROLLED
+msgctxt "STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_UNCONTROLLED"
+msgid "Uncontrolled"
+msgstr "制御なし"
+
+#. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_CONTROLLED
+msgctxt "STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_CONTROLLED"
+msgid ""
+"Allow this building's operation to be controlled by a <link="
+"\"ROCKETCONTROLSTATION\">Rocket Control Station</link>"
+msgstr ""
+"この設備の操作を<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>に任せ"
+"ます"
+
+#. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_UNCONTROLLED
+msgctxt ""
+"STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_UNCONTROLLED"
+msgid ""
+"Do not allow this building to be controlled by a <link=\"ROCKETCONTROLSTATION"
+"\">Rocket Control Station</link>"
+msgstr ""
+"この設備の操作を<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>に任せ"
+"ません"
+
 #. STRINGS.UI.USERMENUACTIONS.SELECTRESEARCH.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.SELECTRESEARCH.NAME"
 msgid "Select Research"
@@ -25642,6 +26038,50 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "A BREATH OF FRESH AIR"
+#~ msgstr "A BREATH OF FRESH AIR"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#~ msgid ""
+#~ "Welcome to the newest update <b>A BREATH OF FRESH AIR</b>:\n"
+#~ "\n"
+#~ "•<indent=20px>Several buildings and items have been added to the Base "
+#~ "Game, including Oxygen Masks, and Meter Valves.</indent>\n"
+#~ "•<indent=20px>Base Game now has all <i>Spaced Out!</i> bug fixes and "
+#~ "quality-of-life improvements.</indent>\n"
+#~ "•<indent=20px>Updates to <i>Spaced Out!</i> Colony Imperatives</indent>\n"
+#~ "•<indent=20px>Significant updates to the Modding system, modders please "
+#~ "see the forum for upgrade instructions.</indent>\n"
+#~ "•<indent=20px>Toggle between <i>Spaced Out!</i> and Base Game in the main "
+#~ "menu without re-downloading the game.</indent>\n"
+#~ "\n"
+#~ "   Check out the full patch notes for more details!"
+#~ msgstr ""
+#~ "<b>A BREATH OF FRESH AIR</b>アップデートにようこそ\n"
+#~ "\n"
+#~ "•<indent=20px>ベースゲームに酸素マスク、メーターバルブと言った設備が導入さ"
+#~ "れました</indent>\n"
+#~ "•<indent=20px>ベースゲームに<i>宇宙進出！</i>DLCのQoL改善・バグ修正が取り"
+#~ "込まれました</indent>\n"
+#~ "•<indent=20px><i>宇宙進出！</i>DLCのコロニー指示を更新しました</indent>\n"
+#~ "•<indent=20px>MODシステムに大幅なアップデートをしました。MOD製作者はフォー"
+#~ "ラムにある更新ガイドを参照してください。</indent>\n"
+#~ "•<indent=20px><i>宇宙進出！</i>DLCとベースゲームの切替を再ダウンロードする"
+#~ "こと無しにメインメニューから行えるようにしました</indent>\n"
+#~ "\n"
+#~ "詳細はパッチノート全文を確認してください！"
+
+#~ msgctxt ""
+#~ "STRINGS.UI.UISIDESCREENS.ARTIFACTANALYSISSIDESCREEN."
+#~ "NO_ARTIFACTS_DISCOVERED_TOOLTIP"
+#~ msgid "A skilled artist can analyze artifacts"
+#~ msgstr "熟練したアーティストが旧世界の遺物を分析できます"
+
+#~ msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.KILOGRAM"
+#~ msgid " Kg"
+#~ msgstr " Kg"
 
 #~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
 #~ msgid "THE BIG MERGE"
