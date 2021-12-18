@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.UI.ACTIONS
@@ -1886,8 +1886,12 @@ msgstr "収集可能"
 
 #. STRINGS.UI.CLUSTERMAP.POI.ARTIFACTS_DEPLETED
 msgctxt "STRINGS.UI.CLUSTERMAP.POI.ARTIFACTS_DEPLETED"
-msgid "Collected"
-msgstr "収集済み"
+msgid ""
+"Collected\n"
+"Recharge: {0}"
+msgstr ""
+"収集済\n"
+"再収集可能になるまで: {0}"
 
 #. STRINGS.UI.CLUSTERMAP.POI.MASS_REMAINING
 msgctxt "STRINGS.UI.CLUSTERMAP.POI.MASS_REMAINING"
@@ -1902,7 +1906,7 @@ msgstr "<b>この場所にロケット</b>"
 #. STRINGS.UI.CLUSTERMAP.POI.TITLE
 msgctxt "STRINGS.UI.CLUSTERMAP.POI.TITLE"
 msgid "POINT OF INTEREST"
-msgstr "関心地点"
+msgstr "名所旧跡"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.ARTIFACT_MODULE.EMPTY
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.ARTIFACT_MODULE.EMPTY"
@@ -2049,11 +2053,14 @@ msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP"
 msgid ""
 "<b>Rocket Speed</b> is calculated by dividing <b>Engine Power</b> by "
 "<b>Burden</b>.\n"
-"Rockets operating on autopilot will have a reduced speed."
+"Rockets operating on autopilot will have a reduced speed.\n"
+"Rocket speed can be further increased by the skill of the Duplicant flying "
+"the rocket."
 msgstr ""
 "<b>ロケット速度</b>とは、<b>エンジン出力</b>を<b>総重量</b>で割ったもので"
 "す。\n"
-"オートパイロット中のロケットは減速します。"
+"オートパイロット中のロケットは減速します。\n"
+"ロケット速度は複製人間のスキルによって上昇させることができます。"
 
 #. STRINGS.UI.CLUSTERMAP.SELECT_DESTINATION
 msgctxt "STRINGS.UI.CLUSTERMAP.SELECT_DESTINATION"
@@ -2103,7 +2110,7 @@ msgstr "星図"
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_EMPTY_HEX
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_EMPTY_HEX"
 msgid "EMPTY SPACE"
-msgstr "虚無の空間"
+msgstr "虚空"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_HIDDEN_HEX
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_HIDDEN_HEX"
@@ -2285,6 +2292,11 @@ msgstr "<link=\"INVESTIGATIONS\">調査</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.JOURNALS"
 msgid "<link=\"JOURNALS\">Journals</link>"
 msgstr "<link=\"JOURNALS\">日誌</link>"
+
+#. STRINGS.UI.CODEX.CATEGORYNAMES.MEDIA
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MEDIA"
+msgid "<link=\"MEDIA\">Media</link>"
+msgstr "<link=\"MEDIA\">メディア</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.MISCELLANEOUSITEMS
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MISCELLANEOUSITEMS"
@@ -2745,7 +2757,7 @@ msgstr "    • 農耕不可能な農地があります"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NONE
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NONE"
-msgid "    • Colony has no farm plots"
+msgid "    • No farm plots"
 msgstr "    • コロニーに農地はありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NONE_PLANTED
@@ -3138,7 +3150,7 @@ msgstr "    • 軌道上に{0}基が着陸待機中です"
 msgctxt ""
 "STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETINORBITDIAGNOSTIC.NORMAL_NO_ROCKETS"
 msgid "    • No rockets waiting to land"
-msgstr "    • 軌道上に着陸待機中のロケットはありません"
+msgstr "    • 着陸待機中のロケットはありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.ROCKETINORBITDIAGNOSTIC.NORMAL_ONE_IN_ORBIT
 msgctxt ""
@@ -3267,17 +3279,17 @@ msgctxt ""
 "STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.CRITERIA."
 "CHECKTRAPPED"
 msgid "Check Trapped"
-msgstr "虜囚確認"
+msgstr "閉じ込め確認"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.NORMAL"
 msgid "    • No Duplicants are trapped"
-msgstr "    • 捕らわれの複製人間はいません"
+msgstr "    • 閉じ込められた複製人間はいません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.STUCK
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.STUCK"
 msgid "    • One or more Duplicants are trapped"
-msgstr "    • 身動きの取れない複製人間がいます"
+msgstr "    • 閉じ込められた複製人間がいます"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TRAPPEDDUPLICANTDIAGNOSTIC.TOOLTIP_NAME"
@@ -4131,6 +4143,17 @@ msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.PRESSURE.TITLE"
 msgid "    • Current pressure {0}: {1}"
 msgstr "    • 現在の気圧 {0}: {1}"
 
+#. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.DIE_TOOLTIP
+msgctxt ""
+"STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.DIE_TOOLTIP"
+msgid "Radiation exposure is causing germs to die off"
+msgstr "放射線に曝されると病原菌は死滅します"
+
+#. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.TITLE
+msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.TITLE"
+msgid "    • Exposed to {0} Rads: {1}"
+msgstr "    • 被ばく量 {0} Rads: {1}"
+
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE"
 msgid "Change rate: {0}"
@@ -4717,7 +4740,7 @@ msgstr "貨物ベイ"
 #. STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_CLUSTER_POI
 msgctxt "STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_CLUSTER_POI"
 msgid "POINT OF INTEREST"
-msgstr "関心地点"
+msgstr "名所旧跡"
 
 # 「状態」だと「ステータス」と被るのでまずい
 #. STRINGS.UI.DETAILTABS.SIMPLEINFO.GROUPNAME_CONDITION
@@ -5039,8 +5062,8 @@ msgstr ""
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED"
 msgid ""
-"Click to enable this diagnostic -  Current State: <b>Tutorial Disabled</b>"
-msgstr "診断を表示するにはクリック - 現在の状態: <b>チュートリアル無効</b>"
+"Click to enable this diagnostic -  Current State: <b>Temporarily disabled</b>"
+msgstr "診断を表示するにはクリック - 現在の状態: <b>一時無効</b>"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_ENABLED_COUNT
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_ENABLED_COUNT"
@@ -5196,7 +5219,7 @@ msgstr "選択した物体は {0} で液体に融解します"
 #. STRINGS.UI.ELEMENTAL.OVERHEATPOINT.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.OVERHEATPOINT.NAME"
 msgid "Overheat Modifier: {0}"
-msgstr "オーバーヒート要因: {0}"
+msgstr "オーバーヒート特性: {0}"
 
 #. STRINGS.UI.ELEMENTAL.OVERHEATPOINT.TOOLTIP
 msgctxt "STRINGS.UI.ELEMENTAL.OVERHEATPOINT.TOOLTIP"
@@ -5207,7 +5230,7 @@ msgid ""
 msgstr ""
 "この設備は温度が {0} に達するとオーバーヒートになり損傷を受けます\n"
 "\n"
-"より良い素材を建材にすることでオーバーヒート温度を増加させることができます"
+"より良い素材を建材にすることでオーバーヒート温度を上昇させることができます"
 
 #. STRINGS.UI.ELEMENTAL.PRIMARYELEMENT.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.PRIMARYELEMENT.NAME"
@@ -6082,6 +6105,12 @@ msgctxt "STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.NO_TRAITS"
 msgid "No Traits"
 msgstr "特性なし"
 
+#. STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.SELECTED_CLUSTER_TRAITS_HEADER
+msgctxt ""
+"STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.SELECTED_CLUSTER_TRAITS_HEADER"
+msgid "Target Details"
+msgstr "ターゲット詳細"
+
 #. STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.SHUFFLE
 msgctxt "STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.SHUFFLE"
 msgid "Shuffle"
@@ -6169,7 +6198,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
 "EASY.ATTRIBUTE_MODIFIER_NAME"
 msgid "Fasting (Difficulty Down)"
-msgstr "断食 (難易度低下)"
+msgstr "断食 (難度低下)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.EASY.NAME
 msgctxt ""
@@ -6190,7 +6219,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
 "HARD.ATTRIBUTE_MODIFIER_NAME"
 msgid "Rumbly Tummies (Difficulty Up)"
-msgstr "ぐーぐーおなか (難易度上昇)"
+msgstr "ぐーぐーおなか (難度上昇)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.HARD.NAME
 msgctxt ""
@@ -6211,7 +6240,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
 "VERYHARD.ATTRIBUTE_MODIFIER_NAME"
 msgid "Ravenous (Highest Difficulty)"
-msgstr "貪欲 (最高難易度)"
+msgstr "貪欲 (最高難度)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.VERYHARD.NAME
 msgctxt ""
@@ -6287,13 +6316,13 @@ msgstr "製造ポッドで何を製造できるかに影響します"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CLUSTER_CHOICE.NAME"
 msgid "Asteroid Belt"
-msgstr "アステロイドベルト"
+msgstr "小惑星帯"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CLUSTER_CHOICE.TOOLTIP
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CLUSTER_CHOICE.TOOLTIP"
 msgid "New asteroid belts added by mods can be selected here"
-msgstr "MODによって追加されたアステロイドベルトをここで指定できます"
+msgstr "MODによって追加された小惑星帯をここで指定できます"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.DEFAULT.NAME
 msgctxt ""
@@ -6314,7 +6343,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
 "FLIMSY.ATTRIBUTE_MODIFIER_NAME"
 msgid "Flimsy Suits (Difficulty Up)"
-msgstr "ペラペラのスーツ (難易度上昇)"
+msgstr "ペラペラのスーツ (難度上昇)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.FLIMSY.NAME
 msgctxt ""
@@ -6359,7 +6388,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
 "REINFORCED.ATTRIBUTE_MODIFIER_NAME"
 msgid "Reinforced Suits (Difficulty Down)"
-msgstr "強化スーツ (難易度低下)"
+msgstr "強化スーツ (難度低下)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.REINFORCED.NAME
 msgctxt ""
@@ -6380,7 +6409,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS."
 "THREADBARE.ATTRIBUTE_MODIFIER_NAME"
 msgid "Threadbare Suits (Highest Difficulty)"
-msgstr "おんぼろスーツ (最高難易度)"
+msgstr "おんぼろスーツ (最高難度)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.THREADBARE.NAME
 msgctxt ""
@@ -6496,7 +6525,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
 "COMPROMISED.ATTRIBUTE_MODIFIER_NAME"
 msgid "Outbreak Prone (Highest Difficulty)"
-msgstr "感染拡大傾向 (最高難易度)"
+msgstr "感染拡大傾向 (最高難度)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.COMPROMISED.NAME
 msgctxt ""
@@ -6560,7 +6589,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
 "STRONG.ATTRIBUTE_MODIFIER_NAME"
 msgid "Germ Resistance (Difficulty Down)"
-msgstr "抗菌 (難易度低下)"
+msgstr "抗菌 (難度低下)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.NAME
 msgctxt ""
@@ -6583,7 +6612,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS."
 "WEAK.ATTRIBUTE_MODIFIER_NAME"
 msgid "Germ Susceptibility (Difficulty Up)"
-msgstr "高い病原菌感受性 (難易度上昇)"
+msgstr "高い病原菌感受性 (難度上昇)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.NAME
 msgctxt ""
@@ -6656,7 +6685,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY."
 "ATTRIBUTE_MODIFIER_NAME"
 msgid "Chill (Difficulty Down)"
-msgstr "冷静 (難易度低下)"
+msgstr "冷静 (難度低下)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.EASY.NAME
 msgctxt ""
@@ -6676,7 +6705,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD."
 "ATTRIBUTE_MODIFIER_NAME"
 msgid "A Bit Persnickety (Difficulty Up)"
-msgstr "ちょっと神経質 (難易度上昇)"
+msgstr "ちょっと神経質 (難度上昇)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD.NAME
 msgctxt ""
@@ -6696,7 +6725,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.VERYHARD."
 "ATTRIBUTE_MODIFIER_NAME"
 msgid "Draconian (Highest Difficulty)"
-msgstr "厳格 (最高難易度)"
+msgstr "厳格 (最高難度)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.VERYHARD.NAME
 msgctxt ""
@@ -6726,6 +6755,129 @@ msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.TOOLTIP"
 msgid ""
 "Adjusts the minimum morale Duplicants must maintain to avoid gaining stress"
 msgstr "複製人間がストレスを感じなくなるために必要な最低士気の基準を調整します"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.DEFAULT.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"DEFAULT.NAME"
+msgid "Default"
+msgstr "デフォルト"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.DEFAULT.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"DEFAULT.TOOLTIP"
+msgid "Default radiation settings"
+msgstr "放射線設定のデフォルト値です"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIER.ATTRIBUTE_MODIFIER_NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"EASIER.ATTRIBUTE_MODIFIER_NAME"
+msgid "Radiation Shielded (Difficulty Down)"
+msgstr "放射線防護 (難度低下)"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIER.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"EASIER.NAME"
+msgid "Easier"
+msgstr "易しめ"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIER.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"EASIER.TOOLTIP"
+msgid ""
+"Duplicants can be exposed to much more radiation before they get sick and "
+"recover from radiation much exposure faster"
+msgstr ""
+"複製人間は大量の放射線を浴びても発症しにくくなり、放射線障害からの回復も早く"
+"なります"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIEST.ATTRIBUTE_MODIFIER_NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"EASIEST.ATTRIBUTE_MODIFIER_NAME"
+msgid "Radiation Protection (Lowest Difficulty)"
+msgstr "放射線遮断 (最低難度)"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIEST.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"EASIEST.NAME"
+msgid "Easiest"
+msgstr "簡単"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIEST.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"EASIEST.TOOLTIP"
+msgid ""
+"Duplicants are essentially invulnerable to radiation sickness, and recover "
+"from radiation exposure very quickly"
+msgstr ""
+"複製人間は基本的に放射線障害を発症せず、(発症したとしても)極めて急速に回復し"
+"ます"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDER.ATTRIBUTE_MODIFIER_NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"HARDER.ATTRIBUTE_MODIFIER_NAME"
+msgid "Radiation Vulnerable (Difficulty Up)"
+msgstr "放射線脆弱性 (難度上昇)"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDER.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"HARDER.NAME"
+msgid "Harder"
+msgstr "難しめ"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDER.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"HARDER.TOOLTIP"
+msgid "Duplicants get sick sooner and recover from radiation exposure slower"
+msgstr "複製人間は放射線障害にかかりやすく、通常よりも回復が遅くなります"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDEST.ATTRIBUTE_MODIFIER_NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"HARDEST.ATTRIBUTE_MODIFIER_NAME"
+msgid "Super Radiation (Highest Difficulty)"
+msgstr "強力な放射線 (最高難度)"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDEST.NAME
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"HARDEST.NAME"
+msgid "Hardest"
+msgstr "難しい"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDEST.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
+"HARDEST.TOOLTIP"
+msgid ""
+"Duplicants get sick much sooner and recover from radiation exposure much "
+"slower"
+msgstr ""
+"複製人間は極めて簡単に放射線障害を起こし、回復までにとても時間を要します"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.NAME
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.NAME"
+msgid "Radiation"
+msgstr "放射線"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.TOOLTIP
+msgctxt ""
+"STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.TOOLTIP"
+msgid ""
+"Affects how much radiation a duplicant can be exposed to before they become "
+"sick, and how quickly a duplicant can recover from radiation exposure"
+msgstr ""
+"複製人間が放射線障害を起こすまでの放射線量および回復までの時間に影響します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.DISABLED.NAME
 msgctxt ""
@@ -6852,7 +7004,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DOOMED."
 "ATTRIBUTE_MODIFIER_NAME"
 msgid "Frankly Depressing (Highest Difficulty)"
-msgstr "どう見ても憂鬱（最高難易度）"
+msgstr "どう見ても憂鬱（最高難度）"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DOOMED.NAME
 msgctxt ""
@@ -6902,7 +7054,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
 "OPTIMISTIC.ATTRIBUTE_MODIFIER_NAME"
 msgid "Chipper (Difficulty Down)"
-msgstr "快活 (難易度低下)"
+msgstr "快活 (難度低下)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.NAME
 msgctxt ""
@@ -6923,7 +7075,7 @@ msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS."
 "PESSIMISTIC.ATTRIBUTE_MODIFIER_NAME"
 msgid "Glum (Difficulty Up)"
-msgstr "気難しい（難易度上昇）"
+msgstr "気難しい (難度上昇)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.NAME
 msgctxt ""
@@ -7950,7 +8102,7 @@ msgstr ""
 #. STRINGS.UI.FRONTEND.LOADSCREEN.WORLD_NAME
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.WORLD_NAME"
 msgid "Asteroid Type"
-msgstr "アステロイドのタイプ"
+msgstr "小惑星のタイプ"
 
 #. STRINGS.UI.FRONTEND.MAINMENU.DESKTOPQUITCONFIRM
 msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DESKTOPQUITCONFIRM"
@@ -8689,8 +8841,8 @@ msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "BUFF AND SHINE"
-msgstr "BUFF AND SHINE"
+msgid "BLAST OFF!"
+msgstr "BLAST OFF!"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -8708,25 +8860,25 @@ msgstr "議論に参加"
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"Welcome to the <b>BUFF AND SHINE UPDATE!</b>\n"
+"Welcome to the <b>BLAST OFF!</b>\n"
 "\n"
 "<b><i>Spaced Out!</i></b>\n"
-"•<indent=20px>Significant changes to radiation and radbolt tuning.</indent>\n"
-"•<indent=20px>Added the new Radbolt Chamber building for storing radbolts.</"
+"•<indent=20px>The Piloting Skill now affects Rocket speed.</indent>\n"
+"•<indent=20px>Solar Panel Modules now partially block light while grounded.</"
 "indent>\n"
-"•<indent=20px>Restored the Space Scanner and Enclosed Telescope to Spaced "
-"Out!</indent>\n"
-"•<indent=20px>Bug fixes and polish work.</indent>\n"
+"•<indent=20px>Performance optimizations for farms, Sweepys and the dig tool."
+"</indent>\n"
+"•<indent=20px>Lots of bug fixes and polish work.</indent>\n"
 "\n"
 "   Check out the full patch notes for more details!"
 msgstr ""
-"<b>BUFF AND SHINE UPDATE</b>にようこそ\n"
+"<b>BLAST OFF!</b>にようこそ\n"
 "\n"
 "<b><i>Spaced Out!</i></b>\n"
-"•<indent=20px>放射線とRADボルトの取り扱いを大幅に変更</indent>\n"
-"•<indent=20px>RADボルトを保管できるRADボルト貯蔵庫</indent>\n"
-"•<indent=20px>宇宙スキャナーと密閉型観測望遠鏡をSpaced Out!に復活させた</"
+"•<indent=20px>操縦スキルがロケット速度に影響するようになった</indent>\n"
+"•<indent=20px>ソーラーパネルモジュールは着陸待機中光を阻害するようになった</"
 "indent>\n"
+"•<indent=20px>農場、スウィーピー、採掘ツールのパフォーマンス改善</indent>\n"
 "•<indent=20px>バグ修正など</indent>\n"
 "\n"
 "   詳細はパッチノート全文を参照してください！"
@@ -8885,6 +9037,11 @@ msgctxt "STRINGS.UI.FRONTEND.OPTIONS_SCREEN.WORLD_GEN"
 msgid "World Generation Key"
 msgstr "ワールド生成キー"
 
+#. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.FULLPATCHNOTES_TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.FULLPATCHNOTES_TOOLTIP"
+msgid "View the full patch notes online"
+msgstr "オンラインでパッチノート全文を参照する"
+
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON"
 msgid "OK"
@@ -8960,7 +9117,7 @@ msgid ""
 msgstr ""
 "クリップボードに座標をコピーします。\n"
 "\n"
-"友達と座標を共有すれば、同じアステロイドで遊ぶことができます！"
+"友達と座標を共有すれば、同じ小惑星で遊ぶことができます！"
 
 #. STRINGS.UI.FRONTEND.PAUSE_SCREEN.WORLD_SEED_TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.PAUSE_SCREEN.WORLD_SEED_TOOLTIP"
@@ -14383,7 +14540,7 @@ msgstr "<link=\"ASTRONAUTTRAININGCENTER\">宇宙飛行士訓練所</link>が利�
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DO_PLUMBING.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DO_PLUMBING.DESCRIPTION"
 msgid "Pipe Emptying"
-msgstr "パイプ内容物排出中"
+msgstr "パイプ内容物排出"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DOCTOR.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DOCTOR.DESCRIPTION"
@@ -14482,9 +14639,8 @@ msgstr "<link=\"NUCLEARRESEARCHCENTER\">材料工学端末</link>の使い方"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION"
-msgid ""
-"<link=\"ORBITALRESEARCHCENTER\">Orbital Data Collection Lab</link> Usage"
-msgstr "<link=\"ORBITALRESEARCHCENTER\">軌道データ収集ラボ</link> の使い方"
+msgid "<link=\"DLC1COSMICRESEARCHCENTER\">Virtual Planetarium</link> Usage"
+msgstr "<link=\"DLC1COSMICRESEARCHCENTER\">仮想プラネタリウム</link>の使い方"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING"
@@ -14680,6 +14836,11 @@ msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.COMMON"
 msgid "Common Substances"
 msgstr "一般的な物質"
 
+#. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.ARTIFACTS
+msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.ARTIFACTS"
+msgid "Artifacts"
+msgstr "旧世界の遺物"
+
 #. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.COMETS
 msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.COMETS"
 msgid "Comets"
@@ -14719,7 +14880,7 @@ msgstr "間欠泉"
 #. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.GRAVITAS
 msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.GRAVITAS"
 msgid "Gravitas"
-msgstr "グラビタスの記念碑"
+msgstr "グラビタス"
 
 #. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.INDUSTRIAL_PRODUCTS
 msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.INDUSTRIAL_PRODUCTS"
@@ -14907,6 +15068,16 @@ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.TOOLTIP"
 msgid "Adjust mass"
 msgstr "質量を調整します"
 
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MORALE.NAME
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MORALE.NAME"
+msgid "Adjust Morale"
+msgstr "士気調整"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MORALE.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MORALE.TOOLTIP"
+msgid "Bonus Morale adjustment"
+msgstr "士気ボーナスを調整します"
+
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.RADIATION.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.RADIATION.NAME"
 msgid "Absolute radiation"
@@ -14971,6 +15142,26 @@ msgstr "ばら撒き"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.TOOLTIP"
 msgid "Paint elements into the simulation using noise {Hotkey}"
 msgstr "元素をスプレーします{Hotkey}"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS.NAME
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS.NAME"
+msgid "Stress"
+msgstr "ストレス"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS.TOOLTIP"
+msgid "Manage Duplicants' stress levels {Hotkey}"
+msgstr "複製人間のストレスレベルを管理します{Hotkey}"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS_ADDITIVE.NAME
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS_ADDITIVE.NAME"
+msgid "Reduce Stress"
+msgstr "ストレス軽減"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS_ADDITIVE.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS_ADDITIVE.TOOLTIP"
+msgid "Adjust stress reduction"
+msgstr "ストレス軽減を調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME"
@@ -15756,7 +15947,7 @@ msgid ""
 "accomplished."
 msgstr ""
 "グラブグラブの製作は一般人には知らされていない極秘事項であったため、この像は"
-"グラビタスの研究所内の人目につかない場所に置かれていた可能性が高いです。\n"
+"グラビタス研究所内の人目につかない場所に置かれていた可能性が高いです。\n"
 "\n"
 "この像の芸術性は非常に完成度が高いだけに残念でなりません。"
 
@@ -18675,7 +18866,7 @@ msgstr "オールシステム グリーン"
 #. STRINGS.UI.STARMAP.MISSION_STATUS.GROUNDED
 msgctxt "STRINGS.UI.STARMAP.MISSION_STATUS.GROUNDED"
 msgid "Grounded"
-msgstr "着陸"
+msgstr "地上待機中"
 
 #. STRINGS.UI.STARMAP.MISSION_STATUS.LANDING
 msgctxt "STRINGS.UI.STARMAP.MISSION_STATUS.LANDING"
@@ -19332,7 +19523,7 @@ msgstr "金属"
 #. STRINGS.UI.TOOLS.FILTERLAYERS.OPERATE
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.OPERATE"
 msgid "Duties"
-msgstr "任務"
+msgstr "作業"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.ORGANICS
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.ORGANICS"
@@ -19663,6 +19854,16 @@ msgstr "ばら撒きシミュレータ"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPRINKLE.NAME"
 msgid "Sprinkle"
 msgstr "ばら撒き"
+
+#. STRINGS.UI.TOOLS.SANDBOX.STRESSTOOL.HOVERACTION
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.STRESSTOOL.HOVERACTION"
+msgid "PAINT CALM"
+msgstr "広範囲に落ち着かせる"
+
+#. STRINGS.UI.TOOLS.SANDBOX.STRESSTOOL.NAME
+msgctxt "STRINGS.UI.TOOLS.SANDBOX.STRESSTOOL.NAME"
+msgid "Happy Tool"
+msgstr "幸福度ツール"
 
 #. STRINGS.UI.TOOLS.TOOL_AREA_FMT
 msgctxt "STRINGS.UI.TOOLS.TOOL_AREA_FMT"
@@ -21762,7 +21963,7 @@ msgstr "採掘中..."
 #. STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.MINING_STOPPED
 msgctxt "STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.MINING_STOPPED"
 msgid "Not drilling"
-msgstr "採掘しない"
+msgstr "採掘停止"
 
 # Hatchに床落ちアイテムを食べられたときのポップアップ
 #. STRINGS.UI.UISIDESCREENS.HARVESTMODULESIDESCREEN.TITLE
@@ -23316,7 +23517,7 @@ msgid ""
 msgstr ""
 "設備制限は自動化によって管理されています\n"
 "\n"
-"アクセス制限された設備は充電できますが操作はできません"
+"アクセス制限された設備は積み込みは行えますが操作はできません"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.BUILDING_RESTRICTIONS_LABEL
 msgctxt ""
@@ -23330,7 +23531,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN."
 "GROUNDED_RESTRICTION_BUTTON"
 msgid "Grounded"
-msgstr "着陸"
+msgstr "着陸中"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.GROUNDED_RESTRICTION_BUTTON_TOOLTIP
 msgctxt ""
@@ -23339,7 +23540,7 @@ msgctxt ""
 msgid ""
 "Buildings with their access restricted cannot be operated while grounded, "
 "though they can still be filled"
-msgstr "アクセス制限された設備は充電できますが着陸中は操作はできません"
+msgstr "アクセス制限された設備は積み込みは行えますが着陸中は操作はできません"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.NONE_RESTRICTION_BUTTON
 msgctxt ""
@@ -23789,12 +23990,32 @@ msgstr "超過"
 #. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.BUTTON_CLOSED
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.BUTTON_CLOSED"
 msgid "Tear Closed"
-msgstr "裂け目を閉鎖"
+msgstr "閉じた裂け目"
 
 #. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.BUTTON_OPEN
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.BUTTON_OPEN"
 msgid "Enter Tear"
 msgstr "裂け目に突入"
+
+#. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_CANCEL
+msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_CANCEL"
+msgid "No, I need more time to prepare."
+msgstr "まだ準備が必要だ。"
+
+#. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_CONFIRM
+msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_CONFIRM"
+msgid "Yes, I'm ready for a meteor shower."
+msgstr "流星群に飛び込む準備はできている。"
+
+#. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_MESSAGE
+msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_MESSAGE"
+msgid "Are you sure you want to fire this?"
+msgstr "本当に発射しますか？"
+
+#. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_TITLE
+msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_TITLE"
+msgid "Temporal Tear Opener"
+msgstr "時間の裂け目オープナー"
 
 #. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.TITLE"
@@ -26020,8 +26241,12 @@ msgstr "病気"
 
 #. STRINGS.UI.VITALSSCREEN.SICKNESS_REMAINING
 msgctxt "STRINGS.UI.VITALSSCREEN.SICKNESS_REMAINING"
-msgid "{0} ({1})"
-msgstr "{0} ({1})"
+msgid ""
+"{0}\n"
+"({1})"
+msgstr ""
+"{0}\n"
+"({1})"
 
 #. STRINGS.UI.VITALSSCREEN.STRESS
 msgctxt "STRINGS.UI.VITALSSCREEN.STRESS"
@@ -26229,17 +26454,17 @@ msgstr "メテオシャワーを浴びています..."
 #. STRINGS.UI.WORLDGEN.BUILDNOISESOURCE7
 msgctxt "STRINGS.UI.WORLDGEN.BUILDNOISESOURCE7"
 msgid "Tightening asteroid belts..."
-msgstr "アステロイドベルトを締めています..."
+msgstr "小惑星帯を締めています..."
 
 #. STRINGS.UI.WORLDGEN.BUILDNOISESOURCE8
 msgctxt "STRINGS.UI.WORLDGEN.BUILDNOISESOURCE8"
 msgid "Tightening asteroid belts..."
-msgstr "アステロイドベルトを締めています..."
+msgstr "小惑星帯を締めています..."
 
 #. STRINGS.UI.WORLDGEN.BUILDNOISESOURCE9
 msgctxt "STRINGS.UI.WORLDGEN.BUILDNOISESOURCE9"
 msgid "Tightening asteroid belts..."
-msgstr "アステロイドベルトを締めています..."
+msgstr "小惑星帯を締めています..."
 
 #. STRINGS.UI.WORLDGEN.CHOOSEWORLDSIZE
 msgctxt "STRINGS.UI.WORLDGEN.CHOOSEWORLDSIZE"
@@ -26635,6 +26860,19 @@ msgstr "砂散布中..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂散布中..."
+
+#~ msgctxt "STRINGS.UI.CLUSTERMAP.POI.ARTIFACTS_DEPLETED"
+#~ msgid "Collected"
+#~ msgstr "収集済み"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "BUFF AND SHINE"
+#~ msgstr "BUFF AND SHINE"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION"
+#~ msgid ""
+#~ "<link=\"ORBITALRESEARCHCENTER\">Orbital Data Collection Lab</link> Usage"
+#~ msgstr "<link=\"ORBITALRESEARCHCENTER\">軌道データ収集ラボ</link> の使い方"
 
 #~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
 #~ msgid "RAD NEW WORLDS"
