@@ -1890,6 +1890,8 @@ msgid ""
 "Collected\n"
 "Recharge: {0}"
 msgstr ""
+"収集済\n"
+"再収集可能になるまで: {0}"
 
 #. STRINGS.UI.CLUSTERMAP.POI.MASS_REMAINING
 msgctxt "STRINGS.UI.CLUSTERMAP.POI.MASS_REMAINING"
@@ -2047,12 +2049,6 @@ msgid "Rocket Speed: "
 msgstr "ロケット速度: "
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP"
-#| msgid ""
-#| "<b>Rocket Speed</b> is calculated by dividing <b>Engine Power</b> by "
-#| "<b>Burden</b>.\n"
-#| "Rockets operating on autopilot will have a reduced speed."
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP"
 msgid ""
 "<b>Rocket Speed</b> is calculated by dividing <b>Engine Power</b> by "
@@ -2063,7 +2059,8 @@ msgid ""
 msgstr ""
 "<b>ロケット速度</b>とは、<b>エンジン出力</b>を<b>総重量</b>で割ったもので"
 "す。\n"
-"オートパイロット中のロケットは減速します。"
+"オートパイロット中のロケットは減速します。\n"
+"ロケット速度は複製人間のスキルによって上昇させることができます。"
 
 #. STRINGS.UI.CLUSTERMAP.SELECT_DESTINATION
 msgctxt "STRINGS.UI.CLUSTERMAP.SELECT_DESTINATION"
@@ -2297,12 +2294,9 @@ msgid "<link=\"JOURNALS\">Journals</link>"
 msgstr "<link=\"JOURNALS\">日誌</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.MEDIA
-#, fuzzy
-#| msgctxt "STRINGS.ITEMS.FOOD.MEAT.NAME"
-#| msgid "<link=\"MEAT\">Meat</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MEDIA"
 msgid "<link=\"MEDIA\">Media</link>"
-msgstr "<link=\"MEAT\">肉</link>"
+msgstr "<link=\"MEDIA\">メディア</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.MISCELLANEOUSITEMS
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MISCELLANEOUSITEMS"
@@ -2762,9 +2756,6 @@ msgid "    • One or more farm plots are inoperable"
 msgstr "    • 農耕不可能な農地があります"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NONE
-#, fuzzy
-#| msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NONE"
-#| msgid "    • Colony has no farm plots"
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.NONE"
 msgid "    • No farm plots"
 msgstr "    • コロニーに農地はありません"
@@ -4153,24 +4144,15 @@ msgid "    • Current pressure {0}: {1}"
 msgstr "    • 現在の気圧 {0}: {1}"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.DIE_TOOLTIP
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.ENVIRONMENT."
-#| "DIE_TOOLTIP"
-#| msgid "This atmosphere is causing germs to die off"
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.DIE_TOOLTIP"
 msgid "Radiation exposure is causing germs to die off"
-msgstr "この大気は病原菌を死滅させます"
+msgstr "放射線に曝されると病原菌は死滅します"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.TITLE
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.SPEED"
-#| msgid "    • Speed: {0} ({1})"
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.TITLE"
 msgid "    • Exposed to {0} Rads: {1}"
-msgstr "    • 速度: {0} ({1})"
+msgstr "    • 被ばく量 {0} Rads: {1}"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE"
@@ -5078,15 +5060,10 @@ msgstr ""
 "診断をサイドバーから非表示にするにはクリック - 現在の状態: <b>常に表示</b>"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED"
-#| msgid ""
-#| "Click to enable this diagnostic -  Current State: <b>Tutorial Disabled</b>"
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED"
 msgid ""
 "Click to enable this diagnostic -  Current State: <b>Temporarily disabled</b>"
-msgstr "診断を表示するにはクリック - 現在の状態: <b>チュートリアル無効</b>"
+msgstr "診断を表示するにはクリック - 現在の状態: <b>一時無効</b>"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_ENABLED_COUNT
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_ENABLED_COUNT"
@@ -6129,13 +6106,10 @@ msgid "No Traits"
 msgstr "特性なし"
 
 #. STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.SELECTED_CLUSTER_TRAITS_HEADER
-#, fuzzy
-#| msgctxt "STRINGS.UI.ENDOFDAYREPORT.BASE_DETAILS_HEADER"
-#| msgid "Base Details:"
 msgctxt ""
 "STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.SELECTED_CLUSTER_TRAITS_HEADER"
 msgid "Target Details"
-msgstr "基地の詳細:"
+msgstr "ターゲット詳細"
 
 #. STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.SHUFFLE
 msgctxt "STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.SHUFFLE"
@@ -6783,11 +6757,6 @@ msgid ""
 msgstr "複製人間がストレスを感じなくなるために必要な最低士気の基準を調整します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.DEFAULT.NAME
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#| "DEFAULT.NAME"
-#| msgid "Default"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "DEFAULT.NAME"
@@ -6795,33 +6764,25 @@ msgid "Default"
 msgstr "デフォルト"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.DEFAULT.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.DESTINATIONSELECTION.NOTSELECTED"
-#| msgid "Destination set"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "DEFAULT.TOOLTIP"
 msgid "Default radiation settings"
-msgstr "目的地の設定"
+msgstr "放射線設定のデフォルト値です"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIER.ATTRIBUTE_MODIFIER_NAME
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS."
-#| "EASY.ATTRIBUTE_MODIFIER_NAME"
-#| msgid "Fasting (Difficulty Down)"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "EASIER.ATTRIBUTE_MODIFIER_NAME"
 msgid "Radiation Shielded (Difficulty Down)"
-msgstr "断食 (難度低下)"
+msgstr "放射線防護 (難度低下)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIER.NAME
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "EASIER.NAME"
 msgid "Easier"
-msgstr ""
+msgstr "易しめ"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIER.TOOLTIP
 msgctxt ""
@@ -6831,25 +6792,22 @@ msgid ""
 "Duplicants can be exposed to much more radiation before they get sick and "
 "recover from radiation much exposure faster"
 msgstr ""
+"複製人間は大量の放射線を浴びても発症しにくくなり、放射線障害からの回復も早く"
+"なります"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIEST.ATTRIBUTE_MODIFIER_NAME
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS."
-#| "VERYHARD.ATTRIBUTE_MODIFIER_NAME"
-#| msgid "Draconian (Highest Difficulty)"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "EASIEST.ATTRIBUTE_MODIFIER_NAME"
 msgid "Radiation Protection (Lowest Difficulty)"
-msgstr "厳格 (最高難度)"
+msgstr "放射線遮断 (最低難度)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIEST.NAME
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "EASIEST.NAME"
 msgid "Easiest"
-msgstr ""
+msgstr "簡単"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.EASIEST.TOOLTIP
 msgctxt ""
@@ -6859,57 +6817,43 @@ msgid ""
 "Duplicants are essentially invulnerable to radiation sickness, and recover "
 "from radiation exposure very quickly"
 msgstr ""
+"複製人間は基本的に放射線障害を発症せず、(発症したとしても)極めて急速に回復し"
+"ます"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDER.ATTRIBUTE_MODIFIER_NAME
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS.HARD."
-#| "ATTRIBUTE_MODIFIER_NAME"
-#| msgid "A Bit Persnickety (Difficulty Up)"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "HARDER.ATTRIBUTE_MODIFIER_NAME"
 msgid "Radiation Vulnerable (Difficulty Up)"
-msgstr "ちょっと神経質 (難度上昇)"
+msgstr "放射線脆弱性 (難度上昇)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.HARDY"
-#| msgid "Hardy"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "HARDER.NAME"
 msgid "Harder"
-msgstr "我慢強い"
+msgstr "難しめ"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDER.TOOLTIP
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "HARDER.TOOLTIP"
 msgid "Duplicants get sick sooner and recover from radiation exposure slower"
-msgstr ""
+msgstr "複製人間は放射線障害にかかりやすく、通常よりも回復が遅くなります"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDEST.ATTRIBUTE_MODIFIER_NAME
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.MORALE.LEVELS."
-#| "VERYHARD.ATTRIBUTE_MODIFIER_NAME"
-#| msgid "Draconian (Highest Difficulty)"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "HARDEST.ATTRIBUTE_MODIFIER_NAME"
 msgid "Super Radiation (Highest Difficulty)"
-msgstr "厳格 (最高難度)"
+msgstr "強力な放射線 (最高難度)"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDEST.NAME
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.HARDY"
-#| msgid "Hardy"
 msgctxt ""
 "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS."
 "HARDEST.NAME"
 msgid "Hardest"
-msgstr "我慢強い"
+msgstr "難しい"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.LEVELS.HARDEST.TOOLTIP
 msgctxt ""
@@ -6919,11 +6863,9 @@ msgid ""
 "Duplicants get sick much sooner and recover from radiation exposure much "
 "slower"
 msgstr ""
+"複製人間は極めて簡単に放射線障害を起こし、回復までにとても時間を要します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.RADIATION.HEADER_1"
-#| msgid "Radiation"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.RADIATION.NAME"
 msgid "Radiation"
 msgstr "放射線"
@@ -6935,6 +6877,7 @@ msgid ""
 "Affects how much radiation a duplicant can be exposed to before they become "
 "sick, and how quickly a duplicant can recover from radiation exposure"
 msgstr ""
+"複製人間が放射線障害を起こすまでの放射線量および回復までの時間に影響します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.SANDBOXMODE.LEVELS.DISABLED.NAME
 msgctxt ""
@@ -8899,7 +8842,7 @@ msgstr "STEAM WORKSHOP"
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
 msgid "BLAST OFF!"
-msgstr ""
+msgstr "BLAST OFF!"
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -8915,21 +8858,6 @@ msgid "JOIN THE DISCUSSION"
 msgstr "議論に参加"
 
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
-#| msgid ""
-#| "Welcome to the <b>BUFF AND SHINE UPDATE!</b>\n"
-#| "\n"
-#| "<b><i>Spaced Out!</i></b>\n"
-#| "•<indent=20px>Significant changes to radiation and radbolt tuning.</"
-#| "indent>\n"
-#| "•<indent=20px>Added the new Radbolt Chamber building for storing radbolts."
-#| "</indent>\n"
-#| "•<indent=20px>Restored the Space Scanner and Enclosed Telescope to Spaced "
-#| "Out!</indent>\n"
-#| "•<indent=20px>Bug fixes and polish work.</indent>\n"
-#| "\n"
-#| "   Check out the full patch notes for more details!"
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
 "Welcome to the <b>BLAST OFF!</b>\n"
@@ -8944,13 +8872,13 @@ msgid ""
 "\n"
 "   Check out the full patch notes for more details!"
 msgstr ""
-"<b>BUFF AND SHINE UPDATE</b>にようこそ\n"
+"<b>BLAST OFF!</b>にようこそ\n"
 "\n"
 "<b><i>Spaced Out!</i></b>\n"
-"•<indent=20px>放射線とRADボルトの取り扱いを大幅に変更</indent>\n"
-"•<indent=20px>RADボルトを保管できるRADボルト貯蔵庫</indent>\n"
-"•<indent=20px>宇宙スキャナーと密閉型観測望遠鏡をSpaced Out!に復活させた</"
+"•<indent=20px>操縦スキルがロケット速度に影響するようになった</indent>\n"
+"•<indent=20px>ソーラーパネルモジュールは着陸待機中光を阻害するようになった</"
 "indent>\n"
+"•<indent=20px>農場、スウィーピー、採掘ツールのパフォーマンス改善</indent>\n"
 "•<indent=20px>バグ修正など</indent>\n"
 "\n"
 "   詳細はパッチノート全文を参照してください！"
@@ -9112,7 +9040,7 @@ msgstr "ワールド生成キー"
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.FULLPATCHNOTES_TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.FULLPATCHNOTES_TOOLTIP"
 msgid "View the full patch notes online"
-msgstr ""
+msgstr "オンラインでパッチノート全文を参照する"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON"
@@ -14710,12 +14638,9 @@ msgid "<link=\"NUCLEARRESEARCHCENTER\">Materials Study Terminal</link> Usage"
 msgstr "<link=\"NUCLEARRESEARCHCENTER\">材料工学端末</link>の使い方"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INTERSTELLAR_RESEARCH.DESCRIPTION"
-#| msgid "<link=\"COSMICRESEARCHCENTER\">Virtual Planetarium</link> Usage"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION"
 msgid "<link=\"DLC1COSMICRESEARCHCENTER\">Virtual Planetarium</link> Usage"
-msgstr "<link=\"COSMICRESEARCHCENTER\">仮想プラネタリウム</link>が利用可能"
+msgstr "<link=\"DLC1COSMICRESEARCHCENTER\">仮想プラネタリウム</link>の使い方"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING"
@@ -14912,9 +14837,6 @@ msgid "Common Substances"
 msgstr "一般的な物質"
 
 #. STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.ARTIFACTS
-#, fuzzy
-#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MYLOGNAME"
-#| msgid "Artifacts"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.ARTIFACTS"
 msgid "Artifacts"
 msgstr "旧世界の遺物"
@@ -15147,17 +15069,14 @@ msgid "Adjust mass"
 msgstr "質量を調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MORALE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MASS.TOOLTIP"
-#| msgid "Adjust mass"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MORALE.NAME"
 msgid "Adjust Morale"
-msgstr "質量を調整します"
+msgstr "士気調整"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.MORALE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.MORALE.TOOLTIP"
 msgid "Bonus Morale adjustment"
-msgstr ""
+msgstr "士気ボーナスを調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.RADIATION.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.RADIATION.NAME"
@@ -15225,36 +15144,24 @@ msgid "Paint elements into the simulation using noise {Hotkey}"
 msgstr "元素をスプレーします{Hotkey}"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STRESS.HEADER_1"
-#| msgid "Stress"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS.NAME"
 msgid "Stress"
 msgstr "ストレス"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_SKILLS"
-#| msgid "Manage Duplicants' Skill assignments {Hotkey}"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS.TOOLTIP"
 msgid "Manage Duplicants' stress levels {Hotkey}"
-msgstr "複製人間のスキル割り当てを管理します{Hotkey}"
+msgstr "複製人間のストレスレベルを管理します{Hotkey}"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS_ADDITIVE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.STRESSHEAL.NAME"
-#| msgid "De-Stress"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS_ADDITIVE.NAME"
 msgid "Reduce Stress"
-msgstr "脱ストレス"
+msgstr "ストレス軽減"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS_ADDITIVE.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.RADIATION.TOOLTIP"
-#| msgid "Adjust absolute radiation"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS_ADDITIVE.TOOLTIP"
 msgid "Adjust stress reduction"
-msgstr "純粋な放射線を調整します"
+msgstr "ストレス軽減を調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME"
@@ -19949,20 +19856,14 @@ msgid "Sprinkle"
 msgstr "ばら撒き"
 
 #. STRINGS.UI.TOOLS.SANDBOX.STRESSTOOL.HOVERACTION
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLS.SANDBOX.BRUSH.HOVERACTION"
-#| msgid "PAINT SIM"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.STRESSTOOL.HOVERACTION"
 msgid "PAINT CALM"
-msgstr "ペイントシミュレータ"
+msgstr "広範囲に落ち着かせる"
 
 #. STRINGS.UI.TOOLS.SANDBOX.STRESSTOOL.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.MODIFIERS.HAPPY.NAME"
-#| msgid "Happy"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.STRESSTOOL.NAME"
 msgid "Happy Tool"
-msgstr "幸福"
+msgstr "幸福度ツール"
 
 #. STRINGS.UI.TOOLS.TOOL_AREA_FMT
 msgctxt "STRINGS.UI.TOOLS.TOOL_AREA_FMT"
@@ -24099,25 +24000,19 @@ msgstr "裂け目に突入"
 #. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_CANCEL
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_CANCEL"
 msgid "No, I need more time to prepare."
-msgstr ""
+msgstr "まだ準備が必要だ。"
 
 #. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_CONFIRM
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_CONFIRM"
 msgid "Yes, I'm ready for a meteor shower."
-msgstr ""
+msgstr "流星群に飛び込む準備はできている。"
 
 #. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_MESSAGE
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.SAVESCREEN.OVERWRITEMESSAGE"
-#| msgid "Are you sure you want to overwrite {0}?"
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_MESSAGE"
 msgid "Are you sure you want to fire this?"
-msgstr "{0} を上書きしますか？"
+msgstr "本当に発射しますか？"
 
 #. STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.TEMPORALTEAROPENER.NAME"
-#| msgid "Temporal Tear Opener"
 msgctxt "STRINGS.UI.UISIDESCREENS.TEMPORALTEARSIDESCREEN.CONFIRM_POPUP_TITLE"
 msgid "Temporal Tear Opener"
 msgstr "時間の裂け目オープナー"
@@ -26345,14 +26240,13 @@ msgid "Diseases"
 msgstr "病気"
 
 #. STRINGS.UI.VITALSSCREEN.SICKNESS_REMAINING
-#, fuzzy
-#| msgctxt "STRINGS.UI.VITALSSCREEN.SICKNESS_REMAINING"
-#| msgid "{0} ({1})"
 msgctxt "STRINGS.UI.VITALSSCREEN.SICKNESS_REMAINING"
 msgid ""
 "{0}\n"
 "({1})"
-msgstr "{0} ({1})"
+msgstr ""
+"{0}\n"
+"({1})"
 
 #. STRINGS.UI.VITALSSCREEN.STRESS
 msgctxt "STRINGS.UI.VITALSSCREEN.STRESS"
