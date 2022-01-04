@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.DUPLICANTS.ARRIVALTIME
@@ -158,7 +158,7 @@ msgstr "カロリー収支"
 #. STRINGS.DUPLICANTS.ATTRIBUTES.CARING.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.CARING.DESC"
 msgid "Determines a Duplicant's ability to care for sick peers."
-msgstr "複製人間の、病気の仲間の介抱能力を決定します。"
+msgstr "複製人間の、病気の仲間の介抱技能を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.CARING.FABRICATE_SPEEDMODIFIER
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.CARING.FABRICATE_SPEEDMODIFIER"
@@ -525,7 +525,7 @@ msgstr "{0} 免疫力回復"
 #. STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_STAT
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_STAT"
 msgid "Immunity Attribute"
-msgstr "免疫力属性"
+msgstr "免疫能力"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.DESC"
@@ -719,7 +719,7 @@ msgid ""
 "------------------\n"
 "Duplicants develop higher expectations as their Expertise level increases"
 msgstr ""
-"熟練度は、複製人間の最も高い属性値で決定されます。\n"
+"熟練度は、複製人間の最も高い能力値で決定されます。\n"
 "----------\n"
 "複製人間は熟練度レベルが上がるほど要求する期待も上昇していきます"
 
@@ -911,10 +911,22 @@ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SPACENAVIGATION.DESC"
 msgid "Determines how long it takes a Duplicant to complete a space mission."
 msgstr "複製人間が宇宙計画を完了するのにかかる時間を決定します。"
 
+#. STRINGS.DUPLICANTS.ATTRIBUTES.SPACENAVIGATION.DLC1_DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SPACENAVIGATION.DLC1_DESC"
+msgid ""
+"Determines how much of a speed bonus a Duplicant provides to a rocket they "
+"are piloting."
+msgstr "複製人間が操縦するロケットの速度ボーナスを決定します。"
+
 #. STRINGS.DUPLICANTS.ATTRIBUTES.SPACENAVIGATION.NAME
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SPACENAVIGATION.NAME"
 msgid "Piloting"
 msgstr "操縦"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.SPACENAVIGATION.SPEED_MODIFIER
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.SPACENAVIGATION.SPEED_MODIFIER"
+msgid "{0} Rocket Speed"
+msgstr "{0} ロケット速度"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.STAMINADELTA.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.STAMINADELTA.DESC"
@@ -2883,6 +2895,11 @@ msgctxt ""
 msgid "Not preferred assignment"
 msgstr "優先割り当てなし"
 
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_ROCKET_TRAVELLING
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_ROCKET_TRAVELLING"
+msgid "Rocket must be travelling"
+msgstr "ロケット航行中でなければなりません"
+
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_SCHEDULED_TIME
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_SCHEDULED_TIME"
 msgid "Not allowed by schedule"
@@ -2981,8 +2998,8 @@ msgstr "牧畜"
 #. STRINGS.DUPLICANTS.CHORES.RANCH.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.RANCH.TOOLTIP"
 msgid ""
-"This Duplicant is tending to a <style=\"KKeyword\">Critter</style>'s "
-"wellbeing"
+"This Duplicant is tending to a <style=\"KKeyword\">Critter</style>'s well-"
+"being"
 msgstr "この複製人間は<style=\"KKeyword\">動物</style>の面倒を見ています"
 
 #. STRINGS.DUPLICANTS.CHORES.RECHARGE.NAME
@@ -3266,7 +3283,7 @@ msgid ""
 "\n"
 "Increases <style=\"KKeyword\">Incubation Rate</style>\n"
 "\n"
-"Duplicants must possess the <link=\"RANCHER\">Critter Ranching I</link> "
+"Duplicants must possess the <link=\"RANCHING1\">Critter Ranching I</link> "
 "Skill to sing to an egg"
 msgstr ""
 "献身的な複製人間の優しい子守唄は、<style=\"KKeyword\">卵</style>の成長を促し"
@@ -3274,7 +3291,7 @@ msgstr ""
 "\n"
 "<style=\"KKeyword\">孵化率が</style>上昇します\n"
 "\n"
-"卵の世話をするために、<link=\"RANCHER\">畜産 I</link>のスキルが必要です"
+"卵の世話をするために、<link=\"RANCHING1\">畜産 I</link>のスキルが必要です"
 
 #. STRINGS.DUPLICANTS.CHORES.SLEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.SLEEP.NAME"
@@ -4804,6 +4821,16 @@ msgstr ""
 "この複製人間は、リラックスするための<style=\"KKeyword\">明かり</style>が十分"
 "になかったことで神経質になり、よく眠れなかったようです"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.NAME"
+msgid "Unrested: Bed Jostling"
+msgstr "休息不足: ぐらぐらベッド"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.TOOLTIP"
+msgid "This Duplicant was woken up when a friend climbed on their ladder bed"
+msgstr "この複製人間は梯子ベッドを上り下りされて起こされました"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.BARRACKSSTAMINA.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BARRACKSSTAMINA.NAME"
 msgid "Barracks"
@@ -6089,6 +6116,16 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LIGHTWOUNDS.TOOLTIP"
 msgid "This Duplicant sustained injuries that are a bit uncomfortable"
 msgstr "この複製人間は怪我を負って少し不快に感じています"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.LONER.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LONER.NAME"
+msgid "Alone"
+msgstr "孤高"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.LONER.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LONER.TOOLTIP"
+msgid "This Duplicant is more feeling focused now that they're alone"
+msgstr "この複製人間は一人になったことにより、気が引き締まっています"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.NAME"
 msgid "Low Oxygen"
@@ -6122,6 +6159,11 @@ msgid ""
 msgstr ""
 "スキルをもった複製人間は、<style=\"KKeyword\">発電機</style>の能力を一時的に"
 "向上させるための小道具を持っています"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.MAJORIRRITATION.CAUSE
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MAJORIRRITATION.CAUSE"
+msgid "Obtained by exposure to a harsh liquid or gas"
+msgstr "刺激性の高い液体または気体に触れたため付与"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MAJORIRRITATION.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MAJORIRRITATION.NAME"
@@ -6292,6 +6334,11 @@ msgid ""
 "burns <style=\"KKeyword\">Calories</style>"
 msgstr ""
 "<style=\"KKeyword\">代謝</style>は、動物がカロリーを消費する速さを決定します"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.MINORIRRITATION.CAUSE
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MINORIRRITATION.CAUSE"
+msgid "Obtained by exposure to a harsh liquid or gas"
+msgstr "刺激性の高い液体または気体に触れたため付与"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MINORIRRITATION.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MINORIRRITATION.NAME"
@@ -6533,6 +6580,16 @@ msgstr ""
 "複製人間は生の<link=\"PRICKLEFRUIT\">ブリッスルベリー</link>を食べたので、口"
 "の中が傷だらけです"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.RADIATIONEXPOSUREDEADLY.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.RADIATIONEXPOSUREDEADLY.NAME"
+msgid "Deadly Radiation Sickness"
+msgstr "致命的な放射線障害"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.RADIATIONEXPOSUREDEADLY.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.RADIATIONEXPOSUREDEADLY.TOOLTIP"
+msgid "Extreme Radiation exposure has incapacitated this Duplicant"
+msgstr "極めて強烈な放射線被ばくがこの複製人間を蝕んでいます"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.RADIATIONEXPOSUREEXTREME.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.RADIATIONEXPOSUREEXTREME.NAME"
 msgid "Extreme Radiation Sickness"
@@ -6579,7 +6636,7 @@ msgstr "この複製人間は最近素晴らしいパーティーに参加しま
 #. STRINGS.DUPLICANTS.MODIFIERS.RECOVERINGBREATH.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.RECOVERINGBREATH.NAME"
 msgid "Recovering breath"
-msgstr "蘇生"
+msgstr "呼吸回復中"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.REDALERT.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.REDALERT.NAME"
@@ -6774,6 +6831,19 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROTTING.NAME"
 msgid "Rotting"
 msgstr "腐っている"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.SANDBOXMORALEADJUSTMENT.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SANDBOXMORALEADJUSTMENT.NAME"
+msgid "Sandbox Morale Adjustment"
+msgstr "サンドボックス:士気調整"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.SANDBOXMORALEADJUSTMENT.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SANDBOXMORALEADJUSTMENT.TOOLTIP"
+msgid ""
+"This Duplicant has had their Morale adjusted temporarily with the Sandbox "
+"Tools."
+msgstr ""
+"この複製人間はサンドボックス機能によって一時的な士気調整がされています。"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.SAUNA.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SAUNA.NAME"
 msgid "Steam Powered"
@@ -6951,8 +7021,8 @@ msgstr "この複製人間は誰かの臭いを嗅ぎつけました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SOAKINGWET.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOAKINGWET.CAUSE"
-msgid "Obtained from submergence in liquid."
-msgstr "液体に潜ることで付与。"
+msgid "Obtained from submergence in liquid"
+msgstr "液体に浸ったことで付与"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SOAKINGWET.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOAKINGWET.NAME"
@@ -7053,6 +7123,16 @@ msgid ""
 msgstr ""
 "この複製人間は傷んだ<style=\"KKeyword\">食糧</style>のせいで気分が悪くなって"
 "います"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.STARRYEYED.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STARRYEYED.NAME"
+msgid "Starry Eyed"
+msgstr "キラキラお目目"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.STARRYEYED.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STARRYEYED.TOOLTIP"
+msgid "This Duplicant loves being in space!"
+msgstr "この複製人間は宇宙に居ることが大好きです！"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STARVING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STARVING.NAME"
@@ -7174,6 +7254,57 @@ msgid ""
 msgstr ""
 "強い自然<style=\"KKeyword\">光</style>はこの複製人間の足取りを軽くします"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.TELEPHONEBABBLE.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TELEPHONEBABBLE.NAME"
+msgid "Less Anxious"
+msgstr "不安軽減"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.TELEPHONEBABBLE.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TELEPHONEBABBLE.TOOLTIP"
+msgid ""
+"This Duplicant got some things off their chest by talking to themselves on "
+"the phone\n"
+"\n"
+"Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この複製人間は胸の内を電話で吐露しました\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.TELEPHONECHAT.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TELEPHONECHAT.NAME"
+msgid "Full of Gossip"
+msgstr "世間話"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.TELEPHONECHAT.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TELEPHONECHAT.TOOLTIP"
+msgid ""
+"This Duplicant chatted on the phone with at least one other Duplicant\n"
+"\n"
+"Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この複製人間は他人と電話でおしゃべりしました\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.TELEPHONELONGDISTANCE.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TELEPHONELONGDISTANCE.NAME"
+msgid "Sociable"
+msgstr "懇親会"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.TELEPHONELONGDISTANCE.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TELEPHONELONGDISTANCE.TOOLTIP"
+msgid ""
+"This Duplicant is feeling sociable after chatting on the phone with someone "
+"across space\n"
+"\n"
+"Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この複製人間は宇宙を隔てた他人と電話でおしゃべりしたことで、社交的になったと"
+"感じています\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.TEMPEXCHANGE.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TEMPEXCHANGE.NAME"
 msgid "Environmental Exchange"
@@ -7193,17 +7324,17 @@ msgstr "この複製人間は昨晩、同僚のイビキ独演会で一睡もで
 
 #. STRINGS.DUPLICANTS.MODIFIERS.THRIVER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.THRIVER.NAME"
-msgid "Duress to Impress"
-msgstr "見られることへの不安"
+msgid "Clutchy"
+msgstr "あがり症"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.THRIVER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.THRIVER.TOOLTIP"
 msgid ""
-"This Duplicant kicks into hyperdrive when <style=\"KKeyword\">Stressed</"
-"style>"
+"This Duplicant is <style=\"KKeyword\">Stressed<style=\"KKeyword\"> and has "
+"kicked into hyperdrive"
 msgstr ""
-"この複製人間は<style=\"KKeyword\">ストレス</style>を受けるとハイパードライブ"
-"に突入します"
+"この複製人間は<style=\"KKeyword\">ストレス</style>を受けており、ギアを上げる"
+"必要があります"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.TIME_REMAINING
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TIME_REMAINING"
@@ -7413,8 +7544,8 @@ msgstr "この複製人間は大きな食事をして満足しています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WETFEET.CAUSE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WETFEET.CAUSE"
-msgid "Obtained by walking through liquid."
-msgstr "液体中を歩いたために付与されました。"
+msgid "Obtained by walking through liquid"
+msgstr "液体中を歩いたために付与"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WETFEET.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WETFEET.NAME"
@@ -7935,7 +8066,7 @@ msgstr "{0}は一度心に決めたことは必ずやり遂げます。"
 #. STRINGS.DUPLICANTS.PERSONALITIES.MAE.NAME
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.MAE.NAME"
 msgid "Mae"
-msgstr "ミー"
+msgstr "メイ"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.MARIE.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.MARIE.DESC"
@@ -8136,8 +8267,8 @@ msgstr "適度に魅力的な芸術作品を作成できます"
 
 #. STRINGS.DUPLICANTS.ROLES.ARTIST.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.ARTIST.NAME"
-msgid "Aesthetic Design"
-msgstr "美的デザイン"
+msgid "<link=\"ARTING2\">Aesthetic Design</link>"
+msgstr "<link=\"ARTING2\">芸術的表現</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.ASTRONAUT.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.ASTRONAUT.DESCRIPTION"
@@ -8146,8 +8277,8 @@ msgstr "宇宙ミッションの遂行速度を改善します"
 
 #. STRINGS.DUPLICANTS.ROLES.ASTRONAUT.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.ASTRONAUT.NAME"
-msgid "<link=\"ASTRONAUT\">Rocket Navigation</link>"
-msgstr "<link=\"ASTRONAUT\">ロケット ナビゲーション</link>"
+msgid "<link=\"ASTRONAUTING2\">Rocket Navigation</link>"
+msgstr "<link=\"ASTRONAUTING2\">ロケット ナビゲーション</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.ASTRONAUTTRAINEE.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.ASTRONAUTTRAINEE.DESCRIPTION"
@@ -8160,8 +8291,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.ASTRONAUTTRAINEE.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.ASTRONAUTTRAINEE.NAME"
-msgid "<link=\"ASTRONAUTTRAINEE\">Rocket Piloting</link>"
-msgstr "<link=\"ASTRONAUTTRAINEE\">ロケット操縦</link>"
+msgid "<link=\"ASTRONAUTING1\">Rocket Piloting</link>"
+msgstr "<link=\"ASTRONAUTING1\">ロケット操縦</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.BUILDER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.BUILDER.DESCRIPTION"
@@ -8170,8 +8301,8 @@ msgstr "複製人間の建設速度をかなり上昇させます"
 
 #. STRINGS.DUPLICANTS.ROLES.BUILDER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.BUILDER.NAME"
-msgid "<link=\"BUILDER\">Improved Construction II</link>"
-msgstr "<link=\"BUILDER\">建設改善 II</link>"
+msgid "<link=\"BUILDING2\">Improved Construction II</link>"
+msgstr "<link=\"BUILDING2\">建設改善 II</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.COOK.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.COOK.DESCRIPTION"
@@ -8180,8 +8311,8 @@ msgstr "複製人間の料理速度を改善します"
 
 #. STRINGS.DUPLICANTS.ROLES.COOK.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.COOK.NAME"
-msgid "<link=\"COOK\">Grilling II</link>"
-msgstr "<link=\"COOK\">グリル調理 II</link>"
+msgid "<link=\"COOKING2\">Grilling II</link>"
+msgstr "<link=\"COOKING2\">グリル調理 II</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.FARMER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.FARMER.DESCRIPTION"
@@ -8194,8 +8325,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.FARMER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.FARMER.NAME"
-msgid "<link=\"FARMER\">Crop Tending</link>"
-msgstr "<link=\"FARMER\">作物の手入れ</link>"
+msgid "<link=\"FARMING2\">Crop Tending</link>"
+msgstr "<link=\"FARMING2\">作物の手入れ</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.GROUPS.APTITUDE_DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.GROUPS.APTITUDE_DESCRIPTION"
@@ -8231,8 +8362,8 @@ msgstr "複製人間の筋力を少し改善します"
 
 #. STRINGS.DUPLICANTS.ROLES.HANDYMAN.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.HANDYMAN.NAME"
-msgid "<link=\"HANDYMAN\">Improved Strength</link>"
-msgstr "<link=\"HANDYMAN\">筋力強化</link>"
+msgid "<link=\"BASEKEEPING1\">Improved Strength</link>"
+msgstr "<link=\"BASEKEEPING1\">筋力強化</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.HAULER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.HAULER.DESCRIPTION"
@@ -8241,8 +8372,8 @@ msgstr "複製人間の筋力および運搬容量を少し改善します"
 
 #. STRINGS.DUPLICANTS.ROLES.HAULER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.HAULER.NAME"
-msgid "<link=\"HAULER\">Improved Carrying I</link>"
-msgstr "<link=\"HAULER\">運搬改善 I</link>"
+msgid "<link=\"HAULING1\">Improved Carrying I</link>"
+msgstr "<link=\"HAULING1\">運搬改善 I</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_ARTIST.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_ARTIST.DESCRIPTION"
@@ -8251,8 +8382,8 @@ msgstr "基本的な芸術スキルを獲得します"
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_ARTIST.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_ARTIST.NAME"
-msgid "<link=\"JUNIORARTIST\">Art Fundamentals</link>"
-msgstr "<link=\"JUNIORARTIST\">芸術基礎</link>"
+msgid "<link=\"ARTING1\">Art Fundamentals</link>"
+msgstr "<link=\"ARTING1\">芸術基礎</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_BUILDER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_BUILDER.DESCRIPTION"
@@ -8261,8 +8392,8 @@ msgstr "複製人間の建設速度がいくらか改善します"
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_BUILDER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_BUILDER.NAME"
-msgid "<link=\"JUNIORBUILDER\">Improved Construction I</link>"
-msgstr "<link=\"JUNIORBUILDER\">建設改善 I</link>"
+msgid "<link=\"BUILDING1\">Improved Construction I</link>"
+msgstr "<link=\"BUILDING1\">建設改善 I</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_COOK.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_COOK.DESCRIPTION"
@@ -8273,8 +8404,8 @@ msgstr "<link=\"COOKINGSTATION\">電気グリル</link>が使用可能になり�
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_COOK.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_COOK.NAME"
-msgid "<link=\"JUNIORCOOK\">Grilling</link>"
-msgstr "<link=\"JUNIORCOOK\">グリル調理</link>"
+msgid "<link=\"COOKING1\">Grilling</link>"
+msgstr "<link=\"COOKING1\">グリル調理 I</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_FARMER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_FARMER.DESCRIPTION"
@@ -8287,8 +8418,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_FARMER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_FARMER.NAME"
-msgid "<link=\"JUNIORFARMER\">Improved Farming I</link>"
-msgstr "<link=\"JUNIORFARMER\">農耕改善 I</link>"
+msgid "<link=\"FARMING1\">Improved Farming I</link>"
+msgstr "<link=\"FARMING1\">農耕改善 I</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_MEDIC.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_MEDIC.DESCRIPTION"
@@ -8301,8 +8432,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_MEDIC.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_MEDIC.NAME"
-msgid "<link=\"MEDIC\">Medicine Compounding</link>"
-msgstr "<link=\"MEDIC\">調剤</link>"
+msgid "<link=\"MEDICINE1\">Medicine Compounding</link>"
+msgstr "<link=\"MEDICINE1\">調剤</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_MINER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_MINER.DESCRIPTION"
@@ -8315,8 +8446,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_MINER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_MINER.NAME"
-msgid "<link=\"JUNIORMINER\">Hard Digging</link>"
-msgstr "<link=\"JUNIORMINER\">硬質採掘</link>"
+msgid "<link=\"MINING1\">Hard Digging</link>"
+msgstr "<link=\"MINING1\">硬質採掘</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_RESEARCHER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_RESEARCHER.DESCRIPTION"
@@ -8327,8 +8458,8 @@ msgstr "<link=\"ADVANCEDRESEARCHCENTER\">スパコン</link>が利用可能に�
 
 #. STRINGS.DUPLICANTS.ROLES.JUNIOR_RESEARCHER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_RESEARCHER.NAME"
-msgid "<link=\"JUNIORRESEARCHER\">Advanced Research</link>"
-msgstr "<link=\"JUNIORRESEARCHER\">高度な研究</link>"
+msgid "<link=\"RESEARCHING1\">Advanced Research</link>"
+msgstr "<link=\"RESEARCHING1\">高度な研究</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.MACHINE_TECHNICIAN.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.MACHINE_TECHNICIAN.DESCRIPTION"
@@ -8337,8 +8468,8 @@ msgstr "複製人間の機械操作速度がいくらか改善します"
 
 #. STRINGS.DUPLICANTS.ROLES.MACHINE_TECHNICIAN.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.MACHINE_TECHNICIAN.NAME"
-msgid "<link=\"MACHINETECHNICIAN\">Improved Tinkering</link>"
-msgstr "<link=\"MACHINETECHNICIAN\">操作改善</link>"
+msgid "<link=\"TECHNICALS1\">Improved Tinkering</link>"
+msgstr "<link=\"TECHNICALS1\">操作改善</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.MASTER_ARTIST.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.MASTER_ARTIST.DESCRIPTION"
@@ -8347,8 +8478,8 @@ msgstr "素晴らしい出来栄えの彫刻や絵画を可能にします"
 
 #. STRINGS.DUPLICANTS.ROLES.MASTER_ARTIST.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.MASTER_ARTIST.NAME"
-msgid "<link=\"MASTERARTIST\">Masterworks</link>"
-msgstr "<link=\"MASTERARTIST\">傑作</link>"
+msgid "<link=\"ARTING3\">Masterworks</link>"
+msgstr "<link=\"ARTING3\">傑作</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.MASTER_MINER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.MASTER_MINER.DESCRIPTION"
@@ -8361,8 +8492,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.MASTER_MINER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.MASTER_MINER.NAME"
-msgid "<link=\"MASTERMINER\">Hazmat Digging</link>"
-msgstr "<link=\"MASTERMINER\">危険物採掘</link>"
+msgid "<link=\"MINING4\">Hazmat Digging</link>"
+msgstr "<link=\"MINING4\">危険物採掘</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.MATERIALS_MANAGER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.MATERIALS_MANAGER.DESCRIPTION"
@@ -8373,8 +8504,8 @@ msgstr "複製人間の腕力および運搬容量が更に増加し、配達速
 
 #. STRINGS.DUPLICANTS.ROLES.MATERIALS_MANAGER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.MATERIALS_MANAGER.NAME"
-msgid "<link=\"MATERIALSMANAGER\">Improved Carrying II</link>"
-msgstr "<link=\"MATERIALSMANAGER\">運搬改善 II</link>"
+msgid "<link=\"HAULING2\">Improved Carrying II</link>"
+msgstr "<link=\"HAULING2\">運搬改善 II</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.MECHATRONIC_ENGINEER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.MECHATRONIC_ENGINEER.DESCRIPTION"
@@ -8387,8 +8518,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.MECHATRONIC_ENGINEER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.MECHATRONIC_ENGINEER.NAME"
-msgid "<link=\"MECHATRONICENGINEER\">Mechatronics Engineering</link>"
-msgstr "<link=\"MECHATRONICENGINEER\">メカトロニクス エンジニア</link>"
+msgid "<link=\"ENGINEERING1\">Mechatronics Engineering</link>"
+msgstr "<link=\"ENGINEERING1\">メカトロニクス エンジニア</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.MEDIC.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.MEDIC.DESCRIPTION"
@@ -8401,8 +8532,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.MEDIC.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.MEDIC.NAME"
-msgid "<link=\"MEDIC\">Bedside Manner</link>"
-msgstr "<link=\"MEDIC\">患者の扱い</link>"
+msgid "<link=\"MEDICINE2\">Bedside Manner</link>"
+msgstr "<link=\"MEDICINE2\">患者の扱い</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.MINER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.MINER.DESCRIPTION"
@@ -8412,8 +8543,8 @@ msgstr "<link=\"KATAIRITE\">アビサライト</link>元素を採掘できるよ
 
 #. STRINGS.DUPLICANTS.ROLES.MINER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.MINER.NAME"
-msgid "<link=\"MINER\">Superhard Digging</link>"
-msgstr "<link=\"MINER\">超硬質採掘</link>"
+msgid "<link=\"MINING2\">Superhard Digging</link>"
+msgstr "<link=\"MINING2\">超硬質採掘</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.NO_ROLE.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.NO_ROLE.DESCRIPTION"
@@ -8428,16 +8559,16 @@ msgstr "<link=\"NOROLE\">無職</link>"
 #. STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.DESCRIPTION"
 msgid ""
-"Enables Duplicants to study matter using the <link=\"NUCLEARLABORATORY"
+"Enables Duplicants to study matter using the <link=\"NUCLEARRESEARCHCENTER"
 "\">Materials Study Terminal</link>"
 msgstr ""
-"<link=\"NUCLEARLABORATORY\">材料工学端末</link>を使って研究できるようになりま"
-"す"
+"<link=\"NUCLEARRESEARCHCENTER\">材料工学端末</link>を使って研究できるようにな"
+"ります"
 
 #. STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.NAME"
-msgid "<link=\"NUCLEARRESEARCHER\">Materials Science Research</link>"
-msgstr "<link=\"NUCLEARRESEARCHER\">材料工学研究</link>"
+msgid "<link=\"ATOMICRESEARCH\">Applied Sciences Research</link>"
+msgstr "<link=\"ATOMICRESEARCH\">材料工学研究</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.OIL_TECHNICIAN.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.OIL_TECHNICIAN.DESCRIPTION"
@@ -8461,8 +8592,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.PLUMBER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.PLUMBER.NAME"
-msgid "<link=\"PLUMBER\">Plumbing</link>"
-msgstr "<link=\"PLUMBER\">配管</link>"
+msgid "<link=\"BASEKEEPING2\">Plumbing</link>"
+msgstr "<link=\"BASEKEEPING2\">配管</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.POWER_TECHNICIAN.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.POWER_TECHNICIAN.DESCRIPTION"
@@ -8474,8 +8605,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.POWER_TECHNICIAN.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.POWER_TECHNICIAN.NAME"
-msgid "<link=\"POWERTECHNICIAN\">Electrical Engineering</link>"
-msgstr "<link=\"POWERTECHNICIAN\">電気エンジニア</link>"
+msgid "<link=\"TECHNICALS2\">Electrical Engineering</link>"
+msgstr "<link=\"TECHNICALS2\">電気エンジニア</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.RANCHER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.RANCHER.DESCRIPTION"
@@ -8485,8 +8616,8 @@ msgstr "複製人間が<style=\"KKeyword\">動物</style>へ対処できるよ�
 
 #. STRINGS.DUPLICANTS.ROLES.RANCHER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.RANCHER.NAME"
-msgid "<link=\"RANCHER\">Critter Ranching I</link>"
-msgstr "<link=\"RANCHER\">畜産 I</link>"
+msgid "<link=\"RANCHING1\">Critter Ranching I</link>"
+msgstr "<link=\"RANCHING1\">畜産 I</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.RESEARCHER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.RESEARCHER.DESCRIPTION"
@@ -8499,8 +8630,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.RESEARCHER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.RESEARCHER.NAME"
-msgid "<link=\"RESEARCHER\">Field Research</link>"
-msgstr "<link=\"RESEARCHER\">実地調査</link>"
+msgid "<link=\"RESEARCHING2\">Field Research</link>"
+msgstr "<link=\"RESEARCHING2\">実地調査</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.ROCKETPILOT.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.ROCKETPILOT.DESCRIPTION"
@@ -8513,8 +8644,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.ROCKETPILOT.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.ROCKETPILOT.NAME"
-msgid "<link=\"PILOT\">Rocket Piloting</link>"
-msgstr "<link=\"PILOT\">ロケット操縦</link>"
+msgid "<link=\"ROCKETPILOTING1\">Rocket Piloting</link>"
+msgstr "<link=\"ROCKETPILOTING1\">ロケット操縦</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_BUILDER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_BUILDER.DESCRIPTION"
@@ -8523,8 +8654,8 @@ msgstr "グラビタスの設備を破壊できるようになります"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_BUILDER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_BUILDER.NAME"
-msgid "<link=\"SENIORBUILDER\">Demolition</link>"
-msgstr "<link=\"SENIORBUILDER\">破壊活動</link>"
+msgid "<link=\"BUILDING3\">Demolition</link>"
+msgstr "<link=\"BUILDING3\">破壊活動</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_FARMER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_FARMER.DESCRIPTION"
@@ -8533,8 +8664,8 @@ msgstr "複製人間の農耕スキルをかなり上昇させます"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_FARMER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_FARMER.NAME"
-msgid "<link=\"SENIORFARMER\">Improved Farming II</link>"
-msgstr "<link=\"SENIORFARMER\">農耕改善 II</link>"
+msgid "<link=\"FARMING3\">Improved Farming II</link>"
+msgstr "<link=\"FARMING3\">農耕改善 II</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_MEDIC.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_MEDIC.DESCRIPTION"
@@ -8545,8 +8676,8 @@ msgstr "<link=\"ADVANCEDDOCTORSTATION\">診療所</link>が利用可能になり
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_MEDIC.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_MEDIC.NAME"
-msgid "<link=\"MEDIC\">Advanced Medical Care</link>"
-msgstr "<link=\"MEDIC\">高度な医療看護</link>"
+msgid "<link=\"MEDICINE3\">Advanced Medical Care</link>"
+msgstr "<link=\"MEDICINE3\">高度な医療看護</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.DESCRIPTION"
@@ -8560,8 +8691,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_MINER.NAME"
-msgid "<link=\"SENIORMINER\">Super-Duperhard Digging</link>"
-msgstr "<link=\"MINER\">超々硬質採掘</link>"
+msgid "<link=\"MINING3\">Super-Duperhard Digging</link>"
+msgstr "<link=\"MINING3\">超々硬質採掘</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_RANCHER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RANCHER.DESCRIPTION"
@@ -8570,8 +8701,8 @@ msgstr "複製人間の牧畜スキルを改善します"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_RANCHER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RANCHER.NAME"
-msgid "<link=\"SENIORRANCHER\">Critter Ranching II</link>"
-msgstr "<link=\"SENIORRANCHER\">畜産 II</link>"
+msgid "<link=\"RANCHING2\">Critter Ranching II</link>"
+msgstr "<link=\"RANCHING2\">畜産 II</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.DESCRIPTION"
@@ -8582,8 +8713,8 @@ msgstr "<link=\"TELESCOPE\">観測望遠鏡</link>で外宇宙の観測を可能
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.NAME"
-msgid "<link=\"SENIORRESEARCHER\">Astronomy</link>"
-msgstr "<link=\"SENIORRESEARCHER\">宇宙工学</link>"
+msgid "<link=\"ASTRONOMY\">Astronomy</link>"
+msgstr "<link=\"ASTRONOMY\">天文学</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_ROCKETPILOT.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_ROCKETPILOT.DESCRIPTION"
@@ -8592,22 +8723,32 @@ msgstr "複製人間がロケットを速く飛ばせるようになります"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_ROCKETPILOT.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_ROCKETPILOT.NAME"
-msgid "<link=\"SENIORPILOT\">Rocket Piloting II</link>"
-msgstr "<link=\"SENIORPILOT\">ロケット操縦 II</link>"
+msgid "<link=\"ROCKETPILOTING2\">Rocket Piloting II</link>"
+msgstr "<link=\"ROCKETPILOTING2\">ロケット操縦 II</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.DESCRIPTION"
 msgid ""
-"Enables Duplicants to conduct research from within a rocket using the <link="
-"\"ORBITALRESEARCHCENTER\">Orbital Microlab</link>"
+"Enables Duplicants to conduct research using the <link="
+"\"DLC1COSMICRESEARCHCENTER\">Virtual Planetarium</link>"
 msgstr ""
-"<link=\"ORBITALRESEARCHCENTER\">軌道ラボ</link>でロケット内の研究を可能にしま"
-"す"
+"複製人間が<link=\"DLC1COSMICRESEARCHCENTER\">仮想プラネタリウム</link>で研究"
+"できるようになります"
 
 #. STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SPACE_RESEARCHER.NAME"
-msgid "<link=\"SPACERESEARCHER\">Orbital Researcher</link>"
-msgstr "<link=\"SPACERESEARCHER\">軌道研究者</link>"
+msgid "<link=\"SPACERESEARCH\">Data Analysis Researcher</link>"
+msgstr "<link=\"SPACERESEARCH\">データ分析研究者</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.SUIT_DURABILITY.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.SUIT_DURABILITY.DESCRIPTION"
+msgid "Suits equipped by this duplicant lose durability 25% slower."
+msgstr "この複製人間が装着したスーツは耐久度の損失速度が25%低下します。"
+
+#. STRINGS.DUPLICANTS.ROLES.SUIT_DURABILITY.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.SUIT_DURABILITY.NAME"
+msgid "<link=\"SUITDURABILITY\">Suit Sustainability Training</link>"
+msgstr "<link=\"SUITDURABILITY\">スーツ取り扱い トレーニング</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SUIT_EXPERT.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SUIT_EXPERT.DESCRIPTION"
@@ -8616,18 +8757,8 @@ msgstr "EXOスーツ着用時の移動速度低下を排除します"
 
 #. STRINGS.DUPLICANTS.ROLES.SUIT_EXPERT.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SUIT_EXPERT.NAME"
-msgid "<link=\"SUITEXPERT\">Exosuit Training</link>"
-msgstr "<link=\"SUITEXPERT\">EXOスーツ トレーニング</link>"
-
-#. STRINGS.DUPLICANTS.ROLES.THERMAL_SUIT_WEARER.DESCRIPTION
-msgctxt "STRINGS.DUPLICANTS.ROLES.THERMAL_SUIT_WEARER.DESCRIPTION"
-msgid "Work in progress skill"
-msgstr "作りかけのスキル"
-
-#. STRINGS.DUPLICANTS.ROLES.THERMAL_SUIT_WEARER.NAME
-msgctxt "STRINGS.DUPLICANTS.ROLES.THERMAL_SUIT_WEARER.NAME"
-msgid "W.I.P. Skill"
-msgstr "W.I.P スキル"
+msgid "<link=\"SUITS1\">Exosuit Training</link>"
+msgstr "<link=\"SUITS1\">EXOスーツ トレーニング</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.USELESSSKILL.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.USELESSSKILL.DESCRIPTION"
@@ -9358,7 +9489,7 @@ msgid ""
 "• All <style=\"KKeyword\">Attributes</style> <b>+2</b> in the morning"
 msgstr ""
 "この複製人間は快活に一日を始められそうです\n"
-"• 朝に全ての<style=\"KKeyword\">属性</style> <b>+2</b>"
+"• 朝に全ての<style=\"KKeyword\">能力値</style> <b>+2</b>"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.EATDELIVERSTATUS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EATDELIVERSTATUS.NAME"
@@ -10031,7 +10162,7 @@ msgid ""
 "• All <style=\"KKeyword\">Attributes</style> <b>+3</b> at night"
 msgstr ""
 "この複製人間は夜間により効率的になります\n"
-"• 夜間に全ての<style=\"KKeyword\">属性</style> <b>+3</b>"
+"• 夜間に全ての<style=\"KKeyword\">能力値</style> <b>+3</b>"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOISEMAJOR.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOISEMAJOR.NAME"
@@ -10592,6 +10723,16 @@ msgstr ""
 "この複製人間は、<style=\"KKeyword\">照明</style>がつけっぱなしなので寝られま"
 "せん"
 
+#. STRINGS.DUPLICANTS.STATUSITEMS.SLEEPINGINTERRUPTEDBYMOVEMENT.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.SLEEPINGINTERRUPTEDBYMOVEMENT.NAME"
+msgid "Interrupted Sleep: Bed Jostling"
+msgstr "安眠妨害: ぐらぐらベッド"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.SLEEPINGINTERRUPTEDBYMOVEMENT.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.SLEEPINGINTERRUPTEDBYMOVEMENT.TOOLTIP"
+msgid "This Duplicant was woken up because their bed was moved"
+msgstr "この複製人間はベッドがぐらぐら動かされたので目が覚めてしまいました"
+
 #. STRINGS.DUPLICANTS.STATUSITEMS.SLEEPINGINTERRUPTEDBYNOISE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.SLEEPINGINTERRUPTEDBYNOISE.NAME"
 msgid "Interrupted Sleep: Snoring Friend"
@@ -10616,7 +10757,7 @@ msgid ""
 "At this rate they're sure to feel <link=\"SLEEP\">Well Rested</link> "
 "tomorrow morning"
 msgstr ""
-"この複製人間は高品質な睡眠を取っています。\n"
+"この複製人間は高品質な睡眠を取っています\n"
 "\n"
 "この調子だと、彼らは明日の朝に<link=\"SLEEP\">十分な休息</link>を感じるでしょ"
 "う"
@@ -11246,6 +11387,20 @@ msgctxt "STRINGS.DUPLICANTS.TRAITS.ALLERGIES.SHORT_DESC_TOOLTIP"
 msgid "Allergens cause excessive sneezing fits"
 msgstr "刺激物による過度なくしゃみ"
 
+#. STRINGS.DUPLICANTS.TRAITS.ANCIENTKNOWLEDGE.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.ANCIENTKNOWLEDGE.DESC"
+msgid ""
+"This Duplicant has knowledge from the before times\n"
+"• Starts with 3 skill points"
+msgstr ""
+"この複製人間は過去の知識を持っています\n"
+"・3スキルポイントを所持"
+
+#. STRINGS.DUPLICANTS.TRAITS.ANCIENTKNOWLEDGE.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.ANCIENTKNOWLEDGE.NAME"
+msgid "Ancient Knowledge"
+msgstr "古代の知識"
+
 #. STRINGS.DUPLICANTS.TRAITS.ANEMIC.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ANEMIC.DESC"
 msgid "This Duplicant has trouble keeping up with the others"
@@ -11515,7 +11670,7 @@ msgid ""
 "• Morning: <b>{0}</b> bonus to all <style=\"KKeyword\">Attributes</style>\n"
 "• Duration: 5 Schedule Blocks"
 msgstr ""
-"• 朝: 全ての<style=\"KKeyword\">属性</style>に<b>{0}</b>のボーナス\n"
+"• 朝: 全ての<style=\"KKeyword\">能力値</style>に<b>{0}</b>のボーナス\n"
 "• 期間: スケジュールの 5 ブロック"
 
 #. STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.NAME
@@ -11526,7 +11681,7 @@ msgstr "早起き"
 #. STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.SHORT_DESC"
 msgid "Gains morning Attribute bonuses"
-msgstr "朝の属性ボーナス"
+msgstr "朝に能力ボーナスを獲得"
 
 #. STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.EARLYBIRD.SHORT_DESC_TOOLTIP"
@@ -11534,7 +11689,7 @@ msgid ""
 "Morning: <b>+2</b> bonus to all <style=\"KKeyword\">Attributes</style>\n"
 "• Duration: 5 Schedule Blocks"
 msgstr ""
-"朝: 全ての<style=\"KKeyword\">属性</style>に<b>+2</b>ボーナス\n"
+"朝: 全ての<style=\"KKeyword\">能力値</style>に<b>+2</b>ボーナス\n"
 "• 期間: スケジュールの 5 ブロック"
 
 #. STRINGS.DUPLICANTS.TRAITS.FASTLEARNER.DESC
@@ -11596,6 +11751,26 @@ msgctxt "STRINGS.DUPLICANTS.TRAITS.FUSSY.NAME"
 msgid "Fussy"
 msgstr "気難し屋"
 
+#. STRINGS.DUPLICANTS.TRAITS.GLOWSTICK.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.GLOWSTICK.DESC"
+msgid "This Duplicant is positively glowing"
+msgstr "この複製人間は積極的に発光しています"
+
+#. STRINGS.DUPLICANTS.TRAITS.GLOWSTICK.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.GLOWSTICK.NAME"
+msgid "Glow Stick"
+msgstr "人間サイリウム"
+
+#. STRINGS.DUPLICANTS.TRAITS.GLOWSTICK.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.GLOWSTICK.SHORT_DESC"
+msgid "Emits low amounts of rads and light"
+msgstr "低量の放射線および光を排出"
+
+#. STRINGS.DUPLICANTS.TRAITS.GLOWSTICK.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.GLOWSTICK.SHORT_DESC_TOOLTIP"
+msgid "Emits low amounts of rads and light"
+msgstr "低量の放射線および光を排出します"
+
 #. STRINGS.DUPLICANTS.TRAITS.GRANTED_SKILL_SHARED_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTED_SKILL_SHARED_DESC"
 msgid ""
@@ -11633,13 +11808,13 @@ msgstr "基本的な芸術スキルを獲得します"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING1.NAME"
-msgid "Skilled: <link=\"JUNIORARTIST\">Art Fundamentals</link>"
-msgstr "習得済み: <link=\"JUNIORARTIST\">芸術基礎</link>"
+msgid "Skilled: <link=\"ARTING1\">Art Fundamentals</link>"
+msgstr "習得済み: <link=\"ARTING1\">芸術基礎</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING1.SHORT_DESC_TOOLTIP"
@@ -11657,13 +11832,13 @@ msgstr "適度に魅力的な芸術作品を作成できます"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING2.NAME"
-msgid "Skilled: Aesthetic Design"
-msgstr "習得済み: 美的デザイン"
+msgid "Skilled: <link=\"ARTING2\">Aesthetic Design</link>"
+msgstr "習得済み: <link=\"ARTING2\">芸術的表現</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING2.SHORT_DESC_TOOLTIP"
@@ -11681,13 +11856,13 @@ msgstr "素晴らしい出来栄えの彫刻や絵画を可能にします"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING3.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING3.NAME"
-msgid "Skilled: <link=\"MASTERARTIST\">Masterworks</link>"
-msgstr "習得済み: <link=\"MASTERARTIST\">傑作</link>"
+msgid "Skilled: <link=\"ARTING3\">Masterworks</link>"
+msgstr "習得済み: <link=\"ARTING3\">傑作</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING3.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING3.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING3.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING3.SHORT_DESC_TOOLTIP"
@@ -11709,13 +11884,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING1.NAME"
-msgid "Skilled: <link=\"ASTRONAUTTRAINEE\">Rocket Piloting</link>"
-msgstr "習得済み: <link=\"ASTRONAUTTRAINEE\">ロケット操縦</link>"
+msgid "Skilled: <link=\"ASTRONAUTING1\">Rocket Piloting</link>"
+msgstr "習得済み: <link=\"ASTRONAUTING1\">ロケット操縦</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING1.SHORT_DESC"
 msgid "Starts with a Tier 4 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル4で開始します"
+msgstr "<b>スキル</b>レベル4で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING1.SHORT_DESC_TOOLTIP"
@@ -11733,13 +11908,13 @@ msgstr "宇宙ミッションの遂行速度を改善します"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING2.NAME"
-msgid "Skilled: <link=\"ASTRONAUT\">Rocket Navigation</link>"
-msgstr "習得済み: <link=\"ASTRONAUT\">ロケット ナビゲーション</link>"
+msgid "Skilled: <link=\"ASTRONAUTING2\">Rocket Navigation</link>"
+msgstr "習得済み: <link=\"ASTRONAUTING2\">ロケット ナビゲーション</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING2.SHORT_DESC"
 msgid "Starts with a Tier 5 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル5で開始します"
+msgstr "<b>スキル</b>レベル5で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ASTRONAUTING2.SHORT_DESC_TOOLTIP"
@@ -11757,13 +11932,13 @@ msgstr "複製人間の筋力を少し改善します"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING1.NAME"
-msgid "Skilled: <link=\"HANDYMAN\">Improved Strength</link>"
-msgstr "習得済み: <link=\"HANDYMAN\">筋力強化</link>"
+msgid "Skilled: <link=\"BASEKEEPING1\">Improved Strength</link>"
+msgstr "習得済み: <link=\"BASEKEEPING1\">筋力強化</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING1.SHORT_DESC_TOOLTIP"
@@ -11785,13 +11960,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING2.NAME"
-msgid "Skilled: <link=\"PLUMBER\">Plumbing</link>"
-msgstr "習得済み: <link=\"PLUMBER\">配管</link>"
+msgid "Skilled: <link=\"BASEKEEPING2\">Plumbing</link>"
+msgstr "習得済み: <link=\"BASEKEEPING2\">配管</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BASEKEEPING2.SHORT_DESC_TOOLTIP"
@@ -11809,13 +11984,13 @@ msgstr "複製人間の建設速度がいくらか改善します"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING1.NAME"
-msgid "Skilled: <link=\"JUNIORBUILDER\">Improved Construction I</link>"
-msgstr "習得済み: <link=\"JUNIORBUILDER\">建設改善 I</link>"
+msgid "Skilled: <link=\"BUILDING1\">Improved Construction I</link>"
+msgstr "習得済み: <link=\"BUILDING1\">建設改善 I</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING1.SHORT_DESC_TOOLTIP"
@@ -11833,13 +12008,13 @@ msgstr "複製人間の建設速度をかなり上昇させます"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING2.NAME"
-msgid "Skilled: <link=\"BUILDER\">Improved Construction II</link>"
-msgstr "習得済み: <link=\"BUILDER\">建設改善 II</link>"
+msgid "Skilled: <link=\"BUILDING2\">Improved Construction II</link>"
+msgstr "習得済み: <link=\"BUILDING2\">建設改善 II</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING2.SHORT_DESC_TOOLTIP"
@@ -11857,13 +12032,13 @@ msgstr "グラビタスの設備を破壊できるようになります"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING3.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING3.NAME"
-msgid "Skilled: <link=\"SENIORBUILDER\">Demolition</link>"
-msgstr "習得済み: <link=\"SENIORBUILDER\">破壊活動</link>"
+msgid "Skilled: <link=\"BUILDING3\">Demolition</link>"
+msgstr "習得済み: <link=\"BUILDING3\">破壊活動</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING3.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING3.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING3.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING3.SHORT_DESC_TOOLTIP"
@@ -11883,13 +12058,13 @@ msgstr "<link=\"COOKINGSTATION\">電気グリル</link>が使用可能になり�
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING1.NAME"
-msgid "Skilled: <link=\"JUNIORCOOK\">Grilling</link>"
-msgstr "習得済み: <link=\"JUNIORCOOK\">グリル調理</link>"
+msgid "Skilled: <link=\"COOKING1\">Grilling</link>"
+msgstr "習得済み: <link=\"COOKING1\">グリル調理 I</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING1.SHORT_DESC_TOOLTIP"
@@ -11907,13 +12082,13 @@ msgstr "複製人間の料理速度を改善します"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING2.NAME"
-msgid "Skilled: <link=\"COOK\">Grilling II</link>"
-msgstr "習得済み: <link=\"COOK\">グリル調理 II</link>"
+msgid "Skilled: <link=\"COOKING2\">Grilling II</link>"
+msgstr "習得済み: <link=\"COOKING2\">グリル調理 II</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING2.SHORT_DESC_TOOLTIP"
@@ -11935,14 +12110,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ENGINEERING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ENGINEERING1.NAME"
-msgid "Skilled: <link=\"MECHATRONICENGINEER\">Mechatronics Engineering</link>"
-msgstr ""
-"習得済み: <link=\"MECHATRONICENGINEER\">メカトロニクス エンジニア</link>"
+msgid "Skilled: <link=\"ENGINEERING1\">Mechatronics Engineering</link>"
+msgstr "習得済み: <link=\"ENGINEERING1\">メカトロニクス エンジニア</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ENGINEERING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ENGINEERING1.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ENGINEERING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ENGINEERING1.SHORT_DESC_TOOLTIP"
@@ -11964,13 +12138,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING1.NAME"
-msgid "Skilled: <link=\"JUNIORFARMER\">Improved Farming I</link>"
-msgstr "習得済み: <link=\"JUNIORFARMER\">農耕改善 I</link>"
+msgid "Skilled: <link=\"FARMING1\">Improved Farming I</link>"
+msgstr "習得済み: <link=\"FARMING1\">農耕改善 I</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING1.SHORT_DESC_TOOLTIP"
@@ -11992,13 +12166,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING2.NAME"
-msgid "Skilled: <link=\"FARMER\">Crop Tending</link>"
-msgstr "習得済み: <link=\"FARMER\">作物の手入れ</link>"
+msgid "Skilled: <link=\"FARMING2\">Crop Tending</link>"
+msgstr "習得済み: <link=\"FARMING2\">作物の手入れ</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING2.SHORT_DESC_TOOLTIP"
@@ -12016,13 +12190,13 @@ msgstr "複製人間の農耕スキルをかなり上昇させます"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.NAME"
-msgid "Skilled: <link=\"SENIORFARMER\">Improved Farming II</link>"
-msgstr "習得済み: <link=\"SENIORFARMER\">農耕改善 II</link>"
+msgid "Skilled: <link=\"FARMING3\">Improved Farming II</link>"
+msgstr "習得済み: <link=\"FARMING3\">農耕改善 II</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.SHORT_DESC_TOOLTIP"
@@ -12040,13 +12214,13 @@ msgstr "複製人間の筋力および運搬容量を少し改善します"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING1.NAME"
-msgid "Skilled: <link=\"HAULER\">Improved Carrying I</link>"
-msgstr "習得済み: <link=\"HAULER\">運搬改善 I</link>"
+msgid "Skilled: <link=\"HAULING1\">Improved Carrying I</link>"
+msgstr "習得済み: <link=\"HAULING1\">運搬改善 I</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING1.SHORT_DESC_TOOLTIP"
@@ -12066,13 +12240,13 @@ msgstr "複製人間の腕力および運搬容量が更に増加し、配達速
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING2.NAME"
-msgid "Skilled: <link=\"MATERIALSMANAGER\">Improved Carrying II</link>"
-msgstr "習得済み: <link=\"MATERIALSMANAGER\">運搬改善 II</link>"
+msgid "Skilled: <link=\"HAULING2\">Improved Carrying II</link>"
+msgstr "習得済み: <link=\"HAULING2\">運搬改善 II</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING2.SHORT_DESC_TOOLTIP"
@@ -12094,13 +12268,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE1.NAME"
-msgid "Skilled: <link=\"MEDIC\">Medicine Compounding</link>"
-msgstr "習得済み: <link=\"MEDIC\">調剤</link>"
+msgid "Skilled: <link=\"MEDICINE1\">Medicine Compounding</link>"
+msgstr "習得済み: <link=\"MEDICINE1\">調剤</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE1.SHORT_DESC_TOOLTIP"
@@ -12122,13 +12296,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE2.NAME"
-msgid "Skilled: <link=\"MEDIC\">Bedside Manner</link>"
-msgstr "習得済み: <link=\"MEDIC\">患者の扱い</link>"
+msgid "Skilled: <link=\"MEDICINE2\">Bedside Manner</link>"
+msgstr "習得済み: <link=\"MEDICINE2\">患者の扱い</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE2.SHORT_DESC_TOOLTIP"
@@ -12148,13 +12322,13 @@ msgstr "<link=\"ADVANCEDDOCTORSTATION\">診療所</link>が利用可能になり
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE3.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE3.NAME"
-msgid "Skilled: <link=\"MEDIC\">Advanced Medical Care</link>"
-msgstr "習得済み: <link=\"MEDIC\">高度な医療看護</link>"
+msgid "Skilled: <link=\"MEDICINE3\">Advanced Medical Care</link>"
+msgstr "習得済み: <link=\"MEDICINE3\">高度な医療看護</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE3.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE3.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE3.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MEDICINE3.SHORT_DESC_TOOLTIP"
@@ -12176,13 +12350,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING1.NAME"
-msgid "Skilled: <link=\"JUNIORMINER\">Hard Digging</link>"
-msgstr "習得済み: <link=\"JUNIORMINER\">硬質採掘</link>"
+msgid "Skilled: <link=\"MINING1\">Hard Digging</link>"
+msgstr "習得済み: <link=\"MINING1\">硬質採掘</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING1.SHORT_DESC_TOOLTIP"
@@ -12201,13 +12375,13 @@ msgstr "<link=\"KATAIRITE\">アビサライト</link>元素を採掘できるよ
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING2.NAME"
-msgid "Skilled: <link=\"MINER\">Superhard Digging</link>"
-msgstr "習得済み: <link=\"MINER\">超硬質採掘</link>"
+msgid "Skilled: <link=\"MINING2\">Superhard Digging</link>"
+msgstr "習得済み: <link=\"MINING2\">超硬質採掘</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING2.SHORT_DESC_TOOLTIP"
@@ -12230,13 +12404,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING3.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING3.NAME"
-msgid "Skilled: <link=\"SENIORMINER\">Super-Duperhard Digging</link>"
-msgstr "習得済み: <link=\"MINER\">超々硬質採掘</link>"
+msgid "Skilled: <link=\"MINING3\">Super-Duperhard Digging</link>"
+msgstr "習得済み: <link=\"MINING3\">超々硬質採掘</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING3.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING3.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING3.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING3.SHORT_DESC_TOOLTIP"
@@ -12258,13 +12432,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING4.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING4.NAME"
-msgid "Skilled: <link=\"MASTERMINER\">Hazmat Digging</link>"
-msgstr "習得済み: <link=\"MASTERMINER\">危険物採掘</link>"
+msgid "Skilled: <link=\"MINING4\">Hazmat Digging</link>"
+msgstr "習得済み: <link=\"MINING4\">危険物採掘</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING4.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING4.SHORT_DESC"
 msgid "Starts with a Tier 4 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル4で開始します"
+msgstr "<b>スキル</b>レベル4で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING4.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_MINING4.SHORT_DESC_TOOLTIP"
@@ -12283,13 +12457,13 @@ msgstr "複製人間が<style=\"KKeyword\">動物</style>へ対処できるよ�
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING1.NAME"
-msgid "Skilled: <link=\"RANCHER\">Critter Ranching I</link>"
-msgstr "習得済み: <link=\"RANCHER\">畜産 I</link>"
+msgid "Skilled: <link=\"RANCHING1\">Critter Ranching I</link>"
+msgstr "習得済み: <link=\"RANCHING1\">畜産 I</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING1.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING1.SHORT_DESC_TOOLTIP"
@@ -12307,13 +12481,13 @@ msgstr "複製人間の牧畜スキルを改善します"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING2.NAME"
-msgid "Skilled: <link=\"SENIORRANCHER\">Critter Ranching II</link>"
-msgstr "習得済み: <link=\"SENIORRANCHER\">畜産 II</link>"
+msgid "Skilled: <link=\"RANCHING2\">Critter Ranching II</link>"
+msgstr "習得済み: <link=\"RANCHING2\">畜産 II</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING2.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING2.SHORT_DESC_TOOLTIP"
@@ -12333,13 +12507,13 @@ msgstr "<link=\"ADVANCEDRESEARCHCENTER\">スパコン</link>が利用可能に�
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING1.NAME"
-msgid "Skilled: <link=\"JUNIORRESEARCHER\">Advanced Research</link>"
-msgstr "習得済み: <link=\"JUNIORRESEARCHER\">高度な研究</link>"
+msgid "Skilled: <link=\"RESEARCHING1\">Advanced Research</link>"
+msgstr "習得済み: <link=\"RESEARCHING1\">高度な研究</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING1.SHORT_DESC_TOOLTIP"
@@ -12360,13 +12534,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.NAME"
-msgid "Skilled: <link=\"RESEARCHER\">Field Research</link>"
-msgstr "習得済み: <link=\"RESEARCHER\">実地調査</link>"
+msgid "Skilled: <link=\"RESEARCHING2\">Field Research</link>"
+msgstr "習得済み: <link=\"RESEARCHING2\">実地調査</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING2.SHORT_DESC_TOOLTIP"
@@ -12386,13 +12560,13 @@ msgstr "<link=\"TELESCOPE\">観測望遠鏡</link>で外宇宙の観測を可能
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING3.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING3.NAME"
-msgid "Skilled: <link=\"SENIORRESEARCHER\">Astronomy</link>"
-msgstr "習得済み: <link=\"SENIORRESEARCHER\">宇宙工学</link>"
+msgid "Skilled: <link=\"ASTRONOMY\">Astronomy</link>"
+msgstr "習得済み: <link=\"ASTRONOMY\">天文学</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING3.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING3.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING3.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING3.SHORT_DESC_TOOLTIP"
@@ -12406,21 +12580,21 @@ msgstr ""
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.DESC"
 msgid ""
-"Enables Duplicants to study matter using the <link=\"NUCLEARLABORATORY"
+"Enables Duplicants to study matter using the <link=\"NUCLEARRESEARCHCENTER"
 "\">Materials Study Terminal</link>"
 msgstr ""
-"<link=\"NUCLEARLABORATORY\">材料工学端末</link>を使って研究できるようになりま"
-"す"
+"<link=\"NUCLEARRESEARCHCENTER\">材料工学端末</link>を使って研究できるようにな"
+"ります"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.NAME"
-msgid "Skilled: <link=\"NUCLEARRESEARCHER\">Materials Science Research</link>"
-msgstr "習得済み: <link=\"NUCLEARRESEARCHER\">材料工学研究</link>"
+msgid "Skilled: <link=\"ATOMICRESEARCH\">Applied Sciences Research</link>"
+msgstr "習得済み: <link=\"ATOMICRESEARCH\">実地調査</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.SHORT_DESC_TOOLTIP"
@@ -12438,13 +12612,13 @@ msgstr "EXOスーツ着用時の移動速度低下を排除します"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_SUITS1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_SUITS1.NAME"
-msgid "Skilled: <link=\"SUITEXPERT\">Exosuit Training</link>"
-msgstr "習得済み: <link=\"SUITEXPERT\">EXOスーツ トレーニング</link>"
+msgid "Skilled: <link=\"SUITS1\">Exosuit Training</link>"
+msgstr "習得済み: <link=\"SUITS1\">EXOスーツ トレーニング</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_SUITS1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_SUITS1.SHORT_DESC"
 msgid "Starts with a Tier 3 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル3で開始します"
+msgstr "<b>スキル</b>レベル3で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_SUITS1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_SUITS1.SHORT_DESC_TOOLTIP"
@@ -12462,13 +12636,13 @@ msgstr "複製人間の機械操作速度がいくらか改善します"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS1.NAME"
-msgid "Skilled: <link=\"MACHINETECHNICIAN\">Improved Tinkering</link>"
-msgstr "習得済み: <link=\"MACHINETECHNICIAN\">操作改善</link>"
+msgid "Skilled: <link=\"TECHNICALS1\">Improved Tinkering</link>"
+msgstr "習得済み: <link=\"TECHNICALS1\">操作改善</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS1.SHORT_DESC"
 msgid "Starts with a Tier 1 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル1で開始します"
+msgstr "<b>スキル</b>レベル1で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS1.SHORT_DESC_TOOLTIP"
@@ -12489,13 +12663,13 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS2.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS2.NAME"
-msgid "Skilled: <link=\"POWERTECHNICIAN\">Electrical Engineering</link>"
-msgstr "習得済み: <link=\"POWERTECHNICIAN\">電気エンジニア</link>"
+msgid "Skilled: <link=\"TECHNICALS2\">Electrical Engineering</link>"
+msgstr "習得済み: <link=\"TECHNICALS2\">電気エンジニア</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS2.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS2.SHORT_DESC"
 msgid "Starts with a Tier 2 <b>Skill</b>"
-msgstr "<b>スキル</b>レベル2で開始します"
+msgstr "<b>スキル</b>レベル2で開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS2.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_TECHNICALS2.SHORT_DESC_TOOLTIP"
@@ -12591,6 +12765,30 @@ msgstr "この複製人間は用を足す時間が他の人より長めです"
 msgctxt "STRINGS.DUPLICANTS.TRAITS.IRRITABLEBOWEL.NAME"
 msgid "Irritable Bowel"
 msgstr "腸過敏"
+
+#. STRINGS.DUPLICANTS.TRAITS.LONER.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.LONER.DESC"
+msgid "This Duplicant prefers solitary pursuits"
+msgstr "この複製人間は孤独を好みます"
+
+#. STRINGS.DUPLICANTS.TRAITS.LONER.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.LONER.NAME"
+msgid "Loner"
+msgstr "孤高の人"
+
+#. STRINGS.DUPLICANTS.TRAITS.LONER.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.LONER.SHORT_DESC"
+msgid "Attribute bonuses while alone"
+msgstr "孤独でいる間、能力値にボーナス"
+
+#. STRINGS.DUPLICANTS.TRAITS.LONER.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.LONER.SHORT_DESC_TOOLTIP"
+msgid ""
+"Only duplicant on a world: <b>+4</b> bonus to all <style=\"KKeyword"
+"\">Attributes</style>"
+msgstr ""
+"小惑星に一人だけの時: 全ての<style=\"KKeyword\">能力値</style>に <b>+4</b> の"
+"ボーナス"
 
 #. STRINGS.DUPLICANTS.TRAITS.MACHINERYDOWN.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.MACHINERYDOWN.DESC"
@@ -12762,7 +12960,7 @@ msgstr "暗所恐怖症"
 #. STRINGS.DUPLICANTS.TRAITS.NIGHTLIGHT.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NIGHTLIGHT.SHORT_DESC"
 msgid "Requires light to sleep"
-msgstr "睡眠時に明かりが必要です"
+msgstr "睡眠時に明かりが必要"
 
 #. STRINGS.DUPLICANTS.TRAITS.NIGHTLIGHT.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NIGHTLIGHT.SHORT_DESC_TOOLTIP"
@@ -12780,7 +12978,7 @@ msgid ""
 "• Nighttime: <b>{0}</b> bonus to all <style=\"KKeyword\">Attributes</style>\n"
 "• Duration: All Night"
 msgstr ""
-"• 夜間: 全ての<style=\"KKeyword\">属性</style>に<b>{0}</b>のボーナス\n"
+"• 夜間: 全ての<style=\"KKeyword\">能力値</style>に<b>{0}</b>のボーナス\n"
 "• 期間: 夜の間ずっと"
 
 #. STRINGS.DUPLICANTS.TRAITS.NIGHTOWL.NAME
@@ -12791,7 +12989,7 @@ msgstr "夜更かし"
 #. STRINGS.DUPLICANTS.TRAITS.NIGHTOWL.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NIGHTOWL.SHORT_DESC"
 msgid "Gains nighttime Attribute bonuses"
-msgstr "夜間の属性ボーナス"
+msgstr "夜間に能力値ボーナスを獲得"
 
 #. STRINGS.DUPLICANTS.TRAITS.NIGHTOWL.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NIGHTOWL.SHORT_DESC_TOOLTIP"
@@ -12799,7 +12997,7 @@ msgid ""
 "Nighttime: <b>+3</b> bonus to all <style=\"KKeyword\">Attributes</style>\n"
 "• Duration: All Night"
 msgstr ""
-"• 夜間: 全ての<style=\"KKeyword\">属性</style>に<b>+3</b>のボーナス\n"
+"• 夜間: 全ての<style=\"KKeyword\">能力値</style>に<b>+3</b>のボーナス\n"
 "• 期間: 夜の間ずっと"
 
 #. STRINGS.DUPLICANTS.TRAITS.NOODLEARMS.DESC
@@ -12814,6 +13012,26 @@ msgstr ""
 msgctxt "STRINGS.DUPLICANTS.TRAITS.NOODLEARMS.NAME"
 msgid "Noodle Arms"
 msgstr "ヨボヨボな腕"
+
+#. STRINGS.DUPLICANTS.TRAITS.RADIATIONEATER.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.RADIATIONEATER.DESC"
+msgid "This Duplicant eats radiation for breakfast (and dinner)"
+msgstr "この複製人間は朝ご飯に(夜ご飯にも)放射線を食べます"
+
+#. STRINGS.DUPLICANTS.TRAITS.RADIATIONEATER.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.RADIATIONEATER.NAME"
+msgid "Radiation Eater"
+msgstr "放射線食らい"
+
+#. STRINGS.DUPLICANTS.TRAITS.RADIATIONEATER.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.RADIATIONEATER.SHORT_DESC"
+msgid "Converts radiation exposure into calories"
+msgstr "被曝をカロリーに変換"
+
+#. STRINGS.DUPLICANTS.TRAITS.RADIATIONEATER.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.RADIATIONEATER.SHORT_DESC_TOOLTIP"
+msgid "Converts radiation exposure into calories"
+msgstr "被曝をカロリーに変換します"
 
 #. STRINGS.DUPLICANTS.TRAITS.RANCHINGDOWN.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.RANCHINGDOWN.DESC"
@@ -12942,6 +13160,26 @@ msgctxt "STRINGS.DUPLICANTS.TRAITS.SPARKLESTREAKER.NAME"
 msgid "Sparkle Streaker"
 msgstr "キラキラ足跡"
 
+#. STRINGS.DUPLICANTS.TRAITS.STARRYEYED.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARRYEYED.DESC"
+msgid "This Duplicant loves being in space"
+msgstr "この複製人間は宇宙に居ることが大好きです"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARRYEYED.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARRYEYED.NAME"
+msgid "Starry Eyed"
+msgstr "キラキラお目目"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARRYEYED.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARRYEYED.SHORT_DESC"
+msgid "Morale bonus while in space"
+msgstr "宇宙に居る間、士気にボーナス"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARRYEYED.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARRYEYED.SHORT_DESC_TOOLTIP"
+msgid "In outer space: <b>+10</b> <style=\"KKeyword\">Morale</style>"
+msgstr "宇宙に居る間: <style=\"KKeyword\">士気</style> <b>+10</b>"
+
 #. STRINGS.DUPLICANTS.TRAITS.STICKERBOMBER.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.STICKERBOMBER.DESC"
 msgid ""
@@ -13026,7 +13264,7 @@ msgstr "見られることへの不安"
 #. STRINGS.DUPLICANTS.TRAITS.THRIVER.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.THRIVER.SHORT_DESC"
 msgid "Attribute bonuses while stressed"
-msgstr "ストレス時の属性ボーナス"
+msgstr "ストレス時に能力値ボーナス"
 
 #. STRINGS.DUPLICANTS.TRAITS.THRIVER.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.THRIVER.SHORT_DESC_TOOLTIP"
@@ -13034,8 +13272,8 @@ msgid ""
 "More than 60% Stress: <b>+7</b> bonus to all <style=\"KKeyword\">Attributes</"
 "style>"
 msgstr ""
-"ストレス 60%超過: 全ての<style=\"KKeyword\">属性</style>に <b>+7</b> のボーナ"
-"ス"
+"ストレス 60%超過: 全ての<style=\"KKeyword\">能力値</style>に <b>+7</b> のボー"
+"ナス"
 
 #. STRINGS.DUPLICANTS.TRAITS.TRAIT_DESCRIPTION_LIST_ENTRY
 msgctxt "STRINGS.DUPLICANTS.TRAITS.TRAIT_DESCRIPTION_LIST_ENTRY"
@@ -13091,6 +13329,99 @@ msgstr ""
 msgctxt "STRINGS.DUPLICANTS.TRAITS.WEAKIMMUNESYSTEM.NAME"
 msgid "Biohazardous"
 msgstr "バイオハザード"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.THERMAL_SUIT_WEARER.DESCRIPTION"
+#~ msgid "Work in progress skill"
+#~ msgstr "作りかけのスキル"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.THERMAL_SUIT_WEARER.NAME"
+#~ msgid "W.I.P. Skill"
+#~ msgstr "W.I.P スキル"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.THRIVER.NAME"
+#~ msgid "Duress to Impress"
+#~ msgstr "見られることへの不安"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.THRIVER.TOOLTIP"
+#~ msgid ""
+#~ "This Duplicant kicks into hyperdrive when <style=\"KKeyword\">Stressed</"
+#~ "style>"
+#~ msgstr ""
+#~ "この複製人間は<style=\"KKeyword\">ストレス</style>を受けるとハイパードライ"
+#~ "ブに突入します"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.ARTIST.NAME"
+#~ msgid "Aesthetic Design"
+#~ msgstr "美的デザイン"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_BUILDER.NAME"
+#~ msgid "<link=\"JUNIORBUILDER\">Improved Construction I</link>"
+#~ msgstr "<link=\"JUNIORBUILDER\">建設改善 I</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_COOK.NAME"
+#~ msgid "<link=\"JUNIORCOOK\">Grilling</link>"
+#~ msgstr "<link=\"JUNIORCOOK\">グリル調理</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.MATERIALS_MANAGER.NAME"
+#~ msgid "<link=\"MATERIALSMANAGER\">Improved Carrying II</link>"
+#~ msgstr "<link=\"MATERIALSMANAGER\">運搬改善 II</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.NUCLEAR_RESEARCHER.NAME"
+#~ msgid "<link=\"NUCLEARRESEARCHER\">Materials Science Research</link>"
+#~ msgstr "<link=\"NUCLEARRESEARCHER\">材料工学研究</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.PLUMBER.NAME"
+#~ msgid "<link=\"PLUMBER\">Plumbing</link>"
+#~ msgstr "<link=\"PLUMBER\">配管</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RANCHER.NAME"
+#~ msgid "<link=\"SENIORRANCHER\">Critter Ranching II</link>"
+#~ msgstr "<link=\"SENIORRANCHER\">畜産 II</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_RESEARCHER.NAME"
+#~ msgid "<link=\"SENIORRESEARCHER\">Astronomy</link>"
+#~ msgstr "<link=\"SENIORRESEARCHER\">宇宙工学</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_ARTING2.NAME"
+#~ msgid "Skilled: Aesthetic Design"
+#~ msgstr "習得済み: 美的デザイン"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING1.NAME"
+#~ msgid "Skilled: <link=\"JUNIORBUILDER\">Improved Construction I</link>"
+#~ msgstr "習得済み: <link=\"JUNIORBUILDER\">建設改善 I</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_COOKING1.NAME"
+#~ msgid "Skilled: <link=\"JUNIORCOOK\">Grilling</link>"
+#~ msgstr "習得済み: <link=\"JUNIORCOOK\">グリル調理</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_HAULING2.NAME"
+#~ msgid "Skilled: <link=\"MATERIALSMANAGER\">Improved Carrying II</link>"
+#~ msgstr "習得済み: <link=\"MATERIALSMANAGER\">運搬改善 II</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RANCHING2.NAME"
+#~ msgid "Skilled: <link=\"SENIORRANCHER\">Critter Ranching II</link>"
+#~ msgstr "習得済み: <link=\"SENIORRANCHER\">畜産 II</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_RESEARCHING4.NAME"
+#~ msgid ""
+#~ "Skilled: <link=\"NUCLEARRESEARCHER\">Materials Science Research</link>"
+#~ msgstr "習得済み: <link=\"NUCLEARRESEARCHER\">材料工学研究</link>"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.NAME"
+#~ msgid "Unrested: Movement"
+#~ msgstr "休憩不足: 移動"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.TOOLTIP"
+#~ msgid ""
+#~ "This Duplicant didn't get much sleep because they were interrupted by "
+#~ "movement"
+#~ msgstr ""
+#~ "この複製人間は他者の移動によって阻害されたため、十分な睡眠を取ることができ"
+#~ "ませんでした"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.SLEEPINGINTERRUPTEDBYMOVEMENT.NAME"
+#~ msgid "Interrupted Sleep: Movement"
+#~ msgstr "安眠妨害: 移動"
 
 #~ msgctxt "STRINGS.DUPLICANTS.CHORES.DECONSTRUCT.TOOLTIP"
 #~ msgid "This Duplicant is demolishing a building"

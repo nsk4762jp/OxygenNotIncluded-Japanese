@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDING.DETAILS.USE_COUNT
@@ -268,6 +268,17 @@ msgstr ""
 "複製人間は<link=\"LIQUIDPUMPINGSTATION\">手押しポンプ</link>からこの場所へ"
 "<style=\"KKeyword\">液体</style>を運ぶことができません"
 
+#. STRINGS.BUILDING.STATUSITEMS.BROADCASTEROUTOFRANGE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.BROADCASTEROUTOFRANGE.NAME"
+msgid "Broadcaster Out of Range"
+msgstr "圏外"
+
+#. STRINGS.BUILDING.STATUSITEMS.BROADCASTEROUTOFRANGE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.BROADCASTEROUTOFRANGE.TOOLTIP"
+msgid ""
+"This receiver is too far from the selected broadcaster to get signal updates"
+msgstr "この受信機は指定した放送局から離れすぎているため、信号を更新できません"
+
 #. STRINGS.BUILDING.STATUSITEMS.BROKEN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BROKEN.NAME"
 msgid "Broken"
@@ -449,13 +460,13 @@ msgctxt ""
 msgid ""
 "{Skills} Skill required to operate\n"
 "------------------\n"
-"Open the <b>Skills Panel</b> <b><color=#F44A4A>[L]</b></color> to teach "
+"Open the <b>Skills Panel</b> <b><color=#F44A4A>[J]</b></color> to teach "
 "{Skills} to a Duplicant, or bring a Duplicant with the skill from another "
 "Planetoid"
 msgstr ""
 "操作には{Skills}スキルが必要です\n"
 "------------------\n"
-"<b>スキルパネル</b><b><color=#F44A4A>[L]</b></color>を開き、複製人間に"
+"<b>スキルパネル</b><b><color=#F44A4A>[J]</b></color>を開き、複製人間に"
 "{Skills}を習得させるか、他の惑星から適切なスキルを持った複製人間を連れてきま"
 "しょう"
 
@@ -493,12 +504,12 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP"
 msgid ""
 "{Skills} Skill required to operate\n"
 "------------------\n"
-"Open the <b>Skills Panel</b> <b><color=#F44A4A>[L]</b></color> to teach "
+"Open the <b>Skills Panel</b> <b><color=#F44A4A>[J]</b></color> to teach "
 "{Skills} to a Duplicant"
 msgstr ""
 "操作には{Skills}スキルが必要です\n"
 "------------------\n"
-"<b>スキルパネル</b><b><color=#F44A4A>[L]</b></color>を開き、複製人間に"
+"<b>スキルパネル</b><b><color=#F44A4A>[J]</b></color>を開き、複製人間に"
 "{Skills}を習得させましょう"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.NAME
@@ -830,13 +841,13 @@ msgid ""
 "This scanner dish is currently scanning at <b>{Quality}</b> effectiveness\n"
 "\n"
 "Decreased scan quality may be due to:\n"
-"    • Interference from nearby heavy machinery\n"
+"    • Interference from nearby industrial machinery\n"
 "    • Rock or tile obstructing the dish's line of sight on space"
 msgstr ""
 "このアンテナは現在精度 <b>{Quality}</b> で動作中です\n"
 "\n"
 "精度低下の原因は以下の通りです:\n"
-"    • 重機がそばにある\n"
+"    • 産業機械がそばにある\n"
 "    • 岩やタイルによってアンテナの視界が阻害されている"
 
 #. STRINGS.BUILDING.STATUSITEMS.DETECTORSCANNING.NAME
@@ -1255,8 +1266,8 @@ msgstr "設備は現在機能していません"
 
 #. STRINGS.BUILDING.STATUSITEMS.FLUSHTOILET.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FLUSHTOILET.NAME"
-msgid "Lavatory Ready"
-msgstr "水洗トイレ利用可能"
+msgid "{toilet} Ready"
+msgstr "{toilet}利用可能"
 
 #. STRINGS.BUILDING.STATUSITEMS.FLUSHTOILET.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FLUSHTOILET.TOOLTIP"
@@ -1265,8 +1276,8 @@ msgstr "このトイレは訪問者を受け入れる準備が整っています
 
 #. STRINGS.BUILDING.STATUSITEMS.FLUSHTOILETINUSE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FLUSHTOILETINUSE.NAME"
-msgid "Lavatory In Use"
-msgstr "水洗トイレ使用中"
+msgid "{toilet} In Use"
+msgstr "{toilet}使用中"
 
 #. STRINGS.BUILDING.STATUSITEMS.FLUSHTOILETINUSE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FLUSHTOILETINUSE.TOOLTIP"
@@ -1289,13 +1300,16 @@ msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME"
-msgid "Cooling Contents"
-msgstr "内容物冷却中"
+msgid "Cooling Contents: {UsedPower}"
+msgstr "内容物冷却中: {UsedPower}"
 
 #. STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.TOOLTIP"
-msgid "The contents of this food storage are still being cooled down."
-msgstr "この食糧貯蔵庫内容物はまだ冷却中です。"
+msgid ""
+"{UsedPower} of {MaxPower} are being used to cool the contents of this food "
+"storage"
+msgstr ""
+"この食糧貯蔵庫の内容物を冷却するのに、{MaxPower}中{UsedPower}使用しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.NAME"
@@ -1305,14 +1319,14 @@ msgstr "省エネ機能: {UsedPower}"
 #. STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.TOOLTIP"
 msgid ""
-"Energy saver activated, using {UsedPower} of {MaxPower}\n"
+"The contents of this food storage are at refrigeration temperatures\n"
 "\n"
-"The contents of this food storage are at refrigeration temperatures and need "
-"no further cooling."
+"Energy Saver mode has been automatically activated using only {UsedPower} of "
+"{MaxPower}"
 msgstr ""
-"省エネ機能が有効になっており、{MaxPower}中{UsedPower}を使用しています。\n"
+"この食糧貯蔵庫の内容物は冷蔵温度に保たれています。\n"
 "\n"
-"この食糧貯蔵庫の内容物は冷蔵温度に達しており、これ以上の冷却は不要です。"
+"自動的に省エネ機能へ移行し、電力を{MaxPower}中{UsedPower}だけ使用しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.GANTRY.AUTOMATION_CONTROL
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.AUTOMATION_CONTROL"
@@ -1735,7 +1749,7 @@ msgstr "このロケットは{Destination}の軌道に乗っています。"
 #. STRINGS.BUILDING.STATUSITEMS.INORBITREQUIRED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INORBITREQUIRED.NAME"
 msgid "Grounded"
-msgstr "接地"
+msgstr "着陸中"
 
 #. STRINGS.BUILDING.STATUSITEMS.INORBITREQUIRED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.INORBITREQUIRED.TOOLTIP"
@@ -2016,6 +2030,18 @@ msgstr "へたくそ"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LOOKINGUGLY.TOOLTIP"
 msgid "Honestly, Morbs could've done better"
 msgstr "正直、モーブのほうがこれよりもっと上手く描けるでしょう"
+
+#. STRINGS.BUILDING.STATUSITEMS.LOSINGRADBOLTS.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LOSINGRADBOLTS.NAME"
+msgid "Radbolt Decay"
+msgstr "RADボルト崩壊"
+
+#. STRINGS.BUILDING.STATUSITEMS.LOSINGRADBOLTS.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LOSINGRADBOLTS.TOOLTIP"
+msgid ""
+"This building is unable to maintain the integrity of the radbolts it is "
+"storing"
+msgstr "この設備は保管しているRADボルトの完全性を維持できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.MANUALGENERATORCHARGINGUP.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MANUALGENERATORCHARGINGUP.NAME"
@@ -2727,6 +2753,20 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.NORMAL.TOOLTIP"
 msgid "Nothing out of the ordinary here"
 msgstr "特筆すべきことはありません"
 
+#. STRINGS.BUILDING.STATUSITEMS.NOROCKETRESTRICTION.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NOROCKETRESTRICTION.NAME"
+msgid "Not Controlled"
+msgstr "制御なし"
+
+#. STRINGS.BUILDING.STATUSITEMS.NOROCKETRESTRICTION.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NOROCKETRESTRICTION.TOOLTIP"
+msgid ""
+"This building is not controlled by a <link=\"ROCKETCONTROLSTATION\">Rocket "
+"Control Station</link>"
+msgstr ""
+"この設備は<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御"
+"されていません"
+
 #. STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.NAME"
 msgid "Filters Not Designated"
@@ -2913,6 +2953,11 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.EXHAUSTING"
 msgid "Excess produced"
 msgstr "生産過剰"
 
+#. STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.FOOD_TRANSFER
+msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.FOOD_TRANSFER"
+msgid "Internal Cooling"
+msgstr "内部冷却"
+
 #. STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.LINEITEM
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.LINEITEM"
 msgid "    • {0}: {1}\n"
@@ -2957,6 +3002,16 @@ msgid ""
 "Unable to flush contents, output <style=\"KKeyword\">Pipe</style> is blocked"
 msgstr ""
 "出力<style=\"KKeyword\">パイプ</style>が詰まっているため、排出できません"
+
+#. STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.NAME"
+msgid "Output Blocked"
+msgstr "出力先詰まり"
+
+#. STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.TOOLTIP"
+msgid "Output <style=\"KKeyword\">Pipe</style> is blocked"
+msgstr "出力先の<style=\"KKeyword\">パイプ<style=\"KKeyword\">が詰まっています"
 
 #. STRINGS.BUILDING.STATUSITEMS.OVERHEATED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OVERHEATED.NAME"
@@ -3505,6 +3560,38 @@ msgstr ""
 "長いロケットはこの<style=\"KKeyword\">ロケット発射台</style>に着陸できないか"
 "もしれません"
 
+#. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.NAME"
+msgid "Access: Restricted"
+msgstr "アクセス: 制限あり"
+
+#. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.TOOLTIP"
+msgid ""
+"This building cannot be operated while restricted, though it can be filled\n"
+"\n"
+"Controlled by a <link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link>"
+msgstr ""
+"この設備は制限されており、積み込みは行えますが操作できません\n"
+"\n"
+"<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御されます"
+
+#. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.NAME"
+msgid "Access: Not Restricted"
+msgstr "アクセス: 制限なし"
+
+#. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.TOOLTIP"
+msgid ""
+"This building's operation is not restricted\n"
+"\n"
+"Controlled by a <link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link>"
+msgstr ""
+"この設備の操作は制限されていません\n"
+"\n"
+"<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御されます"
+
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETSTRANDED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETSTRANDED.NAME"
 msgid "Stranded"
@@ -3916,6 +4003,26 @@ msgid ""
 msgstr ""
 "心地よいこんがり肌を作るのに十分な<link=\"LIGHT\">光</link>量があります"
 
+#. STRINGS.BUILDING.STATUSITEMS.TELEPHONE.BABBLE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.TELEPHONE.BABBLE.NAME"
+msgid "Babbling to no one."
+msgstr "誰かとお喋り。"
+
+#. STRINGS.BUILDING.STATUSITEMS.TELEPHONE.BABBLE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.TELEPHONE.BABBLE.TOOLTIP"
+msgid "{Duplicant} just needed to vent to into the void."
+msgstr "{Duplicant} には思いを吐露する虚空が必要だったのです。"
+
+#. STRINGS.BUILDING.STATUSITEMS.TELEPHONE.CONVERSATION.TALKING_TO
+msgctxt "STRINGS.BUILDING.STATUSITEMS.TELEPHONE.CONVERSATION.TALKING_TO"
+msgid "Talking to {Duplicant} on {Asteroid}"
+msgstr "{Asteroid}の{Duplicant}と会話中"
+
+#. STRINGS.BUILDING.STATUSITEMS.TELEPHONE.CONVERSATION.TALKING_TO_NUM
+msgctxt "STRINGS.BUILDING.STATUSITEMS.TELEPHONE.CONVERSATION.TALKING_TO_NUM"
+msgid "Talking to {0} friends."
+msgstr "{0}の友達と会話中です。"
+
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES.NAME
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES.NAME"
@@ -3926,8 +4033,12 @@ msgstr "製造ポッド不足 {progress}"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_INSUFFICIENT_COLONIES."
 "TOOLTIP"
-msgid "This device relies on a network of activated Printing Pods {progress}"
-msgstr "この機器は稼働中の製造ポッドネットワーク {progress} に依存しています"
+msgid ""
+"To open the Temporal Tear, this device relies on a network of activated "
+"Printing Pods {progress}"
+msgstr ""
+"「時間の裂け目」を開くこの機器は稼働中の製造ポッドネットワーク {progress} に"
+"依存しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_LOS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_LOS.NAME"
@@ -3947,11 +4058,11 @@ msgstr "時間の裂け目未発見"
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_NO_TARGET.TOOLTIP"
 msgid ""
-"This machine is meant to target something in space, but the target is not "
-"yet revealed."
+"This machine is meant to target something in space, but the target has not "
+"yet been revealed"
 msgstr ""
 "この機械は宇宙のどこかをターゲットにしているようですが、それがどこかは明らか"
-"になっていません。"
+"になっていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.NAME"
@@ -3961,11 +4072,13 @@ msgstr "チャージ進捗率: {progress}"
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_PROGRESS.TOOLTIP"
 msgid ""
-"This device must be charged with a high number of Radbolts. Operation can "
-"commence once this device is fully charged"
+"This device must be charged with a high number of Radbolts\n"
+"\n"
+"Operation can commence once this device is fully charged"
 msgstr ""
-"この機器は大量のRADボルトによるチャージが必要です。完全にチャージされると操作"
-"可能となります"
+"この機器は大量のRADボルトによるチャージが必要です\n"
+"\n"
+"完全にチャージされると操作可能となります"
 
 #. STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TEMPORAL_TEAR_OPENER_READY.NOTIFICATION"
@@ -4541,6 +4654,29 @@ msgstr "複製人間の操作が必要"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKREQUIRESMINION.TOOLTIP"
 msgid "A Duplicant must be present to complete this operation"
 msgstr "この操作には複製人間が必要です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.TOOLTIP"
+#~ msgid "Output is blocked"
+#~ msgstr "出力先が詰まっています"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.FLUSHTOILET.NAME"
+#~ msgid "Lavatory Ready"
+#~ msgstr "水洗トイレ利用可能"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.TOOLTIP"
+#~ msgid "The contents of this food storage are still being cooled down."
+#~ msgstr "この食糧貯蔵庫内容物はまだ冷却中です。"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGESTEADY.TOOLTIP"
+#~ msgid ""
+#~ "Energy saver activated, using {UsedPower} of {MaxPower}\n"
+#~ "\n"
+#~ "The contents of this food storage are at refrigeration temperatures and "
+#~ "need no further cooling."
+#~ msgstr ""
+#~ "省エネ機能が有効になっており、{MaxPower}中{UsedPower}を使用しています。\n"
+#~ "\n"
+#~ "この食糧貯蔵庫の内容物は冷蔵温度に達しており、これ以上の冷却は不要です。"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATORLACKSHEP.NAME"
 #~ msgid "Waiting For Radbolts"
