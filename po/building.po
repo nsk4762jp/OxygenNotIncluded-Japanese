@@ -392,17 +392,17 @@ msgstr "複製人間が切り替えるまで待機します"
 #. STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.LOGIC_CONTROLLED_CLOSED
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.LOGIC_CONTROLLED_CLOSED"
 msgid "Clearance: Not Permitted"
-msgstr "検問: 不許可"
+msgstr "通過不能"
 
 #. STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.LOGIC_CONTROLLED_DISCONNECTED
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.LOGIC_CONTROLLED_DISCONNECTED"
 msgid "No Automation"
-msgstr "非自動化"
+msgstr "自動制御なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.LOGIC_CONTROLLED_OPEN
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.LOGIC_CONTROLLED_OPEN"
 msgid "Clearance: Permitted"
-msgstr "検問: 許可"
+msgstr "通過可能"
 
 #. STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.TOOLTIPS.LOGIC_CONTROLLED_CLOSED
 msgctxt ""
@@ -411,8 +411,8 @@ msgid ""
 "Automated Checkpoint is receiving a <b><style=\"logic_on\">Green Signal</"
 "style></b>, allowing Duplicants to pass"
 msgstr ""
-"自動化チェックポイントは<b><style=\"logic_on\">グリーン</style></b>です。複製"
-"人間は通過できます"
+"自動制御の検問所は<b><style=\"logic_on\">グリーン</style></b>を受信中のた"
+"め、複製人間は通過できます"
 
 #. STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.TOOLTIPS.LOGIC_CONTROLLED_DISCONNECTED
 msgctxt ""
@@ -421,9 +421,7 @@ msgctxt ""
 msgid ""
 "This Checkpoint has not been connected to an <style=\"KKeyword\">Automation</"
 "style> grid"
-msgstr ""
-"このチェックポイントは<style=\"KKeyword\">自動化</style>グリッドに接続されて"
-"いません"
+msgstr "この検問所は<style=\"KKeyword\">自動化</style>グリッドに接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.TOOLTIPS.LOGIC_CONTROLLED_OPEN
 msgctxt ""
@@ -432,8 +430,8 @@ msgid ""
 "Automated Checkpoint is receiving a <b><style=\"logic_off\">Red Signal</"
 "style></b>, preventing Duplicants from passing"
 msgstr ""
-"自動化チェックポイントは<b><style=\"logic_off\">レッド</style></b>です。複製"
-"人間は通過できません"
+"自動制御の検問所は<b><style=\"logic_off\">レッド</style></b>を受信中のため、"
+"複製人間は通過できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.CLINICOUTSIDEHOSPITAL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CLINICOUTSIDEHOSPITAL.NAME"
@@ -2780,7 +2778,7 @@ msgstr "この設備に格納する資源タイプを設定していません"
 #. STRINGS.BUILDING.STATUSITEMS.NOSUITMARKER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSUITMARKER.NAME"
 msgid "No Checkpoint"
-msgstr "チェックポイントなし"
+msgstr "脱着所がない"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOSUITMARKER.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSUITMARKER.TOOLTIP"
@@ -2788,8 +2786,8 @@ msgid ""
 "Docks must be placed beside a <link=\"CHECKPOINT\">Duplicant Checkpoint</"
 "link>, opposite the side the checkpoint faces"
 msgstr ""
-"EXOスーツドックは<link=\"CHECKPOINT\">チェックポイント</link>が指す向きとは反"
-"対側に設置しなければなりません"
+"ドックは<link=\"CHECKPOINT\">脱着所</link>の矢印が指す向きとは反対側に併設し"
+"なければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOSURFACESIGHT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSURFACESIGHT.NAME"
@@ -2907,7 +2905,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.NOTUBEEXITS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOTUBEEXITS.NAME"
 msgid "No Landing Available"
-msgstr "出口未接続"
+msgstr "出口がない"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOTUBEEXITS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOTUBEEXITS.TOOLTIP"
@@ -3894,17 +3892,17 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER_NEEDS_CONFIGURATION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER_NEEDS_CONFIGURATION.NAME"
 msgid "Not Configured"
-msgstr "未設定"
+msgstr "初期設定されていない"
 
 #. STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER_NEEDS_CONFIGURATION.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER_NEEDS_CONFIGURATION.TOOLTIP"
 msgid "Dock settings not configured"
-msgstr "ドックは未設定です"
+msgstr "ドックの初期設定がされていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.SUITMARKERTRAVERSALANYTIME.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SUITMARKERTRAVERSALANYTIME.NAME"
 msgid "Clearance: Always Permitted"
-msgstr "検問: 常に通過可能"
+msgstr "スーツの脱ぎ捨て: 許可"
 
 #. STRINGS.BUILDING.STATUSITEMS.SUITMARKERTRAVERSALANYTIME.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SUITMARKERTRAVERSALANYTIME.TOOLTIP"
@@ -3925,7 +3923,7 @@ msgstr ""
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.SUITMARKERTRAVERSALONLYWHENROOMAVAILABLE.NAME"
 msgid "Clearance: Vacancy Only"
-msgstr "検問: ドックに空きが必要"
+msgstr "スーツの脱ぎ捨て: 禁止"
 
 #. STRINGS.BUILDING.STATUSITEMS.SUITMARKERTRAVERSALONLYWHENROOMAVAILABLE.TOOLTIP
 msgctxt ""
@@ -3940,7 +3938,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.SUITMARKERWRONGSIDE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SUITMARKERWRONGSIDE.NAME"
 msgid "Invalid Checkpoint"
-msgstr "不正なチェックポイント"
+msgstr "脱着所の配置が不正"
 
 #. STRINGS.BUILDING.STATUSITEMS.SUITMARKERWRONGSIDE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SUITMARKERWRONGSIDE.TOOLTIP"
@@ -3950,12 +3948,10 @@ msgid ""
 "\n"
 "Docks must be placed beside a <link=\"CHECKPOINT\">Duplicant Checkpoint</"
 "link>, opposite the side the checkpoint faces"
-msgstr ""
-"この設備は<link=\"CHECKPOINT\">チェックポイント</link>の誤った側に建築されて"
-"います\n"
+msgstr "この設備は<link=\"CHECKPOINT\">脱着所</link>の誤った側に配置されています\n"
 "\n"
-"EXOスーツドックは<link=\"CHECKPOINT\">チェックポイント</link>が指す向きとは反"
-"対側に設置しなければなりません"
+"ドックは<link=\"CHECKPOINT\">脱着所</link>の矢印が指す向きとは反対側に併設し"
+"なければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.SWITCHSTATUSACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SWITCHSTATUSACTIVE.NAME"
