@@ -3780,7 +3780,7 @@ msgstr "生命力"
 #. STRINGS.CREATURES.STATS.ILLUMINATION.NAME
 msgctxt "STRINGS.CREATURES.STATS.ILLUMINATION.NAME"
 msgid "Illumination"
-msgstr "イルミネーション"
+msgstr "照明"
 
 #. STRINGS.CREATURES.STATS.INCUBATION.NAME
 msgctxt "STRINGS.CREATURES.STATS.INCUBATION.NAME"
@@ -4133,7 +4133,7 @@ msgstr "この動物は近くのルアーに引き寄せられています"
 #. STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.NAME"
 msgid "Pollution Exposure"
-msgstr "汚染曝露"
+msgstr "汚染された大気"
 
 #. STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.TOOLTIP"
@@ -4998,7 +4998,7 @@ msgstr "この農地は植物を育成中です"
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.NAME"
 msgid "Refrigerated"
-msgstr "冷蔵状態"
+msgstr "冷蔵温度"
 
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.TOOLTIP"
@@ -5011,18 +5011,17 @@ msgid ""
 "\n"
 "Store food below {PreserveTemperature} to further reduce spoilage."
 msgstr ""
-"理想的な<style=\"KKeyword\">温度</style>による貯蔵は、食糧の<style=\"KKeyword"
-"\">腐敗率</style>を低減させます\n"
+"適正な<style=\"KKeyword\">温度</style>による貯蔵は、食糧の<style=\"KKeyword"
+"\">腐敗速度</style>を遅らせます\n"
 "\n"
-"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えると、食糧は急"
-"速に腐敗します\n"
-"\n"
-"腐敗を遅らせるためには{PreserveTemperature}以下の温度で食糧を貯蔵しましょう"
+"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えていると、食糧"
+"は早く傷んでしまいます\n"
+"{PreserveTemperature}未満で貯蔵すれば、食糧は遙かに痛みにくくなります"
 
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.NAME"
 msgid "Deep Freeze"
-msgstr "冷凍"
+msgstr "冷凍温度"
 
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.TOOLTIP"
@@ -5033,11 +5032,11 @@ msgid ""
 "<style=\"KKeyword\">Temperatures</style> above <b>{RotTemperature}</b> spoil "
 "food more quickly"
 msgstr ""
-"<b>{PreserveTemperature}</b>を下回る<style=\"KKeyword\">温度</style>は、食糧"
-"の貯蔵寿命を大幅に延ばします\n"
+"<b>{PreserveTemperature}</b>を下回る<style=\"KKeyword\">温度</style>下では、"
+"食糧の保存期間は大幅に延長されます\n"
 "\n"
-"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えると、食糧は急"
-"速に腐敗します"
+"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えていると、食糧"
+"は早く傷んでしまいます"
 
 #. STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.NAME"
@@ -5164,7 +5163,7 @@ msgstr "この動物は飢えており、給餌されないと死に至ります
 #. STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.NAME"
 msgid "Sterile Atmosphere"
-msgstr "滅菌環境"
+msgstr "滅菌性の大気"
 
 #. STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.TOOLTIP"
@@ -5172,8 +5171,8 @@ msgid ""
 "Microbe destroying conditions have decreased this food's <style=\"KKeyword"
 "\">Decay Rate</style>"
 msgstr ""
-"菌の繁殖が抑えられていることにより、食糧の<style=\"KKeyword\">腐敗</style>を"
-"防いでいます"
+"菌の繁殖が抑えられていることで、食糧の<style=\"KKeyword\">腐敗速度</style>が"
+"遅くなっています"
 
 #. STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME"
@@ -5267,10 +5266,10 @@ msgid ""
 "<style=\"KKeyword\">Temperatures</style> above <b>{RotTemperature}</b> spoil "
 "food more quickly"
 msgstr ""
-"温かい食糧です\n"
+"この食糧(庫)は温まっています\n"
 "\n"
-"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えると、食糧は急"
-"速に腐敗します"
+"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えていると、食糧"
+"は早く傷んでしまいます"
 
 #. STRINGS.CREATURES.STATUSITEMS.WILTING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WILTING.NAME"
@@ -5319,9 +5318,7 @@ msgstr ""
 #. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.LINE_ITEM"
 msgid "            • {0}: {1}\n"
-msgstr ""
-"            • {0}: {1}\n"
-"\n"
+msgstr "            • {0}: {1}\n"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.NAME"
@@ -5336,9 +5333,10 @@ msgid ""
 "Empty this building's <style=\"KKeyword\">Storage</style> to remove the "
 "unusable materials"
 msgstr ""
-"この農地には植物に適さない素材が格納されています\n"
+"この農地には植えられた植物に適さない素材が貯蔵されています\n"
 "------------------\n"
-"この設備の格納庫から不要な素材を取り出してください"
+"この設備の<style=\"KKeyword\">内容物を空ける</style>ことで、不要な素材を取り"
+"除いてください"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.LINE_ITEM"
@@ -5358,22 +5356,22 @@ msgid ""
 "<style=\"KKeyword\">Empty Storage</style> on this building to remove the "
 "unusable materials"
 msgstr ""
-"この農地には植物に適さない素材が格納されています\n"
+"この農地には植えられた植物に適さない素材が貯蔵されています\n"
 "------------------\n"
-"<style=\"KKeyword\">設備を空にする</style>を押して、不要な素材を取り出してく"
-"ださい"
+"この設備の<style=\"KKeyword\">内容物を空ける</style>ことで、不要な素材を取り"
+"除いてください"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.LINE_ITEM"
 msgid "            • {0}: {1}\n"
-msgstr ""
-"            • {0}: {1}\n"
-"\n"
+msgstr "            • {0}: {1}\n"
 
+# ソースコードを見る限り、ここは"Irrigation"(灌漑)であるべき
+# （ただし、実際に表示される状況が存在するかは不明）
 #. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.NAME"
 msgid "    • Fertilization"
-msgstr "    • 施肥"
+msgstr "    • 灌漑"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.TOOLTIP"
@@ -5382,9 +5380,10 @@ msgid ""
 "------------------\n"
 "Empty this building's storage to remove the unusable materials"
 msgstr ""
-"この農地には植物に適さない素材が格納されています\n"
+"この農地には植えられた植物に適さない液体が貯蔵されています\n"
 "------------------\n"
-"この設備の格納庫から使用できない素材を取り出してください"
+"この設備の<style=\"KKeyword\">内容物を空ける</style>ことで、不要な液体を取り"
+"除いてください"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.LINE_ITEM"
@@ -5404,7 +5403,7 @@ msgid ""
 "<style=\"KKeyword\">Empty Storage</style> on this building to remove the "
 "incorrect materials"
 msgstr ""
-"この農地には植物に適さない素材が格納されています\n"
+"この農地には植えられた植物に適さない液体が貯蔵されています\n"
 "------------------\n"
-"<style=\"KKeyword\">設備を空にする</style>を押して、誤った素材を取り出してく"
-"ださい"
+"この設備の<style=\"KKeyword\">内容物を空ける</style>ことで、不要な液体を取り"
+"除いてください"

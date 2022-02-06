@@ -585,22 +585,22 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.NAME"
 msgid "Unreachable Dig"
-msgstr "採掘不可"
+msgstr "辿り着けない採掘場所"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.TOOLTIP"
 msgid "This construction site contains cells that cannot be dug out"
-msgstr "この建築現場は採掘できないセルを含んでいます"
+msgstr "この建築場所は採掘できないセルを含んでいます"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTIONUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTIONUNREACHABLE.NAME"
 msgid "Unreachable Build"
-msgstr "建築不可"
+msgstr "辿り着けない建築場所"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTIONUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTIONUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this construction site"
-msgstr "複製人間はこの建築現場まで到達できません"
+msgstr "複製人間はこの建築場所まで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.NAME"
@@ -610,7 +610,7 @@ msgstr "{ElementTypes} 消費: {FlowRate}"
 #. STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.TOOLTIP"
 msgid "This building is consuming {ElementTypes} from storage"
-msgstr "この設備は格納庫から{ElementTypes}を消費しています"
+msgstr "この設備は貯蔵した{ElementTypes}を消費しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONVEYOR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONVEYOR.NAME"
@@ -878,12 +878,12 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.DIGUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DIGUNREACHABLE.NAME"
 msgid "Unreachable Dig"
-msgstr "採掘不可"
+msgstr "辿り着けない採掘場所"
 
 #. STRINGS.BUILDING.STATUSITEMS.DIGUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DIGUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this area"
-msgstr "複製人間はこの位置まで到達できません"
+msgstr "複製人間はこの採掘場所まで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.DIRECTION_CONTROL.DIRECTIONS.BOTH
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DIRECTION_CONTROL.DIRECTIONS.BOTH"
@@ -961,8 +961,8 @@ msgid ""
 "This building is using {ElementTypes} from storage at a rate of <style="
 "\"consumed\">{FlowRate}</style>"
 msgstr ""
-"この設備は格納庫から{ElementTypes}を <style=\"consumed\">{FlowRate}</style> "
-"使用しています"
+"この設備は貯蔵した{ElementTypes}を <style=\"consumed\">{FlowRate}</style> の"
+"速度で消費しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.ELEMENTCONVERTEROUTPUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ELEMENTCONVERTEROUTPUT.NAME"
@@ -1093,7 +1093,7 @@ msgstr "冷却液待ち"
 #. STRINGS.BUILDING.STATUSITEMS.ENOUGH_COOLANT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENOUGH_COOLANT.TOOLTIP"
 msgid "<b>{1}</b> of {0} must be present in storage to begin production"
-msgstr "生産を開始するためには格納庫に {0} が <b>{1}</b> 必要です"
+msgstr "生産を開始するには設備の内容物に <b>{1}</b> の {0} が必要です"
 
 #. STRINGS.BUILDING.STATUSITEMS.ENOUGH_FUEL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENOUGH_FUEL.NAME"
@@ -1103,7 +1103,7 @@ msgstr "燃料待ち"
 #. STRINGS.BUILDING.STATUSITEMS.ENOUGH_FUEL.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENOUGH_FUEL.TOOLTIP"
 msgid "<b>{1}</b> of {0} must be present in storage to begin production"
-msgstr "生産を開始するためには格納庫に {0} が <b>{1}</b> 必要です"
+msgstr "生産を開始するには設備の内容物に <b>{1}</b> の {0} が必要です"
 
 #. STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NAME"
@@ -1220,7 +1220,7 @@ msgid ""
 msgstr ""
 "キューにあるレシピは現在貯蔵されている以上のRADボルトを必要とします。\n"
 "\n"
-"貯蔵分: {CurrentHEP}\n"
+"現在の貯蔵量: {CurrentHEP}\n"
 "レシピ必要分: {HEPRequired}"
 
 #. STRINGS.BUILDING.STATUSITEMS.FLIGHTALLCARGOFULL.NAME
@@ -1286,7 +1286,7 @@ msgstr "このトイレは使用中です"
 #. STRINGS.BUILDING.STATUSITEMS.FOOD_CONTAINERS_OUTSIDE_RANGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FOOD_CONTAINERS_OUTSIDE_RANGE.NAME"
 msgid "Unreachable food"
-msgstr "摂取不可"
+msgstr "遠すぎる食糧"
 
 #. STRINGS.BUILDING.STATUSITEMS.FOOD_CONTAINERS_OUTSIDE_RANGE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FOOD_CONTAINERS_OUTSIDE_RANGE.TOOLTIP"
@@ -1294,8 +1294,8 @@ msgid ""
 "Recuperating Duplicants must have <style=\"KKeyword\">Food</style> available "
 "within <b>{0}</b> cells"
 msgstr ""
-"回復中の複製人間の周囲 <b>{0}</b> セル以内に<style=\"KKeyword\">食糧</style>"
-"が必要です"
+"静養中の複製人間が食べる<style=\"KKeyword\">食糧</style>は、周囲 <b>{0}</b> "
+"セル以内に置かれているべきです"
 
 #. STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME"
@@ -1335,7 +1335,7 @@ msgstr "自動化制御: {0}"
 #. STRINGS.BUILDING.STATUSITEMS.GANTRY.EXTENDED
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.EXTENDED"
 msgid "Extended"
-msgstr "展開済"
+msgstr "展開中"
 
 #. STRINGS.BUILDING.STATUSITEMS.GANTRY.MANUAL_CONTROL
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.MANUAL_CONTROL"
@@ -1345,7 +1345,7 @@ msgstr "手動制御: {0}"
 #. STRINGS.BUILDING.STATUSITEMS.GANTRY.RETRACTED
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.RETRACTED"
 msgid "Retracted"
-msgstr "格納済"
+msgstr "格納中"
 
 #. STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME"
@@ -2250,12 +2250,12 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.NAME"
 msgid "Unreachable Mop"
-msgstr "モップ掛け不可"
+msgstr "辿り着けないモップ掛け地点"
 
 #. STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this area"
-msgstr "複製人間はこの位置まで到達できません"
+msgstr "複製人間はこのモップ掛け地点まで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDEGG.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDEGG.NAME"
@@ -2774,7 +2774,7 @@ msgstr "フィルター指定なし"
 #. STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.TOOLTIP"
 msgid "No resources types are marked for storage in this building"
-msgstr "この設備に格納する資源タイプを設定していません"
+msgstr "この設備に収納する資源の種類が指定されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOSUITMARKER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSUITMARKER.NAME"
@@ -3046,12 +3046,12 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.PASSENGERMODULEUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PASSENGERMODULEUNREACHABLE.NAME"
 msgid "Unreachable Module"
-msgstr "到達不可能なモジュール"
+msgstr "辿り着けないモジュール"
 
 #. STRINGS.BUILDING.STATUSITEMS.PASSENGERMODULEUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PASSENGERMODULEUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this rocket module"
-msgstr "複製人間はこのロケットモジュールまで到達できません"
+msgstr "複製人間はこのロケットモジュールまで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME"
@@ -3364,7 +3364,7 @@ msgstr "内容量: {Stored}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RATIONBOXCONTENTS.TOOLTIP"
 msgid "This box contains <b>{Stored}</b> of <style=\"KKeyword\">Food</style>"
 msgstr ""
-"この箱は<style=\"KKeyword\">食糧</style>を <b>{Stored}</b> 格納しています"
+"この箱は<style=\"KKeyword\">食糧</style>を <b>{Stored}</b> 収納しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.REACTORMELTDOWN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.REACTORMELTDOWN.NAME"
@@ -3754,18 +3754,18 @@ msgid ""
 "This container is storing <b>{Stored}{Units}</b> of a maximum <b>{Capacity}"
 "{Units}</b>"
 msgstr ""
-"この格納庫は最大 <b>{Capacity}{Units}</b> 中 <b>{Stored}{Units}</b> 格納して"
+"この収納庫は最大 <b>{Capacity}{Units}</b> 中 <b>{Stored}{Units}</b> 収納して"
 "います"
 
 #. STRINGS.BUILDING.STATUSITEMS.STORAGEUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGEUNREACHABLE.NAME"
 msgid "Unreachable Storage"
-msgstr "到達不能な格納場所"
+msgstr "辿り着けない収納設備"
 
 #. STRINGS.BUILDING.STATUSITEMS.STORAGEUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGEUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this storage unit"
-msgstr "複製人間はこの格納場所まで到達できません"
+msgstr "複製人間はこの収納設備まで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.STOREDCHARGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STOREDCHARGE.NAME"
@@ -4125,14 +4125,14 @@ msgid ""
 "------------------\n"
 "Emptying it will produce <link=\"TOXICSAND\">Polluted Dirt</link>"
 msgstr ""
-"このアメニティは詰まっているため使えません\n"
+"この設備は限界まで溜め込んでいるため、使用できません\n"
 "------------------\n"
-"汲み取りをすると、<link=\"TOXICSAND\">汚染土</link>を産出します"
+"汲み取りをすると<link=\"TOXICSAND\">汚染土</link>が発生します"
 
 #. STRINGS.BUILDING.STATUSITEMS.TOILETS_OUTSIDE_RANGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TOILETS_OUTSIDE_RANGE.NAME"
 msgid "Unreachable restroom"
-msgstr "トイレ到達不可"
+msgstr "遠すぎるトイレ"
 
 #. STRINGS.BUILDING.STATUSITEMS.TOILETS_OUTSIDE_RANGE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TOILETS_OUTSIDE_RANGE.TOOLTIP"
@@ -4140,8 +4140,8 @@ msgid ""
 "Recuperating Duplicants must have <style=\"KKeyword\">Toilets</style> "
 "available within <b>{0}</b> cells"
 msgstr ""
-"回復中の複製人間の周囲 <b>{0}</b> セル以内に<style=\"KKeyword\">トイレ</"
-"style>が必要です"
+"静養中の複製人間が用を足す<style=\"KKeyword\">トイレ</style>は、周囲 <b>{0}</"
+"b> セル以内に置かれているべきです"
 
 #. STRINGS.BUILDING.STATUSITEMS.TOO_COLD.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TOO_COLD.NAME"

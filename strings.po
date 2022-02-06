@@ -585,22 +585,22 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.NAME"
 msgid "Unreachable Dig"
-msgstr "採掘不可"
+msgstr "辿り着けない採掘場所"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTABLEDIGUNREACHABLE.TOOLTIP"
 msgid "This construction site contains cells that cannot be dug out"
-msgstr "この建築現場は採掘できないセルを含んでいます"
+msgstr "この建築場所は採掘できないセルを含んでいます"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTIONUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTIONUNREACHABLE.NAME"
 msgid "Unreachable Build"
-msgstr "建築不可"
+msgstr "辿り着けない建築場所"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSTRUCTIONUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSTRUCTIONUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this construction site"
-msgstr "複製人間はこの建築現場まで到達できません"
+msgstr "複製人間はこの建築場所まで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.NAME"
@@ -610,7 +610,7 @@ msgstr "{ElementTypes} 消費: {FlowRate}"
 #. STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONSUMINGFROMSTORAGE.TOOLTIP"
 msgid "This building is consuming {ElementTypes} from storage"
-msgstr "この設備は格納庫から{ElementTypes}を消費しています"
+msgstr "この設備は貯蔵した{ElementTypes}を消費しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONVEYOR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONVEYOR.NAME"
@@ -878,12 +878,12 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.DIGUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DIGUNREACHABLE.NAME"
 msgid "Unreachable Dig"
-msgstr "採掘不可"
+msgstr "辿り着けない採掘場所"
 
 #. STRINGS.BUILDING.STATUSITEMS.DIGUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DIGUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this area"
-msgstr "複製人間はこの位置まで到達できません"
+msgstr "複製人間はこの採掘場所まで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.DIRECTION_CONTROL.DIRECTIONS.BOTH
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DIRECTION_CONTROL.DIRECTIONS.BOTH"
@@ -961,8 +961,8 @@ msgid ""
 "This building is using {ElementTypes} from storage at a rate of <style="
 "\"consumed\">{FlowRate}</style>"
 msgstr ""
-"この設備は格納庫から{ElementTypes}を <style=\"consumed\">{FlowRate}</style> "
-"使用しています"
+"この設備は貯蔵した{ElementTypes}を <style=\"consumed\">{FlowRate}</style> の"
+"速度で消費しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.ELEMENTCONVERTEROUTPUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ELEMENTCONVERTEROUTPUT.NAME"
@@ -1093,7 +1093,7 @@ msgstr "冷却液待ち"
 #. STRINGS.BUILDING.STATUSITEMS.ENOUGH_COOLANT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENOUGH_COOLANT.TOOLTIP"
 msgid "<b>{1}</b> of {0} must be present in storage to begin production"
-msgstr "生産を開始するためには格納庫に {0} が <b>{1}</b> 必要です"
+msgstr "生産を開始するには設備の内容物に <b>{1}</b> の {0} が必要です"
 
 #. STRINGS.BUILDING.STATUSITEMS.ENOUGH_FUEL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENOUGH_FUEL.NAME"
@@ -1103,7 +1103,7 @@ msgstr "燃料待ち"
 #. STRINGS.BUILDING.STATUSITEMS.ENOUGH_FUEL.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENOUGH_FUEL.TOOLTIP"
 msgid "<b>{1}</b> of {0} must be present in storage to begin production"
-msgstr "生産を開始するためには格納庫に {0} が <b>{1}</b> 必要です"
+msgstr "生産を開始するには設備の内容物に <b>{1}</b> の {0} が必要です"
 
 #. STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NAME"
@@ -1220,7 +1220,7 @@ msgid ""
 msgstr ""
 "キューにあるレシピは現在貯蔵されている以上のRADボルトを必要とします。\n"
 "\n"
-"貯蔵分: {CurrentHEP}\n"
+"現在の貯蔵量: {CurrentHEP}\n"
 "レシピ必要分: {HEPRequired}"
 
 #. STRINGS.BUILDING.STATUSITEMS.FLIGHTALLCARGOFULL.NAME
@@ -1286,7 +1286,7 @@ msgstr "このトイレは使用中です"
 #. STRINGS.BUILDING.STATUSITEMS.FOOD_CONTAINERS_OUTSIDE_RANGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FOOD_CONTAINERS_OUTSIDE_RANGE.NAME"
 msgid "Unreachable food"
-msgstr "摂取不可"
+msgstr "遠すぎる食糧"
 
 #. STRINGS.BUILDING.STATUSITEMS.FOOD_CONTAINERS_OUTSIDE_RANGE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FOOD_CONTAINERS_OUTSIDE_RANGE.TOOLTIP"
@@ -1294,8 +1294,8 @@ msgid ""
 "Recuperating Duplicants must have <style=\"KKeyword\">Food</style> available "
 "within <b>{0}</b> cells"
 msgstr ""
-"回復中の複製人間の周囲 <b>{0}</b> セル以内に<style=\"KKeyword\">食糧</style>"
-"が必要です"
+"静養中の複製人間が食べる<style=\"KKeyword\">食糧</style>は、周囲 <b>{0}</b> "
+"セル以内に置かれているべきです"
 
 #. STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FRIDGECOOLING.NAME"
@@ -1335,7 +1335,7 @@ msgstr "自動化制御: {0}"
 #. STRINGS.BUILDING.STATUSITEMS.GANTRY.EXTENDED
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.EXTENDED"
 msgid "Extended"
-msgstr "展開済"
+msgstr "展開中"
 
 #. STRINGS.BUILDING.STATUSITEMS.GANTRY.MANUAL_CONTROL
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.MANUAL_CONTROL"
@@ -1345,7 +1345,7 @@ msgstr "手動制御: {0}"
 #. STRINGS.BUILDING.STATUSITEMS.GANTRY.RETRACTED
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.RETRACTED"
 msgid "Retracted"
-msgstr "格納済"
+msgstr "格納中"
 
 #. STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME"
@@ -2250,12 +2250,12 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.NAME"
 msgid "Unreachable Mop"
-msgstr "モップ掛け不可"
+msgstr "辿り着けないモップ掛け地点"
 
 #. STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MOPUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this area"
-msgstr "複製人間はこの位置まで到達できません"
+msgstr "複製人間はこのモップ掛け地点まで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDEGG.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDEGG.NAME"
@@ -2774,7 +2774,7 @@ msgstr "フィルター指定なし"
 #. STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.TOOLTIP"
 msgid "No resources types are marked for storage in this building"
-msgstr "この設備に格納する資源タイプを設定していません"
+msgstr "この設備に収納する資源の種類が指定されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOSUITMARKER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSUITMARKER.NAME"
@@ -3046,12 +3046,12 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.PASSENGERMODULEUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PASSENGERMODULEUNREACHABLE.NAME"
 msgid "Unreachable Module"
-msgstr "到達不可能なモジュール"
+msgstr "辿り着けないモジュール"
 
 #. STRINGS.BUILDING.STATUSITEMS.PASSENGERMODULEUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PASSENGERMODULEUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this rocket module"
-msgstr "複製人間はこのロケットモジュールまで到達できません"
+msgstr "複製人間はこのロケットモジュールまで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME"
@@ -3364,7 +3364,7 @@ msgstr "内容量: {Stored}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RATIONBOXCONTENTS.TOOLTIP"
 msgid "This box contains <b>{Stored}</b> of <style=\"KKeyword\">Food</style>"
 msgstr ""
-"この箱は<style=\"KKeyword\">食糧</style>を <b>{Stored}</b> 格納しています"
+"この箱は<style=\"KKeyword\">食糧</style>を <b>{Stored}</b> 収納しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.REACTORMELTDOWN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.REACTORMELTDOWN.NAME"
@@ -3754,18 +3754,18 @@ msgid ""
 "This container is storing <b>{Stored}{Units}</b> of a maximum <b>{Capacity}"
 "{Units}</b>"
 msgstr ""
-"この格納庫は最大 <b>{Capacity}{Units}</b> 中 <b>{Stored}{Units}</b> 格納して"
+"この収納庫は最大 <b>{Capacity}{Units}</b> 中 <b>{Stored}{Units}</b> 収納して"
 "います"
 
 #. STRINGS.BUILDING.STATUSITEMS.STORAGEUNREACHABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGEUNREACHABLE.NAME"
 msgid "Unreachable Storage"
-msgstr "到達不能な格納場所"
+msgstr "辿り着けない収納設備"
 
 #. STRINGS.BUILDING.STATUSITEMS.STORAGEUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGEUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this storage unit"
-msgstr "複製人間はこの格納場所まで到達できません"
+msgstr "複製人間はこの収納設備まで辿り着けません"
 
 #. STRINGS.BUILDING.STATUSITEMS.STOREDCHARGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STOREDCHARGE.NAME"
@@ -4125,14 +4125,14 @@ msgid ""
 "------------------\n"
 "Emptying it will produce <link=\"TOXICSAND\">Polluted Dirt</link>"
 msgstr ""
-"このアメニティは詰まっているため使えません\n"
+"この設備は限界まで溜め込んでいるため、使用できません\n"
 "------------------\n"
-"汲み取りをすると、<link=\"TOXICSAND\">汚染土</link>を産出します"
+"汲み取りをすると<link=\"TOXICSAND\">汚染土</link>が発生します"
 
 #. STRINGS.BUILDING.STATUSITEMS.TOILETS_OUTSIDE_RANGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TOILETS_OUTSIDE_RANGE.NAME"
 msgid "Unreachable restroom"
-msgstr "トイレ到達不可"
+msgstr "遠すぎるトイレ"
 
 #. STRINGS.BUILDING.STATUSITEMS.TOILETS_OUTSIDE_RANGE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TOILETS_OUTSIDE_RANGE.TOOLTIP"
@@ -4140,8 +4140,8 @@ msgid ""
 "Recuperating Duplicants must have <style=\"KKeyword\">Toilets</style> "
 "available within <b>{0}</b> cells"
 msgstr ""
-"回復中の複製人間の周囲 <b>{0}</b> セル以内に<style=\"KKeyword\">トイレ</"
-"style>が必要です"
+"静養中の複製人間が用を足す<style=\"KKeyword\">トイレ</style>は、周囲 <b>{0}</"
+"b> セル以内に置かれているべきです"
 
 #. STRINGS.BUILDING.STATUSITEMS.TOO_COLD.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TOO_COLD.NAME"
@@ -4681,19 +4681,19 @@ msgstr "この設備は清潔です"
 #. STRINGS.BUILDINGS.AUTOMATABLE.DISABLE_AUTOMATIONONLY.NAME
 msgctxt "STRINGS.BUILDINGS.AUTOMATABLE.DISABLE_AUTOMATIONONLY.NAME"
 msgid "Enable Manual"
-msgstr "手動化"
+msgstr "手動を許可"
 
 #. STRINGS.BUILDINGS.AUTOMATABLE.DISABLE_AUTOMATIONONLY.TOOLTIP
 msgctxt "STRINGS.BUILDINGS.AUTOMATABLE.DISABLE_AUTOMATIONONLY.TOOLTIP"
 msgid ""
 "This building's storage may be accessed by both Duplicants and Auto-Sweeper "
 "buildings"
-msgstr "この設備の格納庫は複製人間および自動清掃設備がアクセスできます"
+msgstr "この設備の内容物は複製人間と自動掃除機のどちらでも利用できます"
 
 #. STRINGS.BUILDINGS.AUTOMATABLE.ENABLE_AUTOMATIONONLY.NAME
 msgctxt "STRINGS.BUILDINGS.AUTOMATABLE.ENABLE_AUTOMATIONONLY.NAME"
 msgid "Disable Manual"
-msgstr "自動化"
+msgstr "手動を禁止"
 
 #. STRINGS.BUILDINGS.AUTOMATABLE.ENABLE_AUTOMATIONONLY.TOOLTIP
 msgctxt "STRINGS.BUILDINGS.AUTOMATABLE.ENABLE_AUTOMATIONONLY.TOOLTIP"
@@ -4703,9 +4703,10 @@ msgid ""
 "Duplicants will not be permitted to add or remove materials from this "
 "building"
 msgstr ""
-"この設備の格納庫は自動清掃設備のみアクセスできます\n"
+"この設備の内容物は自動掃除機だけが利用できます\n"
 "------------------\n"
-"複製人間はこの設備から素材を出し入れすることができません"
+"複製人間が、この設備から内容物を取り出したり新たに追加したりすることは禁止さ"
+"れています"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT"
@@ -7267,8 +7268,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.DESC"
 msgid ""
 "Lavatories transmit fewer germs to Duplicants' skin and require no emptying."
 msgstr ""
-"水洗トイレは複製人間に付着する病原菌を減らし、手動で空にする操作を必要としま"
-"せん。"
+"水洗トイレは複製人間に付着する病原菌が少なく、汲み取りも必要ありません。"
 
 #. STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.FLUSHTOILET.EFFECT"
@@ -7914,7 +7914,7 @@ msgstr "<link=\"GASPUMP\">吸気ポンプ</link>"
 #. STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.DESC"
 msgid "Reservoirs cannot receive manually delivered resources."
-msgstr "貯蔵庫は手持ちの資源を受け取れません。"
+msgstr "気体貯蔵槽にボンベで持ち運んでいる気体を入れることはできません。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.EFFECT"
@@ -7924,7 +7924,7 @@ msgstr "パイプ接続された<link=\"ELEMENTSGAS\">気体</link>資源を貯�
 #. STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.NAME"
 msgid "<link=\"GASRESERVOIR\">Gas Reservoir</link>"
-msgstr "<link=\"GASRESERVOIR\">気体貯蔵庫</link>"
+msgstr "<link=\"GASRESERVOIR\">気体貯蔵槽</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVALVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.DESC"
@@ -8159,9 +8159,9 @@ msgid ""
 "\n"
 "Living Duplicants will automatically place an unburied corpse inside."
 msgstr ""
-"死んだ複製人間に安息の地を提供します。\n"
+"命を落とした複製人間が永眠するための場所です。\n"
 "\n"
-"生存中の複製人間は埋葬されていない死体を自動的にこの場所へ格納します。"
+"生きている複製人間は埋葬されていない遺体を自動的にこの中へ納めます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GRAVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GRAVE.NAME"
@@ -8362,7 +8362,7 @@ msgstr "<link=\"HEATCOMPRESSOR\">液体ヒーター</link>"
 #. STRINGS.BUILDINGS.PREFABS.HEPBATTERY.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBATTERY.DESC"
 msgid "Particles packed up and ready to go."
-msgstr "粒子が梱包され、運べるようになります。"
+msgstr "粒子の梱包完了、いつでも投射できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPBATTERY.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBATTERY.EFFECT"
@@ -8374,51 +8374,49 @@ msgid ""
 "\n"
 "Radbolts in storage will rapidly decay while this building is disabled."
 msgstr ""
-"高エネルギー状態のRADボルトを保管し、輸送できるようします。\n"
+"RADボルトを高エネルギー状態で貯蔵し、投射できるようにしておきます。\n"
 "\n"
-"RADボルトしきい値に到達したときにRADボルトを開放するには、<b><style="
-"\"logic_on\">グリーン</style></b>を受信する必要があります。\n"
+"貯蔵量がしきい値を超えている状態で<b><style=\"logic_on\">グリーン</style></b>"
+"を受信すると、RADボルトを投射します。\n"
 "\n"
-"設備が無効化されると、保管中のRADボルトは急速に崩壊します。"
+"設備が機能を止めると、貯蔵中のRADボルトは急速に崩壊します。"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT"
 msgid "Do not emit Radbolts"
-msgstr "RADボルトを放出しない"
+msgstr "RADボルトを投射する / しない"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_ACTIVE"
 msgid "<b><style=\"logic_on\">Green Signal</style></b>: Emit Radbolts"
-msgstr "<b><style=\"logic_on\">グリーン</style></b>: RADボルトを放出する"
+msgstr "<b><style=\"logic_on\">グリーン</style></b>: RADボルトを投射する"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_INACTIVE"
 msgid "<b><style=\"logic_off\">Red Signal</style></b>: Do not emit Radbolts"
-msgstr "<b><style=\"logic_off\">レッド</style></b>: RADボルトを放出しない"
+msgstr "<b><style=\"logic_off\">レッド</style></b>: RADボルトを投射しない"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_STORAGE
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_STORAGE"
 msgid "Radbolt Storage"
-msgstr "RADボルト格納庫"
+msgstr "RADボルト満杯 / 空き有り"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_STORAGE_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_STORAGE_ACTIVE"
 msgid ""
 "Sends a <b><style=\"logic_on\">Green Signal</style></b> when its Radbolt "
 "Storage is full"
-msgstr ""
-"RADボルト格納庫が満タンになると<b><style=\"logic_on\">グリーン</style></b>に"
-"なります"
+msgstr "貯蔵量が最大なら<b><style=\"logic_on\">グリーン</style></b>を送信"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_STORAGE_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBATTERY.LOGIC_PORT_STORAGE_INACTIVE"
 msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
-msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>になります"
+msgstr "それ以外は<b><style=\"logic_off\">レッド</style></b>を送信"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPBATTERY.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBATTERY.NAME"
 msgid "<link=\"HEPBATTERY\">Radbolt Chamber</link>"
-msgstr "<link=\"HEPBATTERY\">RADボルト貯蔵庫</link>"
+msgstr "<link=\"HEPBATTERY\">RADボルト貯蔵器</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPBRIDGETILE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPBRIDGETILE.DESC"
@@ -8446,8 +8444,8 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.DESC"
 msgid ""
 "Radbolt-fueled rockets support few modules, but travel exceptionally far."
 msgstr ""
-"RADボルト燃料ロケットに接続できるモジュールは少ないですが、極めて遠くまで飛ぶ"
-"ことができます。"
+"RADボルトを燃料とするロケットは全長がやや制限されていますが、極めて遠くまで飛"
+"ぶことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPENGINE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.EFFECT"
@@ -8477,26 +8475,24 @@ msgstr ""
 #. STRINGS.BUILDINGS.PREFABS.HEPENGINE.LOGIC_PORT_STORAGE
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.LOGIC_PORT_STORAGE"
 msgid "Radbolt Storage"
-msgstr "RADボルト貯蔵庫"
+msgstr "RADボルト満載 / 空き有り"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPENGINE.LOGIC_PORT_STORAGE_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.LOGIC_PORT_STORAGE_ACTIVE"
 msgid ""
 "Sends a <b><style=\"logic_on\">Green Signal</style></b> when its Radbolt "
 "Storage is full"
-msgstr ""
-"RADボルト貯蔵庫が満タンになると<b><style=\"logic_on\">グリーン</style></b>に"
-"なります"
+msgstr "燃料が満載なら<b><style=\"logic_on\">グリーン</style></b>を送信"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPENGINE.LOGIC_PORT_STORAGE_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.LOGIC_PORT_STORAGE_INACTIVE"
 msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
-msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>になります"
+msgstr "それ以外は<b><style=\"logic_off\">レッド</style></b>を送信"
 
 #. STRINGS.BUILDINGS.PREFABS.HEPENGINE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HEPENGINE.NAME"
 msgid "<link=\"HEPENGINE\">Radbolt Engine</link>"
-msgstr "<link=\"HEPENGINE\">RADボルトエンジン</link>"
+msgstr "<link=\"HEPENGINE\">RADボルト エンジン</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLEREDIRECTOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLEREDIRECTOR.DESC"
@@ -8554,25 +8550,25 @@ msgid ""
 msgstr ""
 "近くの<link=\"RADIATION\">放射線</link>を引き寄せ、RADボルトを生成します。\n"
 "\n"
-"生成したRADボルトは設定したしきい値を越えると指定方向に放出されます。\n"
+"生成したRADボルトは設定したしきい値を超えると指定した方向に投射されます。\n"
 "\n"
-"設備が無効化されると、収集されたRADボルトは急速に崩壊します。"
+"設備が機能を止めると、収集されたRADボルトは急速に崩壊します。"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.LOGIC_PORT"
 msgid "Do not emit Radbolts"
-msgstr "RADボルトを放出しない"
+msgstr "RADボルトを投射する / しない"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.LOGIC_PORT_ACTIVE"
 msgid "<b><style=\"logic_on\">Green Signal</style></b>: Emit Radbolts"
-msgstr "<b><style=\"logic_on\">グリーン</style></b>: RADボルトを放出する"
+msgstr "<b><style=\"logic_on\">グリーン</style></b>: RADボルトを投射する"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.LOGIC_PORT_INACTIVE
 msgctxt ""
 "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.LOGIC_PORT_INACTIVE"
 msgid "<b><style=\"logic_off\">Red Signal</style></b>: Do not emit Radbolts"
-msgstr "<b><style=\"logic_off\">レッド</style></b>: RADボルトを放出しない"
+msgstr "<b><style=\"logic_off\">レッド</style></b>: RADボルトを投射しない"
 
 #. STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.NAME"
@@ -8848,7 +8844,7 @@ msgstr "<link=\"ICESCULPTURE\">氷の塊</link>"
 #. STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.POORQUALITYNAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ICESCULPTURE.POORQUALITYNAME"
 msgid "\"Abstract\" Ice Sculpture"
-msgstr "氷像のようなもの"
+msgstr "氷像(のようなもの)"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.DESC"
@@ -10071,19 +10067,21 @@ msgstr "<link=\"LIQUIDPUMPINGSTATION\">手押しポンプ</link>"
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDRESERVOIR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDRESERVOIR.DESC"
 msgid "Reservoirs cannot receive manually delivered resources."
-msgstr "貯蔵庫は手持ちの資源を受け取れません。"
+msgstr "液体貯蔵槽にボトルで持ち運んでいる液体を入れることはできません。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDRESERVOIR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDRESERVOIR.EFFECT"
 msgid ""
 "Stores any <link=\"ELEMENTSLIQUID\">Liquid</link> resources piped into it."
-msgstr "パイプ接続された<link=\"ELEMENTSLIQUID\">液体</link>資源を貯蔵します。"
+msgstr ""
+"液体パイプを通じて送られた<link=\"ELEMENTSLIQUID\">液体</link>資源を貯蔵しま"
+"す。"
 
 # Thermo Aquatuner "液体クーラー" と対になるように訳語を変更
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDRESERVOIR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDRESERVOIR.NAME"
 msgid "<link=\"LIQUIDRESERVOIR\">Liquid Reservoir</link>"
-msgstr "<link=\"LIQUIDRESERVOIR\">液体貯蔵庫</link>"
+msgstr "<link=\"LIQUIDRESERVOIR\">液体貯蔵槽</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.DESC"
@@ -11986,7 +11984,7 @@ msgid ""
 msgstr ""
 "放射性鉱石を精錬し、RADボルトを生成します。\n"
 "\n"
-"生成したRADボルトは指定方向に放出されます。"
+"生成したRADボルトは指定した方向に投射されます。"
 
 #. STRINGS.BUILDINGS.PREFABS.MANUALHIGHENERGYPARTICLESPAWNER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALHIGHENERGYPARTICLESPAWNER.NAME"
@@ -12585,7 +12583,7 @@ msgstr ""
 "\"MODULARLAUNCHPADPORTSOLID\">ロケットポート</link>の両端に建築すると自動的に"
 "接続します。\n"
 "\n"
-"貨物ベイの個体フィルターを使用してください。"
+"貨物ベイの固体フィルターを使用してください。"
 
 #. STRINGS.BUILDINGS.PREFABS.MODULARLAUNCHPADPORTSOLID.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.MODULARLAUNCHPADPORTSOLID.NAME"
@@ -12616,7 +12614,7 @@ msgstr ""
 "\"MODULARLAUNCHPADPORTSOLID\">ロケットポート</link>の両端に建築すると自動的に"
 "接続します。\n"
 "\n"
-"個体フィルターを使用してください。"
+"固体フィルターを使用してください。"
 
 #. STRINGS.BUILDINGS.PREFABS.MODULARLAUNCHPADPORTSOLIDUNLOADER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.MODULARLAUNCHPADPORTSOLIDUNLOADER.NAME"
@@ -13086,7 +13084,7 @@ msgstr "<link=\"OXIDIZERTANK\">酸化剤タンク</link>"
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANK.UI_FILTER_CATEGORY
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANK.UI_FILTER_CATEGORY"
 msgid "Accepted Oxidizers"
-msgstr "格納済み酸化剤"
+msgstr "積載済み酸化剤"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKCLUSTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKCLUSTER.DESC"
@@ -13116,7 +13114,7 @@ msgstr "<link=\"OXIDIZERTANKCLUSTER\">大型酸化剤タンク</link>"
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKCLUSTER.UI_FILTER_CATEGORY
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKCLUSTER.UI_FILTER_CATEGORY"
 msgid "Accepted Oxidizers"
-msgstr "格納済み酸化剤"
+msgstr "積載済み酸化剤"
 
 #. STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUID.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.OXIDIZERTANKLIQUID.DESC"
@@ -14434,7 +14432,7 @@ msgid ""
 "Ration boxes keep food safe from hungry critters, but don't slow food "
 "spoilage."
 msgstr ""
-"食糧箱は腹ペコの生物から食糧を守りますが、腐敗を遅らせるわけではありません。"
+"食糧箱は腹ペコの動物から食糧を守りますが、腐敗を遅らせるわけではありません。"
 
 #. STRINGS.BUILDINGS.PREFABS.RATIONBOX.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.RATIONBOX.EFFECT"
@@ -14443,9 +14441,9 @@ msgid ""
 "\n"
 "Food must be delivered to boxes by Duplicants."
 msgstr ""
-"少量の<link=\"FOOD\">食糧</link>を格納します。\n"
+"少量の<link=\"FOOD\">食糧</link>を収納します。\n"
 "\n"
-"複製人間によって格納される必要があります。"
+"複製人間の手で箱に入れる必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.RATIONBOX.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.RATIONBOX.NAME"
@@ -14466,23 +14464,22 @@ msgid ""
 "Stores <link=\"FOOD\">Food</link> at an ideal <link=\"HEAT\">Temperature</"
 "link> to prevent spoilage."
 msgstr ""
-"理想的な<link=\"HEAT\">温度</link>下で<link=\"FOOD\">食糧</link>を保管しま"
-"す。"
+"適正な<link=\"HEAT\">温度</link>下で<link=\"FOOD\">食糧</link>を保管します。"
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT"
 msgid "Full/Not Full"
-msgstr "満タン/空き有り"
+msgstr "満杯 / 空き有り"
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_ACTIVE"
 msgid "Sends a <b><style=\"logic_on\">Green Signal</style></b> when full"
-msgstr "満タンになると<b><style=\"logic_on\">グリーン</style></b>になります"
+msgstr "満杯なら<b><style=\"logic_on\">グリーン</style></b>を送信"
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.LOGIC_PORT_INACTIVE"
 msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
-msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>になります"
+msgstr "それ以外は<b><style=\"logic_off\">レッド</style></b>を送信"
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.NAME"
@@ -15335,7 +15332,7 @@ msgstr "<link=\"SMALLOXIDIZERTANK\">小型固形酸化剤タンク</link>"
 #. STRINGS.BUILDINGS.PREFABS.SMALLOXIDIZERTANK.UI_FILTER_CATEGORY
 msgctxt "STRINGS.BUILDINGS.PREFABS.SMALLOXIDIZERTANK.UI_FILTER_CATEGORY"
 msgid "Accepted Oxidizers"
-msgstr "格納済み酸化剤"
+msgstr "積載済み酸化剤"
 
 #. STRINGS.BUILDINGS.PREFABS.SMALLSCULPTURE.AVERAGEQUALITYNAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SMALLSCULPTURE.AVERAGEQUALITYNAME"
@@ -15727,7 +15724,8 @@ msgid ""
 "When materials reach the end of a rail they enter a receptacle to be used by "
 "Duplicants."
 msgstr ""
-"素材がレール終端に来ると、複製人間が使うためにレセプターへ格納されます。"
+"素材がレールの終端に達するとレセプターへ収納され、複製人間が利用できるように"
+"なります。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.EFFECT"
@@ -15735,8 +15733,8 @@ msgid ""
 "Unloads <link=\"ELEMENTSSOLID\">Solid Materials</link> from a <link="
 "\"SOLIDCONDUIT\">Conveyor Rail</link> into storage."
 msgstr ""
-"<link=\"ELEMENTSSOLID\">固形素材</link>を<link=\"SOLIDCONDUIT\">コンベアレー"
-"ル</link>から荷下し、格納庫にしまいます。"
+"<link=\"SOLIDCONDUIT\">コンベアレール</link>上の<link=\"ELEMENTSSOLID\">固形"
+"素材</link>を自身の内容物として受け取ります。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITOUTBOX.NAME"
@@ -15936,7 +15934,7 @@ msgstr ""
 "</link>と<link=\"CHORES\">供給</link>作業を自動化します。 \n"
 "\n"
 "素材は自動的に<link=\"SOLIDCONDUITINBOX\">コンベアローダー</link>、<link="
-"\"SOLIDCONDUITOUTBOX\">コンベアレセプター</link>、格納庫または範囲内の設備に"
+"\"SOLIDCONDUITOUTBOX\">コンベアレセプター</link>、収納庫または範囲内の設備に"
 "搬入されます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDTRANSFERARM.NAME
@@ -16176,18 +16174,18 @@ msgstr "床に放置された資源は「がれき」扱いとなり、美観を
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.EFFECT"
 msgid ""
 "Stores the <link=\"ELEMENTSSOLID\">Solid Materials</link> of your choosing."
-msgstr "指定した<link=\"ELEMENTSSOLID\">固形素材</link>を格納します。"
+msgstr "指定した<link=\"ELEMENTSSOLID\">固形素材</link>を収納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.NAME"
 msgid "<link=\"STORAGELOCKER\">Storage Bin</link>"
-msgstr "<link=\"STORAGELOCKER\">格納庫</link>"
+msgstr "<link=\"STORAGELOCKER\">収納庫</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.DESC"
 msgid ""
 "Smart storage bins can automate resource organization based on type and mass."
-msgstr "スマート格納庫は保管する資源のタイプや質量を自動化できます。"
+msgstr "スマート収納庫は、種類や質量に応じた資源の整理を自動化できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.EFFECT"
@@ -16196,29 +16194,29 @@ msgid ""
 "\n"
 "Sends a <b><style=\"logic_on\">Green Signal</style></b> when bin is full."
 msgstr ""
-"指定した<link=\"ELEMENTSSOLID\">固形素材</link>を格納します。\n"
+"指定した<link=\"ELEMENTSSOLID\">固形素材</link>を収納します。\n"
 "\n"
-"満タンになると<b><style=\"logic_on\">グリーン</style></b>になります。"
+"満杯なら<b><style=\"logic_on\">グリーン</style></b>の信号を送信します。"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT"
 msgid "Full/Not Full"
-msgstr "満タン/空き有り"
+msgstr "満杯 / 空き有り"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_ACTIVE"
 msgid "Sends a <b><style=\"logic_on\">Green Signal</style></b> when full"
-msgstr "満タンになると<b><style=\"logic_on\">グリーン</style></b>になります"
+msgstr "満杯なら<b><style=\"logic_on\">グリーン</style></b>を送信"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_INACTIVE"
 msgid "Otherwise, sends a <b><style=\"logic_off\">Red Signal</style></b>"
-msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>になります"
+msgstr "それ以外は<b><style=\"logic_off\">レッド</style></b>を送信"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.NAME"
 msgid "<link=\"STORAGELOCKERSMART\">Smart Storage Bin</link>"
-msgstr "<link=\"STORAGELOCKERSMART\">スマート格納庫</link>"
+msgstr "<link=\"STORAGELOCKERSMART\">スマート収納庫</link>"
 
 # sublime にも他動詞で「昇華」という意味がある
 #. STRINGS.BUILDINGS.PREFABS.SUBLIMATIONSTATION.DESC
@@ -16498,16 +16496,16 @@ msgid ""
 "\n"
 "Duplicants will empty Dock storage into available storage bins."
 msgstr ""
-"<link=\"SWEEPBOT\">スウィーピーボット</link>を配備し、<link=\"ELEMENTSSOLID"
-"\">固体</link>のがれきや零れた<link=\"ELEMENTSLIQUID\">液体</link>を掃除しま"
-"す。\n"
+"全自動の<link=\"SWEEPBOT\">スウィーピーボット</link>を派遣して、<link="
+"\"ELEMENTSSOLID\">固体</link>のがれきや零れた<link=\"ELEMENTSLIQUID\">液体</"
+"link>を片付けます。\n"
 "\n"
-"<link=\"ELEMENTSLIQUID\">液体</link>と<link=\"ELEMENTSSOLID\">固形素材</link>"
-"のがれきをスウィーピーから受け取ります。\n"
+"ドックには、スウィーピーが集めた<link=\"ELEMENTSLIQUID\">液体</link>や<link="
+"\"ELEMENTSSOLID\">固形素材</link>が収納されます。\n"
 "\n"
-"スウィーピーの充電には<link=\"POWER\">電力</link>が必要です。\n"
+"スウィーピーの充電には<link=\"POWER\">電力</link>を使用します。\n"
 "\n"
-"供給作業が可能な複製人間は格納されたがれきを空にすることができます。"
+"複製人間はドックを空にして、その中身を収納庫へ移します。"
 
 #. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.NAME"
@@ -16997,8 +16995,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.WALLTOILET.DESC"
 msgid ""
 "Wall Toilets transmit fewer germs to Duplicants and require no emptying."
 msgstr ""
-"壁掛けトイレは複製人間に付着する病原菌を減らし、手動で空にする操作を必要とし"
-"ません。"
+"壁掛けトイレは複製人間に付着する病原菌が少なく、汲み取りも必要ありません。"
 
 #. STRINGS.BUILDINGS.PREFABS.WALLTOILET.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.WALLTOILET.EFFECT"
@@ -23888,7 +23885,7 @@ msgstr "バッテリー"
 #. STRINGS.CODEX.HEADERS.INTERNALSTORAGE
 msgctxt "STRINGS.CODEX.HEADERS.INTERNALSTORAGE"
 msgid "Storage"
-msgstr "格納庫"
+msgstr "内部収納庫"
 
 #. STRINGS.CODEX.HEADERS.PREREQUISITE_ROLES
 msgctxt "STRINGS.CODEX.HEADERS.PREREQUISITE_ROLES"
@@ -26369,7 +26366,7 @@ msgstr "バッテリー容量: <b>{0} J</b>"
 #. STRINGS.CODEX.ROBOT_DESCRIPTORS.STORAGE.CAPACITY
 msgctxt "STRINGS.CODEX.ROBOT_DESCRIPTORS.STORAGE.CAPACITY"
 msgid "Internal storage: <b>{0} kg</b>"
-msgstr "内部格納庫: <b>{0} Kg</b>"
+msgstr "内部収納庫: <b>{0} kg</b>"
 
 #. STRINGS.CODEX.ROVER.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.ROVER.BODY.CONTAINER1"
@@ -26918,7 +26915,7 @@ msgid ""
 msgstr ""
 "スウィーピーは固体や液体のがれきを掃除するようプログラムされた家庭用ロボット"
 "です。電力が供給されたスウィーピードックはスウィーピーを発進させたり、ロボッ"
-"トが拾ったがれきを格納したり、スウィーピーのバッテリーを充電したりします。\n"
+"トが拾ったがれきを収納したり、スウィーピーのバッテリーを充電したりします。\n"
 "\n"
 "スウィーピーは隙間や段差を移動することができませんが、彼はこのことについて非"
 "常に反省するようプログラムされています。"
@@ -32244,7 +32241,7 @@ msgstr "生命力"
 #. STRINGS.CREATURES.STATS.ILLUMINATION.NAME
 msgctxt "STRINGS.CREATURES.STATS.ILLUMINATION.NAME"
 msgid "Illumination"
-msgstr "イルミネーション"
+msgstr "照明"
 
 #. STRINGS.CREATURES.STATS.INCUBATION.NAME
 msgctxt "STRINGS.CREATURES.STATS.INCUBATION.NAME"
@@ -32597,7 +32594,7 @@ msgstr "この動物は近くのルアーに引き寄せられています"
 #. STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.NAME"
 msgid "Pollution Exposure"
-msgstr "汚染曝露"
+msgstr "汚染された大気"
 
 #. STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.CONTAMINATEDATMOSPHERE.TOOLTIP"
@@ -33462,7 +33459,7 @@ msgstr "この農地は植物を育成中です"
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.NAME"
 msgid "Refrigerated"
-msgstr "冷蔵状態"
+msgstr "冷蔵温度"
 
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATED.TOOLTIP"
@@ -33475,18 +33472,17 @@ msgid ""
 "\n"
 "Store food below {PreserveTemperature} to further reduce spoilage."
 msgstr ""
-"理想的な<style=\"KKeyword\">温度</style>による貯蔵は、食糧の<style=\"KKeyword"
-"\">腐敗率</style>を低減させます\n"
+"適正な<style=\"KKeyword\">温度</style>による貯蔵は、食糧の<style=\"KKeyword"
+"\">腐敗速度</style>を遅らせます\n"
 "\n"
-"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えると、食糧は急"
-"速に腐敗します\n"
-"\n"
-"腐敗を遅らせるためには{PreserveTemperature}以下の温度で食糧を貯蔵しましょう"
+"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えていると、食糧"
+"は早く傷んでしまいます\n"
+"{PreserveTemperature}未満で貯蔵すれば、食糧は遙かに痛みにくくなります"
 
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.NAME"
 msgid "Deep Freeze"
-msgstr "冷凍"
+msgstr "冷凍温度"
 
 #. STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.REFRIGERATEDFROZEN.TOOLTIP"
@@ -33497,11 +33493,11 @@ msgid ""
 "<style=\"KKeyword\">Temperatures</style> above <b>{RotTemperature}</b> spoil "
 "food more quickly"
 msgstr ""
-"<b>{PreserveTemperature}</b>を下回る<style=\"KKeyword\">温度</style>は、食糧"
-"の貯蔵寿命を大幅に延ばします\n"
+"<b>{PreserveTemperature}</b>を下回る<style=\"KKeyword\">温度</style>下では、"
+"食糧の保存期間は大幅に延長されます\n"
 "\n"
-"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えると、食糧は急"
-"速に腐敗します"
+"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えていると、食糧"
+"は早く傷んでしまいます"
 
 #. STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.NAME"
@@ -33628,7 +33624,7 @@ msgstr "この動物は飢えており、給餌されないと死に至ります
 #. STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.NAME"
 msgid "Sterile Atmosphere"
-msgstr "滅菌環境"
+msgstr "滅菌性の大気"
 
 #. STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STERILIZINGATMOSPHERE.TOOLTIP"
@@ -33636,8 +33632,8 @@ msgid ""
 "Microbe destroying conditions have decreased this food's <style=\"KKeyword"
 "\">Decay Rate</style>"
 msgstr ""
-"菌の繁殖が抑えられていることにより、食糧の<style=\"KKeyword\">腐敗</style>を"
-"防いでいます"
+"菌の繁殖が抑えられていることで、食糧の<style=\"KKeyword\">腐敗速度</style>が"
+"遅くなっています"
 
 #. STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.STRUGGLING.NAME"
@@ -33731,10 +33727,10 @@ msgid ""
 "<style=\"KKeyword\">Temperatures</style> above <b>{RotTemperature}</b> spoil "
 "food more quickly"
 msgstr ""
-"温かい食糧です\n"
+"この食糧(庫)は温まっています\n"
 "\n"
-"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えると、食糧は急"
-"速に腐敗します"
+"<style=\"KKeyword\">温度</style>が<b>{RotTemperature}</b>を超えていると、食糧"
+"は早く傷んでしまいます"
 
 #. STRINGS.CREATURES.STATUSITEMS.WILTING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WILTING.NAME"
@@ -33783,9 +33779,7 @@ msgstr ""
 #. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.LINE_ITEM"
 msgid "            • {0}: {1}\n"
-msgstr ""
-"            • {0}: {1}\n"
-"\n"
+msgstr "            • {0}: {1}\n"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZER.NAME"
@@ -33800,9 +33794,10 @@ msgid ""
 "Empty this building's <style=\"KKeyword\">Storage</style> to remove the "
 "unusable materials"
 msgstr ""
-"この農地には植物に適さない素材が格納されています\n"
+"この農地には植えられた植物に適さない素材が貯蔵されています\n"
 "------------------\n"
-"この設備の格納庫から不要な素材を取り出してください"
+"この設備の<style=\"KKeyword\">内容物を空ける</style>ことで、不要な素材を取り"
+"除いてください"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGFERTILIZERMAJOR.LINE_ITEM"
@@ -33822,22 +33817,22 @@ msgid ""
 "<style=\"KKeyword\">Empty Storage</style> on this building to remove the "
 "unusable materials"
 msgstr ""
-"この農地には植物に適さない素材が格納されています\n"
+"この農地には植えられた植物に適さない素材が貯蔵されています\n"
 "------------------\n"
-"<style=\"KKeyword\">設備を空にする</style>を押して、不要な素材を取り出してく"
-"ださい"
+"この設備の<style=\"KKeyword\">内容物を空ける</style>ことで、不要な素材を取り"
+"除いてください"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.LINE_ITEM"
 msgid "            • {0}: {1}\n"
-msgstr ""
-"            • {0}: {1}\n"
-"\n"
+msgstr "            • {0}: {1}\n"
 
+# ソースコードを見る限り、ここは"Irrigation"(灌漑)であるべき
+# （ただし、実際に表示される状況が存在するかは不明）
 #. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.NAME"
 msgid "    • Fertilization"
-msgstr "    • 施肥"
+msgstr "    • 灌漑"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATION.TOOLTIP"
@@ -33846,9 +33841,10 @@ msgid ""
 "------------------\n"
 "Empty this building's storage to remove the unusable materials"
 msgstr ""
-"この農地には植物に適さない素材が格納されています\n"
+"この農地には植えられた植物に適さない液体が貯蔵されています\n"
 "------------------\n"
-"この設備の格納庫から使用できない素材を取り出してください"
+"この設備の<style=\"KKeyword\">内容物を空ける</style>ことで、不要な液体を取り"
+"除いてください"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.LINE_ITEM
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGIRRIGATIONMAJOR.LINE_ITEM"
@@ -33868,10 +33864,10 @@ msgid ""
 "<style=\"KKeyword\">Empty Storage</style> on this building to remove the "
 "incorrect materials"
 msgstr ""
-"この農地には植物に適さない素材が格納されています\n"
+"この農地には植えられた植物に適さない液体が貯蔵されています\n"
 "------------------\n"
-"<style=\"KKeyword\">設備を空にする</style>を押して、誤った素材を取り出してく"
-"ださい"
+"この設備の<style=\"KKeyword\">内容物を空ける</style>ことで、不要な液体を取り"
+"除いてください"
 
 #. STRINGS.DUPLICANTS.ARRIVALTIME
 msgctxt "STRINGS.DUPLICANTS.ARRIVALTIME"
@@ -35431,17 +35427,19 @@ msgstr "この複製人間は通過の許可を待っています"
 #. STRINGS.DUPLICANTS.CHORES.CLEANTOILET.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.CLEANTOILET.NAME"
 msgid "Clean Outhouse"
-msgstr "トイレ掃除"
+msgstr "トイレの汲み取り"
 
 #. STRINGS.DUPLICANTS.CHORES.CLEANTOILET.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.CLEANTOILET.STATUS"
 msgid "Going to clean"
-msgstr "トイレ掃除に向かっている"
+msgstr "トイレの汲み取りに向かっている"
 
 #. STRINGS.DUPLICANTS.CHORES.CLEANTOILET.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.CLEANTOILET.TOOLTIP"
 msgid "This Duplicant is cleaning out the <link=\"OUTHOUSE\">Outhouse</link>"
-msgstr "この複製人間は<style=\"KKeyword\">トイレ</style>掃除中です"
+msgstr ""
+"この複製人間は<link=\"OUTHOUSE\">野営トイレ</link>の汲み取りをしようとしてい"
+"ます"
 
 #. STRINGS.DUPLICANTS.CHORES.COMPOSTWORKABLE.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.COMPOSTWORKABLE.NAME"
@@ -35787,17 +35785,17 @@ msgstr ""
 #. STRINGS.DUPLICANTS.CHORES.EMPTYSTORAGE.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.EMPTYSTORAGE.NAME"
 msgid "Empty Storage"
-msgstr "貯蔵分を空ける"
+msgstr "内容物を空ける"
 
 #. STRINGS.DUPLICANTS.CHORES.EMPTYSTORAGE.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.EMPTYSTORAGE.STATUS"
 msgid "Going to empty storage"
-msgstr "貯蔵分を空けに向かっている"
+msgstr "内容物を空けに向かっている"
 
 #. STRINGS.DUPLICANTS.CHORES.EMPTYSTORAGE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.EMPTYSTORAGE.TOOLTIP"
 msgid "This Duplicant is taking items out of storage"
-msgstr "この複製人間は貯蔵されたアイテムを取り出しています"
+msgstr "この複製人間は設備の内容物を空にしようとしています"
 
 #. STRINGS.DUPLICANTS.CHORES.ENTOMBED.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.ENTOMBED.NAME"
@@ -36487,7 +36485,7 @@ msgstr "膀胱がパンパンです"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_CHAT
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_CHAT"
 msgid "Unreachable"
-msgstr "到達不可"
+msgstr "辿り着けない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_CURE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_CURE"
@@ -36502,7 +36500,7 @@ msgstr "興味なし"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_MOVE_TO
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_MOVE_TO"
 msgid "Unreachable"
-msgstr "到達不可"
+msgstr "辿り着けない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_PICKUP
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_PICKUP"
@@ -38486,7 +38484,7 @@ msgid ""
 "{Symptoms}"
 msgstr ""
 "{InfectionSource}{Duration}{Doctor}{Fatality}{Cures}{Bedrest}\n"
-"—————————\n"
+"------------------\n"
 "\n"
 "{Symptoms}"
 
@@ -38709,7 +38707,7 @@ msgstr "複製人間"
 #. STRINGS.DUPLICANTS.MODIFIERS.BASEROT.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BASEROT.NAME"
 msgid "Base Decay Rate"
-msgstr "基本腐敗率"
+msgstr "基本腐敗速度"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BEACHCHAIRLIT.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BEACHCHAIRLIT.NAME"
@@ -40581,8 +40579,8 @@ msgid ""
 "This Duplicant used a <link=\"FLUSHTOILET\">Lavatory</link> in a <style="
 "\"KKeyword\">Washroom</style>"
 msgstr ""
-"この複製人間は素敵な個室備え付けの<style=\"KKeyword\">トイレ</style>を使いま"
-"した"
+"この複製人間は<style=\"KKeyword\">洗面所</style>内に設置された<link="
+"\"FLUSHTOILET\">水洗トイレ</link>で用を足しました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ROOMBEDROOM.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBEDROOM.NAME"
@@ -40623,7 +40621,8 @@ msgid ""
 "This Duplicant used an <link=\"OUTHOUSE\">Outhouse</link> in a <style="
 "\"KKeyword\">Latrine</style>"
 msgstr ""
-"この複製人間は<link=\"OUTHOUSE\">野営トイレ</link>に心から感謝しています"
+"この複製人間は<style=\"KKeyword\">公衆トイレ</style>内に設置された<link="
+"\"OUTHOUSE\">野営トイレ</link>で用を足しました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ROOMMESSHALL.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMMESSHALL.NAME"
@@ -40672,17 +40671,17 @@ msgstr ""
 #. STRINGS.DUPLICANTS.MODIFIERS.ROTATMOSPHERE.CONTAMINATED
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROTATMOSPHERE.CONTAMINATED"
 msgid "Contaminated Air"
-msgstr "汚染空気"
+msgstr "汚染大気"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ROTATMOSPHERE.NORMAL
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROTATMOSPHERE.NORMAL"
 msgid "Normal Atmosphere"
-msgstr "通常環境"
+msgstr "通常大気"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ROTATMOSPHERE.STERILE
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROTATMOSPHERE.STERILE"
 msgid "Sterile Atmosphere"
-msgstr "滅菌環境"
+msgstr "滅菌大気"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ROTTEMPERATURE.FROZEN
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROTTEMPERATURE.FROZEN"
@@ -40697,7 +40696,7 @@ msgstr "冷蔵"
 #. STRINGS.DUPLICANTS.MODIFIERS.ROTTEMPERATURE.UNREFRIGERATED
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROTTEMPERATURE.UNREFRIGERATED"
 msgid "Unrefrigerated"
-msgstr "冷蔵されていない"
+msgstr "要冷蔵"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ROTTING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROTTING.NAME"
@@ -43008,12 +43007,12 @@ msgstr "この複製人間は休憩時間に風船を配ろうと計画してい
 #. STRINGS.DUPLICANTS.STATUSITEMS.BEDUNREACHABLE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BEDUNREACHABLE.NAME"
 msgid "Cannot reach bed"
-msgstr "ベッド到達不可"
+msgstr "ベッドに辿り着けない"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BEDUNREACHABLE.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BEDUNREACHABLE.NOTIFICATION_NAME"
 msgid "Unreachable bed"
-msgstr "到達不可のベッド"
+msgstr "辿り着けないベッド"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BEDUNREACHABLE.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BEDUNREACHABLE.NOTIFICATION_TOOLTIP"
@@ -43021,13 +43020,13 @@ msgid ""
 "These Duplicants cannot sleep because their <style=\"KKeyword\">Beds</style> "
 "are beyond their reach:"
 msgstr ""
-"これらの複製人間は<style=\"KKeyword\">ベッド</style>に到達できないことにより"
-"睡眠が取れません:"
+"次の複製人間は<style=\"KKeyword\">ベッド</style>まで辿り着けないせいで睡眠を"
+"取ることができません:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BEDUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BEDUNREACHABLE.TOOLTIP"
 msgid "This Duplicant cannot reach their bed"
-msgstr "この複製人間はベッドに到達できません"
+msgstr "この複製人間はベッドまで辿り着けません"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BEINGPRODUCTIVE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BEINGPRODUCTIVE.NAME"
@@ -43591,7 +43590,9 @@ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.FULLBLADDER.TOOLTIP"
 msgid ""
 "This Duplicant would really appreciate an <link=\"OUTHOUSE\">Outhouse</link> "
 "or <link=\"FLUSHTOILET\">Lavatory</link>"
-msgstr "この複製人間はトイレに心から感謝しています"
+msgstr ""
+"この複製人間は<link=\"OUTHOUSE\">野営トイレ</link>や<link=\"FLUSHTOILET\">水"
+"洗トイレ</link>に心から感謝することでしょう"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.GASLIQUIDEXPOSURE.NAME_MAJOR
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.GASLIQUIDEXPOSURE.NAME_MAJOR"
@@ -44126,9 +44127,9 @@ msgid ""
 "These Duplicants are in need of an <link=\"OUTHOUSE\">Outhouse</link>:"
 msgstr ""
 "<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b> <b><color=#F44A4A>[5]</"
-"b></color>から建築することが可能です。\n"
-"—————————\n"
-"これらの複製人間は<link=\"OUTHOUSE\">野営トイレ</link>が必要です:"
+"color></b> から建築できます\n"
+"------------------\n"
+"次の複製人間は<link=\"OUTHOUSE\">野営トイレ</link>を求めています:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.TOOLTIP"
@@ -44139,10 +44140,10 @@ msgid ""
 "<link=\"OUTHOUSE\">Outhouses</link> can be built from the <b>Plumbing Tab</"
 "b> <b><color=#F44A4A>[5]</b></color>"
 msgstr ""
-"この複製人間が利用可能な<link=\"OUTHOUSE\">野営トイレ</link>がありません\n"
-"—————————\n"
-"<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b><color=#F44A47><b>[5]</"
-"b></color>.から建築可能です"
+"この複製人間が用を足せる<link=\"OUTHOUSE\">野営トイレ</link>がありません\n"
+"------------------\n"
+"<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b> <b><color=#F44A4A>[5]</"
+"color></b> から建築できます"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.NAME"
@@ -44152,21 +44153,25 @@ msgstr "トイレ故障中"
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.NOTIFICATION_NAME"
 msgid "Toilet out of order"
-msgstr "トイレが故障しています"
+msgstr "トイレが故障している"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.NOTIFICATION_TOOLTIP"
 msgid ""
 "These Duplicants want to use an <link=\"OUTHOUSE\">Outhouse</link> or <link="
 "\"FLUSHTOILET\">Lavatory</link> that is out of order:"
-msgstr "これらの複製人間はトイレを使いたいと思っていますが、故障しています:"
+msgstr ""
+"次の複製人間は<link=\"OUTHOUSE\">野営トイレ</link>や<link=\"FLUSHTOILET\">水"
+"洗トイレ</link>で用を足したいと思っていますが、故障しています:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.TOOLTIP"
 msgid ""
 "The only <link=\"OUTHOUSE\">Outhouses</link> or <link=\"FLUSHTOILET"
 "\">Lavatories</link> in this Duplicant's reach are out of order"
-msgstr "この複製人間が使えるトイレは故障しています"
+msgstr ""
+"この複製人間が辿り着ける範囲には、故障している<link=\"OUTHOUSE\">野営トイレ</"
+"link>か<link=\"FLUSHTOILET\">水洗トイレ</link>しかありません"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.PACIFYDELIVERSTATUS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.PACIFYDELIVERSTATUS.NAME"
@@ -44253,24 +44258,24 @@ msgstr "この複製人間は <b>{Item}</b> を精錬しています"
 #. STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNREACHABLE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNREACHABLE.NAME"
 msgid "Cannot reach quarantine"
-msgstr "隔離不可"
+msgstr "隔離所に辿り着けない"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNREACHABLE.NOTIFICATION_NAME
 msgctxt ""
 "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNREACHABLE.NOTIFICATION_NAME"
 msgid "Unreachable quarantine"
-msgstr "隔離場所に到達できません"
+msgstr "辿り着けない隔離所"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNREACHABLE.NOTIFICATION_TOOLTIP
 msgctxt ""
 "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNREACHABLE.NOTIFICATION_TOOLTIP"
 msgid "These Duplicants cannot reach their assigned quarantine zones:"
-msgstr "これらの複製人間は割り当てられた場所に移動できません:"
+msgstr "次の複製人間は、割り当てられた隔離領域まで辿り着けません:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINEAREAUNREACHABLE.TOOLTIP"
 msgid "This Duplicant cannot reach their quarantine zone"
-msgstr "この複製人間は割り当てられた場所に移動できません"
+msgstr "この複製人間は、割り当てられた隔離領域まで辿り着けません:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINED.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.QUARANTINED.NAME"
@@ -44319,12 +44324,12 @@ msgstr ""
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NAME"
 msgid "Food Type Not Permitted"
-msgstr "許可されていない食糧タイプ"
+msgstr "食糧が許可されていない"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_NAME"
 msgid "Unpermitted food"
-msgstr "食べられる食糧なし"
+msgstr "許可されていない食糧"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.NOTIFICATION_TOOLTIP
 msgctxt ""
@@ -44334,9 +44339,9 @@ msgid ""
 "<color=#F44A47><b>[F]</b></color> permissions prevent them from eating any "
 "of the <link=\"FOOD\">Food</link> within their reach:"
 msgstr ""
-"これらの複製人間は手の届く範囲にある如何なる<link=\"FOOD\">食糧</link>も"
-"<color=#833A5FFF>食べる</color> <color=#F44A47><b>[F]</b></color>ことを許され"
-"ていません:"
+"次の複製人間が辿り着ける範囲には、<color=#833A5FFF>食糧パネル</color> "
+"<color=#F44A47><b>[F]</b></color> の設定で禁止された<link=\"FOOD\">食糧</"
+"link>しかありません:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSNOTPERMITTED.TOOLTIP"
@@ -44347,21 +44352,20 @@ msgid ""
 "Enter the <color=#833A5FFF>CONSUMABLES</color> <color=#F44A47><b>[F]</b></"
 "color> to adjust their food permissions"
 msgstr ""
-"これらの複製人間は手の届く範囲にある如何なる<link=\"FOOD\">食糧</link>も食べ"
-"ることが許可されていません\n"
-"—————————\n"
-"食事許可は<color=#833A5FFF>食糧パネル</color> <color=#F44A47><b>[F]</b></"
-"color>から調整できます"
+"この複製人間が辿り着ける範囲には、食べることを禁止された<link=\"FOOD\">食糧</"
+"link>しかありません:------------------\n"
+"食糧の消費許可は、<color=#833A5FFF>食糧パネル</color> <color=#F44A47><b>[F]</"
+"b></color>で設定できます"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.NAME"
 msgid "Cannot reach food"
-msgstr "食糧到達不可"
+msgstr "食糧に辿り着けない"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.NOTIFICATION_NAME"
 msgid "Unreachable food"
-msgstr "摂取不可"
+msgstr "辿り着けない食糧"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.NOTIFICATION_TOOLTIP
 msgctxt ""
@@ -44369,8 +44373,7 @@ msgctxt ""
 msgid ""
 "These Duplicants cannot access the colony's <style=\"KKeyword\">Food</style>:"
 msgstr ""
-"これらの複製人間がコロニーの<style=\"KKeyword\">食糧</style>にたどり着けませ"
-"ん:"
+"次の複製人間はコロニー内の<style=\"KKeyword\">食糧</style>まで辿り着けません:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RATIONSUNREACHABLE.TOOLTIP"
@@ -44378,8 +44381,7 @@ msgid ""
 "There is <style=\"KKeyword\">Food</style> in the colony that this Duplicant "
 "cannot reach"
 msgstr ""
-"複製人間がたどり着けない<style=\"KKeyword\">食糧</style>がコロニー内にありま"
-"す"
+"この複製人間はコロニー内の<style=\"KKeyword\">食糧</style>まで辿り着けません:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.RECOVERINGBREATH.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.RECOVERINGBREATH.NAME"
@@ -44886,11 +44888,11 @@ msgid ""
 "<link=\"OUTHOUSE\">Outhouses</link> can be built from the <b>Plumbing Tab</"
 "b> <b><color=#F44A4A>[5]</b></color>"
 msgstr ""
-"哀れなこの複製人間は<link=\"OUTHOUSE\">野営トイレ</link>を見つけられなかった"
-"がために、とても恥ずかしい思いをしています\n"
+"この哀れな複製人間は<link=\"OUTHOUSE\">野営トイレ</link>を見つけるのが間に合"
+"わなかったために、とても恥ずかしい思いをしています\n"
 "------------------\n"
 "<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b> <b><color=#F44A4A>[5]</"
-"b></color>から建築することができます"
+"color></b> から建築できます"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSVOMITING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSVOMITING.NAME"
@@ -45003,26 +45005,30 @@ msgstr "この複製人間は <b>{Target}</b> の設定を変更しています"
 #. STRINGS.DUPLICANTS.STATUSITEMS.TOILETUNREACHABLE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.TOILETUNREACHABLE.NAME"
 msgid "Unreachable toilet"
-msgstr "到達不能なトイレ"
+msgstr "辿り着けないトイレ"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.TOILETUNREACHABLE.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.TOILETUNREACHABLE.NOTIFICATION_NAME"
 msgid "Unreachable toilet"
-msgstr "到達不能なトイレ"
+msgstr "辿り着けないトイレ"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.TOILETUNREACHABLE.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.TOILETUNREACHABLE.NOTIFICATION_TOOLTIP"
 msgid ""
 "These Duplicants cannot reach a functioning <link=\"OUTHOUSE\">Outhouse</"
 "link> or <link=\"FLUSHTOILET\">Lavatory</link>:"
-msgstr "これらの複製人間は機能性トイレに到達できません:"
+msgstr ""
+"次の複製人間は、用を足せる状態の<link=\"OUTHOUSE\">野営トイレ</link>もしくは"
+"<link=\"FLUSHTOILET\">水洗トイレ</link>まで辿り着けません"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.TOILETUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.TOILETUNREACHABLE.TOOLTIP"
 msgid ""
 "This Duplicant cannot reach a functioning <link=\"OUTHOUSE\">Outhouse</link> "
 "or <link=\"FLUSHTOILET\">Lavatory</link>"
-msgstr "この複製人間は機能性トイレに到達できません"
+msgstr ""
+"この複製人間は、用を足せる状態の<link=\"OUTHOUSE\">野営トイレ</link>もしくは"
+"<link=\"FLUSHTOILET\">水洗トイレ</link>まで辿り着けません"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.UPROOTING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.UPROOTING.NAME"
@@ -45078,7 +45084,7 @@ msgid ""
 "\">Mop Tool</style> <b><color=#F44A4A>[M]</b></color>"
 msgstr ""
 "この複製人間は<link=\"DISEASE\">病気</link>の結果無意識のうちに吐いていた\n"
-"—————————\n"
+"------------------\n"
 "複製人間の\"吐瀉物\" は<b>モップツール</b> <color=#F44A47><b>[M]</b></color>"
 "を使うことによって綺麗にできます"
 
@@ -47909,8 +47915,13 @@ msgstr "<link=\"ETHANOLGAS\">エタノール</link>"
 
 #. STRINGS.ELEMENTS.FALLOUT.DESC
 msgctxt "STRINGS.ELEMENTS.FALLOUT.DESC"
-msgid "TBD"
-msgstr "TBD"
+msgid ""
+"Nuclear Fallout is a highly toxic gas full of <link=\"RADIATION"
+"\">Radioactive Contaminants</link>. Formed in a <link=\"NUCLEARREACTOR"
+"\">Reactor meltdown</link>."
+msgstr ""
+"<link=\"RADIATION\">放射性汚染物質</link>で満たされた極めて毒性の高い液体で"
+"す。<link=\"NUCLEARREACTOR\">炉心溶融</link>時に現れます。"
 
 #. STRINGS.ELEMENTS.FALLOUT.NAME
 msgctxt "STRINGS.ELEMENTS.FALLOUT.NAME"
@@ -48973,10 +48984,10 @@ msgstr "<link=\"NIOBIUMGAS\">ニオブ</link>"
 msgctxt "STRINGS.ELEMENTS.NUCLEARWASTE.DESC"
 msgid ""
 "Highly toxic liquid full of <link=\"RADIATION\">Radioactive Contaminants</"
-"link>. Formed in an <link=\"MELTDOWN\">Nuclear Meltdown</link>."
+"link>. Formed in a <link=\"NUCLEARREACTOR\">Reactor meltdown</link>."
 msgstr ""
 "<link=\"RADIATION\">放射性汚染物質</link>で満たされた極めて毒性の高い液体で"
-"す。<link=\"MELTDOWN\">炉心溶融</link>時に現れます。"
+"す。<link=\"NUCLEARREACTOR\">炉心溶融</link>時に現れます。"
 
 #. STRINGS.ELEMENTS.NUCLEARWASTE.NAME
 msgctxt "STRINGS.ELEMENTS.NUCLEARWASTE.NAME"
@@ -49547,10 +49558,10 @@ msgstr "<link=\"SOLIDNAPHTHA\">ナフサ</link>"
 msgctxt "STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.DESC"
 msgid ""
 "Highly toxic liquid full of <link=\"RADIATION\">Radioactive Contaminants</"
-"link>. Formed in an <link=\"MELTDOWN\">Nuclear Meltdown</link>."
+"link>. Formed in a <link=\"NUCLEARREACTOR\">Reactor meltdown</link>."
 msgstr ""
 "<link=\"RADIATION\">放射性汚染物質</link>で満たされた極めて毒性の高い液体で"
-"す。<link=\"MELTDOWN\">炉心溶融</link>時に現れます。"
+"す。<link=\"NUCLEARREACTOR\">炉心溶融</link>時に現れます。"
 
 #. STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.NAME
 msgctxt "STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.NAME"
@@ -55947,12 +55958,12 @@ msgstr "設備故障予防の覚書"
 #. STRINGS.MISC.NOTIFICATIONS.UNREACHABLEITEM.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.UNREACHABLEITEM.NAME"
 msgid "Unreachable resources"
-msgstr "到達不可の資源"
+msgstr "辿り着けない資源"
 
 #. STRINGS.MISC.NOTIFICATIONS.UNREACHABLEITEM.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.UNREACHABLEITEM.TOOLTIP"
 msgid "Duplicants cannot retrieve these resources:"
-msgstr "複製人間はこれらの資源に到達できません:"
+msgstr "複製人間は次の資源まで辿り着けません:"
 
 #. STRINGS.MISC.NOTIFICATIONS.UNREFRIGERATEDFOOD.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.UNREFRIGERATEDFOOD.NAME"
@@ -55964,7 +55975,7 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.UNREFRIGERATEDFOOD.TOOLTIP"
 msgid ""
 "These <link=\"FOOD\">Food</link> items are stored but not refrigerated:\n"
 msgstr ""
-"これらの<link=\"FOOD\">食糧</link>は保管されていますが、冷蔵されていません:\n"
+"次の<link=\"FOOD\">食糧</link>は収納されているものの、冷蔵されていません:\n"
 
 #. STRINGS.MISC.NOTIFICATIONS.VENTBLOCKED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.VENTBLOCKED.NAME"
@@ -56474,12 +56485,12 @@ msgstr "複製人間の手が空くと、植物は掘り起こされます"
 #. STRINGS.MISC.STATUSITEMS.PICKUPABLEUNREACHABLE.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.PICKUPABLEUNREACHABLE.NAME"
 msgid "Unreachable"
-msgstr "到達不可"
+msgstr "辿り着けない"
 
 #. STRINGS.MISC.STATUSITEMS.PICKUPABLEUNREACHABLE.TOOLTIP
 msgctxt "STRINGS.MISC.STATUSITEMS.PICKUPABLEUNREACHABLE.TOOLTIP"
 msgid "Duplicants cannot reach this object"
-msgstr "複製人間はこのアイテムまで到達できません"
+msgstr "複製人間はこのオブジェクトまで辿り着けません"
 
 #. STRINGS.MISC.STATUSITEMS.PRIORITIZED.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.PRIORITIZED.NAME"
@@ -62117,7 +62128,7 @@ msgstr "障害物が{0}の帰還を妨げています"
 #. STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.NAME
 msgctxt "STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.NAME"
 msgid "Unreachable Dock"
-msgstr "ドック到達不可"
+msgstr "辿り着けないドック"
 
 #. STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.TOOLTIP
 msgctxt "STRINGS.ROBOTS.STATUSITEMS.CANTREACHSTATION.TOOLTIP"
@@ -64722,7 +64733,7 @@ msgstr "毛刈り可能な {Item}: {Time}ごとに{Amount} ({Atmosphere})"
 #. STRINGS.UI.BUILDINGEFFECTS.STORAGECAPACITY
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.STORAGECAPACITY"
 msgid "Storage capacity: {0}"
-msgstr "格納庫容積: {0}"
+msgstr "収納庫容量: {0}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.STRESSREDUCEDPERMINUTE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.STRESSREDUCEDPERMINUTE"
@@ -65194,7 +65205,8 @@ msgstr ""
 "<style=\"KKeyword\">比熱容量</style>をもとに<style=\"KKeyword\">発熱</style>"
 "します\n"
 "\n"
-"<link=\"OXYGEN\">酸素</link>1Kgを<b>{1}</b>冷却すると、<b>{0}</b>出力します"
+"<link=\"OXYGEN\">酸素</link> 1kgを <b>{1}</b> 冷却すると、 <b>{0}</b> を発熱"
+"します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_LIQUIDCONDITIONER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_LIQUIDCONDITIONER"
@@ -65210,7 +65222,8 @@ msgstr ""
 "<style=\"KKeyword\">比熱容量</style>をもとに<style=\"KKeyword\">発熱</style>"
 "します\n"
 "\n"
-"<link=\"WATER\">水</link>10Kgを<b>{1}</b>冷却すると、<b>{0}</b>出力します"
+"<link=\"WATER\">水</link> 10kgを <b>{1}</b> 冷却すると、 <b>{0}</b> を発熱し"
+"ます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.IMPROVED_BUILDINGS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.IMPROVED_BUILDINGS"
@@ -67666,7 +67679,7 @@ msgstr "全て生成(スロー)"
 #. STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.STORE
 msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.STORE"
 msgid "Store"
-msgstr "格納"
+msgstr "収納"
 
 #. STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.TEMPERATURE_KELVIN
 msgctxt "STRINGS.UI.DEBUG_TOOLS.PAINT_ELEMENTS_SCREEN.TEMPERATURE_KELVIN"
@@ -67742,7 +67755,7 @@ msgctxt ""
 "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL."
 "JOULES_PER_KILOGRAM"
 msgid "Joules per kilogram: {0}"
-msgstr "ジュール熱/Kg: {0}"
+msgstr "ジュール熱 / kg: {0}"
 
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_JOULES
 msgctxt ""
@@ -67910,7 +67923,7 @@ msgstr "{1} の {0}"
 #. STRINGS.UI.DETAILTABS.DETAILS.GROUPNAME_CONTENTS
 msgctxt "STRINGS.UI.DETAILTABS.DETAILS.GROUPNAME_CONTENTS"
 msgid "CONTENTS"
-msgstr "内容"
+msgstr "内容物"
 
 #. STRINGS.UI.DETAILTABS.DETAILS.GROUPNAME_DETAILS
 msgctxt "STRINGS.UI.DETAILTABS.DETAILS.GROUPNAME_DETAILS"
@@ -67975,12 +67988,12 @@ msgstr "表面上の病原菌"
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.DEATH_FORMAT
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.DEATH_FORMAT"
 msgid "{0} dead/cycle"
-msgstr "{0} 死亡/サイクル"
+msgstr "1サイクルで {0} 死滅"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.DEATH_FORMAT_TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.DEATH_FORMAT_TOOLTIP"
 msgid "Germ count is being reduced by {0}/cycle"
-msgstr "病原菌の数はサイクルあたり {0} 減少しています"
+msgstr "病原菌の数は1サイクルあたり {0} 減少しています"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.DISEASE_AMOUNT
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.DISEASE_AMOUNT"
@@ -67990,12 +68003,12 @@ msgstr "{0}: {1}"
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.DISEASE_AMOUNT_TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.DISEASE_AMOUNT_TOOLTIP"
 msgid "{0} are present on the surface of the selected object"
-msgstr "選択された物体の表面は {0} です"
+msgstr "選択された物体の表面には {0} が存在します"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.DYING_OFF.TITLE
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.DYING_OFF.TITLE"
 msgid "    • <b>Dying off: {0}</b>"
-msgstr "    • <b>死滅: {0}</b>"
+msgstr "    • <b>急速消滅: {0}</b>"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.DYING_OFF.TOOLTIP
 msgctxt ""
@@ -68008,8 +68021,8 @@ msgid ""
 msgstr ""
 "このエリアの病原菌の数はわずかであるため、菌はあっという間に死滅します\n"
 "\n"
-"この {1} に {0} 未満の病原菌が存在します。\n"
-"({2} germs/Kg)"
+"この {1} 中には {0} 未満の病原菌しか存在しません。\n"
+"({2} germs / kg)"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.ENVIRONMENT.DIE_TOOLTIP
 msgctxt ""
@@ -68027,7 +68040,7 @@ msgstr "この大気は病原菌を増殖させます"
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.ENVIRONMENT.TITLE"
 msgid "    • Surrounded by {0}: {1}"
-msgstr "    • {0} に囲まれた: {1}"
+msgstr "    • 周囲の{0}: {1}"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.HALF_LIFE_NEG
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.HALF_LIFE_NEG"
@@ -68051,18 +68064,18 @@ msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS."
 "HALF_LIFE_NEUTRAL_TOOLTIP"
 msgid "The germ count is neither increasing nor decreasing"
-msgstr "病原菌は増えも減りもしません"
+msgstr "病原菌の数は増減していません"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.HALF_LIFE_POS
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.HALF_LIFE_POS"
 msgid "Doubling time: {0}"
-msgstr "倍加時間: {0}"
+msgstr "倍増時間: {0}"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.HALF_LIFE_POS_TOOLTIP
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.HALF_LIFE_POS_TOOLTIP"
 msgid "In {0} the germ count on this object will be doubled"
-msgstr "この物体上の病原菌が倍加するまでの時間は {0} です"
+msgstr "この物体上の病原菌が倍増するまでの時間は {0} です"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.OVERPOPULATED.TITLE
 msgctxt ""
@@ -68080,22 +68093,22 @@ msgid ""
 "A maximum of {0} can be on this {1} of material.\n"
 "({2} germs/ kg)"
 msgstr ""
-"このエリアに病原菌が多すぎるため、安定するまでは急速に死滅します\n"
+"この領域の病原菌が多すぎるため、個体数が安定するまで急速に死滅します\n"
 "\n"
-"この {1} に最大 {0} の病原菌が存在できます。\n"
-"({2} germs/Kg)"
+"この物質 {1} には最大 {0} の病原菌が存在できます。\n"
+"({2} germs / kg)"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.PRESSURE.DIE_TOOLTIP
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.PRESSURE.DIE_TOOLTIP"
 msgid "Atmospheric pressure is causing germs to die off"
-msgstr "気圧は病原菌を死滅させます"
+msgstr "気圧の関係で病原菌が死滅しています"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.PRESSURE.GROW_TOOLTIP
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.PRESSURE.GROW_TOOLTIP"
 msgid "Atmospheric pressure is causing germs to multiply"
-msgstr "気圧は病原菌を増殖させます"
+msgstr "気圧の関係で病原菌が増殖しています"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.PRESSURE.TITLE
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.PRESSURE.TITLE"
@@ -68111,23 +68124,23 @@ msgstr "放射線に曝されると病原菌は死滅します"
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.TITLE
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RADIATION.TITLE"
 msgid "    • Exposed to {0} Rads: {1}"
-msgstr "    • 被ばく量 {0} Rads: {1}"
+msgstr "    • 被曝量 {0} Rads: {1}"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE"
 msgid "Change rate: {0}"
-msgstr "変動量: {0}"
+msgstr "増減速度: {0}"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE_TOOLTIP
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.RATE_OF_CHANGE_TOOLTIP"
 msgid "Germ count is fluctuating at a rate of {0}"
-msgstr "病原菌の変動量は {0} です"
+msgstr "病原菌の増減速度は {0} です"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE.DIE
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE.DIE"
 msgid "    • Dying on {0}: {1}"
-msgstr "    • 死滅中 {0}: {1}"
+msgstr "    • {0}による死滅: {1}"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE.DIE_TOOLTIP
 msgctxt ""
@@ -68138,7 +68151,7 @@ msgstr "この物質に接触した病原菌は死滅します"
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE.GROW
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE.GROW"
 msgid "    • Growing on {0}: {1}"
-msgstr "    • 増殖中 {0}: {1}"
+msgstr "    • {0}による増殖: {1}"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE.GROW_TOOLTIP
 msgctxt ""
@@ -68150,26 +68163,26 @@ msgstr "この物質に接触した病原菌は増殖します"
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE.NEUTRAL"
 msgid "    • No change on {0}"
-msgstr "    • 変化なし {0}"
+msgstr "    • {0}による増減なし"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE.NEUTRAL_TOOLTIP
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.SUBSTRATE."
 "NEUTRAL_TOOLTIP"
 msgid "Contact with this substance has no effect on germ count"
-msgstr "この物質は病原菌の数に影響を及ぼしません"
+msgstr "この物質との接触は病原菌の数に影響しません"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.TEMPERATURE.DIE_TOOLTIP
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.TEMPERATURE.DIE_TOOLTIP"
 msgid "This temperature is causing germs to die off"
-msgstr "この温度は病原菌を死滅させます"
+msgstr "この温度下では病原菌が死滅します"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.TEMPERATURE.GROW_TOOLTIP
 msgctxt ""
 "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.TEMPERATURE.GROW_TOOLTIP"
 msgid "This temperature is allowing germs to multiply"
-msgstr "この温度は病原菌を増殖させます"
+msgstr "この温度下では病原菌が増殖します"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.TEMPERATURE.TITLE
 msgctxt ""
@@ -68184,27 +68197,27 @@ msgid ""
 "Growth factors:"
 msgstr ""
 "\n"
-"増殖要因:"
+"増減要因:"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FACTORS.TOOLTIP"
 msgid "These conditions are contributing to the multiplication of germs"
-msgstr "これらの条件は病原菌の増殖を促します"
+msgstr "こうした条件は病原菌の増殖や死滅を促します"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FORMAT
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FORMAT"
 msgid "{0} spawned/cycle"
-msgstr "{0} 増殖/サイクル"
+msgstr "1サイクルで {0} 増殖"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FORMAT_TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.GROWTH_FORMAT_TOOLTIP"
 msgid "Germ count is being increased by {0}/cycle"
-msgstr "病原菌の数はサイクルあたり {0} 増殖します"
+msgstr "病原菌の数は1サイクルあたり {0} 増殖します"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.NEUTRAL_FORMAT
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.NEUTRAL_FORMAT"
 msgid "No change"
-msgstr "変化なし"
+msgstr "増減なし"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.NEUTRAL_FORMAT_TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.NEUTRAL_FORMAT_TOOLTIP"
@@ -68219,7 +68232,7 @@ msgstr "無菌"
 #. STRINGS.UI.DETAILTABS.DISEASE.DETAILS.NODISEASE_TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DETAILS.NODISEASE_TOOLTIP"
 msgid "There are no germs present on this object"
-msgstr "この物体上には菌が居ません"
+msgstr "この物体の表面には菌が存在しません"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.DISEASE_INFO_POPUP_BUTTON
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.DISEASE_INFO_POPUP_BUTTON"
@@ -68264,7 +68277,7 @@ msgstr "病原菌"
 #. STRINGS.UI.DETAILTABS.DISEASE.NO_CURRENT_GERMS
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.NO_CURRENT_GERMS"
 msgid "SURFACE GERMS"
-msgstr "表面上の病原菌"
+msgstr "表面の病原菌"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.TOOLTIP"
@@ -75614,13 +75627,13 @@ msgstr "ロケット工学{Hotkey}"
 #. STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.BUILDMENUTITLE
 msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.BUILDMENUTITLE"
 msgid "Storage"
-msgstr "格納"
+msgstr "収納"
 
 # 格納庫以外にも、農地タイルでこのアクションが使用できた
 #. STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.NAME
 msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.NAME"
 msgid "Storage"
-msgstr "格納"
+msgstr "収納"
 
 #. STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.TOOLTIP
 msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.STORAGE.TOOLTIP"
@@ -83724,7 +83737,7 @@ msgstr "ここに移動"
 #. STRINGS.UI.TOOLS.MOVETOLOCATION.UNREACHABLE
 msgctxt "STRINGS.UI.TOOLS.MOVETOLOCATION.UNREACHABLE"
 msgid "UNREACHABLE"
-msgstr "到達不可"
+msgstr "辿り着けない"
 
 #. STRINGS.UI.TOOLS.PLACE.NAME
 msgctxt "STRINGS.UI.TOOLS.PLACE.NAME"
@@ -84962,13 +84975,13 @@ msgstr "この複製人間をロケットの乗組員から<b>外し</b>ます"
 #. STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.ALLOWMANUALBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.ALLOWMANUALBUTTON"
 msgid "Allow Manual Use"
-msgstr "手動操作許可"
+msgstr "手動操作を許可"
 
 #. STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.ALLOWMANUALBUTTONTOOLTIP
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.ALLOWMANUALBUTTONTOOLTIP"
 msgid "Allow Duplicants to manually manage these storage materials"
-msgstr "この格納庫にある素材を複製人間に管理させます"
+msgstr "この設備の内容物を複製人間が取り扱うことを許可します"
 
 # 格納庫以外にも、農地タイルでこのアクションが使用できた
 #. STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.TITLE
@@ -85097,12 +85110,12 @@ msgstr "最大:"
 #. STRINGS.UI.UISIDESCREENS.CAPACITY_CONTROL_SIDE_SCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPACITY_CONTROL_SIDE_SCREEN.TITLE"
 msgid "Automated Storage Capacity"
-msgstr "自動格納庫容積"
+msgstr "自動収納庫容積"
 
 #. STRINGS.UI.UISIDESCREENS.CAPACITY_SIDE_SCREEN.TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPACITY_SIDE_SCREEN.TOOLTIP"
 msgid "Adjust the maximum amount that can be stored here"
-msgstr "ここに格納する最大容量を調整します"
+msgstr "ここに収納する最大容量を調整します"
 
 #. STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CAPTURE_POINT_SIDE_SCREEN.AUTOWRANGLE"
@@ -87563,7 +87576,7 @@ msgstr "<b>{0}</b>"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.RANGE"
 msgid "    • Potential Range: {0}/1 kg Fuel ({1})"
-msgstr "    • 航続距離: {0}/1 Kg 燃料 ({1})"
+msgstr "    • 航続距離: {0}/ 燃料 1kg ({1})"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.SPEED
 msgctxt ""
@@ -89228,7 +89241,7 @@ msgstr "淡水化装置から塩を除去します"
 #. STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.NAME"
 msgid "Empty Storage"
-msgstr "貯蔵分を空ける"
+msgstr "内容物を空ける"
 
 #. STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.NAME_OFF"
@@ -92739,6 +92752,10 @@ msgstr "水型小惑星"
 #~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_BUILDING3.DESC"
 #~ msgid "Further increases a Duplicant's construction speeds"
 #~ msgstr "複製人間の建設速度をかなり上昇させます"
+
+#~ msgctxt "STRINGS.ELEMENTS.FALLOUT.DESC"
+#~ msgid "TBD"
+#~ msgstr "TBD"
 
 #~ msgctxt "STRINGS.MISC.TAGS.COMBUSTIBLELIQUID"
 #~ msgid "Combustible Liquid"
