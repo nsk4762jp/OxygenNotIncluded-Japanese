@@ -1783,8 +1783,8 @@ msgid ""
 "\n"
 "Must be immersed in <link=\"ELEMENTSGAS\">Gas</link>."
 msgstr ""
-"<link=\"ELEMENTSGAS\">気体</link>を吸い上げ、<link=\"GASPIPING\">気体用パイプ"
-"</link>に移送します。\n"
+"<link=\"ELEMENTSGAS\">気体</link>を吸い上げ、<link=\"GASPIPING\">気体パイプ</"
+"link>へ流します。\n"
 "\n"
 "周囲に<link=\"ELEMENTSGAS\">気体</link>が必要です。"
 
@@ -1808,10 +1808,10 @@ msgid ""
 "\n"
 "Must be submerged in <link=\"ELEMENTSLIQUID\">Liquid</link>."
 msgstr ""
-"<link=\"ELEMENTSLIQUID\">液体</link>を吸い上げ、<link=\"LIQUIDPIPING\">パイプ"
-"</link>に移送します。\n"
+"<link=\"ELEMENTSLIQUID\">液体</link>を吸い上げ、<link=\"LIQUIDPIPING\">パイプ</"
+"link>へ流します。\n"
 "\n"
-"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めないといけません。"
+"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.DEVPUMPLIQUID.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.DEVPUMPLIQUID.NAME"
@@ -2735,7 +2735,7 @@ msgstr "<link=\"GANTRY\">整備用足場</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASBOTTLER.DESC"
 msgid ""
 "Canisters allow Duplicants to manually deliver gases from place to place."
-msgstr "ボンベは複製人間が気体を他の場所へ輸送できるようにします。"
+msgstr "ボンベを使えば、複製人間は気体を別の場所へ持ち運ぶことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASBOTTLER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASBOTTLER.EFFECT"
@@ -2743,8 +2743,8 @@ msgid ""
 "Automatically stores piped <link=\"ELEMENTSGAS\">Gases</link> into canisters "
 "for manual transport."
 msgstr ""
-"配管された<link=\"ELEMENTSGAS\">気体</link>を自動的に充填し、持ち運べるように"
-"します。"
+"気体パイプを通じて送られた<link=\"ELEMENTSGAS\">気体</link>をボンベに充填"
+"し、持ち運べるようにします。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASBOTTLER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASBOTTLER.NAME"
@@ -2836,7 +2836,9 @@ msgstr "<link=\"GASCARGOBAYSMALL\">気体貨物ボンベ</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUIT.DESC"
 msgid ""
 "Gas pipes are used to connect the inputs and outputs of ventilated buildings."
-msgstr "気体用パイプは換気設備の入力または出力として使われます。"
+msgstr ""
+"気体パイプは、設備の<link=\"GASPIPING\">気体入口</link>と<link=\"GASPIPING\">"
+"気体出口</link>を結ぶのに使われます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUIT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUIT.EFFECT"
@@ -2846,22 +2848,22 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"<link=\"GASPIPING\">送風口</link>から<link=\"GASPIPING\">排気口</link>へ"
-"<link=\"ELEMENTSGAS\">気体</link>を移送します。\n"
+"設備の<link=\"GASPIPING\">気体出口</link>から<link=\"GASPIPING\">気体入口</"
+"link>へ<link=\"ELEMENTSGAS\">気体</link>を運びます。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUIT.NAME"
 msgid "<link=\"GASCONDUIT\">Gas Pipe</link>"
-msgstr "<link=\"GASCONDUIT\">気体用パイプ</link>"
+msgstr "<link=\"GASCONDUIT\">気体パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITBRIDGE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITBRIDGE.DESC"
 msgid ""
 "Separate pipe systems prevent mingled contents from causing building damage."
 msgstr ""
-"パイプの配管を分離することで、設備損傷の原因となる内容物の混入を避けます。"
+"パイプの系統を分けることで、気体の混入による設備の損傷を防げます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITBRIDGE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITBRIDGE.EFFECT"
@@ -2871,9 +2873,9 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"他の<link=\"GASPIPING\">気体用パイプ</link>に干渉せずに配管できます。\n"
+"別の<link=\"GASPIPING\">気体パイプ</link>に干渉することなく交差できます。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITBRIDGE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITBRIDGE.NAME"
@@ -2920,7 +2922,7 @@ msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>に
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITDISEASESENSOR.NAME"
 msgid "<link=\"GASCONDUITDISEASESENSOR\">Gas Pipe Germ Sensor</link>"
-msgstr "<link=\"GASCONDUITDISEASESENSOR\">気体用パイプ 病原菌センサー</link>"
+msgstr "<link=\"GASCONDUITDISEASESENSOR\">気体パイプ 病原菌センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.DESC"
@@ -2959,7 +2961,7 @@ msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>に
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITELEMENTSENSOR.NAME"
 msgid "<link=\"GASCONDUITELEMENTSENSOR\">Gas Pipe Element Sensor</link>"
-msgstr "<link=\"GASCONDUITELEMENTSENSOR\">気体用パイプ 元素センサー</link>"
+msgstr "<link=\"GASCONDUITELEMENTSENSOR\">気体パイプ 元素センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.DESC"
@@ -2967,19 +2969,21 @@ msgid ""
 "Overflow valves can be used to prioritize which buildings should receive "
 "precious resources first."
 msgstr ""
-"余剰バルブは、貴重なリソースを最初に受け取る設備の優先度割当に使用できます。"
+"余剰バルブは、限られた資源を特定の設備へ優先的に振り分けるために使用します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.EFFECT"
 msgid ""
 "Fills a secondary<link=\"ELEMENTSGAS\">Gas</link> output only when its "
 "primary output is blocked."
-msgstr "メインとなる出力先が閉塞していると、セカンダリの出力に気体が流れます。"
+msgstr ""
+"主となる気体出口が詰まっている時のみ、副となる気体出口に<link=\"ELEMENTSGAS"
+"\">Gas</link>が流れます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITOVERFLOW.NAME"
 msgid "<link=\"GASCONDUITOVERFLOW\">Gas Overflow Valve</link>"
-msgstr "<link=\"GASCONDUITOVERFLOW\">余剰気体用バルブ</link>"
+msgstr "<link=\"GASCONDUITOVERFLOW\">余剰気体バルブ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.DESC"
@@ -2995,12 +2999,13 @@ msgid ""
 "Diverts <link=\"ELEMENTSGAS\">Gas</link> to a secondary input when its "
 "primary input overflows."
 msgstr ""
-"主入力があふれた時、副入力に<link=\"ELEMENTSGAS\">気体</link>を迂回させます。"
+"主となる気体入口が溢れると、副となる気体入口に<link=\"ELEMENTSGAS\">気体</"
+"link>を迂回させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITPREFERENTIALFLOW.NAME"
 msgid "<link=\"GASCONDUITPREFERENTIALFLOW\">Priority Gas Flow</link>"
-msgstr "<link=\"GASCONDUITPREFERENTIALFLOW\">優先付け気体用フロー</link>"
+msgstr "<link=\"GASCONDUITPREFERENTIALFLOW\">優先付け気体フロー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.DESC"
@@ -3008,8 +3013,8 @@ msgid ""
 "Radiant pipes pumping cold gas can be run through hot areas to help cool "
 "them down."
 msgstr ""
-"冷えたガスを流した輻射パイプを高温領域に張り巡らすことで、その領域を冷やすこ"
-"とができます。"
+"冷えた気体を流した輻射型パイプを高温領域に張り巡らすことで、その領域を冷やす"
+"ことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.EFFECT"
@@ -3019,15 +3024,15 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"周囲の環境と激しく<link=\"HEAT\">温度</link>交換をしながら、<link="
-"\"ELEMENTSGAS\">気体</link>を移送します。\n"
+"周囲の環境と激しく<link=\"HEAT\">温度</link>を交換しながら<link=\"ELEMENTSGAS"
+"\">気体</link>を運びます。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITRADIANT.NAME"
 msgid "<link=\"GASCONDUITRADIANT\">Radiant Gas Pipe</link>"
-msgstr "<link=\"GASCONDUITRADIANT\">輻射型 気体用パイプ</link>"
+msgstr "<link=\"GASCONDUITRADIANT\">輻射型 気体パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.DESC"
@@ -3074,14 +3079,17 @@ msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>に
 #. STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASCONDUITTEMPERATURESENSOR.NAME"
 msgid "<link=\"GASCONDUITTEMPERATURESENSOR\">Gas Pipe Thermo Sensor</link>"
-msgstr "<link=\"GASCONDUITTEMPERATURESENSOR\">気体用パイプ 温度センサー</link>"
+msgstr "<link=\"GASCONDUITTEMPERATURESENSOR\">気体パイプ 温度センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.DESC"
 msgid ""
 "All gases are sent into the building's output pipe, except the gas chosen "
 "for filtering."
-msgstr "指定した気体を除く全ての気体が出力先パイプに送出されます。"
+msgstr ""
+"フィルター指定した気体を除く全ての<link=\"ELEMENTSGAS\">気体</link>が、<link="
+"\"GASPIPING\">気体出口</link>に繫いだ<link=\"GASPIPING\">パイプ</link>へ流れ"
+"ます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.EFFECT"
@@ -3089,8 +3097,11 @@ msgid ""
 "Sieves one <link=\"ELEMENTSGAS\">Gas</link> from the air, sending it into a "
 "dedicated <link=\"GASPIPING\">Pipe</link>."
 msgstr ""
-"混合気体から、指定した<link=\"ELEMENTSGAS\">気体</link>をろ過し、別の口に繋"
-"がった<link=\"GASPIPING\">パイプ</link>へ移送します。"
+"混合気体から指定した<link=\"ELEMENTSGAS\">気体</link>を分別し、専用の<link="
+"\"GASPIPING\">気体出口</link>から<link=\"GASCONDUIT\">気体パイプ</link>へ流し"
+"ます。"
+"\n"
+"分別できる気体は一度に一種類だけです。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASFILTER.ELEMENT_NOT_SPECIFIED
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.ELEMENT_NOT_SPECIFIED"
@@ -3203,7 +3214,9 @@ msgstr "<link=\"GASLOGICVALVE\">気体遮断器</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.DESC"
 msgid ""
 "Mini pumps are useful for moving small quantities of gas with minimum power."
-msgstr "ミニポンプは最小のエネルギーで少量の気体を移動させるのに適しています。"
+msgstr ""
+"ミニポンプは、最小限の<link=\"POWER\">電力</link>で少量の<link=\"ELEMENTSGAS"
+"\">気体</link>を運ぶのに便利です。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASMINIPUMP.EFFECT"
@@ -3213,8 +3226,8 @@ msgid ""
 "\n"
 "Must be immersed in <link=\"ELEMENTSGAS\">Gas</link>."
 msgstr ""
-"<link=\"ELEMENTSGAS\">気体</link>を少量吸い上げ、<link=\"GASPIPING\">気体用パ"
-"イプ</link>に移送します。\n"
+"少量の<link=\"ELEMENTSGAS\">気体</link>を吸い上げ、<link=\"GASPIPING\">気体"
+"パイプ</link>へ流します。\n"
 "\n"
 "周囲に<link=\"ELEMENTSGAS\">気体</link>が必要です。"
 
@@ -3251,7 +3264,10 @@ msgstr "<link=\"GASPERMEABLEMEMBRANE\">気流タイル</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.DESC"
 msgid ""
 "Piping a pump's output to a building's intake will send gas to that building."
-msgstr "設置された場所の空気を吸気口から吸い込み、他の設備の出力に移送します。"
+msgstr ""
+"<link=\"GASPUMP\">吸気ポンプ</link>の<link=\"GASPIPING\">気体出口</link>と設"
+"備の<link=\"GASPIPING\">気体入口</link>をパイプで結ぶと、<link=\"ELEMENTSGAS"
+"\">気体</link>が設備へ送られます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASPUMP.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASPUMP.EFFECT"
@@ -3261,8 +3277,8 @@ msgid ""
 "\n"
 "Must be immersed in <link=\"ELEMENTSGAS\">Gas</link>."
 msgstr ""
-"<link=\"ELEMENTSGAS\">気体</link>を吸い上げ、<link=\"GASPIPING\">気体用パイプ"
-"</link>に移送します。\n"
+"<link=\"ELEMENTSGAS\">気体</link>を吸い上げ、<link=\"GASPIPING\">気体パイプ</"
+"link>へ流します。\n"
 "\n"
 "周囲に<link=\"ELEMENTSGAS\">気体</link>が必要です。"
 
@@ -3279,7 +3295,9 @@ msgstr "気体貯蔵槽にボンベで持ち運んでいる気体を入れるこ
 #. STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.EFFECT"
 msgid "Stores any <link=\"ELEMENTSGAS\">Gas</link> resources piped into it."
-msgstr "パイプ接続された<link=\"ELEMENTSGAS\">気体</link>資源を貯蔵します。"
+msgstr ""
+"気体パイプを通じて送られた<link=\"ELEMENTSGAS\">気体</link>資源を貯蔵しま"
+"す。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASRESERVOIR.NAME"
@@ -3290,7 +3308,7 @@ msgstr "<link=\"GASRESERVOIR\">気体貯蔵槽</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.DESC"
 msgid ""
 "Valves control the amount of gas that moves through pipes, preventing waste."
-msgstr "バルブは無損失でパイプを流れる気体の量を調整します。"
+msgstr "バルブは、パイプを流れる気体の量を調節して無駄を省きます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVALVE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.EFFECT"
@@ -3298,8 +3316,8 @@ msgid ""
 "Controls the <link=\"ELEMENTSGAS\">Gas</link> volume permitted through <link="
 "\"GASPIPING\">Pipes</link>."
 msgstr ""
-"<link=\"GASPIPING\">気体用パイプ</link>に流れる<link=\"ELEMENTSGAS\">気体</"
-"link>の量を調整します。"
+"<link=\"GASPIPING\">気体パイプ</link>に流れる<link=\"ELEMENTSGAS\">気体</"
+"link>の量を調節します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVALVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVALVE.NAME"
@@ -3309,7 +3327,7 @@ msgstr "<link=\"GASVALVE\">気体バルブ</link>"
 #. STRINGS.BUILDINGS.PREFABS.GASVENT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENT.DESC"
 msgid "Vents are an exit point for gases from ventilation systems."
-msgstr "通風口は気体換気系の出口にあたります。"
+msgstr "通風口は、気体の輸送網における出口に当たります。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENT.EFFECT"
@@ -3317,8 +3335,8 @@ msgid ""
 "Releases <link=\"ELEMENTSGAS\">Gas</link> from <link=\"GASPIPING\">Gas "
 "Pipes</link>."
 msgstr ""
-"<link=\"GASPIPING\">気体用パイプ</link>を通して<link=\"ELEMENTSGAS\">気体</"
-"link>を放出します。"
+"<link=\"GASPIPING\">気体パイプ</link>から<link=\"ELEMENTSGAS\">気体</link>を"
+"放出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENT.NAME"
@@ -3329,7 +3347,7 @@ msgstr "<link=\"GASVENT\">通風口</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.DESC"
 msgid ""
 "High pressure vents can expel gas into more highly pressurized environments."
-msgstr "高圧通風口は高圧環境下でも気体を排出できます。"
+msgstr "高圧通風口は、高圧環境下でも気体を放出できます。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.EFFECT"
@@ -3337,8 +3355,8 @@ msgid ""
 "Releases <link=\"ELEMENTSGAS\">Gas</link> from <link=\"GASPIPING\">Gas "
 "Pipes</link> into high pressure locations."
 msgstr ""
-"<link=\"ELEMENTSGAS\">気体用パイプ</link>を通して<link=\"GASPIPING\">気体</"
-"link>を高圧環境下に放出します。"
+"<link=\"GASPIPING\">気体パイプ</link>から<link=\"ELEMENTSGAS\">気体</link>を"
+"高圧環境下に放出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.GASVENTHIGHPRESSURE.NAME"
@@ -4123,7 +4141,7 @@ msgstr ""
 "\n"
 "床材としても使用でき、建築する前に向きを変えることができます。\n"
 "\n"
-"<link=\"LIQUIDPIPING\">液体用パイプ</link>による灌漑が必要です。"
+"<link=\"LIQUIDPIPING\">液体パイプ</link>による灌漑が必要です。"
 
 # 農耕タイルの対になるように訳語を変更
 #. STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.NAME
@@ -4211,7 +4229,8 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.DESC"
 msgid ""
 "Pipe insulation prevents gas contents from significantly changing "
 "temperature in transit."
-msgstr "パイプ断熱は移送中の気体の温度が変化するのを抑制します。"
+msgstr ""
+"パイプを断熱することで、中を流れる気体の温度が大きく変化するのを防ぎます。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.EFFECT"
@@ -4221,22 +4240,23 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"<link=\"ELEMENTSGAS\">気体</link>の<link=\"HEAT\">温度</link>変化を最小にした"
-"まま移送します。\n"
+"中を流れる<link=\"ELEMENTSGAS\">気体</link>の<link=\"HEAT\">温度</link>変化"
+"を最小限に抑えます。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDGASCONDUIT.NAME"
 msgid "<link=\"INSULATEDGASCONDUIT\">Insulated Gas Pipe</link>"
-msgstr "<link=\"INSULATEDGASCONDUIT\">断熱型 気体用パイプ</link>"
+msgstr "<link=\"INSULATEDGASCONDUIT\">断熱型 気体パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.DESC"
 msgid ""
 "Pipe insulation prevents liquid contents from significantly changing "
 "temperature in transit."
-msgstr "パイプ断熱は移送中の液体の温度が変化するのを抑制します。"
+msgstr ""
+"パイプを断熱することで、中を流れる液体の温度が大きく変化するのを防ぎます。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.EFFECT"
@@ -4246,15 +4266,15 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"<link=\"ELEMENTSLIQUID\">液体</link>の<link=\"HEAT\">温度</link>変化を最小に"
-"したまま移送します。\n"
+"中を流れる<link=\"ELEMENTSLIQUID\">液体</link>の<link=\"HEAT\">温度</link>変"
+"化を最小限に抑えます。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDLIQUIDCONDUIT.NAME"
 msgid "<link=\"INSULATEDLIQUIDCONDUIT\">Insulated Liquid Pipe</link>"
-msgstr "<link=\"INSULATEDLIQUIDCONDUIT\">断熱型 液体用パイプ</link>"
+msgstr "<link=\"INSULATEDLIQUIDCONDUIT\">断熱型 液体パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.DESC"
@@ -4272,7 +4292,7 @@ msgstr ""
 "超<link=\"HEAT\">高熱</link>下の<link=\"POWER\">電力</link>源どうしを接続しま"
 "す。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATEDWIRE.NAME"
@@ -4285,7 +4305,7 @@ msgid ""
 "The low thermal conductivity of insulated tiles slows any heat passing "
 "through them."
 msgstr ""
-"断熱型タイルの低い熱伝導率が、タイルを通して熱が伝わる速度を低減します。"
+"断熱型タイルは熱伝導率が低いため、タイルを通して熱が伝わる速度を遅くします。"
 
 #. STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.INSULATIONTILE.EFFECT"
@@ -4887,7 +4907,9 @@ msgstr "<link=\"LIQUIDCONDITIONER\">液体冷却機</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.DESC"
 msgid ""
 "Liquid pipes are used to connect the inputs and outputs of plumbed buildings."
-msgstr "液体用パイプは配管設備の入力または出力として使われます。"
+msgstr ""
+"液体パイプは、設備の<link=\"LIQUIDPIPING\">液体入口</link>と<link="
+"\"LIQUIDPIPING\">液体出口</link>を結ぶのに使われます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.EFFECT"
@@ -4897,15 +4919,15 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"<link=\"LIQUIDPIPING\">取水口</link>から<link=\"LIQUIDPIPING\">排水口</link>"
-"へ<link=\"ELEMENTSLIQUID\">液体</link>を移送します。\n"
+"設備の<link=\"LIQUIDPIPING\">液体出口</link>から<link=\"LIQUIDPIPING\">液体入"
+"口</link>へ<link=\"ELEMENTSLIQUID\">液体</link>を運びます。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUIT.NAME"
 msgid "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link>"
-msgstr "<link=\"LIQUIDCONDUIT\">液体用パイプ</link>"
+msgstr "<link=\"LIQUIDCONDUIT\">液体パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.DESC"
@@ -4913,7 +4935,7 @@ msgid ""
 "Separate pipe systems help prevent building damage caused by mingled pipe "
 "contents."
 msgstr ""
-"パイプの配管を分離することで、設備損傷の原因となる内容物の混入を避けます。"
+"パイプの系統を分けることで、液体の混入による設備の損傷を防げます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.EFFECT"
@@ -4923,9 +4945,9 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"他の<link=\"LIQUIDPIPING\">液体用パイプ</link>に干渉せずに配管できます。\n"
+"別の<link=\"LIQUIDPIPING\">液体パイプ</link>に干渉することなく交差できます。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITBRIDGE.NAME"
@@ -4975,7 +4997,7 @@ msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>に
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITDISEASESENSOR.NAME"
 msgid "<link=\"LIQUIDCONDUITDISEASESENSOR\">Liquid Pipe Germ Sensor</link>"
 msgstr ""
-"<link=\"LIQUIDCONDUITDISEASESENSOR\">液体用パイプ 病原菌センサー</link>"
+"<link=\"LIQUIDCONDUITDISEASESENSOR\">液体パイプ 病原菌センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.DESC"
@@ -5016,7 +5038,7 @@ msgstr "そうでない場合、<b><style=\"logic_off\">レッド</style></b>に
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITELEMENTSENSOR.NAME"
 msgid "<link=\"LIQUIDCONDUITELEMENTSENSOR\">Liquid Pipe Element Sensor</link>"
-msgstr "<link=\"LIQUIDCONDUITELEMENTSENSOR\">液体用パイプ 元素センサー</link>"
+msgstr "<link=\"LIQUIDCONDUITELEMENTSENSOR\">液体パイプ 元素センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.DESC"
@@ -5024,19 +5046,21 @@ msgid ""
 "Overflow valves can be used to prioritize which buildings should receive "
 "precious resources first."
 msgstr ""
-"余剰バルブは、貴重なリソースを最初に受け取る設備の優先度割当に使用できます。"
+"余剰バルブは、限られた資源を特定の設備へ優先的に振り分けるために使用します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.EFFECT"
 msgid ""
 "Fills a secondary<link=\"ELEMENTSLIQUID\">Liquid</link> output only when its "
 "primary output is blocked."
-msgstr "メインとなる出力先が閉塞していると、セカンダリの出力に液体が流れます。"
+msgstr ""
+"主となる液体出口が詰まっている時のみ、副となる液体出口に<link=\"ELEMENTSLIQUID"
+"\">液体</link>が流れます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITOVERFLOW.NAME"
 msgid "<link=\"LIQUIDCONDUITOVERFLOW\">Liquid Overflow Valve</link>"
-msgstr "<link=\"LIQUIDCONDUITOVERFLOW\">余剰液体用バルブ</link>"
+msgstr "<link=\"LIQUIDCONDUITOVERFLOW\">余剰液体バルブ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.DESC"
@@ -5052,13 +5076,13 @@ msgid ""
 "Diverts <link=\"ELEMENTSLIQUID\">Liquid</link> to a secondary input when its "
 "primary input overflows."
 msgstr ""
-"主入力があふれた時、副入力に<link=\"ELEMENTSLIQUID\">液体</link>を迂回させま"
-"す。"
+"主となる液体入口が溢れると、副となる液体入口に<link=\"ELEMENTSLIQUID\">液体</"
+"link>を迂回させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITPREFERENTIALFLOW.NAME"
 msgid "<link=\"LIQUIDCONDUITPREFERENTIALFLOW\">Priority Liquid Flow</link>"
-msgstr "<link=\"LIQUIDCONDUITPREFERENTIALFLOW\">優先付け液体用フロー</link>"
+msgstr "<link=\"LIQUIDCONDUITPREFERENTIALFLOW\">優先付け液体フロー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.DESC"
@@ -5080,12 +5104,12 @@ msgstr ""
 "周囲の環境と激しく<link=\"HEAT\">温度</link>交換をしながら、<link="
 "\"ELEMENTSLIQUID\">液体</link>を移送します。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITRADIANT.NAME"
 msgid "<link=\"LIQUIDCONDUITRADIANT\">Radiant Liquid Pipe</link>"
-msgstr "<link=\"LIQUIDCONDUITRADIANT\">輻射型 液体用パイプ</link>"
+msgstr "<link=\"LIQUIDCONDUITRADIANT\">輻射型 液体パイプ</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.DESC"
@@ -5135,7 +5159,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCONDUITTEMPERATURESENSOR.NAME"
 msgid ""
 "<link=\"LIQUIDCONDUITTEMPERATURESENSOR\">Liquid Pipe Thermo Sensor</link>"
 msgstr ""
-"<link=\"LIQUIDCONDUITTEMPERATURESENSOR\">液体用パイプ 温度センサー</link>"
+"<link=\"LIQUIDCONDUITTEMPERATURESENSOR\">液体パイプ 温度センサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDCOOLEDFAN.DESC"
@@ -5160,7 +5184,10 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.DESC"
 msgid ""
 "All liquids are sent into the building's output pipe, except the liquid "
 "chosen for filtering."
-msgstr "指定した液体を除く全ての液体が出力先パイプに送出されます。"
+msgstr ""
+"フィルター指定した液体を除く全ての<link=\"ELEMENTSLIQUID\">液体</link>が、"
+"<link=\"LIQUIDPIPING\">液体出口</link>に繫いだ<link=\"LIQUIDPIPING\">パイプ</"
+"link>へ流れます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.EFFECT"
@@ -5170,10 +5197,11 @@ msgid ""
 "\n"
 "Can only filter one liquid type at a time."
 msgstr ""
-"混合液体から、指定した<link=\"ELEMENTSLIQUID\">液体</link>をろ過し、別の口に"
-"繋がった<link=\"LIQUIDPIPING\">パイプ</link>へ移送します。\n"
+"混合液体から指定した<link=\"ELEMENTSLIQUID\">液体</link>を分別し、専用の"
+"<link=\"LIQUIDPIPING\">液体出口</link>から<link=\"LIQUIDCONDUIT\">液体パイプ"
+"</link>へ流します。"
 "\n"
-"ろ過できる液体は1度に1種類だけです。"
+"分別できる液体は一度に一種類だけです。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDFILTER.NAME"
@@ -5355,7 +5383,9 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.DESC"
 msgid ""
 "Mini pumps are useful for moving small quantities of liquid with minimum "
 "power."
-msgstr "ミニポンプは最小エネルギーで少量の液体を移動させるのに適しています。"
+msgstr ""
+"ミニポンプは、最小限の<link=\"POWER\">電力</link>で少量の<link="
+"\"ELEMENTSLIQUID\">液体</link>を運ぶのに便利です。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.EFFECT"
@@ -5365,10 +5395,10 @@ msgid ""
 "\n"
 "Must be submerged in <link=\"ELEMENTSLIQUID\">Liquid</link>."
 msgstr ""
-"<link=\"ELEMENTSLIQUID\">液体</link>を少量吸い上げ、<link=\"LIQUIDPIPING\">液"
-"体用パイプ</link>に移送します。\n"
+"少量の<link=\"ELEMENTSLIQUID\">液体</link>を吸い上げ、<link=\"LIQUIDPIPING\">"
+"パイプ</link>へ流します。\n"
 "\n"
-"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めないといけません。"
+"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDMINIPUMP.NAME"
@@ -5380,7 +5410,10 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.DESC"
 msgid ""
 "Piping a pump's output to a building's intake will send liquid to that "
 "building."
-msgstr "設置された場所の液体を給水口から吸い込み、他の設備の出力に移送します。"
+msgstr ""
+"<link=\"LIQUIDPUMP\">吸水ポンプ</link>の<link=\"LIQUIDPIPING\">液体出口</"
+"link>と設備の<link=\"LIQUIDPIPING\">液体入口</link>をパイプで結ぶと、<link="
+"\"ELEMENTSLIQUID\">液体</link>が設備へ送られます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.EFFECT"
@@ -5390,10 +5423,10 @@ msgid ""
 "\n"
 "Must be submerged in <link=\"ELEMENTSLIQUID\">Liquid</link>."
 msgstr ""
-"<link=\"ELEMENTSLIQUID\">液体</link>を吸い上げ、<link=\"LIQUIDPIPING\">パイプ"
-"</link>に移送します。\n"
+"<link=\"ELEMENTSLIQUID\">液体</link>を吸い上げ、<link=\"LIQUIDPIPING\">パイプ</"
+"link>へ流します。\n"
 "\n"
-"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めないといけません。"
+"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.NAME"
@@ -5448,7 +5481,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.DESC"
 msgid ""
 "Valves control the amount of liquid that moves through pipes, preventing "
 "waste."
-msgstr "バルブは無損失でパイプを流れる液体の量を調整します。"
+msgstr "バルブは、パイプを流れる液体の量を調節して無駄を省きます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.EFFECT"
@@ -5456,8 +5489,8 @@ msgid ""
 "Controls the <link=\"ELEMENTSLIQUID\">Liquid</link> volume permitted through "
 "<link=\"LIQUIDPIPING\">Pipes</link>."
 msgstr ""
-"<link=\"ELEMENTSLIQUID\">液体</link>の流量を調整し、接続された<link="
-"\"LIQUIDPIPING\">パイプ</link>に移します。"
+"<link=\"LIQUIDPIPING\">液体パイプ</link>に流れる<link=\"ELEMENTSLIQUID\">液体"
+"</link>の量を調節します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.NAME"
@@ -5467,7 +5500,7 @@ msgstr "<link=\"LIQUIDVALVE\">液体バルブ</link>"
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.DESC"
 msgid "Vents are an exit point for liquids from plumbing systems."
-msgstr "排水口は液体循環系の出口にあたります。"
+msgstr "排水口は、液体の輸送網における出口に当たります。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.EFFECT"
@@ -5475,8 +5508,8 @@ msgid ""
 "Releases <link=\"ELEMENTSLIQUID\">Liquid</link> from <link=\"LIQUIDPIPING"
 "\">Liquid Pipes</link>."
 msgstr ""
-"<link=\"LIQUIDPIPING\">液体用パイプ</link>を通して<link=\"ELEMENTSLIQUID\">液"
-"体</link>を放出します。"
+"<link=\"LIQUIDPIPING\">液体パイプ</link>から<link=\"ELEMENTSLIQUID\">液体</"
+"link>を放流します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.NAME"
@@ -6654,7 +6687,7 @@ msgstr ""
 "\"logic_on\">グリーン</style></b>または<b><style=\"logic_off\">レッド</"
 "style></b>になります。\n"
 "\n"
-"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めないといけません。"
+"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICPRESSURESENSORLIQUID.LOGIC_PORT"
@@ -6771,9 +6804,10 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"他の<link=\"LOGICRIBBON\">自動化リボン</link>に干渉せずに配線できます。\n"
+"別の<link=\"LOGICRIBBON\">自動化リボン</link>に干渉することなく交差できます。"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"\n"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONBRIDGE.LOGIC_PORT"
@@ -7205,7 +7239,7 @@ msgid ""
 msgstr ""
 "<link=\"LOGIC\">センサー</link>と設備を接続します。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICWIRE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIRE.NAME"
@@ -7228,9 +7262,9 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"他の<link=\"GASPIPING\">気体用パイプ</link>に干渉せずに配管できます。\n"
+"別の<link=\"GASPIPING\">気体パイプ</link>に干渉することなく交差できます。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICWIREBRIDGE.LOGIC_PORT"
@@ -9097,7 +9131,7 @@ msgstr ""
 "\n"
 "スイッチの前にある回路には影響を及ぼしません。\n"
 "\n"
-"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めないといけません。"
+"<link=\"ELEMENTSLIQUID\">液体</link>の中に沈めなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.PRESSURESWITCHLIQUID.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSURESWITCHLIQUID.NAME"
@@ -10084,17 +10118,17 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>資"
-"源をロケットに格納します。\n"
+"<link=\"ELEMENTSGAS\">気体</link>資源を、ロケットの格納モジュールへ<link="
+"\"GASCONDUIT\">パイプ</link>経由で送ります。\n"
 "\n"
-"気体は、空きがある最初のロケットモジュールに格納されます。\n"
+"気体は、空きがある最初のモジュールに格納されます。\n"
 "\n"
 "ロケット内部に建築する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUT.NAME"
 msgid "<link=\"ROCKETINTERIORGASINPUT\">Gas Intake Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORGASINPUT\">気体入力端子</link>"
+msgstr "<link=\"ROCKETINTERIORGASINPUT\">気体入口端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUTPORT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASINPUTPORT.DESC"
@@ -10134,17 +10168,17 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"<link=\"GASCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSGAS\">気体</link>資"
-"源をロケットから取り出します。\n"
+"<link=\"ELEMENTSGAS\">気体</link>資源を、ロケットの格納モジュールから<link="
+"\"GASCONDUIT\">パイプ</link>経由で取り出します。\n"
 "\n"
-"気体は、指定した資源を格納した最初のロケットモジュールから取り出されます。\n"
+"気体は、それを格納した最初のモジュールから取り出されます。\n"
 "\n"
 "ロケット内部に建築する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUT.NAME"
 msgid "<link=\"ROCKETINTERIORGASOUTPUT\">Gas Output Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORGASOUTPUT\">気体出力端子</link>"
+msgstr "<link=\"ROCKETINTERIORGASOUTPUT\">気体出口端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUTPORT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORGASOUTPUTPORT.DESC"
@@ -10180,17 +10214,17 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"<link=\"LIQUIDCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSLIQUID\">液体</"
-"link>資源をロケットに格納します。\n"
+"<link=\"ELEMENTSLIQUID\">液体</link>資源を、ロケットの格納モジュールへ<link="
+"\"LIQUIDCONDUIT\">パイプ</link>経由で送ります。\n"
 "\n"
-"液体は、空きがある最初のロケットモジュールに格納されます。\n"
+"液体は、空きがある最初のモジュールに格納されます。\n"
 "\n"
 "ロケット内部に建築する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUT.NAME"
 msgid "<link=\"ROCKETINTERIORLIQUIDINPUT\">Liquid Intake Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORLIQUIDINPUT\">液体入力端子</link>"
+msgstr "<link=\"ROCKETINTERIORLIQUIDINPUT\">液体入口端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUTPORT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDINPUTPORT.DESC"
@@ -10231,17 +10265,17 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"<link=\"LIQUIDCONDUIT\">パイプ</link>を通じて<link=\"ELEMENTSLIQUID\">液体</"
-"link>資源をロケットから取り出します。\n"
+"<link=\"ELEMENTSLIQUID\">液体</link>資源を、ロケットの格納モジュールから"
+"<link=\"LIQUIDCONDUIT\">パイプ</link>経由で取り出します。\n"
 "\n"
-"液体は、指定した資源を格納した最初のロケットモジュールから取り出されます。\n"
+"液体は、それを格納した最初のモジュールから取り出されます。\n"
 "\n"
 "ロケット内部に建築する必要があります。"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUT.NAME"
 msgid "<link=\"ROCKETINTERIORLIQUIDOUTPUT\">Liquid Output Fitting</link>"
-msgstr "<link=\"ROCKETINTERIORLIQUIDOUTPUT\">液体出力端子</link>"
+msgstr "<link=\"ROCKETINTERIORLIQUIDOUTPUT\">液体出口端子</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUTPORT.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROCKETINTERIORLIQUIDOUTPUTPORT.DESC"
@@ -10309,10 +10343,10 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"<link=\"SOLIDCONDUIT\">コンベアレール</link>を通じて<link=\"ELEMENTSSOLID\">"
-"固形素材</link>をロケットに格納します。\n"
+"<link=\"ELEMENTSSOLID\">固形素材</link>を、ロケットの格納モジュールへ<link="
+"\"SOLIDCONDUIT\">コンベアレール</link>経由で送ります。\n"
 "\n"
-"固形素材は、空きがある最初のロケットモジュールに格納されます。\n"
+"固形素材は、空きがある最初のモジュールに格納されます。\n"
 "\n"
 "ロケット内部に建築する必要があります。"
 
@@ -10337,11 +10371,10 @@ msgid ""
 "\n"
 "Must be built within the interior of a Rocket Module."
 msgstr ""
-"<link=\"SOLIDCONDUIT\">コンベアレール</link>を通じて<link=\"ELEMENTSSOLID\">"
-"固形素材</link>をロケットから取り出します。\n"
+"<link=\"ELEMENTSSOLID\">固形素材</link>を、ロケットの格納モジュールから<link="
+"\"SOLIDCONDUIT\">コンベアレール</link>経由で取り出します。\n"
 "\n"
-"固形素材は、指定した資源を格納した最初のロケットモジュールから取り出されま"
-"す。\n"
+"固形素材は、それを格納した最初のモジュールから取り出されます。\n"
 "\n"
 "ロケット内部に建築する必要があります。"
 
@@ -10936,7 +10969,7 @@ msgstr ""
 "ア ローダー</link>から<link=\"SOLIDCONDUITOUTBOX\">コンベア レセプター</link>"
 "まで輸送します。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUIT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUIT.NAME"
@@ -10948,7 +10981,8 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.DESC"
 msgid ""
 "Separating rail systems helps ensure materials go to the intended "
 "destinations."
-msgstr "レールを分けることで素材が誤った地点に送られるのを防ぎます。"
+msgstr ""
+"レールの系統を分けることで、素材が誤った地点へ送られるのを防げます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.EFFECT"
@@ -10958,9 +10992,10 @@ msgid ""
 "\n"
 "Can be run through wall and floor tile."
 msgstr ""
-"他の<link=\"SOLIDCONDUIT\">コンベアレール</link>に干渉せずに輸送できます。\n"
+"別の<link=\"SOLIDCONDUIT\">コンベアレール</link>に干渉することなく交差できま"
+"す。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITBRIDGE.NAME"
@@ -11152,7 +11187,9 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.DESC"
 msgid ""
 "All solids are sent into the building's output conveyor, except the solid "
 "chosen for filtering."
-msgstr "指定した資源を除く全ての固形素材がコンベア出力先に送出されます。"
+msgstr ""
+"フィルター指定した資源を除く全ての<link=\"ELEMENTSSOLID\">固形素材</link>が、"
+"コンベア出口に繫いだ<link=\"SOLIDCONDUIT\">コンベアレール</link>へ流れます。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.EFFECT"
@@ -11161,8 +11198,10 @@ msgid ""
 "conveyor, sending it into a dedicated <link=\"SOLIDCONDUIT\">Conveyor Rail</"
 "link>."
 msgstr ""
-"コンベアから、指定した<link=\"ELEMENTSSOLID\">固形素材</link>を分別し、別の口"
-"に繋がった <link=\"SOLIDCONDUIT\">コンベアレール</link>へ移送します。"
+"コンベアから指定した<link=\"ELEMENTSSOLID\">固形素材</link>を分別し、専用のコ"
+"ンベア出口から<link=\"SOLIDCONDUIT\">コンベアレール</link>へ流します。"
+"\n"
+"分別できる固形素材は一度に一種類だけです。"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.ELEMENT_NOT_SPECIFIED
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDFILTER.ELEMENT_NOT_SPECIFIED"
@@ -12575,7 +12614,7 @@ msgid ""
 msgstr ""
 "<link=\"POWER\">電力</link>源と設備を接続します。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.WIRE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIRE.NAME"
@@ -12600,7 +12639,7 @@ msgid ""
 msgstr ""
 "回路を他と合流させずに、電線をまたいで回路を構成します。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREBRIDGE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREBRIDGE.NAME"
@@ -12649,7 +12688,7 @@ msgid ""
 msgstr ""
 "<link=\"POWER\">電力</link>源と設備を接続します。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREREFINED.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINED.NAME"
@@ -12680,7 +12719,7 @@ msgstr ""
 "\n"
 "回路を他と合流させずに、電線をまたいで回路を構成します。\n"
 "\n"
-"壁や床のタイルを貫通して敷設できます。"
+"壁タイルや床タイルの中を通すことができます。"
 
 #. STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGE.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGE.NAME"
