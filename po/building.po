@@ -519,7 +519,7 @@ msgstr "パイプ詰まり"
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.TOOLTIP"
 msgid "Output <style=\"KKeyword\">Pipe</style> is blocked"
-msgstr "出力先の<style=\"KKeyword\">パイプ<style=\"KKeyword\">が詰まっています"
+msgstr "出口の<style=\"KKeyword\">パイプ</style>が詰まっています"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKEDMULTIPLES.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKEDMULTIPLES.NAME"
@@ -529,7 +529,7 @@ msgstr "パイプ詰まり"
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKEDMULTIPLES.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKEDMULTIPLES.TOOLTIP"
 msgid "Output <style=\"KKeyword\">Pipe</style> is blocked"
-msgstr "出力先の<style=\"KKeyword\">パイプ</style>が詰まっています"
+msgstr "出口の<style=\"KKeyword\">パイプ</style>が詰まっています"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_NO_PORT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONNECTED_ROCKET_NO_PORT.NAME"
@@ -1063,7 +1063,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.NAME"
 msgid "Emitting <link=\"OXYGEN\">Oxygen</link>: {FlowRate}"
-msgstr "<link=\"OXYGEN\">酸素</link>産出: {FlowRate}"
+msgstr "<link=\"OXYGEN\">酸素</link>を放出中: {FlowRate}"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMITTINGOXYGENAVG.TOOLTIP"
@@ -1071,8 +1071,8 @@ msgid ""
 "Producing <link=\"OXYGEN\">Oxygen</link> at a rate of <style=\"produced"
 "\">{FlowRate}</style>"
 msgstr ""
-"<link=\"OXYGEN\">酸素</link>を <style=\"produced\">{FlowRate}</style> 産出し"
-"ています"
+"<link=\"OXYGEN\">酸素</link>を <style=\"produced\">{FlowRate}</style> の速度"
+"で放出しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.EMPTYPUMPINGSTATION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.EMPTYPUMPINGSTATION.NAME"
@@ -2282,7 +2282,7 @@ msgid ""
 "No Gas Intake\n"
 "{GasRequired}"
 msgstr ""
-"気体の入力元なし\n"
+"気体の入口がない\n"
 "{GasRequired}"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDGASIN.TOOLTIP
@@ -2291,13 +2291,13 @@ msgid ""
 "This building's <style=\"KKeyword\">Gas Intake</style> does not have a <link="
 "\"GASCONDUIT\">Gas Pipe</link> connected"
 msgstr ""
-"この設備の<style=\"KKeyword\">気体入力元</style>に<link=\"GASCONDUIT\">気体パ"
-"イプ</link>が接続されていません"
+"この設備の<link=\"GASPIPING\">気体入口</link>に<link=\"GASCONDUIT\">気体パイ"
+"プ</link>が接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDGASOUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDGASOUT.NAME"
 msgid "No Gas Output"
-msgstr "気体の出力先がありません"
+msgstr "気体の出口がない"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDGASOUT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDGASOUT.TOOLTIP"
@@ -2305,8 +2305,8 @@ msgid ""
 "This building's <style=\"KKeyword\">Gas Output</style> does not have a <link="
 "\"GASCONDUIT\">Gas Pipe</link> connected"
 msgstr ""
-"この設備の<style=\"KKeyword\">気体出力先</style>に<link=\"GASCONDUIT\">気体パ"
-"イプ</link>が接続されていません"
+"この設備の<link=\"GASPIPING\">気体出口</link>に<link=\"GASCONDUIT\">気体パイ"
+"プ</link>が接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDIN.LINE_ITEM
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDIN.LINE_ITEM"
@@ -2319,7 +2319,7 @@ msgid ""
 "No Liquid Intake\n"
 "{LiquidRequired}"
 msgstr ""
-"液体の入力元なし\n"
+"液体の入口がない\n"
 "{LiquidRequired}"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDIN.TOOLTIP
@@ -2328,13 +2328,13 @@ msgid ""
 "This building's <style=\"KKeyword\">Liquid Intake</style> does not have a "
 "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link> connected"
 msgstr ""
-"この設備の<style=\"KKeyword\">液体入力元</style>に<link=\"LIQUIDCONDUIT\">液"
+"この設備の<link=\"LIQUIDPIPING\">液体入口</link>に<link=\"LIQUIDCONDUIT\">液"
 "体パイプ</link>が接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.NAME"
 msgid "No Liquid Output"
-msgstr "液体の出力先がありません"
+msgstr "液体の出口がない"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.TOOLTIP"
@@ -2342,7 +2342,7 @@ msgid ""
 "This building's <style=\"KKeyword\">Liquid Output</style> does not have a "
 "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link> connected"
 msgstr ""
-"この設備の<style=\"KKeyword\">液体出力先</style>に<link=\"LIQUIDCONDUIT\">液"
+"この設備の<link=\"LIQUIDPIPING\">液体出口</link>に<link=\"LIQUIDCONDUIT\">液"
 "体パイプ</link>が接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDPLANT.NAME
@@ -3010,7 +3010,7 @@ msgstr "出力先詰まり"
 #. STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.TOOLTIP"
 msgid "Output <style=\"KKeyword\">Pipe</style> is blocked"
-msgstr "出力先の<style=\"KKeyword\">パイプ<style=\"KKeyword\">が詰まっています"
+msgstr "出口の<style=\"KKeyword\">パイプ</style>が詰まっています"
 
 #. STRINGS.BUILDING.STATUSITEMS.OVERHEATED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OVERHEATED.NAME"
@@ -4187,12 +4187,12 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.NAME"
 msgid "Active"
-msgstr "アクティブ"
+msgstr "稼働中"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.TOOLTIP"
 msgid "This turbine is running at <b>{0}RPM</b>"
-msgstr "タービンは<b>{0}RPM</b>で稼働中です"
+msgstr "タービンは <b>{0}RPM</b> で稼働中です"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE_WATTAGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE_WATTAGE.NAME"
@@ -4210,18 +4210,18 @@ msgid ""
 "Increase {Src_Element} <style=\"KKeyword\">Mass</style> and <style=\"KKeyword"
 "\">Temperature</style> to improve output"
 msgstr ""
-"このタービンは<style=\"KKeyword\">電力</style>を<style=\"produced\">{Wattage}"
-"</style>出力しています\n"
+"このタービンは <style=\"produced\">{Wattage}</style> の<link=\"POWER\">電力</"
+"link>を生み出しています\n"
 "\n"
-"最大効率<b>{Efficiency}</b>で稼働しています\n"
+"最大出力の <b>{Efficiency}</b> で稼働しています\n"
 "\n"
-"{Src_Element}の<style=\"KKeyword\">量</style>と<style=\"KKeyword\">温度</"
-"style>を上げると出力効率が改善されます"
+"{Src_Element}の<style=\"KKeyword\">量</style>と<link=\"HEAT\">温度</link>を上"
+"げると出力効率が改善されます"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_INPUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_INPUT.NAME"
 msgid "All Inputs Blocked"
-msgstr "入力元が詰まっています"
+msgstr "全ての吸気口が塞がれている"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_INPUT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_INPUT.TOOLTIP"
@@ -4232,16 +4232,16 @@ msgid ""
 "The <style=\"KKeyword\">Input Vents</style> are located directly below the "
 "foundation <style=\"KKeyword\">Tile</style> this building is resting on."
 msgstr ""
-"このタービンの<style=\"KKeyword\">入力元</style>が詰まっているため、<link="
-"\"STEAM\">蒸気</link>を吸引できません。\n"
+"このタービンの<style=\"KKeyword\">吸気口</style>が一つ残らず塞がれているた"
+"め、<link=\"STEAM\">蒸気</link>を取り込めません。\n"
 "\n"
-"<style=\"KKeyword\">入力元</style>はこの設備が置かれている<style=\"KKeyword"
-"\">タイル</style>の真下にあります。"
+"<style=\"KKeyword\">吸気口</style>は、この設備の土台となる<style=\"KKeyword"
+"\">タイル</style>の一つ真下に位置しています。"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_OUTPUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_OUTPUT.NAME"
 msgid "Output Blocked"
-msgstr "出力先が詰まっています"
+msgstr "液体出口が詰まっている"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_OUTPUT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_OUTPUT.TOOLTIP"
@@ -4249,13 +4249,13 @@ msgid ""
 "A blocked <style=\"KKeyword\">Output</style> has stopped this turbine from "
 "functioning"
 msgstr ""
-"<style=\"KKeyword\">出力先</style>が詰まっているために、このタービンは機能し"
-"なくなりました"
+"<link=\"LIQUIDPIPING\">液体出口</link>が詰まっているため、このタービンは稼働"
+"していません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_MASS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_MASS.NAME"
 msgid "Not Enough {Src_Element}"
-msgstr "{Src_Element}不足"
+msgstr "{Src_Element}が不十分"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_MASS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_MASS.TOOLTIP"
@@ -4263,8 +4263,8 @@ msgid ""
 "The {Src_Element} present below this turbine must be at least <b>{Min_Mass}</"
 "b> in order to turn the turbine"
 msgstr ""
-"このタービンの下側にある{Src_Element}は、タービンが稼働するために最低でも"
-"<b>{Min_Mass}</b>に加圧されていなければなりません"
+"タービンが稼働するには、少なくとも <b>{Min_Mass}</b> の{Src_Element}がタービ"
+"ンの真下になければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME"
@@ -4277,13 +4277,13 @@ msgid ""
 "This turbine requires {Src_Element} that is a minimum of "
 "<b>{Active_Temperature}</b> in order to produce power"
 msgstr ""
-"このタービンが稼働するには最低<b>{Active_Temperature}</b>の{Src_Element}が必"
-"要です"
+"タービンが稼働するには、{Src_Element}の<link=\"HEAT\">温度</link>が少なくとも"
+" <b>{Active_Temperature}</b> 以上でなければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_PARTIALLY_BLOCKED_INPUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_PARTIALLY_BLOCKED_INPUT.NAME"
 msgid "{Blocked}/{Total} Inputs Blocked"
-msgstr "{Blocked}/{Total} 入力封鎖"
+msgstr "吸気口が塞がれている: {Blocked}/{Total}"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_PARTIALLY_BLOCKED_INPUT.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_PARTIALLY_BLOCKED_INPUT.TOOLTIP"
@@ -4291,8 +4291,8 @@ msgid ""
 "<b>{Blocked}</b> of this turbine's <b>{Total}</b> inputs have been blocked, "
 "resulting in reduced throughput"
 msgstr ""
-"このタービンの<b>{Total}</b>個ある入力のうち<b>{Blocked}</b>が詰まっており、"
-"出力が低下しています"
+"このタービンに <b>{Total}</b>つ ある吸気口のうち、<b>{Blocked}</b>つ が塞がれ"
+"ているため、出力が低下しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_SPINNING_UP.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_SPINNING_UP.NAME"
@@ -4322,8 +4322,8 @@ msgid ""
 "This turbine must be below <b>{Overheat_Temperature}</b> to properly process "
 "{Src_Element} into {Dest_Element}"
 msgstr ""
-"タービンが{Src_Element}を{Dest_Element}に変換するためには、温度が"
-"<b>{Overheat_Temperature}</b>未満でなければいけません"
+"タービンの<link=\"HEAT\">温度</link>が <b>{Overheat_Temperature}</b> 未満でな"
+"ければ、{Src_Element}を{Dest_Element}に変えることができません"
 
 #. STRINGS.BUILDING.STATUSITEMS.UNASSIGNED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.UNASSIGNED.NAME"
@@ -4534,7 +4534,7 @@ msgstr "圧力超過"
 #. STRINGS.BUILDING.STATUSITEMS.WELL_OVERPRESSURE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WELL_OVERPRESSURE.TOOLTIP"
 msgid "This well can no longer function due to excessive backpressure"
-msgstr "この泉は過大な背圧が発生しているため機能していません"
+msgstr "この油井は背圧が過大なため稼働していません"
 
 #. STRINGS.BUILDING.STATUSITEMS.WELL_PRESSURIZING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WELL_PRESSURIZING.NAME"
@@ -4547,8 +4547,8 @@ msgid ""
 "Well pressure increases with each use and must be periodically relieved to "
 "prevent shutdown"
 msgstr ""
-"泉の圧力は使用のたびに上昇し、機能不全を防ぐためには定期的に開放しなければな"
-"りません"
+"油井の稼働中は背圧が徐々に上昇します。機能停止を防ぐには定期的に開放しなけれ"
+"ばなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.WINDTUNNELINTAKE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WINDTUNNELINTAKE.NAME"
