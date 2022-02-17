@@ -2292,7 +2292,7 @@ msgid ""
 "This building's <style=\"KKeyword\">Gas Intake</style> does not have a <link="
 "\"GASCONDUIT\">Gas Pipe</link> connected"
 msgstr ""
-"この設備の<link=\"GASPIPING\">気体入口</link>に<link=\"GASCONDUIT\">気体パイ"
+"この設備の<style=\"KKeyword\">気体入口</style>に<link=\"GASCONDUIT\">気体パイ"
 "プ</link>が接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDGASOUT.NAME
@@ -2306,7 +2306,7 @@ msgid ""
 "This building's <style=\"KKeyword\">Gas Output</style> does not have a <link="
 "\"GASCONDUIT\">Gas Pipe</link> connected"
 msgstr ""
-"この設備の<link=\"GASPIPING\">気体出口</link>に<link=\"GASCONDUIT\">気体パイ"
+"この設備の<style=\"KKeyword\">気体出口</style>に<link=\"GASCONDUIT\">気体パイ"
 "プ</link>が接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDIN.LINE_ITEM
@@ -2329,8 +2329,8 @@ msgid ""
 "This building's <style=\"KKeyword\">Liquid Intake</style> does not have a "
 "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link> connected"
 msgstr ""
-"この設備の<link=\"LIQUIDPIPING\">液体入口</link>に<link=\"LIQUIDCONDUIT\">液"
-"体パイプ</link>が接続されていません"
+"この設備の<style=\"KKeyword\">液体入口</style>に<link=\"LIQUIDCONDUIT\">液体"
+"パイプ</link>が接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDLIQUIDOUT.NAME"
@@ -2343,8 +2343,8 @@ msgid ""
 "This building's <style=\"KKeyword\">Liquid Output</style> does not have a "
 "<link=\"LIQUIDCONDUIT\">Liquid Pipe</link> connected"
 msgstr ""
-"この設備の<link=\"LIQUIDPIPING\">液体出口</link>に<link=\"LIQUIDCONDUIT\">液"
-"体パイプ</link>が接続されていません"
+"この設備の<style=\"KKeyword\">液体出口</style>に<link=\"LIQUIDCONDUIT\">液体"
+"パイプ</link>が接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDPLANT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDPLANT.NAME"
@@ -2677,7 +2677,7 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.NOPOWERCONSUMERS.TOOLTIP"
 msgid ""
 "No buildings are connected to this <style=\"KKeyword\">Power</style> source"
 msgstr ""
-"この<style=\"KKeyword\">電源</style>を消費できる設備と接続されていません"
+"発電した<style=\"KKeyword\">電力</style>を消費する設備と接続されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NORESEARCHORDESTINATIONSELECTED.NAME"
@@ -2951,7 +2951,7 @@ msgstr "開放"
 #. STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.EXHAUSTING
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.EXHAUSTING"
 msgid "Excess produced"
-msgstr "生産過剰"
+msgstr "過剰発電"
 
 #. STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.FOOD_TRANSFER
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.FOOD_TRANSFER"
@@ -2966,12 +2966,12 @@ msgstr "    • {0}: {1}\n"
 #. STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.NAME"
 msgid "Heat Production: {0}/s"
-msgstr "熱排出量: {0}/s"
+msgstr "発熱量: {0}/s"
 
 #. STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.OPERATING
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.OPERATING"
 msgid "Normal operation"
-msgstr "通常操作"
+msgstr "通常運転"
 
 #. STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.PIPECONTENTS_TRANSFER
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OPERATINGENERGY.PIPECONTENTS_TRANSFER"
@@ -2986,9 +2986,9 @@ msgid ""
 "Sources:\n"
 "{1}"
 msgstr ""
-"この設備は DTU を秒間 <b>{0}</b> 生産します\n"
+"この設備は 1秒間に <b>{0}</b> 発熱します\n"
 "\n"
-"エネルギー源:\n"
+"熱源:\n"
 "{1}"
 
 #. STRINGS.BUILDING.STATUSITEMS.OUTPUTPIPEFULL.NAME
@@ -4194,7 +4194,7 @@ msgstr "稼働中"
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE.TOOLTIP"
 msgid "This turbine is running at <b>{0}RPM</b>"
-msgstr "タービンは <b>{0}RPM</b> で稼働中です"
+msgstr "このタービンは <b>{0}RPM</b> で稼働中です"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE_WATTAGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_ACTIVE_WATTAGE.NAME"
@@ -4212,13 +4212,13 @@ msgid ""
 "Increase {Src_Element} <style=\"KKeyword\">Mass</style> and <style=\"KKeyword"
 "\">Temperature</style> to improve output"
 msgstr ""
-"このタービンは <style=\"produced\">{Wattage}</style> の<link=\"POWER\">電力</"
-"link>を生み出しています\n"
+"このタービンは <style=\"produced\">{Wattage}</style> の<style=\"KKeyword\">電"
+"力</style>を生み出しています\n"
 "\n"
 "最大出力の <b>{Efficiency}</b> で稼働しています\n"
 "\n"
-"{Src_Element}の<style=\"KKeyword\">量</style>と<link=\"HEAT\">温度</link>を上"
-"げると出力効率が改善されます"
+"{Src_Element}の<style=\"KKeyword\">量</style>と<style=\"KKeyword\">温度</"
+"style>を上げると出力効率が改善されます"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_INPUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_BLOCKED_INPUT.NAME"
@@ -4251,8 +4251,8 @@ msgid ""
 "A blocked <style=\"KKeyword\">Output</style> has stopped this turbine from "
 "functioning"
 msgstr ""
-"<link=\"LIQUIDPIPING\">液体出口</link>が詰まっているため、このタービンは稼働"
-"していません"
+"<style=\"KKeyword\">液体出口</style>が詰まっているため、このタービンは稼働し"
+"ていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_MASS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_MASS.NAME"
@@ -4271,7 +4271,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.NAME"
 msgid "{Src_Element} Temperature Below {Active_Temperature}"
-msgstr "{Src_Element}の温度が{Active_Temperature}未満"
+msgstr "{Src_Element}の温度が {Active_Temperature} 未満"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_INSUFFICIENT_TEMPERATURE.TOOLTIP"
@@ -4279,8 +4279,8 @@ msgid ""
 "This turbine requires {Src_Element} that is a minimum of "
 "<b>{Active_Temperature}</b> in order to produce power"
 msgstr ""
-"タービンが稼働するには、{Src_Element}の<link=\"HEAT\">温度</link>が少なくとも"
-" <b>{Active_Temperature}</b> 以上でなければなりません"
+"タービンが稼働するには、{Src_Element}の<style=\"KKeyword\">温度</style>が少な"
+"くとも <b>{Active_Temperature}</b> 以上でなければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.TURBINE_PARTIALLY_BLOCKED_INPUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBINE_PARTIALLY_BLOCKED_INPUT.NAME"
@@ -4324,8 +4324,8 @@ msgid ""
 "This turbine must be below <b>{Overheat_Temperature}</b> to properly process "
 "{Src_Element} into {Dest_Element}"
 msgstr ""
-"タービンの<link=\"HEAT\">温度</link>が <b>{Overheat_Temperature}</b> 未満でな"
-"ければ、{Src_Element}を{Dest_Element}に変えることができません"
+"タービン自体の温度が <b>{Overheat_Temperature}</b> 未満でなければ、"
+"{Src_Element}を{Dest_Element}に変えることができません"
 
 #. STRINGS.BUILDING.STATUSITEMS.UNASSIGNED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.UNASSIGNED.NAME"
