@@ -1980,7 +1980,7 @@ msgstr "ロケット全長: "
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.TOOLTIP"
 msgid "The {0} can support a total rocket height {1}"
-msgstr "{0}は最大{1}までのロケット全長に対応しています"
+msgstr "{0}は最大 <b>{1}</b> までのロケット全長に対応しています"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_MODULES.NAME
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_MODULES.NAME"
@@ -23632,7 +23632,7 @@ msgstr "    • エンジン出力: {0} ({1})"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.HEIGHT"
 msgid "    • Height: {0}/{2} ({1})"
-msgstr "    • 全長: {0}/{2} ({1})"
+msgstr "    • 全長/上限: {0}/{2} ({1})"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.HEIGHT_NOMAX
 msgctxt ""
@@ -23658,7 +23658,7 @@ msgstr "<b>{0}</b>"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.RANGE"
 msgid "    • Potential Range: {0}/1 kg Fuel ({1})"
-msgstr "    • 航続距離: {0}/ 燃料 1kg ({1})"
+msgstr "    • 航続距離: {0} / 燃料 1kg ({1})"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.SPEED
 msgctxt ""
@@ -23670,7 +23670,7 @@ msgstr "    • 速度: {0} ({1})"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.MODULESTATCHANGE.TITLE"
 msgid "Rocket stats on construction:"
-msgstr "増築した場合のロケット性能:"
+msgstr "これを<i>追加</i>した後のロケット性能 (現在との差分):"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.TITLE"
@@ -23807,12 +23807,17 @@ msgctxt ""
 msgid "    • Engine's height limit reached or exceeded"
 msgstr "    • エンジンの全長制限に抵触します"
 
+# （バージョン494396現在）
+# メッセージの意図と、実際に表示される状況が一致していない
+# エンジンの建造が完了していない状態では、全長制限は働かない（ため、そうした警告文も表示されない）
+# このメッセージは、エンジンの建造が**既に完了している**状態で、エンジン以外のモジュールを選択し、モジュールの追加/変更を行おうとした際に、全長制限に抵触する場合に表示される
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_HEIGHT.FAILED_NO_ENGINE
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_HEIGHT."
 "FAILED_NO_ENGINE"
 msgid "    • Rocket requires space for an engine"
-msgstr "    • ロケットにエンジンを取り付けるスペースが必要です"
+#~ msgstr "    • エンジンを取り付ける空間が必要です"
+msgstr "    • エンジンの全長制限に抵触します"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.MAX_MODULES.COMPLETE
 msgctxt ""
@@ -23854,7 +23859,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS."
 "ONE_ENGINE_PER_ROCKET.FAILED"
 msgid "    • Engine module already installed"
-msgstr "    • エンジンモジュールは既に取り付け済みです"
+msgstr "    • エンジンは既に取り付け済みです"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.PASSENGER_MODULE_AVAILABLE.COMPLETE
 msgctxt ""
@@ -23895,7 +23900,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.SPACE_AVAILABLE."
 "FAILED"
 msgid "    • Space above rocket blocked"
-msgstr "    • ロケット上部の空間が封鎖されています"
+msgstr "    • ロケットにぶつかる障害物があります"
 
 #. STRINGS.UI.UISIDESCREENS.SELECTMODULESIDESCREEN.CONSTRAINTS.TOP_ONLY.COMPLETE
 msgctxt ""
