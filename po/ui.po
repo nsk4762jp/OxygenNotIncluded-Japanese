@@ -776,7 +776,7 @@ msgstr "    • 設備: {buildinglist}"
 #. STRINGS.UI.BUILDINGEFFECTS.ROCKETRESTRICTION_HEADER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.ROCKETRESTRICTION_HEADER"
 msgid "Restriction Control:"
-msgstr "操作制限:"
+msgstr "使用制限:"
 
 #. STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH"
@@ -1627,14 +1627,14 @@ msgid ""
 "\n"
 "{buildinglist}"
 msgstr ""
-"この端末は、以下の設備の稼働状況を管理します:\n"
+"この端末は、次の設備の使用を許可するか否か制御します:\n"
 "\n"
 "{buildinglist}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ROCKETRESTRICTION_HEADER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ROCKETRESTRICTION_HEADER"
 msgid "Controls whether a building is operational within a rocket interior"
-msgstr "設備がロケット内で稼働可能かを制御します"
+msgstr "ロケット内で設備の使用を許可するか否か制御します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH"
@@ -1972,7 +1972,7 @@ msgstr "最大ロケット全長: "
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.NAME_RAW
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.NAME_RAW"
 msgid "Height: "
-msgstr "ロケット全長: "
+msgstr "モジュールの全長: "
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.TOOLTIP"
@@ -1992,12 +1992,12 @@ msgstr "{0}は(自身を含まず)最大 {1} 個のモジュールを接続で�
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.NAME
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.NAME"
 msgid "Module Stats: "
-msgstr "モジュールの状態: "
+msgstr "モジュールの性能: "
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.NAME_HEADER
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.NAME_HEADER"
 msgid "Module Stats"
-msgstr "モジュールの状態"
+msgstr "モジュールの性能"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.TOOLTIP"
@@ -2068,7 +2068,7 @@ msgstr ""
 "<b>ロケット速度</b>とは、<b>エンジン出力</b>を<b>総重量</b>で割ったもので"
 "す。\n"
 "\n"
-"オートパイロット中のロケットは減速します。\n"
+"オートパイロット中のロケットは速度が低下します。\n"
 "\n"
 "ロケット速度は複製人間のスキルによって上昇させることができます。"
 
@@ -18704,17 +18704,17 @@ msgstr "発射台なし"
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.FAILURE"
 msgid "Not on a launch pad"
-msgstr "発射台上にない"
+msgstr "発射台上にありません"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.READY"
 msgid "On a launch pad"
-msgstr "発射台上"
+msgstr "発射台上にあります"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.WARNING"
 msgid "No launch pad"
-msgstr "発射台なし"
+msgstr "発射台がありません"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.FAILURE"
@@ -21290,7 +21290,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
 "DROPDOWN_TOOLTIP_FIRST_AVAILABLE"
 msgid "Select the first available landing site"
-msgstr "有効な着陸地点を指定します"
+msgstr "はじめに空いた発射台に着陸します"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_PAD_DISABLED
 msgctxt ""
@@ -21304,14 +21304,14 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
 "DROPDOWN_TOOLTIP_PATH_OBSTRUCTED"
 msgid "Landing path obstructed"
-msgstr "着陸進路が阻害されています"
+msgstr "着陸進路に障害物があります"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_SITE_OBSTRUCTED
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
 "DROPDOWN_TOOLTIP_SITE_OBSTRUCTED"
 msgid "Landing position on the platform is obstructed"
-msgstr "着陸地点であるロケット発射台が阻害されています"
+msgstr "着陸地点であるロケット発射台に障害物があります"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_TOO_SHORT
 msgctxt ""
@@ -21325,12 +21325,13 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
 "DROPDOWN_TOOLTIP_VALID_SITE"
 msgid "Land at {0} when the site is clear"
-msgstr "準備ができ次第{0}に着陸します"
+msgstr "場所が空いていれば、{0}に着陸します"
 
+# 「すべてのロケット発射台」では長すぎて2行になってしまうため
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.FIRSTAVAILABLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.FIRSTAVAILABLE"
 msgid "Any <link=\"LAUNCHPAD\">Rocket Platform</link>"
-msgstr "すべての<link=\"LAUNCHPAD\">ロケット発射台</link>"
+msgstr "すべての<link=\"LAUNCHPAD\">発射台</link>"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.LOOP_BUTTON_TOOLTIP
 msgctxt ""
@@ -21344,7 +21345,7 @@ msgstr "元の発射地点と目的地の間を往復させるかどうか切り
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NO_TALL_SITES_AVAILABLE"
 msgid "No landing sites fit the height of this rocket"
-msgstr "このロケットの全長に合った着陸地点がありません"
+msgstr "このロケットの全長を収容できる着陸地点がありません"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NONEAVAILABLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NONEAVAILABLE"
@@ -23429,7 +23430,7 @@ msgstr "ランチャーの目的地には{0}が指定されています"
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.MINIMUM_PAYLOAD_MASS
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.MINIMUM_PAYLOAD_MASS"
 msgid "Minimum launch mass:"
-msgstr "最小発射質量:"
+msgstr "最小射出質量:"
 
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET"
@@ -23741,16 +23742,16 @@ msgid ""
 "Buildings with their access restricted cannot be operated, though they can "
 "still be filled"
 msgstr ""
-"設備制限は自動化によって管理されています\n"
+"内装設備の使用制限は自動化信号によって管理されています\n"
 "\n"
-"アクセス制限された設備は積み込みは行えますが操作はできません"
+"使用を制限された設備は使用できなくなりますが、積み込みは行えます"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.BUILDING_RESTRICTIONS_LABEL
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN."
 "BUILDING_RESTRICTIONS_LABEL"
 msgid "Interior Building Restrictions"
-msgstr "内装設備制限"
+msgstr "内装設備の使用制限"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.GROUNDED_RESTRICTION_BUTTON
 msgctxt ""
@@ -23766,7 +23767,8 @@ msgctxt ""
 msgid ""
 "Buildings with their access restricted cannot be operated while grounded, "
 "though they can still be filled"
-msgstr "アクセス制限された設備は積み込みは行えますが着陸中は操作はできません"
+msgstr ""
+"使用を制限された設備は着陸中に使用できなくなりますが、積み込みは行えます"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.NONE_RESTRICTION_BUTTON
 msgctxt ""
@@ -23779,7 +23781,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN."
 "NONE_RESTRICTION_BUTTON_TOOLTIP"
 msgid "There are no restrictions on buildings inside this rocket"
-msgstr "このロケット内に制限可能な設備はありません"
+msgstr "このロケットの内部では設備の使用制限を行いません"
 
 #. STRINGS.UI.UISIDESCREENS.ROLESTATION.OPENROLESBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.ROLESTATION.OPENROLESBUTTON"
@@ -26143,12 +26145,12 @@ msgstr "移設指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_CONTROLLED
 msgctxt "STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_CONTROLLED"
 msgid "Controlled"
-msgstr "制御中"
+msgstr "制御する"
 
 #. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_UNCONTROLLED
 msgctxt "STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_UNCONTROLLED"
 msgid "Uncontrolled"
-msgstr "制御なし"
+msgstr "制御をやめる"
 
 #. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_CONTROLLED
 msgctxt "STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_CONTROLLED"
@@ -26156,8 +26158,8 @@ msgid ""
 "Allow this building's operation to be controlled by a <link="
 "\"ROCKETCONTROLSTATION\">Rocket Control Station</link>"
 msgstr ""
-"この設備の操作を<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>に任せ"
-"ます"
+"この設備の使用制限を<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>に"
+"任せます"
 
 #. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_UNCONTROLLED
 msgctxt ""
