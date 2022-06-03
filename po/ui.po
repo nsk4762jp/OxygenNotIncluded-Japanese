@@ -776,7 +776,7 @@ msgstr "    • 設備: {buildinglist}"
 #. STRINGS.UI.BUILDINGEFFECTS.ROCKETRESTRICTION_HEADER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.ROCKETRESTRICTION_HEADER"
 msgid "Restriction Control:"
-msgstr "使用制限:"
+msgstr "操作制限:"
 
 #. STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH"
@@ -786,6 +786,14 @@ msgstr "毛刈り可能な {Item}: {Time}ごとに{Amount}"
 #. STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_ATMO
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_ATMO"
 msgid "Shearable {Item}: {Amount} per {Time} ({Atmosphere})"
+msgstr "毛刈り可能な {Item}: {Time}ごとに{Amount} ({Atmosphere})"
+
+#. STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_TEMP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_ATMO"
+#| msgid "Shearable {Item}: {Amount} per {Time} ({Atmosphere})"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_TEMP"
+msgid "Shearable {Item}: {Amount} per {Time} ({TempMin}-{TempMax})"
 msgstr "毛刈り可能な {Item}: {Time}ごとに{Amount} ({Atmosphere})"
 
 #. STRINGS.UI.BUILDINGEFFECTS.STORAGECAPACITY
@@ -1627,14 +1635,14 @@ msgid ""
 "\n"
 "{buildinglist}"
 msgstr ""
-"この端末は、次の設備の使用を許可するか否か制御します:\n"
+"この端末は、以下の設備の稼働状況を管理します:\n"
 "\n"
 "{buildinglist}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ROCKETRESTRICTION_HEADER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ROCKETRESTRICTION_HEADER"
 msgid "Controls whether a building is operational within a rocket interior"
-msgstr "ロケット内で設備の使用を許可するか否か制御します"
+msgstr "設備がロケット内で稼働可能かを制御します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH"
@@ -1653,6 +1661,29 @@ msgid ""
 "------------------\n"
 "It must be kept in <style=\"KKeyword\">{Atmosphere}</style>-rich "
 "environments to regrow sheared <style=\"KKeyword\">{Item}</style>"
+msgstr ""
+"この動物は<b>{Time}</b>ごとに毛刈りで<style=\"produced\">{Amount}</style>の"
+"<style=\"KKeyword\">{Item}</style>が得られます\n"
+"------------------\n"
+"<style=\"KKeyword\">{Item}</style>の再生には<style=\"KKeyword\">{Atmosphere}"
+"</style>豊富な環境が必要です"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_TEMP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_ATMO"
+#| msgid ""
+#| "This critter can be sheared every <b>{Time}</b> to produce <style="
+#| "\"produced\">{Amount}</style> of <style=\"KKeyword\">{Item}</style>\n"
+#| "------------------\n"
+#| "It must be kept in <style=\"KKeyword\">{Atmosphere}</style>-rich "
+#| "environments to regrow sheared <style=\"KKeyword\">{Item}</style>"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_TEMP"
+msgid ""
+"This critter can be sheared every <b>{Time}</b> to produce <style=\"produced"
+"\">{Amount}</style> of <style=\"KKeyword\">{Item}</style>\n"
+"------------------\n"
+"It must eat food between {TempMin}-{TempMax} to regrow sheared <style="
+"\"KKeyword\">{Item}</style>"
 msgstr ""
 "この動物は<b>{Time}</b>ごとに毛刈りで<style=\"produced\">{Amount}</style>の"
 "<style=\"KKeyword\">{Item}</style>が得られます\n"
@@ -1846,8 +1877,11 @@ msgid "Cosmic Radiation"
 msgstr "宇宙放射線"
 
 #. STRINGS.UI.CLUSTERMAP.CHANGE_DESTINATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.CHANGE_DESTINATION"
+#| msgid "Click to change destination"
 msgctxt "STRINGS.UI.CLUSTERMAP.CHANGE_DESTINATION"
-msgid "Click to change destination"
+msgid "\\Click\\ to change destination"
 msgstr "目的地変更"
 
 #. STRINGS.UI.CLUSTERMAP.DESTINATION
@@ -1972,7 +2006,7 @@ msgstr "最大ロケット全長: "
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.NAME_RAW
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.NAME_RAW"
 msgid "Height: "
-msgstr "モジュールの全長: "
+msgstr "ロケット全長: "
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MAX_HEIGHT.TOOLTIP"
@@ -1992,12 +2026,12 @@ msgstr "{0}は(自身を含まず)最大 {1} 個のモジュールを接続で�
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.NAME
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.NAME"
 msgid "Module Stats: "
-msgstr "モジュールの性能: "
+msgstr "モジュールの状態: "
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.NAME_HEADER
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.NAME_HEADER"
 msgid "Module Stats"
-msgstr "モジュールの性能"
+msgstr "モジュールの状態"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.MODULE_STATS.TOOLTIP"
@@ -2068,7 +2102,7 @@ msgstr ""
 "<b>ロケット速度</b>とは、<b>エンジン出力</b>を<b>総重量</b>で割ったもので"
 "す。\n"
 "\n"
-"オートパイロット中のロケットは速度が低下します。\n"
+"オートパイロット中のロケットは減速します。\n"
 "\n"
 "ロケット速度は複製人間のスキルによって上昇させることができます。"
 
@@ -2128,12 +2162,19 @@ msgid "???"
 msgstr "???"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_FOG_OF_WAR
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_FOG_OF_WAR"
+#| msgid ""
+#| "Rockets cannot travel to this hex until it has been analyzed\n"
+#| "\n"
+#| "Space can be analyzed with a <link=\"TELESCOPE\">Telescope</link> or "
+#| "<link=\"SCANNERMODULE\">Cartographic Module</link>"
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_FOG_OF_WAR"
 msgid ""
 "Rockets cannot travel to this hex until it has been analyzed\n"
 "\n"
-"Space can be analyzed with a <link=\"TELESCOPE\">Telescope</link> or <link="
-"\"SCANNERMODULE\">Cartographic Module</link>"
+"Space can be analyzed with a <link=\"CLUSTERTELESCOPE\">Telescope</link> or "
+"<link=\"SCANNERMODULE\">Cartographic Module</link>"
 msgstr ""
 "このヘクスの解析が完了するまでロケットはここに移動できません\n"
 "\n"
@@ -2157,12 +2198,19 @@ msgstr ""
 "査ロボモジュール</link>を使用して偵察隊を降下させ、最初の接触を行ってください"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_NO_PATH
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_NO_PATH"
+#| msgid ""
+#| "There is no navigable rocket path to this Planetoid\n"
+#| "\n"
+#| "Space can be analyzed with a <link=\"TELESCOPE\">Telescope</link> or "
+#| "<link=\"SCANNERMODULE\">Cartographic Module</link> to clear the way"
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_NO_PATH"
 msgid ""
 "There is no navigable rocket path to this Planetoid\n"
 "\n"
-"Space can be analyzed with a <link=\"TELESCOPE\">Telescope</link> or <link="
-"\"SCANNERMODULE\">Cartographic Module</link> to clear the way"
+"Space can be analyzed with a <link=\"CLUSTERTELESCOPE\">Telescope</link> or "
+"<link=\"SCANNERMODULE\">Cartographic Module</link> to clear the way"
 msgstr ""
 "この<style=\"KKeyword\">小惑星</style>への航路がありません\n"
 "\n"
@@ -2207,18 +2255,28 @@ msgid "Back ({0})"
 msgstr "戻る({0})"
 
 #. STRINGS.UI.CODEX.BACK_BUTTON_NO_HISTORY_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.BACK_BUTTON_NO_HISTORY_TOOLTIP"
+#| msgid ""
+#| "Click to go back:\n"
+#| "N/A"
 msgctxt "STRINGS.UI.CODEX.BACK_BUTTON_NO_HISTORY_TOOLTIP"
 msgid ""
-"Click to go back:\n"
+"\\Click\\ to go back:\n"
 "N/A"
 msgstr ""
 "クリックして戻る:\n"
 "N/A"
 
 #. STRINGS.UI.CODEX.BACK_BUTTON_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.BACK_BUTTON_TOOLTIP"
+#| msgid ""
+#| "Click to go back:\n"
+#| "{0}"
 msgctxt "STRINGS.UI.CODEX.BACK_BUTTON_TOOLTIP"
 msgid ""
-"Click to go back:\n"
+"\\Click\\ to go back:\n"
 "{0}"
 msgstr ""
 "クリックして戻る:\n"
@@ -2293,6 +2351,14 @@ msgstr "<link=\"FOOD\">食糧</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.GEYSERS"
 msgid "<link=\"GEYSERS\">Geysers</link>"
 msgstr "<link=\"GEYSERS\">間欠泉</link>"
+
+#. STRINGS.UI.CODEX.CATEGORYNAMES.INDUSTRIALINGREDIENTS
+#, fuzzy
+#| msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.INDUSTRIAL.NAME"
+#| msgid "<link=\"BUILDCATEGORYINDUSTRIAL\">Industrials</link>"
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.INDUSTRIALINGREDIENTS"
+msgid "<link=\"INDUSTRIALINGREDIENTS\">Industrial Ingredients</link>"
+msgstr "<link=\"BUILDCATEGORYINDUSTRIAL\">工業</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.INVESTIGATIONS
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.INVESTIGATIONS"
@@ -2421,18 +2487,28 @@ msgstr ""
 "腐敗まで: {2}"
 
 #. STRINGS.UI.CODEX.FORWARD_BUTTON_NO_HISTORY_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.FORWARD_BUTTON_NO_HISTORY_TOOLTIP"
+#| msgid ""
+#| "Click to go forward:\n"
+#| "N/A"
 msgctxt "STRINGS.UI.CODEX.FORWARD_BUTTON_NO_HISTORY_TOOLTIP"
 msgid ""
-"Click to go forward:\n"
+"\\Click\\ to go forward:\n"
 "N/A"
 msgstr ""
 "クリックして進む:\n"
 "N/A"
 
 #. STRINGS.UI.CODEX.FORWARD_BUTTON_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.FORWARD_BUTTON_TOOLTIP"
+#| msgid ""
+#| "Click to go forward:\n"
+#| "{0}"
 msgctxt "STRINGS.UI.CODEX.FORWARD_BUTTON_TOOLTIP"
 msgid ""
-"Click to go forward:\n"
+"\\Click\\ to go forward:\n"
 "{0}"
 msgstr ""
 "クリックして進む:\n"
@@ -3494,6 +3570,232 @@ msgctxt "STRINGS.UI.CONSUMABLESSCREEN.TOOLTIP_TOGGLE_ROW"
 msgid "Toggle <b>all consumable permissions</b> for <b>{0}</b>"
 msgstr "<b>{0}</b>に対し、<b>あらゆる</b>食糧の摂取を許可/禁止します"
 
+#. STRINGS.UI.CONTROLS.CLICK
+#, fuzzy
+#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.EXPLORE_OIL_BIOME"
+#| msgid "Slick"
+msgctxt "STRINGS.UI.CONTROLS.CLICK"
+msgid "Click"
+msgstr "油まみれ"
+
+#. STRINGS.UI.CONTROLS.CLICKABLE
+msgctxt "STRINGS.UI.CONTROLS.CLICKABLE"
+msgid "Clickable"
+msgstr ""
+
+#. STRINGS.UI.CONTROLS.CLICKABLELOWER
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TELEPHONELONGDISTANCE.NAME"
+#| msgid "Sociable"
+msgctxt "STRINGS.UI.CONTROLS.CLICKABLELOWER"
+msgid "clickable"
+msgstr "懇親会"
+
+#. STRINGS.UI.CONTROLS.CLICKABLEUPPER
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.MOVETOLOCATION.TOOLACTION"
+#| msgid "CLICK"
+msgctxt "STRINGS.UI.CONTROLS.CLICKABLEUPPER"
+msgid "CLICKABLE"
+msgstr "クリック"
+
+#. STRINGS.UI.CONTROLS.CLICKED
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.REGIONISBLOCKED.NAME"
+#| msgid "Blocked"
+msgctxt "STRINGS.UI.CONTROLS.CLICKED"
+msgid "Clicked"
+msgstr "妨害されている"
+
+#. STRINGS.UI.CONTROLS.CLICKEDLOWER
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.REGIONISBLOCKED.NAME"
+#| msgid "Blocked"
+msgctxt "STRINGS.UI.CONTROLS.CLICKEDLOWER"
+msgid "clicked"
+msgstr "妨害されている"
+
+#. STRINGS.UI.CONTROLS.CLICKEDUPPER
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.MOVETOLOCATION.TOOLACTION"
+#| msgid "CLICK"
+msgctxt "STRINGS.UI.CONTROLS.CLICKEDUPPER"
+msgid "CLICKED"
+msgstr "クリック"
+
+#. STRINGS.UI.CONTROLS.CLICKING
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHOREGROUPS.COOK.NAME"
+#| msgid "Cooking"
+msgctxt "STRINGS.UI.CONTROLS.CLICKING"
+msgid "Clicking"
+msgstr "料理"
+
+# 訳語が見つからない...
+#. STRINGS.UI.CONTROLS.CLICKINGLOWER
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.PREFIX.NB.SLICKITY"
+#| msgid "Slickity"
+msgctxt "STRINGS.UI.CONTROLS.CLICKINGLOWER"
+msgid "clicking"
+msgstr "スリック"
+
+#. STRINGS.UI.CONTROLS.CLICKINGUPPER
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.MOVETOLOCATION.TOOLACTION"
+#| msgid "CLICK"
+msgctxt "STRINGS.UI.CONTROLS.CLICKINGUPPER"
+msgid "CLICKING"
+msgstr "クリック"
+
+#. STRINGS.UI.CONTROLS.CLICKLOWER
+#, fuzzy
+#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.EXPLORE_OIL_BIOME"
+#| msgid "Slick"
+msgctxt "STRINGS.UI.CONTROLS.CLICKLOWER"
+msgid "click"
+msgstr "油まみれ"
+
+#. STRINGS.UI.CONTROLS.CLICKS
+#, fuzzy
+#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.EXPLORE_OIL_BIOME"
+#| msgid "Slick"
+msgctxt "STRINGS.UI.CONTROLS.CLICKS"
+msgid "Clicks"
+msgstr "油まみれ"
+
+#. STRINGS.UI.CONTROLS.CLICKSLOWER
+#, fuzzy
+#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.EXPLORE_OIL_BIOME"
+#| msgid "Slick"
+msgctxt "STRINGS.UI.CONTROLS.CLICKSLOWER"
+msgid "clicks"
+msgstr "油まみれ"
+
+#. STRINGS.UI.CONTROLS.CLICKSUPPER
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.MOVETOLOCATION.TOOLACTION"
+#| msgid "CLICK"
+msgctxt "STRINGS.UI.CONTROLS.CLICKSUPPER"
+msgid "CLICKS"
+msgstr "クリック"
+
+#. STRINGS.UI.CONTROLS.CLICKUPPER
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.MOVETOLOCATION.TOOLACTION"
+#| msgid "CLICK"
+msgctxt "STRINGS.UI.CONTROLS.CLICKUPPER"
+msgid "CLICK"
+msgstr "クリック"
+
+#. STRINGS.UI.CONTROLS.PRESS
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TITLE"
+#| msgid "Pressure"
+msgctxt "STRINGS.UI.CONTROLS.PRESS"
+msgid "Press"
+msgstr "圧力"
+
+#. STRINGS.UI.CONTROLS.PRESSABLE
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.MESS_STATION_SINGLE.NAME"
+#| msgid "Mess Table"
+msgctxt "STRINGS.UI.CONTROLS.PRESSABLE"
+msgid "Pressable"
+msgstr "食卓"
+
+#. STRINGS.UI.CONTROLS.PRESSABLELOWER
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.MESS_STATION_SINGLE.NAME"
+#| msgid "Mess Table"
+msgctxt "STRINGS.UI.CONTROLS.PRESSABLELOWER"
+msgid "pressable"
+msgstr "食卓"
+
+#. STRINGS.UI.CONTROLS.PRESSABLEUPPER
+#, fuzzy
+#| msgctxt "STRINGS.UI.CONFIRMDIALOG.DIALOG_HEADER"
+#| msgid "MESSAGE"
+msgctxt "STRINGS.UI.CONTROLS.PRESSABLEUPPER"
+msgid "PRESSABLE"
+msgstr "メッセージ"
+
+#. STRINGS.UI.CONTROLS.PRESSED
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NAME"
+#| msgid "Stressed"
+msgctxt "STRINGS.UI.CONTROLS.PRESSED"
+msgid "Pressed"
+msgstr "ストレス"
+
+#. STRINGS.UI.CONTROLS.PRESSEDLOWER
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NAME"
+#| msgid "Stressed"
+msgctxt "STRINGS.UI.CONTROLS.PRESSEDLOWER"
+msgid "pressed"
+msgstr "ストレス"
+
+#. STRINGS.UI.CONTROLS.PRESSEDUPPER
+msgctxt "STRINGS.UI.CONTROLS.PRESSEDUPPER"
+msgid "PRESSED"
+msgstr ""
+
+#. STRINGS.UI.CONTROLS.PRESSES
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TITLE"
+#| msgid "Pressure"
+msgctxt "STRINGS.UI.CONTROLS.PRESSES"
+msgid "Presses"
+msgstr "圧力"
+
+#. STRINGS.UI.CONTROLS.PRESSESLOWER
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NAME"
+#| msgid "Stressed"
+msgctxt "STRINGS.UI.CONTROLS.PRESSESLOWER"
+msgid "presses"
+msgstr "ストレス"
+
+#. STRINGS.UI.CONTROLS.PRESSESUPPER
+msgctxt "STRINGS.UI.CONTROLS.PRESSESUPPER"
+msgid "PRESSES"
+msgstr ""
+
+#. STRINGS.UI.CONTROLS.PRESSING
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.STRESSHEAL.STATUS"
+#| msgid "De-stressing"
+msgctxt "STRINGS.UI.CONTROLS.PRESSING"
+msgid "Pressing"
+msgstr "脱ストレス中"
+
+#. STRINGS.UI.CONTROLS.PRESSINGLOWER
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.STRESSHEAL.STATUS"
+#| msgid "De-stressing"
+msgctxt "STRINGS.UI.CONTROLS.PRESSINGLOWER"
+msgid "pressing"
+msgstr "脱ストレス中"
+
+#. STRINGS.UI.CONTROLS.PRESSINGUPPER
+msgctxt "STRINGS.UI.CONTROLS.PRESSINGUPPER"
+msgid "PRESSING"
+msgstr ""
+
+#. STRINGS.UI.CONTROLS.PRESSLOWER
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.STRESS.HEADER_1"
+#| msgid "Stress"
+msgctxt "STRINGS.UI.CONTROLS.PRESSLOWER"
+msgid "press"
+msgstr "ストレス"
+
+#. STRINGS.UI.CONTROLS.PRESSUPPER
+msgctxt "STRINGS.UI.CONTROLS.PRESSUPPER"
+msgid "PRESS"
+msgstr ""
+
 #. STRINGS.UI.COPIED_SETTINGS
 msgctxt "STRINGS.UI.COPIED_SETTINGS"
 msgid "Settings Applied"
@@ -3505,10 +3807,15 @@ msgid "Copy"
 msgstr "コピー"
 
 #. STRINGS.UI.COPY_BUILDING_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.COPY_BUILDING_TOOLTIP"
+#| msgid ""
+#| "Create new build orders using the current building selection as a "
+#| "template. {Hotkey}"
 msgctxt "STRINGS.UI.COPY_BUILDING_TOOLTIP"
 msgid ""
-"Create new build orders using the current building selection as a template. "
-"{Hotkey}"
+"Create new build orders using the most recent building selection as a "
+"template. {Hotkey}"
 msgstr "選択した設備を元に、新しい設備の建築命令を出します。{Hotkey}"
 
 #. STRINGS.UI.CRAFT
@@ -4947,11 +5254,6 @@ msgstr ""
 "\n"
 "- Kleiの開発チームより"
 
-#. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.CONTINUEBUTTON
-msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.CONTINUEBUTTON"
-msgid "Okay, thanks for the heads up!"
-msgstr "了解です、警告どうも！"
-
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.FORUMBUTTON
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.FORUMBUTTON"
 msgid "Visit Forums"
@@ -4987,6 +5289,50 @@ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.FULL_PATCH_NOTES"
 msgid "Full Patch Notes"
 msgstr "全ての更新履歴"
 
+#. STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.BODY
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.BODY"
+msgid ""
+"Whoops!\n"
+"\n"
+"You’re about to opt in to the <b>Previous Update branch</b>. That means "
+"opting out of all new features, fixes and content from the live branch.\n"
+"\n"
+"This branch is temporary. It will be replaced when the next update is "
+"released. It’s also completely unsupported—please don’t report bugs or "
+"issues you find here.\n"
+"\n"
+"Are you sure you want to opt in?"
+msgstr ""
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.CONTINUEBUTTON
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.CONTINUEBUTTON"
+msgid "Play Old Version"
+msgstr ""
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.FORUMBUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.DETAILS.MINION_TOOLTIP"
+#| msgid "More information"
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.FORUMBUTTON"
+msgid "More Information"
+msgstr "追加情報"
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.QUITBUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MINSPECSCREEN.QUITBUTTON"
+#| msgid "Quit"
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.QUITBUTTON"
+msgid "Quit"
+msgstr "終了"
+
+#. STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.TITLE"
+#| msgid "<b>Welcome to Oxygen Not Included!</b>"
+msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_UPDATE.TITLE"
+msgid "<b>Welcome to Oxygen Not Included!</b>"
+msgstr "<b>Oxygen Not Included にようこそ！</b>"
+
 #. STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_VERSION
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.PREVIOUS_VERSION"
 msgid "Previous Version"
@@ -5019,11 +5365,17 @@ msgid "BUG FORUMS"
 msgstr "バグフォーラム"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.TESTING_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.TESTING_TOOLTIP"
+#| msgid ""
+#| "This game is currently running a Test version.\n"
+#| "\n"
+#| "Click for more info."
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.TESTING_TOOLTIP"
 msgid ""
 "This game is currently running a Test version.\n"
 "\n"
-"Click for more info."
+"\\Click\\ for more info."
 msgstr ""
 "現在テストバージョンで動作中です。\n"
 "\n"
@@ -5065,32 +5417,54 @@ msgid "BUILD: {0}"
 msgstr "ビルド: {0}"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALERT_ONLY
+#, fuzzy
+#| msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALERT_ONLY"
+#| msgid ""
+#| "Click to subscribe to this diagnostic - Current State:  <b>Never "
+#| "Visible      </b>"
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALERT_ONLY"
 msgid ""
-"Click to subscribe to this diagnostic - Current State:  <b>Never "
+"\\Click\\ to subscribe to this diagnostic - Current State:  <b>Never "
 "Visible      </b>"
 msgstr "診断を再表示するにはクリック - 現在の状態: <b>二度と表示しない</b>"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALWAYS
+#, fuzzy
+#| msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALWAYS"
+#| msgid ""
+#| "Click to pin this diagnostic to the sidebar - Current State: <b>Visible "
+#| "On Alert Only</b>"
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.ALWAYS"
 msgid ""
-"Click to pin this diagnostic to the sidebar - Current State: <b>Visible On "
-"Alert Only</b>"
+"\\Click\\ to pin this diagnostic to the sidebar - Current State: <b>Visible "
+"On Alert Only</b>"
 msgstr ""
 "診断をサイドバーに表示するにはクリック - 現在の状態: <b>警告時のみ表示</b>"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.NEVER
+#, fuzzy
+#| msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.NEVER"
+#| msgid ""
+#| "Click to mute this diagnostic on the sidebar -  Current State: <b>Always "
+#| "Visible</b>"
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.NEVER"
 msgid ""
-"Click to mute this diagnostic on the sidebar -  Current State: <b>Always "
+"\\Click\\ to mute this diagnostic on the sidebar -  Current State: <b>Always "
 "Visible</b>"
 msgstr ""
 "診断をサイドバーから非表示にするにはクリック - 現在の状態: <b>常に表示</b>"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED"
+#| msgid ""
+#| "Click to enable this diagnostic -  Current State: <b>Temporarily "
+#| "disabled</b>"
 msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.CLICK_TOGGLE_MESSAGE.TUTORIAL_DISABLED"
 msgid ""
-"Click to enable this diagnostic -  Current State: <b>Temporarily disabled</b>"
+"\\Click\\ to enable this diagnostic -  Current State: <b>Temporarily "
+"disabled</b>"
 msgstr "診断を表示するにはクリック - 現在の状態: <b>一時無効</b>"
 
 #. STRINGS.UI.DIAGNOSTICS_SCREEN.CRITERIA_ENABLED_COUNT
@@ -7286,10 +7660,65 @@ msgctxt "STRINGS.UI.FRONTEND.DEMO_OVER_SCREEN.TITLE"
 msgid "Thanks for playing!"
 msgstr "遊んでくれてありがとう！"
 
+#. STRINGS.UI.FRONTEND.DEVTOOLS.BUTTON
+msgctxt "STRINGS.UI.FRONTEND.DEVTOOLS.BUTTON"
+msgid "Show Dev Tools"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.DEVTOOLS.DONTSHOW
+msgctxt "STRINGS.UI.FRONTEND.DEVTOOLS.DONTSHOW"
+msgid "Do not show this message again"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.DEVTOOLS.TITLE
+msgctxt "STRINGS.UI.FRONTEND.DEVTOOLS.TITLE"
+msgid "About Dev Tools"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.DEVTOOLS.WARNING
+msgctxt "STRINGS.UI.FRONTEND.DEVTOOLS.WARNING"
+msgid ""
+"DANGER!!\n"
+"\n"
+"Dev Tools are intended for developer use only. Using them may result in your "
+"save becoming unplayable, unstable, or severely damaged.\n"
+"\n"
+"These tools are completely unsupported and may contain bugs. Are you sure "
+"you want to continue?"
+msgstr ""
+
 #. STRINGS.UI.FRONTEND.DONE_BUTTON
 msgctxt "STRINGS.UI.FRONTEND.DONE_BUTTON"
 msgid "DONE"
 msgstr "完了"
+
+#. STRINGS.UI.FRONTEND.FEEDBACK_SCREEN.ALT_DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.FEEDBACK_SCREEN.DESCRIPTION"
+#| msgid ""
+#| "Let us know if you encounter any problems or how we can improve your "
+#| "Oxygen Not Included experience.\n"
+#| "\n"
+#| "When reporting a bug, please include your log and colony save file. The "
+#| "buttons to the right will help you find those files on your local drive.\n"
+#| "\n"
+#| "Thank you for being part of the Oxygen Not Included community!"
+msgctxt "STRINGS.UI.FRONTEND.FEEDBACK_SCREEN.ALT_DESCRIPTION"
+msgid ""
+"Let us know if you encounter any problems or how we can improve your Oxygen "
+"Not Included experience.\n"
+"\n"
+"When reporting a bug, please include your log and colony save file.\n"
+"\n"
+"Thank you for being part of the Oxygen Not Included community!"
+msgstr ""
+"Oxygen Not Included プレイ体験を改善するために、あなたのご意見をお聞かせくだ"
+"さい。\n"
+"\n"
+"バグ報告の際はセーブファイルとエラーログも送付してください。右にあるボタンを"
+"押すと、それらのファイルがどこにあるか教えてくれます。\n"
+"\n"
+"ONIコミュニティに参加していただきありがとうございます！"
 
 #. STRINGS.UI.FRONTEND.FEEDBACK_SCREEN.BUG_FORUMS_BUTTON
 msgctxt "STRINGS.UI.FRONTEND.FEEDBACK_SCREEN.BUG_FORUMS_BUTTON"
@@ -7892,10 +8321,17 @@ msgid "VISIT FORUMS"
 msgstr "フォーラム"
 
 #. STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_INFO
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_INFO"
+#| msgid ""
+#| "We've changed how save files are organized!\n"
+#| "Please click the button below to automatically update your save file "
+#| "storage."
 msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.MIGRATE_INFO"
 msgid ""
 "We've changed how save files are organized!\n"
-"Please click the button below to automatically update your save file storage."
+"Please \\click\\ the button below to automatically update your save file "
+"storage."
 msgstr ""
 "セーブファイルの保存方法を変更しました！\n"
 "\n"
@@ -8985,8 +9421,8 @@ msgstr "STEAM WORKSHOP"
 
 #. STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER
 msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
-msgid "BLAST OFF!"
-msgstr "BLAST OFF!"
+msgid "FAST FRIENDS"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.MOTD.NEWS_BODY
 msgctxt "STRINGS.UI.FRONTEND.MOTD.NEWS_BODY"
@@ -9002,14 +9438,26 @@ msgid "JOIN THE DISCUSSION"
 msgstr "議論に参加"
 
 #. STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
+#| msgid ""
+#| "This minor update includes:\n"
+#| "\n"
+#| "•<indent=20px>Better controller support for Steam users.</indent>\n"
+#| "•<indent=20px>Steam Deck compatibility.</indent>\n"
+#| "•<indent=20px>Minor UI changes to accommodate smaller displays and "
+#| "resolutions.</indent>\n"
+#| "•<indent=20px>Numerous crash and bug fixes.</indent>\n"
+#| "\n"
+#| "   Check out the full patch notes for more details!"
 msgctxt "STRINGS.UI.FRONTEND.MOTD.PATCH_NOTES_SUMMARY"
 msgid ""
-"This minor update includes:\n"
+"This update includes:\n"
 "\n"
-"•<indent=20px>Better controller support for Steam users.</indent>\n"
-"•<indent=20px>Steam Deck compatibility.</indent>\n"
-"•<indent=20px>Minor UI changes to accommodate smaller displays and "
-"resolutions.</indent>\n"
+"•<indent=20px>Significant performance improvements.</indent>\n"
+"•<indent=20px>New Duplicants.</indent>\n"
+"•<indent=20px>New Overjoyed and Stressed traits.</indent>\n"
+"•<indent=20px>New Critter morphs.</indent>\n"
 "•<indent=20px>Numerous crash and bug fixes.</indent>\n"
 "\n"
 "   Check out the full patch notes for more details!"
@@ -9183,6 +9631,11 @@ msgstr "ワールド生成キー"
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.FULLPATCHNOTES_TOOLTIP"
 msgid "View the full patch notes online"
 msgstr "オンラインでパッチノート全文を参照する"
+
+#. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.HEADER
+msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.HEADER"
+msgid "IMPORTANT UPDATE NOTES"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON"
@@ -9685,12 +10138,22 @@ msgstr ""
 "残念ながら、芽の出ないシードもあります。違うシード値で再度行ってください。"
 
 #. STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FILES
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FILES"
+#| msgid ""
+#| "A problem occurred while accessing certain game files that will prevent "
+#| "starting new games.\n"
+#| "\n"
+#| "Please ensure you can modify these files and re-launch the game:\n"
+#| "\n"
+#| "{0}"
 msgctxt "STRINGS.UI.FRONTEND.SUPPORTWARNINGS.WORLD_GEN_FILES"
 msgid ""
 "A problem occurred while accessing certain game files that will prevent "
 "starting new games.\n"
 "\n"
-"Please ensure you can modify these files and re-launch the game:\n"
+"Please ensure that the directory and files are readable as well as writable "
+"and re-launch the game:\n"
 "\n"
 "{0}"
 msgstr ""
@@ -10320,6 +10783,23 @@ msgstr "この植物は収穫されると成熟に<b>{0}</b> かかります"
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_ATMOSPHERE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_ATMOSPHERE"
 msgid "This plant must be submerged in one of the following gases: {0}"
+msgstr "この植物を育てるには次の気体中に存在する必要があります: {0}"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_ATMOSPHERE_LIQUID
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_ATMOSPHERE"
+#| msgid "This plant must be submerged in one of the following gases: {0}"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_ATMOSPHERE_LIQUID"
+msgid "This plant must be submerged in one of the following liquids: {0}"
+msgstr "この植物を育てるには次の気体中に存在する必要があります: {0}"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_ATMOSPHERE_MIXED
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_ATMOSPHERE"
+#| msgid "This plant must be submerged in one of the following gases: {0}"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_ATMOSPHERE_MIXED"
+msgid ""
+"This plant must be submerged in one of the following gases or liquids: {0}"
 msgstr "この植物を育てるには次の気体中に存在する必要があります: {0}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_DARKNESS
@@ -13613,9 +14093,17 @@ msgid ""
 msgstr ""
 
 #. STRINGS.UI.PRIORITYSCREEN.OPEN_JOBS_SCREEN
+#, fuzzy
+#| msgctxt "STRINGS.UI.PRIORITYSCREEN.OPEN_JOBS_SCREEN"
+#| msgid ""
+#| "Click to open the Priorities Screen\n"
+#| "------------------\n"
+#| "Duplicants will first decide what to work on based on their <style="
+#| "\"KKeyword\">Duplicant Priorities</style>, and then decide where to work "
+#| "based on <style=\"KKeyword\">Building Priorities</style>"
 msgctxt "STRINGS.UI.PRIORITYSCREEN.OPEN_JOBS_SCREEN"
 msgid ""
-"Click to open the Priorities Screen\n"
+"\\Click\\ to open the Priorities Screen\n"
 "------------------\n"
 "Duplicants will first decide what to work on based on their <style=\"KKeyword"
 "\">Duplicant Priorities</style>, and then decide where to work based on "
@@ -13830,11 +14318,17 @@ msgstr ""
 "({2}のうち{1}が保留中)"
 
 #. STRINGS.UI.RESOURCESCREEN.CATEGORY_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.RESOURCESCREEN.CATEGORY_TOOLTIP"
+#| msgid ""
+#| "Counts all unallocated resources within reach\n"
+#| "------------------\n"
+#| "Click to expand"
 msgctxt "STRINGS.UI.RESOURCESCREEN.CATEGORY_TOOLTIP"
 msgid ""
 "Counts all unallocated resources within reach\n"
 "------------------\n"
-"Click to expand"
+"\\Click\\ to expand"
 msgstr ""
 "範囲内の割り当てられていない全ての資源を数えます\n"
 "------------------\n"
@@ -14644,6 +15138,14 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART_UGLY.DESCRIPTION"
 msgid "<style=\"KKeyword\">Crude</style> artwork quality"
 msgstr "<style=\"KKeyword\">粗悪な</style>芸術作品"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_CLOTHING_ALTERATION.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION"
+#| msgid "<link=\"COOKINGSTATION\">Electric Grill</link> Usage"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_CLOTHING_ALTERATION.DESCRIPTION"
+msgid "<link=\"CLOTHINGALTERATIONSTATION\">Clothing Refashionator</link> Usage"
+msgstr "<link=\"COOKINGSTATION\">電気グリル</link>を利用可能"
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_COMPOUND.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_COMPOUND.DESCRIPTION"
 msgid "<link=\"APOTHECARY\">Apothecary</link> Usage"
@@ -14672,6 +15174,14 @@ msgid ""
 "Mining"
 msgstr ""
 "<link=\"DIAMOND\">ダイヤモンド</link>と<link=\"OBSIDIAN\">黒曜石</link>採掘"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_UNOBTANIUM.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.UNOBTANIUM.NAME"
+#| msgid "<link=\"UNOBTANIUM\">Neutronium</link>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_UNOBTANIUM.DESCRIPTION"
+msgid "<link=\"UNOBTANIUM\">Neutronium</link> Mining"
+msgstr "<link=\"UNOBTANIUM\">ニュートロニウム</link>"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_VERY_FIRM.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DIG_VERY_FIRM.DESCRIPTION"
@@ -14734,8 +15244,12 @@ msgid "Geographical Analysis"
 msgstr "地勢分析"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_CLUSTER_TELESCOPE.DESCRIPTION
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_CLUSTER_TELESCOPE.DESCRIPTION"
+#| msgid "<link=\"TELESCOPE\">Telescope</link> Usage"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_CLUSTER_TELESCOPE.DESCRIPTION"
-msgid "<link=\"TELESCOPE\">Telescope</link> Usage"
+msgid "<link=\"CLUSTERTELESCOPE\">Telescope</link> Usage"
 msgstr "<link=\"CLUSTERTELESCOPE\">観測望遠鏡</link>を利用可能"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_RANCH_STATION.DESCRIPTION
@@ -14889,8 +15403,11 @@ msgid "Vacant Position"
 msgstr "空き枠"
 
 #. STRINGS.UI.ROLES_SCREEN.SLOTS.UNASSIGNED_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.UNASSIGNED_TOOLTIP"
+#| msgid "Click to assign a Duplicant to this job opening"
 msgctxt "STRINGS.UI.ROLES_SCREEN.SLOTS.UNASSIGNED_TOOLTIP"
-msgid "Click to assign a Duplicant to this job opening"
+msgid "\\Click\\ to assign a Duplicant to this job opening"
 msgstr "クリックして複製人間を職業に割り当てます"
 
 #. STRINGS.UI.ROLES_SCREEN.TIER_NAMES.EIGHT
@@ -15556,6 +16073,15 @@ msgid "Shift Alarms"
 msgstr "時間割アラーム"
 
 #. STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_OFF_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_OFF_TOOLTIP"
+#| msgid ""
+#| "Toggle Notifications\n"
+#| "------------------\n"
+#| "No sounds or notifications will play for this schedule.\n"
+#| "\n"
+#| "DISABLED\n"
+#| "Click to enable"
 msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_OFF_TOOLTIP"
 msgid ""
 "Toggle Notifications\n"
@@ -15563,7 +16089,7 @@ msgid ""
 "No sounds or notifications will play for this schedule.\n"
 "\n"
 "DISABLED\n"
-"Click to enable"
+"\\Click\\ to enable"
 msgstr ""
 "通知の切替\n"
 "------------------\n"
@@ -15573,6 +16099,15 @@ msgstr ""
 "クリックして有効化する"
 
 #. STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_ON_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_ON_TOOLTIP"
+#| msgid ""
+#| "Toggle Notifications\n"
+#| "------------------\n"
+#| "Sounds and notifications will play when shifts change for this schedule.\n"
+#| "\n"
+#| "ENABLED\n"
+#| "Click to disable"
 msgctxt "STRINGS.UI.SCHEDULESCREEN.ALARM_BUTTON_ON_TOOLTIP"
 msgid ""
 "Toggle Notifications\n"
@@ -15580,7 +16115,7 @@ msgid ""
 "Sounds and notifications will play when shifts change for this schedule.\n"
 "\n"
 "ENABLED\n"
-"Click to disable"
+"\\Click\\ to disable"
 msgstr ""
 "通知の切替\n"
 "------------------\n"
@@ -16390,9 +16925,17 @@ msgid "Useless Machine"
 msgstr "役立たずの機械"
 
 #. STRINGS.UI.SPACEARTIFACTS.PACUPERCOLATOR.ARTIFACT
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEARTIFACTS.PACUPERCOLATOR.ARTIFACT"
+#| msgid ""
+#| "A coffee percolator with the reminants of a blend of coffee that was a "
+#| "personal favorite of Dr. Hassan Aydem.\n"
+#| "\n"
+#| "He would specifically reserve the consumption of this particular blend "
+#| "for when he was reviewing research papers on Sunday afternoons."
 msgctxt "STRINGS.UI.SPACEARTIFACTS.PACUPERCOLATOR.ARTIFACT"
 msgid ""
-"A coffee percolator with the reminants of a blend of coffee that was a "
+"A coffee percolator with the remnants of a blend of coffee that was a "
 "personal favorite of Dr. Hassan Aydem.\n"
 "\n"
 "He would specifically reserve the consumption of this particular blend for "
@@ -16416,13 +16959,23 @@ msgid "Percolator"
 msgstr "濾過装置付きコーヒー沸かし"
 
 #. STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.ARTIFACT
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.ARTIFACT"
+#| msgid ""
+#| "The bottom of this lamp contains the words 'Property of the Atmospheric "
+#| "Sciences Department'.\n"
+#| "\n"
+#| "It's worth noting that the Gravitas Atmospheric Sciences Department once "
+#| "simulated an experiment testing the feasability of survival in an "
+#| "environment filled with noble gasses, similar to the ones contained "
+#| "within this device."
 msgctxt "STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.ARTIFACT"
 msgid ""
 "The bottom of this lamp contains the words 'Property of the Atmospheric "
 "Sciences Department'.\n"
 "\n"
 "It's worth noting that the Gravitas Atmospheric Sciences Department once "
-"simulated an experiment testing the feasability of survival in an "
+"simulated an experiment testing the feasibility of survival in an "
 "environment filled with noble gasses, similar to the ones contained within "
 "this device."
 msgstr ""
@@ -17913,10 +18466,16 @@ msgid "???"
 msgstr "？？？"
 
 #. STRINGS.UI.STARMAP.COMPOSITION_UNDISCOVERED_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.COMPOSITION_UNDISCOVERED_TOOLTIP"
+#| msgid ""
+#| "Further research required to identify resource\n"
+#| "------------------\n"
+#| "Send a Research Module to this destination for more information"
 msgctxt "STRINGS.UI.STARMAP.COMPOSITION_UNDISCOVERED_TOOLTIP"
 msgid ""
 "Further research required to identify resource\n"
-"------------------\n"
+"\n"
 "Send a Research Module to this destination for more information"
 msgstr ""
 "資源を識別するには更なる研究が必要です\n"
@@ -18263,10 +18822,19 @@ msgid "Clear launch path"
 msgstr "発射経路の確保"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.FAILURE"
+#| msgid ""
+#| "This rocket does not have a clear line of sight to space, preventing "
+#| "launch\n"
+#| "------------------\n"
+#| "The rocket's launch path can be cleared by excavating undug tiles and "
+#| "deconstructing any buildings above the rocket"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.FLIGHT_PATH_CLEAR.TOOLTIP.FAILURE"
 msgid ""
 "This rocket does not have a clear line of sight to space, preventing launch\n"
-"------------------\n"
+"\n"
 "The rocket's launch path can be cleared by excavating undug tiles and "
 "deconstructing any buildings above the rocket"
 msgstr ""
@@ -18301,10 +18869,17 @@ msgid "Control Station"
 msgstr "ロケット制御端末"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE"
+#| msgid ""
+#| "No Control Station\n"
+#| "------------------\n"
+#| "A new Rocket Control Station must be installed inside the rocket"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE"
 msgid ""
 "No Control Station\n"
-"------------------\n"
+"\n"
 "A new Rocket Control Station must be installed inside the rocket"
 msgstr ""
 "ロケット制御端末がありません\n"
@@ -18337,10 +18912,16 @@ msgid "Engine"
 msgstr "エンジン"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.FAILURE"
+#| msgid ""
+#| "No engine installed\n"
+#| "------------------\n"
+#| "This rocket cannot launch without a completed engine"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.TOOLTIP.FAILURE"
 msgid ""
 "No engine installed\n"
-"------------------\n"
+"\n"
 "This rocket cannot launch without a completed engine"
 msgstr ""
 "エンジンがありません\n"
@@ -18373,10 +18954,16 @@ msgid "Fuel Tank"
 msgstr "燃料タンク"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.FAILURE"
+#| msgid ""
+#| "No fuel tank installed\n"
+#| "------------------\n"
+#| "This rocket cannot launch without a completed fuel tank"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_FUEL_TANK.TOOLTIP.FAILURE"
 msgid ""
 "No fuel tank installed\n"
-"------------------\n"
+"\n"
 "This rocket cannot launch without a completed fuel tank"
 msgstr ""
 "燃料タンクがありません\n"
@@ -18409,10 +18996,16 @@ msgid "Nosecone"
 msgstr "ノーズコーン"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.FAILURE"
+#| msgid ""
+#| "No nosecone installed\n"
+#| "------------------\n"
+#| "This rocket cannot launch without a completed nosecone"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_NOSECONE.TOOLTIP.FAILURE"
 msgid ""
 "No nosecone installed\n"
-"------------------\n"
+"\n"
 "This rocket cannot launch without a completed nosecone"
 msgstr ""
 "ノーズコーンがありません\n"
@@ -18577,10 +19170,16 @@ msgid "Height limit"
 msgstr "全長の制限"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.TOOLTIP.FAILURE"
+#| msgid ""
+#| "The height of the rocket exceeds the engine's limit\n"
+#| "------------------\n"
+#| "Excess modules must be removed"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_HEIGHT.TOOLTIP.FAILURE"
 msgid ""
 "The height of the rocket exceeds the engine's limit\n"
-"------------------\n"
+"\n"
 "Excess modules must be removed"
 msgstr ""
 "ロケットの全長が、現在のエンジンで対応可能な上限を超えています\n"
@@ -18613,10 +19212,16 @@ msgid "Module limit"
 msgstr "モジュール数の制限"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.FAILURE"
+#| msgid ""
+#| "The number of installed modules exceeds the engine's module limit\n"
+#| "------------------\n"
+#| "Excess modules must be removed"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MAX_MODULES.TOOLTIP.FAILURE"
 msgid ""
 "The number of installed modules exceeds the engine's module limit\n"
-"------------------\n"
+"\n"
 "Excess modules must be removed"
 msgstr ""
 "ロケットのモジュール数が、現在のエンジンで対応可能な上限を超えています\n"
@@ -18639,10 +19244,16 @@ msgid "Resources available {0}"
 msgstr "採集可能な資源: {0}"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MISSING_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MISSING_TOOLTIP"
+#| msgid ""
+#| "No {0} installed\n"
+#| "------------------\n"
+#| "This rocket cannot launch without a completed {0}"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.MISSING_TOOLTIP"
 msgid ""
 "No {0} installed\n"
-"------------------\n"
+"\n"
 "This rocket cannot launch without a completed {0}"
 msgstr ""
 "{0} が取り付けられていません\n"
@@ -18704,17 +19315,17 @@ msgstr "発射台なし"
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.FAILURE"
 msgid "Not on a launch pad"
-msgstr "発射台上にありません"
+msgstr "発射台上にない"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.READY"
 msgid "On a launch pad"
-msgstr "発射台上にあります"
+msgstr "発射台上"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ON_LAUNCHPAD.TOOLTIP.WARNING"
 msgid "No launch pad"
-msgstr "発射台がありません"
+msgstr "発射台なし"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.FAILURE"
@@ -18727,11 +19338,19 @@ msgid "Pilot boarded"
 msgstr "パイロットの搭乗"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.FAILURE"
+#| msgid ""
+#| "At least one crew member aboard the rocket must possess the <link="
+#| "\"ROCKETPILOTING1\">Rocket Piloting</link> skill to launch\n"
+#| "------------------\n"
+#| "Qualified Duplicants must be assigned to the rocket crew, and have access "
+#| "to the module's hatch"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.FAILURE"
 msgid ""
 "At least one crew member aboard the rocket must possess the <link="
 "\"ROCKETPILOTING1\">Rocket Piloting</link> skill to launch\n"
-"------------------\n"
+"\n"
 "Qualified Duplicants must be assigned to the rocket crew, and have access to "
 "the module's hatch"
 msgstr ""
@@ -18776,10 +19395,16 @@ msgid "Fueled"
 msgstr "燃料の供給"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.FAILURE"
+#| msgid ""
+#| "This rocket does not have enough fuel to reach its destination\n"
+#| "------------------\n"
+#| "If the tanks are full, a different Fuel Tank Module may be required"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PROPERLY_FUELED.TOOLTIP.FAILURE"
 msgid ""
 "This rocket does not have enough fuel to reach its destination\n"
-"------------------\n"
+"\n"
 "If the tanks are full, a different Fuel Tank Module may be required"
 msgstr ""
 "このロケットには目的地まで到達するのに十分な燃料がありません\n"
@@ -18845,11 +19470,19 @@ msgid "Warning: Limited oxidizer"
 msgstr "警告: 酸化剤不十分"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.FAILURE
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.FAILURE"
+#| msgid ""
+#| "This rocket does not have enough oxidizer to reach its destination\n"
+#| "------------------\n"
+#| "If the oxidizer tanks are full, a different Oxidizer Tank Module may be "
+#| "required"
 msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.TOOLTIP.FAILURE"
 msgid ""
 "This rocket does not have enough oxidizer to reach its destination\n"
-"------------------\n"
+"\n"
 "If the oxidizer tanks are full, a different Oxidizer Tank Module may be "
 "required"
 msgstr ""
@@ -19339,8 +19972,11 @@ msgid "<b>{0}</b>"
 msgstr "<b>{0}</b>"
 
 #. STRINGS.UI.TABLESCREENS.GOTO_DUPLICANT_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.TABLESCREENS.GOTO_DUPLICANT_BUTTON"
+#| msgid "Double-click to go to <b>{0}</b>"
 msgctxt "STRINGS.UI.TABLESCREENS.GOTO_DUPLICANT_BUTTON"
-msgid "Double-click to go to <b>{0}</b>"
+msgid "Double-\\click\\ to go to <b>{0}</b>"
 msgstr "ダブルクリックで <b>{0}</b> に向かいます"
 
 #. STRINGS.UI.TABLESCREENS.INFORMATION_NOT_AVAILABLE_TOOLTIP
@@ -19359,8 +19995,11 @@ msgid "Nobody here..."
 msgstr "誰もいません..."
 
 #. STRINGS.UI.TABLESCREENS.SELECT_DUPLICANT_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.TABLESCREENS.SELECT_DUPLICANT_BUTTON"
+#| msgid "Click to select <b>{0}</b>"
 msgctxt "STRINGS.UI.TABLESCREENS.SELECT_DUPLICANT_BUTTON"
-msgid "Click to select <b>{0}</b>"
+msgid "\\Click\\ to select <b>{0}</b>"
 msgstr "クリックで <b>{0}</b> を選択します"
 
 #. STRINGS.UI.TOOLS.ATTACK.NAME
@@ -19384,8 +20023,11 @@ msgid "Build {0}"
 msgstr "{0} を建築"
 
 #. STRINGS.UI.TOOLS.BUILD.TOOLACTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.BUILD.TOOLACTION"
+#| msgid "CLICK TO BUILD"
 msgctxt "STRINGS.UI.TOOLS.BUILD.TOOLACTION"
-msgid "CLICK TO BUILD"
+msgid "\\CLICK\\ TO BUILD"
 msgstr "クリックして建築"
 
 #. STRINGS.UI.TOOLS.BUILD.TOOLACTION_DRAG
@@ -19799,8 +20441,11 @@ msgid "Move"
 msgstr "移動"
 
 #. STRINGS.UI.TOOLS.MOVETOLOCATION.TOOLACTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.MOVETOLOCATION.TOOLACTION"
+#| msgid "CLICK"
 msgctxt "STRINGS.UI.TOOLS.MOVETOLOCATION.TOOLACTION"
-msgid "CLICK"
+msgid "\\CLICK\\"
 msgstr "クリック"
 
 #. STRINGS.UI.TOOLS.MOVETOLOCATION.TOOLNAME
@@ -19839,8 +20484,11 @@ msgid "Must have a clear path to space"
 msgstr "宇宙への通り道が必要"
 
 #. STRINGS.UI.TOOLS.PLACE.TOOLACTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.PLACE.TOOLACTION"
+#| msgid "CLICK TO PLACE"
 msgctxt "STRINGS.UI.TOOLS.PLACE.TOOLACTION"
-msgid "CLICK TO PLACE"
+msgid "\\CLICK\\  TO PLACE"
 msgstr "クリックして設置"
 
 #. STRINGS.UI.TOOLS.PLACE.TOOLNAME
@@ -20361,13 +21009,21 @@ msgid "View each cycle's Colony Report {Hotkey}"
 msgstr "コロニーのサイクル別のレポートを見ます {Hotkey}"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS"
+#| msgid ""
+#| "Manage my Duplicant Priorities {Hotkey}\n"
+#| "------------------\n"
+#| "<style=\"KKeyword\">Duplicant Priorities</style> are calculated "
+#| "<i>before</i> the <style=\"KKeyword\">Building Priorities</style> set by "
+#| "the <b>Priority Tool</b> {Hotkey/Prioritize}"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS"
 msgid ""
 "Manage my Duplicant Priorities {Hotkey}\n"
-"------------------\n"
-"<style=\"KKeyword\">Duplicant Priorities</style> are calculated <i>before</"
-"i> the <style=\"KKeyword\">Building Priorities</style> set by the "
-"<b>Priority Tool</b> {Hotkey/Prioritize}"
+"\n"
+"Duplicant Priorities</style> are calculated <i>before</i> the <style="
+"\"KKeyword\">Building Priorities</style> set by the <b>Priority Tool</b> "
+"{Hotkey/Prioritize}"
 msgstr ""
 "複製人間の作業種別の優先度を管理します {Hotkey}\n"
 "------------------\n"
@@ -20381,10 +21037,17 @@ msgid "Open the game menu {Hotkey}"
 msgstr "ゲームメニューを開きます {Hotkey}"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_RESEARCH
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_RESEARCH"
+#| msgid ""
+#| "Build a Research Station to unlock this menu\n"
+#| "------------------\n"
+#| "The <link=\"RESEARCHCENTER\">Research Station</link> can be found in the "
+#| "<b>Stations Tab</b> {Hotkey/Plan10} of the Build Menu"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_RESEARCH"
 msgid ""
 "Build a Research Station to unlock this menu\n"
-"------------------\n"
+"\n"
 "The <link=\"RESEARCHCENTER\">Research Station</link> can be found in the "
 "<b>Stations Tab</b> {Hotkey/Plan10} of the Build Menu"
 msgstr ""
@@ -20395,10 +21058,17 @@ msgstr ""
 "{Hotkey/Plan10} にあります"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_SKILL_STATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_SKILL_STATION"
+#| msgid ""
+#| "Build a Printing Pod to unlock this menu\n"
+#| "------------------\n"
+#| "The <link=\"HEADQUARTERS\">Printing Pod</link> can be found in the "
+#| "<b>Base Tab</b> {Hotkey/Plan1} of the Build Menu"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_SKILL_STATION"
 msgid ""
 "Build a Printing Pod to unlock this menu\n"
-"------------------\n"
+"\n"
 "The <link=\"HEADQUARTERS\">Printing Pod</link> can be found in the <b>Base "
 "Tab</b> {Hotkey/Plan1} of the Build Menu"
 msgstr ""
@@ -20409,10 +21079,17 @@ msgstr ""
 "{Hotkey/Plan1} にあります"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_TELESCOPE
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_TELESCOPE"
+#| msgid ""
+#| "Build a Telescope to unlock this menu\n"
+#| "------------------\n"
+#| "The <link=\"TELESCOPE\">Telescope</link> can be found in the <b>Stations "
+#| "Tab</b> {Hotkey/Plan10} of the Build Menu"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_TELESCOPE"
 msgid ""
 "Build a Telescope to unlock this menu\n"
-"------------------\n"
+"\n"
 "The <link=\"TELESCOPE\">Telescope</link> can be found in the <b>Stations "
 "Tab</b> {Hotkey/Plan10} of the Build Menu"
 msgstr ""
@@ -20423,10 +21100,17 @@ msgstr ""
 "Plan10} にあります"
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_TELESCOPE_CLUSTER
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_TELESCOPE_CLUSTER"
+#| msgid ""
+#| "Build a Telescope to unlock this menu\n"
+#| "------------------\n"
+#| "The <link=\"TELESCOPE\">Telescope</link> can be found in the <b>Rocketry "
+#| "Tab</b> {Hotkey/Plan14} of the Build Menu"
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_REQUIRES_TELESCOPE_CLUSTER"
 msgid ""
 "Build a Telescope to unlock this menu\n"
-"------------------\n"
+"\n"
 "The <link=\"TELESCOPE\">Telescope</link> can be found in the <b>Rocketry "
 "Tab</b> {Hotkey/Plan14} of the Build Menu"
 msgstr ""
@@ -20572,13 +21256,21 @@ msgid "Displays work priority values {Hotkey}"
 msgstr "作業の優先度を表示します {Hotkey}"
 
 #. STRINGS.UI.TOOLTIPS.PRIORITIZEBUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.PRIORITIZEBUTTON"
+#| msgid ""
+#| "Set Building Priority {Hotkey}\n"
+#| "------------------\n"
+#| "<style=\"KKeyword\">Duplicant Priorities</style> {Hotkey/"
+#| "ManagePriorities} are calculated <i>before</i> the <style=\"KKeyword"
+#| "\">Building Priorities</style> set by this tool"
 msgctxt "STRINGS.UI.TOOLTIPS.PRIORITIZEBUTTON"
 msgid ""
 "Set Building Priority {Hotkey}\n"
-"------------------\n"
-"<style=\"KKeyword\">Duplicant Priorities</style> {Hotkey/ManagePriorities} "
-"are calculated <i>before</i> the <style=\"KKeyword\">Building Priorities</"
-"style> set by this tool"
+"\n"
+"Duplicant Priorities</style> {Hotkey/ManagePriorities} are calculated "
+"<i>before</i> the <style=\"KKeyword\">Building Priorities</style> set by "
+"this tool"
 msgstr ""
 "設備別の優先度を設定 {Hotkey}\n"
 "------------------\n"
@@ -20648,8 +21340,11 @@ msgid "There are insufficient materials to construct this building"
 msgstr "この設備に必要な素材が不足しています"
 
 #. STRINGS.UI.TOOLTIPS.SORTCOLUMN
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.SORTCOLUMN"
+#| msgid "Click to sort"
 msgctxt "STRINGS.UI.TOOLTIPS.SORTCOLUMN"
-msgid "Click to sort"
+msgid "\\Click\\ to sort"
 msgstr "クリックしてソート"
 
 #. STRINGS.UI.TOOLTIPS.SPEEDBUTTON_FAST
@@ -20688,10 +21383,15 @@ msgstr ""
 "ストレス</link>下では生産性を損ね、ノイローゼになったりします。"
 
 #. STRINGS.UI.TOOLTIPS.STRESSPANEL
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.STRESSPANEL"
+#| msgid ""
+#| "The Stress Panel offers a detailed look at what is psychology affecting "
+#| "Duplicant psychologically"
 msgctxt "STRINGS.UI.TOOLTIPS.STRESSPANEL"
 msgid ""
-"The Stress Panel offers a detailed look at what is psychology affecting "
-"Duplicant psychologically"
+"The Stress Panel offers a detailed look at what is affecting my Duplicant "
+"psychologically"
 msgstr "ストレスパネルは複製人間の心理状態に影響を及ぼすものを詳細に表示します"
 
 #. STRINGS.UI.TOOLTIPS.SUITOVERLAYSTRING
@@ -20836,88 +21536,142 @@ msgid "Default"
 msgstr "汎用アクセス"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_DOWN_DISABLED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_DOWN_DISABLED"
+#| msgid ""
+#| "Passing Down through this door is not permitted\n"
+#| "\n"
+#| "Click to grant permission"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_DOWN_DISABLED"
 msgid ""
 "Passing Down through this door is not permitted\n"
 "\n"
-"Click to grant permission"
+"\\Click\\ to grant permission"
 msgstr ""
 "ドアの下へ進むことを禁止しています\n"
 "\n"
 "クリックすると許可します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_DOWN_ENABLED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_DOWN_ENABLED"
+#| msgid ""
+#| "Passing Down through this door is permitted\n"
+#| "\n"
+#| "Click to revoke permission"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_DOWN_ENABLED"
 msgid ""
 "Passing Down through this door is permitted\n"
 "\n"
-"Click to revoke permission"
+"\\Click\\ to revoke permission"
 msgstr ""
 "ドアの下へ進むことを許可しています\n"
 "\n"
 "クリックすると禁止します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_LEFT_DISABLED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_LEFT_DISABLED"
+#| msgid ""
+#| "Passing Left through this door is not permitted\n"
+#| "\n"
+#| "Click to grant permission"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_LEFT_DISABLED"
 msgid ""
 "Passing Left through this door is not permitted\n"
 "\n"
-"Click to grant permission"
+"\\Click\\ to grant permission"
 msgstr ""
 "ドアの左へ進むことを禁止しています\n"
 "\n"
 "クリックすると許可します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_LEFT_ENABLED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_LEFT_ENABLED"
+#| msgid ""
+#| "Passing Left through this door is permitted\n"
+#| "\n"
+#| "Click to revoke permission"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_LEFT_ENABLED"
 msgid ""
 "Passing Left through this door is permitted\n"
 "\n"
-"Click to revoke permission"
+"\\Click\\ to revoke permission"
 msgstr ""
 "ドアの左へ進むことを許可しています\n"
 "\n"
 "クリックすると禁止します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_RIGHT_DISABLED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_RIGHT_DISABLED"
+#| msgid ""
+#| "Passing Right through this door is not permitted\n"
+#| "\n"
+#| "Click to grant permission"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_RIGHT_DISABLED"
 msgid ""
 "Passing Right through this door is not permitted\n"
 "\n"
-"Click to grant permission"
+"\\Click\\ to grant permission"
 msgstr ""
 "ドアの右へ進むことを禁止しています\n"
 "\n"
 "クリックすると許可します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_RIGHT_ENABLED
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_RIGHT_ENABLED"
+#| msgid ""
+#| "Passing Right through this door is permitted\n"
+#| "\n"
+#| "Click to revoke permission"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_RIGHT_ENABLED"
 msgid ""
 "Passing Right through this door is permitted\n"
 "\n"
-"Click to revoke permission"
+"\\Click\\ to revoke permission"
 msgstr ""
 "ドアの右へ進むことを許可しています\n"
 "\n"
 "クリックすると禁止します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_UP_DISABLED
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_UP_DISABLED"
+#| msgid ""
+#| "Passing Up through this door is not permitted\n"
+#| "\n"
+#| "Click to grant permission"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_UP_DISABLED"
 msgid ""
 "Passing Up through this door is not permitted\n"
 "\n"
-"Click to grant permission"
+"\\Click\\ to grant permission"
 msgstr ""
 "ドアの上へ進むことを禁止しています\n"
 "\n"
 "クリックすると許可します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_UP_ENABLED
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_UP_ENABLED"
+#| msgid ""
+#| "Passing Up through this door is permitted\n"
+#| "\n"
+#| "Click to revoke permission"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.GO_UP_ENABLED"
 msgid ""
 "Passing Up through this door is permitted\n"
 "\n"
-"Click to revoke permission"
+"\\Click\\ to revoke permission"
 msgstr ""
 "ドアの上へ進むことを許可しています\n"
 "\n"
@@ -20929,13 +21683,19 @@ msgid "Duplicant Access Permissions"
 msgstr "複製人間のアクセス権限"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.SET_TO_CUSTOM
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.SET_TO_CUSTOM"
+#| msgid "Click to assign custom permissions"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.SET_TO_CUSTOM"
-msgid "Click to assign custom permissions"
+msgid "\\Click\\ to assign custom permissions"
 msgstr "クリックすると個別のアクセス権限を適用します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.SET_TO_DEFAULT
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.SET_TO_DEFAULT"
+#| msgid "Click to clear custom permissions"
 msgctxt "STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.SET_TO_DEFAULT"
-msgid "Click to clear custom permissions"
+msgid "\\Click\\ to clear custom permissions"
 msgstr "クリックすると個別のアクセス権限を消去します"
 
 #. STRINGS.UI.UISIDESCREENS.ACCESS_CONTROL_SIDE_SCREEN.TITLE
@@ -21079,6 +21839,11 @@ msgctxt "STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.TITLE"
 msgid "Automatable Storage"
 msgstr "自動化格納庫"
 
+#. STRINGS.UI.UISIDESCREENS.AUTOPLUMBERSIDESCREEN.BUTTONS.FACADE.TOOLTIP
+msgctxt "STRINGS.UI.UISIDESCREENS.AUTOPLUMBERSIDESCREEN.BUTTONS.FACADE.TOOLTIP"
+msgid "Toggle the building facade"
+msgstr ""
+
 #. STRINGS.UI.UISIDESCREENS.AUTOPLUMBERSIDESCREEN.BUTTONS.MINION.TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.AUTOPLUMBERSIDESCREEN.BUTTONS.MINION.TOOLTIP"
 msgid "Spawn a Duplicant in front of the building"
@@ -21163,7 +21928,7 @@ msgstr "展示する物体"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.BUTTONMENUSIDESCREEN.ALLOW_INTERNAL_CONSTRUCTOR"
 msgid "Enable Auto-Delivery"
-msgstr "自動配達を有効にする"
+msgstr "自動配達有効化"
 
 #. STRINGS.UI.UISIDESCREENS.BUTTONMENUSIDESCREEN.ALLOW_INTERNAL_CONSTRUCTOR_TOOLTIP
 msgctxt ""
@@ -21178,7 +21943,7 @@ msgstr "必要に応じてこの設備に{0}を配達するよう、複製人間
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.BUTTONMENUSIDESCREEN.DISALLOW_INTERNAL_CONSTRUCTOR"
 msgid "Cancel Auto-Delivery"
-msgstr "自動配達をやめる"
+msgstr "自動配達取り消し"
 
 #. STRINGS.UI.UISIDESCREENS.BUTTONMENUSIDESCREEN.DISALLOW_INTERNAL_CONSTRUCTOR_TOOLTIP
 msgctxt ""
@@ -21290,7 +22055,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
 "DROPDOWN_TOOLTIP_FIRST_AVAILABLE"
 msgid "Select the first available landing site"
-msgstr "はじめに空いた発射台に着陸します"
+msgstr "有効な着陸地点を指定します"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_PAD_DISABLED
 msgctxt ""
@@ -21304,14 +22069,14 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
 "DROPDOWN_TOOLTIP_PATH_OBSTRUCTED"
 msgid "Landing path obstructed"
-msgstr "着陸進路に障害物があります"
+msgstr "着陸進路が阻害されています"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_SITE_OBSTRUCTED
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
 "DROPDOWN_TOOLTIP_SITE_OBSTRUCTED"
 msgid "Landing position on the platform is obstructed"
-msgstr "着陸地点であるロケット発射台に障害物があります"
+msgstr "着陸地点であるロケット発射台が阻害されています"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_TOO_SHORT
 msgctxt ""
@@ -21325,13 +22090,12 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN."
 "DROPDOWN_TOOLTIP_VALID_SITE"
 msgid "Land at {0} when the site is clear"
-msgstr "場所が空いていれば、{0}に着陸します"
+msgstr "準備ができ次第{0}に着陸します"
 
-# 「すべてのロケット発射台」では長すぎて2行になってしまうため
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.FIRSTAVAILABLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.FIRSTAVAILABLE"
 msgid "Any <link=\"LAUNCHPAD\">Rocket Platform</link>"
-msgstr "全<link=\"LAUNCHPAD\">ロケット発射台</link>"
+msgstr "すべての<link=\"LAUNCHPAD\">ロケット発射台</link>"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.LOOP_BUTTON_TOOLTIP
 msgctxt ""
@@ -21345,7 +22109,7 @@ msgstr "元の発射地点と目的地の間を往復させるかどうか切り
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NO_TALL_SITES_AVAILABLE"
 msgid "No landing sites fit the height of this rocket"
-msgstr "このロケットの全長を収容できる着陸地点がありません"
+msgstr "このロケットの全長に合った着陸地点がありません"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NONEAVAILABLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.NONEAVAILABLE"
@@ -22080,7 +22844,7 @@ msgstr "神経プロセス完了"
 #. STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.BUTTON_RECHARGE
 msgctxt "STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.BUTTON_RECHARGE"
 msgid "Recharge"
-msgstr "再充填する"
+msgstr "再充填"
 
 #. STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.BUTTON_RECHARGE_CANCEL
 msgctxt "STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.BUTTON_RECHARGE_CANCEL"
@@ -22095,16 +22859,12 @@ msgstr "何か変だな..."
 #. STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.CONSUMED
 msgctxt "STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.CONSUMED"
 msgid "There are no charges left in this Vacillator."
-msgstr ""
-"このシャッフルマシンは\n"
-"利用回数が残っていません。"
+msgstr "シャッフルマシンの残り利用回数はゼロです。"
 
 #. STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.CONSUMED_WAITING
 msgctxt "STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.CONSUMED_WAITING"
 msgid "Recharge requested, awaiting delivery by Duplicant."
-msgstr ""
-"再充填を要求中です。\n"
-"複製人間の配達を待っています。"
+msgstr "再充填が必要です、複製人間の配達を待っています。"
 
 #. STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.GENESHUFFLERSIDESREEN.TITLE"
@@ -22317,12 +23077,20 @@ msgid "CANCEL LAUNCH"
 msgstr "発射中止"
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_REQUESTED_BUTTON_TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN."
+#| "LAUNCH_REQUESTED_BUTTON_TOOLTIP"
+#| msgid ""
+#| "This rocket will take off as soon as a Duplicant takes the controls\n"
+#| "------------------\n"
+#| "<b>Click to cancel launch</b>"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_REQUESTED_BUTTON_TOOLTIP"
 msgid ""
 "This rocket will take off as soon as a Duplicant takes the controls\n"
 "------------------\n"
-"<b>Click to cancel launch</b>"
+"<b>\\Click\\ to cancel launch</b>"
 msgstr ""
 "このロケットは複製人間が操縦桿を握ればいつでも発進できます！\n"
 "\n"
@@ -22334,12 +23102,20 @@ msgid "ACKNOWLEDGE WARNINGS"
 msgstr "警告を了解する"
 
 #. STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_WARNINGS_BUTTON_TOOLTIP
+#, fuzzy
+#| msgctxt ""
+#| "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN."
+#| "LAUNCH_WARNINGS_BUTTON_TOOLTIP"
+#| msgid ""
+#| "Some items in the Launch Checklist require attention\n"
+#| "------------------\n"
+#| "<b>Click to ignore warnings and proceed with launch</b>"
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.LAUNCHPADSIDESCREEN.LAUNCH_WARNINGS_BUTTON_TOOLTIP"
 msgid ""
 "Some items in the Launch Checklist require attention\n"
 "------------------\n"
-"<b>Click to ignore warnings and proceed with launch</b>"
+"<b>\\Click\\ to ignore warnings and proceed with launch</b>"
 msgstr ""
 "発射チェックリストに万全でない項目があります\n"
 "------------------\n"
@@ -22987,8 +23763,11 @@ msgid "Deployables"
 msgstr "降下可能モジュール"
 
 #. STRINGS.UI.UISIDESCREENS.MONUMENTSIDESCREEN.FLIP_FACING_BUTTON
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.MONUMENTSIDESCREEN.FLIP_FACING_BUTTON"
+#| msgid "CLICK TO ROTATE"
 msgctxt "STRINGS.UI.UISIDESCREENS.MONUMENTSIDESCREEN.FLIP_FACING_BUTTON"
-msgid "CLICK TO ROTATE"
+msgid "\\CLICK\\ TO ROTATE"
 msgstr "クリックで向きの変更"
 
 #. STRINGS.UI.UISIDESCREENS.MONUMENTSIDESCREEN.TITLE
@@ -23164,6 +23943,14 @@ msgstr "情報"
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.LIFECYCLE"
 msgid "<b>Life Cycle</b>:"
 msgstr "<b>ライフサイクル</b>:"
+
+#. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.MUTATIONS_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.EQUIPMENT.BUILDMENUTITLE"
+#| msgid "Stations"
+msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.MUTATIONS_HEADER"
+msgid "Mutations"
+msgstr "研究"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.NO_SPECIES_SELECTED
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.NO_SPECIES_SELECTED"
@@ -23434,7 +24221,7 @@ msgstr "ランチャーの目的地には{0}が指定されています"
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.MINIMUM_PAYLOAD_MASS
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.MINIMUM_PAYLOAD_MASS"
 msgid "Minimum launch mass:"
-msgstr "最小射出質量:"
+msgstr "最小発射質量:"
 
 #. STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET
 msgctxt "STRINGS.UI.UISIDESCREENS.RAILGUNSIDESCREEN.NO_SELECTED_LAUNCH_TARGET"
@@ -23746,16 +24533,16 @@ msgid ""
 "Buildings with their access restricted cannot be operated, though they can "
 "still be filled"
 msgstr ""
-"内装設備の使用制限は自動化信号によって管理されています\n"
+"設備制限は自動化によって管理されています\n"
 "\n"
-"使用を制限された設備は使用できなくなりますが、積み込みは行えます"
+"アクセス制限された設備は積み込みは行えますが操作はできません"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.BUILDING_RESTRICTIONS_LABEL
 msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN."
 "BUILDING_RESTRICTIONS_LABEL"
 msgid "Interior Building Restrictions"
-msgstr "内装設備の使用制限"
+msgstr "内装設備制限"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.GROUNDED_RESTRICTION_BUTTON
 msgctxt ""
@@ -23771,8 +24558,7 @@ msgctxt ""
 msgid ""
 "Buildings with their access restricted cannot be operated while grounded, "
 "though they can still be filled"
-msgstr ""
-"使用を制限された設備は着陸中に使用できなくなりますが、積み込みは行えます"
+msgstr "アクセス制限された設備は積み込みは行えますが着陸中は操作はできません"
 
 #. STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN.NONE_RESTRICTION_BUTTON
 msgctxt ""
@@ -23785,7 +24571,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.ROCKETRESTRICTIONSIDESCREEN."
 "NONE_RESTRICTION_BUTTON_TOOLTIP"
 msgid "There are no restrictions on buildings inside this rocket"
-msgstr "このロケットの内部では設備の使用制限を行いません"
+msgstr "このロケット内に制限可能な設備はありません"
 
 #. STRINGS.UI.UISIDESCREENS.ROLESTATION.OPENROLESBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.ROLESTATION.OPENROLESBUTTON"
@@ -25028,29 +25814,34 @@ msgstr " 単位"
 #. STRINGS.UI.USERMENUACTIONS.ACCEPT_MUTANT_SEEDS.ACCEPT
 msgctxt "STRINGS.UI.USERMENUACTIONS.ACCEPT_MUTANT_SEEDS.ACCEPT"
 msgid "Allow Mutants"
-msgstr "変異種子を許可する"
+msgstr "変異種子を許可"
 
 #. STRINGS.UI.USERMENUACTIONS.ACCEPT_MUTANT_SEEDS.REJECT
 msgctxt "STRINGS.UI.USERMENUACTIONS.ACCEPT_MUTANT_SEEDS.REJECT"
 msgid "Forbid Mutants"
-msgstr "変異種子を禁止する"
+msgstr "変異種子を禁止"
 
 #. STRINGS.UI.USERMENUACTIONS.ACCEPT_MUTANT_SEEDS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.ACCEPT_MUTANT_SEEDS.TOOLTIP"
+#| msgid ""
+#| "Toggle whether or not this building will accept mutant seeds for recipes "
+#| "that could use them."
 msgctxt "STRINGS.UI.USERMENUACTIONS.ACCEPT_MUTANT_SEEDS.TOOLTIP"
 msgid ""
-"Toggle whether or not this building will accept mutant seeds for recipes "
-"that could use them."
+"Toggle whether or not this building will accept <style=\"KKeyword\">Mutant "
+"Seeds</style> for recipes that could use them"
 msgstr "この設備がレシピ材料として変異種子を受け付けるかどうかを切り替えます。"
 
 #. STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATE
 msgctxt "STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATE"
 msgid "Activate"
-msgstr "起動する"
+msgstr "起動"
 
 #. STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATE_CANCEL
 msgctxt "STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATE_CANCEL"
 msgid "Cancel Activation"
-msgstr "起動をやめる"
+msgstr "起動を取り消す"
 
 #. STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATED
 msgctxt "STRINGS.UI.USERMENUACTIONS.ACTIVATEBUILDING.ACTIVATED"
@@ -25075,7 +25866,7 @@ msgstr "この設備の起動を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.ATTACK.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.ATTACK.NAME"
 msgid "Attack"
-msgstr "攻撃する"
+msgstr "攻撃"
 
 #. STRINGS.UI.USERMENUACTIONS.ATTACK.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.ATTACK.TOOLTIP"
@@ -25185,7 +25976,7 @@ msgstr "掘り起こし指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.CAPTURE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CAPTURE.NAME"
 msgid "Wrangle"
-msgstr "縄を掛ける"
+msgstr "縄掛け"
 
 #. STRINGS.UI.USERMENUACTIONS.CAPTURE.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CAPTURE.TOOLTIP"
@@ -25200,7 +25991,7 @@ msgstr "要求をやめる"
 #. STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.CANCEL_REQUEST_TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.CANCEL_REQUEST_TOOLTIP"
 msgid "Cancel outfit request"
-msgstr "服装の要求を取り消します"
+msgstr "服装の要求をやめる"
 
 #. STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.DROP_OUTFIT
 msgctxt "STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.DROP_OUTFIT"
@@ -25210,22 +26001,22 @@ msgstr "服を脱ぐ"
 #. STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.DROP_OUTFIT_TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.DROP_OUTFIT_TOOLTIP"
 msgid "Drop outfit on floor"
-msgstr "服を床に脱ぎ捨てます"
+msgstr "床に脱ぎ捨てる"
 
 #. STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.REQUEST_OUTFIT
 msgctxt "STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.REQUEST_OUTFIT"
 msgid "Request Outfit"
-msgstr "服装を要求する"
+msgstr "服装の要求"
 
 #. STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.REQUEST_OUTFIT_TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CHANGE_ROOM.REQUEST_OUTFIT_TOOLTIP"
 msgid "Request outfit to be delivered to this change room"
-msgstr "更衣室に服の配達を要求します"
+msgstr "更衣室に服の配達を要求"
 
 #. STRINGS.UI.USERMENUACTIONS.CLEANTOILET.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLEANTOILET.NAME"
 msgid "Clean Toilet"
-msgstr "汚物を汲み取る"
+msgstr "汲み取りさせる"
 
 #. STRINGS.UI.USERMENUACTIONS.CLEANTOILET.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLEANTOILET.TOOLTIP"
@@ -25235,17 +26026,17 @@ msgstr "このトイレから汚物を汲み出すよう指示します"
 #. STRINGS.UI.USERMENUACTIONS.CLEAR.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLEAR.NAME"
 msgid "Sweep"
-msgstr "片付ける"
+msgstr "片付け"
 
 #. STRINGS.UI.USERMENUACTIONS.CLEAR.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLEAR.NAME_OFF"
 msgid "Cancel Sweeping"
-msgstr "片付けをやめる"
+msgstr "片付けを止める"
 
 #. STRINGS.UI.USERMENUACTIONS.CLEAR.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLEAR.TOOLTIP"
 msgid "Put this object away in the nearest storage container"
-msgstr "この物体を今の場所から最寄りの収納設備まで運ばせます"
+msgstr "この物体を今の場所から近くの収納設備へ運ばせます"
 
 #. STRINGS.UI.USERMENUACTIONS.CLEAR.TOOLTIP_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLEAR.TOOLTIP_OFF"
@@ -25255,7 +26046,7 @@ msgstr "片付け指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.COMPOST.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.COMPOST.NAME"
 msgid "Compost"
-msgstr "堆肥にする"
+msgstr "堆肥化"
 
 #. STRINGS.UI.USERMENUACTIONS.COMPOST.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.COMPOST.NAME_OFF"
@@ -25265,7 +26056,7 @@ msgstr "堆肥化をやめる"
 #. STRINGS.UI.USERMENUACTIONS.COMPOST.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.COMPOST.TOOLTIP"
 msgid "Mark this object for compost"
-msgstr "この物体を堆肥置き場へ運ぶよう印を付けます"
+msgstr "この物体を堆肥化用にマークします"
 
 #. STRINGS.UI.USERMENUACTIONS.COMPOST.TOOLTIP_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.COMPOST.TOOLTIP_OFF"
@@ -25287,7 +26078,7 @@ msgstr "この設備の設定と優先度を他の同じタイプの設備にコ
 #. STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.NAME"
 msgid "Deconstruct"
-msgstr "解体する"
+msgstr "解体"
 
 #. STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.DECONSTRUCT.NAME_OFF"
@@ -25307,7 +26098,7 @@ msgstr "解体指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME"
 msgid "Demolish"
-msgstr "破壊する"
+msgstr "破壊"
 
 #. STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.DEMOLISH.NAME_OFF"
@@ -25327,7 +26118,7 @@ msgstr "破壊指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.DIG.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.DIG.NAME"
 msgid "Dig"
-msgstr "採掘する"
+msgstr "採掘"
 
 #. STRINGS.UI.USERMENUACTIONS.DIG.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.DIG.TOOLTIP"
@@ -25342,12 +26133,12 @@ msgstr "採掘指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.DRAWPATHS.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.DRAWPATHS.NAME"
 msgid "Show Navigation"
-msgstr "経路を表示する"
+msgstr "行先表示"
 
 #. STRINGS.UI.USERMENUACTIONS.DRAWPATHS.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.DRAWPATHS.NAME_OFF"
 msgid "Hide Navigation"
-msgstr "経路の表示をやめる"
+msgstr "行先非表示"
 
 #. STRINGS.UI.USERMENUACTIONS.DRAWPATHS.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.DRAWPATHS.TOOLTIP"
@@ -25362,7 +26153,7 @@ msgstr "この複製人間が移動可能なエリアを非表示にします"
 #. STRINGS.UI.USERMENUACTIONS.DUMP.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.DUMP.NAME"
 msgid "Empty"
-msgstr "床に空ける"
+msgstr "床に空けさせる"
 
 #. STRINGS.UI.USERMENUACTIONS.DUMP.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.DUMP.NAME_OFF"
@@ -25392,7 +26183,7 @@ msgstr "複製人間は巣がいっぱいになると自動で収穫を行いま
 #. STRINGS.UI.USERMENUACTIONS.EMPTYDESALINATOR.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYDESALINATOR.NAME"
 msgid "Empty Desalinator"
-msgstr "塩抜きする"
+msgstr "塩抜きをさせる"
 
 #. STRINGS.UI.USERMENUACTIONS.EMPTYDESALINATOR.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYDESALINATOR.TOOLTIP"
@@ -25403,7 +26194,7 @@ msgstr "この淡水化装置から塩を抜き取って空にするよう指示
 #. STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.NAME"
 msgid "Empty Storage"
-msgstr "内容物を空ける"
+msgstr "内容物を空けさせる"
 
 #. STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYSTORAGE.NAME_OFF"
@@ -25459,7 +26250,7 @@ msgstr "この複製人間をカメラで追いかけます"
 #. STRINGS.UI.USERMENUACTIONS.HARVEST.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.HARVEST.NAME"
 msgid "Harvest"
-msgstr "収穫する"
+msgstr "収穫"
 
 #. STRINGS.UI.USERMENUACTIONS.HARVEST.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.HARVEST.TOOLTIP"
@@ -25569,7 +26360,7 @@ msgstr "複製人間を指示した位置まで移動させます"
 #. STRINGS.UI.USERMENUACTIONS.OPENPOI.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.OPENPOI.NAME"
 msgid "Rummage"
-msgstr "捜索する"
+msgstr "捜索"
 
 #. STRINGS.UI.USERMENUACTIONS.OPENPOI.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.OPENPOI.NAME_OFF"
@@ -25589,12 +26380,12 @@ msgstr "捜索指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.QUARANTINE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.QUARANTINE.NAME"
 msgid "Quarantine"
-msgstr "隔離する"
+msgstr "隔離"
 
 #. STRINGS.UI.USERMENUACTIONS.QUARANTINE.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.QUARANTINE.NAME_OFF"
 msgid "Cancel Quarantine"
-msgstr "隔離をやめる"
+msgstr "隔離取り消し"
 
 #. STRINGS.UI.USERMENUACTIONS.QUARANTINE.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.QUARANTINE.TOOLTIP"
@@ -25641,7 +26432,7 @@ msgstr "項目を参照"
 #. STRINGS.UI.USERMENUACTIONS.READLORE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.NAME"
 msgid "Inspect"
-msgstr "調査する"
+msgstr "調査"
 
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_CABINET
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_CABINET"
@@ -26123,7 +26914,7 @@ msgstr "この設備が使用中の全ての資源を取り出します"
 #. STRINGS.UI.USERMENUACTIONS.RELOCATE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.RELOCATE.NAME"
 msgid "Relocate"
-msgstr "移設する"
+msgstr "移設"
 
 #. STRINGS.UI.USERMENUACTIONS.RELOCATE.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.RELOCATE.NAME_OFF"
@@ -26149,12 +26940,12 @@ msgstr "移設指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_CONTROLLED
 msgctxt "STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_CONTROLLED"
 msgid "Controlled"
-msgstr "制御する"
+msgstr "制御中"
 
 #. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_UNCONTROLLED
 msgctxt "STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.NAME_UNCONTROLLED"
 msgid "Uncontrolled"
-msgstr "制御をやめる"
+msgstr "制御なし"
 
 #. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_CONTROLLED
 msgctxt "STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_CONTROLLED"
@@ -26162,8 +26953,8 @@ msgid ""
 "Allow this building's operation to be controlled by a <link="
 "\"ROCKETCONTROLSTATION\">Rocket Control Station</link>"
 msgstr ""
-"この設備の使用制限を<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>に"
-"任せます"
+"この設備の操作を<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>に任せ"
+"ます"
 
 #. STRINGS.UI.USERMENUACTIONS.ROCKETUSAGERESTRICTION.TOOLTIP_UNCONTROLLED
 msgctxt ""
@@ -26189,7 +26980,7 @@ msgstr "<b>研究ツリー</b> {Hotkey/ManageResearch} から技術を選んで�
 #. STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ALWAYS.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ALWAYS.NAME"
 msgid "Clearance: Always"
-msgstr "脱ぎ捨て: 許可する"
+msgstr "スーツ脱ぎ捨て: 許可"
 
 #. STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ALWAYS.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ALWAYS.TOOLTIP"
@@ -26199,8 +26990,8 @@ msgid ""
 "When all available docks are full, Duplicants will unequip their suits and "
 "drop them on the floor"
 msgstr ""
-"EXOスーツを戻すためのドックに空きがなくても、スーツ着用の複製人間を通過させる"
-"ようにします\n"
+"スーツ着用の複製人間はEXOスーツを戻すためのドックに空きがなくても通過できま"
+"す\n"
 "------------------\n"
 "ドックに空きがない場合、複製人間はEXOスーツを床に脱ぎ捨てます"
 
@@ -26209,7 +27000,7 @@ msgctxt ""
 "STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ONLY_WHEN_ROOM_AVAILABLE."
 "NAME"
 msgid "Clearance: Vacancy"
-msgstr "脱ぎ捨て: 禁止する"
+msgstr "スーツ脱ぎ捨て: 禁止"
 
 #. STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ONLY_WHEN_ROOM_AVAILABLE.TOOLTIP
 msgctxt ""
@@ -26219,8 +27010,8 @@ msgid ""
 "Suited Duplicants may only pass if there is an available dock to store their "
 "suit"
 msgstr ""
-"EXOスーツを戻すためのドックに空きがなければ、スーツ着用の複製人間を通過させな"
-"いようにします"
+"スーツ着用の複製人間はEXOスーツを戻すためのドックに空きがなければ通過できませ"
+"ん"
 
 #. STRINGS.UI.USERMENUACTIONS.TAGFILTER.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.TAGFILTER.NAME"
@@ -27124,6 +27915,14 @@ msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂を散布しています..."
 
+#~ msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.CONTINUEBUTTON"
+#~ msgid "Okay, thanks for the heads up!"
+#~ msgstr "了解です、警告どうも！"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOTD.IMAGE_HEADER"
+#~ msgid "BLAST OFF!"
+#~ msgstr "BLAST OFF!"
+
 #~ msgctxt "STRINGS.UI.TOOLTIPS.HELP_ROTATE_KEY"
 #~ msgid "Press <b><color=#F44A4A>[{Key}]</b></color> to Rotate"
 #~ msgstr "<color=#F44A47><b>[{Key}]</b></color>キーで向きを変えます"
@@ -27317,12 +28116,6 @@ msgstr "砂を散布しています..."
 #~ "こと無しにメインメニューから行えるようにしました</indent>\n"
 #~ "\n"
 #~ "詳細はパッチノート全文を確認してください！"
-
-#~ msgctxt ""
-#~ "STRINGS.UI.UISIDESCREENS.ARTIFACTANALYSISSIDESCREEN."
-#~ "NO_ARTIFACTS_DISCOVERED_TOOLTIP"
-#~ msgid "A skilled artist can analyze artifacts"
-#~ msgstr "熟練したアーティストが旧世界の遺物を分析できます"
 
 #~ msgctxt "STRINGS.UI.UNITSUFFIXES.MASS.KILOGRAM"
 #~ msgid " Kg"
