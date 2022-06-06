@@ -1112,7 +1112,7 @@ msgstr "埋没"
 #. STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NOTIFICATION_NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NOTIFICATION_NAME"
 msgid "Building entombment"
-msgstr "設備が埋もれている"
+msgstr "設備は埋もれています"
 
 #. STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NOTIFICATION_TOOLTIP"
@@ -1191,8 +1191,12 @@ msgstr "変異種子を受け付ける"
 
 #. STRINGS.BUILDING.STATUSITEMS.FABRICATORACCEPTSMUTANTSEEDS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATORACCEPTSMUTANTSEEDS.TOOLTIP"
-msgid "This fabricator is allowed to use mutant seeds as recipe ingredients."
-msgstr "この製造機はレシピ材料として変異種子を受け付けます。"
+msgid ""
+"This fabricator is allowed to use <style=\"KKeyword\">Mutant Seeds</style> "
+"as recipe ingredients"
+msgstr ""
+"この製造機はレシピ材料として<style=\"KKeyword\">変異種子</style>を受け付けま"
+"す"
 
 #. STRINGS.BUILDING.STATUSITEMS.FABRICATOREMPTY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.FABRICATOREMPTY.NAME"
@@ -1503,17 +1507,13 @@ msgstr "この設備は周囲を<b>{0}</b>以上に加熱することはでき�
 
 #. STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_GAS.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_GAS.NAME"
-msgid "Low Air Pressure"
-msgstr "気圧不足"
+msgid "Insufficient Atmosphere"
+msgstr "大気不足"
 
 #. STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_GAS.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_GAS.TOOLTIP"
-msgid ""
-"A minimum atmospheric pressure of <b>{TargetPressure}</b> is needed for this "
-"building to heat up"
-msgstr ""
-"この設備が熱源として機能するには、周囲の環境が最低でも <b>{TargetPressure}</"
-"b> 気圧必要です"
+msgid "This building cannot operate in a vacuum"
+msgstr "この設備は真空中では操作できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_LIQUID.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_LIQUID.NAME"
@@ -3064,7 +3064,7 @@ msgstr "複製人間はこのロケットモジュールまで辿り着けませ
 #. STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME"
 msgid "Launch Path Blocked"
-msgstr "打ち上げ軌道に障害物がある"
+msgstr "ロケット打ち上げ軌道阻害"
 
 #. STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.TILE_FORMAT
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.TILE_FORMAT"
@@ -3079,10 +3079,10 @@ msgid ""
 "\n"
 "This rocket requires a clear flight path for launch"
 msgstr ""
-"このロケットの打ち上げ軌道に障害物があります:\n"
+"このロケットの打ち上げ軌道に阻害物があります:\n"
 "    • {0}\n"
 "\n"
-"ロケットを打ち上げるなら、航行経路を確保してください"
+"ロケットの航行路は視界良好でなければなりません"
 
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME"
@@ -3308,17 +3308,17 @@ msgstr "この水汲み場で汲み上げる液体: {Liquids}"
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.NAME"
 msgid "No Delivery Destination"
-msgstr "配達先がない"
+msgstr "配達先なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP"
 msgid "A delivery destination has not been set    • {0}"
-msgstr "配達先が指定されていません    • {0}"
+msgstr "射出先が指定されていません。    • {0}"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME"
 msgid "Launch Path Blocked"
-msgstr "射出軌道に障害物がある"
+msgstr "打ち上げ軌道阻害"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.TOOLTIP"
@@ -3329,10 +3329,10 @@ msgid ""
 "\n"
 "This launcher requires a clear path to launch payloads"
 msgstr ""
-"この<link=\"RAILGUN\">星間ランチャー</link>の射出軌道に障害物があります:\n"
+"<link=\"RAILGUN\">星間ランチャー</link>の軌道を阻害するものがあります:\n"
 "    • {0}\n"
 "\n"
-"ランチャーで貨物を射ち出すなら、経路を確保してください"
+"ランチャーの軌道を確保してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.NAME"
@@ -3343,7 +3343,7 @@ msgstr "レールの保守点検中: {timeleft}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.TOOLTIP"
 msgid ""
 "This building automatically performs routine maintenance every {x} launches"
-msgstr "この設備は、{x}回の射出ごとに定例の保守点検作業を自動的に行います"
+msgstr "この設備は、{x}回の発射ごとに定例の保守点検作業を自動的に行います"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME"
@@ -3571,7 +3571,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.NAME"
 msgid "Access: Restricted"
-msgstr "内装設備の使用: 制限あり"
+msgstr "アクセス: 制限あり"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.TOOLTIP"
@@ -3580,15 +3580,14 @@ msgid ""
 "\n"
 "Controlled by a <link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link>"
 msgstr ""
-"この設備は制限されているため使用できません。なお、積み込みは行えます\n"
+"この設備は制限されており、積み込みは行えますが操作できません\n"
 "\n"
-"これは<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御され"
-"ています"
+"<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御されます"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.NAME"
 msgid "Access: Not Restricted"
-msgstr "内装設備の使用: 制限なし"
+msgstr "アクセス: 制限なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.TOOLTIP"
@@ -3597,10 +3596,9 @@ msgid ""
 "\n"
 "Controlled by a <link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link>"
 msgstr ""
-"この設備の使用は制限されていません\n"
+"この設備の操作は制限されていません\n"
 "\n"
-"これは<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御され"
-"ています"
+"<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御されます"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETSTRANDED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETSTRANDED.NAME"
@@ -4663,6 +4661,18 @@ msgstr "複製人間の操作が必要"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKREQUIRESMINION.TOOLTIP"
 msgid "A Duplicant must be present to complete this operation"
 msgstr "この操作には複製人間が必要です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_GAS.NAME"
+#~ msgid "Low Air Pressure"
+#~ msgstr "気圧不足"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.HEATINGSTALLEDLOWMASS_GAS.TOOLTIP"
+#~ msgid ""
+#~ "A minimum atmospheric pressure of <b>{TargetPressure}</b> is needed for "
+#~ "this building to heat up"
+#~ msgstr ""
+#~ "この設備が熱源として機能するには、周囲の環境が最低でも <b>{TargetPressure}"
+#~ "</b> 気圧必要です"
 
 #~ msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.TOOLTIP"
 #~ msgid "Output is blocked"
