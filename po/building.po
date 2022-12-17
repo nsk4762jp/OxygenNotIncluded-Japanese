@@ -1625,19 +1625,19 @@ msgid ""
 "\n"
 "It will not receive stored amplification data in this state"
 msgstr ""
+"選択した間欠泉は噴出していません\n"
+"\n"
+"この状態では蓄積された増幅データを受信することができません"
 
 #. STRINGS.BUILDING.STATUSITEMS.GEOTUNER_NEEDGEYSER.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDSEED.NAME"
-#| msgid "No Seed Selected"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GEOTUNER_NEEDGEYSER.NAME"
 msgid "No Geyser Selected"
-msgstr "種子未選択"
+msgstr "間欠泉未選択"
 
 #. STRINGS.BUILDING.STATUSITEMS.GEOTUNER_NEEDGEYSER.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GEOTUNER_NEEDGEYSER.TOOLTIP"
 msgid "Select an analyzed geyser to increase its output"
-msgstr ""
+msgstr "出力を上昇させたい分析済みの間欠泉を選択してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.GETTINGREADY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GETTINGREADY.NAME"
@@ -1650,23 +1650,18 @@ msgid "This building will soon be ready to use"
 msgstr "この設備はもうすぐ使用できます"
 
 #. STRINGS.BUILDING.STATUSITEMS.GEYSER_GEOTUNED.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HEADERS.SUBENTRIES"
-#| msgid "Entries ({0}/{1})"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GEYSER_GEOTUNED.NAME"
 msgid "Geotuned ({0}/{1})"
-msgstr "項目 ({0}/{1})"
+msgstr "チューニング済み ({0}/{1})"
 
 #. STRINGS.BUILDING.STATUSITEMS.GEYSER_GEOTUNED.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.STATUSITEMS.RUMMAGINGSEED.TOOLTIP"
-#| msgid ""
-#| "This critter is searching for tasty <style=\"KKeyword\">Seeds</style>"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GEYSER_GEOTUNED.TOOLTIP"
 msgid ""
 "This geyser is being boosted by {0} out {1} of "
 "<style=\"KKeyword\">Geotuners</style>"
-msgstr "この動物はおいしい<style=\"KKeyword\">種子</style>を探しています"
+msgstr ""
+"この間欠泉は<style=\"KKeyword\">ジオチューナー</style>によって出力が {1}  の"
+"うち {0} ブーストされています"
 
 #. STRINGS.BUILDING.STATUSITEMS.GRAVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GRAVE.NAME"
@@ -2477,19 +2472,19 @@ msgstr "この設備が稼働するには、これらの問題が解決される
 #. STRINGS.BUILDING.STATUSITEMS.MISSIONCONTROLASSISTINGROCKET.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MISSIONCONTROLASSISTINGROCKET.NAME"
 msgid "Guidance Signal: {0}"
-msgstr ""
+msgstr "誘導シグナル: {0}"
 
 #. STRINGS.BUILDING.STATUSITEMS.MISSIONCONTROLASSISTINGROCKET.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MISSIONCONTROLASSISTINGROCKET.TOOLTIP"
 msgid ""
 "Once transmission is complete, Mission Control will boost targeted rocket's "
 "speed"
-msgstr ""
+msgstr "送信が完了すると、管制により指定したロケットのスピードが上昇します"
 
 #. STRINGS.BUILDING.STATUSITEMS.MISSIONCONTROLBOOSTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MISSIONCONTROLBOOSTED.NAME"
 msgid "Mission Control Speed Boost: {0}"
-msgstr ""
+msgstr "管制スピードブースト: {0}"
 
 #. STRINGS.BUILDING.STATUSITEMS.MISSIONCONTROLBOOSTED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MISSIONCONTROLBOOSTED.TOOLTIP"
@@ -2498,6 +2493,9 @@ msgid ""
 "\n"
 "{1} remaining"
 msgstr ""
+"管制によりこのロケットは {0} のスピードブーストを受けています\n"
+"\n"
+"残り {1}"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME"
@@ -3071,7 +3069,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.NOROCKETSTOMISSIONCONTROLBOOST.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOROCKETSTOMISSIONCONTROLBOOST.NAME"
 msgid "No Eligible Rockets in Range"
-msgstr ""
+msgstr "範囲内に適格なロケット無し"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOROCKETSTOMISSIONCONTROLBOOST.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOROCKETSTOMISSIONCONTROLBOOST.TOOLTIP"
@@ -3079,12 +3077,13 @@ msgid ""
 "Rockets must be mid-flight and not targeted by another Mission Control "
 "Station, or already boosted"
 msgstr ""
+"他の管制端末によってスピードブーストされていない、航行中のロケットが必要です"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOROCKETSTOMISSIONCONTROLCLUSTERBOOST.NAME
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.NOROCKETSTOMISSIONCONTROLCLUSTERBOOST.NAME"
 msgid "No Eligible Rockets in Range"
-msgstr ""
+msgstr "範囲内に適格なロケット無し"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOROCKETSTOMISSIONCONTROLCLUSTERBOOST.TOOLTIP
 msgctxt ""
@@ -3093,6 +3092,8 @@ msgid ""
 "Rockets must be mid-flight, within {0} tiles, and not targeted by another "
 "Mission Control Station or already boosted"
 msgstr ""
+"他の管制端末によってスピードブーストされていない、{0} タイル内にいる航行中の"
+"ロケットが必要です"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.NAME"
@@ -3631,13 +3632,13 @@ msgstr "この水汲み場で汲み上げる液体: {Liquids}"
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.RADIATOR_ENERGY_CURRENT_EMISSION_RATE.NAME"
 msgid "Currently Emitting: {ENERGY_RATE}"
-msgstr ""
+msgstr "現在産出量: {ENERGY_RATE}"
 
 #. STRINGS.BUILDING.STATUSITEMS.RADIATOR_ENERGY_CURRENT_EMISSION_RATE.TOOLTIP
 msgctxt ""
 "STRINGS.BUILDING.STATUSITEMS.RADIATOR_ENERGY_CURRENT_EMISSION_RATE.TOOLTIP"
 msgid "Currently Emitting: {ENERGY_RATE}"
-msgstr ""
+msgstr "現在産出量: {ENERGY_RATE}"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.NAME"
