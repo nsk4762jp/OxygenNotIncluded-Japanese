@@ -2786,16 +2786,6 @@ msgid "Scan Network Quality: {TotalQuality}"
 msgstr "探査ネットワーク精度: {TotalQuality}"
 
 #. STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP"
-#| msgid ""
-#| "This scanner network is scanning at <b>{TotalQuality}</b> effectiveness\n"
-#| "\n"
-#| "It will detect incoming objects <b>{WorstTime}</b> to <b>{BestTime}</b> "
-#| "before they arrive\n"
-#| "\n"
-#| "Build multiple <link=\"COMETDETECTOR\">Space Scanner</link>s and ensure "
-#| "they're each scanning effectively for the best detection results"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.TOOLTIP"
 msgid ""
 "This scanner network is scanning at <b>{TotalQuality}</b> effectiveness\n"
@@ -2814,7 +2804,9 @@ msgstr ""
 "前に検知できます\n"
 "\n"
 "複数の<link=\"COMETDETECTOR\">宇宙スキャナー</link>を構築し、それぞれが連携し"
-"て探査することで、最高の結果を得ることができます"
+"て探査することで、最高の結果を得ることができます\n"
+"\n"
+"    • 地表カバー率: <b>{Coverage}</b>"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEUTRONIUMUNMINABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEUTRONIUMUNMINABLE.NAME"
@@ -3691,12 +3683,9 @@ msgid "No Delivery Destination"
 msgstr "配達先なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP"
-#| msgid "A delivery destination has not been set    • {0}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP"
 msgid "A delivery destination has not been set"
-msgstr "射出先が指定されていません。    • {0}"
+msgstr "配達先が指定されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME"
@@ -3704,14 +3693,6 @@ msgid "Launch Path Blocked"
 msgstr "打ち上げ軌道阻害"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.TOOLTIP"
-#| msgid ""
-#| "There are obstructions in the launch trajectory of this "
-#| "<link=\"RAILGUN\">Interplanetary Launcher</link>:\n"
-#| "    • {0}\n"
-#| "\n"
-#| "This launcher requires a clear path to launch payloads"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.TOOLTIP"
 msgid ""
 "There are obstructions in the launch trajectory of this "
@@ -3719,8 +3700,7 @@ msgid ""
 "\n"
 "This launcher requires a clear path to launch payloads"
 msgstr ""
-"<link=\"RAILGUN\">星間ランチャー</link>の軌道を阻害するものがあります:\n"
-"    • {0}\n"
+"<link=\"RAILGUN\">星間ランチャー</link>の軌道を阻害するものがあります\n"
 "\n"
 "ランチャーの軌道を確保してください"
 
@@ -4062,13 +4042,6 @@ msgid "No Line of Sight"
 msgstr "視界がない"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPACE_VISIBILITY_NONE.TOOLTIP
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDING.STATUSITEMS.MISSILELAUNCHER_NOSURFACESIGHT.TOOLTIP"
-#| msgid ""
-#| "This building has no view of space\n"
-#| "\n"
-#| "To properly function, this building requires an unblocked view of space"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACE_VISIBILITY_NONE.TOOLTIP"
 msgid ""
 "This building has no view of space\n"
@@ -4078,7 +4051,8 @@ msgid ""
 msgstr ""
 "この設備は視界に宇宙を捉えられません\n"
 "\n"
-"機能させるために視界を確保してください"
+"機能させるために視界を確保してください\n"
+"    • 性能: <b>{VISIBILITY}</b>"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPACE_VISIBILITY_REDUCED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACE_VISIBILITY_REDUCED.NAME"
@@ -4086,13 +4060,6 @@ msgid "Reduced Visibility"
 msgstr "視界低下"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPACE_VISIBILITY_REDUCED.TOOLTIP
-#, fuzzy
-#| msgctxt ""
-#| "STRINGS.BUILDING.STATUSITEMS.MISSILELAUNCHER_PARTIALLYBLOCKED.TOOLTIP"
-#| msgid ""
-#| "This building has a partially obstructed view of space\n"
-#| "\n"
-#| "To properly function, this building requires an unblocked view of space"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACE_VISIBILITY_REDUCED.TOOLTIP"
 msgid ""
 "This building has a partially obstructed view of space\n"
@@ -4103,7 +4070,8 @@ msgid ""
 msgstr ""
 "この設備は視界を阻害されているため、全宇宙を捉えられません\n"
 "\n"
-"機能させるために阻害要因を除去してください"
+"最大速度で操作させるために視界を確保してください\n"
+"    • 性能: <b>{VISIBILITY}</b>"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPACECRAFTREADYTOLAND.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACECRAFTREADYTOLAND.NAME"
