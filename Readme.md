@@ -37,28 +37,8 @@ MIT License
 
 ## 貢献者
 
-[LefTonbo](https://github.com/leftonbo)  
-
-[Shohei](https://github.com/shohei918)  
-
-[Yoshida Seisuke](https://github.com/seisuke)  
-
-[Souki Tanaka](https://github.com/souki-tn)  
-
-[kankoromochi](https://github.com/kankoromochi)  
-
-[piyo-gh](https://github.com/piyo-gh)  
-
-[yamashu](https://github.com/yamashush)  
-
-[Kazuhiro Mizushima](https://github.com/VoQn)  
-
-[halver3214](https://github.com/halver3214)  
-
-[wada314](https://github.com/wada314)  
-
-[denev-rove](https://github.com/denev-rove)  
-
+下記のリンクを参照してください。  
+https://github.com/nsk4762jp/OxygenNotIncluded-Japanese/graphs/contributors
 
 
 ## 翻訳の手伝いをしてくれる人を募集しています
