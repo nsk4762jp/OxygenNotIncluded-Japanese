@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDING.DETAILS.USE_COUNT
@@ -1180,7 +1180,7 @@ msgstr "埋没"
 #. STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NOTIFICATION_NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NOTIFICATION_NAME"
 msgid "Building entombment"
-msgstr "設備は埋もれています"
+msgstr "設備が埋もれている"
 
 #. STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ENTOMBED.NOTIFICATION_TOOLTIP"
@@ -3424,7 +3424,7 @@ msgstr "複製人間はこのロケットモジュールまで辿り着けませ
 #. STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.NAME"
 msgid "Launch Path Blocked"
-msgstr "ロケット打ち上げ軌道阻害"
+msgstr "打ち上げ軌道に障害物がある"
 
 #. STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.TILE_FORMAT
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PATH_NOT_CLEAR.TILE_FORMAT"
@@ -3439,10 +3439,10 @@ msgid ""
 "\n"
 "This rocket requires a clear flight path for launch"
 msgstr ""
-"このロケットの打ち上げ軌道に阻害物があります:\n"
+"このロケットの打ち上げ軌道に障害物があります:\n"
 "    • {0}\n"
 "\n"
-"ロケットの航行路は視界良好でなければなりません"
+"ロケットを打ち上げるには、航行経路を確保してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME"
@@ -3680,7 +3680,7 @@ msgstr "現在産出量: {ENERGY_RATE}"
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.NAME"
 msgid "No Delivery Destination"
-msgstr "配達先なし"
+msgstr "配達先がない"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_NO_DESTINATION.TOOLTIP"
@@ -3690,7 +3690,7 @@ msgstr "配達先が指定されていません"
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.NAME"
 msgid "Launch Path Blocked"
-msgstr "打ち上げ軌道阻害"
+msgstr "射出軌道に障害物がある"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUN_PATH_NOT_CLEAR.TOOLTIP"
@@ -3700,9 +3700,9 @@ msgid ""
 "\n"
 "This launcher requires a clear path to launch payloads"
 msgstr ""
-"<link=\"RAILGUN\">星間ランチャー</link>の軌道を阻害するものがあります\n"
+"この<link=\"RAILGUN\">星間ランチャー</link>の射出軌道に障害物があります\n"
 "\n"
-"ランチャーの軌道を確保してください"
+"ランチャーで貨物を射ち出すには、経路を確保してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.NAME"
@@ -3713,7 +3713,7 @@ msgstr "レールの保守点検中: {timeleft}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNCOOLDOWN.TOOLTIP"
 msgid ""
 "This building automatically performs routine maintenance every {x} launches"
-msgstr "この設備は、{x}回の発射ごとに定例の保守点検作業を自動的に行います"
+msgstr "この設備は、{x}回の射出ごとに定例の保守点検作業を自動的に行います"
 
 #. STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.RAILGUNPAYLOADNEEDSEMPTYING.NAME"
@@ -3935,13 +3935,13 @@ msgid ""
 "Tall rockets may not be able to land on this <style=\"KKeyword\">Rocket "
 "Platform</style>"
 msgstr ""
-"長いロケットはこの<style=\"KKeyword\">ロケット発射台</style>に着陸できないか"
-"もしれません"
+"全長の長いロケットは、この<style=\"KKeyword\">ロケット発射台</style>に着陸で"
+"きないかもしれません"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.NAME"
 msgid "Access: Restricted"
-msgstr "アクセス: 制限あり"
+msgstr "使用規制: あり"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONACTIVE.TOOLTIP"
@@ -3950,14 +3950,15 @@ msgid ""
 "\n"
 "Controlled by a <link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link>"
 msgstr ""
-"この設備は制限されており、積み込みは行えますが操作できません\n"
+"この設備は規制中のため使用できません (内容物の収納は可能です)\n"
 "\n"
-"<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御されます"
+"この規制は<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御"
+"されています"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.NAME"
 msgid "Access: Not Restricted"
-msgstr "アクセス: 制限なし"
+msgstr "使用規制: なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETRESTRICTIONINACTIVE.TOOLTIP"
@@ -3966,9 +3967,10 @@ msgid ""
 "\n"
 "Controlled by a <link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link>"
 msgstr ""
-"この設備の操作は制限されていません\n"
+"この設備は規制されていないため使用できます\n"
 "\n"
-"<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御されます"
+"この規制は<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>によって制御"
+"されています"
 
 #. STRINGS.BUILDING.STATUSITEMS.ROCKETSTRANDED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETSTRANDED.NAME"
