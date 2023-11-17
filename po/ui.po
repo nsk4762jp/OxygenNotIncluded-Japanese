@@ -99,7 +99,7 @@ msgstr "このコロニーは {0} サイクル運営されています"
 #| msgid "This Colony is {0} Cycle(s) Old"
 msgctxt "STRINGS.UI.ASTEROIDCLOCK.MILESTONE_DESCRIPTION"
 msgid "This colony is about to hit Cycle {0}!"
-msgstr "このコロニーは {0} サイクル運営されています"
+msgstr "このコロニーはもうすぐ {0} サイクルに到達します！"
 
 #. STRINGS.UI.ASTEROIDCLOCK.MILESTONE_TITLE
 #, fuzzy
@@ -107,7 +107,7 @@ msgstr "このコロニーは {0} サイクル運営されています"
 #| msgid "Approaching event horizon..."
 msgctxt "STRINGS.UI.ASTEROIDCLOCK.MILESTONE_TITLE"
 msgid "Approaching Milestone"
-msgstr "事象の地平面に近づいています..."
+msgstr "マイルストーンに近づいています"
 
 #. STRINGS.UI.ASTEROIDCLOCK.SCHEDULE_BUTTON_TOOLTIP
 msgctxt "STRINGS.UI.ASTEROIDCLOCK.SCHEDULE_BUTTON_TOOLTIP"
@@ -510,7 +510,7 @@ msgstr "製造"
 #| msgid "Clear Floor"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.FOOD_DEHYDRATOR_WATER_OUTPUT"
 msgid "Wet Floor"
-msgstr "床掃除"
+msgstr "床を濡らす"
 
 #. STRINGS.UI.BUILDINGEFFECTS.GASCOOLING
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.GASCOOLING"
@@ -828,7 +828,7 @@ msgstr "毛刈り可能な {Item}: {Time}ごとに{Amount} ({Atmosphere})"
 #| msgid "Shearable {Item}: {Amount} per {Time} ({TempMin}-{TempMax})"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_TEMP"
 msgid "Shearable {Item}: {Amount} per {Time} ({TempMin} - {TempMax})"
-msgstr "毛刈り可能な {Item}: {Time}ごとに{Amount} ({TempMin}-{TempMax})"
+msgstr "毛刈り可能な {Item}: {Time}ごとに{Amount} ({TempMin} - {TempMax})"
 
 #. STRINGS.UI.BUILDINGEFFECTS.STORAGECAPACITY
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.STORAGECAPACITY"
@@ -916,7 +916,7 @@ msgid ""
 "This category of building may be required or prohibited in certain "
 "<style=\"KKeyword\">Rooms</style>"
 msgstr ""
-"この動物の<style=\"KKeyword\">強壮ウコン</style>が再び萌芽するまでの時間です"
+"このカテゴリーの設備は<style=\"KKeyword\">部屋</style>の中への設置が必要または禁止されています"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_LURE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_LURE"
@@ -1208,9 +1208,7 @@ msgstr ""
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.FOOD_DEHYDRATOR_WATER_OUTPUT"
 msgid ""
 "This building dumps <link=\"WATER\">Water</link> on the floor while in use"
-msgstr ""
-"この設備が稼働を再開するには、溜まった<link=\"SALT\">塩</link>を抜き取る作業"
-"が必要です"
+msgstr "この設備の稼働中は、<link=\"WATER\">水</link>が床に排出されます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.GASCOOLING
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.GASCOOLING"
@@ -1818,7 +1816,7 @@ msgstr ""
 "この動物は<b>{Time}</b>ごとに毛刈りで<style=\"produced\">{Amount}</style>の"
 "<style=\"KKeyword\">{Item}</style>が得られます\n"
 "\n"
-"<style=\"KKeyword\">{Item}</style>の再生には{TempMin}-{TempMax}の範囲の食糧を"
+"<style=\"KKeyword\">{Item}</style>の再生には{TempMin} - {TempMax}の範囲の食糧を"
 "食べる必要があります"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.STORAGECAPACITY
@@ -4057,7 +4055,7 @@ msgid ""
 "Unable to report error. Save file is too large. Please contact us using the "
 "bug tracker."
 msgstr ""
-"エラーを報告することができません。バグトラッカーから連絡をしてください。"
+"エラーを報告することができません。セーブファイルが大きすぎます。バグトラッカーから連絡をしてください。"
 
 #. STRINGS.UI.CRASHSCREEN.REPORTEDERROR_SUCCESS
 #, fuzzy
@@ -10385,6 +10383,8 @@ msgid ""
 "•<indent=20px>Meter valves no longer continuously reset when receiving a "
 "green signal.</indent>"
 msgstr ""
+"•<indent=20px>メーターバルブがグリーンを受信した時に継続してリセットされ続けることが"
+"なくなりました。</indent>"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.U50_CHANGES_MOOD
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.U50_CHANGES_MOOD"
@@ -10393,6 +10393,8 @@ msgid ""
 "satisfied states: Miserable stops reproduction. Satisfied gives full "
 "metabolism and default reproduction.</indent>"
 msgstr ""
+"•<indent=20px>動物の機嫌に陰鬱状態と満足状態が追加され拡張されました。"
+"陰鬱状態では繁殖が停止し、満足状態では最大の代謝と通常の繁殖になります。</indent>"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.U50_CHANGES_PACU
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.U50_CHANGES_PACU"
@@ -10402,6 +10404,9 @@ msgid ""
 "less than 8 tiles of liquid. Easier to feed due to a rebalanced diet.</"
 "indent>"
 msgstr ""
+"•<indent=20px>パクーにはいくつかのバグ修正と、繁殖に関する効果の変更が入りました。"
+"ぴちぴち跳ねている時と8タイル未満の液体の中では、今は正しく閉じ込められた状態になります。"
+"食事が再調整されたことにより餌やりがより簡単になりました。</indent>"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.U50_CHANGES_SUITCHECKPOINTS
 #, fuzzy
@@ -10418,10 +10423,9 @@ msgid ""
 "so Duplicants can pass through. Some checkpoints may now be unintentionally "
 "connected to existing <link=\"LOGICWIRE\">Automation Wire</link>s."
 msgstr ""
-"以下の設備は新たな自動化ポートを獲得しました！\n"
-"\n"
-"コロニーにあるこれらの設備は<link=\"LOGICWIRE\">自動化ワイヤー</link>と意図し"
-"ない接続をしている可能性があるため、確認が必要です。"
+"•<indent=20px>スーツチェックポイントを利用停止にする自動化ポートを持つようになりました。"
+"利用停止では複製人間は通過する可能になります。既存のチェックポイントは"
+"<link=\"LOGICWIRE\">自動化ワイヤ</link>と意図しない接続をしているかもしれません。"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.U50_CHANGES_SUMMARY
 #, fuzzy
@@ -10438,10 +10442,8 @@ msgid ""
 "There have been significant changes to critters since this save file was "
 "created! Please check on your ranches."
 msgstr ""
-"このセーブデータが作られてから<b>宇宙スキャナー</b>と<b>望遠鏡</b>に重要な変"
-"更がありました！\n"
-"\n"
-"流星群は20サイクル間無効になっており、適応するための時間を確保しています。"
+"このセーブデータが作られてから動物に重要な変更がありました！"
+"畜産の状況をチェックしてください。"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.U50_CHANGES_TITLE
 #, fuzzy
@@ -10449,7 +10451,7 @@ msgstr ""
 #| msgid "MORALE CHANGES"
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.U50_CHANGES_TITLE"
 msgid "IMPORTANT CHANGES"
-msgstr "士気の変更"
+msgstr "重要な変更"
 
 #. STRINGS.UI.FRONTEND.SCENARIOS_MENU.BUTTON_DONE
 msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.BUTTON_DONE"
@@ -10585,6 +10587,7 @@ msgid ""
 "This may prevent the game from saving."
 msgstr ""
 "ディスクへのアクセス中に権限エラーが発生しました。\n"
+"\n"
 "以下の場所の書き込み権限があるか確認してください:\n"
 "{0}\n"
 "\n"
@@ -10611,6 +10614,9 @@ msgid ""
 "This may prevent the game from saving."
 msgstr ""
 "ディスクへのアクセス中に権限エラーが発生しました。\n"
+"\n"
+"OneDriveがゲームに干渉することがあります。\n"
+"\n"
 "以下の場所の書き込み権限があるか確認してください:\n"
 "{0}\n"
 "\n"
@@ -12093,11 +12099,14 @@ msgid ""
 "\n"
 "It is also a paper shredder."
 msgstr ""
+"色々な有名人の声でダジャレをお届けするようにプログラムされたカスタムロボです。\n"
+"\n"
+"シュレッダーとしても機能します。"
 
 #. STRINGS.UI.KEEPSAKES.MORB_ROVER_MAKER.NAME
 msgctxt "STRINGS.UI.KEEPSAKES.MORB_ROVER_MAKER.NAME"
 msgid "Toy Bot"
-msgstr ""
+msgstr "おもちゃのロボット"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.ARTABLE_ITEM_FACADE_FOR
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.ARTABLE_ITEM_FACADE_FOR"
@@ -12239,7 +12248,7 @@ msgstr "このアイテムは印刷できません"
 msgctxt ""
 "STRINGS.UI.KLEI_INVENTORY_SCREEN.BARTERING.TOOLTIP_UNBUYABLE_ALREADY_OWNED"
 msgid "My colony already owns one of these blueprints"
-msgstr "自分のコロニーではまだこれらの設計図を入手していません。"
+msgstr "自分のコロニーはこれらの設計図を入手済みです。"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.BARTERING.TOOLTIP_UNBUYABLE_BETA
 #, fuzzy
@@ -12432,7 +12441,7 @@ msgstr "アイテム"
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.ITEM_DLC_REQUIRED
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.ITEM_DLC_REQUIRED"
 msgid "This blueprint is designed for the <i>Spaced Out!</i> DLC."
-msgstr ""
+msgstr "この設計図は<i>Spaced Out!</i>DLC向けに作られています。"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.ITEM_FACADE_FOR
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.ITEM_FACADE_FOR"
@@ -12695,7 +12704,7 @@ msgstr "収納"
 #| msgid "Standard Meal"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_BOTTOMS_BASIC"
 msgid "Standard Pants"
-msgstr "標準的なキャンバス"
+msgstr "標準的なパンツ"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_BOTTOMS_FANCY
 #, fuzzy
@@ -12735,7 +12744,7 @@ msgstr "下着"
 #| msgid "Standard Game"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_GLOVES_BASIC"
 msgid "Standard Gloves"
-msgstr "スタンダード"
+msgstr "標準的なグローブ"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_GLOVES_PRINTS
 #, fuzzy
@@ -12769,7 +12778,7 @@ msgstr "靴下"
 #| msgid "Standard Meal"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_SHOES_BASIC"
 msgid "Standard Shoes"
-msgstr "標準的な食事"
+msgstr "標準的なシューズ"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_SHOES_FANCY
 #, fuzzy
@@ -12777,7 +12786,7 @@ msgstr "標準的な食事"
 #| msgid "Basic Red Shoes"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_SHOES_FANCY"
 msgid "Fancy Shoes"
-msgstr "標準シューズ"
+msgstr "ファンシーシューズ"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_TOPS_BASIC
 #, fuzzy
@@ -12785,12 +12794,12 @@ msgstr "標準シューズ"
 #| msgid "Standard"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_TOPS_BASIC"
 msgid "Standard Shirts"
-msgstr "普通"
+msgstr "標準的なシャツ"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_TOPS_DRESS
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_TOPS_DRESS"
 msgid "Dresses and Bodysuits"
-msgstr ""
+msgstr "ドレスとボディスーツ"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.CLOTHING_TOPS_JACKET
 #, fuzzy
@@ -14892,7 +14901,7 @@ msgstr "ナスのアトモスーツ外観"
 #| msgid "Confetti Atmo Outfit"
 msgctxt "STRINGS.UI.OUTFITS.ATMOSUIT_CANTALOUPE.NAME"
 msgid "Rocketmelon Atmo Outfit"
-msgstr "紙吹雪のアトモスーツ外観"
+msgstr "ロケットメロンのアトモスーツ外観"
 
 #. STRINGS.UI.OUTFITS.ATMOSUIT_CONFETTI.NAME
 msgctxt "STRINGS.UI.OUTFITS.ATMOSUIT_CONFETTI.NAME"
@@ -14951,7 +14960,7 @@ msgstr "輝くレッドのアトモスーツ外観"
 #| msgid "Delete Outfit"
 msgctxt "STRINGS.UI.OUTFITS.BALLET.NAME"
 msgid "Ballet Outfit"
-msgstr "衣装の削除"
+msgstr "バレー衣装"
 
 #. STRINGS.UI.OUTFITS.BASIC_AQUA.NAME
 msgctxt "STRINGS.UI.OUTFITS.BASIC_AQUA.NAME"
@@ -15049,7 +15058,7 @@ msgstr "LEDパーティ衣装"
 #| msgid "Drop Outfit"
 msgctxt "STRINGS.UI.OUTFITS.DONOR.NAME"
 msgid "Donor Outfit"
-msgstr "服を脱ぐ"
+msgstr "寄贈者の衣装"
 
 #. STRINGS.UI.OUTFITS.GONCHIES_BLUEBERRY.NAME
 msgctxt "STRINGS.UI.OUTFITS.GONCHIES_BLUEBERRY.NAME"
@@ -15127,7 +15136,7 @@ msgstr "スイカゼリー衣装"
 #| msgid "Engine Power"
 msgctxt "STRINGS.UI.OUTFITS.MECHANIC.NAME"
 msgid "Engineer Coveralls"
-msgstr "エンジン出力"
+msgstr "エンジニアの作業着"
 
 #. STRINGS.UI.OUTFITS.NERD.NAME
 msgctxt "STRINGS.UI.OUTFITS.NERD.NAME"
@@ -15145,7 +15154,7 @@ msgstr "叛逆の武道着衣装"
 #| msgid "Drop Outfit"
 msgctxt "STRINGS.UI.OUTFITS.SLEEVELESS_BOW_BW.NAME"
 msgid "PhD Dress Outfit"
-msgstr "服を脱ぐ"
+msgstr "博士号のローブ衣装"
 
 #. STRINGS.UI.OUTFITS.TWEED_PINK_ORCHID.NAME
 #, fuzzy
@@ -15153,7 +15162,7 @@ msgstr "服を脱ぐ"
 #| msgid "Research Outfit"
 msgctxt "STRINGS.UI.OUTFITS.TWEED_PINK_ORCHID.NAME"
 msgid "Power Brunch Outfit"
-msgstr "研究者の衣装"
+msgstr "パワーブランチ系の衣装"
 
 #. STRINGS.UI.OUTFITS.VELOUR_BLACK.NAME
 #, fuzzy
@@ -15161,7 +15170,7 @@ msgstr "研究者の衣装"
 #| msgid "Delete Outfit"
 msgctxt "STRINGS.UI.OUTFITS.VELOUR_BLACK.NAME"
 msgid "PhD Velour Outfit"
-msgstr "衣装の削除"
+msgstr "博士号のベロア衣装"
 
 #. STRINGS.UI.OUTFITS.VELOUR_BLUE.NAME
 #, fuzzy
@@ -15171,7 +15180,7 @@ msgstr "衣装の削除"
 #| msgid "Save New Outfit"
 msgctxt "STRINGS.UI.OUTFITS.VELOUR_BLUE.NAME"
 msgid "Shortwave Velour Outfit"
-msgstr "新しい衣装の保存"
+msgstr "短波のベロア衣装"
 
 #. STRINGS.UI.OUTFITS.VELOUR_PINK.NAME
 #, fuzzy
@@ -15179,7 +15188,7 @@ msgstr "新しい衣装の保存"
 #| msgid "Satsuma Jelly Outfit"
 msgctxt "STRINGS.UI.OUTFITS.VELOUR_PINK.NAME"
 msgid "Gamma Velour Outfit"
-msgstr "オレンジゼリー衣装"
+msgstr "ガンマのベロア衣装"
 
 #. STRINGS.UI.OUTFITS.WAISTCOAT_PINSTRIPE_SLATE.NAME
 #, fuzzy
@@ -15187,12 +15196,12 @@ msgstr "オレンジゼリー衣装"
 #| msgid "Rebel Gi Outfit"
 msgctxt "STRINGS.UI.OUTFITS.WAISTCOAT_PINSTRIPE_SLATE.NAME"
 msgid "Nobel Pinstripe Outfit"
-msgstr "叛逆の武道着衣装"
+msgstr "高貴なピンストライプ衣装"
 
 #. STRINGS.UI.OUTFITS.WATER.NAME
 msgctxt "STRINGS.UI.OUTFITS.WATER.NAME"
 msgid "HVAC Coveralls"
-msgstr ""
+msgstr "空調管理者の作業着"
 
 #. STRINGS.UI.OVERLAYS.CONVEYOR.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CONVEYOR.BUTTON"
@@ -18535,7 +18544,7 @@ msgstr "物語特性"
 #| msgid "Capture critters {Hotkey}"
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWN_STORY_TRAIT.TOOLTIP"
 msgid "Spawn story traits {Hotkey}"
-msgstr "動物に縄を掛けます {Hotkey}"
+msgstr "物語特性を生成します {Hotkey}"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWNER.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWNER.NAME"
@@ -21797,7 +21806,7 @@ msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CARGO_BAY_FOR_NOSECONE_HARVEST.STATUS."
 "FAILURE"
 msgid "Drillcone Cargo Bay"
-msgstr "空の貨物ベイ"
+msgstr "ドリルコーンの貨物ベイ"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CARGO_BAY_FOR_NOSECONE_HARVEST.STATUS.READY
 #, fuzzy
@@ -21807,7 +21816,7 @@ msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CARGO_BAY_FOR_NOSECONE_HARVEST.STATUS."
 "READY"
 msgid "Drillcone Cargo Bay"
-msgstr "空の貨物ベイ"
+msgstr "ドリルコーンの貨物ベイ"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CARGO_BAY_FOR_NOSECONE_HARVEST.STATUS.WARNING
 #, fuzzy
@@ -21817,7 +21826,7 @@ msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CARGO_BAY_FOR_NOSECONE_HARVEST.STATUS."
 "WARNING"
 msgid "Drillcone Cargo Bay"
-msgstr "空の貨物ベイ"
+msgstr "ドリルコーンの貨物ベイ"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CARGO_BAY_FOR_NOSECONE_HARVEST.TOOLTIP.FAILURE
 msgctxt ""
@@ -21829,6 +21838,10 @@ msgid ""
 "This rocket has a <link=\"NOSECONEHARVEST\">Drillcone</link> installed but "
 "nowhere to store the materials"
 msgstr ""
+"貨物ベイが取り付けられていません\n"
+"\n"
+"このロケットには<link=\"NOSECONEHARVEST\">ドリルコーン</link>が取り付けられていますが、"
+"資源を格納する場所がありません"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CARGO_BAY_FOR_NOSECONE_HARVEST.TOOLTIP.READY
 #, fuzzy
@@ -21838,7 +21851,7 @@ msgctxt ""
 "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CARGO_BAY_FOR_NOSECONE_HARVEST."
 "TOOLTIP.READY"
 msgid "A suitable cargo bay has been installed"
-msgstr "適切な {0} が取り付けられています"
+msgstr "適切な貨物ベイが取り付けられています"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CARGO_BAY_FOR_NOSECONE_HARVEST.TOOLTIP.WARNING
 msgctxt ""
@@ -21850,6 +21863,10 @@ msgid ""
 "This rocket has a <link=\"NOSECONEHARVEST\">Drillcone</link> installed but "
 "nowhere to store the materials"
 msgstr ""
+"貨物ベイが取り付けられていません\n"
+"\n"
+"このロケットには<link=\"NOSECONEHARVEST\">ドリルコーン</link>が取り付けられていますが、"
+"資源を格納する場所がありません"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.STATUS.FAILURE"
@@ -23583,7 +23600,7 @@ msgstr "生成"
 #. STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_ALREADY_EXISTS
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_ALREADY_EXISTS"
 msgid "{StoryName} already exists in this save"
-msgstr ""
+msgstr "このセーブに{StoryName}は既に存在しています"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_BUILDING_HAZARD
 #, fuzzy
@@ -23591,7 +23608,7 @@ msgstr ""
 #| msgid "    • One or more buildings are entombed"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_BUILDING_HAZARD"
 msgid "One or more buildings are in the way"
-msgstr "    • 埋没した設備があります"
+msgstr "既存の設備が邪魔になって設置できません"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_CREATURE_HAZARD
 #, fuzzy
@@ -23599,7 +23616,7 @@ msgstr "    • 埋没した設備があります"
 #| msgid "    • One or more batteries have died"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_CREATURE_HAZARD"
 msgid "One or more critters are in the way"
-msgstr "    • バッテリーが切れています"
+msgstr "動物が邪魔になって設置できません"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_DUPE_HAZARD
 #, fuzzy
@@ -23607,7 +23624,7 @@ msgstr "    • バッテリーが切れています"
 #| msgid "    • One or more Duplicants are idle"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_DUPE_HAZARD"
 msgid "One or more Duplicants are in the way"
-msgstr "    • 待機中の複製人間がいます"
+msgstr "複製人間が邪魔になって設置できません"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_INVALID_LOCATION
 #, fuzzy
@@ -23623,12 +23640,12 @@ msgstr "無効な場所"
 #| msgid "    • One or more farm plots are inoperable"
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.ERROR_ROBOT_HAZARD"
 msgid "One or more robots are in the way"
-msgstr "    • 農耕不可能な農地があります"
+msgstr "ロボットが邪魔になって設置できません"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.HOVERACTION
 msgctxt "STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.HOVERACTION"
 msgid "PLACE"
-msgstr ""
+msgstr "設置"
 
 #. STRINGS.UI.TOOLS.SANDBOX.SPAWN_STORY_TRAIT.NAME
 #, fuzzy
@@ -27995,7 +28012,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SINGLEITEMSELECTIONSIDESCREEN."
 "CURRENT_ITEM_SELECTED_SECTION.NO_ITEM_MESSAGE"
 msgid "Select an item for storage below."
-msgstr "このモジュールに格納する動物を選択する"
+msgstr "格納するアイテムを選択する"
 
 #. STRINGS.UI.UISIDESCREENS.SINGLEITEMSELECTIONSIDESCREEN.CURRENT_ITEM_SELECTED_SECTION.NO_ITEM_TITLE
 #, fuzzy
@@ -28005,7 +28022,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SINGLEITEMSELECTIONSIDESCREEN."
 "CURRENT_ITEM_SELECTED_SECTION.NO_ITEM_TITLE"
 msgid "No Item Selected"
-msgstr "フィルター未選択"
+msgstr "アイテム未選択"
 
 #. STRINGS.UI.UISIDESCREENS.SINGLEITEMSELECTIONSIDESCREEN.CURRENT_ITEM_SELECTED_SECTION.TITLE
 #, fuzzy
@@ -28015,7 +28032,7 @@ msgctxt ""
 "STRINGS.UI.UISIDESCREENS.SINGLEITEMSELECTIONSIDESCREEN."
 "CURRENT_ITEM_SELECTED_SECTION.TITLE"
 msgid "Current Selection"
-msgstr "ターゲット選択"
+msgstr "現在の選択"
 
 #. STRINGS.UI.UISIDESCREENS.SINGLEITEMSELECTIONSIDESCREEN.LIST_TITLE
 #, fuzzy
@@ -29511,7 +29528,7 @@ msgstr "片付け指示を取り消します"
 #| msgid "In Compost Storage"
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLOSESTORAGE.NAME"
 msgid "Close Storage"
-msgstr "堆肥置き場の中にある"
+msgstr "収納設備を閉鎖する"
 
 #. STRINGS.UI.USERMENUACTIONS.CLOSESTORAGE.NAME_OFF
 #, fuzzy
@@ -29519,12 +29536,12 @@ msgstr "堆肥置き場の中にある"
 #| msgid "Cancel Clean"
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLOSESTORAGE.NAME_OFF"
 msgid "Cancel Close"
-msgstr "清掃をやめる"
+msgstr "閉鎖を取りやめる"
 
 #. STRINGS.UI.USERMENUACTIONS.CLOSESTORAGE.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLOSESTORAGE.TOOLTIP"
 msgid "Prevent this container from receiving resources for storage"
-msgstr ""
+msgstr "このコンテナに格納される資源の収納を防ぎます"
 
 #. STRINGS.UI.USERMENUACTIONS.CLOSESTORAGE.TOOLTIP_OFF
 #, fuzzy
@@ -29532,7 +29549,7 @@ msgstr ""
 #| msgid "Cancel this compost order"
 msgctxt "STRINGS.UI.USERMENUACTIONS.CLOSESTORAGE.TOOLTIP_OFF"
 msgid "Cancel this close order"
-msgstr "堆肥化指示を取り消します"
+msgstr "閉鎖指示を取り消します"
 
 #. STRINGS.UI.USERMENUACTIONS.COMPOST.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.COMPOST.NAME"
