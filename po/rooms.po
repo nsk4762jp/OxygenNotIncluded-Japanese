@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.ROOMS.CATEGORY.AGRICULTURAL.NAME
@@ -69,9 +69,15 @@ msgid "Requires one or more Sinks, Hand Sanitizers, or Showers"
 msgstr "流し台、消毒剤、シャワーのいずれかが必要です"
 
 #. STRINGS.ROOMS.CRITERIA.ADVANCEDWASHSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.COOKTOP.NAME"
+#| msgid ""
+#| "<link=\"BUILDCATEGORYREQUIREMENTCLASSCOOKTOP\">Cooking station</link>"
 msgctxt "STRINGS.ROOMS.CRITERIA.ADVANCEDWASHSTATION.NAME"
-msgid "Plumbed wash station"
-msgstr "汚水を溜めない洗い場"
+msgid ""
+"<link=\"BUILDCATEGORYREQUIREMENTCLASSWASHSTATION\">Plumbed wash station</"
+"link>"
+msgstr "<link=\"BUILDCATEGORYREQUIREMENTCLASSCOOKTOP\">調理端末</link>"
 
 #. STRINGS.ROOMS.CRITERIA.BED_SINGLE.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.BED_SINGLE.DESCRIPTION"
@@ -79,8 +85,11 @@ msgid "Must have no more than one Cot or Comfy Bed"
 msgstr "簡易ベッド、快適ベッド、梯子ベッドの上限は1台までです"
 
 #. STRINGS.ROOMS.CRITERIA.BED_SINGLE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.BED_SINGLE.NAME"
+#| msgid "Single <link=\"BUILDINGCATEGORYREQUIREMENTCLASSBEDTYPE\">beds</link>"
 msgctxt "STRINGS.ROOMS.CRITERIA.BED_SINGLE.NAME"
-msgid "Single <link=\"BUILDINGCATEGORYREQUIREMENTCLASSBEDTYPE\">beds</link>"
+msgid "Single <link=\"BUILDCATEGORYREQUIREMENTCLASSBEDTYPE\">beds</link>"
 msgstr "<link=\"BUILDINGCATEGORYREQUIREMENTCLASSBEDTYPE\">ベッド</link>1台"
 
 #. STRINGS.ROOMS.CRITERIA.BEDTYPE.DESCRIPTION
@@ -168,22 +177,28 @@ msgid "Missing {0}"
 msgstr "{0}が必要"
 
 #. STRINGS.ROOMS.CRITERIA.DECOR20.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.DECOR20.DESCRIPTION"
+#| msgid "Requires a decorative item with a minimum Decor value of {0}"
 msgctxt "STRINGS.ROOMS.CRITERIA.DECOR20.DESCRIPTION"
-msgid "Requires a decorative item with a minimum Decor value of {0}"
+msgid "Requires a decorative item with a minimum Decor value of 20"
 msgstr "{0}以上の装飾値を持つ装飾品が必要です"
 
 #. STRINGS.ROOMS.CRITERIA.DECOR20.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.DECORATION.NAME"
+#| msgid "<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">Decor Item</link>"
 msgctxt "STRINGS.ROOMS.CRITERIA.DECOR20.NAME"
 msgid ""
-"<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">Decor item</link>: +{0} "
-"Decor"
-msgstr ""
-"<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">装飾品</link>: (装飾値 "
-"+{0} 以上)"
+"<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">Fancy decor item</link>"
+msgstr "<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">装飾品</link>"
 
 #. STRINGS.ROOMS.CRITERIA.DECORATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.DECORATION.NAME"
+#| msgid "<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">Decor Item</link>"
 msgctxt "STRINGS.ROOMS.CRITERIA.DECORATION.NAME"
-msgid "<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">Decor Item</link>"
+msgid "<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">Decor item</link>"
 msgstr "<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">装飾品</link>"
 
 #. STRINGS.ROOMS.CRITERIA.DECORATIVE_ITEM.DESCRIPTION
@@ -223,9 +238,13 @@ msgid "Requires one or more Lavatories"
 msgstr "水洗トイレが必要です"
 
 #. STRINGS.ROOMS.CRITERIA.FLUSHTOILETTYPE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.BEDTYPE.NAME"
+#| msgid "<link=\"BUILDCATEGORYREQUIREMENTCLASSBEDTYPE\">Beds</link>"
 msgctxt "STRINGS.ROOMS.CRITERIA.FLUSHTOILETTYPE.NAME"
-msgid "Flush Toilet"
-msgstr "水洗式のトイレ"
+msgid ""
+"<link=\"BUILDCATEGORYREQUIREMENTCLASSFLUSHTOILETTYPE\">Flush Toilet</link>"
+msgstr "<link=\"BUILDCATEGORYREQUIREMENTCLASSBEDTYPE\">ベッド</link>"
 
 #. STRINGS.ROOMS.CRITERIA.FOOD_BOX.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.FOOD_BOX.DESCRIPTION"
@@ -243,9 +262,12 @@ msgid "Requires at least one Cot or Comfy Bed"
 msgstr "簡易ベッド、快適ベッド、梯子ベッドのいずれかが少なくとも1台必要です"
 
 #. STRINGS.ROOMS.CRITERIA.HAS_BED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.HAS_BED.NAME"
+#| msgid ""
+#| "One or more <link=\"BUILDINGCATEGORYREQUIREMENTCLASSBEDTYPE\">beds</link>"
 msgctxt "STRINGS.ROOMS.CRITERIA.HAS_BED.NAME"
-msgid ""
-"One or more <link=\"BUILDINGCATEGORYREQUIREMENTCLASSBEDTYPE\">beds</link>"
+msgid "One or more <link=\"BUILDCATEGORYREQUIREMENTCLASSBEDTYPE\">beds</link>"
 msgstr "<link=\"BUILDINGCATEGORYREQUIREMENTCLASSBEDTYPE\">ベッド</link>1台以上"
 
 #. STRINGS.ROOMS.CRITERIA.HAS_LUXURY_BED.DESCRIPTION
@@ -500,9 +522,17 @@ msgid "Requires one or more Research Stations or Super Computers"
 msgstr "研究端末またはスパコンが必要です"
 
 #. STRINGS.ROOMS.CRITERIA.RESEARCH_STATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.RANCHSTATIONTYPE.NAME"
+#| msgid ""
+#| "<link=\"BUILDCATEGORYREQUIREMENTCLASSRANCHSTATIONTYPE\">Ranching "
+#| "building</link>"
 msgctxt "STRINGS.ROOMS.CRITERIA.RESEARCH_STATION.NAME"
-msgid "Research station"
-msgstr "研究端末"
+msgid ""
+"<link=\"BUILDCATEGORYREQUIREMENTCLASSRESEARCHSTATION\">Research station</"
+"link>"
+msgstr ""
+"<link=\"BUILDCATEGORYREQUIREMENTCLASSRANCHSTATIONTYPE\">畜産設備</link>"
 
 #. STRINGS.ROOMS.CRITERIA.ROCKETINTERIOR.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.ROCKETINTERIOR.DESCRIPTION"
@@ -557,9 +587,12 @@ msgid "Requires one or more Outhouses or Lavatories"
 msgstr "野営トイレ、水洗トイレ、壁掛けトイレのいずれかが必要です"
 
 #. STRINGS.ROOMS.CRITERIA.TOILETTYPE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.BEDTYPE.NAME"
+#| msgid "<link=\"BUILDCATEGORYREQUIREMENTCLASSBEDTYPE\">Beds</link>"
 msgctxt "STRINGS.ROOMS.CRITERIA.TOILETTYPE.NAME"
-msgid "Toilet"
-msgstr "トイレ"
+msgid "<link=\"BUILDCATEGORYREQUIREMENTCLASSTOILETTYPE\">Toilet</link>"
+msgstr "<link=\"BUILDCATEGORYREQUIREMENTCLASSBEDTYPE\">ベッド</link>"
 
 #. STRINGS.ROOMS.CRITERIA.WASHSTATION.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.WASHSTATION.DESCRIPTION"
@@ -567,9 +600,13 @@ msgid "Requires one or more Wash Basins, Sinks, Hand Sanitizers, or Showers"
 msgstr "洗面台、流し台、消毒剤、シャワーのいずれかが必要です"
 
 #. STRINGS.ROOMS.CRITERIA.WASHSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.COOKTOP.NAME"
+#| msgid ""
+#| "<link=\"BUILDCATEGORYREQUIREMENTCLASSCOOKTOP\">Cooking station</link>"
 msgctxt "STRINGS.ROOMS.CRITERIA.WASHSTATION.NAME"
-msgid "Wash station"
-msgstr "洗い場"
+msgid "<link=\"BUILDCATEGORYREQUIREMENTCLASSWASHSTATION\">Wash station</link>"
+msgstr "<link=\"BUILDCATEGORYREQUIREMENTCLASSCOOKTOP\">調理端末</link>"
 
 #. STRINGS.ROOMS.CRITERIA.WILDANIMAL.DESCRIPTION
 msgctxt "STRINGS.ROOMS.CRITERIA.WILDANIMAL.DESCRIPTION"
@@ -1260,3 +1297,31 @@ msgid ""
 msgstr ""
 "時間割に休憩時間を挟むことで、娯楽室を訪れた複製人間の士気を更に高めることが"
 "できます"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.ADVANCEDWASHSTATION.NAME"
+#~ msgid "Plumbed wash station"
+#~ msgstr "汚水を溜めない洗い場"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.DECOR20.NAME"
+#~ msgid ""
+#~ "<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">Decor item</link>: +{0} "
+#~ "Decor"
+#~ msgstr ""
+#~ "<link=\"BUILDCATEGORYREQUIREMENTCLASSDECORATION\">装飾品</link>: (装飾値 "
+#~ "+{0} 以上)"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.FLUSHTOILETTYPE.NAME"
+#~ msgid "Flush Toilet"
+#~ msgstr "水洗式のトイレ"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.RESEARCH_STATION.NAME"
+#~ msgid "Research station"
+#~ msgstr "研究端末"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.TOILETTYPE.NAME"
+#~ msgid "Toilet"
+#~ msgstr "トイレ"
+
+#~ msgctxt "STRINGS.ROOMS.CRITERIA.WASHSTATION.NAME"
+#~ msgid "Wash station"
+#~ msgstr "洗い場"
