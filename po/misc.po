@@ -2329,9 +2329,6 @@ msgid "Undug material is blocking off an essential tile"
 msgstr "採掘していない素材がタイルを妨害しています"
 
 #. STRINGS.MISC.STATUSITEMS.REHYDRATEDFOOD.NAME
-#, fuzzy
-#| msgctxt "STRINGS.MISC.STATUSITEMS.REHYDRATEDFOOD.NAME"
-#| msgid "Rehydrated food"
 msgctxt "STRINGS.MISC.STATUSITEMS.REHYDRATEDFOOD.NAME"
 msgid "Rehydrated Food"
 msgstr "水で戻した食糧"
@@ -2343,6 +2340,9 @@ msgid ""
 "\n"
 "<style=\"KKeyword\"><link=\"MORALE\">Morale</link></style>: -1"
 msgstr ""
+"この食糧は消費用に細心の注意を払って加湿されています\n"
+"\n"
+"<style=\"KKeyword\"><link=\"MORALE\">士気</link></style>: -1"
 
 #. STRINGS.MISC.STATUSITEMS.SPACE.NAME
 msgctxt "STRINGS.MISC.STATUSITEMS.SPACE.NAME"
@@ -2578,20 +2578,14 @@ msgid "Serum Vial"
 msgstr "血清"
 
 #. STRINGS.MISC.TAGS.AGRICULTURE
-#, fuzzy
-#| msgctxt "STRINGS.RESEARCH.TECHS.AGRICULTURE.NAME"
-#| msgid "<link=\"AGRICULTURE\">Agriculture</link>"
 msgctxt "STRINGS.MISC.TAGS.AGRICULTURE"
 msgid "<link=\"AGRICULTURE\">Agriculture</link>"
 msgstr "<link=\"AGRICULTURE\">農業</link>"
 
 #. STRINGS.MISC.TAGS.ALLOY
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.CLAY.NAME"
-#| msgid "<link=\"CLAY\">Clay</link>"
 msgctxt "STRINGS.MISC.TAGS.ALLOY"
 msgid "<link=\"ALLOY\">Alloy</link>"
-msgstr "<link=\"CLAY\">粘土</link>"
+msgstr "<link=\"ALLOY\">合金</link>"
 
 #. STRINGS.MISC.TAGS.ANTISEPTIC
 msgctxt "STRINGS.MISC.TAGS.ANTISEPTIC"
@@ -2614,9 +2608,6 @@ msgid "Art Build-Delivery"
 msgstr "芸術関連の配送"
 
 #. STRINGS.MISC.TAGS.BAGABLECREATURE
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.CREATURES"
-#| msgid "<link=\"CREATURES\">Critters</link>"
 msgctxt "STRINGS.MISC.TAGS.BAGABLECREATURE"
 msgid "<link=\"CREATURES\">Critter</link>"
 msgstr "<link=\"CREATURES\">動物</link>"
@@ -2637,12 +2628,9 @@ msgid "Breathable Gas"
 msgstr "呼吸可能な気体"
 
 #. STRINGS.MISC.TAGS.BUILDABLEANY
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.BUILDINGS"
-#| msgid "<link=\"BUILDINGS\">Buildings</link>"
 msgctxt "STRINGS.MISC.TAGS.BUILDABLEANY"
 msgid "<link=\"BUILDABLEANY\">General Buildable</link>"
-msgstr "<link=\"BUILDINGS\">設備</link>"
+msgstr "<link=\"BUILDABLEANY\">建築可能一般</link>"
 
 #. STRINGS.MISC.TAGS.BUILDABLEANY_DESC
 msgctxt "STRINGS.MISC.TAGS.BUILDABLEANY_DESC"
@@ -2650,20 +2638,14 @@ msgid ""
 msgstr ""
 
 #. STRINGS.MISC.TAGS.BUILDABLEPROCESSED
-#, fuzzy
-#| msgctxt "STRINGS.MISC.TAGS.REFINEDMETAL"
-#| msgid "<link=\"REFINEDMETAL\">Refined Metal</link>"
 msgctxt "STRINGS.MISC.TAGS.BUILDABLEPROCESSED"
 msgid "<link=\"BUILDABLEPROCESSED\">Refined Mineral</link>"
-msgstr "<link=\"REFINEDMETAL\">精錬金属</link>"
+msgstr "<link=\"BUILDABLEPROCESSED\">精錬無機物</link>"
 
 #. STRINGS.MISC.TAGS.BUILDABLERAW
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDCATEGORIES.POWER.NAME"
-#| msgid "<link=\"BUILDCATEGORYPOWER\">Power</link>"
 msgctxt "STRINGS.MISC.TAGS.BUILDABLERAW"
 msgid "<link=\"BUILDABLERAW\">Raw Mineral</link>"
-msgstr "<link=\"BUILDCATEGORYPOWER\">電力</link>"
+msgstr "<link=\"BUILDABLERAW\">無機物原石</link>"
 
 #. STRINGS.MISC.TAGS.BUILDABLERAW_DESC
 msgctxt "STRINGS.MISC.TAGS.BUILDABLERAW_DESC"
@@ -2673,6 +2655,9 @@ msgid ""
 "although a handful require the use of the "
 "<link=\"SUPERMATERIALREFINERY\">Molecular Forge</link>."
 msgstr ""
+"無機物原石は未加工の有機固体です。大抵の無機物原石は<link=\"ROCKCRUSHER\">岩"
+"石粉砕機</link>で加工処理できますが、一部の原石は"
+"<link=\"SUPERMATERIALREFINERY\">分子合成機</link>が必要です。"
 
 #. STRINGS.MISC.TAGS.BUILDING
 msgctxt "STRINGS.MISC.TAGS.BUILDING"
@@ -2680,12 +2665,9 @@ msgid "Build Dig-Delivery"
 msgstr "採掘関連の配送"
 
 #. STRINGS.MISC.TAGS.BUILDINGFIBER
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.JUICER.NAME"
-#| msgid "<link=\"JUICER\">Juicer</link>"
 msgctxt "STRINGS.MISC.TAGS.BUILDINGFIBER"
 msgid "<link=\"BUILDINGFIBER\">Fiber</link>"
-msgstr "<link=\"JUICER\">ジューサー</link>"
+msgstr "<link=\"BUILDINGFIBER\">繊維</link>"
 
 #. STRINGS.MISC.TAGS.BUILDINGFIBER_DESC
 msgctxt "STRINGS.MISC.TAGS.BUILDINGFIBER_DESC"
@@ -2694,14 +2676,13 @@ msgid ""
 "sensorially pleasant, making them suitable in the construction of "
 "<link=\"MORALE\">Morale</link>-boosting buildings."
 msgstr ""
+"繊維は有機由来のポリマーであり丈夫で感覚的に心地よいため、<link=\"MORALE\">士"
+"気</link>を高める設備の建設に適しています。"
 
 #. STRINGS.MISC.TAGS.BUILDINGWOOD
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDCATEGORIES.FOOD.NAME"
-#| msgid "<link=\"BUILDCATEGORYFOOD\">Food</link>"
 msgctxt "STRINGS.MISC.TAGS.BUILDINGWOOD"
 msgid "<link=\"BUILDINGWOOD\">Wood</link>"
-msgstr "<link=\"BUILDCATEGORYFOOD\">食糧</link>"
+msgstr "<link=\"BUILDINGWOOD\">木材</link>"
 
 #. STRINGS.MISC.TAGS.BUILDINGWOOD_DESC
 msgctxt "STRINGS.MISC.TAGS.BUILDINGWOOD_DESC"
@@ -2710,6 +2691,9 @@ msgid ""
 "fuel and electricity when refined at the <link=\"WOODGASGENERATOR\">Wood "
 "Burner</link> or the <link=\"ETHANOLDISTILLERY\">Ethanol Distiller</link>."
 msgstr ""
+"木材は再生可能な建築材料であり、<link=\"WOODGASGENERATOR\">薪ストーブ</link>"
+"または<link=\"ETHANOLDISTILLERY\">エタノール蒸留機</link>で精製すると貴重な燃"
+"料や電力としても使用できます。"
 
 #. STRINGS.MISC.TAGS.BURNS
 msgctxt "STRINGS.MISC.TAGS.BURNS"
@@ -2727,12 +2711,9 @@ msgid "Clinic"
 msgstr "診療所"
 
 #. STRINGS.MISC.TAGS.CLOTHES
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.EQUIPMENT"
-#| msgid "<link=\"EQUIPMENT\">Equipment</link>"
 msgctxt "STRINGS.MISC.TAGS.CLOTHES"
 msgid "<link=\"EQUIPMENT\">Clothing</link>"
-msgstr "<link=\"EQUIPMENT\">装備</link>"
+msgstr "<link=\"EQUIPMENT\">衣類</link>"
 
 #. STRINGS.MISC.TAGS.COAL
 msgctxt "STRINGS.MISC.TAGS.COAL"
@@ -2884,12 +2865,9 @@ msgid "Egg Shell"
 msgstr "卵の殻"
 
 #. STRINGS.MISC.TAGS.EMITSLIGHT
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.LIGHT.TITLE"
-#| msgid "<link=\"LIGHT\">Light</link>"
 msgctxt "STRINGS.MISC.TAGS.EMITSLIGHT"
 msgid "<link=\"LIGHT\">Light Emitter</link>"
-msgstr "<link=\"LIGHT\">光</link>"
+msgstr "<link=\"LIGHT\">光源</link>"
 
 #. STRINGS.MISC.TAGS.EXTRUDABLE
 msgctxt "STRINGS.MISC.TAGS.EXTRUDABLE"
@@ -2902,12 +2880,9 @@ msgid "Fabricate Delivery"
 msgstr "製造関連の配送"
 
 #. STRINGS.MISC.TAGS.FARMABLE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.FARMTILE.NAME"
-#| msgid "<link=\"FARMTILE\">Farm Tile</link>"
 msgctxt "STRINGS.MISC.TAGS.FARMABLE"
 msgid "<link=\"FARMABLE\">Cultivable Soil</link>"
-msgstr "<link=\"FARMTILE\">農耕タイル</link>"
+msgstr "<link=\"FARMABLE\">耕作土</link>"
 
 #. STRINGS.MISC.TAGS.FARMABLE_DESC
 msgctxt "STRINGS.MISC.TAGS.FARMABLE_DESC"
@@ -2916,6 +2891,8 @@ msgid ""
 "systems and can also be useful in the production of clean "
 "<link=\"OXYGEN\">Oxygen</link>."
 msgstr ""
+"耕作土は基本的な農業システムの基盤となる構成要素であり、きれいな"
+"<link=\"OXYGEN\">酸素</link>の生産にも役立ちます。"
 
 #. STRINGS.MISC.TAGS.FARMING
 msgctxt "STRINGS.MISC.TAGS.FARMING"
@@ -3028,12 +3005,9 @@ msgstr ""
 "成と状態に基づいて異なる凝固点および融点を持ちます。"
 
 #. STRINGS.MISC.TAGS.INDUSTRIALINGREDIENT
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.INDUSTRIALINGREDIENTS"
-#| msgid "<link=\"INDUSTRIALINGREDIENTS\">Industrial Ingredients</link>"
 msgctxt "STRINGS.MISC.TAGS.INDUSTRIALINGREDIENT"
 msgid "<link=\"INDUSTRIALINGREDIENT\">Industrial Ingredient</link>"
-msgstr "<link=\"BUILDCATEGORYINDUSTRIAL\">工業原料</link>"
+msgstr "<link=\"INDUSTRIALINGREDIENT\">工業原料</link>"
 
 #. STRINGS.MISC.TAGS.INDUSTRIALPRODUCT
 msgctxt "STRINGS.MISC.TAGS.INDUSTRIALPRODUCT"
@@ -3052,6 +3026,8 @@ msgid ""
 "Insulators have low thermal conductivity, and effectively reduce the speed "
 "at which <link=\"HEAT\">Heat</link> is transferred through them."
 msgstr ""
+"断熱材は熱伝導率が低いため、<link=\"HEAT\">熱</link>が断熱材を通って伝わる速"
+"度が効果的に低下します。"
 
 #. STRINGS.MISC.TAGS.LIFE
 msgctxt "STRINGS.MISC.TAGS.LIFE"
@@ -3059,20 +3035,14 @@ msgid "Life"
 msgstr "生命体"
 
 #. STRINGS.MISC.TAGS.LIQUID
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDPUMP.NAME"
-#| msgid "<link=\"LIQUIDPUMP\">Liquid Pump</link>"
 msgctxt "STRINGS.MISC.TAGS.LIQUID"
 msgid "<link=\"LIQUID\">Liquid</link>"
-msgstr "<link=\"LIQUIDPUMP\">吸水ポンプ</link>"
+msgstr "<link=\"LIQUID\">液体</link>"
 
 #. STRINGS.MISC.TAGS.LIQUIFIABLE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVALVE.NAME"
-#| msgid "<link=\"LIQUIDVALVE\">Liquid Valve</link>"
 msgctxt "STRINGS.MISC.TAGS.LIQUIFIABLE"
 msgid "<link=\"LIQUIFIABLE\">Liquefiable</link>"
-msgstr "<link=\"LIQUIDVALVE\">液体バルブ</link>"
+msgstr "<link=\"LIQUIFIABLE\">液化可能</link>"
 
 #. STRINGS.MISC.TAGS.MACHINE_SHOP
 msgctxt "STRINGS.MISC.TAGS.MACHINE_SHOP"
@@ -3116,12 +3086,9 @@ msgid "Dining Table"
 msgstr "食事テーブル"
 
 #. STRINGS.MISC.TAGS.METAL
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.METALTILE.NAME"
-#| msgid "<link=\"METALTILE\">Metal Tile</link>"
 msgctxt "STRINGS.MISC.TAGS.METAL"
 msgid "<link=\"METAL\">Metal Ore</link>"
-msgstr "<link=\"METALTILE\">金属タイル</link>"
+msgstr "<link=\"METAL\">金属鉱石</link>"
 
 #. STRINGS.MISC.TAGS.METAL_DESC
 msgctxt "STRINGS.MISC.TAGS.METAL_DESC"
@@ -3136,6 +3103,15 @@ msgid ""
 "Some rare metal ores can also be refined in the "
 "<link=\"SUPERMATERIALREFINERY\">Molecular Forge</link>."
 msgstr ""
+"金属鉱石は金属の原料であり、エレクトロニクスや一般建築分野で幅広く実用化され"
+"ています。\n"
+"\n"
+"金属鉱石は通常、<link=\"ROCKCRUSHER\">岩石粉砕機</link>または"
+"<link=\"METALREFINERY\">精錬装置</link>を使用して<link=\"REFINEDMETAL\">精錬"
+"金属</link>に加工されます。\n"
+"\n"
+"一部のレアメタル鉱石は<link=\"SUPERMATERIALREFINERY\">分子合成機</link>でも精"
+"製できます。"
 
 #. STRINGS.MISC.TAGS.MIXTURE
 msgctxt "STRINGS.MISC.TAGS.MIXTURE"
@@ -3178,12 +3154,9 @@ msgid "Oxidizer"
 msgstr "酸化剤"
 
 #. STRINGS.MISC.TAGS.PHOSPHORUS
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.PHOSPHORUSGAS.NAME"
-#| msgid "<link=\"PHOSPHORUSGAS\">Phosphorus Gas</link>"
 msgctxt "STRINGS.MISC.TAGS.PHOSPHORUS"
 msgid "<link=\"PHOSPHORUS\">Phosphorus</link>"
-msgstr "<link=\"PHOSPHORUSGAS\">リン(気体)</link>"
+msgstr "<link=\"PHOSPHORUS\">リン</link>"
 
 #. STRINGS.MISC.TAGS.PICKLED
 msgctxt "STRINGS.MISC.TAGS.PICKLED"
@@ -3191,12 +3164,9 @@ msgid "Pickled"
 msgstr "酢漬け"
 
 #. STRINGS.MISC.TAGS.PLASTIC
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.PLASTICTILE.NAME"
-#| msgid "<link=\"PLASTICTILE\">Plastic Tile</link>"
 msgctxt "STRINGS.MISC.TAGS.PLASTIC"
 msgid "<link=\"PLASTIC\">Plastics</link>"
-msgstr "<link=\"PLASTICTILE\">プラスチック製タイル</link>"
+msgstr "<link=\"PLASTIC\">プラスチック</link>"
 
 #. STRINGS.MISC.TAGS.PLASTIC_DESC
 msgctxt "STRINGS.MISC.TAGS.PLASTIC_DESC"
@@ -3206,14 +3176,14 @@ msgid ""
 "typically have a low melting point, although more advanced plastics have "
 "been developed to circumvent this issue."
 msgstr ""
+"プラスチックは合成<link=\"ELEMENTSSOLID\">固体</link>で柔軟性があり、"
+"<link=\"HEAT\">熱</link>の伝達を最小限に抑えます。融点が低いという問題を回避"
+"するためにより高度なプラスチックが開発されています。"
 
 #. STRINGS.MISC.TAGS.PLUMBABLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.MORALE.TITLE"
-#| msgid "<link=\"MORALE\">Morale</link>"
 msgctxt "STRINGS.MISC.TAGS.PLUMBABLE"
 msgid "<link=\"PLUMBABLE\">Plumbable</link>"
-msgstr "<link=\"MORALE\">士気</link>"
+msgstr "<link=\"PLUMBABLE\">配管可能</link>"
 
 #. STRINGS.MISC.TAGS.PLUMBABLE_DESC
 msgctxt "STRINGS.MISC.TAGS.PLUMBABLE_DESC"
@@ -3231,20 +3201,14 @@ msgid "Power Station"
 msgstr "電力端末"
 
 #. STRINGS.MISC.TAGS.PRECIOUSMETAL
-#, fuzzy
-#| msgctxt "STRINGS.MISC.TAGS.REFINEDMETAL"
-#| msgid "<link=\"REFINEDMETAL\">Refined Metal</link>"
 msgctxt "STRINGS.MISC.TAGS.PRECIOUSMETAL"
 msgid "<link=\"PRECIOUSMETAL\">Precious Metal</link>"
-msgstr "<link=\"REFINEDMETAL\">精錬金属</link>"
+msgstr "<link=\"PRECIOUSMETAL\">希少金属</link>"
 
 #. STRINGS.MISC.TAGS.PRECIOUSROCK
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.IGNEOUSROCK.NAME"
-#| msgid "<link=\"IGNEOUSROCK\">Igneous Rock</link>"
 msgctxt "STRINGS.MISC.TAGS.PRECIOUSROCK"
 msgid "<link=\"PRECIOUSROCK\">Precious Rock</link>"
-msgstr "<link=\"IGNEOUSROCK\">火成岩</link>"
+msgstr "<link=\"PRECIOUSROCK\">希少岩石</link>"
 
 #. STRINGS.MISC.TAGS.PRECIOUSROCK_DESC
 msgctxt "STRINGS.MISC.TAGS.PRECIOUSROCK_DESC"
@@ -3255,6 +3219,10 @@ msgid ""
 "Some precious rocks are inherently attractive even in their natural, "
 "unfinished form."
 msgstr ""
+"希少岩石は鉱物の原石です。非常に硬いため、恒久的な<link=\"DECOR\">装飾</link>"
+"を生み出します。\n"
+"\n"
+"希少岩石の中には自然のままの姿であってさえ本質的に魅力的なものもあります。"
 
 #. STRINGS.MISC.TAGS.RAILGUNPAYLOADEMPTYABLE
 msgctxt "STRINGS.MISC.TAGS.RAILGUNPAYLOADEMPTYABLE"
@@ -3316,9 +3284,6 @@ msgid "Seed"
 msgstr "種子"
 
 #. STRINGS.MISC.TAGS.SOLID
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTSSOLID"
-#| msgid "<link=\"ELEMENTSSOLID\">Solids</link>"
 msgctxt "STRINGS.MISC.TAGS.SOLID"
 msgid "<link=\"ELEMENTSSOLID\">Solid</link>"
 msgstr "<link=\"ELEMENTSSOLID\">固体</link>"
@@ -3385,6 +3350,11 @@ msgid ""
 "sight in order to function correctly, such as the "
 "<link=\"COMETDETECTOR\">Space Scanner</link>."
 msgstr ""
+"透過素材は<link=\"LIGHT\">光</link>を通します。照明は勤務時間中の複製人間の生"
+"産性を高めますが、睡眠の品質を損ないます。\n"
+"\n"
+"<link=\"COMETDETECTOR\">宇宙スキャナー</link>といった稼働するために視界が開け"
+"ている必要がある設備にとっても、透過は重要です。"
 
 #. STRINGS.MISC.TAGS.UNBREATHABLE
 msgctxt "STRINGS.MISC.TAGS.UNBREATHABLE"
