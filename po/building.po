@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDING.DETAILS.USE_COUNT
@@ -721,6 +721,22 @@ msgstr ""
 "\n"
 "周辺環境: {0}\n"
 "パイプ内容物: {1}"
+
+#. STRINGS.BUILDING.STATUSITEMS.COOLINGWATER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.COOLING.NAME"
+#| msgid "Cooling"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.COOLINGWATER.NAME"
+msgid "Cooling Water"
+msgstr "冷却中"
+
+#. STRINGS.BUILDING.STATUSITEMS.COOLINGWATER.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.FETCHCREATURE.TOOLTIP"
+#| msgid "This Duplicant is moving a <style=\"KKeyword\">Critter</style> to a new location"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.COOLINGWATER.TOOLTIP"
+msgid "This building is cooling <style=\"KKeyword\">Water</style> down to its freezing point"
+msgstr "この複製人間は<style=\"KKeyword\">動物</style>を新しい場所へ移動させています"
 
 #. STRINGS.BUILDING.STATUSITEMS.CREATURE_REUSABLE_TRAP.NEEDS_ARMING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CREATURE_REUSABLE_TRAP.NEEDS_ARMING.NAME"
@@ -1953,6 +1969,84 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.JOULESAVAILABLE.TOOLTIP"
 msgid "<b>{JoulesAvailable}</b> of stored <style=\"KKeyword\">Power</style> available for use"
 msgstr "利用可能な<style=\"KKeyword\">電力</style>が <b>{JoulesAvailable}</b> 蓄えられています"
 
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTFUEL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.FOOD"
+#| msgid "<link=\"FOOD\">Food</link>"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTFUEL.NAME"
+msgid "Insufficient <link=\"WOODLOG\">Wood</link>"
+msgstr "<link=\"FOOD\">食糧</link>"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTFUEL.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTFUEL.TOOLTIP"
+msgid ""
+"Colder <link=\"ICE\">Ice</link> increases the amount of <link=\"WOODLOG\">Wood</link> required for melting\n"
+"\n"
+"Current requirement: minimum {0} <link=\"WOODLOG\">Wood</link>"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTLIQUIDSPACE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.DESALINATORNEEDSEMPTYING.NAME"
+#| msgid "Requires Emptying"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTLIQUIDSPACE.NAME"
+msgid "Requires Emptying"
+msgstr "塩抜き作業が必要"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTLIQUIDSPACE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTLIQUIDSPACE.TOOLTIP"
+msgid ""
+"This <link=\"ICEKETTLE\">Ice Liquefier</link> needs to be emptied of <link=\"WATER\">Water</link> in order to resume function\n"
+"\n"
+"It requires at least {2} of storage space in order to function properly\n"
+"\n"
+"Currently storing {0} of a maximum {1} <link=\"WATER\">Water</link>"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTSOLIDS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.ICE.NAME"
+#| msgid "<link=\"ICE\">Ice</link>"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTSOLIDS.NAME"
+msgid "Insufficient <link=\"ICE\">Ice</link>"
+msgstr "<link=\"ICE\">氷</link>"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTSOLIDS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.NOGERMSCONSUMEDALERT.TOOLTIP"
+#| msgid ""
+#| "This building requires additional {0} in order to function\n"
+#| "\n"
+#| "{0} can be delivered via <link=\"GASCONDUIT\">Gas Pipe</link> "
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTSOLIDS.TOOLTIP"
+msgid ""
+"This building requires a minimum of {0} <link=\"ICE\">Ice</link> in order to function\n"
+"\n"
+"Deliver more <link=\"ICE\">Ice</link> to operate this building"
+msgstr ""
+"この設備が稼働するためには追加で{0}が必要です\n"
+"\n"
+"{0} は<link=\"GASCONDUIT\">気体パイプ</link>経由で供給できます"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEMELTING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.MOLTING.NAME"
+#| msgid "Molting"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEMELTING.NAME"
+msgid "Melting Ice"
+msgstr "脱皮中"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEMELTING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.SPECIES.FILTERPLANT.DOMESTICATEDDESC"
+#| msgid "This plant uses <link=\"SAND\">Sand</link> to convert <link=\"DIRTYWATER\">Polluted Water</link> into <link=\"WATER\">Water</link>."
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEMELTING.TOOLTIP"
+msgid ""
+"This building is currently melting stored <link=\"ICE\">Ice</link> to produce <link=\"WATER\">Water</link>\n"
+"\n"
+"<link=\"WATER\">Water</link> output temperature: {0}"
+msgstr "この植物は<link=\"DIRTYWATER\">汚染水</link>を<link=\"WATER\">水</link>に変換するために<link=\"SAND\">砂</link>を使用します。"
+
 #. STRINGS.BUILDING.STATUSITEMS.LANDEDROCKETLACKSPASSENGERMODULE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LANDEDROCKETLACKSPASSENGERMODULE.NAME"
 msgid "Rocket lacks spacefarer module"
@@ -2291,6 +2385,73 @@ msgstr "これらの設備は崩壊しています:"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MELTINGDOWN.TOOLTIP"
 msgid "This building is collapsing"
 msgstr "この設備は崩壊しています"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MEGABRAINTANK.COMPLETE.NAME"
+#| msgid "Fully Restored"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGED.NAME"
+msgid "Fully Charged"
+msgstr "完全復元"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MEGABRAINTANK.COMPLETE.TOOLTIP"
+#| msgid "This building is functioning at full capacity"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGED.TOOLTIP"
+msgid "This building is functioning at maximum capacity"
+msgstr "この設備はフル稼働しています"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MANUALGENERATORRELEASINGENERGY.NAME"
+#| msgid "Powering"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGING.NAME"
+msgid "Powering Up: {0}"
+msgstr "電力供給中"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGING.TOOLTIP"
+msgid ""
+"This building's <style=\"KKeyword\">Light</style> levels are gradually increasing\n"
+"\n"
+"If its <style=\"KKeyword\">Liquid</style> and <style=\"KKeyword\">Power</style> requirements continue to be met, it will reach maximum brightness in {0}"
+msgstr ""
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATED.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SHOWERED.NAME"
+#| msgid "Showered"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATED.NAME"
+msgid "Powered Off"
+msgstr "シャワーを浴びた"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATED.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.SPACE.TOOLTIP"
+#| msgid "This region is exposed to the vacuum of space and will result in the loss of <style=\"KKeyword\">Gas</style> and <style=\"KKeyword\">Liquid</style> resources"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATED.TOOLTIP"
+msgid ""
+"This building is non-operational due to a lack of resources\n"
+"\n"
+"It will begin to power up when its <style=\"KKeyword\">Liquid</style> and <style=\"KKeyword\">Power</style> are met"
+msgstr "この地域は宇宙空間に接しており、<style=\"KKeyword\">気体</style>や<style=\"KKeyword\">液体</style>は全て吸い出されてしまいます"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.DEVLIGHTGENERATOR.BRIGHTNESS_LABEL"
+#| msgid "Brightness"
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATING.NAME"
+msgid "Brightness: {0}"
+msgstr "明るさ"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATING.TOOLTIP"
+msgid ""
+"This building's <style=\"KKeyword\">Light</style> output is decreasing because its <style=\"KKeyword\">Liquid</style> and <style=\"KKeyword\">Power</style> requirements are not being met\n"
+"\n"
+"It will power off once its stores are depleted"
+msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.MILKSEPARATORNEEDSEMPTYING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MILKSEPARATORNEEDSEMPTYING.NAME"
