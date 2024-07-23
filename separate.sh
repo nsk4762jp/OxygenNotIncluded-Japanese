@@ -1,5 +1,6 @@
 #!/bin/sh
 
+msggrep -J -E --no-wrap -e "STRINGS.BLUEPRINTS\." strings.po > po/blueprints.po
 msggrep -J -E --no-wrap -e "STRINGS.BUILDING\." strings.po > po/building.po
 msggrep -J -E --no-wrap -e "STRINGS.BUILDINGS\." strings.po > po/buildings.po
 msggrep -J -E --no-wrap -e "STRINGS.CLUSTER_NAMES" strings.po > po/cluster_names.po

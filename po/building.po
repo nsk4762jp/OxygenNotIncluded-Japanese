@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDING.DETAILS.USE_COUNT
@@ -721,6 +721,16 @@ msgstr ""
 "\n"
 "周辺環境: {0}\n"
 "パイプ内容物: {1}"
+
+#. STRINGS.BUILDING.STATUSITEMS.COOLINGWATER.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.COOLINGWATER.NAME"
+msgid "Cooling Water"
+msgstr "水を冷却中"
+
+#. STRINGS.BUILDING.STATUSITEMS.COOLINGWATER.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.COOLINGWATER.TOOLTIP"
+msgid "This building is cooling <style=\"KKeyword\">Water</style> down to its freezing point"
+msgstr "この設備は<style=\"KKeyword\">水</style>を凝固点まで冷却しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.CREATURE_REUSABLE_TRAP.NEEDS_ARMING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CREATURE_REUSABLE_TRAP.NEEDS_ARMING.NAME"
@@ -1953,6 +1963,74 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.JOULESAVAILABLE.TOOLTIP"
 msgid "<b>{JoulesAvailable}</b> of stored <style=\"KKeyword\">Power</style> available for use"
 msgstr "利用可能な<style=\"KKeyword\">電力</style>が <b>{JoulesAvailable}</b> 蓄えられています"
 
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTFUEL.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTFUEL.NAME"
+msgid "Insufficient <link=\"WOODLOG\">Wood</link>"
+msgstr "<link=\"WOODLOG\">木材</link>不足"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTFUEL.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTFUEL.TOOLTIP"
+msgid ""
+"Colder <link=\"ICE\">Ice</link> increases the amount of <link=\"WOODLOG\">Wood</link> required for melting\n"
+"\n"
+"Current requirement: minimum {0} <link=\"WOODLOG\">Wood</link>"
+msgstr ""
+"より冷たい<link=\"ICE\">氷</link>は融解に必要な<link=\"WOODLOG\">木材</link>の量を増加させます\n"
+"\n"
+"現在の要求量: 最低 {0} <link=\"WOODLOG\">木材</link>"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTLIQUIDSPACE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTLIQUIDSPACE.NAME"
+msgid "Requires Emptying"
+msgstr "空にする必要があります"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTLIQUIDSPACE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTLIQUIDSPACE.TOOLTIP"
+msgid ""
+"This <link=\"ICEKETTLE\">Ice Liquefier</link> needs to be emptied of <link=\"WATER\">Water</link> in order to resume function\n"
+"\n"
+"It requires at least {2} of storage space in order to function properly\n"
+"\n"
+"Currently storing {0} of a maximum {1} <link=\"WATER\">Water</link>"
+msgstr ""
+"この<link=\"ICEKETTLE\">融氷器</link>は機能を再開するために<link=\"WATER\">水</link>を空にする必要があります\n"
+"\n"
+"正常に機能するためには最低{2}の収納スペースが必要です\n"
+"\n"
+"現在の収納量: 最大{1}のうち{0}の<link=\"WATER\">水</link>を保管中"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTSOLIDS.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTSOLIDS.NAME"
+msgid "Insufficient <link=\"ICE\">Ice</link>"
+msgstr "<link=\"ICE\">氷</link>不足"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTSOLIDS.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEINSUFICIENTSOLIDS.TOOLTIP"
+msgid ""
+"This building requires a minimum of {0} <link=\"ICE\">Ice</link> in order to function\n"
+"\n"
+"Deliver more <link=\"ICE\">Ice</link> to operate this building"
+msgstr ""
+"この設備が稼働するためには最低{0}の<link=\"ICE\">氷</link>が必要です\n"
+"\n"
+"この設備を操作するには、もっと<link=\"ICE\">氷</link>を供給してください"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEMELTING.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEMELTING.NAME"
+msgid "Melting Ice"
+msgstr "氷を溶かしています"
+
+#. STRINGS.BUILDING.STATUSITEMS.KETTLEMELTING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.KETTLEMELTING.TOOLTIP"
+msgid ""
+"This building is currently melting stored <link=\"ICE\">Ice</link> to produce <link=\"WATER\">Water</link>\n"
+"\n"
+"<link=\"WATER\">Water</link> output temperature: {0}"
+msgstr ""
+"この設備は現在、保管された<link=\"ICE\">氷</link>を溶かして<link=\"WATER\">水</link>を生成しています\n"
+"\n"
+"<link=\"WATER\">水</link>の出力温度: {0}"
+
 #. STRINGS.BUILDING.STATUSITEMS.LANDEDROCKETLACKSPASSENGERMODULE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LANDEDROCKETLACKSPASSENGERMODULE.NAME"
 msgid "Rocket lacks spacefarer module"
@@ -2291,6 +2369,64 @@ msgstr "これらの設備は崩壊しています:"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MELTINGDOWN.TOOLTIP"
 msgid "This building is collapsing"
 msgstr "この設備は崩壊しています"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGED.NAME"
+msgid "Fully Charged"
+msgstr "フル充電"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGED.TOOLTIP"
+msgid "This building is functioning at maximum capacity"
+msgstr "この設備はフル稼働しています"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGING.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGING.NAME"
+msgid "Powering Up: {0}"
+msgstr "電力供給: {0}"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_CHARGING.TOOLTIP"
+msgid ""
+"This building's <style=\"KKeyword\">Light</style> levels are gradually increasing\n"
+"\n"
+"If its <style=\"KKeyword\">Liquid</style> and <style=\"KKeyword\">Power</style> requirements continue to be met, it will reach maximum brightness in {0}"
+msgstr ""
+"この設備の<style=\"KKeyword\">明るさ</style>レベルは徐々に上昇しています\n"
+"\n"
+"<style=\"KKeyword\">液体</style>と<style=\"KKeyword\">電力</style>の要求が満たされ続ければ、{0}で最大輝度に達します"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATED.NAME"
+msgid "Powered Off"
+msgstr "電源オフ"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATED.TOOLTIP"
+msgid ""
+"This building is non-operational due to a lack of resources\n"
+"\n"
+"It will begin to power up when its <style=\"KKeyword\">Liquid</style> and <style=\"KKeyword\">Power</style> are met"
+msgstr ""
+"この設備は資源不足のため稼働していません\n"
+"\n"
+"<style=\"KKeyword\">液体</style>と<style=\"KKeyword\">電力</style>が供給されると再び稼働を開始します"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATING.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATING.NAME"
+msgid "Brightness: {0}"
+msgstr "明るさ: {0}"
+
+#. STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MERCURYLIGHT_DEPLEATING.TOOLTIP"
+msgid ""
+"This building's <style=\"KKeyword\">Light</style> output is decreasing because its <style=\"KKeyword\">Liquid</style> and <style=\"KKeyword\">Power</style> requirements are not being met\n"
+"\n"
+"It will power off once its stores are depleted"
+msgstr ""
+"この設備の<style=\"KKeyword\">明るさ</style>の出力が減少しているのは、<style=\"KKeyword\">液体</style>と<style=\"KKeyword\">電力</style>の要求が満たされていないためです\n"
+"\n"
+"蓄えが尽きると電源が切れます"
 
 #. STRINGS.BUILDING.STATUSITEMS.MILKSEPARATORNEEDSEMPTYING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MILKSEPARATORNEEDSEMPTYING.NAME"
