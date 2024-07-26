@@ -20,6 +20,7 @@ msggrep -J -E --no-wrap -e 'STRINGS.NAMEGEN' strings.po  > po/namegen.po
 msggrep -J -E --no-wrap -e 'STRINGS.RESEARCH' strings.po > po/research.po
 msggrep -J -E --no-wrap -e 'STRINGS.ROBOTS' strings.po  > po/robots.po
 msggrep -J -E --no-wrap -e 'STRINGS.ROOMS' strings.po  > po/rooms.po
+msggrep -J -E --no-wrap -e 'STRINGS.STICKERNAMES.' strings.po  > po/stickernames.po
 msggrep -J -E --no-wrap -e 'STRINGS.SUBWORLDS' strings.po  > po/subworlds.po
 msggrep -J -E --no-wrap -e 'STRINGS.UI' strings.po  > po/ui.po
 msggrep -J -E --no-wrap -e 'STRINGS.VIDEOS' strings.po  > po/videos.po
