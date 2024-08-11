@@ -14775,32 +14775,33 @@ msgstr ""
 #. STRINGS.UI.OVERLAYS.HEATFLOW.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.BUTTON"
 msgid "Thermal Tolerance Overlay"
-msgstr "適温レイヤー"
+msgstr "体温影響レイヤー"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.COOLING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.COOLING"
 msgid "Body Heat Loss"
-msgstr "体温の損失"
+msgstr "体温を喪失"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.HEATING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.HEATING"
 msgid "Body Heat Retention"
-msgstr "体温の蓄積"
+msgstr "体温を蓄積"
 
+# 体温影響レイヤー上で気体や液体にマウスカーソルを合わせると、その場所で生物の体温がどれだけ喪失／蓄積するか表示される。そのツールチップに冠される表題がこれ。
 #. STRINGS.UI.OVERLAYS.HEATFLOW.HOVERTITLE
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.HOVERTITLE"
 msgid "THERMAL TOLERANCE"
-msgstr "適温"
+msgstr "体温への影響"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.NAME
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.NAME"
 msgid "THERMAL TOLERANCE OVERLAY"
-msgstr "適温レイヤー"
+msgstr "体温影響レイヤー"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.NEUTRAL
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.NEUTRAL"
 msgid "Comfort Zone"
-msgstr "適温エリア"
+msgstr "適温帯"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING"
@@ -14811,12 +14812,13 @@ msgid ""
 "Duplicants lose more heat in these areas than they can absorb\n"
 "* Warm Coats help Duplicants retain body heat"
 msgstr ""
-"<b>体温の損失</b>\n"
+"<b>体温を喪失</b>\n"
 "不快なほど寒い\n"
 "\n"
-"複製人間はこの環境下では熱を受け取るより多くの熱を放出します\n"
+"この環境下では、複製人間は吸収するよりも多くの熱を放出します\n"
 "* あったかコートは複製人間の体温を保つのに役立ちます"
 
+# `warm` は一般的に「暖かい」という肯定的な意味だが、ここでは不快な暑さを表す
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING"
 msgid ""
@@ -14825,10 +14827,10 @@ msgid ""
 "\n"
 "Duplicants absorb more heat in these areas than they can release"
 msgstr ""
-"<b>体温の蓄積</b>\n"
-"不快なほど暖かい\n"
+"<b>体温を蓄積</b>\n"
+"不快なほど暑い\n"
 "\n"
-"複製人間はこの環境下では熱を放出するより多くの熱を吸収します"
+"この環境下では、複製人間は放出するよりも多くの熱を吸収します"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.NEUTRAL
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.NEUTRAL"
@@ -14839,9 +14841,9 @@ msgid ""
 "Duplicants can regulate their internal temperatures in these areas"
 msgstr ""
 "<b>適温帯</b>\n"
-"快適なエリア\n"
+"快適な温度\n"
 "\n"
-"* 複製人間はこの環境下で体温を一定に保つことができます"
+"この環境下では、複製人間は体温を一定に保つことができます"
 
 #. STRINGS.UI.OVERLAYS.JOULES.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.JOULES.BUTTON"
@@ -15657,10 +15659,11 @@ msgctxt "STRINGS.UI.OVERLAYS.TEMPERATURE.EXTREMEHOT"
 msgid "Scorching"
 msgstr "灼熱"
 
+# 「熱源」と反対の効果を持つもの（ウィーズウォートなど）
 #. STRINGS.UI.OVERLAYS.TEMPERATURE.HEATSINK
 msgctxt "STRINGS.UI.OVERLAYS.TEMPERATURE.HEATSINK"
 msgid "Heat Sink"
-msgstr "ヒートシンク"
+msgstr "吸熱"
 
 #. STRINGS.UI.OVERLAYS.TEMPERATURE.HEATSOURCES
 msgctxt "STRINGS.UI.OVERLAYS.TEMPERATURE.HEATSOURCES"
@@ -15687,15 +15690,16 @@ msgctxt "STRINGS.UI.OVERLAYS.TEMPERATURE.TEMPERATE"
 msgid "Temperate"
 msgstr "普通"
 
+# 熱源や吸熱は、元素ではなく、特定の植物や設備などが持っている
 #. STRINGS.UI.OVERLAYS.TEMPERATURE.TOOLTIPS.HEATSINK
 msgctxt "STRINGS.UI.OVERLAYS.TEMPERATURE.TOOLTIPS.HEATSINK"
 msgid "Elements displaying this symbol can absorb heat"
-msgstr "この記号が表示されている元素は、熱を吸収することができる"
+msgstr "この記号が表示されている物体は、熱を吸収することができる"
 
 #. STRINGS.UI.OVERLAYS.TEMPERATURE.TOOLTIPS.HEATSOURCES
 msgctxt "STRINGS.UI.OVERLAYS.TEMPERATURE.TOOLTIPS.HEATSOURCES"
 msgid "Elements displaying this symbol can produce heat"
-msgstr "この記号が表示されている元素は熱を発生させることができる"
+msgstr "この記号が表示されている物体は熱を発生させることができる"
 
 #. STRINGS.UI.OVERLAYS.TEMPERATURE.TOOLTIPS.TEMPERATURE
 msgctxt "STRINGS.UI.OVERLAYS.TEMPERATURE.TOOLTIPS.TEMPERATURE"
@@ -17515,17 +17519,18 @@ msgstr "温度"
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.TOOLTIP"
 msgid "Adjust absolute temperature"
-msgstr "絶対温度を調整します"
+msgstr "絶対温度を使って調整します"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.NAME"
 msgid "Temperature"
 msgstr "温度"
 
+# 原文が簡素すぎて分かりづらいので意味を補足
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE_ADDITIVE.TOOLTIP"
 msgid "Adjust additive temperature"
-msgstr "相対温度を調整します"
+msgstr "現在の温度に対して加熱／冷却します"
 
 #. STRINGS.UI.SCHEDULE
 msgctxt "STRINGS.UI.SCHEDULE"
@@ -21579,6 +21584,7 @@ msgctxt "STRINGS.UI.TOOLS.FILTER_HOVERCARD_HEADER"
 msgid "   <style=\"hovercard_element\">({0})</style>"
 msgstr "   <style=\"hovercard_element\">({0})</style>"
 
+# 'Relative Temperature' と対になっている
 #. STRINGS.UI.TOOLS.FILTERLAYERS.ABSOLUTETEMPERATURE.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.ABSOLUTETEMPERATURE.NAME"
 msgid "Absolute Temperature"
@@ -21591,7 +21597,7 @@ msgid ""
 "View the default temperature ranges and categories relative to absolute zero"
 msgstr ""
 "<b>絶対温度</b>\n"
-"絶対零度からの規定の温度範囲と分類を表示します"
+"絶対温度を基準に、規定の分類に基づいた温度域を色分けして表示します"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.ADAPTIVETEMPERATURE.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.ADAPTIVETEMPERATURE.NAME"
@@ -21804,10 +21810,12 @@ msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.HARVEST_WHEN_READY.TOOLTIP"
 msgid "Enable harvest on selected plants"
 msgstr "選択された植物の収穫を有効化します"
 
+# 温度レイヤー内の子レイヤー名で、「絶対温度」「相対温度」などと並ぶ、温度を色分けする基準の一つ。
+# `Tolerance` の持つ意味合い（その温度が生物の生存を許す度合い）を日本語にするのが難しいため、実際の機能に基づいた名称にした。
 #. STRINGS.UI.TOOLS.FILTERLAYERS.HEATFLOW.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.HEATFLOW.NAME"
 msgid "Thermal Tolerance"
-msgstr "温度の許容範囲"
+msgstr "体温への影響"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.HEATFLOW.TOOLTIP
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.HEATFLOW.TOOLTIP"
@@ -21815,8 +21823,8 @@ msgid ""
 "<b>Thermal Tolerance</b>\n"
 "View the impact of ambient temperatures on living beings"
 msgstr ""
-"<b>温度の許容範囲</b>\n"
-"周囲の温度が生物に与える影響を表示"
+"<b>体温への影響</b>\n"
+"周囲の温度が生物に与える影響を表示します"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.LIQUID.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.LIQUID.NAME"
@@ -21898,10 +21906,11 @@ msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.ORGANICS.TOOLTIP"
 msgid "Show only organic materials"
 msgstr "有機物材料のみ表示"
 
+# 'Absolute Temperature' と対になっている
 #. STRINGS.UI.TOOLS.FILTERLAYERS.RELATIVETEMPERATURE.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.RELATIVETEMPERATURE.NAME"
 msgid "Relative Temperature"
-msgstr "相対気温"
+msgstr "相対温度"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.RELATIVETEMPERATURE.TOOLTIP
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.RELATIVETEMPERATURE.TOOLTIP"
@@ -21911,10 +21920,10 @@ msgid ""
 "\n"
 "Drag the slider to adjust the relative temperature range"
 msgstr ""
-"<b>相対気温</b>\n"
-"選択した中間点からの相対的な温度を識別しやすくした視覚的なカスタマイズマップ\n"
+"<b>相対温度</b>\n"
+"自分で設定した中間温度を基準に、相対的な温度差を色分けして識別できるようにしたマップです\n"
 "\n"
-"スライダーをドラッグして相対温度範囲を調整します"
+"スライダーをドラッグして、色分けする温度域を調整してください"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.SOLIDCONDUITS.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.SOLIDCONDUITS.NAME"
@@ -21938,7 +21947,7 @@ msgid ""
 "View the impact of ambient temperatures on element states"
 msgstr ""
 "<b>状態変化</b>\n"
-"周囲温度が元素の状態に与える影響を表示"
+"周囲の温度が元素の状態（固体、液体、気体）に与える影響を表示します"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.TILES.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.TILES.NAME"
@@ -23003,10 +23012,11 @@ msgctxt "STRINGS.UI.TOOLTIPS.SUITOVERLAYSTRING"
 msgid "Displays Exosuits and related buildings {Hotkey}"
 msgstr "EXOスーツおよび関連設備を表示します {Hotkey}"
 
+# 温度を持つのは気体に限らないため、'ambient temperature' は「大気温度」ではなく「周囲の温度」と解釈
 #. STRINGS.UI.TOOLTIPS.TEMPERATUREOVERLAYSTRING
 msgctxt "STRINGS.UI.TOOLTIPS.TEMPERATUREOVERLAYSTRING"
 msgid "Displays ambient temperature {Hotkey}"
-msgstr "大気温度を表示します {Hotkey}"
+msgstr "周囲の温度を表示します {Hotkey}"
 
 #. STRINGS.UI.TOOLTIPS.TILEMODE_OVERLAY_STRING
 msgctxt "STRINGS.UI.TOOLTIPS.TILEMODE_OVERLAY_STRING"
@@ -26675,7 +26685,7 @@ msgstr "周囲の光量"
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.BRIGHTNESS_TOOLTIP_ABOVE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.BRIGHTNESS_TOOLTIP_ABOVE"
 msgid "Will send a <b><style=\"logic_on\">Green Signal</style></b> if the ambient <style=\"KKeyword\">Brightness</style> is above <b>{0}</b>"
-msgstr "<style=\"KKeyword\">光量</style>が<b>{0}</b>を超えたとき、<b><style=\"logic_on\">グリーン</style></b>を送信します"
+msgstr "<style=\"KKeyword\">光量</style>が<b>{0}</b>を超えた時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.BRIGHTNESS_TOOLTIP_BELOW
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.BRIGHTNESS_TOOLTIP_BELOW"
@@ -26695,12 +26705,12 @@ msgstr "内部温度"
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.CONTENT_TEMPERATURE_TOOLTIP_ABOVE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.CONTENT_TEMPERATURE_TOOLTIP_ABOVE"
 msgid "Will send a <b><style=\"logic_on\">Green Signal</style></b> if the <style=\"KKeyword\">Temperature</style> of its contents is above <b>{0}</b>"
-msgstr "<style=\"KKeyword\">気温</style>が<b>{0}</b>を超えたとき、<b><style=\"logic_on\">グリーン</style></b>を送信します"
+msgstr "内容物の<style=\"KKeyword\">温度</style>が<b>{0}</b>を超えた時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.CONTENT_TEMPERATURE_TOOLTIP_BELOW
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.CONTENT_TEMPERATURE_TOOLTIP_BELOW"
 msgid "Will send a <b><style=\"logic_on\">Green Signal</style></b> if the <style=\"KKeyword\">Temperature</style> of its contents is below <b>{0}</b>"
-msgstr "<style=\"KKeyword\">気温</style>が<b>{0}</b>を下回った時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
+msgstr "内容物の<style=\"KKeyword\">温度</style>が<b>{0}</b>を下回った時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.CURRENT_VALUE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.CURRENT_VALUE"
@@ -26724,7 +26734,7 @@ msgstr "病原菌閾値"
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.DISEASE_TOOLTIP_ABOVE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.DISEASE_TOOLTIP_ABOVE"
 msgid "Will send a <b><style=\"logic_on\">Green Signal</style></b> if the number of <style=\"KKeyword\">Germs</style> is above <b>{0}</b>"
-msgstr "<style=\"KKeyword\">病原菌</style>の数が<b>{0}</b>を超えたとき、<b><style=\"logic_on\">グリーン</style></b>を送信します"
+msgstr "<style=\"KKeyword\">病原菌</style>の数が<b>{0}</b>を超えた時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.DISEASE_TOOLTIP_BELOW
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.DISEASE_TOOLTIP_BELOW"
@@ -26744,7 +26754,7 @@ msgstr "RADボルト検知"
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.HEPS_TOOLTIP_ABOVE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.HEPS_TOOLTIP_ABOVE"
 msgid "Will send a <b><style=\"logic_on\">Green Signal</style></b> if the <style=\"KKeyword\">Radbolts</style> is above <b>{0}</b>"
-msgstr "<style=\"KKeyword\">RADボルト</style>が<b>{0}</b>を超えたとき、<b><style=\"logic_on\">グリーン</style></b>を送信します"
+msgstr "<style=\"KKeyword\">RADボルト</style>が<b>{0}</b>を超えた時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.HEPS_TOOLTIP_BELOW
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.HEPS_TOOLTIP_BELOW"
@@ -26759,7 +26769,7 @@ msgstr "周囲の圧力"
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.PRESSURE_TOOLTIP_ABOVE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.PRESSURE_TOOLTIP_ABOVE"
 msgid "Will send a <b><style=\"logic_on\">Green Signal</style></b> if the <style=\"KKeyword\">Pressure</style> is above <b>{0}</b>"
-msgstr "<style=\"KKeyword\">圧力</style>が<b>{0}</b>を超えたとき、<b><style=\"logic_on\">グリーン</style></b>を送信します"
+msgstr "<style=\"KKeyword\">圧力</style>が<b>{0}</b>を超えた時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.PRESSURE_TOOLTIP_BELOW
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.PRESSURE_TOOLTIP_BELOW"
@@ -26774,7 +26784,7 @@ msgstr "周囲の放射線"
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.RADIATION_TOOLTIP_ABOVE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.RADIATION_TOOLTIP_ABOVE"
 msgid "Will send a <b><style=\"logic_on\">Green Signal</style></b> if the ambient <style=\"KKeyword\">Radiation</style> is above <b>{0}</b>"
-msgstr "<style=\"KKeyword\">放射線</style>が<b>{0}</b>を超えたとき、<b><style=\"logic_on\">グリーン</style></b>を送信します"
+msgstr "<style=\"KKeyword\">放射線</style>が<b>{0}</b>を超えた時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.RADIATION_TOOLTIP_BELOW
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.RADIATION_TOOLTIP_BELOW"
@@ -26791,20 +26801,23 @@ msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.STATUS_INACTIVE"
 msgid "Switch Inactive"
 msgstr "スイッチオフ"
 
+# 熱センサーは水温も測れるため、' ambient temperature' は「気温」ではなく「周囲の温度」と解釈
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE"
 msgid "Ambient Temperature"
 msgstr "周囲の温度"
 
+# 熱センサーは水温も測れるため、' ambient temperature' は「気温」ではなく「周囲の温度」と解釈
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE_TOOLTIP_ABOVE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE_TOOLTIP_ABOVE"
 msgid "Will send a <b><style=\"logic_on\">Green Signal</style></b> if the ambient <style=\"KKeyword\">Temperature</style> is above <b>{0}</b>"
-msgstr "<style=\"KKeyword\">気温</style>が<b>{0}</b>を超えたとき、<b><style=\"logic_on\">グリーン</style></b>を送信します"
+msgstr "<style=\"KKeyword\">温度</style>が<b>{0}</b>を超えた時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
 
+# 熱センサーは水温も測れるため、' ambient temperature' は「気温」ではなく「周囲の温度」と解釈
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE_TOOLTIP_BELOW
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.TEMPERATURE_TOOLTIP_BELOW"
 msgid "Will send a <b><style=\"logic_on\">Green Signal</style></b> if the ambient <style=\"KKeyword\">Temperature</style> is below <b>{0}</b>"
-msgstr "<style=\"KKeyword\">気温</style>が<b>{0}</b>を下回った時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
+msgstr "<style=\"KKeyword\">温度</style>が<b>{0}</b>を下回った時、<b><style=\"logic_on\">グリーン</style></b>を送信します"
 
 #. STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.THRESHOLD_SUBTITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.THRESHOLD_SWITCH_SIDESCREEN.THRESHOLD_SUBTITLE"
