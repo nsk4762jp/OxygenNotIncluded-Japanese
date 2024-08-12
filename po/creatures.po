@@ -4481,7 +4481,7 @@ msgstr "この動物は水中の除菌を行っています"
 #. STRINGS.CREATURES.STATUSITEMS.COLD.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.NAME"
 msgid "Chilly surroundings"
-msgstr "周囲が寒すぎる"
+msgstr "肌寒い環境"
 
 #. STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD.TOOLTIP"
@@ -4490,9 +4490,9 @@ msgid ""
 "\n"
 "It prefers <style=\"KKeyword\">Temperatures</style> between <b>{0}</b> and <b>{1}</b>"
 msgstr ""
-"この動物は、現環境では高い<style=\"KKeyword\">体温</style>を維持するのに十分な熱を保てません\n"
+"今の環境では、この動物は十分な<style=\"KKeyword\">熱</style>を留めることができないため、暖かさを保てません。\n"
 "\n"
-"好適温度は<b>{0}</b> ～ <b>{1}</b>です"
+"快適な<style=\"KKeyword\">温度</style>域は<b>{0}</b> ～ <b>{1}</b>です"
 
 #. STRINGS.CREATURES.STATUSITEMS.COLD_CROP.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.COLD_CROP.NAME"
@@ -5149,7 +5149,7 @@ msgstr "この巣に保管されている食糧が少なくなっています"
 #. STRINGS.CREATURES.STATUSITEMS.HOT.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT.NAME"
 msgid "Toasty surroundings"
-msgstr "周囲が暑すぎる"
+msgstr "暑苦しい環境"
 
 #. STRINGS.CREATURES.STATUSITEMS.HOT.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT.TOOLTIP"
@@ -5158,9 +5158,9 @@ msgid ""
 "\n"
 "It prefers <style=\"KKeyword\">Temperatures</style> between <b>{0}</b> and <b>{1}</b>"
 msgstr ""
-"この動物は、現環境では低い<style=\"KKeyword\">体温</style>維持するために十分な<style=\"KKeyword\">熱</style>を放散できません\n"
+"今の環境では、この動物は十分な<style=\"KKeyword\">熱</style>を逃すことができないため、涼しさを保てません。\n"
 "\n"
-"好適<style=\"KKeyword\">温度</style>は<b>{0}</b> ～ <b>{1}</b>です"
+"快適な<style=\"KKeyword\">温度</style>域は<b>{0}</b> ～ <b>{1}</b>です"
 
 #. STRINGS.CREATURES.STATUSITEMS.HOT_CROP.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.HOT_CROP.NAME"
@@ -5479,6 +5479,7 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.NAME"
 msgid "Ideal Temperature"
 msgstr "理想温度"
 
+# 水中生物もいるため、'ambient temperature' は気温とは限らない
 #. STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.PERFECTTEMPERATURE.TOOLTIP"
 msgid ""
@@ -5486,7 +5487,7 @@ msgid ""
 "\n"
 "Ideal Range: <b>{0}</b> - <b>{1}</b>"
 msgstr ""
-"この動物は現在の<style=\"KKeyword\">気温</style>に満足しています\n"
+"この動物は現在の<style=\"KKeyword\">温度</style>に満足しています\n"
 "\n"
 "理想範囲: <b>{0}</b> - <b>{1}</b>"
 
@@ -5677,45 +5678,57 @@ msgctxt "STRINGS.CREATURES.STATUSITEMS.SATURATED.TOOLTIP"
 msgid "This critter likes <style=\"KKeyword\">Liquid</style>, but not that much!"
 msgstr "この動物は<style=\"KKeyword\">液体</style>が好きですが、こんなには要りません！"
 
+# 複製人間や動物のステータス欄に表示されるデバフ名
+# 火傷そのものではなく、単に「今現在、高温に曝されている」ことを示している。そのため涼しい場所へ移動すれば、すぐに消える。
+# 火傷は徐々に生命力が減ることで表現されている。
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.NAME"
 msgid "Scalding"
 msgstr "火傷を負っている"
 
+# 画面左の警告一覧に表示される警告名
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_NAME"
 msgid "Scalding"
-msgstr "火傷を負っている"
+msgstr "火傷が発生中"
 
+# 画面左の警告一覧にある警告名にカーソルを合わせると表示されるツールチップ
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.NOTIFICATION_TOOLTIP"
 msgid "Scalding <style=\"KKeyword\">Temperatures</style> are hurting these Duplicants:"
-msgstr "これらの複製人間が<style=\"KKeyword\">高温</style>によって火傷を負っています:"
+msgstr "これらの複製人間は<style=\"KKeyword\">高温</style>によって火傷を負っています:"
 
+# 複製人間や動物のステータス欄にあるデバフ名にカーソルを合わせると表示されるツールチップ
 #. STRINGS.CREATURES.STATUSITEMS.SCALDING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCALDING.TOOLTIP"
 msgid "Current external <style=\"KKeyword\">Temperature</style> is perilously high [<b>{ExternalTemperature}</b> / <b>{TargetTemperature}</b>]"
-msgstr "外部<style=\"KKeyword\">温度</style>が危険なほどまで高温です [<b>{ExternalTemperature}</b> / <b>{TargetTemperature}</b>]"
+msgstr "外部<style=\"KKeyword\">温度</style>が危険なほど高温です [<b>{ExternalTemperature}</b> / <b>{TargetTemperature}</b>]"
 
+# 複製人間や動物のステータス欄に表示されるデバフ名
+# 凍傷そのものではなく、単に「今現在、低温に曝されている」ことを示している。そのため暖かい場所へ移動すれば、すぐに消える。
+# 凍傷は徐々に生命力が減ることで表現されている。
 #. STRINGS.CREATURES.STATUSITEMS.SCOLDING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCOLDING.NAME"
 msgid "Frostbite"
-msgstr "凍傷"
+msgstr "凍傷を負っている"
 
+# 画面左の警告一覧に表示される警告名
 #. STRINGS.CREATURES.STATUSITEMS.SCOLDING.NOTIFICATION_NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCOLDING.NOTIFICATION_NAME"
 msgid "Frostbite"
-msgstr "凍傷"
+msgstr "凍傷が発生中"
 
+# 画面左の警告一覧にある警告名にカーソルを合わせると表示されるツールチップ
 #. STRINGS.CREATURES.STATUSITEMS.SCOLDING.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCOLDING.NOTIFICATION_TOOLTIP"
 msgid "Extremely Low <style=\"KKeyword\">Temperatures</style> are hurting these Duplicants:"
-msgstr "これらの複製人間が<style=\"KKeyword\">極低温</style>によって負傷しています:"
+msgstr "これらの複製人間は<style=\"KKeyword\">極低温</style>によって凍傷を負っています:"
 
+# 複製人間や動物のステータス欄にあるデバフ名にカーソルを合わせると表示されるツールチップ
 #. STRINGS.CREATURES.STATUSITEMS.SCOLDING.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SCOLDING.TOOLTIP"
 msgid "Current external <style=\"KKeyword\">Temperature</style> is perilously low [<b>{ExternalTemperature}</b> / <b>{TargetTemperature}</b>]"
-msgstr "外部<style=\"KKeyword\">温度</style>が危険なほどまで低温です [<b>{ExternalTemperature}</b> / <b>{TargetTemperature}</b>]"
+msgstr "外部<style=\"KKeyword\">温度</style>が危険なほど低温です [<b>{ExternalTemperature}</b> / <b>{TargetTemperature}</b>]"
 
 #. STRINGS.CREATURES.STATUSITEMS.SLEEPING.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.SLEEPING.NAME"
@@ -5912,11 +5925,15 @@ msgstr ""
 "\n"
 "<style=\"KKeyword\">ネクター</style>生産は条件が改善されると再開されます"
 
+# 周囲の温度が原因。徐々に生命力を失うが、完全に失うまでに相応の猶予かあるため、ただちに致命的、死にかけとまでは言えない。
+# 暖かい場所へ移動すれば、すぐに消える。
+# 複製人間の 'Frostbite' とほぼ同じ。
 #. STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_COLD_DEADLY.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_COLD_DEADLY.NAME"
 msgid "Freezing"
-msgstr "致命的に寒い"
+msgstr "凍てつく寒さ"
 
+# 水中生物もいるため、"external temperature"は気温に限らない。水温なども含めた単なる「温度」と解釈する。
 #. STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_COLD_DEADLY.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_COLD_DEADLY.TOOLTIP"
 msgid ""
@@ -5927,17 +5944,19 @@ msgid ""
 "\n"
 "{3}"
 msgstr ""
-"この動物は寒さで死にかけています\n"
+"この動物は危険なほどの寒さに曝されています\n"
 "\n"
-"生存可能な温度範囲: {1} ～ {2}\n"
-"現在の外気温: {0}\n"
+"生存可能な温度域: {1} ～ {2}\n"
+"現在の外部温度: {0}\n"
 "\n"
 "{3}"
 
+# 周囲の温度ではなく、体温が原因。そのため、暖かい場所に移動しても体温が戻るまで治らない。
+# 幸福度が下がるだけで、健康に影響はない。
 #. STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_COLD_UNCOMFORTABLE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_COLD_UNCOMFORTABLE.NAME"
 msgid "Body Temperature Low"
-msgstr "低体温"
+msgstr "体温が低い"
 
 #. STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_COLD_UNCOMFORTABLE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_COLD_UNCOMFORTABLE.TOOLTIP"
@@ -5949,18 +5968,22 @@ msgid ""
 "\n"
 "{3}"
 msgstr ""
-"この動物は凍えています\n"
+"この動物は寒がっています\n"
 "\n"
-"生存可能な温度範囲: {1} ～ {2}\n"
-"現在の外気温: {0}\n"
+"快適な温度域: {1} ～ {2}\n"
+"現在の体温: {0}\n"
 "\n"
 "{3}"
 
+# 周囲の温度が原因。徐々に生命力を失うが、完全に失うまでに相応の猶予かあるため、ただちに致命的、死にかけとまでは言えない。
+# 涼しい場所へ移動すれば、すぐに消える。
+# 複製人間の 'Scalding' とほぼ同じ。
 #. STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_HOT_DEADLY.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_HOT_DEADLY.NAME"
 msgid "Scalding"
-msgstr "火傷を負っている"
+msgstr "灼けつく暑さ"
 
+# 水中生物もいるため、"external temperature"は気温に限らない。水温なども含めた単なる「温度」と解釈する。
 #. STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_HOT_DEADLY.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_HOT_DEADLY.TOOLTIP"
 msgid ""
@@ -5971,17 +5994,19 @@ msgid ""
 "\n"
 "{3}"
 msgstr ""
-"この動物は暑さで死にかけています\n"
+"この動物は危険なほどの暑さに曝されています\n"
 "\n"
-"生存可能な温度範囲: {1} ～ {2}\n"
-"現在の外気温: {0}\n"
+"生存可能な温度域: {1} ～ {2}\n"
+"現在の外部温度: {0}\n"
 "\n"
 "{3}"
 
+# 周囲の温度ではなく、体温が原因。そのため、涼しい場所に移動しても体温が戻るまで治らない。
+# 幸福度が下がるだけで、健康に影響はない。
 #. STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_HOT_UNCOMFORTABLE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_HOT_UNCOMFORTABLE.NAME"
 msgid "Body Temperature High"
-msgstr "高体温"
+msgstr "体温が高い"
 
 #. STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_HOT_UNCOMFORTABLE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.TEMPERATURE_HOT_UNCOMFORTABLE.TOOLTIP"
@@ -5995,8 +6020,8 @@ msgid ""
 msgstr ""
 "この動物は暑がっています\n"
 "\n"
-"生存可能な温度範囲: {1} ～ {2}\n"
-"現在の外気温: {0}\n"
+"快適な温度域: {1} ～ {2}\n"
+"現在の体温: {0}\n"
 "\n"
 "{3}"
 
