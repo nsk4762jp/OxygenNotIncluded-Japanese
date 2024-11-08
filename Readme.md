@@ -21,8 +21,9 @@ Steam Workshop で[日本語化MOD](http://steamcommunity.com/sharedfiles/filede
     Translations > Japanese Language Pack
 
 サブスクライブが上手くいかない場合は、[Release](https://github.com/nsk4762jp/OxygenNotIncluded-Japanese/releases) から Source code(zip) をダウンロードし、解凍して出てきた `strings.po` を下記フォルダにコピーしてください。  
+下記エリアをコピーしてエクスプローラのアドレスバーに貼り付けると一発で開けます。  
 
-    (マイドキュメント)/Documents/Klei/OxygenNotIncluded/mods/Steam/928606476/
+     %USERPROFILE%/Documents/Klei/OxygenNotIncluded/mods/Steam/928606476/
 
 
 ## ライセンス
