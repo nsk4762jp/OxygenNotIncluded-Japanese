@@ -338,6 +338,7 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.BATTERYLEAK"
 msgid "<link=\"POWER\">Power</link> leak: {0}"
 msgstr "<link=\"POWER\">電力</link>漏洩: {0}"
 
+# 旧バージョンで存在した Airborne Critter Lure という設備の名残
 #. STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_LURE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_LURE"
 msgid "Capture Method: Lures"
@@ -901,7 +902,7 @@ msgstr "このカテゴリーの設備は<style=\"KKeyword\">部屋</style>の�
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_LURE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_LURE"
 msgid "This critter can be moved using an <link=\"AIRBORNECREATURELURE\">Airborne Critter Lure</link>"
-msgstr "この動物は<link=\"AIRBORNECREATURELURE\">空中動物ルアー</link>を利用して動かせます"
+msgstr "この動物は<link=\"AIRBORNECREATURELURE\">浮遊動物ルアー</link>を利用して動かせます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_TRAP
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_TRAP"
@@ -6191,7 +6192,7 @@ msgstr "BGMを毎朝流す"
 #. STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUSIC_EVERY_CYCLE_TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUSIC_EVERY_CYCLE_TOOLTIP"
 msgid "If enabled, background music will play every cycle instead of every few cycles"
-msgstr "有効にした場合、BGMは数サイクルごとの代わりに、常に毎サイクル流すようにします"
+msgstr "有効にした場合、BGMは数サイクルごとではなく、1サイクルごとに再生されます"
 
 #. STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUTE_ON_FOCUS_LOST
 msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUTE_ON_FOCUS_LOST"
@@ -6201,7 +6202,7 @@ msgstr "非選択時にミュート"
 #. STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUTE_ON_FOCUS_LOST_TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.MUTE_ON_FOCUS_LOST_TOOLTIP"
 msgid "If enabled, the game will be muted while minimized or if the application loses focus"
-msgstr "有効化した場合、ゲームは最小化もしくは非選択状態になった場合ミュートされます"
+msgstr "有効にした場合、ゲームが最小化されるか非選択状態では音を鳴らしません"
 
 #. STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.AUDIO_OPTIONS_SCREEN.TITLE"
@@ -6400,7 +6401,7 @@ msgid ""
 "\n"
 "Enabling DLC content allows asteroid and biome remixes from that DLC to be customized in the sections below"
 msgstr ""
-"DLCコンテンツには、建物、ケアパッケージ、宇宙の名所旧跡、生き物などが含まれます\n"
+"DLCコンテンツには、設備、補給品、宇宙の名所旧跡、動物などが含まれます\n"
 "\n"
 "DLCコンテンツを有効にすると、そのDLCの小惑星とバイオームリミックスを以下のセクションでカスタマイズできるようになります"
 
@@ -6684,12 +6685,12 @@ msgstr "MODによって追加された小惑星帯をここで指定できます
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DLC_MIXING.LEVELS.DISABLED.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DLC_MIXING.LEVELS.DISABLED.NAME"
 msgid "Disabled"
-msgstr "無効化"
+msgstr "無効"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DLC_MIXING.LEVELS.DISABLED.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DLC_MIXING.LEVELS.DISABLED.TOOLTIP"
 msgid "Content from this DLC is currently <b>disabled</b>"
-msgstr "このDLCのコンテンツは現在<b>無効化</b>されています"
+msgstr "このDLCのコンテンツは現在<b>無効</b>です"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DLC_MIXING.LEVELS.ENABLED.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DLC_MIXING.LEVELS.ENABLED.NAME"
@@ -6703,9 +6704,9 @@ msgid ""
 "\n"
 "This includes Care Packages, buildings, and space POIs"
 msgstr ""
-"このDLCのコンテンツは現在<b>有効化</b>されています\n"
+"このDLCのコンテンツは現在<b>有効</b>です\n"
 "\n"
-"これにはケアパッケージ、建物、宇宙の名所旧跡が含まれます"
+"これには、補給品、設備、宇宙の名所旧跡が含まれます"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.DEFAULT.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DURABILITY.LEVELS.DEFAULT.NAME"
@@ -17479,7 +17480,7 @@ msgstr "生成機"
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWNER.TOOLTIP
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPAWNER.TOOLTIP"
 msgid "Spawn critters, food, equipment, and other entities {Hotkey}"
-msgstr "食糧や生物、装備などのモノを生成します {Hotkey}"
+msgstr "食糧や動物、装備などの物体を生成します {Hotkey}"
 
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.SPRINKLE.NAME"
@@ -25046,7 +25047,7 @@ msgstr "配達待ち: {0}"
 #. STRINGS.UI.UISIDESCREENS.LURE.AWAITINGREMOVAL
 msgctxt "STRINGS.UI.UISIDESCREENS.LURE.AWAITINGREMOVAL"
 msgid "AWAITING DIGGING UP: {0}"
-msgstr "掘起し待ち: {0}"
+msgstr "掘り起こし待ち: {0}"
 
 #. STRINGS.UI.UISIDESCREENS.LURE.AWAITINGREQUEST
 msgctxt "STRINGS.UI.UISIDESCREENS.LURE.AWAITINGREQUEST"
@@ -25481,7 +25482,7 @@ msgstr "配達待ち: {0}"
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGREMOVAL
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGREMOVAL"
 msgid "AWAITING DIGGING UP: {0}"
-msgstr "掘起し待ち: {0}"
+msgstr "掘り起こし待ち: {0}"
 
 #. STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGREQUEST
 msgctxt "STRINGS.UI.UISIDESCREENS.PLANTERSIDESCREEN.AWAITINGREQUEST"
@@ -27072,7 +27073,7 @@ msgstr "スパイス付き料理のみ"
 #. STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ONLYALLOWSPICEDITEMSBUTTONTOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ONLYALLOWSPICEDITEMSBUTTONTOOLTIP"
 msgid "Only store foods that have been spiced at the <style=\"KKeyword\">Spice Grinder</style>"
-msgstr "<style=\"KKeyword\">スパイスミル</style>でスパイスを加えた料理だけを格納します"
+msgstr "<style=\"KKeyword\">スパイスミル</style>でスパイスを加えた料理だけを収納します"
 
 #. STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ONLYALLOWTRANSPORTITEMSBUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.ONLYALLOWTRANSPORTITEMSBUTTON"
@@ -27097,7 +27098,7 @@ msgstr "標準以外"
 #. STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.SPECIAL_RESOURCES_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.SPECIAL_RESOURCES_TOOLTIP"
 msgid "These objects may not be ideally suited to storage"
-msgstr "これらの物質は格納するのに相応しくないかもしれません"
+msgstr "これらの物質は収納するのに相応しくないかもしれません"
 
 #. STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.TITLE"
