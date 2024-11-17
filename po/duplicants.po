@@ -2495,15 +2495,19 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.ALLOWED_TO_DEPRESSURIZE"
 msgid "Not currently overpressure"
 msgstr "気圧超過でない"
 
+# トイレの「作業」タブの「お漏らし」の作業（膀胱の値が高いことが原因で、時間割を無視して発生する作業）に表示される文言
+# 膀胱の値が低く、排泄の必要がない場合に表示される
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.BLADDER_FULL
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.BLADDER_FULL"
 msgid "Bladder isn't full"
-msgstr "膀胱は満タンではありません"
+msgstr "膀胱には余裕がある"
 
+# トイレの「休憩時間: トイレ使用」の作業（休憩時間中に、膀胱の値が40%以上あると発生する作業）に表示される文言
+# 休憩時間によるトイレ使用中に、膀胱の値が100%以上あると、使用しているトイレ以外のトイレに表示される
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.BLADDER_NOT_FULL
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.BLADDER_NOT_FULL"
 msgid "Bladder too full"
-msgstr "膀胱がパンパンです"
+msgstr "膀胱はもう限界"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_CHAT
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_CHAT"
@@ -2540,6 +2544,7 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CURRENT_ERRAND"
 msgid "Current Errand"
 msgstr "現在の作業"
 
+# トイレの「作業」タブの「お漏らし」の作業（膀胱の値が高いことが原因で、時間割を無視して発生する作業）に表示される文言
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CURRENTLY_PEEING
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CURRENTLY_PEEING"
 msgid "Currently Peeing"
@@ -2609,10 +2614,14 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_TRAIT"
 msgid "Missing required trait"
 msgstr "要求特性なし"
 
+# 製造ポッドや起動済みのミニポッドの「作業」タブに表示される文言
+# ミニポッドは一度起動したらもう作業は必要ない
+# そのほか、トイレの「作業」タブの「休憩時間: トイレ使用」の作業などでも表示される
+# 「休憩時間: トイレ使用」は休憩時間にしか実行できないため、それ以外の時間帯で表示される
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_URGE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HAS_URGE"
 msgid "No current need"
-msgstr "不要になった"
+msgstr "今は必要ない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HEADER
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.HEADER"
@@ -2644,20 +2653,26 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CONSUMPTION_PERMITTED"
 msgid "Disallowed by consumable permissions"
 msgstr "食べることが許されていません"
 
+# 動物捕捉地点の「作業」タブに表示される文言
+# 部屋内（厩舎とは限らない）の動物の数が適正で、捕獲の必要がない場合に表示される
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_FIXED_CAPTURE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_FIXED_CAPTURE"
 msgid "Pen Status OK"
-msgstr "厩舎ステータスOK"
+msgstr "捕獲の必要はない"
 
+# 毛づくろい端末の「作業」タブに表示される文言
+# 端末に到達できる動物が一匹もいないか、全て毛づくろい済みになっている場合に表示される
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_RANCHING
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_RANCHING"
 msgid "No Critters Available"
-msgstr "動物不在"
+msgstr "適した動物がいない"
 
+# 原料を使用する製造設備や動物解放地点など、何らかの配達先となる設備の「作業」タブに表示される文言
+# 原料が不足していたり、縄掛けされた動物がいないなど、配達すべきものが存在しない場合に表示される
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_FETCH_TARGET_AVAILABLE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_FETCH_TARGET_AVAILABLE"
 msgid "No pending deliveries"
-msgstr "未配達はありません"
+msgstr "配達するものがない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_FUNCTIONAL
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_FUNCTIONAL"
@@ -2689,10 +2704,12 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_MARKED_FOR_DISABLE"
 msgid "Building Disabled"
 msgstr "設備停止中"
 
+# 「作業」タブに表示される文言
+# 滑り棒の建設など、探査ロボには実行できない作業全般に表示される文言
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_MINION
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_MINION"
 msgid "Must be a Duplicant"
-msgstr "複製人間でなければなりません"
+msgstr "複製人間しか実行できない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_MORE_SATISFYING
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_MORE_SATISFYING"
@@ -2734,10 +2751,12 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_OFF_LADDER"
 msgid "{Selected} is busy climbing"
 msgstr "{Selected}は昇降中です"
 
+# 「作業」タブに表示される文言
+# スタミナ切れや居眠り病が原因で眠ってしまい、作業ができない場合に表示される
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_OKAY_TIME_TO_SLEEP
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_OKAY_TIME_TO_SLEEP"
 msgid "No current need"
-msgstr "不要となりました"
+msgstr "おねむの時間"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_OPERATIONAL
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_OPERATIONAL"
@@ -2774,10 +2793,12 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_ROCKET_TRAVELLING"
 msgid "Rocket must be travelling"
 msgstr "ロケット航行中でなければなりません"
 
+# 「作業」タブに表示される文言
+# 現在の時間割が「休憩」や「就寝」のため、作業できない場合に表示される
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_SCHEDULED_TIME
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_SCHEDULED_TIME"
 msgid "Not allowed by schedule"
-msgstr "スケジュール割り当てなし"
+msgstr "労働時間ではない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_STANDING
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_STANDING"
