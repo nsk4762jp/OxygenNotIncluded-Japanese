@@ -914,12 +914,9 @@ msgstr ""
 "開放: ドアを開けっぱなしにします"
 
 #. STRINGS.BUILDING.STATUSITEMS.DATAMINER.PRODUCTIONRATE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.CRITTERSTATUS.FERTILITY.FERTILITYRATE.TITLE"
-#| msgid "Reproduction Rate"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DATAMINER.PRODUCTIONRATE.NAME"
 msgid "Production Rate: {RATE}"
-msgstr "繁殖率"
+msgstr "生産率: {RATE}"
 
 #. STRINGS.BUILDING.STATUSITEMS.DATAMINER.PRODUCTIONRATE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DATAMINER.PRODUCTIONRATE.TOOLTIP"
@@ -930,6 +927,11 @@ msgid ""
 "\n"
 "Current ambient temperature: {TEMP}"
 msgstr ""
+"この設備は生産率 {RATE} で稼働中です\n"
+"\n"
+"生産率は高温になると低下します\n"
+"\n"
+"現在の気温: {TEMP}"
 
 #. STRINGS.BUILDING.STATUSITEMS.DEADREACTORCOOLINGOFF.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DEADREACTORCOOLINGOFF.NAME"
@@ -1065,23 +1067,20 @@ msgid "A Duplicant is required to bring this building online"
 msgstr "この設備は複製人間によって起動する必要があります"
 
 #. STRINGS.BUILDING.STATUSITEMS.ELECTROBANKJOULESAVAILABLE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.JOULESAVAILABLE.NAME"
-#| msgid "Power Available: {JoulesAvailable} / {JoulesCapacity}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ELECTROBANKJOULESAVAILABLE.NAME"
 msgid "Power Remaining: {JoulesAvailable} / {JoulesCapacity}"
-msgstr "利用可能な電力: {JoulesAvailable} / {JoulesCapacity}"
+msgstr "電力残量: {JoulesAvailable} / {JoulesCapacity}"
 
 #. STRINGS.BUILDING.STATUSITEMS.ELECTROBANKJOULESAVAILABLE.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.JOULESAVAILABLE.TOOLTIP"
-#| msgid "<b>{JoulesAvailable}</b> of stored <style=\"KKeyword\">Power</style> available for use"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ELECTROBANKJOULESAVAILABLE.TOOLTIP"
 msgid ""
 "<b>{JoulesAvailable}</b> of stored <style=\"KKeyword\">Power</style> available for use\n"
 "\n"
 "Maximum capacity: {JoulesCapacity}"
-msgstr "利用可能な<style=\"KKeyword\">電力</style>が <b>{JoulesAvailable}</b> 蓄えられています"
+msgstr ""
+"利用可能な<style=\"KKeyword\">電力</style>が <b>{JoulesAvailable}</b> 蓄えられています\n"
+"\n"
+"最大容量: {JoulesCapacity}"
 
 #. STRINGS.BUILDING.STATUSITEMS.ELEMENTCONSUMER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ELEMENTCONSUMER.NAME"
@@ -1702,12 +1701,9 @@ msgstr "この墓標に弔われた者はいません。"
 
 # 格納庫以外にも、農地タイルでこのアクションが使用できた
 #. STRINGS.BUILDING.STATUSITEMS.GUNKEMPTIERFULL.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HEADERS.INTERNALSTORAGE"
-#| msgid "Storage"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GUNKEMPTIERFULL.NAME"
 msgid "Storage Full"
-msgstr "内部収納庫"
+msgstr "内部収納庫満タン"
 
 #. STRINGS.BUILDING.STATUSITEMS.GUNKEMPTIERFULL.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GUNKEMPTIERFULL.TOOLTIP"
@@ -1716,6 +1712,9 @@ msgid ""
 "\n"
 "It must be emptied before its next use"
 msgstr ""
+"この設備の内部収納庫は最大容量に達しています\n"
+"\n"
+"次回使用時までに空にする必要があります"
 
 #. STRINGS.BUILDING.STATUSITEMS.HABITATNEEDSEMPTYING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.HABITATNEEDSEMPTYING.NAME"
@@ -3674,31 +3673,22 @@ msgstr "上昇した圧力は安全に解放されています"
 #. STRINGS.BUILDING.STATUSITEMS.REMOTEWORKERDEPOT.MAKINGWORKER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.REMOTEWORKERDEPOT.MAKINGWORKER.NAME"
 msgid "Assembling Remote Worker"
-msgstr ""
+msgstr "リモートワーカー組み立て中"
 
 #. STRINGS.BUILDING.STATUSITEMS.REMOTEWORKERDEPOT.MAKINGWORKER.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.COMPLEXFABRICATOR.CLUSTERTELESCOPEMETEOR.TOOLTIP"
-#| msgid "This building is currently studying a meteor"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.REMOTEWORKERDEPOT.MAKINGWORKER.TOOLTIP"
 msgid "This building is currently assembling a remote worker drone"
-msgstr "この設備は現在隕石を研究中です"
+msgstr "この設備は現在リモートワーカードローンを組み立て中です。"
 
 #. STRINGS.BUILDING.STATUSITEMS.REMOTEWORKTERMINAL.NODOCK.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.ASSIGNED"
-#| msgid "Assigned"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.REMOTEWORKTERMINAL.NODOCK.NAME"
 msgid "No Dock Assigned"
-msgstr "割り当て"
+msgstr "ドック割り当て無し"
 
 #. STRINGS.BUILDING.STATUSITEMS.REMOTEWORKTERMINAL.NODOCK.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MEGABRAINNOTENOUGHOXYGEN.TOOLTIP"
-#| msgid "This building needs <style=\"KKeyword\">Oxygen</style> in order to function"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.REMOTEWORKTERMINAL.NODOCK.TOOLTIP"
 msgid "This building must be assigned a <style=\"KKeyword\">Remote Worker Dock</style> in order to function"
-msgstr "この設備が動作するには<style=\"KKeyword\">酸素</style>が必要です"
+msgstr "この設備が動作するには<style=\"KKeyword\">リモートワーカードック</style>の割り当てが必要です"
 
 #. STRINGS.BUILDING.STATUSITEMS.REQUIRESSKILLPERK.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.REQUIRESSKILLPERK.NAME"
