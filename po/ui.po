@@ -21753,12 +21753,12 @@ msgstr "採掘指示のみ"
 #. STRINGS.UI.TOOLS.FILTERLAYERS.DO_NOT_HARVEST.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.DO_NOT_HARVEST.NAME"
 msgid "Disable Harvest"
-msgstr "収穫を無効化"
+msgstr "収穫を無効にする"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.DO_NOT_HARVEST.TOOLTIP
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.DO_NOT_HARVEST.TOOLTIP"
 msgid "Disable harvest on selected plants"
-msgstr "選択された植物の収穫を無効化します"
+msgstr "選択した植物を複製人間に収穫させないようにします"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.FARMABLE.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.FARMABLE.NAME"
@@ -21803,12 +21803,12 @@ msgstr "気体パイプのみ"
 #. STRINGS.UI.TOOLS.FILTERLAYERS.HARVEST_WHEN_READY.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.HARVEST_WHEN_READY.NAME"
 msgid "Enable Harvest"
-msgstr "収穫を有効化"
+msgstr "収穫を有効にする"
 
 #. STRINGS.UI.TOOLS.FILTERLAYERS.HARVEST_WHEN_READY.TOOLTIP
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.HARVEST_WHEN_READY.TOOLTIP"
 msgid "Enable harvest on selected plants"
-msgstr "選択された植物の収穫を有効化します"
+msgstr "選択した植物を複製人間が自発的に収穫するようにします"
 
 # 温度レイヤー内の子レイヤー名で、「絶対温度」「相対温度」などと並ぶ、温度を色分けする基準の一つ。
 # `Tolerance` の持つ意味合い（その温度が生物の生存を許す度合い）を日本語にするのが難しいため、実際の機能に基づいた名称にした。
@@ -23559,7 +23559,7 @@ msgid "Order Duplicants to deliver {0}<link=\"NONE\">s</link> to this building a
 msgstr ""
 "必要に応じてこの設備に{0}を配達するよう、複製人間に指示を出します\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">配達しない</style>"
+"現在の設定: <b><style=\"logic_off\">配達しない</style></b>"
 
 #. STRINGS.UI.UISIDESCREENS.BUTTONMENUSIDESCREEN.DISALLOW_INTERNAL_CONSTRUCTOR
 msgctxt "STRINGS.UI.UISIDESCREENS.BUTTONMENUSIDESCREEN.DISALLOW_INTERNAL_CONSTRUCTOR"
@@ -23572,7 +23572,7 @@ msgid "Cancel automatic {0} deliveries to this building"
 msgstr ""
 "この設備へ{0}を配達させないようにします\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">配達する</style>"
+"現在の設定: <b><style=\"logic_on\">配達する</style></b>"
 
 #. STRINGS.UI.UISIDESCREENS.BUTTONMENUSIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.BUTTONMENUSIDESCREEN.TITLE"
@@ -27507,16 +27507,16 @@ msgstr "この動物を攻撃します"
 #. STRINGS.UI.USERMENUACTIONS.CANCEL_HARVEST_WHEN_READY.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCEL_HARVEST_WHEN_READY.NAME"
 msgid "Disable Autoharvest"
-msgstr "自動収穫をやめる"
+msgstr "自動収穫を無効化"
 
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
 #. STRINGS.UI.USERMENUACTIONS.CANCEL_HARVEST_WHEN_READY.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCEL_HARVEST_WHEN_READY.TOOLTIP"
 msgid "Do not automatically harvest this plant"
 msgstr ""
-"この植物が成熟しても、収穫させないようにします\n"
+"この植物が成熟しても、複製人間に収穫させないようにします\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">収穫する</style>"
+"現在の設定: <b><style=\"logic_on\">収穫する</style></b>"
 
 #. STRINGS.UI.USERMENUACTIONS.CANCELATTACK.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELATTACK.NAME"
@@ -27581,16 +27581,16 @@ msgstr "採掘指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.CANCELEMPTYBEEHIVE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELEMPTYBEEHIVE.NAME"
 msgid "Disable Autoharvest"
-msgstr "自動収穫をやめる"
+msgstr "自動採取を無効化"
 
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
 #. STRINGS.UI.USERMENUACTIONS.CANCELEMPTYBEEHIVE.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELEMPTYBEEHIVE.TOOLTIP"
 msgid "Do not automatically harvest this hive"
 msgstr ""
-"この巣がいっぱいになっても、収穫させないようにします\n"
+"この巣がいっぱいになっても、複製人間に採取させないようにします\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">収穫する</style>"
+"現在の設定: <b><style=\"logic_on\">採取する</style></b>"
 
 #. STRINGS.UI.USERMENUACTIONS.CANCELHARVEST.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.CANCELHARVEST.NAME"
@@ -27835,7 +27835,7 @@ msgid "Show all areas within this Duplicant's reach"
 msgstr ""
 "この複製人間が到達できる全ての領域を表示します\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">非表示</style>"
+"現在の設定: <b><style=\"logic_off\">非表示</style></b>"
 
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
 #. STRINGS.UI.USERMENUACTIONS.DRAWPATHS.TOOLTIP_OFF
@@ -27844,7 +27844,7 @@ msgid "Hide areas within this Duplicant's reach"
 msgstr ""
 "この複製人間が到達できる領域を非表示にします\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">表示</style>"
+"現在の設定: <b><style=\"logic_on\">表示</style></b>"
 
 #. STRINGS.UI.USERMENUACTIONS.DUMP.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.DUMP.NAME"
@@ -27869,16 +27869,16 @@ msgstr "この容器の中身を床にぶちまける指示を取り消します
 #. STRINGS.UI.USERMENUACTIONS.EMPTYBEEHIVE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYBEEHIVE.NAME"
 msgid "Enable Autoharvest"
-msgstr "自動収穫を許す"
+msgstr "自動採取を有効化"
 
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
 #. STRINGS.UI.USERMENUACTIONS.EMPTYBEEHIVE.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYBEEHIVE.TOOLTIP"
 msgid "Automatically harvest this hive when full"
 msgstr ""
-"この巣がいっぱいになったとき、複製人間が自発的に収穫することを許します\n"
+"この巣がいっぱいになったとき、複製人間が自発的に採取するようにします\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">収穫しない</style>"
+"現在の設定: <b><style=\"logic_off\">採取しない</style></b>"
 
 #. STRINGS.UI.USERMENUACTIONS.EMPTYDESALINATOR.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.EMPTYDESALINATOR.NAME"
@@ -27914,12 +27914,12 @@ msgstr "この設備の内容物を空ける指示を取り消します"
 #. STRINGS.UI.USERMENUACTIONS.ENABLEBUILDING.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.ENABLEBUILDING.NAME"
 msgid "Disable Building"
-msgstr "設備を停止させる"
+msgstr "設備を無効化"
 
 #. STRINGS.UI.USERMENUACTIONS.ENABLEBUILDING.NAME_OFF
 msgctxt "STRINGS.UI.USERMENUACTIONS.ENABLEBUILDING.NAME_OFF"
 msgid "Enable Building"
-msgstr "設備を再開させる"
+msgstr "設備を有効化"
 
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
 #. STRINGS.UI.USERMENUACTIONS.ENABLEBUILDING.TOOLTIP
@@ -27933,7 +27933,7 @@ msgstr ""
 "\n"
 "停止中の設備は電力や資源を消費しません\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">作動中</style>"
+"現在の設定: <b><style=\"logic_on\">有効</style></b>"
 
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
 #. STRINGS.UI.USERMENUACTIONS.ENABLEBUILDING.TOOLTIP_OFF
@@ -27942,7 +27942,7 @@ msgid "Resume the use of this building {Hotkey}"
 msgstr ""
 "この設備の使用を再開します {Hotkey}\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">停止中</style>"
+"現在の設定: <b><style=\"logic_off\">無効</style></b>"
 
 #. STRINGS.UI.USERMENUACTIONS.FOLLOWCAM.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.FOLLOWCAM.NAME"
@@ -27972,16 +27972,16 @@ msgstr "この植物はまだ収穫できません"
 #. STRINGS.UI.USERMENUACTIONS.HARVEST_WHEN_READY.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.HARVEST_WHEN_READY.NAME"
 msgid "Enable Autoharvest"
-msgstr "自動収穫を許す"
+msgstr "自動収穫を有効化"
 
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
 #. STRINGS.UI.USERMENUACTIONS.HARVEST_WHEN_READY.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.HARVEST_WHEN_READY.TOOLTIP"
 msgid "Automatically harvest this plant when it matures"
 msgstr ""
-"この植物が成熟したとき、複製人間が自発的に収穫することを許します\n"
+"この植物が成熟したとき、複製人間が自発的に収穫するようにします\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">収穫しない</style>"
+"現在の設定: <b><style=\"logic_off\">収穫しない</style></b>"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_DELIVERY.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_DELIVERY.NAME"
@@ -28012,10 +28012,11 @@ msgstr ""
 "\n"
 "{0}"
 
+# 一行に収めるため文字サイズを小さくする
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME"
 msgid "Enable Auto-Bottle"
-msgstr "自動ボトル化を許す"
+msgstr "<size=11>自動ボトル化を有効化</size>"
 
 # 書式を統一するため、文末のコロンと改行を削除（原文の更新漏れと思われるので、poeditのエラーは無視してください）
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
@@ -28023,16 +28024,17 @@ msgstr "自動ボトル化を許す"
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP"
 msgid "If enabled, Duplicants will deliver bottled liquids to this building directly from these sources:\n"
 msgstr ""
-"自動ボトル化を許すと、複製人間は供給元となる設備から直接この設備へ液体ボトルを配達するようになります\n"
+"有効にした場合、複製人間が供給元となる設備から直接この設備へ液体ボトルを配達するようになります\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">ボトル化しない</style>\n"
+"現在の設定: <style=\"logic_off\">自動ボトル化 <b>無効</b></style>\n"
 "\n"
 "供給元の設備:"
 
+# 一行に収めるため文字サイズを小さくする
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED_GAS.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED_GAS.NAME"
 msgid "Enable Auto-Bottle"
-msgstr "自動ボンベ化を許す"
+msgstr "<size=11>自動ボンベ化を有効化</size>"
 
 # 供給元の設備は別に表示されるため、ここに具体名は書かない
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
@@ -28040,9 +28042,9 @@ msgstr "自動ボンベ化を許す"
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED_GAS.TOOLTIP"
 msgid "If enabled, Duplicants will deliver gas canisters to this building directly from Canister Fillers"
 msgstr ""
-"自動ボンベ化を許すと、複製人間は供給元となる設備から直接この設備へ気体ボンベを配達するようになります\n"
+"有効にした場合、複製人間が供給元となる設備から直接この設備へ気体ボンベを配達するようになります\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">ボンベ化しない</style>\n"
+"現在の設定: <style=\"logic_off\">自動ボンベ化 <b>無効</b></style>\n"
 "\n"
 "供給元の設備:"
 
@@ -28050,7 +28052,7 @@ msgstr ""
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME"
 msgid "Disable Auto-Bottle"
-msgstr "<size=11>自動ボトル化をやめる</size>"
+msgstr "<size=11>自動ボトル化を無効化</size>"
 
 # 供給元の設備は別に表示されるため、ここに具体名は書かない
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
@@ -28058,9 +28060,9 @@ msgstr "<size=11>自動ボトル化をやめる</size>"
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.TOOLTIP"
 msgid "If disabled, Duplicants will no longer deliver bottled liquids directly from Pitcher Pumps"
 msgstr ""
-"自動ボトル化をやめると、複製人間が供給元となる設備から直接この設備へ液体ボトルを配達することはなくなります\n"
+"無効にした場合、複製人間が供給元となる設備から直接この設備へ液体ボトルを配達することはありません\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">ボトル化する</style>\n"
+"現在の設定: <style=\"logic_on\">自動ボトル化 <b>有効</b></style>\n"
 "\n"
 "供給元の設備:"
 
@@ -28069,7 +28071,7 @@ msgstr ""
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED_GAS.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED_GAS.NAME"
 msgid "Disable Auto-Bottle"
-msgstr "<size=11>自動ボンベ化をやめる</size>"
+msgstr "<size=11>自動ボンベ化を無効化</size>"
 
 # 供給元の設備は別に表示されるため、ここに具体名は書かない
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
@@ -28077,9 +28079,9 @@ msgstr "<size=11>自動ボンベ化をやめる</size>"
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED_GAS.TOOLTIP"
 msgid "If disabled, Duplicants will no longer deliver gas canisters directly from Canister Fillers"
 msgstr ""
-"自動ボンベ化をやめると、複製人間が供給元となる設備から直接この設備へ気体ボンベを配達することはなくなります\n"
+"無効にした場合、複製人間が供給元となる設備から直接この設備へ気体ボンベを配達することはありません\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">ボンベ化する</style>\n"
+"現在の設定: <style=\"logic_on\">自動ボンベ化 <b>有効</b></style>\n"
 "\n"
 "供給元の設備:"
 
@@ -28757,7 +28759,7 @@ msgstr ""
 "\n"
 "ドックに空きがない場合、複製人間はスーツを床に脱ぎ捨てます\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">脱ぎ捨て禁止</style>"
+"現在の設定: <style=\"logic_off\">脱ぎ捨て <b>禁止</b></style>"
 
 #. STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ONLY_WHEN_ROOM_AVAILABLE.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.SUIT_MARKER_TRAVERSAL.ONLY_WHEN_ROOM_AVAILABLE.NAME"
@@ -28771,7 +28773,7 @@ msgid "Suited Duplicants may only pass if there is an available dock to store th
 msgstr ""
 "スーツを戻すためのドックに空きがなければ、スーツ着用の複製人間が脱着所を通過できないようにします\n"
 "\n"
-"現在の設定: <style=\"KKeyword\">脱ぎ捨て許可</style>"
+"現在の設定: <style=\"logic_on\">脱ぎ捨て <b>許可</b></style>"
 
 #. STRINGS.UI.USERMENUACTIONS.TAGFILTER.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.TAGFILTER.NAME"
@@ -28813,35 +28815,45 @@ msgctxt "STRINGS.UI.USERMENUACTIONS.UPROOT.TOOLTIP"
 msgid "Convert this plant into a seed"
 msgstr "この植物を種子に変換します"
 
+# 一行に収めるため文字サイズを小さくする
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.NAME"
 msgid "Set Direction: Both"
-msgstr " 方向指定: 左右"
+msgstr "<size=11>方向指定: 左右にする</size>"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.TOOLTIP"
 msgid "Select to make Duplicants wash when passing by in either direction"
-msgstr "複製人間がこの設備を左右両方から通り過ぎる時に洗浄させます"
+msgstr ""
+"複製人間がこの設備を左右いずれかの方向へ通り過ぎる際に洗浄させるようにします\n"
+"\n"
+"現在の設定: <style=\"KKeyword\">⇨右</style>"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.NAME"
 msgid "Set Direction: Left"
-msgstr "方向指定: 左"
+msgstr "方向指定: 左にする"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.TOOLTIP"
 msgid "Select to make Duplicants wash when passing by from right to left"
-msgstr "複製人間がこの設備を右から左に通り過ぎる時に洗浄させます"
+msgstr ""
+"複製人間がこの設備を右から左へ通り過ぎる際に洗浄させるようにします\n"
+"\n"
+"現在の設定: <style=\"KKeyword\">⇔左右</style>"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.NAME"
 msgid "Set Direction: Right"
-msgstr "方向指定: 右"
+msgstr "方向指定: 右にする"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.TOOLTIP"
 msgid "Select to make Duplicants wash when passing by from left to right"
-msgstr "複製人間がこの設備を左から右に通り過ぎるときに洗浄させます"
+msgstr ""
+"複製人間がこの設備を左から右へ通り過ぎる際に洗浄させるようにします\n"
+"\n"
+"現在の設定: <style=\"KKeyword\">⇦左</style>"
 
 #. STRINGS.UI.VANILLA.NAME
 msgctxt "STRINGS.UI.VANILLA.NAME"
