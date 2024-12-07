@@ -1798,9 +1798,9 @@ msgid ""
 "\n"
 "Learning Skills related to their Interests will give Duplicants a Morale boost"
 msgstr ""
-"複製人間の開始時の特性は、その興味によって決定されます\n"
+"複製人間の開始時の能力値は、何に興味を持っているかで決まります\n"
 "\n"
-"興味にあったスキルを習得した時には、複製人間に士気ボーナスが与えられます"
+"また、興味のあるスキルを習得すれば士気にボーナスが与えられます"
 
 #. STRINGS.UI.CHARACTERCONTAINER_ARCHETYPESELECT_TOOLTIP
 msgctxt "STRINGS.UI.CHARACTERCONTAINER_ARCHETYPESELECT_TOOLTIP"
@@ -4973,9 +4973,9 @@ msgid ""
 "\n"
 "<link=\"RESETSKILLSSTATION\">Skill Scrubber</link>s can be built from the <b>Stations Tab</b> {Hotkey/Plan10} to completely reset a Duplicant's learned <style=\"KKeyword\">Skills</style>, refunding all <style=\"KKeyword\">Skill Points</style>"
 msgstr ""
-"複製人間が一度新しい<style=\"KKeyword\">スキル</style>を習得すると、全ての<style=\"KKeyword\">特性</style>と<style=\"KKeyword\">要求士気</style>は永続します\n"
+"複製人間が新たな<style=\"KKeyword\">スキル</style>を習得することで生じる<style=\"KKeyword\">特性</style>の獲得や<style=\"KKeyword\">必要士気</style>の上昇は(スキルを忘れない限り)永続的なものです\n"
 "\n"
-"<b>端末タブ</b> {Hotkey/Plan10} から建築できる<link=\"RESETSKILLSSTATION\">スキル洗浄機</link>は、複製人間が習得したすべての<style=\"KKeyword\">スキル</style>を完全にリセットし、<style=\"KKeyword\">スキルポイント</style>も全て払い戻されます"
+"<b>端末タブ</b> {Hotkey/Plan10} から建築できる<link=\"RESETSKILLSSTATION\">スキル洗浄機</link>は、複製人間が習得した全ての<style=\"KKeyword\">スキル</style>を完全にリセットし、<style=\"KKeyword\">スキルポイント</style>も全て払い戻されます"
 
 #. STRINGS.UI.DETAILTABS.PERSONALITY.RESUME.NO_MASTERED_SKILLS.NAME
 msgctxt "STRINGS.UI.DETAILTABS.PERSONALITY.RESUME.NO_MASTERED_SKILLS.NAME"
@@ -17106,7 +17106,7 @@ msgstr "<link=\"PLANTS\">作物の手入れ</link>および微量栄養素作成
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_IDENTIFY_MUTANT_SEEDS.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_IDENTIFY_MUTANT_SEEDS.DESCRIPTION"
 msgid "Can identify <style=\"KKeyword\">Mutant Seeds</style> at the <link=\"GENETICANALYSISSTATION\">Botanical Analyzer</link>"
-msgstr "<link=\"GENETICANALYSISSTATION\">植物分析機</link>を使って<style=\"KKeyword\">変異種子</style>を判別可能です"
+msgstr "<link=\"GENETICANALYSISSTATION\">植物分析機</link>を使って<style=\"KKeyword\">変異種子</style>を判別可能"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_MAKE_MISSILES.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_MAKE_MISSILES.DESCRIPTION"
@@ -18189,7 +18189,7 @@ msgstr "{0}は{1}を <b>習得済み</b>"
 #. STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.PREVENTED_BY_TRAIT
 msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.PREVENTED_BY_TRAIT"
 msgid "    • This Duplicant possesses the <style=\"KKeyword\">{0}</style> Trait and cannot learn this Skill"
-msgstr "　・この複製人間は<style=\"KKeyword\">{0}</style>特性をもつため、このスキルを習得できません"
+msgstr "　・この複製人間は<style=\"KKeyword\">{0}</style>の特性を持つため、このスキルを習得できません"
 
 #. STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.REQUIRES_MORE_SKILL_POINTS
 msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.REQUIRES_MORE_SKILL_POINTS"
@@ -18209,7 +18209,7 @@ msgstr "{0}は{1}に興味があるため、習得すると<style=\"KKeyword\">�
 #. STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.SKILL_GRANTED
 msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.SKILL_GRANTED"
 msgid "{0} has been granted {1} by a Trait, but does not have increased <style=\"KKeyword\">Morale Requirements</style> from learning it"
-msgstr "{0}は特性により{1}を授けられており、そのことによって<style=\"KKeyword\">士気要求</style>が上昇することはありません"
+msgstr "{0}は特性により初めから{1}を習得しており、そうしたスキルは<style=\"KKeyword\">必要士気</style>を上昇させません"
 
 #. STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.STRESS_WARNING_MESSAGE
 msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.STRESS_WARNING_MESSAGE"
@@ -18233,7 +18233,7 @@ msgid ""
 "Morale Need: {1}"
 msgstr ""
 "現在の士気: {0}\n"
-"職業に必要な士気: {1}"
+"必要士気: {1}"
 
 #. STRINGS.UI.SKILLS_SCREEN.EXPERIENCE
 msgctxt "STRINGS.UI.SKILLS_SCREEN.EXPERIENCE"
@@ -18243,27 +18243,30 @@ msgstr "次のレベルに必要な経験"
 #. STRINGS.UI.SKILLS_SCREEN.EXPERIENCE_TOOLTIP
 msgctxt "STRINGS.UI.SKILLS_SCREEN.EXPERIENCE_TOOLTIP"
 msgid "{0}exp to next Skill Point"
-msgstr "次のスキルポイントに必要な経験値{0}"
+msgstr "次のスキルポイントに必要な経験値: {0}"
 
+# スキル画面の左上にある棒グラフの表示
 #. STRINGS.UI.SKILLS_SCREEN.MORALE
 msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE"
 msgid "<b>Morale</b>"
 msgstr "<b>士気</b>"
 
+# スキル画面の左上にある棒グラフの表示
 #. STRINGS.UI.SKILLS_SCREEN.MORALE_EXPECTATION
 msgctxt "STRINGS.UI.SKILLS_SCREEN.MORALE_EXPECTATION"
 msgid "<b>Morale Need</b>"
-msgstr "<b>士気要求値</b>"
+msgstr "<b>必要士気</b>"
 
 #. STRINGS.UI.SKILLS_SCREEN.NOT_AVAILABLE
 msgctxt "STRINGS.UI.SKILLS_SCREEN.NOT_AVAILABLE"
 msgid "Not available"
 msgstr "取得不可"
 
+# 未使用のスキルポイント残量を示す
 #. STRINGS.UI.SKILLS_SCREEN.POINTS_AVAILABLE
 msgctxt "STRINGS.UI.SKILLS_SCREEN.POINTS_AVAILABLE"
 msgid "<b>SKILL POINTS AVAILABLE</b>"
-msgstr "<b>スキルポイント使用可能</b>"
+msgstr "<b>使用可能スキルポイント</b>"
 
 #. STRINGS.UI.SKILLS_SCREEN.SELECT_HAT
 msgctxt "STRINGS.UI.SKILLS_SCREEN.SELECT_HAT"
@@ -29709,7 +29712,7 @@ msgid ""
 "\n"
 "Current Morale:"
 msgstr ""
-"この複製人間は士気が {0} 必要です。\n"
+"この複製人間には <link=\"MORALE\">{0} の士気が必要です。\n"
 "\n"
 "現在の士気:"
 
