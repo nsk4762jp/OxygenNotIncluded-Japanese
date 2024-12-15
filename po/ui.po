@@ -2107,15 +2107,15 @@ msgid "Range Remaining: "
 msgstr "航続可能距離: "
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.RANGE.ROBO_PILOTED_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.TRANSFORMER_INPUT_WIRE"
-#| msgid "Connect a <style=\"KKeyword\">Wire</style> to the large <style=\"KKeyword\">Input</style> with any amount of <style=\"KKeyword\">Watts</style>."
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.RANGE.ROBO_PILOTED_TOOLTIP"
 msgid ""
 "\n"
 "Rockets piloted by a <style=\"KKeyword\">Robo-Pilot</style> can travel one tile per {0} <style=\"KKeyword\">Data Banks</style>\n"
 "    • <style=\"KKeyword\">Data Banks</style> Remaining: {1}"
-msgstr "大きいほうの<style=\"KKeyword\">入力</style>側に任意の<style=\"KKeyword\">ワット数</style>の<style=\"KKeyword\">電線</style>を接続します。"
+msgstr ""
+"\n"
+"<style=\"KKeyword\">ロボット操縦</style>によるロケットは1タイルあたり{0}<style=\"KKeyword\">データバンク</style>を消費します\n"
+"    • <style=\"KKeyword\">データバンク</style> 残り: {1}"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.RANGE.TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.RANGE.TOOLTIP"
@@ -2123,17 +2123,14 @@ msgid "<b>Range remaining</b> is calculated by dividing the lesser of <b>fuel re
 msgstr "<b>航続可能距離</b>とは、<b>燃料の残量</b>と<b>酸化剤の残量</b>のうち少ない方を<b>タイル単位の燃料消費</b>で割ったものです"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.DEAD_ROBO_PILOT_ONLY_SPEED_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY"
-#| msgid "<style=\"KKeyword\">Robo-Pilot</style> has sufficient <style=\"KKeyword\">Data Banks</style> to reach its destination"
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.DEAD_ROBO_PILOT_ONLY_SPEED_TOOLTIP"
 msgid "<style=\"KKeyword\">Robo-Pilot</style> has no <style=\"KKeyword\">Data Banks</style>. This rocket is stranded"
-msgstr "<style=\"KKeyword\">ロボット操縦</style>は目的地到達に十分な<style=\"KKeyword\">データバンク</style>があります"
+msgstr "<style=\"KKeyword\">ロボット操縦</style>は目的地到達に十分な<style=\"KKeyword\">データバンク</style>がありません。ロケットは立ち往生しています。"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.DUPEPILOT_SPEED_TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.DUPEPILOT_SPEED_TOOLTIP"
 msgid "Duplicant pilot <b>Skill</b>: +{speed_boost} speed boost"
-msgstr ""
+msgstr "複製人間による操縦<b>スキル</b>: +{speed_boost} スピードブースト"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.NAME
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.NAME"
@@ -2149,29 +2146,31 @@ msgid ""
 "\n"
 "<b>Rocket speed</b> can be increased by a Duplicant pilot's <b>Skill</b> and by a <style=\"KKeyword\">Robo-Pilot</style>"
 msgstr ""
+"\n"
+"\n"
+"自動操縦となったロケットは速度が減少します\n"
+"\n"
+"<b>ロケット速度</b>は複製人間の操縦<b>スキル</b>や<style=\"KKeyword\">ロボット操縦</style>によって増加します"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.ROBO_PILOT_ONLY_SPEED_TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.JOBSSCREEN.SORT_TOOLTIP"
-#| msgid "Sort by the <style=\"KKeyword\">{Job}</style> Errand Type"
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.ROBO_PILOT_ONLY_SPEED_TOOLTIP"
 msgid "Piloted by a <style=\"KKeyword\">Robo-Pilot</style>: +0% speed boost"
-msgstr "<style=\"KKeyword\">{Job}</style>作業種別で並び替え"
+msgstr "<style=\"KKeyword\">ロボット操縦</style>による操縦 : +0% speed boost"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.SUPERPILOTED_SPEED_TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.SUPERPILOTED_SPEED_TOOLTIP"
 msgid "Multi-Piloted: +{speed_boost} speed boost"
-msgstr ""
+msgstr "複式操縦: +{speed_boost} スピードブースト"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP"
 msgid "<b>Rocket speed</b> is calculated by dividing <b>engine power</b> by <b>burden</b>"
-msgstr ""
+msgstr "<b>ロケットの速度</b>は、<b>エンジン出力</b>を<b>負荷</b>で割って計算されます"
 
 #. STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.UNPILOTED_SPEED_TOOLTIP
 msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.UNPILOTED_SPEED_TOOLTIP"
 msgid "Rocket is operating on autopilot: -{speed_boost} speed"
-msgstr ""
+msgstr "ロケットは自動操縦中: -{speed_boost} スピード"
 
 #. STRINGS.UI.CLUSTERMAP.SELECT_DESTINATION
 msgctxt "STRINGS.UI.CLUSTERMAP.SELECT_DESTINATION"
@@ -2780,15 +2779,6 @@ msgid "Check critical power level"
 msgstr "致命的なパワーレベルを確認"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_BATTERIES.LOW_POWERBANKS
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.FOODLOW.TOOLTIP"
-#| msgid ""
-#| "The colony's <link=\"FOOD\">Food</link> reserves are low:\n"
-#| "\n"
-#| "    • {0} are currently available\n"
-#| "    • {1} is being consumed per cycle\n"
-#| "\n"
-#| "<link=\"MICROBEMUSHER\">Microbe Mushers</link> can be built from the <b>Food Tab</b> {Hotkey/Plan4}"
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_BATTERIES.LOW_POWERBANKS"
 msgid ""
 "The colony's <link=\"ELECTROBANK\">Power Bank</link> reserves are low:\n"
@@ -2796,44 +2786,30 @@ msgid ""
 "    • {0} are currently available\n"
 "    • {1} is being consumed per cycle"
 msgstr ""
-"コロニーの<link=\"FOOD\">食糧</link>在庫が僅かです:\n"
+"コロニーの<link=\"ELECTROBANK\">パワーバンク</link>が残り僅か:\n"
 "\n"
-"    • {0} が現在利用可能\n"
-"    • {1} を1サイクルで消費\n"
-"\n"
-"<b>食糧タブ</b> {Hotkey/Plan4} から<link=\"MICROBEMUSHER\">微生物粉砕機</link>を建築できます"
+"    • 利用可能 {0}\n"
+"    • 一日の消費量 {1}"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_BATTERIES.NO_POWERBANKS
-#, fuzzy
-#| msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.NO_FOOD"
-#| msgid "    • Duplicants have no Power Banks"
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_BATTERIES.NO_POWERBANKS"
 msgid "    • Duplicants have no Power Banks"
 msgstr "    • 複製人間に割り当てるパワーバンクがありません"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_BATTERIES.PASS
-#, fuzzy
-#| msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.NORMAL"
-#| msgid "    • Power Bank supply is currently adequate"
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_BATTERIES.PASS"
 msgid "    • Power Bank supply is currently adequate"
 msgstr "    • 十分な量のパワーバンクが供給されています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_POWERLEVEL.CRITICAL_MODE
-#, fuzzy
-#| msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.HUNGRY"
-#| msgid "    • One or more Duplicants in desparate need of power banks"
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_POWERLEVEL.CRITICAL_MODE"
 msgid "    • One or more Duplicants in desperate need of power banks"
 msgstr "    • パワーバンクが必要な複製人間がいます"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_POWERLEVEL.POWERLESS
-#, fuzzy
-#| msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.HUNGRY"
-#| msgid "    • One or more Duplicants in desparate need of power banks"
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_POWERLEVEL.POWERLESS"
 msgid "    • One or more Duplicants are incapacitated and in desperate need of power banks"
-msgstr "    • パワーバンクが必要な複製人間がいます"
+msgstr "    • 無力化しており、パワーバンクが切実に必要な複製人間がいます"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.TOOLTIP_NAME
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.TOOLTIP_NAME"
@@ -2846,12 +2822,9 @@ msgid "Breathability"
 msgstr "酸素レベル"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.CRITERIA.CHECKLOWBIONICOXYGEN
-#, fuzzy
-#| msgctxt "STRINGS.UI.CHARACTERCONTAINER_FILTER_BIONIC"
-#| msgid "Check box to allow Bionic Duplicants"
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.CRITERIA.CHECKLOWBIONICOXYGEN"
 msgid "Check low Bionic Duplicant oxygen tanks"
-msgstr "バイオニック複製人間を許可するにはチェックを入れてください"
+msgstr "バイオニック複製人間の酸素タンク残量を確認するにはチェックを入れてください"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.CRITERIA.CHECKLOWBREATHABILITY
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.CRITERIA.CHECKLOWBREATHABILITY"
@@ -2866,7 +2839,7 @@ msgstr "窒息確認"
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.NEAR_OR_EMPTY_BIONIC_TANKS
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.NEAR_OR_EMPTY_BIONIC_TANKS"
 msgid "    • Bionic oxygen tanks are critically low"
-msgstr ""
+msgstr "    • バイオニック酸素タンクの残量が極めて低い"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.NORMAL
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.NORMAL"
@@ -2879,12 +2852,9 @@ msgid "    • Oxygen is becoming scarce or low pressure"
 msgstr "    • 酸素が欠乏または少なくなっています"
 
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.POOR_BIONIC_TANKS
-#, fuzzy
-#| msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.REACTORDIAGNOSTIC.CRITERIA_COOLANT_WARNING"
-#| msgid "    • Coolant tank low"
 msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.POOR_BIONIC_TANKS"
 msgid "    • Bionic oxygen tanks are low"
-msgstr "    • 冷却タンク残量低下"
+msgstr "    • バイオニック酸素タンクの残量が低い"
 
 # ここでの意味は直訳のほうの full of shit
 #. STRINGS.UI.COLONY_DIAGNOSTICS.BREATHABILITYDIAGNOSTIC.SUFFOCATING
@@ -5385,13 +5355,6 @@ msgid "PATCH NOTES"
 msgstr "更新履歴"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.DLC_BETA.BODY
-#, fuzzy
-#| msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.DLC_BETA.BODY"
-#| msgid ""
-#| "You're about to opt in to the beta for <b>The Frosty Planet Pack</b> DLC.\n"
-#| "This free beta is a work in progress, and will be discontinued before the paid DLC is released. \n"
-#| "\n"
-#| "Are you sure you want to opt in?"
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.DLC_BETA.BODY"
 msgid ""
 "You're about to opt in to the beta for <b>The Bionic Booster Pack</b> DLC.\n"
@@ -5399,7 +5362,7 @@ msgid ""
 "\n"
 "Are you sure you want to opt in?"
 msgstr ""
-"<b>The Frosty Planet Pack</b> DLCのベータに参加しようとしています。\n"
+"<b>The Bionic Booster Pack</b> DLCのベータに参加しようとしています。\n"
 "この無料ベータは進行中のもので、有料DLCがリリースされる前に終了する予定です。\n"
 "\n"
 "本当に参加しますか？"
@@ -5638,23 +5601,17 @@ msgstr "<i>The Frosty Planet Pack</i>"
 #. STRINGS.UI.DLC3.MIXING_TOOLTIP
 msgctxt "STRINGS.UI.DLC3.MIXING_TOOLTIP"
 msgid "<i>The Bionic Booster Pack</i> features portable power storage, bionic Duplicants, and remote building operation"
-msgstr ""
+msgstr "<i>The Bionic Booster Pack</i>にはポータブル電力ストレージ、バイオニック複製人間、リモート操作設備が含まれています"
 
 #. STRINGS.UI.DLC3.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.NAME"
-#| msgid "Bionic Booster: Ranching"
 msgctxt "STRINGS.UI.DLC3.NAME"
 msgid "The Bionic Booster Pack"
-msgstr "バイオニックブースター: 畜産"
+msgstr "The Bionic Booster Pack"
 
 #. STRINGS.UI.DLC3.NAME_ITAL
-#, fuzzy
-#| msgctxt "STRINGS.UI.DLC2.NAME_ITAL"
-#| msgid "<i>The Frosty Planet Pack</i>"
 msgctxt "STRINGS.UI.DLC3.NAME_ITAL"
 msgid "<i>The Bionic Booster Pack</i>"
-msgstr "<i>The Frosty Planet Pack</i>"
+msgstr "<i>The Bionic Booster Pack</i>"
 
 #. STRINGS.UI.DROPDOWN.NONE
 msgctxt "STRINGS.UI.DROPDOWN.NONE"
@@ -6805,88 +6762,64 @@ msgid "World Traits"
 msgstr "小惑星の特性"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.DEFAULT.NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.DEFAULT.NAME"
-#| msgid "Default"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.DEFAULT.NAME"
 msgid "Default"
 msgstr "標準"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.DEFAULT.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.EQUIPMENT.PREFABS.CLOTHING_HATS.NAME"
-#| msgid "Default Headgear"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.DEFAULT.TOOLTIP"
 msgid "Default wattage"
-msgstr "初期かぶり物"
+msgstr "デフォルトワット数です"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.EASY.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.EASY.NAME"
 msgid "Energy Efficient"
-msgstr ""
+msgstr "エネルギー効率"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.EASY.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.TOOLTIP"
-#| msgid "Duplicants gain stress slower than usual"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.EASY.TOOLTIP"
 msgid "These Duplicants consume less power than usual"
-msgstr "複製人間は通常よりもストレスを溜め込みにくくなります"
+msgstr "複製人間は通常よりも電力を消費しません"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.HARD.NAME
-#, fuzzy
-#| msgctxt "STRINGS.BUILDING.STATUSITEMS.MANUALGENERATORRELEASINGENERGY.NAME"
-#| msgid "Powering"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.HARD.NAME"
 msgid "Power Hungry"
-msgstr "電力供給中"
+msgstr "電力喰らい"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.HARD.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.TOOLTIP"
-#| msgid "These Duplicants have an increased chance of contracting diseases from germ exposure"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.HARD.TOOLTIP"
 msgid "These Duplicants have an increased appetite for power"
-msgstr "ここにいる複製人間は病原菌への曝露により病気に罹る確率が高めです"
+msgstr "複製人間は電力への欲求が高まっています"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.VERYEASY.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STUDYING.NAME"
-#| msgid "Analyzing"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.VERYEASY.NAME"
 msgid "Analog"
-msgstr "分析中"
+msgstr "アナログ"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.VERYEASY.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.VERYEASY.TOOLTIP"
 msgid "These Bionic Duplicants run on old-school enthusiasm, and barely consume power at all"
-msgstr ""
+msgstr "バイオニック複製人間は昔ながらの熱意で働き、殆ど電力を消費しません"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.VERYHARD.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.VERYHARD.NAME"
 msgid "Energy Vampire"
-msgstr ""
+msgstr "エネルギーバンパイア"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.VERYHARD.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.VERYHARD.TOOLTIP"
 msgid "These Bionic Duplicants drain batteries like it's their only job"
-msgstr ""
+msgstr "バイオニック複製人間はまるでそれが唯一の仕事であるかのようにバッテリーを消耗します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.NAME
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.NAME"
-#| msgid "Wattage"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.NAME"
 msgid "Bionic Wattage"
-msgstr "消費ワット数"
+msgstr "バイオニックワット数"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.TOOLTIP
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.ELECTROBANKCHARGER.DESC"
-#| msgid "Bionic Duplicants rely on a steady supply of power to function."
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.TOOLTIP"
 msgid "Adjusts Bionic Duplicants' baseline power consumption"
-msgstr "バイオニック複製人間の活動は安定した電力供給に依存しています。"
+msgstr "バイオニック複製人間の電力消費量ベースラインを設定します"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.DEFAULT.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CALORIE_BURN.LEVELS.DEFAULT.NAME"
@@ -10642,12 +10575,9 @@ msgid "Overheat Damage"
 msgstr "オーバーヒートによる損傷"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.POWER_BANK_WATER_DAMAGE
-#, fuzzy
-#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.COMET"
-#| msgid "Meteor Damage"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.POWER_BANK_WATER_DAMAGE"
 msgid "Water Damage"
-msgstr "隕石による損傷"
+msgstr "水害"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.ROCKET
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.DAMAGE_POPS.ROCKET"
@@ -11972,12 +11902,9 @@ msgid "Uh oh!"
 msgstr "あれれ！"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.MONUMENT_PART_FACADE_FOR
-#, fuzzy
-#| msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.CLOTHING_ITEM_FACADE_FOR"
-#| msgid "This blueprint can be used in any outfit."
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.MONUMENT_PART_FACADE_FOR"
 msgid "This blueprint can be used in any Great Monument."
-msgstr "この設計図は衣装として使われます。"
+msgstr "この設計図はモニュメントに使えます"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.OPEN_INVENTORY_BUTTON
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.OPEN_INVENTORY_BUTTON"
@@ -12080,9 +12007,6 @@ msgid "Patterned Wallpapers"
 msgstr "パターン壁紙"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.BUILDINGS_AUTOMATION
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.AUTOMATION.HEADER_1"
-#| msgid "Automation"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.BUILDINGS_AUTOMATION"
 msgid "Automation"
 msgstr "自動化"
@@ -12098,12 +12022,9 @@ msgid "Comfy Beds"
 msgstr "快適ベッド"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.BUILDINGS_ELECTIC_WIRES
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.POWER.HEADER_1"
-#| msgid "Electricity"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.BUILDINGS_ELECTIC_WIRES"
 msgid "Electrical"
-msgstr "電気"
+msgstr "電気機器"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.BUILDINGS_FLOWER_VASE
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.BUILDINGS_FLOWER_VASE"
@@ -12136,9 +12057,6 @@ msgid "Recreation and Decor"
 msgstr "娯楽と装飾"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.BUILDINGS_RESEARCH
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.RESEARCH.HEADER_1"
-#| msgid "Research"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.BUILDINGS_RESEARCH"
 msgid "Research"
 msgstr "研究"
@@ -12260,28 +12178,19 @@ msgid "Stickers"
 msgstr "ステッカー"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.MONUMENT_BOTTOM
-#, fuzzy
-#| msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.CATEGORIES.MONUMENTPARTS"
-#| msgid "Monuments"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.MONUMENT_BOTTOM"
 msgid "Monument Base"
-msgstr "モニュメント"
+msgstr "モニュメント基礎"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.MONUMENT_MIDDLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.EQUIPMENT.DESC"
-#| msgid "Equipment description"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.MONUMENT_MIDDLE"
 msgid "Monument Midsection"
-msgstr "装備の説明"
+msgstr "モニュメント中央"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.MONUMENT_TOP
-#, fuzzy
-#| msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.CATEGORIES.MONUMENTPARTS"
-#| msgid "Monuments"
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.MONUMENT_TOP"
 msgid "Monument Top"
-msgstr "モニュメント"
+msgstr "モニュメント上部"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.PRIMO_GARB
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.PRIMO_GARB"
@@ -17381,12 +17290,9 @@ msgid "<link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link> Usage"
 msgstr "<link=\"ROCKETCONTROLSTATION\">ロケット制御端末</link>を利用可能"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION"
-#| msgid "<link=\"POWER\">Generator Tuning</link> usage and Microchip Crafting"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_POWER_TINKER.DESCRIPTION"
 msgid "<link=\"POWER\">Generator</link> Tuning and <link=\"POWERSTATIONTOOLS\">Microchip</link> Crafting"
-msgstr "<link=\"POWER\">発電機の出力調整</link>およびマイクロチップ製造"
+msgstr "<link=\"POWER\">発電機の出力調整</link>および<link=\"POWERSTATIONTOOLS\">マイクロチップ</link>製造"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SPICE_GRINDER.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SPICE_GRINDER.DESCRIPTION"
@@ -17436,31 +17342,22 @@ msgstr "<link=\"SOLIDCONDUIT\">コンベア輸送システム</link>構築"
 #. STRINGS.UI.ROLES_SCREEN.PERKS.EFFICIENT_BIONIC_GEARS.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.EFFICIENT_BIONIC_GEARS.DESCRIPTION"
 msgid "50% Grinding Gears penalty reduction"
-msgstr ""
+msgstr "ギア摩耗ペナルティを50%軽減"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_DURABILITY.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_DURABILITY.DESCRIPTION"
-#| msgid "Slows <link=\"EXOSUIT\">Exosuit</link> Durability Damage"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_DURABILITY.DESCRIPTION"
 msgid "Slows <link=\"EQUIPMENT\">Exosuit</link> Durability Damage"
 msgstr "<link=\"EXOSUIT\">EXOスーツ</link>の耐久度ダメージ減少"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_EXPERTISE.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_EXPERTISE.DESCRIPTION"
-#| msgid "<link=\"EXOSUIT\">Exosuit</link> Penalty Reduction"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.EXOSUIT_EXPERTISE.DESCRIPTION"
 msgid "<link=\"EQUIPMENT\">Exosuit</link> Penalty Reduction"
 msgstr "<link=\"EXOSUIT\">EXOスーツ</link>の移動速度ペナルティ減少"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.EXTRA_BIONIC_BATTERIES.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.MISC.TAGS.CHARGEDPORTABLEBATTERY"
-#| msgid "<link=\"ELECTROBANK\">Power Banks</link>"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.EXTRA_BIONIC_BATTERIES.DESCRIPTION"
 msgid "Extra <link=\"ELECTROBANK\">Power Banks</link>"
-msgstr "<link=\"ELECTROBANK\">パワーバンク</link>"
+msgstr "拡張<link=\"ELECTROBANK\">パワーバンク</link>"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.GEYSER_TUNING.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.GEYSER_TUNING.DESCRIPTION"
@@ -17488,12 +17385,9 @@ msgid "<link=\"DLC1COSMICRESEARCHCENTER\">Virtual Planetarium</link> Usage"
 msgstr "<link=\"DLC1COSMICRESEARCHCENTER\">仮想プラネタリウム</link>の使い方"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.REDUCED_GUNK_PRODUCTION.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.LIQUIDGUNK.NAME"
-#| msgid "<link=\"LIQUIDGUNK\">Liquid Gunk</link>"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.REDUCED_GUNK_PRODUCTION.DESCRIPTION"
 msgid "10% Slower <link=\"LIQUIDGUNK\">Gunk</link> Buildup"
-msgstr "<link=\"LIQUIDGUNK\">液体残滓</link>"
+msgstr "<link=\"LIQUIDGUNK\">残滓</link>蓄積速度 -10%"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.TITLE_BASICTRAINING"
@@ -18396,20 +18290,14 @@ msgid "SCHEDULE EDITOR"
 msgstr "スケジュール エディタ"
 
 #. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT
-#, fuzzy
-#| msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT"
-#| msgid "Default Schedule"
 msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT"
 msgid "Default Standard Schedule"
 msgstr "標準スケジュール"
 
 #. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT_BIONIC
-#, fuzzy
-#| msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT"
-#| msgid "Default Schedule"
 msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT_BIONIC"
 msgid "Default Bionic Schedule"
-msgstr "標準スケジュール"
+msgstr "標準バイオニックスケジュール"
 
 #. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_FORMAT
 msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_FORMAT"
@@ -18447,12 +18335,9 @@ msgid "SKILLS"
 msgstr "スキル"
 
 #. STRINGS.UI.SKILLS_SCREEN.ASSIGNED_BOOSTERS_HEADER
-#, fuzzy
-#| msgctxt "STRINGS.UI.EQUIPMENTTAB_ROOM"
-#| msgid "Assigned Rooms"
 msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNED_BOOSTERS_HEADER"
 msgid "{0}'s Assigned Boosters"
-msgstr "割り当てた部屋"
+msgstr "{0}に割り当て済みのブースター"
 
 #. STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.EXPECTATION_ALERT_DESC_EXPECTATION
 msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.EXPECTATION_ALERT_DESC_EXPECTATION"
@@ -21374,12 +21259,9 @@ msgid "Pilot boarded"
 msgstr "パイロットの搭乗"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.ROBO_PILOT_WARNING
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.FAILURE"
-#| msgid "Pilot boarded"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.ROBO_PILOT_WARNING"
 msgid "Copilot boarded"
-msgstr "パイロットの搭乗"
+msgstr "副パイロットの搭乗"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.FAILURE"
@@ -21398,12 +21280,6 @@ msgid "A Duplicant with the <link=\"ROCKETPILOTING1\">Rocket Piloting</link> ski
 msgstr "<link=\"ROCKETPILOTING1\">ロケット操縦</link>のスキルを持つ複製人間が搭乗しています"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.ROBO_PILOT_WARNING
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.FAILURE"
-#| msgid ""
-#| "At least one crew member aboard the rocket must possess the <link=\"ROCKETPILOTING1\">Rocket Piloting</link> skill to launch\n"
-#| "\n"
-#| "Qualified Duplicants must be assigned to the rocket crew, and have access to the module's hatch"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.ROBO_PILOT_WARNING"
 msgid ""
 "This rocket is being piloted by a <style=\"KKeyword\">Robo-Pilot</style>\n"
@@ -21412,9 +21288,11 @@ msgid ""
 "\n"
 "Qualified Duplicants must be assigned to the rocket crew, and have access to the module's hatch"
 msgstr ""
-"ロケットを発射するには、乗組員のうち少なくとも一人が<link=\"ROCKETPILOTING1\">ロケット操縦</link>のスキルを持っていなければなりません\n"
+"このロケットは<style=\"KKeyword\">ロボット操縦</style>により操縦されています\n"
 "\n"
-"スキルのある複製人間がこのロケットに割り当てられているか、モジュール入口への経路があるかを確認してください"
+"<link=\"ROCKETPILOTING1\">ロケット操縦</link>スキルを持つ複製人間は搭乗していません\n"
+"\n"
+"資格のある複製人間はロケットの乗組員に割り当てられ、モジュールのハッチにアクセスできなければなりません"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.WARNING"
@@ -21507,28 +21385,19 @@ msgid "Robo-Pilot programmed"
 msgstr "ロボット操縦プログラム済み"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.FAILURE
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY"
-#| msgid "<style=\"KKeyword\">Robo-Pilot</style> has sufficient <style=\"KKeyword\">Data Banks</style> to reach its destination"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.FAILURE"
 msgid "<style=\"KKeyword\">Robo-Pilot</style> requires at least {0} <style=\"KKeyword\">Data Banks</style> to reach its destination"
-msgstr "<style=\"KKeyword\">ロボット操縦</style>は目的地到達に十分な<style=\"KKeyword\">データバンク</style>があります"
+msgstr "<style=\"KKeyword\">ロボット操縦</style>が目的地に到達するには最低でも {0} <style=\"KKeyword\">データバンク</style>が必要です"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.FAILURE_NO_DESTINATION
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.NO_DESTINATION"
-#| msgid "No destination selected"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.FAILURE_NO_DESTINATION"
 msgid "No destination has been set"
 msgstr "目的地未選択"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_POWER_SOUCRE.TOOLTIP.WARNING"
-#| msgid "<style=\"KKeyword\">Robo-Pilot</style> has insufficient  <style=\"KKeyword\">Power</style> for a round-trip to its destination"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY"
 msgid "<style=\"KKeyword\">Robo-Pilot</style> has sufficient <style=\"KKeyword\">Data Banks</style> for a roundtrip to its destination and back"
-msgstr "<style=\"KKeyword\">ロボット操縦</style>は目的地との往復に必要な<style=\"KKeyword\">電力</style>が不足しています"
+msgstr "<style=\"KKeyword\">ロボット操縦</style>は目的地との往復に必要な<style=\"KKeyword\">データバンク</style>があります"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY_NO_DESTINATION
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY_NO_DESTINATION"
@@ -21536,22 +21405,15 @@ msgid "<style=\"KKeyword\">Robo-Pilot</style> has sufficient <style=\"KKeyword\"
 msgstr "<style=\"KKeyword\">ロボット操縦</style>に十分な<style=\"KKeyword\">データバンク</style>がありますが、目的地が指定されていません"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_POWER_SOUCRE.TOOLTIP.WARNING"
-#| msgid "<style=\"KKeyword\">Robo-Pilot</style> has insufficient  <style=\"KKeyword\">Power</style> for a round-trip to its destination"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING"
 msgid ""
 "<style=\"KKeyword\">Robo-Pilot</style> has insufficient <style=\"KKeyword\">Data Banks</style> for a roundtrip\n"
 "    • {0}/{1} stored"
-msgstr "<style=\"KKeyword\">ロボット操縦</style>は目的地との往復に必要な<style=\"KKeyword\">電力</style>が不足しています"
+msgstr ""
+"<style=\"KKeyword\">ロボット操縦</style>は往復に必要な<style=\"KKeyword\">データバンク</style>が不足しています\n"
+"    • {0}/{1} 収納済"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING_NO_DATA_BANKS_HUMAN_PILOT
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING_NO_DATA_BANKS_HUMAN_PILOT"
-#| msgid ""
-#| "<style=\"KKeyword\">Robo-Pilot</style> requires <style=\"KKeyword\">Data Banks</style> to function\n"
-#| "\n"
-#| "This rocket is currently operated by a Duplicant who possesses the <link=\"ROCKETPILOTING1\">Rocket Piloting</link> skill"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING_NO_DATA_BANKS_HUMAN_PILOT"
 msgid ""
 "<style=\"KKeyword\">Robo-Pilot</style> cannot function without <style=\"KKeyword\">Data Banks</style>\n"
@@ -21896,20 +21758,14 @@ msgid "Average oxidizer efficiency"
 msgstr "平均酸化剤効率"
 
 #. STRINGS.UI.STARMAP.ROCKETSTATS.ROBO_PILOT_EFFICIENCY
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.GENESHUFFLER.SUFFIX"
-#| msgid " has developed <style=\"KKeyword\">{0}</style>"
 msgctxt "STRINGS.UI.STARMAP.ROCKETSTATS.ROBO_PILOT_EFFICIENCY"
 msgid "Robo-Pilot can travel {0} per <style=\"KKeyword\">Data Bank</style>"
-msgstr " <style=\"KKeyword\">{0}</style>を習得"
+msgstr "ロボット操縦は<style=\"KKeyword\">データバンク</style>ごとに {0} 航行します"
 
 #. STRINGS.UI.STARMAP.ROCKETSTATS.ROBO_PILOT_RANGE
-#, fuzzy
-#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_POWER_SOUCRE.STATUS.FAILURE"
-#| msgid "Robo-Pilot has power"
 msgctxt "STRINGS.UI.STARMAP.ROCKETSTATS.ROBO_PILOT_RANGE"
 msgid "Robo-Pilot Range"
-msgstr "ロボット操縦に電力あり"
+msgstr "ロボット操縦の範囲"
 
 #. STRINGS.UI.STARMAP.ROCKETSTATS.SOLID_BOOSTER
 msgctxt "STRINGS.UI.STARMAP.ROCKETSTATS.SOLID_BOOSTER"
@@ -22132,17 +21988,14 @@ msgid "(ClickType/Click) to select <b>{0}</b>"
 msgstr "(ClickType/Click)で <b>{0}</b> を選択します"
 
 #. STRINGS.UI.TEMPORARY_ACTIONS.CAMERA_RETURN.NAME
-#, fuzzy
-#| msgctxt "STRINGS.INPUT_BINDINGS.ROOT.CAMERAHOME"
-#| msgid "Camera Home"
 msgctxt "STRINGS.UI.TEMPORARY_ACTIONS.CAMERA_RETURN.NAME"
 msgid "Camera: Return"
-msgstr "カメラをホーム位置へ"
+msgstr "カメラ: 戻す"
 
 #. STRINGS.UI.TEMPORARY_ACTIONS.CAMERA_RETURN.TOOLTIP
 msgctxt "STRINGS.UI.TEMPORARY_ACTIONS.CAMERA_RETURN.TOOLTIP"
 msgid "Return camera to its previous position"
-msgstr ""
+msgstr "カメラを一つ前の位置に戻します"
 
 #. STRINGS.UI.TOOLS.ATTACK.NAME
 msgctxt "STRINGS.UI.TOOLS.ATTACK.NAME"
@@ -23560,14 +23413,6 @@ msgid "Highest Stress: {0}"
 msgstr "ストレス最高値: {0}"
 
 #. STRINGS.UI.TOOLTIPS.METERSCREEN_ELECTROBANK_JOULES
-#, fuzzy
-#| msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_ELECTROBANK_JOULES"
-#| msgid ""
-#| "Joules Available: {0}\n"
-#| "\n"
-#| "Bionic Duplicants use a minimum of X each per cycle\n"
-#| "\n"
-#| "Power Banks Available: Y\n"
 msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_ELECTROBANK_JOULES"
 msgid ""
 "Joules Available: {0}\n"
@@ -23578,9 +23423,9 @@ msgid ""
 msgstr ""
 "利用可能なジュール: {0}\n"
 "\n"
-"バイオニック複製人間は一日に最低 X 消費します\n"
+"バイオニック複製人間は一日に最低 {1} 消費します\n"
 "\n"
-"パワーバンク利用可能: Y\n"
+"パワーバンク利用可能: {2}\n"
 
 #. STRINGS.UI.TOOLTIPS.METERSCREEN_INVALID_ELECTROBANK_TYPE
 msgctxt "STRINGS.UI.TOOLTIPS.METERSCREEN_INVALID_ELECTROBANK_TYPE"
@@ -24301,38 +24146,32 @@ msgstr "展示する物体"
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.ALREADY_ASSIGNED
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.ALREADY_ASSIGNED"
 msgid "{0} currently has <b>{1} of this type</b> of booster assigned"
-msgstr ""
+msgstr "{0} は <b>このタイプの {1} </b>ブースターが割り当てられています"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.AVAILABLE_SLOTS
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.AVAILABLE_SLOTS"
 msgid "{0} has <b>{1}/{2}</b> booster slots assigned"
-msgstr ""
+msgstr "{0} は <b>{1}/{2}</b> ブースタースロットが割り当て済みです"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.HEADER_ATTRIBUTES
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.ZOOM"
-#| msgid "<b>Zoom:</b>"
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.HEADER_ATTRIBUTES"
 msgid "<b>Boosts:</b>"
-msgstr "<b>ズーム:</b>"
+msgstr "<b>ブースト:</b>"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.HEADER_PERKS
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.NAME"
-#| msgid "<b>Name:</b>"
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.HEADER_PERKS"
 msgid "<b>Enables:</b>"
-msgstr "<b>名前:</b>"
+msgstr "<b>有効:</b>"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.NO_AVAILABLE_SLOTS
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.NO_AVAILABLE_SLOTS"
 msgid "<color=#ffff00ff>All of {0}'s booster slots are currently assigned: <b>{1}/{2}</b></color>"
-msgstr ""
+msgstr "<color=#ffff00ff>{0}のブースタースロットはすべて割り当て済みです: <b>{1}/{2}</b></color>"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.NOT_ALREADY_ASSIGNED
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.NOT_ALREADY_ASSIGNED"
 msgid "{0} does not currently have this type of booster assigned"
-msgstr ""
+msgstr "{0} には現在このタイプのブースターが割り当てられていません"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.CURRENT_WATTAGE_LABEL
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.CURRENT_WATTAGE_LABEL"
@@ -24382,23 +24221,20 @@ msgstr ""
 "クリックして利用可能なブースターを確認します"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.TOOLTIP.SLOT_INSTALLED
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.DISEASES.RESISTANCES_PANEL_TOOLTIP"
-#| msgid "{0}"
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.TOOLTIP.SLOT_INSTALLED"
 msgid "{0}"
 msgstr "{0}"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.TOOLTIP.SLOT_LOCKED
-#, fuzzy
-#| msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.MASTERY.REQUIRES_MORE_SKILL_POINTS"
-#| msgid "    • Not enough <style=\"KKeyword\">Skill Points</style>"
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.TOOLTIP.SLOT_LOCKED"
 msgid ""
 "This booster slot is unavailable\n"
 "\n"
 "Booster slots can be unlocked using <style=\"KKeyword\">Skill Points</style>"
-msgstr "　・十分な<style=\"KKeyword\">スキルポイント</style>がありません"
+msgstr ""
+"このブースタースロットは利用できません\n"
+"\n"
+"ブースタースロットは<style=\"KKeyword\">スキルポイント</style>を使ってアンロックできます"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.UPGRADE_SLOT_ASSIGNED
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.UPGRADE_SLOT_ASSIGNED"
@@ -24411,17 +24247,11 @@ msgid "Empty"
 msgstr "空"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.UPGRADE_SLOT_INSTALLED
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_INSTALLED_LABEL"
-#| msgid "Installed"
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.UPGRADE_SLOT_INSTALLED"
 msgid "Installed"
 msgstr "インストール済"
 
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.UPGRADE_SLOT_LOCKED
-#, fuzzy
-#| msgctxt "STRINGS.ELEMENTS.HARDNESS.NA"
-#| msgid "N/A"
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.UPGRADE_SLOT_LOCKED"
 msgid "N/A"
 msgstr "該当なし"
@@ -26063,12 +25893,9 @@ msgid "{Target} -- {Groups}"
 msgstr "{Target} -- {Groups}"
 
 #. STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.CURRENT_SCHEDULE_BLOCK
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.SPECIALCARGOBAYCLUSTER.ENTITYDEPOSITED"
-#| msgid "CONTENTS: {0}"
 msgctxt "STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.CURRENT_SCHEDULE_BLOCK"
 msgid "CURRENT SHIFT: {0}"
-msgstr "内容物: {0}"
+msgstr "現在のシフト: {0}"
 
 #. STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.CURRENT_TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.CURRENT_TITLE"
@@ -26914,7 +26741,7 @@ msgstr "関連物体"
 #. STRINGS.UI.UISIDESCREENS.REMOTE_WORK_TERMINAL_SIDE_SCREEN.DESCRIPTION
 msgctxt "STRINGS.UI.UISIDESCREENS.REMOTE_WORK_TERMINAL_SIDE_SCREEN.DESCRIPTION"
 msgid "Select a remote worker dock for this controller to target."
-msgstr ""
+msgstr "このコントローラーが対象とするリモートワーカドックを指定してください。"
 
 #. STRINGS.UI.UISIDESCREENS.REMOTE_WORK_TERMINAL_SIDE_SCREEN.DOCK_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.REMOTE_WORK_TERMINAL_SIDE_SCREEN.DOCK_TOOLTIP"
@@ -26928,20 +26755,14 @@ msgstr ""
 "ダブルクリックでドックを確認します"
 
 #. STRINGS.UI.UISIDESCREENS.REMOTE_WORK_TERMINAL_SIDE_SCREEN.NOTHING_SELECTED
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.QUESTS.CRITERIA.FOODQUALITY.NONE"
-#| msgid "None"
 msgctxt "STRINGS.UI.UISIDESCREENS.REMOTE_WORK_TERMINAL_SIDE_SCREEN.NOTHING_SELECTED"
 msgid "None"
 msgstr "なし"
 
 #. STRINGS.UI.UISIDESCREENS.REMOTE_WORK_TERMINAL_SIDE_SCREEN.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.UISIDESCREENS.ASSIGNABLESIDESCREEN.SORT_BY_ASSIGNMENT"
-#| msgid "Assignment"
 msgctxt "STRINGS.UI.UISIDESCREENS.REMOTE_WORK_TERMINAL_SIDE_SCREEN.TITLE"
 msgid "Dock Assignment"
-msgstr "割り当て"
+msgstr "ドック割り当て"
 
 #. STRINGS.UI.UISIDESCREENS.RESEARCHSIDESCREEN.CURRENTLYRESEARCHING
 msgctxt "STRINGS.UI.UISIDESCREENS.RESEARCHSIDESCREEN.CURRENTLYRESEARCHING"
@@ -29083,7 +28904,6 @@ msgstr "自動ボトル化有効"
 # 書式を統一するため、文末のコロンと改行を削除（原文の更新漏れと思われるので、poeditのエラーは無視してください）
 # 分かりやすくするため、切り替えボタンのツールチップに現在の設定を追記
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP
-#, fuzzy
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP"
 msgid "If enabled, Duplicants will deliver bottled liquids to this building directly from these sources:\n"
 msgstr ""
@@ -29855,17 +29675,14 @@ msgid "Disallow Tinker"
 msgstr "工具禁止"
 
 #. STRINGS.UI.USERMENUACTIONS.TINKER.TOOLTIP_ALLOW
-#, fuzzy
-#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.UPGRADE_ALL_BUILDINGS"
-#| msgid "All {0} upgraded to {1}"
 msgctxt "STRINGS.UI.USERMENUACTIONS.TINKER.TOOLTIP_ALLOW"
 msgid "Allow  {0} on this {1}"
-msgstr "全ての{0}を{1}に更新した"
+msgstr "{0}をこの{1}に許可する"
 
 #. STRINGS.UI.USERMENUACTIONS.TINKER.TOOLTIP_DISALLOW
 msgctxt "STRINGS.UI.USERMENUACTIONS.TINKER.TOOLTIP_DISALLOW"
 msgid "Disallow {0} on this {1}"
-msgstr ""
+msgstr "{0}をこの{1}に禁止する"
 
 #. STRINGS.UI.USERMENUACTIONS.TRANSITTUBEWAX.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.TRANSITTUBEWAX.NAME"
