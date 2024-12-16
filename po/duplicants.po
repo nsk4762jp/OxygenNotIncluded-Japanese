@@ -71,15 +71,36 @@ msgstr ""
 "\n"
 "基本値: {0}"
 
+#. STRINGS.DUPLICANTS.ATTRIBUTES.BIONICBATTERYCOUNTCAPACITY.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BIONICBATTERYCOUNTCAPACITY.DESC"
+msgid "The number of power banks this Bionic Duplicant can store"
+msgstr "このバイオニック複製人間に収納できる電力バンクの個数です"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.BIONICBATTERYCOUNTCAPACITY.NAME
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BIONICBATTERYCOUNTCAPACITY.NAME"
+msgid "Power Banks"
+msgstr "電力バンク 収納数"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.BIONICBOOSTERSLOTS.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BIONICBOOSTERSLOTS.DESC"
+msgid "The number of boosters this Bionic Duplicant can install at once"
+msgstr "このバイオニック複製人間が一度に装着できるブースターの個数です"
+
+#. STRINGS.DUPLICANTS.ATTRIBUTES.BIONICBOOSTERSLOTS.NAME
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BIONICBOOSTERSLOTS.NAME"
+msgid "Booster Slots"
+msgstr "ブースター スロット数"
+
 #. STRINGS.DUPLICANTS.ATTRIBUTES.BIONICOILDELTA.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BIONICOILDELTA.DESC"
-msgid "Determines how quickly a Duplicant's bionic parts gains or reduces <style=\"KKeyword\">Oil</style>"
-msgstr "複製人間のバイオニックパーツが<style=\"KKeyword\">オイル</style>を獲得したり減少させたりする速度を決定します"
+msgid "Determines how quickly a Duplicant's bionic parts lose <style=\"KKeyword\">Gear Oil</style>"
+msgstr "複製人間のバイオニックパーツが<style=\"KKeyword\">ギアオイル</style>を喪失する速度を決定します"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.BIONICOILDELTA.NAME
+#, fuzzy
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BIONICOILDELTA.NAME"
-msgid "Oil"
-msgstr "オイル"
+msgid "Gear Oil"
+msgstr "ギアオイル"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.BLADDERDELTA.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BLADDERDELTA.DESC"
@@ -932,7 +953,7 @@ msgstr "複製人間の基本<link=\"TRAVELTUBE\">移動チューブ</link>内�
 #. STRINGS.DUPLICANTS.ATTRIBUTES.TRANSITTUBETRAVELSPEED.NAME
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.TRANSITTUBETRAVELSPEED.NAME"
 msgid "Transit Speed"
-msgstr "移動チューブ"
+msgstr "移動チューブ速度"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.TRANSITTUBETRAVELSPEED.SPEEDMODIFIER
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.TRANSITTUBETRAVELSPEED.SPEEDMODIFIER"
@@ -1370,27 +1391,6 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.BANSHEE_WAIL.TOOLTIP"
 msgid "This Duplicant is emitting ear-piercing shrieks to relieve pent-up <style=\"KKeyword\">Stress</style>"
 msgstr "この複製人間は<style=\"KKeyword\">ストレス</style>発散のため耳をつんざくような叫び声を上げています"
 
-#. STRINGS.DUPLICANTS.CHORES.BEBATTERYSAVEMODE.NAME
-msgctxt "STRINGS.DUPLICANTS.CHORES.BEBATTERYSAVEMODE.NAME"
-msgid "Standby Mode"
-msgstr "スタンバイモード"
-
-#. STRINGS.DUPLICANTS.CHORES.BEBATTERYSAVEMODE.STATUS
-msgctxt "STRINGS.DUPLICANTS.CHORES.BEBATTERYSAVEMODE.STATUS"
-msgid "Standby Mode"
-msgstr "スタンバイモード"
-
-#. STRINGS.DUPLICANTS.CHORES.BEBATTERYSAVEMODE.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.CHORES.BEBATTERYSAVEMODE.TOOLTIP"
-msgid ""
-"This Duplicant is resting\n"
-"\n"
-"Their <style=\"KKeyword\">Power</style> consumption is at a minimum"
-msgstr ""
-"この複製人間は待機中です\n"
-"\n"
-"<style=\"KKeyword\">電力</style>消費量は最小限です"
-
 #. STRINGS.DUPLICANTS.CHORES.BEINCAPACITATED.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.BEINCAPACITATED.NAME"
 msgid "Incapacitated"
@@ -1443,13 +1443,28 @@ msgstr "酸素タンク再充填"
 
 #. STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGEN.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGEN.STATUS"
-msgid "Refilling oxygen tank"
-msgstr "酸素タンク再充填中"
+msgid "Refilling oxygen tank: {0} O<sub>2</sub>"
+msgstr "酸素タンク再充填中: {0} O<sub>2</sub>"
 
 #. STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGEN.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGEN.TOOLTIP"
 msgid "Bionic Duplicants automatically refill their internal <style=\"KKeyword\">Oxygen</style> tanks when levels get too low"
 msgstr "バイオニック複製人間は体内の<style=\"KKeyword\">酸素</style>タンクを必要に応じて自動的に再充填します"
+
+#. STRINGS.DUPLICANTS.CHORES.BIONICBEDTIMEMODE.NAME
+msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICBEDTIMEMODE.NAME"
+msgid "Defragment"
+msgstr "デフラグ"
+
+#. STRINGS.DUPLICANTS.CHORES.BIONICBEDTIMEMODE.STATUS
+msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICBEDTIMEMODE.STATUS"
+msgid "Defragmenting"
+msgstr "デフラグ中"
+
+#. STRINGS.DUPLICANTS.CHORES.BIONICBEDTIMEMODE.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICBEDTIMEMODE.TOOLTIP"
+msgid "This Duplicant is reorganizing their data cache during bedtime"
+msgstr "この複製人間は就寝時間を利用してデータキャッシュを最適化しています"
 
 #. STRINGS.DUPLICANTS.CHORES.BREAK_PEE.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.BREAK_PEE.NAME"
@@ -1530,7 +1545,7 @@ msgstr "縄掛け中"
 #. STRINGS.DUPLICANTS.CHORES.CAPTURE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.CAPTURE.TOOLTIP"
 msgid "Duplicants that possess the Critter Ranching Skill can wrangle most critters without traps"
-msgstr "\"畜産\"スキルをもつ複製人間は殆どの動物を罠を使わずに縄を掛けることができます"
+msgstr "<style=\"KKeyword\">畜産</style>スキルをもつ複製人間は罠を使わずとも殆どの動物に縄を掛けることができます"
 
 #. STRINGS.DUPLICANTS.CHORES.CHECKPOINT.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.CHECKPOINT.NAME"
@@ -1975,18 +1990,18 @@ msgstr "この複製人間は<style=\"KKeyword\">化石</style>の発掘現場�
 
 #. STRINGS.DUPLICANTS.CHORES.EXPELLGUNK.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.EXPELLGUNK.NAME"
-msgid "Expel Liquid Gunk"
-msgstr "液体残滓排出"
+msgid "Expel Gunk"
+msgstr "残滓の排出"
 
 #. STRINGS.DUPLICANTS.CHORES.EXPELLGUNK.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.EXPELLGUNK.STATUS"
-msgid "Expelling liquid gunk"
-msgstr "液体残滓排出中"
+msgid "Expelling gunk"
+msgstr "残滓を排出している"
 
 #. STRINGS.DUPLICANTS.CHORES.EXPELLGUNK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.EXPELLGUNK.TOOLTIP"
 msgid "This Duplicant didn't get to a <style=\"KKeyword\">Gunk Extractor</style> in time. Urgh"
-msgstr "この複製人間は<style=\"KKeyword\">残滓処理装置</style>に間に合いませんでした。あーあ。"
+msgstr "この複製人間は<style=\"KKeyword\">残滓排出装置</style>に間に合いませんでした。あーあ。"
 
 #. STRINGS.DUPLICANTS.CHORES.FABRICATE.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.FABRICATE.NAME"
@@ -2630,16 +2645,26 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_DO_RECREATION"
 msgid "Not Interested"
 msgstr "興味なし"
 
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_FETCH_DRONE_COMPLETE_FETCH
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_FETCH_DRONE_COMPLETE_FETCH"
+msgid "Flydo cannot complete chore"
+msgstr "飛行ドローンは作業を完了できない"
+
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_MOVE_TO
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_MOVE_TO"
 msgid "Unreachable"
 msgstr "辿り着けない"
 
-# 移設を指示した物品の場所まで複製人間が辿り着けない場合
+# 移設を指示した物品や、割り当てた装備品の場所まで複製人間が辿り着けない場合
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_PICKUP
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CAN_PICKUP"
 msgid "Cannot pickup"
-msgstr "配達元へ辿り着けない"
+msgstr "拾える場所にない"
+
+#. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CANPICKUPANYASSIGNEDUPGRADE
+msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CANPICKUPANYASSIGNEDUPGRADE"
+msgid "Cannot pick up any assigned boosters"
+msgstr "ブースターへ辿り着けない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CONTAINS_OXYGEN
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.CONTAINS_OXYGEN"
@@ -2868,7 +2893,7 @@ msgstr "おねむの時間"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_OPERATIONAL
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_OPERATIONAL"
 msgid "Not operational"
-msgstr "操作できません"
+msgstr "操作できない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_OVERRIDE_TARGET_NULL_OR_ME
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_OVERRIDE_TARGET_NULL_OR_ME"
@@ -2883,7 +2908,7 @@ msgstr "許可されていない"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_PREEMPTABLE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_PREEMPTABLE"
 msgid "Already assigned to {Assignee}"
-msgstr "{Assignee} に割り当て済"
+msgstr "{Assignee} に割り当て済み"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_PREFERRED_ASSIGNABLE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_PREFERRED_ASSIGNABLE"
@@ -2898,7 +2923,7 @@ msgstr "優先割り当てなし"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_ROCKET_TRAVELLING
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_ROCKET_TRAVELLING"
 msgid "Rocket must be travelling"
-msgstr "ロケット航行中でなければなりません"
+msgstr "ロケットが航行中ではない"
 
 # 「作業」タブに表示される文言
 # 現在の時間割が「休憩」や「就寝」のため、作業できない場合に表示される
@@ -2910,12 +2935,12 @@ msgstr "労働時間ではない"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_STANDING
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_STANDING"
 msgid "{Selected} must stand"
-msgstr "{Selected}よ立ち上がれ"
+msgstr "{Selected}は床の上にいない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_STRESS_ABOVE_ACTIVATION_RANGE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_STRESS_ABOVE_ACTIVATION_RANGE"
 msgid "{Selected} is not stressed right now"
-msgstr "{Selected}は今のところストレスを受けていません"
+msgstr "今{Selected}にはストレスがない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_VALID
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_VALID"
@@ -2925,17 +2950,17 @@ msgstr "無効"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NO_DEAD_BODIES
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NO_DEAD_BODIES"
 msgid "Unburied Duplicant"
-msgstr "埋没していない複製人間"
+msgstr "複製人間が埋葬されていない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_A_BIONIC
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_A_BIONIC"
 msgid "Unavailable to Bionic Duplicants"
-msgstr "バイオニック複製人間にはできません"
+msgstr "バイオニック複製人間には実行できない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_A_ROBOT
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_A_ROBOT"
 msgid "Unavailable to Robots"
-msgstr "ロボットにはできません"
+msgstr "ロボットには実行できない"
 
 # 用途不明
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_CHORE_CREATOR
@@ -2946,7 +2971,7 @@ msgstr "デバッグ:雑役生成しない"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_IN_TUBE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.NOT_IN_TUBE"
 msgid "{Selected} is busy in transit"
-msgstr "{Selected}は移動中です"
+msgstr "{Selected}は移動チューブの中"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.RANK_FORMAT
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.RANK_FORMAT"
@@ -2961,22 +2986,22 @@ msgstr "リモートワーカードック使用不可"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.REMOTE_CHORE_DOCK_UNAVAILABLE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.REMOTE_CHORE_DOCK_UNAVAILABLE"
 msgid "Remote Worker Already Busy"
-msgstr "リモートワーカードック稼働中"
+msgstr "リモートワーカーは既に作業中"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.REMOTE_CHORE_NO_REMOTE_DOCK
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.REMOTE_CHORE_NO_REMOTE_DOCK"
 msgid "No Dock Assigned"
-msgstr "ドック割り当て無し"
+msgstr "ドックが割り当てられていない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.REMOTE_CHORE_NO_REMOTE_WORKER
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.REMOTE_CHORE_NO_REMOTE_WORKER"
 msgid "No Remote Worker at Dock"
-msgstr "ドックにリモートワーカー無し"
+msgstr "ドックにリモートワーカーがいない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.REMOTE_CHORE_SUBCHORE_PRECONDITIONS
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.REMOTE_CHORE_SUBCHORE_PRECONDITIONS"
 msgid "No Eligible Remote Chores"
-msgstr "対象となるリモート作業無し"
+msgstr "実行できるリモート作業がない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.SUCCESS_ROW
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.SUCCESS_ROW"
@@ -2986,12 +3011,12 @@ msgstr "{Duplicant} -- {Rank}"
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.TREATMENT_AVAILABLE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.TREATMENT_AVAILABLE"
 msgid "No treatable illness"
-msgstr "治療可能な病気なし"
+msgstr "治療できる病気がない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.VALID_MOURNING_SITE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.VALID_MOURNING_SITE"
 msgid "Nowhere to mourn"
-msgstr "喪に服していない"
+msgstr "追悼する場所がない"
 
 #. STRINGS.DUPLICANTS.CHORES.PROCESSCRITTER.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.PROCESSCRITTER.NAME"
@@ -3126,12 +3151,12 @@ msgstr "出力強化"
 #. STRINGS.DUPLICANTS.CHORES.RELOADELECTROBANK.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.RELOADELECTROBANK.STATUS"
 msgid "Looking for power banks"
-msgstr "パワーバンク探索中"
+msgstr "電力バンクを探している"
 
 #. STRINGS.DUPLICANTS.CHORES.RELOADELECTROBANK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.RELOADELECTROBANK.TOOLTIP"
 msgid "Bionic Duplicants need <style=\"KKeyword\">Power Banks</style> to function"
-msgstr "バイオニック複製人間が動作するには<style=\"KKeyword\">パワーバンク</style>が必要です"
+msgstr "バイオニック複製人間が動作するには<style=\"KKeyword\">電力バンク</style>が必要です"
 
 #. STRINGS.DUPLICANTS.CHORES.RELOCATE.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.RELOCATE.NAME"
@@ -3597,7 +3622,7 @@ msgstr "移動チューブに入る"
 #. STRINGS.DUPLICANTS.CHORES.TRAVELTUBEENTRANCE.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.TRAVELTUBEENTRANCE.STATUS"
 msgid "Entering Transit Tube"
-msgstr "移動チューブに入っています"
+msgstr "移動チューブに入っている"
 
 #. STRINGS.DUPLICANTS.CHORES.TRAVELTUBEENTRANCE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.TRAVELTUBEENTRANCE.TOOLTIP"
@@ -3657,12 +3682,12 @@ msgstr "排出"
 #. STRINGS.DUPLICANTS.CHORES.UNLOADELECTROBANK.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.UNLOADELECTROBANK.STATUS"
 msgid "Offloading empty power banks"
-msgstr "空のパワーバンク排出中"
+msgstr "空の電力バンクを排出中"
 
 #. STRINGS.DUPLICANTS.CHORES.UNLOADELECTROBANK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.UNLOADELECTROBANK.TOOLTIP"
 msgid "Bionic Duplicants automatically offload depleted <style=\"KKeyword\">Power Banks</style>"
-msgstr "バイオニック複製人間は使用済みの<style=\"KKeyword\">パワーバンク</style>を自動的に排出します"
+msgstr "バイオニック複製人間は使用済みの<style=\"KKeyword\">電力バンク</style>を自動的に排出します"
 
 #. STRINGS.DUPLICANTS.CHORES.UPROOT.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.UPROOT.NAME"
@@ -3752,7 +3777,7 @@ msgstr "グリッチ中"
 #. STRINGS.DUPLICANTS.CHORES.WATERDAMAGEZAP.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.WATERDAMAGEZAP.TOOLTIP"
 msgid "Glitching is a symptom of Bionic Duplicant systems malfunctioning due to contact with incompatible <style=\"KKeyword\">Liquids</style>"
-msgstr "グリッチは、互換性のない<style=\"KKeyword\">液体</style>との接触によりバイオニック複製人間のシステムが誤動作した症状です"
+msgstr "グリッチは、適合しない<style=\"KKeyword\">液体</style>との接触によりバイオニック複製人間のシステムが誤作動を起こす症状です"
 
 #. STRINGS.DUPLICANTS.CONGENITALTRAITS.BANHI.DESC
 msgctxt "STRINGS.DUPLICANTS.CONGENITALTRAITS.BANHI.DESC"
@@ -4518,12 +4543,12 @@ msgstr "致命的"
 #. STRINGS.DUPLICANTS.DISEASES.SEVERITY.MAJOR
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SEVERITY.MAJOR"
 msgid "Major"
-msgstr "生命にかかわる"
+msgstr "重症"
 
 #. STRINGS.DUPLICANTS.DISEASES.SEVERITY.MINOR
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SEVERITY.MINOR"
 msgid "Minor"
-msgstr "大したことない"
+msgstr "軽症"
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DESC
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DESC"
@@ -4814,7 +4839,7 @@ msgstr "リモートワーカー"
 #. STRINGS.DUPLICANTS.MODEL.STANDARD.NAME
 msgctxt "STRINGS.DUPLICANTS.MODEL.STANDARD.NAME"
 msgid "Standard Duplicant"
-msgstr "標準的複製人間"
+msgstr "標準的な複製人間"
 
 #. STRINGS.DUPLICANTS.MODELTITLE
 msgctxt "STRINGS.DUPLICANTS.MODELTITLE"
@@ -4875,7 +4900,7 @@ msgstr "睡眠不足: 暗いの怖い"
 #. STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPAFRAIDOFDARK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPAFRAIDOFDARK.TOOLTIP"
 msgid "This Duplicant didn't get much sleep because they were too anxious about the lack of <style=\"KKeyword\">Light</style> to relax"
-msgstr "この複製人間は、リラックスするための<style=\"KKeyword\">明かり</style>が十分になかったことで神経質になり、よく眠れなかったようです"
+msgstr "この複製人間は、安心するための<style=\"KKeyword\">明かり</style>が無かったことで神経質になり、よく眠れなかったようです"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPCOLD.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPCOLD.NAME"
@@ -4890,7 +4915,7 @@ msgstr "この複製人間は睡眠の代わりに寒さで震えていました
 #. STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.NAME"
 msgid "Unrested: Bed Jostling"
-msgstr "休息不足: ぐらぐらベッド"
+msgstr "睡眠不足: ぐらぐらベッド"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BADSLEEPMOVEMENT.TOOLTIP"
@@ -4972,7 +4997,7 @@ msgstr "この複製人間はビーチチェアでのんびりしています"
 #. STRINGS.DUPLICANTS.MODIFIERS.BEACHCHAIRUNLIT.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BEACHCHAIRUNLIT.NAME"
 msgid "Passably Relaxed"
-msgstr "かなりリラックス"
+msgstr "それなりの息抜き"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BEACHCHAIRUNLIT.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BEACHCHAIRUNLIT.TOOLTIP"
@@ -5041,156 +5066,77 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.BASE_NAME"
 msgid "Base"
 msgstr "基地"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.CURRENT_WATTAGE_TOOLTIP_LABEL
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.CURRENT_WATTAGE_TOOLTIP_LABEL"
-msgid "Current Wattage: {0}"
-msgstr "現在のワット数: {0}"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.ESTIMATED_LIFE_TIME_REMAINING
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.ESTIMATED_LIFE_TIME_REMAINING"
-msgid "Estimated <style=\"KKeyword\">Power Bank</style> lifetime remaining: {0}"
-msgstr "推定 <style=\"KKeyword\">パワーバンク</style> 稼働時間: {0}"
-
 #. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.NAME"
 msgid "Wattage"
 msgstr "消費ワット数"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.POTENTIAL_EXTRA_WATTAGE_TOOLTIP_LABEL
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.POTENTIAL_EXTRA_WATTAGE_TOOLTIP_LABEL"
-msgid "Potential Wattage: {0}"
-msgstr "潜在ワット数: {0}"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.SAVING_MODE_NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.SAVING_MODE_NAME"
 msgid "Standby Mode"
 msgstr "スタンバイモード"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.SAVING_MODE_TEMPLATE
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.SAVING_MODE_TEMPLATE"
-msgid "{0} ({1}): {2}"
-msgstr "{0} ({1}): {2}"
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.CURRENT_WATTAGE_LABEL
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.CURRENT_WATTAGE_LABEL"
+msgid "Current Wattage: {0}"
+msgstr "現在のワット数: {0}"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.STANDARD_ACTIVE_TEMPLATE
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.STANDARD_ACTIVE_TEMPLATE"
+# Total とあるが、合計数というより、装填状況を俯瞰的に見る欄なので
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.ELECTROBANK_DETAILS_LABEL
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.ELECTROBANK_DETAILS_LABEL"
+msgid "Total Electrobanks {0} / {1}"
+msgstr "電力バンクの収納数: {0} / {1}"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.ELECTROBANK_EMPTY_ROW
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.ELECTROBANK_EMPTY_ROW"
+msgid "{0} Empty"
+msgstr "{0} 空っぽ"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.ELECTROBANK_ROW
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.ELECTROBANK_ROW"
+msgid "{0} {1}: {2}"
+msgstr "{0} {1}: {2}"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.ESTIMATED_LIFE_TIME_REMAINING
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.ESTIMATED_LIFE_TIME_REMAINING"
+msgid "Estimated <style=\"KKeyword\">Power Bank</style> charge remaining: {0}"
+msgstr "<style=\"KKeyword\">電力バンク</style>の推定稼働時間: 残り {0}"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.POTENTIAL_EXTRA_WATTAGE_LABEL
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.POTENTIAL_EXTRA_WATTAGE_LABEL"
+msgid "Potential Wattage: {0}"
+msgstr "潜在ワット数: {0}"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.STANDARD_ACTIVE_TEMPLATE
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.STANDARD_ACTIVE_TEMPLATE"
 msgid "{0}: {1}"
 msgstr "{0}: {1}"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.STANDARD_INACTIVE_TEMPLATE
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.STANDARD_INACTIVE_TEMPLATE"
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.STANDARD_INACTIVE_TEMPLATE
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.TOOLTIP.STANDARD_INACTIVE_TEMPLATE"
 msgid "{0}: {1}"
 msgstr "{0}: {1}"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICAGRICULTUREBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICAGRICULTUREBOOST.NAME"
-msgid "Agriculture Boost"
-msgstr "農業ブースト"
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONICBEDTIMEEFFECT.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICBEDTIMEEFFECT.NAME"
+msgid "Defragmenting"
+msgstr "デフラグ中"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICAGRICULTUREBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICAGRICULTUREBOOST.TOOLTIP"
-msgid "This Duplicant has increased agricultural skills thanks to the <style=\"KKeyword\">Farming Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">農業ブースター</style>によって農業スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICATHLETICSBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICATHLETICSBOOST.NAME"
-msgid "Athletics Boost"
-msgstr "運動ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICATHLETICSBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICATHLETICSBOOST.TOOLTIP"
-msgid "This Duplicant has extra zip in their step thanks to the <style=\"KKeyword\">Athletics Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">運動ブースト</style>によって足取りが素早くなっています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICBATTERYSAVEMODE.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICBATTERYSAVEMODE.NAME"
-msgid "Peaceful Processing"
-msgstr "ゆっくり処理中"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICBATTERYSAVEMODE.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICBATTERYSAVEMODE.TOOLTIP"
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONICBEDTIMEEFFECT.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICBEDTIMEEFFECT.TOOLTIP"
 msgid ""
-"This Duplicant is enjoying a reprieve from the demands of high-wattage life\n"
+"This Duplicant is decluttering their internal data cache\n"
 "\n"
-"<style=\"KKeyword\">Stress</style> is reduced while in Standby Mode"
+"It's helping them relax"
 msgstr ""
-"この複製人間は高ワットが要求される生活から解放されています\n"
+"この複製人間は内部データキャッシュを最適化しています\n"
 "\n"
-"スタンバイモード中は<style=\"KKeyword\">ストレス</style>が軽減されます"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICCONSTRUCTIONBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCONSTRUCTIONBOOST.NAME"
-msgid "Construction Boost"
-msgstr "建築ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICCONSTRUCTIONBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCONSTRUCTIONBOOST.TOOLTIP"
-msgid "This Duplicant has increased construction skills thanks to the <style=\"KKeyword\">Building Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">建築ブースター</style>によって建築スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICCOOKINGBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCOOKINGBOOST.NAME"
-msgid "Cuisine Boost"
-msgstr "料理ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICCOOKINGBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCOOKINGBOOST.TOOLTIP"
-msgid "This Duplicant has increased culinary skills thanks to the <style=\"KKeyword\">Cooking Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">料理ブースター</style>によって料理スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICCREATIVITYBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCREATIVITYBOOST.NAME"
-msgid "Creativity Boost"
-msgstr "創造ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICCREATIVITYBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCREATIVITYBOOST.TOOLTIP"
-msgid "This Duplicant has increased decorating skills thanks to the <style=\"KKeyword\">Creativity Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">創造ブースター</style>によって創造スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICEXCAVATIONBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICEXCAVATIONBOOST.NAME"
-msgid "Excavation Boost"
-msgstr "採掘ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICEXCAVATIONBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICEXCAVATIONBOOST.TOOLTIP"
-msgid "This Duplicant has increased excavation skills thanks to the <style=\"KKeyword\">Digging Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">採掘ブースター</style>によって採掘スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICHUSBANDRYBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICHUSBANDRYBOOST.NAME"
-msgid "Husbandry Boost"
-msgstr "畜産ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICHUSBANDRYBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICHUSBANDRYBOOST.TOOLTIP"
-msgid "This Duplicant has increased critter husbandry skills thanks to the <style=\"KKeyword\">Ranching Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">畜産ブースター</style>によって畜産スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICMACHINERYBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICMACHINERYBOOST.NAME"
-msgid "Machinery Boost"
-msgstr "操作ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICMACHINERYBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICMACHINERYBOOST.TOOLTIP"
-msgid "This Duplicant has increased machine operating skills thanks to the <style=\"KKeyword\">Operating Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">操作ブースター</style>によって操作スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICMEDICINEBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICMEDICINEBOOST.NAME"
-msgid "Medicine Boost"
-msgstr "医学ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICMEDICINEBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICMEDICINEBOOST.TOOLTIP"
-msgid "This Duplicant has increased medical skills thanks to the <style=\"KKeyword\">Doctoring Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">医学ブースター</style>によって医学スキルが上昇しています"
+"彼らにとっては良い息抜きです"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BIONICOFFLINE.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICOFFLINE.NAME"
 msgid "Powerless"
-msgstr "無力"
+msgstr "電力切れ"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BIONICOFFLINE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICOFFLINE.TOOLTIP"
@@ -5199,39 +5145,25 @@ msgid ""
 "\n"
 "Deliver a charged <style=\"KKeyword\">Power Bank</style> and reboot their systems to revive them"
 msgstr ""
-"この複製人間は全くの無力です！\n"
+"この複製人間は機能停止しています！\n"
 "\n"
-"彼らを復活させるには充電済の<style=\"KKeyword\">パワーバンク</style>と取り換えて再起動してください"
+"充電された<style=\"KKeyword\">電力バンク</style>を配達してシステムを再起動し、生き返らせてください"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICPILOTINGBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICPILOTINGBOOST.NAME"
-msgid "Piloting Boost"
-msgstr "操縦ブースト"
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONICWATERSTRESS.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICWATERSTRESS.NAME"
+msgid "Liquid Exposure"
+msgstr "液体に接触"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICPILOTINGBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICPILOTINGBOOST.TOOLTIP"
-msgid "This Duplicant has increased rocket piloting skills thanks to the <style=\"KKeyword\">Rocketry Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">操縦ブースター</style>によって操縦スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICSCIENCEBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICSCIENCEBOOST.NAME"
-msgid "Science Boost"
-msgstr "科学ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICSCIENCEBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICSCIENCEBOOST.TOOLTIP"
-msgid "This Duplicant has increased scientific research skills thanks to the <style=\"KKeyword\">Researching Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">科学ブースター</style>によって科学スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICSTRENGTHBOOST.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICSTRENGTHBOOST.NAME"
-msgid "Strength Boost"
-msgstr "筋力ブースト"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.BIONICSTRENGTHBOOST.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICSTRENGTHBOOST.TOOLTIP"
-msgid "This Duplicant is extra strong thanks to the <style=\"KKeyword\">Strength Booster</style> they have installed"
-msgstr "この複製人間はインストールされた<style=\"KKeyword\">筋力ブースター</style>によって筋力スキルが上昇しています"
+#. STRINGS.DUPLICANTS.MODIFIERS.BIONICWATERSTRESS.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICWATERSTRESS.TOOLTIP"
+msgid ""
+"This Duplicant's bionic parts are currently in contact with incompatible <style=\"KKeyword\">Liquids</style>\n"
+"\n"
+"Prolonged exposure could have serious <style=\"KKeyword\">Stress</style> consequences"
+msgstr ""
+"この複製人間のバイオニックパーツは適合しない<style=\"KKeyword\">液体</style>と接触しています\n"
+"\n"
+"長時間の接触は<style=\"KKeyword\">ストレス</style>に深刻な結果をもたらす可能性があります"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.BONUSBUILDER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BONUSBUILDER.NAME"
@@ -5494,6 +5426,16 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BREAK5.TOOLTIP"
 msgid "This Duplicant has had five <style=\"KKeyword\">Downtime</style> shifts in the last cycle"
 msgstr "この複製人間は前のサイクルで５シフトの<style=\"KKeyword\">休憩</style>を取っています"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.BREAKX.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BREAKX.NAME"
+msgid "{0} Shift Break"
+msgstr "{0}シフトの休憩"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.BREAKX_BIONIC.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BREAKX_BIONIC.NAME"
+msgid "{0} Shift Break (Bionic)"
+msgstr "{0}シフトの休憩 (バイオニック)"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.BREATHING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BREATHING.NAME"
 msgid "Breathing"
@@ -5574,22 +5516,6 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CLAUSTROPHOBIC.TOOLTIP"
 msgid "This Duplicant recently found themselves in an upsettingly cramped space"
 msgstr "この複製人間は最近、自身が気が狂いそうなほど窮屈な空間にいることを理解したようです"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.CLOGGINGTOILET.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CLOGGINGTOILET.NAME"
-msgid "Clogging a toilet"
-msgstr "トイレ詰まり"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.CLOGGINGTOILET.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CLOGGINGTOILET.TOOLTIP"
-msgid ""
-"This Duplicant is clogging a toilet with <style=\"KKeyword\">Liquid Gunk</style>\n"
-"\n"
-"They really should have used a <style=\"KKeyword\">Gunk Extractor</style>"
-msgstr ""
-"この複製人間は<style=\"KKeyword\">液体残滓</style>でトイレを詰まらせています\n"
-"\n"
-"彼らが本当に必要だったものは<style=\"KKeyword\">残滓処理装置</style>なのに"
-
 #. STRINGS.DUPLICANTS.MODIFIERS.CLOTHING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CLOTHING.NAME"
 msgid "Clothing"
@@ -5618,7 +5544,7 @@ msgstr "肌寒い環境"
 #. STRINGS.DUPLICANTS.MODIFIERS.CONTAMINATEDLUNGS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CONTAMINATEDLUNGS.NAME"
 msgid "Yucky Lungs"
-msgstr "息苦しさ"
+msgstr "肺の不快感"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.CONTAMINATEDLUNGS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CONTAMINATEDLUNGS.TOOLTIP"
@@ -6119,8 +6045,8 @@ msgstr "新鮮なオイル"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FRESHOIL.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FRESHOIL.TOOLTIP"
-msgid "This Duplicant recently used a <link=\"OILCHANGER\">Lubrication Station</link> and feels pretty slick</style>"
-msgstr "この複製人間は最近<link=\"OILCHANGER\">注油端末</link>で注油したので、とても滑らかさを感じています"
+msgid "This Duplicant recently used a <link=\"OILCHANGER\">Lubrication Station</link> and feels pretty slick"
+msgstr "この複製人間は<link=\"OILCHANGER\">注油端末</link>で油を差したばかりなので、心地よい滑らかさを実感しています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FULLBLADDER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FULLBLADDER.NAME"
@@ -6195,8 +6121,8 @@ msgstr "苦い後味"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.GUNKHUNGOVER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.GUNKHUNGOVER.TOOLTIP"
-msgid "This Duplicant recently expelled built-up <style=\"KKeyword\">Liquid Gunk</style> and can still taste it"
-msgstr "この複製人間は最近溜まりに溜まった<style=\"KKeyword\">液体残滓</style>を吐き出しましたが、まだ後味がするようです"
+msgid "This Duplicant recently expelled built-up <style=\"KKeyword\">Gunk</style> and can still taste it"
+msgstr "この複製人間は溜まりに溜まった<style=\"KKeyword\">液体残滓</style>を排出したばかりなので、まだ後味がするようです"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.GUNKSICK.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.GUNKSICK.NAME"
@@ -6210,7 +6136,7 @@ msgid ""
 "\n"
 "They will use a toilet as a last resort"
 msgstr ""
-"この複製人間は今すぐ<style=\"KKeyword\">残滓処理装置</style>を必要としています\n"
+"この複製人間は今すぐ<style=\"KKeyword\">残滓排出装置</style>へ向かう必要があります\n"
 "\n"
 "彼らは最後の手段としてトイレを使います"
 
@@ -6405,6 +6331,7 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ISROBODANCER.NAME"
 msgid "Doing the Robot"
 msgstr "ロボットダンス"
 
+# 中性単数のThey
 #. STRINGS.DUPLICANTS.MODIFIERS.ISROBODANCER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ISROBODANCER.TOOLTIP"
 msgid ""
@@ -6412,9 +6339,9 @@ msgid ""
 "\n"
 "They're a flash mob of one!"
 msgstr ""
-"この複製人間はみんなが見ているかのように踊っています\n"
+"この複製人間は皆の視線を集めているかのように踊っています\n"
 "\n"
-"彼らはフラッシュモブです！"
+"彼はフラッシュモブの中の一人です！"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ISSPARKLESTREAKER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ISSPARKLESTREAKER.NAME"
@@ -6663,7 +6590,7 @@ msgstr ""
 #. STRINGS.DUPLICANTS.MODIFIERS.MEDICINE_INTERMEDIATEBOOSTER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MEDICINE_INTERMEDIATEBOOSTER.NAME"
 msgid "Immuno Booster"
-msgstr "免疫ブースター"
+msgstr "免疫増強剤"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MEDICINE_INTERMEDIATEBOOSTER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MEDICINE_INTERMEDIATEBOOSTER.TOOLTIP"
@@ -6823,28 +6750,44 @@ msgstr "このエリアは快適と呼ぶには少しうるさすぎます"
 #. STRINGS.DUPLICANTS.MODIFIERS.NOISEPEACEFUL.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOISEPEACEFUL.NAME"
 msgid "Peace and Quiet"
-msgstr "安らぎ"
+msgstr "平穏と静寂"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.NOISEPEACEFUL.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOISEPEACEFUL.TOOLTIP"
 msgid "This Duplicant has found a quiet place to concentrate"
-msgstr "この複製人間は集中できる場所を見つけました"
+msgstr "この複製人間は集中できる静かな場所を見つけました"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATION.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATION.NAME"
+#. STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATIONMAJOR.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATIONMAJOR.NAME"
 msgid "Grinding Gears"
 msgstr "軋むギア"
 
-#. STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATION.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATION.TOOLTIP"
+#. STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATIONMAJOR.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATIONMAJOR.TOOLTIP"
 msgid ""
-"This Duplicant's out of <style=\"KKeyword\">Oil</style> and cannot function properly\n"
+"This Duplicant's out of <style=\"KKeyword\">Gear Oil</style> and cannot function properly\n"
 "\n"
-"They need to visit a <style=\"KKeyword\">Lubrication Station</style> as soon as possible"
+"They need to find <style=\"KKeyword\">Gear Balm</style> or visit a <style=\"KKeyword\">Lubrication Station</style> as soon as possible"
 msgstr ""
-"この複製人間は<style=\"KKeyword\">オイル</style>が切れており正しく機能していません\n"
+"この複製人間は<style=\"KKeyword\">ギアオイル</style>が切れたせいで正しく機能できません\n"
 "\n"
-"速やかに<style=\"KKeyword\">注油端末</style>に向かう必要があります"
+"速やかに<style=\"KKeyword\">ギア軟膏</style>を見つけるか<style=\"KKeyword\">注油端末</style>に向かう必要があります"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATIONMINOR.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATIONMINOR.NAME"
+msgid "Grinding Gears (Reduced)"
+msgstr "軋むギア (軽微)"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATIONMINOR.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOLUBRICATIONMINOR.TOOLTIP"
+msgid ""
+"This Duplicant's out of <style=\"KKeyword\">Gear Oil</style> and cannot function properly\n"
+"\n"
+"They need to find <style=\"KKeyword\">Gear Balm</style> or visit a <style=\"KKeyword\">Lubrication Station</style> as soon as possible"
+msgstr ""
+"この複製人間は<style=\"KKeyword\">ギアオイル</style>が切れたせいで正しく機能できません\n"
+"\n"
+"速やかに<style=\"KKeyword\">ギア軟膏</style>を見つけるか<style=\"KKeyword\">注油端末</style>に向かう必要があります"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.NOOXYGEN.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.NOOXYGEN.NAME"
@@ -6895,7 +6838,7 @@ msgstr "プライベートの崩壊"
 #. STRINGS.DUPLICANTS.MODIFIERS.PEOPLETOOCLOSEWHILESLEEPING.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PEOPLETOOCLOSEWHILESLEEPING.TOOLTIP"
 msgid "This Duplicant had to sleep too close to others and it was awkward for them"
-msgstr "この複製人間は他人とぎゅうぎゅう詰めで寝るはめになり、かれらとぎくしゃくしています"
+msgstr "この複製人間は他人とぎゅうぎゅう詰めで寝るはめになり、彼らとぎくしゃくしています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.PLAYEDARCADE.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PLAYEDARCADE.NAME"
@@ -6905,7 +6848,7 @@ msgstr "ビデオゲームで遊んだ"
 #. STRINGS.DUPLICANTS.MODIFIERS.PLAYEDARCADE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PLAYEDARCADE.TOOLTIP"
 msgid "This Duplicant recently played video games and is feeling like a champ"
-msgstr "この複製人間は最近ビデオゲームで遊び、俺ツエエ感に浸っています"
+msgstr "この複製人間は最近ビデオゲームで遊び、俺TUEEE感に浸っています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.POPPEDEARDRUMS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.POPPEDEARDRUMS.NAME"
@@ -7101,15 +7044,17 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBEDROOM.TOOLTIP"
 msgid "This Duplicant slept in a <style=\"KKeyword\">Luxury Barracks</style> last night and feels extra refreshed"
 msgstr "この複製人間は昨夜<style=\"KKeyword\">高級宿舎</style>で睡眠を取ったため気分が優れています"
 
+# 没になった？
 #. STRINGS.DUPLICANTS.MODIFIERS.ROOMBIONICUPKEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBIONICUPKEEP.NAME"
-msgid "Workshop"
-msgstr "ワークショップ"
+msgid ""
+msgstr ""
 
+# 没になった？
 #. STRINGS.DUPLICANTS.MODIFIERS.ROOMBIONICUPKEEP.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBIONICUPKEEP.TOOLTIP"
-msgid "This Duplicant used a <link=\"GUNKEMPTIER\">Gunk Extractor</link> in a <style=\"KKeyword\">Workshop</style>"
-msgstr "この複製人間は<style=\"KKeyword\">ワークショップ</style>の<style=\"KKeyword\">残滓処理装置</style>を使用しました"
+msgid ""
+msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ROOMGREATHALL.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMGREATHALL.NAME"
@@ -7614,24 +7559,23 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.NAME"
-msgid "Deafening Shriek"
-msgstr "耳をつんざく叫び"
+msgid "Shocking Temper"
+msgstr "ショックな気性"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.NOTIFICATION_NAME"
-msgid "Banshee Wailing"
-msgstr "バンシーの金切り声"
+msgid "Stress Zapping"
+msgstr "ストレス放電"
 
-# throw up は口語で「吐く」
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.NOTIFICATION_TOOLTIP"
-msgid "These Duplicants became so <link=\"STRESS\">Stressed</link> they began wailing:"
-msgstr "これらの複製人間は極度の<link=\"STRESS\">ストレス</link>で叫び始めました:"
+msgid "These Duplicants became so <link=\"STRESS\">Stressed</link> they began emitting electrical zaps:"
+msgstr "次の複製人間は極度の<link=\"STRESS\">ストレス</link>で周囲に放電を始めました:"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.TOOLTIP"
-msgid "This Duplicant is wailing at the top of their lungs as a result of <style=\"KKeyword\">Stress</style>"
-msgstr "この複製人間は<style=\"KKeyword\">ストレス</style>の結果として声を限りに叫んでいます"
+msgid "This Duplicant is short-circuiting as a result of <style=\"KKeyword\">Stress</style>"
+msgstr "この複製人間は<style=\"KKeyword\">ストレス</style>のあまり回路がショートしています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SUDDENMORALEHELPER.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SUDDENMORALEHELPER.NAME"
@@ -7979,22 +7923,6 @@ msgstr "さっき攻撃された"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WASATTACKED.TOOLTIP"
 msgid "This Duplicant is stressed out after having been attacked"
 msgstr "この複製人間は攻撃を受けてイライラしています"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.WATERDAMAGE.NAME
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WATERDAMAGE.NAME"
-msgid "Liquid Damage"
-msgstr "液体による損傷"
-
-#. STRINGS.DUPLICANTS.MODIFIERS.WATERDAMAGE.TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WATERDAMAGE.TOOLTIP"
-msgid ""
-"This Duplicant's bionic parts recently came into contact with incompatible <style=\"KKeyword\">Liquids</style>\n"
-"\n"
-"Prolonged exposure could have serious <style=\"KKeyword\">Health</style> consequences"
-msgstr ""
-"この複製人間のバイオニックパーツは最近互換性のない<style=\"KKeyword\">液体</style>と接触しました\n"
-"\n"
-"長時間の接触は深刻な<style=\"KKeyword\">健康</style>被害をもたらす可能性があります"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.WELLFED.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WELLFED.NAME"
@@ -8724,8 +8652,8 @@ msgstr "ターナー"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.ULTI.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.ULTI.DESC"
-msgid "The only dance move this {0} knows is The Robot."
-msgstr "この{0}が唯一出来るダンスムーブはロボットダンスです。"
+msgid "This {0}'s favorite dance move is The Robot. They don't get why others think that's funny."
+msgstr "{0}の得意なダンスムーブはロボットダンスです。彼はなぜ他人がそれを面白いと思うのか分かりません。"
 
 #. STRINGS.DUPLICANTS.PERSONALITIES.ULTI.NAME
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.ULTI.NAME"
@@ -8771,6 +8699,96 @@ msgstr "ロケットを操縦するための<link=\"COMMANDMODULE\">制御カプ
 msgctxt "STRINGS.DUPLICANTS.ROLES.ASTRONAUTTRAINEE.NAME"
 msgid "<link=\"ASTRONAUTING1\">Rocket Piloting</link>"
 msgstr "<link=\"ASTRONAUTING1\">ロケット操縦</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_A1.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_A1.DESCRIPTION"
+msgid "Allows Bionic Duplicants to install an additional booster."
+msgstr "バイオニック複製人間に装着できるブースターの数が増えます。"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_A1.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_A1.NAME"
+msgid "<link=\"BIONICSA1\">Booster Processing I</link>"
+msgstr "<link=\"BIONICSA1\">ブースター処理 I</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_A2.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_A2.DESCRIPTION"
+msgid "Allows Bionic Duplicants to install an additional booster, and increases runspeed."
+msgstr "バイオニック複製人間に装着できるブースターの数が増え、さらに移動速度が向上します。"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_A2.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_A2.NAME"
+msgid "<link=\"BIONICSA2\">Booster Processing II</link>"
+msgstr "<link=\"BIONICSA2\">ブースター処理 II</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_A3.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_A3.DESCRIPTION"
+msgid "Allows Bionic Duplicants to install an additional booster, and reduces the runspeed loss experienced while wearing exosuits."
+msgstr "バイオニック複製人間に装着できるブースターの数が増え、さらにEXOスーツを着用しても移動速度があまり低下しなくなります。"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_A3.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_A3.NAME"
+msgid "<link=\"BIONICSA3\">Complex Processing</link>"
+msgstr "<link=\"BIONICSA3\">複合処理</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_B1.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_B1.DESCRIPTION"
+msgid "Significantly reduces the negative impacts of low <link=\"GEAROIL\">Gear Oil</link>."
+msgstr "<link=\"GEAROIL\">ギアオイル</link>の低下による悪影響を大幅に軽減します。"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_B1.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_B1.NAME"
+msgid "<link=\"BIONICSB1\">Improved Gears I</link>"
+msgstr "<link=\"BIONICSB1\">ギア改善 I</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_B2.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_B2.DESCRIPTION"
+msgid "Allows Bionic Duplicants to install an additional booster."
+msgstr "バイオニック複製人間に装着できるブースターの数が増えます。"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_B2.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_B2.NAME"
+msgid "<link=\"BIONICSB2\">Improved Gears II</link>"
+msgstr "<link=\"BIONICSB2\">ギア改善 II</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_B3.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_B3.DESCRIPTION"
+msgid "Allows Bionic Duplicants to install an additional booster, and eliminates the runspeed loss experienced while wearing exosuits."
+msgstr "バイオニック複製人間に装着できるブースターの数が増え、さらにEXOスーツを着用しても移動速度が全く低下しなくなります。"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_B3.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_B3.NAME"
+msgid "<link=\"BIONICSB3\">Top Gear</link>"
+msgstr "<link=\"BIONICSB3\">最高速ギア</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_C1.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_C1.DESCRIPTION"
+msgid "Allows Bionic Duplicants to perform research using a <link=\"ADVANCEDRESEARCHCENTER\">Super Computer</link>, and craft items at the <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>."
+msgstr "<link=\"ADVANCEDRESEARCHCENTER\">スパコン</link>を使って研究したり、<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で道具を製作したりできるようになります。"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_C1.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_C1.NAME"
+msgid "<link=\"BIONICSC1\">Schematics</link>"
+msgstr "<link=\"BIONICSC1\">回路図</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_C2.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_C2.DESCRIPTION"
+msgid "Allows Bionic Duplicants to install an additional booster and increase their runspeed."
+msgstr "バイオニック複製人間に装着できるブースターの数が増え、さらに移動速度が向上します。"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_C2.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_C2.NAME"
+msgid "<link=\"BIONICSC2\">Advanced Schematics</link>"
+msgstr "<link=\"BIONICSC2\">先進的回路図</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_C3.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_C3.DESCRIPTION"
+msgid "Increases <link=\"ELECTROBANK\">Power Bank</link> storage capacity to maximize work time between replacements."
+msgstr "<link=\"ELECTROBANK\">電力バンク</link>の収納数が増え、充電を要するまでに働ける時間が最大になります。"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_C3.NAME
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_C3.NAME"
+msgid "<link=\"BIONICSC3\">Power Banking</link>"
+msgstr "<link=\"BIONICSC3\">電力バンク増設</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.BUILDER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.BUILDER.DESCRIPTION"
@@ -9256,39 +9274,39 @@ msgstr "残滓"
 #. STRINGS.DUPLICANTS.STATS.BIONICGUNK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATS.BIONICGUNK.TOOLTIP"
 msgid ""
-"Bionic Duplicants become <style=\"KKeyword\">Stressed</style> when too much <style=\"KKeyword\">Liquid Gunk</style> builds up in their bionic parts\n"
+"Bionic Duplicants become <style=\"KKeyword\">Stressed</style> when too much <style=\"KKeyword\">Gunk</style> builds up in their bionic parts\n"
 "\n"
 "Regular visits to the <style=\"KKeyword\">Gunk Extractor</style> are required"
 msgstr ""
 "バイオニック複製人間はバイオニックパーツに<style=\"KKeyword\">液体残滓</style>が溜まりすぎると<style=\"KKeyword\">ストレス</style>を感じます\n"
 "\n"
-"定期的な<style=\"KKeyword\">残滓処理装置</style>訪問が必要です"
+"定期的に<style=\"KKeyword\">残滓排出装置</style>を訪れる必要があります"
 
 #. STRINGS.DUPLICANTS.STATS.BIONICINTERNALBATTERY.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.BIONICINTERNALBATTERY.NAME"
 msgid "Power Banks"
-msgstr "パワーバンク"
+msgstr "電力バンク"
 
 #. STRINGS.DUPLICANTS.STATS.BIONICINTERNALBATTERY.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATS.BIONICINTERNALBATTERY.TOOLTIP"
 msgid "A Bionic Duplicant with zero remaining <style=\"KKeyword\">Power</style> will become incapacitated until replacement <style=\"KKeyword\">Power Banks</style> are installed"
-msgstr "<style=\"KKeyword\">パワー</style>がゼロになったバイオニック複製人間は新しい<style=\"KKeyword\">パワーバンク</style>がインストールされるまで無力になります"
+msgstr "<style=\"KKeyword\">電力</style>が尽きたバイオニック複製人間は、代わりの<style=\"KKeyword\">電力バンク</style>が補充されるまで機能を停止します"
 
 #. STRINGS.DUPLICANTS.STATS.BIONICOIL.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.BIONICOIL.NAME"
-msgid "Oil"
-msgstr "オイル"
+msgid "Gear Oil"
+msgstr "ギアオイル"
 
 #. STRINGS.DUPLICANTS.STATS.BIONICOIL.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATS.BIONICOIL.TOOLTIP"
 msgid ""
-"Bionic Duplicants will slow down significantly when <style=\"KKeyword\">Oil</style> levels reach zero\n"
+"Bionic Duplicants will slow down significantly when <style=\"KKeyword\">Gear Oil</style> levels reach zero\n"
 "\n"
-"Duplicants can obtain <style=\"KKeyword\">Phyto Oil</style> or <style=\"KKeyword\">Crude Oil</style> at the <style=\"KKeyword\">Lubrication Station</style>"
+"They can oil their joints by visiting a <style=\"KKeyword\">Lubrication Station</style> or using <style=\"KKeyword\">Gear Balm</style> "
 msgstr ""
-"バイオニック複製人間は<style=\"KKeyword\">オイル</style>レベルがゼロになると極めて動作が緩慢になります\n"
+"バイオニック複製人間は<style=\"KKeyword\">ギアオイル</style>が尽きると動作が極めて緩慢になります\n"
 "\n"
-"複製人間は<style=\"KKeyword\">注油端末</style>で<style=\"KKeyword\">植物性油</style>または<style=\"KKeyword\">原油</style>を注油できます"
+"<style=\"KKeyword\">注油端末</style>を訪れたり、<style=\"KKeyword\">ギア軟膏</style>を使うことで関節部に油を差すことができます"
 
 #. STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.NAME"
@@ -9297,8 +9315,29 @@ msgstr "酸素タンク"
 
 #. STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.TOOLTIP"
-msgid "Bionic Duplicants have internal <style=\"KKeyword\">Oxygen</style> tanks that enable them to work in low breathability areas"
-msgstr "バイオニック複製人間は内部に<style=\"KKeyword\">酸素</style>タンクを抱えており、呼吸困難な場所でも働くことができます"
+msgid ""
+"Bionic Duplicants have internal <style=\"KKeyword\">Oxygen</style> tanks that enable them to work in low breathability areas\n"
+"\n"
+"They will prioritize <style=\"KKeyword\">Oxygen</style> intake from equipped <style=\"KKeyword\">Exosuits</style> to conserve their internal tanks"
+msgstr ""
+"バイオニック複製人間は<style=\"KKeyword\">酸素</style>タンクを内蔵しているため、呼吸困難な場所でも働くことができます\n"
+"\n"
+"彼らは着用した<style=\"KKeyword\">EXOスーツ</style>の<style=\"KKeyword\">酸素</style>を優先して消費し、内蔵タンクを節約します"
+
+#. STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.TOOLTIP_GERM_DETAIL
+msgctxt "STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.TOOLTIP_GERM_DETAIL"
+msgid " - {0}"
+msgstr " - {0}"
+
+#. STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.TOOLTIP_MASS_LINE
+msgctxt "STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.TOOLTIP_MASS_LINE"
+msgid "Current mass: {0} / {1}"
+msgstr "現在の貯蔵量: {0} / {1}"
+
+#. STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.TOOLTIP_MASS_ROW_DETAIL
+msgctxt "STRINGS.DUPLICANTS.STATS.BIONICOXYGENTANK.TOOLTIP_MASS_ROW_DETAIL"
+msgid "    • {0}: {1}{2}"
+msgstr "    • {0}: {1}{2}"
 
 #. STRINGS.DUPLICANTS.STATS.BLADDER.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.BLADDER.NAME"
@@ -9378,7 +9417,7 @@ msgstr ""
 #. STRINGS.DUPLICANTS.STATS.DISEASERECOVERYTIME.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.DISEASERECOVERYTIME.NAME"
 msgid "Disease Recovery"
-msgstr "快復"
+msgstr "病気の快復"
 
 #. STRINGS.DUPLICANTS.STATS.EXTERNALTEMPERATURE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATS.EXTERNALTEMPERATURE.NAME"
@@ -9646,17 +9685,17 @@ msgstr "この複製人間のバイオニックシステムは再起動中です
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICCRITICALBATTERY.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICCRITICALBATTERY.NAME"
 msgid "Critical Power Level"
-msgstr "致命的なパワーレベル"
+msgstr "危機的な電力レベル"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICCRITICALBATTERY.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICCRITICALBATTERY.NOTIFICATION_NAME"
 msgid "Critical Power Level"
-msgstr "致命的なパワーレベル"
+msgstr "危機的な電力レベル"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICCRITICALBATTERY.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICCRITICALBATTERY.NOTIFICATION_TOOLTIP"
 msgid "These Duplicants will become incapacitated if they can't find <style=\"KKeyword\">Power Banks</style>:"
-msgstr "これらの複製人間は<style=\"KKeyword\">パワーバンク</style>が見つからないと機能不全に陥ります:"
+msgstr "次の複製人間は<style=\"KKeyword\">電力バンク</style>を見つけられないと機能を停止します:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICCRITICALBATTERY.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICCRITICALBATTERY.TOOLTIP"
@@ -9665,9 +9704,9 @@ msgid ""
 "\n"
 "They will become incapacitated unless new <style=\"KKeyword\">Power Banks</style> are delivered"
 msgstr ""
-"この複製人間の<style=\"KKeyword\">パワー</style>レベルは致命的に低くなっています\n"
+"この複製人間の<style=\"KKeyword\">電力</style>残量は危機的なほど低くなっています\n"
 "\n"
-"新しい<style=\"KKeyword\">パワーバンク</style>が届けられないと機能不全に陥るでしょう"
+"新しい<style=\"KKeyword\">電力バンク</style>が届けられない限り、機能を停止してしまうでしょう"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICEXPLORERBOOSTER.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICEXPLORERBOOSTER.NAME"
@@ -9695,15 +9734,35 @@ msgstr ""
 "\n"
 "ダウジングが完了すると新しい間欠泉を見つけることがあります"
 
+#. STRINGS.DUPLICANTS.STATUSITEMS.BIONICMICROCHIPGENERATION.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICMICROCHIPGENERATION.NAME"
+msgid "Programming Microchip {0}"
+msgstr "マイクロチップ製造: {0}"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.BIONICMICROCHIPGENERATION.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICMICROCHIPGENERATION.TOOLTIP"
+msgid ""
+"This Duplicant is programming a microchip for use in <style=\"KKeyword\">Booster</style> production\n"
+"\n"
+"Bionic Duplicants will program microchips while defragmenting\n"
+"\n"
+"They will produce 1 microchip every {0}"
+msgstr ""
+"この複製人間は<style=\"KKeyword\">ブースター</style>製作用のマイクロチップをプログラムしています\n"
+"\n"
+"バイオニック複製人間はデフラグ中にマイクロチップをプログラムします\n"
+"\n"
+"{0}ごとに1個のマイクロチップを製造します"
+
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICOFFLINEINCAPACITATED.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICOFFLINEINCAPACITATED.NAME"
 msgid "Incapacitated: Powerless"
-msgstr "機能不全: 無力"
+msgstr "機能停止: 電力切れ"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICOFFLINEINCAPACITATED.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICOFFLINEINCAPACITATED.NOTIFICATION_NAME"
 msgid "Bionic Duplicant Incapacitated"
-msgstr "バイオニック複製人間機能不全"
+msgstr "バイオニック複製人間が機能停止"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICOFFLINEINCAPACITATED.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICOFFLINEINCAPACITATED.NOTIFICATION_TOOLTIP"
@@ -9712,9 +9771,9 @@ msgid ""
 "\n"
 "A charged <style=\"KKeyword\">Power Bank</style> and full reboot by a skilled Duplicant are required for rescue:"
 msgstr ""
-"これらのバイオニック複製人間が機能不全に陥っています。\n"
+"次のバイオニック複製人間は機能停止しています。\n"
 "\n"
-"充電済みの<style=\"KKeyword\">パワーバンク</style>と熟練した複製人間による再起動が必要です:"
+"充電された<style=\"KKeyword\">電力バンク</style>と熟練の複製人間による再起動が必要です:"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICOFFLINEINCAPACITATED.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICOFFLINEINCAPACITATED.TOOLTIP"
@@ -9723,9 +9782,9 @@ msgid ""
 "\n"
 "Deliver a charged <style=\"KKeyword\">Power Bank</style> and reboot their systems to revive them"
 msgstr ""
-"この複製人間は全くの無力です！\n"
+"この複製人間は機能停止しています！\n"
 "\n"
-"彼らを復活させるには充電済の<style=\"KKeyword\">パワーバンク</style>と取り換えて再起動してください"
+"生き返らせるには、充電された<style=\"KKeyword\">電力バンク</style>を届けてシステムを再起動してください"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICREQUIRESSKILLPERK.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICREQUIRESSKILLPERK.NAME"
@@ -9755,13 +9814,19 @@ msgstr "この複製人間が仕事に戻るためには、バイオニックシ
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICWANTSOILCHANGE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICWANTSOILCHANGE.NAME"
-msgid "Low Oil"
-msgstr "オイル切れ"
+msgid "Low Gear Oil"
+msgstr "ギアオイル低下"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BIONICWANTSOILCHANGE.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICWANTSOILCHANGE.TOOLTIP"
-msgid "This Duplicant is almost out of <style=\"KKeyword\">Oil</style> and needs to visit a <style=\"KKeyword\">Lubrication Station</style>"
-msgstr "この複製人間は<style=\"KKeyword\">オイル</style>が切れそうなため、<style=\"KKeyword\">注油端末</style>へ行く必要があります"
+msgid ""
+"This Duplicant is almost out of <style=\"KKeyword\">Gear Oil</style>\n"
+"\n"
+"They need to find <style=\"KKeyword\">Gear Balm</style> or visit a <style=\"KKeyword\">Lubrication Station</style>"
+msgstr ""
+"この複製人間は今にも<style=\"KKeyword\">ギアオイル</style>が切れそうです\n"
+"\n"
+"速やかに<style=\"KKeyword\">ギア軟膏</style>を見つけるか<style=\"KKeyword\">注油端末</style>に向かう必要があります"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BODYREGULATINGCOOLING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BODYREGULATINGCOOLING.NAME"
@@ -9812,6 +9877,16 @@ msgstr "O<sub>2</sub>を {ConsumptionRate} 吸い込んでいる"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2.TOOLTIP"
 msgid "Duplicants require <link=\"OXYGEN\">Oxygen</link> to live"
 msgstr "どんな複製人間も生きるために<link=\"OXYGEN\">酸素</link>が必要です"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2BIONIC.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2BIONIC.NAME"
+msgid "Oxygen Tank: {ConsumptionRate} O<sub>2</sub>"
+msgstr "酸素タンク: {ConsumptionRate} O<sub>2</sub>"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2BIONIC.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BREATHINGO2BIONIC.TOOLTIP"
+msgid "Bionic Duplicants are fitted with internal <link=\"OXYGEN\">Oxygen</link> tanks"
+msgstr "バイオニック複製人間には<style=\"KKeyword\">酸素</style>タンクが内蔵されています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.BUILDDELIVERSTATUS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BUILDDELIVERSTATUS.NAME"
@@ -9882,6 +9957,22 @@ msgstr "{Target} を片付けている"
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.CLEARING.TOOLTIP"
 msgid "This Duplicant is sweeping away <b>{Target}</b>"
 msgstr "この複製人間は元の場所から <b>{Target}</b> を片付けています"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.CLOGGINGTOILET.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.CLOGGINGTOILET.NAME"
+msgid "Clogging a toilet"
+msgstr "トイレ詰まり"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.CLOGGINGTOILET.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.CLOGGINGTOILET.TOOLTIP"
+msgid ""
+"This Duplicant is clogging a toilet with <style=\"KKeyword\">Gunk</style>\n"
+"\n"
+"They couldn't get to a <style=\"KKeyword\">Gunk Extractor</style> in time"
+msgstr ""
+"この複製人間は<style=\"KKeyword\">残滓</style>でトイレを詰まらせています\n"
+"\n"
+"漏らす前に<style=\"KKeyword\">残滓排出装置</style>へ辿り着くことはできませんでした"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.COLD.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COLD.NAME"
@@ -9964,7 +10055,7 @@ msgstr "この複製人間は美味しい <b>{Item}</b>を調理中です"
 #. STRINGS.DUPLICANTS.STATUSITEMS.COUGHING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COUGHING.NAME"
 msgid "Yucky Lungs Coughing"
-msgstr "不快感による咳"
+msgstr "肺の不快感による咳"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.COUGHING.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.COUGHING.TOOLTIP"
@@ -9973,7 +10064,7 @@ msgid ""
 "• Coughing fit was caused by Yucky Lungs"
 msgstr ""
 "ちょっと！口を押えて！\n"
-"• 肺の気持ち悪さにより咳の発作が起こった"
+"• 肺の不快感により咳の発作が起こった"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.DAILYRATIONLIMITREACHED.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DAILYRATIONLIMITREACHED.NAME"
@@ -10919,12 +11010,12 @@ msgstr "このエリアは快適と呼ぶには少しうるさすぎます"
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOISEPEACEFUL.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOISEPEACEFUL.NAME"
 msgid "Peace and Quiet"
-msgstr "安らぎ"
+msgstr "平穏と静寂"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOISEPEACEFUL.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOISEPEACEFUL.TOOLTIP"
 msgid "This Duplicant has found a quiet place to concentrate"
-msgstr "この複製人間は集中できる場所を見つけました"
+msgstr "この複製人間は集中できる静かな場所を見つけました"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NORATIONSAVAILABLE.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NORATIONSAVAILABLE.NAME"
@@ -11251,7 +11342,7 @@ msgstr "このリモートワーカーはギアの詰まりを直しています
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.ENTERINGDOCK.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.ENTERINGDOCK.NAME"
 msgid "Docking"
-msgstr "ドッキング"
+msgstr "ドックへ帰投"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.ENTERINGDOCK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.ENTERINGDOCK.TOOLTIP"
@@ -11260,8 +11351,8 @@ msgstr "このリモートワーカーはドックに向かっています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.FULLGUNK.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.FULLGUNK.NAME"
-msgid "Full of Gunk"
-msgstr "残滓満タン"
+msgid "Gunk Clogged"
+msgstr "残滓詰まり"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.FULLGUNK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.FULLGUNK.TOOLTIP"
@@ -11276,34 +11367,34 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.HIGHGUNK.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.HIGHGUNK.NAME"
-msgid "Gunk Clogged"
-msgstr "残滓詰まり"
+msgid "Gunk Buildup"
+msgstr "残滓の蓄積"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.HIGHGUNK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.HIGHGUNK.TOOLTIP"
-msgid "This remote worker will dock to remove <style=\"KKeyword\">Gunk</style> buildup before accepting new chores"
-msgstr "このリモートワーカーは新しい作業を受け付ける前にドックで<style=\"KKeyword\">残滓</style>を取り除く必要があります"
+msgid "This remote worker will return to its dock to remove <style=\"KKeyword\">Gunk</style> buildup before accepting new chores"
+msgstr "このリモートワーカーは新しい作業を受け付ける前にドックへ戻り<style=\"KKeyword\">残滓</style>を取り除く必要があります"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.LOWOIL.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.LOWOIL.NAME"
-msgid "Low Oil"
-msgstr "オイル切れ"
+msgid "Low Gear Oil"
+msgstr "ギアオイル低下"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.LOWOIL.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.LOWOIL.TOOLTIP"
 msgid ""
-"This remote worker is low on oil\n"
+"This remote worker is low on gear oil\n"
 "\n"
-"It will dock to refuel before accepting new chores"
+"It will dock to replenish its stores before accepting new chores"
 msgstr ""
-"このリモートワーカーはオイルが切れそうです\n"
+"このリモートワーカーはギアオイルが切れそうです\n"
 "\n"
-"新しい作業を受け付ける前にドックで注油が必要です"
+"新しい作業を受け付ける前にドックへ戻り注油する必要があります"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.LOWPOWER.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.LOWPOWER.NAME"
 msgid "Low Power"
-msgstr "パワー不足"
+msgstr "電力低下"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.LOWPOWER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.LOWPOWER.TOOLTIP"
@@ -11312,14 +11403,14 @@ msgid ""
 "\n"
 "It will recharge at its dock before accepting new chores"
 msgstr ""
-"このリモートワーカーは<style=\"KKeyword\">パワー</style>が低下しています\n"
+"このリモートワーカーは<style=\"KKeyword\">電力</style>が低下しています\n"
 "\n"
 "新しい作業を受け付ける前にドックで再充電する必要があります"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.NOHOMEDOCK.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.NOHOMEDOCK.NAME"
 msgid "No Dock"
-msgstr "ドック無し"
+msgstr "ドックがない"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.NOHOMEDOCK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.NOHOMEDOCK.TOOLTIP"
@@ -11328,34 +11419,34 @@ msgstr "このリモートワーカーは戻るべきドックが無いので自
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OILING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OILING.NAME"
-msgid "Refilling Oil"
-msgstr "オイル補充"
+msgid "Refilling Gear Oil"
+msgstr "ギアオイル補充中"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OILING.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OILING.TOOLTIP"
 msgid "This remote worker is lubricating its joints"
-msgstr "このリモートワーカーは間接に注油しています"
+msgstr "このリモートワーカーは関節部に注油しています"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OUTOFOIL.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OUTOFOIL.NAME"
-msgid "No Oil"
-msgstr "オイル無し"
+msgid "No Gear Oil"
+msgstr "ギアオイル切れ"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OUTOFOIL.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OUTOFOIL.TOOLTIP"
 msgid ""
-"This remote worker cannot function without <style=\"KKeyword\">Oil</style>\n"
+"This remote worker cannot function without <style=\"KKeyword\">Gear Oil</style>\n"
 "\n"
 "It must be returned to its dock"
 msgstr ""
-"このリモートワーカーは<style=\"KKeyword\">オイル</style>が無いと機能しません\n"
+"このリモートワーカーは<style=\"KKeyword\">ギアオイル</style>が無いと機能しません\n"
 "\n"
 "ドックに戻る必要があります"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OUTOFPOWER.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OUTOFPOWER.NAME"
 msgid "No Power"
-msgstr "パワー無し"
+msgstr "電力切れ"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OUTOFPOWER.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OUTOFPOWER.TOOLTIP"
@@ -11364,25 +11455,25 @@ msgid ""
 "\n"
 "It must be returned to its dock"
 msgstr ""
-"このリモートワーカーは<style=\"KKeyword\">パワー</style>無しでは機能しません\n"
+"このリモートワーカーは<style=\"KKeyword\">電力</style>が無いと機能しません\n"
 "\n"
 "ドックに戻る必要があります"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.POWERSTATUS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.POWERSTATUS.NAME"
-msgid "[{CHARGE} Power Remaining ({RATIO})]"
-msgstr "[{CHARGE} パワー残量 ({RATIO})]"
+msgid "Power Remaining: {CHARGE} ({RATIO})"
+msgstr "電力残量: {CHARGE} ({RATIO})"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.POWERSTATUS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.POWERSTATUS.TOOLTIP"
 msgid ""
 "This remote worker has {CHARGE} remaining power\n"
 "\n"
-"When <style=\"KKeyword\">Power</style> gets low, it will return to its dock to recharge"
+"When <style=\"KKeyword\">Power</style> gets low, the remote worker will return to its dock to recharge"
 msgstr ""
-"このリモートワーカーはパワーが{CHARGE}残っています\n"
+"このリモートワーカーには {CHARGE} の電力が残っています\n"
 "\n"
-"<style=\"KKeyword\">パワー</style>が低下した場合、ドックに戻って充電する必要があります"
+"<style=\"KKeyword\">電力</style>が低下したときは、ドックに戻って充電する必要があります"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.RECHARGING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.RECHARGING.NAME"
@@ -11402,7 +11493,7 @@ msgstr "辿り着けないドック"
 #. STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.UNREACHABLEDOCK.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.UNREACHABLEDOCK.TOOLTIP"
 msgid "This remote worker cannot reach its dock"
-msgstr "このリモートワーカーはドックにたどり着けません"
+msgstr "このリモートワーカーはドックに辿り着けません"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.REPAIRDELIVERSTATUS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REPAIRDELIVERSTATUS.NAME"
@@ -11958,7 +12049,7 @@ msgstr "残滓排出中"
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGOIL.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGOIL.NOTIFICATION_NAME"
 msgid "Expelled gunk"
-msgstr "残滓排出済"
+msgstr "残滓を排出しました"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGOIL.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGOIL.NOTIFICATION_TOOLTIP"
@@ -11978,9 +12069,9 @@ msgid ""
 "\n"
 "<link=\"GUNKEMPTIER\">Gunk Extractors</link> can be built from the <b>Plumbing Tab</b> {Hotkey/Plan5}"
 msgstr ""
-"このバイオニック複製人間は<link=\"GUNKEMPTIER\">残滓処理装置</link>を見つけるのが間に合わなかったために、とても恥ずかしい思いをしています\n"
+"このバイオニック複製人間は<link=\"GUNKEMPTIER\">残滓排出装置</link>を見つけるのが間に合わなかったために、とても恥ずかしい思いをしています\n"
 "\n"
-"<link=\"GUNKEMPTIER\">残滓処理装置</link>は<b>配管タブ</b> {Hotkey/Plan5} から建築できます"
+"<link=\"GUNKEMPTIER\">残滓排出装置</link>は<b>配管タブ</b> {Hotkey/Plan5} から建築できます"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSVOMITING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSVOMITING.NAME"
@@ -12317,6 +12408,11 @@ msgctxt "STRINGS.DUPLICANTS.THOUGHTS.RAGING.TOOLTIP"
 msgid "Raging"
 msgstr "激怒"
 
+#. STRINGS.DUPLICANTS.THOUGHTS.REFILLOILDESIRE.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.THOUGHTS.REFILLOILDESIRE.TOOLTIP"
+msgid "Low Gear Oil"
+msgstr "ギアオイル低下"
+
 #. STRINGS.DUPLICANTS.THOUGHTS.SLEEPY.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.THOUGHTS.SLEEPY.TOOLTIP"
 msgid "Sleepy"
@@ -12409,12 +12505,12 @@ msgstr "心配性"
 #. STRINGS.DUPLICANTS.TRAITS.ARCHAEOLOGIST.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ARCHAEOLOGIST.DESC"
 msgid "This Duplicant was never taught the phrase \"take only pictures, leave only footprints\""
-msgstr "この複製人間は、「写真だけを取り、足跡だけを残す」という格言を教わったことがないようです"
+msgstr "この複製人間は「とっていいのは写真だけ、残していいのは足跡だけ」という格言を教わったことがないようです"
 
 #. STRINGS.DUPLICANTS.TRAITS.ARCHAEOLOGIST.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ARCHAEOLOGIST.NAME"
 msgid "Relic Hunter"
-msgstr "レリックハンター"
+msgstr "遺物荒らし"
 
 #. STRINGS.DUPLICANTS.TRAITS.ARTDOWN.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ARTDOWN.DESC"
@@ -12444,7 +12540,7 @@ msgstr "バルーンアーティスト"
 #. STRINGS.DUPLICANTS.TRAITS.BANSHEE.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.BANSHEE.DESC"
 msgid "This Duplicant wails uncontrollably when <style=\"KKeyword\">Stressed</style>"
-msgstr "この複製人間は高<style=\"KKeyword\">ストレス</style>下において抑えきれない金切り声を上げます"
+msgstr "この複製人間は<style=\"KKeyword\">ストレス</style>が高まると抑えきれない金切り声を上げます"
 
 #. STRINGS.DUPLICANTS.TRAITS.BANSHEE.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.BANSHEE.NAME"
@@ -12464,32 +12560,195 @@ msgstr "介護士"
 #. STRINGS.DUPLICANTS.TRAITS.BINGEEATER.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.BINGEEATER.DESC"
 msgid "This Duplicant will dangerously overeat when <style=\"KKeyword\">Stressed</style>"
-msgstr "この複製人間は高<style=\"KKeyword\">ストレス</style>下において恐ろしい量の暴食をするでしょう"
+msgstr "この複製人間は<style=\"KKeyword\">ストレス</style>が高まると恐ろしいほどの暴食に走ります"
 
 #. STRINGS.DUPLICANTS.TRAITS.BINGEEATER.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.BINGEEATER.NAME"
 msgid "Binge Eater"
 msgstr "暴食"
 
-#. STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.DESC"
-msgid "This Duplicant has built-in limitations that cannot be changed"
-msgstr "この複製人間には変更不可能な制限が組み込まれています"
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG1.DESC"
+msgid "This Duplicant's bionic systems are quite inflexible"
+msgstr "この複製人間のバイオニックシステムは極めて柔軟性に欠けます"
 
-#. STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.NAME
-msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.NAME"
-msgid "Bionic Bug: Gormless"
-msgstr "バイオニックバグ: 愚鈍"
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG1.NAME"
+msgid "Bionic Bug: Rigid Thinking"
+msgstr "バイオニック バグ: 杓子定規"
 
-#. STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.SHORT_DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.SHORT_DESC"
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG1.SHORT_DESC"
+msgid "No passive attribute leveling"
+msgstr "能力値の成長なし"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG1.SHORT_DESC_TOOLTIP"
 msgid ""
+"Does not level up attributes while performing errands\n"
+"\n"
+"Requires boosters to improve skills"
 msgstr ""
+"作業の経験を積んでも能力値が成長しません\n"
+"\n"
+"能力値を伸ばすにはブースターが必要です"
 
-#. STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.SHORT_DESC_TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.SHORT_DESC_TOOLTIP"
-msgid "Intelligence is one thing, instinct is another. This Duplicant struggles with both"
-msgstr "知性と本能は別物です。この複製人間は知性と本能の両方に苦しんでいます"
+# "connector"には何か意味がある？
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG2.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG2.DESC"
+msgid "This Duplicant's bionic systems are built without \"connector\" parts"
+msgstr "この複製人間のバイオニックシステムは「接続」パーツを使わずに作られています"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG2.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG2.NAME"
+msgid "Bionic Bug: Dissociative"
+msgstr "バイオニック バグ: 解離症"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG2.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG2.SHORT_DESC"
+msgid "No passive attribute leveling"
+msgstr "能力値の成長なし"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG2.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG2.SHORT_DESC_TOOLTIP"
+msgid ""
+"Does not level up attributes while performing errands\n"
+"\n"
+"Requires boosters to improve skills"
+msgstr ""
+"作業の経験を積んでも能力値が成長しません\n"
+"\n"
+"能力値を伸ばすにはブースターが必要です"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG3.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG3.DESC"
+msgid "This Duplicant's bionic systems aren't designed to operate other systems"
+msgstr "この複製人間のバイオニックシステムは別のシステムを操作するようには作られていません"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG3.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG3.NAME"
+msgid "Bionic Bug: All Thumbs"
+msgstr "バイオニック バグ: 全て親指"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG3.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG3.SHORT_DESC"
+msgid "No passive attribute leveling"
+msgstr "能力値の成長なし"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG3.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG3.SHORT_DESC_TOOLTIP"
+msgid ""
+"Does not level up attributes while performing errands\n"
+"\n"
+"Requires boosters to improve skills"
+msgstr ""
+"作業の経験を積んでも能力値が成長しません\n"
+"\n"
+"能力値を伸ばすにはブースターが必要です"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG4.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG4.DESC"
+msgid "This Duplicant's bionic systems rarely get past the processing stage"
+msgstr "この複製人間のバイオニックシステムが演算処理を完了することは稀です"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG4.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG4.NAME"
+msgid "Bionic Bug: Overengineered"
+msgstr "バイオニック バグ: 過剰設計"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG4.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG4.SHORT_DESC"
+msgid "No passive attribute leveling"
+msgstr "能力値の成長なし"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG4.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG4.SHORT_DESC_TOOLTIP"
+msgid ""
+"Does not level up attributes while performing errands\n"
+"\n"
+"Requires boosters to improve skills"
+msgstr ""
+"作業の経験を積んでも能力値が成長しません\n"
+"\n"
+"能力値を伸ばすにはブースターが必要です"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG5.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG5.DESC"
+msgid "This Duplicant's bionic systems weren't built for speed"
+msgstr "この複製人間のバイオニックシステムは速度のことを考慮していません"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG5.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG5.NAME"
+msgid "Bionic Bug: Late Bloomer"
+msgstr "バイオニック バグ: 遅咲き"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG5.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG5.SHORT_DESC"
+msgid "No passive attribute leveling"
+msgstr "能力値の成長なし"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG5.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG5.SHORT_DESC_TOOLTIP"
+msgid ""
+"Does not level up attributes while performing errands\n"
+"\n"
+"Requires boosters to improve skills"
+msgstr ""
+"作業の経験を積んでも能力値が成長しません\n"
+"\n"
+"能力値を伸ばすにはブースターが必要です"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG6.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG6.DESC"
+msgid "This Duplicant's bionic systems were designed by someone who'd never seen a plant in real life"
+msgstr "この複製人間のバイオニックシステムは実生活で植物を見たことのない人が設計したものです"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG6.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG6.NAME"
+msgid "Bionic Bug: Urbanite"
+msgstr "バイオニック バグ: 都会人"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG6.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG6.SHORT_DESC"
+msgid "No passive attribute leveling"
+msgstr "能力値の成長なし"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG6.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG6.SHORT_DESC_TOOLTIP"
+msgid ""
+"Does not level up attributes while performing errands\n"
+"\n"
+"Requires boosters to improve skills"
+msgstr ""
+"作業の経験を積んでも能力値が成長しません\n"
+"\n"
+"能力値を伸ばすにはブースターが必要です"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG7.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG7.DESC"
+msgid "This Duplicant's bionic systems err on the side of erring"
+msgstr "この複製人間のバイオニックシステムは誤り過ぎるほど誤ります"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG7.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG7.NAME"
+msgid "Bionic Bug: Error Prone"
+msgstr "バイオニック バグ: エラー発生機"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG7.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG7.SHORT_DESC"
+msgid "No passive attribute leveling"
+msgstr "能力値の成長なし"
+
+#. STRINGS.DUPLICANTS.TRAITS.BIONICBUG7.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBUG7.SHORT_DESC_TOOLTIP"
+msgid ""
+"Does not level up attributes while performing errands\n"
+"\n"
+"Requires boosters to improve skills"
+msgstr ""
+"作業の経験を積んでも能力値が成長しません\n"
+"\n"
+"能力値を伸ばすにはブースターが必要です"
 
 #. STRINGS.DUPLICANTS.TRAITS.BOTANISTDOWN.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.BOTANISTDOWN.DESC"
@@ -12650,214 +12909,6 @@ msgstr "この複製人間は息を止めることにおいて素晴らしい能
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.NAME"
 msgid "Deep Diver's Lungs"
 msgstr "ディープダイバーの肺"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.DESC"
-msgid "This Duplicant begins with a pre-installed <b>Decorating Booster</b>"
-msgstr "この複製人間は<b>装飾ブースター</b>がプレインストールされています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.NAME
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.NAME"
-msgid "Bionic Booster: Decorating"
-msgstr "バイオニックブースター: 装飾"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.SHORT_DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.SHORT_DESC"
-msgid "Increased <b>Creativity</b>"
-msgstr "<b>創造</b>が増加"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.SHORT_DESC_TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.SHORT_DESC_TOOLTIP"
-msgid ""
-"Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
-"\n"
-"This Duplicant's pre-installed Decorating Booster gives them increased <b>Creativity</b>"
-msgstr ""
-"バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
-"\n"
-"この複製人間は装飾ブースターがプレインストール済で、<b>創造</b>スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.DESC"
-msgid "This Duplicant begins with a pre-installed <b>Building Booster</b>"
-msgstr "この複製人間は<b>建築ブースター</b>がプレインストールされています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.NAME
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.NAME"
-msgid "Bionic Booster: Building"
-msgstr "バイオニックブースター: 建築"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.SHORT_DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.SHORT_DESC"
-msgid "Increased <b>Construction</b>"
-msgstr "<b>建築</b>が増加"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.SHORT_DESC_TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.SHORT_DESC_TOOLTIP"
-msgid ""
-"Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
-"\n"
-"This Duplicant's pre-installed Building Booster gives them increased <b>Construction</b>"
-msgstr ""
-"バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
-"\n"
-"この複製人間は建築ブースターがプレインストール済で、<b>建築</b>スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.DESC"
-msgid "This Duplicant begins with a pre-installed <b>Cooking Booster</b>"
-msgstr "この複製人間は<b>料理ブースター</b>がプレインストールされています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.NAME
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.NAME"
-msgid "Bionic Booster: Cooking"
-msgstr "バイオニックブースター: 料理"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.SHORT_DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.SHORT_DESC"
-msgid "Increased <b>Cuisine</b>"
-msgstr "<b>料理</b>が増加"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.SHORT_DESC_TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.SHORT_DESC_TOOLTIP"
-msgid ""
-"Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
-"\n"
-"This Duplicant's pre-installed Cooking Booster gives them increased <b>Cuisine</b>"
-msgstr ""
-"バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
-"\n"
-"この複製人間は料理ブースターがプレインストール済で、<b>料理</b>スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.DESC"
-msgid "This Duplicant begins with a pre-installed <b>Excavation Booster</b>"
-msgstr "この複製人間は<b>採掘ブースター</b>がプレインストールされています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.NAME
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.NAME"
-msgid "Bionic Booster: Excavation"
-msgstr "バイオニックブースター: 採掘"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.SHORT_DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.SHORT_DESC"
-msgid "Increased <b>Digging</b>"
-msgstr "<b>採掘</b>が増加"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.SHORT_DESC_TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.SHORT_DESC_TOOLTIP"
-msgid ""
-"Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
-"\n"
-"This Duplicant's pre-installed Excavation Booster gives them increased <b>Digging</b>"
-msgstr ""
-"バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
-"\n"
-"この複製人間は採掘ブースターがプレインストール済で、<b>採掘</b>スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.DESC"
-msgid "This Duplicant begins with a pre-installed <b>Dowsing Booster</b>"
-msgstr "この複製人間は<b>ダウジングブースター</b>がプレインストールされています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.NAME
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.NAME"
-msgid "Bionic Booster: Dowsing"
-msgstr "バイオニックブースター: ダウジング"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.SHORT_DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.SHORT_DESC"
-msgid "Locates undiscovered geysers"
-msgstr "未発見の間欠泉の場所を特定します"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.SHORT_DESC_TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.SHORT_DESC_TOOLTIP"
-msgid ""
-"Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
-"\n"
-"This Duplicant's pre-installed Dowsing Booster allows them to locate undiscovered geysers"
-msgstr ""
-"バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
-"\n"
-"この複製人間はダウジングブースターがプレインストール済で、未発見の間欠泉の場所を特定できます"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.DESC"
-msgid "This Duplicant begins with a pre-installed <b>Farming Booster</b>"
-msgstr "この複製人間は<b>農業ブースター</b>がプレインストールされています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.NAME
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.NAME"
-msgid "Bionic Booster: Farming"
-msgstr "バイオニックブースター: 農業"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.SHORT_DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.SHORT_DESC"
-msgid "Increased <b>Agriculture</b>"
-msgstr "<b>農業</b>が増加"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.SHORT_DESC_TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.SHORT_DESC_TOOLTIP"
-msgid ""
-"Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
-"\n"
-"This Duplicant's pre-installed Farming Booster gives them increased <b>Agriculture</b>"
-msgstr ""
-"バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
-"\n"
-"この複製人間は農業ブースターがプレインストール済で、<b>農業</b>スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.DESC"
-msgid "This Duplicant begins with a pre-installed <b>Doctoring Booster</b>"
-msgstr "この複製人間は<b>医療ブースター</b>がプレインストールされています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.NAME
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.NAME"
-msgid "Bionic Booster: Doctoring"
-msgstr "バイオニックブースター: 医療"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.SHORT_DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.SHORT_DESC"
-msgid "Increased <b>Medicine</b>"
-msgstr "<b>医療</b>が増加"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.SHORT_DESC_TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.SHORT_DESC_TOOLTIP"
-msgid ""
-"Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
-"\n"
-"This Duplicant's pre-installed Doctoring Booster gives them increased <b>Medicine</b>"
-msgstr ""
-"バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
-"\n"
-"この複製人間は医療ブースターがプレインストール済で、<b>医療</b>スキルが上昇しています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.DESC"
-msgid "This Duplicant begins with a pre-installed <b>Ranching Booster</b>"
-msgstr "この複製人間は<b>畜産ブースター</b>がプレインストールされています"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.NAME
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.NAME"
-msgid "Bionic Booster: Ranching"
-msgstr "バイオニックブースター: 畜産"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.SHORT_DESC
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.SHORT_DESC"
-msgid "Increased <b>Husbandry</b>"
-msgstr "<b>畜産</b>が増加"
-
-#. STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.SHORT_DESC_TOOLTIP
-msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.SHORT_DESC_TOOLTIP"
-msgid ""
-"Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
-"\n"
-"This Duplicant's pre-installed Ranching Booster gives them increased <b>Husbandry</b>"
-msgstr ""
-"バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
-"\n"
-"この複製人間は畜産ブースターがプレインストール済で、<b>畜産</b>スキルが上昇しています"
 
 #. STRINGS.DUPLICANTS.TRAITS.DIGGINGDOWN.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DIGGINGDOWN.DESC"
@@ -14118,7 +14169,7 @@ msgstr "この複製人間はとにかく何でも筋肉で解決します！"
 #. STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.NAME"
 msgid "Beefsteak"
-msgstr "筋肉第一主義"
+msgstr "脳筋"
 
 #. STRINGS.DUPLICANTS.TRAITS.SCAREDYCAT.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.SCAREDYCAT.DESC"
@@ -14210,6 +14261,351 @@ msgctxt "STRINGS.DUPLICANTS.TRAITS.STARRYEYED.SHORT_DESC_TOOLTIP"
 msgid "In outer space: <b>+10</b> <style=\"KKeyword\">Morale</style>"
 msgstr "宇宙に居る間: <style=\"KKeyword\">士気</style> <b>+10</b>"
 
+#. STRINGS.DUPLICANTS.TRAITS.STARTING_BIONIC_BOOSTER_SHARED_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTING_BIONIC_BOOSTER_SHARED_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_ART1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_ART1.DESC"
+msgid "Grants a Bionic Duplicant flawless decorating skills."
+msgstr "バイオニック複製人間に、完璧な装飾を施す技術を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_ART1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_ART1.NAME"
+msgid "<link=\"BOOSTERART1\">Masterworks Art Booster</link>"
+msgstr "<link=\"BOOSTERART1\">傑作ブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_ART1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_ART1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERART1\">Masterworks Art Booster</link></b>"
+msgstr "<b><link=\"BOOSTERART1\">傑作ブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_ART1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_ART1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CARRY1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CARRY1.DESC"
+msgid "Grants a Bionic Duplicant increased carrying capacity and athletic prowess."
+msgstr "バイオニック複製人間の運搬容量と移動速度を上昇させます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CARRY1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CARRY1.NAME"
+msgid "<link=\"BOOSTERCARRY1\">Strength Booster</link>"
+msgstr "<link=\"BOOSTERCARRY1\">筋力ブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CARRY1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CARRY1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERCARRY1\">Strength Booster</link></b>"
+msgstr "<b><link=\"BOOSTERCARRY1\">筋力ブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CARRY1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CARRY1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CONSTRUCT1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CONSTRUCT1.DESC"
+msgid "Grants a Bionic Duplicant the ability to build fast, and demolish buildings that others cannot."
+msgstr "バイオニック複製人間の建築速度を上昇させ、さらに通常では解体できない設備を解体する能力を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CONSTRUCT1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CONSTRUCT1.NAME"
+msgid "<link=\"BOOSTERCONSTRUCT1\">Construction Booster</link>"
+msgstr "<link=\"BOOSTERCONSTRUCT1\">建築ブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CONSTRUCT1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CONSTRUCT1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERCONSTRUCT1\">Construction Booster</link></b>"
+msgstr "<b><link=\"BOOSTERCONSTRUCT1\">建築ブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CONSTRUCT1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_CONSTRUCT1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_COOK1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_COOK1.DESC"
+msgid "Grants a Bionic Duplicant deliciously professional culinary skills."
+msgstr "バイオニック複製人間に、店を開けるほど美味しい料理の腕前を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_COOK1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_COOK1.NAME"
+msgid "<link=\"BOOSTERCOOK1\">Grilling Booster</link>"
+msgstr "<link=\"BOOSTERCOOK1\">グリルブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_COOK1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_COOK1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERCOOK1\">Grilling Booster</link></b>"
+msgstr "<b><link=\"BOOSTERCOOK1\">グリルブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_COOK1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_COOK1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG1.DESC"
+msgid "Grants a Bionic Duplicant the skill required to dig hard things."
+msgstr "バイオニック複製人間に、硬い地盤を掘り進められる技術を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG1.NAME"
+msgid "<link=\"BOOSTERDIG1\">Digging Booster</link>"
+msgstr "<link=\"BOOSTERDIG1\">採掘ブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERDIG1\">Digging Booster</link></b>"
+msgstr "<b><link=\"BOOSTERDIG1\">採掘ブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG2.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG2.DESC"
+msgid "Grants a Bionic Duplicant the digging skill required to get through anything."
+msgstr "バイオニック複製人間に、どんなものでも掘り進められる技術を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG2.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG2.NAME"
+msgid "<link=\"BOOSTERDIG2\">Extreme Digging Booster</link>"
+msgstr "<link=\"BOOSTERDIG2\">超硬質採掘ブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG2.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG2.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERDIG2\">Extreme Digging Booster</link></b>"
+msgstr "<b><link=\"BOOSTERDIG2\">超硬質採掘ブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG2.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_DIG2.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_FARM1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_FARM1.DESC"
+msgid "Grants a Bionic Duplicant unparalleled farming and botanical analysis skills."
+msgstr "バイオニック複製人間に、比類なき農業の腕前と植物分析の技術を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_FARM1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_FARM1.NAME"
+msgid "<link=\"BOOSTERFARM1\">Crop Tending Booster</link>"
+msgstr "<link=\"BOOSTERFARM1\">作物の手入れブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_FARM1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_FARM1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERFARM1\">Crop Tending Booster</link></b>"
+msgstr "<b><link=\"BOOSTERFARM1\">作物の手入れブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_FARM1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_FARM1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_MEDICINE1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_MEDICINE1.DESC"
+msgid "Grants a Bionic Duplicant the ability to perform all doctoring errands."
+msgstr "バイオニック複製人間に、あらゆる医師の作業をこなせる能力を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_MEDICINE1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_MEDICINE1.NAME"
+msgid "<link=\"BOOSTERMEDICINE1\">Advanced Medical Booster</link>"
+msgstr "<link=\"BOOSTERMEDICINE1\">高度な医療看護ブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_MEDICINE1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_MEDICINE1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERMEDICINE1\">Advanced Medical Booster</link></b>"
+msgstr "<b><link=\"BOOSTERMEDICINE1\">高度な医療看護ブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_MEDICINE1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_MEDICINE1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.DESC"
+msgid "Grants a Bionic Duplicant the skills requried to tinker and solder to their heart's content."
+msgstr "バイオニック複製人間に、心ゆくまで機械いじりやはんだ付けができる技術を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.NAME"
+msgid "<link=\"BOOSTEROP1\">Electrical Engineering Booster</link>"
+msgstr "<link=\"BOOSTEROP1\">電気工学ブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTEROP1\">Electrical Engineering Booster</link></b>"
+msgstr "<b><link=\"BOOSTEROP1\">電気工学ブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_RANCH1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_RANCH1.DESC"
+msgid "Grants a Bionic Duplicant the skills required to care for <link=\"CREATURES\">Critters</link>  in every way."
+msgstr "バイオニック複製人間に、あらゆる方法で<link=\"CREATURES\">動物</link>の世話をする技術を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_RANCH1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_RANCH1.NAME"
+msgid "<link=\"BOOSTERRANCH1\">Ranching Booster</link>"
+msgstr "<link=\"BOOSTERRANCH1\">牧畜ブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_RANCH1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_RANCH1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERRANCH1\">Ranching Booster</link></b>"
+msgstr "<b><link=\"BOOSTERRANCH1\">牧畜ブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_RANCH1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_RANCH1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_SUITS1.DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_SUITS1.DESC"
+msgid "Enables a Bionic Duplicant to maximize durability of equipped <link=\"EQUIPMENT\">Exosuits</link> and maintain their runspeed."
+msgstr "<link=\"EQUIPMENT\">EXOスーツ</link>を着用したバイオニック複製人間に、スーツを最大まで長持ちさせたり、いつもと同じ速度で移動できる技術を与えます。"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_SUITS1.NAME
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_SUITS1.NAME"
+msgid "<link=\"BOOSTERSUITS1\">Suit Training Booster</link>"
+msgstr "<link=\"BOOSTERSUITS1\">スーツトレーニングブースター</link>"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_SUITS1.SHORT_DESC
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_SUITS1.SHORT_DESC"
+msgid "Starts with a preinstalled <b><link=\"BOOSTERSUITS1\">Suit Training Booster</link></b>"
+msgstr "<b><link=\"BOOSTERSUITS1\">スーツトレーニングブースター</link></b>を装着して開始"
+
+#. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_SUITS1.SHORT_DESC_TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_SUITS1.SHORT_DESC_TOOLTIP"
+msgid ""
+"Bionic Duplicants use boosters to increase their skills and attributes\n"
+"\n"
+"Boosters can be crafted at the <link=\"CRAFTINGTABLE\">Crafting Station</link> and <link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link>\n"
+"\n"
+"Preinstalled booster effects:"
+msgstr ""
+"バイオニック複製人間はブースターを使用してスキルや能力値を獲得します\n"
+"\n"
+"ブースターは<link=\"CRAFTINGTABLE\">工作端末</link>と<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で製作できます\n"
+"\n"
+"装着済みブースターの効果:"
+
 #. STRINGS.DUPLICANTS.TRAITS.STICKERBOMBER.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.STICKERBOMBER.DESC"
 msgid "This Duplicant will spontaneously redecorate a room when they are <style=\"KKeyword\">Overjoyed</style>"
@@ -14223,7 +14619,7 @@ msgstr "ステッカーボマー"
 #. STRINGS.DUPLICANTS.TRAITS.STRESSSHOCKER.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.STRESSSHOCKER.DESC"
 msgid "This Duplicant emits electrical shocks when <style=\"KKeyword\">Stressed</style>"
-msgstr "この複製人間は高<style=\"KKeyword\">ストレス</style>下において電気ショックを発生させます"
+msgstr "この複製人間は<style=\"KKeyword\">ストレス</style>が高まると電気ショックを放ちます"
 
 #. STRINGS.DUPLICANTS.TRAITS.STRESSSHOCKER.DRAIN_ATTRIBUTE
 msgctxt "STRINGS.DUPLICANTS.TRAITS.STRESSSHOCKER.DRAIN_ATTRIBUTE"
@@ -14238,7 +14634,7 @@ msgstr "気絶"
 #. STRINGS.DUPLICANTS.TRAITS.STRESSVOMITER.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.STRESSVOMITER.DESC"
 msgid "This Duplicant is liable to puke everywhere when <style=\"KKeyword\">Stressed</style>"
-msgstr "この複製人間は高<style=\"KKeyword\">ストレス</style>下において辺り構わず嘔吐するでしょう"
+msgstr "この複製人間は<style=\"KKeyword\">ストレス</style>が高まると辺り構わず嘔吐します"
 
 #. STRINGS.DUPLICANTS.TRAITS.STRESSVOMITER.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.STRESSVOMITER.NAME"
@@ -14354,6 +14750,378 @@ msgstr "全宇宙のビタミンCを以てしても、この複製人間が罹�
 msgctxt "STRINGS.DUPLICANTS.TRAITS.WEAKIMMUNESYSTEM.NAME"
 msgid "Biohazardous"
 msgstr "バイオハザード"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BIONICOILDELTA.NAME"
+#~ msgid "Oil"
+#~ msgstr "オイル"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.BEBATTERYSAVEMODE.NAME"
+#~ msgid "Standby Mode"
+#~ msgstr "スタンバイモード"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.BEBATTERYSAVEMODE.STATUS"
+#~ msgid "Standby Mode"
+#~ msgstr "スタンバイモード"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.BEBATTERYSAVEMODE.TOOLTIP"
+#~ msgid ""
+#~ "This Duplicant is resting\n"
+#~ "\n"
+#~ "Their <style=\"KKeyword\">Power</style> consumption is at a minimum"
+#~ msgstr ""
+#~ "この複製人間は待機中です\n"
+#~ "\n"
+#~ "<style=\"KKeyword\">電力</style>消費量は最小限です"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.EXPELLGUNK.NAME"
+#~ msgid "Expel Liquid Gunk"
+#~ msgstr "液体残滓排出"
+
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.EXPELLGUNK.STATUS"
+#~ msgid "Expelling liquid gunk"
+#~ msgstr "液体残滓排出中"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.SAVING_MODE_TEMPLATE"
+#~ msgid "{0} ({1}): {2}"
+#~ msgstr "{0} ({1}): {2}"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.STANDARD_ACTIVE_TEMPLATE"
+#~ msgid "{0}: {1}"
+#~ msgstr "{0}: {1}"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONIC_WATTS.STANDARD_INACTIVE_TEMPLATE"
+#~ msgid "{0}: {1}"
+#~ msgstr "{0}: {1}"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICAGRICULTUREBOOST.NAME"
+#~ msgid "Agriculture Boost"
+#~ msgstr "農業ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICAGRICULTUREBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased agricultural skills thanks to the <style=\"KKeyword\">Farming Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">農業ブースター</style>によって農業スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICATHLETICSBOOST.NAME"
+#~ msgid "Athletics Boost"
+#~ msgstr "運動ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICATHLETICSBOOST.TOOLTIP"
+#~ msgid "This Duplicant has extra zip in their step thanks to the <style=\"KKeyword\">Athletics Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">運動ブースト</style>によって足取りが素早くなっています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICBATTERYSAVEMODE.NAME"
+#~ msgid "Peaceful Processing"
+#~ msgstr "ゆっくり処理中"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICBATTERYSAVEMODE.TOOLTIP"
+#~ msgid ""
+#~ "This Duplicant is enjoying a reprieve from the demands of high-wattage life\n"
+#~ "\n"
+#~ "<style=\"KKeyword\">Stress</style> is reduced while in Standby Mode"
+#~ msgstr ""
+#~ "この複製人間は高ワットが要求される生活から解放されています\n"
+#~ "\n"
+#~ "スタンバイモード中は<style=\"KKeyword\">ストレス</style>が軽減されます"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCONSTRUCTIONBOOST.NAME"
+#~ msgid "Construction Boost"
+#~ msgstr "建築ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCONSTRUCTIONBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased construction skills thanks to the <style=\"KKeyword\">Building Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">建築ブースター</style>によって建築スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCOOKINGBOOST.NAME"
+#~ msgid "Cuisine Boost"
+#~ msgstr "料理ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCOOKINGBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased culinary skills thanks to the <style=\"KKeyword\">Cooking Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">料理ブースター</style>によって料理スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCREATIVITYBOOST.NAME"
+#~ msgid "Creativity Boost"
+#~ msgstr "創造ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICCREATIVITYBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased decorating skills thanks to the <style=\"KKeyword\">Creativity Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">創造ブースター</style>によって創造スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICEXCAVATIONBOOST.NAME"
+#~ msgid "Excavation Boost"
+#~ msgstr "採掘ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICEXCAVATIONBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased excavation skills thanks to the <style=\"KKeyword\">Digging Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">採掘ブースター</style>によって採掘スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICHUSBANDRYBOOST.NAME"
+#~ msgid "Husbandry Boost"
+#~ msgstr "畜産ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICHUSBANDRYBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased critter husbandry skills thanks to the <style=\"KKeyword\">Ranching Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">畜産ブースター</style>によって畜産スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICMACHINERYBOOST.NAME"
+#~ msgid "Machinery Boost"
+#~ msgstr "操作ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICMACHINERYBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased machine operating skills thanks to the <style=\"KKeyword\">Operating Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">操作ブースター</style>によって操作スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICMEDICINEBOOST.NAME"
+#~ msgid "Medicine Boost"
+#~ msgstr "医学ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICMEDICINEBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased medical skills thanks to the <style=\"KKeyword\">Doctoring Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">医学ブースター</style>によって医学スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICPILOTINGBOOST.NAME"
+#~ msgid "Piloting Boost"
+#~ msgstr "操縦ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICPILOTINGBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased rocket piloting skills thanks to the <style=\"KKeyword\">Rocketry Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">操縦ブースター</style>によって操縦スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICSCIENCEBOOST.NAME"
+#~ msgid "Science Boost"
+#~ msgstr "科学ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICSCIENCEBOOST.TOOLTIP"
+#~ msgid "This Duplicant has increased scientific research skills thanks to the <style=\"KKeyword\">Researching Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">研究ブースター</style>によって科学スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICSTRENGTHBOOST.NAME"
+#~ msgid "Strength Boost"
+#~ msgstr "筋力ブースト"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BIONICSTRENGTHBOOST.TOOLTIP"
+#~ msgid "This Duplicant is extra strong thanks to the <style=\"KKeyword\">Strength Booster</style> they have installed"
+#~ msgstr "この複製人間はインストールされた<style=\"KKeyword\">筋力ブースター</style>によって筋力スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBIONICUPKEEP.NAME"
+#~ msgid "Workshop"
+#~ msgstr "ワークショップ"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBIONICUPKEEP.TOOLTIP"
+#~ msgid "This Duplicant used a <link=\"GUNKEMPTIER\">Gunk Extractor</link> in a <style=\"KKeyword\">Workshop</style>"
+#~ msgstr "この複製人間は<style=\"KKeyword\">ワークショップ</style>の<style=\"KKeyword\">残滓処理装置</style>を使用しました"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.NAME"
+#~ msgid "Deafening Shriek"
+#~ msgstr "耳をつんざく叫び"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.NOTIFICATION_NAME"
+#~ msgid "Banshee Wailing"
+#~ msgstr "バンシーの金切り声"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.STRESSSHOCKER.TOOLTIP"
+#~ msgid "This Duplicant is wailing at the top of their lungs as a result of <style=\"KKeyword\">Stress</style>"
+#~ msgstr "この複製人間は<style=\"KKeyword\">ストレス</style>の結果として声を限りに叫んでいます"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.WATERDAMAGE.NAME"
+#~ msgid "Liquid Damage"
+#~ msgstr "液体による損傷"
+
+#~ msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.ULTI.DESC"
+#~ msgid "The only dance move this {0} knows is The Robot."
+#~ msgstr "この{0}が唯一出来るダンスムーブはロボットダンスです。"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATS.BIONICOIL.NAME"
+#~ msgid "Oil"
+#~ msgstr "オイル"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.BIONICWANTSOILCHANGE.NAME"
+#~ msgid "Low Oil"
+#~ msgstr "オイル切れ"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.FULLGUNK.NAME"
+#~ msgid "Full of Gunk"
+#~ msgstr "残滓満タン"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.LOWOIL.NAME"
+#~ msgid "Low Oil"
+#~ msgstr "オイル切れ"
+
+#~ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REMOTEWORKER.OUTOFOIL.NAME"
+#~ msgid "No Oil"
+#~ msgstr "オイル無し"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.DESC"
+#~ msgid "This Duplicant has built-in limitations that cannot be changed"
+#~ msgstr "この複製人間には変更不可能な制限が組み込まれています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.BIONICBASELINE.SHORT_DESC_TOOLTIP"
+#~ msgid "Intelligence is one thing, instinct is another. This Duplicant struggles with both"
+#~ msgstr "知性と本能は別物です。この複製人間は知性と本能の両方に苦しんでいます"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.DESC"
+#~ msgid "This Duplicant begins with a pre-installed <b>Decorating Booster</b>"
+#~ msgstr "この複製人間は<b>装飾ブースター</b>がプレインストールされています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.NAME"
+#~ msgid "Bionic Booster: Decorating"
+#~ msgstr "バイオニックブースター: 装飾"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.SHORT_DESC"
+#~ msgid "Increased <b>Creativity</b>"
+#~ msgstr "<b>創造</b>が増加"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTART.SHORT_DESC_TOOLTIP"
+#~ msgid ""
+#~ "Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
+#~ "\n"
+#~ "This Duplicant's pre-installed Decorating Booster gives them increased <b>Creativity</b>"
+#~ msgstr ""
+#~ "バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
+#~ "\n"
+#~ "この複製人間は装飾ブースターがプレインストール済で、<b>創造</b>スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.NAME"
+#~ msgid "Bionic Booster: Building"
+#~ msgstr "バイオニックブースター: 建築"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.SHORT_DESC"
+#~ msgid "Increased <b>Construction</b>"
+#~ msgstr "<b>建築</b>が増加"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTBUILDING.SHORT_DESC_TOOLTIP"
+#~ msgid ""
+#~ "Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
+#~ "\n"
+#~ "This Duplicant's pre-installed Building Booster gives them increased <b>Construction</b>"
+#~ msgstr ""
+#~ "バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
+#~ "\n"
+#~ "この複製人間は建築ブースターがプレインストール済で、<b>建築</b>スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.DESC"
+#~ msgid "This Duplicant begins with a pre-installed <b>Cooking Booster</b>"
+#~ msgstr "この複製人間は<b>料理ブースター</b>がプレインストールされています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.NAME"
+#~ msgid "Bionic Booster: Cooking"
+#~ msgstr "バイオニックブースター: 料理"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.SHORT_DESC"
+#~ msgid "Increased <b>Cuisine</b>"
+#~ msgstr "<b>料理</b>が増加"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTCOOKING.SHORT_DESC_TOOLTIP"
+#~ msgid ""
+#~ "Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
+#~ "\n"
+#~ "This Duplicant's pre-installed Cooking Booster gives them increased <b>Cuisine</b>"
+#~ msgstr ""
+#~ "バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
+#~ "\n"
+#~ "この複製人間は料理ブースターがプレインストール済で、<b>料理</b>スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.DESC"
+#~ msgid "This Duplicant begins with a pre-installed <b>Excavation Booster</b>"
+#~ msgstr "この複製人間は<b>採掘ブースター</b>がプレインストールされています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.NAME"
+#~ msgid "Bionic Booster: Excavation"
+#~ msgstr "バイオニックブースター: 採掘"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.SHORT_DESC"
+#~ msgid "Increased <b>Digging</b>"
+#~ msgstr "<b>採掘</b>が増加"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTDIGGING.SHORT_DESC_TOOLTIP"
+#~ msgid ""
+#~ "Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
+#~ "\n"
+#~ "This Duplicant's pre-installed Excavation Booster gives them increased <b>Digging</b>"
+#~ msgstr ""
+#~ "バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
+#~ "\n"
+#~ "この複製人間は採掘ブースターがプレインストール済で、<b>採掘</b>スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.DESC"
+#~ msgid "This Duplicant begins with a pre-installed <b>Dowsing Booster</b>"
+#~ msgstr "この複製人間は<b>ダウジングブースター</b>がプレインストールされています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.NAME"
+#~ msgid "Bionic Booster: Dowsing"
+#~ msgstr "バイオニックブースター: ダウジング"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.SHORT_DESC"
+#~ msgid "Locates undiscovered geysers"
+#~ msgstr "未発見の間欠泉の場所を特定します"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTEXPLORER.SHORT_DESC_TOOLTIP"
+#~ msgid ""
+#~ "Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
+#~ "\n"
+#~ "This Duplicant's pre-installed Dowsing Booster allows them to locate undiscovered geysers"
+#~ msgstr ""
+#~ "バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
+#~ "\n"
+#~ "この複製人間はダウジングブースターがプレインストール済で、未発見の間欠泉の場所を特定できます"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.DESC"
+#~ msgid "This Duplicant begins with a pre-installed <b>Farming Booster</b>"
+#~ msgstr "この複製人間は<b>農業ブースター</b>がプレインストールされています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.NAME"
+#~ msgid "Bionic Booster: Farming"
+#~ msgstr "バイオニックブースター: 農業"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.SHORT_DESC"
+#~ msgid "Increased <b>Agriculture</b>"
+#~ msgstr "<b>農業</b>が増加"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTFARMING.SHORT_DESC_TOOLTIP"
+#~ msgid ""
+#~ "Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
+#~ "\n"
+#~ "This Duplicant's pre-installed Farming Booster gives them increased <b>Agriculture</b>"
+#~ msgstr ""
+#~ "バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
+#~ "\n"
+#~ "この複製人間は農業ブースターがプレインストール済で、<b>農業</b>スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.DESC"
+#~ msgid "This Duplicant begins with a pre-installed <b>Doctoring Booster</b>"
+#~ msgstr "この複製人間は<b>医療ブースター</b>がプレインストールされています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.NAME"
+#~ msgid "Bionic Booster: Doctoring"
+#~ msgstr "バイオニックブースター: 医療"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.SHORT_DESC"
+#~ msgid "Increased <b>Medicine</b>"
+#~ msgstr "<b>医療</b>が増加"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTMEDICINE.SHORT_DESC_TOOLTIP"
+#~ msgid ""
+#~ "Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
+#~ "\n"
+#~ "This Duplicant's pre-installed Doctoring Booster gives them increased <b>Medicine</b>"
+#~ msgstr ""
+#~ "バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
+#~ "\n"
+#~ "この複製人間は医療ブースターがプレインストール済で、<b>医療</b>スキルが上昇しています"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.SHORT_DESC"
+#~ msgid "Increased <b>Husbandry</b>"
+#~ msgstr "<b>畜産</b>が増加"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.DEFAULTBIONICBOOSTRANCHING.SHORT_DESC_TOOLTIP"
+#~ msgid ""
+#~ "Bionic Duplicants can install boosters that provide an immediate increase to specific skills\n"
+#~ "\n"
+#~ "This Duplicant's pre-installed Ranching Booster gives them increased <b>Husbandry</b>"
+#~ msgstr ""
+#~ "バイオニック複製人間は特定のスキルを即座に強化可能なブースターをインストールできます\n"
+#~ "\n"
+#~ "この複製人間は畜産ブースターがプレインストール済で、<b>畜産</b>スキルが上昇しています"
 
 #~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.BASEDUPLICANT.NAME"
 #~ msgid "Duplicant"
