@@ -1633,6 +1633,12 @@ msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.EGG_SHELL.NAME"
 msgid "<link=\"EGGSHELL\">Egg Shell</link>"
 msgstr "<link=\"EGGSHELL\">卵の殻</link>"
 
+# エコ 電力バンクのリンク先は"ELECTROBANK"
+# 水に濡れると破損する。H2O以外の液体は基本的に平気。
+# ・水、汚染水、塩水、濃塩水: 壊れる
+# ・石油、エタノール、液体残滓: 影響なし
+# ・モー乳: 影響なし
+# ・蒸気: 影響なし
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK.DESC
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK.DESC"
 msgid ""
@@ -1648,9 +1654,9 @@ msgstr ""
 "\n"
 "<link=\"LARGEELECTROBANKDISCHARGER\">大型放電器</link>または<link=\"SMALLELECTROBANKDISCHARGER\">コンパクト放電器</link>経由で設備に給電できます。\n"
 "\n"
-"複製人間は<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で新しい<link=\"ELECTROBANK\">エコ 電力バンク</link>を生産できます。\n"
+"複製人間は<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>で新しい<link=\"ELECTROBANK\">エコ 電力バンク</link>を製作できます。\n"
 "\n"
-"湿気が天敵です。"
+"水には濡らさないでください。"
 
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK.NAME
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK.NAME"
@@ -1664,14 +1670,15 @@ msgid ""
 "\n"
 "It must be recharged at a <link=\"ELECTROBANKCHARGER\">Power Bank Charger</link> before it can be reused."
 msgstr ""
-"残量ゼロの<link=\"ELECTROBANK\">電力バンク</link>です。\n"
+"残量が尽きた<link=\"ELECTROBANK\">電力バンク</link>です。\n"
 "\n"
 "再利用するには<link=\"ELECTROBANKCHARGER\">電力バンク充電器</link>で充電する必要があります。"
 
+# 空のエコ 電力バンクのリンク先は本来なら"ELECTROBANKEMPTY"だが、今は存在しない
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_EMPTY.NAME
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_EMPTY.NAME"
 msgid "<link=\"ELECTROBANK\">Empty Eco Power Bank</link>"
-msgstr "<link=\"ELECTROBANK\">空のエコ電力バンク</link>"
+msgstr "<link=\"ELECTROBANK\">空のエコ 電力バンク</link>"
 
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_GARBAGE.DESC
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_GARBAGE.DESC"
@@ -1680,15 +1687,16 @@ msgid ""
 "\n"
 "It can be salvaged for <link=\"KATAIRITE\">Abyssalite</link> at the <link=\"ROCKCRUSHER\">Rock Crusher</link>."
 msgstr ""
-"使用回数上限に達した<link=\"ELECTROBANK\">電力バンク</link>です。\n"
+"寿命を迎えた<link=\"ELECTROBANK\">電力バンク</link>です。\n"
 "\n"
 "<link=\"ROCKCRUSHER\">岩石粉砕機</link>で<link=\"KATAIRITE\">アビサライト</link>に分解できます。"
 
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_GARBAGE.NAME
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_GARBAGE.NAME"
 msgid "<link=\"ELECTROBANK\">Power Bank Scrap</link>"
-msgstr "<link=\"ELECTROBANK\">廃品電力バンク</link>"
+msgstr "<link=\"ELECTROBANK\">電力バンクの廃品</link>"
 
+# メタル 電力バンクのリンク先は"ELECTROBANKMETALORE"
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_METAL_ORE.DESC
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_METAL_ORE.DESC"
 msgid ""
@@ -1704,15 +1712,16 @@ msgstr ""
 "\n"
 "<link=\"LARGEELECTROBANKDISCHARGER\">大型放電器</link>または<link=\"SMALLELECTROBANKDISCHARGER\">コンパクト放電器</link>経由で設備に給電できます。\n"
 "\n"
-"複製人間は<link=\"CRAFTINGTABLE\">工作端末</link>で新しい<link=\"ELECTROBANK\">メタル 電力バンク</link>を生産できます。\n"
+"複製人間は<link=\"CRAFTINGTABLE\">工作端末</link>で新しい<link=\"ELECTROBANKMETALORE\">メタル 電力バンク</link>を製作できます。\n"
 "\n"
-"湿気が天敵です。"
+"水には濡らさないでください。"
 
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_METAL_ORE.NAME
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_METAL_ORE.NAME"
 msgid "<link=\"ELECTROBANKMETALORE\">Metal Power Bank</link>"
 msgstr "<link=\"ELECTROBANKMETALORE\">メタル 電力バンク</link>"
 
+# 説明にはないが、ほかの電力バンクと同様に、水に濡れると破損する。
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_SELFCHARGING.DESC
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_SELFCHARGING.DESC"
 msgid ""
@@ -1722,17 +1731,20 @@ msgid ""
 "\n"
 "Its low <link=\"POWER\">wattage</link> and high <link=\"RADIATION\">Radioactivity</link> make it unsuitable for Bionic Duplicant use."
 msgstr ""
-"<link=\"ENRICHEDURANIUM\">濃縮ウラン</link>から作られた、セルフ充電式の<link=\"ELECTROBANK\">電力バンク</link>です。\n"
+"<link=\"ENRICHEDURANIUM\">濃縮ウラン</link>から作られた、自己充電式の<link=\"ELECTROBANK\">電力バンク</link>です。\n"
 "\n"
 "<link=\"LARGEELECTROBANKDISCHARGER\">大型放電器</link>または<link=\"SMALLELECTROBANKDISCHARGER\">コンパクト放電器</link>経由で設備に給電できます。\n"
 "\n"
-"<link=\"POWER\">ワット数</link>が低く<link=\"RADIATION\">放射能</link>が高いため、バイオニック複製人間への使用には適していません。"
+"<link=\"POWER\">ワット数</link>が低く<link=\"RADIATION\">放射能</link>が高いため、バイオニック複製人間への使用には適していません。\n"
+"\n"
+"水には濡らさないでください。"
 
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_SELFCHARGING.NAME
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_SELFCHARGING.NAME"
 msgid "<link=\"ELECTROBANKSELFCHARGING\">Atomic Power Bank</link>"
 msgstr "<link=\"ELECTROBANKSELFCHARGING\">原子力 電力バンク</link>"
 
+# ウラン鉱石 電力バンクのリンク先は"ELECTROBANKURANIUMORE"
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_URANIUM_ORE.DESC
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_URANIUM_ORE.DESC"
 msgid ""
@@ -1748,9 +1760,9 @@ msgstr ""
 "\n"
 "<link=\"LARGEELECTROBANKDISCHARGER\">大型放電器</link>または<link=\"SMALLELECTROBANKDISCHARGER\">コンパクト放電器</link>経由で設備に給電できます。\n"
 "\n"
-"複製人間は<link=\"CRAFTINGTABLE\">工作端末</link>で新しい<link=\"ELECTROBANK\">ウラン鉱石電力バンク</link>を生産できます。\n"
+"複製人間は<link=\"CRAFTINGTABLE\">工作端末</link>で新しい<link=\"ELECTROBANKURANIUMORE\">ウラン鉱石 電力バンク</link>を製作できます。\n"
 "\n"
-"湿気が天敵です。"
+"水には濡らさないでください。"
 
 #. STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_URANIUM_ORE.NAME
 msgctxt "STRINGS.ITEMS.INDUSTRIAL_PRODUCTS.ELECTROBANK_URANIUM_ORE.NAME"
