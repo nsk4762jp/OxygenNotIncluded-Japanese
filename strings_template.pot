@@ -1125,7 +1125,7 @@ msgstr ""
 
 #. STRINGS.BLUEPRINTS.PERMIT_MONUMENT_BASE_B_FROSTY.DESC
 msgctxt "STRINGS.BLUEPRINTS.PERMIT_MONUMENT_BASE_B_FROSTY.DESC"
-msgid "The plume curls upward to facilitate floor-sweeping."
+msgid "The plume curls upward to enable cleaners to sweep the floor around it."
 msgstr ""
 
 #. STRINGS.BLUEPRINTS.PERMIT_MONUMENT_BASE_B_FROSTY.NAME
@@ -35160,12 +35160,27 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGEN.STATUS
 msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGEN.STATUS"
-msgid "Refilling oxygen tank: {0} O<sub>2</sub>"
+msgid "Refilling oxygen tank"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGEN.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGEN.TOOLTIP"
-msgid "Bionic Duplicants automatically refill their internal <style=\"KKeyword\">Oxygen</style> tanks when levels get too low"
+msgid "This Duplicant is refilling their internal <style=\"KKeyword\">Oxygen</style> tank: {0} O<sub>2</sub>\n\nBionic Duplicants automatically refill their internal tanks in highly breathable areas during scheduled <style=\"KKeyword\">Downtime</style>"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGENCRITICAL.NAME
+msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGENCRITICAL.NAME"
+msgid "Urgent Oxygen Refill"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGENCRITICAL.STATUS
+msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGENCRITICAL.STATUS"
+msgid "Urgently refilling oxygen tank"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGENCRITICAL.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICABSORBOXYGENCRITICAL.TOOLTIP"
+msgid "This Duplicant is refilling their depleted <style=\"KKeyword\">Oxygen</style> tank in the nearest breathable area: {0} O<sub>2</sub>\n\nImproving colony breathability and scheduling regular <style=\"KKeyword\">Downtime</style> will prevent future emergencies"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.CHORES.BIONICBEDTIMEMODE.NAME
@@ -39841,6 +39856,16 @@ msgstr ""
 #. STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP"
 msgid "The air is thin in this area"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGENBIONIC.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGENBIONIC.NAME"
+msgid "Low Oxygen Tank"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGENBIONIC.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGENBIONIC.TOOLTIP"
+msgid "This Duplicant's internal <style=\"KKeyword\">Oxygen</style> tank is dangerously low"
 msgstr ""
 
 #. STRINGS.DUPLICANTS.MODIFIERS.LUXURYBEDSTAMINA.NAME
@@ -47875,7 +47900,7 @@ msgstr ""
 
 #. STRINGS.ELEMENTS.GUNK.DESC
 msgctxt "STRINGS.ELEMENTS.GUNK.DESC"
-msgid "Solid Gunk is the built-up grime and grit produced by Duplicants' bionic mechanisms that has been frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state."
+msgid "Solid Gunk is the built-up grime and grit produced by Duplicants' bionic mechanisms, which has been frozen into a <link=\"ELEMENTSSOLID\">Solid</link> state."
 msgstr ""
 
 #. STRINGS.ELEMENTS.GUNK.NAME
@@ -59120,7 +59145,7 @@ msgstr ""
 
 #. STRINGS.MISC.TAGS.UNREFINEDOIL
 msgctxt "STRINGS.MISC.TAGS.UNREFINEDOIL"
-msgid "<link=\"RAWOIL\">Unrefined Oil</link>"
+msgid "<link=\"UNREFINEDOIL\">Unrefined Oil</link>"
 msgstr ""
 
 #. STRINGS.MISC.TAGS.UNREFINEDOIL_DESC
@@ -84105,7 +84130,7 @@ msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE"
-msgid "No Control Station\n\nA new Rocket Control Station must be installed inside the rocket"
+msgid "No control station\n\nA new Rocket Control Station must be installed inside the rocket"
 msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.READY
@@ -84120,7 +84145,7 @@ msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.WARNING_ROBO_PILOT
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.WARNING_ROBO_PILOT"
-msgid "No Control Station\n\nA Robot Pilot Module is piloting this rocket"
+msgid "No control station\n\nThis rocket is being piloted by a Robo-Pilot Module"
 msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_ENGINE.STATUS.FAILURE
@@ -84570,7 +84595,7 @@ msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.FAILURE
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.FAILURE"
-msgid "<style=\"KKeyword\">Robo-Pilot</style> requires at least {0} <style=\"KKeyword\">Data Banks</style> to reach its destination"
+msgid "<style=\"KKeyword\">Robo-Pilot</style> requires at least {0} <style=\"KKeyword\">Data Banks</style> to reach its destination\n    • <style=\"KKeyword\">Data Banks</style> stored: {1}"
 msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.FAILURE_NO_DESTINATION
@@ -84580,17 +84605,17 @@ msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY"
-msgid "<style=\"KKeyword\">Robo-Pilot</style> has sufficient <style=\"KKeyword\">Data Banks</style> for a roundtrip to its destination and back"
+msgid "<style=\"KKeyword\">Robo-Pilot</style> has sufficient <style=\"KKeyword\">Data Banks</style> for a roundtrip to its destination and back\n    • <style=\"KKeyword\">Data Banks</style> stored: {0}/{1}"
 msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY_NO_DESTINATION
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.READY_NO_DESTINATION"
-msgid "<style=\"KKeyword\">Robo-Pilot</style> has sufficient <style=\"KKeyword\">Data Banks</style>, but no destination has been set"
+msgid "<style=\"KKeyword\">Robo-Pilot</style> has sufficient <style=\"KKeyword\">Data Banks</style>, but no destination has been set\n    • <style=\"KKeyword\">Data Banks</style> stored: {0}"
 msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING"
-msgid "<style=\"KKeyword\">Robo-Pilot</style> has insufficient <style=\"KKeyword\">Data Banks</style> for a roundtrip\n    • {0}/{1} stored"
+msgid "<style=\"KKeyword\">Robo-Pilot</style> has insufficient <style=\"KKeyword\">Data Banks</style> for a roundtrip to its destination and back\n    • <style=\"KKeyword\">Data Banks</style>stored: {0}/{1}"
 msgstr ""
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING_NO_DATA_BANKS_HUMAN_PILOT
@@ -86410,7 +86435,7 @@ msgstr ""
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS
 msgctxt "STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_JOBS"
-msgid "Manage my Duplicant Priorities {Hotkey}\n\nDuplicant Priorities</style> are calculated <i>before</i> the <style=\"KKeyword\">Building Priorities</style> set by the <b>Priority Tool</b> {Hotkey/Prioritize}"
+msgid "Manage my Duplicant Priorities {Hotkey}\n\n<style=\"KKeyword\">Duplicant Priorities</style> are calculated <i>before</i> the <style=\"KKeyword\">Building Priorities</style> set by the <b>Priority Tool</b> {Hotkey/Prioritize}"
 msgstr ""
 
 #. STRINGS.UI.TOOLTIPS.MANAGEMENTMENU_PAUSEMENU
