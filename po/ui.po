@@ -742,8 +742,11 @@ msgid "Cures"
 msgstr "治療"
 
 #. STRINGS.UI.BUILDINGEFFECTS.REQUIRESCREATIVITY
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESCREATIVITY"
+#| msgid "Duplicant <link=\"ARTIST\">Creativity</link>"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESCREATIVITY"
-msgid "Duplicant <link=\"ARTIST\">Creativity</link>"
+msgid "Duplicant <link=\"ARTING1\">Creativity</link>"
 msgstr "複製人間の<link=\"ARTIST\">創造</link>能力"
 
 #. STRINGS.UI.BUILDINGEFFECTS.REQUIRESELEMENT
@@ -805,6 +808,22 @@ msgstr "専用の部屋: {0}"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESSEED"
 msgid "1 Unplanted <link=\"PLANTS\">Seed</link>"
 msgstr "1個の未播<link=\"PLANTS\">種子</link>"
+
+#. STRINGS.UI.BUILDINGEFFECTS.REQUIRESSKILLEDOPERATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESMANUALOPERATION"
+#| msgid "Duplicant operation"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESSKILLEDOPERATION"
+msgid "Skilled Duplicant operation"
+msgstr "複製人間の操作"
+
+#. STRINGS.UI.BUILDINGEFFECTS.REQUIRESSKILLEDOPERATION_DLC3
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESMANUALOPERATION"
+#| msgid "Duplicant operation"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESSKILLEDOPERATION_DLC3"
+msgid "Skilled Duplicant operation"
+msgstr "複製人間の操作"
 
 #. STRINGS.UI.BUILDINGEFFECTS.RESEARCH_MATERIALS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.RESEARCH_MATERIALS"
@@ -1477,8 +1496,11 @@ msgid "Use of this building will remove the listed effects"
 msgstr "この設備を使用すると、これらの効果一覧が除去されます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESCREATIVITY
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESCREATIVITY"
+#| msgid "A Duplicant must work on this object to create <style=\"KKeyword\">Art</style>"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESCREATIVITY"
-msgid "A Duplicant must work on this object to create <style=\"KKeyword\">Art</style>"
+msgid "An expressive Duplicant must work on this object to create <style=\"KKeyword\">Art</style>"
 msgstr "複製人間がこの物体を<style=\"KKeyword\">芸術</style>作品に昇華させる必要があります"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESELEMENT
@@ -1546,6 +1568,22 @@ msgstr ""
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESSEED"
 msgid "Must receive a plant <style=\"KKeyword\">Seed</style>"
 msgstr "植物の<style=\"KKeyword\">種子</style>が必要です"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESSKILLEDOPERATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILD_REQUIRES_SKILL_TOOLTIP"
+#| msgid "At least one Duplicant must have the {Skill} Skill to construct this building"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESSKILLEDOPERATION"
+msgid "Only a Duplicant with the {Skill} skill can use this building"
+msgstr "この設備を建築するには{Skill}スキルをもった複製人間が最低1人必要です"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESSKILLEDOPERATION_DLC3
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILD_REQUIRES_SKILL_TOOLTIP"
+#| msgid "At least one Duplicant must have the {Skill} Skill to construct this building"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.REQUIRESSKILLEDOPERATION_DLC3"
+msgid "Only a Duplicant with the {Skill} skill or {Booster} can use this building"
+msgstr "この設備を建築するには{Skill}スキルをもった複製人間が最低1人必要です"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.RESEARCH_MATERIALS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.RESEARCH_MATERIALS"
@@ -2337,6 +2375,22 @@ msgstr "<link=\"CREATURES\">動物</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.DISEASE"
 msgid "<link=\"DISEASE\">Disease</link>"
 msgstr "<link=\"DISEASE\">病気</link>"
+
+#. STRINGS.UI.CODEX.CATEGORYNAMES.DUPLICANTS
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.PLANTS"
+#| msgid "<link=\"PLANTS\">Plants</link>"
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.DUPLICANTS"
+msgid "<link=\"DUPLICANTS\">Duplicants</link>"
+msgstr "<link=\"PLANTS\">植物</link>"
+
+#. STRINGS.UI.CODEX.CATEGORYNAMES.DUPLICANTSCATEGORY
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.PLANTS"
+#| msgid "<link=\"PLANTS\">Plants</link>"
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.DUPLICANTSCATEGORY"
+msgid "<link=\"DUPLICANTS\">Duplicants</link>"
+msgstr "<link=\"PLANTS\">植物</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTS
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTS"
@@ -9309,19 +9363,56 @@ msgid "SURVIVAL"
 msgstr "サバイバル"
 
 #. STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.NO_CONTENT"
+#| msgid " - <b>No compatible mod found</b>"
 msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT"
-msgid " - <b>Not compatible with <i>{Content}</i></b>"
-msgstr " - <b><i>{Content}</i>と互換性がありません</b>"
+msgid " - <b>Incompatible DLC configuration</b>"
+msgstr " - <b>互換性のあるMODが見つかりません</i></b>"
+
+#. STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT_TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT_TOOLTIP"
+msgid "The current configuration of enabled/disabled DLCs does not match this mod's specifications."
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT_TOOLTIP_FORBIDDEN_DLC
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.INGREDIENTS"
+#| msgid "<b>Ingredients:</b>"
+msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT_TOOLTIP_FORBIDDEN_DLC"
+msgid "<b>Forbidden DLCs:</b>"
+msgstr "<b>材料:</b>"
+
+#. STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT_TOOLTIP_REQUIRED
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.HEADER"
+#| msgid "<b>Requirements:</b>"
+msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT_TOOLTIP_REQUIRED"
+msgid "<b>Required DLCs:</b>"
+msgstr "<b>成立要件:</b>"
 
 #. STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.NO_CONTENT
 msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.NO_CONTENT"
 msgid " - <b>No compatible mod found</b>"
 msgstr " - <b>互換性のあるMODが見つかりません</i></b>"
 
+#. STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.NO_CONTENT_TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.NO_CONTENT_TOOLTIP"
+msgid "No content was found to load."
+msgstr ""
+
 #. STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.OLD_API
 msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.OLD_API"
 msgid " - <b>Mod out-of-date</b>"
 msgstr " - <b>MODは陳腐化しています</b>"
+
+#. STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.OLD_API_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.NOT_FOUND"
+#| msgid "This mod isn't installed"
+msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.OLD_API_TOOLTIP"
+msgid "This mod is outdated."
+msgstr "このMODはインストールされていません"
 
 #. STRINGS.UI.FRONTEND.MODS.DB_CORRUPT
 msgctxt "STRINGS.UI.FRONTEND.MODS.DB_CORRUPT"
@@ -9373,6 +9464,11 @@ msgstr "サブスクライブ"
 msgctxt "STRINGS.UI.FRONTEND.MODS.MANAGE_LOCAL"
 msgid "Browse"
 msgstr "参照"
+
+#. STRINGS.UI.FRONTEND.MODS.NO_DESCRIPTION
+msgctxt "STRINGS.UI.FRONTEND.MODS.NO_DESCRIPTION"
+msgid "No description found in mod.yaml"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.MODS.RAILMODUPLOAD.CONTENT_FOLDER
 msgctxt "STRINGS.UI.FRONTEND.MODS.RAILMODUPLOAD.CONTENT_FOLDER"
@@ -13898,6 +13994,22 @@ msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.WIRES.TOOLTIP"
 msgid ""
 msgstr ""
 
+#. STRINGS.UI.OPERATION_REQUIRES_SKILL
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILD_REQUIRES_SKILL"
+#| msgid "Skill: {Skill}"
+msgctxt "STRINGS.UI.OPERATION_REQUIRES_SKILL"
+msgid "Skilled Operator: {Skill}"
+msgstr "スキル: {Skill}"
+
+#. STRINGS.UI.OPERATION_REQUIRES_SKILL_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILD_REQUIRES_SKILL_TOOLTIP"
+#| msgid "At least one Duplicant must have the {Skill} Skill to construct this building"
+msgctxt "STRINGS.UI.OPERATION_REQUIRES_SKILL_TOOLTIP"
+msgid "Only a Duplicant with the {Skill} Skill can operate this building"
+msgstr "この設備を建築するには{Skill}スキルをもった複製人間が最低1人必要です"
+
 #. STRINGS.UI.OUTFIT_BROWSER_SCREEN.BUTTON_ADD_OUTFIT
 msgctxt "STRINGS.UI.OUTFIT_BROWSER_SCREEN.BUTTON_ADD_OUTFIT"
 msgid "New Outfit"
@@ -16373,8 +16485,11 @@ msgid "Completed"
 msgstr "完了"
 
 #. STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.FILTER
+#, fuzzy
+#| msgctxt "STRINGS.UI.FILTER"
+#| msgid "Filter"
 msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.FILTER"
-msgid "Filters"
+msgid "Filter"
 msgstr "フィルター"
 
 #. STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.FOOD
@@ -16418,13 +16533,19 @@ msgid "Ranching"
 msgstr "牧畜"
 
 #. STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.ROCKET
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.ROCKET.NOUN.ROCKET"
+#| msgid "Rocket"
 msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.ROCKET"
-msgid "Rockets"
+msgid "Rocket"
 msgstr "ロケット"
 
 #. STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.TILE
+#, fuzzy
+#| msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.TILE"
+#| msgid "Tiles"
 msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.TILE"
-msgid "Tiles"
+msgid "Tile"
 msgstr "タイル"
 
 #. STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.TRANSPORT
@@ -16436,6 +16557,14 @@ msgstr "輸送"
 msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.WATER"
 msgid "Water"
 msgstr "水"
+
+#. STRINGS.UI.RESEARCHSCREEN.SEARCH_RESULTS_CATEGORY
+#, fuzzy
+#| msgctxt "STRINGS.UI.RESEARCHSCREEN_FILTER"
+#| msgid "Search Tech"
+msgctxt "STRINGS.UI.RESEARCHSCREEN.SEARCH_RESULTS_CATEGORY"
+msgid "Search Results"
+msgstr "技術の選別"
 
 #. STRINGS.UI.RESEARCHSCREEN_FILTER
 msgctxt "STRINGS.UI.RESEARCHSCREEN_FILTER"
@@ -17189,12 +17318,17 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ADVANCED_MEDICINE.DESCRIPTION"
 msgid "<link=\"ADVANCEDDOCTORSTATION\">Disease Clinic</link> Usage"
 msgstr "<link=\"ADVANCEDDOCTORSTATION\">診療所</link>を利用可能"
 
-# 彫像用ブロックのリンク先: "SMALLSCULPTURE"
-# 大きな彫像用ブロックのリンク先: "SCULPTURE"
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART.DESCRIPTION"
-msgid "Can produce artwork using <link=\"CANVAS\">Blank Canvas</link> and <link=\"SCULPTURE\">Large Sculpting Block</link>"
-msgstr "<link=\"CANVAS\">無地のカンバス</link>や<link=\"SMALLSCULPTURE\">彫像用ブロック</link>を使った創作"
+msgid ""
+"Can produce artwork using:\n"
+"<indent=20px>• <link=\"CANVAS\">Blank Canvas</link>\n"
+"• <link=\"SMALLSCULPTURE\">Sculpting Block</link>\n"
+"• <link=\"SCULPTURE\">Large Sculpting Block</link>\n"
+"• <link=\"ICESCULPTURE\">Ice Block</link>\n"
+"• <link=\"METALSCULPTURE\">Metal Block</link>\n"
+"• <link=\"WOODSCULPTURE\">Wood Block</link></indent>"
+msgstr ""
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART_GREAT.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART_GREAT.DESCRIPTION"
@@ -17216,6 +17350,14 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_CLOTHING_ALTERATION.DESCRIPTION"
 msgid "<link=\"CLOTHINGALTERATIONSTATION\">Clothing Refashionator</link> Usage"
 msgstr "<link=\"CLOTHINGALTERATIONSTATION\">衣類仕立て直し機</link>を利用可能"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_CLUSTERTELESCOPEENCLOSED.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CLUSTERTELESCOPEENCLOSED.NAME"
+#| msgid "<link=\"CLUSTERTELESCOPEENCLOSED\">Enclosed Telescope</link>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_CLUSTERTELESCOPEENCLOSED.DESCRIPTION"
+msgid "<link=\"CLUSTERTELESCOPEENCLOSED\">Enclosed Telescope</link> Usage"
+msgstr "<link=\"CLUSTERTELESCOPEENCLOSED\">密閉型観測望遠鏡</link>"
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_COMPOUND.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_COMPOUND.DESCRIPTION"
 msgid "<link=\"APOTHECARY\">Apothecary</link> Usage"
@@ -17225,6 +17367,14 @@ msgstr "<link=\"APOTHECARY\">調剤所</link>を利用可能"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_CRAFT_ELECTRONICS.DESCRIPTION"
 msgid "<link=\"ADVANCEDCRAFTINGTABLE\">Soldering Station</link> Usage"
 msgstr "<link=\"ADVANCEDCRAFTINGTABLE\">はんだ付け端末</link>を利用可能"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DEEP_FRYER.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.DEEPFRYER.NAME"
+#| msgid "<link=\"DEEPFRYER\">Deep Fryer</link>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DEEP_FRYER.DESCRIPTION"
+msgid "<link=\"DEEPFRYER\">Deep Fryer</link> Usage"
+msgstr "<link=\"DEEPFRYER\">フライヤー</link>"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DEMOLISH.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_DEMOLISH.DESCRIPTION"
@@ -17276,10 +17426,29 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION"
 msgid "<link=\"COOKINGSTATION\">Electric Grill</link> Usage"
 msgstr "<link=\"COOKINGSTATION\">電気グリル</link>を利用可能"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_STATION.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_IDENTIFY_MUTANT_SEEDS.DESCRIPTION"
+#| msgid "Can identify <style=\"KKeyword\">Mutant Seeds</style> at the <link=\"GENETICANALYSISSTATION\">Botanical Analyzer</link>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_STATION.DESCRIPTION"
+msgid "Can craft <style=\"KKeyword\">Micronutrient Fertilizer</style> at the <link=\"FARMSTATION\">Farm Station</link>"
+msgstr "<link=\"GENETICANALYSISSTATION\">植物分析機</link>を使って<style=\"KKeyword\">変異種子</style>を判別可能"
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_TINKER.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.FARMER.NAME"
+#| msgid "<link=\"FARMING2\">Crop Tending</link>"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_TINKER.DESCRIPTION"
-msgid "<link=\"PLANTS\">Crop Tending</link> and Micronutrient Fertilizer Crafting"
-msgstr "<link=\"PLANTS\">作物の手入れ</link>および微量栄養素作成"
+msgid "<link=\"PLANTS\">Crop Tending</link>"
+msgstr "<link=\"FARMING2\">作物の手入れ</link>"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_GAS_RANGE.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GOURMETCOOKINGSTATION.NAME"
+#| msgid "<link=\"GOURMETCOOKINGSTATION\">Gas Range</link>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_GAS_RANGE.DESCRIPTION"
+msgid "<link=\"GOURMETCOOKINGSTATION\">Gas Range</link> Usage"
+msgstr "<link=\"GOURMETCOOKINGSTATION\">ガスレンジ</link>"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_IDENTIFY_MUTANT_SEEDS.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_IDENTIFY_MUTANT_SEEDS.DESCRIPTION"
@@ -17312,14 +17481,25 @@ msgid "<link=\"SPICEGRINDER\">Spice Grinder</link> Usage"
 msgstr "<link=\"SPICEGRINDER\">スパイスミル</link>を利用可能"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_ARTIFACTS.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ARTIFACTANALYSISSTATION.NAME"
+#| msgid "<link=\"ARTIFACTANALYSISSTATION\">Artifact Analysis Station</link>"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_ARTIFACTS.DESCRIPTION"
-msgid "Artifact Analysis"
-msgstr "遺物分析"
+msgid "<link=\"ARTIFACTANALYSISSTATION\">Artifact Analysis Station</link> Usage"
+msgstr "<link=\"ARTIFACTANALYSISSTATION\">遺物分析端末</link>"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION"
 msgid "Geographical Analysis"
 msgstr "地勢分析"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_BUILDING.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.TOOLTIP_SAVE_USES_DLC"
+#| msgid "{0} save"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_BUILDING.DESCRIPTION"
+msgid "{0} Usage"
+msgstr "{0}のセーブ"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_CLUSTER_TELESCOPE.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_CLUSTER_TELESCOPE.DESCRIPTION"
@@ -18376,10 +18556,29 @@ msgctxt "STRINGS.UI.SKILLS"
 msgid "SKILLS"
 msgstr "スキル"
 
+#. STRINGS.UI.SKILLS_SCREEN.ASSIGNED_BOOSTERS_COUNT_LABEL
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.AVAILABLE_SLOTS"
+#| msgid "{0} has <b>{1}/{2}</b> booster slots assigned"
+msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNED_BOOSTERS_COUNT_LABEL"
+msgid "{0}/{1} boosters assigned"
+msgstr "{0} は <b>{1}/{2}</b> ブースタースロットが割り当て済みです"
+
 #. STRINGS.UI.SKILLS_SCREEN.ASSIGNED_BOOSTERS_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNED_BOOSTERS_HEADER"
+#| msgid "{0}'s Assigned Boosters"
 msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNED_BOOSTERS_HEADER"
-msgid "{0}'s Assigned Boosters"
+msgid "{0}'s Boosters"
 msgstr "{0}に割り当て済みのブースター"
+
+#. STRINGS.UI.SKILLS_SCREEN.ASSIGNED_BOOSTERS_LABEL
+#, fuzzy
+#| msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_DROPDOWN_ASSIGNED"
+#| msgid "{0} (Assigned)"
+msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNED_BOOSTERS_LABEL"
+msgid "{0} assigned"
+msgstr "{0} (割当済)"
 
 #. STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.EXPECTATION_ALERT_DESC_EXPECTATION
 msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.EXPECTATION_ALERT_DESC_EXPECTATION"
@@ -18458,6 +18657,50 @@ msgstr "<b>{0}</b>スキルを身に着けるための能力があります"
 msgctxt "STRINGS.UI.SKILLS_SCREEN.ASSIGNMENT_REQUIREMENTS.SKILLGROUP_ENABLED.NAME"
 msgid "Can perform {0}"
 msgstr "{0}作業可能"
+
+#. STRINGS.UI.SKILLS_SCREEN.AVAILABLE_BOOSTERS_LABEL
+#, fuzzy
+#| msgctxt "STRINGS.UI.SKILLS_SCREEN.NOT_AVAILABLE"
+#| msgid "Not available"
+msgctxt "STRINGS.UI.SKILLS_SCREEN.AVAILABLE_BOOSTERS_LABEL"
+msgid "{0} available"
+msgstr "取得不可"
+
+#. STRINGS.UI.SKILLS_SCREEN.BIONIC_UPGRADE_SLOT_AVAILABLE
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.OTHER_TECH_ITEMS.DISPOSABLE_ELECTROBANK_URANIUM_ORE.DESC"
+#| msgid "Enables fabrication of <style=\"KKeyword\">Uranium Ore Power Banks</style> at the <link=\"CRAFTINGTABLE\">Crafting Station</link>"
+msgctxt "STRINGS.UI.SKILLS_SCREEN.BIONIC_UPGRADE_SLOT_AVAILABLE"
+msgid ""
+"No booster installed\n"
+"\n"
+"Assign a booster from the menu below or craft new boosters at the <link=\"CRAFTINGTABLE\">Crafting Station</link>"
+msgstr "<link=\"CRAFTINGTABLE\">工作端末</link>で<style=\"KKeyword\">ウラン鉱石 電力バンク</style>を製作できます"
+
+#. STRINGS.UI.SKILLS_SCREEN.BIONIC_UPGRADE_SLOT_LOCKED
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.TOOLTIP.SLOT_LOCKED"
+#| msgid ""
+#| "This booster slot is unavailable\n"
+#| "\n"
+#| "Booster slots can be unlocked using <style=\"KKeyword\">Skill Points</style>"
+msgctxt "STRINGS.UI.SKILLS_SCREEN.BIONIC_UPGRADE_SLOT_LOCKED"
+msgid ""
+"This booster slot is unavailable\n"
+"\n"
+"Booster slots can be unlocked using <style=\"KKeyword\">Skill Points</style>"
+msgstr ""
+"このブースタースロットは利用できません\n"
+"\n"
+"ブースタースロットは<style=\"KKeyword\">スキルポイント</style>を使ってアンロックできます"
+
+#. STRINGS.UI.SKILLS_SCREEN.BIONIC_UPGRADE_SLOT_UNASSIGN
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.SORTCOLUMN"
+#| msgid "(ClickType/Click) to sort"
+msgctxt "STRINGS.UI.SKILLS_SCREEN.BIONIC_UPGRADE_SLOT_UNASSIGN"
+msgid "(ClickType/click) to unassign"
+msgstr "(ClickType/Click)してソート"
 
 #. STRINGS.UI.SKILLS_SCREEN.CURRENT_MORALE
 msgctxt "STRINGS.UI.SKILLS_SCREEN.CURRENT_MORALE"
@@ -30691,6 +30934,32 @@ msgstr "砂を散布しています..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂を散布しています..."
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT"
+#~ msgid " - <b>Not compatible with <i>{Content}</i></b>"
+#~ msgstr " - <b><i>{Content}</i>と互換性がありません</b>"
+
+#~ msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.FILTER"
+#~ msgid "Filters"
+#~ msgstr "フィルター"
+
+#~ msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.ROCKET"
+#~ msgid "Rockets"
+#~ msgstr "ロケット"
+
+# 彫像用ブロックのリンク先: "SMALLSCULPTURE"
+# 大きな彫像用ブロックのリンク先: "SCULPTURE"
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART.DESCRIPTION"
+#~ msgid "Can produce artwork using <link=\"CANVAS\">Blank Canvas</link> and <link=\"SCULPTURE\">Large Sculpting Block</link>"
+#~ msgstr "<link=\"CANVAS\">無地のカンバス</link>や<link=\"SMALLSCULPTURE\">彫像用ブロック</link>を使った創作"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_TINKER.DESCRIPTION"
+#~ msgid "<link=\"PLANTS\">Crop Tending</link> and Micronutrient Fertilizer Crafting"
+#~ msgstr "<link=\"PLANTS\">作物の手入れ</link>および微量栄養素作成"
+
+#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_ARTIFACTS.DESCRIPTION"
+#~ msgid "Artifact Analysis"
+#~ msgstr "遺物分析"
 
 #, fuzzy
 #~| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE"
