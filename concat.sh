@@ -1,3 +1,3 @@
 #!/bin/sh
 
-msgcat po/*.po > strings.po
+msgcat --no-wrap po/*.po > strings.po
