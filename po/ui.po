@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.UI.ACTIONS
@@ -338,15 +338,28 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.BATTERYLEAK"
 msgid "<link=\"POWER\">Power</link> leak: {0}"
 msgstr "<link=\"POWER\">電力</link>漏洩: {0}"
 
-# 旧バージョンで存在した Airborne Critter Lure という設備の名残
-#. STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_LURE
-msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_LURE"
-msgid "Capture Method: Lures"
-msgstr "捕獲方法: ルアー"
+#. STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_FISH_TRAP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_TRAP"
+#| msgid "Capture Method: Traps"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_FISH_TRAP"
+msgid "Capture Method: Fish Trap"
+msgstr "捕獲方法: 罠"
 
-#. STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_TRAP
-msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_TRAP"
-msgid "Capture Method: Traps"
+#. STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_FLYING_TRAP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_TRAP"
+#| msgid "Capture Method: Traps"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_FLYING_TRAP"
+msgid "Capture Method: Airborne Critter Trap"
+msgstr "捕獲方法: 罠"
+
+#. STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_LAND_TRAP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_TRAP"
+#| msgid "Capture Method: Traps"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_LAND_TRAP"
+msgid "Capture Method: Critter Trap"
 msgstr "捕獲方法: 罠"
 
 #. STRINGS.UI.BUILDINGEFFECTS.CAPTURE_METHOD_WRANGLE
@@ -370,6 +383,14 @@ msgstr "冷却剤: {1} {0}"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.DECORPROVIDED"
 msgid "<link=\"DECOR\">Decor</link>: {1} (Radius: {2} tiles)"
 msgstr "<link=\"DECOR\">装飾</link>: {1} (半径: {2} タイル)"
+
+#. STRINGS.UI.BUILDINGEFFECTS.DIET_ADDITIONAL_PRODUCED
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_PRODUCED"
+#| msgid "    • Excretion: {Items}"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_ADDITIONAL_PRODUCED"
+msgid "Secondary Excretion: {Items}"
+msgstr "    • 排泄: {Items}"
 
 #. STRINGS.UI.BUILDINGEFFECTS.DIET_CONSUMED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_CONSUMED"
@@ -909,19 +930,41 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.BATTERYLEAK"
 msgid "<style=\"consumed\">{0}</style> of this battery's charge will be lost as <style=\"KKeyword\">Heat</style>"
 msgstr "<style=\"consumed\">{0}</style>の電力が<style=\"KKeyword\">熱</style>として失われます"
 
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.BRANCH_GROWER_PLANT_POTENTIAL_OUTPUT
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.FORMAT_STRINGS.TRANSITION_LABEL_TO_ONE_ELEMENT"
+#| msgid "{0} to {1}"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.BRANCH_GROWER_PLANT_POTENTIAL_OUTPUT"
+msgid "{0} to {1}"
+msgstr "{0} から {1}"
+
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.BUILDINGROOMREQUIREMENTCLASS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.BUILDINGROOMREQUIREMENTCLASS"
 msgid "This category of building may be required or prohibited in certain <style=\"KKeyword\">Rooms</style>"
 msgstr "このカテゴリーの設備は<style=\"KKeyword\">部屋</style>の中への設置が必要または禁止されています"
 
-#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_LURE
-msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_LURE"
-msgid "This critter can be moved using an <link=\"AIRBORNECREATURELURE\">Airborne Critter Lure</link>"
-msgstr "この動物は<link=\"AIRBORNECREATURELURE\">浮遊動物ルアー</link>を利用して動かせます"
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_FISH_TRAP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_TRAP"
+#| msgid "This critter can be captured using a <link=\"CREATURETRAP\">Critter Trap</link>"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_FISH_TRAP"
+msgid "This critter can be captured and moved using a <link=\"FISHTRAP\">Fish Trap</link>"
+msgstr "この動物は<link=\"CREATURETRAP\">動物捕獲罠</link>で捕まえることができます"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_FLYING_TRAP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_TRAP"
+#| msgid "This critter can be captured using a <link=\"CREATURETRAP\">Critter Trap</link>"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_FLYING_TRAP"
+msgid "This critter can be captured and moved using an <link=\"FLYINGCREATUREBAIT\">Airborne Critter Trap</link>"
+msgstr "この動物は<link=\"CREATURETRAP\">動物捕獲罠</link>で捕まえることができます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_TRAP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_TRAP"
+#| msgid "This critter can be captured using a <link=\"CREATURETRAP\">Critter Trap</link>"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_TRAP"
-msgid "This critter can be captured using a <link=\"CREATURETRAP\">Critter Trap</link>"
+msgid "This critter can be captured and moved using a <link=\"CREATURETRAP\">Critter Trap</link>"
 msgstr "この動物は<link=\"CREATURETRAP\">動物捕獲罠</link>で捕まえることができます"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_WRANGLE
@@ -959,6 +1002,14 @@ msgstr "半径<b>{1}</b>タイルの<style=\"KKeyword\">装飾値</style>を<b>{
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DECORPROVIDED"
 msgid "Improves <style=\"KKeyword\">Decor</style> values by <b><b>{0}</b></b> in a <b>{1}</b> tile radius"
 msgstr "半径<b>{1}</b>タイルの<style=\"KKeyword\">装飾値</style>を<b>{0}</b>増加させます"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_ADDITIONAL_PRODUCED
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.STARVING.NOTIFICATION_TOOLTIP"
+#| msgid "These critters are starving and will die if not fed soon:"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_ADDITIONAL_PRODUCED"
+msgid "This critter gets bloated after eating and will produce {Items}"
+msgstr "これらの動物は飢えており、給餌されないと死に至ります:"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_CONSUMED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.DIET_CONSUMED"
@@ -2248,9 +2299,15 @@ msgid "???"
 msgstr "???"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_FOG_OF_WAR
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_FOG_OF_WAR"
+#| msgid ""
+#| "Rockets cannot travel to this hex until it has been analyzed\n"
+#| "\n"
+#| "Space can be analyzed with a <link=\"CLUSTERTELESCOPE\">Telescope</link> or <link=\"SCANNERMODULE\">Cartographic Module</link>"
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_FOG_OF_WAR"
 msgid ""
-"Rockets cannot travel to this hex until it has been analyzed\n"
+"Cannot travel to this hex until it has been analyzed\n"
 "\n"
 "Space can be analyzed with a <link=\"CLUSTERTELESCOPE\">Telescope</link> or <link=\"SCANNERMODULE\">Cartographic Module</link>"
 msgstr ""
@@ -2281,14 +2338,25 @@ msgstr ""
 "星図上の領域を<link=\"CLUSTERTELESCOPE\">観測望遠鏡</link>や<link=\"SCANNERMODULE\">星図作成モジュール</link>で解析して航路を開拓することができます"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_OUT_OF_RANGE
+#, fuzzy
+#| msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_OUT_OF_RANGE"
+#| msgid "This destination is further away than the rocket's maximum range of {0}."
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_OUT_OF_RANGE"
-msgid "This destination is further away than the rocket's maximum range of {0}."
+msgid "This destination is further away than the rocket's maximum range of {0}"
 msgstr "目的地はロケットの最大航続距離 {0} より遠く離れています。"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_REQUIRE_ASTEROID
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_REQUIRE_ASTEROID"
 msgid "Must select a Planetoid destination"
 msgstr "目的地となる小惑星を指定してください"
+
+#. STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_METEOR_TARGET
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONVIEWINTERIOR.INVALID"
+#| msgid "This module does not have an interior view"
+msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_METEOR_TARGET"
+msgid "This destination does not have an impactor asteroid to target"
+msgstr "このモジュールには表示できる内部がありません"
 
 #. STRINGS.UI.CLUSTERMAP.TOOLTIP_PATH_LENGTH
 msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_PATH_LENGTH"
@@ -2393,6 +2461,14 @@ msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTSSOLID"
 msgid "<link=\"ELEMENTSSOLID\">Solids</link>"
 msgstr "<link=\"ELEMENTSSOLID\">固体</link>"
 
+#. STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTTYPES
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTS"
+#| msgid "<link=\"ELEMENTS\">Elements</link>"
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.ELEMENTTYPES"
+msgid "<link=\"ELEMENTTYPES\">Element Properties</link>"
+msgstr "<link=\"ELEMENTS\">元素</link>"
+
 #. STRINGS.UI.CODEX.CATEGORYNAMES.EMAILS
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.EMAILS"
 msgid "<link=\"EMAILS\">E-mail</link>"
@@ -2432,6 +2508,14 @@ msgstr "<link=\"JOURNALS\">日誌</link>"
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MEDIA"
 msgid "<link=\"MEDIA\">Media</link>"
 msgstr "<link=\"MEDIA\">メディア</link>"
+
+#. STRINGS.UI.CODEX.CATEGORYNAMES.MEDICINES
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.JUNIOR_MEDIC.NAME"
+#| msgid "<link=\"MEDICINE1\">Medicine Compounding</link>"
+msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MEDICINES"
+msgid "<link=\"MEDICINES\">Medicines</link>"
+msgstr "<link=\"MEDICINE1\">調剤</link>"
 
 #. STRINGS.UI.CODEX.CATEGORYNAMES.MINION_MODIFIERS
 msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MINION_MODIFIERS"
@@ -4353,6 +4437,20 @@ msgstr ""
 "<b>設定</b>\n"
 "フィルター、レシピ、作業順序などの確認と変更をします"
 
+#. STRINGS.UI.DETAILTABS.CONFIGURATION.TOOLTIP_DUPLICANT
+#, fuzzy
+#| msgctxt "STRINGS.UI.DETAILTABS.COSMETICS.TOOLTIP"
+#| msgid ""
+#| "<b>Blueprint</b>\n"
+#| "View and change assigned blueprints"
+msgctxt "STRINGS.UI.DETAILTABS.CONFIGURATION.TOOLTIP_DUPLICANT"
+msgid ""
+"<b>Config</b>\n"
+"View and change assigned equipment and amenities"
+msgstr ""
+"<b>設計図</b>\n"
+"指定された設計図の確認と変更をします"
+
 #. STRINGS.UI.DETAILTABS.COSMETICS.NAME
 msgctxt "STRINGS.UI.DETAILTABS.COSMETICS.NAME"
 msgid "Blueprint"
@@ -5653,6 +5751,27 @@ msgctxt "STRINGS.UI.DLC3.NAME_ITAL"
 msgid "<i>The Bionic Booster Pack</i>"
 msgstr "<i>The Bionic Booster Pack</i>"
 
+#. STRINGS.UI.DLC4.MIXING_TOOLTIP
+msgctxt "STRINGS.UI.DLC4.MIXING_TOOLTIP"
+msgid "<i>The Prehistoric Planet Pack</i> features carnivorous flora and fauna, biofuel, and a focus on surface defense"
+msgstr ""
+
+#. STRINGS.UI.DLC4.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DLC2.NAME"
+#| msgid "The Frosty Planet Pack"
+msgctxt "STRINGS.UI.DLC4.NAME"
+msgid "The Prehistoric Planet Pack"
+msgstr "The Frosty Planet Pack"
+
+#. STRINGS.UI.DLC4.NAME_ITAL
+#, fuzzy
+#| msgctxt "STRINGS.UI.DLC2.NAME_ITAL"
+#| msgid "<i>The Frosty Planet Pack</i>"
+msgctxt "STRINGS.UI.DLC4.NAME_ITAL"
+msgid "<i>The Prehistoric Planet Pack</i>"
+msgstr "<i>The Frosty Planet Pack</i>"
+
 #. STRINGS.UI.DROPDOWN.NONE
 msgctxt "STRINGS.UI.DROPDOWN.NONE"
 msgid "Unassigned"
@@ -6358,8 +6477,11 @@ msgid "Filter"
 msgstr "フィルター"
 
 #. STRINGS.UI.FORMATDAY
+#, fuzzy
+#| msgctxt "STRINGS.UI.FORMATDAY"
+#| msgid "{0} cycles"
 msgctxt "STRINGS.UI.FORMATDAY"
-msgid "{0} cycles"
+msgid "{0:F1} cycles"
 msgstr "{0} サイクル"
 
 #. STRINGS.UI.FORMATSECONDS
@@ -6981,6 +7103,103 @@ msgstr "小惑星帯"
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.CLUSTER_CHOICE.TOOLTIP"
 msgid "New asteroid belts added by mods can be selected here"
 msgstr "MODによって追加された小惑星帯をここで指定できます"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.DEFAULT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.BIONICPOWERUSE.LEVELS.DEFAULT.NAME"
+#| msgid "Default"
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.DEFAULT.NAME"
+msgid "Default"
+msgstr "標準"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.DEFAULT.TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.DEFAULT.TOOLTIP"
+msgid "Demolior impacts in 200 cycles"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.EASY.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.OVERLAYS.RADIATION.RANGES.MEDIUM"
+#| msgid "Slight Hazard"
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.EASY.NAME"
+msgid "Slightly Delayed"
+msgstr "やや危険"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.EASY.TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.EASY.TOOLTIP"
+msgid ""
+"Demolior impacts later than usual\n"
+"\n"
+"300 cycles until collision"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.HARD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EARLYMORNING.NAME"
+#| msgid "Early Bird"
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.HARD.NAME"
+msgid "Early Arrival"
+msgstr "早起き"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.HARD.TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.HARD.TOOLTIP"
+msgid ""
+"Demolior impacts sooner than usual\n"
+"\n"
+"150 cycles until collision"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.OFF.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.DISABLED.NAME"
+#| msgid "Disabled"
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.OFF.NAME"
+msgid "Disabled"
+msgstr "無効化"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.OFF.TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.OFF.TOOLTIP"
+msgid "Demolior does not exist in this universe and the achievement cannot be earned"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.VERYEASY.NAME
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.VERYEASY.NAME"
+msgid "Far-Off Forecast"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.VERYEASY.TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.VERYEASY.TOOLTIP"
+msgid ""
+"Duplicants could probably build a whole new asteroid by the time Demolior impacts this one\n"
+"\n"
+"500 cycles until collision"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.VERYHARD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.AMBIENT_RADIATION"
+#| msgid "Ambient Radiation"
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.VERYHARD.NAME"
+msgid "Imminent Extinction"
+msgstr "周囲の放射線"
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.VERYHARD.TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.LEVELS.VERYHARD.TOOLTIP"
+msgid ""
+"It'll all be over soon\n"
+"\n"
+"Only 100 cycles until collision"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.NAME
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.NAME"
+msgid "Demolior Impact"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.TOOLTIP
+msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DEMOLIORDIFFICULTY.TOOLTIP"
+msgid "Adjusts how soon the Demolior asteroid collides with <i>The Prehistoric Planet Pack</i> asteroid"
+msgstr ""
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DLC_MIXING.LEVELS.DISABLED.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.DLC_MIXING.LEVELS.DISABLED.NAME"
@@ -10795,6 +11014,14 @@ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_NO_MIN_RADIATION"
 msgid "Maximum <link=\"RADIATION\">Radiation</link>: {MaxRads}"
 msgstr "最大<link=\"RADIATION\">放射線</link>量: {MaxRads}"
 
+#. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_POLLINATION
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.ILLUMINATION.NAME"
+#| msgid "Illumination"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_POLLINATION"
+msgid "Pollination"
+msgstr "照明"
+
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE"
 msgid "<link=\"ATMOSPHERE\">Air</link> Pressure: {0} minimum"
@@ -11003,6 +11230,14 @@ msgstr "この植物は最低{Lux}の<style=\"KKeyword\">光量</style>が必要
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_NO_MIN_RADIATION"
 msgid "This plant will stop growing if exposed to more than {MaxRads} of <link=\"RADIATION\">Radiation</link>"
 msgstr "この植物は{MaxRads}を超える<link=\"RADIATION\">放射線</link>に曝されると成長を停止します"
+
+#. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_POLLINATION
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.TOOLTIP"
+#| msgid "This plant must be submerged in <style=\"KKeyword\">Liquid</style> to grow"
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_POLLINATION"
+msgid "This plant must be tended by a <style=\"KKeyword\">Critter</style> to grow"
+msgstr "この植物を育てるには<style=\"KKeyword\">液体</style>の中に沈めないといけません"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_PRESSURE"
@@ -11638,6 +11873,22 @@ msgstr ""
 msgctxt "STRINGS.UI.KEEPSAKES.MORB_ROVER_MAKER.NAME"
 msgid "Toy Bot"
 msgstr "おもちゃのロボット"
+
+#. STRINGS.UI.KEEPSAKES.VIEWMASTER.DESCRIPTION
+msgctxt "STRINGS.UI.KEEPSAKES.VIEWMASTER.DESCRIPTION"
+msgid ""
+"A tool used to gaze into frozen moments of time.\n"
+"\n"
+"One of the images is of a child standing in a field, waving a huge piece of blackened titanium."
+msgstr ""
+
+#. STRINGS.UI.KEEPSAKES.VIEWMASTER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEARTIFACTS.STETHOSCOPE.NAME"
+#| msgid "Stethoscope"
+msgctxt "STRINGS.UI.KEEPSAKES.VIEWMASTER.NAME"
+msgid "Stereoscope"
+msgstr "聴診器"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.ARTABLE_ITEM_FACADE_FOR
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.ARTABLE_ITEM_FACADE_FOR"
@@ -16363,8 +16614,11 @@ msgid "Requires {0}: {1}"
 msgstr "{0} が必要: {1}"
 
 #. STRINGS.UI.PRODUCTINFO_REQUIRESRESEARCHDESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.PRODUCTINFO_REQUIRESRESEARCHDESC"
+#| msgid "Requires {0} Research"
 msgctxt "STRINGS.UI.PRODUCTINFO_REQUIRESRESEARCHDESC"
-msgid "Requires {0} Research"
+msgid "Requires research: {0}"
 msgstr "{0} の研究が必要"
 
 #. STRINGS.UI.PRODUCTINFO_RESEARCHREQUIRED
@@ -17457,6 +17711,14 @@ msgstr "<link=\"COMMANDMODULE\">制御カプセル</link>を利用可能"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_WRANGLE_CREATURES.DESCRIPTION"
 msgid "Critter Wrangling"
 msgstr "動物の縄掛け"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CHEMISTRY.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.OILREFINERY.NAME"
+#| msgid "<link=\"OILREFINERY\">Oil Refinery</link>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CHEMISTRY.DESCRIPTION"
+msgid "<link=\"CHEMICALREFINERY\">Emulsifier</link> Usage"
+msgstr "<link=\"OILREFINERY\">製油装置</link>"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CONVEYOR_BUILD.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CONVEYOR_BUILD.DESCRIPTION"
@@ -19639,6 +19901,54 @@ msgctxt "STRINGS.UI.SPACEDESTINATIONS.ASTEROIDS.ROCKYASTEROID.NAME"
 msgid "Rocky Asteroid"
 msgstr "岩石質小惑星"
 
+#. STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.COPPER.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORSHOWERS.COPPER.DESCRIPTION"
+#| msgid "A shower of metallic meteors on a collision course with the surface of an asteroid."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.COPPER.DESCRIPTION"
+msgid "A shower of metallic meteors on a collision course with the surface of an asteroid."
+msgstr "金属質隕石群が小惑星表面への衝突コースに入っています。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.COPPER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.COPPERCOMET.NAME"
+#| msgid "Copper Meteor"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.COPPER.NAME"
+msgid "Copper Meteor"
+msgstr "銅隕石"
+
+#. STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.IRON.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORSHOWERS.IRON.DESCRIPTION"
+#| msgid "A shower of metallic space rocks on a collision course with the surface of an asteroid."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.IRON.DESCRIPTION"
+msgid "A shower of metallic space rocks on a collision course with the surface of an asteroid."
+msgstr "金属質宇宙岩石群が小惑星表面への衝突コースに入っています。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.IRON.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.IRONCOMET.NAME"
+#| msgid "Iron Meteor"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.IRON.NAME"
+msgid "Iron Meteor"
+msgstr "鉄隕石"
+
+#. STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.LARGEIMACTOR.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORSHOWERS.ICE.DESCRIPTION"
+#| msgid "A hailstorm of icy space rocks on a collision course with the surface of an asteroid."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.LARGEIMACTOR.DESCRIPTION"
+msgid "An ancient impactor asteroid on a collision course with the surface of this world."
+msgstr "氷の隕石が雹の嵐になって小惑星表面への衝突コースに入っています。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.LARGEIMACTOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.DEMOLISH.NAME"
+#| msgid "Demolish"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORS.LARGEIMACTOR.NAME"
+msgid "Demolior"
+msgstr "破壊活動"
+
 #. STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORSHOWERS.BLEACHSTONE.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.CLUSTERMAPMETEORSHOWERS.BLEACHSTONE.DESCRIPTION"
 msgid "A shower of bleach stone meteors on a collision course with the surface of an asteroid."
@@ -19839,6 +20149,14 @@ msgstr "金隕石"
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.HARDICECOMET.NAME"
 msgid "Ice Meteor"
 msgstr "氷隕石"
+
+#. STRINGS.UI.SPACEDESTINATIONS.COMETS.IRIDIUMCOMET.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.URANIUMORECOMET.NAME"
+#| msgid "Uranium Meteor"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.IRIDIUMCOMET.NAME"
+msgid "Iridium Meteor"
+msgstr "ウラン隕石"
 
 #. STRINGS.UI.SPACEDESTINATIONS.COMETS.IRONCOMET.NAME
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.COMETS.IRONCOMET.NAME"
@@ -20068,6 +20386,125 @@ msgstr ""
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC2CERESOREFIELD.NAME"
 msgid "Frozen Mercury Asteroid Field"
 msgstr "凍結水銀小惑星帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD1.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC2CERESFIELD.DESC"
+#| msgid ""
+#| "The harvestable remains of a planet containing <link=\"CINNABAR\">Cinnabar</link>, <link=\"ICE\">Ice</link> and <link=\"MERCURY\">Mercury</link>.\n"
+#| "\n"
+#| "Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD1.DESC"
+msgid ""
+"The solid harvestable remains of Demolior, containing <link=\"IRIDIUM\">Iridium</link>, <link=\"MAFICROCK\">Mafic Rock</link>, <link=\"GOLD\">Gold</link>, and <link=\"GRANITE\">Granite</link>, as well as a strangely familiar artifact.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"CINNABAR\">辰砂</link>、<link=\"ICE\">氷</link>、<link=\"MERCURY\">水銀</link>を含む採取可能な資源帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD1.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.NAME"
+#| msgid "Clear Debris"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD1.NAME"
+msgid "Demolior Debris"
+msgstr "がれき掃除"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD2.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC2CERESFIELD.DESC"
+#| msgid ""
+#| "The harvestable remains of a planet containing <link=\"CINNABAR\">Cinnabar</link>, <link=\"ICE\">Ice</link> and <link=\"MERCURY\">Mercury</link>.\n"
+#| "\n"
+#| "Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD2.DESC"
+msgid ""
+"The harvestable liquid remains of Demolior, containing <link=\"ISORESIN\">Isosap</link>, <link=\"PETROLEUM\">Petroleum</link>, and <link=\"LIQUIDSULFUR\">Liquid Sulfur</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"CINNABAR\">辰砂</link>、<link=\"ICE\">氷</link>、<link=\"MERCURY\">水銀</link>を含む採取可能な資源帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD2.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD2.NAME"
+msgid "Liquid Demolior Debris"
+msgstr ""
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD3.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.ORGANICMASSFIELD.DESC"
+#| msgid ""
+#| "A mass of harvestable resources containing <link=\"ALGAE\">Algae</link>, <link=\"SLIMEMOLD\">Slime</link>, <link=\"CONTAMINATEDOXYGEN\">Polluted Oxygen</link> and <link=\"DIRT\">Dirt</link>.\n"
+#| "\n"
+#| "Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD3.DESC"
+msgid ""
+"The harvestable molten remains of Demolior, containing <link=\"LIQUIDIRIDIUM\">Molten Iridium</link>, <link=\"MAGMA\">Magma</link>, <link=\"LIQUIDOXYGEN\">Liquid Oxygen</link>, and <link=\"LIQUIDHYDROGEN\">Liquid Hydrogen</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"ALGAE\">緑藻</link>、<link=\"SLIMEMOLD\">ヘドロ</link>、<link=\"CONTAMINATEDOXYGEN\">汚染酸素</link>、<link=\"DIRT\">土</link>を含む採取可能な資源塊です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD3.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4IMPACTORDEBRISFIELD3.NAME"
+msgid "Molten Demolior Debris"
+msgstr ""
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICMIXINGFIELD.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SANDYOREFIELD.DESC"
+#| msgid ""
+#| "An asteroid field containing <link=\"SANDSTONE\">Sandstone</link>, <link=\"ALGAE\">Algae</link>, <link=\"CUPRITE\">Copper Ore</link> and <link=\"SAND\">Sand</link>.\n"
+#| "\n"
+#| "Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICMIXINGFIELD.DESC"
+msgid ""
+"An asteroid field containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link> and <link=\"SHALE\">Shale</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"SANDSTONE\">砂岩</link>、<link=\"ALGAE\">緑藻</link>、<link=\"CUPRITE\">銅鉱石</link>、<link=\"SAND\">砂</link>を含む小惑星帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICMIXINGFIELD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SANDYOREFIELD.NAME"
+#| msgid "Sandy Ore Field"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICMIXINGFIELD.NAME"
+msgid "Conductive Ore Field"
+msgstr "砂鉱石帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC2CERESFIELD.DESC"
+#| msgid ""
+#| "The harvestable remains of a planet containing <link=\"CINNABAR\">Cinnabar</link>, <link=\"ICE\">Ice</link> and <link=\"MERCURY\">Mercury</link>.\n"
+#| "\n"
+#| "Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.DESC"
+msgid ""
+"The harvestable remains of a planet containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link> and <link=\"SHALE\">Shale</link>.\n"
+"\n"
+"Harvesting resources requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link>."
+msgstr ""
+"<link=\"CINNABAR\">辰砂</link>、<link=\"ICE\">氷</link>、<link=\"MERCURY\">水銀</link>を含む採取可能な資源帯です。\n"
+"\n"
+"採取には<link=\"NOSECONEHARVEST\">ドリルコーン</link>を装備したロケットが必要です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.ENTITIES.FOSSIL_RESIN.NAME"
+#| msgid "Amber Fossil"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.NAME"
+msgid "Amber Field"
+msgstr "琥珀化石"
 
 #. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FORESTYOREFIELD.DESC
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FORESTYOREFIELD.DESC"
@@ -20444,6 +20881,52 @@ msgstr "辰砂堆積物で覆われた氷の惑星です。"
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC2CERESSPACEDESTINATION.NAME"
 msgid "Ceres"
 msgstr "ケレス"
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION.DESCRIPTION
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION.DESCRIPTION"
+msgid "The remains of an obliterated asteroid containing a renewable source of iridium."
+msgstr ""
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.CLEAR_FLOOR.NAME"
+#| msgid "Clear Debris"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION.NAME"
+msgid "Demolior Debris"
+msgstr "がれき掃除"
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION2.DESCRIPTION
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION2.DESCRIPTION"
+msgid "The liquid remains of an obliterated asteroid containing a renewable source of Isosap."
+msgstr ""
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION2.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION2.NAME"
+msgid "Liquid Demolior Debris"
+msgstr ""
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION3.DESCRIPTION
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION3.DESCRIPTION"
+msgid "The hot metallic remains of an obliterated asteroid containing a renewable source of iridium."
+msgstr ""
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION3.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICDEMOLIORSPACEDESTINATION3.NAME"
+msgid "Molten Demolior Debris"
+msgstr ""
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICSPACEDESTINATION.DESCRIPTION
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICSPACEDESTINATION.DESCRIPTION"
+msgid "A destination with extractable resources from another era."
+msgstr ""
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICSPACEDESTINATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FORESTYOREFIELD.NAME"
+#| msgid "Forested Ore Field"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICSPACEDESTINATION.NAME"
+msgid "Prehistoric Ore Field"
+msgstr "森林鉱石帯"
 
 #. STRINGS.UI.SPACEDESTINATIONS.PLANETS.FORESTPLANET.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.FORESTPLANET.DESCRIPTION"
@@ -23911,6 +24394,30 @@ msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_DROWNING_TRUE"
 msgid "This plant is not drowning"
 msgstr "この植物は水浸しになっていません"
 
+#. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_ENTITY_CONSUMER_REQUIREMENTS
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.DRYINGOUT.TOOLTIP"
+#| msgid "This plant must be submerged in <style=\"KKeyword\">Liquid</style> to grow"
+msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_ENTITY_CONSUMER_REQUIREMENTS"
+msgid "This plant must consume <style=\"KKeyword\">{0}</style> in order to grow"
+msgstr "この植物を育てるには<style=\"KKeyword\">液体</style>の中に沈めないといけません"
+
+#. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_ENTITY_CONSUMER_SATISFIED
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.IMMUNITY_FORMAT"
+#| msgid "<style=\"KKeyword\">{0}</style>"
+msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_ENTITY_CONSUMER_SATISFIED"
+msgid "<style=\"KKeyword\">{0}</style> consumed"
+msgstr "<style=\"KKeyword\">{0}</style>"
+
+#. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_ENTITY_CONSUMER_UNSATISFIED
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ENOUGH_FUEL.NAME"
+#| msgid "Awaiting Fuel"
+msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_ENTITY_CONSUMER_UNSATISFIED"
+msgid "Awaiting prey"
+msgstr "燃料待ち"
+
 #. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_FERTILIZER
 msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_FERTILIZER"
 msgid "<b>{mass}</b> of <style=\"KKeyword\">Fertilizer</style> is currently available"
@@ -23931,14 +24438,25 @@ msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_IRRIGATION"
 msgid "<b>{mass}</b> of <style=\"KKeyword\">Liquid</style> is currently available"
 msgstr "現在利用可能な<style=\"KKeyword\">液体</style>は {mass} です"
 
+#. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_POLLINATED
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.PROCESSCRITTER.TOOLTIP"
+#| msgid "This Duplicant is processing <style=\"KKeyword\">Critters</style>"
+msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_POLLINATED"
+msgid "This plant was recently pollinated by a <style=\"KKeyword\">Critter</style> "
+msgstr "この複製人間は<style=\"KKeyword\">動物</style>の対処中です"
+
 #. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_PRESSURE
 msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_PRESSURE"
 msgid "The current <style=\"KKeyword\">Gas</style> pressure is <b>{pressure}</b>"
 msgstr "現在の<style=\"KKeyword\">気圧</style>は<b>{pressure}</b> です"
 
 #. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_RADIATION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_RADIATION"
+#| msgid "This plant is sitting in <b>{rads}</b> of ambient <style=\"KKeyword\">Radiation</style>. It needs at between {minRads} and {maxRads} to grow"
 msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_RADIATION"
-msgid "This plant is sitting in <b>{rads}</b> of ambient <style=\"KKeyword\">Radiation</style>. It needs at between {minRads} and {maxRads} to grow"
+msgid "This plant is sitting in <b>{rads}</b> of ambient <style=\"KKeyword\">Radiation</style>. It needs between {minRads} and {maxRads} to grow"
 msgstr "この植物の周囲は<style=\"KKeyword\">放射線</style>が<b>{rads}</b>あり、成長には{minRads}から{maxRads}の間である必要があります"
 
 #. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_RADIATION_NO_MIN
@@ -23980,6 +24498,14 @@ msgstr "この植物は完全に<style=\"KKeyword\">液体</style>中に沈ん�
 msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_TEMPERATURE"
 msgid "This plant's internal <style=\"KKeyword\">Temperature</style> is <b>{temperature}</b>"
 msgstr "この植物の<style=\"KKeyword\">体温</style>は<b>{temperature}</b>です"
+
+#. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_UNPOLLINATED
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.CHORES.PROCESSCRITTER.TOOLTIP"
+#| msgid "This Duplicant is processing <style=\"KKeyword\">Critters</style>"
+msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_UNPOLLINATED"
+msgid "This plant must be pollinated by a <style=\"KKeyword\">Critter</style>{0}"
+msgstr "この複製人間は<style=\"KKeyword\">動物</style>の対処中です"
 
 #. STRINGS.UI.TOOLTIPS.VITALSPANEL
 msgctxt "STRINGS.UI.TOOLTIPS.VITALSPANEL"
@@ -24628,6 +25154,22 @@ msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CHANGE_DESTINATIO
 msgid "Select a new destination for this rocket"
 msgstr "ロケットの目的地を設定します"
 
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CHANGE_DESTINATION_BUTTON_TOOLTIP_MISSILE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CHANGE_DESTINATION_BUTTON_TOOLTIP"
+#| msgid "Select a new destination for this rocket"
+msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CHANGE_DESTINATION_BUTTON_TOOLTIP_MISSILE"
+msgid "Select a new target for this missile launcher"
+msgstr "ロケットの目的地を設定します"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CHANGE_DESTINATION_BUTTON_TOOLTIP_RAILGUN
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CHANGE_DESTINATION_BUTTON_TOOLTIP"
+#| msgid "Select a new destination for this rocket"
+msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CHANGE_DESTINATION_BUTTON_TOOLTIP_RAILGUN"
+msgid "Select a new target for this payload launcher"
+msgstr "ロケットの目的地を設定します"
+
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON"
 msgid "Clear"
@@ -24636,6 +25178,22 @@ msgstr "消去"
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON_TOOLTIP
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON_TOOLTIP"
 msgid "Clear this rocket's selected destination"
+msgstr "選択されているロケットの目的地を消去します"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON_TOOLTIP_MISSILE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON_TOOLTIP"
+#| msgid "Clear this rocket's selected destination"
+msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON_TOOLTIP_MISSILE"
+msgid "Clear this missile launcher's selected target"
+msgstr "選択されているロケットの目的地を消去します"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON_TOOLTIP_RAILGUN
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON_TOOLTIP"
+#| msgid "Clear this rocket's selected destination"
+msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CLEAR_DESTINATION_BUTTON_TOOLTIP_RAILGUN"
+msgid "Clear this payload launcher's selected target"
 msgstr "選択されているロケットの目的地を消去します"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_FIRST_AVAILABLE
@@ -24694,6 +25252,14 @@ msgstr "着陸地点なし"
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.TITLE"
 msgid "Destination"
 msgstr "目的地"
+
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.TITLE_MISSILE_TARGET
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.REPAIRWORKSTATUS.NAME"
+#| msgid "Repairing {Target}"
+msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.TITLE_MISSILE_TARGET"
+msgid "Long Range Target"
+msgstr "{Target} を修理中"
 
 #. STRINGS.UI.UISIDESCREENS.CLUSTERLOCATIONFILTERSIDESCREEN.EMPTY_SPACE_ROW
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERLOCATIONFILTERSIDESCREEN.EMPTY_SPACE_ROW"
@@ -25131,6 +25697,11 @@ msgctxt "STRINGS.UI.UISIDESCREENS.EQUIPPABLESIDESCREEN.UNASSIGNED"
 msgid "Unassigned"
 msgstr "割り当てなし"
 
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.ALL_INGREDIENTS_IN_CATEGORY_DISOVERED
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.ALL_INGREDIENTS_IN_CATEGORY_DISOVERED"
+msgid "All ingredient options in this category have been discovered."
+msgstr ""
+
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.ALLOW_MUTANT_SEED_INGREDIENTS
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.ALLOW_MUTANT_SEED_INGREDIENTS"
 msgid "Building accepts mutant seeds"
@@ -25211,6 +25782,18 @@ msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.INFORMATION"
 msgid "INFORMATION"
 msgstr "情報"
 
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.INGREDIENT_CATEGORY
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.FABRICATOR_INGREDIENTS"
+#| msgid ""
+#| "Ingredients:\n"
+#| "{0}"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.INGREDIENT_CATEGORY"
+msgid "Ingredient #{0}"
+msgstr ""
+"<b>材料:</b>\n"
+"{0}"
+
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.INGREDIENTS
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.INGREDIENTS"
 msgid "<b>Ingredients:</b>"
@@ -25225,6 +25808,14 @@ msgstr "- {0}: {1}\n"
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.NEXT_ORDER"
 msgid "Next order: {0}"
 msgstr "次の指示: {0}"
+
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.NO_DISCOVERED_INGREDIENTS
+#, fuzzy
+#| msgctxt "STRINGS.MISC.STATUSITEMS.BURIEDITEM.NOTIFICATION"
+#| msgid "Buried object discovered"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.NO_DISCOVERED_INGREDIENTS"
+msgid "No ingredients discovered"
+msgstr "埋もれた物体を発見した"
 
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.NO_WORKABLE_ORDER
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.NO_WORKABLE_ORDER"
@@ -25250,6 +25841,14 @@ msgstr "レシピ未選択"
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.QUEUED_MISSING_INGREDIENTS_TOOLTIP"
 msgid "Missing {0} of {1}\n"
 msgstr "{1} の {0} が不足\n"
+
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_AVAILABLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.CONSUMABLESSCREEN.FOOD_AVAILABLE"
+#| msgid "Available: {0}"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_AVAILABLE"
+msgid "Available: {0}"
+msgstr "在庫: {0}"
 
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_CATEGORIES.ATMO_SUIT_FACADES
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_CATEGORIES.ATMO_SUIT_FACADES"
@@ -25281,30 +25880,65 @@ msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_EFFECTS"
 msgid "<b>Effects:</b>"
 msgstr "<b>効果:</b>"
 
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_EFFECTS_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEADERS.BUILDINGEFFECTS"
+#| msgid "Effects"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_EFFECTS_HEADER"
+msgid "Effects"
+msgstr "効果"
+
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_FOREVER
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_FOREVER"
 msgid "Forever"
 msgstr "永久"
 
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_NONE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.STATUSITEMS.FOSSILIDLE.NAME"
+#| msgid "No Mining Orders Queued"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_NONE"
+msgid "No Orders Queued"
+msgstr "採掘指令なし"
+
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_QUEUE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_QUEUE"
+#| msgid "Order Production Quantity:"
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_QUEUE"
-msgid "Order Production Quantity:"
+msgid "Order Production Quantity: "
 msgstr "製造指示量:"
+
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_QUEUE_CLICK_DESCRIPTION
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_QUEUE_CLICK_DESCRIPTION"
+msgid "<b>(ClickType/Click) to select the next queued variant of this recipe</b>"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_REQUIREMENT
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.VALUE"
+#| msgid "{0}: {1}"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_REQUIREMENT"
+msgid "{0}: {1}"
+msgstr "{0}: {1}"
 
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_RESEARCH_REQUIRED
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_RESEARCH_REQUIRED"
 msgid "Research Required"
 msgstr "研究が必要です"
 
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_UNDISCOVERED_INGREDIENTS
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.NORECIPEDISCOVERED"
+#| msgid "No discovered recipes"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPE_UNDISCOVERED_INGREDIENTS"
+msgid "Undiscovered ingredients"
+msgstr "レシピ未発見"
+
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPEPRODUCT
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPEPRODUCT"
 msgid "{0}: {1}"
 msgstr "{0}: {1}"
-
-#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPERQUIREMENT
-msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RECIPERQUIREMENT"
-msgid "{0}: {1} / {2}"
-msgstr "{0}: {1} / {2}"
 
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RESULTEFFECTS
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.RESULTEFFECTS"
@@ -25331,6 +25965,14 @@ msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.TITLE"
 msgid "Production Orders"
 msgstr "生産指示"
 
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.TOOLTIPS.ADDITIONAL_INGREDIENT_OPTIONS_MESSAGE
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MAINMENU.WISHLIST_AD_TOOLTIP"
+#| msgid "<color=#ffff00ff><b>Click to view it in the store</b></color>"
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.TOOLTIPS.ADDITIONAL_INGREDIENT_OPTIONS_MESSAGE"
+msgid "<color=#ffff00ff>Alternative ingredient options are available.</color>"
+msgstr "<color=#ffff00ff><b>クリックしてストアページを表示</b></color>"
+
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.TOOLTIPS.RECIPE_WORKTIME
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.TOOLTIPS.RECIPE_WORKTIME"
 msgid "This recipe takes {0} to complete"
@@ -25354,6 +25996,24 @@ msgstr ""
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.TOOLTIPS.RECIPERQUIREMENT_SUFFICIENT"
 msgid "This recipe consumes {1} of an available {2} of {0}"
 msgstr "このレシピは現在 {2} ある {0} のうち {1} 使用します"
+
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.UNDISCOVERED_INGREDIENTS_IN_CATEGORY
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.UNDISCOVERED_INGREDIENTS_IN_CATEGORY"
+msgid ""
+"Some ingredient options have not been discovered yet:\n"
+"\n"
+"{0}"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.UNDISCOVERED_RECIPES
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.NORECIPEDISCOVERED_BODY"
+#| msgid "Discover new ingredients or research new technology to unlock some recipes."
+msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.UNDISCOVERED_RECIPES"
+msgid ""
+"The following recipes are not yet discovered.\n"
+"I must discover new ingredients or research new technology to unlock them:"
+msgstr "レシピを解禁するには、新たな食材の発見や新技術の研究をしましょう。"
 
 #. STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.UNITS_AND_CALS
 msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.UNITS_AND_CALS"
@@ -26289,6 +26949,51 @@ msgstr ""
 msgctxt "STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.TRUNCATED_CHORES"
 msgid "{0} more"
 msgstr "{0} 以上"
+
+#. STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.ARTABLESELECTIONSIDESCREEN.TITLE"
+#| msgid "Style Selection"
+msgctxt "STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.HEADER"
+msgid "Projectile Selection"
+msgstr "スタイルを選択"
+
+#. STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MISSILELAUNCHER.NAME"
+#| msgid "<link=\"MISSILELAUNCHER\">Meteor Blaster</link>"
+msgctxt "STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.TITLE"
+msgid "<link=\"MISSILELAUNCHER\">Meteor Blaster</link>"
+msgstr "<link=\"MISSILELAUNCHER\">隕石ブラスター</link>"
+
+#. STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.VANILLALARGEIMPACTOR.HEALTH_BAR_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.HEALTH.HEADER_1"
+#| msgid "Health"
+msgctxt "STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.VANILLALARGEIMPACTOR.HEALTH_BAR_TITLE"
+msgid "Health"
+msgstr "生命力"
+
+#. STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.VANILLALARGEIMPACTOR.HEALTH_BAR_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.DELIVERED"
+#| msgid "Delivered: {0} {1}"
+msgctxt "STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.VANILLALARGEIMPACTOR.HEALTH_BAR_TOOLTIP"
+msgid "Demolior health: {0} / {1}"
+msgstr "配達済: {1} {0}"
+
+#. STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.VANILLALARGEIMPACTOR.TIME_UNTIL_COLLISION_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.TIMEDSWITCHSIDESCREEN.TIMETOACTIVATE"
+#| msgid "Time until activation: {0}"
+msgctxt "STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.VANILLALARGEIMPACTOR.TIME_UNTIL_COLLISION_TITLE"
+msgid "Time Until Impact"
+msgstr "発動までの時間: {0}"
+
+#. STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.VANILLALARGEIMPACTOR.TIME_UNTIL_COLLISION_TOOLTIP
+msgctxt "STRINGS.UI.UISIDESCREENS.MISSILESELECTIONSIDESCREEN.VANILLALARGEIMPACTOR.TIME_UNTIL_COLLISION_TOOLTIP"
+msgid "{0} cycles remaining until impact"
+msgstr ""
 
 #. STRINGS.UI.UISIDESCREENS.MODULAR_CONDUIT_PORT_SIDE_SCREEN.DESCRIPTION
 msgctxt "STRINGS.UI.UISIDESCREENS.MODULAR_CONDUIT_PORT_SIDE_SCREEN.DESCRIPTION"
@@ -29215,13 +29920,19 @@ msgid "Already Unlocked"
 msgstr "開発済み"
 
 #. STRINGS.UI.USERMENUACTIONS.OPEN_TECHUNLOCKS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.UNCOMFORTABLE"
+#| msgid "Uncomfortable"
 msgctxt "STRINGS.UI.USERMENUACTIONS.OPEN_TECHUNLOCKS.NAME"
-msgid "Unlock Research"
-msgstr "研究をアンロック"
+msgid "Unlock Portal"
+msgstr "不快な"
 
 #. STRINGS.UI.USERMENUACTIONS.OPEN_TECHUNLOCKS.NAME_OFF
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.OPEN_TECHUNLOCKS.NAME_OFF"
+#| msgid "Cancel Unlock Research"
 msgctxt "STRINGS.UI.USERMENUACTIONS.OPEN_TECHUNLOCKS.NAME_OFF"
-msgid "Cancel Unlock Research"
+msgid "Cancel Unlock Portal"
 msgstr "研究のアンロックをやめる"
 
 #. STRINGS.UI.USERMENUACTIONS.OPEN_TECHUNLOCKS.TOOLTIP
@@ -29235,8 +29946,11 @@ msgid "All data has been accessed and recorded"
 msgstr "すべてのデータがアクセスされ、記録されます"
 
 #. STRINGS.UI.USERMENUACTIONS.OPEN_TECHUNLOCKS.TOOLTIP_OFF
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.OPEN_TECHUNLOCKS.TOOLTIP_OFF"
+#| msgid "Cancel this research access order"
 msgctxt "STRINGS.UI.USERMENUACTIONS.OPEN_TECHUNLOCKS.TOOLTIP_OFF"
-msgid "Cancel this research access order"
+msgid "Cancel this portal access order"
 msgstr "研究アクセス指示を取り消します"
 
 #. STRINGS.UI.USERMENUACTIONS.OPENPOI.ALREADY_RUMMAGED
@@ -29945,6 +30659,54 @@ msgctxt "STRINGS.UI.USERMENUACTIONS.UNEQUIP.TOOLTIP"
 msgid "Take off and drop this equipment"
 msgstr "この装備を脱ぎ捨てます"
 
+#. STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.ALREADY_RUMMAGED
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.ALREADYINSPECTED"
+#| msgid "Already inspected"
+msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.ALREADY_RUMMAGED"
+msgid "Already Inspected"
+msgstr "調査済み"
+
+#. STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.NAME"
+#| msgid "Inspect"
+msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.NAME"
+msgid "Inspect"
+msgstr "調査"
+
+#. STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.NAME_OFF
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.DISINFECTABLE.DISABLE_DISINFECT.NAME"
+#| msgid "Cancel Disinfect"
+msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.NAME_OFF"
+msgid "Cancel Inspect"
+msgstr "消毒をやめる"
+
+#. STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.TOOLTIP
+msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.TOOLTIP"
+msgid ""
+"Something here looks ominous\n"
+"\n"
+"Click to take a closer look"
+msgstr ""
+
+#. STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.TOOLTIP_ALREADYRUMMAGED
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.TOOLTIP_ALREADYINSPECTED"
+#| msgid "This structure has already been inspected"
+msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.TOOLTIP_ALREADYRUMMAGED"
+msgid "This has been thoroughly inspected"
+msgstr "この構造物は調査済みです"
+
+#. STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.TOOLTIP_OFF
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.DISINFECTABLE.DISABLE_DISINFECT.NAME"
+#| msgid "Cancel Disinfect"
+msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.TOOLTIP_OFF"
+msgid "Cancel this inspection"
+msgstr "消毒をやめる"
+
 #. STRINGS.UI.USERMENUACTIONS.UPROOT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.UPROOT.NAME"
 msgid "Uproot"
@@ -30187,6 +30949,14 @@ msgctxt "STRINGS.UI.VITALSSCREEN.NOT_DROWNING"
 msgid "Liquid Level"
 msgstr "液体レベル"
 
+#. STRINGS.UI.VITALSSCREEN.POLLINATION
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.ILLUMINATION.NAME"
+#| msgid "Illumination"
+msgctxt "STRINGS.UI.VITALSSCREEN.POLLINATION"
+msgid "Pollination"
+msgstr "照明"
+
 #. STRINGS.UI.VITALSSCREEN.QUALITYOFLIFE_EXPECTATIONS
 msgctxt "STRINGS.UI.VITALSSCREEN.QUALITYOFLIFE_EXPECTATIONS"
 msgid "Morale"
@@ -30313,6 +31083,24 @@ msgstr ""
 "着陸地点の地下深くに、科学が発達した入植地の遺跡が埋もれているのを発見した。\n"
 "\n"
 "もし複製人間が、この霜に覆われた惑星の中心核まで生きて辿り着ければ、この新たに発見したテクノロジーを使って、今までにないコロニーを建設することができるだろう。"
+
+#. STRINGS.UI.WELCOMEMESSAGEBODY_DLC4_PREHISTORIC
+msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY_DLC4_PREHISTORIC"
+msgid ""
+"My collision monitoring system has detected an imminent threat to our survival: a huge impactor asteroid is hurtling directly at this planet.\n"
+"\n"
+"We must make our way to the surface and mount a defense system in time to destroy the incoming asteroid before it destroys us."
+msgstr ""
+
+#. STRINGS.UI.WELCOMEMESSAGEBODY_DLC4_PREHISTORIC_SHATTERED
+msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY_DLC4_PREHISTORIC_SHATTERED"
+msgid ""
+"Impactor asteroid collision in 10 cycles!\n"
+"\n"
+"My scans indicate that the impact will trigger the eruption of all geysers that surround our landing site. There are...so many.\n"
+"\n"
+"Initiate survival procedures immediately."
+msgstr ""
 
 #. STRINGS.UI.WELCOMEMESSAGEBODY_KF23
 msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY_KF23"
@@ -30845,229 +31633,3 @@ msgstr "砂を散布しています..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂を散布しています..."
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MODS.CONTENT_FAILURE.DISABLED_CONTENT"
-#~ msgid " - <b>Not compatible with <i>{Content}</i></b>"
-#~ msgstr " - <b><i>{Content}</i>と互換性がありません</b>"
-
-#~ msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.FILTER"
-#~ msgid "Filters"
-#~ msgstr "フィルター"
-
-#~ msgctxt "STRINGS.UI.RESEARCHSCREEN.FILTER_BUTTONS.ROCKET"
-#~ msgid "Rockets"
-#~ msgstr "ロケット"
-
-# 彫像用ブロックのリンク先: "SMALLSCULPTURE"
-# 大きな彫像用ブロックのリンク先: "SCULPTURE"
-#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART.DESCRIPTION"
-#~ msgid "Can produce artwork using <link=\"CANVAS\">Blank Canvas</link> and <link=\"SCULPTURE\">Large Sculpting Block</link>"
-#~ msgstr "<link=\"CANVAS\">無地のカンバス</link>や<link=\"SMALLSCULPTURE\">彫像用ブロック</link>を使った創作"
-
-#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_TINKER.DESCRIPTION"
-#~ msgid "<link=\"PLANTS\">Crop Tending</link> and Micronutrient Fertilizer Crafting"
-#~ msgstr "<link=\"PLANTS\">作物の手入れ</link>および微量栄養素作成"
-
-#~ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_ARTIFACTS.DESCRIPTION"
-#~ msgid "Artifact Analysis"
-#~ msgstr "遺物分析"
-
-#, fuzzy
-#~| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.FAILURE"
-#~| msgid ""
-#~| "No Control Station\n"
-#~| "\n"
-#~| "A new Rocket Control Station must be installed inside the rocket"
-#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.HAS_CONTROLSTATION.TOOLTIP.WARNING_ROBO_PILOT"
-#~ msgid ""
-#~ "No Control Station\n"
-#~ "\n"
-#~ "A Robot Pilot Module is piloting this rocket"
-#~ msgstr ""
-#~ "ロケット制御端末がありません\n"
-#~ "\n"
-#~ "ロケット内部にロケット制御端末を設置する必要があります"
-
-#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING"
-#~ msgid ""
-#~ "<style=\"KKeyword\">Robo-Pilot</style> has insufficient <style=\"KKeyword\">Data Banks</style> for a roundtrip\n"
-#~ "    • {0}/{1} stored"
-#~ msgstr ""
-#~ "<style=\"KKeyword\">ロボ操縦士</style>には往復に必要な<style=\"KKeyword\">データバンク</style>が不足しています\n"
-#~ "    • {0}/{1} 収納済み"
-
-#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA.CHECKENOUGHBATTERIES"
-#~ msgid "Check enough batteries"
-#~ msgstr "バッテリー確認"
-
-#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_BATTERIES.NO_POWERBANKS"
-#~ msgid "    • Duplicants have no Power Banks"
-#~ msgstr "    • 複製人間に割り当てる電力バンクがありません"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.OWNABLESSECONDSIDESCREEN.NONE_ROW_LABEL"
-#~ msgid "Unequip"
-#~ msgstr "装備解除"
-
-#~ msgctxt "STRINGS.UI.CLUSTERMAP.ROCKETS.SPEED.TOOLTIP"
-#~ msgid ""
-#~ "<b>Rocket Speed</b> is calculated by dividing <b>Engine Power</b> by <b>Burden</b>.\n"
-#~ "\n"
-#~ "Rockets operating on autopilot will have a reduced speed.\n"
-#~ "\n"
-#~ "Rocket speed can be further increased by the skill of the Duplicant flying the rocket."
-#~ msgstr ""
-#~ "<b>ロケット速度</b>とは、<b>エンジン出力</b>を<b>総重量</b>で割ったものです。\n"
-#~ "\n"
-#~ "自動操縦中はロケットの速度が低下します。\n"
-#~ "\n"
-#~ "ロケット速度は複製人間のスキルによって上昇させることができます。"
-
-#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_BATTERIES.FAIL"
-#~ msgid "    • Bionics have no batteries"
-#~ msgstr "    • バイオニックはバッテリーがありません"
-
-#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.CRITERIA_BATTERIES.PASS"
-#~ msgid "    • Bionics have batteries"
-#~ msgstr "    • バイオニックはバッテリーがあります"
-
-#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.BIONICBATTERYDIAGNOSTIC.LOW_CALORIES"
-#~ msgid "    • Power-to-Duplicant ratio is low"
-#~ msgstr "    • 複製人間の人数に対しパワーバンクが足りていません"
-
-#~ msgctxt "STRINGS.UI.DLC3.NAME"
-#~ msgid "SUPER-SECRET DLC3 NAME"
-#~ msgstr "極秘DLC3名"
-
-#~ msgctxt "STRINGS.UI.DLC3.NAME_ITAL"
-#~ msgid "<i>SUPER-SECRET DLC3 NAME</i>"
-#~ msgstr "<i>極秘DLC3名</i>"
-
-#~ msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.SUBCATEGORIES.MONUMENT_PARTS"
-#~ msgid "Monuments"
-#~ msgstr "モニュメント"
-
-#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.ROBO_PILOT_WARNING"
-#~ msgid "Robo-Pilot solo flight"
-#~ msgstr "ロボット操縦によるソロフライト"
-
-#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.PILOT_BOARDED.TOOLTIP.ROBO_PILOT_WARNING"
-#~ msgid ""
-#~ "This rocket is being piloted by a Robo-Pilot\n"
-#~ "\n"
-#~ "There are no Duplicants with the <link=\"ROCKETPILOTING1\">Rocket Piloting</link> skill currently onboard"
-#~ msgstr ""
-#~ "このロケットはロボット操縦による自動航行中です\n"
-#~ "\n"
-#~ "<link=\"ROCKETPILOTING1\">ロケット操縦</link>スキルを持つ複製人間は搭乗していません"
-
-#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.FAILURE"
-#~ msgid "<style=\"KKeyword\">Robo-Pilot</style> requires at least one <style=\"KKeyword\">Data Bank</style> for launch"
-#~ msgstr "<style=\"KKeyword\">ロボット操縦</style>で発射するには最低1つ以上の<style=\"KKeyword\">データバンク</style>が必要です"
-
-#~ msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_DATA_REQUIREMENTS.TOOLTIP.WARNING"
-#~ msgid ""
-#~ "<style=\"KKeyword\">Robo-Pilot</style> has insufficient <style=\"KKeyword\">Data Banks</style> to reach its destination\n"
-#~ "\n"
-#~ "Travel speed will be reduced"
-#~ msgstr ""
-#~ "<style=\"KKeyword\">ロボット操縦</style>は目的地到達に必要な<style=\"KKeyword\">データバンク</style>が不足しています\n"
-#~ "\n"
-#~ "航行速度は遅くなります"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.TOOLTIP.SLOT_INSTALLED_IN_USE"
-#~ msgid ""
-#~ "<style=\"KKeyword\">{0}</style> installed\n"
-#~ "\n"
-#~ "Status: Active\n"
-#~ "\n"
-#~ "Wattage: {1}\n"
-#~ "\n"
-#~ "{2}"
-#~ msgstr ""
-#~ "<style=\"KKeyword\">{0}</style> インストール済\n"
-#~ "\n"
-#~ "ステータス: アクティブ\n"
-#~ "\n"
-#~ "ワット数: {1}\n"
-#~ "\n"
-#~ "{2}"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.TOOLTIP.SLOT_INSTALLED_NOT_IN_USE"
-#~ msgid ""
-#~ "<style=\"KKeyword\">{0}</style> installed\n"
-#~ "\n"
-#~ "Status: Idle\n"
-#~ "\n"
-#~ "Potential Wattage: {1}\n"
-#~ "\n"
-#~ "{2}"
-#~ msgstr ""
-#~ "<style=\"KKeyword\">{0}</style> インストール済\n"
-#~ "\n"
-#~ "ステータス: 待機状態\n"
-#~ "\n"
-#~ "潜在ワット数: {1}\n"
-#~ "\n"
-#~ "{2}"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.UPGRADE_SLOT_WATTAGE"
-#~ msgid "{0}"
-#~ msgstr "{0}"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.MINIONTODOSIDESCREEN.CURRENT_SCHEDULE_BLOCK"
-#~ msgid "Schedule Block: {0}"
-#~ msgstr "時刻ブロック: {0}"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.TINKER.TOOLTIP_ALLOW"
-#~ msgid "Allow Tinker Tool application on this building"
-#~ msgstr "この設備での工具使用を許可します"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.TINKER.TOOLTIP_DISALLOW"
-#~ msgid "Disallow Tinker Tool application on this building"
-#~ msgstr "この設備での工具使用を禁止します"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_TOOLTIP"
-#~ msgid ""
-#~ "This DLC is available now!\n"
-#~ "\n"
-#~ "<color=#ffff00ff><b>Click to view store page</b></color>"
-#~ msgstr ""
-#~ "このDLCは発売中です！\n"
-#~ "\n"
-#~ "<color=#ffff00ff><b>クリックしてストアページを表示</b></color>"
-
-#~ msgctxt "STRINGS.UI.TOOLS.MOVETOLOCATION.NAME"
-#~ msgid "Move"
-#~ msgstr "移動"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.PICKUPABLEMOVE.NAME"
-#~ msgid "Move To"
-#~ msgstr "ここに移動"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.PICKUPABLEMOVE.NAME_OFF"
-#~ msgid "Cancel Move"
-#~ msgstr "移動をやめる"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.ACTIVATE_EXPANSION1"
-#~ msgid "ACTIVATE DLC"
-#~ msgstr "DLC有効化"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.ACTIVATE_EXPANSION1_RAIL_DESC"
-#~ msgid "<i>Spaced Out!</i> will be activated the next time you launch the game. The game will now close."
-#~ msgstr "<i>Spaced Out!</i>DLCは次回ゲーム起動時に有効になります。ゲームを終了します。"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.ACTIVATE_EXPANSION1_TOOLTIP"
-#~ msgid "Click to activate the <i>Spaced Out!</i> DLC"
-#~ msgstr "クリックすると<i>Spaced Out!</i>DLCを有効化されます"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.DEACTIVATE_EXPANSION1"
-#~ msgid "DEACTIVATE DLC"
-#~ msgstr "DLC無効化"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.DEACTIVATE_EXPANSION1_TOOLTIP"
-#~ msgid "Click to deactivate the <i>Spaced Out!</i> DLC"
-#~ msgstr "クリックすると<i>Spaced Out!</i>DLCが無効化されます"
-
-#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.WISHLIST_AD"
-#~ msgid "Wishlist now"
-#~ msgstr "ウィッシュリストに登録"
