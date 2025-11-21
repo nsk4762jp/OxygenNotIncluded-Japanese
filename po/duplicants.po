@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.DUPLICANTS.ARRIVALTIME
@@ -501,8 +501,11 @@ msgid "{0} Temperature Retention"
 msgstr "温度維持 {0}"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.DESC
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.DESC"
+#| msgid "Determines how quickly a Duplicant conducts <style=\"KKeyword\">Research</style> and gains <style=\"KKeyword\">Skill Points</style>."
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.DESC"
-msgid "Determines how quickly a Duplicant conducts <style=\"KKeyword\">Research</style> and gains <style=\"KKeyword\">Skill Points</style>."
+msgid "Determines how quickly a Duplicant conducts <style=\"KKeyword\">Research</style> and levels up their <style=\"KKeyword\">Attributes</style>."
 msgstr "複製人間の<style=\"KKeyword\">研究</style>速度、<style=\"KKeyword\">スキルポイント</style>獲得速度を決定します。"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.GEOTUNER_SPEED_MODIFIER
@@ -521,9 +524,12 @@ msgid "{0} Research Speed"
 msgstr "研究速度 {0}"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.SPEEDMODIFIER
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.BOTANIST.HARVEST_SPEED_MODIFIER"
+#| msgid "{0} Harvesting Speed"
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.SPEEDMODIFIER"
-msgid "{0} Skill Leveling"
-msgstr "スキルレベル {0}"
+msgid "{0} Attribute Leveling Speed"
+msgstr "収穫速度 {0}"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.LIFESUPPORT.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LIFESUPPORT.DESC"
@@ -4878,9 +4884,20 @@ msgstr ""
 "彼らには標準的な<link=\"MISCELLANEOUSTIPS\">トイレ</link>の使用を許可すべきではありません。"
 
 #. STRINGS.DUPLICANTS.MODEL.BIONIC.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.DUPLICANTS"
+#| msgid "<link=\"DUPLICANTS\">Duplicants</link>"
 msgctxt "STRINGS.DUPLICANTS.MODEL.BIONIC.NAME"
-msgid "Bionic Duplicant"
-msgstr "バイオニック複製人間"
+msgid "<link=\"DUPLICANTS\">Bionic Duplicant</link>"
+msgstr "<link=\"DUPLICANTS\">複製人間</link>"
+
+#. STRINGS.DUPLICANTS.MODEL.BIONIC.NAME_ADJECTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.DUPLICANTS"
+#| msgid "<link=\"DUPLICANTS\">Duplicants</link>"
+msgctxt "STRINGS.DUPLICANTS.MODEL.BIONIC.NAME_ADJECTIVE"
+msgid "<link=\"DUPLICANTS\">Bionic</link>"
+msgstr "<link=\"DUPLICANTS\">複製人間</link>"
 
 #. STRINGS.DUPLICANTS.MODEL.BIONIC.NAME_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODEL.BIONIC.NAME_TOOLTIP"
@@ -4915,9 +4932,20 @@ msgstr ""
 "彼らは<link=\"PRIORITY\">優先度</link>に従って作業をこなします。"
 
 #. STRINGS.DUPLICANTS.MODEL.STANDARD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.DUPLICANTS"
+#| msgid "<link=\"DUPLICANTS\">Duplicants</link>"
 msgctxt "STRINGS.DUPLICANTS.MODEL.STANDARD.NAME"
-msgid "Standard Duplicant"
-msgstr "標準的な複製人間"
+msgid "<link=\"DUPLICANTS\">Standard Duplicant</link>"
+msgstr "<link=\"DUPLICANTS\">複製人間</link>"
+
+#. STRINGS.DUPLICANTS.MODEL.STANDARD.NAME_ADJECTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.DUPLICANTS"
+#| msgid "<link=\"DUPLICANTS\">Duplicants</link>"
+msgctxt "STRINGS.DUPLICANTS.MODEL.STANDARD.NAME_ADJECTIVE"
+msgid "<link=\"DUPLICANTS\">Standard</link>"
+msgstr "<link=\"DUPLICANTS\">複製人間</link>"
 
 #. STRINGS.DUPLICANTS.MODELTITLE
 msgctxt "STRINGS.DUPLICANTS.MODELTITLE"
@@ -5618,6 +5646,22 @@ msgstr "極寒環境下の複製人間達は疲れやすく体温を失います
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.COLDAIR.NAME"
 msgid "Chilly Surroundings"
 msgstr "肌寒い環境"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.COMMUNALDINING.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.GASLIQUIDEXPOSURE.TOOLTIP_RATE_STAYS"
+#| msgid "maintaining"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.COMMUNALDINING.NAME"
+msgid "Communal Dining"
+msgstr "は現状維持されます"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.COMMUNALDINING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MESSTABLESALT.TOOLTIP"
+#| msgid "This Duplicant had the luxury of using <style=\"KKeyword\">Table Salt</style> with their last meal at a <link=\"DININGTABLE\">Mess Table</link>"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.COMMUNALDINING.TOOLTIP"
+msgid "This Duplicant recently had the pleasure of dining with friends at a <link=\"MULTIMINIONDININGTABLE\">Communal Table</link>"
+msgstr "この複製人間は、前の<link=\"DININGTABLE\">食卓</link>での食事で、<style=\"KKeyword\">食卓塩</style>を使うという贅沢をしました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.CONTAMINATEDLUNGS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CONTAMINATEDLUNGS.NAME"
@@ -6711,8 +6755,11 @@ msgid "Salted Food"
 msgstr "塩をかけた食糧"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MESSTABLESALT.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MESSTABLESALT.TOOLTIP"
+#| msgid "This Duplicant had the luxury of using <style=\"KKeyword\">Table Salt</style> with their last meal at a <link=\"DININGTABLE\">Mess Table</link>"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MESSTABLESALT.TOOLTIP"
-msgid "This Duplicant had the luxury of using <style=\"KKeyword\">Table Salt</style> with their last meal at a <link=\"DININGTABLE\">Mess Table</link>"
+msgid "This Duplicant had the luxury of using <style=\"KKeyword\"><link=\"IDTABLESALT\">Table Salt</link></style> with their last meal at a <link=\"DININGTABLE\">Mess Table</link>"
 msgstr "この複製人間は、前の<link=\"DININGTABLE\">食卓</link>での食事で、<style=\"KKeyword\">食卓塩</style>を使うという贅沢をしました"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.METABOLISM_CALORIE_MODIFIER.NAME
@@ -7099,6 +7146,22 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.RESTLESS.TOOLTIP"
 msgid "This Duplicant went a few minutes without working and is now completely awash with guilt"
 msgstr "この複製人間は数分間何もしなかったのため、罪悪感でいっぱいです"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMBANQUETHALL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMGREATHALL.NAME"
+#| msgid "Great Hall"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBANQUETHALL.NAME"
+msgid "Banquet Hall"
+msgstr "大広間"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ROOMBANQUETHALL.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMMESSHALL.TOOLTIP"
+#| msgid "This Duplicant's most recent meal was eaten in a <style=\"KKeyword\">Mess Hall</style>"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBANQUETHALL.TOOLTIP"
+msgid "This Duplicant's most recent meal was eaten in a bustling <style=\"KKeyword\">Banquet Hall</style>"
+msgstr "この複製人間は<style=\"KKeyword\">食堂</style>で食事をとりました"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.ROOMBARRACKS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ROOMBARRACKS.NAME"
 msgid "Barracks"
@@ -7322,8 +7385,11 @@ msgid "Charging"
 msgstr "充電中"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SCOUTBOTCHARGING.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SCOUTBOTCHARGING.TOOLTIP"
+#| msgid "Rover is happily charging inside <link=\"SCOUTMODULE\">Rover's Module</link>"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SCOUTBOTCHARGING.TOOLTIP"
-msgid "Rover is happily charging inside <link=\"SCOUTMODULE\">Rover's Module</link>"
+msgid "<link=\"SCOUTROVER\">Rover</link> is happily charging inside <link=\"SCOUTMODULE\">Rover's Module</link>"
 msgstr "探査ロボは<link=\"SCOUTMODULE\">探査ロボモジュール</link>内で心地よく充電中です"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SEAFOODRADIATIONRESISTANCE.CAUSE
@@ -7380,9 +7446,12 @@ msgid "This Duplicant recently had a shower and feels squeaky clean!"
 msgstr "この複製人間は最近シャワーを浴びてすごくさっぱりしています！"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SKILLLEVEL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.LEVELUP.NAME"
+#| msgid "Attribute increase"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SKILLLEVEL.NAME"
-msgid "Skill Level"
-msgstr "スキルレベル"
+msgid "Attribute Level"
+msgstr "能力値上昇"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SLEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SLEEP.NAME"
@@ -7540,6 +7609,19 @@ msgstr "背中の痛み"
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SOREBACK.TOOLTIP"
 msgid "This Duplicant feels achy from sleeping on the floor last night and would like a bed"
 msgstr "この複製人間は昨晩床で寝ていたので、ベッドを欲しがっています"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.SPACEBUZZ.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SPACEBUZZ.NAME"
+msgid "Thrilling Flight"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.MODIFIERS.SPACEBUZZ.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.FLEEING.TOOLTIP"
+#| msgid "This Duplicant is trying to escape something scary!"
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SPACEBUZZ.TOOLTIP"
+msgid "This Duplicant is getting a real adrenaline rush from being in space!"
+msgstr "この複製人間は何か恐ろしい物から逃げ出しています！"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SPACETOURIST.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SPACETOURIST.NAME"
@@ -8684,6 +8766,16 @@ msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.RUBY.NAME"
 msgid "Ruby"
 msgstr "ルビー"
 
+#. STRINGS.DUPLICANTS.PERSONALITIES.SENA.DESC
+msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.SENA.DESC"
+msgid "{0}s only care about three things: gold accents, true crime, and the advancement of nuclear physics."
+msgstr ""
+
+#. STRINGS.DUPLICANTS.PERSONALITIES.SENA.NAME
+msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.SENA.NAME"
+msgid "Sena"
+msgstr ""
+
 #. STRINGS.DUPLICANTS.PERSONALITIES.SONYAR.DESC
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.SONYAR.DESC"
 msgid "{0}s would sooner burn down the colony than read an instruction manual."
@@ -8884,6 +8976,32 @@ msgstr "<link=\"ELECTROBANK\">電力バンク</link>の収納数が増え、充�
 msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_C3.NAME"
 msgid "<link=\"BIONICSC3\">Power Banking</link>"
 msgstr "<link=\"BIONICSC3\">電力バンク増設</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_D1.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_D1.DESCRIPTION"
+msgid "Increases resistance to environmental irritants and pressure-related injuries"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_D1.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_B1.NAME"
+#| msgid "<link=\"BIONICSB1\">Improved Gears I</link>"
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_D1.NAME"
+msgid "<link=\"BIONICSD1\">Improved Hardware</link>"
+msgstr "<link=\"BIONICSB1\">ギア改善 I</link>"
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_D2.DESCRIPTION
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_D2.DESCRIPTION"
+msgid "Allows Bionic Duplicants to work comfortably in a wider range of ambient temperatures"
+msgstr ""
+
+#. STRINGS.DUPLICANTS.ROLES.BIONICS_D2.NAME
+#, fuzzy
+#| msgctxt "STRINGS.RESEARCH.TECHS.SOLIDSPACE.NAME"
+#| msgid "<link=\"SOLIDSPACE\">Solid Control</link>"
+msgctxt "STRINGS.DUPLICANTS.ROLES.BIONICS_D2.NAME"
+msgid "<link=\"BIONICSD2\">Climate Control</link>"
+msgstr "<link=\"SOLIDSPACE\">固体制御</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.BUILDER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.BUILDER.DESCRIPTION"
@@ -9198,8 +9316,8 @@ msgstr "<link=\"BUILDING3\">破壊活動</link>"
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_FARMER.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_FARMER.DESCRIPTION"
-msgid "Further increases a Duplicant's farming skills"
-msgstr "複製人間の農耕スキルをかなり上昇させます"
+msgid "Enables a Duplicant to gather <link=\"PLANTFIBER\">Plant Husk</link>s as a byproduct when harvesting certain <link=\"PLANTS\">Plants</link>"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.ROLES.SENIOR_FARMER.NAME
 msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_FARMER.NAME"
@@ -13479,8 +13597,8 @@ msgstr "この複製人間には天性の<style=\"KKeyword\">スキル</style>�
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.DESC"
-msgid "Further increases a Duplicant's farming skills"
-msgstr "複製人間の農耕スキルをかなり上昇させます"
+msgid "Enables a Duplicant to gather <link=\"PLANTFIBER\">Plant Husk</link>s as a byproduct when harvesting certain <link=\"PLANTS\">Plants</link>"
+msgstr ""
 
 #. STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.NAME"
@@ -14860,3 +14978,27 @@ msgstr "全宇宙のビタミンCを以てしても、この複製人間が罹�
 msgctxt "STRINGS.DUPLICANTS.TRAITS.WEAKIMMUNESYSTEM.NAME"
 msgid "Biohazardous"
 msgstr "バイオハザード"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.LEARNING.SPEEDMODIFIER"
+#~ msgid "{0} Skill Leveling"
+#~ msgstr "スキルレベル {0}"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODEL.BIONIC.NAME"
+#~ msgid "Bionic Duplicant"
+#~ msgstr "バイオニック複製人間"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODEL.STANDARD.NAME"
+#~ msgid "Standard Duplicant"
+#~ msgstr "標準的な複製人間"
+
+#~ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SKILLLEVEL.NAME"
+#~ msgid "Skill Level"
+#~ msgstr "スキルレベル"
+
+#~ msgctxt "STRINGS.DUPLICANTS.ROLES.SENIOR_FARMER.DESCRIPTION"
+#~ msgid "Further increases a Duplicant's farming skills"
+#~ msgstr "複製人間の農耕スキルをかなり上昇させます"
+
+#~ msgctxt "STRINGS.DUPLICANTS.TRAITS.GRANTSKILL_FARMING3.DESC"
+#~ msgid "Further increases a Duplicant's farming skills"
+#~ msgstr "複製人間の農耕スキルをかなり上昇させます"
