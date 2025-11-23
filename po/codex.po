@@ -2507,17 +2507,6 @@ msgid "Gates"
 msgstr "論理ゲート"
 
 #. STRINGS.CODEX.AUTOMATION.PARAGRAPH_1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.AUTOMATION.PARAGRAPH_1"
-#| msgid ""
-#| "Automation is a tool for controlling the operation of buildings based on what sensors in the colony are detecting.\n"
-#| "\n"
-#| "A <link=\"CEILINGLIGHT\">Ceiling Light</link> could be configured to automatically turn on when a <link=\"DUPLICANTSENSOR\">Duplicant Motion Sensor</link> detects a Duplicant in the room.\n"
-#| "\n"
-#| "A <link=\"LIQUIDPUMP\">Liquid Pump</link> might activate only when a <link=\"LOGICELEMENTSENSORLIQUID\">Liquid Element Sensor</link> detects water.\n"
-#| "\n"
-#| "A <link=\"AIRCONDITIONER\">Thermo Regulator</link> might activate only when the <link=\"LOGICTEMPERATURESENSOR\">Thermo Sensor</link> detects too much heat.\n"
-#| "\n"
 msgctxt "STRINGS.CODEX.AUTOMATION.PARAGRAPH_1"
 msgid ""
 "Automation is a tool for controlling the operation of buildings based on what sensors in the colony are detecting.\n"
@@ -2529,9 +2518,9 @@ msgid ""
 "A <link=\"AIRCONDITIONER\">Thermo Regulator</link> might activate only when the <link=\"LOGICTEMPERATURESENSOR\">Thermo Sensor</link> detects too much heat.\n"
 "\n"
 msgstr ""
-"自動化はセンサーが設置されたコロニー内の設備を操作制御するためのツールだ。\n"
+"自動化はコロニー内に設置されたセンサーが検知したものによって設備を操作制御するためのツールだ。\n"
 "\n"
-"<link=\"DUPLICANTSENSOR\">複製人間 モーションセンサー</link>が部屋に入ってきた複製人間を検知すると、<link=\"CEILINGLIGHT\">天井灯</link>が自動で点灯するように設定できる。\n"
+"<link=\"LOGICDUPLICANTSENSOR\">複製人間 モーションセンサー</link>が部屋に入ってきた複製人間を検知すると、<link=\"CEILINGLIGHT\">天井灯</link>が自動で点灯するように設定できる。\n"
 "\n"
 "<link=\"LIQUIDPUMP\">吸水ポンプ</link>は<link=\"LOGICELEMENTSENSORLIQUID\">液体元素センサー</link>が水を検知した場合のみ動作させることもできる。\n"
 "\n"
@@ -4073,21 +4062,6 @@ msgid "Polite Request"
 msgstr "丁重なお願い"
 
 #. STRINGS.CODEX.B9_TELEPORTATION.BODY.CONTAINER1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.B9_TELEPORTATION.BODY.CONTAINER1"
-#| msgid ""
-#| "<smallcaps>[Voice Recognition Initialized]\n"
-#| "[Subject Identified: A001]</smallcaps>\n"
-#| "\n"
-#| "[LOG BEGINS]\n"
-#| "\n"
-#| "Dr. Techna's newest notes on Duplicant memories have revealed some interesting discoveries. It seems memories </i>can</i> be transferred to the cloned subject but it requires the host to be subjected to a machine that performs extremely detailed microanalysis. This in-depth dissection of the subject would produce the results we need but at the expense of destroying the host.\n"
-#| "\n"
-#| "Of course this is not ideal for our current situation. The time and energy it took to recruit Gravitas' highly trained staff would be wasted if we were to extirpate these people for the sake of experimentation. But perhaps we can use our Duplicants as experimental subjects until we perfect the process and look into finding volunteers for the future in order to obtain an ideal specimen. I will have to discuss this with Dr. Techna but I'm sure he would be enthusiastic about such an opportunity to continue his work.\n"
-#| "\n"
-#| "I am also very interested in the commercial opportunities this presents. Off the top of my head I can think of applications in genetics, AI development, and teleportation technology. This could be a significant financial windfall for the company.\n"
-#| "\n"
-#| "[LOG ENDS]"
 msgctxt "STRINGS.CODEX.B9_TELEPORTATION.BODY.CONTAINER1"
 msgid ""
 "<smallcaps>[Voice Recognition Initialized]\n"
@@ -4107,6 +4081,7 @@ msgstr ""
 "[対象認識: A001]</smallcaps>\n"
 "\n"
 "[ログ開始]\n"
+"\n"
 "複製人間の記憶に関するテクナ博士の最新の報告には興味深い発見があった。記憶はクローン被検体に転送<i>可能</i>だが、ホストを非常に繊細な微量分析にかける必要がある。対象のこの微細な微量分析は我々が望む結果を産み出すが、ホストの破壊という犠牲を払っている。\n"
 "\n"
 "これはもちろん我々にとって理想的な状況ではない。実験のために人的消費をしていては、グラビタスの高度に訓練されたスタッフを採用するのに要した時間とエネルギーが無駄になってしまう。しかしながら、理想的な被検体を得るため将来的に志願者を募ったりプロセスを完成させたりするまでは、実験対象として複製人間を使うこともできる。これについて私はテクナ博士と議論する必要があるが、彼は仕事が続けられるとなれば喜んで取り組むだろう。\n"
@@ -4829,12 +4804,9 @@ msgid "Buildings in this category:"
 msgstr "このカテゴリにある設備:"
 
 #. STRINGS.CODEX.CATEGORIES.SHARED.LIST_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.CATEGORIES.SHARED.BUILDINGS_LIST_TITLE"
-#| msgid "Buildings in this category:"
 msgctxt "STRINGS.CODEX.CATEGORIES.SHARED.LIST_TITLE"
 msgid "In this category:"
-msgstr "このカテゴリにある設備:"
+msgstr "このカテゴリ:"
 
 #. STRINGS.CODEX.CHAMELEON.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.CHAMELEON.BODY.CONTAINER1"
@@ -5646,12 +5618,9 @@ msgid "Calculating Decor"
 msgstr "装飾値の算出"
 
 #. STRINGS.CODEX.DECORSYSTEM.HEADER_3
-#, fuzzy
-#| msgctxt "STRINGS.VIDEOS.TUTORIAL_HEADER"
-#| msgid "Tutorial:"
 msgctxt "STRINGS.CODEX.DECORSYSTEM.HEADER_3"
 msgid "Tutorials"
-msgstr "チュートリアル:"
+msgstr "チュートリアル"
 
 #. STRINGS.CODEX.DECORSYSTEM.PARAGRAPH_1
 msgctxt "STRINGS.CODEX.DECORSYSTEM.PARAGRAPH_1"
@@ -5661,14 +5630,6 @@ msgid ""
 msgstr "低い装飾値は複製人間の<link=\"STRESS\">ストレス</link>を上昇させます。ありがたいことに、きれいなものはエリアの装飾値を上昇させます。十分に高い装飾値、というものについて複製人間は各々独自の考えを持っています。複製人間が日中経験した平均装飾値が彼らの期待を下回ると、ストレスペナルティを受けます。\n"
 
 #. STRINGS.CODEX.DECORSYSTEM.PARAGRAPH_2
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DECORSYSTEM.PARAGRAPH_2"
-#| msgid ""
-#| "Many things have an effect on the Decor value of a tile. A building's effect is expressed as a strength value and a radius. Often that effect is positive, but many buildings also lower the decor value of an area too. <link=\"PLANTS\">Plants</link>, <link=\"CREATURES\">Critters</link>, and <link=\"BUILDCATEGORYFURNITURE\">Furniture</link> often increase decor while industrial buildings, debris, and rot often decrease it. Duplicants experience the combined decor of all objects affecting a tile.\n"
-#| "\n"
-#| "The <link=\"PRICKLEGRASS\">Bluff Briar</link> has a decor value of 25 and a radius of 4 tiles. \n"
-#| "The <link=\"MICROBEMUSHER\">Microbe Musher</link> has a decor value of -15 and a radius of 3 tiles. \n"
-#| "The result of placing a <link=\"MICROBEMUSHER\">Microbe Musher</link> next to a <link=\"PRICKLEGRASS\">Bluff Briar</link> would be a combined decor value of 10."
 msgctxt "STRINGS.CODEX.DECORSYSTEM.PARAGRAPH_2"
 msgid ""
 "Many things have an effect on the Decor value of a tile. A building's effect is expressed as a strength value and a radius. Often that effect is positive, but many buildings also lower the decor value of an area too. <link=\"PLANTS\">Plants</link>, <link=\"CREATURES\">Critters</link>, and <link=\"BUILDCATEGORYFURNITURE\">Furniture</link> often increase decor while industrial buildings, debris, and rot often decrease it. Duplicants experience the combined decor of all objects affecting a tile.\n"
@@ -5682,7 +5643,8 @@ msgstr ""
 "\n"
 "<link=\"PRICKLEGRASS\">ハッタリいばら</link>は装飾値25で、半径は4タイルです。\n"
 "<link=\"MICROBEMUSHER\">微生物粉砕機</link>は装飾値-15で、半径は3タイルです。\n"
-"<link=\"MICROBEMUSHER\">微生物粉砕機</link>の隣に<link=\"PRICKLEGRASS\">ハッタリいばら</link>を置くと、装飾値は25-15=10となります。"
+"<link=\"MICROBEMUSHER\">微生物粉砕機</link>の隣に<link=\"PRICKLEGRASS\">ハッタリいばら</link>を置くと、装飾値は25-15=10となります。\n"
+"\n"
 
 #. STRINGS.CODEX.DECORSYSTEM.PARAGRAPH_3
 msgctxt "STRINGS.CODEX.DECORSYSTEM.PARAGRAPH_3"
@@ -5690,6 +5652,8 @@ msgid ""
 "To learn more, watch <link=\"VIDEOS13\">Video: Duplicant Morale</link> and see <link=\"MISCELLANEOUSTIPS2\">Tutorial: Stress Management</link>.\n"
 "\n"
 msgstr ""
+"詳細については、<link=\"VIDEOS13\">ビデオ: 複製人間の士気</link> と <link=\"MISCELLANEOUSTIPS2\">チュートリアル: ストレス管理</link> をご覧ください。\n"
+"\n"
 
 #. STRINGS.CODEX.DECORSYSTEM.TITLE
 msgctxt "STRINGS.CODEX.DECORSYSTEM.TITLE"
@@ -5804,28 +5768,19 @@ msgid "Dew Dripper"
 msgstr "ツユシボリ"
 
 #. STRINGS.CODEX.DIESELMOO.BODY.CONTAINER1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SQUEAKY.BODY.CONTAINER1"
-#| msgid "<smallcaps>Pictured: \"Squeaky\" Puft variant</smallcaps>"
 msgctxt "STRINGS.CODEX.DIESELMOO.BODY.CONTAINER1"
 msgid "<smallcaps>Pictured: \"Husky\" Moo variant</smallcaps>"
-msgstr "<smallcaps>図: \"やかまし\" パフ 変種</smallcaps>"
+msgstr "<smallcaps>図: \"ハスキー\" モー 変種</smallcaps>"
 
 #. STRINGS.CODEX.DIESELMOO.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.CLEANER.SUBTITLE"
-#| msgid "Critter Morph"
 msgctxt "STRINGS.CODEX.DIESELMOO.SUBTITLE"
 msgid "Critter Morph"
 msgstr "動物(変種)"
 
 #. STRINGS.CODEX.DIESELMOO.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.GASSYMOO.TITLE"
-#| msgid "Gassy Moo"
 msgctxt "STRINGS.CODEX.DIESELMOO.TITLE"
 msgid "Husky Moo"
-msgstr "ぷすぷす モー"
+msgstr "ハスキー モー"
 
 #. STRINGS.CODEX.DINOFERN.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.DINOFERN.BODY.CONTAINER1"
@@ -5918,19 +5873,11 @@ msgid "Drecko"
 msgstr "ドレッコ"
 
 #. STRINGS.CODEX.DUPLICANT.BODY.CONTAINER1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DUPLICANT.BODY.CONTAINER1"
-#| msgid ""
-#| "Duplicants are printed at the <link=\"HEADQUARTERS\">Printing Pod</link>, emerging fully formed and clothed in standard-issue uniforms. Unique outfits can be found in the Supply Closet.\n"
-#| "\n"
 msgctxt "STRINGS.CODEX.DUPLICANT.BODY.CONTAINER1"
 msgid "Duplicants are printed at the <link=\"HEADQUARTERS\">Printing Pod</link>, emerging fully formed and clothed in standard-issue uniforms. Unique outfits can be found in the Supply Closet.\n"
 msgstr "複製人間は<link=\"HEADQUARTERS\">製造ポッド</link>で印刷され、完全な姿で標準装備の制服を着た状態で出てきます。ユニークな衣装は支給品クローゼットで見つかります。\n"
 
 #. STRINGS.CODEX.DUPLICANT.CODEXCATEGORYNAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DUPLICANT.SPECIES_TITLE"
-#| msgid "Duplicants"
 msgctxt "STRINGS.CODEX.DUPLICANT.CODEXCATEGORYNAME"
 msgid "Duplicants"
 msgstr "複製人間"
@@ -5941,12 +5888,9 @@ msgid "Colony Workers"
 msgstr "コロニー労働者"
 
 #. STRINGS.CODEX.DUPLICANT.SPECIES_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DUPLICANT.SPECIES_TITLE"
-#| msgid "Duplicants"
 msgctxt "STRINGS.CODEX.DUPLICANT.SPECIES_TITLE"
 msgid "Duplicant Types"
-msgstr "複製人間"
+msgstr "複製人間のタイプ"
 
 #. STRINGS.CODEX.DUSKCAP.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.DUSKCAP.BODY.CONTAINER1"
@@ -6068,13 +6012,6 @@ msgstr ""
 "\n"
 
 #. STRINGS.CODEX.EXOBASES.PARAGRAPH_2
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.EXOBASES.PARAGRAPH_2"
-#| msgid ""
-#| "To scan space and see nearby intersteller destinations a <link=\"CLUSTERTELESCOPE\">Telescope</link> must first be built on the surface of a Planetoid. <link=\"ORBITALRESEARCHCENTER\">Orbital Data Collection Lab</link> in orbit around a Planetoid, and <link=\"SCANNERMODULE\">Cartographic Module</link> attached to a rocket can also reveal places on a Starmap.\n"
-#| "\n"
-#| "Always check engine fuel to determine if your rocket can reach its destination, keeping in mind rockets can only land on Plantoids with a <link=\"LAUNCHPAD\">Rocket Platform</link> on it although some modules like <link=\"SCOUTMODULE\">Rover's Modules</link> and <link=\"PIONEERMODULE\">Trailblazer Modules</link> can be sent to the surface of a Planetoid from a rocket in orbit.\n"
-#| "\n"
 msgctxt "STRINGS.CODEX.EXOBASES.PARAGRAPH_2"
 msgid ""
 "To scan space and see nearby intersteller destinations a <link=\"CLUSTERTELESCOPE\">Telescope</link> must first be built on the surface of a Planetoid. <link=\"ORBITALRESEARCHCENTER\">Orbital Data Collection Lab</link> in orbit around a Planetoid, and <link=\"SCANNERMODULE\">Cartographic Module</link> attached to a rocket can also reveal places on a Starmap.\n"
@@ -6084,16 +6021,10 @@ msgid ""
 msgstr ""
 "宇宙空間を探査して星図上の航路を開拓するには、まず小惑星の地表に<link=\"CLUSTERTELESCOPE\">観測望遠鏡</link>を構築しなければなりません。そのほか、小惑星の周回軌道上にある<link=\"ORBITALRESEARCHCENTER\">軌道データ収集ラボ</link>や、ロケットに搭載した<link=\"SCANNERMODULE\">星図作成モジュール</link>によっても、星図上の領域を明らかにすることができます。\n"
 "\n"
-"エンジン燃料の残量には常に気を配り、ロケットが目的地まで辿り着けるかどうか必ず確認してください。ロケットは<link=\"LAUNCHPAD\">ロケット発射台</link>のある小惑星にしか着陸できませんが、<link=\"SCOUTMODULE\">探査ロボモジュール</link>や<link=\"PIONEERMODULE\">先遣隊モジュール</link>など、軌道上のロケットから小惑星の地表へ到達できるモジュールもあるので、そのことも忘れないでください。\n"
+"エンジン燃料の残量には常に気を配り、ロケットが目的地まで辿り着けるかどうか必ず確認してください。ロケットは<link=\"LAUNCHPAD\">ロケット発射台</link>のある小惑星にしか着陸できませんが、<link=\"SCOUTMODULE\">探査ロボモジュール</link>や<link=\"\">先遣隊モジュール</link>など、軌道上のロケットから小惑星の地表へ到達できるモジュールもあるので、そのことも忘れないでください。\n"
 "\n"
 
 #. STRINGS.CODEX.EXOBASES.PARAGRAPH_3
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.EXOBASES.PARAGRAPH_3"
-#| msgid ""
-#| "Goods can be teleported between worlds with connected Supply Teleporters through <link=\"ELEMENTSGAS\">Gas</link>, <link=\"ELEMENTSLIQUID\">Liquid</link>, and <link=\"ELEMENTSSOLID\">Solid</link> conduits.\n"
-#| "\n"
-#| "Planetoids not connected through Supply Teleporters can use rockets to transport goods, either by landing on a <link=\"LAUNCHPAD\">Rocket Platform</link> or a <link=\"ORBITALCARGOMODULE\">Orbital Cargo Module</link> deployed from a rocket in orbit. Additionally, the <link=\"RAILGUN\">Interplanetary Launcher</link> can send <link=\"RAILGUNPAYLOAD\">Interplanetary Payloads</link> full of goods through space but must be opened by a <link=\"RAILGUNPAYLOADOPENER\">Payload Opener</link>. A <link=\"LANDINGBEACON\">Targeting Beacon</link> can guide payloads and orbital modules to land at a specific location on a Planetoid surface."
 msgctxt "STRINGS.CODEX.EXOBASES.PARAGRAPH_3"
 msgid ""
 "Goods can be teleported between worlds with connected Supply Teleporters through <link=\"ELEMENTSGAS\">Gas</link>, <link=\"ELEMENTSLIQUID\">Liquid</link>, and <link=\"ELEMENTSSOLID\">Solid</link> conduits.\n"
@@ -6104,7 +6035,9 @@ msgid ""
 msgstr ""
 "荷物は<link=\"ELEMENTSGAS\">気体</link>、<link=\"ELEMENTSLIQUID\">液体</link>、<link=\"ELEMENTSSOLID\">固体</link>用の導管に繋がったサプライテレポーターを通じてテレポートさせることができます。\n"
 "\n"
-"サプライテレポーターが通じていない小惑星は<link=\"LAUNCHPAD\">ロケット発射台</link>に着陸したロケットを使って輸送したり、軌道上のロケットから<link=\"ORBITALCARGOMODULE\">軌道貨物モジュール</link>を展開したりできます。加えて、<link=\"RAILGUN\">星間ランチャー</link>は荷物が満載された<link=\"RAILGUNPAYLOAD\">星間貨物</link>を送り出すことができますが、開封には<link=\"RAILGUNPAYLOADOPENER\">貨物オープナー</link>が必要です。<link=\"LANDINGBEACON\">ターゲットビーコン</link>は貨物や起動モジュールを小惑星表層の特定地点に着弾させるのに使えます。"
+"サプライテレポーターが通じていない小惑星は<link=\"LAUNCHPAD\">ロケット発射台</link>に着陸したロケットを使って輸送したり、軌道上のロケットから<link=\"ORBITALCARGOMODULE\">軌道貨物モジュール</link>を展開したりできます。\n"
+"\n"
+"加えて、<link=\"RAILGUN\">星間ランチャー</link>は荷物が満載された<link=\"RAILGUNPAYLOAD\">星間貨物</link>を送り出すことができますが、開封には<link=\"RAILGUNPAYLOADOPENER\">貨物オープナー</link>が必要です。<link=\"LANDINGBEACON\">ターゲットビーコン</link>は貨物や起動モジュールを小惑星表層の特定地点に着弾させるのに使えます。"
 
 #. STRINGS.CODEX.EXOBASES.TITLE
 msgctxt "STRINGS.CODEX.EXOBASES.TITLE"
@@ -6112,67 +6045,40 @@ msgid "<link=\"EXOBASES\">Space Travel</link>"
 msgstr "<link=\"EXOBASES\">宇宙旅行</link>"
 
 #. STRINGS.CODEX.EXOBASESDLC1.HEADER_1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.EXOBASES.HEADER_1"
-#| msgid "Building Rockets"
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.HEADER_1"
 msgid "Building Rockets"
 msgstr "ロケット製造"
 
 #. STRINGS.CODEX.EXOBASESDLC1.HEADER_2
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.ROCKET.NOUN.SPACESTATION"
-#| msgid "Space Station"
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.HEADER_2"
 msgid "Space Exploration"
-msgstr "宇宙ステーション"
+msgstr "宇宙探索"
 
 #. STRINGS.CODEX.EXOBASESDLC1.HEADER_3
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.CYCLES_SURVIVED"
-#| msgid "Cycles Survived"
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.HEADER_3"
 msgid "Crew Survival"
-msgstr "生存サイクル数"
+msgstr "乗組員の生存"
 
 #. STRINGS.CODEX.EXOBASESDLC1.HEADER_4
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.EXOBASES.HEADER_3"
-#| msgid "Space Transport"
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.HEADER_4"
 msgid "Space Transport"
 msgstr "宇宙輸送"
 
 #. STRINGS.CODEX.EXOBASESDLC1.HEADER_5
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.ASTRONAUT.NAME"
-#| msgid "Space Mission"
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.HEADER_5"
 msgid "Space Mining"
-msgstr "宇宙ミッション"
+msgstr "宇宙採掘"
 
 #. STRINGS.CODEX.EXOBASESDLC1.PARAGRAPH_1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.EXOBASES.PARAGRAPH_1"
-#| msgid ""
-#| "Building a rocket first requires constructing a <link=\"LAUNCHPAD\">Rocket Platform</link> and adding modules from the menu. All rockets will require an engine, a nosecone and a Command Module piloted by a Duplicant possessing the <link=\"ROCKETPILOTING1\">Rocket Piloting</link> skill or higher. Note that the <link=\"HABITATMODULESMALL\">Solo Spacefarer Nosecone</link> functions as both a Command Module and a nosecone.\n"
-#| "\n"
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.PARAGRAPH_1"
 msgid ""
 "Building a rocket first requires constructing a <link=\"LAUNCHPAD\">Rocket Platform</link> and adding modules from the menu. All rockets will require an engine, a nosecone and a Command Module piloted by a Duplicant possessing the <link=\"ROCKETPILOTING1\">Rocket Piloting</link> skill or higher. Note that the <link=\"HABITATMODULESMALL\">Solo Spacefarer Nosecone</link> functions as both a Command Module and a nosecone.\n"
 "\n"
 msgstr ""
-"ロケットを建造するには、まず初めに<link=\"LAUNCHPAD\">ロケット発射台</link>を設置する必要があります。その後、発射台のメニューからモジュールを追加してください。全てのロケットには<style=\"KKeyword\">エンジン</style>、<style=\"KKeyword\">ノーズコーン</style>、そして<link=\"ROCKETPILOTING1\">ロケット操縦</link>スキルを習得した複製人間が操縦を行う<style=\"KKeyword\">制御モジュール</style>が必須です。なお、<link=\"HABITATMODULESMALL\">単独乗組員ノーズコーン</link>は制御モジュールとノーズコーン両方の機能を兼ね備えています。\n"
+"ロケットを建造するには、まず初めに<link=\"LAUNCHPAD\">ロケット発射台</link>を設置する必要があります。その後、発射台のメニューからモジュールを追加してください。全てのロケットにはエンジン、ノーズコーン、そして<link=\"ROCKETPILOTING1\">ロケット操縦</link>スキルを習得した複製人間が操縦を行う制御モジュールが必須です。なお、<link=\"HABITATMODULESMALL\">単独乗組員ノーズコーン</link>は制御モジュールとノーズコーン両方の機能を兼ね備えています。\n"
 "\n"
 
 #. STRINGS.CODEX.EXOBASESDLC1.PARAGRAPH_2
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.EXOBASES.PARAGRAPH_2"
-#| msgid ""
-#| "To scan space and see nearby intersteller destinations a <link=\"CLUSTERTELESCOPE\">Telescope</link> must first be built on the surface of a Planetoid. <link=\"ORBITALRESEARCHCENTER\">Orbital Data Collection Lab</link> in orbit around a Planetoid, and <link=\"SCANNERMODULE\">Cartographic Module</link> attached to a rocket can also reveal places on a Starmap.\n"
-#| "\n"
-#| "Always check engine fuel to determine if your rocket can reach its destination, keeping in mind rockets can only land on Plantoids with a <link=\"LAUNCHPAD\">Rocket Platform</link> on it although some modules like <link=\"SCOUTMODULE\">Rover's Modules</link> and <link=\"PIONEERMODULE\">Trailblazer Modules</link> can be sent to the surface of a Planetoid from a rocket in orbit.\n"
-#| "\n"
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.PARAGRAPH_2"
 msgid ""
 "To scan space and see nearby interstellar destinations a <link=\"CLUSTERTELESCOPE\">Telescope</link> must first be built on the surface of a Planetoid. Sending an <link=\"ORBITALRESEARCHCENTER\">Orbital Data Collection Lab</link> into orbit around a Planetoid, and having a <link=\"SCANNERMODULE\">Cartographic Module</link> attached to a rocket can also reveal places on a Starmap.\n"
@@ -6185,6 +6091,7 @@ msgstr ""
 "\n"
 "エンジン燃料の残量には常に気を配り、ロケットが目的地まで辿り着けるかどうか必ず確認してください。ロケットは<link=\"LAUNCHPAD\">ロケット発射台</link>のある小惑星にしか着陸できませんが、<link=\"SCOUTMODULE\">探査ロボモジュール</link>や<link=\"PIONEERMODULE\">先遣隊モジュール</link>など、軌道上のロケットから小惑星の地表へ到達できるモジュールもあるので、そのことも忘れないでください。\n"
 "\n"
+"ロケットの燃料が尽き、着陸可能な場所が近傍に無い場合、ロケットは漂流します。"
 
 #. STRINGS.CODEX.EXOBASESDLC1.PARAGRAPH_3
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.PARAGRAPH_3"
@@ -6193,14 +6100,11 @@ msgid ""
 "\n"
 "Spending extended periods confined to a rocket interior also takes a toll on <link=\"MORALE\">Morale</link>, which can be mitigated by providing a <link=\"REQUIREMENTCLASSTOILETTYPE\">Toilet</link> to prevent messes, choosing higher-<link=\"DECOR\">Decor</link> furnishings, or dividing up the rocket's interior to benefit from <link=\"ROOMS\">Rooms</link> bonuses."
 msgstr ""
+"ロケットには、乗組員が旅の全行程を乗り切るために十分な<link=\"BUILDCATEGORYOXYGEN\">酸素</link>と<link=\"FOOD\">食糧</link>を積載する必要があります。機内スペースは限られているため、冷蔵保存を必要としない常温保存可能な食料を優先的に搭載する必要があります。\n"
+"\n"
+"ロケット内部に長時間閉じ込められると、<link=\"MORALE\">士気</link>も低下します。士気低下は、汚れを防ぐために<link=\"REQUIREMENTCLASSTOILETTYPE\">トイレ</link>を設置したり、<link=\"DECOR\">装飾</link>の高い家具を選んだり、ロケット内部を分割して<link=\"ROOMS\">部屋</link>ボーナスを活用したりすることで軽減できます。"
 
 #. STRINGS.CODEX.EXOBASESDLC1.PARAGRAPH_4
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.EXOBASES.PARAGRAPH_3"
-#| msgid ""
-#| "Goods can be teleported between worlds with connected Supply Teleporters through <link=\"ELEMENTSGAS\">Gas</link>, <link=\"ELEMENTSLIQUID\">Liquid</link>, and <link=\"ELEMENTSSOLID\">Solid</link> conduits.\n"
-#| "\n"
-#| "Planetoids not connected through Supply Teleporters can use rockets to transport goods, either by landing on a <link=\"LAUNCHPAD\">Rocket Platform</link> or a <link=\"ORBITALCARGOMODULE\">Orbital Cargo Module</link> deployed from a rocket in orbit. Additionally, the <link=\"RAILGUN\">Interplanetary Launcher</link> can send <link=\"RAILGUNPAYLOAD\">Interplanetary Payloads</link> full of goods through space but must be opened by a <link=\"RAILGUNPAYLOADOPENER\">Payload Opener</link>. A <link=\"LANDINGBEACON\">Targeting Beacon</link> can guide payloads and orbital modules to land at a specific location on a Planetoid surface."
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.PARAGRAPH_4"
 msgid ""
 "Goods can be teleported between worlds with connected Supply Teleporters through <link=\"ELEMENTSGAS\">Gas</link>, <link=\"ELEMENTSLIQUID\">Liquid</link>, and <link=\"ELEMENTSSOLID\">Solid</link> conduits.\n"
@@ -6218,11 +6122,11 @@ msgid ""
 "\n"
 "Free-floating <link=\"SPACEARTIFACT\">Space Artifacts</link> and <link=\"DATABANK\">Data Bank</link>s can be gathered with an <link=\"ARTIFACTCARGOBAY\">Artifact Transport Module</link> or a <link=\"RESEARCHMODULE\">Research Module</link> respectively, no mining required."
 msgstr ""
+"宇宙から資源を回収するには、<link=\"NOSECONEHARVEST\">ドリルコーン</link>を搭載したロケットで目標の塊を採掘し、その資源用に設計された貨物モジュールで採掘可能な破片を収集する必要があります。貨物モジュールには、<link=\"SOLIDCARGOBAYSMALL\">貨物ベイ</link>、<link=\"LIQUIDCARGOBAYCLUSTER\">大型液体貨物タンク</link>、<link=\"GASCARGOBAYSMALL\">気体貨物ボンベ</link>などがあります。\n"
+"\n"
+"浮遊する<link=\"SPACEARTIFACT\">旧世界の遺物</link>と<link=\"DATABANK\">データバンク</link>は、それぞれ<link=\"ARTIFACTCARGOBAY\">遺物輸送モジュール</link>と<link=\"RESEARCHMODULE\">研究モジュール</link>で収集でき、採掘は不要です。"
 
 #. STRINGS.CODEX.EXOBASESDLC1.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.EXOBASES.TITLE"
-#| msgid "<link=\"EXOBASES\">Space Travel</link>"
 msgctxt "STRINGS.CODEX.EXOBASESDLC1.TITLE"
 msgid "<link=\"EXOBASES\">Space Travel</link>"
 msgstr "<link=\"EXOBASES\">宇宙旅行</link>"
@@ -6361,25 +6265,22 @@ msgstr "{0} {1}"
 #. STRINGS.CODEX.FORMAT_STRINGS.OFFGASS_NAME
 msgctxt "STRINGS.CODEX.FORMAT_STRINGS.OFFGASS_NAME"
 msgid "Off-Gas"
-msgstr ""
+msgstr "未使用ガス"
 
 #. STRINGS.CODEX.FORMAT_STRINGS.OFFGASS_TRESHOLD
 msgctxt "STRINGS.CODEX.FORMAT_STRINGS.OFFGASS_TRESHOLD"
 msgid "Surrounding pressure under {0}"
-msgstr ""
+msgstr "周囲の圧力が {0} 以下"
 
 #. STRINGS.CODEX.FORMAT_STRINGS.SUBLIMATION_NAME
-#, fuzzy
-#| msgctxt "STRINGS.UI.FRONTEND.MODS.MANAGE"
-#| msgid "Subscription"
 msgctxt "STRINGS.CODEX.FORMAT_STRINGS.SUBLIMATION_NAME"
 msgid "Sublimation"
-msgstr "サブスクライブ"
+msgstr "昇華"
 
 #. STRINGS.CODEX.FORMAT_STRINGS.SUBLIMATION_TRESHOLD
 msgctxt "STRINGS.CODEX.FORMAT_STRINGS.SUBLIMATION_TRESHOLD"
 msgid "Surrounding pressure under {0}"
-msgstr ""
+msgstr "周囲の圧力が {0} 以下"
 
 #. STRINGS.CODEX.FORMAT_STRINGS.TEMPERATURE_OVER
 msgctxt "STRINGS.CODEX.FORMAT_STRINGS.TEMPERATURE_OVER"
@@ -6407,14 +6308,13 @@ msgid ""
 "In the course of everyday colony expansion and biome excavation, my Duplicants may uncover aesthetically pleasing displayable objects.\n"
 "\n"
 msgstr ""
+"日々のコロニー拡大とバイオームの発掘の過程で、私のデュプリカントは美的に美しい展示可能なオブジェクトを発見することがある。\n"
+"\n"
 
 #. STRINGS.CODEX.FOUNDOBJECT.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.MISC.STATUSITEMS.BURIEDITEM.NAME"
-#| msgid "Buried Object"
 msgctxt "STRINGS.CODEX.FOUNDOBJECT.TITLE"
 msgid "Found Objects "
-msgstr "埋もれた物体"
+msgstr "埋もれた物体 "
 
 #. STRINGS.CODEX.GARDENDECORPLANT.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.GARDENDECORPLANT.BODY.CONTAINER1"
@@ -6504,12 +6404,6 @@ msgid "Gas Grass"
 msgstr "ぷかぷか草"
 
 #. STRINGS.CODEX.GASSYMOO.BODY.CONTAINER1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.GASSYMOO.BODY.CONTAINER1"
-#| msgid ""
-#| "Little is currently known of the Gassy Moo due to its alien nature and origin.\n"
-#| "\n"
-#| "It is capable of surviving in zero gravity conditions and no atmosphere, and is dependent on a second alien species, <link=\"GASGRASS\">Gas Grass</link>, for its sustenance and survival."
 msgctxt "STRINGS.CODEX.GASSYMOO.BODY.CONTAINER1"
 msgid ""
 "Little is currently known of the Moo due to its alien nature and origin.\n"
@@ -6518,28 +6412,22 @@ msgid ""
 msgstr ""
 "ぷすぷす モーは外宇宙を起源としているため、現在分かっていることはほとんどありません。\n"
 "\n"
-"無重力、無気圧空間で生存することができ、生命の維持をもう一つの外来種である<link=\"GASGRASS\">ぷかぷか草</link>に依存しています。"
+"無重力、大気圏外でも生存することができ、繁殖方法も解明されていません。"
 
 #. STRINGS.CODEX.GASSYMOO.BODY.CONTAINER2
 msgctxt "STRINGS.CODEX.GASSYMOO.BODY.CONTAINER2"
 msgid "The Moo has an even temperament and cohabits well with others in a farm setting."
-msgstr ""
+msgstr "モーは穏やかな気質を持ち、牧場で他の動物達とうまく共存します。"
 
 #. STRINGS.CODEX.GASSYMOO.SPECIES_SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.CHAMELEON.SPECIES_SUBTITLE"
-#| msgid "Critter Species"
 msgctxt "STRINGS.CODEX.GASSYMOO.SPECIES_SUBTITLE"
 msgid "Critter Species"
 msgstr "動物"
 
 #. STRINGS.CODEX.GASSYMOO.SPECIES_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.NAME.NB.MOOSE"
-#| msgid "Moose"
 msgctxt "STRINGS.CODEX.GASSYMOO.SPECIES_TITLE"
 msgid "Moos"
-msgstr "ムース"
+msgstr "ムー属"
 
 #. STRINGS.CODEX.GASSYMOO.SUBTITLE
 msgctxt "STRINGS.CODEX.GASSYMOO.SUBTITLE"
@@ -6562,9 +6450,6 @@ msgid "Cultivating Mutated Seeds"
 msgstr "突然変異種子の栽培"
 
 #. STRINGS.CODEX.GENETICS.HEADER_3
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.CLEANER.SUBTITLE"
-#| msgid "Critter Morph"
 msgctxt "STRINGS.CODEX.GENETICS.HEADER_3"
 msgid "Critter Morphs"
 msgstr "動物(変種)"
@@ -6584,17 +6469,12 @@ msgstr ""
 "\n"
 
 #. STRINGS.CODEX.GENETICS.PARAGRAPH_2
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.GENETICS.PARAGRAPH_2"
-#| msgid ""
-#| "Once mutated seeds have been analyzed in the Botanical Analyzer, they are ready to be planted. Continued exposure to naturally occurring radiation or a <link=\"RADIATIONLIGHT\">Radiation Lamp</link> is necessary to prevent wilting.\n"
-#| "\n"
 msgctxt "STRINGS.CODEX.GENETICS.PARAGRAPH_2"
 msgid ""
 "Once mutated seeds have been analyzed in the <link=\"GENETICANALYSISSTATION\">Botanical Analyzer</link>, they are ready to be planted. Continued exposure to naturally occurring radiation or a <link=\"RADIATIONLIGHT\">Radiation Lamp</link> is necessary to prevent wilting.\n"
 "\n"
 msgstr ""
-"植物分析機で分析された突然変異種子は植えることができます。萎れないようにするためには自然界に存在する放射線や<link=\"RADIATIONLIGHT\">放射線ランプ</link>が必要です。\n"
+"<link=\"GENETICANALYSISSTATION\">植物分析機</link>で分析された突然変異種子は植えることができます。萎れないようにするためには自然界に存在する放射線や<link=\"RADIATIONLIGHT\">放射線ランプ</link>が必要です。\n"
 "\n"
 
 #. STRINGS.CODEX.GENETICS.PARAGRAPH_3
@@ -6604,6 +6484,9 @@ msgid ""
 "\n"
 "See the <link=\"CREATURES::GUIDE\">Field Guide</link> to learn more about caring for critters."
 msgstr ""
+"<link=\"CREATURES\">動物</link>の種には様々な変種が存在するのが一般的です。類似点もある一方で、同じ種でも個体によって生産する資源が異なり、生息地、環境の<link=\"HEAT\">温度</link>、そして食性に関してそれぞれ独自の好みを持っています。\n"
+"\n"
+"生き物の飼育について詳しくは、<link=\"CREATURES::GUIDE\">フィールドガイド</link>をご覧ください。"
 
 #. STRINGS.CODEX.GENETICS.TITLE
 msgctxt "STRINGS.CODEX.GENETICS.TITLE"
@@ -6987,20 +6870,14 @@ msgid "Sleep and Stamina"
 msgstr "睡眠とスタミナ"
 
 #. STRINGS.CODEX.HEALTH.HEADER_4
-#, fuzzy
-#| msgctxt "STRINGS.VIDEOS.TUTORIAL_HEADER"
-#| msgid "Tutorial:"
 msgctxt "STRINGS.CODEX.HEALTH.HEADER_4"
 msgid "Tutorials"
-msgstr "チュートリアル:"
+msgstr "チュートリアル"
 
 #. STRINGS.CODEX.HEALTH.HEADER_5
-#, fuzzy
-#| msgctxt "STRINGS.VIDEOS.TUTORIAL_HEADER"
-#| msgid "Tutorial:"
 msgctxt "STRINGS.CODEX.HEALTH.HEADER_5"
 msgid "Tutorials"
-msgstr "チュートリアル:"
+msgstr "チュートリアル"
 
 #. STRINGS.CODEX.HEALTH.PARAGRAPH_1
 msgctxt "STRINGS.CODEX.HEALTH.PARAGRAPH_1"
@@ -7048,6 +6925,10 @@ msgid ""
 "    • <link=\"MISCELLANEOUSTIPS14\">Tutorial: Scheduling</link>\n"
 "    • <link=\"MISCELLANEOUSTIPS10\">Tutorial: Germs and Disease</link>\n"
 msgstr ""
+"健康な複製人間のサポートについては、以下をご覧ください。\n"
+"• <link=\"MISCELLANEOUSTIPS11\">チュートリアル：食の安全</link>\n"
+"• <link=\"MISCELLANEOUSTIPS14\">チュートリアル：スケジュール管理</link>\n"
+"• <link=\"MISCELLANEOUSTIPS10\">チュートリアル：病原菌と病気</link>\n"
 
 #. STRINGS.CODEX.HEALTH.PARAGRAPH_5
 msgctxt "STRINGS.CODEX.HEALTH.PARAGRAPH_5"
@@ -7058,6 +6939,11 @@ msgid ""
 "    • <link=\"MISCELLANEOUSTIPS23\">Tutorial: Oiling Bionics</link>\n"
 "\n"
 msgstr ""
+"健康な複製人間のサポートについては、以下をご覧ください。\n"
+"    • <link=\"MISCELLANEOUSTIPS11\">チュートリアル：食の安全</link>\n"
+"    • <link=\"MISCELLANEOUSTIPS20\">チュートリアル: バイオニック複製人間</link>\n"
+"    • <link=\"MISCELLANEOUSTIPS23\">チュートリアル: バイオニック達への注油</link>\n"
+"\n"
 
 #. STRINGS.CODEX.HEALTH.TITLE
 msgctxt "STRINGS.CODEX.HEALTH.TITLE"
@@ -7090,12 +6976,9 @@ msgid "State Changes"
 msgstr "状態変化"
 
 #. STRINGS.CODEX.HEAT.HEADER_6
-#, fuzzy
-#| msgctxt "STRINGS.VIDEOS.TUTORIAL_HEADER"
-#| msgid "Tutorial:"
 msgctxt "STRINGS.CODEX.HEAT.HEADER_6"
 msgid "Tutorials"
-msgstr "チュートリアル:"
+msgstr "チュートリアル"
 
 #. STRINGS.CODEX.HEAT.PARAGRAPH_1
 msgctxt "STRINGS.CODEX.HEAT.PARAGRAPH_1"
@@ -7116,11 +6999,6 @@ msgstr ""
 "\n"
 
 #. STRINGS.CODEX.HEAT.PARAGRAPH_3
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HEAT.PARAGRAPH_3"
-#| msgid ""
-#| "Temperature increase when the thermal energy of a substance increases. The value of temperature is equal to the total Thermal Energy divided by the Specific Heat Capacity of the substance. Because Specific Heat Capacity varies between substances so significantly, it is often the case a substance can have a higher temperature than another despite a lower overall thermal energy. This quality makes Water require nearly four times the amount of thermal energy to increase in temperature compared to Oxygen.\n"
-#| "\n"
 msgctxt "STRINGS.CODEX.HEAT.PARAGRAPH_3"
 msgid ""
 "Temperature increases when the thermal energy of a substance increases. The value of temperature is equal to the total Thermal Energy divided by the Specific Heat Capacity of the substance. Because Specific Heat Capacity varies between substances so significantly, it is often the case a substance can have a higher temperature than another despite a lower overall thermal energy. This quality makes Water require nearly four times the amount of thermal energy to increase in temperature compared to Oxygen.\n"
@@ -7139,11 +7017,6 @@ msgstr ""
 "\n"
 
 #. STRINGS.CODEX.HEAT.PARAGRAPH_5
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.HEAT.PARAGRAPH_5"
-#| msgid ""
-#| "Water ice melts into liquid water when its temperature rises above its melting point. Liquid water boils into steam when its temperature rises above its boiling point. Similar transitions in state occur for most elements, but each element has its own threshold temperatures. Sometimes the transitions are not reversible - crude oil boiled into sour gas will not condense back to crude oil when cooled. Instead, the substance might condense into a totally different element with a different utility. \n"
-#| "\n"
 msgctxt "STRINGS.CODEX.HEAT.PARAGRAPH_5"
 msgid ""
 "Water ice melts into liquid water when its temperature rises above its melting point. Liquid water boils into steam when its temperature rises above its boiling point. Similar transitions in state occur for most elements, but each element has its own threshold temperatures. Sometimes the transitions are not reversible - crude oil boiled into sour gas will not condense back to crude oil when cooled. Instead, the substance might condense into a totally different element with a different utility.\n"
@@ -7151,14 +7024,13 @@ msgid ""
 msgstr ""
 "凍った水は融点に達すると液体の水になります。液体の水は沸点を越えると水蒸気になります。似たような遷移がほとんどの元素に対し適用されますが、元素ごとに温度が異なります。遷移の中には不可逆なものもあります。原油を熱すると酸性ガスが発生しますが、酸性ガスを冷却しても原油にはなりません。その代わり、その物質は違った有用性を持つ全く別の物質に変換するかもしれません。\n"
 "\n"
-"\n"
 
 #. STRINGS.CODEX.HEAT.PARAGRAPH_6
 msgctxt "STRINGS.CODEX.HEAT.PARAGRAPH_6"
 msgid ""
 "To learn more, watch <link=\"VIDEOS17\">Video: Insulation</link> and see the <link=\"MISCELLANEOUSTIPS8\">Duplicant Temperature</link> tutorial.\n"
 "\n"
-msgstr ""
+msgstr "詳細については、<link=\"VIDEOS17\">ビデオ: 断熱材</link> を視聴し、<link=\"MISCELLANEOUSTIPS8\">複製人間の体温</link> チュートリアルを参照してください。\n"
 
 #. STRINGS.CODEX.HEAT.TITLE
 msgctxt "STRINGS.CODEX.HEAT.TITLE"
@@ -7189,7 +7061,7 @@ msgstr "ヘキサレント"
 #. STRINGS.CODEX.HYDROCACTUS.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.HYDROCACTUS.BODY.CONTAINER1"
 msgid ""
-msgstr ""
+msgstr "\n"
 
 #. STRINGS.CODEX.HYDROCACTUS.SUBTITLE
 msgctxt "STRINGS.CODEX.HYDROCACTUS.SUBTITLE"
@@ -9545,12 +9417,12 @@ msgctxt "STRINGS.CODEX.KEEPSAKE.BODY.CONTAINER1"
 msgid ""
 "In the aftermath of a successful mission--be it the completion of a story trait or the survival of some epic event--my Duplicants sometimes form sentimental attachments to an item associated with that chapter of their lives.\n"
 "\n"
-msgstr ""
+msgstr "ミッションが成功した後(物語特性の完了や壮大なイベント後の生存など)、私の複製人間達は、人生の一ページに関連するアイテムに対して感傷的な愛着を抱くことがある。\n"
 
 #. STRINGS.CODEX.KEEPSAKE.TITLE
 msgctxt "STRINGS.CODEX.KEEPSAKE.TITLE"
 msgid "Keepsakes"
-msgstr ""
+msgstr "記念品"
 
 #. STRINGS.CODEX.KELP.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.KELP.BODY.CONTAINER1"
@@ -9610,9 +9482,6 @@ msgid "Measuring Light"
 msgstr "光源範囲"
 
 #. STRINGS.CODEX.LIGHT.HEADER_4
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.POWER.NAME"
-#| msgid "Video: Power Circuits"
 msgctxt "STRINGS.CODEX.LIGHT.HEADER_4"
 msgid "Video: Power Circuits"
 msgstr "ビデオ: 電気回路"
@@ -9647,7 +9516,7 @@ msgctxt "STRINGS.CODEX.LIGHT.PARAGRAPH_4"
 msgid ""
 "To learn more about how to keep a colony well-lit, watch the <link=\"VIDEOS16\">Power Circuits</link> video tutorial.\n"
 "\n"
-msgstr ""
+msgstr "コロニーを明るく保つ方法については、<link=\"VIDEOS16\">電源回路</link>のビデオチュートリアルをご覧ください。\n"
 
 #. STRINGS.CODEX.LIGHT.TITLE
 msgctxt "STRINGS.CODEX.LIGHT.TITLE"
@@ -9655,12 +9524,6 @@ msgid "<link=\"LIGHT\">Light</link>"
 msgstr "<link=\"LIGHT\">光</link>"
 
 #. STRINGS.CODEX.LILYPAD.BODY.CONTAINER1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.LILYPAD.BODY.CONTAINER1"
-#| msgid ""
-#| "Cura Lotuses are ornamental aquatic plants that have inspired artists since their blossoms were first spotted bobbing on the surface of a quiet pond.\n"
-#| "\n"
-#| "These ethereal beauties are a panacea for both the mind and the body - their delicate spores are highly sought-after for their natural antihistamine properties."
 msgctxt "STRINGS.CODEX.LILYPAD.BODY.CONTAINER1"
 msgid ""
 "Cura Lotuses are adaptable aquatic plants that have inspired artists since their blossoms were first spotted bobbing on the surface of a quiet pond.\n"
@@ -9786,6 +9649,9 @@ msgid ""
 "\n"
 "Duplicants must possess the <link=\"FARMING3\">Improved Farming II</link> skill to salvage <link=\"PLANTFIBER\">Plant Husk</link> during harvest"
 msgstr ""
+"スキルが必要です\n"
+"\n"
+"収穫中に<link=\"PLANTFIBER\">植物の殻</link>を回収するには<link=\"FARMING3\">農耕改善 II</link>スキルを持った複製人間が必要です"
 
 #. STRINGS.CODEX.MISSINGNOTES.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.MISSINGNOTES.BODY.CONTAINER1"
@@ -10014,12 +9880,9 @@ msgid "Overjoyed Responses"
 msgstr "歓喜反応"
 
 #. STRINGS.CODEX.MORALE.HEADER_4
-#, fuzzy
-#| msgctxt "STRINGS.VIDEOS.TUTORIAL_HEADER"
-#| msgid "Tutorial:"
 msgctxt "STRINGS.CODEX.MORALE.HEADER_4"
 msgid "Tutorials"
-msgstr "チュートリアル:"
+msgstr "チュートリアル"
 
 #. STRINGS.CODEX.MORALE.PARAGRAPH_1
 msgctxt "STRINGS.CODEX.MORALE.PARAGRAPH_1"
@@ -10053,7 +9916,7 @@ msgctxt "STRINGS.CODEX.MORALE.PARAGRAPH_4"
 msgid ""
 "To learn more, watch <link=\"VIDEOS13\">Video: Duplicant Morale</link> and see <link=\"MISCELLANEOUSTIPS2\">Tutorial: Stress Management</link>.\n"
 "\n"
-msgstr ""
+msgstr "詳細については、<link=\"VIDEOS13\">ビデオ: 複製人間の士気</link> と <link=\"MISCELLANEOUSTIPS2\">チュートリアル: ストレス管理</link> をご覧ください。\n"
 
 #. STRINGS.CODEX.MORALE.TITLE
 msgctxt "STRINGS.CODEX.MORALE.TITLE"
@@ -10912,22 +10775,19 @@ msgid ""
 "<link=\"REQUIREMENTCLASSORNAMENT\">Displayed Ornaments</link> exhibited atop a <link=\"ITEMPEDESTAL\">Pedestal</link> or <link=\"SHELF\">Display Shelf</link> allow a colony to benefit from certain <link=\"ROOMS\">Room</link> bonuses.\n"
 "\n"
 msgstr ""
+"オーナメントは、複製人間がコロニーを飾るために好んで使う装飾品です。従来の芸術作品よりも小型で、非常に高い<link=\"DECOR\">装飾</link>値を持ちます。\n"
+"\n"
+"<link=\"REQUIREMENTCLASSORNAMENT\">展示オーナメント</link>を<link=\"ITEMPEDESTAL\">展示台</link>または<link=\"SHELF\">展示棚</link>の上に展示すると、コロニーは特定の<link=\"ROOMS\">部屋</link>ボーナスの恩恵を受けることができます。\n"
 
 #. STRINGS.CODEX.ORNAMENT.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.PROPDLC2DISPLAY1.NAME"
-#| msgid "Electronic Display"
 msgctxt "STRINGS.CODEX.ORNAMENT.SUBTITLE"
 msgid "Collectible Display Items"
-msgstr "ディスプレイ"
+msgstr "コレクター向けディスプレイアイテム"
 
 #. STRINGS.CODEX.ORNAMENT.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.DUPLICANTS.CHORES.BIONICBEDTIMEMODE.NAME"
-#| msgid "Defragment"
 msgctxt "STRINGS.CODEX.ORNAMENT.TITLE"
 msgid "Ornaments"
-msgstr "デフラグ"
+msgstr "オーナメント"
 
 #. STRINGS.CODEX.OXYFERN.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.OXYFERN.BODY.CONTAINER1"
@@ -11330,9 +11190,6 @@ msgid "Overloading"
 msgstr "過負荷"
 
 #. STRINGS.CODEX.POWER.HEADER_5
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.POWER.NAME"
-#| msgid "Video: Power Circuits"
 msgctxt "STRINGS.CODEX.POWER.HEADER_5"
 msgid "Video: Power Circuits"
 msgstr "ビデオ: 電気回路"
@@ -11390,7 +11247,7 @@ msgctxt "STRINGS.CODEX.POWER.PARAGRAPH_5"
 msgid ""
 "To learn more, watch the <link=\"VIDEOS16\">Power Circuits</link> video tutorial.\n"
 "\n"
-msgstr ""
+msgstr "詳細については、<link=\"VIDEOS16\">電気回路</link>のビデオチュートリアルをご覧ください。\n"
 
 #. STRINGS.CODEX.POWER.TITLE
 msgctxt "STRINGS.CODEX.POWER.TITLE"
@@ -11489,9 +11346,6 @@ msgid "Priority Tool"
 msgstr "優先度ツール"
 
 #. STRINGS.CODEX.PRIORITY.HEADER_4
-#, fuzzy
-#| msgctxt "STRINGS.MISC.NOTIFICATIONS.PRIORITIESMESSAGE.NAME"
-#| msgid "Tutorial: Errand Priorities"
 msgctxt "STRINGS.CODEX.PRIORITY.HEADER_4"
 msgid "Tutorial: Errand Priorities"
 msgstr "チュートリアル: 作業優先度"
@@ -11528,12 +11382,9 @@ msgstr ""
 "\n"
 
 #. STRINGS.CODEX.PRIORITY.PARAGRAPH_4
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MISCELLANEOUSTIPS"
-#| msgid "<link=\"MISCELLANEOUSTIPS\">Tips</link>"
 msgctxt "STRINGS.CODEX.PRIORITY.PARAGRAPH_4"
 msgid "To learn more, see <link=\"MISCELLANEOUSTIPS6\">Tutorial: Errand Priorities</link>."
-msgstr "<link=\"MISCELLANEOUSTIPS\">チュートリアル</link>"
+msgstr "詳細については、<link=\"MISCELLANEOUSTIPS6\">チュートリアル: 作業優先度</link>を参照してください。"
 
 #. STRINGS.CODEX.PRIORITY.TITLE
 msgctxt "STRINGS.CODEX.PRIORITY.TITLE"
@@ -11788,20 +11639,11 @@ msgid "Nuclear Energy"
 msgstr "原子力エネルギー"
 
 #. STRINGS.CODEX.RADIATION.HEADER_4
-#, fuzzy
-#| msgctxt "STRINGS.VIDEOS.TUTORIAL_HEADER"
-#| msgid "Tutorial:"
 msgctxt "STRINGS.CODEX.RADIATION.HEADER_4"
 msgid "Tutorial"
-msgstr "チュートリアル:"
+msgstr "チュートリアル"
 
 #. STRINGS.CODEX.RADIATION.PARAGRAPH_1
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.RADIATION.PARAGRAPH_1"
-#| msgid ""
-#| "When transporting radioactive materials such as <link=\"URANIUMORE\">Uranium Ore</link>, care must be taken to avoid exposing outside objects to <link=\"RADIATIONSICKNESS\">Radioactive Contaminants</link>.\n"
-#| "\n"
-#| "Using proper transportation vessels, such as those which are lined with <link=\"LEAD\">Lead</link>, is crucial to ensuring that Duplicants avoid <link=\"RADIATIONSICKNESS\">Radiation Sickness</link>."
 msgctxt "STRINGS.CODEX.RADIATION.PARAGRAPH_1"
 msgid ""
 "When transporting radioactive materials such as <link=\"URANIUMORE\">Uranium Ore</link>, care must be taken to avoid exposing outside objects to <link=\"RADIATIONSICKNESS\">Radioactive Contaminants</link>.\n"
@@ -11809,9 +11651,10 @@ msgid ""
 "Using proper transportation vessels, such as those which are lined with <link=\"LEAD\">Lead</link>, is crucial to ensuring that Duplicants avoid <link=\"RADIATIONSICKNESS\">Radiation Sickness</link>.\n"
 "\n"
 msgstr ""
-"<link=\"URANIUMORE\">ウラン鉱石</link>といった放射性物質を輸送する時、外部の物体が被曝しないよう細心の注意を払ってください。\n"
+"<link=\"URANIUMORE\">ウラン鉱石</link>といった放射性物質を輸送する時、外部の物体が<link=\"RADIATIONSICKNESS\">被曝</link>しないよう細心の注意を払ってください。\n"
 "\n"
-"<link=\"LEAD\">鉛</link>で裏張りされた適切な輸送容器を使うことは、<link=\"RADIATIONSICKNESS\">放射線障害</link>から複製人間を確実に守るために重要です。"
+"<link=\"LEAD\">鉛</link>で裏張りされた適切な輸送容器を使うことは、<link=\"RADIATIONSICKNESS\">放射線障害</link>から複製人間を確実に守るために重要です。\n"
+"\n"
 
 #. STRINGS.CODEX.RADIATION.PARAGRAPH_2
 msgctxt "STRINGS.CODEX.RADIATION.PARAGRAPH_2"
@@ -11835,12 +11678,6 @@ msgstr ""
 "\n"
 
 #. STRINGS.CODEX.RADIATION.PARAGRAPH_3
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.RADIATION.PARAGRAPH_3"
-#| msgid ""
-#| "A <link=\"NUCLEARREACTOR\">Research Reactor</link> will require <link=\"ENRICHEDURANIUM\">Enriched Uranium</link> to run. Uranium can be enriched using a <link=\"URANIUMCENTRIFUGE\">Uranium Centrifuge</link>.\n"
-#| "\n"
-#| "Once supplied with <link=\"ENRICHEDURANIUM\">Enriched Uranium</link>, a <link=\"NUCLEARREACTOR\">Research Reactors</link> will create an enormous amount of <link=\"HEAT\">Heat</link> which can then be placed under a source of <link=\"WATER\">Water</link> to produce <link=\"STEAM\">Steam</link>and connected to a <link=\"STEAMTURBINE2\">Steam Turbine</link> to produce a considerable source of <link=\"POWER\">Power</link>."
 msgctxt "STRINGS.CODEX.RADIATION.PARAGRAPH_3"
 msgid ""
 "A <link=\"NUCLEARREACTOR\">Research Reactor</link> will require <link=\"ENRICHEDURANIUM\">Enriched Uranium</link> to run. Uranium can be enriched using a <link=\"URANIUMCENTRIFUGE\">Uranium Centrifuge</link>.\n"
@@ -11850,17 +11687,15 @@ msgid ""
 msgstr ""
 "<link=\"NUCLEARREACTOR\">研究炉</link>を稼働させるには<link=\"ENRICHEDURANIUM\">濃縮ウラン</link>が必要です。ウランは<link=\"URANIUMCENTRIFUGE\">ウラン遠心分離機</link>で濃縮できます。\n"
 "\n"
-"<link=\"ENRICHEDURANIUM\">濃縮ウラン</link>が供給されると、<link=\"NUCLEARREACTOR\">研究炉</link>は膨大な量の<link=\"HEAT\">熱</link>を発生させます。<link=\"WATER\">水</link>源の下に置けば<link=\"STEAM\">蒸気</link>を生成し、<link=\"STEAMTURBINE2\">蒸気タービン</link>に通すことで多量の<link=\"POWER\">電力</link>を生成することができます。"
+"<link=\"ENRICHEDURANIUM\">濃縮ウラン</link>が供給されると、<link=\"NUCLEARREACTOR\">研究炉</link>は膨大な量の<link=\"HEAT\">熱</link>を発生させます。<link=\"WATER\">水</link>源の下に置けば<link=\"STEAM\">蒸気</link>を生成し、<link=\"STEAMTURBINE2\">蒸気タービン</link>に通すことで多量の<link=\"POWER\">電力</link>を生成することができます。\n"
+"\n"
 
 #. STRINGS.CODEX.RADIATION.PARAGRAPH_4
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.MISCELLANEOUSTIPS"
-#| msgid "<link=\"MISCELLANEOUSTIPS\">Tips</link>"
 msgctxt "STRINGS.CODEX.RADIATION.PARAGRAPH_4"
 msgid ""
 "To learn more, see <link=\"MISCELLANEOUSTIPS19\">Tutorial: Radiation</link>.\n"
 "\n"
-msgstr "<link=\"MISCELLANEOUSTIPS\">チュートリアル</link>"
+msgstr "詳細については、<link=\"MISCELLANEOUSTIPS19\">チュートリアル: 放射線</link> を参照してください。\n"
 
 #. STRINGS.CODEX.RADIATION.TITLE
 msgctxt "STRINGS.CODEX.RADIATION.TITLE"
@@ -12084,12 +11919,9 @@ msgstr ""
 "    • <link=\"PRIVATE BEDROOM\">個人用寝室</link> (<link=\"LUXURYBED\">快適ベッド</link>1台)"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.BEDTYPE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CREATURES.SPECIES.BEE.NAME"
-#| msgid "<link=\"BEE\">Beeta</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.BEDTYPE.TITLE"
 msgid "<link=\"BEDTYPE\">Beds</link>"
-msgstr "<link=\"BEE\">ビータ</link>"
+msgstr "<link=\"BEDTYPE\">ベッド</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.CLINIC.DESCRIPTION
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.CLINIC.DESCRIPTION"
@@ -12127,29 +11959,20 @@ msgid "    • <link=\"KITCHEN\">Kitchen</link>"
 msgstr "    • <link=\"KITCHEN\">調理場</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.COOKTOP.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.ROOMS.CRITERIA.COOKTOP.CONFLICT_DESCRIPTION"
-#| msgid "<link=\"REQUIREMENTCLASSCOOKTOP\">Cooking station</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.COOKTOP.TITLE"
 msgid "<link=\"COOKTOP\">Cooking Stations</link>"
-msgstr "<link=\"REQUIREMENTCLASSCOOKTOP\">調理端末</link>"
+msgstr "<link=\"COOKTOP\">調理端末</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DECORATION.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DECORATION.DESCRIPTION"
-#| msgid ""
-#| "Buildings that give the colony a valuable aesthetic boost, and allow Duplicants to express themselves creatively.\n"
-#| "\n"
-#| "Some rooms require Fancy Decor items, which contribute extra-high levels of aesthetic enhancement."
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DECORATION.DESCRIPTION"
 msgid ""
 "Buildings that give the colony a valuable aesthetic boost, and allow Duplicants to express themselves creatively.\n"
 "\n"
 "Some decor buildings will only be counted as such if they have been appropriately fulfilled. For example, uncarved sculpting blocks and blank canvases do not contribute to a room's status."
 msgstr ""
-"コロニーの景観を改善し、複製人間に自己表現の場を与える設備です。\n"
+"コロニーに美観上の価値を高め、複製人間の創造性を豊かに表現する設備です。\n"
 "\n"
-"非常に高いレベルの美観を供給する装飾品の展示が必須な部屋もあります。"
+"一部の装飾設備は、適切に装飾が施されている場合にのみ、装飾設備としてカウントされます。例えば、彫刻されていない彫刻用ブロックや白紙のキャンバスは、部屋のステータスには影響しません。"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DECORATION.FLAVOUR
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DECORATION.FLAVOUR"
@@ -12172,66 +11995,37 @@ msgstr ""
 "    • <link=\"RECROOM\">娯楽室</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DECORATION.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.DECORSYSTEM.TITLE"
-#| msgid "<link=\"DECOR\">Decor</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DECORATION.TITLE"
 msgid "<link=\"DECORATION\">Decor Buildings</link>"
-msgstr "<link=\"DECOR\">装飾</link>"
+msgstr "<link=\"DECORATION\">装飾設備</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.CONFLICTINGROOMS
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.RANCHSTATIONTYPE.ROOMSREQUIRING"
-#| msgid "    • <link=\"CREATUREPEN\">Stable</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.CONFLICTINGROOMS"
 msgid "    • <link=\"GREATERHALL\">Banquet Hall</link> (No Mess Table)\n"
-msgstr "    • <link=\"CREATUREPEN\">厩舎</link>"
+msgstr "    • <link=\"GREATERHALL\">大宴会場</link> (食卓不可)\n"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.DESCRIPTION
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.BEDTYPE.DESCRIPTION"
-#| msgid "Buildings that allow Duplicants to get much-needed rest. If a Duplicant is not assigned one, they will sleep on the floor."
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.DESCRIPTION"
 msgid "Buildings that enable Duplicants to enjoy their meals at a dignified distance from the floor."
-msgstr "複製人間が就寝するための設備です。割り当てられていない複製人間は床で寝ることになります。"
+msgstr "複製人間達が床から程よい距離を保ちながら食事を楽しむことができる設備です。"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.FLAVOUR
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.FLAVOUR"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.ROOMSREQUIRING
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.RECBUILDING.ROOMSREQUIRING"
-#| msgid ""
-#| "    • <link=\"GREATHALL\">Great Hall</link> \n"
-#| "    • <link=\"RECROOM\">Recreation Room</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.ROOMSREQUIRING"
 msgid ""
 "    • <link=\"MESSHALL\">Mess Hall</link>\n"
 "    • <link=\"GREATHALL\">Great Hall</link>\n"
 "    • <link=\"GREATERHALL\">Banquet Hall</link> (Communal Table)"
 msgstr ""
-"    • <link=\"GREATHALL\">大広間</link> \n"
-"    • <link=\"RECROOM\">娯楽室</link>"
+"    • <link=\"MESSHALL\">食堂</link>\n"
+"    • <link=\"GREATHALL\">大広間</link>\n"
+"    • <link=\"GREATERHALL\">大宴会場</link> (共用テーブル)"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.MISC.TAGS.MESSSTATION"
-#| msgid "Dining Tables"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.TITLE"
 msgid "Dining Tables"
 msgstr "食事テーブル"
@@ -12278,12 +12072,9 @@ msgid "    • <link=\"POWERPLANT\">Power Plant</link>"
 msgstr "    • <link=\"POWERPLANT\">発電所</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.GENERATORTYPE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.GENERATOR.NAME"
-#| msgid "<link=\"GENERATOR\">Coal Generator</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.GENERATORTYPE.TITLE"
 msgid "<link=\"GENERATORTYPE\">Generators</link>"
-msgstr "<link=\"GENERATOR\">石炭発電機</link>"
+msgstr "<link=\"GENERATORTYPE\">発電機</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.INDUSTRIALMACHINERY.CONFLICTINGROOMS
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.INDUSTRIALMACHINERY.CONFLICTINGROOMS"
@@ -12343,12 +12134,9 @@ msgid "    • <link=\"LABORATORY\">Laboratory</link>"
 msgstr "    • <link=\"LABORATORY\">研究室</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.LIGHTSOURCE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.ROOMS.CRITERIA.LIGHTSOURCE.CONFLICT_DESCRIPTION"
-#| msgid "<link=\"REQUIREMENTCLASSLIGHTSOURCE\">Light source</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.LIGHTSOURCE.TITLE"
 msgid "<link=\"LIGHTSOURCE\">Light Sources</link>"
-msgstr "<link=\"REQUIREMENTCLASSLIGHTSOURCE\">光源</link>"
+msgstr "<link=\"LIGHTSOURCE\">光源</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.NAME
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.NAME"
@@ -12362,40 +12150,24 @@ msgid ""
 "\n"
 "They can be obtained through exploration, excavation, and study. Some are admired in their original form, while others can be reworked or crafted by <link=\"ARTING1\">creative</link> Duplicants."
 msgstr ""
+"オーナメントは<link=\"DECOR\">装飾</link>が非常に高いアイテムで、部屋の必要条件を満たすためには<link=\"ITEMPEDESTAL\">展示台</link>または<link=\"SHELF\">展示棚</link>に飾る必要があります。\n"
+"\n"
+"オーナメントは探索、発掘、研究を通して入手できます。中にはそのままの姿で鑑賞できるものもあれば、<link=\"ARTING1\">創造性豊かな</link>複製者によって加工または作成できるものもあります。"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.ORNAMENT.FLAVOUR
-#, fuzzy
-#| msgid ""
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.ORNAMENT.FLAVOUR"
 msgid ""
 msgstr ""
-"Project-Id-Version: OxygenNotIncluded-Japanese\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
-"Language: ja_JP\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.ORNAMENT.ROOMSREQUIRING
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.WASHSTATION.ROOMSREQUIRING"
-#| msgid "    • <link=\"LATRINE\">Latrine</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.ORNAMENT.ROOMSREQUIRING"
 msgid "    • <link=\"BANQUETHALL\">Banquet Hall</link>"
-msgstr "    • <link=\"LATRINE\">公衆トイレ</link>"
+msgstr "    • <link=\"BANQUETHALL\">大宴会場</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.ORNAMENT.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.RESEARCH.TECHS.MONUMENTS.NAME"
-#| msgid "<link=\"MONUMENTS\">Monuments</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.ORNAMENT.TITLE"
 msgid "<link=\"ORNAMENTDISPLAYED\">Displayed Ornaments</link>"
-msgstr "<link=\"MONUMENTS\">モニュメント</link>"
+msgstr "<link=\"ORNAMENTDISPLAYED\">展示されたオーナメント</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.POWERBUILDING.DESCRIPTION
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.POWERBUILDING.DESCRIPTION"
@@ -12413,12 +12185,9 @@ msgid "    • <link=\"POWERPLANT\">Power Plant</link>"
 msgstr "    • <link=\"POWERPLANT\">発電所</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.POWERBUILDING.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.CODEX.CATEGORYNAMES.BUILDINGS"
-#| msgid "<link=\"BUILDINGS\">Buildings</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.POWERBUILDING.TITLE"
 msgid "<link=\"POWERBUILDING\">Power Buildings</link>"
-msgstr "<link=\"BUILDINGS\">設備</link>"
+msgstr "<link=\"POWERBUILDING\">電力設備</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.RANCHSTATIONTYPE.DESCRIPTION
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.RANCHSTATIONTYPE.DESCRIPTION"
@@ -12436,12 +12205,9 @@ msgid "    • <link=\"CREATUREPEN\">Stable</link>"
 msgstr "    • <link=\"CREATUREPEN\">厩舎</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.RANCHSTATIONTYPE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.ROOMS.CRITERIA.RANCHSTATIONTYPE.CONFLICT_DESCRIPTION"
-#| msgid "<link=\"REQUIREMENTCLASSRANCHSTATIONTYPE\">Ranching building</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.RANCHSTATIONTYPE.TITLE"
 msgid "<link=\"RANCHSTATIONTYPE\">Ranching Buildings</link>"
-msgstr "<link=\"REQUIREMENTCLASSRANCHSTATIONTYPE\">畜産設備</link>"
+msgstr "<link=\"RANCHSTATIONTYPE\">畜産設備</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.RECBUILDING.DESCRIPTION
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.RECBUILDING.DESCRIPTION"
@@ -12478,12 +12244,9 @@ msgid ""
 msgstr ""
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.ROCKETINTERIOR.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.ROOMS.CRITERIA.ROCKETINTERIOR.CONFLICT_DESCRIPTION"
-#| msgid "<link=\"REQUIREMENTCLASSROCKETINTERIOR\">Rocket interior</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.ROCKETINTERIOR.TITLE"
 msgid "<link=\"ROCKETINTERIOR\">Rocket Interior</link>"
-msgstr "<link=\"REQUIREMENTCLASSROCKETINTERIOR\">ロケット内部設備</link>"
+msgstr "<link=\"ROCKETINTERIOR\">ロケット内部設備</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SCIENCEBUILDING.DESCRIPTION
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SCIENCEBUILDING.DESCRIPTION"
@@ -12506,12 +12269,9 @@ msgid "Science Buildings"
 msgstr "科学設備"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SHARED.BUILDINGS_LIST_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SHARED.BUILDINGS_LIST_TITLE"
-#| msgid "Buildings in this category:"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SHARED.BUILDINGS_LIST_TITLE"
 msgid "In this category:"
-msgstr "このカテゴリにある設備:"
+msgstr "このカテゴリ:"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SHARED.ROOMS_CONFLICT_LIST_TITLE
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SHARED.ROOMS_CONFLICT_LIST_TITLE"
@@ -12558,12 +12318,9 @@ msgid ""
 msgstr ""
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.WARMINGSTATION.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.NAME"
-#| msgid "<link=\"SHEARINGSTATION\">Shearing Station</link>"
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.WARMINGSTATION.TITLE"
 msgid "<link=\"WARMINGSTATION\">Warming Stations</link>"
-msgstr "<link=\"SHEARINGSTATION\">毛刈り端末</link>"
+msgstr "<link=\"WARMINGSTATION\">暖房端末</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.WASHSTATION.DESCRIPTION
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.WASHSTATION.DESCRIPTION"
@@ -12903,11 +12660,11 @@ msgid ""
 "\n"
 "These can be gathered and transported back to the colony using a rocket equipped with an <link=\"ARTIFACTCARGOBAY\">Artifact Transport Module</link>."
 msgstr ""
+"宇宙の名所旧跡から資源を採掘している際に、採掘者は興味をそそられる珍しい遺物を発見することがあります。\n"
+"\n"
+"これらの遺物は、<link=\"ARTIFACTCARGOBAY\">遺物輸送モジュール</link>を搭載したロケットを使って収集し、コロニーへ輸送することができます。"
 
 #. STRINGS.CODEX.SPACEARTIFACT.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.STUDY_ARTIFACTS.MYLOGNAME"
-#| msgid "Artifacts"
 msgctxt "STRINGS.CODEX.SPACEARTIFACT.TITLE"
 msgid "Space Artifacts"
 msgstr "旧世界の遺物"
@@ -13278,9 +13035,6 @@ msgid "Strong collective consciousness detected. Review data for more informatio
 msgstr "強い集合意識を検知しました。詳細はデータを確認してください。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.BELLY
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.ICEBELLY"
-#| msgid "Specimen produced substantial stool sample. Review data for more information."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.BELLY"
 msgid "Specimen produced substantial stool sample. Review data for more information."
 msgstr "検体から大量の便サンプルが得られました。詳細についてはデータを確認してください。"
@@ -13302,20 +13056,11 @@ msgid "Mind the claws! Review data for more information."
 msgstr "ツメに注意！詳細はデータを確認してください。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.DEER
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.WOODDEER"
-#| msgid "This critter seemed amused by the scanning process. Review data for more information."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.DEER"
 msgid "This critter seemed amused by the scanning process. Review data for more information."
 msgstr "この動物は自分が検査されていることに気づいていないようでした。詳細はデータを確認してください。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.DIVERGENT
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.DIVERGENTSPECIES"
-#| msgid ""
-#| "Specimen responded gently to the probative apparatus, as though being careful not to cause any damage.\n"
-#| "\n"
-#| "Review data for more information."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.DIVERGENT"
 msgid ""
 "Specimen responded gently to the probative apparatus, as though being careful not to cause any damage.\n"
@@ -13407,12 +13152,6 @@ msgid "This critter was temporarily stuck in the scanning area. Review data for 
 msgstr "この動物は一時的にスキャンエリア内に留まっていました。詳細についてはデータを確認してください。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.UNKNOWN
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.UNKNOWN"
-#| msgid ""
-#| "This species cannot be identified due to a malfunction in the genome-parsing software.\n"
-#| "\n"
-#| "Please note that kicking the building's exterior is unlikely to correct this issue and may result in permanent damage to the system."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.UNKNOWN"
 msgid ""
 "Subject successfully scanned.\n"
@@ -13421,14 +13160,16 @@ msgid ""
 "\n"
 "Please note that kicking the building's exterior is unlikely to correct this issue and may result in permanent damage to the system."
 msgstr ""
-"遺伝子解析ソフトウェアの不具合により、この種族を同定することはできませんでした。\n"
+"対象のスキャンに成功しました。\n"
 "\n"
-"設備を蹴ったところでこの問題が解決される可能性は低く、システムに恒久的な損傷を与える可能性がありますのでご注意ください。"
+"ゲノム解析の不具合により、変異機能は利用できません。\n"
+"\n"
+"設備の外装を蹴ってもこの問題が解決する可能性は低く、システムに恒久的な損傷を与える可能性がありますのでご注意ください。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.UNKNOWN_TITLE
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES.UNKNOWN_TITLE"
 msgid "MESSAGE FROM THE MANUFACTURER"
-msgstr ""
+msgstr "製造元からのメッセージ"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.BEETA
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.BEETA"
@@ -13446,12 +13187,6 @@ msgstr ""
 "注意深く観察してください。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.BELLY
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.ICEBELLY"
-#| msgid ""
-#| "Specimen produced substantial stool sample directly onto scanner bed.\n"
-#| "\n"
-#| "Remarkably, its white coat remained pristine. Analysis of coat fibers revealed that each follicle is sealed with polytetrafluoroethylene, providing strong stain resistance."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.BELLY"
 msgid ""
 "Specimen produced substantial stool sample directly onto scanner bed.\n"
@@ -13463,12 +13198,6 @@ msgstr ""
 "驚くべきことに、白い毛皮はきれいな状態を保っていました。毛皮繊維の分析により、各毛包がポリテトラフルオロエチレンで密封されており、高い防汚性を備えていることが明らかになりました。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.CHAMELEON
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.CHAMELEONSPECIES"
-#| msgid ""
-#| "Scanning interrupted due to instrument displacement caused by specimen's lingual grasp.\n"
-#| "\n"
-#| "Residual markings left by specimen's tongue ridges and grooves are a 72% match to a set of unmarked fingerprints from the Gravitas personnel database."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.CHAMELEON"
 msgid ""
 "Scanning interrupted due to instrument displacement caused by specimen's lingual grasp.\n"
@@ -13491,12 +13220,6 @@ msgstr ""
 "進化の過程で音楽の洗礼を受けたのでしょうか？"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.DEER
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.WOODDEER"
-#| msgid ""
-#| "This critter's perpetual grin grew as it observed each step of the process extremely closely.\n"
-#| "\n"
-#| "Behavioral analysis indicates a tendency toward mischief. Close supervision - and minimal access to advanced machinery - is recommended."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.DEER"
 msgid ""
 "This critter's perpetual grin grew as it observed each step of the process extremely closely.\n"
@@ -13508,12 +13231,6 @@ msgstr ""
 "行動分析によればイタズラ好きな傾向があります。厳重な監視と高度な機械へのアクセスを最小限にすることが推奨されます。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.DIVERGENT
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.DIVERGENTSPECIES"
-#| msgid ""
-#| "Specimen responded gently to the probative apparatus, as though being careful not to cause any damage.\n"
-#| "\n"
-#| "It also produced a series of deep, rhythmic vibrations during analysis. An attempt to communicate with the sensors, perhaps?"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.DIVERGENT"
 msgid ""
 "Specimen responded gently to the probative apparatus, as though being careful not to cause any damage.\n"
@@ -13587,9 +13304,6 @@ msgstr ""
 "この生物の遺伝子構造は謎に包まれたままです。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.MOSQUITO
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.MOSQUITOSPECIES"
-#| msgid "On the surface of this critter's wings are thousands of microperforations. These appear to act as acoustic liners, allowing the Gnit to approach targets without the high-pitched whine of its wingbeats giving away its position."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.MOSQUITO"
 msgid "On the surface of this critter's wings are thousands of microperforations. These appear to act as acoustic liners, allowing the Gnit to approach targets without the high-pitched whine of its wingbeats giving away its position."
 msgstr "この動物の羽毛表面には、何千もの微細な穿孔が施されています。これらは音響ライナーとして機能し、高音の羽ばたき音で位置を知られることなく、標的に近づくことができるようです。"
@@ -13611,14 +13325,6 @@ msgstr ""
 "生臭さを中和するための燻蒸シーケンスを開始します。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.PREHISTORICPACU
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.PREHISTORICPACUSPECIES"
-#| msgid ""
-#| "This critter attacked the transducer.\n"
-#| "\n"
-#| "When the swallowed component was regurgitated, it was coated in microorganisms that predate this colony by at least several millenia.\n"
-#| "\n"
-#| "Unfortunately, it was reingested before analysis was completed."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.PREHISTORICPACU"
 msgid ""
 "This critter attacked the transducer.\n"
@@ -13645,14 +13351,6 @@ msgstr ""
 "蛍光イメージングにより、神経細胞の活動が極めて低いことが分かりました。解析中は眠っていたのでしょうか？"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.RAPTOR
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.RAPTORSPECIES"
-#| msgid ""
-#| "This critter's x-ray imaging indicates that its cranial protrusion may not be a horn at all.\n"
-#| "\n"
-#| "It is not composed of live bone surrounded by a keratin-and-protein shell, but rather an ennervated, calcified structure. An illogically located tooth, or perhaps a rostrum?\n"
-#| "\n"
-#| "Fascinating."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.RAPTOR"
 msgid ""
 "This critter's x-ray imaging indicates that its cranial protrusion may not be a horn at all.\n"
@@ -13699,12 +13397,6 @@ msgid "Warning: The electrical charge emitted by this specimen nearly short-circ
 msgstr "警告: この被検体から放出された電荷は危うくこの設備をショートさせるところでした。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.STEGO
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.STEGOSPECIES"
-#| msgid ""
-#| "This critter was temporarily stuck in the scanning area due to its size. It appeared to enjoy being shoved backward and forward on the conveyor belt during dislodgment.\n"
-#| "\n"
-#| "Upon finally reaching the exit, the critter seemed confused as to why the ride was over."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.STEGO"
 msgid ""
 "This critter was temporarily stuck in the scanning area due to its size. It appeared to enjoy being shoved backward and forward on the conveyor belt during dislodgment.\n"
@@ -13716,12 +13408,6 @@ msgstr ""
 "ようやく出口にたどり着いた時、この動物はなぜアトラクションが終わってしまったのかと戸惑っているようでした。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.UNKNOWN
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.UNKNOWN"
-#| msgid ""
-#| "FAILURE TO FLUX: This species cannot be identified due to a malfunction in the genome-parsing software.\n"
-#| "\n"
-#| "Please note that kicking the building's exterior is unlikely to correct this issue and may result in permanent damage to the system."
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.UNKNOWN"
 msgid ""
 "MESSAGE FROM THE MANUFACTURER: Subject successfully scanned.\n"
@@ -13730,17 +13416,16 @@ msgid ""
 "\n"
 "Please note that kicking the building's exterior is unlikely to correct this issue and may result in permanent damage to the system."
 msgstr ""
-"解析失敗: 遺伝子解析ソフトウェアの不具合により、この種族を同定することはできませんでした。\n"
+"製造元からのメッセージ: 対象のスキャンに成功しました。\n"
 "\n"
-"設備を蹴ったところでこの問題が解決される可能性は低く、システムに恒久的な損傷を与える可能性がありますのでご注意ください。"
+"ゲノム解析に不具合があるため、変異機能は利用できません。\n"
+"\n"
+"設備の外装を蹴ってもこの問題が解決する可能性は低く、システムに恒久的な損傷を与える可能性がありますのでご注意ください。"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.UNKNOWN_TITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.SEAL.SPECIES_SUBTITLE"
-#| msgid "Domesticable Species"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.SPECIES_ENTRIES_EXPANDED.UNKNOWN_TITLE"
 msgid "Non-Fluxable Species"
-msgstr "飼い慣らせる動物"
+msgstr "変異不可な種"
 
 #. STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.UNLOCK_SPECIES_NOTIFICATION.NAME
 msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.UNLOCK_SPECIES_NOTIFICATION.NAME"
@@ -14415,27 +14100,38 @@ msgid ""
 "\n"
 "------------------\n"
 msgstr ""
+"<size=18>Giga Co-Op</size>\n"
+"<i><smallcaps>時代を超越したテクノロジーのためのプロアクティブなソリューション</i>\n"
+"24時間年中無休\n"
+"\n"
+"レシート番号 978-0-465-02656-2\n"
+"</smallcaps>\n"
+"\n"
+"お客様各位\n"
+"\n"
+"<indent=5%>Giga Co-Opをご利用いただきありがとうございます。\n"
+"\n"
+"13桁のレシート番号を機器のコントロールパネルに入力して、最新の取扱説明書をご覧ください。\n"
+"\n"
+"このコードを印刷または共有しないでください。\n"
+"\n"
+"レビューを投稿すると、次回のサービスが4%割引になります！</indent>\n"
+"\n"
+"<smallcaps>販売点数 2</smallcaps>\n"
+"\n"
+"------------------\n"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.ACTIVATECODE.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.BUILDINGS.PREFABS.PROPDLC2GEOTHERMALCART.NAME"
-#| msgid "Service Cart"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.ACTIVATECODE.SUBTITLE"
 msgid "Service Receipt"
-msgstr "配膳カート"
+msgstr "サービス領収書"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.ACTIVATECODE.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.CATEGORIES.DUPE_ACCESSORIES"
-#| msgid "Accessories"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.ACTIVATECODE.TITLE"
 msgid "Access Code"
-msgstr "アクセサリー"
+msgstr "アクセスコード"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.BEGIN_POPUP.CODEX_NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.BEGIN_POPUP.CODEX_NAME"
-#| msgid "First Encounter"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.BEGIN_POPUP.CODEX_NAME"
 msgid "First Encounter"
 msgstr "未知との遭遇"
@@ -14449,14 +14145,16 @@ msgid ""
 "\n"
 "I can only hope that the code is also buried somewhere on this world."
 msgstr ""
+"複製人間達が興味深い機械を発見した。構造から判断すると、エネルギーフィールドを撹乱する装置として設計され、印刷機能は後付けされたようだ。\n"
+"\n"
+"13桁のパスコードでロックされており、一度でもロック解除に失敗すると、設備が完全に使用不可となるおそれがある。\n"
+"\n"
+"パスコードもこの世界のどこかに埋もれていることを願うばかりだ。"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.BEGIN_POPUP.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.BEGIN_POPUP.NAME"
-#| msgid "Story Trait: Ancient Specimen"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.BEGIN_POPUP.NAME"
 msgid "Story Trait: Printerceptor"
-msgstr "物語特性: 太古の標本"
+msgstr "物語特性: 製造ポッドジャック"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.DESCRIPTION
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.DESCRIPTION"
@@ -14467,24 +14165,23 @@ msgid ""
 "\n"
 "It smells a bit like an old ranch."
 msgstr ""
+"非公式生合成施設を再起動する。\n"
+"\n"
+"起動すると、複製人間は製造ポッドからエネルギーを吸い上げオンデマンドで「何か」を印刷できるようになるだろう。\n"
+"\n"
+"​​少し古い牧場のような匂いがする。"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.DESCRIPTION_SHORT
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.DESCRIPTION_SHORT"
 msgid "Reboot an unsanctioned biogenetic facility that siphons energy from the Printing Pod."
-msgstr ""
+msgstr "製造ポッドからエネルギーを吸い上げる非公式生合成施設を再起動します。"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.END_POPUP.BUTTON
-#, fuzzy
-#| msgctxt "STRINGS.ROBOTS.STATS.INTERNALELECTROBANK.NAME"
-#| msgid "Power Bank"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.END_POPUP.BUTTON"
 msgid "Power On"
-msgstr "電力バンク"
+msgstr "電源オン"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.END_POPUP.CODEX_NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.END_POPUP.CODEX_NAME"
-#| msgid "Challenge Completed"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.END_POPUP.CODEX_NAME"
 msgid "Challenge Completed"
 msgstr "チャレンジ完了"
@@ -14498,14 +14195,16 @@ msgid ""
 "\n"
 "A small personal item shook loose from the frame during use. Perhaps it belonged to the previous operator."
 msgstr ""
+"成功した！この設備は最初の生存可能な生物を印刷しました。検出可能な遺伝子欠陥は一切ない。\n"
+"\n"
+"これで製造ポッドの電力をコロニーの目的に最適な生物と種子に確実に再配分できる。種の絶滅はもう存在しない。\n"
+"\n"
+"使用中に小さな私物がフレームから落ちた。おそらく前のオペレーターのものだったのだろう。"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.END_POPUP.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.END_POPUP.NAME"
-#| msgid "Story Trait Complete: Ancient Specimen"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.END_POPUP.NAME"
 msgid "Story Trait Complete: Printerceptor"
-msgstr "物語特性完了: 太古の標本"
+msgstr "物語特性完了: 製造ポッドジャック"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.HANDOFF.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.HANDOFF.BODY.CONTAINER1"
@@ -14592,35 +14291,104 @@ msgid ""
 "<smallcaps>[LOG ENDS]\n"
 "------------------\n"
 msgstr ""
+"<smallcaps>[ログ断片検出]\n"
+"[音声認識利用不可]</smallcaps>\n"
+"\n"
+"[ログ開始]\n"
+"\n"
+"(水が流れる音)\n"
+"\n"
+"技術者: リード博士居ますか？\n"
+"\n"
+"(ドアの開く音)\n"
+"\n"
+"ルビー: 来たわね！何かあったのかと思ってたところなの。\n"
+"\n"
+"技術者: 遅れて申し訳ありません。今朝方カフェテリアで大変なことが起こりまして。新しい危険物ラベルはマヨネーズで簡単に剥がれてしまうんですよ。\n"
+"\n"
+"ルビー: なんでカフェに危険物ラベルが―\n"
+"\n"
+"技術者: テクナサイフォンのアクセスコードはお持ちですね？\n"
+"\n"
+"ルビー: このドライブの中よ。\n"
+"\n"
+"ルビー: ねえ、これを渡す前にあなたが誰と仕事をしているのか正確に知っておく必要があるんだけど。\n"
+"\n"
+"技術者: 誓って悪事はしていませんよ、リード博士。\n"
+"\n"
+"ルビー: そうだと良いわね。で、誰なの。\n"
+"\n"
+"技術者: 私は所長を所長たらしめる人物と仕事をしているんです。言ってみれば…、我々は家族のようなものです。\n"
+"\n"
+"ルビー: 所長に家族は居ません。\n"
+"\n"
+"技術者: 今生きている間は無理かもしれませんねえ。ドライブを渡してください。お願いします。\n"
+"\n"
+"ルビー: ニコラはどうしたの？彼の居場所を知ってる人はあなたたちの中に居る？\n"
+"\n"
+"技術者: 現在調査中です。あなたに最初にお伝えしますよ。\n"
+"\n"
+"(ドアをコンコン叩く音)\n"
+"\n"
+"声: もしもし？どなたか居ますか？\n"
+"\n"
+"ルビー: (囁き声) 警備員に付けられてたのね！\n"
+"\n"
+"(ドアを乱暴に叩く音)\n"
+"\n"
+"声: 開けなさい！\n"
+"\n"
+"ルビー: もしあのサーバーのデータを奴等が手に入れるようなことになれば...\n"
+"\n"
+"技術者: ちょっと、何をするんです！？\n"
+"\n"
+"(トイレを流す音)\n"
+"\n"
+"技術者: なんてことを！\n"
+"\n"
+"ルビー: ごめんなさいね。流しちゃった。奴等の手にあれが渡るようなら、私は決して自分自身を許せないから。\n"
+"\n"
+"(ドアが軋む音)\n"
+"\n"
+"ルビー: カタリナ！まさか―\n"
+"\n"
+"カタリナ: やっと開いた！...何を、いや、もうどうでもいいわ。お二人さん、続きは廊下でやってくれる？もうかなり<i>ヤバい</i>の。\n"
+"\n"
+"ルビー: そうするわ。ごめんなさい。\n"
+"\n"
+"技術者: 実は―\n"
+"\n"
+"カタリナ: はいはい、分かったから、どいたどいた。\n"
+"\n"
+"(ドアがバタンと閉まる音)\n"
+"\n"
+"ルビー: 何をしているの？\n"
+"\n"
+"技術者: 研究所の配管システムの設計図を引っ張り出しているところですよ。特許も申請していない1兆ドル規模の技術をトイレに流せるはずがないでしょう？\n"
+"\n"
+"ルビー: 待って、それってつまりこの技術を<i>売る</i>つもりなの？どうなるか分かって―\n"
+"\n"
+"技術者: 百も承知ですよ。リード博士、大変助かりました。このことは他言しないほうが賢明だと思いますね。\n"
+"\n"
+"<smallcaps>[ログ終了]\n"
+"------------------\n"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.HANDOFF.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.A0_PRELIMINARYCALCULATIONS.SUBTITLE"
-#| msgid "ENCRYPTION LEVEL: NONE"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.HANDOFF.SUBTITLE"
 msgid "ENCRYPTION LEVEL: NONE"
 msgstr "暗号化レベル: なし"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.HANDOFF.TITLE
-#, fuzzy
-#| msgctxt "STRINGS.GAMEPLAY_EVENTS.LOCATIONS.SUN"
-#| msgid "The Sun"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.HANDOFF.TITLE"
 msgid "The Stall"
-msgstr "太陽"
+msgstr "特等席"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.NAME
-#, fuzzy
-#| msgctxt "STRINGS.NAMEGEN.DUPLICANT.PREFIX.MALE.PRINCE"
-#| msgid "Prince"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.NAME"
 msgid "Printerceptor"
-msgstr "プリンス"
+msgstr "製造ポッドジャック"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.UNLOCK_POPUP.BUTTON
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.CLOSE_BUTTON"
-#| msgid "Close"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.UNLOCK_POPUP.BUTTON"
 msgid "Close"
 msgstr "閉じる"
@@ -14628,7 +14396,7 @@ msgstr "閉じる"
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.UNLOCK_POPUP.CODEX_NAME
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.UNLOCK_POPUP.CODEX_NAME"
 msgid "Flushed Evidence"
-msgstr ""
+msgstr "流された証拠"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.UNLOCK_POPUP.DESCRIPTION
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.UNLOCK_POPUP.DESCRIPTION"
@@ -14637,14 +14405,14 @@ msgid ""
 "\n"
 "The data storage medium was damaged during retrieval, but it has already served its purpose: the Printerceptor's targeted printing technology is now at my colony's fingertips."
 msgstr ""
+"複製人間達が製造ポッドジャックのロックを解除するためのアクセスコードを入手した！\n"
+"\n"
+"データ保存媒体は回収中に破損したが、既にその役割を終えている。製造ポッドジャックの印刷技術は、今や私のコロニーの手の届くところにある。"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.UNLOCK_POPUP.NAME
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.BEGIN_POPUP.NAME"
-#| msgid "Story Trait: Ancient Specimen"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.UNLOCK_POPUP.NAME"
 msgid "Story Trait: Printerceptor"
-msgstr "物語特性: 太古の標本"
+msgstr "物語特性: 製造ポッドジャック"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.WHENIMGONE.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.WHENIMGONE.BODY.CONTAINER1"
@@ -14673,11 +14441,31 @@ msgid ""
 "[LOG ENDS]\n"
 "------------------\n"
 msgstr ""
+"<smallcaps>[ログ断片検出]</smallcaps>\n"
+"\n"
+"[ログ開始]\n"
+"\n"
+"<i>...あなたが誰であろうとも...(ザザッ)...もしこれを見ているならば... 直ちに研究所から立ち去ってください。他言無用です。私達が最初の... だと思っていました。\n"
+"タイミングが全てです。<i>時間</i>が全てです。\n"
+"\n"
+"ダウンタウンの Giga Co-Op に行ってD.Hの注文を受け取ると伝えてください。機械が渡されますが、起動したらオフラインのままにしておいてください。\n"
+"\n"
+"...ドライブに説明書があります。コード認証が終わったら、(ザッ)ポッドジャックの場所が分かります。データはまだサーバー上にあります。\n"
+"\n"
+"...製造ポッドからの電力を経路変更し、時間の弓に繋ぎました。時間封じ込めフィールドを完成させるための時間を稼いでいますが、「稼ぐ」ことは無理で実際には「借りて」いるだけです。我々の累積した負債規模は...\n"
+"\n"
+"我々が初めてではありません ...  全てが崩壊するとどうなるのか ...  何度も何度も... 私は長いこと時間の弓が他にも存在することを疑っていた ... もしそれらのうちの一つでも許容範囲を超えてしまったら ...\n"
+"...世界線は分裂し、別の世界線に繋がれる...\n"
+"\n"
+"他に幾つの地球が...\n"
+"\n"
+"所長は他に何を犠牲にしたというのだ？\n"
+"...(ザザッ)...</i>\n"
+"\n"
+"[ログ終了]\n"
+"------------------\n"
 
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.WHENIMGONE.SUBTITLE
-#, fuzzy
-#| msgctxt "STRINGS.CODEX.A0_PRELIMINARYCALCULATIONS.SUBTITLE"
-#| msgid "ENCRYPTION LEVEL: NONE"
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.WHENIMGONE.SUBTITLE"
 msgid "ENCRYPTION LEVEL: NONE"
 msgstr "暗号化レベル: なし"
@@ -14685,7 +14473,7 @@ msgstr "暗号化レベル: なし"
 #. STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.WHENIMGONE.TITLE
 msgctxt "STRINGS.CODEX.STORY_TRAITS.HIJACK_HEADQUARTERS.WHENIMGONE.TITLE"
 msgid "When I'm Gone"
-msgstr ""
+msgstr "私が去った時"
 
 #. STRINGS.CODEX.STORY_TRAITS.LONELYMINION.ANCIENTPODENTRY.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.STORY_TRAITS.LONELYMINION.ANCIENTPODENTRY.BODY.CONTAINER1"
@@ -15771,12 +15559,9 @@ msgid "Stress Responses"
 msgstr "ストレス反応"
 
 #. STRINGS.CODEX.STRESS.HEADER_3
-#, fuzzy
-#| msgctxt "STRINGS.VIDEOS.TUTORIAL_HEADER"
-#| msgid "Tutorial:"
 msgctxt "STRINGS.CODEX.STRESS.HEADER_3"
 msgid "Tutorials"
-msgstr "チュートリアル:"
+msgstr "チュートリアル"
 
 #. STRINGS.CODEX.STRESS.PARAGRAPH_1
 msgctxt "STRINGS.CODEX.STRESS.PARAGRAPH_1"
@@ -15801,7 +15586,7 @@ msgctxt "STRINGS.CODEX.STRESS.PARAGRAPH_3"
 msgid ""
 "To learn more about managing Duplicants' moods, watch <link=\"VIDEOS13\">Video: Duplicant Morale</link> and see <link=\"MISCELLANEOUSTIPS2\">Tutorial: Stress Management</link>.\n"
 "\n"
-msgstr ""
+msgstr "複製人間の士気管理について詳しくは、<link=\"VIDEOS13\">ビデオ: 複製人間の士気</link> と <link=\"MISCELLANEOUSTIPS2\">チュートリアル: ストレス管理</link> をご覧ください。\n"
 
 #. STRINGS.CODEX.STRESS.TITLE
 msgctxt "STRINGS.CODEX.STRESS.TITLE"
