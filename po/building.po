@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDING.DETAILS.USE_COUNT
@@ -453,6 +453,16 @@ msgstr "RADボルト収集 ({x}/サイクル)"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.COLLECTINGHEP.TOOLTIP"
 msgid "Collecting Radbolts from ambient radiation"
 msgstr "周囲の放射線からRADボルトを収集しています"
+
+#. STRINGS.BUILDING.STATUSITEMS.COLLECTINGHEXCELLINVENTORYITEMS.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.COLLECTINGHEXCELLINVENTORYITEMS.NAME"
+msgid "Harvesting Resources"
+msgstr "採取中の資源"
+
+#. STRINGS.BUILDING.STATUSITEMS.COLLECTINGHEXCELLINVENTORYITEMS.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.COLLECTINGHEXCELLINVENTORYITEMS.TOOLTIP"
+msgid "One or more <style=\"KKeyword\">Cargo Bay</style> modules are collecting resources from this rocket's current hex cell"
+msgstr "<style=\"KKeyword\">貨物ベイ</style>モジュールがこのロケットのタイル上で資源を採取中です"
 
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.NAME"
@@ -926,15 +936,15 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.CURRENTDOORCONTROLSTATE.TOOLTIP"
 msgid ""
 "Current State: {ControlState}\n"
 "\n"
-"Auto: Duplicants open and close this door as needed\n"
-"Locked: Nothing may pass through\n"
-"Open: This door will remain open"
+"Open: Door will remain open\n"
+"Auto: Door will open and close as needed\n"
+"Locked: Nothing may pass through"
 msgstr ""
 "現在の状態: {ControlState}\n"
 "\n"
+"開放: ドアを開けっぱなしにします\n"
 "自動: 複製人間は必要に応じて開閉します\n"
-"施錠: 誰も通れません\n"
-"開放: ドアを開けっぱなしにします"
+"施錠: 誰も通れません"
 
 #. STRINGS.BUILDING.STATUSITEMS.DATAMINER.PRODUCTIONRATE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.DATAMINER.PRODUCTIONRATE.NAME"
@@ -2648,6 +2658,22 @@ msgstr ""
 "\n"
 "タイルは建築メニューの<b>基地タブ</b> {Hotkey/Plan1} にあります"
 
+#. STRINGS.BUILDING.STATUSITEMS.MISSINGFOUNDATIONBACKWALL.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MISSINGFOUNDATIONBACKWALL.NAME"
+msgid "Missing Back Wall"
+msgstr "裏壁不足"
+
+#. STRINGS.BUILDING.STATUSITEMS.MISSINGFOUNDATIONBACKWALL.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.MISSINGFOUNDATIONBACKWALL.TOOLTIP"
+msgid ""
+"Build a <style=\"KKeyword\">Drywall</style> or <style=\"KKeyword\">Tempshift Plate</style> behind this building to regain function\n"
+"\n"
+"They can be found in the <b>Base Tab</b> {Hotkey/Plan1} and <b>Utilities Tab</b> {Hotkey/Plan11} of the Build Menu"
+msgstr ""
+"この設備の裏側に<style=\"KKeyword\">壁紙</style>か<style=\"KKeyword\">熱交換プレート</style>を設置してください\n"
+"\n"
+"タイルは建築メニューの<b>基地タブ</b> {Hotkey/Plan1} や <b>ユーティリティタブ</b> {Hotkey/Plan11} にあります"
+
 #. STRINGS.BUILDING.STATUSITEMS.MISSINGGANTRY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MISSINGGANTRY.NAME"
 msgid "Missing Gantry"
@@ -2696,23 +2722,23 @@ msgstr ""
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.NAME"
-msgid "Thrust Generation: {ActiveWattage}/{MaxWattage}"
+msgid "In-Flight Generator: {ActiveWattage}/{MaxWattage}"
 msgstr "推進力による発電: {ActiveWattage}/{MaxWattage}"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORNOTPOWERED.TOOLTIP"
 msgid ""
-"Engine will generate <style=\"produced\">{MaxWattage}</style> of <style=\"KKeyword\">Power</style> once traveling through space\n"
+"Engine will generate <style=\"produced\">{MaxWattage}</style> of <style=\"KKeyword\">Power</style> while traveling through space\n"
 "\n"
-"Right now, it's not doing much of anything"
+"When thruster is idle, no <style=\"KKeyword\">Power</style> is generated"
 msgstr ""
 "宇宙を航行中のエンジンは<style=\"KKeyword\">電力</style>を<style=\"produced\">{MaxWattage}</style>生成します。\n"
 "\n"
-"現在のところ、エンジンは何もしていません"
+"スラスターが待機中の場合、<style=\"KKeyword\">電力</style>は生成されません"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.NAME"
-msgid "Thrust Generation: {ActiveWattage}/{MaxWattage}"
+msgid "In-Flight Generator: {ActiveWattage}/{MaxWattage}"
 msgstr "推進力による発電: {ActiveWattage}/{MaxWattage}"
 
 #. STRINGS.BUILDING.STATUSITEMS.MODULEGENERATORPOWERED.TOOLTIP
@@ -3396,6 +3422,22 @@ msgstr ""
 "熱源:\n"
 "{1}"
 
+#. STRINGS.BUILDING.STATUSITEMS.ORNAMENTDISABLED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.ORNAMENTDISABLED.NAME"
+msgid "Broken Display"
+msgstr "壊れたディスプレイ"
+
+#. STRINGS.BUILDING.STATUSITEMS.ORNAMENTDISABLED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.ORNAMENTDISABLED.TOOLTIP"
+msgid ""
+"This ornament's display structure is currently disabled\n"
+"\n"
+"It will not be counted as a displayed ornament"
+msgstr ""
+"このオーナメントの表示構造は現在無効になっています\n"
+"\n"
+"表示されているオーナメントとしてはカウントされません"
+
 #. STRINGS.BUILDING.STATUSITEMS.OUTPUTPIPEFULL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTPIPEFULL.NAME"
 msgid "Output Pipe Full"
@@ -3474,6 +3516,16 @@ msgstr ""
 "    • {0}\n"
 "\n"
 "ロケットを打ち上げるには、航行経路を確保してください"
+
+#. STRINGS.BUILDING.STATUSITEMS.PEDESTALNOITEMDISPLAYED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PEDESTALNOITEMDISPLAYED.NAME"
+msgid "No Object Displayed"
+msgstr "展示中の物体無し"
+
+#. STRINGS.BUILDING.STATUSITEMS.PEDESTALNOITEMDISPLAYED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PEDESTALNOITEMDISPLAYED.TOOLTIP"
+msgid "This building must display an object in order to be counted as a <style=\"KKeyword\">Decor building</style> for a room"
+msgstr "この設備が部屋の<style=\"KKeyword\">装飾設備</style>としてカウントされるためには、何かしらの物体を展示する必要があります。"
 
 #. STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PENDINGDECONSTRUCTION.NAME"
@@ -4106,23 +4158,19 @@ msgstr "宇宙船は着陸準備が完了しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPACEPOIHARVESTING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACEPOIHARVESTING.NAME"
-msgid "Extracting Resources: {0}"
-msgstr "採取中の資源: {0}"
+msgid "Drilling {0}: {1}"
+msgstr "{0} 粉砕中: {1}"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPACEPOIHARVESTING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACEPOIHARVESTING.TOOLTIP"
-msgid "Resources are being mined from this space debris"
-msgstr "資源を宇宙ゴミから採取中です"
-
-#. STRINGS.BUILDING.STATUSITEMS.SPACEPOIWASTING.NAME
-msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACEPOIWASTING.NAME"
-msgid "Cannot store resources: {0}"
-msgstr "資源貯蔵不可: {0}"
-
-#. STRINGS.BUILDING.STATUSITEMS.SPACEPOIWASTING.TOOLTIP
-msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACEPOIWASTING.TOOLTIP"
-msgid "Some resources being mined from this space debris cannot be stored in this rocket"
-msgstr "宇宙ゴミから採取した資源のうち、このロケットに貯蔵できないものがあります"
+msgid ""
+"This <style=\"KKeyword\">Drillcone</style> is breaking up space debris into harvestable resources\n"
+"\n"
+"Harvestable resources can be retrieved by a a rocket equipped with a <style=\"KKeyword\">Cargo Bay</style> module"
+msgstr ""
+"この<style=\"KKeyword\">ドリルコーン</style>は宇宙ゴミを採取可能な資源へと粉砕中です\n"
+"\n"
+"採取可能な資源はロケットに備え付けられた<style=\"KKeyword\">貨物ベイ</style>モジュールに自動搬送されます"
 
 #. STRINGS.BUILDING.STATUSITEMS.SPECIALCARGOBAYCLUSTERCRITTERSTORED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPECIALCARGOBAYCLUSTERCRITTERSTORED.NAME"
@@ -4968,8 +5016,8 @@ msgstr "この電線は受け取ったワット数を処理できます"
 
 #. STRINGS.BUILDING.STATUSITEMS.WORKING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKING.NAME"
-msgid "Nominal"
-msgstr "定格"
+msgid "Normal"
+msgstr "平常運転"
 
 #. STRINGS.BUILDING.STATUSITEMS.WORKING.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKING.TOOLTIP"
@@ -4985,3 +5033,23 @@ msgstr "複製人間の操作が必要"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKREQUIRESMINION.TOOLTIP"
 msgid "A Duplicant must be present to complete this operation"
 msgstr "この操作には複製人間が必要です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACEPOIHARVESTING.NAME"
+#~ msgid "Extracting Resources: {0}"
+#~ msgstr "採取中の資源: {0}"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACEPOIHARVESTING.TOOLTIP"
+#~ msgid "Resources are being mined from this space debris"
+#~ msgstr "資源を宇宙ゴミから採取中です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACEPOIWASTING.NAME"
+#~ msgid "Cannot store resources: {0}"
+#~ msgstr "資源貯蔵不可: {0}"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACEPOIWASTING.TOOLTIP"
+#~ msgid "Some resources being mined from this space debris cannot be stored in this rocket"
+#~ msgstr "宇宙ゴミから採取した資源のうち、このロケットに貯蔵できないものがあります"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKING.NAME"
+#~ msgid "Nominal"
+#~ msgstr "定格"
