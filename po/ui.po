@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.UI.ACTIONS
@@ -700,6 +700,11 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.PARTICLE_PORT_OUTPUT"
 msgid "Radbolt Output Port"
 msgstr "RADボルト出力ポート"
 
+#. STRINGS.UI.BUILDINGEFFECTS.PER_STARMAP_HEX
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.PER_STARMAP_HEX"
+msgid "{0} per Starmap hex"
+msgstr "星図タイルごとに {0}"
+
 #. STRINGS.UI.BUILDINGEFFECTS.PLANTERBOX_PENTALTY
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.PLANTERBOX_PENTALTY"
 msgid "Planter box penalty"
@@ -724,6 +729,16 @@ msgstr "改善:"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.PRODUCES_RESEARCH_POINTS"
 msgid "{0}"
 msgstr "{0}"
+
+#. STRINGS.UI.BUILDINGEFFECTS.PRODUCESDATABANKS
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.PRODUCESDATABANKS"
+msgid "<link=\"DATABANK\">Data Banks</link>: {0}"
+msgstr "<link=\"DATABANK\">データバンク</link>: {0}"
+
+#. STRINGS.UI.BUILDINGEFFECTS.PRODUCESMEDICINE
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.PRODUCESMEDICINE"
+msgid "Medicine"
+msgstr "薬"
 
 #. STRINGS.UI.BUILDINGEFFECTS.RECREATION
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.RECREATION"
@@ -1472,6 +1487,16 @@ msgstr "原料素材を精製素材に加工します"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PRODUCES_RESEARCH_POINTS"
 msgid "Produces <style=\"KKeyword\">{0}</style> research"
 msgstr "<style=\"KKeyword\">{0}</style>研究を生産"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PRODUCESDATABANKS
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PRODUCESDATABANKS"
+msgid "This building produces {0} <link=\"DATABANK\">Data Banks</link> each time a Starmap hex is revealed"
+msgstr "この設備は星図が1マス明らかになるたびに<link=\"DATABANK\">データバンク</link>を {0} 産出します"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PRODUCESMEDICINE
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.PRODUCESMEDICINE"
+msgid "This building produces medical supplies"
+msgstr "この設備は医薬品を産出します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.RECREATION
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.RECREATION"
@@ -9464,6 +9489,22 @@ msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.RESTART.OK"
 msgid "RESTART"
 msgstr "再起動"
 
+#. STRINGS.UI.FRONTEND.MOD_DIALOGS.SAFE_MODE.MESSAGE
+msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.SAFE_MODE.MESSAGE"
+msgid ""
+"One or more mods caused the game to crash when launched. Mods will not be loaded until the game is restarted.\n"
+"\n"
+"Please disable some mods and restart to see if that fixes the issue."
+msgstr ""
+"ゲーム起動時に MOD が原因でクラッシュしました。次回起動時は MOD はロードされません。\n"
+"\n"
+"一部のMODを無効にして再起動し、問題が解決するかどうか確認してください。"
+
+#. STRINGS.UI.FRONTEND.MOD_DIALOGS.SAFE_MODE.TITLE
+msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.SAFE_MODE.TITLE"
+msgid "MOD SAFE MODE"
+msgstr "MODセーフモード"
+
 #. STRINGS.UI.FRONTEND.MOD_DIALOGS.SAVE_GAME_MODS_DIFFER.MESSAGE
 msgctxt "STRINGS.UI.FRONTEND.MOD_DIALOGS.SAVE_GAME_MODS_DIFFER.MESSAGE"
 msgid ""
@@ -9555,6 +9596,11 @@ msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.BAD_WORLD_GEN"
 msgid "LOAD FAILED"
 msgstr "ロード失敗"
 
+#. STRINGS.UI.FRONTEND.MOD_EVENTS.CANNOT_INSTALL
+msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.CANNOT_INSTALL"
+msgid "FAILED INSTALL"
+msgstr "インストール失敗"
+
 #. STRINGS.UI.FRONTEND.MOD_EVENTS.DEACTIVATED
 msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.DEACTIVATED"
 msgid "DEACTIVATED"
@@ -9629,6 +9675,11 @@ msgstr "コンテンツを追加もしくは除去しました"
 msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.BAD_WORLD_GEN"
 msgid "Encountered an error while loading file"
 msgstr "ファイルを読み込み中にエラーが発生しました"
+
+#. STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.CANNOT_INSTALL
+msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.CANNOT_INSTALL"
+msgid "Install failed due to disk i/o errors"
+msgstr "ディスクI/Oエラーによりインストールが失敗しました"
 
 #. STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.DEACTIVATED
 msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.DEACTIVATED"
@@ -9823,6 +9874,11 @@ msgstr ""
 "\n"
 "{2}"
 
+#. STRINGS.UI.FRONTEND.MODS.INSTALLED_VERSION_NEWER_THAN_LOADED_VERSION
+msgctxt "STRINGS.UI.FRONTEND.MODS.INSTALLED_VERSION_NEWER_THAN_LOADED_VERSION"
+msgid "Reinstall pending"
+msgstr "再インストール待ち"
+
 #. STRINGS.UI.FRONTEND.MODS.MANAGE
 msgctxt "STRINGS.UI.FRONTEND.MODS.MANAGE"
 msgid "Subscription"
@@ -9937,6 +9993,11 @@ msgstr "MODを反映させるには再起動が必要です"
 msgctxt "STRINGS.UI.FRONTEND.MODS.TITLE"
 msgid "MODS"
 msgstr "MOD"
+
+#. STRINGS.UI.FRONTEND.MODS.TITLE_SAFE_MODE
+msgctxt "STRINGS.UI.FRONTEND.MODS.TITLE_SAFE_MODE"
+msgid "MODS - SAFE MODE"
+msgstr "MOD - セーフモード"
 
 #. STRINGS.UI.FRONTEND.MODS.TOOLTIPS.DISABLED
 msgctxt "STRINGS.UI.FRONTEND.MODS.TOOLTIPS.DISABLED"
@@ -12375,6 +12436,11 @@ msgstr "{Collection}コレクションの一編。"
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.COLLECTION_COMING_SOON
 msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.COLLECTION_COMING_SOON"
 msgid "Part of {Collection} collection. Coming soon!"
+msgstr "{Collection}コレクションの一編。近日公開！"
+
+#. STRINGS.UI.KLEI_INVENTORY_SCREEN.COLLECTION_COMING_SOON_THE
+msgctxt "STRINGS.UI.KLEI_INVENTORY_SCREEN.COLLECTION_COMING_SOON_THE"
+msgid "Part of the {Collection} collection. Coming soon!"
 msgstr "{Collection}コレクションの一編。近日公開！"
 
 #. STRINGS.UI.KLEI_INVENTORY_SCREEN.COLLECTION_THE
@@ -21009,11 +21075,11 @@ msgstr "星間海"
 #. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.METALLICASTEROIDFIELD.DESC
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.METALLICASTEROIDFIELD.DESC"
 msgid ""
-"An asteroid field containing <link=\"IRON\">Iron</link>, <link=\"COPPER\">Copper</link> and <link=\"OBSIDIAN\">Obsidian</link>.\n"
+"An asteroid field containing <link=\"IRON\">Iron</link>, <link=\"COPPER\">Copper</link>, <link=\"LEAD\">Lead</link>, and <link=\"OBSIDIAN\">Obsidian</link>.\n"
 "\n"
 "<link=\"EXOBASESDLC1\">Space mining</link> requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link> and a cargo module."
 msgstr ""
-"<link=\"IRON\">鉄</link>、<link=\"COPPER\">銅</link>、<link=\"OBSIDIAN\">黒曜石</link>を含む小惑星帯です。\n"
+"<link=\"IRON\">鉄</link>、<link=\"COPPER\">銅</link>、<link=\"LEAD\">鉛</link>、<link=\"OBSIDIAN\">黒曜石</link>を含む小惑星帯です。\n"
 "\n"
 "<link=\"EXOBASESDLC1\">宇宙採掘</link>には<link=\"NOSECONEHARVEST\">ドリルコーン</link>と貨物モジュールを装備したロケットが必要です。"
 
@@ -25610,6 +25676,11 @@ msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DESTINATION_LABEL
 msgid "Selecting new destination..."
 msgstr "目的地を選択してください..."
 
+#. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DESTINATION_ROUNTRIP_LABEL
+msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DESTINATION_ROUNTRIP_LABEL"
+msgid "Pending Roundtrip to: {0}"
+msgstr "往復待機中: {0}"
+
 #. STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_FIRST_AVAILABLE
 msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.DROPDOWN_TOOLTIP_FIRST_AVAILABLE"
 msgid "Select the first available landing site"
@@ -27122,10 +27193,15 @@ msgctxt "STRINGS.UI.UISIDESCREENS.LOGICBROADCASTCHANNELSIDESCREEN.TITLE"
 msgid "Channel Selector"
 msgstr "チャンネル選択"
 
-#. STRINGS.UI.UISIDESCREENS.LOREBEARERSIDESCREEN.TITLE
-msgctxt "STRINGS.UI.UISIDESCREENS.LOREBEARERSIDESCREEN.TITLE"
+#. STRINGS.UI.UISIDESCREENS.LOREBEARERSIDESCREEN.BUTTON
+msgctxt "STRINGS.UI.UISIDESCREENS.LOREBEARERSIDESCREEN.BUTTON"
 msgid "Read Files"
 msgstr "ファイルを読む"
+
+#. STRINGS.UI.UISIDESCREENS.LOREBEARERSIDESCREEN.TITLE
+msgctxt "STRINGS.UI.UISIDESCREENS.LOREBEARERSIDESCREEN.TITLE"
+msgid "Lore Drop"
+msgstr "過去の記録"
 
 #. STRINGS.UI.UISIDESCREENS.LURE.ATTRACTS
 msgctxt "STRINGS.UI.UISIDESCREENS.LURE.ATTRACTS"
@@ -29017,18 +29093,33 @@ msgstr "コロニー壊滅"
 
 #. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.NEXTPRODUCTION
 msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.NEXTPRODUCTION"
-msgid "Next Production: {0}"
-msgstr "次の生産物: {0}"
+msgid "Next Print: {0}"
+msgstr "次の製造: {0}"
+
+#. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.RESEARCH_BUTTON
+msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.RESEARCH_BUTTON"
+msgid "Research"
+msgstr "研究"
 
 #. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SKILLS_BUTTON
 msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SKILLS_BUTTON"
 msgid "Duplicant Skills"
 msgstr "複製人間のスキル"
 
-#. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_TITLE
-msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_TITLE"
+#. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SKILLS_TITLE
+msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SKILLS_TITLE"
+msgid "Skills"
+msgstr "スキル"
+
+#. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_BUTTON
+msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_BUTTON"
 msgid "Colony Summary"
 msgstr "コロニー概要"
+
+#. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_TITLE
+msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_TITLE"
+msgid "Management"
+msgstr "管理"
 
 #. STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.TITLE"
@@ -29916,6 +30007,16 @@ msgstr " 単位"
 msgctxt "STRINGS.UI.UNITSUFFIXES.UNITS"
 msgid " units"
 msgstr " 単位"
+
+#. STRINGS.UI.UNKNOWN_DLC.NAME
+msgctxt "STRINGS.UI.UNKNOWN_DLC.NAME"
+msgid "Unknown DLC"
+msgstr "不明なDLC"
+
+#. STRINGS.UI.UNKNOWN_DLC.NAME_ITAL
+msgctxt "STRINGS.UI.UNKNOWN_DLC.NAME_ITAL"
+msgid "<i>Unknown DLC</i>"
+msgstr "<i>不明なDLC</i>"
 
 # ボタン内に2行を収めるため文字サイズを小さくする
 #. STRINGS.UI.USERMENUACTIONS.ACCEPT_MUTANT_SEEDS.ACCEPT
@@ -30879,19 +30980,41 @@ msgstr ""
 "\n"
 "データベースに新しい項目を追加した。"
 
-#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_MIRROR_FAIL.SEARCH1
-msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_MIRROR_FAIL.SEARCH1"
-msgid "There's nothing to see here but the streaks left by a distracted cleaner."
-msgstr "ここには気が散った掃除人が残した縞模様以外何も見るべきものはありません。"
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_FLATOBJECT_FAIL.SEARCH1
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_FLATOBJECT_FAIL.SEARCH1"
+msgid "There is nothing to find here. I suppose some things really are exactly what they seem to be."
+msgstr "ここには何も見つからない。本当に見た目通りのものなのだろう。"
 
-#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_MIRROR_SUCCESS.SEARCH1
-msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_MIRROR_SUCCESS.SEARCH1"
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_FLATOBJECT_SUCCESS.SEARCH1
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_FLATOBJECT_SUCCESS.SEARCH1"
 msgid ""
-"I look behind the mirror and find a recording device taped to the back.\n"
+"There's a recording device taped to the back.\n"
 "\n"
-"New Database Entry unlocked."
+"New Database Entry discovered."
 msgstr ""
 "鏡の裏を見るとテープで張り付けられたレコーディングデバイスを発見した。\n"
+"\n"
+"データベースに新しい項目を追加した。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_FLATOBJECT_SUCCESS.SEARCH2
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_FLATOBJECT_SUCCESS.SEARCH2"
+msgid ""
+"I find a small plastic disc and download its contents to my database.\n"
+"\n"
+"New Database Entry discovered."
+msgstr ""
+"私はメモリースティックを見つけ、中のデータをコピーした。\n"
+"\n"
+"データベースに新しい項目を追加した。"
+
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_FLATOBJECT_SUCCESS.SEARCH3
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_FLATOBJECT_SUCCESS.SEARCH3"
+msgid ""
+"A bundle of papers was tucked out of sight. I scan the contents and add them to my database.\n"
+"\n"
+"New Database Entry discovered."
+msgstr ""
+"私は判読可能な状態の長い1ページの印刷物を見つけ、ページをスキャンした。\n"
 "\n"
 "データベースに新しい項目を追加した。"
 
@@ -32253,154 +32376,10 @@ msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂を散布しています..."
 
-#~ msgctxt "STRINGS.UI.CLUSTERMAP.TILES"
-#~ msgid "Tiles"
-#~ msgstr "タイル"
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.TELEPADSIDESCREEN.SUMMARY_TITLE"
+#~ msgid "Colony Summary"
+#~ msgstr "コロニー概要"
 
-#~ msgctxt "STRINGS.UI.CLUSTERMAP.TOOLTIP_INVALID_DESTINATION_OUT_OF_RANGE"
-#~ msgid "This destination is further away than the rocket's maximum range of {0}"
-#~ msgstr "目的地はロケットの最大航続距離 {0} より遠く離れています。"
-
-#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.PLACEHOLDER_CRITERIA_NAME"
-#~ msgid "Placeholder Criteria Name"
-#~ msgstr "基準名称プレースホルダ"
-
-#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.CRITERIA_RADIATION_SICKNESS.FAIL"
-#~ msgid "Sick"
-#~ msgstr "病気"
-
-#~ msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.CRITERIA_RADIATION_SICKNESS.PASS"
-#~ msgid "Healthy"
-#~ msgstr "健康体"
-
-#~ msgctxt "STRINGS.UI.ENDOFDAYREPORT.LEVEL_UP.NAME"
-#~ msgid "Skill Increases:"
-#~ msgstr "スキル上昇:"
-
-#~ msgctxt "STRINGS.UI.SPACEDESTINATIONS.ARTIFACT_POI.RUSSELLSTEAPOT.DESC"
-#~ msgid "Has never been disproven to not exist."
-#~ msgstr "存在しないと反証されたことはありません。"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.CAPACITY_CONTROL_SIDE_SCREEN.TITLE"
-#~ msgid "Automated Storage Capacity"
-#~ msgstr "自動収納庫容積"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.CHANGE_DESTINATION_BUTTON"
-#~ msgid "Change"
-#~ msgstr "変更"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.CLUSTERDESTINATIONSIDESCREEN.LOOP_BUTTON_TOOLTIP"
-#~ msgid "Toggle a roundtrip flight between this rocket's destination and its original takeoff location"
-#~ msgstr "元の発射地点と目的地の間を往復させるかどうか切り替えます"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.AUTO"
-#~ msgid "Door is on auto."
-#~ msgstr "ドアは自動開閉です。"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.CLOSE"
-#~ msgid "Door is locked."
-#~ msgstr "ドアは施錠されています。"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.OPEN"
-#~ msgid "Door is open."
-#~ msgstr "ドアは開いてます。"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.DOOR_TOGGLE_SIDE_SCREEN.TITLE"
-#~ msgid "Door Setting"
-#~ msgstr "ドアの設定"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.FABRICATORSIDESCREEN.ADDITIONAL_REQUIREMENTS_TOOLTIP"
-#~ msgid "This recipe requires a supply of Radboltss to be collected by the building's input port."
-#~ msgstr "このレシピでは、設備の入力ポートでRADボルトを収集する必要があります。"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.ASSIGNED_TO_CREW"
-#~ msgid "Assigned to crew"
-#~ msgstr "乗組員割り当て済み"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.AUTO_CREW"
-#~ msgid "Auto"
-#~ msgstr "自動"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.AUTO_CREW_TOOLTIP"
-#~ msgid ""
-#~ "All Duplicants may enter and exit the module freely until the rocket is ready for launch\n"
-#~ "\n"
-#~ "Before launch the crew will automatically be requested"
-#~ msgstr ""
-#~ "ロケットの発射準備が完了するまで、全ての複製人間が自由に出入りできます\n"
-#~ "\n"
-#~ "発射前になると乗組員が自動的に割り当てられます"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.CHANGE_CREW_BUTTON"
-#~ msgid "Change crew"
-#~ msgstr "乗組員の変更"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.RELEASE_CREW"
-#~ msgid "All"
-#~ msgstr "誰でも"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.RELEASE_CREW_TOOLTIP"
-#~ msgid "All Duplicants may enter and exit the module freely"
-#~ msgstr "複製人間は誰でもモジュール内部へ自由に出入りできます"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.REQUEST_CREW"
-#~ msgid "Crew"
-#~ msgstr "乗組員のみ"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.REQUEST_CREW_TOOLTIP"
-#~ msgid "Crew may not leave the module, non crew-must exit"
-#~ msgstr "乗組員はモジュール内に留まり、乗組員でない者は退出します"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.REQUIRE_SUIT_LABEL"
-#~ msgid "Atmosuit Required"
-#~ msgstr "アトモスーツ要求"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.REQUIRE_SUIT_LABEL_TOOLTIP"
-#~ msgid "If checked, Duplicants will be required to wear an Atmo Suit when entering this rocket"
-#~ msgstr "チェックを入れると、ロケット搭乗時にアトモスーツ着用を要求されます"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.PASSENGERMODULESIDESCREEN.UNASSIGNED"
-#~ msgid "Unassigned"
-#~ msgstr "割り当てなし"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONVIEWINTERIOR.DESC"
-#~ msgid "What's goin' on in there?"
-#~ msgstr "中で何が起こっているかな？"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONVIEWINTERIOR.INVALID"
-#~ msgid "This module does not have an interior view"
-#~ msgstr "このモジュールには表示できる内部がありません"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.BUTTONVIEWINTERIOR.LABEL"
-#~ msgid "View Interior"
-#~ msgstr "モジュール内部を表示"
-
-#~ msgctxt "STRINGS.UI.UISIDESCREENS.ROCKETMODULESIDESCREEN.TITLE"
-#~ msgid "Rocket Module"
-#~ msgstr "ロケットモジュール"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.ALREADY_RUMMAGED"
-#~ msgid "Already Inspected"
-#~ msgstr "調査済み"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.NAME"
-#~ msgid "Inspect"
-#~ msgstr "調査"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.NAME_OFF"
-#~ msgid "Cancel Inspect"
-#~ msgstr "調査をやめる"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.TOOLTIP"
-#~ msgid ""
-#~ "Something here looks ominous\n"
-#~ "\n"
-#~ "Click to take a closer look"
-#~ msgstr ""
-#~ "何か不吉な気がします\n"
-#~ "\n"
-#~ "クリックして拡大表示"
-
-#~ msgctxt "STRINGS.UI.USERMENUACTIONS.UNLOCK_ASTEROID_VISUALIZER.TOOLTIP_ALREADYRUMMAGED"
-#~ msgid "This has been thoroughly inspected"
-#~ msgstr "これは徹底的に検査されました"
+#~ msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_MIRROR_FAIL.SEARCH1"
+#~ msgid "There's nothing to see here but the streaks left by a distracted cleaner."
+#~ msgstr "ここには気が散った掃除人が残した縞模様以外何も見るべきものはありません。"
