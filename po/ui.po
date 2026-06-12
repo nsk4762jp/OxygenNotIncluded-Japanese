@@ -655,6 +655,14 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.MAX_WATTAGE"
 msgid "Max <link=\"POWER\">Power</link>: {0}"
 msgstr "最大<link=\"POWER\">電力</link>: {0}"
 
+#. STRINGS.UI.BUILDINGEFFECTS.MESS_CAVIAR
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.IDEAL_TEMPERATURE"
+#| msgid "<link=\"HEAT\">Temperature</link>: {0} to {1}"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.MESS_CAVIAR"
+msgid "<link=\"CAVIAR\">Caviar</link>: +{0} Morale, -{1}% Stress"
+msgstr "<link=\"HEAT\">温度</link>: {0} から {1}"
+
 #. STRINGS.UI.BUILDINGEFFECTS.MESS_TABLE_SALT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.MESS_TABLE_SALT"
 msgid "Table Salt: +{0}"
@@ -665,6 +673,24 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.MINIMUM_TEMP"
 msgid "Freeze <link=\"HEAT\">Temperature</link>: {0}"
 msgstr "凍結<link=\"HEAT\">温度</link>: {0}"
 
+#. STRINGS.UI.BUILDINGEFFECTS.MOISTURE
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.MOISTURE"
+msgid "Moisture Loss: {Percent}"
+msgstr ""
+
+#. STRINGS.UI.BUILDINGEFFECTS.MOLT_DROP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.DIET_PRODUCED_ITEM_FROM_PLANT"
+#| msgid "{Item}: {Amount} when properly fed"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.MOLT_DROP"
+msgid "Drops {Item}: {Rate} when happy"
+msgstr "{Item}: 正しく給餌された場合 {Amount}"
+
+#. STRINGS.UI.BUILDINGEFFECTS.MUCUS_SECRETION
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.MUCUS_SECRETION"
+msgid "Secretes {Item}: {Rate}"
+msgstr ""
+
 #. STRINGS.UI.BUILDINGEFFECTS.NOISE_CREATED
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.NOISE_CREATED"
 msgid "<link=\"SOUND\">Noise</link>: {0} dB (Radius: {1} tiles)"
@@ -674,6 +700,11 @@ msgstr "<link=\"SOUND\">騒音</link>: {0} dB (半径: {1} タイル)"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.OPERATIONEFFECTS"
 msgid "<b>Effects:</b>"
 msgstr "<b>効果:</b>"
+
+#. STRINGS.UI.BUILDINGEFFECTS.OPERATIONINPUTS
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.OPERATIONINPUTS"
+msgid "Inputs:"
+msgstr ""
 
 #. STRINGS.UI.BUILDINGEFFECTS.OPERATIONREQUIREMENTS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.OPERATIONREQUIREMENTS"
@@ -869,6 +900,14 @@ msgstr "毛刈り可能な {Item}: {Time}ごとに{Amount}"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_ATMO"
 msgid "Shearable {Item}: {Amount} per {Time} ({Atmosphere})"
 msgstr "毛刈り可能な {Item}: {Time}ごとに{Amount} ({Atmosphere})"
+
+#. STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_FERTILITY
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATUSITEMS.CROP_TOO_NONRADIATED.TOOLTIP"
+#| msgid "Growth will resume when <style=\"KKeyword\">Radiation</style> requirements are met"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_FERTILITY"
+msgid "Milkable {Item}: {Amount} when <style=\"KKeyword\">Reproduction</style> reaches {Percent}"
+msgstr "<style=\"KKeyword\">放射線</style>の条件を満たした場合、成長します"
 
 #. STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_TEMP
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.SCALE_GROWTH_TEMP"
@@ -1408,6 +1447,14 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MAX_WATTAGE"
 msgid "Drawing more than the maximum allowed <style=\"KKeyword\">Watts</style> can result in damage to the circuit"
 msgstr "最大許容量より多い<style=\"KKeyword\">ワット数</style>を流すと、回路が損傷する原因になります"
 
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MESS_CAVIAR
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MESS_TABLE_SALT"
+#| msgid "Duplicants gain <b>+{0}</b> <style=\"KKeyword\">Morale</style> when using <style=\"KKeyword\">Table Salt</style> with their food at a <link=\"REQUIREMENTCLASSDININGTABLETYPE\">Dining Table</link>"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MESS_CAVIAR"
+msgid "Duplicants gain <b>+{0}</b> <style=\"KKeyword\">Morale</style> and <b>-{1}%</b> <style=\"KKeyword\">Stress</style> when topping their food with <style=\"KKeyword\">Caviar</style> at a <link=\"REQUIREMENTCLASSDININGTABLETYPE\">Dining Table</link>"
+msgstr "複製人間は<link=\"REQUIREMENTCLASSDININGTABLETYPE\">食事テーブル</link>で<style=\"KKeyword\">食卓塩</style>を食べ物に使用すると、<style=\"KKeyword\">士気</style>が<b>+{0}</b>上昇します"
+
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MESS_TABLE_SALT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MESS_TABLE_SALT"
 msgid "Duplicants gain <b>+{0}</b> <style=\"KKeyword\">Morale</style> when using <style=\"KKeyword\">Table Salt</style> with their food at a <link=\"REQUIREMENTCLASSDININGTABLETYPE\">Dining Table</link>"
@@ -1418,10 +1465,29 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MINIMUM_TEMP"
 msgid "Ceases to function when temperatures fall below <b>{0}</b>"
 msgstr "周辺の温度が<b>{0}</b>を下回ると機能しなくなります"
 
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MOLT_DROP
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.GEYSER_PRODUCTION"
+#| msgid "While erupting, this geyser will produce <style=\"KKeyword\">{0}</style> at a rate of <style=\"produced\">{1}</style>, and at a <style=\"KKeyword\">Temperature</style> of <b>{2}</b>"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MOLT_DROP"
+msgid ""
+"This critter drops <style=\"KKeyword\">{Item}</style> at a rate of <style=\"produced\">{Rate}</style> when it is happy\n"
+"\n"
+"It must be in a good <style=\"KKeyword\">Mood</style> in order to molt"
+msgstr "噴出中、この間欠泉は<style=\"produced\">{1}</style>の速さで<style=\"KKeyword\">{0}</style>を生産し、その<style=\"KKeyword\">温度</style>は<b>{2}</b>です"
+
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MOVEMENT_BONUS
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MOVEMENT_BONUS"
 msgid "Increases the Runspeed of Duplicants"
 msgstr "複製人間の移動速度を増加させます"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MUCUS_SECRETION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.ELEMENTEMITTEROUTPUT.TOOLTIP"
+#| msgid "This object is releasing {ElementTypes} at a rate of <style=\"produced\">{FlowRate}</style>"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.MUCUS_SECRETION"
+msgid "This critter secretes <style=\"KKeyword\">{Item}</style> at a rate of <style=\"produced\">{Rate}</style>"
+msgstr "この物体は{ElementTypes}を <style=\"produced\">{FlowRate}</style> 産出しています"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.NOISE_POLLUTION_DECREASE
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.NOISE_POLLUTION_DECREASE"
@@ -1674,6 +1740,16 @@ msgstr ""
 "\n"
 "刈り取りできる<style=\"KKeyword\">{Item}</style>の成長にはよく飼料が与えられていることが必要があります"
 
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_FERTILE
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_FERTILE"
+msgid ""
+"This critter can be milked to produce <b>{Amount}</b> of <style=\"KKeyword\">{Item}</style> once tamed\n"
+"\n"
+"<style=\"KKeyword\">Reproduction</style> must be 75% or higher before milking\n"
+"\n"
+"Elderly critters cannot be milked"
+msgstr ""
+
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_TEMP
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.SCALE_GROWTH_TEMP"
 msgid ""
@@ -1705,6 +1781,22 @@ msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.TRANSFORMER_OUTPUT_WIRE"
 msgid "The <style=\"KKeyword\">Power</style> provided by the the small <style=\"KKeyword\">Output</style> will be limited to {0}."
 msgstr "小さいほうの<style=\"KKeyword\">出力</style>側から供給される<style=\"KKeyword\">電力</style>は {0} に制限されます。"
 
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.UNDERWATER_DRILL_DIAMOND_CONSUMPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ACTIVE_PARTICLE_CONSUMPTION"
+#| msgid "This building requires <style=\"KKeyword\">Radbolts</style> to function, consuming them at a rate of {Rate} while in use"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.UNDERWATER_DRILL_DIAMOND_CONSUMPTION"
+msgid "This building requires <style=\"KKeyword\">Diamond</style> to operate, consuming it at a rate of {Rate} while in use"
+msgstr "この設備は<style=\"KKeyword\">RADボルト</style>が必要です。使用中はRADボルトを{Rate}の割合で消費します"
+
+#. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.UNDERWATERVENT_SHEARING
+#, fuzzy
+#| msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.CAPTURE_METHOD_TRAP"
+#| msgid "This critter can be captured and moved using a <link=\"CREATURETRAP\">Critter Trap</link>"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.UNDERWATERVENT_SHEARING"
+msgid "This vent produces {0} which can be harvested using a <link=\"UNDERWATERVENTDRILL\">Marine Drill</link>"
+msgstr "この動物は<link=\"CREATURETRAP\">動物捕獲罠</link>で捕まえることができます"
+
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.UNSTABLEENTOMBDEFENSEOFF
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.UNSTABLEENTOMBDEFENSEOFF"
 msgid "This plant's ability to unentomb itself from <style=\"KKeyword\">Unstable</style> elements is currently disabled"
@@ -1734,6 +1826,22 @@ msgstr "入力側<link=\"WIRE\">電線</link>"
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TRANSFORMER_OUTPUT_WIRE"
 msgid "Output <link=\"WIRE\">Power Wire</link> (Limited to {0})"
 msgstr "出力側<link=\"WIRE\">電線</link> ({0} に制限)"
+
+#. STRINGS.UI.BUILDINGEFFECTS.UNDERWATER_DRILL_DIAMOND_CONSUMPTION
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.DIAMOND.NAME"
+#| msgid "<link=\"DIAMOND\">Diamond</link>"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.UNDERWATER_DRILL_DIAMOND_CONSUMPTION"
+msgid "<link=\"DIAMOND\">Diamond</link>: {Rate}"
+msgstr "<link=\"DIAMOND\">ダイヤモンド</link>"
+
+#. STRINGS.UI.BUILDINGEFFECTS.UNDERWATERVENT_SHEARING
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.SULFUR.NAME"
+#| msgid "<link=\"SULFUR\">Sulfur</link>"
+msgctxt "STRINGS.UI.BUILDINGEFFECTS.UNDERWATERVENT_SHEARING"
+msgid "<link=\"SULFUR\">Sulfur</link> Build-up: {0}"
+msgstr "<link=\"SULFUR\">硫黄</link>"
 
 #. STRINGS.UI.BUILDINGEFFECTS.UNSTABLEENTOMBDEFENSEOFF
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.UNSTABLEENTOMBDEFENSEOFF"
@@ -2751,9 +2859,22 @@ msgid "Systems"
 msgstr "システム"
 
 #. STRINGS.UI.CODEX.GEYSERS.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.GEYSERS.DESC"
+#| msgid ""
+#| "Geysers and Fumaroles emit elements at variable intervals. They provide a sustainable source of material, albeit in typically low volumes.\n"
+#| "\n"
+#| "The variable factors of a geyser are:\n"
+#| "\n"
+#| "    • Emission element \n"
+#| "    • Emission temperature \n"
+#| "    • Emission mass \n"
+#| "    • Cycle length \n"
+#| "    • Dormancy duration \n"
+#| "    • Disease emitted"
 msgctxt "STRINGS.UI.CODEX.GEYSERS.DESC"
 msgid ""
-"Geysers and Fumaroles emit elements at variable intervals. They provide a sustainable source of material, albeit in typically low volumes.\n"
+"Geysers and Fumaroles emit elements at variable intervals. They provide a sustainable source of material or kinetic energy, albeit typically in low volumes.\n"
 "\n"
 "The variable factors of a geyser are:\n"
 "\n"
@@ -4360,6 +4481,11 @@ msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.DESTROY_BUTTON"
 msgid "Destroy"
 msgstr "破壊"
 
+#. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.LORE_OVERRIDE_WARNING
+msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.LORE_OVERRIDE_WARNING"
+msgid "The new template has fewer lore overrides ({newCount}) than the existing one ({oldCount}). Save anyway?"
+msgstr ""
+
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.MORE
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.MORE"
 msgid "More"
@@ -4369,6 +4495,14 @@ msgstr "追加情報"
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SAVE_TITLE"
 msgid "Save Selection"
 msgstr "選択箇所を保存"
+
+#. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.AVERAGE_GERMS
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.AVERAGE_RADS"
+#| msgid "Average rads: {0}"
+msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.AVERAGE_GERMS"
+msgid "Average germs: {0}"
+msgstr "平均放射線量: {0}"
 
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.AVERAGE_MASS
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.AVERAGE_MASS"
@@ -4389,6 +4523,14 @@ msgstr "平均温度: {0}"
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.JOULES_PER_KILOGRAM"
 msgid "Joules per kilogram: {0}"
 msgstr "ジュール熱 / kg: {0}"
+
+#. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_GERMS
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_MASS"
+#| msgid "Total mass: {0}"
+msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_GERMS"
+msgid "Total germs: {0}"
+msgstr "合計質量: {0}"
 
 #. STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_JOULES
 msgctxt "STRINGS.UI.DEBUG_TOOLS.SAVE_BASE_TEMPLATE.SELECTION_INFO_PANEL.TOTAL_JOULES"
@@ -5692,9 +5834,16 @@ msgid "PATCH NOTES"
 msgstr "更新履歴"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.DLC_BETA.BODY
+#, fuzzy
+#| msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.DLC_BETA.BODY"
+#| msgid ""
+#| "You're about to opt in to the beta for <b>The Bionic Booster Pack</b> DLC.\n"
+#| "This free beta is a work in progress, and will be discontinued before the paid DLC is released. \n"
+#| "\n"
+#| "Are you sure you want to opt in?"
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.DLC_BETA.BODY"
 msgid ""
-"You're about to opt in to the beta for <b>The Bionic Booster Pack</b> DLC.\n"
+"You're about to opt in to the beta for <b>The Aquatic Planet Pack</b> DLC.\n"
 "This free beta is a work in progress, and will be discontinued before the paid DLC is released. \n"
 "\n"
 "Are you sure you want to opt in?"
@@ -5912,16 +6061,6 @@ msgctxt "STRINGS.UI.DIAGNOSTICS_SCREEN.TOTAL"
 msgid "Total"
 msgstr "合計"
 
-#. STRINGS.UI.DLC1.NAME
-msgctxt "STRINGS.UI.DLC1.NAME"
-msgid "Spaced Out!"
-msgstr "Spaced Out!"
-
-#. STRINGS.UI.DLC1.NAME_ITAL
-msgctxt "STRINGS.UI.DLC1.NAME_ITAL"
-msgid "<i>Spaced Out!</i>"
-msgstr "<i>Spaced Out!</i>"
-
 #. STRINGS.UI.DLC2.MIXING_TOOLTIP
 msgctxt "STRINGS.UI.DLC2.MIXING_TOOLTIP"
 msgid "<b><i>The Frosty Planet Pack</i></b> features frozen biomes and elements useful in thermal regulation"
@@ -5966,6 +6105,30 @@ msgstr "The Prehistoric Planet Pack"
 msgctxt "STRINGS.UI.DLC4.NAME_ITAL"
 msgid "<i>The Prehistoric Planet Pack</i>"
 msgstr "<i>The Prehistoric Planet Pack</i>"
+
+#. STRINGS.UI.DLC5.MIXING_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.DLC4.MIXING_TOOLTIP"
+#| msgid "<i>The Prehistoric Planet Pack</i> features carnivorous flora and fauna, biodiesel, and a focus on time-sensitive surface defense"
+msgctxt "STRINGS.UI.DLC5.MIXING_TOOLTIP"
+msgid "<i>The Aquatic Planet Pack</i> features underwater flora and fauna, diving deep for resources, and a splashy new survivor"
+msgstr "<i>The Prehistoric Planet Pack</i>は肉食の動植物、バイオ燃料、そして地表防衛にフォーカスを当てています"
+
+#. STRINGS.UI.DLC5.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DLC4.NAME"
+#| msgid "The Prehistoric Planet Pack"
+msgctxt "STRINGS.UI.DLC5.NAME"
+msgid "The Aquatic Planet Pack"
+msgstr "The Prehistoric Planet Pack"
+
+#. STRINGS.UI.DLC5.NAME_ITAL
+#, fuzzy
+#| msgctxt "STRINGS.UI.DLC2.NAME_ITAL"
+#| msgid "<i>The Frosty Planet Pack</i>"
+msgctxt "STRINGS.UI.DLC5.NAME_ITAL"
+msgid "<i>The Aquatic Planet Pack</i>"
+msgstr "<i>The Frosty Planet Pack</i>"
 
 #. STRINGS.UI.DROPDOWN.NONE
 msgctxt "STRINGS.UI.DROPDOWN.NONE"
@@ -6650,6 +6813,22 @@ msgstr "専用アイテム"
 msgctxt "STRINGS.UI.EQUIPMENTTAB_ROOM"
 msgid "Assigned Rooms"
 msgstr "割り当てた部屋"
+
+#. STRINGS.UI.EXPANSION1.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.DLC1.NAME"
+#| msgid "Spaced Out!"
+msgctxt "STRINGS.UI.EXPANSION1.NAME"
+msgid "Spaced Out!"
+msgstr "Spaced Out!"
+
+#. STRINGS.UI.EXPANSION1.NAME_ITAL
+#, fuzzy
+#| msgctxt "STRINGS.UI.DLC1.NAME_ITAL"
+#| msgid "<i>Spaced Out!</i>"
+msgctxt "STRINGS.UI.EXPANSION1.NAME_ITAL"
+msgid "<i>Spaced Out!</i>"
+msgstr "<i>Spaced Out!</i>"
 
 #. STRINGS.UI.FACADE_SELECTION_PANEL.HEADER
 msgctxt "STRINGS.UI.FACADE_SELECTION_PANEL.HEADER"
@@ -9082,15 +9261,34 @@ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_INSTALLED_LABEL"
 msgid "Installed"
 msgstr "インストール済"
 
-#. STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_LABEL
-msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_LABEL"
+#. STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_PURCHASE_LABEL
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_LABEL"
+#| msgid "Available Now"
+msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_PURCHASE_LABEL"
 msgid "Available Now"
 msgstr "発売中"
 
-#. STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_TOOLTIP
-msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_TOOLTIP"
-msgid "This DLC is available now!"
-msgstr "発売中"
+#. STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_PURCHASE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MAINMENU.WISHLIST_AD_TOOLTIP"
+#| msgid "<color=#ffff00ff><b>Click to view it in the store</b></color>"
+msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_PURCHASE_TOOLTIP"
+msgid "<color=#ffff00ff><b>Click to view this DLC in the store</b></color>"
+msgstr "<color=#ffff00ff><b>クリックしてストアページを表示</b></color>"
+
+#. STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_WISHLIST_LABEL
+msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_WISHLIST_LABEL"
+msgid "Wishlist Now"
+msgstr ""
+
+#. STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_WISHLIST_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MAINMENU.WISHLIST_AD_TOOLTIP"
+#| msgid "<color=#ffff00ff><b>Click to view it in the store</b></color>"
+msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_WISHLIST_TOOLTIP"
+msgid "<color=#ffff00ff><b>Click to view this DLC in the store</b></color>"
+msgstr "<color=#ffff00ff><b>クリックしてストアページを表示</b></color>"
 
 #. STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_OWNED_NOTINSTALLED_LABEL
 msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_OWNED_NOTINSTALLED_LABEL"
@@ -9104,14 +9302,8 @@ msgstr "このDLCを所持していますが、インストールされていま
 
 #. STRINGS.UI.FRONTEND.MAINMENU.DLC.COSMETIC_CONTENT_ACTIVE_TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.COSMETIC_CONTENT_ACTIVE_TOOLTIP"
-msgid ""
-"<b>This DLC is enabled</b>\n"
-"\n"
-"Find it in the supply closet screen."
+msgid "Filter cosmetic blueprints by DLC using the dropdown menu in the All screen"
 msgstr ""
-"<b>このDLCは有効になっています</b>\n"
-"\n"
-"支給品クローゼット画面で確認してください。"
 
 #. STRINGS.UI.FRONTEND.MAINMENU.DLC.DEACTIVATE_EXPANSION1
 msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.DEACTIVATE_EXPANSION1"
@@ -9236,16 +9428,6 @@ msgstr "デモ開始"
 msgctxt "STRINGS.UI.FRONTEND.MAINMENU.TRANSLATIONS"
 msgid "TRANSLATIONS"
 msgstr "翻訳"
-
-#. STRINGS.UI.FRONTEND.MAINMENU.WISHLIST_AD
-msgctxt "STRINGS.UI.FRONTEND.MAINMENU.WISHLIST_AD"
-msgid "Available now"
-msgstr "発売中"
-
-#. STRINGS.UI.FRONTEND.MAINMENU.WISHLIST_AD_TOOLTIP
-msgctxt "STRINGS.UI.FRONTEND.MAINMENU.WISHLIST_AD_TOOLTIP"
-msgid "<color=#ffff00ff><b>Click to view it in the store</b></color>"
-msgstr "<color=#ffff00ff><b>クリックしてストアページを表示</b></color>"
 
 #. STRINGS.UI.FRONTEND.METRIC_OPTIONS_SCREEN.HEADER_METRICS
 msgctxt "STRINGS.UI.FRONTEND.METRIC_OPTIONS_SCREEN.HEADER_METRICS"
@@ -9597,8 +9779,11 @@ msgid "LOAD FAILED"
 msgstr "ロード失敗"
 
 #. STRINGS.UI.FRONTEND.MOD_EVENTS.CANNOT_INSTALL
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.INSTALL_FAILED"
+#| msgid "INSTALL FAILED"
 msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.CANNOT_INSTALL"
-msgid "FAILED INSTALL"
+msgid "INSTALL FAILED"
 msgstr "インストール失敗"
 
 #. STRINGS.UI.FRONTEND.MOD_EVENTS.DEACTIVATED
@@ -9677,9 +9862,12 @@ msgid "Encountered an error while loading file"
 msgstr "ファイルを読み込み中にエラーが発生しました"
 
 #. STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.CANNOT_INSTALL
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.BAD_WORLD_GEN"
+#| msgid "Encountered an error while loading file"
 msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.CANNOT_INSTALL"
-msgid "Install failed due to disk i/o errors"
-msgstr "ディスクI/Oエラーによりインストールが失敗しました"
+msgid "Encountered an error while reading/writing to disk"
+msgstr "ファイルを読み込み中にエラーが発生しました"
 
 #. STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.DEACTIVATED
 msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.DEACTIVATED"
@@ -10401,10 +10589,15 @@ msgid "Oxygen Not Included has had a <b>major update</b> since this save file wa
 msgstr "このセーブファイルが作られた後、Oxygen Not Included は<b>大幅なアップデート</b>がされました！<b>多くのバグ修正およびQoL向上</b>に加え、既存のコロニーに影響を与える可能性がある変更一覧に注意してください:"
 
 #. STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_AIRFILTER
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_AIRFILTER"
+#| msgid ""
+#| "•<indent=20px><link=\"AIRFILTER\">Deodorizer</link> now requires <b>5w Power</b>.</indent>\n"
+#| "•<indent=20px>Duplicants will get <b>Stinging Eyes</b> from gasses such as chlorine and hydrogen.</indent>"
 msgctxt "STRINGS.UI.FRONTEND.SAVEUPGRADEWARNINGS.MERGEDOWNCHANGES_AIRFILTER"
 msgid ""
 "•<indent=20px><link=\"AIRFILTER\">Deodorizer</link> now requires <b>5w Power</b>.</indent>\n"
-"•<indent=20px>Duplicants will get <b>Stinging Eyes</b> from gasses such as chlorine and hydrogen.</indent>"
+"•<indent=20px>Duplicants will get <b>Stinging Eyes</b> from gases such as chlorine and hydrogen.</indent>"
 msgstr ""
 "•<indent=20px><link=\"AIRFILTER\">脱臭機</link>は<b>電力 5w</b>を必要とします。</indent>\n"
 "•<indent=20px>複製人間は水素や塩素に触れると<b>目に沁みる</b>ようになります。</indent>"
@@ -11186,9 +11379,12 @@ msgid "{0}: {1}"
 msgstr "{0}: {1}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.IDEAL_PRESSURE
+#, fuzzy
+#| msgctxt "STRINGS.CREATURES.STATS.AIRPRESSURE.NAME"
+#| msgid "Air Pressure"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.IDEAL_PRESSURE"
-msgid "<link=\"ATMOSPHERE\">Air</link> Pressure: {0}"
-msgstr "<link=\"ATMOSPHERE\">気圧</link>: {0}"
+msgid "Air Pressure: {0}"
+msgstr "気圧"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.IDEAL_TEMPERATURE
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.IDEAL_TEMPERATURE"
@@ -11240,10 +11436,21 @@ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REGROWTHTIME"
 msgid "Regrowth: {0}"
 msgstr "再成長: {0}"
 
+#. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIREMETS_OR
+#, fuzzy
+#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.MISC_REQUIREMENTS.STATUS.PREPARED_SEPARATOR"
+#| msgid " or "
+msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIREMETS_OR"
+msgid " or "
+msgstr " か "
+
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_ATMOSPHERE
+#, fuzzy
+#| msgctxt "STRINGS.UI.VITALSSCREEN.ATMOSPHERE_CONDITION"
+#| msgid "Atmosphere:"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_ATMOSPHERE"
-msgid "<link=\"ATMOSPHERE\">Atmosphere</link>: {0}"
-msgstr "<link=\"ATMOSPHERE\">大気</link>: {0}"
+msgid "Atmosphere: {0}"
+msgstr "大気:"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_DARKNESS
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_DARKNESS"
@@ -11266,8 +11473,11 @@ msgid "Pollination"
 msgstr "受粉"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE"
+#| msgid "<link=\"ATMOSPHERE\">Air</link> Pressure: {0} minimum"
 msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_PRESSURE"
-msgid "<link=\"ATMOSPHERE\">Air</link> Pressure: {0} minimum"
+msgid "Air Pressure: {0} minimum"
 msgstr "<link=\"ATMOSPHERE\">気圧</link>: 最低 {0}"
 
 #. STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_RADIATION
@@ -13682,6 +13892,40 @@ msgstr "ダイニング"
 msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DINING.TOOLTIP"
 msgid ""
 msgstr ""
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.DISTRIBUTORS.BUILDMENUTITLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.SCENARIO_DESCRIPTION"
+#| msgid "Description"
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DISTRIBUTORS.BUILDMENUTITLE"
+msgid "Distribution"
+msgstr "説明"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.DISTRIBUTORS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.SCENARIOS_MENU.SCENARIO_DESCRIPTION"
+#| msgid "Description"
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DISTRIBUTORS.NAME"
+msgid "Distribution"
+msgstr "説明"
+
+#. STRINGS.UI.NEWBUILDCATEGORIES.DISTRIBUTORS.TOOLTIP
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DISTRIBUTORS.TOOLTIP"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.UI.NEWBUILDCATEGORIES.DOORS.BUILDMENUTITLE
 msgctxt "STRINGS.UI.NEWBUILDCATEGORIES.DOORS.BUILDMENUTITLE"
@@ -16685,6 +16929,38 @@ msgstr ""
 "<color=#F44A47FF>    • サイズ: {0} タイル\n"
 "    • 最大部屋サイズ: {1} タイル</color>"
 
+#. STRINGS.UI.OVERLAYS.ROOMS.POND.CRITTER_COUNT
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.LOADSCREEN.TOOLTIP_SAVE_INCOMPATABLE_DLC_CONFIGURATION_ASK_TO_ENABLE"
+#| msgid "    • Activate {0}"
+msgctxt "STRINGS.UI.OVERLAYS.ROOMS.POND.CRITTER_COUNT"
+msgid "    • Aquatic Critters: {0}"
+msgstr "    • {0}を有効化する"
+
+#. STRINGS.UI.OVERLAYS.ROOMS.POND.HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.LOGICALARMSIDESCREEN.TOOLTIP"
+#| msgid "<b>Tooltip:</b>"
+msgctxt "STRINGS.UI.OVERLAYS.ROOMS.POND.HEADER"
+msgid "<b>Pool Size</b>"
+msgstr "<b>ツールチップ:</b>"
+
+#. STRINGS.UI.OVERLAYS.ROOMS.POND.NOFISH
+#, fuzzy
+#| msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.RADIATIONDIAGNOSTIC.NORMAL"
+#| msgid "    • No Radiation concerns"
+msgctxt "STRINGS.UI.OVERLAYS.ROOMS.POND.NOFISH"
+msgid "    • No aquatic critters found"
+msgstr "    • 放射線の心配なし"
+
+#. STRINGS.UI.OVERLAYS.ROOMS.POND.SIZE
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.DETAILS.SIZE.NAME"
+#| msgid "Room size: {0} Tiles"
+msgctxt "STRINGS.UI.OVERLAYS.ROOMS.POND.SIZE"
+msgid "    • Pool Size: {0} Tiles"
+msgstr "部屋サイズ: {0} タイル"
+
 #. STRINGS.UI.OVERLAYS.ROOMS.ROOM
 msgctxt "STRINGS.UI.OVERLAYS.ROOMS.ROOM"
 msgid "Room {0}"
@@ -17049,6 +17325,15 @@ msgstr "開始"
 msgctxt "STRINGS.UI.PRODUCTINFO_APPLICABLERESOURCES"
 msgid "Required resources:"
 msgstr "素材が必要:"
+
+# materials: 地熱ヒートポンプに注入する液体素材(熱媒液)
+#. STRINGS.UI.PRODUCTINFO_INSUFFICIENTRESOURCES_TITLE
+#, fuzzy
+#| msgctxt "STRINGS.COLONY_ACHIEVEMENTS.ACTIVATEGEOTHERMALPLANT.BUTTONS.INITIATE_FIRST_VENT_FILLING_TOOLTIP"
+#| msgid "Insufficient materials"
+msgctxt "STRINGS.UI.PRODUCTINFO_INSUFFICIENTRESOURCES_TITLE"
+msgid "Insufficient {0} available"
+msgstr "<style=\"KKeyword\">液体</style>素材の注入が足りません"
 
 #. STRINGS.UI.PRODUCTINFO_MISSINGRESOURCES_DESC
 msgctxt "STRINGS.UI.PRODUCTINFO_MISSINGRESOURCES_DESC"
@@ -18076,6 +18361,14 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ELECTRIC_GRILL.DESCRIPTION"
 msgid "<link=\"COOKINGSTATION\">Electric Grill</link> Usage"
 msgstr "<link=\"COOKINGSTATION\">電気グリル</link>を利用可能"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_CLAMS.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.CLAY.NAME"
+#| msgid "<link=\"CLAY\">Clay</link>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_CLAMS.DESCRIPTION"
+msgid "<link=\"CLAM\">Clampum</link> farming"
+msgstr "<link=\"CLAY\">粘土</link>"
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_STATION.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_FARM_STATION.DESCRIPTION"
 msgid "Can craft <style=\"KKeyword\">Micronutrient Fertilizer</style> at the <link=\"FARMSTATION\">Farm Station</link>"
@@ -18135,6 +18428,22 @@ msgstr "<link=\"ARTIFACTANALYSISSTATION\">遺物分析端末</link>"
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_STUDY_WORLD_OBJECTS.DESCRIPTION"
 msgid "Geographical Analysis"
 msgstr "地勢分析"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SUSHI_BAR.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.FOOD.MUSHBAR.NAME"
+#| msgid "<link=\"MUSHBAR\">Mush Bar</link>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SUSHI_BAR.DESCRIPTION"
+msgid "<link=\"SUSHIBAR\">Sushi Bar</link> Usage"
+msgstr "<link=\"MUSHBAR\">マッシュバー</link>"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SWIM.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_ART_OKAY.DESCRIPTION"
+#| msgid "<style=\"KKeyword\">Mediocre</style> artwork quality"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_SWIM.DESCRIPTION"
+msgid "<style=\"KKeyword\">Novice</style> swimming ability"
+msgstr "<style=\"KKeyword\">ありふれた</style>芸術作品"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_BUILDING.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.CAN_USE_BUILDING.DESCRIPTION"
@@ -18206,6 +18515,30 @@ msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.IMMUNITY"
 msgid "Immunity to <b>{0}</b>"
 msgstr "<b>{0}</b>に対する免疫"
 
+#. STRINGS.UI.ROLES_SCREEN.PERKS.IMPROVED_LIQUID_TEMPERATURE_TOLERANCE.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEEMPTY.TOOLTIP"
+#| msgid "There is no <style=\"KKeyword\">Liquid</style> in this pipe"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.IMPROVED_LIQUID_TEMPERATURE_TOLERANCE.DESCRIPTION"
+msgid "Increased resistance to <style=\"KKeyword\">Chilly Surroundings</style> when in liquid"
+msgstr "パイプ中に<style=\"KKeyword\">液体</style>がありません"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASE_SWIMMER_ATHLETICS_IN_LIQUID.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LADDERFAST.EFFECT"
+#| msgid "Increases Duplicant climbing speed."
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASE_SWIMMER_ATHLETICS_IN_LIQUID.DESCRIPTION"
+msgid "Increased swimming speed"
+msgstr "複製人間の昇降速度を上昇させます。"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.INCREASE_SWIMMER_STAMINA_IN_LIQUID.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_ENTITY_CONSUMER_SATISFIED"
+#| msgid "<style=\"KKeyword\">{0}</style> consumed"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INCREASE_SWIMMER_STAMINA_IN_LIQUID.DESCRIPTION"
+msgid "Reduced <style=\"KKeyword\">Stamina</style> consumption when swimming"
+msgstr "<style=\"KKeyword\">{0}</style> 消費済"
+
 #. STRINGS.UI.ROLES_SCREEN.PERKS.INTERSTELLAR_RESEARCH.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.INTERSTELLAR_RESEARCH.DESCRIPTION"
 msgid "<link=\"COSMICRESEARCHCENTER\">Virtual Planetarium</link> Usage"
@@ -18225,6 +18558,14 @@ msgstr "<link=\"NUCLEARRESEARCHCENTER\">材料工学端末</link>を利用可能
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.ORBITAL_RESEARCH.DESCRIPTION"
 msgid "<link=\"DLC1COSMICRESEARCHCENTER\">Virtual Planetarium</link> Usage"
 msgstr "<link=\"DLC1COSMICRESEARCHCENTER\">仮想プラネタリウム</link>を利用可能"
+
+#. STRINGS.UI.ROLES_SCREEN.PERKS.REDUCE_SALTWATER_SWIMMER_EYE_IRRITATION.DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.PRINTERCEPTORSIDESCREEN.PRINT_TOOLTIP"
+#| msgid "Click to view printable <style=\"KKeyword\">Eggs</style> and <style=\"KKeyword\">Seeds</style>"
+msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.REDUCE_SALTWATER_SWIMMER_EYE_IRRITATION.DESCRIPTION"
+msgid "Increased resistance to <style=\"KKeyword\">Eye Irritation</style> caused by <style=\"KKeyword\">Salt Water</style>"
+msgstr "生成可能な<style=\"Keyword\">卵</style>と<style=\"Keyword\">種子</style>が表示するにはクリック"
 
 #. STRINGS.UI.ROLES_SCREEN.PERKS.REDUCED_GUNK_PRODUCTION.DESCRIPTION
 msgctxt "STRINGS.UI.ROLES_SCREEN.PERKS.REDUCED_GUNK_PRODUCTION.DESCRIPTION"
@@ -18782,6 +19123,39 @@ msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.STRESS_ADDITIVE.TOOLTIP"
 msgid "Adjust stress reduction"
 msgstr "ストレス軽減を調整します"
 
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TARGET_LAYER.BACKGROUND
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.BACKWALL.NAME"
+#| msgid "Background Buildings"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TARGET_LAYER.BACKGROUND"
+msgid "Background"
+msgstr "壁裏設備"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TARGET_LAYER.FOREGROUND
+#, fuzzy
+#| msgctxt "STRINGS.NAMEGEN.COLONY.ADJECTIVE.UNDERGROUND"
+#| msgid "Underground"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TARGET_LAYER.FOREGROUND"
+msgid "Foreground"
+msgstr "地下深くの"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TARGET_LAYER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.ALL.TOOLTIP"
+#| msgid "Target all"
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TARGET_LAYER.NAME"
+msgid "Target Layer"
+msgstr "全て対象"
+
+#. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TARGET_LAYER.TOOLTIP
+msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TARGET_LAYER.TOOLTIP"
+msgid ""
+"Adjust which layer the brush tools will affect\n"
+"\n"
+"L- Backwall\n"
+"R- Far backwall"
+msgstr ""
+
 #. STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME
 msgctxt "STRINGS.UI.SANDBOXTOOLS.SETTINGS.TEMPERATURE.NAME"
 msgid "Temperature"
@@ -19145,6 +19519,14 @@ msgstr "<i>複製人間を移動</i>"
 msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_EDITOR"
 msgid "SCHEDULE EDITOR"
 msgstr "スケジュール エディタ"
+
+#. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_COPY_PREFIX
+#, fuzzy
+#| msgctxt "STRINGS.UI.COPY_BUILDING"
+#| msgid "Copy"
+msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_COPY_PREFIX"
+msgid "Copy of "
+msgstr "コピー"
 
 #. STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT
 msgctxt "STRINGS.UI.SCHEDULESCREEN.SCHEDULE_NAME_DEFAULT"
@@ -19876,11 +20258,17 @@ msgid "Percolator"
 msgstr "濾過装置付きコーヒー沸かし"
 
 #. STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.ARTIFACT
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.ARTIFACT"
+#| msgid ""
+#| "The bottom of this lamp contains the words 'Property of the Atmospheric Sciences Department'.\n"
+#| "\n"
+#| "It's worth noting that the Gravitas Atmospheric Sciences Department once simulated an experiment testing the feasibility of survival in an environment filled with noble gasses, similar to the ones contained within this device."
 msgctxt "STRINGS.UI.SPACEARTIFACTS.PLASMALAMP.ARTIFACT"
 msgid ""
 "The bottom of this lamp contains the words 'Property of the Atmospheric Sciences Department'.\n"
 "\n"
-"It's worth noting that the Gravitas Atmospheric Sciences Department once simulated an experiment testing the feasibility of survival in an environment filled with noble gasses, similar to the ones contained within this device."
+"It's worth noting that the Gravitas Atmospheric Sciences Department once simulated an experiment testing the feasibility of survival in an environment filled with noble gases, similar to the ones contained within this device."
 msgstr ""
 "このランプの底部には「大気化学部門所有」の文字があります。\n"
 "\n"
@@ -20897,9 +21285,15 @@ msgid "Molten Demolior Debris"
 msgstr "デモリオールの溶融残骸"
 
 #. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICMIXINGFIELD.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICMIXINGFIELD.DESC"
+#| msgid ""
+#| "An asteroid field containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link> and <link=\"SHALE\">Shale</link>.\n"
+#| "\n"
+#| "<link=\"EXOBASESDLC1\">Space mining</link> requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link> and a cargo module."
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICMIXINGFIELD.DESC"
 msgid ""
-"An asteroid field containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link> and <link=\"SHALE\">Shale</link>.\n"
+"An asteroid field containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link>, and <link=\"SHALE\">Shale</link>.\n"
 "\n"
 "<link=\"EXOBASESDLC1\">Space mining</link> requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link> and a cargo module."
 msgstr ""
@@ -20913,9 +21307,15 @@ msgid "Conductive Ore Field"
 msgstr "導電性鉱床"
 
 #. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.DESC"
+#| msgid ""
+#| "The harvestable remains of a planet containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link> and <link=\"SHALE\">Shale</link>.\n"
+#| "\n"
+#| "<link=\"EXOBASESDLC1\">Space mining</link> requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link> and a cargo module."
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.DESC"
 msgid ""
-"The harvestable remains of a planet containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link> and <link=\"SHALE\">Shale</link>.\n"
+"The harvestable remains of a planet containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link>, and <link=\"SHALE\">Shale</link>.\n"
 "\n"
 "<link=\"EXOBASESDLC1\">Space mining</link> requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link> and a cargo module."
 msgstr ""
@@ -20927,6 +21327,56 @@ msgstr ""
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.NAME"
 msgid "Amber Field"
 msgstr "琥珀地帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC5AQUATICMIXINGFIELD.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.DESC"
+#| msgid ""
+#| "The harvestable remains of a planet containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link> and <link=\"SHALE\">Shale</link>.\n"
+#| "\n"
+#| "<link=\"EXOBASESDLC1\">Space mining</link> requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link> and a cargo module."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC5AQUATICMIXINGFIELD.DESC"
+msgid ""
+"The harvestable remains of a planet containing <link=\"ZINCORE\">Zinc Ore</link>, <link=\"SILTSTONE\">Silt Stone</link>, <link=\"COQUINA\">Coquina</link>, <link=\"CORALLIUM\">Corallium</link>, and <link=\"BASALT\">Basalt</link>.\n"
+"\n"
+"<link=\"EXOBASESDLC1\">Space mining</link> requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link> and a cargo module."
+msgstr ""
+"<link=\"NICKELORE\">ニッケル鉱石</link>、<link=\"PEAT\">泥炭</link>、<link=\"AMBER\">琥珀</link>、<link=\"SHALE\">頁岩</link>を含む、採取可能な惑星の残骸です。\n"
+"\n"
+"<link=\"EXOBASESDLC1\">宇宙採掘</link>には<link=\"NOSECONEHARVEST\">ドリルコーン</link>と貨物モジュールを装備したロケットが必要です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC5AQUATICMIXINGFIELD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SANDYOREFIELD.NAME"
+#| msgid "Sandy Ore Field"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC5AQUATICMIXINGFIELD.NAME"
+msgid "Zinc Ore Field"
+msgstr "砂鉱石帯"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC5AQUATICOREFIELD.DESC
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC4PREHISTORICOREFIELD.DESC"
+#| msgid ""
+#| "The harvestable remains of a planet containing <link=\"NICKELORE\">Nickel Ore</link>, <link=\"PEAT\">Peat</link>, <link=\"AMBER\">Amber</link> and <link=\"SHALE\">Shale</link>.\n"
+#| "\n"
+#| "<link=\"EXOBASESDLC1\">Space mining</link> requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link> and a cargo module."
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC5AQUATICOREFIELD.DESC"
+msgid ""
+"The harvestable remains of a planet containing <link=\"ZINCORE\">Zinc Ore</link>, <link=\"SILTSTONE\">Siltstone</link>, <link=\"COQUINA\">Coquina</link>, <link=\"CORALLIUM\">Corallium</link>, and <link=\"BASALT\">Basalt</link>.\n"
+"\n"
+"<link=\"EXOBASESDLC1\">Space mining</link> requires a rocket equipped with a <link=\"NOSECONEHARVEST\">Drillcone</link> and a cargo module."
+msgstr ""
+"<link=\"NICKELORE\">ニッケル鉱石</link>、<link=\"PEAT\">泥炭</link>、<link=\"AMBER\">琥珀</link>、<link=\"SHALE\">頁岩</link>を含む、採取可能な惑星の残骸です。\n"
+"\n"
+"<link=\"EXOBASESDLC1\">宇宙採掘</link>には<link=\"NOSECONEHARVEST\">ドリルコーン</link>と貨物モジュールを装備したロケットが必要です。"
+
+#. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC5AQUATICOREFIELD.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.SANDYOREFIELD.NAME"
+#| msgid "Sandy Ore Field"
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.DLC5AQUATICOREFIELD.NAME"
+msgid "Zinc Ore Field"
+msgstr "砂鉱石帯"
 
 #. STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FORESTYOREFIELD.DESC
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.HARVESTABLE_POI.FORESTYOREFIELD.DESC"
@@ -21343,6 +21793,16 @@ msgstr "別の時代から抽出可能な資源がある目的地です。"
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC4PREHISTORICSPACEDESTINATION.NAME"
 msgid "Prehistoric Ore Field"
 msgstr "先史時代鉱床"
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC5AQUATICSPACEDESCRIPTION.DESCRIPTION
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC5AQUATICSPACEDESCRIPTION.DESCRIPTION"
+msgid "The remains of an aquatic world primarily composed of harvestable corallium, coquina, and zinc ore."
+msgstr ""
+
+#. STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC5AQUATICSPACEDESCRIPTION.NAME
+msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.DLC5AQUATICSPACEDESCRIPTION.NAME"
+msgid "Extinct Ocean"
+msgstr ""
 
 #. STRINGS.UI.SPACEDESTINATIONS.PLANETS.FORESTPLANET.DESCRIPTION
 msgctxt "STRINGS.UI.SPACEDESTINATIONS.PLANETS.FORESTPLANET.DESCRIPTION"
@@ -22568,8 +23028,11 @@ msgid "<style=\"KKeyword\">Robo-Pilot</style> has a <style=\"KKeyword\">Power</s
 msgstr "<style=\"KKeyword\">ロボ操縦士</style>には<style=\"KKeyword\">電源</style>が接続されています"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_POWER_SOUCRE.TOOLTIP.WARNING
+#, fuzzy
+#| msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_POWER_SOUCRE.TOOLTIP.WARNING"
+#| msgid "<style=\"KKeyword\">Robo-Pilot</style> has insufficient  <style=\"KKeyword\">Power</style> for a round-trip to its destination"
 msgctxt "STRINGS.UI.STARMAP.LAUNCHCHECKLIST.ROBOT_PILOT_POWER_SOUCRE.TOOLTIP.WARNING"
-msgid "<style=\"KKeyword\">Robo-Pilot</style> has insufficient  <style=\"KKeyword\">Power</style> for a round-trip to its destination"
+msgid "<style=\"KKeyword\">Robo-Pilot</style> has insufficient <style=\"KKeyword\">Power</style> for a round-trip to its destination"
 msgstr "<style=\"KKeyword\">ロボ操縦士</style>には目的地と往復するための<style=\"KKeyword\">電力</style>が不足しています"
 
 #. STRINGS.UI.STARMAP.LAUNCHCHECKLIST.SUFFICIENT_OXIDIZER.STATUS.FAILURE
@@ -23612,6 +24075,22 @@ msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.MISC.TOOLTIP"
 msgid "Show only miscellaneous elements"
 msgstr "その他の元素のみ表示"
 
+#. STRINGS.UI.TOOLS.FILTERLAYERS.NATURALBACKWALL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GENESHUFFLER.NAME"
+#| msgid "Neural Vacillator"
+msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.NATURALBACKWALL.NAME"
+msgid "Natural Backwall"
+msgstr "神経シャッフルマシン"
+
+#. STRINGS.UI.TOOLS.FILTERLAYERS.NATURALBACKWALL.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.ROOMS.CRITERIA.IS_BACKWALLED.CONFLICT_DESCRIPTION"
+#| msgid "Has backwall tiles"
+msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.NATURALBACKWALL.TOOLTIP"
+msgid "Natural backwall tiles only"
+msgstr "壁紙タイルがある"
+
 #. STRINGS.UI.TOOLS.FILTERLAYERS.OPERATE.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.OPERATE.NAME"
 msgid "Duties"
@@ -23695,6 +24174,22 @@ msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.UNBREATHABLE.TOOLTIP"
 msgid "Show only unbreathable gases"
 msgstr "呼吸不可能な気体のみ表示"
 
+#. STRINGS.UI.TOOLS.FILTERLAYERS.UPROOTPLANTS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.UI.CODEX.SUBWORLDS.PLANTS"
+#| msgid "Plants"
+msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.UPROOTPLANTS.NAME"
+msgid "Plants"
+msgstr "植物"
+
+#. STRINGS.UI.TOOLS.FILTERLAYERS.UPROOTPLANTS.TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDPLANT.TOOLTIP"
+#| msgid "Uproot wild plants to obtain seeds"
+msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.UPROOTPLANTS.TOOLTIP"
+msgid "Uproot plants only"
+msgstr "種子を得るには、野生の植物を掘り起こしてください"
+
 #. STRINGS.UI.TOOLS.FILTERLAYERS.WIRES.NAME
 msgctxt "STRINGS.UI.TOOLS.FILTERLAYERS.WIRES.NAME"
 msgid "Power Wires"
@@ -23714,6 +24209,14 @@ msgstr "ツールフィルター"
 msgctxt "STRINGS.UI.TOOLS.GENERIC.BACK"
 msgid "Back"
 msgstr "戻る"
+
+#. STRINGS.UI.TOOLS.GENERIC.BUBBLE_LABEL
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.BUBBLES.NAME"
+#| msgid "Bubbles"
+msgctxt "STRINGS.UI.TOOLS.GENERIC.BUBBLE_LABEL"
+msgid "Bubble"
+msgstr "バブルス"
 
 #. STRINGS.UI.TOOLS.GENERIC.BUILDING_HOVER_NAME_FMT
 msgctxt "STRINGS.UI.TOOLS.GENERIC.BUILDING_HOVER_NAME_FMT"
@@ -23739,6 +24242,22 @@ msgstr "{Port}    <style=\"hovercard_element\">({Name})</style>"
 msgctxt "STRINGS.UI.TOOLS.GENERIC.LOGIC_OUTPUT_HOVER_FMT"
 msgid "{Port}    <style=\"hovercard_element\">({Name})</style>"
 msgstr "{Port}    <style=\"hovercard_element\">({Name})</style>"
+
+#. STRINGS.UI.TOOLS.GENERIC.NATURAL_BACKWALL_LABEL
+#, fuzzy
+#| msgctxt "STRINGS.UI.IMMIGRANTSCREEN.BACK"
+#| msgid "BACK"
+msgctxt "STRINGS.UI.TOOLS.GENERIC.NATURAL_BACKWALL_LABEL"
+msgid "BACKWALL"
+msgstr "戻る"
+
+#. STRINGS.UI.TOOLS.GENERIC.NATURAL_BACKWALL_LABEL_TITLECASE
+#, fuzzy
+#| msgctxt "STRINGS.UI.FRONTEND.COLONYDESTINATIONSCREEN.CANCEL"
+#| msgid "Back"
+msgctxt "STRINGS.UI.TOOLS.GENERIC.NATURAL_BACKWALL_LABEL_TITLECASE"
+msgid "Backwall"
+msgstr "戻る"
 
 #. STRINGS.UI.TOOLS.GENERIC.UNKNOWN
 msgctxt "STRINGS.UI.TOOLS.GENERIC.UNKNOWN"
@@ -24840,6 +25359,22 @@ msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_FERTILIZER"
 msgid "<b>{mass}</b> of <style=\"KKeyword\">Fertilizer</style> is currently available"
 msgstr "現在利用可能な<style=\"KKeyword\">肥料</style>は {mass} です"
 
+#. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_GERM_ABSENT
+#, fuzzy
+#| msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.TOOLTIPS.REQUIRES_DARKNESS"
+#| msgid "This plant requires complete darkness"
+msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_GERM_ABSENT"
+msgid "This plant requires exposure to {0}"
+msgstr "この植物は完全な暗闇が必要です"
+
+#. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_GERM_PRESENCE
+msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_GERM_PRESENCE"
+msgid ""
+"This plant is currently exposed to {0}\n"
+"\n"
+"This is essential for growth"
+msgstr ""
+
 #. STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_ILLUMINATION_DARK
 msgctxt "STRINGS.UI.TOOLTIPS.VITALS_CHECKBOX_ILLUMINATION_DARK"
 msgid "This plant is currently in the dark"
@@ -25338,11 +25873,13 @@ msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.AVAILABL
 msgid "{0} has <b>{1}/{2}</b> booster slots assigned"
 msgstr "{0} は <b>{1}/{2}</b> ブースタースロットが割り当て済みです"
 
-# ブースターにより変化する各能力値を示す欄の見出し
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.HEADER_ATTRIBUTES
+#, fuzzy
+#| msgctxt "STRINGS.UI.COLONY_DIAGNOSTICS.TOILETDIAGNOSTIC.TOOLTIP_NAME"
+#| msgid "<b>Toilets</b>"
 msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.HEADER_ATTRIBUTES"
-msgid "<b>Boosts:</b>"
-msgstr "<b>能力値:</b>"
+msgid "<b>Modifiers:</b>"
+msgstr "<b>トイレ</b>"
 
 # ブースターにより利用可能となる設備等を示す欄の見出し
 #. STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.HEADER_PERKS
@@ -27199,9 +27736,12 @@ msgid "Read Files"
 msgstr "ファイルを読む"
 
 #. STRINGS.UI.UISIDESCREENS.LOREBEARERSIDESCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.MISC.NOTIFICATIONS.POIRESEARCHUNLOCKCOMPLETE.NAME"
+#| msgid "Portal Unlocked!"
 msgctxt "STRINGS.UI.UISIDESCREENS.LOREBEARERSIDESCREEN.TITLE"
-msgid "Lore Drop"
-msgstr "過去の記録"
+msgid "Lore Unlock"
+msgstr "ポータル研究完了！"
 
 #. STRINGS.UI.UISIDESCREENS.LURE.ATTRACTS
 msgctxt "STRINGS.UI.UISIDESCREENS.LURE.ATTRACTS"
@@ -29680,6 +30220,27 @@ msgctxt "STRINGS.UI.UISIDESCREENS.TREEFILTERABLESIDESCREEN.TITLE_CRITTER"
 msgid "Critter Filter"
 msgstr "動物フィルター"
 
+#. STRINGS.UI.UISIDESCREENS.TURBOMODE_SIDE_SCREEN.LABEL
+msgctxt "STRINGS.UI.UISIDESCREENS.TURBOMODE_SIDE_SCREEN.LABEL"
+msgid "TURBO MODE"
+msgstr ""
+
+#. STRINGS.UI.UISIDESCREENS.TURBOMODE_SIDE_SCREEN.TITLE
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.POWERSTATION"
+#| msgid "Power Station"
+msgctxt "STRINGS.UI.UISIDESCREENS.TURBOMODE_SIDE_SCREEN.TITLE"
+msgid "Power Settings"
+msgstr "電力端末"
+
+#. STRINGS.UI.UISIDESCREENS.TURBOMODE_SIDE_SCREEN.TOGGLE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.INPUT_BINDINGS.ROOT.TOGGLESCREENSHOTMODE"
+#| msgid "Toggle Screenshot Mode"
+msgctxt "STRINGS.UI.UISIDESCREENS.TURBOMODE_SIDE_SCREEN.TOGGLE_TOOLTIP"
+msgid "Toggle Turbo Mode"
+msgstr "スクリーンショットモード切替"
+
 #. STRINGS.UI.UISIDESCREENS.VALVESIDESCREEN.TITLE
 msgctxt "STRINGS.UI.UISIDESCREENS.VALVESIDESCREEN.TITLE"
 msgid "Flow Control"
@@ -30969,6 +31530,23 @@ msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_DISPLAY_FAIL.SEARCH1"
 msgid "The display is frozen. Whatever information it once contained is long gone."
 msgstr "ディスプレイがフリーズしている。かつて表示されていた情報はすべて消えている。"
 
+#. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_DLC5MINIFRIDGE
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_PROPGRAVITASCREATUREPOSTER"
+#| msgid ""
+#| "There's a handwritten note taped to the back of this poster. I add it to my database.\n"
+#| "\n"
+#| "New Database Entry discovered."
+msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_DLC5MINIFRIDGE"
+msgid ""
+"There's a note taped to an empty jar on the top shelf. I add it to my database.\n"
+"\n"
+"New Database Entry discovered."
+msgstr ""
+"手書きのメモがポスターの裏側にテープで貼られているのを発見した。データベースに追加した。\n"
+"\n"
+"データベースに新しい項目を追加した。"
+
 #. STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_ELLIESDESK
 msgctxt "STRINGS.UI.USERMENUACTIONS.READLORE.SEARCH_ELLIESDESK"
 msgid ""
@@ -31666,6 +32244,14 @@ msgctxt "STRINGS.UI.VITALSSCREEN.FOOD_EXPECTATIONS_TOOLTIP"
 msgid "This Duplicant desires food that is {0} quality or better"
 msgstr "この複製人間は品質が{0}以上の食糧を望んでいます"
 
+#. STRINGS.UI.VITALSSCREEN.GERMPRESENCE
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.EXPOSEDTOGERMS.TIER2"
+#| msgid "Medium Exposure"
+msgctxt "STRINGS.UI.VITALSSCREEN.GERMPRESENCE"
+msgid "Germ Exposure"
+msgstr "中程度の曝露"
+
 #. STRINGS.UI.VITALSSCREEN.HEALTH
 msgctxt "STRINGS.UI.VITALSSCREEN.HEALTH"
 msgid "Health"
@@ -31843,6 +32429,14 @@ msgstr ""
 "スキャンの結果、衝突によって着陸地点周辺の間欠泉がすべて噴出することが判明した。間欠泉は…本当にたくさんある。\n"
 "\n"
 "直ちに生存戦略を開始せよ。"
+
+#. STRINGS.UI.WELCOMEMESSAGEBODY_DLC5_AQUATIC
+msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY_DLC5_AQUATIC"
+msgid ""
+"This asteroid has suffered extensive flooding. My scans show traces of a previous party of explorers, but... only one remains.\n"
+"\n"
+"It's imperative that I find and recruit the survivor to my colony. Their adaptations may well be the key to plumbing the depths of this waterlogged world."
+msgstr ""
 
 #. STRINGS.UI.WELCOMEMESSAGEBODY_KF23
 msgctxt "STRINGS.UI.WELCOMEMESSAGEBODY_KF23"
@@ -32375,3 +32969,46 @@ msgstr "砂を散布しています..."
 msgctxt "STRINGS.UI.WORLDGEN.WORLDLAYOUT9"
 msgid "Sprinkling sand..."
 msgstr "砂を散布しています..."
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.CONTENT_NOTOWNED_TOOLTIP"
+#~ msgid "This DLC is available now!"
+#~ msgstr "発売中"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.DLC.COSMETIC_CONTENT_ACTIVE_TOOLTIP"
+#~ msgid ""
+#~ "<b>This DLC is enabled</b>\n"
+#~ "\n"
+#~ "Find it in the supply closet screen."
+#~ msgstr ""
+#~ "<b>このDLCは有効になっています</b>\n"
+#~ "\n"
+#~ "支給品クローゼット画面で確認してください。"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MAINMENU.WISHLIST_AD"
+#~ msgid "Available now"
+#~ msgstr "発売中"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.CANNOT_INSTALL"
+#~ msgid "FAILED INSTALL"
+#~ msgstr "インストール失敗"
+
+#~ msgctxt "STRINGS.UI.FRONTEND.MOD_EVENTS.TOOLTIPS.CANNOT_INSTALL"
+#~ msgid "Install failed due to disk i/o errors"
+#~ msgstr "ディスクI/Oエラーによりインストールが失敗しました"
+
+#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.IDEAL_PRESSURE"
+#~ msgid "<link=\"ATMOSPHERE\">Air</link> Pressure: {0}"
+#~ msgstr "<link=\"ATMOSPHERE\">気圧</link>: {0}"
+
+#~ msgctxt "STRINGS.UI.GAMEOBJECTEFFECTS.REQUIRES_ATMOSPHERE"
+#~ msgid "<link=\"ATMOSPHERE\">Atmosphere</link>: {0}"
+#~ msgstr "<link=\"ATMOSPHERE\">大気</link>: {0}"
+
+# ブースターにより変化する各能力値を示す欄の見出し
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.BIONIC_SIDE_SCREEN.BOOSTER_ASSIGNMENT.HEADER_ATTRIBUTES"
+#~ msgid "<b>Boosts:</b>"
+#~ msgstr "<b>能力値:</b>"
+
+#~ msgctxt "STRINGS.UI.UISIDESCREENS.LOREBEARERSIDESCREEN.TITLE"
+#~ msgid "Lore Drop"
+#~ msgstr "過去の記録"

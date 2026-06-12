@@ -189,6 +189,14 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDCRAFTINGTABLE.BIONIC_COMPONENT_RECIPE
 msgid "Converts {0} to {1}"
 msgstr "{0}から{1}を製作します"
 
+#. STRINGS.BUILDINGS.PREFABS.ADVANCEDCRAFTINGTABLE.BIONIC_OVERCLOCK_RECIPE_DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDCRAFTINGTABLE.BIONIC_OVERCLOCK_RECIPE_DESC"
+msgid ""
+"Converts {0} to {1}\n"
+"\n"
+"<b>!! WARNING: SYSTEM DAMAGE RISK !!</b>"
+msgstr ""
+
 #. STRINGS.BUILDINGS.PREFABS.ADVANCEDCRAFTINGTABLE.COLONY_HAS_BOOSTER_ASSIGNED_COUNT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDCRAFTINGTABLE.COLONY_HAS_BOOSTER_ASSIGNED_COUNT"
 msgid "My colony has {0} Bionic Duplicant(s) with this booster assigned"
@@ -2294,8 +2302,8 @@ msgstr "<link=\"CREATUREDELIVERYPOINT\">動物解放地点</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.DESC"
-msgid "Critters tend to stay close to their food source and wander less when given a feeder."
-msgstr "動物は給餌機のそばに留まるようになり、遠くまでさ迷う頻度が減ります。"
+msgid "Wild critters who use feeders get accustomed to the cushiness of domesticated life."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.EFFECT"
@@ -2355,8 +2363,11 @@ msgid "It's nice to have nice things."
 msgstr "素敵なものがあると嬉しいですね。"
 
 #. STRINGS.BUILDINGS.PREFABS.CRITTERCONDO.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRITTERCONDO.EFFECT"
+#| msgid "Provides a comfortable lounge area that boosts <link=\"CREATURES\">Critter</link> happiness."
 msgctxt "STRINGS.BUILDINGS.PREFABS.CRITTERCONDO.EFFECT"
-msgid "Provides a comfortable lounge area that boosts <link=\"CREATURES\">Critter</link> happiness."
+msgid "Provides a comfortable lounge area that boosts domesticated <link=\"CREATURES\">Critters'</link> happiness."
 msgstr "<link=\"CREATURES\">動物</link>の幸福感を上昇させる快適なラウンジエリアを供給します。"
 
 #. STRINGS.BUILDINGS.PREFABS.CRITTERCONDO.NAME
@@ -2907,6 +2918,31 @@ msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.DLC4POITECHUNLOCKS.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.DLC4POITECHUNLOCKS.NAME"
+msgid "Research Portal"
+msgstr "研究用ポータル"
+
+#. STRINGS.BUILDINGS.PREFABS.DLC5POITECHUNLOCKS.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.DLC2POITECHUNLOCKS.DESC"
+#| msgid ""
+#| "A functional research decrypter with one transmission remaining.\n"
+#| "\n"
+#| "It was designed to support colony survival."
+msgctxt "STRINGS.BUILDINGS.PREFABS.DLC5POITECHUNLOCKS.DESC"
+msgid ""
+"A functional research decrypter with one transmission remaining.\n"
+"\n"
+"It was designed to support colony survival."
+msgstr ""
+"あと1回送信が可能な研究用解読器です。\n"
+"\n"
+"コロニーの生存をサポートするために設計されました。"
+
+#. STRINGS.BUILDINGS.PREFABS.DLC5POITECHUNLOCKS.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.DLC2POITECHUNLOCKS.NAME"
+#| msgid "Research Portal"
+msgctxt "STRINGS.BUILDINGS.PREFABS.DLC5POITECHUNLOCKS.NAME"
 msgid "Research Portal"
 msgstr "研究用ポータル"
 
@@ -4323,15 +4359,45 @@ msgid "A fish release must be built in liquid to prevent released fish from suff
 msgstr "魚が窒息しないためにも、この設備は液体下に設置しなければなりません。"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREDELIVERYPOINT.EFFECT"
+#| msgid ""
+#| "Releases trapped <link=\"CREATURES\">Critters</link> back into the world.\n"
+#| "\n"
+#| "Can be used multiple times."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.EFFECT"
 msgid ""
-"Releases trapped <link=\"PACU\">Pacu</link> back into the world.\n"
+"Releases trapped aquatic critters back into the world.\n"
 "\n"
 "Can be used multiple times."
 msgstr ""
-"捕獲した<link=\"PACU\">パクー</link>を自然へ帰します。\n"
+"捕獲した<link=\"CREATURES\">動物</link>を自然へ帰します。\n"
 "\n"
 "何度でも使うことができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.LOGIC_INPUT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRITTERDROPOFF.LOGIC_INPUT.DESC"
+#| msgid "Enable/Disable"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.LOGIC_INPUT.DESC"
+msgid "Enable/Disable"
+msgstr "有効化/無効化"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.LOGIC_INPUT.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_ACTIVE"
+#| msgid "<b><style=\"logic_on\">Green Signal</style></b>: Enable building"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.LOGIC_INPUT.LOGIC_PORT_ACTIVE"
+msgid "<b><style=\"logic_on\">Green Signal</style></b>: Enable fish release"
+msgstr "<b><style=\"logic_on\">グリーン</style></b>: 設備を有効化"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.LOGIC_INPUT.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.UI.LOGIC_PORTS.CONTROL_OPERATIONAL_INACTIVE"
+#| msgid "<b><style=\"logic_off\">Red Signal</style></b>: Disable building"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.LOGIC_INPUT.LOGIC_PORT_INACTIVE"
+msgid "<b><style=\"logic_off\">Red Signal</style></b>: Disable fish release"
+msgstr "<b><style=\"logic_off\">レッド</style></b>: 設備を無効化"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.NAME"
@@ -4339,8 +4405,11 @@ msgid "<link=\"FISHDELIVERYPOINT\">Fish Release</link>"
 msgstr "<link=\"FISHDELIVERYPOINT\">魚解放地点</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHFEEDER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FISHFEEDER.DESC"
+#| msgid "Build this feeder above a body of water to feed the fish within."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHFEEDER.DESC"
-msgid "Build this feeder above a body of water to feed the fish within."
+msgid "Build this feeder above a body of water to feed and tame the fish within."
 msgstr "水域の上にこの給餌機を設置して、中の魚に餌を与えましょう。"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHFEEDER.EFFECT
@@ -4359,15 +4428,80 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.FISHFEEDER.NAME"
 msgid "<link=\"FISHFEEDER\">Fish Feeder</link>"
 msgstr "<link=\"FISHFEEDER\">魚用給餌機</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.FISHPICKUP.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRITTERPICKUP.DESC"
+#| msgid "Duplicants will automatically wrangle excess critters."
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHPICKUP.DESC"
+msgid "Duplicants will automatically wrangle excess fish from the pool below."
+msgstr "複製人間は過多となった動物を自動的に縄掛けします。"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHPICKUP.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRITTERPICKUP.EFFECT"
+#| msgid ""
+#| "Ensures the prompt relocation of <link=\"CREATURES\">Critters</link> that exceed the maximum amount set.\n"
+#| "\n"
+#| "Monitoring and pick-up are limited to the specified species."
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHPICKUP.EFFECT"
+msgid ""
+"Ensures the prompt capture of aquatic <link=\"CREATURES\">Critters</link> that exceed the maximum amount set.\n"
+"\n"
+"Monitoring and pick-up are limited to the specified species.\n"
+"\n"
+"Must be built above a <link=\"ELEMENTSLIQUID\">Liquid</link> pool."
+msgstr ""
+"設定された最大頭数を超えた<link=\"CREATURES\">動物</link>が速やかに再配置されるようにします。\n"
+"\n"
+"観測および解放は特定の種に限定されています。"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHPICKUP.LOGIC_INPUT.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRITTERDROPOFF.LOGIC_INPUT.DESC"
+#| msgid "Enable/Disable"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHPICKUP.LOGIC_INPUT.DESC"
+msgid "Enable/Disable"
+msgstr "有効化/無効化"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHPICKUP.LOGIC_INPUT.LOGIC_PORT_ACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRITTERPICKUP.LOGIC_INPUT.LOGIC_PORT_ACTIVE"
+#| msgid "<b><style=\"logic_on\">Green Signal</style></b>: Wrangle excess critters"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHPICKUP.LOGIC_INPUT.LOGIC_PORT_ACTIVE"
+msgid "<b><style=\"logic_on\">Green Signal</style></b>: Wrangle excess fish"
+msgstr "<b><style=\"logic_on\">グリーン</style></b>: 過多となった動物を縄掛けする"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHPICKUP.LOGIC_INPUT.LOGIC_PORT_INACTIVE
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRITTERPICKUP.LOGIC_INPUT.LOGIC_PORT_INACTIVE"
+#| msgid "<b><style=\"logic_off\">Red Signal</style></b>: Ignore excess critters"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHPICKUP.LOGIC_INPUT.LOGIC_PORT_INACTIVE"
+msgid "<b><style=\"logic_off\">Red Signal</style></b>: Ignore excess fish"
+msgstr "<b><style=\"logic_off\">レッド</style></b>: 過多となった動物を放置する"
+
+#. STRINGS.BUILDINGS.PREFABS.FISHPICKUP.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CRITTERPICKUP.NAME"
+#| msgid "<link=\"CRITTERPICKUP\">Critter Pick-Up</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.FISHPICKUP.NAME"
+msgid "<link=\"FISHPICKUP\">Fish Pick-Up</link>"
+msgstr "<link=\"CRITTERPICKUP\">動物捕捉地点</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.FISHTRAP.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHTRAP.DESC"
 msgid "Trapped fish will automatically be bagged for transport."
 msgstr "捕獲した魚は持ち運びのため自動的に袋詰めされます。"
 
 #. STRINGS.BUILDINGS.PREFABS.FISHTRAP.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FISHTRAP.EFFECT"
+#| msgid ""
+#| "Attracts and traps swimming <link=\"PACU\">Pacu</link>.\n"
+#| "\n"
+#| "Single use."
 msgctxt "STRINGS.BUILDINGS.PREFABS.FISHTRAP.EFFECT"
 msgid ""
-"Attracts and traps swimming <link=\"PACU\">Pacu</link>.\n"
+"Attracts and traps aquatic <link=\"CREATURES\">Critters</link>.\n"
 "\n"
 "Single use."
 msgstr ""
@@ -5817,6 +5951,68 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.GEOTUNER.NAME"
 msgid "<link=\"GEOTUNER\">Geotuner</link>"
 msgstr "<link=\"GEOTUNER\">地殻チューナー</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.GLASSCEILINGLIGHT.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSCEILINGLIGHT.DESC"
+msgid "It's an attractive way to add overhead lighting in aquatic spaces."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSCEILINGLIGHT.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CEILINGLIGHT.EFFECT"
+#| msgid ""
+#| "Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>.\n"
+#| "\n"
+#| "Increases Duplicant workspeed within light radius."
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSCEILINGLIGHT.EFFECT"
+msgid ""
+"Provides <link=\"LIGHT\">Light</link> when <link=\"POWER\">Powered</link>.\n"
+"\n"
+"Increases Duplicant workspeed within light radius."
+msgstr ""
+"<link=\"POWER\">電力</link>が供給されると、<link=\"LIGHT\">光源</link>として機能します。\n"
+"\n"
+"複製人間は設備が光源下にあるとより効率的に操作できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSCEILINGLIGHT.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CEILINGLIGHT.FACADES.BLOSSOM.NAME"
+#| msgid "<link=\"CEILINGLIGHT\">Blossom Ceiling Light</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSCEILINGLIGHT.NAME"
+msgid "<link=\"GLASSCEILINGLIGHT\">Glass Jelly Ceiling Light</link>"
+msgstr "<link=\"CEILINGLIGHT\">ブロッサム型天井灯</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSEXTERIORWALL.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSEXTERIORWALL.DESC"
+msgid "Glass Backwall adds a touch of elegance while sealing rooms from the vacuum of space."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSEXTERIORWALL.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.EFFECT"
+#| msgid ""
+#| "Prevents <link=\"ELEMENTSGAS\">Gas</link> and <link=\"ELEMENTSLIQUID\">Liquid</link> loss in space.\n"
+#| "\n"
+#| "Builds an insulating backwall behind buildings."
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSEXTERIORWALL.EFFECT"
+msgid ""
+"Prevents <link=\"ELEMENTSGAS\">Gas</link> and <link=\"ELEMENTSLIQUID\">Liquid</link> loss in space.\n"
+"\n"
+"Builds a transparent backwall behind buildings.\n"
+"\n"
+"Provides higher <link=\"DECOR\">Decor</link> than standard drywall."
+msgstr ""
+"宇宙での<link=\"ELEMENTSGAS\">気体</link>や<link=\"ELEMENTSLIQUID\">液体</link>の損失を防ぎます。\n"
+"\n"
+"設備の裏側に断熱壁を作ります。"
+
+#. STRINGS.BUILDINGS.PREFABS.GLASSEXTERIORWALL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.EXTERIORWALL.FACADES.DEFAULT_EXTERIORWALL.NAME"
+#| msgid "<link=\"EXTERIORWALL\">Drywall</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSEXTERIORWALL.NAME"
+msgid "<link=\"GLASSEXTERIORWALL\">Glass Backwall</link>"
+msgstr "<link=\"EXTERIORWALL\">石膏ボード</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.GLASSFORGE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.GLASSFORGE.DESC"
 msgid "Glass can be used to construct window tile."
@@ -7105,6 +7301,30 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.LANDINGBEACON.NAME"
 msgid "<link=\"LANDINGBEACON\">Targeting Beacon</link>"
 msgstr "<link=\"LANDINGBEACON\">ターゲット ビーコン</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.LARGEBACKWALLFARM.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LARGEBACKWALLFARM.DESC"
+msgid "Vertical farming makes oversized organisms more accessible in limited spaces."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LARGEBACKWALLFARM.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.PLANTERBOX.EFFECT"
+#| msgid "Grows one <link=\"PLANTS\">Plant</link> from a <link=\"PLANTS\">Seed</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.LARGEBACKWALLFARM.EFFECT"
+msgid ""
+"Grows one extra-large aquatic <link=\"PLANTS\">Plant</link> from a <link=\"PLANTS\">Seed</link>.\n"
+"\n"
+"It also doubles as a wall tile."
+msgstr "<link=\"PLANTS\">種子</link>をまくと１つの<link=\"PLANTS\">植物</link>を育てることができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.LARGEBACKWALLFARM.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.FLOWERVASEWALL.FACADES.DEFAULT_FLOWERVASEWALL.NAME"
+#| msgid "<link=\"FLOWERVASEWALL\">Wall Pot</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LARGEBACKWALLFARM.NAME"
+msgid "<link=\"LARGEBACKWALLFARM\">Wall Planter</link>"
+msgstr "<link=\"FLOWERVASEWALL\">壁掛け鉢</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.LARGEELECTROBANKDISCHARGER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LARGEELECTROBANKDISCHARGER.DESC"
 msgid "It's basically its own power grid."
@@ -7606,8 +7826,11 @@ msgid "<link=\"LIQUIDFUELTANKCLUSTER\">Large Liquid Fuel Tank</link>"
 msgstr "<link=\"LIQUIDFUELTANKCLUSTER\">大型液体燃料タンク</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.DESC"
+#| msgid "Tepidizers heat liquid which can kill waterborne germs."
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.DESC"
-msgid "Tepidizers heat liquid which can kill waterborne germs."
+msgid "Tepidizers heat liquid, which can kill waterborne germs."
 msgstr "液体ヒーターは液体を熱することで病原菌を殺菌します。"
 
 #. STRINGS.BUILDINGS.PREFABS.LIQUIDHEATER.EFFECT
@@ -7810,6 +8033,27 @@ msgstr "<link=\"LIQUIDCONDUIT\">液体パイプ</link>から<link=\"ELEMENTSLIQU
 msgctxt "STRINGS.BUILDINGS.PREFABS.LIQUIDVENT.NAME"
 msgid "<link=\"LIQUIDVENT\">Liquid Vent</link>"
 msgstr "<link=\"LIQUIDVENT\">排水口</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.LITTERBOX.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.LITTERBOX.DESC"
+msgid "Retrieving the stored contents is unpleasant, but ultimately rewarding."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LITTERBOX.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.LITTERBOX.EFFECT"
+msgid ""
+"Provides a place for <link=\"CREATURES\">Critters</link> to expel their digestive system's byproducts.\n"
+"\n"
+"Must be scooped by a Duplicant in order to obtain deposited resources."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.LITTERBOX.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.PLANTERBOX.FACADES.DEFAULT_PLANTERBOX.NAME"
+#| msgid "<link=\"PLANTERBOX\">Planter Box</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.LITTERBOX.NAME"
+msgid "<link=\"LITTERBOX\">Litter Box</link>"
+msgstr "<link=\"PLANTERBOX\">プランター</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICALARM.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICALARM.DESC"
@@ -9790,9 +10034,17 @@ msgid "Refined metals are necessary to build advanced electronics and technologi
 msgstr "精錬された金属は高度な電子機器の建築や技術に必要です。"
 
 #. STRINGS.BUILDINGS.PREFABS.METALREFINERY.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.METALREFINERY.EFFECT"
+#| msgid ""
+#| "Produces <link=\"REFINEDMETAL\">Refined Metals</link> from raw <link=\"RAWMETAL\">Metal Ore</link>.\n"
+#| "\n"
+#| "Significantly <link=\"HEAT\">Heats</link> and outputs the <link=\"ELEMENTSLIQUID\">Liquid</link> piped into it.\n"
+#| "\n"
+#| "Duplicants will not fabricate items unless recipes are queued."
 msgctxt "STRINGS.BUILDINGS.PREFABS.METALREFINERY.EFFECT"
 msgid ""
-"Produces <link=\"REFINEDMETAL\">Refined Metals</link> from raw <link=\"RAWMETAL\">Metal Ore</link>.\n"
+"Produces <link=\"REFINEDMETAL\">Refined Metals</link> from raw <link=\"METAL\">Metal Ore</link>.\n"
 "\n"
 "Significantly <link=\"HEAT\">Heats</link> and outputs the <link=\"ELEMENTSLIQUID\">Liquid</link> piped into it.\n"
 "\n"
@@ -10049,24 +10301,36 @@ msgid "Duplicants can slather up with brackwax to increase their travel speed in
 msgstr "移動チューブにモー脂肪を塗りたくることで複製人間の移動速度を上昇させます。"
 
 #. STRINGS.BUILDINGS.PREFABS.MILKFATSEPARATOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFATSEPARATOR.EFFECT"
+#| msgid "Refines <link=\"MILK\">Brackene</link> into <link=\"BRINE\">Brine</link> and <link=\"MILKFAT\">Brackwax</link>, and emits <link=\"CARBONDIOXIDE\">Carbon Dioxide</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFATSEPARATOR.EFFECT"
-msgid "Refines <link=\"MILK\">Brackene</link> into <link=\"BRINE\">Brine</link> and <link=\"MILKFAT\">Brackwax</link>, and emits <link=\"CARBONDIOXIDE\">Carbon Dioxide</link>."
+msgid "Refines <link=\"MILK\">Brackene</link> into <link=\"BRINE\">Brine</link> and <link=\"MILKFAT\">Brackwax</link>, and <link=\"FISHMILK\">Ovolene</link> into <link=\"CAVIAR\">Caviar</link> and <link=\"MUCUS\">Mucin</link>."
 msgstr "<link=\"MILK\">モー乳</link>を精製し、<link=\"BRINE\">濃塩水</link>と<link=\"MILKFAT\">モー脂肪</link>にするとともに、<link=\"CARBONDIOXIDE\">二酸化炭素</link>を排出します。"
 
 #. STRINGS.BUILDINGS.PREFABS.MILKFATSEPARATOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFATSEPARATOR.NAME"
+#| msgid "<link=\"MILKFATSEPARATOR\">Brackwax Gleaner</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFATSEPARATOR.NAME"
-msgid "<link=\"MILKFATSEPARATOR\">Brackwax Gleaner</link>"
+msgid "<link=\"MILKFATSEPARATOR\">Gleaner</link>"
 msgstr "<link=\"MILKFATSEPARATOR\">モー脂肪収集機</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.MILKFEEDER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFEEDER.DESC"
-msgid "It's easier to tolerate overcrowding when you're all hopped up on brackene."
-msgstr "モー乳に夢中になっているなら、混雑を許容するほうが簡単です。"
+msgid "Providing beverages to critters makes them feel taken care of."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.MILKFEEDER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFEEDER.EFFECT"
+#| msgid ""
+#| "Dispenses <link=\"MILK\">Brackene</link> to a wide variety of <link=\"CREATURES\">Critters</link>.\n"
+#| "\n"
+#| "Accessing the fountain significantly improves <link=\"CREATURES\">Critters</link>' moods."
 msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFEEDER.EFFECT"
 msgid ""
-"Dispenses <link=\"MILK\">Brackene</link> to a wide variety of <link=\"CREATURES\">Critters</link>.\n"
+"Dispenses <link=\"MILK\">Brackene</link> or <link=\"INK\">Squid Ink</link> to a wide variety of <link=\"CREATURES\">Critters</link>.\n"
 "\n"
 "Accessing the fountain significantly improves <link=\"CREATURES\">Critters</link>' moods."
 msgstr ""
@@ -10130,6 +10394,14 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.MILKPRESS.NUT_MILK_RECIPE_DESCRIPTION"
 msgid "Converts {0} to {1}"
 msgstr "{0}を{1}に変換します"
 
+#. STRINGS.BUILDINGS.PREFABS.MILKPRESS.PALMWOOD_TO_LATEX_RECIPE_DESCRIPTION
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDCRAFTINGTABLE.BIONIC_COMPONENT_RECIPE_DESC"
+#| msgid "Converts {0} to {1}"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MILKPRESS.PALMWOOD_TO_LATEX_RECIPE_DESCRIPTION"
+msgid "Converts {0} to {1}"
+msgstr "{0}から{1}を製作します"
+
 #. STRINGS.BUILDINGS.PREFABS.MILKPRESS.PHYTO_OIL_RECIPE_DESCRIPTION
 msgctxt "STRINGS.BUILDINGS.PREFABS.MILKPRESS.PHYTO_OIL_RECIPE_DESCRIPTION"
 msgid "Converts {0} to {1} and {2}"
@@ -10170,6 +10442,145 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.MINERALDEOXIDIZER.NAME"
 msgid "<link=\"MINERALDEOXIDIZER\">Oxygen Diffuser</link>"
 msgstr "<link=\"MINERALDEOXIDIZER\">酸素散布装置</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.MINIFRIDGE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINIFRIDGE.DESC"
+msgid "It's very small."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.MINIFRIDGE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.EFFECT"
+#| msgid "Stores <link=\"FOOD\">Food</link> at an ideal <link=\"HEAT\">Temperature</link> to prevent spoilage."
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINIFRIDGE.EFFECT"
+msgid "Stores <link=\"FOOD\">Food</link> at an ideal <link=\"HEAT\">Temperature</link> to prevent spoilage."
+msgstr "適正な<link=\"HEAT\">温度</link>下で<link=\"FOOD\">食糧</link>を保管します。"
+
+#. STRINGS.BUILDINGS.PREFABS.MINIFRIDGE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREBRIDGE.NAME"
+#| msgid "<link=\"WIREBRIDGE\">Wire Bridge</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINIFRIDGE.NAME"
+msgid "<link=\"MINIFRIDGE\">Mini Fridge</link>"
+msgstr "<link=\"WIREBRIDGE\">電線ブリッジ</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.BIONIC.TITLE"
+#| msgid "Bionic Duplicant"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.NAME"
+msgid "Unknown Duplicant"
+msgstr "バイオニック複製人間"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_BUTTON_DISABLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_DELIVERY.NAME"
+#| msgid "Disable Delivery"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_BUTTON_DISABLE"
+msgid "Disable Delivery"
+msgstr "配達をやめる"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_BUTTON_DISABLE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.TOOLTIP"
+#| msgid "This Duplicant is feeling the pressure"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_BUTTON_DISABLE_TOOLTIP"
+msgid "Stop Duplicants from delivering the requested items"
+msgstr "この複製人間はプレッシャーを感じています"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_BUTTON_ENABLE
+#, fuzzy
+#| msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_DELIVERY.NAME_OFF"
+#| msgid "Enable Delivery"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_BUTTON_ENABLE"
+msgid "Enable Delivery"
+msgstr "配達する"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_BUTTON_ENABLE_TOOLTIP
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.AUTOMATABLE_SIDE_SCREEN.ALLOWMANUALBUTTONTOOLTIP"
+#| msgid "Allow Duplicants to manually manage these storage materials"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_BUTTON_ENABLE_TOOLTIP"
+msgid "Allow Duplicants to deliver the requested items"
+msgstr "この設備の内容物を複製人間が取り扱うことを許可します"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_HEADER
+#, fuzzy
+#| msgctxt "STRINGS.UI.UISIDESCREENS.SUIT_SIDE_SCREEN.CONFIG_REQUEST_SUIT"
+#| msgid "Deliver Suit"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_A.UI_HEADER"
+msgid "Delivery Menu"
+msgstr "スーツを配達する"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_B.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_B.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_B.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.BIONIC.TITLE"
+#| msgid "Bionic Duplicant"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_B.NAME"
+msgid "Unknown Duplicant"
+msgstr "バイオニック複製人間"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_C.DESC
+#, fuzzy
+#| msgid ""
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_C.DESC"
+msgid ""
+msgstr ""
+"Project-Id-Version: OxygenNotIncluded-Japanese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://github.com/nsk4762jp/OxygenNotIncluded-Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_C.NAME
+#, fuzzy
+#| msgctxt "STRINGS.CODEX.BIONIC.TITLE"
+#| msgid "Bionic Duplicant"
+msgctxt "STRINGS.BUILDINGS.PREFABS.MINNOW_IMPERATIVE_POI_C.NAME"
+msgid "Unknown Duplicant"
+msgstr "バイオニック複製人間"
 
 #. STRINGS.BUILDINGS.PREFABS.MISSILEFABRICATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.MISSILEFABRICATOR.DESC"
@@ -12250,6 +12661,36 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSURESWITCHLIQUID.NAME"
 msgid "<link=\"PRESSURESWITCHLIQUID\">Hydro Switch</link>"
 msgstr "<link=\"PRESSURESWITCHLIQUID\">水圧スイッチ</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.PROPBEACHCHAIR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPBEACHCHAIR.DESC"
+msgid "Worn down by countless cycles of use and exposure to the elements."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PROPBEACHCHAIR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.EFFECT"
+#| msgid ""
+#| "Duplicants can relax by lounging in <link=\"LIGHT\">Sunlight</link>.\n"
+#| "\n"
+#| "Increases Duplicant <link=\"MORALE\">Morale</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPBEACHCHAIR.EFFECT"
+msgid ""
+"Duplicants can relax by lounging in <link=\"LIGHT\">Sunlight</link>.\n"
+"\n"
+"Increases Duplicant <link=\"MORALE\">Morale</link>."
+msgstr ""
+"複製人間は<link=\"LIGHT\">日光</link>の下でくつろぎ、リラックスします。\n"
+"\n"
+"複製人間の<link=\"MORALE\">士気</link>を高めます。"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPBEACHCHAIR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BEACHCHAIR.NAME"
+#| msgid "<link=\"BEACHCHAIR\">Beach Chair</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPBEACHCHAIR.NAME"
+msgid "<link=\"BEACHCHAIR\">Tattered Beach Chair</link>"
+msgstr "<link=\"BEACHCHAIR\">ビーチチェア</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.PROPCERESPOSTERA.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PROPCERESPOSTERA.DESC"
 msgid ""
@@ -12371,6 +12812,22 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.PROPDLC2GEOTHERMALCART.NAME"
 msgid "Service Cart"
 msgstr "配膳カート"
+
+#. STRINGS.BUILDINGS.PREFABS.PROPDRYSUITHANGER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPDRYSUITHANGER.DESC"
+msgid ""
+"Holds one piece of <link=\"DRYSUIT\">Swimwear</link>.\n"
+"\n"
+"Ensures swimming comfort for one lucky Duplicant."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.PROPDRYSUITHANGER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.DUPLICANTS.MODIFIERS.CLOTHING.NAME"
+#| msgid "Clothing"
+msgctxt "STRINGS.BUILDINGS.PREFABS.PROPDRYSUITHANGER.NAME"
+msgid "Clothing Rack"
+msgstr "衣類"
 
 #. STRINGS.BUILDINGS.PREFABS.PROPELEVATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.PROPELEVATOR.DESC"
@@ -13375,9 +13832,15 @@ msgid "A groomed critter is a happy, healthy, productive critter."
 msgstr "手入れの行き届いた動物は、幸せで健康で生産的な動物です。"
 
 #. STRINGS.BUILDINGS.PREFABS.RANCHSTATION.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.RANCHSTATION.EFFECT"
+#| msgid ""
+#| "Allows the assigned <link=\"RANCHER\">Rancher</link> to care for <link=\"CREATURES\">Critters</link>.\n"
+#| "\n"
+#| "Assigned Duplicants must possess the <link=\"RANCHING1\">Critter Ranching</link> skill."
 msgctxt "STRINGS.BUILDINGS.PREFABS.RANCHSTATION.EFFECT"
 msgid ""
-"Allows the assigned <link=\"RANCHER\">Rancher</link> to care for <link=\"CREATURES\">Critters</link>.\n"
+"Allows the assigned <link=\"RANCHER\">Rancher</link> to care for and gradually tame <link=\"CREATURES\">Critters</link>.\n"
 "\n"
 "Assigned Duplicants must possess the <link=\"RANCHING1\">Critter Ranching</link> skill."
 msgstr ""
@@ -13410,6 +13873,27 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.RATIONBOX.NAME"
 msgid "<link=\"RATIONBOX\">Ration Box</link>"
 msgstr "<link=\"RATIONBOX\">食糧保管箱</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.REEFGENERATOR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.REEFGENERATOR.DESC"
+msgid "Enables a colony to run on clean energy."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.REEFGENERATOR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROGENGENERATOR.EFFECT"
+#| msgid "Converts <link=\"HYDROGEN\">Hydrogen Gas</link> into electrical <link=\"POWER\">Power</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.REEFGENERATOR.EFFECT"
+msgid "Converts the kinetic energy from a <link=\"SMALLREEFGEYSER\">Tidal Spring</link> below it into electrical <link=\"POWER\">Power</link>."
+msgstr "<link=\"HYDROGEN\">水素(気体)</link>を<link=\"POWER\">電力</link>に変換します。"
+
+#. STRINGS.BUILDINGS.PREFABS.REEFGENERATOR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.PEATGENERATOR.NAME"
+#| msgid "<link=\"PEATGENERATOR\">Peat Burner</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.REEFGENERATOR.NAME"
+msgid "<link=\"REEFGENERATOR\">Tidal Turbine</link>"
+msgstr "<link=\"PEATGENERATOR\">泥炭バーナー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.REFRIGERATOR.DESC"
@@ -13575,17 +14059,22 @@ msgstr "<link=\"RESEARCHCENTER\">研究端末</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.RESEARCHCLUSTERMODULE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCLUSTERMODULE.DESC"
-msgid "Unlocks the possibility of Gathering Databanks floating in space"
-msgstr "宇宙に浮かぶデータバンクを収集できるようになります"
+msgid "Increases the amount of research data obtained en route to a destination."
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.RESEARCHCLUSTERMODULE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCLUSTERMODULE.EFFECT"
-msgid "The Research module allows the rocket to gather Data banks that happen to be on the same hex cell than the rocket when it travels through the galaxy"
-msgstr "研究モジュールは、ロケットが銀河を航行中に同じタイルセルにあるデータバンクを収集できるようになります。"
+msgid ""
+"Collects free-floating <link=\"DATABANK\">Data Banks</link> found in its flight path.\n"
+"\n"
+msgstr ""
 
 #. STRINGS.BUILDINGS.PREFABS.RESEARCHCLUSTERMODULE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCLUSTERMODULE.NAME"
+#| msgid "<link=\"RESEARCHMODULE\">Research Module</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCLUSTERMODULE.NAME"
-msgid "<link=\"RESEARCHMODULE\">Research Module</link>"
+msgid "<link=\"RESEARCHCLUSTERMODULE\">Research Module</link>"
 msgstr "<link=\"RESEARCHMODULE\">研究モジュール</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.RESEARCHMODULE.DESC
@@ -14231,6 +14720,60 @@ msgstr "複製人間に新しい<link=\"JOBS\">スキル</link>を割り当て�
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROLESTATION.NAME"
 msgid "<link=\"ROLESTATION\">Skills Board</link>"
 msgstr "<link=\"ROLESTATION\">スキルボード</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.RUBBERMAKER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.RUBBERMAKER.DESC"
+msgid "Making rubber is the first step to crafting gaskets that keep liquids where they ought to be."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.RUBBERMAKER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.ICEMACHINE.EFFECT"
+#| msgid "Converts <link=\"WATER\">Water</link> into <link=\"ICE\">Ice</link> or <link=\"SNOW\">Snow</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.RUBBERMAKER.EFFECT"
+msgid ""
+"Converts <link=\"LATEX\">Latex</link> into <link=\"RUBBER\">Rubber</link>.\n"
+"\n"
+"Latex must be delivered via <link=\"LIQUIDPIPING\">Liquid Pipes</link>."
+msgstr "<link=\"WATER\">水</link>を<link=\"ICE\">氷</link>または<link=\"SNOW\">雪</link>に変換します。"
+
+#. STRINGS.BUILDINGS.PREFABS.RUBBERMAKER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.JUICER.NAME"
+#| msgid "<link=\"JUICER\">Juicer</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.RUBBERMAKER.NAME"
+msgid "<link=\"RUBBERMAKER\">Vulcanizer</link>"
+msgstr "<link=\"JUICER\">ジューサー</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.RUBBERTILE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.RUBBERTILE.DESC"
+msgid "Rubber tiles are designed to resist damage from liquid pressure."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.RUBBERTILE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SNOWTILE.EFFECT"
+#| msgid ""
+#| "Used to build the walls and floors of rooms.\n"
+#| "\n"
+#| "Insulates rooms to reduce <link=\"HEAT\">Heat</link> loss in cold climates."
+msgctxt "STRINGS.BUILDINGS.PREFABS.RUBBERTILE.EFFECT"
+msgid ""
+"Used to build the walls and floors of rooms.\n"
+"\n"
+"Provides an anti-slip work surface and effective <link=\"HEAT\">Insulation</link>."
+msgstr ""
+"部屋用の壁や床として使えるタイルです。\n"
+"\n"
+"部屋を断熱し、寒冷地での<link=\"HEAT\">熱</link>の損失を減らします。"
+
+#. STRINGS.BUILDINGS.PREFABS.RUBBERTILE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.BUNKERTILE.NAME"
+#| msgid "<link=\"BUNKERTILE\">Bunker Tile</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.RUBBERTILE.NAME"
+msgid "<link=\"RUBBERTILE\">Rubber Tile</link>"
+msgstr "<link=\"BUNKERTILE\">シェルター タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.RUSTDEOXIDIZER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.RUSTDEOXIDIZER.DESC"
@@ -15848,6 +16391,36 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SUPERMATERIALREFINERY.YELLOWCAKE_RECIPE_DESCR
 msgid "Yellowcake is a <link=\"ELEMENTSSOLID\">Solid Material</link> used in uranium enrichment."
 msgstr "イエローケーキはウラン濃縮に使われる<link=\"ELEMENTSSOLID\">固形素材</link>です。"
 
+#. STRINGS.BUILDINGS.PREFABS.SUSHIBAR.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SUSHIBAR.DESC"
+msgid "Expert chefs let the ingredients speak for themselves."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.SUSHIBAR.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GAMMARAYOVEN.EFFECT"
+#| msgid ""
+#| "Cooks a variety of <link=\"FOOD\">Foods</link>.\n"
+#| "\n"
+#| "Duplicants will not fabricate items unless recipes are queued."
+msgctxt "STRINGS.BUILDINGS.PREFABS.SUSHIBAR.EFFECT"
+msgid ""
+"Prepares a variety of <link=\"FOOD\">Uncooked Seafood</link>.\n"
+"\n"
+"Duplicants will not fabricate items unless recipes are queued."
+msgstr ""
+"様々な<link=\"FOOD\">食糧</link>を調理します。\n"
+"\n"
+"レシピがセットされていないと複製人間は製作作業をしません。"
+
+#. STRINGS.BUILDINGS.PREFABS.SUSHIBAR.NAME
+#, fuzzy
+#| msgctxt "STRINGS.ITEMS.FOOD.MUSHBAR.NAME"
+#| msgid "<link=\"MUSHBAR\">Mush Bar</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.SUSHIBAR.NAME"
+msgid "<link=\"SUSHIBAR\">Sushi Bar</link>"
+msgstr "<link=\"MUSHBAR\">マッシュバー</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SWEEPBOTSTATION.DESC"
 msgid "The cute little face comes pre-installed."
@@ -16241,20 +16814,194 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.UNCONSTRUCTEDROCKETMODULE.NAME"
 msgid "Empty Rocket Module"
 msgstr "空のロケットモジュールです"
 
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERBREATHINGSTATION.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERBREATHINGSTATION.DESC"
+msgid "Duplicants catch their breath faster by using a breathing station than by surfacing for air."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERBREATHINGSTATION.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.GASFILTER.EFFECT"
+#| msgid "Sieves one <link=\"ELEMENTSGAS\">Gas</link> from the air, sending it into a dedicated <link=\"GASPIPING\">Pipe</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERBREATHINGSTATION.EFFECT"
+msgid "Provides breathable <link=\"OXYGEN\">Oxygen</link> to submerged Duplicants via a connected <link=\"GASPIPING\">Gas Pipe</link> input."
+msgstr ""
+"混合気体から指定した<link=\"ELEMENTSGAS\">気体</link>を分別し、専用の<style=\"KKeyword\">気体出口</style>から<link=\"GASPIPING\">気体パイプ</link>へ流します。\n"
+"\n"
+"分別できる気体は一度に一種類だけです。"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERBREATHINGSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.NAME"
+#| msgid "<link=\"SHEARINGSTATION\">Shearing Station</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERBREATHINGSTATION.NAME"
+msgid "<link=\"UNDERWATERBREATHINGSTATION\">Breathing Station</link>"
+msgstr "<link=\"SHEARINGSTATION\">毛刈り端末</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.UNDERWATERCRITTERCONDO.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERCRITTERCONDO.DESC"
 msgid "Even wild critters are happier after they've had a little R&R."
 msgstr "野生動物も休養を取れば幸せになります。"
 
 #. STRINGS.BUILDINGS.PREFABS.UNDERWATERCRITTERCONDO.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERCRITTERCONDO.EFFECT"
+#| msgid "A fancy respite area for adult <link=\"CRABSPECIES\">Pokeshells</link> and <link=\"PACUSPECIES\">Pacu</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERCRITTERCONDO.EFFECT"
-msgid "A fancy respite area for adult <link=\"CRABSPECIES\">Pokeshells</link> and <link=\"PACUSPECIES\">Pacu</link>."
+msgid "A fancy respite area for adult <link=\"CREATURES\">Critters</link> who live in <link=\"ELEMENTSLIQUID\">Liquid</link> pools."
 msgstr "成体<link=\"CRABSPECIES\">ポークシェル</link>や<link=\"PACUSPECIES\">パクー</link>のためのおしゃれな休息エリアです。"
 
 #. STRINGS.BUILDINGS.PREFABS.UNDERWATERCRITTERCONDO.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERCRITTERCONDO.NAME"
+#| msgid "<link=\"UNDERWATERCRITTERCONDO\">Water Fort</link>"
 msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERCRITTERCONDO.NAME"
-msgid "<link=\"UNDERWATERCRITTERCONDO\">Water Fort</link>"
+msgid "<link=\"UNDERWATERCRITTERCONDO\">Aquatic Critter Condo</link>"
 msgstr "<link=\"UNDERWATERCRITTERCONDO\">水中基地</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKFEEDER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKFEEDER.DESC"
+msgid "A soothing sip of brackene helps critters put up with crowded quarters."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKFEEDER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFEEDER.EFFECT"
+#| msgid ""
+#| "Dispenses <link=\"MILK\">Brackene</link> to a wide variety of <link=\"CREATURES\">Critters</link>.\n"
+#| "\n"
+#| "Accessing the fountain significantly improves <link=\"CREATURES\">Critters</link>' moods."
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKFEEDER.EFFECT"
+msgid ""
+"Dispenses <link=\"MILK\">Brackene</link> to aquatic <link=\"CREATURES\">Critters</link>.\n"
+"\n"
+"Accessing the fountain significantly improves <link=\"CREATURES\">Critters</link>' moods."
+msgstr ""
+"さまざまな種類の<link=\"CREATURES\">動物</link>に<link=\"MILK\">モー乳</link>を提供します。\n"
+"\n"
+"噴水を利用することで、<link=\"CREATURES\">動物</link>の気分は大幅に改善します。"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKFEEDER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFEEDER.NAME"
+#| msgid "<link=\"MILKFEEDER\">Critter Fountain</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKFEEDER.NAME"
+msgid "<link=\"UNDERWATERMILKFEEDER\">Aquatic Critter Fountain</link>"
+msgstr "<link=\"MILKFEEDER\">動物用噴水</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKINGSTATION.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKINGSTATION.DESC"
+msgid "Collecting a critter's unfertilized eggs may slow down their reproduction."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKINGSTATION.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.RANCHSTATION.EFFECT"
+#| msgid ""
+#| "Allows the assigned <link=\"RANCHER\">Rancher</link> to care for <link=\"CREATURES\">Critters</link>.\n"
+#| "\n"
+#| "Assigned Duplicants must possess the <link=\"RANCHING1\">Critter Ranching</link> skill."
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKINGSTATION.EFFECT"
+msgid ""
+"Extracts <link=\"FISHMILK\">Ovolene</link> or <link=\"INK\">Squid Ink</link> from eligible aquatic <link=\"CREATURES\">Critters</link>.\n"
+"\n"
+"Assigned Duplicants must possess both the <link=\"RANCHING2\">Critter Ranching II</link> and <link=\"SWIMMING\">Basic Swimming</link> skills."
+msgstr ""
+"<link=\"RANCHER\">飼育員</link>が<link=\"CREATURES\">動物</link>の世話をできるようにします。\n"
+"\n"
+"<link=\"RANCHING1\">畜産 I</link>スキルを習得した複製人間を作業に従事させる必要があります。"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKINGSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.MILKINGSTATION.NAME"
+#| msgid "<link=\"MILKINGSTATION\">Milking Station</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKINGSTATION.NAME"
+msgid "<link=\"UNDERWATERMILKINGSTATION\">Aquatic Milking Station</link>"
+msgstr "<link=\"MILKINGSTATION\">搾乳端末</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERRANCHSTATION.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.RANCHSTATION.DESC"
+#| msgid "A groomed critter is a happy, healthy, productive critter."
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERRANCHSTATION.DESC"
+msgid "A groomed critter is a happy, healthy, productive critter."
+msgstr "手入れの行き届いた動物は、幸せで健康で生産的な動物です。"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERRANCHSTATION.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.RANCHSTATION.EFFECT"
+#| msgid ""
+#| "Allows the assigned <link=\"RANCHER\">Rancher</link> to care for <link=\"CREATURES\">Critters</link>.\n"
+#| "\n"
+#| "Assigned Duplicants must possess the <link=\"RANCHING1\">Critter Ranching</link> skill."
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERRANCHSTATION.EFFECT"
+msgid ""
+"Allows the assigned <link=\"RANCHER\">Rancher</link> to care for and gradually tame <link=\"CREATURES\">Critters</link>.\n"
+"\n"
+"Assigned Duplicants must possess both the <link=\"RANCHING1\">Critter Ranching</link> and <link=\"SWIMMING\">Basic Swimming</link> skills."
+msgstr ""
+"<link=\"RANCHER\">飼育員</link>が<link=\"CREATURES\">動物</link>の世話をできるようにします。\n"
+"\n"
+"<link=\"RANCHING1\">畜産 I</link>スキルを習得した複製人間を作業に従事させる必要があります。"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERRANCHSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BLUEPRINTS.PERMIT_RANCHERSTATION_COTTAGE.NAME"
+#| msgid "<link=\"RANCHSTATION\">Rustic Grooming Station</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERRANCHSTATION.NAME"
+msgid "<link=\"UNDERWATERRANCHSTATION\">Aquatic Grooming Station</link>"
+msgstr "<link=\"RANCHSTATION\">素朴な毛づくろい端末</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERSHEARINGSTATION.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERSHEARINGSTATION.DESC"
+msgid "Visiting this building restores critters' physical and emotional well-being."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERSHEARINGSTATION.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.EGGINCUBATOR.EFFECT"
+#| msgid ""
+#| "Incubates <link=\"CREATURES\">Critter</link> eggs until ready to hatch.\n"
+#| "\n"
+#| "Assigned Duplicants must possess the <link=\"RANCHING1\">Critter Ranching</link> skill."
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERSHEARINGSTATION.EFFECT"
+msgid ""
+"Allows eligible aquatic <link=\"CREATURES\">Critters</link> to be safely sheared for useful raw materials.\n"
+"\n"
+"Assigned Duplicants must possess both the <link=\"RANCHING1\">Critter Ranching</link> and <link=\"SWIMMING\">Basic Swimming</link> skills."
+msgstr ""
+"<link=\"CREATURES\">動物</link>の卵を孵化させます。\n"
+"\n"
+"<link=\"RANCHING1\">畜産 I</link>スキルを習得した複製人間を作業に従事させる必要があります。"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERSHEARINGSTATION.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.SHEARINGSTATION.NAME"
+#| msgid "<link=\"SHEARINGSTATION\">Shearing Station</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERSHEARINGSTATION.NAME"
+msgid "<link=\"UNDERWATERSHEARINGSTATION\">Aquatic Shearing Station</link>"
+msgstr "<link=\"SHEARINGSTATION\">毛刈り端末</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERVENTDRILL.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERVENTDRILL.DESC"
+msgid "Once it's all set up, blockages take care of themselves."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERVENTDRILL.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERVENTDRILL.EFFECT"
+msgid ""
+"Removes mineral build-up from underwater vents to restore the flow of <link=\"ELEMENTSGAS\">Gases</link>.\n"
+"\n"
+"Must be built on top of a vent or fissure."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERVENTDRILL.NAME
+#, fuzzy
+#| msgctxt "STRINGS.MISC.TAGS.UNREFINEDOIL"
+#| msgid "<link=\"UNREFINEDOIL\">Unrefined Oil</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERVENTDRILL.NAME"
+msgid "<link=\"UNDERWATERVENTDRILL\">Marine Drill</link>"
+msgstr "<link=\"UNREFINEDOIL\">未精製油</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.URANIUMCENTRIFUGE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.URANIUMCENTRIFUGE.DESC"
@@ -16534,11 +17281,17 @@ msgid "Chatting with friends improves Duplicants' moods and reduces their stress
 msgstr "友人との雑談は複製人間の気分を改善し、ストレスを軽減します。"
 
 #. STRINGS.BUILDINGS.PREFABS.WATERCOOLER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WATERCOOLER.EFFECT"
+#| msgid ""
+#| "Provides a gathering place for Duplicants during Downtime.\n"
+#| "\n"
+#| "Improves Duplicant <link=\"MORALE\">Morale</link>."
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERCOOLER.EFFECT"
 msgid ""
 "Provides a gathering place for Duplicants during Downtime.\n"
 "\n"
-"Improves Duplicant <link=\"MORALE\">Morale</link>."
+"Improves Duplicant <link=\"MORALE\">Morale</link> and relieves <link=\"IDFOODEFFECTS\">Thirst</link>."
 msgstr ""
 "休憩中に複製人間の集まる場所を提供します。\n"
 "\n"
@@ -16629,6 +17382,16 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.WATERCOOLER.NAME"
 msgid "<link=\"WATERCOOLER\">Water Cooler</link>"
 msgstr "<link=\"WATERCOOLER\">ウォータークーラー</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.WATERCOOLER.OPTION_TOOLTIPS.INK
+#, fuzzy
+#| msgctxt "STRINGS.ELEMENTS.GUNK.NAME"
+#| msgid "<link=\"GUNK\">Solid Gunk</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.WATERCOOLER.OPTION_TOOLTIPS.INK"
+msgid ""
+"<link=\"INK\">Squid Ink</link>\n"
+"A thick, dark elixir"
+msgstr "<link=\"GUNK\">固体残滓</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.WATERCOOLER.OPTION_TOOLTIPS.MILK
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERCOOLER.OPTION_TOOLTIPS.MILK"
 msgid ""
@@ -16674,13 +17437,19 @@ msgid "Trapped fish will automatically be bagged for transport."
 msgstr "捕獲した魚は持ち運びのため自動的に袋詰めされます。"
 
 #. STRINGS.BUILDINGS.PREFABS.WATERTRAP.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREAIRTRAP.EFFECT"
+#| msgid ""
+#| "Attracts and captures airborne <link=\"CREATURES\">Critters</link>.\n"
+#| "\n"
+#| "Only Duplicants with the <link=\"RANCHING1\">Critter Ranching I</link> skill can arm this trap. It's reusable!"
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERTRAP.EFFECT"
 msgid ""
-"Attracts and traps swimming <link=\"PACU\">Pacu</link>.\n"
+"Attracts and traps aquatic <link=\"CREATURES\">Critters</link>.\n"
 "\n"
 "Only Duplicants with the <link=\"RANCHING1\">Critter Ranching I</link> skill can arm this trap. It's reusable!"
 msgstr ""
-"<link=\"PACU\">パクー</link>をおびき寄せ、捕獲します。\n"
+"浮遊<link=\"CREATURES\">動物</link>をおびき寄せ、捕獲します。\n"
 "\n"
 "この罠を準備できるのは、<link=\"RANCHING1\">畜産 I</link>スキルを習得済みの複製人間だけです。再利用可能！"
 
@@ -16688,6 +17457,43 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERTRAP.NAME"
 msgid "<link=\"WATERTRAP\">Fish Trap</link>"
 msgstr "<link=\"WATERTRAP\">魚捕獲罠</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.WIDEFARMTILE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.WIDEFARMTILE.DESC"
+msgid "Enables Duplicants to accelerate growth rates for oversized plants too."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.WIDEFARMTILE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.EFFECT"
+#| msgid ""
+#| "Grows one <link=\"PLANTS\">Plant</link> from a <link=\"PLANTS\">Seed</link>.\n"
+#| "\n"
+#| "Can be used as floor tile and rotated before construction.\n"
+#| "\n"
+#| "Must be irrigated through <link=\"LIQUIDPIPING\">Liquid Piping</link>."
+msgctxt "STRINGS.BUILDINGS.PREFABS.WIDEFARMTILE.EFFECT"
+msgid ""
+"Grows one extra-large <link=\"PLANTS\">Plant</link> from a <link=\"PLANTS\">Seed</link>.\n"
+"\n"
+"Can be used as floor tile.\n"
+"\n"
+"Must be irrigated through <link=\"LIQUIDPIPING\">Liquid Piping</link>"
+msgstr ""
+"<link=\"PLANTS\">種子</link>をまくと１つの<link=\"PLANTS\">植物</link>を育てることができます。\n"
+"\n"
+"床材としても使用でき、建築する前に向きを変えることができます。\n"
+"\n"
+"<link=\"LIQUIDCONDUIT\">液体パイプ</link>による灌漑が必要です。"
+
+# 農耕タイルの対になるように訳語を変更
+#. STRINGS.BUILDINGS.PREFABS.WIDEFARMTILE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.HYDROPONICFARM.NAME"
+#| msgid "<link=\"HYDROPONICFARM\">Hydroponic Farm</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.WIDEFARMTILE.NAME"
+msgid "<link=\"WIDEFARMTILE\">Wide Hydroponic Farm</link>"
+msgstr "<link=\"HYDROPONICFARM\">水耕タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.WIRE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.WIRE.DESC"
@@ -16840,6 +17646,75 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDHIGHWATTAGE.NAME"
 msgid "<link=\"WIREREFINEDHIGHWATTAGE\">Heavi-Watt Conductive Wire</link>"
 msgstr "<link=\"WIREREFINEDHIGHWATTAGE\">大容量導電線</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.WIRERUBBER.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.WIRERUBBER.DESC"
+msgid "It's quite unobtrusive, as far as wiring goes."
+msgstr ""
+
+#. STRINGS.BUILDINGS.PREFABS.WIRERUBBER.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHWATTAGEWIRE.EFFECT"
+#| msgid ""
+#| "Carries more <link=\"POWER\">Wattage</link> than regular <link=\"WIRE\">Wire</link> without overloading.\n"
+#| "\n"
+#| "Cannot be run through wall and floor tile."
+msgctxt "STRINGS.BUILDINGS.PREFABS.WIRERUBBER.EFFECT"
+msgid ""
+"Carries more <link=\"POWER\">Wattage</link> than a regular <link=\"WIREREFINED\">Conductive Wire</link> without overloading.\n"
+"\n"
+"Can be run through wall and floor tile."
+msgstr ""
+"通常の<link=\"WIRE\">電線</link>より大きな<link=\"POWER\">ワット数</link>を、過負荷を起こさずに扱えます。\n"
+"\n"
+"壁や床のタイル中に敷設することができません。"
+
+#. STRINGS.BUILDINGS.PREFABS.WIRERUBBER.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINED.NAME"
+#| msgid "<link=\"WIREREFINED\">Conductive Wire</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.WIRERUBBER.NAME"
+msgid "<link=\"WIRERUBBER\">Insulated Conductive Wire</link>"
+msgstr "<link=\"WIREREFINED\">導電線</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.WIRERUBBERBRIDGE.DESC
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGE.DESC"
+#| msgid "Splitting generators onto separate systems can prevent overloads and wasted electricity."
+msgctxt "STRINGS.BUILDINGS.PREFABS.WIRERUBBERBRIDGE.DESC"
+msgid "Splitting generators onto separate systems can prevent overloads and wasted electricity."
+msgstr "発電機の出力を複数の回路に分散させることで、過負荷や無駄な電力を防止できます。"
+
+#. STRINGS.BUILDINGS.PREFABS.WIRERUBBERBRIDGE.EFFECT
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGE.EFFECT"
+#| msgid ""
+#| "Carries more <link=\"POWER\">Wattage</link> than a regular <link=\"WIREBRIDGE\">Wire Bridge</link> without overloading.\n"
+#| "\n"
+#| "Runs one wire section over another without joining them.\n"
+#| "\n"
+#| "Can be run through wall and floor tile."
+msgctxt "STRINGS.BUILDINGS.PREFABS.WIRERUBBERBRIDGE.EFFECT"
+msgid ""
+"Carries more <link=\"POWER\">Wattage</link> than a regular <link=\"WIREREFINEDBRIDGE\">Conductive Wire Bridge</link> without overloading.\n"
+"\n"
+"Runs one wire section over another without joining them.\n"
+"\n"
+"Can be run through wall and floor tile."
+msgstr ""
+"通常の<link=\"WIREBRIDGE\">電線ブリッジ</link>より大きな<link=\"POWER\">ワット数</link>を過負荷を起こさずに扱えます。\n"
+"\n"
+"回路を他と合流させずに、電線をまたいで回路を構成します。\n"
+"\n"
+"壁タイルや床タイルの中を通すことができます。"
+
+#. STRINGS.BUILDINGS.PREFABS.WIRERUBBERBRIDGE.NAME
+#, fuzzy
+#| msgctxt "STRINGS.BUILDINGS.PREFABS.WIREREFINEDBRIDGE.NAME"
+#| msgid "<link=\"WIREREFINEDBRIDGE\">Conductive Wire Bridge</link>"
+msgctxt "STRINGS.BUILDINGS.PREFABS.WIRERUBBERBRIDGE.NAME"
+msgid "<link=\"WIRERUBBERBRIDGE\">Insulated Conductive Wire Bridge</link>"
+msgstr "<link=\"WIREREFINEDBRIDGE\">導電線ブリッジ</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.WOODENDOOR.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.WOODENDOOR.DESC"
 msgid "A breezy wooden door combines style and function."
@@ -16980,3 +17855,39 @@ msgstr ""
 "この設備が損傷したとき、複製人間が自発的に修理することを許します\n"
 "\n"
 "現在の設定: <b><style=\"logic_off\">修理しない</style></b>"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.CREATUREFEEDER.DESC"
+#~ msgid "Critters tend to stay close to their food source and wander less when given a feeder."
+#~ msgstr "動物は給餌機のそばに留まるようになり、遠くまでさ迷う頻度が減ります。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.FISHDELIVERYPOINT.EFFECT"
+#~ msgid ""
+#~ "Releases trapped <link=\"PACU\">Pacu</link> back into the world.\n"
+#~ "\n"
+#~ "Can be used multiple times."
+#~ msgstr ""
+#~ "捕獲した<link=\"PACU\">パクー</link>を自然へ帰します。\n"
+#~ "\n"
+#~ "何度でも使うことができます。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.MILKFEEDER.DESC"
+#~ msgid "It's easier to tolerate overcrowding when you're all hopped up on brackene."
+#~ msgstr "モー乳に夢中になっているなら、混雑を許容するほうが簡単です。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCLUSTERMODULE.DESC"
+#~ msgid "Unlocks the possibility of Gathering Databanks floating in space"
+#~ msgstr "宇宙に浮かぶデータバンクを収集できるようになります"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCLUSTERMODULE.EFFECT"
+#~ msgid "The Research module allows the rocket to gather Data banks that happen to be on the same hex cell than the rocket when it travels through the galaxy"
+#~ msgstr "研究モジュールは、ロケットが銀河を航行中に同じタイルセルにあるデータバンクを収集できるようになります。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.WATERTRAP.EFFECT"
+#~ msgid ""
+#~ "Attracts and traps swimming <link=\"PACU\">Pacu</link>.\n"
+#~ "\n"
+#~ "Only Duplicants with the <link=\"RANCHING1\">Critter Ranching I</link> skill can arm this trap. It's reusable!"
+#~ msgstr ""
+#~ "<link=\"PACU\">パクー</link>をおびき寄せ、捕獲します。\n"
+#~ "\n"
+#~ "この罠を準備できるのは、<link=\"RANCHING1\">畜産 I</link>スキルを習得済みの複製人間だけです。再利用可能！"
