@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.CODEX.A0_PRELIMINARYCALCULATIONS.BODY.CONTAINER2
@@ -2224,7 +2224,7 @@ msgid ""
 "\n"
 "[REDACTED]\n"
 "<size=11>Personnel Coordinator\n"
-"The Gravitas Facility</indent>\n"
+"The Gravitas Facility</size>\n"
 "------------------\n"
 msgstr ""
 "\n"
@@ -4977,6 +4977,233 @@ msgctxt "STRINGS.CODEX.CREATURE_DESCRIPTORS.TEMPERATURE.NON_LETHAL_RANGE"
 msgid "Livable range: <b>{0}</b> to <b>{1}</b>"
 msgstr "生存可能な温度域: <b>{0}</b> ～ <b>{1}</b>"
 
+#. STRINGS.CODEX.CRITTER_TYPES.AIRBORNE.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.AIRBORNE.DESCRIPTION"
+msgid ""
+"Critters who float or fly through the world. While most are docile, some species are <link=\"CRITTERCATEGORYHOSTILE\">Hostile</link> and should be treated with extreme caution.\n"
+"\n"
+"When calculating how <link=\"CREATURES::GUIDE::MOOD\">Crowded</link> their environment is, they will consider both <link=\"CRITTERCATEGORYAIRBORNE\">Airborne</link> and <link=\"CRITTERCATEGORYLAND\">Land</link>-based critters"
+msgstr ""
+"宇宙を浮遊したり、飛び回ったりする動物達です。その多くはおとなしいですが、中には<link=\"CRITTERCATEGORYHOSTILE\">敵対的</link>な種も存在するため、接する際には細心の注意が必要です。\n"
+"\n"
+"生息環境の「過密度」を判断する際、彼らは<link=\"CRITTERCATEGORYAIRBORNE\">空中</link>にいる生き物と<link=\"CRITTERCATEGORYLAND\">地上</link>にいる生き物の両方を考慮に入れます。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.AIRBORNE.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.AIRBORNE.TITLE"
+msgid "<link=\"CRITTERCATEGORYAIRBORNE\">Airborne</link>"
+msgstr "<link=\"CRITTERCATEGORYAIRBORNE\">浮遊動物</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.AMPHIBIOUS.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.AMPHIBIOUS.DESCRIPTION"
+msgid ""
+"A versatile subset of critters who can comfortably inhabit both land and <link=\"ELEMENTSLIQUID\">aquatic</link> environments.\n"
+"\n"
+"When calculating how <link=\"CREATURES::GUIDE::MOOD\">Crowded</link> their environment is, they will consider <link=\"CRITTERCATEGORYAIRBORNE\">Airborne</link> and <link=\"CRITTERCATEGORYLAND\">Land</link>-based critters, and ignore <link=\"CRITTERCATEGORYAQUATIC\">Aquatic</link> species."
+msgstr ""
+"陸上と<link=\"ELEMENTSLIQUID\">水域</link>の両方の環境で快適に過ごせる、適応力の高い動物達です。\n"
+"\n"
+"環境の「<link=\"CREATURES::GUIDE::MOOD\">過密</link>」度を計算する際、彼らは<link=\"CRITTERCATEGORYAIRBORNE\">空中</link>および<link=\"CRITTERCATEGORYLAND\">陸上</link>の生き物を考慮に入れますが、<link=\"CRITTERCATEGORYAQUATIC\">水棲</link>の生き物は無視します。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.AMPHIBIOUS.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.AMPHIBIOUS.TITLE"
+msgid "<link=\"CRITTERCATEGORYAMPHIBIOUS\">Amphibious</link>"
+msgstr "<link=\"CRITTERCATEGORYAMPHIBIOUS\">水陸両用</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.AQUATIC.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.AQUATIC.DESCRIPTION"
+msgid ""
+"Critters that have evolved to thrive in <link=\"ELEMENTSLIQUID\">Liquid</link> environments. If they find themselves on dry land, they will flop until they find their way back into a pool.\n"
+"\n"
+"When calculating how <link=\"CREATURES::GUIDE::MOOD\">Crowded</link> their environment is, aquatic critters will consider only their fellow pool inhabitants."
+msgstr ""
+"<link=\"ELEMENTSLIQUID\">液体</link>環境で繁栄するように進化した動物達です。陸に上がってしまうと、水場に戻れるようになるまで、バタバタと跳ね回ります。\n"
+"\n"
+"水棲生物は、自身の周囲がどれほど<link=\"CREATURES::GUIDE::MOOD\">混雑</link>しているかを判断する際、同じ水場にいる他の生物のみを考慮に入れます。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.AQUATIC.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.AQUATIC.TITLE"
+msgid "<link=\"CRITTERCATEGORYAQUATIC\">Aquatic</link>"
+msgstr "<link=\"CRITTERCATEGORYAQUATIC\">水棲動物</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.CARNIVORE.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.CARNIVORE.DESCRIPTION"
+msgid ""
+"Critters who consume smaller critters in their environment.\n"
+"\n"
+"If carnivores feel that their habitat is too <link=\"CREATURES::GUIDE::MOOD\">Crowded</link>, they will cull excess prey critters until the population becomes tolerable once more."
+msgstr ""
+"環境内のより小さな動物を食べる捕食者達です。\n"
+"\n"
+"肉食動物は、自身の生息地が「過密」だと感じると、獲物となる生き物の数が許容範囲内に戻るまで、それらを間引いて数を減らします。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.CARNIVORE.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.CARNIVORE.TITLE"
+msgid "<link=\"CRITTERCATEGORYCARNIVORE\">Carnivores</link>"
+msgstr "<link=\"CRITTERCATEGORYCARNIVORE\">肉食動物</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.CLEANSING.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.CLEANSING.DESCRIPTION"
+msgid "Critters who eliminate or reduce <link=\"DISEASE\">Germs</link> from certain elements of their environments."
+msgstr "環境内の特定の要素から<link=\"DISEASE\">病原菌</link>を除去、あるいは減少させる動物達です。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.CLEANSING.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.CLEANSING.TITLE"
+msgid "<link=\"CRITTERCATEGORYCLEANSING\">Purifying</link>"
+msgstr "<link=\"CRITTERCATEGORYCLEANSING\">浄化</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.FARM_FRIENDLY.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.FARM_FRIENDLY.DESCRIPTION"
+msgid ""
+"Critters whose natural behaviors are conducive to farming and ranching, when appropriately directed. Some help incubate eggs, while others plant <link=\"PLANTS\">Seeds</link> or harvest <link=\"PLANTCATEGORYMAKESORISFOOD\">Crops</link>.\n"
+"\n"
+"Maintaining populations of these critters in the right areas can reduce the burden of farming or ranching work borne by my Duplicants."
+msgstr ""
+"適切な形で誘導すれば、農業や牧畜に役立つ自然な習性を持つ動物です。卵を孵化させる手助けをしてくれるものもいれば、<link=\"PLANTS\">種</link>を植えたり、<link=\"PLANTCATEGORYMAKESORISFOOD\">作物</link>を収穫したりしてくれるものもいます。\n"
+"\n"
+"こうした動物達を適切な場所に定着させておけば、複製人間たちが担う農業や牧畜の作業負担を軽減できるでしょう。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.FARM_FRIENDLY.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.FARM_FRIENDLY.TITLE"
+msgid "<link=\"CRITTERCATEGORYFARMFRIENDLY\">Farm-Friendly</link>"
+msgstr "<link=\"CRITTERCATEGORYFARMFRIENDLY\">農耕補助</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.HOSTILE.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.HOSTILE.DESCRIPTION"
+msgid ""
+"Some species are naturally aggressive toward Duplicants and other living organisms, and must always be approached with caution.\n"
+"\n"
+"Other critters become dangerous only when their eggs are nearby, triggering their protective instincts."
+msgstr ""
+"一部の動物種は、複製人間や他の動物に対して本来的に攻撃的であり、常に慎重に接する必要があります。\n"
+"\n"
+"また、卵が近くにあると防衛本能が刺激され、危険な状態になる動物もいます。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.HOSTILE.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.HOSTILE.TITLE"
+msgid "<link=\"CRITTERCATEGORYHOSTILE\">Hostile</link>"
+msgstr "<link=\"CRITTERCATEGORYHOSTILE\">敵対的</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.LAND.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.LAND.DESCRIPTION"
+msgid ""
+"Critters who live on dry land can survive short periods in <link=\"ELEMENTSLIQUID\">Liquid</link> pools, giving attentive <link=\"RANCHING1\">ranchers</link> an opportunity to rescue them before they drown.\n"
+"\n"
+"When calculating how <link=\"CREATURES::GUIDE::MOOD\">Crowded</link> their environment is, they will consider both <link=\"CRITTERCATEGORYLAND\">Land</link>-based and <link=\"CRITTERCATEGORYAIRBORNE\">Airborne</link> critters."
+msgstr ""
+"陸上動物は<link=\"ELEMENTSLIQUID\">液体</link>の中に落ちても短時間であれば生き延びることができます。そのため、注意深く観察している<link=\"RANCHING1\">飼育員</link>であれば、溺れてしまう前に救助することが可能です。\n"
+"\n"
+"環境がどれほど<link=\"CREATURES::GUIDE::MOOD\">過密</link>であるかを判断する際、彼らは<link=\"CRITTERCATEGORYLAND\">陸上</link>動物と<link=\"CRITTERCATEGORYAIRBORNE\">浮遊</link>動物の両方を考慮に入れます。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.LAND.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.LAND.TITLE"
+msgid "<link=\"CRITTERCATEGORYLAND\">Land</link>"
+msgstr "<link=\"CRITTERCATEGORYLAND\">陸上</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.MILKABLE.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.MILKABLE.DESCRIPTION"
+msgid ""
+"Critters who produce <link=\"ELEMENTSLIQUID\">Liquid</link> resources which can be harvested at a <link=\"MILKINGSTATION\">Milking Station</link>.\n"
+"\n"
+"Particular foods or environments may be required in order to encourage replenishment of the critter's resources."
+msgstr ""
+"<link=\"MILKINGSTATION\">搾乳端末</link>で採取可能な<link=\"ELEMENTSLIQUID\">液体</link>資源を生成する動物です。\n"
+"\n"
+"こうした動物のリソースが補充されるようにするには、特定の食べ物や環境が必要となる場合があります。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.MILKABLE.DESCRIPTION_DLC5
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.MILKABLE.DESCRIPTION_DLC5"
+msgid ""
+"Critters who produce <link=\"ELEMENTSLIQUID\">Liquid</link> resources which can be harvested at a <link=\"MILKINGSTATION\">Milking Station</link> or <link=\"UNDERWATERMILKINGSTATION\">Aquatic Milking Station</link>.\n"
+"\n"
+"Particular foods or environments may be required in order to encourage replenishment of the critter's resources."
+msgstr ""
+"<link=\"MILKINGSTATION\">搾乳端末</link>または<link=\"UNDERWATERMILKINGSTATION\">水中搾乳端末</link>で採取可能な<link=\"ELEMENTSLIQUID\">液体</link>資源を生成する動物です。\n"
+"\n"
+"こうした動物のリソースが補充されるようにするには、特定の食べ物や環境が必要となる場合があります。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.MILKABLE.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.MILKABLE.TITLE"
+msgid "<link=\"CRITTERCATEGORYMILKABLE\">Milkable</link>"
+msgstr "<link=\"CRITTERCATEGORYMILKABLE\">搾乳可能</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.MOLTING.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.MOLTING.DESCRIPTION"
+msgid "Critters who regularly shed their exoskeletons. These molted objects can be retrieved by my Duplicants and processed into useful <link=\"ELEMENTSSOLID\">Solid</link> materials."
+msgstr "定期的に外骨格を脱ぎ捨てる動物です。脱ぎ捨てられた殻は複製人間達が回収し有用な<link=\"ELEMENTSSOLID\">固体</link>素材へと加工することができます。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.MOLTING.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.MOLTING.TITLE"
+msgid "<link=\"CRITTERCATEGORYMOLTING\">Molting</link>"
+msgstr "<link=\"CRITTERCATEGORYMOLTING\">脱皮</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.POLLINATOR.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.POLLINATOR.DESCRIPTION"
+msgid "Critters who instinctively tend to <link=\"PLANTS\">Plants</link> and help them grow faster. Some pollinators have strong bonds with specific types of plants, while others have a broader interest."
+msgstr "本能的に<link=\"PLANTS\">植物</link>に寄り添い、その成長を早める手助けをする動物です。特定の植物と強い結びつきを持つものもいれば、より幅広い植物に関心を向けるものもいます。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.POLLINATOR.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.POLLINATOR.TITLE"
+msgid "<link=\"CRITTERCATEGORYPOLLINATOR\">Pollinators</link>"
+msgstr "<link=\"CRITTERCATEGORYPOLLINATOR\">花粉媒介者</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.PRODUCES_LIGHT.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.PRODUCES_LIGHT.DESCRIPTION"
+msgid ""
+"Critters who produce <link=\"LIGHT\">Light</link> that improves my Duplicants' <link=\"MORALE\">Morale</link> and helps them work faster.\n"
+"\n"
+"These bright critters may also fulfil some <link=\"PLANTS\">Plants'</link> light requirements for growth."
+msgstr ""
+"<link=\"LIGHT\">光</link>を放ち、複製人間の<link=\"MORALE\">士気</link>を高め、作業効率を上昇させてくれる動物です。\n"
+"\n"
+"これらの動物が放つ光は一部の<link=\"PLANTS\">植物</link>が成長するために必要な光量を満たすこともあります。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.PRODUCES_LIGHT.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.PRODUCES_LIGHT.TITLE"
+msgid "<link=\"CRITTERCATEGORYLIGHTPRODUCING\">Light-Producing</link>"
+msgstr "<link=\"CRITTERCATEGORYLIGHTPRODUCING\">光生産</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.PRODUCES_OXYGEN.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.PRODUCES_OXYGEN.DESCRIPTION"
+msgid "Critters who release <link=\"OXYGEN\">Oxygen</link> into their environments, creating pockets of breathable air for my Duplicants."
+msgstr "周囲の環境に<link=\"OXYGEN\">酸素</link>を放出し、複製人間たちが呼吸できる空気の空間を作り出す動物です。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.PRODUCES_OXYGEN.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.PRODUCES_OXYGEN.TITLE"
+msgid "<link=\"CRITTERCATEGORYOXYGENPRODUCING\">Oxygen-Producing</link>"
+msgstr "<link=\"CRITTERCATEGORYOXYGENPRODUCING\">酸素生産</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.SHEARABLE.DESCRIPTION
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.SHEARABLE.DESCRIPTION"
+msgid ""
+"Critters who produce <link=\"ELEMENTSSOLID\">Solid</link> materials that can be regularly harvested at a <link=\"SHEARINGSTATION\">Shearing Station</link>.\n"
+"\n"
+"Particular <link=\"FOOD\">Foods</link> or environments may be required in order to encourage regrowth."
+msgstr ""
+"<link=\"SHEARINGSTATION\">毛刈り端末</link>で定期的に採取可能な<link=\"ELEMENTSSOLID\">固体</link>素材を生産する動物です。\n"
+"\n"
+"素材の再生を促すには特定の<link=\"FOOD\">食糧</link>や環境が必要となる場合があります。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.SHEARABLE.DESCRIPTION_DLC5
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.SHEARABLE.DESCRIPTION_DLC5"
+msgid ""
+"Critters who produce <link=\"ELEMENTSSOLID\">Solid</link> materials that can be regularly harvested at a <link=\"SHEARINGSTATION\">Shearing Station</link> or <link=\"UNDERWATERSHEARINGSTATION\">Aquatic Shearing Station</link>.\n"
+"\n"
+"Particular <link=\"FOOD\">Foods</link> or environments may be required in order to encourage regrowth. "
+msgstr ""
+"<link=\"SHEARINGSTATION\">毛刈り端末</link>や<link=\"UNDERWATERSHEARINGSTATION\">水中毛刈り端末</link>で定期的に採取可能な<link=\"ELEMENTSSOLID\">固体</link>素材を生産する動物です。\n"
+"\n"
+"素材の再生を促すには特定の<link=\"FOOD\">食糧</link>や環境が必要となる場合があります。"
+
+#. STRINGS.CODEX.CRITTER_TYPES.SHEARABLE.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.SHEARABLE.TITLE"
+msgid "<link=\"CRITTERCATEGORYSHEARABLE\">Shearable</link>"
+msgstr "<link=\"CRITTERCATEGORYSHEARABLE\">毛刈り可能</link>"
+
+#. STRINGS.CODEX.CRITTER_TYPES.TITLE
+msgctxt "STRINGS.CODEX.CRITTER_TYPES.TITLE"
+msgid "<link=\"CREATURES::TYPES\">Critters by Type</link>"
+msgstr "<link=\"CREATURES::TYPES\">タイプ別の動物</link>"
+
 #. STRINGS.CODEX.CRITTERDELIVERY.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.CRITTERDELIVERY.BODY.CONTAINER1"
 msgid ""
@@ -5504,11 +5731,15 @@ msgctxt "STRINGS.CODEX.CRITTERSTATUS.MOOD.OVERCROWDED.CONTAINER1"
 msgid ""
 "This occurs when a critter is in a room or pool that's appropriately sized for its needs but feels that there are too many other critters sharing the same space. Because each species has its own space requirements, this state can vary among occupants of the same room.\n"
 "\n"
-"This emotional state intensifies in response to the number of excess critters: adding new critters to an already crowded room will undermine a critter's happiness even further."
+"This emotional state intensifies in response to the number of excess critters: adding new critters to an already crowded room will undermine a critter's happiness even further.\n"
+"\n"
+"<link=\"CRITTERCATEGORYCARNIVORE\">Carnivores</link> who feel overcrowded will cull excess prey animals occupying their area until comfortable population levels are restored. Culled prey critters are not consumed."
 msgstr ""
 "過密状態は、動物がそのニーズに適した大きさの部屋やプールに居るにも関わらず、同じ空間を共有している他の動物が多すぎると感じる場合に発生します。それぞれの種には独自の「必要とする空間」が存在し、この状態は同室内の住人によって異なる場合があります。\n"
 "\n"
-"この感情状態は過密となっている動物の数に応じて激化します。過密状態の部屋に新たな動物を投入すると、動物の幸福状態はさらに損なわれます。"
+"この感情状態は過密となっている動物の数に応じて激化します。過密状態の部屋に新たな動物を投入すると、動物の幸福状態はさらに損なわれます。\n"
+"\n"
+"過密状態を感じた<link=\"CRITTERCATEGORYCARNIVORE\">肉食動物</link>は、自身の生息域にいる獲物動物を間引いて数を減らし、個体数が適正な水準に戻るまで調整を行います。間引かれた獲物は、捕食(消費)されることはありません。"
 
 #. STRINGS.CODEX.CRITTERSTATUS.MOOD.OVERCROWDED.OVERCROWDED_HAPPY1
 msgctxt "STRINGS.CODEX.CRITTERSTATUS.MOOD.OVERCROWDED.OVERCROWDED_HAPPY1"
@@ -6019,8 +6250,8 @@ msgstr ""
 # 格納庫以外にも、農地タイルでこのアクションが使用できた
 #. STRINGS.CODEX.ELECTROBANK.SUBTITLE
 msgctxt "STRINGS.CODEX.ELECTROBANK.SUBTITLE"
-msgid "Portable Storage"
-msgstr "持ち運びできる貯蔵装置"
+msgid "Portable Energy Storage"
+msgstr "可搬エネルギーストレージ"
 
 #. STRINGS.CODEX.ELECTROBANK.TITLE
 msgctxt "STRINGS.CODEX.ELECTROBANK.TITLE"
@@ -6925,6 +7156,11 @@ msgctxt "STRINGS.CODEX.HEADERS.RECIPE"
 msgid "Recipe Ingredients"
 msgstr "レシピ素材"
 
+#. STRINGS.CODEX.HEADERS.REFERENCES
+msgctxt "STRINGS.CODEX.HEADERS.REFERENCES"
+msgid "Reference Materials"
+msgstr "素材の収納"
+
 #. STRINGS.CODEX.HEADERS.ROLE_PERKS
 msgctxt "STRINGS.CODEX.HEADERS.ROLE_PERKS"
 msgid "Job Training"
@@ -7314,7 +7550,7 @@ msgstr "免疫増強剤"
 #. STRINGS.CODEX.INTERMEDIATECURE.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.INTERMEDIATECURE.BODY.CONTAINER1"
 msgid ""
-"A doctor-administered cure for moderate <link=\"DISEASE\">Diseases</link>. <link=\"INTERMEDIATECURE\">Medical Pack</link>s are very effective against <link=\"SLIMESICKNESS\">Slimelung</link>.\n"
+"A doctor-administered cure for moderate <link=\"DISEASE\">Diseases</link>. <link=\"INTERMEDIATECURE\">Medical Pack</link>s are very effective against <link=\"SLIMELUNG\">Slimelung</link>.\n"
 "\n"
 "Must be administered by a Duplicant with the <link=\"MEDICINE2\">Bedside Manner</link> Skill."
 msgstr ""
@@ -9719,7 +9955,7 @@ msgid ""
 msgstr ""
 "お願いだから、私のクラゲカップを盗まないでください。ここに滞在する日数分持ってきてるし、乗船しているのは私たち二人だけなので、気づかないわけじゃないんです。お願いします。\n"
 "\n"
-"追伸：青いカップはクラゲじゃないですよ。"
+"追伸：青いカップはクラゲじゃないですよ"
 
 #. STRINGS.CODEX.INVESTIGATIONS.DLC5_FRIDGENOTE.SUBTITLE
 msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_FRIDGENOTE.SUBTITLE"
@@ -9772,6 +10008,188 @@ msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_HOAX.TITLE"
 msgid "Academic Hoax"
 msgstr "学術的なデマ"
 
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER1
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER1"
+msgid ""
+"<indent=5%><color=red>WARNING: This message was sent from an anonymous server and may contain suspicious links.</color></indent>\n"
+"\n"
+"<indent=5%>Jackie,\n"
+"There's someone you might want to meet.</indent>\n"
+"\n"
+"<indent=10%><size=18>\n"
+"*******FORWARDED MESSAGE*******</indent></size>\n"
+"\n"
+"\n"
+"------------------\n"
+"\n"
+msgstr ""
+"<indent=5%><color=red>警告: このメッセージは匿名サーバーから送信されたものであり、不審なリンクが含まれている可能性があります。</color></indent>\n"
+"\n"
+"<indent=5%>ジャッキー、\n"
+"会ってみるといいかもしれない人がいるよ。</indent>\n"
+"\n"
+"<indent=10%><size=18>\n"
+"*******転送されたメッセージ*******</indent></size>\n"
+"\n"
+"\n"
+"------------------\n"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER3
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER3"
+msgid ""
+"<indent=5%>Leave legal out of it. Reassign the tech and whoever else on the team might be connected to her.\n"
+"\n"
+"Torpedo that listing before anyone else sees it, and send Yves to recover the documents ASAP\n"
+"\n"
+"</indent>"
+msgstr ""
+"<indent=5%>法務部門は関与させてはいけない。技術担当者やチーム内で彼女と関わりがありそうな人間は、別の任務に回しなさい。\n"
+"\n"
+"誰の目にも触れる前に、あのリストを完全に抹消せよ。それから、イヴを向かわせて早急に書類を回収させること。\n"
+"\n"
+"</indent>"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER4
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER4"
+msgid ""
+"<indent=5%>Looks like the seller is an ortho nurse who got laid off when we upgraded the clinic to an all-OHM bot team.\n"
+"\n"
+"One of our senior engineers is her cousin, he copied the logs off a Florence X-2 field model after the typhoon. The same bot we had redressing your leg when the governor was here to finalize the deal. No idea how he ducked the cameras.\n"
+"\n"
+"I'll ping legal.\n"
+"\n"
+"</indent>"
+msgstr ""
+"<indent=5%>どうやら売り主は、うちのクリニックが「OHM」ボットのみの体制に刷新された際に解雇された、整形外科の看護師みたいだ。\n"
+"\n"
+"うちのシニアエンジニアの一人が彼女のいとこで、台風の後に「フローレンスX-2」の現場モデルからログをコピーしてきたらしい。知事との契約最終調整の際、君の足の包帯を巻き直していたのと同じボットだよ。どうやって監視カメラをすり抜けたのかは不明だが。\n"
+"\n"
+"法務部門に連絡を入れておく。\n"
+"\n"
+"</indent>"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER5
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER5"
+msgid ""
+"<indent=5%>Hi Dr. Rutger,\n"
+"\n"
+"Apologies for the delay, I had sensitive matters diverted to a separate account while the auditor was here. Looking into this now."
+msgstr ""
+"<indent=5%>ラトガー博士、\n"
+"\n"
+"ご連絡が遅くなり申し訳ありません。監査の対応中、機密性の高い案件を別のアカウントに移しておりました。現在、この件について確認しております。"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER6
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.CONTAINER6"
+msgid ""
+"<indent=5%>Would somebody mind explaining to me how confidential details of the land title transfer ended up for sale on some dinky homemade MARKET SITE?!\n"
+"\n"
+"</indent><indent=10%><alpha=#AA>[MISSING ATTACHMENT]</color></indent>"
+msgstr ""
+"<indent=5%>誰か説明してくれないか？なぜ土地の権利移転に関する機密情報が、あんな胡散臭い個人が作ったようなマーケットサイトで売りに出されているんだ！？\n"
+"\n"
+"</indent><indent=10%><alpha=#AA>[添付ファイルなし]</color></indent>"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.EMAILHEADER1
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.EMAILHEADER1"
+msgid ""
+"<smallcaps>To: <b>Director Stern</b> <alpha=#AA><jstern@gravitas.nova></color>\n"
+"From: <b>Unknown Sender</b><alpha=#AA> <e062js183@xroute.n.a></color></smallcaps>\n"
+"------------------\n"
+msgstr ""
+"<smallcaps>宛先：<b>スターン所長</b> <alpha=#AA><jstern@gravitas.nova></color>\n"
+"差出人：<b>不明な送信者</b><alpha=#AA> <e062js183@xroute.n.a></color></smallcaps>\n"
+"------------------\n"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.EMAILHEADER2
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.EMAILHEADER2"
+msgid ""
+"<smallcaps>To: <b>Dr. Sidney Rutger</b><alpha=#AA> <rutger.sidney@vi.gov></color>\n"
+"From: <b>Peter Presutti</b> <alpha=#AA>><presutti.peter@vi.gov></color></smallcaps>\n"
+"------------------\n"
+msgstr ""
+"<smallcaps>宛先: <b>シドニー・ラトガー博士</b><alpha=#AA> <rutger.sidney@vi.gov></color>\n"
+"送信者: <b>ピーター プレスッティ</b> <alpha=#AA>><presutti.peter@vi.gov></color></smallcaps>\n"
+"------------------\n"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.EMAILHEADER3
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.EMAILHEADER3"
+msgid ""
+"<smallcaps>To: <b>Peter Presutti</b><alpha=#AA> <presutti.peter@vi.gov></color>\n"
+"From: <b>Dr. Sidney Rutger</b> <alpha=#AA><rutger.sidney@vi.gov></color>\n"
+"------------------\n"
+msgstr ""
+"<smallcaps>宛先: <b>ピーター プレスッティ</b><alpha=#AA> <presutti.peter@vi.gov></color>\n"
+"投稿者: <b>シドニー・ラトガー博士</b> <alpha=#AA><rutger.sidney@vi.gov></color>\n"
+"------------------\n"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.EMAILHEADER4
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.EMAILHEADER4"
+msgid ""
+"<smallcaps>To:<b>Peter Presutti</b><alpha=#AA> <presutti.peter@vi.gov></color>\n"
+"CC: <b>Brian A. Dalton</b><alpha=#AA><bdalton@gei.pwr></color>\n"
+"From: <b>Dr. Sidney Rutger</b> <alpha=#AA> <rutger.sidney@vi.gov></color>\n"
+"------------------\n"
+msgstr ""
+"<smallcaps>宛先:<b>ピーター プレスッティ</b><alpha=#AA> <presutti.peter@vi.gov></color>\n"
+"CC: <b>ブライアン A. ダルトン</b><alpha=#AA><bdalton@gei.pwr></color>\n"
+"投稿者: <b>シドニー・ラトガー博士</b> <alpha=#AA> <rutger.sidney@vi.gov></color>\n"
+"------------------\n"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.SIGNATURE1
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.SIGNATURE1"
+msgid ""
+"\n"
+"- Pete\n"
+"<size=11>Head of Integrity\n"
+"The Vertex Institute\n"
+"<i>Where Technology Meets Humanity</i></size>\n"
+"------------------\n"
+msgstr ""
+"\n"
+"- ピート\n"
+"<size=11>インテグリティ責任者\n"
+"The Vertex Institute\n"
+"<i>テクノロジーと人間性が交差する場所</i></size>\n"
+"------------------\n"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.SIGNATURE2
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.BODY.SIGNATURE2"
+msgid ""
+"\n"
+"- Sidney Rutger, PhD, MD\n"
+"<size=11>President & Chief Researcher\n"
+"The Vertex Institute\n"
+"<i>Where Technology Meets Humanity</i></size>\n"
+"------------------\n"
+msgstr ""
+"\n"
+"- シドニー・ラトガー (PhD, MD)\n"
+"<size=11>代表兼主任研究員\n"
+"The Vertex Institute\n"
+"<i>テクノロジーと人間性が交差する場所</i></size>\n"
+"------------------\n"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.SUBTITLE
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.SUBTITLE"
+msgid "ENCRYPTION LEVEL: THREE"
+msgstr "暗号化レベル: 3"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.TITLE1
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.TITLE1"
+msgid "FWD: The island"
+msgstr "FWD: 島の件"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.TITLE2
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.TITLE2"
+msgid "SUBJECT: RE: Security Breach"
+msgstr "題名: RE: 機密情報漏洩"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.TITLE3
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_LEAKEDDOCS.TITLE3"
+msgid "SUBJECT: Security Breach"
+msgstr "題名: 機密情報漏洩"
+
 #. STRINGS.CODEX.INVESTIGATIONS.DLC5_PRINTANOMALY.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_PRINTANOMALY.BODY.CONTAINER1"
 msgid ""
@@ -9800,9 +10218,7 @@ msgid ""
 "\n"
 "A216: Printing subject in three... two... one... Stand back, please.\n"
 "\n"
-"Tech: Reprint complete. Subject number is 2988, \"Anemone-93.\" Adult female, 103 centimeters, 30 kilograms. Subject is conscious and appears fully formed. No observable physical abnormalities noted.\n"
-"\n"
-"A216: Initiate vitals scan.\n"
+"Tech: Reprint complete. Subject number is 2988, \"Anemone-93.\" Adult female, 103 centimeters, 30 kilograms. Subject is conscious and appears fully formed. No observable physical abnormalities noted. A216: Initiate vitals scan.\n"
 "\n"
 "Tech: Scan complete. Pupil size, skin temperature, limb formation and distribution are all typical, except... huh. The respiration rate... it's... there doesn't really seem to be one.\n"
 "\n"
@@ -9937,7 +10353,7 @@ msgstr ""
 "\n"
 "技術者：タンクに水が満タンになるまで3…2…\n"
 "\n"
-"（水の流れる音）\n"
+"(水の流れる音)\n"
 "\n"
 "技術者：タンクの最大容量に達しました。\n"
 "\n"
@@ -10019,6 +10435,39 @@ msgstr "暗号化レベル: なし"
 msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_RESEARCHPORTAL.TITLE"
 msgid "In Case of Emergency"
 msgstr "緊急時運用"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_SELFSTORAGE.BODY.CONTAINER1
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_SELFSTORAGE.BODY.CONTAINER1"
+msgid ""
+"<b><size=14>Stellar Self Storage Celebrate 5 Years of 5-Star Service!</b></size>\n"
+"\n"
+"Show this coupon to get 40% off your first month's rent on our largest unit: a whopping 8 ft by 8 ft weatherproof sanctuary!\n"
+"\n"
+"Plenty of room for a small collection of valuables and one adult occupant.\n"
+"\n"
+"Pay your first 6 months in full up front and upgrade to a fully climate-controlled unit...absolutely FREE!\n"
+"\n"
+"<i><alpha=#AA><smallcaps>Offer valid for new customers only. All storage contents must be independently insured.</i></smallcaps></size>"
+msgstr ""
+"<b><size=14>Stellar Self Storage：5つ星サービス提供5周年！</size></b>\n"
+"\n"
+"このクーポンをご提示いただくと、最大サイズのユニット（8フィートx8フィートの広々とした全天候型スペース！）の初月利用料が40%オフになります！\n"
+"\n"
+"大切なコレクションを保管するのにも、大人1人が過ごす空間としても十分な広さです。\n"
+"\n"
+"最初の6ヶ月分を前払いいただくと、空調完備のユニットへ無料でアップグレード可能です！\n"
+"\n"
+"<i><alpha=#AA><smallcaps>※新規のお客様限定の特典です。保管物には、お客様ご自身で保険をかけていただく必要があります。</i></smallcaps></size>"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_SELFSTORAGE.SUBTITLE
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_SELFSTORAGE.SUBTITLE"
+msgid "ENCRYPTION LEVEL: NONE"
+msgstr "暗号化レベル: なし"
+
+#. STRINGS.CODEX.INVESTIGATIONS.DLC5_SELFSTORAGE.TITLE
+msgctxt "STRINGS.CODEX.INVESTIGATIONS.DLC5_SELFSTORAGE.TITLE"
+msgid "Single-Use Coupon"
+msgstr "使い切りクーポン"
 
 #. STRINGS.CODEX.JOURNALISTREQUEST.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.JOURNALISTREQUEST.BODY.CONTAINER1"
@@ -10165,7 +10614,7 @@ msgctxt "STRINGS.CODEX.KELP.BODY.CONTAINER1"
 msgid ""
 "The leaf of a <link=\"KELPPLANT\">Seakomb</link>.\n"
 "\n"
-"It can be processed into <link=\"PHYTOOIL\">Phyto Oil</link> or used as an ingredient in <link=\"ANTIHISTAMINE \">Allergy Medication</link>."
+"It can be processed into <link=\"PHYTOOIL\">Phyto Oil</link> or used as an ingredient in <link=\"ANTIHISTAMINE\">Allergy Medication</link>."
 msgstr ""
 "<link=\"KELPPLANT\">シーコンブ</link>の葉です。\n"
 "\n"
@@ -10290,9 +10739,9 @@ msgctxt "STRINGS.CODEX.LUMBER.BODY.CONTAINER1"
 msgid ""
 "Thick logs of <link=\"WOOD\">Wood</link> harvested from trees, <link=\"CRABWOOD\">Oakshells</link>, and other natural sources.\n"
 "\n"
-"Wood is also used in the production of <link=\"HEAT\">Heat</link> and <link=\"POWER\">Power</link>. They are also a useful building material."
+"Wood is also used in the production of <link=\"HEAT\">Heat</link> and <link=\"POWER\">Power</link>, and is a useful building material."
 msgstr ""
-"<link=\"CRABWOOD\">オークシェル</link>、その他の天然資源から収穫された <link=\"WOOD\">木材</link> の太い丸太です。\n"
+"<link=\"CRABWOOD\">オークシェル</link>、その他の天然資源から収穫された<link=\"WOOD\">木材</link>の太い丸太です。\n"
 "\n"
 "木材の丸太は<link=\"HEAT\">熱</link>と<link=\"POWER\">電力</link>の生産に使用されます。また、便利な建築材料でもあります。"
 
@@ -10301,10 +10750,9 @@ msgctxt "STRINGS.CODEX.LUMBER.SUBTITLE"
 msgid "Renewable Resource"
 msgstr "再生可能資源"
 
-# Don't Starve のキャラ
 #. STRINGS.CODEX.LUMBER.TITLE
 msgctxt "STRINGS.CODEX.LUMBER.TITLE"
-msgid "Wood"
+msgid "Lumber"
 msgstr "木材"
 
 #. STRINGS.CODEX.MEALWOOD.BODY.CONTAINER1
@@ -11596,8 +12044,8 @@ msgstr "パクーはまばたきをしない大きな目のせいで虚ろな表
 
 #. STRINGS.CODEX.PACU.BODY.CONTAINER2
 msgctxt "STRINGS.CODEX.PACU.BODY.CONTAINER2"
-msgid "Feeding a Pacu its favorite <link=\"PACUTREAT\">Pacu Treat</link> helps tame it and keep it content."
-msgstr "パクーにお気に入りの<link=\"PACUTREAT\">おやつ</link>を与えると、彼らを宥めて満足させることができます。"
+msgid "Feeding this critter its favorite <link=\"PACUTREAT\">Pacu Treat</link> helps tame it and keep it content."
+msgstr "この動物にお気に入りの<link=\"PACUTREAT\">パクーのおやつ</link>を与えると、彼らを宥めて満足させることができます。"
 
 #. STRINGS.CODEX.PACU.SPECIES_SUBTITLE
 msgctxt "STRINGS.CODEX.PACU.SPECIES_SUBTITLE"
@@ -11926,6 +12374,173 @@ msgstr "水棲生物"
 msgctxt "STRINGS.CODEX.PLANKTONCORAL.TITLE"
 msgid "Starnacle"
 msgstr "ホシツボ"
+
+#. STRINGS.CODEX.PLANT_TYPES.ALLERGEN.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.ALLERGEN.DESCRIPTION"
+msgid "Plants that produce <link=\"POLLENGERMS\">Floral Scent</link>, which is enjoyed by some Duplicants but will cause discomfort for those with the Allergies trait."
+msgstr "Plants that produce <link=\"POLLENGERMS\">芳香</link>を持つ植物で、一部の複製人間はこれを好みますがアレルギー体質を持つ複製人間には不快なものとなります。"
+
+#. STRINGS.CODEX.PLANT_TYPES.ALLERGEN.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.ALLERGEN.TITLE"
+msgid "<link=\"PLANTCATEGORYALLERGEN\">Scented</link>"
+msgstr "<link=\"PLANTCATEGORYALLERGEN\">芳香</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.AQUATIC.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.AQUATIC.DESCRIPTION"
+msgid "Plants that require <link=\"ELEMENTSLIQUID\">Liquid</link> environments for growth."
+msgstr "繁茂に<link=\"ELEMENTSLIQUID\">液体</link>が必要な植物です。"
+
+#. STRINGS.CODEX.PLANT_TYPES.AQUATIC.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.AQUATIC.TITLE"
+msgid "<link=\"PLANTCATEGORYAQUATIC\">Aquatic</link>"
+msgstr "<link=\"PLANTCATEGORYAQUATIC\">水生</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.CARNIVORE.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.CARNIVORE.DESCRIPTION"
+msgid ""
+"Plants whose growth relies upon trapping and consuming unsuspecting <link=\"CREATURES\">Critters</link>.\n"
+"\n"
+"They pose no danger to my Duplicants."
+msgstr ""
+"油断した<link=\"CREATURES\">動物</link>を捕らえて食べることで成長する植物です。\n"
+"\n"
+"複製人間に害を及ぼすことはありません。"
+
+#. STRINGS.CODEX.PLANT_TYPES.CARNIVORE.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.CARNIVORE.TITLE"
+msgid "<link=\"PLANTCATEGORYCARNIVORE\">Carnivorous</link>"
+msgstr "<link=\"PLANTCATEGORYCARNIVORE\">肉食</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.DECORATIVE.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.DECORATIVE.DESCRIPTION"
+msgid ""
+"Attractive plants that elevate the <link=\"DECOR\">Decor</link> in their environment, improving Duplicant <link=\"MORALE\">Morale</link> and reducing <link=\"STRESS\">Stress</link>\n"
+"\n"
+"Only decorative plant seeds can be planted in pots."
+msgstr ""
+"周囲の<link=\"DECOR\">装飾</link>値を高め、複製人間の<link=\"MORALE\">士気</link>を向上させるとともに<link=\"STRESS\">ストレス</link>を軽減する、魅力的な植物です。\n"
+"\n"
+"植木鉢には観葉植物の種のみを植えることができます。"
+
+#. STRINGS.CODEX.PLANT_TYPES.DECORATIVE.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.DECORATIVE.TITLE"
+msgid "<link=\"PLANTCATEGORYDECORATIVE\">Decor</link>"
+msgstr "<link=\"PLANTCATEGORYDECORATIVE\">装飾</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.FARMABLE.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.FARMABLE.DESCRIPTION"
+msgid "Plants that produce seeds which can be planted in <link=\"FARMTILE\">Farm Tiles</link> or other eligible <link=\"GROUPFARMBUILDING\">farm buildings</link> by Duplicants or <link=\"SQUIRRELSPECIES\">Pips</link>."
+msgstr "種子を生成する植物です。この種子は、複製人間やピップによって、<link=\"FARMTILE\">農耕タイル</link>、あるいはその他の適切な<link=\"GROUPFARMBUILDING\">農業用設備</link>に植えることができます。"
+
+#. STRINGS.CODEX.PLANT_TYPES.FARMABLE.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.FARMABLE.TITLE"
+msgid "<link=\"PLANTCATEGORYFARMABLE\">Farmable</link>"
+msgstr "<link=\"PLANTCATEGORYFARMABLE\">耕作可</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.FORAGE_ONLY.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.FORAGE_ONLY.DESCRIPTION"
+msgid "Edible single-serving plants that my Duplicants can discover by exploring the world. Forageable plants do not produce seeds, and cannot be farmed."
+msgstr "複製人間が世界を探索する中で見つけられる、1回分の食糧となる植物です。こうした採取可能な植物は種を生成せず、栽培することもできません。"
+
+#. STRINGS.CODEX.PLANT_TYPES.FORAGE_ONLY.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.FORAGE_ONLY.TITLE"
+msgid "<link=\"PLANTCATEGORYFORAGEONLY\">Forageable</link>"
+msgstr "<link=\"PLANTCATEGORYFORAGEONLY\">採取可</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.HOSTILE.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.HOSTILE.DESCRIPTION"
+msgid "Plants that pose a danger to my Duplicants. They are valuable to my colony, but should be approached with caution."
+msgstr "複製人間に危険をもたらす植物です。コロニーにとって貴重な存在ではあるが、近づく際には注意が必要です。"
+
+#. STRINGS.CODEX.PLANT_TYPES.HOSTILE.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.HOSTILE.TITLE"
+msgid "<link=\"PLANTCATEGORYHOSTILE\">Hostile</link>"
+msgstr "<link=\"PLANTCATEGORYHOSTILE\">敵対的</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.LAND.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.LAND.DESCRIPTION"
+msgid "Plants that must be grown on dry land. If the environment becomes flooded, growth will halt and the plant will eventually perish."
+msgstr "乾燥した土地で育てる必要のある植物です。環境が水浸しになると成長が止まり、やがて枯れてしまいます。"
+
+#. STRINGS.CODEX.PLANT_TYPES.LAND.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.LAND.TITLE"
+msgid "<link=\"PLANTCATEGORYLAND\">Land</link>"
+msgstr "<link=\"PLANTCATEGORYLAND\">地上</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.LARGE.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.LARGE.DESCRIPTION"
+msgid "Plants that are too large for standard-sized farming tiles. They must be planted in <link=\"WIDEFARMTILE\">Wide Hydroponic Farm</link> instead."
+msgstr "標準サイズの水耕タイルには大きすぎる植物です。これらは代わりに<link=\"WIDEFARMTILE\">大型水耕タイル</link>に植える必要がある。"
+
+#. STRINGS.CODEX.PLANT_TYPES.LARGE.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.LARGE.TITLE"
+msgid "<link=\"PLANTCATEGORYLARGE\">Oversized</link>"
+msgstr "<link=\"PLANTCATEGORYLARGE\">巨大化</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.MAKES_OR_IS_FOOD.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.MAKES_OR_IS_FOOD.DESCRIPTION"
+msgid "Plants that can be harvested for <link=\"FOOD\">Food</link>, supplying essential calories for my growing colony."
+msgstr "<link=\"FOOD\">食糧</link>として収穫できる植物です。成長を続けるコロニーに不可欠なカロリーを供給してくれます。"
+
+#. STRINGS.CODEX.PLANT_TYPES.MAKES_OR_IS_FOOD.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.MAKES_OR_IS_FOOD.TITLE"
+msgid "<link=\"PLANTCATEGORYMAKESORISFOOD\">Edible</link>"
+msgstr "<link=\"PLANTCATEGORYMAKESORISFOOD\">食用</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.MEDICINAL.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.MEDICINAL.DESCRIPTION"
+msgid "Plants whose parts can be harvested and used as ingredients in <link=\"APOTHECARY\">medicine compounding</link>, to treat <link=\"DISEASE\">Disease</link>."
+msgstr "その部位を採取し<link=\"DISEASE\">病気</link>を治療するための<link=\"APOTHECARY\">調剤</link>の材料として利用できる植物です。"
+
+#. STRINGS.CODEX.PLANT_TYPES.MEDICINAL.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.MEDICINAL.TITLE"
+msgid "<link=\"PLANTCATEGORYMEDICINAL\">Medicinal</link>"
+msgstr "<link=\"PLANTCATEGORYMEDICINAL\">医療用途</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.ON_CEILING_OR_WALLS.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.ON_CEILING_OR_WALLS.DESCRIPTION"
+msgid "Plants that grow down from the ceiling, grow up walls and across ceilings, or cling to backwalls."
+msgstr "天井から垂れ下がる植物、壁を這い上がり天井を横切る植物、あるいは背面の壁に張り付く植物です。"
+
+#. STRINGS.CODEX.PLANT_TYPES.ON_CEILING_OR_WALLS.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.ON_CEILING_OR_WALLS.TITLE"
+msgid "<link=\"PLANTCATEGORYONCEILINGORWALLS\">Hanging and Vining</link>"
+msgstr "<link=\"PLANTCATEGORYONCEILINGORWALLS\">下向きまたは蔓</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.PRODUCES_LIGHT.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.PRODUCES_LIGHT.DESCRIPTION"
+msgid "Plants that produce <link=\"LIGHT\">Light</link>, improving my Duplicants' <link=\"MORALE\">Morale</link> and helping them work faster."
+msgstr "光を発する植物です。複製人間の士気を高め、作業速度を向上させます。"
+
+#. STRINGS.CODEX.PLANT_TYPES.PRODUCES_LIGHT.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.PRODUCES_LIGHT.TITLE"
+msgid "<link=\"PLANTCATEGORYPRODUCESLIGHT\">Light-Producing</link>"
+msgstr "<link=\"PLANTCATEGORYPRODUCESLIGHT\">光生産</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.PRODUCES_OXYGEN.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.PRODUCES_OXYGEN.DESCRIPTION"
+msgid "Plants that produce <link=\"OXYGEN\">Oxygen</link>, either directly or by producing elements that off-gas into breathable air."
+msgstr "直接あるいは呼吸可能な空気へと放出される成分を生成することを通じて、<link=\"OXYGEN\">酸素</link>を作り出す植物です。"
+
+#. STRINGS.CODEX.PLANT_TYPES.PRODUCES_OXYGEN.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.PRODUCES_OXYGEN.TITLE"
+msgid "<link=\"PLANTCATEGORYPRODUCESOXYGEN\">Oxygen-Producing</link>"
+msgstr "<link=\"PLANTCATEGORYPRODUCESOXYGEN\">酸素生産</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.TITLE"
+msgid "<link=\"PLANTS::TYPES\">Plants by Type</link>"
+msgstr "<link=\"PLANTS::TYPES\">タイプ別の植物</link>"
+
+#. STRINGS.CODEX.PLANT_TYPES.WOOD.DESCRIPTION
+msgctxt "STRINGS.CODEX.PLANT_TYPES.WOOD.DESCRIPTION"
+msgid "Plants that can be harvested for <link=\"BUILDINGWOOD\">Lumber</link>."
+msgstr "<link=\"BUILDINGWOOD\">木材</link>として収穫できる植物です。"
+
+#. STRINGS.CODEX.PLANT_TYPES.WOOD.TITLE
+msgctxt "STRINGS.CODEX.PLANT_TYPES.WOOD.TITLE"
+msgid "<link=\"PLANTCATEGORYWOOD\">Lumber</link>"
+msgstr "<link=\"PLANTCATEGORYWOOD\">木材</link>"
 
 #. STRINGS.CODEX.PLUGSLUG.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.PLUGSLUG.BODY.CONTAINER1"
@@ -12880,7 +13495,7 @@ msgstr "<link=\"DECORATION\">装飾設備</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.CONFLICTINGROOMS
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.CONFLICTINGROOMS"
-msgid "    • <link=\"GREATERHALL\">Banquet Hall</link> (No Mess Table)\n"
+msgid "    • <link=\"BANQUETHALL\">Banquet Hall</link> (No Mess Table)\n"
 msgstr "    • <link=\"GREATERHALL\">大宴会場</link> (食卓不可)\n"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.DESCRIPTION
@@ -12898,7 +13513,7 @@ msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.DININGTABLETYPE.ROOMSREQUIRING"
 msgid ""
 "    • <link=\"MESSHALL\">Mess Hall</link>\n"
 "    • <link=\"GREATHALL\">Great Hall</link>\n"
-"    • <link=\"GREATERHALL\">Banquet Hall</link> (Communal Table)"
+"    • <link=\"BANQUETHALL\">Banquet Hall</link> (Communal Table)"
 msgstr ""
 "    • <link=\"MESSHALL\">食堂</link>\n"
 "    • <link=\"GREATHALL\">大広間</link>\n"
@@ -13196,6 +13811,27 @@ msgstr ""
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SUBMERGIBLE.TITLE"
 msgid "<link=\"REQUIREMENTCLASSSUBMERGIBLE\">Submergible</link>"
 msgstr "<link=\"REQUIREMENTCLASSSUBMERGIBLE\">水中稼働可</link>"
+
+#. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SUPPORTBUILDING.DESCRIPTION
+msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SUPPORTBUILDING.DESCRIPTION"
+msgid ""
+"Support buildings are tools that optimize work speed for eligible buildings that are within range and line of sight. Certain ones have stackable effects when built side-by-side with others of the same type.\n"
+"\n"
+"Once built, support buildings function independently."
+msgstr ""
+"支援設備は範囲内にあり、かつ視界が確保されている対象の設備に対して、作業速度を最適化するツールです。一部の設備は、同種のものを隣接させて建築することで、その効果を累積させることができます。\n"
+"\n"
+"建築が完了すると、支援設備はそれぞれ独立して機能します。"
+
+#. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SUPPORTBUILDING.FLAVOUR
+msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SUPPORTBUILDING.FLAVOUR"
+msgid ""
+msgstr ""
+
+#. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SUPPORTBUILDING.TITLE
+msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.SUPPORTBUILDING.TITLE"
+msgid "<link=\"REQUIREMENTCLASSSUPPORTBUILDING\">Support Buildings</link>"
+msgstr "<link=\"REQUIREMENTCLASSSUPPORTBUILDING\">支援設備</link>"
 
 #. STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.TOILETTYPE.DESCRIPTION
 msgctxt "STRINGS.CODEX.ROOM_REQUIREMENT_CLASS.TOILETTYPE.DESCRIPTION"
@@ -15294,7 +15930,7 @@ msgstr "埋没"
 #. STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.STATUSITEMS.FOSSILENTOMBED.TOOLTIP
 msgctxt "STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.STATUSITEMS.FOSSILENTOMBED.TOOLTIP"
 msgid "This fossil must be dug out before it can be excavated"
-msgstr "この化石は採掘する前に掘り出す必要があります。"
+msgstr "この化石は採掘する前に掘り出す必要があります"
 
 #. STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.STATUSITEMS.FOSSILIDLE.NAME
 msgctxt "STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.STATUSITEMS.FOSSILIDLE.NAME"
@@ -16625,7 +17261,7 @@ msgstr "復元中"
 #. STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_BEING_REVEALED.TOOLTIP
 msgctxt "STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_BEING_REVEALED.TOOLTIP"
 msgid "This building is being restored to its former glory"
-msgstr "この設備はかつての栄光を取り戻すため復元作業中です。"
+msgstr "この設備はかつての栄光を取り戻すため復元作業中です"
 
 #. STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_BEING_WORKED_BY_DOCTOR.NAME
 msgctxt "STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_BEING_WORKED_BY_DOCTOR.NAME"
@@ -16635,7 +17271,7 @@ msgstr "バイオボット準備中"
 #. STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_BEING_WORKED_BY_DOCTOR.TOOLTIP
 msgctxt "STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_BEING_WORKED_BY_DOCTOR.TOOLTIP"
 msgid "This building is being operated by a skilled Duplicant"
-msgstr "この設備は熟練の複製人間によって操作中です。"
+msgstr "この設備は熟練の複製人間によって操作中です"
 
 #. STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_REVEALING.NAME
 msgctxt "STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_REVEALING.NAME"
@@ -16645,7 +17281,7 @@ msgstr "装置復元中"
 #. STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_REVEALING.TOOLTIP
 msgctxt "STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.BUILDING_REVEALING.TOOLTIP"
 msgid "This Duplicant is carefully restoring the Biobot Builder"
-msgstr "この複製人間はバイオボット ビルダーを慎重に復元しています。"
+msgstr "この複製人間はバイオボット ビルダーを慎重に復元しています"
 
 #. STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.CRAFTING_ROBOT_BODY.NAME
 msgctxt "STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.CRAFTING_ROBOT_BODY.NAME"
@@ -16655,7 +17291,7 @@ msgstr "バイオボット製造"
 #. STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.CRAFTING_ROBOT_BODY.TOOLTIP
 msgctxt "STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.CRAFTING_ROBOT_BODY.TOOLTIP"
 msgid "This building is using <link=\"STEEL\">Steel</link> to craft a Biobot frame"
-msgstr "この設備は<link=\"STEEL\">鋼鉄</link>からバイオボットフレームを作ります。"
+msgstr "この設備は<link=\"STEEL\">鋼鉄</link>からバイオボットフレームを作ります"
 
 #. STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.DOCTOR_READY.NAME
 msgctxt "STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.STATUSITEMS.DOCTOR_READY.NAME"
@@ -17185,6 +17821,26 @@ msgctxt "STRINGS.CODEX.URCHINPLANT.TITLE"
 msgid "Pinpoket"
 msgstr "ピンポケット"
 
+#. STRINGS.CODEX.VARIANT_AQUATIC.BODY.CONTAINER1
+msgctxt "STRINGS.CODEX.VARIANT_AQUATIC.BODY.CONTAINER1"
+msgid "<smallcaps>Pictured: \"Merpip\" Pip variant</smallcaps>"
+msgstr "<smallcaps>図: \"マーピップ\" ピップ 変種</smallcaps>"
+
+#. STRINGS.CODEX.VARIANT_AQUATIC.BODY.CONTAINER2
+msgctxt "STRINGS.CODEX.VARIANT_AQUATIC.BODY.CONTAINER2"
+msgid "Merpips are skilled swimmers with poweful tails that enable them to navigate liquid environments in search of aquatic seeds to bury."
+msgstr "マーピップは泳ぎに長けており、力強い尾を使って水の中を自在に移動し、埋めるための水生植物の種を探し求めます。"
+
+#. STRINGS.CODEX.VARIANT_AQUATIC.SUBTITLE
+msgctxt "STRINGS.CODEX.VARIANT_AQUATIC.SUBTITLE"
+msgid "Critter Morph"
+msgstr "動物(変種)"
+
+#. STRINGS.CODEX.VARIANT_AQUATIC.TITLE
+msgctxt "STRINGS.CODEX.VARIANT_AQUATIC.TITLE"
+msgid "Merpip"
+msgstr "マーピップ"
+
 #. STRINGS.CODEX.VARIANT_DELICACY.BODY.CONTAINER1
 msgctxt "STRINGS.CODEX.VARIANT_DELICACY.BODY.CONTAINER1"
 msgid "<smallcaps>Pictured: \"Delecta\" Vole variant</smallcaps>"
@@ -17456,6 +18112,35 @@ msgstr "植物？"
 msgctxt "STRINGS.CODEX.WHEEZEWORT.TITLE"
 msgid "Wheezewort"
 msgstr "ウィーズウォート"
+
+#~ msgctxt "STRINGS.CODEX.A7_NEWEMPLOYEE.BODY.SIGNATURE1"
+#~ msgid ""
+#~ "\n"
+#~ "[REDACTED]\n"
+#~ "<size=11>Personnel Coordinator\n"
+#~ "The Gravitas Facility</indent>\n"
+#~ "------------------\n"
+#~ msgstr ""
+#~ "\n"
+#~ "[編集済]\n"
+#~ "<size=11>人事部門\n"
+#~ "グラビタス研究所</size>\n"
+#~ "------------------\n"
+
+#~ msgctxt "STRINGS.CODEX.KELP.BODY.CONTAINER1"
+#~ msgid ""
+#~ "The leaf of a <link=\"KELPPLANT\">Seakomb</link>.\n"
+#~ "\n"
+#~ "It can be processed into <link=\"PHYTOOIL\">Phyto Oil</link> or used as an ingredient in <link=\"ANTIHISTAMINE \">Allergy Medication</link>."
+#~ msgstr ""
+#~ "<link=\"KELPPLANT\">シーコンブ</link>の葉です。\n"
+#~ "\n"
+#~ "<link=\"PHYTOOIL\">植物油</link>に加工したり、<link=\"ANTIHISTAMINE \">アレルギー薬</link>の素材として使えます。"
+
+# Don't Starve のキャラ
+#~ msgctxt "STRINGS.CODEX.LUMBER.TITLE"
+#~ msgid "Wood"
+#~ msgstr "木材"
 
 #~ msgctxt "STRINGS.CODEX.SNAIL_IRON_SHELL.TITLE"
 #~ msgid "Ferrgo Molt"

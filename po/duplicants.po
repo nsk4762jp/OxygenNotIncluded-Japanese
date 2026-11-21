@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.DUPLICANTS.ARRIVALTIME
@@ -21,6 +21,17 @@ msgstr "年齢: "
 msgctxt "STRINGS.DUPLICANTS.ARRIVALTIME_TOOLTIP"
 msgid "This {1} was printed on <b>Cycle {0}</b>"
 msgstr "この{1}は<b> {0}サイクル目</b>に製造されました"
+
+#. STRINGS.DUPLICANTS.ARRIVALTIME_TOOLTIP_NEGATIVE
+msgctxt "STRINGS.DUPLICANTS.ARRIVALTIME_TOOLTIP_NEGATIVE"
+msgid ""
+"This {1} was printed on <b>Cycle {0}</b>\n"
+"\n"
+"Their existence precedes ours"
+msgstr ""
+"この{1}は<b> {0}サイクル目</b>に製造されました\n"
+"\n"
+"彼らの存在は我々の役に立つでしょう"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.DESC
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.AIRCONSUMPTIONRATE.DESC"
@@ -989,13 +1000,13 @@ msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.WILTTEMPRANGEMOD.NAME"
 msgid "Viable Temperature Range"
 msgstr "生育温度範囲"
 
-#. STRINGS.DUPLICANTS.ATTRIBUTES.YIELDAMOUNT.DESC
-msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.YIELDAMOUNT.DESC"
+#. STRINGS.DUPLICANTS.ATTRIBUTES.YIELDFACTOR.DESC
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.YIELDFACTOR.DESC"
 msgid "Plant production relative to the base crop"
 msgstr "ベースとなる植物と比較した場合の収穫量です"
 
-#. STRINGS.DUPLICANTS.ATTRIBUTES.YIELDAMOUNT.NAME
-msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.YIELDAMOUNT.NAME"
+#. STRINGS.DUPLICANTS.ATTRIBUTES.YIELDFACTOR.NAME
+msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.YIELDFACTOR.NAME"
 msgid "Yield Amount"
 msgstr "収穫量"
 
@@ -1732,8 +1743,8 @@ msgstr "咳をしている"
 
 #. STRINGS.DUPLICANTS.CHORES.COUGH.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.CHORES.COUGH.TOOLTIP"
-msgid "Coughing is a symptom of <link=\"SLIMESICKNESS\">Slimelung</link> and spreads airborne <style=\"KKeyword\">Germs</style>"
-msgstr "咳は<link=\"SLIMESICKNESS\">腐肺病</link>の症状であり、空気中へ<style=\"KKeyword\">病原菌</style>を撒き散らします"
+msgid "Coughing is a symptom of <link=\"SLIMELUNG\">Slimelung</link> and spreads airborne <style=\"KKeyword\">Germs</style>"
+msgstr "咳は<link=\"SLIMELUNG\">腐肺病</link>の症状であり、空気中へ<style=\"KKeyword\">病原菌</style>を撒き散らします"
 
 #. STRINGS.DUPLICANTS.CHORES.CROP_TEND.NAME
 msgctxt "STRINGS.DUPLICANTS.CHORES.CROP_TEND.NAME"
@@ -2860,12 +2871,10 @@ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CONSUMPTION_PERMITTED"
 msgid "Disallowed by consumable permissions"
 msgstr "食べることが許されていない"
 
-# 動物捕捉地点の「作業」タブに表示される文言
-# 部屋内（厩舎とは限らない）の動物の数が適正で、捕獲の必要がない場合に表示される
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_FIXED_CAPTURE
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_FIXED_CAPTURE"
-msgid "Pen Status OK"
-msgstr "捕獲の必要はない"
+msgid "No Critters in Range"
+msgstr "該当する動物が居ない"
 
 #. STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_RANCHING
 msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_RANCHING"
@@ -4709,8 +4718,8 @@ msgstr ""
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMESICKNESS.NAME
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMESICKNESS.NAME"
-msgid "<link=\"SLIMESICKNESS\">Slimelung</link>"
-msgstr "<link=\"SLIMESICKNESS\">腐肺病</link>"
+msgid "<link=\"SLIMELUNG\">Slimelung</link>"
+msgstr "<link=\"SLIMELUNG\">腐肺病</link>"
 
 #. STRINGS.DUPLICANTS.DISEASES.STATUS_ITEM_TOOLTIP.BEDREST
 msgctxt "STRINGS.DUPLICANTS.DISEASES.STATUS_ITEM_TOOLTIP.BEDREST"
@@ -5003,6 +5012,76 @@ msgstr ""
 "この複製人間はビデオゲームで遊んでいます\n"
 "\n"
 "とても楽しそう！"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTER.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTER.NAME"
+msgid "Space Racer Ride"
+msgstr "宇宙レーサーライド"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTER.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTER.TOOLTIP"
+msgid ""
+"This Duplicant is feeling brave after an exciting roller coaster ride\n"
+"\n"
+"Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この複製人間はスリル満点のローラーコースターに乗ったことで勇敢な気分になっています\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTER.TOOLTIP_DLC1
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTER.TOOLTIP_DLC1"
+msgid ""
+"This Duplicant's feeling sharp after a recent \"test flight\"\n"
+"\n"
+"Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この複製人間は「試験飛行」を終えて調子が良さそうです\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERSPINNING.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERSPINNING.NAME"
+msgid "Zooming"
+msgstr "びゅんびゅんびゅん"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERSPINNING.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERSPINNING.TOOLTIP"
+msgid ""
+"This Duplicant is riding a roller coaster!\n"
+"\n"
+"It's helping them release pent-up <style=\"KKeyword\">Stress</style>"
+msgstr ""
+"この複製人間はローラーコースターに乗っています！\n"
+"\n"
+"彼らが溜め込んだ<style=\"KKeyword\">ストレス</style>解放に一役買っています"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERTURBO.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERTURBO.NAME"
+msgid "Turbo Space Racer Ride"
+msgstr "ターボ宇宙レーサーライド"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERTURBO.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERTURBO.TOOLTIP"
+msgid ""
+"This Duplicant is still buzzing from a ride at top speed\n"
+"\n"
+"Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この複製人間は最高速度でのライドを終えたばかりで興奮冷めやらぬ状態です\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERTURBO.TOOLTIP_DLC1
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ASTRONAUTTRAININGCENTERTURBO.TOOLTIP_DLC1"
+msgid ""
+"This Duplicant's turbo-speed \"test flight\" left them ready for more\n"
+"\n"
+"Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この複製人間の「試験飛行」は更なる挑戦への意欲をかき立てるものとなりました\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.ATEFROZENFOOD.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.ATEFROZENFOOD.NAME"
@@ -6142,7 +6221,7 @@ msgstr "感染: 腐肺病"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FEELINGSICKSLIMEGERMS.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.FEELINGSICKSLIMEGERMS.TOOLTIP"
-msgid "This Duplicant contracted <link=\"SLIMESICKNESS\">Slimelung</link> after a recent <style=\"KKeyword\">Germ</style> exposure and will begin exhibiting symptoms shortly"
+msgid "This Duplicant contracted <link=\"SLIMELUNG\">Slimelung</link> after a recent <style=\"KKeyword\">Germ</style> exposure and will begin exhibiting symptoms shortly"
 msgstr "この複製人間は最近の<style=\"KKeyword\">病原菌</style>への曝露により<link=\"SLIMESICKNESS\">腐肺病</link>に感染しており、すぐに症状が出始めるでしょう"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.FEELINGSICKZOMBIESPORES.NAME
@@ -7064,6 +7143,22 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PLAYEDARCADE.TOOLTIP"
 msgid "This Duplicant recently played video games and is feeling like a champ"
 msgstr "この複製人間は最近ビデオゲームで遊び、俺TUEEE感に浸っています"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.PLAYEDSANDBOX.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PLAYEDSANDBOX.NAME"
+msgid "Played in Sandpit"
+msgstr "砂場で遊んだ"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.PLAYEDSANDBOX.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.PLAYEDSANDBOX.TOOLTIP"
+msgid ""
+"This Duplicant is feeling beachy after building a sand sculpture\n"
+"\n"
+"Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この複製人間は砂の彫刻を作ってビーチ気分に浸っています\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.POPPEDEARDRUMS.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.POPPEDEARDRUMS.NAME"
 msgid "Popped Eardrums"
@@ -7557,8 +7652,8 @@ msgstr "腐肺病抗体"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SLIMESICKNESSRECOVERY.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SLIMESICKNESSRECOVERY.TOOLTIP"
-msgid "This Duplicant recently recovered from <link=\"SLIMESICKNESS\">Slimelung</link> and is temporarily immune to the <style=\"KKeyword\">Disease</style>"
-msgstr "この複製人間は最近<link=\"SLIMESICKNESS\">腐肺病</link>から回復したので、一時的に<style=\"KKeyword\">病気</style>への免疫をもっています"
+msgid "This Duplicant recently recovered from <link=\"SLIMELUNG\">Slimelung</link> and is temporarily immune to the <style=\"KKeyword\">Disease</style>"
+msgstr "この複製人間は最近<link=\"SLIMELUNG\">腐肺病</link>から回復したので、一時的に<style=\"KKeyword\">病気</style>への免疫をもっています"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SLIPPED.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SLIPPED.NAME"
@@ -7986,6 +8081,22 @@ msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TOXICENVIRONMENT.NAME"
 msgid "Toxic environment"
 msgstr "猛毒環境"
 
+#. STRINGS.DUPLICANTS.MODIFIERS.TRAMPOLINE.NAME
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TRAMPOLINE.NAME"
+msgid "Bouncy"
+msgstr "足取り軽やか"
+
+#. STRINGS.DUPLICANTS.MODIFIERS.TRAMPOLINE.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.MODIFIERS.TRAMPOLINE.TOOLTIP"
+msgid ""
+"This Duplicant has a spring in their step after bouncing around on a trampoline\n"
+"\n"
+"Leisure activities increase Duplicants' <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この複製人間はトランポリンで跳ねまわった後なので、足取りも軽やかです\n"
+"\n"
+"娯楽活動は複製人間の<style=\"KKeyword\">士気</style>を高めます"
+
 #. STRINGS.DUPLICANTS.MODIFIERS.UGLY_CRYING.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.UGLY_CRYING.NAME"
 msgid "Ugly Crying"
@@ -8360,7 +8471,7 @@ msgstr "要求仕事ランク"
 msgctxt "STRINGS.DUPLICANTS.NEEDS.FOOD_QUALITY.EXPECTATION_TOOLTIP"
 msgid ""
 "Each Duplicant has a minimum quality of <style=\"KKeyword\">Food</style> they'll tolerate eating.\n"
-"This Duplicant desires <b>Tier {0}<b> or better <style=\"KKeyword\">Food</style>, and becomes <style=\"KKeyword\">Stressed</style> when they eat meals of lower quality."
+"This Duplicant desires <b>Tier {0}</b> or better <style=\"KKeyword\">Food</style>, and becomes <style=\"KKeyword\">Stressed</style> when they eat meals of lower quality."
 msgstr ""
 "複製人間は彼らが食べられる<style=\"KKeyword\">食糧</style>品質の最低ラインをそれぞれ持っています。\n"
 "この複製人間は<b>ランク {0}</b>以上の<style=\"KKeyword\">食糧</style>を期待しており、それ未満の食糧を食べさせられると<style=\"KKeyword\">ストレス</style>を感じます。"
@@ -8976,6 +9087,16 @@ msgstr "{0}の得意なダンスムーブはロボットダンスです。彼は
 msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.ULTI.NAME"
 msgid "Ulti"
 msgstr "ウルティ"
+
+#. STRINGS.DUPLICANTS.PERSONALITIES.ZOE.DESC
+msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.ZOE.DESC"
+msgid "This {0} believes that dreams really do come true. That's why she's afraid to fall asleep."
+msgstr "{0}は夢が本当に叶うと信じています。それゆえ眠りにつくのが怖いのです。"
+
+#. STRINGS.DUPLICANTS.PERSONALITIES.ZOE.NAME
+msgctxt "STRINGS.DUPLICANTS.PERSONALITIES.ZOE.NAME"
+msgid "Zoe"
+msgstr "ゾーイ"
 
 #. STRINGS.DUPLICANTS.RACE
 msgctxt "STRINGS.DUPLICANTS.RACE"
@@ -11475,11 +11596,11 @@ msgstr "野営トイレがない"
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.NOTIFICATION_TOOLTIP"
 msgid ""
-"<link=\"OUTHOUSE\">Outhouses</link> can be built from the <b>Plumbing Tab</b> {Hotkey/Plan5}.\n"
+"<link=\"OUTHOUSE\">Outhouses</link> can be built from the <b>Plumbing Tab</b> {Hotkey/Plan6}.\n"
 "\n"
 "These Duplicants are in need of an <link=\"OUTHOUSE\">Outhouse</link>:"
 msgstr ""
-"<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b> {Hotkey/Plan5} から建築できます\n"
+"<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b> {Hotkey/Plan6} から建築できます\n"
 "\n"
 "次の複製人間は<link=\"OUTHOUSE\">野営トイレ</link>を求めています:"
 
@@ -11488,11 +11609,11 @@ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOTOILETS.TOOLTIP"
 msgid ""
 "There are no <link=\"OUTHOUSE\">Outhouses</link> available for this Duplicant\n"
 "\n"
-"<link=\"OUTHOUSE\">Outhouses</link> can be built from the <b>Plumbing Tab</b> {Hotkey/Plan5}"
+"<link=\"OUTHOUSE\">Outhouses</link> can be built from the <b>Plumbing Tab</b> {Hotkey/Plan6}"
 msgstr ""
 "この複製人間が用を足せる<link=\"OUTHOUSE\">野営トイレ</link>がありません\n"
 "\n"
-"<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b> {Hotkey/Plan5} から建築できます"
+"<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b> {Hotkey/Plan6} から建築できます"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.NOUSABLETOILETS.NAME"
@@ -12454,11 +12575,11 @@ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGBLADDER.TOOLTIP"
 msgid ""
 "This poor Duplicant couldn't find an <link=\"OUTHOUSE\">Outhouse</link> in time and is super embarrassed\n"
 "\n"
-"<link=\"OUTHOUSE\">Outhouses</link> can be built from the <b>Plumbing Tab</b> {Hotkey/Plan5}"
+"<link=\"OUTHOUSE\">Outhouses</link> can be built from the <b>Plumbing Tab</b> {Hotkey/Plan6}"
 msgstr ""
 "この哀れな複製人間は<link=\"OUTHOUSE\">野営トイレ</link>を見つけるのが間に合わなかったために、とても恥ずかしい思いをしています\n"
 "\n"
-"<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b> {Hotkey/Plan5} から建築できます"
+"<link=\"OUTHOUSE\">野営トイレ</link>は<b>配管タブ</b> {Hotkey/Plan6} から建築できます"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGOIL.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGOIL.NAME"
@@ -12486,11 +12607,11 @@ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSFULLYEMPTYINGOIL.TOOLTIP"
 msgid ""
 "This Bionic Duplicant couldn't get to a <link=\"GUNKEMPTIER\">Gunk Extractor</link> in time and got desperate\n"
 "\n"
-"<link=\"GUNKEMPTIER\">Gunk Extractors</link> can be built from the <b>Plumbing Tab</b> {Hotkey/Plan5}"
+"<link=\"GUNKEMPTIER\">Gunk Extractors</link> can be built from the <b>Plumbing Tab</b> {Hotkey/Plan6}"
 msgstr ""
 "このバイオニック複製人間は<link=\"GUNKEMPTIER\">残滓排出装置</link>を見つけるのが間に合わなかったために、とても恥ずかしい思いをしています\n"
 "\n"
-"<link=\"GUNKEMPTIER\">残滓排出装置</link>は<b>配管タブ</b> {Hotkey/Plan5} から建築できます"
+"<link=\"GUNKEMPTIER\">残滓排出装置</link>は<b>配管タブ</b> {Hotkey/Plan6} から建築できます"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSVOMITING.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSVOMITING.NAME"
@@ -15036,13 +15157,13 @@ msgstr "バイオニック複製人間に、心ゆくまで機械いじりやは
 
 #. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.NAME"
-msgid "<link=\"BOOSTEROP1\">Electrical Engineering Booster</link>"
-msgstr "<link=\"BOOSTEROP1\">電気工学ブースター</link>"
+msgid "<link=\"BOOSTEROP1\">Engineering Booster</link>"
+msgstr "<link=\"BOOSTEROP1\">工学ブースター</link>"
 
 #. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.SHORT_DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.SHORT_DESC"
-msgid "Starts with a preinstalled <b><link=\"BOOSTEROP1\">Electrical Engineering Booster</link></b>"
-msgstr "<b><link=\"BOOSTEROP1\">電気工学ブースター</link></b>を装着して開始"
+msgid "Starts with a preinstalled <b><link=\"BOOSTEROP1\">Engineering Booster</link></b>"
+msgstr "<b><link=\"BOOSTEROP1\">工学ブースター</link></b>を装着して開始"
 
 #. STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.SHORT_DESC_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.TRAITS.STARTWITHBOOSTER_OP1.SHORT_DESC_TOOLTIP"
@@ -15263,3 +15384,13 @@ msgstr "全宇宙のビタミンCを以てしても、この複製人間が罹�
 msgctxt "STRINGS.DUPLICANTS.TRAITS.WEAKIMMUNESYSTEM.NAME"
 msgid "Biohazardous"
 msgstr "バイオハザード"
+
+# 動物捕捉地点の「作業」タブに表示される文言
+# 部屋内（厩舎とは限らない）の動物の数が適正で、捕獲の必要がない場合に表示される
+#~ msgctxt "STRINGS.DUPLICANTS.CHORES.PRECONDITIONS.IS_CREATURE_AVAILABLE_FOR_FIXED_CAPTURE"
+#~ msgid "Pen Status OK"
+#~ msgstr "捕獲の必要はない"
+
+#~ msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMESICKNESS.NAME"
+#~ msgid "<link=\"SLIMESICKNESS\">Slimelung</link>"
+#~ msgstr "<link=\"SLIMESICKNESS\">腐肺病</link>"
