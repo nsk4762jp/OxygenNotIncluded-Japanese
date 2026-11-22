@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.NAME
@@ -218,11 +218,11 @@ msgstr "はんだ付け端末を使うと複製人間が飛行ドローンを作
 #. STRINGS.BUILDINGS.PREFABS.ADVANCEDCRAFTINGTABLE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ADVANCEDCRAFTINGTABLE.EFFECT"
 msgid ""
-"Produces advanced electronics and bionic <link=\"BIONICUPGRADE\">Boosters</link>.\n"
+"Produces advanced electronics and bionic <link=\"BOOSTER\">Boosters</link>.\n"
 "\n"
 "Duplicants will not fabricate items unless recipes are queued."
 msgstr ""
-"精密機械とバイオニック<link=\"BIONICUPGRADE\">ブースター</link>を製作します。\n"
+"精密機械とバイオニック<link=\"BOOSTER\">ブースター</link>を製作します。\n"
 "\n"
 "レシピがセットされていないと複製人間は製作作業をしません。"
 
@@ -492,24 +492,55 @@ msgstr "<link=\"ARTIFACTCARGOBAY\">遺物輸送モジュール</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.DESC"
-msgid "Duplicants must complete astronaut training in order to pilot space rockets."
-msgstr "宇宙船を操縦する複製人間は、宇宙飛行士訓練課程を修了しなければなりません。"
+msgid "When it's in turbo mode, this ride delivers truly dizzying levels of delight."
+msgstr "ターボモードにすると、この乗り物はまさに目がくらむほどの喜びをもたらしてくれます。"
 
 #. STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.EFFECT"
 msgid ""
-"Trains Duplicants to become <link=\"ROCKETPILOTING1\">Astronaut</link>.\n"
+"Must be connected to a <link=\"POWER\">Power</link> source.\n"
 "\n"
-"Duplicants must possess the <link=\"ROCKETPILOTING1\">Astronaut</link> trait to receive training."
+"Increases Duplicant <link=\"MORALE\">Morale</link>."
 msgstr ""
-"複製人間を<link=\"ROCKETPILOTING1\">宇宙飛行士</link>にするために訓練します。\n"
+"<link=\"POWER\">電源</link>が接続されている必要があります。\n"
 "\n"
-"訓練を受けるには<link=\"ROCKETPILOTING1\">宇宙飛行士</link>特性を持った複製人間が必要です。"
+"複製人間の<link=\"MORALE\">士気</link>を高めます。"
+
+#. STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.EFFECT_DLC1
+msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.EFFECT_DLC1"
+msgid ""
+"Must be connected to a <link=\"POWER\">Power</link> source.\n"
+"\n"
+"Improves Duplicant <link=\"SPACENAVIGATION\">Piloting</link> ability, and increases <link=\"MORALE\">Morale</link>."
+msgstr ""
+"<link=\"POWER\">電源</link>が接続されている必要があります。\n"
+"\n"
+"複製人間の<link=\"SPACENAVIGATION\">操縦</link>能力および<link=\"MORALE\">士気</link>を高めます。"
+
+#. STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.MODEEFFECT_NORMAL
+msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.MODEEFFECT_NORMAL"
+msgid "{attrib}: {amount} (Normal)"
+msgstr "{attrib}: {amount} (通常)"
+
+#. STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.MODEEFFECT_NORMAL_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.MODEEFFECT_NORMAL_TOOLTIP"
+msgid "Duplicants will gain {amount} {attrib} if Turbo Mode is on for less than {percent} of their ride"
+msgstr "ターボモードが稼働期間の {percent} 未満だった場合、複製人間は {amount} {attrib} を獲得します"
+
+#. STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.MODEEFFECT_TURBO
+msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.MODEEFFECT_TURBO"
+msgid "{attrib}: {amount} (Turbo Mode)"
+msgstr "{attrib}: {amount} (ターボモード)"
+
+#. STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.MODEEFFECT_TURBO_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.MODEEFFECT_TURBO_TOOLTIP"
+msgid "Duplicants will gain {amount} {attrib} if Turbo Mode is on for at least {percent} of their ride"
+msgstr "ターボモードが稼働期間の {percent} 異常だった場合、複製人間は {amount} {attrib} を獲得します"
 
 #. STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.NAME"
-msgid "<link=\"ASTRONAUTTRAININGCENTER\">Space Cadet Centrifuge</link>"
-msgstr "<link=\"ASTRONAUTTRAININGCENTER\">宇宙飛行士訓練所</link>"
+msgid "<link=\"ASTRONAUTTRAININGCENTER\">Space Racer</link>"
+msgstr "<link=\"ASTRONAUTTRAININGCENTER\">宇宙レーサー</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.AUTOMINER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.AUTOMINER.DESC"
@@ -811,6 +842,11 @@ msgstr "ビータの小ぢんまりした家です。"
 msgctxt "STRINGS.BUILDINGS.PREFABS.BEEHIVE.NAME"
 msgid "<link=\"BEEHIVE\">Beeta Hive</link>"
 msgstr "<link=\"BEEHIVE\">ビータの巣</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.BEEHIVE.SUBTITLE
+msgctxt "STRINGS.BUILDINGS.PREFABS.BEEHIVE.SUBTITLE"
+msgid "Uranium-Refining Hostile Critter Home"
+msgstr "ウラン精製を行う敵対的生物の住処です"
 
 #. STRINGS.BUILDINGS.PREFABS.BIODIESELENGINE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.BIODIESELENGINE.DESC"
@@ -2785,21 +2821,37 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.DEVRADIATIONGENERATOR.NAME"
 msgid "Dev Radiation Emitter"
 msgstr "開発者用 放射線源"
 
+#. STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.COQUINA_RECIPE_DESCRIPTION
+msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.COQUINA_RECIPE_DESCRIPTION"
+msgid "Converts {1} to {0}"
+msgstr "{1}を{0}に変換します"
+
 #. STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.DESC"
-msgid "Crushes refined carbon into diamond."
-msgstr "石炭を砕いてダイヤモンドにします。"
+msgid "It requires radbolts in order to function."
+msgstr "機能するにはRADボルトが必要です"
 
 #. STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.EFFECT"
 msgid ""
-"Uses <link=\"POWER\">Power</link> and <link=\"RADIATION\">Radbolts</link> to crush <link=\"REFINEDCARBON\">Refined Carbon</link> into <link=\"DIAMOND\">Diamond</link>.\n"
+"Crushes <link=\"REFINEDCARBON\">Refined Carbon</link> into <link=\"DIAMOND\">Diamond</link>.\n"
 "\n"
-"Duplicants will not fabricate items unless recipes are queued and <link=\"REFINEDCARBON\">Refined Carbon</link> has been discovered."
+"Duplicants will not fabricate items unless recipes are queued and ingredients have been discovered."
 msgstr ""
-"<link=\"POWER\">電力</link>と<link=\"RADIATION\">RADボルト</link>を使い、<link=\"REFINEDCARBON\">精錬炭素</link>を砕いて<link=\"DIAMOND\">ダイヤモンド</link>にします。\n"
+"<link=\"REFINEDCARBON\">精錬炭素</link>を砕いて<link=\"DIAMOND\">ダイヤモンド</link>にします。\n"
 "\n"
-"<link=\"REFINEDCARBON\">精錬炭素</link>が発見済みで、レシピがセットされていないと複製人間は製作作業をしません。"
+"必要素材が発見済みで、レシピがセットされていないと複製人間は製作作業をしません。"
+
+#. STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.EFFECT_DLC5
+msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.EFFECT_DLC5"
+msgid ""
+"Crushes <link=\"REFINEDCARBON\">Refined Carbon</link> into <link=\"DIAMOND\">Diamond</link>, and <link=\"COQUINA\">Coquina</link> into <link=\"PEARL\">Pearl</link>.\n"
+"\n"
+"Duplicants will not fabricate items unless recipes are queued and ingredients have been discovered."
+msgstr ""
+"<link=\"REFINEDCARBON\">精錬炭素</link>を砕いて<link=\"DIAMOND\">ダイヤモンド</link>に、<link=\"COQUINA\">石灰岩</link>を砕いて<link=\"PEARL\">真珠</link>にします。\n"
+"\n"
+"必要素材が発見済みで、レシピがセットされていないと複製人間は製作作業をしません。"
 
 #. STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.NAME"
@@ -2870,19 +2922,19 @@ msgstr "<link=\"DISTILLATIONCOLUMN\">蒸留塔</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.DLC1COSMICRESEARCHCENTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.DLC1COSMICRESEARCHCENTER.DESC"
-msgid "Planetariums allow the simulated exploration of locations recorded in <link=\"ORBITALRESEARCHDATABANK\">Data Banks</link>."
-msgstr "プラネタリウムは<link=\"ORBITALRESEARCHDATABANK\">データバンク</link>に記録された宙域の探索シミュレートを可能にします。"
+msgid "Planetariums allow the simulated exploration of locations recorded in <link=\"DATABANK\">Data Banks</link>."
+msgstr "プラネタリウムは<link=\"DATABANK\">データバンク</link>に記録された宙域の探索シミュレートを可能にします。"
 
 #. STRINGS.BUILDINGS.PREFABS.DLC1COSMICRESEARCHCENTER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.DLC1COSMICRESEARCHCENTER.EFFECT"
 msgid ""
 "Conducts <link=\"RESEARCH\">Data Analysis Research</link> to unlock new technologies.\n"
 "\n"
-"Consumes <link=\"ORBITALRESEARCHDATABANK\">Data Banks</link> generated by exploration."
+"Consumes <link=\"DATABANK\">Data Banks</link> generated by exploration."
 msgstr ""
 "新たな技術を開発するために、<link=\"RESEARCH\">データ分析研究</link>を行います。\n"
 "\n"
-"探索によって得られた<link=\"ORBITALRESEARCHDATABANK\">データバンク</link>を消費します。"
+"探索によって得られた<link=\"DATABANK\">データバンク</link>を消費します。"
 
 #. STRINGS.BUILDINGS.PREFABS.DLC1COSMICRESEARCHCENTER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.DLC1COSMICRESEARCHCENTER.NAME"
@@ -4234,8 +4286,8 @@ msgstr "平らに均した植物片は木材の代用品として使えます。
 
 #. STRINGS.BUILDINGS.PREFABS.FABRICATEDWOODMAKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.FABRICATEDWOODMAKER.EFFECT"
-msgid "Combines a Binder liquid and <link=\"PLANTFIBER\">Plant Husk</link> to create <link=\"FABRICATEDWOOD\">Plywood</link>."
-msgstr "接着剤と<link=\"PLANTFIBER\">植物の殻</link>を混ぜ合わせて<link=\"FABRICATEDWOOD\">合板</link>を製作します。"
+msgid "Combines <link=\"NATURALRESIN\">Resin</link> and <link=\"PLANTFIBER\">Plant Husk</link> to create <link=\"FABRICATEDWOOD\">Plywood</link>."
+msgstr "<link=\"NATURALRESIN\">レジン</link>と<link=\"PLANTFIBER\">植物の殻</link>を混ぜ合わせて<link=\"FABRICATEDWOOD\">合板</link>を製作します。"
 
 #. STRINGS.BUILDINGS.PREFABS.FABRICATEDWOODMAKER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.FABRICATEDWOODMAKER.NAME"
@@ -4310,8 +4362,8 @@ msgstr "<link=\"FARMTILE\">農耕タイル</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FERTILIZERMAKER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FERTILIZERMAKER.DESC"
-msgid "Fertilizer synthesizers convert polluted dirt into fertilizer for domestic plants."
-msgstr "肥料合成機は汚染土を農作物用の肥料に変換します。"
+msgid "Fertilizer synthesizers convert polluted water into fertilizer for domestic plants."
+msgstr "肥料合成機は汚染水を農作物用の肥料に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.FERTILIZERMAKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.FERTILIZERMAKER.EFFECT"
@@ -4993,6 +5045,38 @@ msgstr "長期保存可能なパック食糧に水分を復元して、<link=\"F
 msgctxt "STRINGS.BUILDINGS.PREFABS.FOODREHYDRATOR.NAME"
 msgid "<link=\"FOODREHYDRATOR\">Rehydrator</link>"
 msgstr "<link=\"FOODREHYDRATOR\">パック注水機</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.FORGETOOLS.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.FORGETOOLS.DESC"
+msgid "Things get done faster when there's safety equipment within reach."
+msgstr "安全用具が手の届く範囲にあれば、作業はより迅速に進みます。"
+
+#. STRINGS.BUILDINGS.PREFABS.FORGETOOLS.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.FORGETOOLS.EFFECT"
+msgid ""
+"Increases the fabrication speed for compatible buildings placed nearby.\n"
+"\n"
+"This building does not require Duplicant operation."
+msgstr ""
+"周囲にある対応設備の製造速度を上げます。\n"
+"\n"
+"この設備に人手はかかりません。"
+
+#. STRINGS.BUILDINGS.PREFABS.FORGETOOLS.EFFECT_RESEARCH
+msgctxt "STRINGS.BUILDINGS.PREFABS.FORGETOOLS.EFFECT_RESEARCH"
+msgid ""
+"Increases the fabrication speed for compatible buildings placed nearby.\n"
+"\n"
+"<b>Compatible buildings:</b>{LIST}"
+msgstr ""
+"周囲にある互換設備の製造速度を上げます。\n"
+"\n"
+"<b>対応設備:</b>{LIST}"
+
+#. STRINGS.BUILDINGS.PREFABS.FORGETOOLS.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.FORGETOOLS.NAME"
+msgid "<link=\"FORGETOOLS\">Forge Tools</link>"
+msgstr "<link=\"FORGETOOLS\">鍛造道具</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.FOSSILDIG.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.FOSSILDIG.DESC"
@@ -6462,7 +6546,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.HIGHENERGYPARTICLESPAWNER.EFFECT"
 msgid ""
 "Attracts nearby <link=\"RADIATION\">Radiation</link> to generate Radbolts.\n"
 "\n"
-"Emits generated Radbolts in the direction of your choosing when the set Radbolt threshold is reached.\n"
+"Emits generated Radbolts in the direction of my choosing when the set Radbolt threshold is reached.\n"
 "\n"
 "Radbolts collected will gradually decay while this building is disabled."
 msgstr ""
@@ -6538,11 +6622,11 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.HIJACKEDHEADQUARTERS_COMPLETED.EFFECT"
 msgid ""
 "Intercepts and stores <link=\"POWER\">Power</link> charges from the <link=\"HEADQUARTERS\">Printing Pod</link>.\n"
 "\n"
-"Converts stored charges and <link=\"DATABANK\">Data Banks</link> into <link=\"CREATURES\">Seeds</link> and <link=\"CREATURES\">Eggs</link>."
+"Converts stored charges and <link=\"DATABANK\">Data Banks</link> into <link=\"PLANTS\">Seeds</link> and <link=\"CREATURES\">Eggs</link>."
 msgstr ""
 "<link=\"HEADQUARTERS\">製造ポッド</link>から<link=\"POWER\">電力</link>チャージを収集し、蓄積します。\n"
 "\n"
-"蓄積されたチャージと<link=\"DATABANK\">データバンク</link>を<link=\"CREATURES\">種子</link>と<link=\"CREATURES\">卵</link>に変換します。"
+"蓄積されたチャージと<link=\"DATABANK\">データバンク</link>を<link=\"PLANTS\">種子</link>や<link=\"CREATURES\">卵</link>に変換します。"
 
 #. STRINGS.BUILDINGS.PREFABS.HIJACKEDHEADQUARTERS_COMPLETED.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.HIJACKEDHEADQUARTERS_COMPLETED.NAME"
@@ -7139,6 +7223,38 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.KILN.NAME"
 msgid "<link=\"KILN\">Kiln</link>"
 msgstr "<link=\"KILN\">焼成窯</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.KITCHENTOOLS.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.KITCHENTOOLS.DESC"
+msgid "The secret to keeping tools clean is to never, ever, touch them."
+msgstr "道具をきれいに保つ秘訣は、それらに決して触れないことです。"
+
+#. STRINGS.BUILDINGS.PREFABS.KITCHENTOOLS.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.KITCHENTOOLS.EFFECT"
+msgid ""
+"Increases the speed at which nearby cooking stations complete orders.\n"
+"\n"
+"This building does not require Duplicant operation."
+msgstr ""
+"周囲にある調理端末の調理速度を上げます。\n"
+"\n"
+"この設備は人手を必要としません。"
+
+#. STRINGS.BUILDINGS.PREFABS.KITCHENTOOLS.EFFECT_RESEARCH
+msgctxt "STRINGS.BUILDINGS.PREFABS.KITCHENTOOLS.EFFECT_RESEARCH"
+msgid ""
+"Increases the speed at which nearby cooking stations complete orders.\n"
+"\n"
+"<b>Eligible buildings:</b>{LIST}"
+msgstr ""
+"周囲にある調理端末の調理速度を上げます。\n"
+"\n"
+"<b>対象設備:</b>{LIST}"
+
+#. STRINGS.BUILDINGS.PREFABS.KITCHENTOOLS.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.KITCHENTOOLS.NAME"
+msgid "<link=\"KITCHENTOOLS\">Cooking Tools</link>"
+msgstr "<link=\"KITCHENTOOLS\">調理器具</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.LADDER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.LADDER.DESC"
@@ -9116,7 +9232,7 @@ msgstr "<b><style=\"logic_on\">グリーン</style></b>: 受信した<b><style=\
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.INPUT_PORT_INACTIVE"
-msgid "<b><style=\"logic_off\">Red Signal</style></b>: Receives <b><style=\"logic_off\">Red Signal</style></b> to to be written selected Bit"
+msgid "<b><style=\"logic_off\">Red Signal</style></b>: Receives <b><style=\"logic_off\">Red Signal</style></b> to be written to selected Bit"
 msgstr "<b><style=\"logic_off\">レッド</style></b>: 受信した<b><style=\"logic_off\">レッド</style></b>を指定したビットに書き込む"
 
 #. STRINGS.BUILDINGS.PREFABS.LOGICRIBBONWRITER.LOGIC_PORT
@@ -9404,7 +9520,7 @@ msgstr "誰かがここにしばらく居住していたようです。"
 
 #. STRINGS.BUILDINGS.PREFABS.LONELYMINIONHOUSE_COMPLETE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.LONELYMINIONHOUSE_COMPLETE.EFFECT"
-msgid "A super-spacious container for the <link=\"ELEMENTSSOLID\">Solid Materials</link> of your choosing."
+msgid "A super-spacious container for the <link=\"ELEMENTSSOLID\">Solid Materials</link> of my choosing."
 msgstr "指定した<link=\"ELEMENTSSOLID\">固形素材</link>を収納しておける、超大容量コンテナです。"
 
 #. STRINGS.BUILDINGS.PREFABS.LONELYMINIONHOUSE_COMPLETE.NAME
@@ -9599,7 +9715,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.MANUALHIGHENERGYPARTICLESPAWNER.EFFECT"
 msgid ""
 "Refines radioactive ores to generate Radbolts.\n"
 "\n"
-"Emits generated Radbolts in the direction of your choosing."
+"Emits generated Radbolts in the direction of my choosing."
 msgstr ""
 "放射性鉱石を精錬し、RADボルトを生成します。\n"
 "\n"
@@ -13849,6 +13965,38 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.REMOTEWORKTERMINAL.NAME"
 msgid "<link=\"REMOTEWORKTERMINAL\">Remote Controller</link>"
 msgstr "<link=\"REMOTEWORKTERMINAL\">リモート コントローラー</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.RESEARCHARCHIVES.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHARCHIVES.DESC"
+msgid "Gathering several of these reference materials in one place will speed things up even more."
+msgstr "こうした参考資料を一ヵ所に集めておけば、作業はさらにスピードアップするでしょう。"
+
+#. STRINGS.BUILDINGS.PREFABS.RESEARCHARCHIVES.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHARCHIVES.EFFECT"
+msgid ""
+"Provides a small increase to <link=\"RESEARCH\">Research</link> speed at compatible buildings.\n"
+"\n"
+"This building does not require Duplicant operation."
+msgstr ""
+"互換設備の<link=\"RESEARCH\">研究</link>速度を少し上げます。\n"
+"\n"
+"この設備は人手を必要としません。"
+
+#. STRINGS.BUILDINGS.PREFABS.RESEARCHARCHIVES.EFFECT_RESEARCH
+msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHARCHIVES.EFFECT_RESEARCH"
+msgid ""
+"Provides a small increase to <link=\"RESEARCH\">Research</link> speed at compatible buildings.\n"
+"\n"
+"<b>Compatible buildings:</b>{LIST}"
+msgstr ""
+"互換設備の<link=\"RESEARCH\">研究</link>速度を少し上げます。\n"
+"\n"
+"<b>互換設備:</b>{LIST}"
+
+#. STRINGS.BUILDINGS.PREFABS.RESEARCHARCHIVES.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHARCHIVES.NAME"
+msgid "<link=\"RESEARCHARCHIVES\">Study Tools</link>"
+msgstr "<link=\"RESEARCHARCHIVES\">学習ツール</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.RESEARCHCENTER.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.RESEARCHCENTER.DESC"
 msgid "Research stations are necessary for unlocking all research tiers."
@@ -13993,7 +14141,7 @@ msgstr "ロボ操縦士モジュールに複製人間の宇宙飛行士は不要
 #. STRINGS.BUILDINGS.PREFABS.ROBOPILOTMODULE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ROBOPILOTMODULE.EFFECT"
 msgid ""
-"Enables rockets to travel swfitly without a <link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link>.\n"
+"Enables rockets to travel swiftly without a <link=\"ROCKETCONTROLSTATION\">Rocket Control Station</link>.\n"
 "\n"
 "Must be built via <link=\"LAUNCHPAD\">Rocket Platform</link>."
 msgstr ""
@@ -14593,6 +14741,162 @@ msgstr ""
 msgctxt "STRINGS.BUILDINGS.PREFABS.RUSTDEOXIDIZER.NAME"
 msgid "<link=\"RUSTDEOXIDIZER\">Rust Deoxidizer</link>"
 msgstr "<link=\"RUSTDEOXIDIZER\">錆脱酸素装置</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.ART_QUALITY
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.ART_QUALITY"
+msgid "Art Quality"
+msgstr "アートの品質"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.DESC"
+msgid "Sand art is naturally unstable and will eventually collapse."
+msgstr "砂のアートは本来不安定なものであり、いずれ崩れ落ちてしまいます。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.EFFECT"
+msgid ""
+"Allows Duplicants to enjoy a <link=\"MORALE\">Morale</link>-boosting play session on their breaks.\n"
+"\n"
+"No artistic skill is required."
+msgstr ""
+"休憩時間に遊ぶことで、複製人間に<link=\"MORALE\">士気</link>ボーナスを与えます。\n"
+"\n"
+"芸術スキルを必要としません。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDBOX_CASTLE_1.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDBOX_CASTLE_1.DESC"
+msgid "It has the strength of a billion billion tiny grains of sand."
+msgstr "それには、100京粒もの微細な砂の強さが備わっています。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDBOX_CASTLE_1.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDBOX_CASTLE_1.NAME"
+msgid "Fortress of Sanditude"
+msgstr "砂の要塞"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDBOX_CASTLE_2.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDBOX_CASTLE_2.DESC"
+msgid "Its twin turrets are taller than the Duplicant who built them."
+msgstr "二つある塔の高さはそれを築いた複製人間よりも高くなっています。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDBOX_CASTLE_2.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDBOX_CASTLE_2.NAME"
+msgid "Sand Castle"
+msgstr "砂の城"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_CASTLE_SIMPLE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_CASTLE_SIMPLE.DESC"
+msgid "A simple collection of turrets, unbound by the constraints of architecture."
+msgstr "建築の制約に捕らわれない、大小様々な尖塔の集まりです。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_CASTLE_SIMPLE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_CASTLE_SIMPLE.NAME"
+msgid "Sand Castle"
+msgstr "砂の城"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_MERPIP.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_MERPIP.DESC"
+msgid "An aquatic critter gazes beseechingly up toward the sky, hoping for treats."
+msgstr "水棲動物がおやつを期待して、空を見上げて懇願するようにじっと見つめています。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_MERPIP.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_MERPIP.NAME"
+msgid "The Beseechment"
+msgstr "懇願"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEACLAMKING.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEACLAMKING.DESC"
+msgid "This royal Glo Squid is finally ready to come out of its shell."
+msgstr "この高貴なグローイカは、ついに殻から出てくる準備が整いました。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEACLAMKING.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEACLAMKING.NAME"
+msgid "Clampum King"
+msgstr "クランパンの王"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEAKING.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEAKING.DESC"
+msgid "A specially-trained Orehull helps its master navigate deep waters."
+msgstr "特別な訓練を受けたオレハルが主人の航行を助けます。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEAKING.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEAKING.NAME"
+msgid "The Guide"
+msgstr "ガイド"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEAKISSES.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEAKISSES.DESC"
+msgid "One of these Blowters is fighting to hold back a very large burp."
+msgstr "ブローターのうちの一体は大きなげっぷをこらえています。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEAKISSES.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEAKISSES.NAME"
+msgid "Fishy Kiss"
+msgstr "魚みたいなキス"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEALOVERS.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEALOVERS.DESC"
+msgid "A pair of Seaquines prepare to engage in a deepsea disco dance-off."
+msgstr "シークインの二匹が深海でのディスコバトルに臨もうとしています。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEALOVERS.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SEALOVERS.NAME"
+msgid "A Deep Bow"
+msgstr "お辞儀"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SHELL_SIMPLE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SHELL_SIMPLE.DESC"
+msgid "A series of artfully arranged aquatic shapes dreamed up by a happy Duplicant."
+msgstr "幸せな複製人間が思い描いた、巧みに配置された水にまつわる様々な形です。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SHELL_SIMPLE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SHELL_SIMPLE.NAME"
+msgid "Shell-ebrate"
+msgstr "お祝い"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SNOWMAN.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SNOWMAN.DESC"
+msgid "This grainy character looks like they're winning a game of Limbo."
+msgstr "このざらついた感じのキャラクターはリンボーダンス勝負に勝ったようです。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SNOWMAN.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SNOWMAN.NAME"
+msgid "The Sandman"
+msgstr "サンドマン"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SOFTSERVE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SOFTSERVE.DESC"
+msgid "Something about the way this sand has been sculpted makes Duplicants' mouths water."
+msgstr "この砂の造形には複製人間達の食欲をそそる何かがあります。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SOFTSERVE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_SOFTSERVE.NAME"
+msgid "Sweet Stuff"
+msgstr "美味しそうな何か"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_STARFISH_SIMPLE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_STARFISH_SIMPLE.DESC"
+msgid "The sculptor declined to include the critter's sixth limb, citing artistic liberty."
+msgstr "彫刻家は芸術的自由を理由に、その動物の6本目の肢を盛り込むことを拒みました。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_STARFISH_SIMPLE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_STARFISH_SIMPLE.NAME"
+msgid "Five-Pointed Starnacle"
+msgstr "5本腕のホシツボ"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_TOMBSTONE_SIMPLE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_TOMBSTONE_SIMPLE.DESC"
+msgid "Celebrates a possible future reunion between the sculptor and their long-departed friend."
+msgstr "彫刻家と長い間離れ離れになっていた友達との将来の再会を祝して。"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_TOMBSTONE_SIMPLE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.FACADES.SANDSCULPTURE_TOMBSTONE_SIMPLE.NAME"
+msgid "Welcome Back"
+msgstr "おかえりなさい"
+
+#. STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.SANDBOXBUILDING.NAME"
+msgid "<link=\"SANDBOXBUILDING\">Sandpit</link>"
+msgstr "<link=\"SANDBOXBUILDING\">砂場</link>"
 
 #. STRINGS.BUILDINGS.PREFABS.SAUNA.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SAUNA.DESC"
@@ -15359,8 +15663,8 @@ msgstr "指定した物体を検出すると<b><style=\"logic_on\">グリーン<
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT"
-msgid "Internal <link=\"ELEMENTSLIQUID\">Item</link> Presence"
-msgstr "内部<link=\"ELEMENTSLIQUID\">物体</link>判定"
+msgid "Internal <link=\"ELEMENTSSOLID\">Item</link> Presence"
+msgstr "内部<link=\"ELEMENTSSOLID\">物体</link>判定"
 
 #. STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITELEMENTSENSOR.LOGIC_PORT_ACTIVE"
@@ -15387,7 +15691,7 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.SOLIDCONDUITINBOX.EFFECT"
 msgid ""
 "Loads <link=\"ELEMENTSSOLID\">Solid Materials</link> onto <link=\"SOLIDCONDUIT\">Conveyor Rail</link> for transport.\n"
 "\n"
-"Only loads the resources of your choosing."
+"Only loads the resources of my choosing."
 msgstr ""
 "輸送用に<link=\"ELEMENTSSOLID\">固形素材</link>を<link=\"SOLIDCONDUIT\">コンベアレール</link>に積載します。\n"
 "\n"
@@ -15826,7 +16130,7 @@ msgstr "床に放置された資源は「がれき」扱いとなり、美観を
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.EFFECT"
-msgid "Stores the <link=\"ELEMENTSSOLID\">Solid Materials</link> of your choosing."
+msgid "Stores the <link=\"ELEMENTSSOLID\">Solid Materials</link> of my choosing."
 msgstr "指定した<link=\"ELEMENTSSOLID\">固形素材</link>を収納します。"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.FACADES.BLUE_BABYTEARS.DESC
@@ -15924,6 +16228,28 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKER.NAME"
 msgid "<link=\"STORAGELOCKER\">Storage Bin</link>"
 msgstr "<link=\"STORAGELOCKER\">収納庫</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.ACTIVATE_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.ACTIVATE_TOOLTIP"
+msgid ""
+"Send a <b><style=\"logic_on\">Green Signal</style></b> when storage is at least <b>{0}%</b> full and remains above <b>{1}% (Base Limit)</b>\n"
+"\n"
+"Slide to adjust this threshold"
+msgstr ""
+"収納容量が<b>{0}%</b>になると、<b>{1}% (基準下限)</b>になるまで<b><style=\"logic_on\">グリーン</style></b>になります\n"
+"\n"
+"しきい値は調整できます"
+
+#. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.DEACTIVATE_TOOLTIP
+msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.DEACTIVATE_TOOLTIP"
+msgid ""
+"Send a <b><style=\"logic_off\">Red Signal</style></b> when stored mass percentage is below <b>{0}%</b>\n"
+"\n"
+"Slide to adjust this threshold"
+msgstr ""
+"収納容量が<b>{0}%</b>を下回ると、<b><style=\"logic_off\">レッド</style></b>になります\n"
+"\n"
+"閾値は調整できます"
+
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.DESC"
 msgid "Smart storage bins can automate resource organization based on type and mass."
@@ -15932,23 +16258,23 @@ msgstr "スマート収納庫は、種類や質量に応じた資源の整理を
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.EFFECT"
 msgid ""
-"Stores the <link=\"ELEMENTSSOLID\">Solid Materials</link> of your choosing.\n"
+"Stores the <link=\"ELEMENTSSOLID\">Solid Materials</link> of my choosing.\n"
 "\n"
-"Sends a <b><style=\"logic_on\">Green Signal</style></b> when bin is full."
+"Sends a <b><style=\"logic_on\">Green Signal</style></b> when contents surpass specified thresholds."
 msgstr ""
 "指定した<link=\"ELEMENTSSOLID\">固形素材</link>を収納します。\n"
 "\n"
-"満杯なら<b><style=\"logic_on\">グリーン</style></b>の信号を送信します。"
+"内容物が特定の閾値を超えると<b><style=\"logic_on\">グリーン</style></b>の信号を送信します。"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT"
-msgid "Full/Not Full"
-msgstr "満杯 / 空き有り"
+msgid "Storage Threshold"
+msgstr "収納閾値"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_ACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_ACTIVE"
-msgid "Sends a <b><style=\"logic_on\">Green Signal</style></b> when full"
-msgstr "満杯なら<b><style=\"logic_on\">グリーン</style></b>を送信"
+msgid "Sends a <b><style=\"logic_on\">Green Signal</style></b> when stored mass percentage surpasses the <b>Target Limit</b> and remains above the <b>Base Limit</b>"
+msgstr "収納容量が<b>目標上限</b>を超えかつ <b>基準下限</b>を上回っている間、<b><style=\"logic_on\">グリーン</style></b>になります"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_INACTIVE
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_INACTIVE"
@@ -15959,6 +16285,21 @@ msgstr "それ以外は<b><style=\"logic_off\">レッド</style></b>を送信"
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.NAME"
 msgid "<link=\"STORAGELOCKERSMART\">Smart Storage Bin</link>"
 msgstr "<link=\"STORAGELOCKERSMART\">スマート収納庫</link>"
+
+#. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.SIDESCREEN_ACTIVATE
+msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.SIDESCREEN_ACTIVATE"
+msgid "High Threshold:"
+msgstr "閾値上限:"
+
+#. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.SIDESCREEN_DEACTIVATE
+msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.SIDESCREEN_DEACTIVATE"
+msgid "Low Threshold:"
+msgstr "閾値下限:"
+
+#. STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.SIDESCREEN_TITLE
+msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.SIDESCREEN_TITLE"
+msgid "Logic Parameters"
+msgstr "論理パラメータ"
 
 #. STRINGS.BUILDINGS.PREFABS.STORAGETILE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGETILE.DESC"
@@ -16525,6 +16866,27 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.TOURISTMODULE.NAME"
 msgid "<link=\"TOURISTMODULE\">Sight-Seeing Module</link>"
 msgstr "<link=\"TOURISTMODULE\">観光モジュール</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.TRAMPOLINE.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.TRAMPOLINE.DESC"
+msgid "It's impossible to stay upset while bouncing."
+msgstr "弾んでいる間は怒ることもできません。"
+
+#. STRINGS.BUILDINGS.PREFABS.TRAMPOLINE.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.TRAMPOLINE.EFFECT"
+msgid ""
+"Uses <link=\"RUBBER\">Rubber</link> to help Duplicants rebound from the stress of colony life.\n"
+"\n"
+"Increases Duplicant <link=\"MORALE\">Morale</link> and improves their athleticism."
+msgstr ""
+"<link=\"RUBBER\">ゴム</link>を使用して、複製人間がコロニー生活のストレスから立ち直るのを助けます。\n"
+"\n"
+"複製人間の<link=\"MORALE\">士気</link>を高め、身体能力を向上させます。"
+
+#. STRINGS.BUILDINGS.PREFABS.TRAMPOLINE.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.TRAMPOLINE.NAME"
+msgid "<link=\"TRAMPOLINE\">Trampoline</link>"
+msgstr "<link=\"TRAMPOLINE\">トランポリン</link>"
+
 #. STRINGS.BUILDINGS.PREFABS.TRAVELTUBE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.TRAVELTUBE.DESC"
 msgid "Duplicants will only exit a transit tube when a safe landing area is available beneath it."
@@ -16646,6 +17008,17 @@ msgid ""
 "Accessing the fountain significantly improves <link=\"CREATURES\">Critters</link>' moods."
 msgstr ""
 "さまざまな種類の水棲<link=\"CREATURES\">動物</link>に<link=\"MILK\">モー乳</link>を提供します。\n"
+"\n"
+"噴水を利用することで、<link=\"CREATURES\">動物</link>の気分は大幅に改善します。"
+
+#. STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKFEEDER.EFFECT_DLC5
+msgctxt "STRINGS.BUILDINGS.PREFABS.UNDERWATERMILKFEEDER.EFFECT_DLC5"
+msgid ""
+"Dispenses <link=\"MILK\">Brackene</link> or <link=\"INK\">Squid Ink</link> to aquatic <link=\"CREATURES\">Critters</link>.\n"
+"\n"
+"Accessing the fountain significantly improves <link=\"CREATURES\">Critters</link>' moods."
+msgstr ""
+"さまざまな種類の<link=\"CREATURES\">動物</link>に<link=\"MILK\">モー乳</link>や<link=\"INK\">イカスミ</link>を提供します。\n"
 "\n"
 "噴水を利用することで、<link=\"CREATURES\">動物</link>の気分は大幅に改善します。"
 
@@ -17432,11 +17805,11 @@ msgstr "薪ストーブは小型でメンテナンスしやすいですが、か
 #. STRINGS.BUILDINGS.PREFABS.WOODGASGENERATOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.WOODGASGENERATOR.EFFECT"
 msgid ""
-"Burns <link=\"WOOD\">Wood</link> to produce electrical <link=\"POWER\">Power</link>.\n"
+"Burns <link=\"BUILDINGWOOD\">Lumber</link> to produce electrical <link=\"POWER\">Power</link>.\n"
 "\n"
 "Produces <link=\"CARBONDIOXIDE\">Carbon Dioxide</link> and <link=\"HEAT\">Heat</link>."
 msgstr ""
-"<link=\"WOOD\">木材</link>を燃やすことで<link=\"POWER\">発電</link>します。\n"
+"<link=\"BUILDINGWOOD\">製材</link>を燃やすことで<link=\"POWER\">発電</link>します。\n"
 "\n"
 "<link=\"CARBONDIOXIDE\">二酸化炭素</link>と<link=\"HEAT\">熱</link>を排出します。"
 
@@ -17517,6 +17890,38 @@ msgctxt "STRINGS.BUILDINGS.PREFABS.WOODTILE.NAME"
 msgid "<link=\"WOODTILE\">Wood Tile</link>"
 msgstr "<link=\"WOODTILE\">木製タイル</link>"
 
+#. STRINGS.BUILDINGS.PREFABS.WORKSHOPTOOLS.DESC
+msgctxt "STRINGS.BUILDINGS.PREFABS.WORKSHOPTOOLS.DESC"
+msgid "It really is an attractive collection."
+msgstr "非常に魅力的なコレクションです。"
+
+#. STRINGS.BUILDINGS.PREFABS.WORKSHOPTOOLS.EFFECT
+msgctxt "STRINGS.BUILDINGS.PREFABS.WORKSHOPTOOLS.EFFECT"
+msgid ""
+"Increases the fabrication speed for compatible buildings placed nearby.\n"
+"\n"
+"This building does not require Duplicant operation."
+msgstr ""
+"周囲にある対応設備の製造速度を上げます。\n"
+"\n"
+"この設備に人手はかかりません。"
+
+#. STRINGS.BUILDINGS.PREFABS.WORKSHOPTOOLS.EFFECT_RESEARCH
+msgctxt "STRINGS.BUILDINGS.PREFABS.WORKSHOPTOOLS.EFFECT_RESEARCH"
+msgid ""
+"Increases the fabrication speed for compatible buildings placed nearby.\n"
+"\n"
+"<b>Compatible buildings:</b>{LIST}"
+msgstr ""
+"周囲にある互換設備の製造速度を上げます。\n"
+"\n"
+"<b>対応設備:</b>{LIST}"
+
+#. STRINGS.BUILDINGS.PREFABS.WORKSHOPTOOLS.NAME
+msgctxt "STRINGS.BUILDINGS.PREFABS.WORKSHOPTOOLS.NAME"
+msgid "<link=\"WORKSHOPTOOLS\">Workshop Tools</link>"
+msgstr "<link=\"WORKSHOPTOOLS\">作業用ツール</link>"
+
 #. STRINGS.BUILDINGS.REPAIRABLE.DISABLE_AUTOREPAIR.NAME
 msgctxt "STRINGS.BUILDINGS.REPAIRABLE.DISABLE_AUTOREPAIR.NAME"
 msgid "Disable Autorepair"
@@ -17543,3 +17948,29 @@ msgstr ""
 "この設備が損傷したとき、複製人間が自発的に修理することを許します\n"
 "\n"
 "現在の設定: <b><style=\"logic_off\">修理しない</style></b>"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.DESC"
+#~ msgid "Duplicants must complete astronaut training in order to pilot space rockets."
+#~ msgstr "宇宙船を操縦する複製人間は、宇宙飛行士訓練課程を修了しなければなりません。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.ASTRONAUTTRAININGCENTER.EFFECT"
+#~ msgid ""
+#~ "Trains Duplicants to become <link=\"ROCKETPILOTING1\">Astronaut</link>.\n"
+#~ "\n"
+#~ "Duplicants must possess the <link=\"ROCKETPILOTING1\">Astronaut</link> trait to receive training."
+#~ msgstr ""
+#~ "複製人間を<link=\"ROCKETPILOTING1\">宇宙飛行士</link>にするために訓練します。\n"
+#~ "\n"
+#~ "訓練を受けるには<link=\"ROCKETPILOTING1\">宇宙飛行士</link>特性を持った複製人間が必要です。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.DIAMONDPRESS.DESC"
+#~ msgid "Crushes refined carbon into diamond."
+#~ msgstr "石炭を砕いてダイヤモンドにします。"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT"
+#~ msgid "Full/Not Full"
+#~ msgstr "満杯 / 空き有り"
+
+#~ msgctxt "STRINGS.BUILDINGS.PREFABS.STORAGELOCKERSMART.LOGIC_PORT_ACTIVE"
+#~ msgid "Sends a <b><style=\"logic_on\">Green Signal</style></b> when full"
+#~ msgstr "満杯なら<b><style=\"logic_on\">グリーン</style></b>を送信"

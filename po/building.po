@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. STRINGS.BUILDING.DETAILS.USE_COUNT
@@ -245,6 +245,26 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.TOOLTIP"
 msgid "Duplicants may not specifically fetch <style=\"KKeyword\">Liquid</style> from a bottling station to bring to this location"
 msgstr "複製人間は給水端末からこの場所へ<style=\"KKeyword\">液体</style>を運ぶことができません"
 
+#. STRINGS.BUILDING.STATUSITEMS.BREATHINGSTATIONCHARGES.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.BREATHINGSTATIONCHARGES.NAME"
+msgid "Breath Charges {Current}/{Max}"
+msgstr "呼吸チャージ {Current}/{Max}"
+
+#. STRINGS.BUILDING.STATUSITEMS.BREATHINGSTATIONCHARGES.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.BREATHINGSTATIONCHARGES.TOOLTIP"
+msgid ""
+"This building can store up to {Max} <style=\"KKeyword\">Oxygen</style> charges\n"
+"\n"
+"Currently stored: {Current}/{Max}\n"
+"\n"
+"Charges are automatically refilled via connected <style=\"KKeyword\">Gas Pipes</style>"
+msgstr ""
+"この設備は<style=\"KKeyword\">酸素</style>を最大{Max}までチャージできます\n"
+"\n"
+"現在のチャージ: {Current}/{Max}\n"
+"\n"
+"<style=\"KKeyword\">気体パイプ</style>が接続されているとチャージは自動的に再充填されます"
+
 #. STRINGS.BUILDING.STATUSITEMS.BROADCASTEROUTOFRANGE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BROADCASTEROUTOFRANGE.NAME"
 msgid "Broadcaster Out of Range"
@@ -280,6 +300,30 @@ msgstr "設備陳腐化"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BUILDING_DEPRECATED.TOOLTIP"
 msgid "This building is from an older version of the game and its use is not intended"
 msgstr "この設備は陳腐化し、使えなくなりました"
+
+#. STRINGS.BUILDING.STATUSITEMS.BUILDINGBOOSTEDBYSUPPORTBUILDING.BOOST_LINE
+msgctxt "STRINGS.BUILDING.STATUSITEMS.BUILDINGBOOSTEDBYSUPPORTBUILDING.BOOST_LINE"
+msgid ""
+"\n"
+"    • {BOOST_PROVIDER_NAME}: {BOOST_EFFECT}"
+msgstr ""
+"\n"
+"    • {BOOST_PROVIDER_NAME}: {BOOST_EFFECT}"
+
+#. STRINGS.BUILDING.STATUSITEMS.BUILDINGBOOSTEDBYSUPPORTBUILDING.COUNT_TEXT
+msgctxt "STRINGS.BUILDING.STATUSITEMS.BUILDINGBOOSTEDBYSUPPORTBUILDING.COUNT_TEXT"
+msgid "x{COUNT}"
+msgstr "x{COUNT}"
+
+#. STRINGS.BUILDING.STATUSITEMS.BUILDINGBOOSTEDBYSUPPORTBUILDING.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.BUILDINGBOOSTEDBYSUPPORTBUILDING.NAME"
+msgid "Optimized {COUNT_TEXT}"
+msgstr "最適化済み {COUNT_TEXT}"
+
+#. STRINGS.BUILDING.STATUSITEMS.BUILDINGBOOSTEDBYSUPPORTBUILDING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.BUILDINGBOOSTEDBYSUPPORTBUILDING.TOOLTIP"
+msgid "One or more support buildings are increasing this building's speed:{BOOSTS_LIST}"
+msgstr "支援設備がこの設備の速度を上げています: {BOOSTS_LIST}"
 
 #. STRINGS.BUILDING.STATUSITEMS.BUILDINGDISABLED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BUILDINGDISABLED.NAME"
@@ -384,8 +428,8 @@ msgstr "通過可能"
 
 #. STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.TOOLTIPS.LOGIC_CONTROLLED_CLOSED
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.TOOLTIPS.LOGIC_CONTROLLED_CLOSED"
-msgid "Automated Checkpoint is receiving a <b><style=\"logic_on\">Green Signal</style></b>, allowing Duplicants to pass"
-msgstr "自動制御の検問所は<b><style=\"logic_on\">グリーン</style></b>を受信中のため、複製人間は通過できます"
+msgid "Automated Checkpoint is receiving a <b><style=\"logic_off\">Red Signal</style></b>, preventing Duplicants from passing"
+msgstr "自動制御の検問所は<b><style=\"logic_off\">レッド</style></b>を受信中のため、複製人間は通過できません"
 
 #. STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.TOOLTIPS.LOGIC_CONTROLLED_DISCONNECTED
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.TOOLTIPS.LOGIC_CONTROLLED_DISCONNECTED"
@@ -394,8 +438,8 @@ msgstr "この検問所は<style=\"KKeyword\">自動化</style>グリッドに�
 
 #. STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.TOOLTIPS.LOGIC_CONTROLLED_OPEN
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CHECKPOINT.TOOLTIPS.LOGIC_CONTROLLED_OPEN"
-msgid "Automated Checkpoint is receiving a <b><style=\"logic_off\">Red Signal</style></b>, preventing Duplicants from passing"
-msgstr "自動制御の検問所は<b><style=\"logic_off\">レッド</style></b>を受信中のため、複製人間は通過できません"
+msgid "Automated Checkpoint is receiving a <b><style=\"logic_on\">Green Signal</style></b>, allowing Duplicants to pass"
+msgstr "自動制御の検問所は<b><style=\"logic_on\">グリーン</style></b>を受信中のため、複製人間は通過できます"
 
 #. STRINGS.BUILDING.STATUSITEMS.CLINICOUTSIDEHOSPITAL.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CLINICOUTSIDEHOSPITAL.NAME"
@@ -415,7 +459,7 @@ msgstr "{Skills}スキル不足の現地コロニー"
 #. STRINGS.BUILDING.STATUSITEMS.CLUSTERCOLONYLACKSREQUIREDSKILLPERK.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CLUSTERCOLONYLACKSREQUIREDSKILLPERK.TOOLTIP"
 msgid ""
-"{Skills} Skill required to operate\n"
+"Colony lacks a Duplicant with the {Skills} Skill\n"
 "\n"
 "Open the <b>Skills Panel</b> {Hotkey/ManageSkills} to teach {Skills} to a Duplicant, or bring a Duplicant with the skill from another Planetoid"
 msgstr ""
@@ -426,7 +470,7 @@ msgstr ""
 #. STRINGS.BUILDING.STATUSITEMS.CLUSTERCOLONYLACKSREQUIREDSKILLPERK.TOOLTIP_DLC3
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CLUSTERCOLONYLACKSREQUIREDSKILLPERK.TOOLTIP_DLC3"
 msgid ""
-"{Skills} Skill or {Boosters} required to operate\n"
+"Colony lacks a Duplicant with either the {Skills} Skill or {Boosters}\n"
 "\n"
 "Open the <b>Skills Panel</b> {Hotkey/ManageSkills} to teach {Skills} to a Duplicant, or bring a Duplicant with this skill or booster from another Planetoid"
 msgstr ""
@@ -505,24 +549,27 @@ msgstr "{Skills}スキル不足のコロニー"
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP"
 msgid ""
-"{Skills} Skill required to operate\n"
+"Colony lacks a Duplicant with the {Skills} Skill\n"
 "\n"
 "Open the <b>Skills Panel</b> {Hotkey/ManageSkills} to teach {Skills} to a Duplicant"
 msgstr ""
-"操作には{Skills}スキルが必要です\n"
+"コロニーに以下のスキルを持つ複製人間が不足しています:\n"
+" {Skills}\n"
 "\n"
-"<b>スキルパネル</b> {Hotkey/ManageSkills} を開き、複製人間に{Skills}を習得させましょう"
+"<b>スキルパネル</b> {Hotkey/ManageSkills} を開き、複製人間に{Skills}スキルを習得させましょう"
 
 #. STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP_DLC3
 msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP_DLC3"
 msgid ""
-"{Skills} Skill or {Boosters} required to operate\n"
+"Colony lacks a Duplicant with either the {Skills} Skill or {Boosters}\n"
 "\n"
 "Open the <b>Skills Panel</b> {Hotkey/ManageSkills} to teach {Skills} to a Duplicant"
 msgstr ""
-"操作には{Skills}スキルまたは{Boosters}が必要です\n"
+"コロニーに以下のスキルを持つ複製人間が不足しています:\n"
+" {Skills}\n"
+"または {Boosters}\n"
 "\n"
-"<b>スキルパネル</b> {Hotkey/ManageSkills} を開き、複製人間に{Skills}を習得させましょう"
+"<b>スキルパネル</b> {Hotkey/ManageSkills} を開き、複製人間に{Skills}スキルを習得させましょう"
 
 #. STRINGS.BUILDING.STATUSITEMS.COMPLEXFABRICATOR.ANALYZING.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.COMPLEXFABRICATOR.ANALYZING.NAME"
@@ -601,7 +648,7 @@ msgstr "パイプ詰まり"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKED.TOOLTIP"
-msgid "Output <style=\"KKeyword\">Pipe</style> is blocked"
+msgid "The Output <style=\"KKeyword\">Pipe</style> in this pipe network is blocked"
 msgstr "出口の<style=\"KKeyword\">パイプ</style>が詰まっています"
 
 #. STRINGS.BUILDING.STATUSITEMS.CONDUITBLOCKEDMULTIPLES.NAME
@@ -1595,6 +1642,22 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.GANTRY.RETRACTED"
 msgid "Retracted"
 msgstr "格納中"
 
+#. STRINGS.BUILDING.STATUSITEMS.GASPIPECONDENSEDDAMAGED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPECONDENSEDDAMAGED.NAME"
+msgid "Cold Damage"
+msgstr "冷却ダメージ"
+
+#. STRINGS.BUILDING.STATUSITEMS.GASPIPECONDENSEDDAMAGED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPECONDENSEDDAMAGED.TOOLTIP"
+msgid ""
+"This pipe's <style=\"KKeyword\">Gas</style> contents got too cold and caused damage\n"
+"\n"
+"It requires repair"
+msgstr ""
+"この配管内の<style=\"KKeyword\">気体</style>が冷えすぎたことにより損傷が生じました\n"
+"\n"
+"修理が必要です"
+
 #. STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.NAME"
 msgid "Empty Pipe"
@@ -1604,6 +1667,22 @@ msgstr "パイプが空"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEEMPTY.TOOLTIP"
 msgid "There is no <style=\"KKeyword\">Gas</style> in this pipe"
 msgstr "パイプ中に<style=\"KKeyword\">気体</style>がありません"
+
+#. STRINGS.BUILDING.STATUSITEMS.GASPIPENETWORKNOSINK.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPENETWORKNOSINK.NAME"
+msgid "Pipe Network Requires Building Intake"
+msgstr "配管に液体入口が必要"
+
+#. STRINGS.BUILDING.STATUSITEMS.GASPIPENETWORKNOSINK.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPENETWORKNOSINK.TOOLTIP"
+msgid ""
+"This pipe network must be connected to a <style=\"KKeyword\">Building Intake</style> or a <style=\"KKeyword\">Vent</style> in order for its contents to flow\n"
+"\n"
+"View intakes and outputs in the Ventilation Overlay {Hotkey/Overlay7}"
+msgstr ""
+"この配管には内容物を流すために<style=\"KKeyword\">気体入口</style>または<style=\"KKeyword\">排気口</style>と接続する必要があります\n"
+"\n"
+"換気レイヤー{Hotkey/Overlay7} から入出力を確認できます"
 
 #. STRINGS.BUILDING.STATUSITEMS.GASPIPEOBSTRUCTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.GASPIPEOBSTRUCTED.NAME"
@@ -2297,15 +2376,66 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.LIMITVALVELIMITREACHED.TOOLTIP"
 msgid "No more Mass can be transferred"
 msgstr "これ以上の質量は転送されません"
 
+#. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEBOILEDDAMAGED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEBOILEDDAMAGED.NAME"
+msgid "Boiling Damage"
+msgstr "沸騰ダメージ"
+
+#. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEBOILEDDAMAGED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEBOILEDDAMAGED.TOOLTIP"
+msgid ""
+"This pipe's <style=\"KKeyword\">Liquid</style> contents got too hot and caused damage\n"
+"\n"
+"It requires repair"
+msgstr ""
+"この配管内の<style=\"KKeyword\">液体</style>が過熱しすぎたことにより損傷が生じました\n"
+"\n"
+"修理が必要です"
+
 #. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEEMPTY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEEMPTY.NAME"
-msgid "Empty Pipe"
-msgstr "パイプが空"
+msgid "Input Pipe Empty"
+msgstr "入力パイプ内容物排出"
 
 #. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEEMPTY.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEEMPTY.TOOLTIP"
 msgid "There is no <style=\"KKeyword\">Liquid</style> in this pipe"
 msgstr "パイプ中に<style=\"KKeyword\">液体</style>がありません"
+
+# 周囲の温度が原因。徐々に生命力を失うが、完全に失うまでに相応の猶予かあるため、ただちに致命的、死にかけとまでは言えない。
+# 暖かい場所へ移動すれば、すぐに消える。
+# 複製人間の 'Frostbite' とほぼ同じ。
+#. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEFROZENDAMAGED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEFROZENDAMAGED.NAME"
+msgid "Freezing Damage"
+msgstr "凍結ダメージ"
+
+#. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEFROZENDAMAGED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEFROZENDAMAGED.TOOLTIP"
+msgid ""
+"This pipe's <style=\"KKeyword\">Liquid</style> contents got too cold and caused damage\n"
+"\n"
+"It requires repair"
+msgstr ""
+"この配管内の<style=\"KKeyword\">液体</style>が冷えすぎたことにより損傷が生じました\n"
+"\n"
+"修理が必要です"
+
+#. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPENETWORKNOSINK.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPENETWORKNOSINK.NAME"
+msgid "Pipe Network Requires Building Intake"
+msgstr "配管に液体入口が必要"
+
+#. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPENETWORKNOSINK.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPENETWORKNOSINK.TOOLTIP"
+msgid ""
+"This pipe network must be connected to a <style=\"KKeyword\">Building Intake</style> or a <style=\"KKeyword\">Vent</style> in order for its contents to flow\n"
+"\n"
+"View intakes and outputs in the Plumbing Overlay {Hotkey/Overlay6}"
+msgstr ""
+"この配管には内容物を流すために<style=\"KKeyword\">液体入口</style>または<style=\"KKeyword\">排水口</style>と接続する必要があります\n"
+"\n"
+"配管レイヤー{Hotkey/Overlay6} から入出力を確認できます"
 
 #. STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEOBSTRUCTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEOBSTRUCTED.NAME"
@@ -3015,11 +3145,11 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDSOLIDIN.TOOLTIP"
 msgid ""
 "Material cannot be fed onto this Conveyor system for transport\n"
 "\n"
-"Enter the <b>Shipping Tab</b> {Hotkey/Plan13} of the Build Menu to build and connect a <style=\"KKeyword\">Conveyor Loader</style>"
+"Enter the <b>Shipping Tab</b> {Hotkey/Plan14} of the Build Menu to build and connect a <style=\"KKeyword\">Conveyor Loader</style>"
 msgstr ""
 "素材はこのコンベア輸送網に積載することができません\n"
 "\n"
-"建築メニューの<b>輸送タブ</b> {Hotkey/Plan13} から<style=\"KKeyword\">コンベアローダー</style>を接続してください"
+"建築メニューの<b>輸送タブ</b> {Hotkey/Plan14} から<style=\"KKeyword\">コンベアローダー</style>を接続してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NEEDSOLIDOUT.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDSOLIDOUT.NAME"
@@ -3031,11 +3161,11 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.NEEDSOLIDOUT.TOOLTIP"
 msgid ""
 "Material cannot be offloaded from this Conveyor system and will backup the rails\n"
 "\n"
-"Enter the <b>Shipping Tab</b> {Hotkey/Plan13} of the Build Menu to build and connect a <style=\"KKeyword\">Conveyor Receptacle</style>"
+"Enter the <b>Shipping Tab</b> {Hotkey/Plan14} of the Build Menu to build and connect a <style=\"KKeyword\">Conveyor Receptacle</style>"
 msgstr ""
 "素材はこのコンベア輸送網から荷下できないため、渋滞を引き起こします\n"
 "\n"
-"建築メニューの<b>輸送タブ</b> {Hotkey/Plan13} から<style=\"KKeyword\">コンベアレセプタ</style>を接続してください"
+"建築メニューの<b>輸送タブ</b> {Hotkey/Plan14} から<style=\"KKeyword\">コンベアレセプタ</style>を接続してください"
 
 #. STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NETWORKQUALITY.NAME"
@@ -3164,6 +3294,26 @@ msgstr "冷却剤なし"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOCOOLANT.TOOLTIP"
 msgid "This building needs coolant"
 msgstr "この設備は冷却剤が必要です"
+
+#. STRINGS.BUILDING.STATUSITEMS.NODISCOVEREDCRITTERS.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NODISCOVEREDCRITTERS.NAME"
+msgid "No Critters Discovered"
+msgstr "動物未発見"
+
+#. STRINGS.BUILDING.STATUSITEMS.NODISCOVEREDCRITTERS.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NODISCOVEREDCRITTERS.TOOLTIP"
+msgid "No eligible critters have been discovered yet"
+msgstr "一部の動物選択肢はまだ発見されていません"
+
+#. STRINGS.BUILDING.STATUSITEMS.NODISCOVEREDELEMENTS.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NODISCOVEREDELEMENTS.NAME"
+msgid "No Elements Discovered"
+msgstr "元素未発見"
+
+#. STRINGS.BUILDING.STATUSITEMS.NODISCOVEREDELEMENTS.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.NODISCOVEREDELEMENTS.TOOLTIP"
+msgid "No eligible resource types have been discovered yet"
+msgstr "一部の元素選択肢はまだ発見されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOFILTERELEMENTSELECTED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOFILTERELEMENTSELECTED.NAME"
@@ -3322,7 +3472,7 @@ msgstr "フィルター指定なし"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.NOSTORAGEFILTERSET.TOOLTIP"
-msgid "No resources types are marked for storage in this building"
+msgid "No resource types are marked for storage in this building"
 msgstr "この設備に収納する資源の種類が指定されていません"
 
 #. STRINGS.BUILDING.STATUSITEMS.NOSUITMARKER.NAME
@@ -3548,6 +3698,22 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTPIPEFULL.TOOLTIP"
 msgid "Unable to flush contents, output <style=\"KKeyword\">Pipe</style> is blocked"
 msgstr "出力<style=\"KKeyword\">パイプ</style>が詰まっているため、排出できません"
 
+#. STRINGS.BUILDING.STATUSITEMS.OUTPUTPIPEFULL_LAVATORY.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTPIPEFULL_LAVATORY.NAME"
+msgid "Output Pipe Full"
+msgstr "出力パイプ詰まり"
+
+#. STRINGS.BUILDING.STATUSITEMS.OUTPUTPIPEFULL_LAVATORY.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTPIPEFULL_LAVATORY.TOOLTIP"
+msgid ""
+"Excess <style=\"KKeyword\">Polluted Water</style> from Duplicant visits has blocked this output <style=\"KKeyword\">Pipe</style>\n"
+"\n"
+"Blockage must be cleared before contents can be flushed"
+msgstr ""
+"複製人間の立ち寄りによって生じた過剰な<style=\"KKeyword\">汚染水</style>が、この排出<style=\"KKeyword\">パイプ</​​style>を塞いでいます\n"
+"\n"
+"中身を排出するには、この詰まりを取り除く必要があります"
+
 #. STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.OUTPUTTILEBLOCKED.NAME"
 msgid "Output Blocked"
@@ -3730,6 +3896,11 @@ msgstr "内容物: {Contents}"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PIPE.TOOLTIP"
 msgid "This pipe is delivering {Contents}"
 msgstr "このパイプは {Contents} を配送中です"
+
+#. STRINGS.BUILDING.STATUSITEMS.PIPE.TOOLTIP_EMPTY
+msgctxt "STRINGS.BUILDING.STATUSITEMS.PIPE.TOOLTIP_EMPTY"
+msgid "This pipe is empty"
+msgstr "このパイプは空です"
 
 #. STRINGS.BUILDING.STATUSITEMS.PIPECONTENTS.CONTENTS
 msgctxt "STRINGS.BUILDING.STATUSITEMS.PIPECONTENTS.CONTENTS"
@@ -4164,6 +4335,48 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.ROCKETSTRANDED.TOOLTIP"
 msgid "This rocket has run out of fuel and cannot move"
 msgstr "このロケットは燃料不足で動けません"
 
+#. STRINGS.BUILDING.STATUSITEMS.SANDBOXLOOKINGSANDY.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SANDBOXLOOKINGSANDY.NAME"
+msgid "Beachy"
+msgstr "ビーチ"
+
+#. STRINGS.BUILDING.STATUSITEMS.SANDBOXLOOKINGSANDY.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SANDBOXLOOKINGSANDY.TOOLTIP"
+msgid "This sculpture makes Duplicants feel like they're on vacation somewhere nice"
+msgstr "この彫刻は複製人間達にどこか素敵な場所で休暇を過ごしているような気分にさせてくれます"
+
+#. STRINGS.BUILDING.STATUSITEMS.SANDBOXSCULPTURECOLLAPSED.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SANDBOXSCULPTURECOLLAPSED.NAME"
+msgid "Collapsed Sand Art"
+msgstr "崩れたサンドアート"
+
+#. STRINGS.BUILDING.STATUSITEMS.SANDBOXSCULPTURECOLLAPSED.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SANDBOXSCULPTURECOLLAPSED.TOOLTIP"
+msgid ""
+"This sand sculpture has dried out and collapsed\n"
+"\n"
+"Duplicants can resculpt it during their downtime"
+msgstr ""
+"この砂の彫刻は乾ききって崩れています\n"
+"\n"
+"複製人間は休憩中に作り直すことができます"
+
+#. STRINGS.BUILDING.STATUSITEMS.SANDBOXSCULPTUREUNSTABLE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SANDBOXSCULPTUREUNSTABLE.NAME"
+msgid "Unstable Sand Art"
+msgstr "不安定なサンドアート"
+
+#. STRINGS.BUILDING.STATUSITEMS.SANDBOXSCULPTUREUNSTABLE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SANDBOXSCULPTUREUNSTABLE.TOOLTIP"
+msgid ""
+"This sculpture is made of wet sand\n"
+"\n"
+"It will dry out and collapse in {TIME}"
+msgstr ""
+"この彫刻は濡れた砂で作られています\n"
+"\n"
+"{TIME}経つと乾燥し、崩れてしまいます"
+
 #. STRINGS.BUILDING.STATUSITEMS.SKILL_POINTS_AVAILABLE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SKILL_POINTS_AVAILABLE.NAME"
 msgid "Skill Points Available"
@@ -4276,7 +4489,7 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.SPACEPOIHARVESTING.TOOLTIP"
 msgid ""
 "This <style=\"KKeyword\">Drillcone</style> is breaking up space debris into harvestable resources\n"
 "\n"
-"Harvestable resources can be retrieved by a a rocket equipped with a <style=\"KKeyword\">Cargo Bay</style> module"
+"Harvestable resources can be retrieved by a rocket equipped with a <style=\"KKeyword\">Cargo Bay</style> module"
 msgstr ""
 "この<style=\"KKeyword\">ドリルコーン</style>は宇宙ゴミを採取可能な資源へと粉砕中です\n"
 "\n"
@@ -4311,6 +4524,16 @@ msgstr "スパイス未選択"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SPICEGRINDERNOSPICE.TOOLTIP"
 msgid "Select a recipe to begin fabrication"
 msgstr "製作するレシピをセットしてください"
+
+#. STRINGS.BUILDING.STATUSITEMS.STEAMTURBINE_ACTIVE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.STEAMTURBINE_ACTIVE.NAME"
+msgid "Active"
+msgstr "スイッチオン"
+
+#. STRINGS.BUILDING.STATUSITEMS.STEAMTURBINE_ACTIVE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.STEAMTURBINE_ACTIVE.TOOLTIP"
+msgid "This turbine is running"
+msgstr "このタービンは稼働中です"
 
 #. STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.STORAGELOCKER.NAME"
@@ -4360,7 +4583,7 @@ msgstr "<style=\"KKeyword\">EXOスーツ</style>はドックで充填中です"
 
 #. STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.FULLY_CHARGED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.FULLY_CHARGED.NAME"
-msgid "Current Status: Full Fueled"
+msgid "Current Status: Fully Fueled"
 msgstr "現在の状態: 充填済"
 
 #. STRINGS.BUILDING.STATUSITEMS.SUIT_LOCKER.FULLY_CHARGED.TOOLTIP
@@ -4490,6 +4713,42 @@ msgstr ""
 "\n"
 "ドックは<link=\"CHECKPOINT\">脱着所</link>の矢印が指す向きとは反対側に併設しなければなりません"
 
+#. STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGACTIVE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGACTIVE.NAME"
+msgid "Buildings optimized: {COUNT}"
+msgstr "設備最適化: {COUNT}"
+
+#. STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGACTIVE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGACTIVE.TOOLTIP"
+msgid "This support building is currently providing the {BOOST_NAME} effect to the following buildings:{BUILDING_LIST}"
+msgstr "この支援設備は次の設備に{BOOST_NAME}効果を供給しています: {BUILDING_LIST}"
+
+#. STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGINACTIVE.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGINACTIVE.NAME"
+msgid "Inactive"
+msgstr "スイッチオフ"
+
+#. STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGINACTIVE.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGINACTIVE.TOOLTIP"
+msgid "This building will resume function once its requirements are met"
+msgstr "必要条件が満たされると、設備はこれらの効果を発揮します"
+
+#. STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGNORECEPTORS.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGNORECEPTORS.NAME"
+msgid "Idle"
+msgstr "待機中"
+
+#. STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGNORECEPTORS.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.SUPPORTBUILDINGNORECEPTORS.TOOLTIP"
+msgid ""
+"This building is idle for one of the following reasons:\n"
+"    • No compatible buildings nearby\n"
+"    • Compatible buildings are already optimized by another support building"
+msgstr ""
+"この設備が待機中または稼働していない理由は以下の通りです:\n"
+"    • 周囲に互換性のある設備がない\n"
+"    • 互換性のある設備が既に別の支援設備によるサポートを受けている"
+
 #. STRINGS.BUILDING.STATUSITEMS.SWITCHSTATUSACTIVE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.SWITCHSTATUSACTIVE.NAME"
 msgid "Active"
@@ -4537,7 +4796,7 @@ msgstr "誰かとお喋り。"
 
 #. STRINGS.BUILDING.STATUSITEMS.TELEPHONE.BABBLE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TELEPHONE.BABBLE.TOOLTIP"
-msgid "{Duplicant} just needed to vent to into the void."
+msgid "{Duplicant} just needed to vent into the void."
 msgstr "{Duplicant} には思いを吐露する虚空が必要だったのです。"
 
 #. STRINGS.BUILDING.STATUSITEMS.TELEPHONE.CONVERSATION.TALKING_TO
@@ -4688,6 +4947,16 @@ msgstr ""
 "\n"
 "コロニーはこのタスクが完了するまで<style=\"KKeyword\">注意報</style>が発令されます"
 
+#. STRINGS.BUILDING.STATUSITEMS.TRAMPOLINEBOUNCESREMAINING.NAME
+msgctxt "STRINGS.BUILDING.STATUSITEMS.TRAMPOLINEBOUNCESREMAINING.NAME"
+msgid "{BouncesLeft} Visits Remaining"
+msgstr "跳ね返り回数残り {BouncesLeft} 回"
+
+#. STRINGS.BUILDING.STATUSITEMS.TRAMPOLINEBOUNCESREMAINING.TOOLTIP
+msgctxt "STRINGS.BUILDING.STATUSITEMS.TRAMPOLINEBOUNCESREMAINING.TOOLTIP"
+msgid "{BouncesLeft} more Duplicants can enjoy this amenity before its <style=\"KKeyword\">Rubber</style> surface will require maintenance"
+msgstr "あと{BouncesLeft}回、複製人間がこの設備を利用できます。その後は<style=\"KKeyword\">ゴム製</style>表面のメンテナンスが必要になります"
+
 #. STRINGS.BUILDING.STATUSITEMS.TRANSITTUBEENTRANCEWAXREADY.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TRANSITTUBEENTRANCEWAXREADY.NAME"
 msgid "Smooth Ride Ready"
@@ -4824,17 +5093,30 @@ msgstr "ターボモード: ON"
 #. STRINGS.BUILDING.STATUSITEMS.TURBOMODE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBOMODE.TOOLTIP"
 msgid ""
-"This building is operating at maximum power\n"
+"This building is operating at maximum <style=\"KKeyword\">Power</style>\n"
 "\n"
-"    • Power consumption: <b>{0}</b>\n"
-"    • Heat production: <b>{1}</b>\n"
+"    • <style=\"KKeyword\">Power</style> consumption: <b>{0}</b>\n"
+"    • <style=\"KKeyword\">Heat</style> production: <b>{1}</b>\n"
 "    • Boiling the surrounding liquid"
 msgstr ""
-"この設備は最大出力で運転中です\n"
+"この設備は最大<style=\"KKeyword\">出力</style>で運転中です\n"
 "\n"
-"    • 電力消費: <b>{0}</b>\n"
-"    • 発熱量: <b>{1}</b>\n"
+"    • <style=\"KKeyword\">電力</style>消費: <b>{0}</b>\n"
+"    • 発<style=\"KKeyword\">熱量</style>: <b>{1}</b>\n"
 "    • 周囲の液体を沸騰させる"
+
+#. STRINGS.BUILDING.STATUSITEMS.TURBOMODE.TOOLTIP_RECREATION
+msgctxt "STRINGS.BUILDING.STATUSITEMS.TURBOMODE.TOOLTIP_RECREATION"
+msgid ""
+"This building is operating at maximum <style=\"KKeyword\">Power</style>\n"
+"\n"
+"    • <style=\"KKeyword\">Power</style> consumption: <b>{0}</b>\n"
+"    • Duplicants who spend at least <b>{1}</b> of their ride in Turbo Mode gain extra <style=\"KKeyword\">Morale</style>"
+msgstr ""
+"この設備は最大<style=\"KKeyword\">出力</style>で運転中です\n"
+"\n"
+"    • <style=\"KKeyword\">電力</style>消費: <b>{0}</b>\n"
+"    • 運転中少なくとも<b>{1}</b>をターボモードで過ごした複製人間は、追加の<style=\"KKeyword\">士気</style>を得ます"
 
 #. STRINGS.BUILDING.STATUSITEMS.UNASSIGNED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.UNASSIGNED.NAME"
@@ -5022,7 +5304,7 @@ msgstr "{Destination} へ着陸待機中"
 
 #. STRINGS.BUILDING.STATUSITEMS.WAITINGTOLAND.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WAITINGTOLAND.TOOLTIP"
-msgid "This rocket is waiting for an available Rcoket Platform on {Destination}"
+msgid "This rocket is waiting for an available Rocket Platform on {Destination}"
 msgstr "このロケットは{Destination}のロケット発射台が利用可能になるまで待機しています"
 
 #. STRINGS.BUILDING.STATUSITEMS.WARPCONDUITPARTNERDISABLED.NAME
@@ -5195,3 +5477,27 @@ msgstr "複製人間の操作が必要"
 msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKREQUIRESMINION.TOOLTIP"
 msgid "A Duplicant must be present to complete this operation"
 msgstr "この操作には複製人間が必要です"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP"
+#~ msgid ""
+#~ "{Skills} Skill required to operate\n"
+#~ "\n"
+#~ "Open the <b>Skills Panel</b> {Hotkey/ManageSkills} to teach {Skills} to a Duplicant"
+#~ msgstr ""
+#~ "操作には{Skills}スキルが必要です\n"
+#~ "\n"
+#~ "<b>スキルパネル</b> {Hotkey/ManageSkills} を開き、複製人間に{Skills}を習得させましょう"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.COLONYLACKSREQUIREDSKILLPERK.TOOLTIP_DLC3"
+#~ msgid ""
+#~ "{Skills} Skill or {Boosters} required to operate\n"
+#~ "\n"
+#~ "Open the <b>Skills Panel</b> {Hotkey/ManageSkills} to teach {Skills} to a Duplicant"
+#~ msgstr ""
+#~ "操作には{Skills}スキルまたは{Boosters}が必要です\n"
+#~ "\n"
+#~ "<b>スキルパネル</b> {Hotkey/ManageSkills} を開き、複製人間に{Skills}を習得させましょう"
+
+#~ msgctxt "STRINGS.BUILDING.STATUSITEMS.LIQUIDPIPEEMPTY.NAME"
+#~ msgid "Empty Pipe"
+#~ msgstr "パイプが空"
